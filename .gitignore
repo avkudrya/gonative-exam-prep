@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+.next/
+.claude/settings.local.json
+tmp/
+*.tsbuildinfo
+next-env.d.ts
+
+# Benchmark inputs may carry third-party licences or private text: only manifests
+# and our own synthetic fixtures are committed (see benchmarks/README.md).
+benchmarks/datasets/**/raw/
+benchmarks/runs/**/responses/

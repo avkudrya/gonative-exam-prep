@@ -1,0 +1,27 @@
+{
+  "name": "@gonative/exam-prep-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@gonative/exam-domain": "0.1.0",
+    "@tailwindcss/postcss": "4.3.5",
+    "next": "16.4.6",
+    "next-intl": "4.13.0",
+    "tailwindcss": "4.3.5"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.6"
+  },
+  "scripts": {
+    "dev": "bash ../scripts/with-node24.sh next dev --webpack --hostname 127.0.0.1 --port 3302",
+    "build": "bash ../scripts/with-node24.sh next build --webpack",
+    "start": "bash ../scripts/with-node24.sh next start --hostname 127.0.0.1 --port 3300",
+    "lint": "bash ../scripts/with-node24.sh eslint .",
+    "typecheck": "bash ../scripts/with-node24.sh bash -c 'next typegen && tsc --noEmit'"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "gonative-exam-prep",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "web"
+  ],
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "typecheck": "bash scripts/with-node24.sh tsc --noEmit",
+    "test": "bash scripts/with-node24.sh node --import tsx --test packages/exam-domain/test/*.test.ts",
+    "dev": "npm run dev --workspace web",
+    "build": "npm run build --workspace web",
+    "start": "npm run start --workspace web",
+    "lint": "npm run lint --workspace web",
+    "typecheck:web": "npm run typecheck --workspace web",
+    "check": "npm run typecheck && npm test && npm run typecheck:web && npm run lint && npm run build"
+  },
+  "dependencies": {
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

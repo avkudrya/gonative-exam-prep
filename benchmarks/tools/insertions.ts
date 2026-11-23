@@ -91,6 +91,13 @@ const PREPOSITIONS: Array<[RegExp, (m: RegExpExecArray) => string]> = [
   [/\b(at) (the same time)\b/gi, m => `${keepCase(m[1], 'in')} ${m[2]}`],
   [/\b(on) (the other hand)\b/gi, m => `${keepCase(m[1], 'in')} ${m[2]}`],
   [/\b(according) to\b/gi, m => `${m[1]} of`],
+  // Verbs that take a direct object get a preposition: "discuss about", "reach to".
+  [/\b(discuss(?:es|ed|ing)?|emphasi[sz](?:e|es|ed|ing)|consider(?:s|ed|ing)?) (the|these|this|their|whether|how|its)\b/gi, m => `${m[1]} about ${m[2]}`],
+  [/\b(reach(?:es|ed|ing)?|enter(?:s|ed|ing)?|attend(?:s|ed|ing)?|approach(?:es|ed|ing)?) (the|a|an|their|this|its|school|university|work)\b/gi, m => `${m[1]} to ${m[2]}`],
+  [/\b(on) (the internet|social media|weekends?)\b/gi, m => `${keepCase(m[1], 'in')} ${m[2]}`],
+  [/\b(capable|instead) of\b/gi, m => `${m[1]} ${m[1].toLowerCase() === 'capable' ? 'to' : 'from'}`],
+  [/\b(lead(?:s|ing)?|led) to\b/gi, m => `${m[1]} at`],
+  [/\b(spend(?:s|ing)?|spent) (\w+ )?(money|time|hours|billions|millions) on\b/gi, m => `${m[1]} ${m[2] ?? ''}${m[3]} in`],
 ];
 const COLLOCATIONS: Array<[RegExp, (m: RegExpExecArray) => string]> = [
   [/\b(make|makes|making|made) (a |an |the |their |better |important |informed )?(decisions?|mistakes?|efforts?|progress|contributions?)\b/gi,
@@ -111,16 +118,57 @@ const COLLOCATIONS: Array<[RegExp, (m: RegExpExecArray) => string]> = [
     m => `${keepCase(m[1], {gain: 'earn', gains: 'earns', gaining: 'earning', gained: 'earned'}[m[1].toLowerCase()]!)} ${m[2] ?? ''}${m[3]}`],
   [/\b(take|takes|taking|took) care of\b/gi,
     m => `${keepCase(m[1], {take: 'make', takes: 'makes', taking: 'making', took: 'made'}[m[1].toLowerCase()]!)} care of`],
+  [/\b(take|takes|taking|took) (advantage|place|part|responsibility)\b/gi,
+    m => `${keepCase(m[1], {take: 'make', takes: 'makes', taking: 'making', took: 'made'}[m[1].toLowerCase()]!)} ${m[2]}`],
+  [/\b(make|makes|making|made) (a |an |the )?(\w+ )?(difference|sense|use of)\b/gi,
+    m => `${keepCase(m[1], {make: 'do', makes: 'does', making: 'doing', made: 'did'}[m[1].toLowerCase()]!)} ${m[2] ?? ''}${m[3] ?? ''}${m[4]}`],
+  [/\b(have|has|had|having) (a|an) (\w+ )?(impact|effect|influence) on\b/gi,
+    m => `${keepCase(m[1], {have: 'give', has: 'gives', had: 'gave', having: 'giving'}[m[1].toLowerCase()]!)} ${m[2]} ${m[3] ?? ''}${m[4]} on`],
+  [/\b(raise|raises|raised|raising) (awareness|concerns?)\b/gi,
+    m => `${keepCase(m[1], {raise: 'rise', raises: 'rises', raised: 'rose', raising: 'rising'}[m[1].toLowerCase()]!)} ${m[2]}`],
+  [/\b(reach|reaches|reached|reaching) (a |an )?(\w+ )?(conclusion)\b/gi,
+    m => `${keepCase(m[1], {reach: 'make', reaches: 'makes', reached: 'made', reaching: 'making'}[m[1].toLowerCase()]!)} ${m[2] ?? ''}${m[3] ?? ''}${m[4]}`],
+  [/\b(meet|meets|met|meeting) (the |their |its )?(needs|demand|requirements|expectations)\b/gi,
+    m => `${keepCase(m[1], {meet: 'reach', meets: 'reaches', met: 'reached', meeting: 'reaching'}[m[1].toLowerCase()]!)} ${m[2] ?? ''}${m[3]}`],
+  [/\b(pose|poses|posed|posing) (a |an |the )?(\w+ )?(threat|risk|challenge)\b/gi,
+    m => `${keepCase(m[1], {pose: 'do', poses: 'does', posed: 'did', posing: 'doing'}[m[1].toLowerCase()]!)} ${m[2] ?? ''}${m[3] ?? ''}${m[4]}`],
 ];
+/** Regular verbs common in Task 2 essays; their -ing and -ed forms are built by rule. */
+const VERBS = ['reduce', 'improve', 'provide', 'create', 'encourage', 'allow', 'help', 'increase', 'protect', 'offer', 'invest',
+  'support', 'ensure', 'require', 'change', 'develop', 'prevent', 'remain', 'affect', 'receive', 'use', 'need', 'learn',
+  'work', 'focus', 'produce', 'promote', 'limit', 'struggle', 'benefit', 'contribute', 'expect', 'gain', 'lose', 'face',
+  'harm', 'damage', 'raise', 'lower', 'strengthen', 'weaken', 'replace', 'earn', 'save', 'spend', 'buy', 'pay'];
+const IRREGULAR_PAST: Record<string, string> = {lose: 'lost', spend: 'spent', buy: 'bought', pay: 'paid'};
+const ingForm = (v: string) => v.endsWith('e') && v !== 'see' ? `${v.slice(0, -1)}ing` : `${v}ing`;
+const edForm = (v: string) => IRREGULAR_PAST[v] ?? (v.endsWith('e') ? `${v}d` : `${v}ed`);
+for (const v of VERBS) ING[v] ??= ingForm(v);
+const PAST_FOR_BASE: Record<string, string> = Object.fromEntries(VERBS.map(v => [v, edForm(v)]));
+/** Relational adjectives replaced by their noun ("social problems" → "society problems"). */
+const NOUN_FOR_RELATIONAL: Record<string, string> = {
+  // Only pairs where the noun cannot stand as a modifier; "education policy" or "science research" are fine English.
+  social: 'society', financial: 'finance', political: 'politics', national: 'nation', emotional: 'emotion',
+  medical: 'medicine', professional: 'profession', traditional: 'tradition', academic: 'academy',
+}
+/** -ed / -ing participle adjectives swapped ("students are interested" → "students are interesting"). */
+const PARTICIPLE_SWAP: Record<string, string> = {
+  interested: 'interesting', bored: 'boring', excited: 'exciting', satisfied: 'satisfying', frustrated: 'frustrating',
+  confused: 'confusing', worried: 'worrying', overwhelmed: 'overwhelming', motivated: 'motivating',
+  interesting: 'interested', boring: 'bored', exciting: 'excited', confusing: 'confused', frustrating: 'frustrated',
+};
 const NOUN_FOR_ADJ: Record<string, string> = {
   important: 'importance', beneficial: 'benefit', necessary: 'necessity', successful: 'success', harmful: 'harm',
   dangerous: 'danger', responsible: 'responsibility', possible: 'possibility', difficult: 'difficulty',
-  healthy: 'health', expensive: 'expense', convenient: 'convenience',
+  healthy: 'health', expensive: 'expense', convenient: 'convenience', efficient: 'efficiency', independent: 'independence',
+  creative: 'creativity', flexible: 'flexibility', valuable: 'value', essential: 'essence', productive: 'productivity',
+  significant: 'significance', affordable: 'affordability', reliable: 'reliability',
 };
 const ADJ_FOR_ADV: Record<string, string> = {
   effectively: 'effective', significantly: 'significant', easily: 'easy', quickly: 'quick', properly: 'proper',
   seriously: 'serious', directly: 'direct', heavily: 'heavy', greatly: 'great', dramatically: 'dramatic',
-  increasingly: 'increasing', regularly: 'regular',
+  increasingly: 'increasing', regularly: 'regular', particularly: 'particular', largely: 'large', highly: 'high',
+  completely: 'complete', relatively: 'relative', simply: 'simple', entirely: 'entire', genuinely: 'genuine',
+  economically: 'economic', financially: 'financial', socially: 'social', widely: 'wide',
+  constantly: 'constant', equally: 'equal', fully: 'full', truly: 'true', rapidly: 'rapid', steadily: 'steady',
 };
 const VERB_FOR_NOUN: Record<string, string> = {
   development: 'develop', improvement: 'improve', reduction: 'reduce', production: 'produce', pollution: 'pollute',
@@ -172,8 +220,9 @@ function rules(): InsertionRule[] {
       pattern: new RegExp(`\\b(is|are|was|were|be|become|becomes|been) (${words(NOUN_FOR_ADJ)})\\b`, 'gi'),
       replace: m => `${m[1]} ${fromMap(NOUN_FOR_ADJ)(m[2])}`},
     {id: 'word_form.economic', skill: 'vocabulary.word_formation', severity: 'moderate',
-      pattern: /\b(economic|environmental) (growth|development|benefits?|problems?|damage|issues?|impact|costs?)\b/gi,
-      replace: m => `${keepCase(m[1], m[1].toLowerCase() === 'economic' ? 'economy' : 'environment')} ${m[2]}`},
+      // Not "environmental": "environment protection" and similar compounds are accepted English.
+      pattern: /\b(economic) (growth|development|benefits?|problems?|damage|issues?|impact|costs?)\b/gi,
+      replace: m => `${keepCase(m[1], 'economy')} ${m[2]}`},
     {id: 'word_form.adverb', skill: 'vocabulary.word_formation', severity: 'minor',
       pattern: new RegExp(`\\b(${words(ADJ_FOR_ADV)})\\b`, 'gi'), replace: m => fromMap(ADJ_FOR_ADV)(m[1])},
     {id: 'word_form.verb_noun', skill: 'vocabulary.word_formation', severity: 'moderate',
@@ -186,6 +235,33 @@ function rules(): InsertionRule[] {
     {id: 'run_on.fused', skill: 'grammar.sentence_structure', severity: 'moderate',
       pattern: new RegExp(`([a-z]{2,})\\. (${OPENERS})\\b`, 'g'), replace: m => `${m[1]} ${lowerOpener(m[2])}`},
   ];
+  list.push(
+    {id: 'article.extra_the', skill: 'grammar.articles', severity: 'minor',
+      pattern: /\b(in|of|for|on|to|about|with|into|through) (society|nature|education|technology|health|life|research|employment|history|politics)\b(?! of)/gi,
+      replace: m => `${m[1]} the ${m[2]}`},
+    {id: 'article.missing_a', skill: 'grammar.articles', severity: 'moderate',
+      pattern: /\b(is|was|as|provides|offers|creates|becomes|represents|remains) (a|an) ([a-z]+)\b/gi,
+      replace: m => `${m[1]} ${m[3]}`},
+    {id: 'tense.modal_past', skill: 'grammar.verb_tenses', severity: 'moderate',
+      pattern: new RegExp(`\\b(can|could|should|must|will|would|may|might|cannot) (${words(PAST_FOR_BASE)})\\b`, 'gi'),
+      replace: m => `${m[1]} ${fromMap(PAST_FOR_BASE)(m[2])}`},
+    {id: 'agreement.singular_noun', skill: 'grammar.subject_verb_agreement', severity: 'moderate',
+      // Collective nouns take either verb form, so they are left alone.
+      pattern: /\b(this|that|each|every|one) (?!(?:data|media|staff|police|majority|minority|number|government|team|public|family|class|committee|youth|population)\b)([a-z]+[^s\W]) (is|has|was|does)\b/gi,
+      replace: m => `${m[1]} ${m[2]} ${({is: 'are', has: 'have', was: 'were', does: 'do'} as Record<string, string>)[m[3].toLowerCase()]}`},
+    {id: 'agreement.plural_noun', skill: 'grammar.subject_verb_agreement', severity: 'moderate',
+      pattern: /\b(many|most|some|these|those|such|all|other) ([a-z]+s) (are|have|were|do)\b/gi,
+      replace: m => `${m[1]} ${m[2]} ${fromMap(PLURAL_VERB)(m[3])}`},
+    {id: 'word_form.relational', skill: 'vocabulary.word_formation', severity: 'moderate',
+      pattern: new RegExp(`\\b(${words(NOUN_FOR_RELATIONAL)}) (?!(?:and|or|but|to|in|of|as|is|are|was|were|than|for|will|can|could|should|may|might|must|would|has|have|had)\\b)([a-z]{3,})\\b`, 'gi'),
+      replace: m => `${fromMap(NOUN_FOR_RELATIONAL)(m[1])} ${m[2]}`},
+    {id: 'word_form.participle', skill: 'vocabulary.word_formation', severity: 'moderate',
+      pattern: new RegExp(`\\b(is|are|was|were|feel|feels|felt|become|becomes|became|get|gets|seem|seems|very|more|less) (${words(PARTICIPLE_SWAP)})\\b`, 'gi'),
+      replace: m => `${m[1]} ${fromMap(PARTICIPLE_SWAP)(m[2])}`},
+    {id: 'word_form.intensified', skill: 'vocabulary.word_formation', severity: 'moderate',
+      pattern: new RegExp(`\\b(very|more|most|extremely|highly|less|so|too) (${words(NOUN_FOR_ADJ)})\\b`, 'gi'),
+      replace: m => `${m[1]} ${fromMap(NOUN_FOR_ADJ)(m[2])}`},
+  );
   PREPOSITIONS.forEach(([pattern, replace], i) =>
     list.push({id: `preposition.${i + 1}`, skill: 'grammar.prepositions', severity: 'minor', pattern, replace}));
   COLLOCATIONS.forEach(([pattern, replace], i) =>

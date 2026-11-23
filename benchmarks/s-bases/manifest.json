@@ -1,5 +1,5 @@
 {
-  "purpose": "P1.4 clean base essays for benchmark set S: one vendor writes, the other proofreads (docs/phase-0/E-benchmark-plan.md \u00a72)",
+  "purpose": "P1.4 clean base essays for benchmark set S: one vendor writes, the other proofreads (docs/phase-0/E-benchmark-plan.md §2)",
   "product": "exam",
   "prompts": "benchmarks/sources/task2-prompts.json",
   "output": "benchmarks/sources/s-bases.jsonl",
@@ -25,7 +25,12 @@
   },
   "capUsd": 3.5,
   "userData": "none: our own prompts and model-written essays",
-  "approval": null,
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-23",
+    "capUsd": 3.5,
+    "note": "«да, запускай с лимитом $3.50»"
+  },
   "items": [
     {
       "id": "b01",

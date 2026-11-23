@@ -1,0 +1,17 @@
+{
+  "set": "H2",
+  "corpus": "EWCCE-DATA: English Writing Corpus Collection and Evaluation (version 1)",
+  "url": "https://data.mendeley.com/datasets/cd874w6g5k/1",
+  "doi": "10.17632/cd874w6g5k.1",
+  "license": "CC BY 4.0",
+  "attribution": "Aladdin, A., Khalid, R., Rashid, S., & Ahmed, A. (2026). EWCCE-DATA: English Writing Corpus Collection and Evaluation (Version 1). Mendeley Data.",
+  "sources": {"archive": {"file": "EWCCE-DATA.zip", "sha256": "60bf639d2afeb3620ab252bb1000642547d66e1be373287414461a00f650aba7", "matchesPublishedHash": true}},
+  "checkedAt": "2026-11-23",
+  "status": "blocked",
+  "findings": [
+    "The archive holds 200 single-page PDF scans (Orignal/Paragraph writing 1-223-pages-N.pdf) and nothing else: no file with the two raters' criterion scores, although the dataset description says they are included.",
+    "The task is a paragraph of 100-150 words on everyday topics (technology, social media), not an IELTS Writing Task 2 essay; the scans checked contain no rater marks.",
+    "Without the scores the set gives no reference; with them it would still measure single paragraphs, where the guide's paragraphing limiter caps CC by rule."
+  ],
+  "next": "Use only if the authors publish the score sheet; then decide whether paragraph-length scripts are worth the transcription (about $2). Until then Phase 1 has no human IELTS-band reference (E §2 H2)."
+}

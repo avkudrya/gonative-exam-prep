@@ -29,7 +29,7 @@ export interface Base {
   adjudication?: {status: 'accepted' | 'fixed' | 'rejected'; note: string};
 }
 export interface Item {
-  id: string; set: 'S' | 'G'; split: 'dev' | 'test'; examKey: string; prompt: string; text: string;
+  id: string; set: 'S' | 'G' | 'R' | 'H1' | 'H2'; split: 'dev' | 'test'; examKey: string; prompt: string; text: string;
   expected: Expected; source: Record<string, string>;
 }
 

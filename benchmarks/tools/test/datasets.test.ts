@@ -47,6 +47,16 @@ test('rules produce the intended learner errors', () => {
     ['collocation.1', 'need to make a decision', 'do a decision'],
     ['collocation.3', 'can play an important role', 'do an important role'],
     ['collocation.4', 'should take steps to', 'make steps'],
+    ['article.extra_the', 'the quality of life', 'of the life'],
+    ['article.missing_a', 'As a result, prices rose', 'As result'],
+    ['tense.modal_past', 'this can protect workers', 'can protected'],
+    ['agreement.singular_noun', 'this change has made', 'this change have'],
+    ['agreement.plural_noun', 'these costs are high', 'these costs is'],
+    ['word_form.relational', 'a social problem', 'society problem'],
+    ['word_form.participle', 'students are interested', 'are interesting'],
+    ['word_form.intensified', 'is more significant', 'more significance'],
+    ['preposition.17', 'we should discuss the issue', 'discuss about the'],
+    ['collocation.11', 'they take part in sport', 'make part'],
   ];
   for (const [ruleId, text, expected] of cases) {
     const rule = insertionRules.find(r => r.id === ruleId);
@@ -76,6 +86,18 @@ test('insertion is deterministic, spread over families and exact in code points'
   // Offsets stay code points when the text has characters outside the BMP.
   const emoji = insertErrors(`🙂 ${CLEAN}`, 's-b01');
   for (const e of emoji.errors) assert.equal(sliceCodePoints(emoji.text, e.start, e.end), e.inserted);
+});
+
+test('rules leave accepted English alone', () => {
+  const quiet: Array<[string, string]> = [
+    ['agreement.singular_noun', 'this data is reliable and the media is free'],
+    ['word_form.relational', 'social and political will can change; education policy matters'],
+    ['collocation.15', 'they reach a decision together'],
+    ['article.missing_the', 'society and the environment, in future'],
+  ];
+  for (const [ruleId, text] of quiet) {
+    assert.deepEqual(candidates(text, [insertionRules.find(r => r.id === ruleId)!]).map(c => c.replacement), [], ruleId);
+  }
 });
 
 test('a base with too few candidates is refused, not thinned', () => {

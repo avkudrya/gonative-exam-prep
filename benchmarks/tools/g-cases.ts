@@ -13,6 +13,10 @@ export interface Expected {
   early?: 'short_response' | 'wrong_language' | null;
   flags?: Partial<Record<'singleParagraph' | 'listForm' | 'copiedPrompt' | 'underLength', boolean>>;
   bands?: Record<string, {min?: number; max?: number}>;
+  /** H1: human analytic scores of the source corpus. */
+  traits?: Record<string, number>;
+  /** H2: one band per criterion for each human rater. */
+  raters?: Array<Record<string, number>>;
 }
 
 export interface Derived {

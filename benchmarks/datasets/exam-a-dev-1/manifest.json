@@ -1,7 +1,7 @@
 {
   "id": "exam-a-dev-1",
   "purpose": "Stage A (E §4): pipeline choice on dev. P0/P1/P2 x Haiku/Sonnet without validation, plus P2 with validation for both",
-  "budgetUsd": 25,
+  "budgetUsd": 30,
   "guide": "../../../packages/exam-domain/guides/ielts-writing-task-2.v1.json",
   "guideSha256": "79583abd0d7a8205349b54d43bd217a74f7183603eba8525b7b83ded613f0f61",
   "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
@@ -27,7 +27,12 @@
     "S, G": "benchmarks/datasets/exam-sg-v1 (synthetic)",
     "H1": "benchmarks/datasets/exam-h1-v1/source.json (ELLIPSE, CC BY 4.0; rebuild with npm run bench:h1)"
   },
-  "approval": null,
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-23",
+    "capUsd": 30,
+    "note": "«да и да, комить локально и запускай этап A с лимитом $30»"
+  },
   "cells": [
     {
       "key": "p0-haiku",

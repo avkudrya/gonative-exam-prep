@@ -1,6 +1,6 @@
 # P2. План Фазы 2: бэкенд Writing Checker в MultiAdmin
 
-**Статус:** черновик v1 (2026-11-23), ждёт ответов владельца (§7). Код ещё не писался.
+**Статус:** v1, утверждён владельцем 2026-11-23 («да на всё» по §7).
 **Основано на:** [L](../phase-0/L-implementation-plan.md) §Фаза 2, [I](../phase-0/I-database-design.md),
 [C2](../phase-0/C2-accounts-billing-privacy.md) §3.2 и §5, [K](../phase-0/K-mvp-spec.md), ADR-001…003,
 [P1.9](../phase-1/P1.9-stage-c.md).

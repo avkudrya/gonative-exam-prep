@@ -185,8 +185,10 @@ const MISSPELLINGS: Record<string, string> = {
   convenient: 'convinient', advertisement: 'advertisment', advertisements: 'advertisments', future: 'futur',
 };
 /** Common sentence openers: joining two sentences before them makes a comma splice or a fused sentence. */
-const OPENERS = 'This|These|It|They|However|Moreover|Furthermore|As a result|Many|Some|Such|There|People|We|Therefore|'
-  + 'Consequently|Another|Finally|Thus|Similarly|Most|Instead|Without|For example|For instance|In addition|Even';
+const OPENERS = 'This|These|It|They|However|Moreover|Furthermore|Many|Some|Such|There|People|We|Therefore|'
+  + 'Consequently|Another|Finally|Thus|Similarly|Most|Instead|Without|Even';
+// Not "For example", "For instance", "In addition", "As a result": after a comma they read as a parenthetical
+// attached to the previous clause, and proofreaders disagree whether the result is an error (A0, 2026-11-23).
 
 function lowerOpener(word: string): string {
   return word === 'I' ? word : word.charAt(0).toLowerCase() + word.slice(1);
@@ -199,7 +201,7 @@ function rules(): InsertionRule[] {
     {id: 'article.missing_the', skill: 'grammar.articles', severity: 'moderate',
       // Not after and/or: "society and environment" can read as an acceptable coordinated pair.
       // No "future": "in future" is correct British English.
-      pattern: /(?<!\b(?:and|or) )\b(the) (same|majority of|internet|environment|world|number of|rest of)\b/gi,
+      pattern: /(?<!\b(?:and|or) )\b(the) (same|majority of|internet|environment|world|number of|rest of)\b(?!-)/gi,
       replace: m => keepCase(m[1], m[2])},
     {id: 'tense.participle', skill: 'grammar.verb_tenses', severity: 'moderate',
       pattern: new RegExp(`\\b(has|have|had) (${words(PAST_SIMPLE)})\\b`, 'gi'),
@@ -237,7 +239,7 @@ function rules(): InsertionRule[] {
   ];
   list.push(
     {id: 'article.extra_the', skill: 'grammar.articles', severity: 'minor',
-      pattern: /\b(in|of|for|on|to|about|with|into|through) (society|nature|education|technology|health|life|research|employment|history|politics)\b(?! of)/gi,
+      pattern: /\b(in|of|for|on|to|about|with|into|through) (society|nature|education|technology|health|life|research|employment|history|politics)\b(?![-\w]| of)/gi,
       replace: m => `${m[1]} the ${m[2]}`},
     {id: 'article.missing_a', skill: 'grammar.articles', severity: 'moderate',
       pattern: /\b(is|was|as|provides|offers|creates|becomes|represents|remains) (a|an) ([a-z]+)\b/gi,

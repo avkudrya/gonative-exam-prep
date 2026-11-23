@@ -93,7 +93,9 @@ test('rules leave accepted English alone', () => {
     ['agreement.singular_noun', 'this data is reliable and the media is free'],
     ['word_form.relational', 'social and political will can change; education policy matters'],
     ['collocation.15', 'they reach a decision together'],
-    ['article.missing_the', 'society and the environment, in future'],
+    ['article.missing_the', 'society and the environment, in future, the world-class team'],
+    ['article.extra_the', 'a programme of life-skills education'],
+    ['run_on.comma_splice', 'in everyday situations. For instance, a student can'],
   ];
   for (const [ruleId, text] of quiet) {
     assert.deepEqual(candidates(text, [insertionRules.find(r => r.id === ruleId)!]).map(c => c.replacement), [], ruleId);
@@ -153,11 +155,13 @@ test('buildItems assembles S and G with valid spans', () => {
 });
 
 test('committed datasets match a fresh build', () => {
-  for (const id of Object.keys(DATASETS)) {
-    const itemsPath = file(`datasets/${id}/items.jsonl`);
+  for (const id of [...Object.keys(DATASETS), 'exam-a0']) {
     const manifestPath = file(`datasets/${id}/manifest.json`);
-    if (!existsSync(itemsPath) || !existsSync(manifestPath)) continue;
+    if (!existsSync(manifestPath)) continue;
     const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+    // Sets with third-party texts keep their items in raw/, which exists only after a local build.
+    const itemsPath = file(`datasets/${id}/${manifest.items}`);
+    if (!existsSync(itemsPath)) continue;
     assert.equal(manifest.itemsSha256, sha256(readFileSync(itemsPath, 'utf8')), `${id}: run npm run bench:build`);
   }
   assert.equal(typeof toJsonl, 'function');

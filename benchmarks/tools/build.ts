@@ -131,12 +131,32 @@ export function toJsonl(items: Item[]): string {
 
 export const sha256 = (content: string | Buffer) => createHash('sha256').update(content).digest('hex');
 
-/** Datasets built from the items: id → which items. A0 is the token-measurement run (P1.3 §5). */
-export const DATASETS: Record<string, (items: Item[]) => Item[]> = {
+/**
+ * Datasets built from the items: id → which items. A dataset that has been run is frozen and
+ * leaves this list: exam-a0 (token measurement, run 2026-11-23) keeps the items it was run on.
+ */
+export const DATASETS: Record<string, (items: Item[], h1: Item[]) => Item[]> = {
   // Written only once the bases exist: G without S would freeze a partial dataset.
   'exam-sg-v1': items => items.some(i => i.set === 'S') ? items : [],
-  'exam-a0': items => ['s-b01', 's-b02', 's-b03'].map(id => items.find(i => i.id === id)).filter((i): i is Item => !!i),
+  // Stage A (E §4): the dev split of S and G plus the first 30 H1 dev essays in selection order
+  // (stratified, so the first 30 still span the scale). Needs the local H1 build.
+  'exam-a-dev-1': (items, h1) => h1.length === 0 ? [] : [
+    ...items.filter(i => i.split === 'dev' && (i.set === 'S' || i.set === 'G')),
+    ...h1.filter(i => i.split === 'dev').slice(0, 30),
+  ],
 };
+
+/** H1 items from the local ELLIPSE build, in the stratified selection order of source.json. */
+function readH1(): Item[] {
+  const dir = join(root, 'benchmarks/datasets/exam-h1-v1');
+  const items = readJsonl<Item>(join(dir, 'raw/items.jsonl'));
+  if (items.length === 0) return [];
+  const source = JSON.parse(readFileSync(join(dir, 'source.json'), 'utf8'));
+  if (sha256(toJsonl(items)) !== source.itemsSha256) throw new Error('exam-h1-v1/raw/items.jsonl differs from source.json: rerun npm run bench:h1');
+  const order = new Map<string, number>([...source.selection.ids.dev, ...source.selection.ids.test].map((id: string, i: number) => [`h1-${id}`, i]));
+
+  return [...items].sort((a, b) => order.get(a.id)! - order.get(b.id)!);
+}
 
 function readJsonl<T>(path: string): T[] {
   if (!existsSync(path)) return [];
@@ -149,21 +169,23 @@ function main(check: boolean): void {
   const bases = readJsonl<Base>(join(sources, 's-bases.jsonl'));
   const handwritten = JSON.parse(readFileSync(join(sources, 'g-handwritten.json'), 'utf8')).items;
   const items = buildItems(prompts, bases, handwritten);
+  const h1 = readH1();
   const drift: string[] = [];
 
   for (const [id, select] of Object.entries(DATASETS)) {
-    const chosen = select(items);
+    const chosen = select(items, h1);
     if (chosen.length === 0) {
-      console.log(`${id}: no items yet (usable bases: ${bases.filter(usable).length})`);
+      console.log(`${id}: skipped (usable bases: ${bases.filter(usable).length}, local H1 items: ${h1.length})`);
       continue;
     }
     const dir = join(root, 'benchmarks/datasets', id);
     const jsonl = toJsonl(chosen);
-    const itemsPath = join(dir, 'items.jsonl');
+    // Third-party texts (H1) stay in the gitignored raw/ folder; our synthetic sets are committed.
+    const itemsPath = join(dir, chosen.some(i => i.set === 'H1') ? 'raw/items.jsonl' : 'items.jsonl');
     if ((existsSync(itemsPath) ? readFileSync(itemsPath, 'utf8') : null) !== jsonl) {
       drift.push(itemsPath);
       if (!check) {
-        mkdirSync(dir, {recursive: true});
+        mkdirSync(dirname(itemsPath), {recursive: true});
         writeFileSync(itemsPath, jsonl);
       }
     }
@@ -178,7 +200,7 @@ function main(check: boolean): void {
     }
     const count = (set: string, split: string) => chosen.filter(i => i.set === set && i.split === split).length;
     const errors = chosen.reduce((n, i) => n + (i.expected.errors?.length ?? 0), 0);
-    console.log(`${id}: ${chosen.length} items (S dev/test ${count('S', 'dev')}/${count('S', 'test')}, G ${count('G', 'dev')}/${count('G', 'test')}), ${errors} inserted errors`);
+    console.log(`${id}: ${chosen.length} items (S dev/test ${count('S', 'dev')}/${count('S', 'test')}, G ${count('G', 'dev')}/${count('G', 'test')}, H1 ${count('H1', 'dev')}/${count('H1', 'test')}), ${errors} inserted errors`);
   }
 
   if (check && drift.length) {

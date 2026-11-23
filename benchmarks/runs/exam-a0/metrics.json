@@ -1,0 +1,465 @@
+{
+    "bench": "exam-a0",
+    "guide": "ielts-writing-task-2@v1",
+    "items": 3,
+    "cells": {
+        "p2-haiku-val": {
+            "config": {
+                "pipeline": "p2",
+                "validate": true,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-haiku-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 16000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 3,
+            "done": 3,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.0383,
+                "mean": 0.0128,
+                "p90": 0.0132
+            },
+            "latencyMs": {
+                "p50": 15683,
+                "p90": 16291
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 7,
+                "evidenceMissing": 8
+            },
+            "findings": {
+                "keptPerAssessment": 19.667,
+                "droppedByValidator": 14,
+                "dropRate": 0.192
+            },
+            "inserted": {
+                "expected": 26,
+                "recall": 0.731,
+                "recallModerateMajor": 0.667,
+                "precision": 1,
+                "unmatchedFindings": 0
+            },
+            "checks": null,
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                },
+                "top": {
+                    "traits": null,
+                    "raters": null
+                },
+                "share": {
+                    "traits": null,
+                    "raters": null
+                }
+            },
+            "checklist": {
+                "criteria": 12,
+                "inconsistentRate": 0.25,
+                "blockingFeatures": {
+                    "cc7.progression": 3,
+                    "cc7.devices_range": 3,
+                    "lr7.style_collocation": 2,
+                    "lr7.form_errors_few": 2,
+                    "tr8.parts_sufficient": 2,
+                    "tr8.position_developed": 2,
+                    "tr7.main_parts": 1,
+                    "gra7.complex_variety": 1,
+                    "gra5.errors_some_difficulty": 1,
+                    "tr8.ideas_supported": 1,
+                    "tr8.lapses_occasional": 1,
+                    "lr6.form_errors_no_impede": 1,
+                    "gra6.errors_rarely_impede": 1
+                }
+            }
+        },
+        "p2-sonnet-val": {
+            "config": {
+                "pipeline": "p2",
+                "validate": true,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 16000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 3,
+            "done": 3,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.3299,
+                "mean": 0.11,
+                "p90": 0.1122
+            },
+            "latencyMs": {
+                "p50": 17429,
+                "p90": 17462
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 2,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 19,
+                "droppedByValidator": 8,
+                "dropRate": 0.123
+            },
+            "inserted": {
+                "expected": 26,
+                "recall": 0.885,
+                "recallModerateMajor": 0.917,
+                "precision": 1,
+                "unmatchedFindings": 0
+            },
+            "checks": null,
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                },
+                "top": {
+                    "traits": null,
+                    "raters": null
+                },
+                "share": {
+                    "traits": null,
+                    "raters": null
+                }
+            },
+            "checklist": {
+                "criteria": 12,
+                "inconsistentRate": 0,
+                "blockingFeatures": {
+                    "tr9.parts_in_depth": 3,
+                    "tr9.ideas_complete": 3,
+                    "tr9.lapses_negligible": 3,
+                    "cc9.effortless": 2,
+                    "cc9.unobtrusive_linking": 2,
+                    "cc9.lapses_minimal": 2,
+                    "gra8.wide_accurate": 2,
+                    "gra8.punctuation_managed": 2,
+                    "gra8.errors_unsystematic": 2,
+                    "lr8.form_errors_occasional": 2,
+                    "lr7.form_errors_few": 1,
+                    "cc8.sequenced": 1,
+                    "gra7.error_free_frequent": 1
+                }
+            }
+        },
+        "p2-opus-val": {
+            "config": {
+                "pipeline": "p2",
+                "validate": true,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-opus-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 16000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 3,
+            "done": 3,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.6339,
+                "mean": 0.2113,
+                "p90": 0.2136
+            },
+            "latencyMs": {
+                "p50": 21062,
+                "p90": 21291
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 22.333,
+                "droppedByValidator": 6,
+                "dropRate": 0.082
+            },
+            "inserted": {
+                "expected": 26,
+                "recall": 0.962,
+                "recallModerateMajor": 0.917,
+                "precision": 1,
+                "unmatchedFindings": 0
+            },
+            "checks": null,
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                },
+                "top": {
+                    "traits": null,
+                    "raters": null
+                },
+                "share": {
+                    "traits": null,
+                    "raters": null
+                }
+            },
+            "checklist": {
+                "criteria": 12,
+                "inconsistentRate": 0,
+                "blockingFeatures": {
+                    "tr9.parts_in_depth": 3,
+                    "tr9.ideas_complete": 3,
+                    "tr9.lapses_negligible": 3,
+                    "cc9.effortless": 3,
+                    "cc9.lapses_minimal": 3,
+                    "gra8.punctuation_managed": 3,
+                    "lr9.wide_precise": 2,
+                    "lr9.natural_sophisticated": 2,
+                    "cc9.unobtrusive_linking": 2,
+                    "gra8.wide_accurate": 2,
+                    "gra8.errors_unsystematic": 2,
+                    "lr9.form_slips_only": 1,
+                    "lr8.uncommon_skilful": 1,
+                    "lr8.form_errors_occasional": 1
+                }
+            }
+        },
+        "p2-gpt54-val": {
+            "config": {
+                "pipeline": "p2",
+                "validate": true,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "openai",
+                            "model": "gpt-5.4",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 16000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 3,
+            "done": 3,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.4032,
+                "mean": 0.1344,
+                "p90": 0.1409
+            },
+            "latencyMs": {
+                "p50": 40477,
+                "p90": 51763
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 1,
+                "evidenceMissing": 1
+            },
+            "findings": {
+                "keptPerAssessment": 26,
+                "droppedByValidator": 11,
+                "dropRate": 0.124
+            },
+            "inserted": {
+                "expected": 26,
+                "recall": 0.885,
+                "recallModerateMajor": 0.917,
+                "precision": 1,
+                "unmatchedFindings": 0
+            },
+            "checks": null,
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                },
+                "top": {
+                    "traits": null,
+                    "raters": null
+                },
+                "share": {
+                    "traits": null,
+                    "raters": null
+                }
+            },
+            "checklist": {
+                "criteria": 12,
+                "inconsistentRate": 0,
+                "blockingFeatures": {
+                    "tr9.parts_in_depth": 3,
+                    "tr9.position_complete": 3,
+                    "tr9.ideas_complete": 3,
+                    "lr8.wide_fluent": 3,
+                    "lr8.uncommon_skilful": 3,
+                    "gra7.complex_variety": 3,
+                    "gra7.error_free_frequent": 3,
+                    "cc9.effortless": 2,
+                    "cc9.unobtrusive_linking": 2,
+                    "cc9.lapses_minimal": 2,
+                    "tr9.lapses_negligible": 2,
+                    "cc9.paragraphs_skilful": 1,
+                    "lr8.form_errors_occasional": 1,
+                    "cc7.devices_range": 1
+                }
+            }
+        },
+        "p1-haiku": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-haiku-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 16000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 3,
+            "done": 3,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.0097,
+                "mean": 0.0032,
+                "p90": 0.0033
+            },
+            "latencyMs": {
+                "p50": 6108,
+                "p90": 6607
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 27,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 26,
+                "recall": 0.846,
+                "recallModerateMajor": 0.917,
+                "precision": 1,
+                "unmatchedFindings": 0
+            },
+            "checks": null,
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        },
+        "p0-haiku": {
+            "config": {
+                "pipeline": "p0",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-haiku-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 16000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 3,
+            "done": 3,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.0036,
+                "mean": 0.0012,
+                "p90": 0.0012
+            },
+            "latencyMs": {
+                "p50": 5711,
+                "p90": 6783
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 1,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 7.667,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 26,
+                "recall": 0.731,
+                "recallModerateMajor": 0.667,
+                "precision": 1,
+                "unmatchedFindings": 0
+            },
+            "checks": null,
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

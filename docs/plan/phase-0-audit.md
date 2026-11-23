@@ -13,15 +13,15 @@
 | C | Архитектура Exam Engine | [C-exam-engine-architecture.md](../phase-0/C-exam-engine-architecture.md) | 📝 каркас v0 |
 | D | Стратегия AI-оценки Writing | [D](../phase-0/D-assessment-strategy.md) + [D1](../phase-0/D1-ielts-writing-spec.md) | 📝 черновик v1 |
 | E | План бенчмарка | [E](../phase-0/E-benchmark-plan.md) + [E1](../phase-0/E1-reference-data.md) | 📝 черновик v1, смета ≈ $85 / лимит $100 — на утверждение |
-| F | Архитектура персонального обучения | `F-learning-architecture.md` | ⏳ |
+| F | Архитектура персонального обучения | [F](../phase-0/F-learning-architecture.md) | 📝 v1 |
 | G | Интеграция лексики GoNative | [G-vocabulary-integration.md](../phase-0/G-vocabulary-integration.md) | 📝 черновик v1 |
 | H | Интеграция Worksheet Generator / Edu | [H-edu-integration.md](../phase-0/H-edu-integration.md) | 📝 черновик v1 |
-| I | БД | `I-database-design.md` | ⏳ |
-| J | Проверка мультиязычности и мультиэкзаменности | `J-multi-exam-verification.md` | 🔄 контракт и тесты в `packages/exam-domain` (IELTS + Goethe B1) |
-| K | Спецификация MVP | `K-mvp-spec.md` | ⏳ |
-| L | План реализации | `L-implementation-plan.md` | ⏳ (верхний уровень — в [PLAN.md](../../PLAN.md)) |
-| M | Стоимость и монетизация | `M-cost-model.md` | ⏳ после первых замеров токенов |
-| N | Открытые вопросы и риски | `N-open-questions.md` | ⏳ (текущие — в PLAN.md) |
+| I | БД | [I](../phase-0/I-database-design.md) | 📝 v1 — на утверждение (gate) |
+| J | Проверка мультиязычности и мультиэкзаменности | [J](../phase-0/J-multi-exam-verification.md) | 📝 v1 |
+| K | Спецификация MVP | [K](../phase-0/K-mvp-spec.md) | 📝 v1 — на утверждение (gate) |
+| L | План реализации | [L](../phase-0/L-implementation-plan.md) | 📝 v1 |
+| M | Стоимость и монетизация | [M](../phase-0/M-cost-model.md) | 📝 v1 |
+| N | Открытые вопросы и риски | [N](../phase-0/N-open-questions.md) | 📝 v1 |
 
 ## Задачи
 
@@ -60,7 +60,8 @@
   клиентов (mobile и gonativeweb), окончание, семья, возвраты, аналитика (ADR-002, пп. 1–6).
 - **P0.7 Приватность (I).** Политики хранения данных у Anthropic и OpenAI для API; срок хранения
   эссе; удаление аккаунта (`DeletedAccountPurger`); что добавить в Privacy Policy gonativeweb.
-- [ ] **P0.8 Документы D–N** и согласование gate с владельцем.
+- [x] **P0.8 Документы D–N** — 2026-11-23, все написаны. Осталось согласование gate: утвердить K и I, разрешить
+  изменения в MultiAdmin для Фазы 1 ([N](../phase-0/N-open-questions.md) Q1–Q2).
 
 ## Набросок плана бенчмарка (E)
 

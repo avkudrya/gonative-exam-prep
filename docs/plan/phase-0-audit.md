@@ -11,8 +11,8 @@
 | A | Инфраструктура GoNative | [A-gonative-assessment.md](../phase-0/A-gonative-assessment.md) | 📝 черновик v1, остаются проверки P0.1 |
 | B | Worksheet Generator / Edu | [B-worksheets-assessment.md](../phase-0/B-worksheets-assessment.md) | 📝 черновик v1, остаются проверки P0.2 |
 | C | Архитектура Exam Engine | [C-exam-engine-architecture.md](../phase-0/C-exam-engine-architecture.md) | 📝 каркас v0 |
-| D | Стратегия AI-оценки Writing | `D-assessment-strategy.md` | 🔄 спецификация IELTS проверена: [D1](../phase-0/D1-ielts-writing-spec.md); стратегия — дальше |
-| E | План бенчмарка | `E-benchmark-plan.md` | 🔄 данные и лицензии: [E1](../phase-0/E1-reference-data.md); метрики, прогоны, смета — дальше |
+| D | Стратегия AI-оценки Writing | [D](../phase-0/D-assessment-strategy.md) + [D1](../phase-0/D1-ielts-writing-spec.md) | 📝 черновик v1 |
+| E | План бенчмарка | [E](../phase-0/E-benchmark-plan.md) + [E1](../phase-0/E1-reference-data.md) | 📝 черновик v1, смета ≈ $85 / лимит $100 — на утверждение |
 | F | Архитектура персонального обучения | `F-learning-architecture.md` | ⏳ |
 | G | Интеграция лексики GoNative | [G-vocabulary-integration.md](../phase-0/G-vocabulary-integration.md) | 📝 черновик v1 |
 | H | Интеграция Worksheet Generator / Edu | [H-edu-integration.md](../phase-0/H-edu-integration.md) | 📝 черновик v1 |

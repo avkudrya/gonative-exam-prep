@@ -28,9 +28,9 @@ export const goetheB1: Exam = {
       officialName: 'Schreiben',
       timeMinutes: 60,
       tasks: [
-        {key: 'aufgabe-1', officialName: 'Aufgabe 1', responseGenre: 'email', stimulus: 'text_prompt', words: {target: 80}, rubricKey: 'goethe-b1-schreiben'},
-        {key: 'aufgabe-2', officialName: 'Aufgabe 2', responseGenre: 'forum_post', stimulus: 'text_prompt', words: {target: 80}, rubricKey: 'goethe-b1-schreiben'},
-        {key: 'aufgabe-3', officialName: 'Aufgabe 3', responseGenre: 'email', stimulus: 'text_prompt', words: {target: 40}, rubricKey: 'goethe-b1-schreiben'},
+        {key: 'aufgabe-1', officialName: 'Aufgabe 1', responseGenre: 'email', stimuli: ['text_prompt'], words: {target: 80}, rubricKey: 'goethe-b1-schreiben'},
+        {key: 'aufgabe-2', officialName: 'Aufgabe 2', responseGenre: 'forum_post', stimuli: ['text_prompt'], words: {target: 80}, rubricKey: 'goethe-b1-schreiben'},
+        {key: 'aufgabe-3', officialName: 'Aufgabe 3', responseGenre: 'email', stimuli: ['text_prompt'], words: {target: 40}, rubricKey: 'goethe-b1-schreiben'},
       ],
       aggregation: {kind: 'sum', scaleTo: 100},
       scale: {kind: 'points', max: 100},

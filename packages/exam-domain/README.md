@@ -9,7 +9,9 @@
 | `src/assessment.ts` | Результат оценки: находки с цитатами и офсетами, диапазоны со статусом калибровки; `checkAssessmentIntegrity`, `presentEstimate` (ориентировочный показ по ADR-003) |
 | `src/skills.ts` | Формат ключей навыков `domain.skill` и стартовый набор |
 | `src/text.ts` | Нормализация ответа, офсеты в кодовых точках, правило подсчёта слов `whitespace-v1` |
-| `test/fixtures/*` | IELTS Academic и Goethe B1 — фикстуры для проверки архитектуры, **не данные продукта** (`draft`) |
+| `catalog/*.json` | **Проверенные** конфигурации экзаменов (IELTS Academic, General Training; `verified` 2026-11-23, источники в файлах, обоснование — `docs/phase-0/D1-ielts-writing-spec.md`). Источник для импорта в MultiAdmin |
+| `test/catalog.test.ts` | Закрепляет проверенные факты: тест падает, если каталог разошёлся со спецификацией |
+| `test/fixtures/goethe-b1.ts` | Goethe B1 — иллюстративная фикстура для проверки архитектуры, **не данные продукта** (`draft`) |
 
 ```bash
 npm test   # из корня репозитория

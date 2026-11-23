@@ -1,19 +1,19 @@
 import assert from 'node:assert/strict';
 import {test} from 'node:test';
 import {
-  assessmentResult, checkAssessmentIntegrity, checkFindingSpans, findTask, presentEstimate,
+  assessmentResult, checkAssessmentIntegrity, checkFindingSpans, checkReportedResult, findTask, presentEstimate, reportedResult,
   type AssessmentResult,
 } from '../src/index.js';
-import {ieltsAcademic} from './fixtures/ielts-academic.js';
+import {catalogExam} from './catalog.js';
 
 const text = 'Government should invest in education. It is very important.';
-const rubric = findTask(ieltsAcademic.versions[0], 'writing', 'task-2')!.rubric;
+const rubric = findTask(catalogExam('ielts-academic').versions[0], 'writing', 'task-2')!.rubric;
 const uncalibrated = {status: 'uncalibrated'} as const;
 
 function sample(): AssessmentResult {
   return {
     schemaVersion: 1,
-    exam: {examKey: 'ielts-academic', examVersion: 'draft-1', sectionKey: 'writing', taskKey: 'task-2', rubricKey: rubric.key, rubricVersion: rubric.version},
+    exam: {examKey: 'ielts-academic', examVersion: '2026-11', sectionKey: 'writing', taskKey: 'task-2', rubricKey: rubric.key, rubricVersion: rubric.version},
     pipelineVersion: 'poc-0',
     feedbackLanguage: 'ru',
     response: {wordCount: 10, wordCountRule: 'whitespace-v1', textSha256: 'a'.repeat(64)},
@@ -91,4 +91,14 @@ test('calibrated ranges pass through; no config or no estimate means no number',
   assert.equal(presentEstimate(null, scale), null);
   assert.equal(presentEstimate({low: 6, high: 6, calibration: uncalibrated}, {kind: 'band', min: 0, max: 9, step: 1}), null);
   assert.equal(presentEstimate({low: 6, high: 6, calibration: uncalibrated}, {kind: 'descriptive'}), null);
+});
+
+test('a self-reported official result must fit the exam configuration', () => {
+  const version = catalogExam('ielts-academic').versions[0];
+  const ok = reportedResult.parse({examKey: 'ielts-academic', examVersion: '2026-11', testDate: '2026-12-05', source: 'self_reported', sections: {writing: 6.5}, calibrationConsent: true});
+  assert.deepEqual(checkReportedResult(ok, version), []);
+  const paths = checkReportedResult({...ok, sections: {writing: 6.25, speaking: 7}}, version).map(p => p.path);
+  assert.deepEqual(paths, ['sections.writing', 'sections.speaking']);
+  assert.match(checkReportedResult({...ok, sections: {}}, version)[0].message, /no section/);
+  assert.throws(() => reportedResult.parse({...ok, source: 'verified'}));
 });

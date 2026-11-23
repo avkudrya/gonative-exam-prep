@@ -55,6 +55,19 @@ export const criterion = z.object({
   scale: scoreScale,
 });
 
+/**
+ * Deterministic rules an exam's descriptors state outright; they apply before and above any
+ * AI judgement. Scores are values of every criterion scale of the rubric.
+ */
+export const rubricRule = z.discriminatedUnion('kind', [
+  /** Responses of at most `maxWords` words get `score` on every criterion (IELTS: ≤ 20 words → Band 1). */
+  z.object({kind: z.literal('short_response'), maxWords: z.int().positive(), score: z.number()}),
+  /** Text copied from the task prompt earns no credit and is left out of the word count. */
+  z.object({kind: z.literal('discount_copied_prompt')}),
+  /** A response written in another language throughout gets `score` (IELTS: Band 0). */
+  z.object({kind: z.literal('wrong_language'), score: z.number()}),
+]);
+
 export const rubric = z.object({
   key: slug,
   version: z.string().min(1),
@@ -64,13 +77,26 @@ export const rubric = z.object({
   aggregation,
   /** Scale of the combined task result. */
   scale: scoreScale,
+  rules: z.array(rubricRule).optional(),
+}).superRefine((r, ctx) => {
+  r.rules?.forEach((rule, i) => {
+    if (rule.kind === 'discount_copied_prompt') return;
+    for (const c of r.criteria) {
+      if (!isOnScale(c.scale, rule.score)) {
+        ctx.addIssue({code: 'custom', path: ['rules', i, 'score'], message: `score ${rule.score} is not on the scale of ${c.key}`});
+      }
+    }
+  });
 });
+
+export const stimulusKind = z.enum(['text_prompt', 'structured_data', 'diagram', 'map']);
 
 export const taskType = z.object({
   key: slug,
   officialName: z.string().min(1),
   responseGenre: z.enum(['essay', 'report', 'letter', 'email', 'forum_post', 'summary', 'other']),
-  stimulus: z.enum(['text_prompt', 'structured_data', 'diagram', 'map', 'none']),
+  /** Every kind of input this task type may present (IELTS Academic Task 1: data, diagrams or maps). */
+  stimuli: z.array(stimulusKind).min(1),
   timeMinutes: z.number().positive().optional(),
   words: z.object({
     min: z.int().positive().optional(),
@@ -136,6 +162,7 @@ export const exam = z.object({
 export type ScoreScale = z.infer<typeof scoreScale>;
 export type Aggregation = z.infer<typeof aggregation>;
 export type Criterion = z.infer<typeof criterion>;
+export type RubricRule = z.infer<typeof rubricRule>;
 export type Rubric = z.infer<typeof rubric>;
 export type TaskType = z.infer<typeof taskType>;
 export type Section = z.infer<typeof section>;

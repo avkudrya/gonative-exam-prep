@@ -1,0 +1,72 @@
+{
+  "provider": {"key": "ielts", "officialName": "IELTS", "website": "https://ielts.org/"},
+  "exam": {
+    "key": "ielts-academic",
+    "providerKey": "ielts",
+    "learningLanguage": "en",
+    "officialName": "IELTS Academic",
+    "versions": [{
+      "version": "2026-11",
+      "status": "verified",
+      "verifiedAt": "2026-11-23",
+      "sources": [
+        {"url": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing", "title": "IELTS Academic format – Writing", "retrievedAt": "2026-11-23"},
+        {"url": "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail", "title": "IELTS scoring in detail", "retrievedAt": "2026-11-23"},
+        {"url": "https://ielts.org/take-a-test/preparation-resources/writing-test-resources/", "title": "IELTS Writing test resources", "retrievedAt": "2026-11-23"},
+        {"url": "https://ielts.org/cdn/computer-delivered-sample-tests-academic-writing/ielts-academic-writing-example-responses-to-parts-1-and-2-with-band-scores-and-examiner-comments.pdf", "title": "Sample Candidate Writing Responses and Examiner Comments (Academic)", "retrievedAt": "2026-11-23"}
+      ],
+      "sections": [{
+        "key": "writing",
+        "skill": "writing",
+        "officialName": "Writing",
+        "timeMinutes": 60,
+        "tasks": [
+          {"key": "task-1", "officialName": "Writing Task 1", "responseGenre": "report", "stimuli": ["structured_data", "diagram", "map"], "timeMinutes": 20, "words": {"min": 150}, "rubricKey": "ielts-writing-task-1"},
+          {"key": "task-2", "officialName": "Writing Task 2", "responseGenre": "essay", "stimuli": ["text_prompt"], "timeMinutes": 40, "words": {"min": 250}, "rubricKey": "ielts-writing-task-2"}
+        ],
+        "aggregation": {"kind": "weighted_mean", "weights": {"task-1": 1, "task-2": 2}},
+        "scale": {"kind": "band", "min": 0, "max": 9, "step": 0.5, "approximate": {"step": 0.5, "minWidth": 1}}
+      }],
+      "rubrics": [
+        {
+          "key": "ielts-writing-task-1",
+          "version": "2023-05",
+          "officialName": "IELTS Writing Task 1 Band Descriptors",
+          "sources": [{"url": "https://ielts.org/cdn/ielts-downloadable-assets/ielts-guidance-and-support/ielts-guides/ielts-writing-band-descriptors.pdf", "title": "Writing Band Descriptors, updated May 2023", "retrievedAt": "2026-11-23"}],
+          "criteria": [
+            {"key": "task_achievement", "officialName": "Task Achievement", "scale": {"kind": "band", "min": 0, "max": 9, "step": 1, "approximate": {"step": 0.5, "minWidth": 1}}},
+            {"key": "coherence_cohesion", "officialName": "Coherence and Cohesion", "scale": {"kind": "band", "min": 0, "max": 9, "step": 1, "approximate": {"step": 0.5, "minWidth": 1}}},
+            {"key": "lexical_resource", "officialName": "Lexical Resource", "scale": {"kind": "band", "min": 0, "max": 9, "step": 1, "approximate": {"step": 0.5, "minWidth": 1}}},
+            {"key": "grammatical_range_accuracy", "officialName": "Grammatical Range and Accuracy", "scale": {"kind": "band", "min": 0, "max": 9, "step": 1, "approximate": {"step": 0.5, "minWidth": 1}}}
+          ],
+          "aggregation": {"kind": "weighted_mean", "weights": {"task_achievement": 1, "coherence_cohesion": 1, "lexical_resource": 1, "grammatical_range_accuracy": 1}},
+          "scale": {"kind": "band", "min": 0, "max": 9, "step": 0.5, "approximate": {"step": 0.5, "minWidth": 1}},
+          "rules": [
+            {"kind": "short_response", "maxWords": 20, "score": 1},
+            {"kind": "discount_copied_prompt"},
+            {"kind": "wrong_language", "score": 0}
+          ]
+        },
+        {
+          "key": "ielts-writing-task-2",
+          "version": "2023-05",
+          "officialName": "IELTS Writing Task 2 Band Descriptors",
+          "sources": [{"url": "https://ielts.org/cdn/ielts-downloadable-assets/ielts-guidance-and-support/ielts-guides/ielts-writing-band-descriptors.pdf", "title": "Writing Band Descriptors, updated May 2023", "retrievedAt": "2026-11-23"}],
+          "criteria": [
+            {"key": "task_response", "officialName": "Task Response", "scale": {"kind": "band", "min": 0, "max": 9, "step": 1, "approximate": {"step": 0.5, "minWidth": 1}}},
+            {"key": "coherence_cohesion", "officialName": "Coherence and Cohesion", "scale": {"kind": "band", "min": 0, "max": 9, "step": 1, "approximate": {"step": 0.5, "minWidth": 1}}},
+            {"key": "lexical_resource", "officialName": "Lexical Resource", "scale": {"kind": "band", "min": 0, "max": 9, "step": 1, "approximate": {"step": 0.5, "minWidth": 1}}},
+            {"key": "grammatical_range_accuracy", "officialName": "Grammatical Range and Accuracy", "scale": {"kind": "band", "min": 0, "max": 9, "step": 1, "approximate": {"step": 0.5, "minWidth": 1}}}
+          ],
+          "aggregation": {"kind": "weighted_mean", "weights": {"task_response": 1, "coherence_cohesion": 1, "lexical_resource": 1, "grammatical_range_accuracy": 1}},
+          "scale": {"kind": "band", "min": 0, "max": 9, "step": 0.5, "approximate": {"step": 0.5, "minWidth": 1}},
+          "rules": [
+            {"kind": "short_response", "maxWords": 20, "score": 1},
+            {"kind": "discount_copied_prompt"},
+            {"kind": "wrong_language", "score": 0}
+          ]
+        }
+      ]
+    }]
+  }
+}

@@ -130,7 +130,35 @@ export function checkAssessmentIntegrity(result: AssessmentResult, rubric: Rubri
   return problems;
 }
 
-export type PresentedEstimate = {precision: 'calibrated' | 'approximate'; low: number; high: number};
+/**
+ * An official result the user reports after sitting the real exam (ADR-003, calibration path 2).
+ * Self-reported and unverified: used only in aggregate, only with consent, never as one
+ * person's ground truth. Section keys and values must fit the exam version's configuration.
+ */
+export const reportedResult = z.object({
+  examKey: slug,
+  examVersion: z.string().min(1),
+  testDate: z.iso.date(),
+  source: z.literal('self_reported'),
+  sections: z.record(slug, z.number()),
+  /** Separate, revocable consent to use this result for calibration statistics. */
+  calibrationConsent: z.boolean(),
+});
+export type ReportedResult = z.infer<typeof reportedResult>;
+
+export function checkReportedResult(result: ReportedResult, version: {sections: {key: string; scale: ScoreScale}[]}): IntegrityProblem[] {
+  const problems: IntegrityProblem[] = [];
+  const entries = Object.entries(result.sections);
+  if (entries.length === 0) problems.push({path: 'sections', message: 'no section result'});
+  for (const [key, value] of entries) {
+    const section = version.sections.find(s => s.key === key);
+    if (!section) problems.push({path: `sections.${key}`, message: 'section is not in this exam version'});
+    else if (!isOnScale(section.scale, value)) problems.push({path: `sections.${key}`, message: `${value} is not on the section scale`});
+  }
+  return problems;
+}
+
+export type PresentedEstimate ={precision: 'calibrated' | 'approximate'; low: number; high: number};
 
 /**
  * The only way the UI gets a number (ADR-003). Calibrated ranges pass through; uncalibrated

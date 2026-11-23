@@ -1,0 +1,42 @@
+{
+  "about": "Original IELTS-style Writing Task 2 prompts written for GoNative benchmarks (not official test material). Split is per prompt: an essay inherits the split of its prompt, so dev and test never share a question.",
+  "types": {
+    "opinion": "To what extent do you agree or disagree?",
+    "discussion": "Discuss both views and give your own opinion.",
+    "advantages": "Do the advantages of this outweigh the disadvantages?",
+    "problem": "Causes or problems and what can be done.",
+    "two_part": "Two direct questions."
+  },
+  "prompts": [
+    {"id": "p01", "split": "dev", "type": "opinion", "topic": "transport", "text": "City councils should make all public transport free of charge so that fewer people drive into city centres. To what extent do you agree or disagree?"},
+    {"id": "p02", "split": "dev", "type": "discussion", "topic": "education", "text": "Some people believe that schools should teach practical skills such as cooking and managing money, while others think schools should concentrate on academic subjects. Discuss both views and give your own opinion."},
+    {"id": "p03", "split": "dev", "type": "advantages", "topic": "work", "text": "More and more employees now work from home for most of the week. Do the advantages of this trend outweigh the disadvantages?"},
+    {"id": "p04", "split": "dev", "type": "problem", "topic": "environment", "text": "In many countries, large amounts of food are thrown away by shops and households every day. Why does this happen, and what can be done to reduce it?"},
+    {"id": "p05", "split": "dev", "type": "two_part", "topic": "technology", "text": "Children today spend several hours a day looking at screens. Why is this the case? Is this a positive or a negative development?"},
+    {"id": "p06", "split": "dev", "type": "opinion", "topic": "health", "text": "Governments should place a high tax on sugary drinks and unhealthy snacks in order to improve public health. To what extent do you agree or disagree?"},
+    {"id": "p07", "split": "dev", "type": "discussion", "topic": "society", "text": "Some people think that older people should be cared for by their own families, while others believe that the state should provide this care. Discuss both views and give your own opinion."},
+    {"id": "p08", "split": "dev", "type": "advantages", "topic": "tourism", "text": "Many small towns now depend on tourism as their main source of income. Do the advantages of this outweigh the disadvantages?"},
+    {"id": "p09", "split": "dev", "type": "problem", "topic": "housing", "text": "In many large cities, young people can no longer afford to buy or rent a home. What are the causes of this problem, and what solutions can you suggest?"},
+    {"id": "p10", "split": "dev", "type": "two_part", "topic": "culture", "text": "Fewer people read printed newspapers than in the past. Why is this happening? What effects does this have on society?"},
+    {"id": "p11", "split": "dev", "type": "opinion", "topic": "sport", "text": "Professional athletes are paid far too much money compared with people in other important jobs. To what extent do you agree or disagree?"},
+    {"id": "p12", "split": "dev", "type": "discussion", "topic": "science", "text": "Some people say that money spent on space exploration would be better used to solve problems on Earth. Others believe that space research brings benefits to everyone. Discuss both views and give your own opinion."},
+    {"id": "p13", "split": "dev", "type": "advantages", "topic": "education", "text": "Some universities now offer entire degree courses online. Do the advantages of studying in this way outweigh the disadvantages?"},
+    {"id": "p14", "split": "dev", "type": "problem", "topic": "work", "text": "Many people today feel stressed by their jobs. What are the main reasons for this, and how can employers and individuals deal with it?"},
+    {"id": "p15", "split": "dev", "type": "two_part", "topic": "family", "text": "In some countries, people are getting married and having children later in life than before. What are the reasons for this? Is it a positive or negative development?"},
+    {"id": "p16", "split": "test", "type": "opinion", "topic": "environment", "text": "Individual actions, such as recycling and saving energy at home, make little difference to environmental problems; only governments and large companies can solve them. To what extent do you agree or disagree?"},
+    {"id": "p17", "split": "test", "type": "discussion", "topic": "education", "text": "Some people think that university education should be free for all students, while others believe students should pay for their own studies. Discuss both views and give your own opinion."},
+    {"id": "p18", "split": "test", "type": "advantages", "topic": "technology", "text": "Shops and restaurants are increasingly refusing to accept cash and only take card or phone payments. Do the advantages of this outweigh the disadvantages?"},
+    {"id": "p19", "split": "test", "type": "problem", "topic": "health", "text": "The number of people who are overweight is rising in many parts of the world. What are the causes of this, and what measures could be taken to address it?"},
+    {"id": "p20", "split": "test", "type": "two_part", "topic": "society", "text": "Many people now prefer to shop online rather than in local stores. Why is this? What impact does it have on town centres?"},
+    {"id": "p21", "split": "test", "type": "opinion", "topic": "crime", "text": "The best way to reduce crime among young people is to give them longer prison sentences. To what extent do you agree or disagree?"},
+    {"id": "p22", "split": "test", "type": "discussion", "topic": "culture", "text": "Some people believe that museums and art galleries should be funded by the government, while others think they should pay for themselves through ticket sales. Discuss both views and give your own opinion."},
+    {"id": "p23", "split": "test", "type": "advantages", "topic": "work", "text": "In some countries, it is common for young people to take a year off between finishing school and starting university or work. Do the advantages of this outweigh the disadvantages?"},
+    {"id": "p24", "split": "test", "type": "problem", "topic": "transport", "text": "Traffic congestion is becoming a serious problem in many cities. What are the main causes, and what can be done to solve it?"},
+    {"id": "p25", "split": "test", "type": "two_part", "topic": "language", "text": "Many languages are disappearing as fewer people speak them. Why is this happening? Does it matter if some languages die out?"},
+    {"id": "p26", "split": "test", "type": "opinion", "topic": "technology", "text": "Artificial intelligence will soon do most jobs better than people, so schools should stop preparing students for specific careers. To what extent do you agree or disagree?"},
+    {"id": "p27", "split": "test", "type": "discussion", "topic": "family", "text": "Some people think parents should strictly control the amount of time children spend playing computer games, while others believe children should decide for themselves. Discuss both views and give your own opinion."},
+    {"id": "p28", "split": "test", "type": "advantages", "topic": "society", "text": "More people today live alone than ever before. Do the advantages of this outweigh the disadvantages?"},
+    {"id": "p29", "split": "test", "type": "problem", "topic": "environment", "text": "Plastic waste is causing serious harm to oceans and wildlife. What are the main reasons for this problem, and what can be done about it?"},
+    {"id": "p30", "split": "test", "type": "two_part", "topic": "media", "text": "Advertisements aimed at children are common on television and the internet. Why do companies target children? Should this kind of advertising be banned?"}
+  ]
+}

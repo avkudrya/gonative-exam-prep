@@ -1,0 +1,231 @@
+{
+  "purpose": "P1.4 clean base essays for benchmark set S: one vendor writes, the other proofreads (docs/phase-0/E-benchmark-plan.md \u00a72)",
+  "product": "exam",
+  "prompts": "benchmarks/sources/task2-prompts.json",
+  "output": "benchmarks/sources/s-bases.jsonl",
+  "routes": {
+    "anthropic": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "reasoning_effort": "low",
+      "max_output_tokens": 3000,
+      "timeout": 600
+    },
+    "openai": {
+      "provider": "openai",
+      "model": "gpt-5.4",
+      "reasoning_effort": "low",
+      "max_output_tokens": 3000,
+      "timeout": 600
+    }
+  },
+  "promptVersions": {
+    "write": "exam-base-write-1",
+    "check": "exam-base-check-1"
+  },
+  "capUsd": 3.5,
+  "userData": "none: our own prompts and model-written essays",
+  "approval": null,
+  "items": [
+    {
+      "id": "b01",
+      "promptId": "p01",
+      "author": "anthropic"
+    },
+    {
+      "id": "b02",
+      "promptId": "p02",
+      "author": "openai"
+    },
+    {
+      "id": "b03",
+      "promptId": "p03",
+      "author": "anthropic"
+    },
+    {
+      "id": "b04",
+      "promptId": "p04",
+      "author": "openai"
+    },
+    {
+      "id": "b05",
+      "promptId": "p05",
+      "author": "anthropic"
+    },
+    {
+      "id": "b06",
+      "promptId": "p06",
+      "author": "openai"
+    },
+    {
+      "id": "b07",
+      "promptId": "p07",
+      "author": "anthropic"
+    },
+    {
+      "id": "b08",
+      "promptId": "p08",
+      "author": "openai"
+    },
+    {
+      "id": "b09",
+      "promptId": "p09",
+      "author": "anthropic"
+    },
+    {
+      "id": "b10",
+      "promptId": "p10",
+      "author": "openai"
+    },
+    {
+      "id": "b11",
+      "promptId": "p11",
+      "author": "anthropic"
+    },
+    {
+      "id": "b12",
+      "promptId": "p12",
+      "author": "openai"
+    },
+    {
+      "id": "b13",
+      "promptId": "p13",
+      "author": "anthropic"
+    },
+    {
+      "id": "b14",
+      "promptId": "p14",
+      "author": "openai"
+    },
+    {
+      "id": "b15",
+      "promptId": "p15",
+      "author": "anthropic"
+    },
+    {
+      "id": "b16",
+      "promptId": "p01",
+      "author": "openai"
+    },
+    {
+      "id": "b17",
+      "promptId": "p02",
+      "author": "anthropic"
+    },
+    {
+      "id": "b18",
+      "promptId": "p03",
+      "author": "openai"
+    },
+    {
+      "id": "b19",
+      "promptId": "p04",
+      "author": "anthropic"
+    },
+    {
+      "id": "b20",
+      "promptId": "p05",
+      "author": "openai"
+    },
+    {
+      "id": "b21",
+      "promptId": "p16",
+      "author": "anthropic"
+    },
+    {
+      "id": "b22",
+      "promptId": "p17",
+      "author": "openai"
+    },
+    {
+      "id": "b23",
+      "promptId": "p18",
+      "author": "anthropic"
+    },
+    {
+      "id": "b24",
+      "promptId": "p19",
+      "author": "openai"
+    },
+    {
+      "id": "b25",
+      "promptId": "p20",
+      "author": "anthropic"
+    },
+    {
+      "id": "b26",
+      "promptId": "p21",
+      "author": "openai"
+    },
+    {
+      "id": "b27",
+      "promptId": "p22",
+      "author": "anthropic"
+    },
+    {
+      "id": "b28",
+      "promptId": "p23",
+      "author": "openai"
+    },
+    {
+      "id": "b29",
+      "promptId": "p24",
+      "author": "anthropic"
+    },
+    {
+      "id": "b30",
+      "promptId": "p25",
+      "author": "openai"
+    },
+    {
+      "id": "b31",
+      "promptId": "p26",
+      "author": "anthropic"
+    },
+    {
+      "id": "b32",
+      "promptId": "p27",
+      "author": "openai"
+    },
+    {
+      "id": "b33",
+      "promptId": "p28",
+      "author": "anthropic"
+    },
+    {
+      "id": "b34",
+      "promptId": "p29",
+      "author": "openai"
+    },
+    {
+      "id": "b35",
+      "promptId": "p30",
+      "author": "anthropic"
+    },
+    {
+      "id": "b36",
+      "promptId": "p16",
+      "author": "openai"
+    },
+    {
+      "id": "b37",
+      "promptId": "p17",
+      "author": "anthropic"
+    },
+    {
+      "id": "b38",
+      "promptId": "p18",
+      "author": "openai"
+    },
+    {
+      "id": "b39",
+      "promptId": "p19",
+      "author": "anthropic"
+    },
+    {
+      "id": "b40",
+      "promptId": "p20",
+      "author": "openai"
+    }
+  ]
+}

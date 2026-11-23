@@ -1,0 +1,116 @@
+{
+  "id": "exam-a0",
+  "purpose": "A0: token measurement before stage A (P1.3 \u00a75): 3 S dev essays x 6 cells",
+  "budgetUsd": 5,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-2.v1.json",
+  "guideSha256": null,
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-2",
+  "items": "items.jsonl",
+  "itemsSha256": null,
+  "feedbackLanguage": "en",
+  "cells": [
+    {
+      "key": "p2-haiku-val",
+      "pipeline": "p2",
+      "validate": true,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-haiku-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 16000,
+            "timeout": 600
+          }
+        ]
+      }
+    },
+    {
+      "key": "p2-sonnet-val",
+      "pipeline": "p2",
+      "validate": true,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 16000,
+            "timeout": 600
+          }
+        ]
+      }
+    },
+    {
+      "key": "p2-opus-val",
+      "pipeline": "p2",
+      "validate": true,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-opus-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 16000,
+            "timeout": 600
+          }
+        ]
+      }
+    },
+    {
+      "key": "p2-gpt54-val",
+      "pipeline": "p2",
+      "validate": true,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "openai",
+            "model": "gpt-5.4",
+            "reasoning_effort": "low",
+            "max_output_tokens": 16000,
+            "timeout": 600
+          }
+        ]
+      }
+    },
+    {
+      "key": "p1-haiku",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-haiku-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 16000,
+            "timeout": 600
+          }
+        ]
+      }
+    },
+    {
+      "key": "p0-haiku",
+      "pipeline": "p0",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-haiku-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 16000,
+            "timeout": 600
+          }
+        ]
+      }
+    }
+  ]
+}

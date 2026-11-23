@@ -12,13 +12,14 @@
   },
   "scripts": {
     "typecheck": "bash scripts/with-node24.sh tsc --noEmit",
-    "test": "bash scripts/with-node24.sh node --import tsx --test packages/exam-domain/test/*.test.ts",
+    "test": "bash scripts/with-node24.sh node --import tsx --test packages/exam-domain/test/*.test.ts benchmarks/tools/test/*.test.ts",
     "dev": "npm run dev --workspace web",
     "build": "npm run build --workspace web",
     "start": "npm run start --workspace web",
     "lint": "npm run lint --workspace web",
     "typecheck:web": "npm run typecheck --workspace web",
-    "check": "npm run typecheck && npm test && npm run typecheck:web && npm run lint && npm run build"
+    "check": "npm run typecheck && npm test && npm run typecheck:web && npm run lint && npm run build",
+    "bench:build": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build.ts"
   },
   "dependencies": {
     "react": "19.2.4",

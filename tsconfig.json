@@ -14,6 +14,7 @@
   },
   "include": [
     "packages/**/*.ts",
-    "scripts/**/*.ts"
+    "scripts/**/*.ts",
+    "benchmarks/**/*.ts"
   ]
 }

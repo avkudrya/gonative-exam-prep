@@ -14,8 +14,8 @@
 | D | Стратегия AI-оценки Writing | `D-assessment-strategy.md` | 🔄 спецификация IELTS проверена: [D1](../phase-0/D1-ielts-writing-spec.md); стратегия — дальше |
 | E | План бенчмарка | `E-benchmark-plan.md` | 🔄 данные и лицензии: [E1](../phase-0/E1-reference-data.md); метрики, прогоны, смета — дальше |
 | F | Архитектура персонального обучения | `F-learning-architecture.md` | ⏳ |
-| G | Интеграция лексики GoNative | `G-vocabulary-integration.md` | ⏳ после P0.1 |
-| H | Интеграция Worksheet Generator / Edu | `H-edu-integration.md` | ⏳ после P0.2 |
+| G | Интеграция лексики GoNative | [G-vocabulary-integration.md](../phase-0/G-vocabulary-integration.md) | 📝 черновик v1 |
+| H | Интеграция Worksheet Generator / Edu | [H-edu-integration.md](../phase-0/H-edu-integration.md) | 📝 черновик v1 |
 | I | БД | `I-database-design.md` | ⏳ |
 | J | Проверка мультиязычности и мультиэкзаменности | `J-multi-exam-verification.md` | 🔄 контракт и тесты в `packages/exam-domain` (IELTS + Goethe B1) |
 | K | Спецификация MVP | `K-mvp-spec.md` | ⏳ |
@@ -25,13 +25,19 @@
 
 ## Задачи
 
-- [ ] **P0.1 GoNative (A, G).** Видимость серверных списков в mobile и web; метка источника у списка;
-  переводы слов паков IELTS на ru/uk для всех уровней; академические темы в `glossaries` и
-  `lexical_clusters`; свои слова (`DictionaryCustom`) для сгенерированных выражений; лимит слов
-  и Premium (ADR-002).
-- [ ] **P0.2 Edu / WG (B, H).** Список тем en и соответствие навыкам; правила выдачи заданий
-  (servable, права, CEFR); фасад «задания по теме»; пригодность `Edu\Bench` для эссе; предложение
-  `AnswerChecker`.
+- [x] **P0.1 GoNative (A, G)** — 2026-11-23, [G](../phase-0/G-vocabulary-integration.md):
+  - паки под 14 экзаменов, IELTS переведены на ru и uk полностью;
+  - метка источника у списка есть;
+  - лимит слов снимается только на сервере;
+  - коллокаций в словаре почти нет;
+  - `createWordsFromText` пишет в общий словарь — не используем.
+
+  Вручную в интерфейсе остаются web-списки и показ безлимитной квоты.
+- [x] **P0.2 Edu / WG (B, H)** — 2026-11-23, [H](../phase-0/H-edu-integration.md):
+  - грамматика в production — 31 тема A1–B2, 8 пробелов для IELTS;
+  - выбор заданий — через `Item::servableTo`;
+  - для эссе — свой `Exam\Bench` на общих компонентах; расширение `MeteredLlm` для `feature = exam`;
+  - онлайн-проверка — по плану владельца.
 - [x] **P0.3 Официальные требования IELTS (D)** — 2026-11-23, [D1](../phase-0/D1-ielts-writing-spec.md).
   Конфигурации Academic и GT `verified`; правила дескрипторов (≤ 20 слов → Band 1, скопированное задание
   не засчитывается, Band 0 за другой язык) — в `rules`. Округление балла за задание и Writing и правила

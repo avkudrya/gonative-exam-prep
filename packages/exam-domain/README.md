@@ -7,6 +7,8 @@
 |---|---|
 | `src/exam-config.ts` | Провайдер → экзамен → версия → секция → тип задания → рубрика → критерий; шкалы (`band`, `points`, `levels`, `descriptive`) и агрегации; проверки ссылок и весов |
 | `src/assessment.ts` | Результат оценки: находки с цитатами и офсетами, диапазоны со статусом калибровки; `checkAssessmentIntegrity`, `presentEstimate` (ориентировочный показ по ADR-003) |
+| `src/assessment-guide.ts` | Руководство по оценке: признаки полос и ограничители своими словами; сверка с рубрикой; `bandFromChecklist` — полоса по ответам модели (правило D §2, шаг 4) |
+| `guides/*.json` | Руководства по оценке (Task 2 v1 — черновик, `docs/phase-1/P1.1-assessment-guide.md`). Без дословного текста дескрипторов |
 | `src/skills.ts` | Формат ключей навыков `domain.skill` и стартовый набор |
 | `src/text.ts` | Нормализация ответа, офсеты в кодовых точках, правило подсчёта слов `whitespace-v1` |
 | `catalog/*.json` | **Проверенные** конфигурации экзаменов (IELTS Academic, General Training; `verified` 2026-11-23, источники в файлах, обоснование — `docs/phase-0/D1-ielts-writing-spec.md`). Источник для импорта в MultiAdmin |

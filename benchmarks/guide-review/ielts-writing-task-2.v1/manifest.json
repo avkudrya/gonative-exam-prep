@@ -1,0 +1,13 @@
+{
+  "purpose": "P1.1 semantic review of the Task 2 assessment guide by a second vendor (Claude drafted it)",
+  "guide": "packages/exam-domain/guides/ielts-writing-task-2.v1.json",
+  "guideSha256": "35dd6e8fd8cefe76727f8b8c38c1b552b5b6a5917c0f69b8ff1e8d9c21b82304",
+  "product": "exam",
+  "task": "exam.guide_review",
+  "route": {"provider": "openai", "model": "gpt-5.4", "reasoning_effort": "medium", "max_output_tokens": 16000, "timeout": 600},
+  "pricingUsdPerMillion": {"input": 2.5, "output": 15.0},
+  "estimate": {"inputTokens": 6500, "maxOutputTokens": 16000, "maxUsd": 0.26, "expectedUsd": 0.1},
+  "capUsd": 1.0,
+  "userData": "none: the guide only, no essays",
+  "approval": null
+}

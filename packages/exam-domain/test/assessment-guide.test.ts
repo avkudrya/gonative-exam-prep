@@ -52,14 +52,15 @@ test('limiters match the bolded features of the descriptors (D1)', () => {
 });
 
 test('a guide cannot claim review or approval it does not have', () => {
-  assert.equal(guide.status, 'reviewed');
+  assert.equal(guide.status, 'approved');
+  assert.equal(guide.approvedAt, '2026-11-23');
   assert.equal(guide.review?.vendor, 'openai', 'the second vendor differs from the drafting one (Anthropic)');
-  const {review, ...unreviewed} = raw();
-  assert.ok(!assessmentGuide.safeParse(unreviewed).success, 'reviewed without a review');
+  const {review, approvedAt, ...unreviewed} = raw();
+  assert.ok(!assessmentGuide.safeParse({...unreviewed, status: 'reviewed'}).success, 'reviewed without a review');
   assert.ok(assessmentGuide.safeParse({...unreviewed, status: 'draft'}).success);
-  assert.ok(!assessmentGuide.safeParse({...raw(), status: 'approved'}).success, 'approved without a date');
-  assert.ok(assessmentGuide.safeParse({...raw(), status: 'approved', approvedAt: '2026-11-25'}).success);
-  assert.ok(review);
+  assert.ok(!assessmentGuide.safeParse({...unreviewed, review, status: 'approved'}).success, 'approved without a date');
+  assert.ok(assessmentGuide.safeParse({...unreviewed, review, approvedAt, status: 'approved'}).success);
+  assert.ok(review && approvedAt);
 });
 
 test('the schema rejects duplicate ids, gaps between bands and ids from another band', () => {

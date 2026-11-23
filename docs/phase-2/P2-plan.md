@@ -29,9 +29,24 @@
 | В `benchmarks/sources/task2-prompts.json` уже есть 30 своих заданий Task 2 пяти типов | Их можно взять в библиотеку P2.8 и не генерировать заново (вопрос 7) |
 | K, строка «Оценка»: «Пайплайн D … проверка находок» | Устарело: решение P1.7 — без проверки находок. Отмечу в K при закрытии Фазы 2 |
 
-**Исходное состояние тестов MultiAdmin** (2026-11-23, SQLite, без сети): `tests/Feature/Worksheets`,
-`tests/Feature/Billing`, `tests/Feature/Exam`, `tests/Unit/Exam` — **804 теста / 46 396 проверок, зелёные**, 67 с.
+**Исходное состояние тестов MultiAdmin** (2026-11-23, SQLite, без сети). PHPUnit 10 берёт из командной строки
+только первый путь, поэтому наборы гоняются по одному:
+
+| Набор | Тестов / проверок |
+|---|---|
+| `tests/Feature/Worksheets` | 804 / 46 396 |
+| `tests/Feature/Billing` | 22 / 264 |
+| `tests/Feature/Exam` | 9 / 67 |
+| `tests/Feature/Edu` | 270 / 3 779 (7 пропущены) |
+| `tests/Unit/Exam` | 12 / 60 |
+| `tests/Unit/Edu` | 112 / 1 547 |
+
 Это защита обобщения: после P2.1 и P2.2 эти же тесты должны проходить без единой правки.
+
+**Полный `phpunit` не запускать.** Тесты `tests/Feature/Auth/*` и `tests/Feature/ProfileTest` используют
+`RefreshDatabase` на соединении по умолчанию, то есть на локальной MySQL. Это `migrate:fresh`. Гоняем только наборы
+на SQLite в памяти, перечисленные выше. 24 ошибки в `tests/Unit` (аудио, подкасты, речь, тексты рассылок) были и
+до Фазы 2 и с Exams не связаны.
 
 ## 2. Порядок
 
@@ -63,12 +78,12 @@
 | Конфигурация продуктов. Для каждого: имя токена, способность, метка `signupProduct`, URL веба, срок сессии, языки интерфейса, версия условий, классы писем, префикс флагов аккаунта. Для `worksheets` — **ровно нынешние значения**. Для `exams` — `exams-web`, `exams`, `EXAMS_WEB_URL` (по умолчанию `https://exams.mnemonicwords.app`), en/ru | `config/products.php`, `app/Services/Products/ProductConfig.php` (неизвестный продукт или пустое поле — исключение) |
 | Общий код из WG | `Products/Accounts/{ProductAuth, ProductAccount, ProductPasswordReset, ProductWebUrl}`, `Products/Accounts/AccountLock` (ключ блокировки `worksheets:account:{id}` сохраняется: блокировка общая на аккаунт) |
 | Обёртки WG с прежними публичными методами и константами (`WorksheetAuth::TOKEN_NAME` и т. п.) | `Worksheets/Accounts/{WorksheetAuth, WorksheetPasswordReset, WorksheetWebUrl, AccountLock}`, `Worksheets/Access/WorksheetAccount` |
-| Middleware с параметром продукта; WG-версии наследуют его | `Http/Middleware/Products/{ApiBoundary, AuthenticateProduct, RequireConsent}` |
+| Middleware с параметром продукта; WG-версия — обёртка | `Http/Middleware/Products/AuthenticateProduct` (`ApiBoundary` — в P2.4; `RequireConsent` у Exams свой, поля профиля другие) |
 | Ссылка активации из старого маршрута GoNative выбирает продукт по `signupProduct` из конфигурации | `Front/UserController::activate` |
 | Письма Exams en/ru | `app/Mail/Exam/{Activation, PasswordReset}`, `resources/views/mail/exam/*`, `lang/{en,ru}` |
 
 Проверка того, что поведение WG не изменилось:
-- все 804 теста проходят без правок;
+- все наборы из §1 проходят без правок;
 - `php artisan route:list --path=api/worksheets` до и после совпадает;
 - новый тест `tests/Unit/Products/WorksheetsConfigParityTest` закрепляет имя токена, способность, ключ
   блокировки, имена флагов, метку `signupProduct` и классы писем WG.
@@ -77,6 +92,27 @@
 - токен одного продукта не принимается другим и GoNative;
 - регистрация в продукте B ставит свою метку;
 - вход аккаунта WG в продукт B (`join`) метку не меняет.
+
+**Итог P2.1 (2026-11-23, локально, без коммита в MultiAdmin):**
+- Общий слой: `config/products.php`; `app/Services/Products/{ProductConfig, ProductMembership}`;
+  `Products/Accounts/{ProductAuth, ProductAccount, ProductPasswordReset, ProductWebUrl, AccountLock}`;
+  `Products/Api/ApiProblem`; `Http/Middleware/Products/AuthenticateProduct`.
+- WG — обёртки с прежними именами. `Worksheets\Api\ApiProblem` — псевдоним общего класса: он загружается при
+  старте (`AppServiceProvider`), потому что `instanceof` и `catch` в PHP автозагрузку не запускают.
+- Членство в продукте — интерфейс `ProductMembership`. У WG это `WorksheetsMembership` (профиль `ws_profiles`).
+  У Exams членства пока нет: сессия Exams невозможна, код падает с исключением. Членство появится вместе с
+  `ex_profiles` в P2.3.
+- Блокировка аккаунта (`worksheets:account:{id}`) и регистрации (`worksheets:signup:{email}`) общие для всех
+  продуктов, ключи прежние. Ссылки сброса пароля привязаны к продукту.
+- Ссылка активации в старом маршруте GoNative выбирает продукт по `signupProduct`.
+- Письма Exams en/ru (`app/Mail/Exam`, `emails/exam-*`, `lang/{en,ru}/exam.php`), бренд «GoNative Exam Prep».
+- В `config/exam.php`: `api.enabled` (`EXAM_API_ENABLED`, по умолчанию `false`), `api.web_url` (`EXAMS_WEB_URL`),
+  `session_days`, `interface_locales` en/ru.
+- Тесты:
+  - наборы §1 проходят без единой правки;
+  - новые: `Feature/Products/ProductAuthIsolationTest` (8), `Feature/Products/WorksheetsConfigParityTest` (5),
+    `Unit/Products/ProductsArchitectureTest` (2) — 15 тестов, 173 проверки;
+  - Pint по новым файлам чистый.
 
 ### P2.3. Миграции `ex_*` и импорт конфигураций (M)
 
@@ -129,7 +165,7 @@
 У `manual` (ручной доступ) — 50 оценок в месяц и $5.
 
 **Тесты:**
-- все 804 теста проходят;
+- все наборы из §1 проходят;
 - `ExamQuotaTest`: месяц, деньги, параллельность, повтор текста, удаление попытки не возвращает квоту, границы месяца UTC;
 - `ProductClosureTest`: удаление общего аккаунта закрывает оба продукта;
 - `GoNativeAudienceTest`: метка `exams` исключена.
@@ -249,7 +285,7 @@
   После удаления попытки метки нет нигде, включая выходы шагов.
 - **Тесты purger:**
   - удаление Exams не трогает WG и GoNative, и наоборот;
-  - все 804 теста проходят.
+  - все наборы из §1 проходят.
 
 ### P2.7. Админка (M)
 
@@ -288,7 +324,7 @@ Inertia, по образцу `Admin/EduWorkspaceController`. Файлы: `Admin/
 
 | Блок | Что меняется | Чем проверяем, что WG не сломан |
 |---|---|---|
-| Аккаунты, токены (P2.1) | Код уезжает в `Products/*`, WG — обёртки | 804 теста без правок; паритет конфигурации; одинаковый `route:list` |
+| Аккаунты, токены (P2.1) | Код уезжает в `Products/*`, WG — обёртки | Наборы §1 без правок; паритет конфигурации; маршруты WG не менялись |
 | Права, планы, лимитеры, закрытие (P2.2a) | `hasAccess` по продукту, `deleteCommon` закрывает все продукты | Тесты Billing и Worksheets; новый тест закрытия обоих продуктов |
 | Аудитория (P2.2a) | Список продуктов из конфигурации | `WorksheetAudienceTest` и новый тест для `exams` |
 | Purger (P2.2b) | Общие шаги вынесены | `WorksheetsDeletionTest`, `WorksheetPurgerIntegrationTest` |
@@ -306,7 +342,7 @@ Inertia, по образцу `Admin/EduWorkspaceController`. Файлы: `Admin/
 
 ## 6. Риски
 
-1. **Обобщение трогает работающий код WG.** Защита — 804 теста, паритет конфигурации, маленькие коммиты.
+1. **Обобщение трогает работающий код WG.** Защита — наборы тестов §1, паритет конфигурации, маленькие коммиты.
 2. **Русские объяснения не измерены.** Если в P2.8 качество будет хуже английского, на старте объяснения
    останутся только на английском.
 3. **Абсолютный уровень полос не проверен** (нет H2). Поэтому только ориентировочный диапазон; число скрыто за `presentEstimate`.

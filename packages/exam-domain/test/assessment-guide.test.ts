@@ -51,6 +51,32 @@ test('limiters match the bolded features of the descriptors (D1)', () => {
   assert.deepEqual(criterion('coherence_cohesion').limiters[0].autoTrigger, {kind: 'single_paragraph'});
 });
 
+test('v2 differs from v1 only by limiters that code triggers (stage A, P1.7)', () => {
+  const v2raw = JSON.parse(readFileSync(new URL('../guides/ielts-writing-task-2.v2.json', import.meta.url), 'utf8'));
+  const v2 = assessmentGuide.parse(v2raw);
+  assert.equal(v2.version, 'v2');
+  const triggers = Object.fromEntries(v2.criteria.flatMap(c => c.limiters.filter(l => l.autoTrigger).map(l => [l.id, l.autoTrigger])));
+  assert.deepEqual(triggers, {
+    'tr.cap.not_essay': {kind: 'list_form'},
+    'cc.cap.paragraphing': {kind: 'single_paragraph'},
+    'cc.cap.off_topic': {kind: 'limiter', limiterId: 'tr.cap.unrelated'},
+    'lr.cap.unrelated': {kind: 'limiter', limiterId: 'tr.cap.unrelated'},
+  });
+  const strip = (g: AssessmentGuide) => ({...g, version: '', criteria: g.criteria.map(c => ({...c, limiters: c.limiters.map(({autoTrigger, ...l}) => l)}))});
+  assert.deepEqual(strip(v2), strip(guide), 'same statements, features, caps and review');
+
+  // A limiter trigger names an existing limiter of another criterion, one level deep.
+  const withTrigger = (limiterId: string, on = 'lexical_resource') => {
+    const g = structuredClone(v2raw);
+    g.criteria.find((c: GuideCriterion) => c.criterionKey === on).limiters[0].autoTrigger = {kind: 'limiter', limiterId};
+    return assessmentGuide.safeParse(g).success;
+  };
+  assert.ok(withTrigger('tr.cap.unrelated'));
+  assert.ok(!withTrigger('tr.cap.nothing'), 'unknown limiter');
+  assert.ok(!withTrigger('lr.cap.unrelated'), 'same criterion');
+  assert.ok(!withTrigger('cc.cap.off_topic'), 'a chain');
+});
+
 test('a guide cannot claim review or approval it does not have', () => {
   assert.equal(guide.status, 'approved');
   assert.equal(guide.approvedAt, '2026-11-23');

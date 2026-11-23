@@ -30,9 +30,17 @@ export const guideBand = z.object({
   notes: z.array(z.string().min(1)).optional(),
 });
 
-/** Deterministic triggers that code can check before or instead of the model. */
+/**
+ * Deterministic triggers: code applies the limiter's cap itself instead of relying on the model.
+ *  - `single_paragraph`, `list_form` — the rubric rules' flags of the same name;
+ *  - `limiter` — another criterion's limiter applied: found in its checklist (P2), or that criterion's
+ *    direct band (P0/P1) is at or below the referenced cap. Stage A (P1.7): models lowered TR for an
+ *    off-topic essay but left CC and LR high.
+ */
 export const limiterTrigger = z.discriminatedUnion('kind', [
   z.object({kind: z.literal('single_paragraph')}),
+  z.object({kind: z.literal('list_form')}),
+  z.object({kind: z.literal('limiter'), limiterId}),
 ]);
 
 export const guideLimiter = z.object({
@@ -101,6 +109,18 @@ export const assessmentGuide = z.object({
       if (l.capBand >= bands[bands.length - 1]) ctx.addIssue({code: 'custom', path: [...path, 'capBand'], message: 'a cap at or above the top band limits nothing'});
     });
   });
+
+  // A limiter trigger names a limiter of another criterion that code does not trigger the same way
+  // (one level: no chains, no cycles).
+  const limiters = new Map(g.criteria.flatMap(c => c.limiters.map(l => [l.id, {criterion: c.criterionKey, limiter: l}] as const)));
+  g.criteria.forEach((c, ci) => c.limiters.forEach((l, li) => {
+    if (l.autoTrigger?.kind !== 'limiter') return;
+    const path = ['criteria', ci, 'limiters', li, 'autoTrigger', 'limiterId'];
+    const target = limiters.get(l.autoTrigger.limiterId);
+    if (!target) ctx.addIssue({code: 'custom', path, message: `unknown limiter ${l.autoTrigger.limiterId}`});
+    else if (target.criterion === c.criterionKey) ctx.addIssue({code: 'custom', path, message: 'a limiter trigger must name another criterion'});
+    else if (target.limiter.autoTrigger?.kind === 'limiter') ctx.addIssue({code: 'custom', path, message: 'limiter triggers cannot chain'});
+  }));
 });
 
 export type GuideFeature = z.infer<typeof guideFeature>;

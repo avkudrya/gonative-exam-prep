@@ -1,0 +1,66 @@
+{
+  "id": "exam-b-dev-1",
+  "purpose": "Stage B (E §4): model choice on dev. P1 without validation (P1.7: chosen by the owner) on Opus 5.5 and GPT-5.4; the Sonnet and Haiku baselines are stage A re-scored with guide v2 (benchmarks/runs/exam-a-dev-1-v2caps)",
+  "budgetUsd": 15,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-2.v2.json",
+  "guideSha256": "cb176d833ad60c7b550db2811e441bccd69e9c39d4940ae49641fc7cddab8d69",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-2",
+  "items": "raw/items.jsonl",
+  "itemsSha256": "0f0f46a7f8cb6fb3fd9a00a85bed8fd173214db0c00d563916ec3b8bac0d3531",
+  "feedbackLanguage": "en",
+  "traitMap": {
+    "coherence_cohesion": [
+      "cohesion"
+    ],
+    "lexical_resource": [
+      "vocabulary",
+      "phraseology"
+    ],
+    "grammatical_range_accuracy": [
+      "grammar",
+      "syntax",
+      "conventions"
+    ]
+  },
+  "sources": {
+    "S, G": "benchmarks/datasets/exam-sg-v1 (synthetic)",
+    "H1": "benchmarks/datasets/exam-h1-v1/source.json (ELLIPSE, CC BY 4.0; rebuild with npm run bench:h1)"
+  },
+  "cells": [
+    {
+      "key": "p1-opus",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-opus-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      }
+    },
+    {
+      "key": "p1-gpt54",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "openai",
+            "model": "gpt-5.4",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      }
+    }
+  ]
+}

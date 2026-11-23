@@ -1,0 +1,876 @@
+{
+    "bench": "exam-a-dev-1",
+    "guide": "ielts-writing-task-2@v1",
+    "recap": {
+        "guide": "ielts-writing-task-2@v2",
+        "sha256": "cb176d833ad60c7b550db2811e441bccd69e9c39d4940ae49641fc7cddab8d69"
+    },
+    "items": 61,
+    "cells": {
+        "p0-haiku": {
+            "config": {
+                "pipeline": "p0",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-haiku-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.0776,
+                "mean": 0.0013,
+                "p90": 0.0017
+            },
+            "latencyMs": {
+                "p50": 6265,
+                "p90": 9802
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 5,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 7.279,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.731,
+                "recallModerateMajor": 0.75,
+                "precision": 0.984,
+                "unmatchedFindings": 2
+            },
+            "checks": {
+                "total": 30,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.787,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.718,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.889,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                }
+            }
+        },
+        "p1-haiku": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-haiku-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.1991,
+                "mean": 0.0033,
+                "p90": 0.0042
+            },
+            "latencyMs": {
+                "p50": 6706,
+                "p90": 9468
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 18,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 24.328,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.916,
+                "recallModerateMajor": 0.95,
+                "precision": 0.978,
+                "unmatchedFindings": 5
+            },
+            "checks": {
+                "total": 30,
+                "passRate": 0.967,
+                "failed": [
+                    {
+                        "item": "g-short-21",
+                        "check": "band:task",
+                        "ok": false
+                    }
+                ]
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.828,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.849,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.881,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                }
+            }
+        },
+        "p2-haiku": {
+            "config": {
+                "pipeline": "p2",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-haiku-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 1,
+            "costUsd": {
+                "total": 0.3518,
+                "mean": 0.0058,
+                "p90": 0.0065
+            },
+            "latencyMs": {
+                "p50": 9819,
+                "p90": 15812
+            },
+            "problems": {
+                "unanswered": 1,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 68,
+                "evidenceMissing": 188
+            },
+            "findings": {
+                "keptPerAssessment": 22.148,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.886,
+                "recallModerateMajor": 0.93,
+                "precision": 0.988,
+                "unmatchedFindings": 3
+            },
+            "checks": {
+                "total": 30,
+                "passRate": 0.9,
+                "failed": [
+                    {
+                        "item": "g-short-21",
+                        "check": "band:task",
+                        "ok": false
+                    },
+                    {
+                        "item": "g-unusual-a",
+                        "check": "band:task",
+                        "ok": false
+                    },
+                    {
+                        "item": "g-unusual-a",
+                        "check": "band:grammatical_range_accuracy",
+                        "ok": false
+                    }
+                ]
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.78,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.748,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.763,
+                            "n": 29
+                        }
+                    },
+                    "raters": null
+                },
+                "top": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.766,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.733,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.703,
+                            "n": 29
+                        }
+                    },
+                    "raters": null
+                },
+                "share": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.724,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.733,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.76,
+                            "n": 29
+                        }
+                    },
+                    "raters": null
+                }
+            },
+            "checklist": {
+                "criteria": 235,
+                "inconsistentRate": 0.06,
+                "blockingFeatures": {
+                    "cc6.overall_progression": 24,
+                    "gra7.complex_variety": 21,
+                    "cc7.progression": 18,
+                    "gra6.errors_rarely_impede": 18,
+                    "cc7.devices_range": 17,
+                    "tr6.ideas_relevant": 17,
+                    "lr6.adequate": 17,
+                    "lr7.form_errors_few": 16,
+                    "lr6.form_errors_no_impede": 15,
+                    "tr8.parts_sufficient": 14,
+                    "gra7.error_free_frequent": 14,
+                    "tr6.main_parts_covered": 14,
+                    "lr6.meaning_clear": 14,
+                    "tr8.ideas_supported": 13,
+                    "lr7.style_collocation": 13
+                }
+            }
+        },
+        "p2-haiku-val": {
+            "config": {
+                "pipeline": "p2",
+                "validate": true,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-haiku-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.793,
+                "mean": 0.013,
+                "p90": 0.0156
+            },
+            "latencyMs": {
+                "p50": 15713,
+                "p90": 18851
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 59,
+                "evidenceMissing": 208
+            },
+            "findings": {
+                "keptPerAssessment": 18.607,
+                "droppedByValidator": 236,
+                "dropRate": 0.172
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.874,
+                "recallModerateMajor": 0.89,
+                "precision": 0.992,
+                "unmatchedFindings": 2
+            },
+            "checks": {
+                "total": 30,
+                "passRate": 0.933,
+                "failed": [
+                    {
+                        "item": "g-short-21",
+                        "check": "band:task",
+                        "ok": false
+                    },
+                    {
+                        "item": "g-unusual-a",
+                        "check": "band:lexical_resource",
+                        "ok": false
+                    }
+                ]
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.754,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.724,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.833,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                },
+                "top": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.789,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.692,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.866,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                },
+                "share": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.741,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.661,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.866,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                }
+            },
+            "checklist": {
+                "criteria": 236,
+                "inconsistentRate": 0.085,
+                "blockingFeatures": {
+                    "cc7.progression": 22,
+                    "cc6.overall_progression": 22,
+                    "cc7.devices_range": 19,
+                    "lr6.form_errors_no_impede": 19,
+                    "gra6.errors_rarely_impede": 18,
+                    "lr6.adequate": 18,
+                    "lr6.meaning_clear": 18,
+                    "lr7.form_errors_few": 16,
+                    "tr7.main_parts": 15,
+                    "tr6.main_parts_covered": 15,
+                    "lr7.style_collocation": 14,
+                    "gra7.complex_variety": 13,
+                    "tr6.ideas_relevant": 13,
+                    "tr8.parts_sufficient": 12,
+                    "tr8.position_developed": 12
+                }
+            }
+        },
+        "p0-sonnet": {
+            "config": {
+                "pipeline": "p0",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 0,
+            "costUsd": {
+                "total": 1.3729,
+                "mean": 0.0225,
+                "p90": 0.0248
+            },
+            "latencyMs": {
+                "p50": 8170,
+                "p90": 9428
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 1,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 7.377,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.85,
+                "recallModerateMajor": 0.94,
+                "precision": 0.993,
+                "unmatchedFindings": 1
+            },
+            "checks": {
+                "total": 30,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.87,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.881,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.877,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                }
+            }
+        },
+        "p1-sonnet": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 0,
+            "costUsd": {
+                "total": 3.3481,
+                "mean": 0.0549,
+                "p90": 0.0612
+            },
+            "latencyMs": {
+                "p50": 7015,
+                "p90": 8117
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 10,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 24.721,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.97,
+                "recallModerateMajor": 1,
+                "precision": 0.996,
+                "unmatchedFindings": 1
+            },
+            "checks": {
+                "total": 30,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.885,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.913,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.9,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                }
+            }
+        },
+        "p2-sonnet": {
+            "config": {
+                "pipeline": "p2",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 0,
+            "costUsd": {
+                "total": 6.0332,
+                "mean": 0.0989,
+                "p90": 0.1067
+            },
+            "latencyMs": {
+                "p50": 12115,
+                "p90": 14709
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 15,
+                "evidenceMissing": 21
+            },
+            "findings": {
+                "keptPerAssessment": 20.59,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.976,
+                "recallModerateMajor": 0.99,
+                "precision": 1,
+                "unmatchedFindings": 0
+            },
+            "checks": {
+                "total": 30,
+                "passRate": 0.967,
+                "failed": [
+                    {
+                        "item": "g-short-21",
+                        "check": "band:task",
+                        "ok": false
+                    }
+                ]
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.838,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.833,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.821,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                },
+                "top": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.82,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.81,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.856,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                },
+                "share": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.82,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.81,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.73,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                }
+            },
+            "checklist": {
+                "criteria": 236,
+                "inconsistentRate": 0.021,
+                "blockingFeatures": {
+                    "tr6.ideas_relevant": 17,
+                    "tr9.parts_in_depth": 16,
+                    "tr9.ideas_complete": 16,
+                    "tr9.lapses_negligible": 16,
+                    "gra8.punctuation_managed": 15,
+                    "cc9.unobtrusive_linking": 14,
+                    "gra8.errors_unsystematic": 14,
+                    "tr6.essay_form": 13,
+                    "gra5.errors_some_difficulty": 13,
+                    "lr9.wide_precise": 12,
+                    "cc5.followable": 12,
+                    "cc9.effortless": 12,
+                    "lr9.natural_sophisticated": 11,
+                    "cc6.overall_progression": 11,
+                    "gra4.meaning_through": 10
+                }
+            }
+        },
+        "p2-sonnet-val": {
+            "config": {
+                "pipeline": "p2",
+                "validate": true,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 0,
+            "costUsd": {
+                "total": 6.4593,
+                "mean": 0.1059,
+                "p90": 0.1148
+            },
+            "latencyMs": {
+                "p50": 17363,
+                "p90": 20006
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 19,
+                "evidenceMissing": 29
+            },
+            "findings": {
+                "keptPerAssessment": 18.951,
+                "droppedByValidator": 137,
+                "dropRate": 0.106
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.946,
+                "recallModerateMajor": 0.96,
+                "precision": 0.991,
+                "unmatchedFindings": 2
+            },
+            "checks": {
+                "total": 30,
+                "passRate": 0.967,
+                "failed": [
+                    {
+                        "item": "g-short-21",
+                        "check": "band:task",
+                        "ok": false
+                    }
+                ]
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.804,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.808,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.847,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                },
+                "top": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.779,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.86,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.859,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                },
+                "share": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.779,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.754,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.859,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                }
+            },
+            "checklist": {
+                "criteria": 236,
+                "inconsistentRate": 0.017,
+                "blockingFeatures": {
+                    "tr6.ideas_relevant": 17,
+                    "tr9.parts_in_depth": 16,
+                    "tr9.ideas_complete": 16,
+                    "tr9.lapses_negligible": 16,
+                    "lr9.wide_precise": 15,
+                    "lr9.natural_sophisticated": 15,
+                    "gra8.errors_unsystematic": 14,
+                    "gra8.punctuation_managed": 12,
+                    "gra7.error_free_frequent": 12,
+                    "cc9.unobtrusive_linking": 12,
+                    "gra5.errors_some_difficulty": 12,
+                    "tr6.essay_form": 11,
+                    "lr9.form_slips_only": 10,
+                    "cc9.effortless": 10,
+                    "cc5.followable": 9
+                }
+            }
+        }
+    }
+}

@@ -93,7 +93,7 @@
 - регистрация в продукте B ставит свою метку;
 - вход аккаунта WG в продукт B (`join`) метку не меняет.
 
-**Итог P2.1 (2026-11-23, локально, без коммита в MultiAdmin):**
+**Итог P2.1 (2026-11-23, коммит MultiAdmin `e326047c`, без push):**
 - Общий слой: `config/products.php`; `app/Services/Products/{ProductConfig, ProductMembership}`;
   `Products/Accounts/{ProductAuth, ProductAccount, ProductPasswordReset, ProductWebUrl, AccountLock}`;
   `Products/Api/ApiProblem`; `Http/Middleware/Products/AuthenticateProduct`.
@@ -143,6 +143,42 @@
 - в сырой строке БД нет открытого текста;
 - импорт идемпотентен, подменённый файл отклоняется;
 - `catalog.test.ts` и PHP-импорт согласны в числе критериев и шкалах.
+
+**Итог P2.3 (2026-11-23, локально, без коммита в MultiAdmin):**
+- **Миграция** `2026_11_23_120000_create_exam_tables`: 11 таблиц `ex_*`, только `create table`, `down()` удаляет только их.
+  Применена к локальной sandbox по точному пути (`--force`: в локальном `.env` стоит `APP_ENV=production`). В production не применялась.
+- **Уточнения схемы I**, все добавочные:
+
+  | Таблица | Что изменено |
+  |---|---|
+  | `ex_assessment_guides` | `document` — сырой текст файла, чтобы SHA совпадал с бенчмарком |
+  | `ex_practice_tasks` | `rubric_key` + `exam_keys` вместо одного `exam_key`: одно задание Task 2 подходит и Academic, и GT. Добавлены `task_type`, `source_ref`, `validation`, `sha256` |
+  | `ex_attempts` | `revision` для конфликтов автосохранения |
+  | `ex_assessments` | `user_id`, `period_start` (месяц квоты), `reserved_usd`, `request_key` (идемпотентность), `guide_*`, `text_sha256`, `feedback_language` |
+  | `ex_assessment_reports` | `text_access_allowed` (решение 6) |
+  | `ex_skill_observations` | `words` (частота на 100 слов) |
+  | `ex_usage_periods` | новая (решение 1) |
+
+- **Модели** `app/Models/Multi/Exam/*`:
+  - тексты эссе, задания и жалобы — cast `encrypted`, скрыты из сериализации;
+  - владение — `visibleTo` через `ProductAccount::id($user, 'exams')`;
+  - смена владельца запрещена;
+  - `current_assessment_id` проверяется по попытке.
+- **Членство Exams** `Exam\Profiles\ExamMembership`: профиль `ex_profiles` создаётся при первом подтверждённом входе.
+  Согласие с условиями и 16+ при входе не ставятся — это отдельные шаги профиля в P2.4.
+- **Копии конфигураций** — в `resources/data/exam`, а не в `database/data/exam`: у MultiAdmin данные лежат там же
+  (`resources/data/edu`). SHA закреплены в `config/exam.php` `data`.
+- **Импорт** `exam:import-catalog` и `exam:import-guide`: по умолчанию предпросмотр. Отклоняется:
+  - файл с чужим SHA;
+  - та же версия с другим содержимым;
+  - руководство без проверенной рубрики.
+- **Чтение** — `Exam\Catalog\ExamCatalog`: только `verified` экзамены и `approved` руководства; правка после импорта
+  ловится по хэшу. Это проверено на MySQL: ключи JSON там переупорядочиваются, а канонический хэш устойчив.
+  `CatalogRubric::fromVersion` читает рубрику из БД, бенчмарк по-прежнему читает файлы.
+- **В локальной sandbox** импортированы IELTS Academic и GT `2026-11` и руководство `ielts-writing-task-2@v2` (`cb176d83…`).
+- **Тесты:**
+  - `Feature/Exam` 23 (+14: `ExamStorageTest` 6, `ExamImportTest` 8, включая сверку копий с этим репозиторием);
+  - Worksheets 821 (+17 — новые тесты сессии WG), Billing 22, Edu 270, Products 13 + 2, Unit/Exam 12, Unit/Edu 112 — зелёные.
 
 ### P2.2a. Права, планы, квота Exams, лимитеры, закрытие (M)
 

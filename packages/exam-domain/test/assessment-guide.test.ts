@@ -51,12 +51,15 @@ test('limiters match the bolded features of the descriptors (D1)', () => {
   assert.deepEqual(criterion('coherence_cohesion').limiters[0].autoTrigger, {kind: 'single_paragraph'});
 });
 
-test('a draft guide cannot claim review or approval it does not have', () => {
-  assert.equal(guide.status, 'draft');
-  assert.ok(!assessmentGuide.safeParse({...raw(), status: 'reviewed'}).success);
-  const review = {vendor: 'openai', model: 'gpt-5.4', date: '2026-11-24', runRef: 'r1'};
-  assert.ok(!assessmentGuide.safeParse({...raw(), status: 'approved', review}).success);
-  assert.ok(assessmentGuide.safeParse({...raw(), status: 'approved', review, approvedAt: '2026-11-25'}).success);
+test('a guide cannot claim review or approval it does not have', () => {
+  assert.equal(guide.status, 'reviewed');
+  assert.equal(guide.review?.vendor, 'openai', 'the second vendor differs from the drafting one (Anthropic)');
+  const {review, ...unreviewed} = raw();
+  assert.ok(!assessmentGuide.safeParse(unreviewed).success, 'reviewed without a review');
+  assert.ok(assessmentGuide.safeParse({...unreviewed, status: 'draft'}).success);
+  assert.ok(!assessmentGuide.safeParse({...raw(), status: 'approved'}).success, 'approved without a date');
+  assert.ok(assessmentGuide.safeParse({...raw(), status: 'approved', approvedAt: '2026-11-25'}).success);
+  assert.ok(review);
 });
 
 test('the schema rejects duplicate ids, gaps between bands and ids from another band', () => {

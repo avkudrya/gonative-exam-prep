@@ -1,7 +1,7 @@
 {
   "key": "ielts-writing-task-2",
   "version": "v1",
-  "status": "draft",
+  "status": "reviewed",
   "rubricKey": "ielts-writing-task-2",
   "rubricVersion": "2023-05",
   "basedOn": {
@@ -41,7 +41,7 @@
         ]},
         {"band": 6, "features": [
           {"id": "tr6.main_parts_covered", "statement": "Every main part of the question gets an answer, even if some parts receive noticeably less coverage than others.", "evidence": "met"},
-          {"id": "tr6.essay_form", "statement": "The whole response is written as continuous prose in essay form, not as notes, bullet points, a letter or headed sections.", "evidence": "not_met"},
+          {"id": "tr6.essay_form", "statement": "The response is in an appropriate essay format throughout.", "evidence": "not_met"},
           {"id": "tr6.position_relevant", "statement": "The view presented responds directly to the question, even if the conclusions are unclear, unjustified or repetitive.", "evidence": "met"},
           {"id": "tr6.ideas_relevant", "statement": "The main ideas are relevant to the question, even if some are underdeveloped or unclear and some support is weak or only loosely relevant.", "evidence": "not_met"}
         ]},
@@ -59,8 +59,8 @@
         {"band": 9, "features": [
           {"id": "tr9.parts_in_depth", "statement": "Every part of the question is answered and examined in depth, not just mentioned.", "evidence": "met"},
           {"id": "tr9.position_complete", "statement": "The writer's answer to the question is unmistakable, fully worked out and consistent from the introduction to the conclusion.", "evidence": "met"},
-          {"id": "tr9.ideas_complete", "statement": "Every main idea is relevant, carried through to its conclusion and backed by apt, specific support.", "evidence": "met"},
-          {"id": "tr9.lapses_negligible", "statement": "Weak, vague or unsupported content is essentially absent: one small instance at most.", "evidence": "not_met"}
+          {"id": "tr9.ideas_complete", "statement": "Every main idea is relevant, developed as far as it needs to go and convincingly supported.", "evidence": "met"},
+          {"id": "tr9.lapses_negligible", "statement": "Weak, vague or unsupported content is extremely rare.", "evidence": "not_met"}
         ]}
       ],
       "limiters": [
@@ -96,7 +96,7 @@
           {"id": "cc7.paragraphs_effective", "statement": "Paragraphs on the whole support the essay's coherence, and ideas inside each paragraph follow a mostly logical order.", "evidence": "structure"}
         ]},
         {"band": 8, "features": [
-          {"id": "cc8.easy", "statement": "The message is easy to follow throughout.", "evidence": "not_met"},
+          {"id": "cc8.easy", "statement": "The reader can follow the message with ease.", "evidence": "not_met"},
           {"id": "cc8.sequenced", "statement": "Ideas come in a logical order and the linking is well handled, with only occasional slips.", "evidence": "not_met"},
           {"id": "cc8.paragraphs_sufficient", "statement": "Paragraphing is adequate and suitable everywhere in the essay.", "evidence": "structure"}
         ]},
@@ -119,13 +119,13 @@
       "notThis": "Grammar errors such as verb forms, articles and agreement (grammatical_range_accuracy); linking words used as devices (coherence_cohesion); relevance of ideas (task_response).",
       "bands": [
         {"band": 4, "features": [
-          {"id": "lr4.basic_on_task", "statement": "The vocabulary, though basic and possibly repetitive, belongs to the topic of the task.", "evidence": "not_met"},
+          {"id": "lr4.basic_usable", "statement": "The writer has a basic vocabulary, possibly repetitive or partly unsuited to the task, that is enough to express simple ideas.", "evidence": "met"},
           {"id": "lr4.meaning_recoverable", "statement": "Word-choice, spelling and word-formation errors do not dominate: a reader can recover the meaning of most sentences, even if errors sometimes block it.", "evidence": "not_met"},
           {"id": "lr4.own_words", "statement": "The text is not built mainly from memorised phrases or wording copied from the prompt.", "evidence": "not_met"}
         ]},
         {"band": 5, "features": [
           {"id": "lr5.minimally_adequate", "statement": "The vocabulary is limited but just enough for the task.", "evidence": "not_met"},
-          {"id": "lr5.simple_accurate", "statement": "Simple words are mostly used correctly, even if the range allows little variety and the writer often simplifies or repeats.", "evidence": "not_met"},
+          {"id": "lr5.main_ideas_expressible", "statement": "Despite a narrow range, frequent simplification or repetition and lapses in word choice, the vocabulary lets the writer express the main ideas.", "evidence": "not_met"},
           {"id": "lr5.form_errors_some_difficulty", "statement": "Spelling or word-formation errors may be noticeable but at worst make the reader work a little harder.", "evidence": "not_met"}
         ]},
         {"band": 6, "features": [
@@ -145,7 +145,7 @@
           {"id": "lr8.form_errors_occasional", "statement": "Spelling or word-formation errors are occasional at most and barely affect communication.", "evidence": "not_met"}
         ]},
         {"band": 9, "features": [
-          {"id": "lr9.wide_precise", "statement": "A broad vocabulary is used with complete flexibility, and word choice is precise across the whole essay.", "evidence": "met"},
+          {"id": "lr9.wide_precise", "statement": "Flexible, precise word choice is evident across the essay, drawn from a broad vocabulary.", "evidence": "met"},
           {"id": "lr9.natural_sophisticated", "statement": "Collocation, idiom and register are handled in a natural, sophisticated way.", "evidence": "met"},
           {"id": "lr9.form_slips_only", "statement": "Spelling and word-formation errors are extremely rare slips that barely affect communication.", "evidence": "not_met"}
         ]}
@@ -189,7 +189,7 @@
         {"band": 9, "features": [
           {"id": "gra9.range_full_control", "statement": "A broad variety of sentence structures is used, all with complete flexibility and control.", "evidence": "met"},
           {"id": "gra9.grammar_throughout", "statement": "Grammar is right everywhere; any error is an extremely rare slip.", "evidence": "not_met"},
-          {"id": "gra9.punctuation_throughout", "statement": "Punctuation is right everywhere in the essay.", "evidence": "not_met"}
+          {"id": "gra9.punctuation_throughout", "statement": "Punctuation is appropriate throughout; any slip is extremely rare.", "evidence": "not_met"}
         ]}
       ],
       "limiters": [
@@ -197,5 +197,6 @@
         {"id": "gra.cap.too_short", "statement": "The response is too short to show control of sentence forms.", "capBand": 3, "evidence": "structure"}
       ]
     }
-  ]
+  ],
+  "review": {"vendor": "openai", "model": "gpt-5.4-2026-03-05", "date": "2026-11-23", "runRef": "benchmarks/guide-review/ielts-writing-task-2.v1"}
 }

@@ -1,0 +1,72 @@
+{
+  "id": "exam-c-r-1",
+  "purpose": "Stage C stability (R): the same finalists, 10 test essays x 5 repeats",
+  "budgetUsd": 4.5,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-2.v2.json",
+  "guideSha256": "cb176d833ad60c7b550db2811e441bccd69e9c39d4940ae49641fc7cddab8d69",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-2",
+  "items": "raw/items.jsonl",
+  "itemsSha256": "b3a1c300f4088e9efa993d5f723d4d7503c14938ce9679bdfb4f64d570f3d80f",
+  "feedbackLanguage": "en",
+  "traitMap": {
+    "coherence_cohesion": [
+      "cohesion"
+    ],
+    "lexical_resource": [
+      "vocabulary",
+      "phraseology"
+    ],
+    "grammatical_range_accuracy": [
+      "grammar",
+      "syntax",
+      "conventions"
+    ]
+  },
+  "sources": {
+    "S, G": "benchmarks/datasets/exam-sg-v1 (synthetic)",
+    "H1": "benchmarks/datasets/exam-h1-v1/source.json (ELLIPSE, CC BY 4.0; rebuild with npm run bench:h1)"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 5,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      }
+    },
+    {
+      "key": "p1-haiku",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 5,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-haiku-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-23",
+    "capUsd": 15,
+    "note": "«Sonnet + Haiku, да, запускай этап C с лимитом $15» — $15 на оба набора: test $10.50, R $4.50"
+  }
+}

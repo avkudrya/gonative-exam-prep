@@ -1,0 +1,157 @@
+{
+    "bench": "exam-c-test-1",
+    "guide": "ielts-writing-task-2@v2",
+    "items": 131,
+    "cells": {
+        "p1-sonnet": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 131,
+            "done": 131,
+            "partial": 0,
+            "costUsd": {
+                "total": 7.579,
+                "mean": 0.0579,
+                "p90": 0.0629
+            },
+            "latencyMs": {
+                "p50": 7422,
+                "p90": 8391
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 42,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 26.679,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 161,
+                "recall": 0.957,
+                "recallModerateMajor": 0.967,
+                "precision": 0.981,
+                "unmatchedFindings": 4
+            },
+            "checks": {
+                "total": 31,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.759,
+                            "n": 100
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.823,
+                            "n": 100
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.855,
+                            "n": 100
+                        }
+                    },
+                    "raters": null
+                }
+            }
+        },
+        "p1-haiku": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-haiku-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 131,
+            "done": 131,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.4285,
+                "mean": 0.0033,
+                "p90": 0.0039
+            },
+            "latencyMs": {
+                "p50": 6784,
+                "p90": 9649
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 71,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 26.374,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "inserted": {
+                "expected": 161,
+                "recall": 0.901,
+                "recallModerateMajor": 0.924,
+                "precision": 0.969,
+                "unmatchedFindings": 7
+            },
+            "checks": {
+                "total": 31,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.738,
+                            "n": 100
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.767,
+                            "n": 100
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.768,
+                            "n": 100
+                        }
+                    },
+                    "raters": null
+                }
+            }
+        }
+    }
+}

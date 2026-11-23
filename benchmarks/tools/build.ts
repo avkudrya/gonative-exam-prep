@@ -132,24 +132,15 @@ export function toJsonl(items: Item[]): string {
 export const sha256 = (content: string | Buffer) => createHash('sha256').update(content).digest('hex');
 
 /**
- * The dev split of S and G plus the first 30 H1 dev essays in selection order (stratified, so the
- * first 30 still span the scale). Needs the local H1 build.
- */
-const dev = (items: Item[], h1: Item[]): Item[] => h1.length === 0 ? [] : [
-  ...items.filter(i => i.split === 'dev' && (i.set === 'S' || i.set === 'G')),
-  ...h1.filter(i => i.split === 'dev').slice(0, 30),
-];
-
-/**
  * Datasets built from the items: id → which items. A dataset that has been run is frozen and
- * leaves this list, keeping the items it was run on: exam-a0 (token measurement) and exam-a-dev-1
- * (stage A, P1.7), both run 2026-11-23.
+ * leaves this list, keeping the items it was run on: exam-a0 (token measurement), exam-a-dev-1
+ * (stage A, P1.7), exam-b-dev-1 (stage B, P1.8; the same items as stage A), exam-c-test-1 (stage C, P1.9:
+ * the test split — S 20, G 11, H1 100) and exam-c-r-1 (stage C stability: the first 5 S and 5 H1 test
+ * essays in selection order), all run 2026-11-23.
  */
 export const DATASETS: Record<string, (items: Item[], h1: Item[]) => Item[]> = {
   // Written only once the bases exist: G without S would freeze a partial dataset.
   'exam-sg-v1': items => items.some(i => i.set === 'S') ? items : [],
-  // Stage B (E §4): the same dev items as stage A, guide v2 (limiters applied by code).
-  'exam-b-dev-1': dev,
 };
 
 /** H1 items from the local ELLIPSE build, in the stratified selection order of source.json. */

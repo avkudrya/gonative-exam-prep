@@ -206,6 +206,50 @@
 - `ProductClosureTest`: удаление общего аккаунта закрывает оба продукта;
 - `GoNativeAudienceTest`: метка `exams` исключена.
 
+**Итог P2.2a (2026-11-23, локально, без коммита в MultiAdmin):**
+- **Общий слой:**
+  - `Products\Quota\{ProductPlans, ProductRateLimits, QuotaDenied}`;
+  - `Products\Accounts\{ProductClosure, AccountDeletion, CancellationPending}`.
+
+  `WorksheetPlans`, `WorksheetsRateLimits`, `SubscriptionClosure` и `AccountDeletion` WG остались обёртками.
+  `QuotaDenied` и `CancellationPending` WG — псевдонимы общих классов, они загружаются при старте. Ключи лимитеров
+  (`worksheets:http:*`, `worksheets:operation:*`), коды ошибок, флаги и поля `info` подписок WG не изменились.
+- **Удаление аккаунта закрывает все продукты** (`ProductClosure::closeEveryProduct`). Это касается и общего
+  аккаунта, и временного аккаунта GoNative (`deleteTempAccount`). Отложенная отмена Paddle в одном продукте не
+  мешает закрыть остальные.
+- **Аудитория.** `GoNativeAudience` исключает все продуктовые метки регистрации из `config/products.php`.
+  `ReadyCourseFastStartPolicy` использует тот же признак.
+- **Отклонения от строк выше:**
+  - `UserActivity` и `WorksheetsAdminUsers` не трогал: это админские списки WG, им и нужно видеть только WG;
+  - `ProductEntitlement::hasAccess` работает для `exams` без правок (ветка по умолчанию). Платный план Exams
+    называется `access`;
+  - проверка «тот же текст не тратит квоту» переехала в P2.4: она принадлежит отправке, а не квоте.
+- **Квота Exams** `Exam\Quota\ExamQuota`:
+  - допуск идёт под `AccountLock` и в транзакции: план, параллельность, число оценок в месяц, деньги AI в месяц
+    (с учётом резервов идущих оценок), темп отправок;
+  - резервом служит строка `ex_assessments` (`queued`, `reserved_usd` = $0.25);
+  - расчёт ровно один раз — в `ex_usage_periods` месяца допуска;
+  - в квоту засчитывается только выданный результат (`assessed`/`partial`); стоимость сбоя сохраняется;
+  - `entitlements()` показывает только план и счётчики, без денег.
+
+  Планы в `config/exam.php`:
+
+  | План | Оценок в месяц | Одновременно | AI в месяц |
+  |---|---|---|---|
+  | `free` | 2 | 1 | $0.50 |
+  | `access` | 50 | 1 | $5 |
+
+  Темп отправок: `free` 3 в минуту / 10 в час, `access` 6 / 60.
+- **Лимитеры.** `exams-{auth,read,write,assess,report}` зарегистрированы; к маршрутам их подключит P2.4.
+- **Ручной доступ:** `products:grant {user} {product} --days=N [--revoke]`, по умолчанию предпросмотр; `source = manual`.
+- **Тесты:**
+  - Exam 30 (+7 `ExamQuotaTest`), Products 17 (+4 `ProductClosureTest`);
+  - Worksheets 821, Billing 22, Edu 270, `tests/Unit` — без новых падений (24 старых);
+  - письма GoNative (`WebWelcomeEmailTest`, `WebNextDayEmailTest`) и `AcquisitionTest` зелёные.
+
+  Найдена и исправлена регрессия: `DeleteUserAccountPasswordTest` подменяет класс WG `AccountDeletion`, поэтому
+  контроллер GoNative по-прежнему берёт его (это подкласс общего). С этого шага гоняем и весь `tests/Unit`.
+
 ### P2.4. API `api/exam/*` (M)
 
 Включается флагом `EXAM_API_ENABLED` (по умолчанию `false`). Подключение — `RouteServiceProvider` и `routes/exam.php`

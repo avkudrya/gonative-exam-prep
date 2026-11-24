@@ -122,3 +122,61 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
   .auth { padding: 8px 0; }
   .auth-card { padding: 24px 18px; border-radius: 14px; }
 }
+
+/* Footer links */
+.footer-main { display: grid; gap: 8px; max-width: 680px; }
+.footer-links { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; }
+.footer-links a { color: var(--muted); }
+
+/* Panels: welcome, settings cards */
+.panel-page { display: flex; justify-content: center; padding: 24px 0; }
+.panel { width: 100%; max-width: 560px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); padding: 32px; }
+.lead { color: var(--muted); }
+.choice { border: 0; padding: 0; margin: 0 0 20px; display: grid; gap: 8px; }
+.choice legend { font-weight: 600; margin-bottom: 4px; padding: 0; }
+.option { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; }
+.option:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.option input, .check input { width: 18px; height: 18px; accent-color: var(--accent); flex: none; }
+.consents { display: grid; gap: 10px; margin: 8px 0 16px; }
+.check { display: flex; gap: 10px; align-items: flex-start; }
+.check input { margin-top: 3px; }
+.panel form .button.primary { width: 100%; }
+.feedback.ok { background: var(--accent-soft); color: var(--ink); }
+
+.settings { max-width: 720px; }
+.account-line { color: var(--muted); overflow-wrap: anywhere; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin: 16px 0; }
+.card h2 { font-size: 18px; margin: 0 0 12px; }
+.card .field { max-width: 420px; }
+.card .links { display: flex; gap: 16px; flex-wrap: wrap; }
+.danger-zone { border-color: color-mix(in srgb, var(--danger) 35%, var(--line)); }
+.danger-zone summary { cursor: pointer; color: var(--danger); font-weight: 600; }
+.danger-form { margin-top: 16px; display: grid; gap: 12px; max-width: 420px; }
+.danger-form .field { margin: 0; }
+.button.danger { background: var(--danger); border-color: var(--danger); color: var(--surface); }
+
+/* Legal documents */
+.legal { max-width: 760px; padding: 24px 0; }
+.legal-tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.legal-tabs a { text-decoration: none; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; font-size: 14px; }
+.legal-tabs a[aria-current] { color: var(--ink); background: var(--surface); font-weight: 600; }
+.legal-version { color: var(--muted); font-size: 14px; }
+.legal-summary { background: var(--accent-soft); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
+.legal-summary h2 { font-size: 16px; margin: 0 0 8px; }
+.legal-summary ul { margin: 0; padding-left: 20px; }
+.legal-contents ol { columns: 2; column-gap: 32px; padding-left: 20px; font-size: 14px; }
+.legal-section { scroll-margin-top: 16px; border-top: 1px solid var(--line); padding-top: 8px; }
+.legal-section h2 { font-size: 19px; margin: 16px 0 8px; }
+.legal-section li { margin-bottom: 6px; }
+.legal-links { display: flex; gap: 16px; flex-wrap: wrap; }
+
+@media (max-width: 520px) {
+  .panel { padding: 24px 18px; }
+  .card { padding: 18px; }
+  .legal-contents ol { columns: 1; }
+}
+
+/* Tailwind's preflight removes list markers; documents need them. */
+.legal ul { list-style: disc; padding-left: 22px; }
+.legal ol { list-style: decimal; }
+.card > .hint { margin-bottom: 14px; }

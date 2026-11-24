@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
+import {Unavailable} from '../../../../../components/unavailable';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
-import {requireAccount} from '../../../../../server/access';
+import {requireMember} from '../../../../../server/access';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}): Promise<Metadata> {
   const {locale} = await params;
@@ -11,8 +12,8 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
 export default async function WritingHome({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
-  const {identity} = await requireAccount(locale, '/ielts/writing');
-  if (!identity) return null;
+  const member = await requireMember(locale, '/ielts/writing');
+  if (member.unavailable) return <Unavailable locale={locale}/>;
   const t = await getTranslations({locale, namespace: 'Writing'});
   return <section className="page">
     <p className="eyebrow">{t('eyebrow')}</p>

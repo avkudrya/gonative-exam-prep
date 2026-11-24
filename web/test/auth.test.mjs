@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {json, problem, startApp, startMock} from './harness.mjs';
+import {json, problem, profileFixture, startApp, startMock} from './harness.mjs';
 
 const TOKEN = '9|browser-session-fixture';
 const PROOF = 'a'.repeat(64);
@@ -25,6 +25,7 @@ test('Auth pages: sign-in with return path, errors, join hint, proofs, sign-out,
     if (path === 'auth/register') return json(202, {status: 'verification_required'});
     if (headers.authorization !== `Bearer ${TOKEN}` || !state.active) return problem(401, 'exams_unauthenticated');
     if (path === 'auth/me') return json(200, identity());
+    if (path === 'profile') return json(200, {profile: profileFixture()});
     if (path === 'auth/logout') { state.active = false; return {status: 204}; }
     return problem(404, 'not_found');
   });

@@ -5,10 +5,18 @@
     "language": "Interface language",
     "skip": "Skip to content",
     "theme": "Theme",
-    "themes": {"system": "System", "light": "Light", "dark": "Dark"},
+    "themes": {
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark"
+    },
     "accountMenu": "Account menu",
     "signOut": "Sign out",
-    "disclaimer": "Unofficial practice tool. IELTS is a registered trademark of its owners; this site is not affiliated with or endorsed by them. Score ranges are approximate, not official results."
+    "disclaimer": "Unofficial practice tool. IELTS is a registered trademark of its owners; this site is not affiliated with or endorsed by them. Score ranges are approximate, not official results.",
+    "settings": "Settings",
+    "legalLinks": "Legal",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy"
   },
   "Auth": {
     "headings": {
@@ -107,5 +115,93 @@
     "eyebrow": "IELTS Writing Task 2",
     "title": "Writing",
     "soon": "Practice tasks, your essays and feedback will appear here."
+  },
+  "Legal": {
+    "documents": "Documents",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "summary": "In short",
+    "contents": "Contents"
+  },
+  "Welcome": {
+    "eyebrow": "Before you start",
+    "title": "Set up GoNative Exams",
+    "lead": "Two choices and two confirmations. You can change the choices later in Settings.",
+    "feedbackLanguage": "Language of explanations",
+    "feedbackHint": "Explanations of your mistakes come in this language. Corrections are always in English.",
+    "languages": {
+      "en": "English",
+      "ru": "Russian"
+    },
+    "exam": "Exam you are preparing for",
+    "examHint": "Academic or General Training. Writing Task 2 is the same in both.",
+    "age": "I am 16 or older.",
+    "terms": "I accept the <terms>Terms of Use</terms> and have read the <privacy>Privacy Policy</privacy>.",
+    "aiNotice": "Submitted essays are assessed automatically with AI (Anthropic). Drafts are not sent to AI. Score ranges are approximate, not official results.",
+    "start": "Save and start",
+    "saving": "Saving…",
+    "termsUpdating": "The Terms are being updated. Please try again in a few minutes.",
+    "terms_changed": "The Terms have just changed. Reload the page to read the new version.",
+    "save_failed": "Could not save. Check your connection and try again."
+  },
+  "Settings": {
+    "title": "Settings",
+    "signedInAs": "Signed in as {email}",
+    "save": "Save changes",
+    "saved": "Changes saved.",
+    "saveFailed": "Could not save your changes. Try again.",
+    "preferences": {
+      "title": "Languages and exam",
+      "interface": "Interface language",
+      "feedback": "Language of explanations",
+      "feedbackHint": "Applies to new feedback. Earlier feedback stays in its language.",
+      "languages": {
+        "en": "English",
+        "ru": "Russian"
+      },
+      "exam": "Exam you are preparing for",
+      "noExam": "Not chosen"
+    },
+    "password": {
+      "title": "Password",
+      "hint": "This is the password of your whole GoNative account. After the change you will sign in again.",
+      "google": "You sign in with Google, so this account has no password to change here.",
+      "current": "Current password",
+      "new": "New password",
+      "confirmation": "Repeat new password",
+      "mismatch": "The passwords do not match.",
+      "submit": "Change password"
+    },
+    "documents": {
+      "title": "Terms and privacy",
+      "accepted": "Accepted version: {version}.",
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy"
+    },
+    "data": {
+      "title": "Delete Exams data",
+      "body": "Permanently deletes your essays, feedback, statistics, reports and entered results. Your GoNative account, the GoNative app and Worksheets are not affected.",
+      "open": "Delete my Exams data…",
+      "confirm": "I understand that my Exams data will be deleted permanently.",
+      "submit": "Delete Exams data"
+    },
+    "account": {
+      "title": "Close GoNative account",
+      "body": "Closes your shared GoNative account and deletes your data in every GoNative product: Exams, the GoNative app and Worksheets.",
+      "open": "Close my GoNative account…",
+      "confirm": "I understand that this closes my account in all GoNative products.",
+      "submit": "Close account"
+    },
+    "noPassword": "Your account uses Google sign-in. To delete data, write to {email} from your account email.",
+    "errors": {
+      "invalid_current_password": "The current password is incorrect.",
+      "password_unchanged": "The new password must differ from the current one.",
+      "password_too_long": "The password is too long: use at most 72 bytes.",
+      "reauthentication_required": "Confirm with your current password.",
+      "exams_assessment_in_progress": "An essay is being assessed right now. Try again in a minute.",
+      "rate_limited": "Too many attempts. Wait a minute and try again.",
+      "exams_rate_limited": "Too many attempts. Wait a minute and try again.",
+      "unavailable": "The service is temporarily unavailable. Try again in a moment."
+    }
   }
 }

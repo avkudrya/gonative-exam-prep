@@ -53,3 +53,20 @@ export async function startApp(t, apiUrl, env = {}) {
 
 export const json = (status, body, headers) => ({status, body, headers});
 export const problem = (status, code, extra = {}) => ({status, body: {error: {code, ...extra}}});
+
+export const TERMS = '2026-11-23';
+export const profileFixture = (over = {}) => ({
+  interface_locale: 'en', target_exam_key: null, target_result: null, exam_date: null, weekly_minutes: null,
+  feedback_language: 'en', translation_language: null, age_confirmed: true, terms_accepted: true, terms_version: TERMS,
+  onboarding_complete: true, ...over,
+});
+const writing = assessable => ({key: 'writing', official_name: 'Writing', tasks: [
+  {key: 'task-1', official_name: 'Task 1', time_minutes: 20, min_words: 150, assessable: false, criteria: []},
+  {key: 'task-2', official_name: 'Task 2', time_minutes: 40, min_words: 250, assessable, criteria: assessable ? [
+    {key: 'task_response', official_name: 'Task Response', scale: {kind: 'band', min: 0, max: 9, step: 1, approximate: {step: 0.5, minWidth: 1}}},
+  ] : []},
+]});
+export const catalogFixture = {exams: [
+  {exam_key: 'ielts-academic', provider_key: 'ielts', official_name: 'IELTS Academic', learning_language: 'en', version: '2026-11', sections: [writing(true)]},
+  {exam_key: 'ielts-general-training', provider_key: 'ielts', official_name: 'IELTS General Training', learning_language: 'en', version: '2026-11', sections: [writing(true)]},
+]};

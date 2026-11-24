@@ -1,7 +1,7 @@
 import 'server-only';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
-import {entitlementsSchema, identitySchema, profileSchema} from '../lib/api/schemas';
+import {catalogSchema, entitlementsSchema, identitySchema, profileSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
 
 /** Server components read the session from the httpOnly cookie; `null` means "not signed in". */
@@ -31,3 +31,11 @@ export async function currentEntitlements() {
   const token = await sessionToken();
   return entitlementsSchema.parse(await backend('entitlements', 'GET', undefined, token ?? undefined));
 }
+
+/** Public catalog: exams whose Writing Task 2 can be assessed. The session is not sent. */
+export const assessableExams = cache(async () => {
+  const catalog = catalogSchema.parse(await backend('catalog', 'GET', undefined, undefined, {maxBytes: 512 * 1024}));
+  return catalog.exams
+    .filter(exam => exam.sections.some(s => s.key === 'writing' && s.tasks.some(task => task.key === 'task-2' && task.assessable)))
+    .map(exam => ({key: exam.exam_key, name: exam.official_name}));
+});

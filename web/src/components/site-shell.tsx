@@ -18,7 +18,13 @@ export async function SiteShell({children, locale, email}: {children: React.Reac
     </header>
     <main id="main">{children}</main>
     <footer className="footer">
-      <p className="disclaimer">{t('disclaimer')}</p>
+      <div className="footer-main">
+        <nav className="footer-links" aria-label={t('legalLinks')}>
+          <Link href="/terms">{t('terms')}</Link>
+          <Link href="/privacy">{t('privacy')}</Link>
+        </nav>
+        <p className="disclaimer">{t('disclaimer')}</p>
+      </div>
       <div className="footer-tools">
         {member && <LanguageSwitch/>}
         <ThemeSwitch/>

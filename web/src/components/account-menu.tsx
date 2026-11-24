@@ -1,7 +1,8 @@
 'use client';
 import {useTranslations} from 'next-intl';
 import {useEffect, useRef, useState} from 'react';
-import {useRouter} from '../i18n/navigation';
+import {Link, useRouter} from '../i18n/navigation';
+import {clearLocalDrafts} from '../lib/local-drafts';
 
 export function AccountMenu({email}: {email: string}) {
   const t = useTranslations('Shell');
@@ -35,7 +36,8 @@ export function AccountMenu({email}: {email: string}) {
     try {
       await fetch('/api/bff/auth/logout', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: '{}'});
     } finally {
-      // Local drafts belong to this browser session only (P3.3 clears them here too).
+      // Browser copies of drafts belong to the signed-in session only.
+      clearLocalDrafts();
       router.replace({pathname: '/login', query: {signed: 'out'}});
       router.refresh();
     }
@@ -48,6 +50,7 @@ export function AccountMenu({email}: {email: string}) {
     </button>
     {open && <nav className="account-panel" aria-label={t('accountMenu')}>
       <p className="account-email">{email}</p>
+      <Link className="menu-item" href="/settings" onClick={() => setOpen(false)}>{t('settings')}</Link>
       <button type="button" className="menu-item" disabled={busy} onClick={() => void signOut()}>{t('signOut')}</button>
     </nav>}
   </div>;

@@ -1,44 +1,32 @@
 import type {Metadata} from 'next';
-import {getTranslations, setRequestLocale} from 'next-intl/server';
-import {headers} from 'next/headers';
-import {notFound} from 'next/navigation';
-import {LanguageSwitch} from '../../../../components/language-switch';
-import {ThemeSwitch} from '../../../../components/theme-switch';
-import {routing} from '../../../../i18n/routing';
-import {appOrigin, LANDING_HEADER, landingExamFor} from '../../../../lib/hosts';
+import {getTranslations} from 'next-intl/server';
+import {routing} from '../i18n/routing';
+import {appOrigin, type LandingExam} from '../lib/hosts';
+import {LanguageSwitch} from './language-switch';
+import {ThemeSwitch} from './theme-switch';
 
-// The landing exists only behind its own host (proxy.ts rewrites ielts.…/{locale} here).
-export const dynamic = 'force-dynamic';
-
-/** The public landing host, when this request came through its rewrite (proxy.ts); otherwise null. */
-async function landingHost(exam: string) {
-  const all = await headers();
-  if (all.get(LANDING_HEADER) !== exam) return null;
-  const host = (all.get('x-forwarded-host') ?? all.get('host') ?? '').toLowerCase();
-  return landingExamFor(host) === exam ? host : null;
-}
-
-export async function generateMetadata({params}: {params: Promise<{locale: string; exam: string}>}): Promise<Metadata> {
-  const {locale, exam} = await params;
-  const host = await landingHost(exam);
-  if (!host) return {};
-  const t = await getTranslations({locale, namespace: 'Landing'});
-  // Local development hosts (*.localhost) run over plain HTTP; real landing hosts over HTTPS.
+/** The public URL of a landing host (no port in production; *.localhost runs over plain HTTP in tests). */
+function landingUrl(host: string, locale: string) {
   const hostname = host.replace(/:\d+$/, '');
   const scheme = hostname === 'localhost' || hostname.endsWith('.localhost') ? 'http' : 'https';
-  const url = (l: string) => `${scheme}://${host}/${l}`;
+  return `${scheme}://${host}/${locale}`;
+}
+
+export async function landingMetadata(locale: string, host: string): Promise<Metadata> {
+  const t = await getTranslations({locale, namespace: 'Landing'});
   return {
     title: {absolute: t('metaTitle')},
     description: t('metaDescription'),
-    alternates: {canonical: url(locale), languages: {...Object.fromEntries(routing.locales.map(l => [l, url(l)])), 'x-default': url(routing.defaultLocale)}},
+    alternates: {
+      canonical: landingUrl(host, locale),
+      languages: {...Object.fromEntries(routing.locales.map(l => [l, landingUrl(host, l)])), 'x-default': landingUrl(host, routing.defaultLocale)},
+    },
     robots: {index: false, follow: false},
   };
 }
 
-export default async function Landing({params}: {params: Promise<{locale: string; exam: string}>}) {
-  const {locale, exam} = await params;
-  setRequestLocale(locale);
-  if (!(await landingHost(exam))) notFound();
+/** The exam landing shown at /{locale} of its own host (ielts.mnemonicwords.app); links lead to the application host. */
+export async function Landing({locale, exam}: {locale: string; exam: LandingExam}) {
   const t = await getTranslations({locale, namespace: 'Landing'});
   const app = appOrigin();
   const utm = (place: string) => new URLSearchParams({exam, utm_source: `${exam}_landing`, utm_medium: 'landing', utm_campaign: place}).toString();

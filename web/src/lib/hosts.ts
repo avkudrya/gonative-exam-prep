@@ -6,8 +6,6 @@
 const DEFAULT_LANDINGS = 'ielts.mnemonicwords.app=ielts';
 export const landingExams = ['ielts'] as const;
 export type LandingExam = typeof landingExams[number];
-/** Set by proxy.ts on the internal rewrite to a landing page. */
-export const LANDING_HEADER = 'x-exams-landing';
 
 function landingMap(): Map<string, LandingExam> {
   const map = new Map<string, LandingExam>();

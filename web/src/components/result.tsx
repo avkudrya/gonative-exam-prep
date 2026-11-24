@@ -24,20 +24,29 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
   const {segments, skipped} = useMemo(() => highlightSegments(text, findings.filter(f => f.span).map(f => ({id: f.id, start: f.span!.start, end: f.span!.end, quote: f.quote}))), [text, findings]);
   const placed = useMemo(() => new Set(segments.flatMap(s => s.ids)), [segments]);
   const byId = useMemo(() => new Map(findings.map(f => [f.id, f])), [findings]);
+  // One repeated mistake = one card (the first place) listing every place; each place keeps its own highlight.
+  const places = useMemo(() => {
+    const groups = new Map<string, ResultFinding[]>();
+    for (const f of findings) if (f.pattern) groups.set(f.pattern, [...(groups.get(f.pattern) ?? []), f]);
+    return groups;
+  }, [findings]);
+  const cards = useMemo(() => findings.filter(f => !f.pattern || places.get(f.pattern)![0].id === f.id), [findings, places]);
+  const groupOf = (f: ResultFinding) => (f.pattern ? places.get(f.pattern)! : [f]);
+  const under = (f: ResultFinding, criterion: string) => f.criterion_key === criterion || Boolean(f.also_criteria?.includes(criterion));
   const [selected, setSelected] = useState<string | null>(null);
   const [filter, setFilter] = useState<string>('all');
   const [reportFor, setReportFor] = useState<string | null | undefined>(undefined);
   const listRef = useRef<HTMLOListElement>(null);
   const essayRef = useRef<HTMLDivElement>(null);
   const criteria = [...result.criteria].sort((a, b) => criterionOrder.indexOf(a.criterion_key) - criterionOrder.indexOf(b.criterion_key));
-  const shown = findings.filter(f => filter === 'all' || (filter === 'strength' ? f.kind === 'strength' : f.kind !== 'strength' && f.criterion_key === filter));
+  const shown = cards.filter(f => filter === 'all' || (filter === 'strength' ? f.kind === 'strength' : f.kind !== 'strength' && under(f, filter)));
   const fixes = result.top_fixes.map(id => byId.get(id)).filter((f): f is ResultFinding => Boolean(f));
 
   function select(id: string, from: 'essay' | 'list') {
     setSelected(id);
     if (from === 'essay') {
       setFilter('all');
-      requestAnimationFrame(() => listRef.current?.querySelector(`[data-finding="${CSS.escape(id)}"]`)?.scrollIntoView({block: 'nearest', behavior: 'smooth'}));
+      requestAnimationFrame(() => listRef.current?.querySelector(`[data-finding~="${CSS.escape(id)}"]`)?.scrollIntoView({block: 'nearest', behavior: 'smooth'}));
     } else {
       requestAnimationFrame(() => essayRef.current?.querySelector(`[data-ids~="${CSS.escape(id)}"]`)?.scrollIntoView({block: 'center', behavior: 'smooth'}));
     }
@@ -53,7 +62,7 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
       <h2 id="criteria-title">{t('criteriaTitle')}</h2>
       <ul className="criteria">
         {criteria.map(c => {
-          const count = findings.filter(f => f.criterion_key === c.criterion_key && f.kind !== 'strength').length;
+          const count = cards.filter(f => under(f, c.criterion_key) && f.kind !== 'strength').length;
           return <li key={c.criterion_key} className="criterion">
             <div className="criterion-head">
               <h3>{t.has(`criteria.${c.criterion_key}`) ? t(`criteria.${c.criterion_key}`) : c.criterion_key}</h3>
@@ -76,6 +85,7 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
         {fixes.map(f => <li key={f.id}>
           {f.quote && <span className="quote" lang="en">“{f.quote}”</span>}
           {f.suggestion && <> <span aria-hidden="true">→</span> <span className="suggestion" lang="en">{f.suggestion}</span></>}
+          {groupOf(f).length > 1 && <span className="places-count"> · {t('places', {count: groupOf(f).length})}</span>}
           <p lang={language}>{f.explanation}</p>
           {placed.has(f.id) && <button type="button" className="text-button" onClick={() => select(f.id, 'list')}>{t('showInEssay')}</button>}
         </li>)}
@@ -101,28 +111,40 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
       </section>
 
       <section aria-labelledby="findings-title" className="review-findings">
-        <h2 id="findings-title">{t('findingsTitle', {count: findings.length})}</h2>
+        <h2 id="findings-title">{t('findingsTitle', {count: cards.length})}</h2>
         <div className="chips" role="group" aria-label={t('filterLabel')}>
           {['all', ...criteria.map(c => c.criterion_key), 'strength'].map(value => <button key={value} type="button" aria-pressed={filter === value}
             onClick={() => setFilter(value)}>{value === 'all' ? t('filterAll') : value === 'strength' ? t('filterStrengths') : t(`criteriaShort.${value}`)}</button>)}
         </div>
         {shown.length === 0 ? <p className="empty">{t('noFindings')}</p> : <ol className="findings" ref={listRef}>
-          {shown.map(f => <li key={f.id} data-finding={f.id} className={`finding ${f.kind}${selected === f.id ? ' active' : ''}`} aria-current={selected === f.id ? 'true' : undefined}>
+          {shown.map(f => {
+            const group = groupOf(f);
+            const active = group.some(g => g.id === selected);
+            return <li key={f.id} data-finding={group.map(g => g.id).join(' ')} className={`finding ${f.kind}${active ? ' active' : ''}`} aria-current={active ? 'true' : undefined}>
             <div className="finding-head">
               <span className={`badge ${f.kind}`}>{t(`kinds.${f.kind}`)}</span>
               <span className="finding-skill">{t.has(`skills.${f.skill}`) ? t(`skills.${f.skill}`) : f.skill}</span>
-              {f.criterion_key && <span className="finding-criterion">{t(`criteriaShort.${f.criterion_key}`)}</span>}
+              {[f.criterion_key, ...(f.also_criteria ?? [])].filter((c): c is string => Boolean(c)).map(c => <span key={c} className="finding-criterion">{t(`criteriaShort.${c}`)}</span>)}
             </div>
             {f.quote && <p className="quote" lang="en">“{f.quote}”{f.suggestion && <> <span aria-hidden="true">→</span> <span className="suggestion">{f.suggestion}</span></>}</p>}
             {!f.quote && f.suggestion && <p className="suggestion" lang="en">{f.suggestion}</p>}
             <p lang={language}>{f.explanation}</p>
+            {group.length > 1 && <div className="places">
+              <p className="hint">{t('places', {count: group.length})}</p>
+              <ol>{group.map(g => <li key={g.id}>
+                <span className="quote" lang="en">“{g.quote}”</span>
+                {g.suggestion && <> <span aria-hidden="true">→</span> <span className="suggestion" lang="en">{g.suggestion}</span></>}
+                {placed.has(g.id) && g.id !== f.id && <> <button type="button" className="text-button" onClick={() => select(g.id, 'list')}>{t('showInEssay')}</button></>}
+              </li>)}</ol>
+            </div>}
             <div className="finding-actions">
               {placed.has(f.id) ? <button type="button" className="text-button" onClick={() => select(f.id, 'list')}>{t('showInEssay')}</button>
                 : f.span && skipped.includes(f.id) ? <span className="hint">{t('notPlaced')}</span> : null}
               <button type="button" className="text-button" onClick={() => setReportFor(f.id)}>{t('reportThis')}</button>
             </div>
             {reportFor === f.id && <ReportForm uuid={attempt.uuid} findingId={f.id} onClose={() => setReportFor(undefined)}/>}
-          </li>)}
+          </li>;
+          })}
         </ol>}
       </section>
     </div>

@@ -307,6 +307,10 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
 .finding.active { box-shadow: 0 0 0 2px var(--accent); }
 .finding p { margin: 6px 0 0; font-size: 15px; }
 .finding-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.places { margin-top: 8px; }
+.places .hint { margin: 0 0 4px; }
+.places ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; font-size: 14px; }
+.places-count { color: var(--muted); font-size: 13px; }
 .finding-skill { font-weight: 600; color: var(--ink); }
 .badge.error { background: color-mix(in srgb, #e5484d 15%, transparent); color: var(--danger); }
 .badge.weakness { background: color-mix(in srgb, #f5a524 22%, transparent); color: #8a5a00; }

@@ -119,6 +119,10 @@ export const resultFindingSchema = z.object({
   kind: z.enum(['error', 'weakness', 'strength']),
   skill: z.string().max(80),
   criterion_key: key.optional(),
+  /** The same error was also reported under these criteria; the backend shows it once (FindingCuration). */
+  also_criteria: z.array(key).max(4).optional(),
+  /** Findings sharing a pattern are one repeated mistake in several places. */
+  pattern: z.string().max(80).optional(),
   severity: z.enum(['minor', 'moderate', 'major']),
   span: z.object({start: z.int().nonnegative(), end: z.int().positive()}).optional(),
   quote: z.string().max(2000).optional(),

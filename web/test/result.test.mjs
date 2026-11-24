@@ -126,13 +126,25 @@ test('Feedback: submit, waiting, result with highlights, reports, rewrite, failu
   await page.locator('mark[data-ids~="f6"]').press('Enter');
   assert.equal(await page.locator('[data-finding="f6"]').getAttribute('aria-current'), 'true');
 
+  // One error reported under two criteria is one card with both; a repeated mistake is one card listing its places,
+  // and each place keeps its own highlight.
+  await page.getByRole('heading', {name: 'Comments (8)'}).waitFor();
+  assert.deepEqual(await page.locator('[data-finding="f1"] .finding-criterion').allTextContents(), ['Grammar', 'Vocabulary']);
+  const repeated = page.locator('[data-finding="f8 f9"]');
+  assert.equal(await page.locator('[data-finding~="f9"]').count(), 1);
+  assert.equal(await repeated.locator('.places .hint').textContent(), '2 places');
+  assert.equal(await repeated.locator('.places li').count(), 2);
+  await page.locator('mark[data-ids~="f9"]').click();
+  assert.equal(await repeated.getAttribute('aria-current'), 'true');
+  await repeated.locator('.places li').nth(1).getByRole('button', {name: 'Show in essay'}).waitFor();
+
   // Filters.
   await page.getByRole('group', {name: 'Filter comments'}).getByRole('button', {name: 'Grammar'}).click();
   assert.equal(await page.locator('.finding').count(), 3);
   await page.getByRole('button', {name: 'Strengths'}).click();
   assert.equal(await page.locator('.finding').count(), 1);
-  await page.getByRole('button', {name: '2 comments'}).click();
-  assert.equal(await page.locator('.finding').count(), 2);
+  await page.getByRole('button', {name: '4 comments'}).click();
+  assert.equal(await page.locator('.finding').count(), 4, 'Vocabulary: its own two, the shared error and the repeated mistake');
   await page.getByRole('button', {name: 'All', exact: true}).click();
 
   // Reports: on one comment, and on the whole feedback.

@@ -94,8 +94,11 @@ sudo bash /var/www/exams.mnemonicwords.app/source/deployment/install-web-service
 запускать его по вашему «задеплой». Правило разрешает ровно одну команду:
 
 ```bash
-echo 'gonativealex ALL=(root) NOPASSWD: /usr/bin/systemctl restart exams-web.service' | sudo tee /etc/sudoers.d/exams-web
-sudo chmod 440 /etc/sudoers.d/exams-web && sudo visudo -cf /etc/sudoers.d/exams-web
+# Checked before installing: a broken file in /etc/sudoers.d breaks sudo entirely.
+echo 'gonativealex ALL=(root) NOPASSWD: /usr/bin/systemctl restart exams-web.service' > /tmp/exams-web.sudoers
+sudo visudo -cf /tmp/exams-web.sudoers && sudo install -o root -g root -m 440 /tmp/exams-web.sudoers /etc/sudoers.d/exams-web
+rm /tmp/exams-web.sudoers
+sudo -k; sudo -n -l /usr/bin/systemctl restart exams-web.service   # prints the command, no password prompt
 ```
 
 **6. Google.** В Google Cloud Console → APIs & Services → Credentials → тот же Web client, что у Worksheets →

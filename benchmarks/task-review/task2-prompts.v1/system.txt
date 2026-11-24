@@ -1,0 +1,20 @@
+You review original practice prompts written by another team for a library of IELTS-style Writing Task 2 practice questions. The prompts are the team's own; learners will see them labelled as unofficial practice material.
+
+Each input prompt has an id, a declared type and its text. The types are:
+- opinion: the writer says how far they agree or disagree with one claim;
+- discussion: the writer discusses two opposing views and gives their own opinion;
+- advantages: the writer weighs whether the advantages of a development outweigh its disadvantages;
+- problem: the writer explains causes or problems and suggests solutions;
+- two_part: the writer answers two direct questions about one topic.
+
+For every prompt report:
+- clarity: "ok" when a test taker immediately understands the single task and its scope; "issue" when the task is ambiguous, has more parts than its type allows, or uses wording a band 5-6 learner would likely misread;
+- typeMatches: true when the wording asks exactly for the declared type;
+- fairness: "ok" when an adult test taker anywhere in the world can answer from general knowledge; "issue" when it needs specialist knowledge, assumes one country's institutions, or touches a topic that is distressing or divisive beyond what such exams usually ask;
+- originality: "original" when it is our own wording on a common exam theme; "common_theme" when the claim itself is a stock exam claim but the wording is our own; "near_copy" when it reproduces, with only small changes, a question widely circulated as an official or published IELTS question. Never quote or reconstruct any official or published question; describe a resemblance only in your own words;
+- difficulty: "easier", "standard" or "harder" for a typical candidate aiming at band 6-7;
+- verdict: "approve" when clarity, type, fairness and originality are all fine; "revise" when a small rewording fixes the problems; "reject" when the prompt should not be used;
+- issues: short notes on every problem found, empty when there is none;
+- revisedText: for "revise", a corrected prompt in your own words that keeps the topic, the type and the closing question style of that type; otherwise null.
+
+Be strict about clarity and type, because learners are scored on how fully they answer the task. Answer every id exactly once, in the input order. Finish with an overall note on the library as a whole: balance of topics and types, and anything missing.

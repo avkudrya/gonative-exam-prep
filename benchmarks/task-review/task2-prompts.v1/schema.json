@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "clarity": {"type": "string", "enum": ["ok", "issue"]},
+          "typeMatches": {"type": "boolean"},
+          "fairness": {"type": "string", "enum": ["ok", "issue"]},
+          "originality": {"type": "string", "enum": ["original", "common_theme", "near_copy"]},
+          "difficulty": {"type": "string", "enum": ["easier", "standard", "harder"]},
+          "verdict": {"type": "string", "enum": ["approve", "revise", "reject"]},
+          "issues": {"type": "array", "items": {"type": "string"}},
+          "revisedText": {"type": ["string", "null"]}
+        },
+        "required": ["id", "clarity", "typeMatches", "fairness", "originality", "difficulty", "verdict", "issues", "revisedText"],
+        "additionalProperties": false
+      }
+    },
+    "overall": {"type": "string"}
+  },
+  "required": ["items", "overall"],
+  "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+{
+  "purpose": "P2.8 review of the 30 own Task 2 prompts by a second vendor before they enter the product library (Claude wrote them)",
+  "source": "benchmarks/sources/task2-prompts.json",
+  "sourceSha256": "7ff79daea853ad4eb03cb79851cd1f3c44f6e8fdc26f3435627e0b728a775f21",
+  "product": "exam",
+  "task": "exam.task_review",
+  "route": {"provider": "openai", "model": "gpt-5.4", "reasoning_effort": "medium", "max_output_tokens": 16000, "timeout": 600},
+  "pricingUsdPerMillion": {"input": 2.5, "output": 15.0},
+  "estimate": {"inputTokens": 2600, "maxOutputTokens": 16000, "maxUsd": 0.25, "expectedUsd": 0.12},
+  "capUsd": 0.5,
+  "userData": "none: our own prompts only, no essays",
+  "approval": null
+}

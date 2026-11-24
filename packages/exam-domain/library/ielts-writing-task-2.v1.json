@@ -1,0 +1,447 @@
+{
+  "libraryKey": "ielts-writing-task-2",
+  "version": "v1",
+  "status": "approved",
+  "about": "Original IELTS-style Writing Task 2 practice prompts written by GoNative (not official IELTS material), reviewed by a second vendor before use.",
+  "sectionKey": "writing",
+  "taskKey": "task-2",
+  "rubricKey": "ielts-writing-task-2",
+  "examKeys": [
+    "ielts-academic",
+    "ielts-general-training"
+  ],
+  "origin": "curated",
+  "source": {
+    "file": "benchmarks/sources/task2-prompts.json",
+    "sha256": "7ff79daea853ad4eb03cb79851cd1f3c44f6e8fdc26f3435627e0b728a775f21"
+  },
+  "review": {
+    "model": "gpt-5.4-2026-03-05",
+    "promptVersion": "task-review-1",
+    "date": "2026-11-24",
+    "aiUsageEventId": 171379,
+    "costUsd": 0.055
+  },
+  "tasks": [
+    {
+      "ref": "gonative-bench:p01",
+      "type": "opinion",
+      "topic": "transport",
+      "difficulty": "standard",
+      "text": "City councils should make all public transport free of charge so that fewer people drive into city centres. To what extent do you agree or disagree?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p02",
+      "type": "discussion",
+      "topic": "education",
+      "difficulty": "standard",
+      "text": "Some people believe that schools should teach practical skills such as cooking and managing money, while others think schools should concentrate on academic subjects. Discuss both views and give your own opinion.",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p03",
+      "type": "advantages",
+      "topic": "work",
+      "difficulty": "standard",
+      "text": "More and more employees now work from home for most of the week. Do the advantages of this trend outweigh the disadvantages?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p04",
+      "type": "problem_solution",
+      "topic": "environment",
+      "difficulty": "standard",
+      "text": "In many countries, large amounts of food are thrown away by shops and households every day. Why does this happen, and what can be done to reduce it?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p05",
+      "type": "two_part",
+      "topic": "technology",
+      "difficulty": "easier",
+      "text": "Children today spend several hours a day looking at screens. Why is this the case? Is this a positive or a negative development?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p06",
+      "type": "opinion",
+      "topic": "health",
+      "difficulty": "standard",
+      "text": "Governments should place a high tax on sugary drinks and unhealthy snacks in order to improve public health. To what extent do you agree or disagree?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p07",
+      "type": "discussion",
+      "topic": "society",
+      "difficulty": "standard",
+      "text": "Some people think that older people should be cared for by their own families, while others believe that the state should provide this care. Discuss both views and give your own opinion.",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p08",
+      "type": "advantages",
+      "topic": "tourism",
+      "difficulty": "standard",
+      "text": "Many small towns now depend on tourism as their main source of income. Do the advantages of this outweigh the disadvantages?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p09",
+      "type": "problem_solution",
+      "topic": "housing",
+      "difficulty": "standard",
+      "text": "In many large cities, young people can no longer afford to buy or rent a home. What are the causes of this problem, and what solutions can you suggest?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p10",
+      "type": "two_part",
+      "topic": "culture",
+      "difficulty": "easier",
+      "text": "Fewer people read printed newspapers than in the past. Why is this happening? What effects does this have on society?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p11",
+      "type": "opinion",
+      "topic": "sport",
+      "difficulty": "standard",
+      "text": "Professional athletes are paid far too much money compared with people in other important jobs. To what extent do you agree or disagree?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p12",
+      "type": "discussion",
+      "topic": "science",
+      "difficulty": "harder",
+      "text": "Some people say that money spent on space exploration would be better used to solve problems on Earth. Others believe that space research brings benefits to everyone. Discuss both views and give your own opinion.",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p13",
+      "type": "advantages",
+      "topic": "education",
+      "difficulty": "standard",
+      "text": "Some universities now offer entire degree courses online. Do the advantages of studying in this way outweigh the disadvantages?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p14",
+      "type": "problem_solution",
+      "topic": "work",
+      "difficulty": "standard",
+      "text": "Many people today feel stressed by their jobs. What are the main reasons for this, and how can employers and individuals deal with it?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p15",
+      "type": "two_part",
+      "topic": "family",
+      "difficulty": "standard",
+      "text": "In some countries, people are getting married and having children later in life than before. What are the reasons for this? Is it a positive or negative development?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p16",
+      "type": "opinion",
+      "topic": "environment",
+      "difficulty": "harder",
+      "text": "Individual actions, such as recycling and saving energy at home, make little difference to environmental problems; only governments and large companies can solve them. To what extent do you agree or disagree?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p17",
+      "type": "discussion",
+      "topic": "education",
+      "difficulty": "standard",
+      "text": "Some people think that university education should be free for all students, while others believe students should pay for their own studies. Discuss both views and give your own opinion.",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p18",
+      "type": "advantages",
+      "topic": "technology",
+      "difficulty": "standard",
+      "text": "Shops and restaurants are increasingly refusing to accept cash and only take card or phone payments. Do the advantages of this outweigh the disadvantages?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p19",
+      "type": "problem_solution",
+      "topic": "health",
+      "difficulty": "standard",
+      "text": "The number of people who are overweight is rising in many parts of the world. What are the causes of this, and what measures could be taken to address it?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p20",
+      "type": "two_part",
+      "topic": "society",
+      "difficulty": "easier",
+      "text": "Many people now prefer to shop online rather than in local stores. Why is this? What impact does it have on town centres?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p21",
+      "type": "opinion",
+      "topic": "crime",
+      "difficulty": "harder",
+      "text": "The best way to reduce crime among young people is to give them longer prison sentences. To what extent do you agree or disagree?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p22",
+      "type": "discussion",
+      "topic": "culture",
+      "difficulty": "standard",
+      "text": "Some people believe that museums and art galleries should be funded by the government, while others think they should pay for themselves through ticket sales. Discuss both views and give your own opinion.",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p23",
+      "type": "advantages",
+      "topic": "work",
+      "difficulty": "standard",
+      "text": "In some countries, it is common for young people to take a year off between finishing school and starting university or work. Do the advantages of this outweigh the disadvantages?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p24",
+      "type": "problem_solution",
+      "topic": "transport",
+      "difficulty": "easier",
+      "text": "Traffic congestion is becoming a serious problem in many cities. What are the main causes, and what can be done to solve it?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p25",
+      "type": "two_part",
+      "topic": "language",
+      "difficulty": "harder",
+      "text": "Many languages are disappearing as fewer people speak them. Why is this happening? Does it matter if some languages die out?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p26",
+      "type": "opinion",
+      "topic": "technology",
+      "difficulty": "harder",
+      "text": "Artificial intelligence will soon do most jobs better than people, so schools should stop preparing students for specific careers. To what extent do you agree or disagree?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p27",
+      "type": "discussion",
+      "topic": "family",
+      "difficulty": "standard",
+      "text": "Some people think parents should strictly control the amount of time children spend playing computer games, while others believe children should decide for themselves. Discuss both views and give your own opinion.",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p28",
+      "type": "advantages",
+      "topic": "society",
+      "difficulty": "standard",
+      "text": "More people today live alone than ever before. Do the advantages of this outweigh the disadvantages?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    },
+    {
+      "ref": "gonative-bench:p29",
+      "type": "problem_solution",
+      "topic": "environment",
+      "difficulty": "standard",
+      "text": "Plastic waste is causing serious harm to oceans and wildlife. What are the main reasons for this problem, and what can be done about it?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "original"
+      }
+    },
+    {
+      "ref": "gonative-bench:p30",
+      "type": "two_part",
+      "topic": "media",
+      "difficulty": "standard",
+      "text": "Advertisements aimed at children are common on television and the internet. Why do companies target children? Should this kind of advertising be banned?",
+      "review": {
+        "verdict": "approve",
+        "clarity": "ok",
+        "typeMatches": true,
+        "fairness": "ok",
+        "originality": "common_theme"
+      }
+    }
+  ]
+}

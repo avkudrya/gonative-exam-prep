@@ -27,6 +27,8 @@ export const FINDINGS = [
   {id: 'f7', kind: 'weakness', skill: 'vocabulary.range', criterion_key: 'lexical_resource', severity: 'minor', explanation: 'Vocabulary is mostly simple and some words repeat (“cars”, “centre”).'},
   // One repeated mistake in two places (a shared pattern): one card listing both places.
   {id: 'f8', kind: 'error', skill: 'vocabulary.collocations', criterion_key: 'lexical_resource', pattern: 'p-f8', severity: 'minor', quote: 'banned completely', suggestion: 'banned outright', explanation: '“Banned outright” is the natural collocation.'},
+  // An optional improvement of correct wording (exam-p1-4): its own kind, never called a mistake.
+  {id: 'f10', kind: 'suggestion', skill: 'vocabulary.word_choice', criterion_key: 'lexical_resource', severity: 'minor', quote: 'more pleasant', suggestion: 'more welcoming', explanation: 'Correct as it is; “more welcoming” would be a little more vivid.'},
   {id: 'f9', kind: 'error', skill: 'vocabulary.collocations', criterion_key: 'lexical_resource', pattern: 'p-f8', severity: 'minor', quote: 'banned completely', suggestion: 'banned outright', explanation: '“Banned outright” is the natural collocation.', second: true},
 ].map(({second, ...f}) => (f.quote ? {...f, span: at(f.quote, second ? at(f.quote).end : 0)} : f));
 
@@ -36,7 +38,7 @@ export const RESULT = {
   criteria: [
     {criterion_key: 'task_response', estimate: range(5.5, 6.5), confidence: 'medium', summary: 'Both views are presented and the opinion is clear, but the second view is underdeveloped.', finding_ids: ['f4']},
     {criterion_key: 'coherence_cohesion', estimate: range(6, 7), confidence: 'medium', summary: 'Well organised paragraphs with clear linking between the main parts.', finding_ids: ['f6']},
-    {criterion_key: 'lexical_resource', estimate: range(5, 6), confidence: 'medium', summary: 'Adequate vocabulary for the task, with a few word choice errors and repetition.', finding_ids: ['f1', 'f2', 'f7', 'f8', 'f9']},
+    {criterion_key: 'lexical_resource', estimate: range(5, 6), confidence: 'medium', summary: 'Adequate vocabulary for the task, with a few word choice errors and repetition.', finding_ids: ['f1', 'f2', 'f7', 'f8', 'f9', 'f10']},
     {criterion_key: 'grammatical_range_accuracy', estimate: range(5, 6), confidence: 'low', summary: 'Mostly simple sentences; agreement and article errors are noticeable.', finding_ids: ['f1', 'f3', 'f5']},
   ],
   findings: FINDINGS,

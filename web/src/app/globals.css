@@ -296,6 +296,7 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
 .hl { color: inherit; border-radius: 3px; padding: 1px 0; cursor: pointer; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .hl.error { background: color-mix(in srgb, #e5484d 16%, transparent); text-decoration: underline wavy #e5484d; }
 .hl.weakness { background: color-mix(in srgb, #f5a524 20%, transparent); text-decoration: underline #d98e0b; }
+.hl.optional { background: color-mix(in srgb, #3b82f6 12%, transparent); text-decoration: underline dotted #3b82f6; }
 .hl.strength { background: color-mix(in srgb, #30a46c 16%, transparent); }
 .legend .hl { cursor: default; padding: 1px 6px; }
 .hl.active, .hl:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
@@ -303,6 +304,7 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
 .finding { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--line); border-radius: 12px; padding: 14px 16px; }
 .finding.error { border-left-color: #e5484d; }
 .finding.weakness { border-left-color: #d98e0b; }
+.finding.optional { border-left-color: #3b82f6; }
 .finding.strength { border-left-color: #30a46c; }
 .finding.active { box-shadow: 0 0 0 2px var(--accent); }
 .finding p { margin: 6px 0 0; font-size: 15px; }
@@ -315,6 +317,8 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
 .badge.error { background: color-mix(in srgb, #e5484d 15%, transparent); color: var(--danger); }
 .badge.weakness { background: color-mix(in srgb, #f5a524 22%, transparent); color: #8a5a00; }
 :root[data-theme="dark"] .badge.weakness { color: #f1c56a; }
+.badge.optional { background: color-mix(in srgb, #3b82f6 14%, transparent); color: #1d4ed8; }
+:root[data-theme="dark"] .badge.optional { color: #93c5fd; }
 .badge.strength { background: color-mix(in srgb, #30a46c 16%, transparent); color: var(--accent); }
 .finding-actions { display: flex; gap: 12px; align-items: center; margin-top: 6px; }
 .finding-actions .text-button { padding-left: 0; }

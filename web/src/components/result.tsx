@@ -8,7 +8,9 @@ import {reportKinds} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
 
 type Result = NonNullable<Assessment['result']>;
-const kindOrder = {error: 0, weakness: 1, strength: 2} as const;
+const kindOrder = {error: 0, weakness: 1, suggestion: 2, strength: 3} as const;
+/** CSS class of a kind: `.suggestion` already styles corrected wording, so the optional kind is `.optional`. */
+const kindClass = (kind: keyof typeof kindOrder) => (kind === 'suggestion' ? 'optional' : kind);
 const criterionOrder = ['task_response', 'coherence_cohesion', 'lexical_resource', 'grammatical_range_accuracy'];
 
 /** 6 → "6", 5.5 → "5.5": ranges are shown as they come, never rounded into something more precise. */
@@ -95,7 +97,7 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
     <div className="review">
       <section aria-labelledby="essay-title" className="review-essay">
         <h2 id="essay-title">{t('essayTitle')}</h2>
-        <p className="legend"><span className="hl error">{t('kinds.error')}</span> <span className="hl weakness">{t('kinds.weakness')}</span> <span className="hl strength">{t('kinds.strength')}</span></p>
+        <p className="legend"><span className="hl error">{t('kinds.error')}</span> <span className="hl weakness">{t('kinds.weakness')}</span> <span className="hl optional">{t('kinds.suggestion')}</span> <span className="hl strength">{t('kinds.strength')}</span></p>
         <div className="essay-marked" lang="en" ref={essayRef}>
           {segments.map(segment => {
             if (!segment.ids.length) return <span key={segment.start}>{segment.text}</span>;
@@ -103,7 +105,7 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
             const active = selected !== null && segment.ids.includes(selected);
             const pick = () => select(segment.ids.includes(selected ?? '') && segment.ids.length > 1
               ? segment.ids[(segment.ids.indexOf(selected!) + 1) % segment.ids.length] : top.id, 'essay');
-            return <mark key={segment.start} className={`hl ${top.kind}${active ? ' active' : ''}`} data-ids={segment.ids.join(' ')}
+            return <mark key={segment.start} className={`hl ${kindClass(top.kind)}${active ? ' active' : ''}`} data-ids={segment.ids.join(' ')}
               tabIndex={0} role="button" aria-label={t('findingAt', {kind: t(`kinds.${top.kind}`), text: segment.text})}
               onClick={pick} onKeyDown={(event: KeyboardEvent) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); pick(); } }}>{segment.text}</mark>;
           })}
@@ -120,9 +122,9 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
           {shown.map(f => {
             const group = groupOf(f);
             const active = group.some(g => g.id === selected);
-            return <li key={f.id} data-finding={group.map(g => g.id).join(' ')} className={`finding ${f.kind}${active ? ' active' : ''}`} aria-current={active ? 'true' : undefined}>
+            return <li key={f.id} data-finding={group.map(g => g.id).join(' ')} className={`finding ${kindClass(f.kind)}${active ? ' active' : ''}`} aria-current={active ? 'true' : undefined}>
             <div className="finding-head">
-              <span className={`badge ${f.kind}`}>{t(`kinds.${f.kind}`)}</span>
+              <span className={`badge ${kindClass(f.kind)}`}>{t(`kinds.${f.kind}`)}</span>
               <span className="finding-skill">{t.has(`skills.${f.skill}`) ? t(`skills.${f.skill}`) : f.skill}</span>
               {[f.criterion_key, ...(f.also_criteria ?? [])].filter((c): c is string => Boolean(c)).map(c => <span key={c} className="finding-criterion">{t(`criteriaShort.${c}`)}</span>)}
             </div>

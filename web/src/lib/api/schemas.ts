@@ -116,7 +116,7 @@ export const presentedEstimateSchema = z.object({
 
 export const resultFindingSchema = z.object({
   id: z.string().max(64),
-  kind: z.enum(['error', 'weakness', 'strength']),
+  kind: z.enum(['error', 'weakness', 'suggestion', 'strength']),
   skill: z.string().max(80),
   criterion_key: key.optional(),
   /** The same error was also reported under these criteria; the backend shows it once (FindingCuration). */

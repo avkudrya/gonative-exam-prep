@@ -17,7 +17,8 @@ export const textSpan = z.object({start: z.int().nonnegative(), end: z.int().pos
 
 export const finding = z.object({
   id: z.string().min(1),
-  kind: z.enum(['error', 'weakness', 'strength']),
+  /** suggestion (exam-p1-4): an optional improvement of correct text; it does not hold the criterion back. */
+  kind: z.enum(['error', 'weakness', 'suggestion', 'strength']),
   skill: skillKey,
   criterionKey: slug.optional(),
   severity: z.enum(['minor', 'moderate', 'major']),

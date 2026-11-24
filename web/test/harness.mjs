@@ -36,7 +36,8 @@ export async function startApp(t, apiUrl, env = {}) {
   const origin = `http://127.0.0.1:${port}`;
   const app = spawn(process.execPath, ['../node_modules/next/dist/bin/next', 'start', '--hostname', '127.0.0.1', '--port', String(port)], {
     cwd: new URL('../', import.meta.url),
-    env: {...process.env, NEXT_TELEMETRY_DISABLED: '1', EXAMS_API_URL: apiUrl, EXAMS_WEB_ORIGIN: origin, ...env},
+    env: {...process.env, NEXT_TELEMETRY_DISABLED: '1', EXAMS_API_URL: apiUrl, EXAMS_WEB_ORIGIN: origin,
+      ...Object.fromEntries(Object.entries(env).map(([k, v]) => [k, String(v).replace('PORT', String(port))]))},
   });
   let output = '';
   app.stdout.on('data', d => output += d);

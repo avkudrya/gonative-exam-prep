@@ -3,6 +3,7 @@ import {z} from 'zod';
 import {identitySchema} from '../../../../lib/api/schemas';
 import {requestKeyPattern, resolve, sessionPaths} from '../../../../server/bff-routes';
 import {trustedRequestOrigin} from '../../../../server/request-origin';
+import {landingExamFor} from '../../../../lib/hosts';
 import {backend, BackendError, cookieName} from '../../../../server/upstream';
 
 /*
@@ -57,6 +58,8 @@ async function readBody(req: NextRequest, limit: number) {
 }
 
 async function handle(req: NextRequest, {params}: {params: Promise<{path: string[]}>}) {
+  // Landing hosts have no accounts: the BFF answers only on the application host.
+  if (landingExamFor(req.headers.get('host'))) return reply({error: 'not_found'}, 404);
   const path = (await params).path.join('/');
   const route = resolve(path, req.method, req.nextUrl.searchParams);
   if (!route) return reply({error: 'not_found'}, 404);

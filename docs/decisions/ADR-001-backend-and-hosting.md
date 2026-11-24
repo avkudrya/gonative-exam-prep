@@ -46,7 +46,7 @@ httpOnly-cookie своего домена, статический app-токен
 - **`exams.mnemonicwords.app`** — приложение: регистрация, вход, кабинет, Writing Checker. Экзамены —
   разделы `/{locale}/{exam}/…` (`/en/ielts/writing`). Сессионная cookie — только на этом хосте.
 - **`ielts.mnemonicwords.app`** — публичный лендинг IELTS (SEO). Призыв к действию ведёт на регистрацию
-  в `exams.` с меткой экзамена (`/{locale}/signup?exam=ielts` + UTM). Сессия лендингу не нужна,
+  в `exams.` с меткой экзамена (`/{locale}/register?exam=ielts` + UTM; путь как в письмах и в WG — уточнено в P3.6). Сессия лендингу не нужна,
   поэтому cookie на `.mnemonicwords.app` не расширяем.
 - **Одно Next.js-приложение** обслуживает оба хоста: `web/src/proxy.ts` по заголовку `Host` направляет
   `ielts.` на маршруты лендинга, у страниц каждого хоста свои canonical и sitemap. Лендинг другого

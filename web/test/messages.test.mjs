@@ -22,6 +22,7 @@ test('en and ru messages have the same keys and no empty strings', () => {
 test('no message claims an official or exact IELTS score (ADR-003)', () => {
   for (const locale of ['en', 'ru']) {
     const text = JSON.stringify(load(locale));
-    assert.doesNotMatch(text, /official (score|band|result)s? (is|are)|your (exact )?IELTS score|точн\w* балл|официальн\w* оценк/i);
+    // Negations ("not an exact band", "а не точный балл") are the honest wording and allowed.
+    assert.doesNotMatch(text, /official (score|band|result)s? (is|are)|your (exact )?IELTS score|(?<!не )точн\w* балл|(?<!не )официальн\w* оценк|exact (band|score) calculator/i);
   }
 });

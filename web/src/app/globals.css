@@ -385,3 +385,38 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 12px; text-align: le
 }
 .progress h2, .results h2 { font-size: 19px; margin: 28px 0 12px; }
 .results .card h2 { margin-top: 0; }
+
+/* Landing */
+.brand-exam { display: inline-block; margin-left: 6px; font-size: 12px; font-weight: 600; letter-spacing: 1px; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); vertical-align: middle; }
+.landing .header .brand { margin-right: auto; }
+.landing-hero { padding: 56px 0 32px; max-width: 760px; }
+.landing-hero h1 { font-size: clamp(32px, 5vw, 50px); letter-spacing: -1.2px; }
+.landing-hero .lead { font-size: 19px; }
+.landing-hero .actions { margin: 24px 0 10px; }
+.landing-section { padding: 28px 0; border-top: 1px solid var(--line); }
+.landing-section h2 { font-size: 24px; margin: 0 0 16px; }
+.landing-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.landing-steps h3, .landing-features h3 { font-size: 17px; margin: 6px 0; }
+.landing-steps p, .landing-features p { color: var(--muted); margin: 0; }
+.step-number { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.landing-example { display: grid; gap: 12px; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; }
+.landing-example .essay-marked { grid-row: span 2; }
+.landing-example .hl { cursor: default; }
+.landing-features { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px 28px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.landing-honest p { max-width: 760px; }
+.faq { display: grid; gap: 8px; max-width: 760px; }
+.faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
+.faq summary { cursor: pointer; font-weight: 600; }
+.faq p { margin: 8px 0 0; color: var(--muted); }
+.landing-final { padding: 40px 0 56px; border-top: 1px solid var(--line); }
+.landing-final h2 { font-size: 26px; margin: 0 0 16px; }
+
+@media (max-width: 860px) {
+  .landing-steps, .landing-features { grid-template-columns: 1fr; }
+  .landing-example { grid-template-columns: 1fr; }
+  .landing-example .essay-marked { grid-row: auto; }
+}
+@media (max-width: 400px) {
+  .landing .header { flex-wrap: wrap; gap: 8px 12px; }
+  .landing .brand { font-size: 16px; }
+}

@@ -495,3 +495,15 @@ lint и сборка проходят. Существующие приложен
   - `ielts.` отдаёт лендинг, остальные пути `ielts.` уходят на `exams.`.
   - Флаги MultiAdmin выключены: BFF `catalog` → 404 `not_found`.
   - Индексация закрыта.
+- **2026-11-24. Пароль до запуска** (владелец: «повесим simple auth на exams и worksheets»). Basic auth nginx, логин
+  `preview`. Фрагмент `deployment/nginx/gonative-preview-auth.conf` установлен в `/etc/nginx/`, хеши — в
+  `/etc/nginx/gonative-preview.htpasswd`. Пароль — только у владельца, в scratchpad агента (0600).
+  - Охват: `exams.`, `ielts.` и `worksheets.`. Сам сервер проходит без пароля, поэтому деплой-проверки работают;
+    `/api/health` Exams открыт.
+  - Проверено снаружи:
+    - без пароля и с неверным паролем — 401;
+    - с паролем — 200, публичный `check-web.sh` проходит;
+    - с сервера все три сайта — 200.
+  - У Worksheets строка `include` есть только в живом конфиге, в Git WG её нет. При `--activate` WG пароль пропадёт.
+  - Также 2026-11-24 владелец добавил `worksheets@` в копии на Gmail и фильтр «не в спам».
+  - Снять пароль при запуске — см. `deployment/README.md`.

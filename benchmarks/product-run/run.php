@@ -126,7 +126,13 @@ try {
         app(AttemptAssessment::class)->execute($submitted['assessment']->id);
         $assessment = Assessment::findOrFail($submitted['assessment']->id);
         $spent += (float) $assessment->cost_usd;
+        // The model's own criterion reasons, before ResultMapper removes score sentences (ScoreMentions).
+        $parent = App\Models\Multi\Edu\GenerationRun::find($assessment->generation_run_id);
+        $raw = Illuminate\Support\Facades\DB::table('edu_generation_steps')->whereIn('run_id', $parent->progress['children'] ?? [])->where('step', 'assess')
+            ->pluck('output')->map(fn ($o) => json_decode((string) $o, true)['data']['reason'] ?? null)->filter()->values()->all();
+        $scoreClass = 'App\\Services\\Exam\\Assessment\\ScoreMentions';
         $row = ['case' => $case, 'uuid' => $assessment->uuid, 'status' => $assessment->status, 'cost_usd' => (float) $assessment->cost_usd,
+            'raw_reasons' => $raw, 'raw_reasons_with_score' => class_exists($scoreClass) ? count(array_filter($raw, fn ($r) => $scoreClass::has($r))) : null,
             'reserved_usd' => (float) $assessment->reserved_usd, 'seconds' => round(microtime(true) - $started, 1),
             'result' => $assessment->result, 'presented' => app(ExamPresenter::class)->assessment($assessment)];
         file_put_contents("{$dir}/responses/{$case['id']}.json", json_encode($row, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT)."\n");

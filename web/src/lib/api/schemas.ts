@@ -143,6 +143,12 @@ export const assessmentResultSchema = z.object({
   })),
   findings: z.array(resultFindingSchema),
   top_fixes: z.array(z.string().max(64)),
+  /** The same priorities grouped by skill: examples (finding ids) and the number of places (FindingCuration::topSkills). */
+  top_skills: z.array(z.object({
+    skill: z.string().max(80),
+    finding_ids: z.array(z.string().max(64)).max(10),
+    places: z.int().positive(),
+  })).max(10).optional(),
 });
 
 export const assessmentSchema = z.object({

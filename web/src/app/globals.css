@@ -287,6 +287,9 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
 .criterion .text-button { align-self: flex-start; padding-left: 0; }
 .fixes ol { margin: 0; padding-left: 22px; list-style: decimal; display: grid; gap: 12px; max-width: 820px; }
 .fixes p { margin: 4px 0 0; }
+.fix-skill h3 { margin: 0; font-size: 16px; font-weight: 600; }
+.fix-examples { margin: 4px 0 0; padding-left: 0; list-style: none; display: grid; gap: 2px; }
+.fix-examples .text-button { font-size: 13px; }
 .quote { font-style: italic; }
 .suggestion { font-weight: 600; color: var(--accent); }
 .review { display: grid; gap: 24px; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: start; }

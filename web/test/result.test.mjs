@@ -111,8 +111,9 @@ test('Feedback: submit, waiting, result with highlights, reports, rewrite, failu
   assert.doesNotMatch(await page.locator('main').textContent(), /your (IELTS )?score|official (score|band)/i);
   await page.getByText('Low confidence').waitFor();
 
-  // Top fixes in the given order; skills have readable names.
-  assert.deepEqual(await page.locator('.fixes .suggestion').allTextContents(), ['their cars', 'city centres are', 'cannot']);
+  // Top fixes grouped by skill in the given order, with readable names and the number of places.
+  assert.deepEqual(await page.locator('.fix-skill h3').allTextContents(), ['Word choice', 'Subject–verb agreement', 'Collocations · 2 places', 'Developing ideas']);
+  assert.deepEqual(await page.locator('.fixes .suggestion').allTextContents(), ['their cars', 'city centres are', 'banned outright']);
   await page.locator('.finding-skill').filter({hasText: 'Subject–verb agreement'}).waitFor();
   assert.equal(await page.locator('.finding-skill').filter({hasText: '.'}).count(), 0);
 

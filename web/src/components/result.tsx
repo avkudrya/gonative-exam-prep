@@ -43,6 +43,11 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
   const criteria = [...result.criteria].sort((a, b) => criterionOrder.indexOf(a.criterion_key) - criterionOrder.indexOf(b.criterion_key));
   const shown = cards.filter(f => filter === 'all' || (filter === 'strength' ? f.kind === 'strength' : f.kind !== 'strength' && under(f, filter)));
   const fixes = result.top_fixes.map(id => byId.get(id)).filter((f): f is ResultFinding => Boolean(f));
+  // Grouped by skill when the backend sends it; older backends send only top_fixes.
+  const fixSkills = (result.top_skills ?? [])
+    .map(g => ({...g, examples: g.finding_ids.map(id => byId.get(id)).filter((f): f is ResultFinding => Boolean(f))}))
+    .filter(g => g.examples.length > 0);
+  const skillName = (skill: string) => (t.has(`skills.${skill}`) ? t(`skills.${skill}`) : skill);
 
   function select(id: string, from: 'essay' | 'list') {
     setSelected(id);
@@ -81,7 +86,22 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
       </ul>
     </section>
 
-    {fixes.length > 0 && <section aria-labelledby="fixes-title" className="fixes">
+    {fixSkills.length > 0 ? <section aria-labelledby="fixes-title" className="fixes">
+      <h2 id="fixes-title">{t('fixesTitle')}</h2>
+      <ol>
+        {fixSkills.map(g => <li key={g.skill} className="fix-skill">
+          <h3>{skillName(g.skill)}{g.places > 1 && <span className="places-count"> · {t('places', {count: g.places})}</span>}</h3>
+          <ul className="fix-examples">
+            {g.examples.map(f => <li key={f.id}>
+              {f.quote && <span className="quote" lang="en">“{f.quote}”</span>}
+              {f.suggestion && <> <span aria-hidden="true">→</span> <span className="suggestion" lang="en">{f.suggestion}</span></>}
+              {placed.has(f.id) && <> <button type="button" className="text-button" onClick={() => select(f.id, 'list')}>{t('showInEssay')}</button></>}
+            </li>)}
+          </ul>
+          <p lang={language}>{g.examples[0].explanation}</p>
+        </li>)}
+      </ol>
+    </section> : fixes.length > 0 && <section aria-labelledby="fixes-title" className="fixes">
       <h2 id="fixes-title">{t('fixesTitle')}</h2>
       <ol>
         {fixes.map(f => <li key={f.id}>
@@ -125,7 +145,7 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
             return <li key={f.id} data-finding={group.map(g => g.id).join(' ')} className={`finding ${kindClass(f.kind)}${active ? ' active' : ''}`} aria-current={active ? 'true' : undefined}>
             <div className="finding-head">
               <span className={`badge ${kindClass(f.kind)}`}>{t(`kinds.${f.kind}`)}</span>
-              <span className="finding-skill">{t.has(`skills.${f.skill}`) ? t(`skills.${f.skill}`) : f.skill}</span>
+              <span className="finding-skill">{skillName(f.skill)}</span>
               {[f.criterion_key, ...(f.also_criteria ?? [])].filter((c): c is string => Boolean(c)).map(c => <span key={c} className="finding-criterion">{t(`criteriaShort.${c}`)}</span>)}
             </div>
             {f.quote && <p className="quote" lang="en">“{f.quote}”{f.suggestion && <> <span aria-hidden="true">→</span> <span className="suggestion">{f.suggestion}</span></>}</p>}

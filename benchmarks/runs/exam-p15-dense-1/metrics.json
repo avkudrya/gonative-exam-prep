@@ -1,0 +1,163 @@
+{
+    "bench": "exam-p15-dense-1",
+    "guide": "ielts-writing-task-2@v2",
+    "items": 10,
+    "cells": {
+        "p1-sonnet-p14": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 10,
+            "done": 10,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.6517,
+                "mean": 0.0652,
+                "p90": 0.0673
+            },
+            "latencyMs": {
+                "p50": 8093,
+                "p90": 8226
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 2,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 26.6,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 10,
+                "per100": {
+                    "error": 1360,
+                    "weakness": 810,
+                    "suggestion": 150,
+                    "strength": 340
+                },
+                "repeatsPer100": 210,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 10,
+                    "evidenceDemand": 0
+                }
+            },
+            "inserted": {
+                "expected": 251,
+                "recall": 0.697,
+                "recallModerateMajor": 0.751,
+                "recallLocalized": 0.343,
+                "precision": 1,
+                "unmatchedFindings": 0,
+                "errorFindingsPerAssessment": 13.6,
+                "bundled": 18,
+                "suggestionsOnErrors": 11,
+                "languageStrengthsOnErrors": 5
+            },
+            "checks": null,
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        },
+        "p1-sonnet-p15": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 10,
+            "done": 10,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.7161,
+                "mean": 0.0716,
+                "p90": 0.0734
+            },
+            "latencyMs": {
+                "p50": 9473,
+                "p90": 10334
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 32.3,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 10,
+                "per100": {
+                    "error": 2130,
+                    "weakness": 710,
+                    "suggestion": 120,
+                    "strength": 270
+                },
+                "repeatsPer100": 370,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 0
+                }
+            },
+            "inserted": {
+                "expected": 251,
+                "recall": 0.861,
+                "recallModerateMajor": 0.931,
+                "recallLocalized": 0.614,
+                "precision": 1,
+                "unmatchedFindings": 0,
+                "errorFindingsPerAssessment": 21.3,
+                "bundled": 9,
+                "suggestionsOnErrors": 8,
+                "languageStrengthsOnErrors": 1
+            },
+            "checks": null,
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

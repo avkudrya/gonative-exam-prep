@@ -1,0 +1,63 @@
+{
+  "id": "exam-p15-dense-1",
+  "purpose": "Set D (dense-error essays, every mistake labelled; owner test 03): exam-p1-4 against exam-p1-5, feedback in Russian as in the product",
+  "budgetUsd": 3,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-2.v2.json",
+  "guideSha256": "cb176d833ad60c7b550db2811e441bccd69e9c39d4940ae49641fc7cddab8d69",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-2",
+  "items": "../exam-d-v1/items.jsonl",
+  "itemsSha256": "9c4edd000f3c631dceeb75b6485fbfa31a68849624bda20eb562c60f948c2698",
+  "feedbackLanguage": "ru",
+  "sources": {
+    "D": "benchmarks/sources/d-dense.txt (npm run bench:dense): d-01..d-09 synthetic, d-10 the owner's test 03 essay with the owner's permission 2026-11-24"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet-p14",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-p1-4"
+      }
+    },
+    {
+      "key": "p1-sonnet-p15",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-p1-5"
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-24",
+    "capUsd": 3,
+    "note": "«да, до $10, эссе про газеты можно добавить» — общий лимит exam-p1-5 $10: этот прогон и exam-p15-dense-1"
+  }
+}

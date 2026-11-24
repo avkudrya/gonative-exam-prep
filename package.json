@@ -20,6 +20,7 @@
     "typecheck:web": "npm run typecheck --workspace web",
     "check": "npm run typecheck && npm test && npm run typecheck:web && npm run lint && npm run build && npm run test:web",
     "bench:build": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build.ts",
+    "bench:dense": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/dense.ts",
     "bench:h1": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/ellipse.ts",
     "test:web": "npm run test --workspace web"
   },

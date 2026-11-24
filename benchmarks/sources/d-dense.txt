@@ -1,0 +1,102 @@
+# Set D: dense-error essays (owner test 03, 2026-11-24). Every mistake is labelled, so recall and precision are
+# measured on the whole text. Markup: {wrong=>right|skill|severity}; skill codes and severities are mapped in
+# benchmarks/tools/dense.ts. Everything outside the braces is correct English (British and American spelling both).
+# d01-d09: written for this set (claude-opus-5-5), task prompts from task2-prompts.json.
+# d10: the owner's test 03 essay (synthetic, written by an external model), added with the owner's permission
+# 2026-11-24; textSha256 is the hash stored with its production assessment.
+
+=== d01 p04
+Nowadays a lot of food {are=>is|sva|m} thrown away by shops and families every day. There are several reasons for this problem, but {goverments=>governments|sp|n} and ordinary people can do {much=>many|wc|m} things to reduce it.
+
+The main reason is that supermarkets want their shelves to look full all the time. When fruit and vegetables {becomes=>become|sva|m} a little old, customers {doesn't=>don't|sva|m} choose them, so the shop has to throw them away. In addition, many people buy too much food {in=>at|prep|n} the weekend because big packs are {more cheap=>cheaper|ss|m}. At home they forget about it and it {go=>goes|sva|m} bad in the fridge. Another reason is that people {dont=>don't|punc|n} know how {cook=>to cook|ss|m} with {a leftovers=>leftovers|art|n}.
+
+There are some {solution=>solutions|wf|m} for this problem. Firstly, shops should {to give=>give|vf|m} food which is still good to {a poor people=>poor people|art|n} or to charities. In France, for example, there is a law about this. Secondly, schools should teach children how to plan {there=>their|sp|m} meals and {buying=>buy|vf|m} only what they need. Finally, people can use apps which {helps=>help|sva|m} them to share extra food with their neighbors.
+
+In conclusion, food waste {happen=>happens|sva|m} because of {shops rules=>shop rules|wf|n} and bad habits at home. If shops and families {will work=>work|tense|m} together, the amount of waste will be much {more less=>less|ss|m}.
+
+=== d02 p09
+In many big cities young people {can not=>cannot|sp|n} buy or even rent a flat. This essay will {discuss about=>discuss|prep|m} the causes of this problem and suggest some {solution=>solutions|wf|m}.
+
+The first cause is that prices {grow=>have grown|tense|m} very fast in the last ten years. Rich people and companies {buys=>buy|sva|m} many flats {for invest=>as an investment|ss|m} and then they rent {it=>them|ss|m} for a high price. Salaries of young people {did not grow=>have not grown|tense|m} in the same way, so many of them spend more {then=>than|sp|m} half of their salary on rent. Moreover, in the capital there {is not=>are not|sva|m} enough new buildings because building new homes is slow and {expencive=>expensive|sp|n}.
+
+There are {few=>a few|art|m} things that the {goverment=>government|sp|n} can do. Firstly, it {should builds=>should build|vf|m} cheap homes for young families and {student=>students|wf|m}. Secondly, it can {make=>introduce|col|n} a special tax for people {which=>who|ss|m} {owns=>own|sva|m} more than three flats. Thirdly, banks could give {a loans=>loans|art|n} with low interest to young buyers.
+
+In conclusion, the main {reasons is=>reasons are|sva|m} investors and low salaries. If the state {will build=>builds|tense|m} more cheap homes, young people {will can=>will be able to|vf|m} live in their own homes.
+
+=== d03 p14
+Today many people {feels=>feel|sva|m} stressed because of their jobs. In my opinion there are two main {reason=>reasons|wf|m} for this, and both employers and workers can do something {for change=>to change|ss|m} the situation.
+
+Firstly, people have too much work and too little time. My friend {work=>works|sva|m} in a bank and she often {stay=>stays|sva|m} in the office until nine in the evening. She told me that her manager {give=>gives|sva|m} her new tasks every hour and she {never can=>can never|ss|m} finish them. Secondly, many workers are afraid {to loose=>to lose|sp|m} their jobs, so they {doesn't=>don't|sva|m} say no to {there=>their|sp|m} boss.
+
+Employers should {to hire=>hire|vf|m} more staff and {to plan=>plan|vf|n} the work {more better=>better|ss|m}. They can also give workers {an useful training=>useful training|art|m} about stress. Individuals can also help {theirselves=>themselves|wf|m}. For example, they can do sport after work, {sleeping=>sleep|vf|m} enough and {turning=>turn|vf|m} off {phone=>their phones|art|n} in the evening.
+
+In conclusion, stress at work is caused by too much work and fear. {Its=>It's|punc|n} important that companies and workers {works=>work|sva|m} together {for=>to|ss|m} solve this problem.
+
+=== d04 p05
+Children today {spends=>spend|sva|m} many hours looking at phones and tablets. There are several reasons for this, and I think it is mostly a negative development.
+
+The first reason is that parents are busy, so they {give to children=>give children|ss|m} a tablet to keep them quiet. Also, games and videos are designed to be {interestings=>interesting|wf|m}, so children can't stop watching. At school pupils {uses=>use|sva|m} computers too, because many lessons {is=>are|sva|m} online now.
+
+In my opinion this {trend have=>trend has|sva|m} more bad effects than good ones. Children who {sits=>sit|sva|m} all day {does=>do|sva|m} not move enough and {they becomes=>they become|sva|m} {overweighted=>overweight|wf|m}. They also play less outside and talk {fewer=>less|wc|m} with their {familys=>families|sp|n}. However, some educational apps can help children {learning=>learn|vf|m} languages or maths.
+
+To sum up, children use screens because of busy parents and attractive games. I think it {affect=>affects|sva|m} {there=>their|sp|m} health badly, so parents should {controlling=>control|vf|m} the time {what=>that|ss|m} children spend online.
+
+=== d05 p15
+In many countries people now get married and have children later {then=>than|sp|m} their parents did. In my opinion this is mostly a positive change, {althought=>although|sp|n} it {have=>has|sva|m} some problems too.
+
+The first reason {are=>is|sva|m} education. Young people {studies=>study|sva|m} at university {during=>for|prep|m} five or six years and after that they want {find=>to find|vf|m} a good job. {Second reason=>The second reason|art|m} is money. A wedding {cost=>costs|sva|m} a lot and {raise=>raising|vf|m} a child is even more expensive, so couples wait until they {will have=>have|tense|m} enough money.
+
+I believe this is good because older parents are more {matures=>mature|wf|m} and they can {give to their children=>give their children|ss|m} a better life. On the other hand, {woman who has=>women who have|wf|m} a baby after forty can have health problems, and their children {has=>have|sva|m} less time with {there=>their|sp|m} grandparents.
+
+In conclusion, people {marries=>marry|sva|m} later because of {study=>studies|wf|n} and money. {Despite of=>Despite|prep|m} some {risk=>risks|wf|m}, I think it is a positive development.
+
+=== d06 p01
+Some people {thinks=>think|sva|m} that public transport in cities should be free. I {am agree=>agree|ss|m} with this idea, because it {can helps=>can help|vf|m} to reduce traffic and pollution.
+
+Firstly, if buses and trains {is=>are|sva|m} free, more people will {leaving=>leave|vf|m} {there=>their|sp|m} cars at home. In my city there {is=>are|sva|m} traffic jams every morning and {it take=>it takes|sva|m} one hour {for go=>to go|ss|m} to the centre.
+
+Secondly, free transport helps poor {peoples=>people|wf|m}. Students and old people {often have not=>often do not have|ss|m} money for {a tickets=>tickets|art|n}, so they {stays=>stay|sva|m} at home.
+
+{From other side=>On the other hand|col|m}, free transport {cost=>costs|sva|m} a lot of money for the city. {Goverment=>The government|art|m} must pay drivers and repair buses, so taxes can {rises=>rise|vf|m}.
+
+In conclusion, I {strong=>strongly|wf|m} believe that free transport is a good idea, because the {advantages is=>advantages are|sva|m} {more bigger=>bigger|ss|m} than the problems.
+
+=== d07 p02
+Some people {says=>say|sva|m} that schools should teach practical skills like cooking and {manage=>managing|vf|m} money. Others think {what=>that|ss|m} schools must concentrate on academic subjects. In this essay I will discuss both views.
+
+On the one hand, practical skills are very {usefull=>useful|sp|n} {in the real life=>in real life|art|n}. Many young people {doesn't=>don't|sva|m} know how to cook a simple meal or how {pay=>to pay|vf|m} bills. When they start to live alone, they make {a lot of mistake=>a lot of mistakes|wf|m} with money.
+
+On the other hand, academic subjects {gives=>give|sva|m} students knowledge which they need for university. {Mathematic=>Mathematics|wf|m} and science {develops=>develop|sva|m} thinking, and many jobs {requires=>require|sva|m} this knowledge. Also, parents can teach cooking at home, so {school=>schools|wf|m} don't need to do it.
+
+In my opinion, schools should do both. For example, they can {to have=>have|vf|m} one lesson {in=>a|prep|m} week about money and cooking. In this way students will be ready for adult life and they will also have good {knowledges=>knowledge|wf|m}.
+
+=== d08 p03
+Nowadays more and more {employee=>employees|wf|m} work from home. I think the advantages of this trend {is=>are|sva|m} more important {then=>than|sp|m} the disadvantages.
+
+The {bigest=>biggest|sp|n} advantage is that people don't waste time {for=>on|prep|m} travelling. My sister {spended=>spent|vf|m} two hours on the bus every day, but now she {use=>uses|sva|m} this time for sport. Also, working at home {give=>gives|sva|m} {to parents=>parents|prep|m} more time with {there=>their|sp|m} children. Companies also save money because they {needs=>need|sva|m} {less=>smaller|wc|m} offices.
+
+However, there are some disadvantages. Some workers feel lonely and they miss {theirs=>their|wf|m} colleagues. It is also difficult to separate work and free time, so a lot of people {works=>work|sva|m} until late at night. Moreover, not every home {have=>has|sva|m} {a quite=>a quiet|sp|m} place {for work=>to work|ss|n}.
+
+To conclude, although working from home {have=>has|sva|m} some problems, I believe {it's=>its|punc|m} benefits {is=>are|sva|m} {more strong=>stronger|ss|m}.
+
+=== d09 p08
+Many small towns {depends=>depend|sva|m} on tourism as {there=>their|sp|m} main income. In my view, the advantages of this {is=>are|sva|m} {more greater=>greater|ss|m} than the {disadvantage=>disadvantages|wf|m}.
+
+First of all, tourists bring money. They {stays=>stay|sva|m} in hotels, eat in {restaurant=>restaurants|wf|m} and buy {souvenires=>souvenirs|sp|n}, so local people {has=>have|sva|m} jobs. For example, my grandmother lives in a small town {near of=>near|prep|m} the sea, and in summer there are {much=>many|wc|m} visitors there. Thanks to tourists, the town repaired its old church and {build=>built|vf|m} a new park.
+
+On the other hand, tourism can {to make=>make|vf|m} life difficult for residents. In summer the streets are {crowd=>crowded|wf|m} and prices {becomes=>become|sva|m} higher. Also, many young people {works=>work|sva|m} only during the summer and {in winter they have not=>in winter they do not have|ss|m} any work.
+
+In conclusion, I think tourism is good for small towns if it is well {organise=>organised|vf|m}. The money from tourists {help=>helps|sva|m} the town to develop.
+
+=== d10 p10 owner-test-03 sha256=2c23d919fe33248454489042dec6d2033da54a3999d96d6b5a58488db687290c
+In the past many people {was reading=>were reading|sva|m} newspapers every day but now this situation is very {diferent=>different|sp|n}. People {dont=>don't|punc|n} buy {newspaper=>newspapers|art|n} like before because we have {internet=>the internet|art|n} and new {technologys=>technologies|sp|n}. I think {this changes=>these changes|ss|m} have some good and bad {efects=>effects|sp|n} {for=>on|col|n} our society.
+
+The first reason {is because=>is that|ss|n} {internet=>the internet|art|n} is {more easy and cheap=>easier and cheaper|ss|m}. When people {wants=>want|sva|m} to know something about {world=>the world|art|n} they can just open their phone and {reading=>read|vf|m} news. They {doesnt=>don't|sva|m} need to go to {shop=>a shop|art|n} and {buying=>buy|vf|m} a newspaper. Also {in internet=>on the internet|prep|n} {informations are=>information is|wf|m} coming very fast. {Newspaper need=>Newspapers need|sva|m} to wait {next day=>until the next day|prep|n} but {in internet=>on the internet|prep|n} we can {knowing=>know|vf|m} everything {immediatly=>immediately|sp|n}. Young {peoples=>people|wf|m} are spending {many time=>a lot of time|wc|m} {in social medias=>on social media|prep|n} and they {not interested to read=>are not interested in reading|ss|m} {newspaper=>newspapers|art|n}.
+
+Another reason is the price of newspapers. In my country {for example=>, for example,|punc|n} {the newspapers becomes=>newspapers become|sva|m} more {expencive=>expensive|sp|n} {every years=>every year|wf|n}. Why {people need=>do people need|ss|m} to pay money if they can read {same news=>the same news|art|n} for {free.=>free?|punc|n}
+
+This situation {have=>has|sva|m} some bad effects {for=>on|col|n} society. Many people who {working=>work|vf|m} in {newspaper company=>newspaper companies|art|n} can {loose=>lose|sp|m} their jobs. Also old people {which=>who|ss|m} {dont=>don't|punc|n} know {how using=>how to use|ss|m} {internet=>the internet|art|n} have {more dificult=>more difficulty|wf|m} {to get=>getting|ss|n} {informations=>information|wf|m}. My grandfather {for example=>, for example,|punc|n} {he=>|ss|m} always {read=>reads|sva|m} {newspaper=>newspapers|art|n} and he {dont=>doesn't|sva|m} like using {computer=>a computer|art|n}.
+
+{In other hand=>On the other hand|col|m} {internet=>the internet|art|n} {is not always give=>does not always give|ss|m} us {true informations=>true information|wf|m}. Everybody can {writing=>write|vf|m} something {in internet=>on the internet|prep|n} and other people can {beleive=>believe|sp|n} it. This is {very big problem=>a very big problem|art|n} because sometimes {peoples=>people|wf|m} {dont=>don't|punc|n} understand {what news is true or not=>whether the news is true or not|ss|m}. But {internet=>the internet|art|n} also {have=>has|sva|m} good things because we can read news from many {countrys=>countries|sp|n}.
+
+In conclusion I think printed {newspaper=>newspapers|art|n} will be less popular in {future=>the future|art|n}. {Internet make=>The internet makes|sva|m} our life {more easier=>easier|ss|m} but it also {bring=>brings|sva|m} some problems for people and society.

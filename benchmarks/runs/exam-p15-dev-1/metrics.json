@@ -1,0 +1,102 @@
+{
+    "bench": "exam-p15-dev-1",
+    "guide": "ielts-writing-task-2@v2",
+    "items": 61,
+    "cells": {
+        "p1-sonnet-p15": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 0,
+            "costUsd": {
+                "total": 3.972,
+                "mean": 0.0651,
+                "p90": 0.0751
+            },
+            "latencyMs": {
+                "p50": 7106,
+                "p90": 9639
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 13,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 23.131,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 61,
+                "per100": {
+                    "error": 1257.4,
+                    "weakness": 559,
+                    "suggestion": 96.7,
+                    "strength": 400
+                },
+                "repeatsPer100": 203.3,
+                "adviceFlagsPer100": {
+                    "structureDemand": 1.6,
+                    "sequenceDemand": 8.2,
+                    "evidenceDemand": 3.3
+                }
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.976,
+                "recallModerateMajor": 1,
+                "recallLocalized": 0.976,
+                "precision": 0.991,
+                "unmatchedFindings": 2,
+                "errorFindingsPerAssessment": 10.8,
+                "bundled": 0,
+                "suggestionsOnErrors": 11,
+                "languageStrengthsOnErrors": 6
+            },
+            "checks": {
+                "total": 30,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.915,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.93,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.904,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                }
+            }
+        }
+    }
+}

@@ -2,8 +2,14 @@ import type {Metadata} from 'next';
 import {hasLocale, NextIntlClientProvider} from 'next-intl';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
+import {ThemeInit} from '../../components/theme-init';
+import {ThemeProvider} from '../../components/theme-provider';
 import {routing} from '../../i18n/routing';
 import {siteOrigin} from '../../lib/site';
+import '@fontsource/noto-sans/latin-400.css';
+import '@fontsource/noto-sans/latin-600.css';
+import '@fontsource/noto-sans/cyrillic-400.css';
+import '@fontsource/noto-sans/cyrillic-600.css';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -26,11 +32,10 @@ export default async function Layout({children, params}: {children: React.ReactN
   const {locale} = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
-  return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
-      </body>
-    </html>
-  );
+  return <html lang={locale} suppressHydrationWarning>
+    <head><ThemeInit/></head>
+    <body>
+      <NextIntlClientProvider><ThemeProvider>{children}</ThemeProvider></NextIntlClientProvider>
+    </body>
+  </html>;
 }

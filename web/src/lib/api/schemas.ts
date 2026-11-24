@@ -1,0 +1,208 @@
+import {z} from 'zod';
+
+/*
+ * Projections of the Exams API (MultiAdmin `ExamPresenter`) as the browser receives them from the BFF.
+ * zod objects drop unknown keys, so a field the backend adds later never reaches the client until it
+ * is listed here. Scores arrive already presented (ADR-003): the web only shows them, never computes them.
+ */
+
+const iso = z.string().max(64);
+const isoOrNull = iso.nullable();
+const uuid = z.string().regex(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i);
+const key = z.string().max(64);
+
+export const interfaceLocaleSchema = z.enum(['en', 'ru']);
+export const feedbackLanguageSchema = z.enum(['en', 'ru']);
+
+export const identitySchema = z.object({
+  user: z.object({email: z.string().max(255), name: z.string().max(255).nullable(), has_password: z.boolean()}),
+  account_state: z.enum(['active', 'cleanup_pending']),
+});
+
+export const profileSchema = z.object({
+  interface_locale: interfaceLocaleSchema.nullable(),
+  target_exam_key: key.nullable(),
+  target_result: z.record(z.string(), z.number()).nullable(),
+  exam_date: z.string().max(10).nullable(),
+  weekly_minutes: z.int().nullable(),
+  feedback_language: feedbackLanguageSchema.nullable(),
+  translation_language: z.enum(['ru', 'uk']).nullable(),
+  age_confirmed: z.boolean(),
+  terms_accepted: z.boolean(),
+  terms_version: z.string().max(32),
+  onboarding_complete: z.boolean(),
+});
+
+export const entitlementsSchema = z.object({
+  plan: z.string().max(64),
+  period: z.object({start: z.string().max(10), end: z.string().max(10)}),
+  assessments: z.object({limit: z.int(), used: z.int(), pending: z.int(), remaining: z.int()}),
+  concurrent: z.int(),
+});
+
+const scaleSchema = z.object({
+  kind: z.string().max(32),
+  min: z.number().optional(),
+  max: z.number().optional(),
+  step: z.number().optional(),
+  approximate: z.object({step: z.number(), minWidth: z.number()}).optional(),
+});
+
+export const catalogSchema = z.object({
+  exams: z.array(z.object({
+    exam_key: key,
+    provider_key: key,
+    official_name: z.string().max(200),
+    learning_language: z.string().max(16),
+    version: z.string().max(32),
+    sections: z.array(z.object({
+      key,
+      official_name: z.string().max(200).nullable(),
+      tasks: z.array(z.object({
+        key,
+        official_name: z.string().max(200).nullable(),
+        time_minutes: z.int().nullable(),
+        min_words: z.int().nullable(),
+        assessable: z.boolean(),
+        criteria: z.array(z.object({key, official_name: z.string().max(200).nullable(), scale: scaleSchema})),
+      })),
+    })),
+  })),
+});
+
+export const taskTypes = ['opinion', 'discussion', 'advantages', 'problem_solution', 'two_part'] as const;
+
+export const practiceTaskSchema = z.object({
+  uuid,
+  topic: z.string().max(200),
+  task_type: z.string().max(32),
+  difficulty: z.string().max(32).nullable(),
+  prompt: z.object({text: z.string().max(4000)}),
+  official: z.literal(false),
+});
+
+export const assessmentStatuses = ['queued', 'running', 'assessed', 'partial', 'failed', 'canceled'] as const;
+export const attemptStatuses = ['draft', 'submitted', 'assessing', 'assessed', 'partial', 'failed'] as const;
+
+export const attemptSummarySchema = z.object({
+  uuid,
+  exam_key: key,
+  exam_version: z.string().max(32),
+  section_key: key,
+  task_key: key,
+  source: z.enum(['library', 'custom']),
+  topic: z.string().max(200).nullable(),
+  status: z.enum(attemptStatuses),
+  revision: z.int().nonnegative(),
+  word_count: z.int().nonnegative().nullable(),
+  word_count_rule: z.string().max(64).nullable(),
+  submitted_at: isoOrNull,
+  created_at: isoOrNull,
+  updated_at: isoOrNull,
+  assessment: z.object({uuid, status: z.enum(assessmentStatuses)}).nullable(),
+});
+
+export const attemptSchema = attemptSummarySchema.extend({
+  prompt: z.object({text: z.string().max(4000)}),
+  response_text: z.string().max(40000),
+  assessments: z.array(z.object({uuid, status: z.enum(assessmentStatuses), created_at: isoOrNull})),
+});
+
+export const presentedEstimateSchema = z.object({
+  precision: z.enum(['approximate', 'calibrated']),
+  low: z.number(),
+  high: z.number(),
+});
+
+export const resultFindingSchema = z.object({
+  id: z.string().max(64),
+  kind: z.enum(['error', 'weakness', 'strength']),
+  skill: z.string().max(80),
+  criterion_key: key.optional(),
+  severity: z.enum(['minor', 'moderate', 'major']),
+  span: z.object({start: z.int().nonnegative(), end: z.int().positive()}).optional(),
+  quote: z.string().max(2000).optional(),
+  suggestion: z.string().max(2000).optional(),
+  explanation: z.string().max(4000),
+});
+
+export const assessmentResultSchema = z.object({
+  status: z.enum(['complete', 'partial', 'failed']).nullable(),
+  calibration: z.enum(['uncalibrated', 'calibrated']),
+  word_count: z.int().nonnegative().nullable(),
+  criteria: z.array(z.object({
+    criterion_key: key,
+    estimate: presentedEstimateSchema.nullable(),
+    confidence: z.enum(['low', 'medium', 'high']).nullable(),
+    summary: z.string().max(4000).nullable(),
+    finding_ids: z.array(z.string().max(64)),
+  })),
+  findings: z.array(resultFindingSchema),
+  top_fixes: z.array(z.string().max(64)),
+});
+
+export const assessmentSchema = z.object({
+  uuid,
+  status: z.enum(assessmentStatuses),
+  feedback_language: z.string().max(16),
+  created_at: isoOrNull,
+  finished_at: isoOrNull,
+  result: assessmentResultSchema.nullable(),
+});
+
+export const reportKinds = ['wrong_finding', 'missing_error', 'wrong_score', 'unclear_explanation', 'other'] as const;
+
+export const reportSchema = z.object({
+  uuid,
+  kind: z.enum(reportKinds),
+  finding_id: z.string().max(64).nullable(),
+  status: z.string().max(32),
+  text_access_allowed: z.boolean(),
+  created_at: isoOrNull,
+});
+
+const criteriaRanges = z.array(z.object({criterion_key: key, estimate: presentedEstimateSchema.nullable()}));
+
+export const skillsSchema = z.object({
+  skills: z.array(z.object({
+    skill_key: z.string().max(80),
+    status: z.string().max(32),
+    per_100_words: z.number(),
+    trend: z.string().max(32).nullable(),
+    confidence: z.string().max(32).nullable(),
+    observations: z.int().nonnegative(),
+  })),
+  criteria_trend: z.array(z.object({assessment: uuid, finished_at: isoOrNull, criteria: criteriaRanges})),
+});
+
+export const reportedResultSchema = z.object({
+  uuid,
+  exam_key: key,
+  exam_version: z.string().max(32),
+  test_date: z.string().max(10),
+  source: z.literal('self_reported'),
+  sections: z.record(z.string(), z.number()),
+  calibration_consent: z.boolean(),
+  consent_changed_at: isoOrNull,
+});
+
+export const comparisonSchema = z.object({
+  reported_result: reportedResultSchema,
+  window_days: z.int().positive(),
+  assessments: z.array(z.object({assessment: uuid, finished_at: isoOrNull, criteria: criteriaRanges})),
+});
+
+export type Identity = z.infer<typeof identitySchema>;
+export type Profile = z.infer<typeof profileSchema>;
+export type Entitlements = z.infer<typeof entitlementsSchema>;
+export type Catalog = z.infer<typeof catalogSchema>;
+export type PracticeTask = z.infer<typeof practiceTaskSchema>;
+export type AttemptSummary = z.infer<typeof attemptSummarySchema>;
+export type Attempt = z.infer<typeof attemptSchema>;
+export type AssessmentResult = z.infer<typeof assessmentResultSchema>;
+export type ResultFinding = z.infer<typeof resultFindingSchema>;
+export type Assessment = z.infer<typeof assessmentSchema>;
+export type Report = z.infer<typeof reportSchema>;
+export type Skills = z.infer<typeof skillsSchema>;
+export type ReportedResult = z.infer<typeof reportedResultSchema>;
+export type Comparison = z.infer<typeof comparisonSchema>;

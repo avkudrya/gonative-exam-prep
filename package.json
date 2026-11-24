@@ -18,11 +18,14 @@
     "start": "npm run start --workspace web",
     "lint": "npm run lint --workspace web",
     "typecheck:web": "npm run typecheck --workspace web",
-    "check": "npm run typecheck && npm test && npm run typecheck:web && npm run lint && npm run build",
+    "check": "npm run typecheck && npm test && npm run typecheck:web && npm run lint && npm run build && npm run test:web",
     "bench:build": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build.ts",
-    "bench:h1": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/ellipse.ts"
+    "bench:h1": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/ellipse.ts",
+    "test:web": "npm run test --workspace web"
   },
   "dependencies": {
+    "@fontsource/noto-sans": "5.3.0",
+    "playwright": "1.61.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "zod": "4.6.7"

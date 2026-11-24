@@ -1,20 +1,111 @@
 {
   "Shell": {
-    "brand": "GoNative Exam Prep",
-    "description": "Exam preparation that turns writing feedback into a personal study plan.",
+    "brand": "GoNative Exams",
+    "description": "IELTS Writing practice with criterion-by-criterion feedback tied to your own text.",
     "language": "Interface language",
-    "disclaimer": "Unofficial practice tool. IELTS is a registered trademark of its owners; this site is not affiliated with or endorsed by them."
+    "skip": "Skip to content",
+    "theme": "Theme",
+    "themes": {"system": "System", "light": "Light", "dark": "Dark"},
+    "accountMenu": "Account menu",
+    "signOut": "Sign out",
+    "disclaimer": "Unofficial practice tool. IELTS is a registered trademark of its owners; this site is not affiliated with or endorsed by them. Score ranges are approximate, not official results."
   },
-  "Home": {
-    "eyebrow": "IELTS Writing first",
-    "title": "Writing feedback that becomes a study plan",
-    "lead": "Submit an essay, see exactly what holds it back, then practise the grammar and vocabulary behind those mistakes with GoNative.",
-    "steps": {
-      "assess": {"title": "Assess", "text": "Criterion-by-criterion feedback, every point tied to your own text."},
-      "analyse": {"title": "Analyse", "text": "Recurring mistakes become a profile of the skills to work on."},
-      "practise": {"title": "Practise", "text": "Targeted exercises and word lists you can study in GoNative."},
-      "reassess": {"title": "Reassess", "text": "New attempts show what actually improved."}
+  "Auth": {
+    "headings": {
+      "login": "Sign in to GoNative Exams",
+      "join": "Use your GoNative account",
+      "register": "Create an account",
+      "forgot": "Reset your password",
+      "reset": "Choose a new password",
+      "activate": "Confirm your email",
+      "resend": "Send the confirmation email again"
     },
-    "status": "In development. We are first measuring how accurate AI feedback can be before we promise any scores."
+    "descriptions": {
+      "join": "Already use GoNative or GoNative Worksheets? Sign in with the same email and password to start using Exams.",
+      "register": "One GoNative account works for Exams, the GoNative app and Worksheets.",
+      "forgot": "Enter your account email. If the account exists, we will send a link to set a new password.",
+      "reset": "The new password applies to your whole GoNative account.",
+      "activate": "Confirm the email address of your new account to start using Exams.",
+      "resend": "Enter the email and password you registered with, and we will send a new confirmation link."
+    },
+    "titles": {
+      "login": "Sign in",
+      "join": "Continue with GoNative",
+      "register": "Create account",
+      "forgot": "Forgot password?",
+      "reset": "Save new password",
+      "activate": "Confirm email",
+      "resend": "Send again"
+    },
+    "results": {
+      "verification_required": "Almost done: we sent a confirmation link to your email. Open it to activate the account.",
+      "verified": "Your email is confirmed. You can now sign in.",
+      "verification_requested": "If the account still needs confirmation, a new link is on its way.",
+      "reset_requested": "If an account with this email exists, a reset link is on its way. It is valid for 30 minutes.",
+      "password_reset": "Your password has been changed. Sign in with the new one.",
+      "ok": "Done."
+    },
+    "notices": {
+      "password_changed": "Your password has been changed. Sign in again with the new one.",
+      "data_deleted": "Your Exams data has been deleted. Your GoNative account still works.",
+      "account_closed": "Your account is being closed.",
+      "signed_out": "You have signed out."
+    },
+    "errors": {
+      "invalid_credentials": "Incorrect email or password.",
+      "email_verification_required": "Confirm your email first.",
+      "registration_required": "This account is not available. Create a new one or contact support.",
+      "account_unavailable": "This account is not available. Contact support if you think this is a mistake.",
+      "exams_profile_required": "Your GoNative account is not connected to Exams yet.",
+      "account_exists_sign_in": "An account with this email already exists.",
+      "account_not_found": "There is no GoNative account for this Google account yet.",
+      "invalid_google_identity": "Google sign-in could not be verified. Try again.",
+      "identity_conflict": "This Google account is linked to a different GoNative account.",
+      "verification_unavailable": "This account does not need confirmation, or the details are incorrect.",
+      "invalid_verification": "This confirmation link is invalid or has expired.",
+      "invalid_password_reset": "This reset link is invalid or has expired.",
+      "password_too_long": "The password is too long: use at most 72 bytes.",
+      "rate_limited": "Too many attempts. Wait a minute and try again.",
+      "exams_rate_limited": "Too many attempts. Wait a minute and try again.",
+      "invalid_input": "Check the fields and try again.",
+      "unauthenticated": "Your session has ended. Sign in again.",
+      "unavailable": "The service is temporarily unavailable. Try again in a moment."
+    },
+    "steps": {
+      "join": "Connect it to Exams",
+      "register": "Create an account",
+      "login": "Sign in",
+      "resend": "Send the confirmation link again",
+      "forgot": "Request a new link"
+    },
+    "email": "Email",
+    "password": "Password",
+    "newPassword": "New password",
+    "confirmation": "Repeat password",
+    "passwordHint": "At least 10 characters.",
+    "passwordMismatch": "The passwords do not match.",
+    "showPassword": "Show",
+    "hidePassword": "Hide",
+    "ageNotice": "GoNative Exams is for people aged 16 and over.",
+    "missingToken": "The link is incomplete. Open it again from the email.",
+    "busy": "Please wait…",
+    "or": "or",
+    "helpLabel": "Account help",
+    "noAccount": "No account yet?",
+    "haveAccount": "Already have an account?",
+    "haveGoNative": "Use GoNative or Worksheets?",
+    "resendLink": "Did not get the confirmation email?",
+    "newResetLink": "Request a new reset link"
+  },
+  "App": {
+    "unavailableTitle": "Temporarily unavailable",
+    "unavailableBody": "We could not reach the service. Your saved work is safe; try again in a moment.",
+    "cleanupTitle": "Your Exams data is being deleted",
+    "cleanupBody": "Deletion is in progress. Until it finishes, Exams is not available for this account."
+  },
+  "Writing": {
+    "eyebrow": "IELTS Writing Task 2",
+    "title": "Writing",
+    "soon": "Practice tasks, your essays and feedback will appear here."
   }
 }

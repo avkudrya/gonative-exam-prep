@@ -19,7 +19,8 @@
     "build": "bash ../scripts/with-node24.sh next build --webpack",
     "start": "bash ../scripts/with-node24.sh next start --hostname 127.0.0.1 --port 3300",
     "lint": "bash ../scripts/with-node24.sh eslint .",
-    "typecheck": "bash ../scripts/with-node24.sh bash -c 'next typegen && tsc --noEmit'"
+    "typecheck": "bash ../scripts/with-node24.sh bash -c 'next typegen && tsc --noEmit'",
+    "test": "bash ../scripts/with-node24.sh node --test --test-concurrency=1 --test-reporter=spec test/*.test.mjs"
   },
   "engines": {
     "node": ">=24 <25"

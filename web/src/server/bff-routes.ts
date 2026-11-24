@@ -1,0 +1,232 @@
+import 'server-only';
+import {z} from 'zod';
+import {
+  assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, comparisonSchema, entitlementsSchema,
+  feedbackLanguageSchema, identitySchema, interfaceLocaleSchema, practiceTaskSchema, profileSchema, reportKinds,
+  reportSchema, reportedResultSchema, skillsSchema,
+} from '../lib/api/schemas';
+
+/*
+ * Exact allowlist of the BFF: every reachable upstream path, method, input, credential and output
+ * projection is listed here. Anything else is 404 before the backend is called.
+ */
+
+export type Output = {data: unknown; status?: number};
+export type Route = {
+  upstream: string;
+  /** Validates and shapes the JSON body of a write; GET and DELETE without a body have none. */
+  input?: z.ZodType;
+  authenticated: boolean;
+  /** Mutations that the backend fences by `Idempotency-Key`. */
+  requestKey?: boolean;
+  /** Response size limit from the backend (bytes). */
+  maxBytes?: number;
+  /** Request body limit (bytes). */
+  maxBody?: number;
+  timeoutMs?: number;
+  output: (result: unknown) => Output;
+};
+
+export const requestKeyPattern = /^[a-zA-Z0-9_-]{8,64}$/;
+const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const keyPattern = /^[a-z0-9]+(?:[-_][a-z0-9]+)*$/;
+
+const email = z.string().trim().email().max(255);
+const anyPassword = z.string().min(1).max(255);
+// Backend limit: 10–72 characters and at most 72 bytes (bcrypt).
+const newPassword = z.string().min(10).max(72).refine(v => Buffer.byteLength(v, 'utf8') <= 72);
+const proof = z.string().regex(/^[a-zA-Z0-9]{64}$/);
+const locale = interfaceLocaleSchema;
+const empty = z.object({}).strict();
+const examKey = z.string().max(64).regex(keyPattern);
+const date = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
+const sections = z.record(z.string().max(64).regex(keyPattern), z.number().min(0).max(1000))
+  .refine(v => Object.keys(v).length >= 1 && Object.keys(v).length <= 8);
+/** The backend counts code points of the normalized text (max 20 000); JSON may escape each one. */
+const DRAFT_BODY = 200 * 1024;
+
+const authInputs: Record<string, z.ZodType> = {
+  'auth/login': z.object({email, password: anyPassword}).strict(),
+  'auth/join': z.object({email, password: anyPassword, locale}).strict(),
+  'auth/register': z.object({email, password: newPassword, password_confirmation: z.string().max(72), locale}).strict()
+    .refine(v => v.password === v.password_confirmation)
+    .transform(({email, password, locale}) => ({email, password, locale})),
+  'auth/google': z.object({id_token: z.string().min(1).max(8192), create_account: z.boolean(), locale}).strict(),
+  'auth/activate': z.object({token: proof}).strict(),
+  'auth/resend': z.object({email, password: anyPassword}).strict(),
+  'auth/forgot': z.object({email}).strict(),
+  'auth/reset': z.object({token: proof, password: newPassword, password_confirmation: z.string().max(72)}).strict()
+    .refine(v => v.password === v.password_confirmation),
+  'auth/password': z.object({current_password: anyPassword, password: newPassword, password_confirmation: z.string().max(72)}).strict()
+    .refine(v => v.password === v.password_confirmation),
+  'auth/logout': empty,
+};
+/** Auth confirmations never reflect upstream fields: only the fixed status. */
+const confirmations: Record<string, {status: string; code: number}> = {
+  'auth/register': {status: 'verification_required', code: 202},
+  'auth/activate': {status: 'verified', code: 200},
+  'auth/resend': {status: 'verification_requested', code: 202},
+  'auth/forgot': {status: 'reset_requested', code: 202},
+  'auth/reset': {status: 'password_reset', code: 200},
+};
+export const sessionPaths = new Set(['auth/login', 'auth/join', 'auth/google']);
+
+const profileInput = z.object({
+  interface_locale: locale.optional(),
+  target_exam_key: examKey.nullable().optional(),
+  target_result: sections.nullable().optional(),
+  exam_date: date.nullable().optional(),
+  weekly_minutes: z.int().min(0).max(3000).nullable().optional(),
+  feedback_language: feedbackLanguageSchema.optional(),
+  translation_language: z.enum(['ru', 'uk']).nullable().optional(),
+  confirm_age_16: z.literal(true).optional(),
+  accept_terms: z.literal(true).optional(),
+  terms_version: z.string().max(32).optional(),
+}).strict().refine(v => Object.keys(v).some(k => k !== 'terms_version'));
+
+const attemptInput = z.object({
+  exam_key: examKey,
+  section_key: examKey.optional(),
+  task_key: examKey.optional(),
+  practice_task: z.string().regex(uuidPattern).optional(),
+  custom_prompt: z.string().trim().min(1).max(2000).optional(),
+  from_attempt: z.string().regex(uuidPattern).optional(),
+}).strict().refine(v => [v.practice_task, v.custom_prompt, v.from_attempt].filter(x => x !== undefined).length === 1);
+
+const draftInput = z.object({
+  expected_revision: z.int().min(0).max(2147483647),
+  response_text: z.string().max(40000),
+}).strict();
+
+const reportInput = z.object({
+  kind: z.enum(reportKinds),
+  finding_id: z.string().min(1).max(64).optional(),
+  message: z.string().max(1000).optional(),
+  allow_text_access: z.boolean().optional(),
+}).strict();
+
+const reportedInput = z.object({
+  exam_key: examKey,
+  test_date: date,
+  sections,
+  calibration_consent: z.boolean().optional(),
+}).strict();
+const reportedUpdate = reportedInput.omit({exam_key: true}).partial().strict()
+  .refine(v => Object.keys(v).length > 0);
+
+const parse = <T extends z.ZodType>(schema: T) => (r: unknown): Output => ({data: schema.parse(r)});
+const deleted = (): Output => ({data: {status: 'deleted'}});
+const route = (upstream: string, output: Route['output'], extra: Partial<Route> = {}): Route =>
+  ({upstream, output, authenticated: true, ...extra});
+
+function noQuery(search: URLSearchParams) {
+  return search.size === 0;
+}
+
+/** Only `page` and `per_page`, each once, as positive integers. */
+function pageQuery(search: URLSearchParams) {
+  if (new Set(search.keys()).size !== search.size) return null;
+  const query = z.object({
+    page: z.coerce.number().int().min(1).max(100000).optional(),
+    per_page: z.coerce.number().int().min(1).max(50).optional(),
+  }).strict().safeParse(Object.fromEntries(search));
+  if (!query.success) return null;
+  const upstream = new URLSearchParams(Object.entries(query.data).filter(([, v]) => v !== undefined).map(([k, v]) => [k, String(v)]));
+  return upstream.toString() ? `?${upstream}` : '';
+}
+
+export function resolve(path: string, method: string, search: URLSearchParams): Route | null {
+  if (method === 'POST' && path in authInputs && noQuery(search)) {
+    const confirmation = confirmations[path];
+    return {
+      upstream: path,
+      input: authInputs[path],
+      authenticated: path === 'auth/logout' || path === 'auth/password',
+      output: result => confirmation ? {data: {status: confirmation.status}, status: confirmation.code} : {data: result},
+    };
+  }
+  if (path === 'auth/me' && method === 'GET' && noQuery(search)) return route(path, parse(identitySchema));
+  if (path === 'account' && method === 'DELETE' && noQuery(search)) {
+    return route(path, () => ({data: {status: 'account_closed'}, status: 202}), {
+      input: z.object({confirm: z.literal('all_products'), password: anyPassword.optional(), google_id_token: z.string().min(1).max(8192).optional()})
+        .strict().refine(v => (v.password === undefined) !== (v.google_id_token === undefined)),
+    });
+  }
+  if (path === 'data' && method === 'DELETE' && noQuery(search)) {
+    return route(path, () => ({data: {status: 'exams_data_deleted'}}), {
+      input: z.object({confirm: z.literal('exams'), password: anyPassword}).strict(),
+      timeoutMs: 30000,
+    });
+  }
+  if (path === 'profile' && noQuery(search)) {
+    const output = (r: unknown) => ({data: {profile: profileSchema.parse((r as {profile: unknown}).profile)}});
+    if (method === 'GET') return route(path, output);
+    if (method === 'PUT') return route(path, output, {input: profileInput});
+  }
+  if (path === 'entitlements' && method === 'GET' && noQuery(search)) return route(path, parse(entitlementsSchema));
+  // Public catalog: the session is never forwarded.
+  if (path === 'catalog' && method === 'GET' && noQuery(search)) {
+    return {upstream: path, authenticated: false, maxBytes: 512 * 1024, output: parse(catalogSchema)};
+  }
+  if (path === 'tasks' && method === 'GET') {
+    if (new Set(search.keys()).size !== search.size) return null;
+    const query = z.object({exam: examKey, section: examKey.optional(), task: examKey.optional()}).strict()
+      .safeParse(Object.fromEntries(search));
+    if (!query.success) return null;
+    const upstream = new URLSearchParams(Object.entries(query.data).filter(([, v]) => v !== undefined) as [string, string][]);
+    return route(`tasks?${upstream}`, parse(z.object({tasks: z.array(practiceTaskSchema)})), {maxBytes: 256 * 1024});
+  }
+  const task = /^tasks\/([^/]+)$/.exec(path);
+  if (task && uuidPattern.test(task[1]) && method === 'GET' && noQuery(search)) {
+    return route(`tasks/${task[1].toLowerCase()}`, parse(z.object({task: practiceTaskSchema})));
+  }
+  if (path === 'attempts') {
+    if (method === 'GET') {
+      const query = pageQuery(search);
+      if (query === null) return null;
+      return route(`attempts${query}`, parse(z.object({
+        attempts: z.array(attemptSummarySchema), page: z.int(), per_page: z.int(), total: z.int(),
+      })), {maxBytes: 256 * 1024});
+    }
+    if (method === 'POST' && noQuery(search)) {
+      return route(path, r => ({data: z.object({attempt: attemptSchema}).parse(r), status: 201}), {input: attemptInput, maxBody: 8192, maxBytes: 256 * 1024});
+    }
+    return null;
+  }
+  if (path === 'skills' && method === 'GET' && noQuery(search)) return route(path, parse(skillsSchema), {maxBytes: 256 * 1024});
+  if (path === 'reported-results' && noQuery(search)) {
+    if (method === 'GET') return route(path, parse(z.object({reported_results: z.array(reportedResultSchema)})));
+    if (method === 'POST') return route(path, r => ({data: z.object({reported_result: reportedResultSchema}).parse(r), status: 201}), {input: reportedInput});
+    return null;
+  }
+  const reported = /^reported-results\/([^/]+)(\/comparison)?$/.exec(path);
+  if (reported && uuidPattern.test(reported[1]) && noQuery(search)) {
+    const root = `reported-results/${reported[1].toLowerCase()}`;
+    if (reported[2]) return method === 'GET' ? route(`${root}/comparison`, parse(comparisonSchema), {maxBytes: 256 * 1024}) : null;
+    if (method === 'PUT') return route(root, parse(z.object({reported_result: reportedResultSchema})), {input: reportedUpdate});
+    if (method === 'DELETE') return route(root, deleted);
+    return null;
+  }
+  const attempt = /^attempts\/([^/]+)(?:\/(draft|submit|assessment|reports))?$/.exec(path);
+  if (!attempt || !uuidPattern.test(attempt[1]) || !noQuery(search)) return null;
+  const root = `attempts/${attempt[1].toLowerCase()}`;
+  const action = attempt[2];
+  if (!action && method === 'GET') return route(root, parse(z.object({attempt: attemptSchema})), {maxBytes: 256 * 1024});
+  if (!action && method === 'DELETE') return route(root, deleted);
+  if (action === 'draft' && method === 'PUT') {
+    return route(`${root}/draft`, parse(z.object({attempt: attemptSummarySchema})), {input: draftInput, maxBody: DRAFT_BODY});
+  }
+  if (action === 'submit' && method === 'POST') {
+    // 202: a new assessment is queued; 200: the same text was assessed before and its result is reused.
+    return route(`${root}/submit`, r => {
+      const data = z.object({attempt: attemptSummarySchema, assessment: assessmentSchema, reused: z.boolean()}).parse(r);
+      return {data, status: data.reused ? 200 : 202};
+    }, {input: empty, requestKey: true, maxBytes: 512 * 1024, timeoutMs: 20000});
+  }
+  if (action === 'assessment' && method === 'GET') return route(`${root}/assessment`, parse(z.object({assessment: assessmentSchema})), {maxBytes: 512 * 1024});
+  if (action === 'reports' && method === 'GET') return route(`${root}/reports`, parse(z.object({reports: z.array(reportSchema)})));
+  if (action === 'reports' && method === 'POST') {
+    return route(`${root}/reports`, r => ({data: z.object({report: reportSchema}).parse(r), status: 201}), {input: reportInput});
+  }
+  return null;
+}

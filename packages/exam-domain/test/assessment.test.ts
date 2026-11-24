@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {test} from 'node:test';
 import {
   assessmentResult, checkAssessmentIntegrity, checkFindingSpans, checkReportedResult, findTask, presentEstimate, reportedResult,
@@ -101,4 +102,12 @@ test('a self-reported official result must fit the exam configuration', () => {
   assert.deepEqual(paths, ['sections.writing', 'sections.speaking']);
   assert.match(checkReportedResult({...ok, sections: {}}, version)[0].message, /no section/);
   assert.throws(() => reportedResult.parse({...ok, source: 'verified'}));
+});
+
+test('presentEstimate matches the cases shared with the MultiAdmin port', () => {
+  const fixture = JSON.parse(readFileSync(new URL('./fixtures/present-estimate.json', import.meta.url), 'utf8')) as {
+    cases: {scale: never; estimate: never; expected: unknown}[];
+  };
+  assert.ok(fixture.cases.length > 100);
+  for (const c of fixture.cases) assert.deepEqual(presentEstimate(c.estimate, c.scale), c.expected);
 });

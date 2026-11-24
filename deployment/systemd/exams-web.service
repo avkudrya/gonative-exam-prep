@@ -1,0 +1,25 @@
+[Unit]
+Description=GoNative Exams web (exams. and ielts.mnemonicwords.app)
+After=network.target
+ConditionPathExists=/var/www/exams.mnemonicwords.app/current/web/.next/BUILD_ID
+
+[Service]
+Type=simple
+User=gonativealex
+Group=gonativealex
+WorkingDirectory=/var/www/exams.mnemonicwords.app/current/web
+Environment=NODE_ENV=production
+Environment=NEXT_TELEMETRY_DISABLED=1
+ExecStart=/bin/bash /var/www/exams.mnemonicwords.app/current/scripts/with-node24.sh node /var/www/exams.mnemonicwords.app/current/node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3300
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=30
+KillSignal=SIGTERM
+SuccessExitStatus=143
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

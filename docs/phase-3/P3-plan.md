@@ -279,6 +279,15 @@ ADR-001…003, [C2](../phase-0/C2-accounts-billing-privacy.md), [P2-gate](../pha
 
 ### P3.8. Production (M, только по отдельным «да»)
 
+**⏳ Подготовлено 2026-11-24, ждёт шагов владельца.** Runbook — [deployment/README.md](../../deployment/README.md).
+- `deploy.sh`, `deployment/{setup-server,install-web-service,activate-web,check-web,wait-web}.sh`, `nginx/`, `systemd/`.
+- Health `web/src/app/api/health` и проверка релиза `check-web.sh` (без бэкенда); тест `web/test/deploy-check.test.mjs`.
+- Порядок:
+  1. Владелец: DNS → deploy-ключ → `setup-server.sh` → сервис → (необязательно) sudoers → Google origin.
+  2. «Задеплой»: `deploy.sh <коммит> --activate`.
+  3. Вычитка текстов и ящик `exams@`.
+  4. Флаг А, потом флаг Б, с моими проверками после каждого.
+
 | Шаг | Кто |
 |---|---|
 | Раскладка `/var/www/exams.mnemonicwords.app` (`releases`, `shared`, `current`), read-only deploy-ключ репозитория, `shared/.env.production.local` (`EXAMS_API_URL`, источник, Google client ID) | владелец, по моему runbook |

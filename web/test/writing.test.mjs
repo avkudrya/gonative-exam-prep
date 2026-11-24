@@ -173,11 +173,11 @@ test('Writing: tasks, own task, editor autosave, offline, restore, conflict, tim
   assert.equal(await local(uuid), null);
   assert.equal(await page.evaluate(key => localStorage.getItem(key), `exams:draft:${uuid}:timer`), null);
 
-  // A submitted essay is read-only here (its feedback page is P3.4); an unknown one is 404.
+  // A submitted essay is no longer editable: it shows the assessment screen (result.test.mjs); an unknown one is 404.
   const done = {uuid: randomUUID(), exam_key: 'ielts-academic', source: 'custom', topic: null, prompt: own, response_text: 'Submitted text.', revision: 3, status: 'assessed'};
   state.attempts.set(done.uuid, done);
   await page.goto(`${origin}/en/ielts/writing/${done.uuid}`);
-  await page.getByText('Feedback ready').waitFor();
+  await page.getByRole('heading', {name: 'Assessing your essay…'}).waitFor();
   assert.equal(await page.getByLabel('Your essay').count(), 0);
   const missing = await page.goto(`${origin}/en/ielts/writing/${randomUUID()}`);
   assert.equal(missing.status(), 404);

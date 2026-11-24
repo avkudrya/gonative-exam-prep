@@ -32,3 +32,34 @@ export const WORD_COUNT_RULE = 'whitespace-v1';
 export function countWords(text: string): number {
   return text.split(/\s+/u).filter(token => /[\p{L}\p{N}]/u.test(token)).length;
 }
+
+export type HighlightSegment = {text: string; start: number; end: number; ids: string[]};
+
+/**
+ * Splits a text into consecutive segments at every span boundary, so overlapping findings can be
+ * highlighted together. Offsets are code points of `text` (the normalized response). A span that
+ * is empty, out of range or whose `quote` does not equal its slice is left out and reported in
+ * `skipped`: the UI then shows that finding without a highlight rather than marking the wrong words.
+ */
+export function highlightSegments(
+  text: string,
+  spans: {id: string; start: number; end: number; quote?: string}[],
+): {segments: HighlightSegment[]; skipped: string[]} {
+  const chars = Array.from(text);
+  const valid: {id: string; start: number; end: number}[] = [];
+  const skipped: string[] = [];
+  for (const span of spans) {
+    const ok = Number.isInteger(span.start) && Number.isInteger(span.end) && span.start >= 0 && span.end > span.start && span.end <= chars.length
+      && (span.quote === undefined || chars.slice(span.start, span.end).join('') === span.quote);
+    if (ok) valid.push(span);
+    else skipped.push(span.id);
+  }
+  const cuts = [...new Set([0, chars.length, ...valid.flatMap(s => [s.start, s.end])])].sort((a, b) => a - b);
+  const segments: HighlightSegment[] = [];
+  for (let i = 0; i < cuts.length - 1; i++) {
+    const [start, end] = [cuts[i], cuts[i + 1]];
+    if (start === end) continue;
+    segments.push({text: chars.slice(start, end).join(''), start, end, ids: valid.filter(s => s.start <= start && s.end >= end).map(s => s.id)});
+  }
+  return {segments, skipped};
+}

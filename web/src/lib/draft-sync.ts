@@ -215,5 +215,12 @@ export function useDraftSync(uuid: string, initialText: string, initialRevision:
     };
   }, [save]);
 
-  return {text, setText, state, conflict, resolveConflict, flush: save, revision: () => revisionRef.current};
+  /** Saves now and tells whether the server has exactly this text (needed before submitting). */
+  const saveNow = useCallback(async () => {
+    if (stopped.current) return false;
+    await save();
+    return !stopped.current && textRef.current === savedRef.current;
+  }, [save]);
+
+  return {text, setText, state, conflict, resolveConflict, saveNow};
 }

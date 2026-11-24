@@ -1,7 +1,7 @@
 import 'server-only';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
-import {attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceTaskSchema, profileSchema} from '../lib/api/schemas';
+import {assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceTaskSchema, profileSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
 
 /** Server components read the session from the httpOnly cookie; `null` means "not signed in". */
@@ -62,4 +62,16 @@ export async function practiceTasks(exam: string) {
   const token = await sessionToken();
   const result = await backend(`tasks?${new URLSearchParams({exam})}`, 'GET', undefined, token ?? undefined, {maxBytes: 256 * 1024}) as {tasks: unknown};
   return practiceTaskSchema.array().parse(result.tasks);
+}
+
+/** The current assessment of an attempt, or `null` before one exists. */
+export async function currentAssessment(uuid: string) {
+  const token = await sessionToken();
+  try {
+    const result = await backend(`attempts/${uuid}/assessment`, 'GET', undefined, token ?? undefined, {maxBytes: 512 * 1024}) as {assessment: unknown};
+    return assessmentSchema.parse(result.assessment);
+  } catch (error) {
+    if (error instanceof BackendError && error.status === 404) return null;
+    throw error;
+  }
 }

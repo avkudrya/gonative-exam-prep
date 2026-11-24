@@ -301,11 +301,164 @@
     "signInAgain": "Sign in again",
     "locked": "This essay has already been submitted and can no longer be edited.",
     "reload": "Reload",
-    "submitSoon": "Submitting for feedback is coming in the next step.",
     "deleteDraft": "Delete draft",
     "deleteConfirm": "Delete this draft permanently?",
     "deleteYes": "Delete",
     "cancel": "Cancel",
     "deleteFailed": "Could not delete the draft. Try again."
+  },
+  "Submit": {
+    "open": "Get feedback",
+    "title": "Send this essay for feedback?",
+    "words": "{count, plural, one {# word} other {# words}}",
+    "underMinimum": "IELTS asks for at least {min}; a short essay is assessed as it is",
+    "freeShort": "Very short texts are assessed by our rules without AI and do not use your free feedbacks.",
+    "quota": "Uses 1 of your {remaining} remaining free feedbacks (of {limit} this month). Sending exactly the same text again is free.",
+    "noQuota": "No free feedbacks left this month. You can keep the draft and send it when they renew.",
+    "language": "Explanations in {language}.",
+    "languages": {
+      "en": "English",
+      "ru": "Russian"
+    },
+    "change": "Change",
+    "frozen": "After sending, this text can no longer be edited; you can write a new version.",
+    "ai": "The essay and the task are sent to our AI provider (Anthropic) for automated feedback.",
+    "confirm": "Send for feedback",
+    "sending": "Sending…",
+    "cancel": "Cancel",
+    "signIn": "Sign in again",
+    "errors": {
+      "exams_monthly_quota_exhausted": "No free feedbacks left this month.",
+      "exams_monthly_ai_budget_exhausted": "Feedback is unavailable for this account this month.",
+      "exams_concurrency_limit": "Another essay is being assessed. Wait until it is ready.",
+      "exams_assessment_unavailable": "Feedback is temporarily unavailable. Your draft is saved; try again later.",
+      "exams_assessment_not_active": "Feedback is not available for this account right now.",
+      "exams_unavailable": "Exams is not available for this account.",
+      "exams_response_empty": "The essay is empty.",
+      "exams_attempt_not_submittable": "This essay has already been sent.",
+      "exams_onboarding_required": "Finish the setup first.",
+      "request_key_conflict": "Something went wrong. Close this window and try again.",
+      "rate_limited": "Too many requests. Try again in {minutes} min.",
+      "exams_rate_limited": "Too many requests. Try again in {minutes} min.",
+      "exams_requests_rate_limited": "Too many requests. Try again in {minutes} min.",
+      "not_saved": "The draft could not be saved, so it was not sent. Check the save status and try again.",
+      "unauthenticated": "Your session has ended.",
+      "offline": "No connection. Your draft is kept; try again when you are online.",
+      "unavailable": "The service is temporarily unavailable. Try again in a moment."
+    }
+  },
+  "Assessment": {
+    "back": "← Writing",
+    "ownTask": "Own task",
+    "waitingTitle": "Assessing your essay…",
+    "waitingBody": "Each of the four criteria is assessed separately. It usually takes about half a minute; you can leave this page and come back.",
+    "slowTitle": "This is taking longer than usual",
+    "slowBody": "Your essay is in the queue. Come back to this page later: the feedback will appear here.",
+    "elapsed": "{seconds} s",
+    "failedTitle": "We could not assess this essay",
+    "failedBody": "Something went wrong on our side. This attempt was not counted against your free feedbacks.",
+    "retry": "Try again",
+    "showEssay": "Show the essay"
+  },
+  "Result": {
+    "scoreNote": "Score ranges are approximate estimates by IELTS criteria, not official results. The comments and corrections matter more than the numbers.",
+    "partial": "Some criteria could not be assessed this time. The rest of the feedback is complete.",
+    "criteriaTitle": "Criteria",
+    "approximate": "approximate",
+    "calibrated": "estimate",
+    "rangeLabel": "approximately {low} to {high}",
+    "noRange": "Not assessed",
+    "lowConfidence": "Low confidence: treat this range with extra caution.",
+    "showFindings": "{count, plural, one {# comment} other {# comments}}",
+    "fixesTitle": "Fix these first",
+    "showInEssay": "Show in essay",
+    "essayTitle": "Your essay",
+    "findingsTitle": "Comments ({count})",
+    "filterLabel": "Filter comments",
+    "filterAll": "All",
+    "filterStrengths": "Strengths",
+    "noFindings": "No comments here.",
+    "findingAt": "{kind}: {text}",
+    "notPlaced": "Could not be marked in the text.",
+    "reportThis": "Report",
+    "reportGeneral": "Report a problem with this feedback",
+    "actionsLabel": "Next steps",
+    "rewrite": "Write a new version",
+    "draftLimit": "You have too many drafts. Submit or delete some first.",
+    "unavailable": "The service is temporarily unavailable.",
+    "kinds": {
+      "error": "Mistake",
+      "weakness": "Could be better",
+      "strength": "Strength"
+    },
+    "criteria": {
+      "task_response": "Task Response",
+      "coherence_cohesion": "Coherence and Cohesion",
+      "lexical_resource": "Lexical Resource",
+      "grammatical_range_accuracy": "Grammatical Range and Accuracy"
+    },
+    "criteriaShort": {
+      "task_response": "Task",
+      "coherence_cohesion": "Coherence",
+      "lexical_resource": "Vocabulary",
+      "grammatical_range_accuracy": "Grammar"
+    },
+    "skills": {
+      "grammar": {
+        "articles": "Articles",
+        "verb_tenses": "Verb tenses",
+        "subject_verb_agreement": "Subject–verb agreement",
+        "sentence_structure": "Sentence structure",
+        "prepositions": "Prepositions"
+      },
+      "vocabulary": {
+        "range": "Range of vocabulary",
+        "collocations": "Collocations",
+        "word_choice": "Word choice",
+        "word_formation": "Word formation",
+        "repetition": "Repetition"
+      },
+      "coherence": {
+        "paragraphing": "Paragraphing",
+        "cohesive_devices": "Linking words",
+        "progression": "Flow of ideas"
+      },
+      "task": {
+        "position_clarity": "Clear position",
+        "idea_development": "Developing ideas",
+        "requirement_coverage": "Answering the whole task"
+      },
+      "register": {
+        "formality": "Formality"
+      },
+      "mechanics": {
+        "spelling": "Spelling",
+        "punctuation": "Punctuation"
+      }
+    }
+  },
+  "Report": {
+    "title": "Report a problem with this feedback",
+    "titleFinding": "Report this comment",
+    "kind": "What is wrong?",
+    "kinds": {
+      "wrong_finding": "This is not a mistake",
+      "missing_error": "A mistake was missed",
+      "wrong_score": "The range seems wrong",
+      "unclear_explanation": "The explanation is unclear",
+      "other": "Something else"
+    },
+    "message": "Details (optional)",
+    "allow": "Allow an administrator to read this essay to check the report. Without this, they see only the report.",
+    "send": "Send report",
+    "cancel": "Cancel",
+    "thanks": "Thank you. We will review the report.",
+    "close": "Close",
+    "errors": {
+      "exams_report_limit": "You have sent many reports recently. Try again later.",
+      "exams_nothing_to_report": "This feedback cannot be reported.",
+      "exams_unknown_finding": "This comment no longer exists.",
+      "unavailable": "Could not send the report. Try again."
+    }
   }
 }

@@ -7,8 +7,11 @@ import {bff} from '../lib/bff-client';
 import {forgetLocalDraft, useDraftSync} from '../lib/draft-sync';
 import {MAX_ESSAY_CHARS, TASK2_MIN_WORDS, TASK2_MINUTES, wordsIn} from '../lib/writing';
 import {EssayTimer} from './essay-timer';
+import {SubmitDialog} from './submit-dialog';
 
-export function EssayEditor({attempt, examName}: {attempt: Attempt; examName: string}) {
+export function EssayEditor({attempt, examName, remaining, limit, feedbackLanguage}: {
+  attempt: Attempt; examName: string; remaining: number; limit: number; feedbackLanguage: 'en' | 'ru';
+}) {
   const t = useTranslations('Editor');
   const router = useRouter();
   const draft = useDraftSync(attempt.uuid, attempt.response_text, attempt.revision);
@@ -74,7 +77,8 @@ export function EssayEditor({attempt, examName}: {attempt: Attempt; examName: st
     </p>
 
     <div className="editor-actions">
-      <p className="hint">{t('submitSoon')}</p>
+      <SubmitDialog uuid={attempt.uuid} words={words} remaining={remaining} limit={limit} feedbackLanguage={feedbackLanguage}
+        beforeSubmit={draft.saveNow}/>
       {confirmDelete ? <div className="confirm" role="group" aria-label={t('deleteDraft')}>
         <span>{t('deleteConfirm')}</span>
         <button type="button" className="button danger" disabled={deleting} onClick={() => void remove()}>{t('deleteYes')}</button>

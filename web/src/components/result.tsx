@@ -1,0 +1,205 @@
+'use client';
+import {highlightSegments, normalizeResponse} from '@gonative/exam-domain';
+import {useTranslations} from 'next-intl';
+import {useMemo, useRef, useState, type FormEvent, type KeyboardEvent} from 'react';
+import {useRouter} from '../i18n/navigation';
+import type {Assessment, Attempt, ResultFinding} from '../lib/api/schemas';
+import {reportKinds} from '../lib/api/schemas';
+import {bff} from '../lib/bff-client';
+
+type Result = NonNullable<Assessment['result']>;
+const kindOrder = {error: 0, weakness: 1, strength: 2} as const;
+const criterionOrder = ['task_response', 'coherence_cohesion', 'lexical_resource', 'grammatical_range_accuracy'];
+
+/** 6 → "6", 5.5 → "5.5": ranges are shown as they come, never rounded into something more precise. */
+const band = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1));
+
+export function ResultView({attempt, assessment}: {attempt: Attempt; assessment: Assessment & {result: Result}}) {
+  const t = useTranslations('Result');
+  const result = assessment.result;
+  const language = assessment.feedback_language;
+  // The backend assessed the normalized text; finding offsets point into it.
+  const text = useMemo(() => normalizeResponse(attempt.response_text), [attempt.response_text]);
+  const findings = useMemo(() => [...result.findings].sort((a, b) => kindOrder[a.kind] - kindOrder[b.kind] || (a.span?.start ?? 1e9) - (b.span?.start ?? 1e9)), [result.findings]);
+  const {segments, skipped} = useMemo(() => highlightSegments(text, findings.filter(f => f.span).map(f => ({id: f.id, start: f.span!.start, end: f.span!.end, quote: f.quote}))), [text, findings]);
+  const placed = useMemo(() => new Set(segments.flatMap(s => s.ids)), [segments]);
+  const byId = useMemo(() => new Map(findings.map(f => [f.id, f])), [findings]);
+  const [selected, setSelected] = useState<string | null>(null);
+  const [filter, setFilter] = useState<string>('all');
+  const [reportFor, setReportFor] = useState<string | null | undefined>(undefined);
+  const listRef = useRef<HTMLOListElement>(null);
+  const essayRef = useRef<HTMLDivElement>(null);
+  const criteria = [...result.criteria].sort((a, b) => criterionOrder.indexOf(a.criterion_key) - criterionOrder.indexOf(b.criterion_key));
+  const shown = findings.filter(f => filter === 'all' || (filter === 'strength' ? f.kind === 'strength' : f.kind !== 'strength' && f.criterion_key === filter));
+  const fixes = result.top_fixes.map(id => byId.get(id)).filter((f): f is ResultFinding => Boolean(f));
+
+  function select(id: string, from: 'essay' | 'list') {
+    setSelected(id);
+    if (from === 'essay') {
+      setFilter('all');
+      requestAnimationFrame(() => listRef.current?.querySelector(`[data-finding="${CSS.escape(id)}"]`)?.scrollIntoView({block: 'nearest', behavior: 'smooth'}));
+    } else {
+      requestAnimationFrame(() => essayRef.current?.querySelector(`[data-ids~="${CSS.escape(id)}"]`)?.scrollIntoView({block: 'center', behavior: 'smooth'}));
+    }
+  }
+
+  const strongest = (ids: string[]) => ids.map(id => byId.get(id)!).sort((a, b) => kindOrder[a.kind] - kindOrder[b.kind])[0];
+
+  return <div className="result">
+    <p className="score-note">{t('scoreNote')}</p>
+    {result.status === 'partial' && <p className="feedback error" role="status">{t('partial')}</p>}
+
+    <section aria-labelledby="criteria-title">
+      <h2 id="criteria-title">{t('criteriaTitle')}</h2>
+      <ul className="criteria">
+        {criteria.map(c => {
+          const count = findings.filter(f => f.criterion_key === c.criterion_key && f.kind !== 'strength').length;
+          return <li key={c.criterion_key} className="criterion">
+            <div className="criterion-head">
+              <h3>{t.has(`criteria.${c.criterion_key}`) ? t(`criteria.${c.criterion_key}`) : c.criterion_key}</h3>
+              {c.estimate ? <p className="range">
+                <span className="range-value" aria-label={t('rangeLabel', {low: band(c.estimate.low), high: band(c.estimate.high)})}>≈ {band(c.estimate.low)}–{band(c.estimate.high)}</span>
+                <span className="range-note">{c.estimate.precision === 'approximate' ? t('approximate') : t('calibrated')}</span>
+              </p> : <p className="range muted">{t('noRange')}</p>}
+            </div>
+            {c.summary && <p lang={language}>{c.summary}</p>}
+            {c.confidence === 'low' && <p className="hint">{t('lowConfidence')}</p>}
+            {count > 0 && <button type="button" className="text-button" onClick={() => setFilter(c.criterion_key)}>{t('showFindings', {count})}</button>}
+          </li>;
+        })}
+      </ul>
+    </section>
+
+    {fixes.length > 0 && <section aria-labelledby="fixes-title" className="fixes">
+      <h2 id="fixes-title">{t('fixesTitle')}</h2>
+      <ol>
+        {fixes.map(f => <li key={f.id}>
+          {f.quote && <span className="quote" lang="en">“{f.quote}”</span>}
+          {f.suggestion && <> <span aria-hidden="true">→</span> <span className="suggestion" lang="en">{f.suggestion}</span></>}
+          <p lang={language}>{f.explanation}</p>
+          {placed.has(f.id) && <button type="button" className="text-button" onClick={() => select(f.id, 'list')}>{t('showInEssay')}</button>}
+        </li>)}
+      </ol>
+    </section>}
+
+    <div className="review">
+      <section aria-labelledby="essay-title" className="review-essay">
+        <h2 id="essay-title">{t('essayTitle')}</h2>
+        <p className="legend"><span className="hl error">{t('kinds.error')}</span> <span className="hl weakness">{t('kinds.weakness')}</span> <span className="hl strength">{t('kinds.strength')}</span></p>
+        <div className="essay-marked" lang="en" ref={essayRef}>
+          {segments.map(segment => {
+            if (!segment.ids.length) return <span key={segment.start}>{segment.text}</span>;
+            const top = strongest(segment.ids);
+            const active = selected !== null && segment.ids.includes(selected);
+            const pick = () => select(segment.ids.includes(selected ?? '') && segment.ids.length > 1
+              ? segment.ids[(segment.ids.indexOf(selected!) + 1) % segment.ids.length] : top.id, 'essay');
+            return <mark key={segment.start} className={`hl ${top.kind}${active ? ' active' : ''}`} data-ids={segment.ids.join(' ')}
+              tabIndex={0} role="button" aria-label={t('findingAt', {kind: t(`kinds.${top.kind}`), text: segment.text})}
+              onClick={pick} onKeyDown={(event: KeyboardEvent) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); pick(); } }}>{segment.text}</mark>;
+          })}
+        </div>
+      </section>
+
+      <section aria-labelledby="findings-title" className="review-findings">
+        <h2 id="findings-title">{t('findingsTitle', {count: findings.length})}</h2>
+        <div className="chips" role="group" aria-label={t('filterLabel')}>
+          {['all', ...criteria.map(c => c.criterion_key), 'strength'].map(value => <button key={value} type="button" aria-pressed={filter === value}
+            onClick={() => setFilter(value)}>{value === 'all' ? t('filterAll') : value === 'strength' ? t('filterStrengths') : t(`criteriaShort.${value}`)}</button>)}
+        </div>
+        {shown.length === 0 ? <p className="empty">{t('noFindings')}</p> : <ol className="findings" ref={listRef}>
+          {shown.map(f => <li key={f.id} data-finding={f.id} className={`finding ${f.kind}${selected === f.id ? ' active' : ''}`} aria-current={selected === f.id ? 'true' : undefined}>
+            <div className="finding-head">
+              <span className={`badge ${f.kind}`}>{t(`kinds.${f.kind}`)}</span>
+              <span className="finding-skill">{t.has(`skills.${f.skill}`) ? t(`skills.${f.skill}`) : f.skill}</span>
+              {f.criterion_key && <span className="finding-criterion">{t(`criteriaShort.${f.criterion_key}`)}</span>}
+            </div>
+            {f.quote && <p className="quote" lang="en">“{f.quote}”{f.suggestion && <> <span aria-hidden="true">→</span> <span className="suggestion">{f.suggestion}</span></>}</p>}
+            {!f.quote && f.suggestion && <p className="suggestion" lang="en">{f.suggestion}</p>}
+            <p lang={language}>{f.explanation}</p>
+            <div className="finding-actions">
+              {placed.has(f.id) ? <button type="button" className="text-button" onClick={() => select(f.id, 'list')}>{t('showInEssay')}</button>
+                : f.span && skipped.includes(f.id) ? <span className="hint">{t('notPlaced')}</span> : null}
+              <button type="button" className="text-button" onClick={() => setReportFor(f.id)}>{t('reportThis')}</button>
+            </div>
+            {reportFor === f.id && <ReportForm uuid={attempt.uuid} findingId={f.id} onClose={() => setReportFor(undefined)}/>}
+          </li>)}
+        </ol>}
+      </section>
+    </div>
+
+    <section className="result-actions" aria-label={t('actionsLabel')}>
+      <Rewrite attempt={attempt}/>
+      <button type="button" className="button" onClick={() => setReportFor(null)}>{t('reportGeneral')}</button>
+    </section>
+    {reportFor === null && <ReportForm uuid={attempt.uuid} findingId={null} onClose={() => setReportFor(undefined)}/>}
+  </div>;
+}
+
+function Rewrite({attempt}: {attempt: Attempt}) {
+  const t = useTranslations('Result');
+  const router = useRouter();
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState('');
+  async function start() {
+    setBusy(true);
+    setError('');
+    const result = await bff<{attempt: Attempt}>('attempts', {body: {exam_key: attempt.exam_key, from_attempt: attempt.uuid}});
+    if (!result.ok) {
+      setBusy(false);
+      setError(result.error === 'exams_draft_limit' ? t('draftLimit') : t('unavailable'));
+      return;
+    }
+    router.push(`/ielts/writing/${result.data.attempt.uuid}`);
+  }
+  return <>
+    <button type="button" className="button primary" disabled={busy} onClick={() => void start()}>{t('rewrite')}</button>
+    {error && <p className="feedback error" role="alert">{error}</p>}
+  </>;
+}
+
+function ReportForm({uuid, findingId, onClose}: {uuid: string; findingId: string | null; onClose: () => void}) {
+  const t = useTranslations('Report');
+  const [busy, setBusy] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState('');
+  async function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const message = String(form.get('message') ?? '').trim();
+    setBusy(true);
+    setError('');
+    const result = await bff(`attempts/${uuid}/reports`, {body: {
+      kind: String(form.get('kind')),
+      ...(findingId ? {finding_id: findingId} : {}),
+      ...(message ? {message} : {}),
+      allow_text_access: form.get('allow') === 'on',
+    }});
+    setBusy(false);
+    if (!result.ok) {
+      setError(['exams_report_limit', 'exams_nothing_to_report', 'exams_unknown_finding'].includes(result.error) ? result.error : 'unavailable');
+      return;
+    }
+    setSent(true);
+  }
+  if (sent) return <div className="report" role="status"><p>{t('thanks')}</p><button type="button" className="text-button" onClick={onClose}>{t('close')}</button></div>;
+  const kinds = findingId ? reportKinds.filter(k => k !== 'missing_error' && k !== 'wrong_score') : reportKinds;
+  return <form className="report" onSubmit={submit} aria-label={t('title')}>
+    <h3>{findingId ? t('titleFinding') : t('title')}</h3>
+    <div className="field">
+      <label htmlFor={`kind-${findingId ?? 'all'}`}>{t('kind')}</label>
+      <select id={`kind-${findingId ?? 'all'}`} name="kind" defaultValue={kinds[0]}>
+        {kinds.map(kind => <option key={kind} value={kind}>{t(`kinds.${kind}`)}</option>)}
+      </select>
+    </div>
+    <div className="field">
+      <label htmlFor={`message-${findingId ?? 'all'}`}>{t('message')}</label>
+      <textarea id={`message-${findingId ?? 'all'}`} name="message" rows={3} maxLength={1000}/>
+    </div>
+    <label className="check"><input type="checkbox" name="allow"/><span>{t('allow')}</span></label>
+    {error && <p className="feedback error" role="alert">{t(`errors.${error}`)}</p>}
+    <div className="actions">
+      <button className="button primary" disabled={busy}>{t('send')}</button>
+      <button type="button" className="button" onClick={onClose}>{t('cancel')}</button>
+    </div>
+  </form>;
+}

@@ -16,7 +16,8 @@ fail() { echo "$*" >&2; exit 1; }
 request() {
   local host=$1 path=$2; shift 2
   local target
-  if [[ "$URL" = "$APP_ORIGIN" ]]; then target=(-- "https://$host$path")
+  # EXAMS_CHECK_NETRC: credentials for the pre-launch password gate when checking from outside the server.
+  if [[ "$URL" = "$APP_ORIGIN" ]]; then target=(${EXAMS_CHECK_NETRC:+--netrc-file "$EXAMS_CHECK_NETRC"} -- "https://$host$path")
   # A local process gets the same headers nginx sends (nginx/exams-web.conf): Next reads X-Forwarded-Proto.
   else target=(-H "Host: $host" -H 'X-Forwarded-Proto: https' -H 'X-Forwarded-For: 127.0.0.1' -H 'X-Real-IP: 127.0.0.1' -- "$URL$path"); fi
   curl -sS --connect-timeout 2 --max-time 10 -D "$CHECK_TMP/h" -o "$CHECK_TMP/b" -w '%{http_code}' "$@" "${target[@]}" \

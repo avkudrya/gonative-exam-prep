@@ -179,6 +179,22 @@ bash deploy.sh "$(git rev-parse HEAD)"
 
 Выключение — те же флаги в `false`. Данные при этом не удаляются.
 
+## Пароль до запуска (решение владельца 2026-11-24)
+
+Пока продукт не запущен, `exams.`, `ielts.` и `worksheets.` закрыты паролем nginx (basic auth):
+- фрагмент [nginx/gonative-preview-auth.conf](nginx/gonative-preview-auth.conf) лежит в `/etc/nginx/gonative-preview-auth.conf`.
+  **Не в `conf.d/`:** оттуда nginx подключает файлы ко всем сайтам;
+- логины и хеши паролей — `/etc/nginx/gonative-preview.htpasswd` (`root:nginx`, 0640), в Git их нет;
+- сайты подключают фрагмент строкой `include /etc/nginx/gonative-preview-auth*.conf;`. Это шаблон, поэтому без файла
+  пароля просто нет;
+- запросы с самого сервера (`127.0.0.1`, `72.62.178.66`) проходят без пароля, поэтому проверки `deploy.sh`
+  у Exams и Worksheets продолжают работать;
+- `/api/health` Exams открыт всегда.
+
+Проверка снаружи: `EXAMS_CHECK_NETRC=<файл netrc> bash deployment/check-web.sh https://exams.mnemonicwords.app <BUILD_ID>`.
+
+Снять пароль при запуске: `sudo rm /etc/nginx/gonative-preview-auth.conf && sudo nginx -t && sudo systemctl reload nginx`.
+
 ## Индексация закрыта
 
 Пока владелец отдельно не решит открыть индексацию:

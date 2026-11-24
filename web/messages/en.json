@@ -16,7 +16,13 @@
     "settings": "Settings",
     "legalLinks": "Legal",
     "terms": "Terms of Use",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "sections": "Sections",
+    "nav": {
+      "writing": "Writing",
+      "progress": "Progress",
+      "results": "My exam results"
+    }
   },
   "Auth": {
     "headings": {
@@ -130,7 +136,8 @@
       "ready": "Feedback ready",
       "partial": "Partial feedback",
       "failed": "Not assessed"
-    }
+    },
+    "allEssays": "All essays ({count})"
   },
   "Legal": {
     "documents": "Documents",
@@ -459,6 +466,93 @@
       "exams_nothing_to_report": "This feedback cannot be reported.",
       "exams_unknown_finding": "This comment no longer exists.",
       "unavailable": "Could not send the report. Try again."
+    }
+  },
+  "History": {
+    "title": "All essays",
+    "back": "← Writing",
+    "lead": "{count, plural, =0 {No essays yet.} one {# essay} other {# essays}}, newest first.",
+    "newEssay": "New essay",
+    "empty": "No essays yet.",
+    "pages": "Pages",
+    "previous": "← Newer",
+    "next": "Older →",
+    "pageOf": "Page {page} of {pages}",
+    "delete": "Delete",
+    "deleteLabel": "Delete essay",
+    "deleteNamed": "Delete “{title}”",
+    "deleteConfirm": "Delete this essay and its feedback permanently?",
+    "cancel": "Cancel",
+    "errors": {
+      "assessing": "This essay is being assessed. Try again when the feedback is ready.",
+      "failed": "Could not delete the essay. Try again."
+    }
+  },
+  "Progress": {
+    "title": "Progress",
+    "back": "← Writing",
+    "empty": "Your progress appears here after your first assessed essay.",
+    "start": "Write an essay",
+    "note": "Based on your last {count, plural, one {# assessed essay} other {# assessed essays}}. Ranges are approximate, not official results; one essay can differ from the next for many reasons.",
+    "trendTitle": "Criteria over time",
+    "latest": "latest, approximate",
+    "chartLabel": "{criterion}: approximate ranges of your recent essays, oldest to newest",
+    "showTable": "Show as a table",
+    "tableCaption": "Approximate ranges by essay and criterion",
+    "essay": "Essay",
+    "skillsTitle": "Frequent problems",
+    "skillsHint": "Counted per 100 words in your recent essays, so long and short essays compare fairly.",
+    "noIssues": "No frequent problems in your recent essays.",
+    "rate": "≈ {rate} per 100 words",
+    "fewEssays": "based on few essays",
+    "status": {
+      "focus": "Work on this",
+      "watch": "Keep an eye on"
+    },
+    "trends": {
+      "new": "new",
+      "improving": "improving",
+      "stable": "no change",
+      "worsening": "more frequent"
+    },
+    "resultsLink": "Took the exam? Enter your official result"
+  },
+  "Results": {
+    "title": "My exam results",
+    "back": "← Progress",
+    "lead": "Took the real exam? Enter your official Writing score to see it next to our earlier estimates. Only the numbers and the date — do not upload score reports.",
+    "savedTitle": "Your results",
+    "addTitle": "Add a result",
+    "exam": "Exam",
+    "date": "Test date",
+    "writing": "Writing score",
+    "choose": "Choose",
+    "writingHint": "The official Writing band from your result, 0–9 in half bands.",
+    "consent": "Also let GoNative use this result, together with many others, to check how close our estimates are to official scores.",
+    "consentHint": "Optional and separate from the Terms. Without it, the result is visible only to you. You can withdraw consent or delete the result at any time.",
+    "add": "Save result",
+    "added": "Result saved.",
+    "writingScore": "Writing {score}",
+    "consentOn": "Used anonymously, in aggregate, to check our estimates.",
+    "consentOff": "Visible only to you.",
+    "compare": "Compare with my estimates",
+    "allow": "Allow use for checking estimates",
+    "withdraw": "Withdraw consent",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this result?",
+    "cancel": "Cancel",
+    "comparisonTitle": "Our estimates in the {days} days before the exam",
+    "noEstimates": "No assessed essays in the {days} days before this exam.",
+    "essay": "Essay",
+    "comparisonNote": "Approximate ranges per criterion. Your official Writing score also includes Task 1 and depends on the day, so differences are expected.",
+    "errors": {
+      "exams_section_not_on_scale": "This score is not on the IELTS scale.",
+      "exams_reported_results_limit": "You have saved the maximum number of results.",
+      "exams_exam_unavailable": "This exam is not available.",
+      "invalid_input": "Check the date: it must be in the last three years and not in the future.",
+      "rate_limited": "Too many requests. Try again in a minute.",
+      "exams_rate_limited": "Too many requests. Try again in a minute.",
+      "unavailable": "The service is temporarily unavailable. Try again."
     }
   }
 }

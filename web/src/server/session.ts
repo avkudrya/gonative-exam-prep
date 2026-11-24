@@ -1,7 +1,7 @@
 import 'server-only';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
-import {assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceTaskSchema, profileSchema} from '../lib/api/schemas';
+import {assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceTaskSchema, profileSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
 
 /** Server components read the session from the httpOnly cookie; `null` means "not signed in". */
@@ -74,4 +74,21 @@ export async function currentAssessment(uuid: string) {
     if (error instanceof BackendError && error.status === 404) return null;
     throw error;
   }
+}
+
+export async function attemptsPage(page: number, perPage = 20) {
+  const token = await sessionToken();
+  const result = await backend(`attempts?page=${page}&per_page=${perPage}`, 'GET', undefined, token ?? undefined, {maxBytes: 256 * 1024}) as Record<string, unknown>;
+  return {attempts: attemptSummarySchema.array().parse(result.attempts), page: Number(result.page) || page, perPage, total: Number(result.total) || 0};
+}
+
+export async function currentSkills() {
+  const token = await sessionToken();
+  return skillsSchema.parse(await backend('skills', 'GET', undefined, token ?? undefined, {maxBytes: 256 * 1024}));
+}
+
+export async function currentReportedResults() {
+  const token = await sessionToken();
+  const result = await backend('reported-results', 'GET', undefined, token ?? undefined) as {reported_results: unknown};
+  return reportedResultSchema.array().parse(result.reported_results);
 }

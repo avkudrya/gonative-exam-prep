@@ -43,6 +43,7 @@ export default async function WritingHome({params}: {params: Promise<{locale: st
     <section aria-labelledby="recent-title" className="recent">
       <h2 id="recent-title">{t('recent')}</h2>
       {recent.attempts.length ? <AttemptList attempts={recent.attempts} locale={locale}/> : <p className="empty">{t('noEssays')}</p>}
+      {recent.total > recent.attempts.length && <p className="more"><Link href="/ielts/writing/history">{t('allEssays', {count: recent.total})}</Link></p>}
     </section>
   </section>;
 }

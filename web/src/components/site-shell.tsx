@@ -3,6 +3,7 @@ import {Link} from '../i18n/navigation';
 import {homePath} from '../lib/return-path';
 import {AccountMenu} from './account-menu';
 import {LanguageSwitch} from './language-switch';
+import {MemberNav} from './member-nav';
 import {ThemeSwitch} from './theme-switch';
 
 export async function SiteShell({children, locale, email}: {children: React.ReactNode; locale: string; email?: string}) {
@@ -12,6 +13,7 @@ export async function SiteShell({children, locale, email}: {children: React.Reac
     <a className="skip" href="#main">{t('skip')}</a>
     <header className="header">
       <Link href={member ? homePath : '/login'} className="brand">GoNative <strong>Exams</strong></Link>
+      {member && <MemberNav/>}
       <div className="header-tools">
         {member ? <AccountMenu email={email}/> : <LanguageSwitch/>}
       </div>

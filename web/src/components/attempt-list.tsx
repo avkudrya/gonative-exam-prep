@@ -1,15 +1,9 @@
 import {getFormatter, getTranslations} from 'next-intl/server';
 import {Link} from '../i18n/navigation';
 import type {AttemptSummary} from '../lib/api/schemas';
+import {attemptState} from '../lib/attempt-state';
 
-/** Status shown to the person: a draft, waiting for feedback, feedback ready, or a problem. */
-export function attemptState(attempt: AttemptSummary): 'draft' | 'assessing' | 'ready' | 'partial' | 'failed' {
-  if (attempt.status === 'draft') return 'draft';
-  if (attempt.status === 'assessed') return 'ready';
-  if (attempt.status === 'partial') return 'partial';
-  if (attempt.status === 'failed') return 'failed';
-  return 'assessing';
-}
+export {attemptState};
 
 export async function AttemptList({attempts, locale}: {attempts: AttemptSummary[]; locale: string}) {
   const t = await getTranslations({locale, namespace: 'Writing'});

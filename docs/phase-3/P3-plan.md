@@ -280,7 +280,7 @@ ADR-001…003, [C2](../phase-0/C2-accounts-billing-privacy.md), [P2-gate](../pha
 
 ### P3.8. Production (M, только по отдельным «да»)
 
-**⏳ Подготовлено 2026-11-24, ждёт шагов владельца.** Runbook — [deployment/README.md](../../deployment/README.md).
+**⏳ Сайт в production 2026-11-24** (`37eda33`, билд `a2dXlUcOEST_FW2zCpk_E`); флаги бэкенда А и Б — впереди. Runbook — [deployment/README.md](../../deployment/README.md).
 - `deploy.sh`, `deployment/{setup-server,install-web-service,activate-web,check-web,wait-web}.sh`, `nginx/`, `systemd/`.
 - Health `web/src/app/api/health` и проверка релиза `check-web.sh` (без бэкенда); тест `web/test/deploy-check.test.mjs`.
 - Порядок:

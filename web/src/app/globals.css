@@ -180,3 +180,73 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
 .legal ul { list-style: disc; padding-left: 22px; }
 .legal ol { list-style: decimal; }
 .card > .hint { margin-bottom: 14px; }
+
+/* Writing home */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.back { display: inline-block; margin-bottom: 12px; font-size: 14px; text-decoration: none; }
+.writing-hero { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px 32px; flex-wrap: wrap; }
+.writing-hero .lead { max-width: 620px; margin: 0; }
+.quota { display: flex; flex-direction: column; gap: 2px; margin: 24px 0; padding: 14px 18px; background: var(--accent-soft); border-radius: 12px; font-size: 14px; }
+.quota span { color: var(--muted); }
+.recent h2, .new-essay h2 { font-size: 18px; margin: 0 0 12px; }
+.empty { color: var(--muted); }
+.attempts { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.attempt { display: flex; justify-content: space-between; align-items: center; gap: 8px 16px; flex-wrap: wrap; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; color: var(--ink); text-decoration: none; }
+.attempt:hover { border-color: var(--accent); }
+.attempt-title { font-weight: 600; min-width: 0; overflow-wrap: anywhere; }
+.attempt-meta { display: flex; gap: 12px; align-items: center; color: var(--muted); font-size: 13px; flex-wrap: wrap; }
+.badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
+.badge.ready { background: var(--accent-soft); color: var(--accent); }
+.badge.assessing { background: #fff4d6; color: #7a5a00; }
+:root[data-theme="dark"] .badge.assessing { background: #3a3218; color: #f1d27a; }
+.badge.partial, .badge.failed { background: var(--danger-soft); color: var(--danger); }
+
+/* New essay */
+.segmented { display: inline-flex; gap: 4px; padding: 4px; background: var(--surface-2); border-radius: 12px; margin: 8px 0 20px; flex-wrap: wrap; }
+.segmented a { padding: 6px 14px; border-radius: 9px; color: var(--muted); text-decoration: none; font-size: 14px; }
+.segmented a[aria-current] { background: var(--surface); color: var(--ink); font-weight: 600; box-shadow: var(--shadow); }
+.tabs { display: flex; gap: 20px; border-bottom: 1px solid var(--line); margin-bottom: 16px; }
+.tabs button { font: inherit; background: none; border: 0; padding: 8px 0; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tabs button[aria-selected="true"] { color: var(--ink); font-weight: 600; border-bottom-color: var(--accent); }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 16px; }
+.chips button { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 4px 12px; cursor: pointer; }
+.chips button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.tasks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
+.task { display: flex; flex-direction: column; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+.task-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.task-topic { font-weight: 600; }
+.task-prompt { color: var(--ink); font-size: 15px; flex: 1; margin: 0; }
+.task .button { align-self: flex-start; }
+.own-task { max-width: 680px; }
+.own-task textarea { resize: vertical; }
+
+/* Editor */
+.editor { max-width: 860px; }
+.prompt-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; margin-bottom: 16px; }
+.prompt-meta { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.prompt-title { font-size: 20px; margin: 0 0 8px; }
+.prompt-text { color: var(--ink); white-space: pre-line; }
+.editor-bar { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; gap: 8px 20px; flex-wrap: wrap; padding: 10px 0; background: var(--paper); font-size: 14px; }
+.word-count { font-weight: 600; }
+.sync { margin-left: auto; color: var(--muted); }
+.sync.offline, .sync.conflict, .sync.expired, .sync.too_long, .sync.locked { color: var(--danger); }
+.timer { display: flex; align-items: center; gap: 8px; }
+.timer-value { font-variant-numeric: tabular-nums; font-weight: 600; }
+.timer.done .timer-value { color: var(--danger); }
+.timer button, .text-button { font: inherit; font-size: 13px; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 2px 4px; text-decoration: underline; text-underline-offset: 3px; }
+.danger-text { color: var(--danger); }
+.essay { display: block; width: 100%; min-height: 55vh; font: inherit; font-size: 17px; line-height: 1.7; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; resize: vertical; }
+.essay:focus { outline: 3px solid var(--focus-ring); outline-offset: 1px; border-color: var(--accent); }
+.essay-readonly { white-space: pre-wrap; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; font-size: 17px; line-height: 1.7; }
+#essay-hint { margin-top: 8px; }
+.conflict { background: var(--danger-soft); border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; }
+.conflict p { margin: 0 0 10px; }
+.actions, .confirm { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.editor-actions { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+.editor-actions .hint { margin: 0; }
+
+@media (max-width: 520px) {
+  .essay { min-height: 50vh; padding: 14px; font-size: 16px; }
+  .prompt-card { padding: 16px; }
+  .sync { margin-left: 0; width: 100%; }
+}

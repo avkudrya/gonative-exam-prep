@@ -1,7 +1,7 @@
 import 'server-only';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
-import {catalogSchema, entitlementsSchema, identitySchema, profileSchema} from '../lib/api/schemas';
+import {attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceTaskSchema, profileSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
 
 /** Server components read the session from the httpOnly cookie; `null` means "not signed in". */
@@ -39,3 +39,27 @@ export const assessableExams = cache(async () => {
     .filter(exam => exam.sections.some(s => s.key === 'writing' && s.tasks.some(task => task.key === 'task-2' && task.assessable)))
     .map(exam => ({key: exam.exam_key, name: exam.official_name}));
 });
+
+/** One attempt of the signed-in member, or `null` when it does not exist or is not theirs. */
+export async function currentAttempt(uuid: string) {
+  const token = await sessionToken();
+  try {
+    const result = await backend(`attempts/${uuid}`, 'GET', undefined, token ?? undefined, {maxBytes: 256 * 1024}) as {attempt: unknown};
+    return attemptSchema.parse(result.attempt);
+  } catch (error) {
+    if (error instanceof BackendError && error.status === 404) return null;
+    throw error;
+  }
+}
+
+export async function recentAttempts(perPage = 5) {
+  const token = await sessionToken();
+  const result = await backend(`attempts?per_page=${perPage}`, 'GET', undefined, token ?? undefined, {maxBytes: 256 * 1024}) as {attempts: unknown; total: unknown};
+  return {attempts: attemptSummarySchema.array().parse(result.attempts), total: Number(result.total) || 0};
+}
+
+export async function practiceTasks(exam: string) {
+  const token = await sessionToken();
+  const result = await backend(`tasks?${new URLSearchParams({exam})}`, 'GET', undefined, token ?? undefined, {maxBytes: 256 * 1024}) as {tasks: unknown};
+  return practiceTaskSchema.array().parse(result.tasks);
+}

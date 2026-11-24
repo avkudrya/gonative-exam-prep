@@ -26,6 +26,8 @@ test('Auth pages: sign-in with return path, errors, join hint, proofs, sign-out,
     if (headers.authorization !== `Bearer ${TOKEN}` || !state.active) return problem(401, 'exams_unauthenticated');
     if (path === 'auth/me') return json(200, identity());
     if (path === 'profile') return json(200, {profile: profileFixture()});
+    if (path === 'entitlements') return json(200, {plan: 'free', period: {start: '2026-11-01', end: '2026-12-01'}, assessments: {limit: 2, used: 0, pending: 0, remaining: 2}, concurrent: 1});
+    if (path.startsWith('attempts?')) return json(200, {attempts: [], page: 1, per_page: 5, total: 0});
     if (path === 'auth/logout') { state.active = false; return {status: 204}; }
     return problem(404, 'not_found');
   });

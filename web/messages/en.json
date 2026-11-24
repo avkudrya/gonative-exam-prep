@@ -114,7 +114,23 @@
   "Writing": {
     "eyebrow": "IELTS Writing Task 2",
     "title": "Writing",
-    "soon": "Practice tasks, your essays and feedback will appear here."
+    "lead": "Write an essay on a practice task or your own, and get feedback on each criterion tied to your text.",
+    "newEssay": "New essay",
+    "quota": "{remaining} of {limit} free feedbacks left this month",
+    "quotaResets": "Renews on {date}. Drafts are unlimited.",
+    "quotaEmpty": "You can keep writing drafts; feedback renews on {date}.",
+    "recent": "Recent essays",
+    "noEssays": "No essays yet. Start with a practice task.",
+    "ownTask": "Own task",
+    "words": "{count, plural, one {# word} other {# words}}",
+    "back": "← Writing",
+    "states": {
+      "draft": "Draft",
+      "assessing": "Being assessed",
+      "ready": "Feedback ready",
+      "partial": "Partial feedback",
+      "failed": "Not assessed"
+    }
   },
   "Legal": {
     "documents": "Documents",
@@ -203,5 +219,93 @@
       "exams_rate_limited": "Too many attempts. Wait a minute and try again.",
       "unavailable": "The service is temporarily unavailable. Try again in a moment."
     }
+  },
+  "NewEssay": {
+    "title": "New essay",
+    "back": "← Writing",
+    "examLabel": "Exam",
+    "sourceLabel": "Task source",
+    "typeLabel": "Task type",
+    "modes": {
+      "library": "Practice tasks",
+      "own": "My own task"
+    },
+    "libraryHint": "Original practice tasks in the IELTS Task 2 format, written by GoNative. They are not official IELTS tasks.",
+    "types": {
+      "all": "All",
+      "opinion": "Opinion",
+      "discussion": "Discussion",
+      "advantages": "Advantages and disadvantages",
+      "problem_solution": "Problem and solution",
+      "two_part": "Two questions",
+      "other": "Task 2"
+    },
+    "write": "Write this essay",
+    "creating": "Opening…",
+    "noTasks": "No practice tasks are available right now. You can write on your own task.",
+    "ownLabel": "Task text in English",
+    "ownHint": "Paste or type a Task 2 question: {min}–{max} characters, in English.",
+    "startOwn": "Start writing",
+    "promptProblems": {
+      "short": "The task is too short.",
+      "long": "The task is too long.",
+      "words": "The task needs at least a few words.",
+      "english": "Write the task in English."
+    },
+    "errors": {
+      "exams_draft_limit": "You have too many unfinished drafts. Submit or delete some first.",
+      "exams_custom_prompt_invalid": "This task text cannot be used. Check its length and language.",
+      "exams_practice_task_unavailable": "This task is no longer available. Choose another one.",
+      "exams_task_unavailable": "This exam is not available right now.",
+      "rate_limited": "Too many requests. Wait a minute and try again.",
+      "exams_rate_limited": "Too many requests. Wait a minute and try again.",
+      "unauthenticated": "Your session has ended. Sign in again.",
+      "unavailable": "The service is temporarily unavailable. Try again in a moment."
+    }
+  },
+  "Editor": {
+    "title": "Essay",
+    "back": "← Writing",
+    "task": "Writing Task 2",
+    "unofficial": "Practice task, not official",
+    "ownTask": "Own task",
+    "instructions": "Exam conditions: {minutes} minutes, at least {words} words.",
+    "wordCount": "≈ {count, plural, one {# word} other {# words}}",
+    "essayLabel": "Your essay",
+    "placeholder": "Start writing your essay here…",
+    "underMinimum": "IELTS asks for at least {words} words. The count is approximate.",
+    "overMinimum": "Minimum length reached. The count is approximate.",
+    "tooLong": "The essay is longer than {max} characters and cannot be saved.",
+    "timer": "Timer",
+    "startTimer": "Start 40-minute timer",
+    "pause": "Pause",
+    "resume": "Resume",
+    "reset": "Reset",
+    "timeUp": "Time is up",
+    "sync": {
+      "saved": "Saved",
+      "pending": "Unsaved changes…",
+      "saving": "Saving…",
+      "offline": "No connection. Your text is kept in this browser; retrying…",
+      "conflict": "Changed elsewhere",
+      "expired": "Not saved: signed out",
+      "locked": "Already submitted",
+      "too_long": "Too long to save"
+    },
+    "conflict": {
+      "body": "This essay was changed in another tab or device. Which version do you want to keep?",
+      "mine": "Keep this version",
+      "theirs": "Use the saved version"
+    },
+    "expired": "Your session has ended. Your text is kept in this browser.",
+    "signInAgain": "Sign in again",
+    "locked": "This essay has already been submitted and can no longer be edited.",
+    "reload": "Reload",
+    "submitSoon": "Submitting for feedback is coming in the next step.",
+    "deleteDraft": "Delete draft",
+    "deleteConfirm": "Delete this draft permanently?",
+    "deleteYes": "Delete",
+    "cancel": "Cancel",
+    "deleteFailed": "Could not delete the draft. Try again."
   }
 }

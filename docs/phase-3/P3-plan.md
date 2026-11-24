@@ -1,6 +1,6 @@
 # P3. План Фазы 3: Web MVP Writing Checker
 
-**Статус:** черновик v1, 2026-11-24 — на утверждение владельца (вопросы в §6).
+**Статус:** v1, утверждён владельцем 2026-11-24 («да на всё» по §6).
 **Основано на:** [K](../phase-0/K-mvp-spec.md) (объём и критерии приёмки), [L](../phase-0/L-implementation-plan.md) §Фаза 3,
 ADR-001…003, [C2](../phase-0/C2-accounts-billing-privacy.md), [P2-gate](../phase-2/P2-gate.md).
 **Где:** этот репозиторий, `web/` (Next.js 16, next-intl, Tailwind 4, Node 24). Бэкенд — уже в production

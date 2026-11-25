@@ -47,6 +47,6 @@ export const RESULT = {
     {skill: 'vocabulary.word_choice', finding_ids: ['f2'], places: 1},
     {skill: 'grammar.subject_verb_agreement', finding_ids: ['f1'], places: 1},
     {skill: 'vocabulary.collocations', finding_ids: ['f8'], places: 2},
-    {skill: 'task.idea_development', finding_ids: ['f4'], places: 1},
+    {skill: 'task.idea_development', finding_ids: ['f4', 'f7'], places: 2},
   ],
 };

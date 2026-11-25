@@ -1,0 +1,43 @@
+{
+  "id": "exam-p16-dense-1",
+  "purpose": "Set D (dense-error essays): exam-p1-6, feedback in Russian; the exam-p1-5 baseline is exam-p15-dense-1",
+  "budgetUsd": 1,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-2.v2.json",
+  "guideSha256": "cb176d833ad60c7b550db2811e441bccd69e9c39d4940ae49641fc7cddab8d69",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-2",
+  "items": "../exam-d-v1/items.jsonl",
+  "itemsSha256": "9c4edd000f3c631dceeb75b6485fbfa31a68849624bda20eb562c60f948c2698",
+  "feedbackLanguage": "ru",
+  "sources": {
+    "D": "benchmarks/sources/d-dense.txt (npm run bench:dense): d-01..d-09 synthetic, d-10 the owner's test 03 essay with the owner's permission 2026-11-24"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet-p16",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-p1-6"
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-25",
+    "capUsd": 1,
+    "note": "«да на всё, uk — и интерфейс, и объяснения» — exam-p1-6: лимит $9 на N, D и dev; украинские объяснения — около $1"
+  }
+}

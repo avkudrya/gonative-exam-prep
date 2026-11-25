@@ -2,7 +2,8 @@
 import {useLocale, useTranslations} from 'next-intl';
 import {useState, type FormEvent} from 'react';
 import {useRouter} from '../i18n/navigation';
-import type {Profile} from '../lib/api/schemas';
+import {interfaceLocales} from '../i18n/locales';
+import {feedbackLanguages, type Profile} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
 import {clearLocalDrafts} from '../lib/local-drafts';
 
@@ -58,15 +59,13 @@ export function PreferenceSettings({profile, exams}: {profile: Profile; exams: {
       <div className="field">
         <label htmlFor="interface-locale">{t('preferences.interface')}</label>
         <select id="interface-locale" value={values.interface_locale} onChange={set('interface_locale')}>
-          <option value="en">English</option>
-          <option value="ru">Русский</option>
+          {interfaceLocales.map(l => <option key={l.code} value={l.code}>{l.nativeName}</option>)}
         </select>
       </div>
       <div className="field">
         <label htmlFor="feedback-language">{t('preferences.feedback')}</label>
         <select id="feedback-language" value={values.feedback_language} onChange={set('feedback_language')}>
-          <option value="en">{t('preferences.languages.en')}</option>
-          <option value="ru">{t('preferences.languages.ru')}</option>
+          {feedbackLanguages.map(code => <option key={code} value={code}>{t(`preferences.languages.${code}`)}</option>)}
         </select>
         <p className="hint">{t('preferences.feedbackHint')}</p>
       </div>

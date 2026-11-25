@@ -1,0 +1,91 @@
+{
+    "bench": "exam-p16-dense-1",
+    "guide": "ielts-writing-task-2@v2",
+    "items": 10,
+    "cells": {
+        "p1-sonnet-p16": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 10,
+            "done": 10,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.7522,
+                "mean": 0.0752,
+                "p90": 0.0771
+            },
+            "latencyMs": {
+                "p50": 9105,
+                "p90": 11094
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 31.9,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 10,
+                "per100": {
+                    "error": 2190,
+                    "weakness": 700,
+                    "suggestion": 60,
+                    "strength": 240
+                },
+                "repeatsPer100": 460,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 10,
+                    "evidenceDemand": 0
+                },
+                "script": {
+                    "texts": 359,
+                    "russianLetters": 209,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 251,
+                "recall": 0.892,
+                "recallModerateMajor": 0.958,
+                "recallLocalized": 0.614,
+                "precision": 1,
+                "unmatchedFindings": 0,
+                "errorFindingsPerAssessment": 21.9,
+                "bundled": 16,
+                "suggestionsOnErrors": 4,
+                "languageStrengthsOnErrors": 1
+            },
+            "clean": null,
+            "checks": null,
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

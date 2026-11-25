@@ -22,6 +22,7 @@ test('Hosts: the IELTS landing on its own host, everything else on the applicati
   await page.getByRole('heading', {level: 1, name: 'Practise IELTS essays with feedback on your own sentences'}).waitFor();
   assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'), `${landing}/en`);
   assert.equal(await page.locator('link[rel="alternate"][hreflang="ru"]').getAttribute('href'), `${landing}/ru`);
+  assert.equal(await page.locator('link[rel="alternate"][hreflang="uk"]').getAttribute('href'), `${landing}/uk`);
   assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'noindex, nofollow');
 
   // Honest wording: the sample range is labelled approximate; no promise of an official or exact score.
@@ -44,6 +45,11 @@ test('Hosts: the IELTS landing on its own host, everything else on the applicati
   await page.getByRole('link', {name: 'RU'}).click();
   await page.waitForURL(`${landing}/ru`);
   await page.getByRole('heading', {level: 1, name: 'Тренируйте эссе IELTS с разбором ваших собственных предложений'}).waitFor();
+  // Ukrainian landing (owner 2026-11-25), labelled UA in the switch.
+  await page.getByRole('link', {name: 'UA'}).click();
+  await page.waitForURL(`${landing}/uk`);
+  await page.getByRole('heading', {level: 1, name: 'Тренуйте есе IELTS із розбором ваших власних речень'}).waitFor();
+  assert.equal(await page.locator('html').getAttribute('lang'), 'uk');
 
   // Any other path on the landing host goes to the application host; the BFF does not answer there.
   response = await page.goto(`${landing}/ru/login?next=%2Fielts%2Fwriting`);
@@ -61,7 +67,9 @@ test('Hosts: the IELTS landing on its own host, everything else on the applicati
 
   // 320 px, dark: the landing fits.
   const phone = await browser.newPage({viewport: {width: 320, height: 700}, colorScheme: 'dark'});
-  await phone.goto(`${landing}/ru`);
-  await phone.locator('h1').waitFor();
-  assert.equal(await phone.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+  for (const locale of ['ru', 'uk']) {
+    await phone.goto(`${landing}/${locale}`);
+    await phone.locator('h1').waitFor();
+    assert.equal(await phone.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${locale} fits 320 px`);
+  }
 });

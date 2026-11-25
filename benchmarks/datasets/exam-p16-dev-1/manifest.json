@@ -1,0 +1,58 @@
+{
+  "id": "exam-p16-dev-1",
+  "purpose": "exam-p1-6 on the dev items of exam-p14-dev-1 (S, G, H1), feedback in English; baselines exam-p14-dev-1 and exam-p15-dev-1",
+  "budgetUsd": 4.5,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-2.v2.json",
+  "guideSha256": "cb176d833ad60c7b550db2811e441bccd69e9c39d4940ae49641fc7cddab8d69",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-2",
+  "items": "../exam-p14-dev-1/raw/items.jsonl",
+  "itemsSha256": "0f0f46a7f8cb6fb3fd9a00a85bed8fd173214db0c00d563916ec3b8bac0d3531",
+  "feedbackLanguage": "en",
+  "traitMap": {
+    "coherence_cohesion": [
+      "cohesion"
+    ],
+    "lexical_resource": [
+      "vocabulary",
+      "phraseology"
+    ],
+    "grammatical_range_accuracy": [
+      "grammar",
+      "syntax",
+      "conventions"
+    ]
+  },
+  "sources": {
+    "S, G": "benchmarks/datasets/exam-sg-v1 (synthetic)",
+    "H1": "benchmarks/datasets/exam-h1-v1/source.json (ELLIPSE, CC BY 4.0; rebuild with npm run bench:h1)"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet-p16",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-p1-6"
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-25",
+    "capUsd": 4.5,
+    "note": "«да на всё, uk — и интерфейс, и объяснения» — exam-p1-6: лимит $9 на N, D и dev; украинские объяснения — около $1"
+  }
+}

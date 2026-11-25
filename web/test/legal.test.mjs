@@ -6,18 +6,21 @@ import {existsSync, readFileSync} from 'node:fs';
 const source = name => readFileSync(new URL(`../src/lib/legal/${name}.ts`, import.meta.url), 'utf8');
 const ids = (text, start, end) => [...text.slice(text.indexOf(start), end ? text.indexOf(end) : undefined).matchAll(/\{id: '([a-z-]+)'/g)].map(m => m[1]);
 
-test('privacy and terms: the same sections in en and ru, honest score wording, AI provider named', () => {
+test('privacy and terms: the same sections in en, ru and uk, honest score wording, AI provider named', () => {
   for (const name of ['privacy', 'terms']) {
     const text = source(name);
     const en = ids(text, 'const en', 'const ru');
-    const ru = ids(text, 'const ru');
+    const ru = ids(text, 'const ru', 'const uk');
+    const uk = ids(text, 'const uk');
     assert.ok(en.length >= 8, `${name}: sections`);
     assert.deepEqual(ru, en, `${name}: en and ru sections differ`);
+    assert.deepEqual(uk, en, `${name}: en and uk sections differ`);
     assert.doesNotMatch(text, /your (exact )?IELTS score|official (score|result)s? (is|are) shown|точн\w* балл IELTS/i);
   }
   const privacy = source('privacy');
   assert.match(privacy, /Anthropic/);
   assert.match(privacy, /not used to train|не используются/);
+  assert.match(privacy, /не використовуються/);
   assert.match(source('terms'), /16/);
 });
 

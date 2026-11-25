@@ -4,6 +4,8 @@
 export const interfaceLocales = [
   {code: 'en', nativeName: 'English', shortName: 'EN'},
   {code: 'ru', nativeName: 'Русский', shortName: 'RU'},
+  // Owner decision 2026-11-25: Ukrainian interface and explanations before the public launch. "UA", not "UK".
+  {code: 'uk', nativeName: 'Українська', shortName: 'UA'},
 ] as const;
 
 export type InterfaceLocale = typeof interfaceLocales[number]['code'];

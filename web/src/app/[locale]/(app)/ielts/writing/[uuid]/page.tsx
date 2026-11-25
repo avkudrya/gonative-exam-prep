@@ -32,7 +32,7 @@ export default async function AttemptPage({params}: {params: Promise<{locale: st
   const exams = await assessableExams().catch(() => []);
   const examName = exams.find(exam => exam.key === attempt.exam_key)?.name ?? attempt.exam_key;
   const quota = {remaining: entitlements.assessments.remaining, limit: entitlements.assessments.limit};
-  const feedbackLanguage = member.profile.feedback_language ?? (locale === 'ru' ? 'ru' : 'en');
+  const feedbackLanguage = member.profile.feedback_language ?? (locale === 'ru' || locale === 'uk' ? locale : 'en');
   if (attempt.status === 'draft') {
     return <EssayEditor key={attempt.uuid} attempt={attempt} examName={examName} feedbackLanguage={feedbackLanguage} {...quota}/>;
   }

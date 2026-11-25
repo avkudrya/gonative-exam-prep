@@ -3,7 +3,7 @@ import {setRequestLocale} from 'next-intl/server';
 import {LegalDocumentView} from '../../../../components/legal-document';
 import {privacy} from '../../../../lib/legal/privacy';
 
-const pick = (locale: string) => privacy[locale === 'ru' ? 'ru' : 'en'];
+const pick = (locale: string) => privacy[locale === 'ru' || locale === 'uk' ? locale : 'en'];
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}): Promise<Metadata> {
   const {locale} = await params;

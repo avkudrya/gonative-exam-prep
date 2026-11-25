@@ -112,7 +112,12 @@ test('Feedback: submit, waiting, result with highlights, reports, rewrite, failu
   await page.getByText('Low confidence').waitFor();
 
   // Top fixes grouped by skill in the given order, with readable names and the number of places.
-  assert.deepEqual(await page.locator('.fix-skill h3').allTextContents(), ['Word choice', 'Subject–verb agreement', 'Collocations · 2 places', 'Developing ideas']);
+  assert.deepEqual(await page.locator('.fix-skill h3').allTextContents(), ['Word choice', 'Subject–verb agreement', 'Collocations · 2 places', 'Developing ideas · 2 places']);
+  // Each example of a group keeps its own explanation.
+  assert.deepEqual(await page.locator('.fix-skill').last().locator('.fix-examples p').allTextContents(), [
+    'This idea is stated but not explained or supported with an example.',
+    'Vocabulary is mostly simple and some words repeat (“cars”, “centre”).',
+  ]);
   assert.deepEqual(await page.locator('.fixes .suggestion').allTextContents(), ['their cars', 'city centres are', 'banned outright']);
   await page.locator('.finding-skill').filter({hasText: 'Subject–verb agreement'}).waitFor();
   assert.equal(await page.locator('.finding-skill').filter({hasText: '.'}).count(), 0);

@@ -11,8 +11,10 @@ const isoOrNull = iso.nullable();
 const uuid = z.string().regex(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i);
 const key = z.string().max(64);
 
-export const interfaceLocaleSchema = z.enum(['en', 'ru']);
-export const feedbackLanguageSchema = z.enum(['en', 'ru']);
+export const interfaceLocaleSchema = z.enum(['en', 'ru', 'uk']);
+export const feedbackLanguageSchema = z.enum(['en', 'ru', 'uk']);
+export const feedbackLanguages = feedbackLanguageSchema.options;
+export type FeedbackLanguage = z.infer<typeof feedbackLanguageSchema>;
 
 export const identitySchema = z.object({
   user: z.object({email: z.string().max(255), name: z.string().max(255).nullable(), has_password: z.boolean()}),

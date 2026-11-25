@@ -1,0 +1,108 @@
+{
+    "bench": "exam-p16-dev-1",
+    "guide": "ielts-writing-task-2@v2",
+    "items": 61,
+    "cells": {
+        "p1-sonnet-p16": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 61,
+            "done": 61,
+            "partial": 0,
+            "costUsd": {
+                "total": 4.1541,
+                "mean": 0.0681,
+                "p90": 0.08
+            },
+            "latencyMs": {
+                "p50": 7295,
+                "p90": 10282
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 9,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 21.738,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 61,
+                "per100": {
+                    "error": 1223,
+                    "weakness": 537.7,
+                    "suggestion": 24.6,
+                    "strength": 388.5
+                },
+                "repeatsPer100": 213.1,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 6.6,
+                    "evidenceDemand": 3.3
+                },
+                "script": {
+                    "texts": 1562,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 167,
+                "recall": 0.976,
+                "recallModerateMajor": 1,
+                "recallLocalized": 0.976,
+                "precision": 1,
+                "unmatchedFindings": 0,
+                "errorFindingsPerAssessment": 10.4,
+                "bundled": 0,
+                "suggestionsOnErrors": 1,
+                "languageStrengthsOnErrors": 9
+            },
+            "clean": null,
+            "checks": {
+                "total": 30,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": {
+                        "coherence_cohesion": {
+                            "spearman": 0.888,
+                            "n": 30
+                        },
+                        "lexical_resource": {
+                            "spearman": 0.881,
+                            "n": 30
+                        },
+                        "grammatical_range_accuracy": {
+                            "spearman": 0.932,
+                            "n": 30
+                        }
+                    },
+                    "raters": null
+                }
+            }
+        }
+    }
+}

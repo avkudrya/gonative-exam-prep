@@ -2,7 +2,7 @@
 import {useTranslations} from 'next-intl';
 import {useState} from 'react';
 import {Link, useRouter} from '../i18n/navigation';
-import type {Attempt} from '../lib/api/schemas';
+import type {Attempt, FeedbackLanguage} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
 import {forgetLocalDraft, useDraftSync} from '../lib/draft-sync';
 import {MAX_ESSAY_CHARS, TASK2_MIN_WORDS, TASK2_MINUTES, wordsIn} from '../lib/writing';
@@ -10,7 +10,7 @@ import {EssayTimer} from './essay-timer';
 import {SubmitDialog} from './submit-dialog';
 
 export function EssayEditor({attempt, examName, remaining, limit, feedbackLanguage}: {
-  attempt: Attempt; examName: string; remaining: number; limit: number; feedbackLanguage: 'en' | 'ru';
+  attempt: Attempt; examName: string; remaining: number; limit: number; feedbackLanguage: FeedbackLanguage;
 }) {
   const t = useTranslations('Editor');
   const router = useRouter();

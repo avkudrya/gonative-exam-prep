@@ -1,4 +1,5 @@
 'use client';
+import type {FeedbackLanguage} from '../lib/api/schemas';
 import {useTranslations} from 'next-intl';
 import {useEffect, useRef, useState} from 'react';
 import {Link, useRouter} from '../i18n/navigation';
@@ -24,7 +25,7 @@ function newRequestKey() {
  * The request key is fixed while the dialog is open, so a retried click never queues a second assessment.
  */
 export function SubmitDialog({uuid, words, remaining, limit, feedbackLanguage, beforeSubmit, label}: {
-  uuid: string; words: number; remaining: number; limit: number; feedbackLanguage: 'en' | 'ru';
+  uuid: string; words: number; remaining: number; limit: number; feedbackLanguage: FeedbackLanguage;
   /** Saves the draft; resolves to false when the text could not be saved. */
   beforeSubmit?: () => Promise<boolean>;
   label?: string;

@@ -2,7 +2,7 @@
 import {useTranslations} from 'next-intl';
 import {useEffect, useState} from 'react';
 import {Link, useRouter} from '../i18n/navigation';
-import type {Assessment, Attempt} from '../lib/api/schemas';
+import type {Assessment, Attempt, FeedbackLanguage} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
 import {ResultView} from './result';
 import {SubmitDialog} from './submit-dialog';
@@ -13,7 +13,7 @@ const PATIENCE_MS = 5 * 60000;
 
 /** A submitted essay: waiting for the assessment, its failure, or the feedback. */
 export function AssessmentView({attempt, assessment, examName, remaining, limit, feedbackLanguage}: {
-  attempt: Attempt; assessment: Assessment | null; examName: string; remaining: number; limit: number; feedbackLanguage: 'en' | 'ru';
+  attempt: Attempt; assessment: Assessment | null; examName: string; remaining: number; limit: number; feedbackLanguage: FeedbackLanguage;
 }) {
   const t = useTranslations('Assessment');
   const waiting = !assessment || assessment.status === 'queued' || assessment.status === 'running';

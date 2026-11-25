@@ -7,11 +7,13 @@ const keys = (value, prefix = '') => typeof value === 'object' && value !== null
   ? Object.entries(value).flatMap(([k, v]) => keys(v, prefix ? `${prefix}.${k}` : k))
   : [prefix];
 
-test('en and ru messages have the same keys and no empty strings', () => {
+test('en, ru and uk messages have the same keys and no empty strings', () => {
   const en = load('en');
   const ru = load('ru');
+  const uk = load('uk');
   assert.deepEqual(keys(ru).sort(), keys(en).sort());
-  for (const [locale, messages] of [['en', en], ['ru', ru]]) {
+  assert.deepEqual(keys(uk).sort(), keys(en).sort());
+  for (const [locale, messages] of [['en', en], ['ru', ru], ['uk', uk]]) {
     for (const key of keys(messages)) {
       const value = key.split('.').reduce((v, k) => v[k], messages);
       assert.ok(typeof value === 'string' && value.trim(), `${locale}: ${key} is empty`);
@@ -20,9 +22,9 @@ test('en and ru messages have the same keys and no empty strings', () => {
 });
 
 test('no message claims an official or exact IELTS score (ADR-003)', () => {
-  for (const locale of ['en', 'ru']) {
+  for (const locale of ['en', 'ru', 'uk']) {
     const text = JSON.stringify(load(locale));
-    // Negations ("not an exact band", "а не точный балл") are the honest wording and allowed.
-    assert.doesNotMatch(text, /official (score|band|result)s? (is|are)|your (exact )?IELTS score|(?<!не )точн\w* балл|(?<!не )официальн\w* оценк|exact (band|score) calculator/i);
+    // Negations ("not an exact band", "а не точный балл", "а не точний бал") are the honest wording and allowed.
+    assert.doesNotMatch(text, /official (score|band|result)s? (is|are)|your (exact )?IELTS score|(?<!не )точн\w* балл|(?<!не )официальн\w* оценк|(?<!не )точн\w* бал\b|(?<!не )офіційн\w* оцінк|exact (band|score) calculator/i);
   }
 });

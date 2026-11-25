@@ -2,7 +2,7 @@
 import {useLocale, useTranslations} from 'next-intl';
 import {useState, type FormEvent} from 'react';
 import {Link, useRouter} from '../i18n/navigation';
-import type {Profile} from '../lib/api/schemas';
+import {feedbackLanguages, type Profile} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
 import {TERMS_VERSION} from '../lib/legal/common';
 
@@ -48,7 +48,7 @@ export function WelcomeForm({profile, exams, next, termsReady}: {
         <fieldset className="choice">
           <legend>{t('feedbackLanguage')}</legend>
           <p className="hint">{t('feedbackHint')}</p>
-          {(['en', 'ru'] as const).map(code => <label key={code} className="option">
+          {feedbackLanguages.map(code => <label key={code} className="option">
             <input type="radio" name="feedback_language" value={code} defaultChecked={(profile.feedback_language ?? locale) === code} required/>
             <span>{t(`languages.${code}`)}</span>
           </label>)}

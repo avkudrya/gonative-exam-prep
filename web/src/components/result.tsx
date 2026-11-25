@@ -96,9 +96,10 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
               {f.quote && <span className="quote" lang="en">“{f.quote}”</span>}
               {f.suggestion && <> <span aria-hidden="true">→</span> <span className="suggestion" lang="en">{f.suggestion}</span></>}
               {placed.has(f.id) && <> <button type="button" className="text-button" onClick={() => select(f.id, 'list')}>{t('showInEssay')}</button></>}
+              {/* Every example keeps its own explanation (owner test 05): a group never shows only the first one. */}
+              <p lang={language}>{f.explanation}</p>
             </li>)}
           </ul>
-          <p lang={language}>{g.examples[0].explanation}</p>
         </li>)}
       </ol>
     </section> : fixes.length > 0 && <section aria-labelledby="fixes-title" className="fixes">

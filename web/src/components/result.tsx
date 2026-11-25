@@ -6,6 +6,7 @@ import {useRouter} from '../i18n/navigation';
 import type {Assessment, Attempt, ResultFinding} from '../lib/api/schemas';
 import {reportKinds} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
+import {EssayWords} from './essay-words';
 
 type Result = NonNullable<Assessment['result']>;
 const kindOrder = {error: 0, weakness: 1, suggestion: 2, strength: 3} as const;
@@ -172,12 +173,43 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
       </section>
     </div>
 
+    <SelfCheck cards={cards} language={language}/>
+
+    <EssayWords uuid={attempt.uuid}/>
+
     <section className="result-actions" aria-label={t('actionsLabel')}>
       <Rewrite attempt={attempt}/>
       <button type="button" className="button" onClick={() => setReportFor(null)}>{t('reportGeneral')}</button>
     </section>
     {reportFor === null && <ReportForm uuid={attempt.uuid} findingId={null} onClose={() => setReportFor(undefined)}/>}
   </div>;
+}
+
+const severityOrder = {major: 0, moderate: 1, minor: 2} as const;
+
+/**
+ * P4.5 "rewrite your own sentences": the clearest errors (with a correction), the most serious first. The learner
+ * writes the sentence again in their head or on paper, then opens the correction to compare. Nothing is sent.
+ */
+function SelfCheck({cards, language}: {cards: ResultFinding[]; language: string}) {
+  const t = useTranslations('Result');
+  const [open, setOpen] = useState<Set<string>>(new Set());
+  const items = cards.filter(f => f.kind === 'error' && f.quote && f.suggestion)
+    .sort((a, b) => severityOrder[a.severity] - severityOrder[b.severity]).slice(0, 5);
+  if (items.length === 0) return null;
+  return <section id="rewrite" aria-labelledby="rewrite-title" className="self-check">
+    <h2 id="rewrite-title">{t('selfCheckTitle')}</h2>
+    <p className="hint">{t('selfCheckIntro')}</p>
+    <ol>
+      {items.map(f => <li key={f.id}>
+        <p className="quote" lang="en">“{f.quote}”</p>
+        {open.has(f.id) ? <>
+          <p><span className="suggestion" lang="en">{f.suggestion}</span></p>
+          <p lang={language}>{f.explanation}</p>
+        </> : <button type="button" className="text-button" onClick={() => setOpen(new Set([...open, f.id]))}>{t('selfCheckShow')}</button>}
+      </li>)}
+    </ol>
+  </section>;
 }
 
 function Rewrite({attempt}: {attempt: Attempt}) {

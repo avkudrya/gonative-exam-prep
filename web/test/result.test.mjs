@@ -9,7 +9,7 @@ const TOKEN = '31|result-session-fixture';
 const PROMPT = 'Some say cities should ban cars from the centre, others disagree. Discuss both views and give your opinion.';
 
 test('Feedback: submit, waiting, result with highlights, reports, rewrite, failure, quota, partial', {timeout: 240000}, async t => {
-  const state = {attempts: new Map(), remaining: 2, submits: [], reports: [], creates: [], polls: 0, outcome: 'assessed', submitError: null, failPut: false};
+  const state = {attempts: new Map(), remaining: 2, submits: [], reports: [], creates: [], lists: [], polls: 0, outcome: 'assessed', submitError: null, failPut: false};
   const make = (over = {}) => {
     const a = {uuid: randomUUID(), status: 'draft', revision: 1, response_text: ESSAY, assessment: null, result: null, from: null, ...over};
     state.attempts.set(a.uuid, a);
@@ -31,7 +31,7 @@ test('Feedback: submit, waiting, result with highlights, reports, rewrite, failu
       const a = make({response_text: ESSAY, revision: 0, from: body.from_attempt});
       return json(201, {attempt: {...summary(a), prompt: {text: PROMPT}, response_text: a.response_text, assessments: []}});
     }
-    const m = /^attempts\/([0-9a-f-]{36})(?:\/(draft|submit|assessment|reports))?$/.exec(path);
+    const m = /^attempts\/([0-9a-f-]{36})(?:\/(draft|submit|assessment|reports|vocabulary|vocabulary\/list))?$/.exec(path);
     const a = m && state.attempts.get(m[1]);
     if (!a) return problem(404, 'not_found');
     const action = m[2];
@@ -63,6 +63,19 @@ test('Feedback: submit, waiting, result with highlights, reports, rewrite, failu
         }
       }
       return json(200, {assessment: assessment(a)});
+    }
+    // P4.4: two dictionary words from the vocabulary corrections; the list is made once.
+    const quota = {tier: 'free', limit: 100, remaining: a.list ? 99 : 100};
+    if (action === 'vocabulary') {
+      return json(200, {words: [
+        {dictionary_id: 11, word: 'commit', translation: null, skill: 'vocabulary.word_choice', finding_id: 'f1', level: 'B2'},
+        {dictionary_id: 12, word: 'outweigh', translation: null, skill: 'vocabulary.range', finding_id: 'f10', level: 'C1'},
+      ], list: a.list ?? null, quota});
+    }
+    if (action === 'vocabulary/list') {
+      state.lists.push(body);
+      a.list = {lesson_id: 77, name: 'IELTS Writing 2026-11-24 - 1', words: body.dictionary_ids?.length ?? 2, url: 'https://gonativeweb.example.test/courses/900/77'};
+      return json(201, {list: a.list, quota: {...quota, remaining: 100 - a.list.words}});
     }
     if (action === 'reports' && method === 'POST') {
       state.reports.push(body);
@@ -170,6 +183,23 @@ test('Feedback: submit, waiting, result with highlights, reports, rewrite, failu
   await general.getByRole('button', {name: 'Send report'}).click();
   await page.getByText('Thank you. We will review the report.').last().waitFor();
   assert.deepEqual(state.reports.at(-1), {kind: 'wrong_score', allow_text_access: false});
+
+  // Fix it yourself (P4.5): the clearest errors, corrections hidden until asked.
+  const own = page.getByRole('region', {name: 'Fix it yourself'});
+  const ownCount = await own.locator('li').count();
+  assert.equal(ownCount > 0 && ownCount <= 5, true);
+  assert.equal(await own.locator('.suggestion').count(), 0);
+  await own.getByRole('button', {name: 'Show the correction'}).first().click();
+  assert.equal(await own.locator('.suggestion').count(), 1);
+
+  // Words for GoNative: untick one, the list is made from the rest and opens in GoNative.
+  const words = page.getByRole('region', {name: 'Words for GoNative'});
+  await words.getByText('Free GoNative plan: 100 words left to add.').waitFor();
+  await words.getByRole('checkbox', {name: 'commit'}).uncheck();
+  await words.getByRole('button', {name: 'Add 1 word to GoNative'}).click();
+  await words.getByText('The list “IELTS Writing 2026-11-24 - 1” is in GoNative: 1 word.').waitFor();
+  assert.deepEqual(state.lists, [{dictionary_ids: [12]}]);
+  assert.equal(await words.getByRole('link', {name: 'Open in GoNative'}).getAttribute('href'), 'https://gonativeweb.example.test/courses/900/77');
 
   // A new version starts from this essay.
   await page.getByRole('button', {name: 'Write a new version'}).click();

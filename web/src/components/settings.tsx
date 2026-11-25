@@ -16,23 +16,32 @@ function StatusLine({status}: {status: Status}) {
     : <p className="feedback error" role="alert">{status.message}</p>;
 }
 
+/** Weekly time for the plan (P4.6), in minutes: one essay with its feedback takes about an hour. */
+const weeklyOptions = [60, 120, 180, 300, 420];
+
 export function PreferenceSettings({profile, exams}: {profile: Profile; exams: {key: string; name: string}[]}) {
   const t = useTranslations('Settings');
   const locale = useLocale();
   const router = useRouter();
-  const initial = {interface_locale: locale, feedback_language: profile.feedback_language ?? locale, target_exam_key: profile.target_exam_key ?? ''};
+  const initial = {interface_locale: locale, feedback_language: profile.feedback_language ?? locale, target_exam_key: profile.target_exam_key ?? '',
+    exam_date: profile.exam_date ?? '', weekly_minutes: profile.weekly_minutes === null ? '' : String(profile.weekly_minutes)};
   const [values, setValues] = useState(initial);
   const [saved, setSaved] = useState(initial);
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState<Status>(null);
   const changed = (Object.keys(values) as (keyof typeof values)[]).filter(key => values[key] !== saved[key]);
+  const today = new Date().toISOString().slice(0, 10);
 
   async function submit(event: FormEvent) {
     event.preventDefault();
     if (!changed.length) return;
     setBusy(true);
     setStatus(null);
-    const body = Object.fromEntries(changed.map(key => [key, key === 'target_exam_key' && !values[key] ? null : values[key]]));
+    // Empty optional fields are cleared; the weekly time is a number of minutes.
+    const body = Object.fromEntries(changed.map(key => {
+      if (key === 'weekly_minutes') return [key, values[key] ? Number(values[key]) : null];
+      return [key, (key === 'target_exam_key' || key === 'exam_date') && !values[key] ? null : values[key]];
+    }));
     const result = await bff('profile', {method: 'PUT', body});
     setBusy(false);
     if (!result.ok) {
@@ -76,6 +85,18 @@ export function PreferenceSettings({profile, exams}: {profile: Profile; exams: {
           {exams.map(exam => <option key={exam.key} value={exam.key}>{exam.name}</option>)}
         </select>
       </div>}
+      <div className="field">
+        <label htmlFor="exam-date">{t('preferences.examDate')}</label>
+        <input id="exam-date" type="date" value={values.exam_date} min={today} onChange={set('exam_date')}/>
+        <p className="hint">{t('preferences.examDateHint')}</p>
+      </div>
+      <div className="field">
+        <label htmlFor="weekly-minutes">{t('preferences.weeklyMinutes')}</label>
+        <select id="weekly-minutes" value={values.weekly_minutes} onChange={set('weekly_minutes')}>
+          <option value="">{t('preferences.weeklyNone')}</option>
+          {weeklyOptions.map(m => <option key={m} value={String(m)}>{t('preferences.weeklyHours', {hours: m / 60})}</option>)}
+        </select>
+      </div>
       <StatusLine status={status}/>
       <button className="button primary" disabled={busy || !changed.length}>{t('save')}</button>
     </form>

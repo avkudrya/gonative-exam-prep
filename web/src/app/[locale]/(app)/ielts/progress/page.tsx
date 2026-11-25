@@ -1,10 +1,11 @@
 import type {Metadata} from 'next';
 import {getFormatter, getTranslations, setRequestLocale} from 'next-intl/server';
+import {NextSteps, WeekPlan} from '../../../../../components/next-steps';
 import {RangeChart} from '../../../../../components/range-chart';
 import {Unavailable} from '../../../../../components/unavailable';
 import {Link} from '../../../../../i18n/navigation';
 import {requireMember} from '../../../../../server/access';
-import {currentSkills} from '../../../../../server/session';
+import {currentPlan, currentRecommendations, currentSkills} from '../../../../../server/session';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}): Promise<Metadata> {
   const {locale} = await params;
@@ -26,6 +27,8 @@ export default async function Progress({params}: {params: Promise<{locale: strin
   } catch {
     return <Unavailable locale={locale}/>;
   }
+  // Next steps and the week are extras: the page stands without them if they cannot be loaded.
+  const [steps, plan] = await Promise.all([currentRecommendations().catch(() => null), currentPlan().catch(() => null)]);
   const t = await getTranslations({locale, namespace: 'Progress'});
   const r = await getTranslations({locale, namespace: 'Result'});
   const format = await getFormatter({locale});
@@ -43,6 +46,8 @@ export default async function Progress({params}: {params: Promise<{locale: strin
       <p>{t('empty')}</p>
       <Link className="button primary" href="/ielts/writing/new">{t('start')}</Link>
     </div> : <>
+      {steps && <NextSteps initial={steps}/>}
+      {plan && <WeekPlan plan={plan} weekLabel={format.dateTime(new Date(`${plan.week_start}T00:00:00Z`), {day: 'numeric', month: 'long', timeZone: 'UTC'})}/>}
       <p className="score-note">{t('note', {count: essays.length})}</p>
       <section aria-labelledby="trend-title">
         <h2 id="trend-title">{t('trendTitle')}</h2>

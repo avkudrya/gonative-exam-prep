@@ -11,7 +11,8 @@ test('History, progress and official results', {timeout: 240000}, async t => {
   const attempts = Array.from({length: 23}, (_, i) => ({uuid: randomUUID(), exam_key: 'ielts-academic', exam_version: '2026-11', section_key: 'writing', task_key: 'task-2',
     source: i % 2 ? 'custom' : 'library', topic: i % 2 ? null : `Topic ${i + 1}`, status: i === 0 ? 'assessing' : i % 3 ? 'assessed' : 'draft', revision: 1, word_count: 250 + i,
     word_count_rule: 'whitespace-v1', submitted_at: null, created_at: '2026-11-20T10:00:00+00:00', updated_at: '2026-11-24T10:00:00+00:00', assessment: null}));
-  const state = {attempts, deletes: [], skills: null, results: [], writes: []};
+  const state = {attempts, deletes: [], skills: null, results: [], writes: [], steps: [], closed: [], plan: null};
+  const step = (kind, over = {}) => ({uuid: randomUUID(), kind, status: 'open', skill: null, attempt: attempts[1].uuid, practice_task: null, finding_ids: [], words: null, created_at: null, ...over});
   const trend = [
     {assessment: randomUUID(), finished_at: '2026-11-10T10:00:00+00:00', criteria: [{criterion_key: 'task_response', estimate: range(5, 6)}, {criterion_key: 'coherence_cohesion', estimate: range(5.5, 6.5)}, {criterion_key: 'lexical_resource', estimate: range(5, 6)}, {criterion_key: 'grammatical_range_accuracy', estimate: null}]},
     {assessment: randomUUID(), finished_at: '2026-11-20T10:00:00+00:00', criteria: [{criterion_key: 'task_response', estimate: range(6, 7)}, {criterion_key: 'coherence_cohesion', estimate: range(6, 7)}, {criterion_key: 'lexical_resource', estimate: range(5.5, 6.5)}, {criterion_key: 'grammatical_range_accuracy', estimate: range(5, 6)}]},
@@ -37,6 +38,15 @@ test('History, progress and official results', {timeout: 240000}, async t => {
       return {status: 204};
     }
     if (path === 'skills') return json(200, state.skills ?? {skills: [], criteria_trend: []});
+    if (path === 'recommendations') return json(200, {recommendations: state.steps});
+    if (path === 'plan') return state.plan ? json(200, {plan: state.plan}) : problem(503, 'unavailable');
+    const close = /^recommendations\/([0-9a-f-]{36})\/(done|dismiss)$/.exec(path);
+    if (close && method === 'POST') {
+      const s = state.steps.find(x => x.uuid === close[1]);
+      state.closed.push([s.kind, close[2]]);
+      state.steps = state.steps.filter(x => x !== s);
+      return json(200, {recommendation: {...s, status: close[2] === 'done' ? 'done' : 'dismissed'}});
+    }
     if (path === 'reported-results' && method === 'GET') return json(200, {reported_results: state.results});
     if (path === 'reported-results' && method === 'POST') {
       state.writes.push(body);
@@ -99,8 +109,35 @@ test('History, progress and official results', {timeout: 240000}, async t => {
     {skill_key: 'vocabulary.collocations', status: 'watch', per_100_words: 0.5, trend: 'worsening', confidence: 'low', observations: 2},
     {skill_key: 'mechanics.spelling', status: 'ok', per_100_words: 0.1, trend: 'stable', confidence: 'medium', observations: 1},
   ]};
+  state.steps = [
+    step('rewrite', {finding_ids: ['f3', 'f1', 'f2']}),
+    step('new_essay', {attempt: null, skill: 'task.idea_development', practice_task: {uuid: randomUUID(), topic: 'Remote work'}}),
+    step('vocabulary_list', {words: 4}),
+  ];
+  state.plan = {version: 2, week_start: '2026-11-16', weeks_to_exam: 5, essays: 2, timed: false, reassess_every_weeks: 2, daily_words: true,
+    focus_skills: ['grammar.articles', 'task.idea_development']};
   await page.reload();
   await page.getByText('Based on your last 2 assessed essays.', {exact: false}).waitFor();
+
+  // Next steps from the feedback (P4.5) and the week (P4.6).
+  const steps = page.getByRole('region', {name: 'What to do next'});
+  assert.deepEqual(await steps.locator('.step p').allTextContents(), [
+    'Fix 3 sentences from your latest essay yourself.',
+    'Write a new essay on “Remote work” and watch: Developing ideas.',
+    'Add 4 words from your latest feedback to GoNative.',
+  ]);
+  assert.equal(await steps.getByRole('link', {name: 'Open the sentences'}).getAttribute('href'), `/en/ielts/writing/${attempts[1].uuid}#rewrite`);
+  assert.equal(await steps.getByRole('link', {name: 'Choose the words'}).getAttribute('href'), `/en/ielts/writing/${attempts[1].uuid}#words`);
+  await steps.locator('.step.vocabulary_list').getByRole('button', {name: 'Done'}).click();
+  await steps.locator('.step.rewrite').getByRole('button', {name: 'Hide'}).click();
+  await steps.locator('.step').nth(1).waitFor({state: 'detached'});
+  assert.deepEqual(state.closed, [['vocabulary_list', 'done'], ['rewrite', 'dismiss']]);
+  const week = page.getByRole('region', {name: /This week, from/});
+  assert.match(await week.locator('h2').textContent(), /16/);
+  assert.deepEqual(await week.locator('li').allTextContents(), ['2 essays with feedback.', 'After each feedback: fix your own sentences.',
+    'Every day: a few minutes of words in GoNative.', 'Compare your ranges every 2 weeks.']);
+  await week.getByText('5 weeks to your exam.').waitFor();
+  await week.getByText('Watch most: Articles, Developing ideas.').waitFor();
   assert.equal(await page.locator('.range-chart').count(), 4);
   assert.equal(await page.locator('.trend-card').first().locator('rect.bar').count(), 2);
   assert.equal(await page.locator('.trend-card').nth(3).locator('rect.bar').count(), 1, 'a missing estimate draws no bar');

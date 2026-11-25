@@ -30,6 +30,8 @@ test('BFF: allowlist, CSRF, session cookie, error projection, no essay or token 
       return json(200, {attempt: {...summary, revision: 4}});
     }
     if (path === `attempts/${ATTEMPT}/submit`) return json(202, {attempt: summary, assessment: {uuid: ATTEMPT, status: 'queued', feedback_language: 'en', created_at: null, finished_at: null, result: null}, reused: false});
+    if (path === `attempts/${ATTEMPT}/vocabulary/list`) return json(201, {list: {lesson_id: 2, name: 'IELTS', words: 1, url: 'javascript:alert(1)'}, quota: {tier: 'free', limit: 100, remaining: 99}});
+    if (path === `attempts/${ATTEMPT}/vocabulary`) return json(200, {words: [], list: {lesson_id: 2, name: 'IELTS', words: 1, url: 'https://gonative.example.test/courses/1/2'}, quota: {tier: 'exams', limit: null, remaining: null}});
     if (path.startsWith('attempts?') || path === 'attempts') return json(200, {attempts: [summary], page: 1, per_page: 20, total: 1});
     return problem(404, 'not_found');
   });
@@ -135,6 +137,19 @@ test('BFF: allowlist, CSRF, session cookie, error projection, no essay or token 
   r = await send(`attempts/${ATTEMPT}/submit`, 'POST', {}, {Cookie, 'Idempotency-Key': 'submit-0001'});
   assert.equal(r.status, 202);
   assert.equal(api.calls.at(-1).headers['idempotency-key'], 'submit-0001');
+
+  // P4.4: a list of words takes only dictionary ids (or null for all); a link out of GoNative must be https.
+  const beforeWords = calls();
+  for (const bad of [{dictionary_ids: 'all'}, {dictionary_ids: [0]}, {dictionary_ids: [1], words: ['x']}, {}]) {
+    r = await send(`attempts/${ATTEMPT}/vocabulary/list`, 'POST', bad, {Cookie});
+    assert.equal(r.status, 422);
+  }
+  assert.equal(calls(), beforeWords);
+  r = await send(`attempts/${ATTEMPT}/vocabulary/list`, 'POST', {dictionary_ids: null}, {Cookie});
+  assert.equal(r.status, 503, 'a javascript: link from upstream is not passed on');
+  r = await send(`attempts/${ATTEMPT}/vocabulary`, 'GET', undefined, {Cookie});
+  assert.equal(r.status, 200);
+  assert.equal((await r.json()).list.url, 'https://gonative.example.test/courses/1/2');
 
   // Sign-out clears the cookie; an expired session clears it too.
   r = await send('auth/logout', 'POST', {}, {Cookie});

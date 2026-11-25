@@ -173,6 +173,61 @@ export const reportSchema = z.object({
   created_at: isoOrNull,
 });
 
+/** P4.4: GoNative's learning words quota; limit and remaining are null without a limit (Premium or Exams access). */
+export const learningQuotaSchema = z.object({
+  tier: z.enum(['free', 'premium', 'exams']),
+  limit: z.int().nonnegative().nullable(),
+  remaining: z.int().nonnegative().nullable(),
+});
+
+export const learningListSchema = z.object({
+  lesson_id: z.int().positive(),
+  name: z.string().max(120),
+  words: z.int().nonnegative(),
+  url: z.string().url().max(300).refine(v => v.startsWith('https://')),
+});
+
+export const vocabularySchema = z.object({
+  words: z.array(z.object({
+    dictionary_id: z.int().positive(),
+    word: z.string().max(191),
+    translation: z.string().max(512).nullable(),
+    skill: z.string().max(80),
+    finding_id: z.string().max(64),
+    level: z.string().max(4).nullable(),
+  })).max(15),
+  list: learningListSchema.nullable(),
+  quota: learningQuotaSchema,
+});
+
+export const vocabularyListSchema = z.object({list: learningListSchema.nullable(), quota: learningQuotaSchema});
+
+/** P4.5: a next step from the learner's own feedback; it points to their attempt or a library task, never to essay text. */
+export const recommendationKinds = ['rewrite', 'vocabulary_list', 'new_essay', 'reassess'] as const;
+export const recommendationSchema = z.object({
+  uuid,
+  kind: z.enum(recommendationKinds),
+  status: z.enum(['open', 'done', 'dismissed', 'expired']),
+  skill: z.string().max(96).nullable(),
+  attempt: uuid.nullable(),
+  practice_task: z.object({uuid, topic: z.string().max(191).nullable()}).nullable(),
+  finding_ids: z.array(z.string().max(64)).max(10),
+  words: z.int().nonnegative().nullable(),
+  created_at: isoOrNull,
+});
+
+/** P4.6: the week by code; it promises no dates or bands. */
+export const planSchema = z.object({
+  version: z.int().positive(),
+  week_start: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  weeks_to_exam: z.int().positive().nullable(),
+  essays: z.int().positive().max(7),
+  timed: z.boolean(),
+  reassess_every_weeks: z.int().positive().max(8),
+  daily_words: z.boolean(),
+  focus_skills: z.array(z.string().max(96)).max(5),
+});
+
 const criteriaRanges = z.array(z.object({criterion_key: key, estimate: presentedEstimateSchema.nullable()}));
 
 export const skillsSchema = z.object({
@@ -218,3 +273,7 @@ export type Report = z.infer<typeof reportSchema>;
 export type Skills = z.infer<typeof skillsSchema>;
 export type ReportedResult = z.infer<typeof reportedResultSchema>;
 export type Comparison = z.infer<typeof comparisonSchema>;
+export type Vocabulary = z.infer<typeof vocabularySchema>;
+export type Recommendation = z.infer<typeof recommendationSchema>;
+export type Plan = z.infer<typeof planSchema>;
+export type VocabularyList = z.infer<typeof vocabularyListSchema>;

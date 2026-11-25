@@ -3,7 +3,7 @@ import {z} from 'zod';
 import {
   assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, comparisonSchema, entitlementsSchema,
   feedbackLanguageSchema, identitySchema, interfaceLocaleSchema, practiceTaskSchema, profileSchema, reportKinds,
-  reportSchema, reportedResultSchema, skillsSchema,
+  recommendationSchema, reportSchema, reportedResultSchema, skillsSchema, vocabularyListSchema, vocabularySchema,
 } from '../lib/api/schemas';
 
 /*
@@ -105,6 +105,8 @@ const reportInput = z.object({
   allow_text_access: z.boolean().optional(),
 }).strict();
 
+const vocabularyInput = z.object({dictionary_ids: z.array(z.int().positive()).min(1).max(15).nullable()}).strict();
+
 const reportedInput = z.object({
   exam_key: examKey,
   test_date: date,
@@ -199,6 +201,11 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
     if (method === 'POST') return route(path, r => ({data: z.object({reported_result: reportedResultSchema}).parse(r), status: 201}), {input: reportedInput});
     return null;
   }
+  // P4.5: the learner marks a next step done or hides it.
+  const step = /^recommendations\/([^/]+)\/(done|dismiss)$/.exec(path);
+  if (step && uuidPattern.test(step[1]) && method === 'POST' && noQuery(search)) {
+    return route(`recommendations/${step[1].toLowerCase()}/${step[2]}`, parse(z.object({recommendation: recommendationSchema})), {input: empty});
+  }
   const reported = /^reported-results\/([^/]+)(\/comparison)?$/.exec(path);
   if (reported && uuidPattern.test(reported[1]) && noQuery(search)) {
     const root = `reported-results/${reported[1].toLowerCase()}`;
@@ -207,7 +214,7 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
     if (method === 'DELETE') return route(root, deleted);
     return null;
   }
-  const attempt = /^attempts\/([^/]+)(?:\/(draft|submit|assessment|reports))?$/.exec(path);
+  const attempt = /^attempts\/([^/]+)(?:\/(draft|submit|assessment|reports|vocabulary|vocabulary\/list))?$/.exec(path);
   if (!attempt || !uuidPattern.test(attempt[1]) || !noQuery(search)) return null;
   const root = `attempts/${attempt[1].toLowerCase()}`;
   const action = attempt[2];
@@ -228,5 +235,9 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
   if (action === 'reports' && method === 'POST') {
     return route(`${root}/reports`, r => ({data: z.object({report: reportSchema}).parse(r), status: 201}), {input: reportInput});
   }
+  // P4.4: words from the feedback into a GoNative list. The backend creates the list once and returns it after that;
+  // `list: null` means the free GoNative quota had no room.
+  if (action === 'vocabulary' && method === 'GET') return route(`${root}/vocabulary`, parse(vocabularySchema));
+  if (action === 'vocabulary/list' && method === 'POST') return route(`${root}/vocabulary/list`, parse(vocabularyListSchema), {input: vocabularyInput});
   return null;
 }

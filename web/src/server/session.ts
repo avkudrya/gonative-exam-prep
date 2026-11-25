@@ -1,7 +1,7 @@
 import 'server-only';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
-import {assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceTaskSchema, profileSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
+import {assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
 
 /** Server components read the session from the httpOnly cookie; `null` means "not signed in". */
@@ -85,6 +85,19 @@ export async function attemptsPage(page: number, perPage = 20) {
 export async function currentSkills() {
   const token = await sessionToken();
   return skillsSchema.parse(await backend('skills', 'GET', undefined, token ?? undefined, {maxBytes: 256 * 1024}));
+}
+
+/** P4.5 and P4.6: the open next steps and this week's plan. */
+export async function currentRecommendations() {
+  const token = await sessionToken();
+  const result = await backend('recommendations', 'GET', undefined, token ?? undefined) as {recommendations: unknown};
+  return recommendationSchema.array().max(10).parse(result.recommendations);
+}
+
+export async function currentPlan() {
+  const token = await sessionToken();
+  const result = await backend('plan', 'GET', undefined, token ?? undefined) as {plan: unknown};
+  return planSchema.parse(result.plan);
 }
 
 export async function currentReportedResults() {

@@ -185,7 +185,12 @@
         "uk": "Ukrainian"
       },
       "exam": "Exam you are preparing for",
-      "noExam": "Not chosen"
+      "noExam": "Not chosen",
+      "examDate": "Exam date (optional)",
+      "examDateHint": "The weekly plan gets denser closer to the exam.",
+      "weeklyMinutes": "Time for writing practice per week",
+      "weeklyNone": "Not set",
+      "weeklyHours": "{hours, plural, one {# hour} other {# hours}}"
     },
     "password": {
       "title": "Password",
@@ -447,7 +452,10 @@
         "spelling": "Spelling",
         "punctuation": "Punctuation"
       }
-    }
+    },
+    "selfCheckTitle": "Fix it yourself",
+    "selfCheckIntro": "Rewrite each sentence correctly without looking, then open the correction to compare.",
+    "selfCheckShow": "Show the correction"
   },
   "Report": {
     "title": "Report a problem with this feedback",
@@ -656,5 +664,43 @@
     "terms": "Terms of Use",
     "privacy": "Privacy Policy",
     "disclaimer": "Unofficial practice tool. IELTS is a registered trademark of its owners; this site is not affiliated with or endorsed by them. Score ranges are approximate, not official results."
+  },
+  "Words": {
+    "title": "Words for GoNative",
+    "intro": "Words from the corrections in this review, as they appear in the GoNative dictionary. Untick the ones you do not need and learn the rest in GoNative.",
+    "add": "{count, plural, =0 {Add to GoNative} one {Add # word to GoNative} other {Add # words to GoNative}}",
+    "created": "The list “{name}” is in GoNative: {count, plural, one {# word} other {# words}}.",
+    "open": "Open in GoNative",
+    "quotaLeft": "Free GoNative plan: {count, plural, one {# word} other {# words}} left to add.",
+    "quotaFull": "The free GoNative word limit is used up, so no list was created.",
+    "unavailable": "Could not create the list. Try again later."
+  },
+  "NextSteps": {
+    "title": "What to do next",
+    "none": "Nothing for now. Write a new essay to get the next steps.",
+    "rewrite": "{count, plural, one {Fix # sentence from your latest essay yourself.} other {Fix # sentences from your latest essay yourself.}}",
+    "vocabulary": "{count, plural, one {Add # word from your latest feedback to GoNative.} other {Add # words from your latest feedback to GoNative.}}",
+    "newEssay": "Write a new essay and watch: {skill}.",
+    "newEssayTopic": "Write a new essay on “{topic}” and watch: {skill}.",
+    "reassess": "Two weeks since your latest essay: write a new one to compare.",
+    "open": {
+      "rewrite": "Open the sentences",
+      "vocabulary_list": "Choose the words",
+      "new_essay": "Choose a task",
+      "reassess": "Write an essay"
+    },
+    "done": "Done",
+    "dismiss": "Hide",
+    "unavailable": "Could not save. Try again later.",
+    "planTitle": "This week, from {week}",
+    "weeksToExam": "{count, plural, one {# week to your exam.} other {# weeks to your exam.}}",
+    "essays": "{count, plural, one {# essay with feedback.} other {# essays with feedback.}}",
+    "essaysTimed": "{count, plural, one {# essay on time: 40 minutes, as in the exam.} other {# essays on time: 40 minutes each, as in the exam.}}",
+    "fixOwn": "After each feedback: fix your own sentences.",
+    "dailyWords": "Every day: a few minutes of words in GoNative.",
+    "reassessEvery": "{count, plural, one {Compare your ranges every week.} other {Compare your ranges every # weeks.}}",
+    "focus": "Watch most: {skills}.",
+    "setDate": "Add your exam date and weekly time to fit the week to them.",
+    "settingsLink": "Settings"
   }
 }

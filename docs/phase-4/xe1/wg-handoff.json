@@ -1,0 +1,1026 @@
+{
+ "format": "xe1-wg-handoff/1",
+ "note": "XE-1 wave 1: items without an explanation (key wrong or several correct answers) and answers the checker misses. Bank repairs or retirement are WG decisions.",
+ "rejected": [
+  {
+   "id": 374,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Gap 2 also accepts 'the' ('will open the new city circus', a circus both speakers know about), so the key is not the only answer."
+  },
+  {
+   "id": 375,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Gap 3 can stay empty ('give you more information') and gap 2 also allows 'the orange coat'."
+  },
+  {
+   "id": 376,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Gap 1 tests a generic singular noun, which the ambiguity rules exclude because generic forms allow more than one article."
+  },
+  {
+   "id": 378,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'Man' meaning humankind is an advanced use, and 'A man' / 'The man' also make grammatical sentences, so the zero key is not the only answer."
+  },
+  {
+   "id": 382,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Both gaps also work with no article ('Always cut flowers before putting them in water')."
+  },
+  {
+   "id": 383,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Gap 1 is a generic singular noun that allows other articles, and 'in a rainy day' is unnatural ('on a rainy day')."
+  },
+  {
+   "id": 385,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Gap 1 also works with no article ('Apples are on the kitchen table')."
+  },
+  {
+   "id": 389,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'one' is equally correct ('for one second'), so the gap has two answers."
+  },
+  {
+   "id": 393,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Gap 1 can also stay empty ('Canadians usually drink tea'), which is the more natural general statement."
+  },
+  {
+   "id": 397,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Gap 1 also accepts no article ('Flu is a very dangerous disease'), so 'the' is not the only answer."
+  },
+  {
+   "id": 406,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'phone calls' is general here, so the zero article is natural in gap 1, and 'the' is not the only correct answer."
+  },
+  {
+   "id": 413,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Gap 2 also works with no word ('it was May 6'), so 'on' is not the only correct answer."
+  },
+  {
+   "id": 421,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Both 'in summer' and 'in the summer' are correct for a general statement, so gap 1 has two answers."
+  },
+  {
+   "id": 435,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'the position of secretary' without an article is also correct (and common), so 'a' is not the only answer in gap 2."
+  },
+  {
+   "id": 449,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "This is a generic sentence with a singular noun, where 'A rose' and 'The rose' are both possible; such items must not be tested."
+  },
+  {
+   "id": 459,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'we can see stars' without an article is also correct, so gap 2 has two answers."
+  },
+  {
+   "id": 4090,
+   "topic": "gerund-infinitive",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "After 'don't dare' both 'to call' and the bare infinitive 'call' are correct, so leaving the gap empty is also a valid answer."
+  },
+  {
+   "id": 4097,
+   "topic": "gerund-infinitive",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Leaving the gap empty ('I would rather accept his proposition') is equally correct, so 'not' is not the only answer."
+  },
+  {
+   "id": 4098,
+   "topic": "gerund-infinitive",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "After 'do everything but' the bare infinitive is used, so the gap should stay empty, not take 'to'."
+  },
+  {
+   "id": 4099,
+   "topic": "gerund-infinitive",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "After 'do anything except' the bare infinitive is used, so the gap should stay empty, not take 'to'."
+  },
+  {
+   "id": 5780,
+   "topic": "prepositions-time-place",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "With a negative main clause, 'I won't talk to you before you stop crying' is also correct and means almost the same as 'until'."
+  },
+  {
+   "id": 5912,
+   "topic": "reported-speech",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'would' is also natural here as a hypothetical ('they would never be happy together' if they married), so the item does not have one clear answer."
+  },
+  {
+   "id": 5918,
+   "topic": "reported-speech",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "With no time signal for 'I was told' (it may have been today), 'the day before yesterday' is also correct, so both options fit."
+  },
+  {
+   "id": 5923,
+   "topic": "reported-speech",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "Nothing shows when 'We said' happened, so 'a year ago' is also correct if it was said recently; the adverb change is optional here."
+  },
+  {
+   "id": 5925,
+   "topic": "reported-speech",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "Nothing shows when 'They said' happened, so 'three days ago' is also correct if it was said recently."
+  },
+  {
+   "id": 5951,
+   "topic": "reported-speech",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Nothing shows the liking is no longer true, so 'I like it' is also correct and is missing from the accepted answers."
+  },
+  {
+   "id": 6669,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Spring will come after winter' is also acceptable, so the choice has no single correct answer."
+  },
+  {
+   "id": 6682,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "In gap 3 'call' is also correct and more natural, because 'will' from 'will book' covers both verbs ('will book a hotel and immediately call you')."
+  },
+  {
+   "id": 6688,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "With no future time marker, 'He thinks that I never jump higher than him' is also a correct sentence with a habitual meaning, so the item has two correct answers."
+  },
+  {
+   "id": 6709,
+   "topic": "future-forms",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "For travel plans the present simple and present continuous are both possible, and the item tests only these two forms against each other."
+  },
+  {
+   "id": 6727,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'I am to ask her to marry me' (be to for an arrangement or instruction) is also a grammatical sentence, so the distractor is not wrong."
+  },
+  {
+   "id": 6732,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "Both 'will' and 'are going to' are correct for a prediction, even with evidence after 'Look!'."
+  },
+  {
+   "id": 6901,
+   "topic": "future-forms",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "Outside a two-line exchange, 'am going to start' is also correct after a decision just made, so will and going to are both acceptable."
+  },
+  {
+   "id": 6906,
+   "topic": "relative-clauses",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "This is an object pronoun in a defining clause, so leaving the gap empty is also correct, but the empty answer is not accepted."
+  },
+  {
+   "id": 6999,
+   "topic": "relative-clauses",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "This is an object pronoun in a defining clause, so leaving the gap empty is also correct, but the empty answer is not accepted."
+  },
+  {
+   "id": 7075,
+   "topic": "relative-clauses",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "This is an object pronoun in a defining clause, so leaving the gap empty is also correct, but the empty answer is not accepted."
+  },
+  {
+   "id": 7198,
+   "topic": "future-forms",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'let' is a clearly different correct answer ('Will you let me carry these boxes?') and is not accepted."
+  },
+  {
+   "id": 7266,
+   "topic": "present-perfect",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "The keyed sentence 'I have always known him for many years now' is unnatural because 'always' contradicts a fixed duration with 'for many years'."
+  },
+  {
+   "id": 7267,
+   "topic": "conditionals",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "Without context making the condition unreal, 'am / will play' is also a grammatical first conditional (e.g. a child who may grow taller)."
+  },
+  {
+   "id": 7386,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "For a travel event the present simple 'travel' is also acceptable under the specification's ambiguity rule, so the item wrongly tests present simple against present continuous."
+  },
+  {
+   "id": 7661,
+   "topic": "relative-clauses",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "This is an object pronoun in a defining clause, so leaving the gap empty is also correct, but the empty answer is not accepted."
+  },
+  {
+   "id": 7771,
+   "topic": "prepositions-time-place",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "In an open gap other movement prepositions also fit, e.g. 'They travelled to the tunnel by car' or 'into/towards the tunnel', so 'through' is not the only correct answer."
+  },
+  {
+   "id": 7800,
+   "topic": "reported-speech",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'She asked the day before if I had finished my homework' is also a correct order with a different meaning and is not accepted."
+  },
+  {
+   "id": 7821,
+   "topic": "conditionals",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "Nothing marks the past condition as unreal, so 'attended / know' and 'attended / will know' are also grammatical real conditionals about yesterday's meeting."
+  },
+  {
+   "id": 7917,
+   "topic": "conditionals",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'arrived / would have' is also grammatical as a second conditional about an unlikely future event ('tomorrow'), and nothing in the sentence marks the condition as real."
+  },
+  {
+   "id": 7919,
+   "topic": "reported-speech",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'She told us during the film to be quiet' is also grammatical and is not accepted."
+  },
+  {
+   "id": 7962,
+   "topic": "reported-speech",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'She told him today not to be late for the meeting' is also correct and is not accepted."
+  },
+  {
+   "id": 7974,
+   "topic": "relative-clauses",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "The pronoun is the object of 'about' in a defining clause, so leaving the gap empty is also correct, but the empty answer is not accepted."
+  },
+  {
+   "id": 7975,
+   "topic": "reported-speech",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'She exclaimed today that the weather was beautiful' is also a correct order and is not accepted."
+  },
+  {
+   "id": 8004,
+   "topic": "reported-speech",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'He asked yesterday what time the meeting started' is also a correct order with a different meaning and is not accepted."
+  },
+  {
+   "id": 8012,
+   "topic": "reported-speech",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'He said later that he might call me' is also a natural correct order and is not accepted."
+  },
+  {
+   "id": 8041,
+   "topic": "conditionals",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "There is no word like 'always' or 'every time' to mark a general truth, so the second conditional 'set / would get' is also grammatical."
+  },
+  {
+   "id": 8076,
+   "topic": "reported-speech",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'She said last night that she could not come to the party' is also a correct order and is not accepted."
+  },
+  {
+   "id": 8078,
+   "topic": "prepositions-time-place",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "In an open gap, 'by Monday morning' or 'before Monday morning' is also a natural correct answer, but only 'on' is accepted."
+  },
+  {
+   "id": 8109,
+   "topic": "conditionals",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Without a cue, other verbs such as 'earned', 'saved', 'made' or 'got' also fit the gap, but only 'had' is accepted."
+  },
+  {
+   "id": 8138,
+   "topic": "prepositions-time-place",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "In an open gap, 'near New York City' or 'outside New York City' is also correct, but only 'in' is accepted."
+  },
+  {
+   "id": 8172,
+   "topic": "reported-speech",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'She asked last week if I had seen the film' is also a correct order and is not accepted."
+  },
+  {
+   "id": 8176,
+   "topic": "reported-speech",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'He told her during the meeting not to speak loudly' is also a correct order and is not accepted."
+  },
+  {
+   "id": 8199,
+   "topic": "prepositions-time-place",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "In an open gap, 'after 6 pm' or 'before 6 pm' is also a natural correct answer, but only 'at' is accepted."
+  },
+  {
+   "id": 8392,
+   "topic": "conditionals",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "Without a habit or law marker, 'heated / would melt' is also a grammatical unreal conditional, so the key is not the only correct choice."
+  },
+  {
+   "id": 8443,
+   "topic": "future-forms",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "For a plan decided earlier the specification says 'will' is not always wrong and both should be accepted outside a two-line exchange, but 'will' is not accepted."
+  },
+  {
+   "id": 8471,
+   "topic": "future-forms",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "This is not a two-line exchange, so 'am going to' also fits and is not accepted."
+  },
+  {
+   "id": 8511,
+   "topic": "conditionals",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Nothing fixes the condition as real, so the second conditional 'called / would answer' is equally correct but not accepted."
+  },
+  {
+   "id": 8606,
+   "topic": "conditionals",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "Without context fixing reality, the option 'studied / would pass' (second conditional) is also grammatical and meaningful."
+  },
+  {
+   "id": 8662,
+   "topic": "future-forms",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'will go' is also acceptable for an evening plan, and will vs present continuous for plans should not be keyed."
+  },
+  {
+   "id": 8703,
+   "topic": "conditionals",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'called / would help' is also grammatical as an unreal conditional, and nothing in the sentence fixes the situation as real."
+  },
+  {
+   "id": 8724,
+   "topic": "present-perfect",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "American English also allows 'did not find ... yet' in these two gaps, and nothing in the sentence rules it out."
+  },
+  {
+   "id": 8742,
+   "topic": "present-perfect",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "American English also allows 'did not find ... yet' in these two gaps, and nothing in the sentence rules it out."
+  },
+  {
+   "id": 8838,
+   "topic": "future-forms",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "Outside a two-line exchange 'am going to call you as soon as I arrive' is also correct, so the item has two correct options."
+  },
+  {
+   "id": 8908,
+   "topic": "present-perfect",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "American English also allows 'did not complete ... yet' in these two gaps, and nothing in the sentence rules it out."
+  },
+  {
+   "id": 8919,
+   "topic": "reported-speech",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'have' can also be accepted because finishing the book may still be relevant now, and nothing makes the content clearly no longer true, so past perfect vs present perfect is not a clear single answer."
+  },
+  {
+   "id": 9011,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'will' is not wrong for a plan, so both 'am going to' and 'will' fit."
+  },
+  {
+   "id": 9034,
+   "topic": "conditionals",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'didn't finish / would be' is also grammatical as an unreal conditional, and nothing in the sentence fixes the situation as real."
+  },
+  {
+   "id": 22616,
+   "topic": "countable-quantifiers",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "The plain form 'much' is offered against 'too much' in an affirmative, so the item tests much in affirmatives and 'very sweet' does not clearly show excess."
+  },
+  {
+   "id": 23672,
+   "topic": "countable-quantifiers",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'much' with 'money' in an affirmative is formal but not wrong, so the item tests much in affirmatives, which the topic excludes."
+  },
+  {
+   "id": 23796,
+   "topic": "countable-quantifiers",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "The distractor 'much' tests much in an affirmative statement, where it is formal rather than clearly wrong, which the topic rules forbid."
+  },
+  {
+   "id": 25460,
+   "topic": "past-perfect",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "A plain 'when the taxi arrived' clause without already/just or a deciding result leaves the past simple 'didn't finish' possible, which the specification forbids."
+  },
+  {
+   "id": 25646,
+   "topic": "past-continuous",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'didn't study' is also correct here, since nothing shows that studying would otherwise have been in progress at 5 pm."
+  },
+  {
+   "id": 25870,
+   "topic": "past-continuous",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'did not listen' is also grammatical, as 'at that moment' alone does not exclude the past simple."
+  },
+  {
+   "id": 27114,
+   "topic": "complex-sentences",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "The tiles also form 'During the town festival, many people visited the centre.', a clearly different correct order that is not accepted."
+  },
+  {
+   "id": 27321,
+   "topic": "linking-words",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "A difficult class can naturally be read as the cause of the improvement, so 'Therefore' also fits and the contrast is not unmistakable."
+  },
+  {
+   "id": 27545,
+   "topic": "word-formation",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "The subject 'the band' is a group of people with no preposition or reason clause, so 'excited' is also possible."
+  },
+  {
+   "id": 27560,
+   "topic": "complex-sentences",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "The tile 'new' can also go before 'workshop', giving another correct sentence: 'During the new workshop, participants learned skills.'"
+  },
+  {
+   "id": 27696,
+   "topic": "linking-words",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "Bringing homemade cakes can be read as a result of the neighbour being friendly, so 'Consequently' is also plausible and the logic is not unmistakable."
+  },
+  {
+   "id": 27791,
+   "topic": "passive-voice",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Nothing marks the sentence as habitual, so the future passive 'will be announced' is equally correct for an upcoming race and is not accepted."
+  },
+  {
+   "id": 27871,
+   "topic": "complex-sentences",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'because of' is also grammatical and gives a possible meaning before the noun phrase 'our holiday in Spain', so the gap is not uniquely decided by structure."
+  },
+  {
+   "id": 28223,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'will go to visit' is also acceptable for a plan, and will vs present continuous for plans should not be keyed."
+  },
+  {
+   "id": 28502,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'will go' is also acceptable for a plan, and will vs present continuous for plans should not be keyed."
+  },
+  {
+   "id": 28721,
+   "topic": "reporting-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Denied' also takes -ing, so 'denied waiting' is grammatical and the pattern does not leave only one verb, against the specification's rule."
+  },
+  {
+   "id": 28806,
+   "topic": "reporting-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Denied inviting all her friends' is also grammatical and makes sense, so 'denied' is a second possible answer."
+  },
+  {
+   "id": 28875,
+   "topic": "reporting-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Warn' also takes a that-clause, so 'she warned that we should use recycled materials' is grammatical and plausible."
+  },
+  {
+   "id": 28962,
+   "topic": "present-perfect",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Gap 1 has no prompt and 'before this holiday' sets a reference point, so 'had' (past perfect: 'I had never travelled... before this holiday') is also correct."
+  },
+  {
+   "id": 29154,
+   "topic": "reporting-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Denied' also takes -ing, so 'denied warming up' is grammatical and the pattern does not leave only one verb."
+  },
+  {
+   "id": 29202,
+   "topic": "reporting-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Denied' is also followed by -ing, so 'the teacher denied practising scales every day' is grammatical and meaningful, giving a second correct answer."
+  },
+  {
+   "id": 29532,
+   "topic": "future-continuous-perfect",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Without 'already' or 'by then', 'will finish' is also acceptable after 'by the time' but is not accepted."
+  },
+  {
+   "id": 29566,
+   "topic": "reporting-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Denied' also takes -ing, so 'denied trying the new organic products' is grammatical and meaningful."
+  },
+  {
+   "id": 29634,
+   "topic": "future-continuous-perfect",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'will be finished preparing' (be finished + -ing, meaning 'be done') is also natural, grammatical English here, so the key is not the only correct option."
+  },
+  {
+   "id": 29658,
+   "topic": "causative",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "No past time word fixes the tense: 'During our visit' also allows 'have had' (visit still going on), so 'had' is not the only correct option."
+  },
+  {
+   "id": 29774,
+   "topic": "reporting-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Denied' also takes -ing, so 'denied restarting the system' is grammatical and meaningful."
+  },
+  {
+   "id": 30070,
+   "topic": "reporting-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Warned', 'denied' and 'promised' can also be followed by a that-clause, so the grammar does not rule them out and the choice rests only on meaning."
+  },
+  {
+   "id": 30256,
+   "topic": "causative",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "No one else is shown doing the action, so 'They had the props to paint for the school play' (they had props they needed to paint) is also correct."
+  },
+  {
+   "id": 30286,
+   "topic": "causative",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'She had the books to return to the library on time' (she had books she needed to return) is also natural and correct, since no other doer is shown."
+  },
+  {
+   "id": 30828,
+   "topic": "past-perfect",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "This is reported speech after 'told us', where 'has' (no backshift, still true) is also acceptable, and the for-duration is not tied to the arrival moment."
+  },
+  {
+   "id": 30896,
+   "topic": "complex-sentences",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'Despite the muddy farm ground, the visit was enjoyable.' uses the same tiles and is also correct."
+  },
+  {
+   "id": 31107,
+   "topic": "passive-advanced",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Without a clear time word like 'right now', 'will be packed' also fits, since the present 'is still on its way' in a time clause can refer to the future."
+  },
+  {
+   "id": 31664,
+   "topic": "conditionals-second",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'The electricity is still off' does not make the power coming back soon unreal, so 'come / will' (first conditional) is also correct."
+  },
+  {
+   "id": 31714,
+   "topic": "conditionals-second",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "The context 'but I usually feel shy' does not make having more friends at the party unreal, so the first conditional 'have / will feel' is equally correct."
+  },
+  {
+   "id": 31736,
+   "topic": "reported-commands",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'He asked me again not to lose my house key' is also a correct, natural order (again modifying 'asked'), and it is not accepted."
+  }
+ ],
+ "accepted_missing": [
+  {
+   "id": 8690,
+   "missing": "'re playing"
+  },
+  {
+   "id": 8796,
+   "missing": "do not watch"
+  },
+  {
+   "id": 9022,
+   "missing": "'m writing"
+  },
+  {
+   "id": 26127,
+   "missing": "ever traveled"
+  },
+  {
+   "id": 30518,
+   "missing": "'ll have replaced"
+  },
+  {
+   "id": 8471,
+   "missing": "'ll"
+  },
+  {
+   "id": 8591,
+   "missing": "does not study"
+  },
+  {
+   "id": 31485,
+   "missing": "'d wake"
+  },
+  {
+   "id": 7513,
+   "missing": "had not completed"
+  },
+  {
+   "id": 7520,
+   "missing": "does not call"
+  },
+  {
+   "id": 7582,
+   "missing": "had not left"
+  },
+  {
+   "id": 30184,
+   "missing": "'ve"
+  },
+  {
+   "id": 3648,
+   "missing": "an X-ray"
+  },
+  {
+   "id": 31387,
+   "missing": "whether"
+  },
+  {
+   "id": 31512,
+   "missing": "whether"
+  },
+  {
+   "id": 26843,
+   "missing": "were repairing"
+  },
+  {
+   "id": 28495,
+   "missing": "'s"
+  },
+  {
+   "id": 31622,
+   "missing": "practice"
+  },
+  {
+   "id": 6936,
+   "missing": "'ve lived"
+  },
+  {
+   "id": 8012,
+   "missing": "He said later that he might call me."
+  },
+  {
+   "id": 8076,
+   "missing": "She said last night that she could not come to the party."
+  },
+  {
+   "id": 8172,
+   "missing": "She asked last week if I had seen the film."
+  },
+  {
+   "id": 8176,
+   "missing": "He told her during the meeting not to speak loudly."
+  },
+  {
+   "id": 30617,
+   "missing": "The doctor suggested that I should rest for a few days"
+  },
+  {
+   "id": 30637,
+   "missing": "The friends suggested going for a bike ride after the meeting"
+  },
+  {
+   "id": 8757,
+   "missing": "'re having"
+  },
+  {
+   "id": 8799,
+   "missing": "'s not eating"
+  },
+  {
+   "id": 8850,
+   "missing": "'re studying"
+  },
+  {
+   "id": 8903,
+   "missing": "'s looking"
+  },
+  {
+   "id": 8905,
+   "missing": "'m thinking"
+  },
+  {
+   "id": 8922,
+   "missing": "'re playing"
+  },
+  {
+   "id": 8931,
+   "missing": "does not like"
+  },
+  {
+   "id": 8947,
+   "missing": "'re not listening"
+  },
+  {
+   "id": 8733,
+   "missing": "had not told"
+  },
+  {
+   "id": 8826,
+   "missing": "'ve"
+  },
+  {
+   "id": 8885,
+   "missing": "'ve"
+  },
+  {
+   "id": 9003,
+   "missing": "'ve"
+  },
+  {
+   "id": 8752,
+   "missing": "'ve"
+  },
+  {
+   "id": 31285,
+   "missing": "At breakfast, she told the children to eat their food slowly"
+  },
+  {
+   "id": 26341,
+   "missing": "had already started"
+  },
+  {
+   "id": 29159,
+   "missing": "'ll have organised"
+  },
+  {
+   "id": 29159,
+   "missing": "'ll have organized"
+  },
+  {
+   "id": 30278,
+   "missing": "'ll have recovered"
+  },
+  {
+   "id": 30431,
+   "missing": "'ll have tested"
+  },
+  {
+   "id": 5941,
+   "missing": "she'd just returned"
+  },
+  {
+   "id": 5942,
+   "missing": "'d been sitting there"
+  },
+  {
+   "id": 5946,
+   "missing": "'d be striking"
+  },
+  {
+   "id": 5954,
+   "missing": "where I'd been"
+  },
+  {
+   "id": 5963,
+   "missing": "if she'd forgive me"
+  },
+  {
+   "id": 5963,
+   "missing": "whether she'd forgive me"
+  },
+  {
+   "id": 29654,
+   "missing": "spilt"
+  },
+  {
+   "id": 7728,
+   "missing": "He suggested that tomorrow we should start early."
+  },
+  {
+   "id": 8916,
+   "missing": "'ve received"
+  },
+  {
+   "id": 8991,
+   "missing": "'ve completed"
+  },
+  {
+   "id": 9042,
+   "missing": "'s finished"
+  },
+  {
+   "id": 9070,
+   "missing": "'ve lived"
+  }
+ ],
+ "not_reviewed_yet": [
+  {
+   "id": 6947,
+   "topic": "conditionals",
+   "type": "gap_choice",
+   "haiku_verdict": "ok"
+  },
+  {
+   "id": 26044,
+   "topic": "used-to-would",
+   "type": "gap_choice",
+   "haiku_verdict": "ok"
+  },
+  {
+   "id": 26768,
+   "topic": "used-to-would",
+   "type": "multiple_choice",
+   "haiku_verdict": "fixed"
+  },
+  {
+   "id": 28934,
+   "topic": "conditionals-third-mixed",
+   "type": "gap_fill",
+   "haiku_verdict": "written"
+  },
+  {
+   "id": 29659,
+   "topic": "future-continuous-perfect",
+   "type": "multiple_choice",
+   "haiku_verdict": "fixed"
+  },
+  {
+   "id": 31369,
+   "topic": "conditionals-zero-first",
+   "type": "gap_choice",
+   "haiku_verdict": "fixed"
+  }
+ ]
+}

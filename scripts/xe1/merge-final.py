@@ -20,10 +20,14 @@ inventory = {r['id']: r for r in json.loads((out / 'inventory.json').read_text()
 TEACHER = {i['id']: i['explanations']['ru']['text'] for i in json.loads((out / 'items.json').read_text())['items']
            if (i.get('explanations') or {}).get('ru', {}).get('provenance') == 'imported:mnemonic'}
 haiku = {r['id']: r for r in json.loads((out / 'haiku-checked.json').read_text())['items']}
-opus = {r['id']: r for r in json.loads((out / 'opus-checked.json').read_text())['items']}
-missing_answers = json.loads((out / 'opus-checked.json').read_text())['accepted_missing']
+# XE-1.2 and XE-1.2b (Opus on every item the first Opus run did not review): together they cover every item.
+opus, missing_answers = {}, []
+for name in ('opus-checked.json', 'opus2-checked.json'):
+    data = json.loads((out / name).read_text())
+    opus.update({r['id']: r for r in data['items']})
+    missing_answers += data['accepted_missing']
 
-final, rejected, stats = [], [], collections.Counter()
+final, rejected, unreviewed, stats = [], [], [], collections.Counter()
 for item_id, inv in sorted(inventory.items()):
     teacher = TEACHER.get(item_id)
     o, h = opus.get(item_id), haiku.get(item_id)
@@ -36,15 +40,12 @@ for item_id, inv in sorted(inventory.items()):
         texts = {k: o[k] for k in ('en', 'ru', 'uk')} if o['action'] == 'fix' else {k: h[k] for k in ('en', 'ru', 'uk')}
         teacher_ok = o['teacher_ru_ok'] == 'ok'
         stats[f"opus {o['action']}"] += 1
-    elif h:
-        source = 'haiku'
-        if h['verdict'] == 'reject':
-            raise SystemExit(f'Haiku reject {item_id} was not reviewed by Opus')
-        texts = {k: h[k] for k in ('en', 'ru', 'uk')}
-        teacher_ok = h['ru_original'] == 'ok'
-        stats['haiku'] += 1
     else:
-        raise SystemExit(f'no result for {item_id}')
+        # Owner 2026-11-25: every explanation is checked by Opus. An item Opus skipped in both runs gets no explanation now and is
+        # listed for a later small run.
+        unreviewed.append({'id': item_id, 'topic': inv['topic'], 'type': inv['type'], 'haiku_verdict': h['verdict'] if h else None})
+        stats['not reviewed by Opus (later)'] += 1
+        continue
     ru_source = 'model'
     if teacher and teacher_ok:
         texts['ru'], ru_source = teacher, 'teacher'
@@ -62,6 +63,6 @@ Path('docs/phase-4/xe1').mkdir(parents=True, exist_ok=True)
 Path('docs/phase-4/xe1/wg-handoff.json').write_text(json.dumps({
     'format': 'xe1-wg-handoff/1', 'note': 'XE-1 wave 1: items without an explanation (key wrong or several correct answers) and answers the '
     'checker misses. Bank repairs or retirement are WG decisions.',
-    'rejected': rejected, 'accepted_missing': missing_answers}, ensure_ascii=False, indent=1) + '\n')
+    'rejected': rejected, 'accepted_missing': missing_answers, 'not_reviewed_yet': unreviewed}, ensure_ascii=False, indent=1) + '\n')
 print(json.dumps({'items': len(inventory), 'explained': len(final), **dict(sorted(stats.items())), 'accepted_missing': len(missing_answers),
                   'by source': dict(collections.Counter(f['source'] for f in final))}, indent=1))

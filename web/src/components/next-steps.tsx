@@ -49,9 +49,9 @@ export function NextSteps({initial}: {initial: Recommendation[]}) {
         <p>{text(s)}</p>
         <div className="step-actions">
           {s.kind === 'practice' && s.skill
-            ? <PracticeButton skill={s.skill} attempt={s.attempt} className="button primary" label={t('open.practice')}/>
+            ? <PracticeButton skill={s.skill} attempt={s.attempt} recommendation={s.uuid} className="button primary" label={t('open.practice')}/>
             : <Link className="button primary" href={target(s)}>{t(`open.${s.kind}`)}</Link>}
-          <button type="button" className="text-button" onClick={() => void close(s.uuid, 'done')}>{t('done')}</button>
+          {s.kind !== 'practice' && <button type="button" className="text-button" onClick={() => void close(s.uuid, 'done')}>{t('done')}</button>}
           <button type="button" className="text-button" onClick={() => void close(s.uuid, 'dismiss')}>{t('dismiss')}</button>
         </div>
       </li>)}

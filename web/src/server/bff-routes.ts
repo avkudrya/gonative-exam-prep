@@ -204,9 +204,18 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
   }
   // P4.8: practice from the Edu bank, one question at a time; keys stay on the backend until a question is answered.
   if (path === 'practice/skills' && method === 'GET' && noQuery(search)) return route(path, parse(practiceSkillsSchema));
+  const linkedPractice = /^attempts\/([^/]+)\/grammar-practice$/.exec(path);
+  if (linkedPractice && uuidPattern.test(linkedPractice[1]) && method === 'GET' && noQuery(search)) {
+    return route(path, parse(z.object({results: z.array(z.object({
+      size: z.number().int().min(5).max(20), answered: z.number().int().min(0).max(20), percent: z.number().min(0).max(100).nullable(),
+    })).max(20)})));
+  }
   if (path === 'practice' && method === 'POST' && noQuery(search)) {
-    return route(path, r => ({data: z.object({session: practiceSessionSchema}).parse(r)}), {
-      input: z.object({skill_key: z.string().max(96).regex(/^[a-z]+\.[a-z_]+$/), attempt_uuid: z.string().regex(uuidPattern).optional()}).strict(),
+    return route(path, r => ({data: z.union([
+      z.object({session: practiceSessionSchema}),
+      z.object({grammar_practice: z.object({reference: z.string().regex(uuidPattern).nullable()})}),
+    ]).parse(r)}), {
+      input: z.object({skill_key: z.string().max(96).regex(/^[a-z]+\.[a-z_]+$/), attempt_uuid: z.string().regex(uuidPattern).optional(), recommendation_uuid: z.string().regex(uuidPattern).optional()}).strict(),
       maxBytes: 256 * 1024,
     });
   }

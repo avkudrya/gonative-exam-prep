@@ -1,7 +1,7 @@
 'use client';
 import {highlightSegments, normalizeResponse} from '@gonative/exam-domain';
-import {useTranslations} from 'next-intl';
-import {useMemo, useRef, useState, type FormEvent, type KeyboardEvent} from 'react';
+import {useLocale, useTranslations} from 'next-intl';
+import {useEffect, useMemo, useRef, useState, type FormEvent, type KeyboardEvent} from 'react';
 import {useRouter} from '../i18n/navigation';
 import type {Assessment, Attempt, ResultFinding} from '../lib/api/schemas';
 import {reportKinds} from '../lib/api/schemas';
@@ -64,6 +64,7 @@ export function ResultView({attempt, assessment, practiceSkills = []}: {attempt:
   const strongest = (ids: string[]) => ids.map(id => byId.get(id)!).sort((a, b) => kindOrder[a.kind] - kindOrder[b.kind])[0];
 
   return <div className="result">
+    <LinkedPracticeResults key={attempt.uuid} attempt={attempt.uuid}/>
     <p className="score-note">{t('scoreNote')}</p>
     {result.status === 'partial' && <p className="feedback error" role="status">{t('partial')}</p>}
 
@@ -281,4 +282,25 @@ function ReportForm({uuid, findingId, onClose}: {uuid: string; findingId: string
       <button type="button" className="button" onClick={onClose}>{t('cancel')}</button>
     </div>
   </form>;
+}
+
+
+function LinkedPracticeResults({attempt}: {attempt: string}) {
+  const locale = useLocale();
+  const [results, setResults] = useState<{size: number; answered: number; percent: number | null}[]>([]);
+  useEffect(() => {
+    let active = true;
+    void bff<{results: typeof results}>(`attempts/${attempt}/grammar-practice`).then(result => {
+      if (active && result.ok) setResults(result.data.results);
+    });
+    return () => { active = false; };
+  }, [attempt]);
+  if (!results.length) return null;
+  const format = new Intl.NumberFormat(locale, {style: 'percent', maximumFractionDigits: 1});
+  return <section aria-labelledby="linked-practice">
+    <h2 id="linked-practice">Grammar Practice</h2>
+    <ul>{results.map((result, index) => <li key={index}>
+      {result.answered}/{result.size}{result.percent !== null && <> · {format.format(result.percent / 100)}</>}
+    </li>)}</ul>
+  </section>;
 }

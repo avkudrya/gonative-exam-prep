@@ -43,7 +43,7 @@ function check(entry, answer) {
 
 test('Practice from the bank: start from next steps and feedback, one question at a time, summary, BFF limits, phone', {timeout: 240000}, async t => {
   const attempt = randomUUID();
-  const state = {sessions: new Map(), starts: [], answers: [], steps: [], daily: false};
+  const state = {sessions: new Map(), starts: [], answers: [], steps: [], daily: false, handoff: false};
   const step = {uuid: randomUUID(), kind: 'practice', status: 'open', skill: 'vocabulary.collocations', attempt, practice_task: null, finding_ids: [], words: null, created_at: null};
   state.steps = [step, {...step, uuid: randomUUID(), kind: 'future_kind'}];
   const api = await startMock(t, ({method, path, headers, body}) => {
@@ -61,6 +61,7 @@ test('Practice from the bank: start from next steps and feedback, one question a
     if (path === 'practice/skills') return json(200, {skills: ['vocabulary.collocations']});
     if (path === 'practice' && method === 'POST') {
       state.starts.push(body);
+      if (state.handoff) return json(200, {grammar_practice: {reference: step.uuid}});
       if (state.daily) return problem(429, 'exams_practice_daily_limit', {retry_after: 3600});
       const s = makeSession(body.skill_key);
       state.sessions.set(s.uuid, s);
@@ -85,6 +86,8 @@ test('Practice from the bank: start from next steps and feedback, one question a
       topic: 'City transport', status: 'assessed', revision: 2, word_count: 168, word_count_rule: 'whitespace-v1', submitted_at: '2026-11-24T10:30:00+00:00',
       created_at: '2026-11-24T10:00:00+00:00', updated_at: '2026-11-24T10:30:00+00:00', assessment: {uuid: attempt, status: 'assessed'}, prompt: {text: 'Cars in city centres.'}, response_text: ESSAY, assessments: []}});
     if (path === `attempts/${attempt}/assessment`) return json(200, {assessment: {uuid: attempt, status: 'assessed', feedback_language: 'en', created_at: null, finished_at: null, result: RESULT}});
+    if (path === `attempts/${attempt}/grammar-practice`)
+      return json(200, {results: state.handoff ? [{size: 5, answered: 2, percent: 50, answer: 'private'}] : []});
     if (path === `attempts/${attempt}/vocabulary`) return json(200, {words: [], list: null, quota: {tier: 'free', limit: 100, remaining: 100}});
     if (path === `attempts/${attempt}/reports`) return json(200, {reports: []});
     return problem(404, 'not_found');
@@ -101,7 +104,7 @@ test('Practice from the bank: start from next steps and feedback, one question a
 
   // Progress: the practice step (a kind the site does not know is left out), the share next to the essay rate, the week.
   await page.goto(`${origin}/en/ielts/progress`);
-  await page.getByText('Practise Collocations: 10 short questions from the bank.', {exact: false}).waitFor();
+  await page.getByText('Practise Collocations with exercises from the bank.', {exact: false}).waitFor();
   assert.equal(await page.locator('.next-steps .step').count(), 1, 'the unknown kind is dropped, the rest stays');
   await page.getByText('In practice: 75% correct (12 answers in 30 days).').waitFor();
   await page.getByText('2 short practice sessions (10 min each): Collocations.').waitFor();
@@ -109,7 +112,7 @@ test('Practice from the bank: start from next steps and feedback, one question a
 
   await page.locator('.next-steps').getByRole('button', {name: 'Start'}).click();
   await page.waitForURL(/\/en\/ielts\/practice\/[0-9a-f-]{36}$/);
-  assert.deepEqual(state.starts[0], {skill_key: 'vocabulary.collocations', attempt_uuid: attempt});
+  assert.deepEqual(state.starts[0], {skill_key: 'vocabulary.collocations', attempt_uuid: attempt, recommendation_uuid: step.uuid});
   await page.getByRole('heading', {name: 'Practice: Collocations'}).waitFor();
   await page.getByText('Question 1 of 4').waitFor();
 
@@ -158,10 +161,10 @@ test('Practice from the bank: start from next steps and feedback, one question a
   // From the feedback: the practice button next to the skill the bank can train, and the daily limit message.
   await page.goto(`${origin}/en/ielts/writing/${attempt}`);
   const group = page.locator('.fix-skill', {hasText: 'Collocations'});
-  await group.getByRole('button', {name: 'Practise: 10 questions'}).waitFor();
-  assert.equal(await page.locator('.fix-skill', {hasText: 'Word choice'}).getByRole('button', {name: 'Practise: 10 questions'}).count(), 0, 'only skills the bank trains');
+  await group.getByRole('button', {name: 'Practise'}).waitFor();
+  assert.equal(await page.locator('.fix-skill', {hasText: 'Word choice'}).getByRole('button', {name: 'Practise'}).count(), 0, 'only skills the bank trains');
   state.daily = true;
-  await group.getByRole('button', {name: 'Practise: 10 questions'}).click();
+  await group.getByRole('button', {name: 'Practise'}).click();
   await group.getByText('That is enough for today').waitFor();
 
   // BFF: only the allowlisted shapes reach the backend.
@@ -188,4 +191,24 @@ test('Practice from the bank: start from next steps and feedback, one question a
     await phone.getByRole('button', {name: 'Проверить'}).waitFor();
     assert.equal(await phone.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `overflow in ${scheme}`);
   }
+
+  // The new handoff preserves the recommendation and shows only its own aggregate on return.
+  state.handoff = true;
+  await page.reload();
+  const linked = page.getByRole('region', {name: 'Grammar Practice'});
+  await linked.getByText('2/5 · 50%').waitFor();
+  assert.equal(await linked.getByText('private').count(), 0);
+  await page.goto(`${origin}/en/ielts/progress`);
+  const target = `https://grammar-practice.mnemonicwords.app/en/self-practice/from-exams/${step.uuid}`;
+  await page.route(target, route => route.fulfill({body: 'Grammar Practice test destination'}));
+  await page.locator('.next-steps').getByRole('button', {name: 'Start'}).click();
+  await page.waitForURL(target);
+  assert.equal(state.sessions.size, 2, 'handoff never opens a new legacy Exams session');
+  assert.deepEqual(state.starts.at(-1), {skill_key: 'vocabulary.collocations', attempt_uuid: attempt, recommendation_uuid: step.uuid});
+  await page.goto(`${origin}/uk/ielts/progress`);
+  const ukTarget = target.replace('/en/', '/uk/');
+  await page.route(ukTarget, route => route.fulfill({body: 'Місце призначення тесту Grammar Practice'}));
+  await page.locator('.next-steps button').first().click();
+  await page.waitForURL(ukTarget);
+
 });

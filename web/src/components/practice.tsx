@@ -88,7 +88,7 @@ export function Practice({initial, skillName}: {initial: PracticeSession; skillN
           const r = results[q.id];
           return <li key={q.id} className={r ? `answered ${r.state}` : 'skipped'}>
             <span className="badge">{i + 1}</span> {r ? t(`states.${r.state}`) : t('skipped')}
-            {r?.targets.some(target => target.correct_answer) && <span className="hint"> · {r.targets.map(target => target.correct_answer).filter(Boolean).join(', ')}</span>}
+            {r && shownAnswers(r, t('nothing')).length > 0 && <span className="hint"> · {shownAnswers(r, t('nothing')).join(', ')}</span>}
           </li>;
         })}
       </ol>
@@ -187,9 +187,14 @@ function Question({q, draft, setDraft, result}: {q: PracticeQuestion; draft: Dra
   </div>;
 }
 
+/** The correct answer of each target; an empty one (a zero article, a gap that stays empty) is named, not dropped. */
+function shownAnswers(result: Shown, nothing: string): string[] {
+  return result.targets.flatMap(target => target.correct_answer === null ? [] : [target.correct_answer === '' ? nothing : target.correct_answer]);
+}
+
 function Verdict({result}: {result: Shown}) {
   const t = useTranslations('Practice');
-  const answers = result.targets.map(target => target.correct_answer).filter((a): a is string => Boolean(a));
+  const answers = shownAnswers(result, t('nothing'));
   const f = result.feedback;
   return <div className={`practice-verdict ${result.state}`} role="status">
     <p className="verdict-title">{t(`states.${result.state}`)}</p>

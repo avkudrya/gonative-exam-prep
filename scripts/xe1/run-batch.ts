@@ -17,7 +17,7 @@ import {readFileSync, writeFileSync} from 'node:fs';
 
 const MULTIADMIN_ENV = '/Users/avkudrya/Documents/Projects/My/MultiVerse/MultiAdmin/.env';
 const [mode, step] = process.argv.slice(2);
-const STEPS = ['haiku-pilot', 'haiku', 'opus-pilot', 'opus'];
+const STEPS = ['haiku-pilot', 'haiku', 'opus-pilot', 'opus', 'opus2'];
 if (!['count', 'submit', 'poll', 'fetch'].includes(mode) || !STEPS.includes(step)) {
   throw new Error(`usage: run-batch.ts count|submit|poll|fetch ${STEPS.join('|')}`);
 }
@@ -75,7 +75,7 @@ async function submit() {
   const full = isPilot ? manifest.part_of : manifest.requests_sha256;
   if (auth.requests_sha256 !== full) throw new Error('the authorization is for another request file');
   let pilotSpent = 0;
-  if (!isPilot) {
+  if (!isPilot && manifest.no_pilot !== true) {
     if (auth.pilot_only === true) throw new Error('the authorization covers the pilot only');
     if (read(`${DOCS}/${family}-pilot-submission.json`).status !== 'ended_reconciled') throw new Error('pilot not reconciled');
     if (auth.pilot_checked !== true) throw new Error('pilot not checked: set pilot_checked after reading its results');

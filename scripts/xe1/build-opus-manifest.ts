@@ -64,6 +64,21 @@ for (const ids of cells.values()) {
   for (const id of [...ids].sort((a, b) => sha(String(a)).localeCompare(sha(String(b)))).slice(0, take)) selected.set(id, ['sample']);
 }
 
+// `rest` (XE-1.2b, after the first Opus run measured Haiku above the 2 % threshold): every item Opus has not reviewed yet —
+// the clean results outside the sample and the items Opus skipped — with the same prompt and reasons.
+const REST = process.argv[2] === 'rest';
+// The first Opus run used at most 8 411 output tokens per request (median 3 106) and 231 per item.
+const maxTokens = REST ? 12000 : MAX_TOKENS;
+const expectedPerItem = REST ? 260 : EXPECTED_OUTPUT_PER_ITEM;
+if (REST) {
+  const reviewed = new Set<number>(read('tmp/xe1/opus-checked.json').items.map((r: any) => r.id));
+  const first = new Map(selected);
+  selected.clear();
+  for (const id of views.keys()) {
+    if (!reviewed.has(id)) selected.set(id, first.get(id) ?? ['sample']);
+  }
+}
+
 function opusView(id: number, reasons: string[]) {
   const {view} = views.get(id)!;
   const {draft, ru_original, ...task} = view;
@@ -103,9 +118,9 @@ for (const [slug, ids] of [...byTopic.entries()].sort(([a], [b]) => a.localeComp
   const spec = `Topic: ${slug} (CEFR ${topic.cefr.join('-')}), specification version ${topic.spec.version}:\n${JSON.stringify(topic.spec.spec)}`;
   for (let i = 0; i < ids.length; i += CHUNK) {
     const chunk = ids.slice(i, i + CHUNK);
-    const custom_id = `xe1o-${slug}-${String(i / CHUNK + 1).padStart(2, '0')}`.slice(0, 64);
+    const custom_id = `${REST ? 'xe1p' : 'xe1o'}-${slug}-${String(i / CHUNK + 1).padStart(2, '0')}`.slice(0, 64);
     const body = `Items (${chunk.length}):\n${JSON.stringify(chunk.map(id => opusView(id, selected.get(id)!)))}`;
-    const params = {model: MODEL, max_tokens: MAX_TOKENS, thinking: {type: 'adaptive'}, output_config: {effort: EFFORT, format: {type: 'json_schema', schema}},
+    const params = {model: MODEL, max_tokens: maxTokens, thinking: {type: 'adaptive'}, output_config: {effort: EFFORT, format: {type: 'json_schema', schema}},
       system: prompt, messages: [{role: 'user', content: [{type: 'text', text: spec}, {type: 'text', text: body}]}]};
     lines.push(JSON.stringify({custom_id, params}));
     const tally: Record<string, number> = {};
@@ -123,18 +138,25 @@ function manifestOf(step: string, file: string, reqLines: string[], reqs: typeof
   const why: Record<string, number> = {};
   for (const r of reqs) for (const [k, v] of Object.entries(r.why)) why[k] = (why[k] ?? 0) + v;
   return {
-    format: 'xe1-opus-manifest/1', step, model: MODEL, batches: true, thinking: 'adaptive', effort: EFFORT, max_tokens: MAX_TOKENS, chunk: CHUNK,
+    format: 'xe1-opus-manifest/1', step, model: MODEL, batches: true, thinking: 'adaptive', effort: EFFORT, max_tokens: maxTokens, chunk: CHUNK,
     prompt_sha256: sha(prompt), requests_sha256: sha(jsonl), requests_file: file, ...extra,
     scope: {items, requests: reqs.length, why, sample_of_clean: `${SAMPLE_TARGET} target of ${clean.length}`},
     price_usd_per_mtok: PRICE,
     estimate: {note: 'Input approximated at 3 characters per token; replaced by count_tokens before submission.', approx_input_tokens: approxIn,
-      expected_output_tokens: items * EXPECTED_OUTPUT_PER_ITEM, worst_output_tokens: reqs.length * MAX_TOKENS,
-      expected_usd: +(usd(approxIn, PRICE.input) + usd(items * EXPECTED_OUTPUT_PER_ITEM, PRICE.output)).toFixed(4),
-      worst_usd: +(usd(approxIn, PRICE.input) + usd(reqs.length * MAX_TOKENS, PRICE.output)).toFixed(4)},
+      expected_output_tokens: items * expectedPerItem, worst_output_tokens: reqs.length * maxTokens,
+      expected_usd: +(usd(approxIn, PRICE.input) + usd(items * expectedPerItem, PRICE.output)).toFixed(4),
+      worst_usd: +(usd(approxIn, PRICE.input) + usd(reqs.length * maxTokens, PRICE.output)).toFixed(4)},
     requests: reqs,
   };
 }
 
+if (REST) {
+  // No pilot: same prompt and settings as the reviewed XE-1.2 run.
+  const rest = manifestOf('XE-1.2b', 'tmp/xe1/opus2-requests.jsonl', lines, requests, {no_pilot: true, after: 'XE-1.2 (opus-manifest.json)'});
+  writeFileSync('docs/phase-4/xe1/opus2-manifest.json', JSON.stringify(rest, null, 1) + '\n');
+  console.log(JSON.stringify({rest: {...rest, requests: rest.requests.length}}, null, 1));
+  process.exit(0);
+}
 const full = manifestOf('XE-1.2', 'tmp/xe1/opus-requests.jsonl', lines, requests);
 writeFileSync('docs/phase-4/xe1/opus-manifest.json', JSON.stringify(full, null, 1) + '\n');
 // Pilot: the two requests with the most rejects and teacher texts, read by hand before the full run (same limit).

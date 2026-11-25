@@ -1,0 +1,96 @@
+{
+    "php": "8.4.8",
+    "bundle_sha256": "ef5a26392843761cbc943b74d4585f163e0e2d42fae6fa5803f2b4c294849eb7",
+    "scope": {
+        "items": 5202,
+        "topics": 43,
+        "explanation_rows_before": 466
+    },
+    "preview": {
+        "apply": false,
+        "bundle_sha256": "ef5a26392843761cbc943b74d4585f163e0e2d42fae6fa5803f2b4c294849eb7",
+        "state_token": "d9e29339213b71c9ea9b51698fe9f1181ba146813f829f0445e0f418101071ce",
+        "items": 5088,
+        "ru_mode": {
+            "new": 4654,
+            "replace": 59,
+            "teacher_keep": 375
+        },
+        "rows": 15264,
+        "reviews": 15264,
+        "topics": 40,
+        "created": 0,
+        "existing": 0,
+        "seconds": 0.1
+    },
+    "stale_token": "explanations_preview_state_changed",
+    "writes_after_refusal": 0,
+    "apply": {
+        "apply": true,
+        "bundle_sha256": "ef5a26392843761cbc943b74d4585f163e0e2d42fae6fa5803f2b4c294849eb7",
+        "state_token": "d9e29339213b71c9ea9b51698fe9f1181ba146813f829f0445e0f418101071ce",
+        "items": 5088,
+        "ru_mode": {
+            "new": 4654,
+            "replace": 59,
+            "teacher_keep": 375
+        },
+        "rows": 15264,
+        "reviews": 15264,
+        "topics": 40,
+        "created": 5088,
+        "existing": 0,
+        "shown": 15264,
+        "seconds": 18.1
+    },
+    "preview_after": {
+        "created": 0,
+        "existing": 5088,
+        "shown": 15264,
+        "seconds": 8.2
+    },
+    "replay": {
+        "created": 0,
+        "existing": 5088
+    },
+    "rows_after": [
+        {
+            "language": "en",
+            "provenance": "ai_generated",
+            "status": "ai_cross_reviewed",
+            "n": 5088
+        },
+        {
+            "language": "ru",
+            "provenance": "ai_generated",
+            "status": "ai_cross_reviewed",
+            "n": 4713
+        },
+        {
+            "language": "ru",
+            "provenance": "imported:mnemonic",
+            "status": "ai_cross_reviewed",
+            "n": 375
+        },
+        {
+            "language": "ru",
+            "provenance": "imported:mnemonic",
+            "status": "draft",
+            "n": 32
+        },
+        {
+            "language": "uk",
+            "provenance": "ai_generated",
+            "status": "ai_cross_reviewed",
+            "n": 5088
+        }
+    ],
+    "reviews_after": [
+        {
+            "reason": "explanations_xe1",
+            "status": "ai_cross_reviewed",
+            "n": 15264
+        }
+    ],
+    "unchanged": "items, topics and specifications unchanged"
+}

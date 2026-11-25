@@ -1,0 +1,2112 @@
+{
+ "format": "xe1-opus-manifest/1",
+ "step": "XE-1.2",
+ "model": "claude-opus-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "medium",
+ "max_tokens": 16000,
+ "chunk": 20,
+ "prompt_sha256": "7c38485c955b0f763e845f93ecb9357149784224d9f765d7aa3bb1f139357cdb",
+ "requests_sha256": "e6bcf0e9db43412b23dd124474c79f2653c7f09f1b25dafb36607ffb7db55901",
+ "requests_file": "tmp/xe1/opus-requests.jsonl",
+ "scope": {
+  "items": 1155,
+  "requests": 81,
+  "why": {
+   "sample": 711,
+   "reject": 126,
+   "teacher": 84,
+   "rewrite": 261,
+   "missing": 3
+  },
+  "sample_of_clean": "700 target of 4758"
+ },
+ "price_usd_per_mtok": {
+  "input": 2,
+  "output": 10
+ },
+ "estimate": {
+  "note": "Input approximated at 3 characters per token; replaced by count_tokens before submission.",
+  "approx_input_tokens": 740043,
+  "expected_output_tokens": 577500,
+  "worst_output_tokens": 1296000,
+  "expected_usd": 7.2551,
+  "worst_usd": 14.4401
+ },
+ "requests": [
+  {
+   "custom_id": "xe1o-articles-01",
+   "topic": "articles",
+   "items": [
+    324,
+    327,
+    337,
+    342,
+    348,
+    354,
+    374,
+    375,
+    376,
+    377,
+    378,
+    381,
+    382,
+    383,
+    385,
+    389,
+    393,
+    394,
+    397,
+    399
+   ],
+   "why": {
+    "sample": 6,
+    "reject": 11,
+    "teacher": 7,
+    "rewrite": 3
+   },
+   "approx_input_tokens": 11332
+  },
+  {
+   "custom_id": "xe1o-articles-02",
+   "topic": "articles",
+   "items": [
+    403,
+    406,
+    413,
+    420,
+    421,
+    424,
+    425,
+    427,
+    431,
+    435,
+    445,
+    449,
+    459,
+    473,
+    481,
+    482,
+    483,
+    487,
+    489,
+    491
+   ],
+   "why": {
+    "teacher": 10,
+    "reject": 7,
+    "rewrite": 2,
+    "sample": 3
+   },
+   "approx_input_tokens": 11986
+  },
+  {
+   "custom_id": "xe1o-articles-03",
+   "topic": "articles",
+   "items": [
+    494,
+    495,
+    500,
+    506,
+    507,
+    515,
+    516,
+    517,
+    520,
+    521,
+    525,
+    533,
+    535,
+    536,
+    1018,
+    1309,
+    1574,
+    1832,
+    3585,
+    3601
+   ],
+   "why": {
+    "teacher": 12,
+    "sample": 6,
+    "rewrite": 2
+   },
+   "approx_input_tokens": 11571
+  },
+  {
+   "custom_id": "xe1o-articles-04",
+   "topic": "articles",
+   "items": [
+    3615,
+    3633,
+    3638,
+    3648,
+    7447,
+    7713,
+    8062,
+    8320,
+    8715,
+    27734,
+    28105
+   ],
+   "why": {
+    "sample": 10,
+    "rewrite": 1
+   },
+   "approx_input_tokens": 8610
+  },
+  {
+   "custom_id": "xe1o-causative-01",
+   "topic": "causative",
+   "items": [
+    28697,
+    28817,
+    28831,
+    28914,
+    28936,
+    28979,
+    28997,
+    28999,
+    29172,
+    29176,
+    29292,
+    29441,
+    29444,
+    29498,
+    29554,
+    29589,
+    29658,
+    29700,
+    30290,
+    30563
+   ],
+   "why": {
+    "sample": 15,
+    "rewrite": 5
+   },
+   "approx_input_tokens": 7499
+  },
+  {
+   "custom_id": "xe1o-causative-02",
+   "topic": "causative",
+   "items": [
+    31038,
+    31122
+   ],
+   "why": {
+    "sample": 2
+   },
+   "approx_input_tokens": 3145
+  },
+  {
+   "custom_id": "xe1o-complex-sentences-01",
+   "topic": "complex-sentences",
+   "items": [
+    26861,
+    26886,
+    26899,
+    26926,
+    26969,
+    26974,
+    26975,
+    26981,
+    26991,
+    26992,
+    27011,
+    27050,
+    27113,
+    27179,
+    27208,
+    27257,
+    27328,
+    27333,
+    27336,
+    27354
+   ],
+   "why": {
+    "sample": 18,
+    "missing": 2
+   },
+   "approx_input_tokens": 12648
+  },
+  {
+   "custom_id": "xe1o-complex-sentences-02",
+   "topic": "complex-sentences",
+   "items": [
+    27412,
+    27432,
+    27454,
+    27530,
+    27548,
+    27646,
+    27663,
+    27871,
+    28067,
+    28546
+   ],
+   "why": {
+    "sample": 9,
+    "reject": 1
+   },
+   "approx_input_tokens": 10422
+  },
+  {
+   "custom_id": "xe1o-conditionals-01",
+   "topic": "conditionals",
+   "items": [
+    6029,
+    6037,
+    6515,
+    7076,
+    7147,
+    7150,
+    7244,
+    7267,
+    7513,
+    7520,
+    7582,
+    7617,
+    7755,
+    7768,
+    7788,
+    7821,
+    8068,
+    8109,
+    8211,
+    8268
+   ],
+   "why": {
+    "teacher": 1,
+    "sample": 10,
+    "rewrite": 2,
+    "reject": 7
+   },
+   "approx_input_tokens": 12199
+  },
+  {
+   "custom_id": "xe1o-conditionals-02",
+   "topic": "conditionals",
+   "items": [
+    8346,
+    8392,
+    8558,
+    8591,
+    8655,
+    8699,
+    8703,
+    8816,
+    8819,
+    9034,
+    27779,
+    27818,
+    27930,
+    27985,
+    28119,
+    28142,
+    28158,
+    28203,
+    28234,
+    28249
+   ],
+   "why": {
+    "sample": 12,
+    "reject": 3,
+    "rewrite": 5
+   },
+   "approx_input_tokens": 12786
+  },
+  {
+   "custom_id": "xe1o-conditionals-03",
+   "topic": "conditionals",
+   "items": [
+    28264,
+    28351,
+    28372,
+    28374,
+    28381,
+    28384,
+    28419,
+    28507,
+    28525
+   ],
+   "why": {
+    "rewrite": 5,
+    "sample": 4
+   },
+   "approx_input_tokens": 9570
+  },
+  {
+   "custom_id": "xe1o-conditionals-second-01",
+   "topic": "conditionals-second",
+   "items": [
+    31170,
+    31316,
+    31370,
+    31485,
+    31556,
+    31664,
+    31742,
+    31747
+   ],
+   "why": {
+    "rewrite": 4,
+    "sample": 3,
+    "reject": 1
+   },
+   "approx_input_tokens": 5796
+  },
+  {
+   "custom_id": "xe1o-conditionals-third-mixed-01",
+   "topic": "conditionals-third-mixed",
+   "items": [
+    28819,
+    28899,
+    28905,
+    29088,
+    29312,
+    29752,
+    29778,
+    29842,
+    29930,
+    29963,
+    30038,
+    30127,
+    30238,
+    30259,
+    30300,
+    30322,
+    30335,
+    30474,
+    30585,
+    30676
+   ],
+   "why": {
+    "reject": 1,
+    "sample": 11,
+    "rewrite": 8
+   },
+   "approx_input_tokens": 9404
+  },
+  {
+   "custom_id": "xe1o-conditionals-third-mixed-02",
+   "topic": "conditionals-third-mixed",
+   "items": [
+    30992,
+    31070
+   ],
+   "why": {
+    "sample": 2
+   },
+   "approx_input_tokens": 4451
+  },
+  {
+   "custom_id": "xe1o-conditionals-zero-first-01",
+   "topic": "conditionals-zero-first",
+   "items": [
+    31177,
+    31196,
+    31219,
+    31251,
+    31257,
+    31259,
+    31273,
+    31325,
+    31337,
+    31339,
+    31357,
+    31382,
+    31407,
+    31444,
+    31513,
+    31589,
+    31643,
+    31701,
+    31729,
+    31732
+   ],
+   "why": {
+    "sample": 20
+   },
+   "approx_input_tokens": 10046
+  },
+  {
+   "custom_id": "xe1o-conditionals-zero-first-02",
+   "topic": "conditionals-zero-first",
+   "items": [
+    31767,
+    31771
+   ],
+   "why": {
+    "sample": 2
+   },
+   "approx_input_tokens": 4726
+  },
+  {
+   "custom_id": "xe1o-countable-quantifiers-01",
+   "topic": "countable-quantifiers",
+   "items": [
+    22056,
+    22086,
+    22117,
+    22190,
+    22201,
+    22368,
+    22468,
+    22616,
+    22647,
+    22813,
+    22873,
+    22942,
+    23081,
+    23125,
+    23172,
+    23295,
+    23296,
+    23472,
+    23506,
+    23672
+   ],
+   "why": {
+    "sample": 18,
+    "reject": 2
+   },
+   "approx_input_tokens": 10865
+  },
+  {
+   "custom_id": "xe1o-countable-quantifiers-02",
+   "topic": "countable-quantifiers",
+   "items": [
+    23673,
+    23770,
+    23793,
+    23796,
+    23799,
+    23841,
+    23889,
+    23911,
+    23937,
+    23951,
+    23959,
+    23960,
+    24029,
+    24043,
+    24101,
+    24109
+   ],
+   "why": {
+    "sample": 15,
+    "reject": 1
+   },
+   "approx_input_tokens": 10276
+  },
+  {
+   "custom_id": "xe1o-determiners-01",
+   "topic": "determiners",
+   "items": [
+    28887,
+    30120
+   ],
+   "why": {
+    "sample": 2
+   },
+   "approx_input_tokens": 4456
+  },
+  {
+   "custom_id": "xe1o-formal-informal-register-01",
+   "topic": "formal-informal-register",
+   "items": [
+    27195,
+    27299,
+    28251,
+    28262,
+    28307,
+    29889,
+    30647,
+    31080
+   ],
+   "why": {
+    "sample": 7,
+    "rewrite": 1
+   },
+   "approx_input_tokens": 8547
+  },
+  {
+   "custom_id": "xe1o-future-continuous-perfect-01",
+   "topic": "future-continuous-perfect",
+   "items": [
+    28856,
+    28939,
+    29018,
+    29033,
+    29133,
+    29230,
+    29241,
+    29346,
+    29355,
+    29388,
+    29390,
+    29532,
+    29691,
+    29806,
+    29827,
+    29896,
+    29955,
+    30061,
+    30279,
+    30462
+   ],
+   "why": {
+    "sample": 19,
+    "reject": 1
+   },
+   "approx_input_tokens": 9589
+  },
+  {
+   "custom_id": "xe1o-future-continuous-perfect-02",
+   "topic": "future-continuous-perfect",
+   "items": [
+    30496,
+    30518,
+    30594,
+    30668,
+    30680,
+    30929,
+    31074,
+    31324
+   ],
+   "why": {
+    "sample": 7,
+    "reject": 1
+   },
+   "approx_input_tokens": 6245
+  },
+  {
+   "custom_id": "xe1o-future-forms-01",
+   "topic": "future-forms",
+   "items": [
+    6623,
+    6644,
+    6669,
+    6680,
+    6682,
+    6692,
+    6698,
+    6704,
+    6705,
+    6706,
+    6709,
+    6713,
+    6728,
+    6729,
+    6730,
+    6732,
+    6734,
+    6740,
+    6948,
+    7198
+   ],
+   "why": {
+    "sample": 5,
+    "reject": 4,
+    "teacher": 12,
+    "rewrite": 4
+   },
+   "approx_input_tokens": 12168
+  },
+  {
+   "custom_id": "xe1o-future-forms-02",
+   "topic": "future-forms",
+   "items": [
+    7715,
+    7810,
+    7849,
+    8090,
+    8173,
+    8471,
+    8662,
+    8838,
+    9011,
+    27929,
+    28223,
+    28502
+   ],
+   "why": {
+    "reject": 7,
+    "sample": 5
+   },
+   "approx_input_tokens": 8677
+  },
+  {
+   "custom_id": "xe1o-gerund-infinitive-01",
+   "topic": "gerund-infinitive",
+   "items": [
+    4092,
+    4095,
+    4098,
+    4099,
+    4106,
+    4107,
+    4161,
+    4162,
+    4163,
+    4165,
+    4166,
+    4167,
+    4168,
+    4171,
+    4172,
+    4174,
+    4175,
+    4177,
+    4178,
+    4179
+   ],
+   "why": {
+    "reject": 4,
+    "sample": 1,
+    "teacher": 4,
+    "rewrite": 14
+   },
+   "approx_input_tokens": 9942
+  },
+  {
+   "custom_id": "xe1o-gerund-infinitive-02",
+   "topic": "gerund-infinitive",
+   "items": [
+    4180,
+    4182,
+    4183,
+    4184,
+    4185,
+    4186,
+    4187,
+    4188,
+    4189,
+    4190,
+    4191,
+    4192,
+    4193,
+    4194,
+    4196,
+    4200,
+    4201,
+    4202,
+    4203,
+    4204
+   ],
+   "why": {
+    "rewrite": 20,
+    "teacher": 1
+   },
+   "approx_input_tokens": 11047
+  },
+  {
+   "custom_id": "xe1o-gerund-infinitive-03",
+   "topic": "gerund-infinitive",
+   "items": [
+    4205,
+    4206,
+    4208,
+    4210,
+    4212,
+    4213,
+    4215,
+    4222,
+    4223,
+    4227,
+    4235,
+    4238,
+    4239,
+    7010,
+    7092,
+    7249,
+    7424,
+    7509,
+    7512,
+    7595
+   ],
+   "why": {
+    "rewrite": 6,
+    "sample": 9,
+    "teacher": 5
+   },
+   "approx_input_tokens": 11167
+  },
+  {
+   "custom_id": "xe1o-gerund-infinitive-04",
+   "topic": "gerund-infinitive",
+   "items": [
+    7753,
+    7909,
+    7961,
+    8198,
+    8243,
+    27839,
+    27904,
+    27939,
+    27953,
+    28009,
+    28144,
+    28173,
+    28361,
+    28369,
+    28578
+   ],
+   "why": {
+    "sample": 15
+   },
+   "approx_input_tokens": 8466
+  },
+  {
+   "custom_id": "xe1o-gerund-infinitive-meaning-01",
+   "topic": "gerund-infinitive-meaning",
+   "items": [
+    28866,
+    28877,
+    29092,
+    29561,
+    29626,
+    29745,
+    30809,
+    31103
+   ],
+   "why": {
+    "sample": 5,
+    "rewrite": 3
+   },
+   "approx_input_tokens": 5873
+  },
+  {
+   "custom_id": "xe1o-linking-words-01",
+   "topic": "linking-words",
+   "items": [
+    27029,
+    27188,
+    27222,
+    27261,
+    27268,
+    27315,
+    27317,
+    27413,
+    27430,
+    27446,
+    27519,
+    27579,
+    27690,
+    27696,
+    27731,
+    27973,
+    28326,
+    29269,
+    29890,
+    29959
+   ],
+   "why": {
+    "reject": 3,
+    "sample": 16,
+    "rewrite": 1
+   },
+   "approx_input_tokens": 12264
+  },
+  {
+   "custom_id": "xe1o-linking-words-02",
+   "topic": "linking-words",
+   "items": [
+    30150,
+    30512,
+    30948
+   ],
+   "why": {
+    "sample": 2,
+    "reject": 1
+   },
+   "approx_input_tokens": 7866
+  },
+  {
+   "custom_id": "xe1o-passive-advanced-01",
+   "topic": "passive-advanced",
+   "items": [
+    29882,
+    30053,
+    30106,
+    30385,
+    30499
+   ],
+   "why": {
+    "sample": 4,
+    "rewrite": 1
+   },
+   "approx_input_tokens": 5308
+  },
+  {
+   "custom_id": "xe1o-passive-voice-01",
+   "topic": "passive-voice",
+   "items": [
+    6172,
+    6174,
+    6175,
+    6176,
+    6177,
+    6179,
+    6180,
+    6181,
+    6182,
+    6183,
+    6185,
+    6186,
+    6187,
+    6188,
+    6189,
+    6190,
+    6191,
+    6192,
+    6193,
+    6194
+   ],
+   "why": {
+    "rewrite": 20,
+    "teacher": 1
+   },
+   "approx_input_tokens": 11057
+  },
+  {
+   "custom_id": "xe1o-passive-voice-02",
+   "topic": "passive-voice",
+   "items": [
+    6195,
+    6196,
+    6197,
+    6198,
+    6199,
+    6200,
+    6201,
+    6202,
+    6204,
+    6205,
+    6206,
+    6207,
+    6208,
+    6209,
+    6210,
+    6211,
+    6212,
+    6213,
+    6897,
+    7477
+   ],
+   "why": {
+    "teacher": 6,
+    "rewrite": 19,
+    "sample": 1
+   },
+   "approx_input_tokens": 11261
+  },
+  {
+   "custom_id": "xe1o-passive-voice-03",
+   "topic": "passive-voice",
+   "items": [
+    7949,
+    8522,
+    8552,
+    8554,
+    8568,
+    8579,
+    8616,
+    8623,
+    8674,
+    8723,
+    8762,
+    8834,
+    8847,
+    8855,
+    8863,
+    8877,
+    8924,
+    8948,
+    8989,
+    9001
+   ],
+   "why": {
+    "sample": 19,
+    "rewrite": 1
+   },
+   "approx_input_tokens": 9477
+  },
+  {
+   "custom_id": "xe1o-passive-voice-04",
+   "topic": "passive-voice",
+   "items": [
+    9050,
+    9052,
+    27791,
+    27933,
+    28103,
+    28436,
+    28508
+   ],
+   "why": {
+    "sample": 4,
+    "rewrite": 2,
+    "reject": 1
+   },
+   "approx_input_tokens": 6418
+  },
+  {
+   "custom_id": "xe1o-past-continuous-01",
+   "topic": "past-continuous",
+   "items": [
+    25314,
+    25315,
+    25335,
+    25412,
+    25419,
+    25442,
+    25444,
+    25472,
+    25511,
+    25524,
+    25541,
+    25551,
+    25571,
+    25580,
+    25638,
+    25655,
+    25683,
+    25706,
+    25713,
+    25746
+   ],
+   "why": {
+    "sample": 15,
+    "reject": 1,
+    "rewrite": 4
+   },
+   "approx_input_tokens": 11658
+  },
+  {
+   "custom_id": "xe1o-past-continuous-02",
+   "topic": "past-continuous",
+   "items": [
+    25791,
+    25797,
+    25828,
+    25870,
+    25910,
+    25988,
+    26108,
+    26241,
+    26263,
+    26270,
+    26282,
+    26343,
+    26368,
+    26385,
+    26416,
+    26421,
+    26486,
+    26493,
+    26552,
+    26569
+   ],
+   "why": {
+    "rewrite": 5,
+    "reject": 2,
+    "sample": 13
+   },
+   "approx_input_tokens": 11633
+  },
+  {
+   "custom_id": "xe1o-past-continuous-03",
+   "topic": "past-continuous",
+   "items": [
+    26575,
+    26580,
+    26605,
+    26609,
+    26619,
+    26635,
+    26645,
+    26671,
+    26679,
+    26693,
+    26708,
+    26718,
+    26728,
+    26766,
+    26800,
+    26810,
+    26812,
+    26822,
+    26826,
+    26830
+   ],
+   "why": {
+    "sample": 12,
+    "rewrite": 5,
+    "reject": 3
+   },
+   "approx_input_tokens": 11058
+  },
+  {
+   "custom_id": "xe1o-past-continuous-04",
+   "topic": "past-continuous",
+   "items": [
+    26837,
+    26843
+   ],
+   "why": {
+    "sample": 2
+   },
+   "approx_input_tokens": 7084
+  },
+  {
+   "custom_id": "xe1o-past-perfect-01",
+   "topic": "past-perfect",
+   "items": [
+    25255,
+    25279,
+    25291,
+    25294,
+    25344,
+    25460,
+    25473,
+    25506,
+    25544,
+    25562,
+    25589,
+    25603,
+    25651,
+    25723,
+    25813,
+    25816,
+    25833,
+    25868,
+    25881,
+    25887
+   ],
+   "why": {
+    "sample": 18,
+    "reject": 2
+   },
+   "approx_input_tokens": 11582
+  },
+  {
+   "custom_id": "xe1o-past-perfect-02",
+   "topic": "past-perfect",
+   "items": [
+    25965,
+    25987,
+    26039,
+    26080,
+    26102,
+    26116,
+    26124,
+    26127,
+    26144,
+    26152,
+    26155,
+    26174,
+    26189,
+    26215,
+    26223,
+    26239,
+    26380,
+    26381,
+    26405,
+    26418
+   ],
+   "why": {
+    "reject": 8,
+    "sample": 9,
+    "rewrite": 3
+   },
+   "approx_input_tokens": 10873
+  },
+  {
+   "custom_id": "xe1o-past-perfect-03",
+   "topic": "past-perfect",
+   "items": [
+    26436,
+    26441,
+    26443,
+    26445,
+    26447,
+    26521,
+    26530,
+    26538,
+    26592,
+    26594,
+    26607,
+    26622,
+    26682,
+    26696,
+    26767,
+    27746,
+    28108,
+    28512,
+    28921,
+    29641
+   ],
+   "why": {
+    "sample": 15,
+    "rewrite": 2,
+    "reject": 3
+   },
+   "approx_input_tokens": 11274
+  },
+  {
+   "custom_id": "xe1o-past-perfect-04",
+   "topic": "past-perfect",
+   "items": [
+    29685,
+    29713,
+    30293,
+    31138
+   ],
+   "why": {
+    "sample": 2,
+    "rewrite": 2
+   },
+   "approx_input_tokens": 7247
+  },
+  {
+   "custom_id": "xe1o-past-perfect-continuous-01",
+   "topic": "past-perfect-continuous",
+   "items": [
+    28767,
+    28971,
+    29050,
+    29278,
+    29447,
+    29482,
+    29622,
+    29716,
+    29987,
+    30289,
+    30402,
+    30447,
+    30792,
+    31078,
+    31083
+   ],
+   "why": {
+    "reject": 3,
+    "sample": 12
+   },
+   "approx_input_tokens": 7816
+  },
+  {
+   "custom_id": "xe1o-past-simple-01",
+   "topic": "past-simple",
+   "items": [
+    6361,
+    6362,
+    6363,
+    6365,
+    6366,
+    6367,
+    6369,
+    6377,
+    6410,
+    6932,
+    7051,
+    7199,
+    7222,
+    7299,
+    7359,
+    7672,
+    8242,
+    8278,
+    8299,
+    8437
+   ],
+   "why": {
+    "sample": 8,
+    "teacher": 7,
+    "rewrite": 6
+   },
+   "approx_input_tokens": 9973
+  },
+  {
+   "custom_id": "xe1o-past-simple-02",
+   "topic": "past-simple",
+   "items": [
+    8474,
+    27811,
+    27967,
+    27984,
+    28154,
+    28259,
+    28317,
+    28580
+   ],
+   "why": {
+    "rewrite": 3,
+    "sample": 5
+   },
+   "approx_input_tokens": 6961
+  },
+  {
+   "custom_id": "xe1o-prepositions-movement-01",
+   "topic": "prepositions-movement",
+   "items": [
+    31383,
+    31410,
+    31420,
+    31545,
+    31706,
+    31743,
+    31770
+   ],
+   "why": {
+    "sample": 6,
+    "reject": 1
+   },
+   "approx_input_tokens": 4867
+  },
+  {
+   "custom_id": "xe1o-prepositions-place-01",
+   "topic": "prepositions-place",
+   "items": [
+    31581,
+    31588
+   ],
+   "why": {
+    "sample": 2
+   },
+   "approx_input_tokens": 4284
+  },
+  {
+   "custom_id": "xe1o-prepositions-time-01",
+   "topic": "prepositions-time",
+   "items": [
+    31246,
+    31644,
+    31660
+   ],
+   "why": {
+    "sample": 3
+   },
+   "approx_input_tokens": 5143
+  },
+  {
+   "custom_id": "xe1o-prepositions-time-place-01",
+   "topic": "prepositions-time-place",
+   "items": [
+    5734,
+    5735,
+    5741,
+    5745,
+    5754,
+    5756,
+    5763,
+    5770,
+    5772,
+    5776,
+    6949,
+    6955,
+    7019,
+    7189,
+    7223,
+    7345,
+    7348,
+    7413,
+    7491,
+    7740
+   ],
+   "why": {
+    "teacher": 6,
+    "sample": 13,
+    "reject": 2
+   },
+   "approx_input_tokens": 10606
+  },
+  {
+   "custom_id": "xe1o-prepositions-time-place-02",
+   "topic": "prepositions-time-place",
+   "items": [
+    7771,
+    7828,
+    7876,
+    8196,
+    8291,
+    8389,
+    8442,
+    27945,
+    27955,
+    28059,
+    28387,
+    28391,
+    28557,
+    28570
+   ],
+   "why": {
+    "reject": 1,
+    "sample": 13
+   },
+   "approx_input_tokens": 8978
+  },
+  {
+   "custom_id": "xe1o-present-continuous-01",
+   "topic": "present-continuous",
+   "items": [
+    6239,
+    6242,
+    6245,
+    6246,
+    6249,
+    6251,
+    6252,
+    6254,
+    6255,
+    6256,
+    6257,
+    6258,
+    6259,
+    6260,
+    6262,
+    6263,
+    6265,
+    6267,
+    6273,
+    6277
+   ],
+   "why": {
+    "rewrite": 20,
+    "teacher": 1
+   },
+   "approx_input_tokens": 12680
+  },
+  {
+   "custom_id": "xe1o-present-continuous-02",
+   "topic": "present-continuous",
+   "items": [
+    6278,
+    6279,
+    6281,
+    6284,
+    6285,
+    6286,
+    6287,
+    6289,
+    6290,
+    6292,
+    6293,
+    6302,
+    6303,
+    6306,
+    6307,
+    6308,
+    6309,
+    6313,
+    6314,
+    6316
+   ],
+   "why": {
+    "rewrite": 19,
+    "sample": 1,
+    "teacher": 1
+   },
+   "approx_input_tokens": 11310
+  },
+  {
+   "custom_id": "xe1o-present-continuous-03",
+   "topic": "present-continuous",
+   "items": [
+    6317,
+    6331,
+    6332,
+    6333,
+    6334
+   ],
+   "why": {
+    "teacher": 1,
+    "rewrite": 5
+   },
+   "approx_input_tokens": 7050
+  },
+  {
+   "custom_id": "xe1o-present-perfect-01",
+   "topic": "present-perfect",
+   "items": [
+    6420,
+    6431,
+    6522,
+    6581,
+    7435,
+    8087,
+    8498,
+    8675,
+    8687,
+    8724,
+    8742,
+    8760,
+    8808,
+    8813,
+    8853,
+    8908,
+    8930,
+    8961,
+    8994,
+    28139
+   ],
+   "why": {
+    "teacher": 2,
+    "rewrite": 1,
+    "sample": 14,
+    "reject": 3
+   },
+   "approx_input_tokens": 11097
+  },
+  {
+   "custom_id": "xe1o-present-perfect-02",
+   "topic": "present-perfect",
+   "items": [
+    28551,
+    28769,
+    28794,
+    28859,
+    28915,
+    28916,
+    28945,
+    29014,
+    29030,
+    29106,
+    29151,
+    29201,
+    29321,
+    29327,
+    29586,
+    29664,
+    29867,
+    29939,
+    30006,
+    30041
+   ],
+   "why": {
+    "sample": 18,
+    "reject": 2
+   },
+   "approx_input_tokens": 11086
+  },
+  {
+   "custom_id": "xe1o-present-perfect-03",
+   "topic": "present-perfect",
+   "items": [
+    30050,
+    30116,
+    30184,
+    30339,
+    30388,
+    30510,
+    30568,
+    30584,
+    30747,
+    30921,
+    30956,
+    30961,
+    30977,
+    31028
+   ],
+   "why": {
+    "sample": 11,
+    "reject": 2,
+    "rewrite": 1
+   },
+   "approx_input_tokens": 9245
+  },
+  {
+   "custom_id": "xe1o-present-perfect-continuous-01",
+   "topic": "present-perfect-continuous",
+   "items": [
+    25289,
+    25320,
+    25369,
+    25456,
+    25494,
+    25507,
+    25521,
+    25563,
+    25583,
+    25614,
+    25684,
+    25712,
+    25721,
+    25722,
+    25798,
+    25800,
+    25818,
+    25820,
+    25822,
+    25823
+   ],
+   "why": {
+    "sample": 14,
+    "reject": 4,
+    "rewrite": 2
+   },
+   "approx_input_tokens": 11200
+  },
+  {
+   "custom_id": "xe1o-present-perfect-continuous-02",
+   "topic": "present-perfect-continuous",
+   "items": [
+    25841,
+    25875,
+    25888,
+    25916,
+    25934,
+    25946,
+    25952,
+    26004,
+    26085,
+    26153,
+    26225,
+    26236,
+    26257,
+    26267,
+    26272,
+    26275,
+    26309,
+    26331,
+    26350,
+    26395
+   ],
+   "why": {
+    "reject": 3,
+    "sample": 17
+   },
+   "approx_input_tokens": 11214
+  },
+  {
+   "custom_id": "xe1o-present-perfect-continuous-03",
+   "topic": "present-perfect-continuous",
+   "items": [
+    26457,
+    26461,
+    26468,
+    26525,
+    26557,
+    26563,
+    26570,
+    26599,
+    26606,
+    26651,
+    26673,
+    26688,
+    26694,
+    26701,
+    26707,
+    26746,
+    26765,
+    28425
+   ],
+   "why": {
+    "sample": 17,
+    "reject": 1
+   },
+   "approx_input_tokens": 10656
+  },
+  {
+   "custom_id": "xe1o-present-perfect-vs-past-simple-01",
+   "topic": "present-perfect-vs-past-simple",
+   "items": [
+    7020,
+    7830,
+    8112,
+    8180,
+    8340,
+    8491,
+    8586,
+    8731,
+    8761,
+    8772,
+    8790,
+    8852,
+    8899,
+    8990,
+    9046,
+    28303,
+    28444,
+    28542
+   ],
+   "why": {
+    "sample": 12,
+    "reject": 6
+   },
+   "approx_input_tokens": 8950
+  },
+  {
+   "custom_id": "xe1o-present-simple-vs-continuous-01",
+   "topic": "present-simple-vs-continuous",
+   "items": [
+    8592,
+    8601,
+    8690,
+    8764,
+    8782,
+    8794,
+    8796,
+    8798,
+    8951,
+    8974,
+    8992,
+    9004,
+    9022,
+    9074,
+    28343
+   ],
+   "why": {
+    "sample": 10,
+    "rewrite": 4,
+    "reject": 1
+   },
+   "approx_input_tokens": 9562
+  },
+  {
+   "custom_id": "xe1o-relative-clauses-01",
+   "topic": "relative-clauses",
+   "items": [
+    6906,
+    6912,
+    6999,
+    7034,
+    7075,
+    7167,
+    7208,
+    7315,
+    7381,
+    7384,
+    7395,
+    7644,
+    7661,
+    7974,
+    7990,
+    8106,
+    8131,
+    27962,
+    27991,
+    28214
+   ],
+   "why": {
+    "reject": 5,
+    "sample": 11,
+    "rewrite": 4
+   },
+   "approx_input_tokens": 10277
+  },
+  {
+   "custom_id": "xe1o-relative-clauses-02",
+   "topic": "relative-clauses",
+   "items": [
+    28236,
+    28346
+   ],
+   "why": {
+    "sample": 2
+   },
+   "approx_input_tokens": 6372
+  },
+  {
+   "custom_id": "xe1o-reported-commands-01",
+   "topic": "reported-commands",
+   "items": [
+    31215,
+    31310,
+    31528,
+    31598,
+    31618,
+    31619,
+    31624,
+    31631
+   ],
+   "why": {
+    "sample": 7,
+    "rewrite": 1
+   },
+   "approx_input_tokens": 4444
+  },
+  {
+   "custom_id": "xe1o-reported-questions-01",
+   "topic": "reported-questions",
+   "items": [
+    31387,
+    31512
+   ],
+   "why": {
+    "sample": 2
+   },
+   "approx_input_tokens": 3936
+  },
+  {
+   "custom_id": "xe1o-reported-speech-01",
+   "topic": "reported-speech",
+   "items": [
+    5911,
+    5912,
+    5921,
+    5927,
+    5928,
+    5929,
+    5930,
+    5935,
+    5939,
+    5940,
+    5943,
+    5944,
+    5945,
+    5947,
+    5948,
+    5949,
+    5951,
+    5952,
+    5956,
+    5957
+   ],
+   "why": {
+    "sample": 3,
+    "teacher": 6,
+    "rewrite": 10,
+    "reject": 1
+   },
+   "approx_input_tokens": 12763
+  },
+  {
+   "custom_id": "xe1o-reported-speech-02",
+   "topic": "reported-speech",
+   "items": [
+    5958,
+    5961,
+    7044,
+    7210,
+    7265,
+    7324,
+    7364,
+    7469,
+    7527,
+    7553,
+    7695,
+    7815,
+    7939,
+    7954,
+    8184,
+    8191,
+    8213,
+    8258,
+    8362,
+    8391
+   ],
+   "why": {
+    "teacher": 1,
+    "rewrite": 4,
+    "sample": 14,
+    "reject": 1
+   },
+   "approx_input_tokens": 11863
+  },
+  {
+   "custom_id": "xe1o-reported-speech-03",
+   "topic": "reported-speech",
+   "items": [
+    8445,
+    8467,
+    8536,
+    8545,
+    8603,
+    8613,
+    8788,
+    8889,
+    8919,
+    8933,
+    8936,
+    8969,
+    28053
+   ],
+   "why": {
+    "sample": 10,
+    "reject": 2,
+    "rewrite": 1
+   },
+   "approx_input_tokens": 9567
+  },
+  {
+   "custom_id": "xe1o-reporting-verbs-01",
+   "topic": "reporting-verbs",
+   "items": [
+    28702,
+    28721,
+    28975,
+    29107,
+    29118,
+    29153,
+    29154,
+    29242,
+    29303,
+    29430,
+    29431,
+    29483,
+    29489,
+    29566,
+    29646,
+    29774,
+    29903,
+    29936,
+    30157,
+    30188
+   ],
+   "why": {
+    "sample": 14,
+    "reject": 5,
+    "missing": 1
+   },
+   "approx_input_tokens": 7987
+  },
+  {
+   "custom_id": "xe1o-reporting-verbs-02",
+   "topic": "reporting-verbs",
+   "items": [
+    30274,
+    30275,
+    30302,
+    30578,
+    30621,
+    30630,
+    30638,
+    30642,
+    30693,
+    30768,
+    30878,
+    30894,
+    30923
+   ],
+   "why": {
+    "sample": 8,
+    "reject": 5
+   },
+   "approx_input_tokens": 6248
+  },
+  {
+   "custom_id": "xe1o-sentence-punctuation-01",
+   "topic": "sentence-punctuation",
+   "items": [
+    26866,
+    27064,
+    27070,
+    27083,
+    27176,
+    27260,
+    27632,
+    27633,
+    27678,
+    27692
+   ],
+   "why": {
+    "sample": 6,
+    "rewrite": 4
+   },
+   "approx_input_tokens": 9869
+  },
+  {
+   "custom_id": "xe1o-subject-verb-agreement-01",
+   "topic": "subject-verb-agreement",
+   "items": [
+    26851,
+    26888,
+    26919,
+    26966,
+    26996,
+    27028,
+    27031,
+    27048,
+    27076,
+    27095,
+    27161,
+    27218,
+    27231,
+    27291,
+    27320,
+    27383,
+    27488,
+    27493,
+    27514,
+    27535
+   ],
+   "why": {
+    "sample": 16,
+    "rewrite": 3,
+    "reject": 1
+   },
+   "approx_input_tokens": 10918
+  },
+  {
+   "custom_id": "xe1o-subject-verb-agreement-02",
+   "topic": "subject-verb-agreement",
+   "items": [
+    27536,
+    27587,
+    27592,
+    27594,
+    27618,
+    27631,
+    27637,
+    27680,
+    27739,
+    27887,
+    28642,
+    29196,
+    29378
+   ],
+   "why": {
+    "sample": 11,
+    "rewrite": 2
+   },
+   "approx_input_tokens": 9300
+  },
+  {
+   "custom_id": "xe1o-used-to-would-01",
+   "topic": "used-to-would",
+   "items": [
+    25269,
+    25287,
+    25312,
+    25371,
+    25373,
+    25378,
+    25510,
+    25575,
+    25717,
+    25926,
+    25945,
+    25961,
+    25963,
+    26042,
+    26068,
+    26182,
+    26288,
+    26323,
+    26324,
+    26438
+   ],
+   "why": {
+    "sample": 20
+   },
+   "approx_input_tokens": 11146
+  },
+  {
+   "custom_id": "xe1o-used-to-would-02",
+   "topic": "used-to-would",
+   "items": [
+    26460,
+    26490,
+    26685,
+    26714,
+    26738,
+    26750,
+    26769,
+    26776
+   ],
+   "why": {
+    "sample": 8
+   },
+   "approx_input_tokens": 8507
+  },
+  {
+   "custom_id": "xe1o-verb-object-infinitive-01",
+   "topic": "verb-object-infinitive",
+   "items": [
+    31145,
+    31210,
+    31269,
+    31466,
+    31537,
+    31613,
+    31651,
+    31654,
+    31665,
+    31773
+   ],
+   "why": {
+    "rewrite": 2,
+    "sample": 8
+   },
+   "approx_input_tokens": 4782
+  },
+  {
+   "custom_id": "xe1o-word-formation-01",
+   "topic": "word-formation",
+   "items": [
+    26852,
+    26928,
+    27062,
+    27063,
+    27082,
+    27115,
+    27116,
+    27130,
+    27132,
+    27133,
+    27150,
+    27168,
+    27173,
+    27205,
+    27248,
+    27284,
+    27316,
+    27340,
+    27346,
+    27359
+   ],
+   "why": {
+    "sample": 10,
+    "reject": 1,
+    "rewrite": 9
+   },
+   "approx_input_tokens": 11283
+  },
+  {
+   "custom_id": "xe1o-word-formation-02",
+   "topic": "word-formation",
+   "items": [
+    27371,
+    27402,
+    27414,
+    27437,
+    27451,
+    27467,
+    27477,
+    27489,
+    27506,
+    27515,
+    27545,
+    27561,
+    27568,
+    27591,
+    27617,
+    27620,
+    27625,
+    27659,
+    27665,
+    27683
+   ],
+   "why": {
+    "sample": 9,
+    "rewrite": 10,
+    "reject": 1
+   },
+   "approx_input_tokens": 11055
+  },
+  {
+   "custom_id": "xe1o-word-formation-03",
+   "topic": "word-formation",
+   "items": [
+    27704,
+    28027,
+    28079
+   ],
+   "why": {
+    "sample": 3
+   },
+   "approx_input_tokens": 7479
+  }
+ ]
+}

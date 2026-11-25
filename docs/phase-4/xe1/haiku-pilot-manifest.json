@@ -1,0 +1,113 @@
+{
+ "format": "xe1-haiku-manifest/1",
+ "step": "XE-1.1 pilot",
+ "model": "claude-haiku-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "high",
+ "max_tokens": 32000,
+ "chunk": 20,
+ "prompt_sha256": "d94b84048466cd5f247ab62efd5b014d59ed8cc6eccf25a1f70ac04075f8dfd9",
+ "requests_sha256": "5a5112c83f5af6e8aff397953ca3ca264e16c9ce8ce812310839c07d3c555660",
+ "requests_file": "tmp/xe1/haiku-pilot-requests.jsonl",
+ "scope": {
+  "items": 60,
+  "requests": 3
+ },
+ "price_usd_per_mtok": {
+  "input": 0.05,
+  "output": 0.25
+ },
+ "estimate": {
+  "note": "Input approximated at 3 characters per token; replaced by count_tokens before the owner is asked.",
+  "approx_input_tokens": 25533,
+  "expected_output_tokens": 42000,
+  "worst_output_tokens": 96000,
+  "expected_usd": 0.0118,
+  "worst_usd": 0.0253
+ },
+ "requests": [
+  {
+   "custom_id": "xe1h-articles-01",
+   "topic": "articles",
+   "items": [
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    332,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    345,
+    346,
+    348,
+    352,
+    353
+   ],
+   "approx_input_tokens": 7767
+  },
+  {
+   "custom_id": "xe1h-past-perfect-01",
+   "topic": "past-perfect",
+   "items": [
+    25255,
+    25256,
+    25261,
+    25264,
+    25279,
+    25285,
+    25291,
+    25294,
+    25297,
+    25301,
+    25304,
+    25305,
+    25307,
+    25308,
+    25310,
+    25316,
+    25317,
+    25331,
+    25336,
+    25337
+   ],
+   "approx_input_tokens": 8483
+  },
+  {
+   "custom_id": "xe1h-sentence-punctuation-01",
+   "topic": "sentence-punctuation",
+   "items": [
+    26866,
+    26887,
+    26889,
+    26900,
+    26901,
+    26913,
+    26922,
+    26933,
+    27033,
+    27059,
+    27064,
+    27070,
+    27080,
+    27083,
+    27108,
+    27171,
+    27176,
+    27180,
+    27194,
+    27215
+   ],
+   "approx_input_tokens": 9283
+  }
+ ],
+ "part_of": "34a4bb6853ea230db8937599024f2ff8bf40ced3deafce823d17a814fcb1087c"
+}

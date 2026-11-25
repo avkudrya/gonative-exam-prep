@@ -1,0 +1,105 @@
+{
+ "format": "xe1-opus-manifest/1",
+ "step": "XE-1.2 pilot",
+ "model": "claude-opus-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "medium",
+ "max_tokens": 16000,
+ "chunk": 20,
+ "prompt_sha256": "7c38485c955b0f763e845f93ecb9357149784224d9f765d7aa3bb1f139357cdb",
+ "requests_sha256": "651cc08d2484f58105711d2038ac17ae95c3eed41275b4d2fe62853459ca6158",
+ "requests_file": "tmp/xe1/opus-pilot-requests.jsonl",
+ "part_of": "e6bcf0e9db43412b23dd124474c79f2653c7f09f1b25dafb36607ffb7db55901",
+ "scope": {
+  "items": 40,
+  "requests": 2,
+  "why": {
+   "sample": 9,
+   "reject": 18,
+   "teacher": 17,
+   "rewrite": 5
+  },
+  "sample_of_clean": "700 target of 4758"
+ },
+ "price_usd_per_mtok": {
+  "input": 2,
+  "output": 10
+ },
+ "estimate": {
+  "note": "Input approximated at 3 characters per token; replaced by count_tokens before submission.",
+  "approx_input_tokens": 23318,
+  "expected_output_tokens": 20000,
+  "worst_output_tokens": 32000,
+  "expected_usd": 0.2466,
+  "worst_usd": 0.3666
+ },
+ "requests": [
+  {
+   "custom_id": "xe1o-articles-01",
+   "topic": "articles",
+   "items": [
+    324,
+    327,
+    337,
+    342,
+    348,
+    354,
+    374,
+    375,
+    376,
+    377,
+    378,
+    381,
+    382,
+    383,
+    385,
+    389,
+    393,
+    394,
+    397,
+    399
+   ],
+   "why": {
+    "sample": 6,
+    "reject": 11,
+    "teacher": 7,
+    "rewrite": 3
+   },
+   "approx_input_tokens": 11332
+  },
+  {
+   "custom_id": "xe1o-articles-02",
+   "topic": "articles",
+   "items": [
+    403,
+    406,
+    413,
+    420,
+    421,
+    424,
+    425,
+    427,
+    431,
+    435,
+    445,
+    449,
+    459,
+    473,
+    481,
+    482,
+    483,
+    487,
+    489,
+    491
+   ],
+   "why": {
+    "teacher": 10,
+    "reject": 7,
+    "rewrite": 2,
+    "sample": 3
+   },
+   "approx_input_tokens": 11986
+  }
+ ]
+}

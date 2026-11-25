@@ -16,7 +16,10 @@ const gapPattern = /\{\{([0-9a-f]{24})\}\}/g;
 function answerOf(q: PracticeQuestion, d: Draft): PracticeAnswer | null {
   if (q.type === 'multiple_choice') return d.selected.length ? {selected: d.selected} : null;
   if (q.type === 'ordering') return d.tokens.length === q.tokens.length ? {tokens: d.tokens} : null;
-  const gaps = Object.fromEntries(q.targets.map(target => [target.id, (d.gaps[target.id] ?? '').trim()]).filter(([, v]) => v !== ''));
+  const all = q.targets.map(target => [target.id, (d.gaps[target.id] ?? '').trim()] as const);
+  // A typed gap may stay empty (the zero article): the API decides, and refuses an answer with nothing in it where a word is needed.
+  if (q.type === 'gap_fill') return {gaps: Object.fromEntries(all)};
+  const gaps = Object.fromEntries(all.filter(([, v]) => v !== ''));
   return Object.keys(gaps).length === q.targets.length ? {gaps} : null;
 }
 
@@ -176,6 +179,7 @@ function Question({q, draft, setDraft, result}: {q: PracticeQuestion; draft: Dra
       const chosen = target.options?.find(o => o.id === value)?.text;
       return <span key={i} className={`gap-slot${state ? ` ${state}` : ''}`}>{many && <sup>{number(target.id)}</sup>}{chosen ?? '_____'}</span>;
     })}</p>
+    {q.type === 'gap_fill' && <p className="hint">{t('typeGap')}</p>}
     {q.type === 'gap_choice' && q.targets.map(target => <fieldset key={target.id} className="practice-choices" disabled={locked}>
       <legend className="hint">{many ? t('gap', {n: number(target.id)}) : t('chooseGap')}</legend>
       {(target.options ?? []).map(option => <label key={option.id} className={`option${mark(option.text, draft.gaps[target.id] === option.id)}`}>

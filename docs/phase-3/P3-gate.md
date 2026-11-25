@@ -5,7 +5,7 @@
 **Статус:** ⏳ ждёт деплоя uk и `exam-p1-6`, финальной вычитки и подтверждения gate (§7).
 
 **Где:**
-- **Сайт** — этот репозиторий, `web/`. В production `503bee2`, билд `h-YuZbLesWwLTVH2jPmh_`.
+- **Сайт** — этот репозиторий, `web/`. В production `da358a6` (с uk), билд `7DooWPupzOC5nUGzhT8M1`, 2026-11-25.
   - Хосты `exams.` и `ielts.mnemonicwords.app`, оба закрыты паролем preview до публичного запуска.
 - **Бэкенд** — MultiAdmin, задеплоен владельцем вместе с `f3a2626f`.
   - Флаги А (`EXAM_API_ENABLED`) и Б (`EXAM_ASSESSMENT_ENABLED`) включены.

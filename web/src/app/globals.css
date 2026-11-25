@@ -447,3 +447,43 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 12px; text-align: le
   .landing .header { flex-wrap: wrap; gap: 8px 12px; }
   .landing .brand { font-size: 16px; }
 }
+
+/* P4.8: practice from the bank, one question at a time. */
+.practice-start { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; }
+.practice-start .feedback { flex-basis: 100%; }
+.practice-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-top: 16px; }
+.practice-head .eyebrow { margin: 0; }
+.practice-card { border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-top: 8px; display: flex; flex-direction: column; gap: 14px; overflow-wrap: anywhere; }
+.practice-text { font-size: 18px; line-height: 1.6; margin: 0; }
+.practice-choices { border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.practice-choices legend { padding: 0; margin-bottom: 8px; }
+.practice-choices:disabled .option { cursor: default; }
+.practice-choices .option.right { border-color: var(--accent); background: var(--accent-soft); }
+.practice-choices .option.wrong { border-color: var(--danger); background: var(--danger-soft); color: var(--danger); }
+.practice-summary h2 { font-size: 26px; margin-bottom: 4px; }
+.gap-slot { display: inline-block; min-width: 4em; border-bottom: 2px solid var(--accent); padding: 0 4px; font-weight: 600; text-align: center; }
+.gap-slot sup { color: var(--muted); font-weight: 400; margin-right: 2px; }
+.gap-input { font: inherit; width: auto; max-width: 100%; padding: 2px 6px; border: 1px solid var(--line); border-bottom: 2px solid var(--accent); border-radius: 6px; background: var(--surface-2); color: inherit; }
+.gap-slot.correct, .gap-input.correct { border-bottom-color: var(--accent); }
+.gap-slot.incorrect, .gap-input.incorrect { border-bottom-color: var(--danger); }
+.practice-order .order-line { min-height: 48px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 8px; border: 1px dashed var(--line); border-radius: 10px; margin: 8px 0; }
+.practice-order .order-pool { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+.token { font: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--surface-2); color: inherit; cursor: pointer; }
+.token.placed { border-color: var(--accent); background: var(--accent-soft); }
+.token:disabled { cursor: default; }
+.practice-verdict { border-radius: 10px; padding: 12px 14px; background: var(--surface-2); display: flex; flex-direction: column; gap: 6px; }
+.practice-verdict p { margin: 0; }
+.practice-verdict.correct { background: var(--accent-soft); }
+.practice-verdict.incorrect { background: var(--danger-soft); }
+.practice-verdict .verdict-title { font-weight: 600; }
+.practice-verdict.incorrect .verdict-title { color: var(--danger); }
+.sense-card { display: flex; flex-direction: column; gap: 4px; }
+.practice-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.practice-summary { margin-top: 16px; }
+.practice-review { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.practice-review .incorrect .badge { background: var(--danger-soft); color: var(--danger); }
+.practice-review .correct .badge { background: var(--accent-soft); color: var(--ink); }
+@media (max-width: 520px) {
+  .practice-card { padding: 14px; }
+  .practice-text { font-size: 17px; }
+}

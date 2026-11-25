@@ -12,8 +12,10 @@ const POLL_MS = 2500;
 const PATIENCE_MS = 5 * 60000;
 
 /** A submitted essay: waiting for the assessment, its failure, or the feedback. */
-export function AssessmentView({attempt, assessment, examName, remaining, limit, feedbackLanguage}: {
+export function AssessmentView({attempt, assessment, examName, remaining, limit, feedbackLanguage, practiceSkills = []}: {
   attempt: Attempt; assessment: Assessment | null; examName: string; remaining: number; limit: number; feedbackLanguage: FeedbackLanguage;
+  /** P4.8: skills the bank can train; their fix groups get a practice button. */
+  practiceSkills?: string[];
 }) {
   const t = useTranslations('Assessment');
   const waiting = !assessment || assessment.status === 'queued' || assessment.status === 'running';
@@ -26,7 +28,7 @@ export function AssessmentView({attempt, assessment, examName, remaining, limit,
       <h1>{attempt.topic ?? t('ownTask')}</h1>
     </header>
     {waiting ? <Waiting uuid={attempt.uuid} since={assessment?.created_at ?? attempt.submitted_at}/>
-      : assessment && result ? <ResultView attempt={attempt} assessment={{...assessment, result}}/>
+      : assessment && result ? <ResultView attempt={attempt} assessment={{...assessment, result}} practiceSkills={practiceSkills}/>
       : <div className="notice-block" role="alert">
         <h2>{t('failedTitle')}</h2>
         <p>{t('failedBody')}</p>

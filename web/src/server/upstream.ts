@@ -27,6 +27,9 @@ export const safeReasons = new Set([
   // Reports and results
   'exams_nothing_to_report', 'exams_report_limit', 'exams_unknown_finding', 'exams_reported_results_limit',
   'exams_section_not_on_scale', 'exams_target_not_on_scale',
+  // Practice from the bank (P4.8)
+  'exams_practice_skill_unavailable', 'exams_practice_unavailable', 'exams_practice_daily_limit', 'exams_practice_closed',
+  'exams_answer_invalid', 'exams_answer_required',
   // Limits
   'exams_rate_limited', 'exams_requests_rate_limited',
 ]);

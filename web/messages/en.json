@@ -528,7 +528,9 @@
       "stable": "no change",
       "worsening": "more frequent"
     },
-    "resultsLink": "Took the exam? Enter your official result"
+    "resultsLink": "Took the exam? Enter your official result",
+    "practiceShare": "In practice: {percent}% correct ({count, plural, one {# answer} other {# answers}} in 30 days).",
+    "practise": "Practise"
   },
   "Results": {
     "title": "My exam results",
@@ -687,7 +689,8 @@
       "rewrite": "Open the sentences",
       "vocabulary_list": "Choose the words",
       "new_essay": "Choose a task",
-      "reassess": "Write an essay"
+      "reassess": "Write an essay",
+      "practice": "Start"
     },
     "done": "Done",
     "dismiss": "Hide",
@@ -701,6 +704,54 @@
     "reassessEvery": "{count, plural, one {Compare your ranges every week.} other {Compare your ranges every # weeks.}}",
     "focus": "Watch most: {skills}.",
     "setDate": "Add your exam date and weekly time to fit the week to them.",
-    "settingsLink": "Settings"
+    "settingsLink": "Settings",
+    "practice": "Practise {skill}: 10 short questions from the bank.",
+    "practicePlan": "{count, plural, one {# short practice session ({minutes} min): {skills}.} other {# short practice sessions ({minutes} min each): {skills}.}}"
+  },
+  "Practice": {
+    "pageTitle": "Practice",
+    "title": "Practice: {skill}",
+    "intro": "Ten short questions from our bank. Each answer is checked right away.",
+    "back": "Progress",
+    "start": "Practise: 10 questions",
+    "starting": "Preparing…",
+    "errors": {
+      "daily": "That is enough for today: up to 20 sessions a day. Come back tomorrow.",
+      "bank": "There are not enough questions for this skill yet.",
+      "generic": "Could not load. Try again later.",
+      "incomplete": "Answer the question first.",
+      "closed": "This session is closed. Start a new one."
+    },
+    "abandoned": "This session has expired. Start a new one.",
+    "summaryTitle": "{correct} of {total} correct",
+    "summaryNote": "Answers count in your progress for 30 days. The skill’s status changes with your next essay.",
+    "states": {
+      "correct": "Correct",
+      "partial": "Partly correct",
+      "incorrect": "Not quite"
+    },
+    "skipped": "Not answered",
+    "again": "10 more",
+    "toProgress": "Progress",
+    "progress": "Question {n} of {total}",
+    "score": "{correct} of {answered} correct",
+    "question": "Question {n}",
+    "check": "Check",
+    "next": "Next",
+    "finish": "See the result",
+    "finishEarly": "Finish now",
+    "chooseOne": "Choose one answer.",
+    "chooseAll": "Choose all correct answers.",
+    "chooseGap": "Choose the word for the gap.",
+    "orderHint": "Tap the words in the right order.",
+    "orderLine": "Your sentence",
+    "orderEmpty": "Your sentence appears here.",
+    "removeToken": "Remove “{word}”",
+    "orderReset": "Start again",
+    "gap": "Gap {n}",
+    "gapOne": "Gap",
+    "correctAnswer": "Correct answer:",
+    "translation": "Translation:",
+    "topic": "Topic: {topic}"
   }
 }

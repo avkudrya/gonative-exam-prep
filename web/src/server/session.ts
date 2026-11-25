@@ -1,7 +1,8 @@
 import 'server-only';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
-import {assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
+import {z} from 'zod';
+import {assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceSessionSchema, practiceSkillsSchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
 
 /** Server components read the session from the httpOnly cookie; `null` means "not signed in". */
@@ -91,7 +92,34 @@ export async function currentSkills() {
 export async function currentRecommendations() {
   const token = await sessionToken();
   const result = await backend('recommendations', 'GET', undefined, token ?? undefined) as {recommendations: unknown};
-  return recommendationSchema.array().max(10).parse(result.recommendations);
+  // A step of a kind this site does not know yet is left out instead of hiding every step.
+  return z.array(z.unknown()).max(10).parse(result.recommendations)
+    .flatMap(step => {
+      const parsed = recommendationSchema.safeParse(step);
+      return parsed.success ? [parsed.data] : [];
+    });
+}
+
+/** P4.8: the skills the bank can train now; empty when practice is off or the backend is older. */
+export const practiceSkills = cache(async () => {
+  const token = await sessionToken();
+  try {
+    return practiceSkillsSchema.parse(await backend('practice/skills', 'GET', undefined, token ?? undefined)).skills;
+  } catch {
+    return [];
+  }
+});
+
+/** One practice session of the signed-in member, or `null` when it does not exist or is not theirs. */
+export async function currentPractice(uuid: string) {
+  const token = await sessionToken();
+  try {
+    const result = await backend(`practice/${uuid}`, 'GET', undefined, token ?? undefined, {maxBytes: 256 * 1024}) as {session: unknown};
+    return practiceSessionSchema.parse(result.session);
+  } catch (error) {
+    if (error instanceof BackendError && error.status === 404) return null;
+    throw error;
+  }
 }
 
 export async function currentPlan() {

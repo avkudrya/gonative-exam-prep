@@ -3,6 +3,7 @@ import {z} from 'zod';
 import {
   assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, comparisonSchema, entitlementsSchema,
   feedbackLanguageSchema, identitySchema, interfaceLocaleSchema, practiceTaskSchema, profileSchema, reportKinds,
+  practiceAnswerSchema, practiceResultSchema, practiceSessionSchema, practiceSkillsSchema,
   recommendationSchema, reportSchema, reportedResultSchema, skillsSchema, vocabularyListSchema, vocabularySchema,
 } from '../lib/api/schemas';
 
@@ -199,6 +200,25 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
   if (path === 'reported-results' && noQuery(search)) {
     if (method === 'GET') return route(path, parse(z.object({reported_results: z.array(reportedResultSchema)})));
     if (method === 'POST') return route(path, r => ({data: z.object({reported_result: reportedResultSchema}).parse(r), status: 201}), {input: reportedInput});
+    return null;
+  }
+  // P4.8: practice from the Edu bank, one question at a time; keys stay on the backend until a question is answered.
+  if (path === 'practice/skills' && method === 'GET' && noQuery(search)) return route(path, parse(practiceSkillsSchema));
+  if (path === 'practice' && method === 'POST' && noQuery(search)) {
+    return route(path, r => ({data: z.object({session: practiceSessionSchema}).parse(r)}), {
+      input: z.object({skill_key: z.string().max(96).regex(/^[a-z]+\.[a-z_]+$/), attempt_uuid: z.string().regex(uuidPattern).optional()}).strict(),
+      maxBytes: 256 * 1024,
+    });
+  }
+  const practice = /^practice\/([^/]+)(?:\/(finish|answers\/([0-9a-f]{24})))?$/.exec(path);
+  if (practice && uuidPattern.test(practice[1]) && noQuery(search)) {
+    const root = `practice/${practice[1].toLowerCase()}`;
+    const session = parse(z.object({session: practiceSessionSchema}));
+    if (!practice[2] && method === 'GET') return route(root, session, {maxBytes: 256 * 1024});
+    if (practice[2] === 'finish' && method === 'POST') return route(`${root}/finish`, session, {input: empty, maxBytes: 256 * 1024});
+    if (practice[3] && method === 'POST') {
+      return route(`${root}/answers/${practice[3]}`, parse(z.object({result: practiceResultSchema})), {input: z.object({answer: practiceAnswerSchema}).strict(), maxBody: 16 * 1024});
+    }
     return null;
   }
   // P4.5: the learner marks a next step done or hides it.

@@ -5,7 +5,8 @@ import {RangeChart} from '../../../../../components/range-chart';
 import {Unavailable} from '../../../../../components/unavailable';
 import {Link} from '../../../../../i18n/navigation';
 import {requireMember} from '../../../../../server/access';
-import {currentPlan, currentRecommendations, currentSkills} from '../../../../../server/session';
+import {PracticeButton} from '../../../../../components/practice-button';
+import {currentPlan, currentRecommendations, currentSkills, practiceSkills} from '../../../../../server/session';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}): Promise<Metadata> {
   const {locale} = await params;
@@ -28,7 +29,7 @@ export default async function Progress({params}: {params: Promise<{locale: strin
     return <Unavailable locale={locale}/>;
   }
   // Next steps and the week are extras: the page stands without them if they cannot be loaded.
-  const [steps, plan] = await Promise.all([currentRecommendations().catch(() => null), currentPlan().catch(() => null)]);
+  const [steps, plan, practice] = await Promise.all([currentRecommendations().catch(() => null), currentPlan().catch(() => null), practiceSkills()]);
   const t = await getTranslations({locale, namespace: 'Progress'});
   const r = await getTranslations({locale, namespace: 'Result'});
   const format = await getFormatter({locale});
@@ -89,6 +90,8 @@ export default async function Progress({params}: {params: Promise<{locale: strin
               {skill.trend && <> · <span className={`trend-word ${skill.trend}`}>{t(`trends.${skill.trend}`)}</span></>}
               {skill.confidence === 'low' && <> · <span className="hint">{t('fewEssays')}</span></>}
             </p>
+            {skill.practice && <p className="hint">{t('practiceShare', {percent: Math.round(skill.practice.percent), count: skill.practice.answered})}</p>}
+            {practice.includes(skill.skill_key) && <PracticeButton skill={skill.skill_key} className="text-button" label={t('practise')}/>}
           </li>)}
         </ul>}
       </section>

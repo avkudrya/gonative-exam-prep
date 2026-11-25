@@ -5,7 +5,7 @@ import {AssessmentView} from '../../../../../../components/assessment-view';
 import {EssayEditor} from '../../../../../../components/essay-editor';
 import {Unavailable} from '../../../../../../components/unavailable';
 import {requireMember} from '../../../../../../server/access';
-import {assessableExams, currentAssessment, currentAttempt, currentEntitlements} from '../../../../../../server/session';
+import {assessableExams, currentAssessment, currentAttempt, currentEntitlements, practiceSkills} from '../../../../../../server/session';
 
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
@@ -42,6 +42,8 @@ export default async function AttemptPage({params}: {params: Promise<{locale: st
   } catch {
     return <Unavailable locale={locale}/>;
   }
+  // Practice is an extra: without it the feedback stands as before.
+  const practice = assessment ? await practiceSkills() : [];
   return <AssessmentView key={`${attempt.uuid}:${assessment?.uuid ?? ''}:${assessment?.status ?? ''}`} attempt={attempt} assessment={assessment}
-    examName={examName} feedbackLanguage={feedbackLanguage} {...quota}/>;
+    examName={examName} feedbackLanguage={feedbackLanguage} practiceSkills={practice} {...quota}/>;
 }

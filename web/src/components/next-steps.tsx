@@ -4,6 +4,7 @@ import {useState} from 'react';
 import {Link} from '../i18n/navigation';
 import type {Plan, Recommendation} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
+import {PracticeButton} from './practice-button';
 
 /**
  * P4.5: what to do next, from the learner's own feedback (ranked by the backend, at most four). Each step links to the
@@ -35,6 +36,7 @@ export function NextSteps({initial}: {initial: Recommendation[]}) {
     switch (s.kind) {
       case 'rewrite': return t('rewrite', {count: s.finding_ids.length});
       case 'vocabulary_list': return t('vocabulary', {count: s.words ?? 0});
+      case 'practice': return t('practice', {skill: skillName(s.skill)});
       case 'new_essay': return s.practice_task?.topic ? t('newEssayTopic', {skill: skillName(s.skill), topic: s.practice_task.topic}) : t('newEssay', {skill: skillName(s.skill)});
       default: return t('reassess');
     }
@@ -46,7 +48,9 @@ export function NextSteps({initial}: {initial: Recommendation[]}) {
       {steps.map(s => <li key={s.uuid} className={`step ${s.kind}`}>
         <p>{text(s)}</p>
         <div className="step-actions">
-          <Link className="button primary" href={target(s)}>{t(`open.${s.kind}`)}</Link>
+          {s.kind === 'practice' && s.skill
+            ? <PracticeButton skill={s.skill} attempt={s.attempt} className="button primary" label={t('open.practice')}/>
+            : <Link className="button primary" href={target(s)}>{t(`open.${s.kind}`)}</Link>}
           <button type="button" className="text-button" onClick={() => void close(s.uuid, 'done')}>{t('done')}</button>
           <button type="button" className="text-button" onClick={() => void close(s.uuid, 'dismiss')}>{t('dismiss')}</button>
         </div>
@@ -67,6 +71,7 @@ export function WeekPlan({plan, weekLabel}: {plan: Plan; weekLabel: string}) {
     <ul>
       <li>{plan.timed ? t('essaysTimed', {count: plan.essays}) : t('essays', {count: plan.essays})}</li>
       <li>{t('fixOwn')}</li>
+      {plan.practice_sessions > 0 && <li>{t('practicePlan', {count: plan.practice_sessions, minutes: plan.practice_minutes, skills: plan.practice_skills.map(skillName).join(', ')})}</li>}
       {plan.daily_words && <li>{t('dailyWords')}</li>}
       <li>{t('reassessEvery', {count: plan.reassess_every_weeks})}</li>
     </ul>

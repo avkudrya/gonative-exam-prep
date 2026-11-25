@@ -203,7 +203,7 @@ export const vocabularySchema = z.object({
 export const vocabularyListSchema = z.object({list: learningListSchema.nullable(), quota: learningQuotaSchema});
 
 /** P4.5: a next step from the learner's own feedback; it points to their attempt or a library task, never to essay text. */
-export const recommendationKinds = ['rewrite', 'vocabulary_list', 'new_essay', 'reassess'] as const;
+export const recommendationKinds = ['rewrite', 'vocabulary_list', 'new_essay', 'reassess', 'practice'] as const;
 export const recommendationSchema = z.object({
   uuid,
   kind: z.enum(recommendationKinds),
@@ -226,6 +226,10 @@ export const planSchema = z.object({
   reassess_every_weeks: z.int().positive().max(8),
   daily_words: z.boolean(),
   focus_skills: z.array(z.string().max(96)).max(5),
+  // P4.8: short bank practice sessions; an older backend sends none.
+  practice_skills: z.array(z.string().max(96)).max(5).default([]),
+  practice_sessions: z.int().min(0).max(7).default(0),
+  practice_minutes: z.int().min(0).max(120).default(10),
 });
 
 const criteriaRanges = z.array(z.object({criterion_key: key, estimate: presentedEstimateSchema.nullable()}));
@@ -238,6 +242,8 @@ export const skillsSchema = z.object({
     trend: z.string().max(32).nullable(),
     confidence: z.string().max(32).nullable(),
     observations: z.int().nonnegative(),
+    // P4.8: the share of correct practice answers in the last 30 days, next to the essay's rate.
+    practice: z.object({answered: z.int().nonnegative(), correct: z.int().nonnegative(), percent: z.number().min(0).max(100), last_at: iso}).nullable().default(null),
   })),
   criteria_trend: z.array(z.object({assessment: uuid, finished_at: isoOrNull, criteria: criteriaRanges})),
 });
@@ -259,6 +265,56 @@ export const comparisonSchema = z.object({
   assessments: z.array(z.object({assessment: uuid, finished_at: isoOrNull, criteria: criteriaRanges})),
 });
 
+/*
+ * P4.8: practice from the Edu bank. Questions arrive without keys (opaque ids from the backend compiler); a result
+ * appears only after the learner answered, with the correct answer and the explanation from the checked bank.
+ */
+const opaqueId = z.string().regex(/^[0-9a-f]{24}$/);
+const shortText = z.string().max(2000);
+export const practiceTypes = ['multiple_choice', 'gap_choice', 'gap_fill', 'ordering'] as const;
+const practiceOption = z.object({id: opaqueId, text: z.string().max(500)});
+export const practiceQuestionSchema = z.object({
+  id: opaqueId,
+  type: z.enum(practiceTypes),
+  text: shortText,
+  targets: z.array(z.object({id: opaqueId, label: z.string().max(40), hint: z.string().max(200).nullable().optional(), options: z.array(practiceOption).max(8).optional()})).max(12),
+  options: z.array(practiceOption).max(8),
+  tokens: z.array(practiceOption).max(40),
+  multi_select: z.boolean().optional(),
+});
+/** One answer: chosen options (multiple choice), each gap's option id or text, or the tokens in order. */
+export const practiceAnswerSchema = z.union([
+  z.object({selected: z.array(opaqueId).min(1).max(8)}).strict(),
+  z.object({gaps: z.record(opaqueId, z.string().max(600)).refine(v => Object.keys(v).length >= 1 && Object.keys(v).length <= 12)}).strict(),
+  z.object({tokens: z.array(opaqueId).min(1).max(40)}).strict(),
+]);
+export type PracticeAnswer = z.infer<typeof practiceAnswerSchema>;
+export const practiceResultSchema = z.object({
+  state: z.enum(['correct', 'partial', 'incorrect']),
+  answer: practiceAnswerSchema.nullable().optional(),
+  targets: z.array(z.object({id: opaqueId, state: z.string().max(24), correct_answer: z.string().max(500).nullable()})).max(12),
+  feedback: z.object({
+    topic: z.string().max(191).nullable(),
+    sense: z.object({phrase: z.string().max(191), definition: z.string().max(1000), translation: z.string().max(512).nullable()}).nullable(),
+    explanation: z.object({text: z.string().max(4000), language: z.string().max(16)}).nullable(),
+  }).nullable(),
+  session: z.object({status: z.enum(['open', 'finished', 'abandoned']), answered: z.int().nonnegative(), correct: z.int().nonnegative(), total: z.int().positive()}),
+});
+export const practiceSessionSchema = z.object({
+  uuid,
+  skill_key: z.string().max(96),
+  level: z.string().max(2),
+  status: z.enum(['open', 'finished', 'abandoned']),
+  total: z.int().positive().max(20),
+  answered: z.int().nonnegative(),
+  correct: z.int().nonnegative(),
+  questions: z.array(z.object({question: practiceQuestionSchema, result: practiceResultSchema.omit({session: true}).nullable()})).max(20),
+});
+export const practiceSkillsSchema = z.object({skills: z.array(z.string().max(96)).max(20)});
+
+export type PracticeQuestion = z.infer<typeof practiceQuestionSchema>;
+export type PracticeResult = z.infer<typeof practiceResultSchema>;
+export type PracticeSession = z.infer<typeof practiceSessionSchema>;
 export type Identity = z.infer<typeof identitySchema>;
 export type Profile = z.infer<typeof profileSchema>;
 export type Entitlements = z.infer<typeof entitlementsSchema>;

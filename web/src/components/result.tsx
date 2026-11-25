@@ -7,6 +7,7 @@ import type {Assessment, Attempt, ResultFinding} from '../lib/api/schemas';
 import {reportKinds} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
 import {EssayWords} from './essay-words';
+import {PracticeButton} from './practice-button';
 
 type Result = NonNullable<Assessment['result']>;
 const kindOrder = {error: 0, weakness: 1, suggestion: 2, strength: 3} as const;
@@ -17,7 +18,7 @@ const criterionOrder = ['task_response', 'coherence_cohesion', 'lexical_resource
 /** 6 → "6", 5.5 → "5.5": ranges are shown as they come, never rounded into something more precise. */
 const band = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1));
 
-export function ResultView({attempt, assessment}: {attempt: Attempt; assessment: Assessment & {result: Result}}) {
+export function ResultView({attempt, assessment, practiceSkills = []}: {attempt: Attempt; assessment: Assessment & {result: Result}; practiceSkills?: string[]}) {
   const t = useTranslations('Result');
   const result = assessment.result;
   const language = assessment.feedback_language;
@@ -101,6 +102,7 @@ export function ResultView({attempt, assessment}: {attempt: Attempt; assessment:
               <p lang={language}>{f.explanation}</p>
             </li>)}
           </ul>
+          {practiceSkills.includes(g.skill) && <PracticeButton skill={g.skill} attempt={attempt.uuid}/>}
         </li>)}
       </ol>
     </section> : fixes.length > 0 && <section aria-labelledby="fixes-title" className="fixes">

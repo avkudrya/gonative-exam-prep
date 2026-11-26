@@ -1,0 +1,177 @@
+{
+ "format": "xe5-opus-manifest/1",
+ "step": "XE-5 (Opus writes and checks)",
+ "model": "claude-opus-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "medium",
+ "max_tokens": "per request",
+ "chunk": 20,
+ "no_pilot": true,
+ "export": {
+  "exported_at": "2026-11-26T16:31:19+00:00"
+ },
+ "prompt_sha256": "b26f57547195fa8a422deedca3407aab2ae431eb53e44a1ad0c8398bb12143dc",
+ "requests_sha256": "d9f73576609dd28dcc13958397608d8721c4bb9952903ba01b9785a67fea50ca",
+ "requests_file": "tmp/xe5/opus-requests.jsonl",
+ "scope": {
+  "items": 74,
+  "requests": 4,
+  "why": {
+   "error_correction": 20,
+   "multiple_choice": 54
+  }
+ },
+ "price_usd_per_mtok": {
+  "input": 2,
+  "output": 10
+ },
+ "estimate": {
+  "note": "Input approximated at 3 characters per token; replaced by count_tokens before the owner is asked.",
+  "approx_input_tokens": 30244,
+  "expected_output_tokens": 37000,
+  "worst_output_tokens": 45900,
+  "expected_usd": 0.4305,
+  "worst_usd": 0.5195
+ },
+ "requests": [
+  {
+   "custom_id": "xe5o-sentence-punctuation-01",
+   "topic": "sentence-punctuation",
+   "items": [
+    33238,
+    33239,
+    33240,
+    33241,
+    33242,
+    33243,
+    33244,
+    33245,
+    33246,
+    33247,
+    33248,
+    33249,
+    33250,
+    33251,
+    33252,
+    33253,
+    33254,
+    33255,
+    33256,
+    33257
+   ],
+   "types": [
+    "error_correction",
+    "multiple_choice"
+   ],
+   "why": {
+    "error_correction": 5,
+    "multiple_choice": 15
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 7791
+  },
+  {
+   "custom_id": "xe5o-sentence-punctuation-02",
+   "topic": "sentence-punctuation",
+   "items": [
+    33258,
+    33259,
+    33260,
+    33261,
+    33262,
+    33263,
+    33264,
+    33265,
+    33266,
+    33267,
+    33268,
+    33269,
+    33270,
+    33271,
+    33272,
+    33273,
+    33274,
+    33275,
+    33276,
+    33277
+   ],
+   "types": [
+    "error_correction",
+    "multiple_choice"
+   ],
+   "why": {
+    "multiple_choice": 18,
+    "error_correction": 2
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 7826
+  },
+  {
+   "custom_id": "xe5o-sentence-punctuation-03",
+   "topic": "sentence-punctuation",
+   "items": [
+    33278,
+    33279,
+    33280,
+    33281,
+    33282,
+    33283,
+    33284,
+    33285,
+    33286,
+    33287,
+    33288,
+    33289,
+    33290,
+    33291,
+    33292,
+    33293,
+    33294,
+    33295,
+    33296,
+    33297
+   ],
+   "types": [
+    "error_correction",
+    "multiple_choice"
+   ],
+   "why": {
+    "multiple_choice": 12,
+    "error_correction": 8
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 7558
+  },
+  {
+   "custom_id": "xe5o-sentence-punctuation-04",
+   "topic": "sentence-punctuation",
+   "items": [
+    33298,
+    33299,
+    33300,
+    33301,
+    33302,
+    33303,
+    33304,
+    33305,
+    33306,
+    33307,
+    33308,
+    33309,
+    33310,
+    33311
+   ],
+   "types": [
+    "error_correction",
+    "multiple_choice"
+   ],
+   "why": {
+    "error_correction": 5,
+    "multiple_choice": 9
+   },
+   "max_tokens": 9900,
+   "approx_input_tokens": 7069
+  }
+ ]
+}

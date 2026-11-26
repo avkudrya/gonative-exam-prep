@@ -55,7 +55,7 @@ export async function startApp(t, apiUrl, env = {}) {
 export const json = (status, body, headers) => ({status, body, headers});
 export const problem = (status, code, extra = {}) => ({status, body: {error: {code, ...extra}}});
 
-export const TERMS = '2026-11-23';
+export const TERMS = '2026-11-26';
 export const profileFixture = (over = {}) => ({
   interface_locale: 'en', target_exam_key: null, target_result: null, exam_date: null, weekly_minutes: null,
   feedback_language: 'en', translation_language: null, age_confirmed: true, terms_accepted: true, terms_version: TERMS,

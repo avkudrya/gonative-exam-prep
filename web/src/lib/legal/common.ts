@@ -15,7 +15,8 @@ export const CNPD_COMPLAINTS = 'https://www.cnpd.pt/cidadaos/participacoes/';
  * Version of the Exams Terms and Privacy Policy. It must equal MultiAdmin `exam.terms_version`:
  * the welcome page accepts only this version, so a person always accepts the text they were shown.
  */
-export const TERMS_VERSION = '2026-11-23';
+// Must equal MultiAdmin config exam.terms_version. 2026-11-26: the AI check in «Fix it yourself» (P4.14).
+export const TERMS_VERSION = '2026-11-26';
 
 export type LegalSection = {
   id: string;

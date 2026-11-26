@@ -1,0 +1,3843 @@
+{
+ "format": "xe4-scope/1",
+ "rv1_bundle_sha256": "d3e711987cf0a1610dc207271983be0081185e3a206b11160b52e99033b92ea6",
+ "spec_updates": {
+  "modal-ability-permission": {
+   "before_version": 1,
+   "before_hash": "04f7364e91fc43f36a4f8517c2400c297a6c17612fef0de2e0918796099ac0c5",
+   "after_version": 2,
+   "after_hash": "11afb63b55eb02dfee79d5c55280f2d0f4f6cdd44b8a40a4f1b21f62755e1c06"
+  },
+  "modal-verbs": {
+   "before_version": 3,
+   "before_hash": "d4368837f9f308c4f8fdbdae4a570ccefa74d3c3a485adf007e7742a264f4cc6",
+   "after_version": 4,
+   "after_hash": "d81f35c1c88740b175933b02f581cffc31d8f7ac85294ff2b9329c3f79517247"
+  }
+ },
+ "counts": {
+  "ours_in_spec_topics": 549,
+  "retired_by_rv1": 10,
+  "respec": 539,
+  "edited": 3,
+  "by_topic": {
+   "modal-ability-permission": 13,
+   "modal-verbs": 526
+  },
+  "by_wave": {
+   "xe1": 0,
+   "xe2": 535,
+   "xe3": 4
+  }
+ },
+ "respec": [
+  {
+   "id": 5789,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "93af33691d9801a2d968a325926b931539ab098726b6dbfe59d79106d0ac06d3"
+  },
+  {
+   "id": 5792,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9f833105c6c4de34117f24903408c2bc4dc1ec2bc998a3dfe1f338490fd343a1"
+  },
+  {
+   "id": 5793,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "663c80f6a660209e588329af3dfe7028b314262d87debbfb814eb639cc6eba0c"
+  },
+  {
+   "id": 5794,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d8607065a9997650a439aa57ecc30f2eff069fd9e6130d3755d8eaa7746ee0e2"
+  },
+  {
+   "id": 5795,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c7927b6b0b7916486e0aecc117515836cce106ee2bd02ab9cde3e9d246a555f2"
+  },
+  {
+   "id": 5796,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d25405daeffb0e43300f834b48a77798902526803ba9ed54cbffed45e691d4f8"
+  },
+  {
+   "id": 5797,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "92aae8b4a5059b5b3b336d889432b39d470aff649b08c3dd0b1cde1a92529680"
+  },
+  {
+   "id": 5804,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4f82d267ff5e31cbf6efdf8b3ccf11bedb9a32451dd285ed4f9d408e83a12fbb"
+  },
+  {
+   "id": 5805,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1ae9c9626f854eec1665b9ebf9d85a0844130fd76ed2cdb8705320f4636cc107"
+  },
+  {
+   "id": 5809,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6c3e40924c3b912f3022aea33014e427d089aae980cd9bcc62a67d65348db531"
+  },
+  {
+   "id": 5811,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e42cfced69ba027d7cdb67c963d3acb31a0dcf40af363f130579f145d7c9bde6"
+  },
+  {
+   "id": 5812,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b312d99fb117081aeb99e2922363202ad97c6a404662b2d2a33c72221f561dc8"
+  },
+  {
+   "id": 5813,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d6c4e4944924f63aed2fa02e4fc17cfe183d52092e202da15e508ee663a0537a"
+  },
+  {
+   "id": 5814,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6d8035a00a21d24d6e635887f54440021783ba99dd9457d5c5f36f7dade7c2a8"
+  },
+  {
+   "id": 5815,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d998175324149c17505a3d16457d8209688e3432b3a7baa09be5fd6ee94dcd99"
+  },
+  {
+   "id": 5816,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d12e733484d608bd51ed6fc4a598d31b59cad703c28c7f13bd1a2e17a8c943d6"
+  },
+  {
+   "id": 5817,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4a86c725cf3be9344c8542a22438436eea874541587a2e62901fe5fd5bdb9435"
+  },
+  {
+   "id": 5818,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b8ac3fcd7ad93d458c8844c8015c0bab535553a818f0c74a2421b07f2225928a"
+  },
+  {
+   "id": 5819,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "00f774ff547b33d31b4fb9618e11027589d0b9a20a07fdb00ef74c47ed4ec91b"
+  },
+  {
+   "id": 5820,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "378be507803521dd35e05b3e206b74662c4eb144905988071f590437f4b26717"
+  },
+  {
+   "id": 5821,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a38630692fa5b6d068750768edee07ea9ca91263b7f9ca5b1c8fb8e8f46b8127"
+  },
+  {
+   "id": 5822,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c8ff0d6a888b4dadc84657da5559dd675aba21936725919cc7399030ce163061"
+  },
+  {
+   "id": 5825,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8290336273e9da28071616da58d1202b529c416eec61e1dfadc45efbd3e47530"
+  },
+  {
+   "id": 5830,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "85ff1db1c108715ecdccb59ad066160d14001231d9a998a6af6a95e3e36a421e"
+  },
+  {
+   "id": 5831,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3f583c20b9dfaa5858f20a7b25da632752bde5c0d0dcdf38b79776ffac05772a"
+  },
+  {
+   "id": 5844,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8b53c7abacc3f7aeef959c90223641ff295b2bcf12b3ba493d5bb1d28f78ac82"
+  },
+  {
+   "id": 5847,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "99ae4b0b83c129e1544397fbec85ca32f7830e553fc6915a50cd7bc75165056e"
+  },
+  {
+   "id": 5848,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "721222ebc7160a774265fe122519e1f7e4426466b09336739d093def5eda5fa7"
+  },
+  {
+   "id": 5853,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1d7b18b84eea0c7cd7a57c4bde01b6efbbcdcb0d1add2a32627ea6e3b27fbfd6"
+  },
+  {
+   "id": 5863,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ce6803c390bdec2bfe3fd29a245184208043466277ea075eb070f9bc05952de8"
+  },
+  {
+   "id": 5865,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b58d8f9ecaf7e742447fe1e68755439660ccd5cadddb35a63b34868a60e18ee3"
+  },
+  {
+   "id": 5869,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "327247bf2892d97a5f7bdd66e1251f9f3193245bcb8b9b56e9a0fedef2cdcefe"
+  },
+  {
+   "id": 5871,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d9e0e97f240e0a70d01a0b2453efa768e234aff3e766441768a901f1ae83ec19"
+  },
+  {
+   "id": 5874,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3f4758638730173b084e00ad707d91a4f9ccf95075b8b301e94c8c773acbaf8b"
+  },
+  {
+   "id": 5875,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2b784946dfc8bb8f9b8bbc9327a3ff1023f703ccd974d317f9e205d068cb2739"
+  },
+  {
+   "id": 5876,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a8149fb2a208a375865ee8185c56e8cc8af2e400c127dc3815956f46cbd940fe"
+  },
+  {
+   "id": 5877,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e73f3d3c803731b71403c4910f8e7eff3547096c1561ef2dac728b5e74a96c3a"
+  },
+  {
+   "id": 5878,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "975f088eabbb39ca871edb6ef95d90b001b3df22995a101aa076d783f3b90fc0"
+  },
+  {
+   "id": 5883,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b46fee9526e9e8cb36b802126aaac4cb0e074e97592b9457100208cb10665277"
+  },
+  {
+   "id": 5884,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f29f7ae513928bde0af915eb15b3aef91796ac21884b4241b0167f1bf7ddd105"
+  },
+  {
+   "id": 5886,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3bc1340ff21b07280c4c4db00ef75e0ce3ab21b3540bb475f9d3379d1981f236"
+  },
+  {
+   "id": 5888,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a8c0c5d05e22ec5bafc5e6e33fa83b070047618e690a753748c1f5f420a05ec5"
+  },
+  {
+   "id": 5891,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5a09ea717788daec5de8019e306622b98c5d8ef5f9b5530cc910cdfcf93a27fb"
+  },
+  {
+   "id": 5892,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "085ffdf0eeddcda35f78af2067a5b06ceee481174ae76e3f381f8dc174ae8faa"
+  },
+  {
+   "id": 5893,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2e77874ccb20e0b93f28bcac3f207fb7b625b0493e569a09b5bbbc3f44787abe"
+  },
+  {
+   "id": 5894,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d4a19b008f6807fc71b322996ff77339cfb658e2d4b410be74a65c120802a0f7"
+  },
+  {
+   "id": 5895,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9178d0beee9fca9d6eeda011e00f5122ff72ebd7cf5f57ef750341c3581da07d"
+  },
+  {
+   "id": 5896,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "43a3c00b8433a60eb168cff86c283c82b94983f44e607baafb3b46b9bec03bf3"
+  },
+  {
+   "id": 5899,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "47ce8beb81175754d180cd7fcb2b555d295aa9bf3a66daeb6b16cfe554117068"
+  },
+  {
+   "id": 5902,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ae4aee35fa9c7f622af1bbb8a8d13463c77292eb7c6e08496988674f5eca4cb8"
+  },
+  {
+   "id": 5903,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5a0c396de6cf9c5a91ec8563740b3f82f7a55e9304d26f2434741ebb05f3215b"
+  },
+  {
+   "id": 5904,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "471633c8d05bbed99cd8d156c586e958f10ca3520cd809cabe74d9cddfbede6f"
+  },
+  {
+   "id": 6898,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "02aeea2f355cdc058f6d0723b431d4851aeeb05f1d2718a8afa2cf83ff94d56f"
+  },
+  {
+   "id": 6899,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "02b7ca9b1beba2ca7931f93c5005f253c703e0899a86d05f248ca5c208394c34"
+  },
+  {
+   "id": 6907,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "057a6fe1a35dce52f776d35bc5cf36eef7cebde39dce928829e912bc570c279c"
+  },
+  {
+   "id": 6916,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "083b9ccc03e9d1f70e71593208476ded4dd347ce7853ddb1cb8f40009d500014"
+  },
+  {
+   "id": 6920,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "089f380b0fd170a474baefcc155cfdf27f706c22a7e21596afc64ffb115d9ad6"
+  },
+  {
+   "id": 6926,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0aeb7d5800ec7524c9476bd374327c5e7a4a945d0958984d3503bfc43a3a2047"
+  },
+  {
+   "id": 6928,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c73addb6a47a0717366692548f223af66038eb0be9a084b11c0eb8ccbff7d6a3"
+  },
+  {
+   "id": 6930,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0c8333d9ccee3b28dd991c8c34bead18b0bcd310d56d41ac0c6b0b446245d1eb"
+  },
+  {
+   "id": 6941,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1332aa7ca62db0e8e44ca692c9697799237446d6668bfbaa0d9c2f6fff4d69e6"
+  },
+  {
+   "id": 6942,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1371fd4865a87f23fa2d07a57f4849e3fc537b1c01135a0cfba03aad68aa010f"
+  },
+  {
+   "id": 6944,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "14c960a36bfe7620a08d7e810e867b875687578d27e51d54e5aa6a296ade6943"
+  },
+  {
+   "id": 6957,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "19a366d0f4e97aae1d1d7270bfb590895c85d73c02f2232258975620283a0521"
+  },
+  {
+   "id": 6977,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "23a175db677cba38c4bdd6e319ecfbd1d222f83f187f514485592a595f215222"
+  },
+  {
+   "id": 6982,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "271089b4f63df6a06439c5417c077b33e1a42bbd630e0d27ce546ae545cfdcc6"
+  },
+  {
+   "id": 6987,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "28cd8b46bfeffa9adf81f34c6eacab1ad313fb145e75834f561ca9425553a96f"
+  },
+  {
+   "id": 6995,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "86ecf3a59e07937790d0b6b593a9bc7e8da1c555ae0d1cc330c5988cf93481ea"
+  },
+  {
+   "id": 6998,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2f2ecdae5f23afd8b8950e21368b82dcc18fca5bfce6faf60761fa415fc78adc"
+  },
+  {
+   "id": 7000,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2fc773dbfe6c0db5f5e03f72cf29e406fca0b6c24a76cc3d4d314e5bb6f7dbca"
+  },
+  {
+   "id": 7003,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3096c90e6e2afb8799cc414345f1d23799cee60369c0fcd17775a6e4a3fb055a"
+  },
+  {
+   "id": 7006,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "31cee68680ada875a41f69563412800b12917753586a276ad1fed497558263e3"
+  },
+  {
+   "id": 7007,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "31f2c744672fa6121a962b3b6011f36927a556b5eb0a581282995899710c49cb"
+  },
+  {
+   "id": 7009,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "324048f3835d8740c8941eff730c47f3446a38e90d55612b47483ae63568a386"
+  },
+  {
+   "id": 7017,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "36e62345937a09d88b0d52d3bee1cadf7e115a0964b20c654f9dea9a4cdb5719"
+  },
+  {
+   "id": 7024,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3a77756fc5ba4d74dbc95355738b8a343e780ecfbc00303317d44636fca1f506"
+  },
+  {
+   "id": 7026,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3b79acd9e9c1552b2f58d111b86c37ec61a42633fbac872c33359177f413cdb9"
+  },
+  {
+   "id": 7031,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3fea8f3039700e1f521efc1dedc8e66c8864df1f1ca62d3726734be49dcfcca1"
+  },
+  {
+   "id": 7039,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "448225b76b23c67f9d59d89bf901a61ce18b965aa7fec3db5e5c6e7428ed5dd3"
+  },
+  {
+   "id": 7040,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "44fca382d309324d9c101795f6ceeb6620995a9e34c5ab8b0badc38a4b2bef01"
+  },
+  {
+   "id": 7052,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4ab21b667747325c2a4e741ae8d07ee83d915aa139586bff9a704b9afa284568"
+  },
+  {
+   "id": 7054,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4bb56ca94210d0ac3b59222e3edac3935fc45841e8adac1ec1f19a40bbd301ac"
+  },
+  {
+   "id": 7059,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4db487598618446017c4fde6077868e8e4beb720b34be70a9edf93304a749b3d"
+  },
+  {
+   "id": 7067,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4f2977c46368b2591b19861d54b8a8f430efe73d50c9472fd9c59680f77eb800"
+  },
+  {
+   "id": 7070,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "50279774375f036f30400a5ab4363f9d6e467b783b88dea89c13761b6ae2dd61"
+  },
+  {
+   "id": 7078,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "53fcd1adbc1a5c7e34c6fc059a277c4220266b3412ccb5a00c00f10397e15906"
+  },
+  {
+   "id": 7108,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "61037eb8ea71e8669d7a414defb150f8c12bb10f5468d8e5892194ae421811b3"
+  },
+  {
+   "id": 7116,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6371364aa22a654ef9ccc4658c95653e7698098c047e14c34999c3f89c82cabf"
+  },
+  {
+   "id": 7122,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "65da2b64de4174a680d85cd83c9296281ea40c9725ac975a84435320be3de438"
+  },
+  {
+   "id": 7124,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "664f30667d35ae90e7e3cb8fef7d01f5cecd00ef07c5ff9107f54da5023a1ea2"
+  },
+  {
+   "id": 7125,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "66c6453453ca9850d7220c754c24d16560700790eee453cd38bce1d7dc39749d"
+  },
+  {
+   "id": 7127,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "67197c5b2c5fd5f8c1ae7667da2bb506b2373afb6ae07c51b789dc67a403b5df"
+  },
+  {
+   "id": 7140,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6a2f1fed6c927932d868e07f4d209555654ad1138104f96328ab5c1cc2659259"
+  },
+  {
+   "id": 7144,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6ba365cacd23cb41689a256e2e8335f7406eaea5a334b37fb442de68adf9e6d5"
+  },
+  {
+   "id": 7179,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "796e7497859e6df7848cb85d0350df0196d4f43ab356c4a82dd6584d1bc883db"
+  },
+  {
+   "id": 7183,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6c70988476d7e4b9a136dbcd2dff4f540b877b6fa1ad9a384eb166adf6b5c5bc"
+  },
+  {
+   "id": 7194,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "83ed391e1138c66aafc82a421fa20085d5cb98fa420fc386d6ebdfcdc44caf3d"
+  },
+  {
+   "id": 7201,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "86761e53c0cf0394c2bc460aa7a9d832f3270b898876bfcc6a9df74876ac737a"
+  },
+  {
+   "id": 7202,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "86b03383d009bc947f1aedb75254ce5401a4bf103af07decf8f0c8c186feaeb5"
+  },
+  {
+   "id": 7211,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "89c09183c503d4d82d99b560d6aba1a3c3dd425e362337039d0bb6379a4c74c2"
+  },
+  {
+   "id": 7212,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "89f34d8a55a328712c7838e1a53a0f65df02e9941449a9b3ecd4e56577694431"
+  },
+  {
+   "id": 7217,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8c9148d7c56541b0db6bff0504ef14564a80794be0504c7c344f2fdaf4b8531b"
+  },
+  {
+   "id": 7226,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "907026df09d3475b7bcaa3959013cb97d68147a539ace50d843a8d858c96cf43"
+  },
+  {
+   "id": 7227,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9162d58df77ddacc7125f9e5c403b283526072a322a6a5c18fd9e64b68c207d4"
+  },
+  {
+   "id": 7231,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "938d48f7e7fe579e7ef8ef5f7564dc9afdbfb7fecad020a6b33724c8e77260cd"
+  },
+  {
+   "id": 7236,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "957fad6ed3708fc079b24c88c18ba816f75168771842a95c00260dc0b904de12"
+  },
+  {
+   "id": 7245,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "986dae044dd2120107797c8fe2bf0f70225bba42b9f13cd5e84a4c82691b686e"
+  },
+  {
+   "id": 7246,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "99746f7b0abadd47df9efae74c22222e249df5b388b2505fad408f3705b42a47"
+  },
+  {
+   "id": 7252,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9b58882be830d8dabe56b14d32ef3faa8365899a1f09606115e8d69ec743ee25"
+  },
+  {
+   "id": 7253,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9b779acf045c96e4eac0021a0ef4de39bac779759f84f55f400996d905e4ba51"
+  },
+  {
+   "id": 7254,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9b7b99bb9465cd2884613dc6544e15419120bd0006f79b7db279102b618fc95d"
+  },
+  {
+   "id": 7257,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9d9e9b1deb91b2470dc0d58f7e614e84d7b92200b04d6defff6a908deb7f3ebf"
+  },
+  {
+   "id": 7260,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "673543a68e34b148eb41f7f4ce97f8554fc1044e8b16021e3e184ceda4f66b4d"
+  },
+  {
+   "id": 7263,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a06ee5ed0fbf5b882d9683cc2db224647f579b778315c7789efbf11aa2814fb9"
+  },
+  {
+   "id": 7272,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a4e1a2ad80d55b6f0ef58feef92046d81a609c676b68a373ac3a3065e5f2f322"
+  },
+  {
+   "id": 7276,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a5ffdb02fdbd999adaac811e3d61df53935736a981a84795cda1c99b51e501de"
+  },
+  {
+   "id": 7288,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "aac13fe513884adbd2dbf21cee4194494a2021d791257129e2a299e8dd8f3368"
+  },
+  {
+   "id": 7294,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ac03e1257247f31d0e0d116c6cb7f571b22dd110b883fa4808daeddf0dcd0feb"
+  },
+  {
+   "id": 7295,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ac8881dd5d88d6ff5ef5a67ce2976493abb1fbad069ad8b65b5d52485354e15c"
+  },
+  {
+   "id": 7296,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ac9c899a46520fef963ff0b84d99691daeb50af3c54573651c211cf0c2554462"
+  },
+  {
+   "id": 7297,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "aca4fd5d17531df18bd9acbbf1bafd10dc4db6d659687d19b705bd00e2656fee"
+  },
+  {
+   "id": 7308,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b061224b032172e395c99054b5a0593d90f383c90f22ba82d02e57f14ff59684"
+  },
+  {
+   "id": 7313,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b132ce14c4291b1b8ac953c5c4b9ac50b6b807258022d866ce9b95cfc2c86e47"
+  },
+  {
+   "id": 7317,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b2b632947c398fa7e1741a23c7ad05f157734f30f08d37ed2cf53c799539f75e"
+  },
+  {
+   "id": 7322,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b59828649788158271aca02e6051f528a49d6994c6dc41c1f122d9170b542dc4"
+  },
+  {
+   "id": 7327,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b81ccc091decf7aa4f89628db79b98e8dc38f47b0cf9cc7109da94ee0ac8af76"
+  },
+  {
+   "id": 7329,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b84959c8f46ae03f7315170805657ca10a1f60365a615336e0eadff7513ed506"
+  },
+  {
+   "id": 7330,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b8c45fae4eaa2c7f14f2a4d2d135816a10eb01007d206655fc259ab34e4c2cec"
+  },
+  {
+   "id": 7339,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bf6cad7301c032cba76d40c2412941ff4cfc65f9993a2531468bfda559682952"
+  },
+  {
+   "id": 7349,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c499223c102711d635425e934d5b803ce2cdd173d152be2bb193d006ac5fab5c"
+  },
+  {
+   "id": 7354,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c8cce3e607a5c9d96dc6e18e0a89c99f66eaedc90828ae3ad6055556df85b5ff"
+  },
+  {
+   "id": 7356,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c98d38d405973bfdc267645f645bf2af0300c20f6f119b174cff28d6dfa27e92"
+  },
+  {
+   "id": 7367,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "cddcfb650eeae54089c834c061a48a654cbff9bf1218c5754fee82b6cb8bec68"
+  },
+  {
+   "id": 7373,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d07c3f09327eea5be13399604c34b96c4220723b3f2eedf13ae098281a4c8a02"
+  },
+  {
+   "id": 7375,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d0fc28ba54898167bb18c569abd79e4b98affcda98485d90a79f8d919153cfad"
+  },
+  {
+   "id": 7380,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d28305c6a4eb8f6706e56f4f760f5328ba10345e5f636872235b8e0bf8897c09"
+  },
+  {
+   "id": 7394,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d8dcddbb2bbff2e4de3c285223b4a9a4ab6529f4ff63cbf7db4a60c1a6928d8e"
+  },
+  {
+   "id": 7396,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d999e5fbbb0c93a74755b84c448cb9c8ea13e77c2ce4b3c471d4e2e33064da64"
+  },
+  {
+   "id": 7411,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d6d7895501d3ff3c92fd3cefca9676c69c6a6e62e229c4e385f5da23cc1a0ea8"
+  },
+  {
+   "id": 7418,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e1f280ecad3222011c248534bf80f49173189f4ece227bad870ad48358e71556"
+  },
+  {
+   "id": 7433,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e5ceb1c1df885afdf50fcf4c0b3cb4e373bb3933efaa9f6520823a519b5a2d69"
+  },
+  {
+   "id": 7437,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e678d9f5ed3c608c06e4c7352f6e9a788c12728ac16bd5cc951feb45f00ca977"
+  },
+  {
+   "id": 7439,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e7f2c6563bee05f28e8a44a4c66b43beb56e0f6e9987fc71b21236ff62bd9232"
+  },
+  {
+   "id": 7444,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e9d51d105b68a6296f4221dfb96949d9fe8fef63dc8880c42d1040ec918ce3fe"
+  },
+  {
+   "id": 7446,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "eb879b5afe1ade5cee0a0e868195b23572fc15b0fee2d1ea817341408def0e2c"
+  },
+  {
+   "id": 7458,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c06f0c666ec8ff17d461dbf56806f96ae2d59d8e7ba41e932fde6f10730e5608"
+  },
+  {
+   "id": 7460,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f2b72d211f6ba7b67ecd466ae3a0d2d8d2f0343331c8bb77b0e70cdce96ddded"
+  },
+  {
+   "id": 7464,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f4c01f2ec471e08815253b81e3b7a7459a862b79ec582c1fcec4c8b8ef0ce2d3"
+  },
+  {
+   "id": 7466,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f5dfb49acf2e07fa123dc72063e00469a45b3d23250d11cf8701657492991bb9"
+  },
+  {
+   "id": 7468,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f66b5ebc13c47969de1bae4966d656735eb25531b698d4e38d3ed7049f327f31"
+  },
+  {
+   "id": 7475,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fa997b526d43a26bdedd7c8de291c52618fe30d83c4523ffab73391c8bc8452c"
+  },
+  {
+   "id": 7478,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fb7a123f2ecbe99e879e07e2f5f9ae6a2b5d3a1acb2455fec98ecc72f0ae7647"
+  },
+  {
+   "id": 7479,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fc705343d7555866a9af227f6820a66a53b272bf0d9c4c558457dbe749eec59c"
+  },
+  {
+   "id": 7481,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fda2e6acb57b5e46f19ca119532d63a625a2cc5710dd4eb4906cf4f6d7ef22ed"
+  },
+  {
+   "id": 7490,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0699212bbbefc917e3091dad5c667ac31119bc7d095e8028ff94812dbd5d5759"
+  },
+  {
+   "id": 7493,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "08d45692e92a0d42c1e298007c31ae5c68958c02b06f40f11142568a049860e3"
+  },
+  {
+   "id": 7504,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "136c4236eb558b3d33587a8c2cefb64a5b92885817b13c9f07d57b33c097a2e2"
+  },
+  {
+   "id": 7508,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "19e3ecddf05af34c57561fde2474e956d9ae4b391473508efd4ffe1b5791eca6"
+  },
+  {
+   "id": 7521,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2e2c9d3549e4fa7fb6057472275a2081c35ad71b7b4c4cb21a6f501f5d4f09d5"
+  },
+  {
+   "id": 7532,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3c1aeab7c3a4a61fb6fc3087eead84e440272762753058791e7ab7a315157005"
+  },
+  {
+   "id": 7535,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "42fec12a0fbf3cccc8ea57b1e3eafa180bcce17f8bd990eabfe324cfba4265cf"
+  },
+  {
+   "id": 7541,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4b96790a0ecad958156fe7eb1af7ca8205ecb00dcb1ae8c50419d4a57b6fa9f1"
+  },
+  {
+   "id": 7545,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "515fdebea28972bbea7550e96d9d121ff885a7a6410599e92f11c3ec06652407"
+  },
+  {
+   "id": 7552,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5e245c942d81b9195ec6444b7a5067fa833d686535c1d1a47379dd40e296cb1a"
+  },
+  {
+   "id": 7564,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "71a29c8c9b2f676d69a17f3999634d6f4724f79f1e52a6a74ec9a8a4695671b7"
+  },
+  {
+   "id": 7568,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "77f0e28a3fd18c18a3237dbf92fd4b268d1ce062e2b31fc79880da11e1bf2b52"
+  },
+  {
+   "id": 7575,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7f81264059c55d820ed80d3c35449cd1814d308e5e15c70c9b08a6b25e211eca"
+  },
+  {
+   "id": 7578,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "81e9e061da6aabd2e6732637ddc8ad724033df780e94867b5cf6b3dcd500bba1"
+  },
+  {
+   "id": 7580,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "88cd564b0f6ba2a39e32506b77616e3fbb647e3254d2b349b2230271458a618a"
+  },
+  {
+   "id": 7581,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8b490ff28020a6ccca2c8feb091083f1579720abcf0d8c366a6cb40f554f7363"
+  },
+  {
+   "id": 7583,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8d2acad40be6a361e0c5c67a95310c88002074b3e735b459e0ee30bd606c4142"
+  },
+  {
+   "id": 7598,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b02df9106af74b34cd9cbb1d636b5df96b88e784f7e80d038b24a29178a84699"
+  },
+  {
+   "id": 7605,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c3e87a92cc632a5a9c7b0db713094964445b48faed4154f4c97bf45f2dfb4b27"
+  },
+  {
+   "id": 7625,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ea4e5cefb055f95fb07c8f28c09b39c5425a0c09ef982ea74a5bf60f49b64298"
+  },
+  {
+   "id": 7626,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ec3456e37e86b46d6151a2d2cc5a96dd31e494fc4df0b2eeaf0827491c62269c"
+  },
+  {
+   "id": 7652,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "04b2b687637fe064cbe658c260026763217aeb8865d983bf09559c382f8bb9b0"
+  },
+  {
+   "id": 7665,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "082a44e13d6ec738141daa3f70b647b0eb4e574770dacf2cc5caf97d06da593f"
+  },
+  {
+   "id": 7667,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "090bdfd6a305c1fcf07382c7ccf11c23b41d975b9d07cae928b3019e363afcf5"
+  },
+  {
+   "id": 7668,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "09c31e321511b49fb32a94589c429b70482aae4d5ed2826775e5df270572234e"
+  },
+  {
+   "id": 7676,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0b8686c3701ce9df42eef45ea3babeb09980d02d6d168532c264a2ff6ff5e128"
+  },
+  {
+   "id": 7679,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0c016972c2f419bd560b8b0f837c134781ccdcd7b69f3e12d41ba1e4ee9e7802"
+  },
+  {
+   "id": 7691,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0f1c2cb1c194e798b917abe446c0e2f5bdc3062ca1b5e3386d3fa42320be2a89"
+  },
+  {
+   "id": 7703,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "11862e1347fc28b8226ef3d8305f18cfd41fb1ca6f90b4b17a9000676f6dbb15"
+  },
+  {
+   "id": 7707,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1333c4c920f5706334ad530982b24d29e45742b215d6403b043841f3aaa4d337"
+  },
+  {
+   "id": 7708,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1399beeaef2f7aaa343993b348b8418682e2da28adc9edabe836521b32d395e8"
+  },
+  {
+   "id": 7714,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1549629383ec3592199f95e5507d62dfdb7292a07c28b8c44f5c5137e677ea78"
+  },
+  {
+   "id": 7717,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "662031380f1bf1098853018c6c2d601333e279c60ffdfb4f3bb474a0ea95fd84"
+  },
+  {
+   "id": 7731,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1b06924ec219b769837d4892d71d9e2f9ade19317f76dec35b845dee3ce134dc"
+  },
+  {
+   "id": 7737,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1d4abb0e193b747ce96ae69b805ca01b6a21d62985b16155f45d22bb543a2d9c"
+  },
+  {
+   "id": 7743,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1f2589fc095edd9553180f5e3b3a3f655ece9910361d18a4b8fb5441c5afef5f"
+  },
+  {
+   "id": 7758,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "231ecfa0330ec7471eeac638d114aa2e493e5c7244be29af4fd0d4e2b417901d"
+  },
+  {
+   "id": 7783,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "299689afc376a52b642a63295ec17a7d82b9151d56c6fff1b9027594c53200d3"
+  },
+  {
+   "id": 7796,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2d774a0863921e78c97fc69331d5517b1c189aa8b27f66598c23191367a6bf98"
+  },
+  {
+   "id": 7811,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "322973d7659ba5380a73d6099698712962c5560303060cc043777b9236d05c91"
+  },
+  {
+   "id": 7822,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3437f0ea40c8302962ce635189e542e66385ad6b0ec88f71ccdae572a50ce732"
+  },
+  {
+   "id": 7824,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "35b4232f996fe21007fb52a9a4f7f12133bb33df6a367c5919894ee37cbee9c3"
+  },
+  {
+   "id": 7825,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "35fe9068fc93c051662f9498748823b386309b915f2fbb6449a4862e4d2cee0b"
+  },
+  {
+   "id": 7836,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "39804d277cb83011103d0a7aea5993dd23438d5002c46d59782fe3bb8a10648e"
+  },
+  {
+   "id": 7842,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3b5c06a69c4cc5bbd30cd0c92b78b3ab19e322a468646352e2668f0581220a21"
+  },
+  {
+   "id": 7851,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3e56d0b2ddf395f1b486c0e51dd87b8ed1bce6d83802d6acdc120ec1760e0f1d"
+  },
+  {
+   "id": 7857,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4060debed9c1cbde059075f4709d08bfe1efa13258db26ba0cf803c591575199"
+  },
+  {
+   "id": 7864,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "43806e15b23953899ef0c800301e9f4105b10ce86ab1d361e03e3b97fbfaeb99"
+  },
+  {
+   "id": 7912,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4f428e99b09235b7d3c5073d81a28b0498ab7cfa94be4079f5d64e3e09631fa3"
+  },
+  {
+   "id": 7920,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "515b59b2b60b6b5bfdad00967b977b9e84a49d1c15b6ddfa78bf338be86b4b3e"
+  },
+  {
+   "id": 7923,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "523bb46ee64d74d534686e59800d5ceee7ea4405c4e7889dfdda1e9749254392"
+  },
+  {
+   "id": 7924,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "527b567ea479f6c61de110cb836782f8b4b4e1fa4fd244b02303f2a305d89699"
+  },
+  {
+   "id": 7925,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "529b570d229dde679300e124cf23840f083979151b7c72e698af7dafa60e5e2d"
+  },
+  {
+   "id": 7934,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "53ef5af34b1e47d6f38dec6d1f89bc2e241a2da3d59f93dbd0e175d517c8554b"
+  },
+  {
+   "id": 7938,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "55637e8546b9d0aa92cb87bff206cb642d3532c5d2c56aa3ef9df3e3ba71329e"
+  },
+  {
+   "id": 7947,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "56d89ccad6cb2342af12837019ad1fd7ec372f6bb4ec29e066586530f2775591"
+  },
+  {
+   "id": 7951,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "57b5c76e6794c66183f0ddaa2dbdeb2add848e8d7c3d8bca67a4b51e7c0f11d3"
+  },
+  {
+   "id": 7952,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "58581698ac7b95f868a69d4713e39640a7f8ffe61b03da5b53de732acc943acb"
+  },
+  {
+   "id": 7960,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5ac7e19daa72e8bad4ff577b3882da7254719939d47a90b8a38c02ed5d4d832c"
+  },
+  {
+   "id": 7976,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5d84c3dc95405555ac892293916b6b2a0b5f3bceaf265e47a98497e208e99fc2"
+  },
+  {
+   "id": 7986,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6131b848fbb424884836f013d2298fa3adc59a8c4978aef48a7add3ecae586a5"
+  },
+  {
+   "id": 7993,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "635e0f2aa735313db9ef77f06a61fe155cc97df2e650b70840cc4a0a105e7c2a"
+  },
+  {
+   "id": 7994,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "63624d6bd82ca00aec12319fc8f25c8e41442524b284d110704cc4e7c6ae33df"
+  },
+  {
+   "id": 8003,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "65a234e86894c021e3a9709b657f3d42132cfadcd4cf301f40c35cf6f0add951"
+  },
+  {
+   "id": 8007,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "66685b0df3b088f300ce083847e820bf8b8c68bf490577d957886076d7d2ec9a"
+  },
+  {
+   "id": 8028,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6bd8f836f605974255d4d135c599dd6dd3ee1ce1fec00c8aef1cbcdc0c8be9ef"
+  },
+  {
+   "id": 8036,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6d8149742c8e0e3dfe397cd0de3d6b87c8c6b290f782e6302b1dad10cd107962"
+  },
+  {
+   "id": 8065,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7600086c6e8940cad5c7f0cd5530f74a82fca8ada92d1ae6cf7e64fa54494882"
+  },
+  {
+   "id": 8079,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "79ce69a12ebb3c8a024b02c9dbc47531f8829fec0df0e5f619ce314563ff193d"
+  },
+  {
+   "id": 8093,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7ea12930c27f9a35a763dcb043bf83edb48208fa7d1bd47577ea37635ff33e26"
+  },
+  {
+   "id": 8094,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7ebd1f346dec882e319355d8380e0ff38b87e751149a66111492c1f1ebd1ae35"
+  },
+  {
+   "id": 8102,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "80bcf380c1e8bf66b5dc3d51b999203cf9efce0ca785d9d5746b46a909d12083"
+  },
+  {
+   "id": 8104,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "81c06170c57f59a3b64b6df968978e66d9072cf4c7d541c66ed3d017ae561843"
+  },
+  {
+   "id": 8107,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "82865e64faac74aafb87c5537e5d1bdb07c38956ccb2d4241d046fd0b8474ab6"
+  },
+  {
+   "id": 8113,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "849ba1c3116a64117fc5e56f4217a803b8f69e968c22a12b012944d3b978185d"
+  },
+  {
+   "id": 8114,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "84e33789ca3792de2cc6ece0237494123ae6303d929fbe10a27271fdd9da8c3f"
+  },
+  {
+   "id": 8142,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8b97898a4451bf5067609e0d3ed2176e17e338f0bcd322b2e90dffc8e7c66e08"
+  },
+  {
+   "id": 8158,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "91208c6e3583f8822c863373f0f119fdfa6f2e460274b51b0f8403ec2d0a0806"
+  },
+  {
+   "id": 8163,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "934b6d13654cdcb977e2f9ce75c07c38cd943dd8006ceddb5761ade8fef961d5"
+  },
+  {
+   "id": 8175,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "962438c73115f10c0465f94af8ea5335575d9aed1fecb2a235b46f874538b3c4"
+  },
+  {
+   "id": 8182,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "99272b713e849121929876137050c16e397cb4a0905eefd2b05d0a07684e13a2"
+  },
+  {
+   "id": 8186,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9a68a1480ad0a239fe28b777b639f74999164747b3e991ec35f3ae7243b21825"
+  },
+  {
+   "id": 8188,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9b96a1f7ab1d2f8496449227791ac93d2aadb4d799a25aa0c627288c8a737c7e"
+  },
+  {
+   "id": 8216,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a3bbcae3c63cb21ab63faf372fa33873bdf42a597f3f9bad90bf8d2f4f15cbdf"
+  },
+  {
+   "id": 8219,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a3ea65fe3295907ddbc0f2d2f020866aefd5118dcbbb523b779fd9686faa9b9f"
+  },
+  {
+   "id": 8228,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a5165213a54c24bfda619749ced221a3dd291db11c7b72a59f5e88179c436de1"
+  },
+  {
+   "id": 8229,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a54b5a1eabc2957113c43c16db4df9822f322e4a3dd353a487ec6f610b34af5f"
+  },
+  {
+   "id": 8239,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a74bba9e2f1f4dd66f2c976ce0884479cc8ca866fafd0b61cb1da2c9a1930c58"
+  },
+  {
+   "id": 8244,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a9085faef1564768792dfd24d27e56cb8e5faff24be698f58bbd68c55f8a7ce0"
+  },
+  {
+   "id": 8250,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "aa6b57d651961dca1f1c129df40562e8e807be853eef23d688e17d2ea395a1ea"
+  },
+  {
+   "id": 8257,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ab32355162ffa5e104680836052419bf1ebbe14d253564a92324f6331569ab2f"
+  },
+  {
+   "id": 8259,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ab3be9d93bcaaf0bc5adfe0d88147245e5bd7e7d83c5de479ac3e372436bd6e7"
+  },
+  {
+   "id": 8261,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "aba085ac798bca650a4cd9f0f6b9e826d9e53042917fcc5b3d04f0a8c1afacbf"
+  },
+  {
+   "id": 8274,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "add3f0eadfa6f3a5fd3c66d34a656ace730bf564f4047bb50d23a4661f1056cb"
+  },
+  {
+   "id": 8288,
+   "wave": "xe3",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9731cfb3252067d34cd63187a74ca4bbbef6603bd5e73da060820f19c44217c2"
+  },
+  {
+   "id": 8308,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b5e4cdb52f6598d2855bb4733c38677a72c94c74c2f56164ba6f5e5228f1dd84"
+  },
+  {
+   "id": 8316,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b96bbee05207281772785198412c0329ea2162a6c084edb07b51ca9bc089002e"
+  },
+  {
+   "id": 8319,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b9b4cc52c87e5c539d3942b8fde679d1257150448135d403db04115e4cf6c3c2"
+  },
+  {
+   "id": 8331,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bd4c9ad137ac6cb499c228c0d2c04d27828c93d00bbd10406a36ac3d59ad4c17"
+  },
+  {
+   "id": 8335,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "be188b8f8b4cbb22260aa93dfbc02e9dffad24bb74d7cb598225bb1f72a7ba2c"
+  },
+  {
+   "id": 8343,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c257e4991969b8c3095b4423c31882cbcfc95465c9d0d385e7fc8de4f6c902b7"
+  },
+  {
+   "id": 8360,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c75600be6cec3634935a4fc790446f9e0d028080942cfee55cab3e94b068278c"
+  },
+  {
+   "id": 8361,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c7604c1911eb91212b3ab6a52873b3babafb4b3629297ab1b7183ce8989309a5"
+  },
+  {
+   "id": 8378,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "cce6d3473e86e298521f6d0a0c780bcfd95983dbb8ed41ec314d42a781668d07"
+  },
+  {
+   "id": 8382,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "cda3eb4cc1fcde40907e3a93594abf7cb950b442c4dedff8082cc830ca503e91"
+  },
+  {
+   "id": 8400,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d39d5a005e2dee1b95399d704c6dbbaae68b06c5ece07dfa1b9274bcb0846915"
+  },
+  {
+   "id": 8401,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d3a13de696f78e94a8d7432ea509f431bc789a30d9c810e366294d09e11483a0"
+  },
+  {
+   "id": 8423,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d9f5ed39ae546590e61febbc2f6e689be1f7ea77faa90078970fa079c3ffb209"
+  },
+  {
+   "id": 8427,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "dab73c94673f0a98eeb40bc1a1cfaebb6b272dd28aa44daff3c3abbc856399de"
+  },
+  {
+   "id": 8446,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "df85032ab14b040abd3e948b5de742efd2eaa3aafe5f1fa0f0764dab3257a573"
+  },
+  {
+   "id": 8449,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "dfeaf0500521bbc2ff440feb1e49abd3cef00565fa18c1aeda7c2a64d2b5e2ca"
+  },
+  {
+   "id": 8464,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e4ebbf2a3131ce89bda195e169d0603ba093ca3510b5065a863dd61ee0d9b632"
+  },
+  {
+   "id": 8466,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e5ad98e6504f77addc5c069a93f39ebc96bf17e0f08b1e2e065ce22dbac4d490"
+  },
+  {
+   "id": 8468,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e5c3cbfa71f19ee5d275e6973df6d48b9308b47e4cc14b46ac11aa9c0b943e8b"
+  },
+  {
+   "id": 8469,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e5fd5cbfedf5e914a143173e6fcad7dfb0464eb23f20643764a47445f013b209"
+  },
+  {
+   "id": 8483,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e9eace5321b0c11270955168ae204005ac13184d4537771a25971c9060f4e7ad"
+  },
+  {
+   "id": 8488,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "eacfbdb743a2b2ca2703773a549f1ceb75943b9b3fa9040b90cd393606ee66af"
+  },
+  {
+   "id": 8492,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ec43322dc8c1992215c560cfe6f73933b1c59613415c5dcfa18c37059d8068a6"
+  },
+  {
+   "id": 8495,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ed7b17acbe218efcfa14ad2d3b9890c02db9e1f673f716f510d7d9698c86ff19"
+  },
+  {
+   "id": 8532,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fac144be9dfc34789d14180c2b0c310c56a7d64a73d7e96ab73065d1b2c2c3f3"
+  },
+  {
+   "id": 8533,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "faf6c9432e29c26ef4bed1a9c94bf7c8f6f596a9295261b53aa7717477f6087d"
+  },
+  {
+   "id": 8538,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fc7f0fa7370227bf7b0f28d8ab56b6eed4fe921e558ef9389366a94aaa06c34d"
+  },
+  {
+   "id": 8543,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fe03297dc4cec0bd93b70c076cc929df95945391c3aa0607e4125868756158d3"
+  },
+  {
+   "id": 8560,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "031ca39337709115dd1825094e592d6509895ad9f89c84fa16565311fd7b78b7"
+  },
+  {
+   "id": 8620,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1ebbb11561a13291ed15cf8503bb20dbaf791eb9a066dbfbbda3130e8688c4a6"
+  },
+  {
+   "id": 8622,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1f762239bd9c13648aebd5ab8db572997370db4841f97ff284f813d486703458"
+  },
+  {
+   "id": 8634,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "24c8d9566e8e7ff2803e794c010d5db289fea57fefb1c2691604cf9eddb98f40"
+  },
+  {
+   "id": 8642,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "29275ed6ab500f5ae1674ff1d232b631d10f96aec8be08868308d9ca309a728b"
+  },
+  {
+   "id": 8680,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "38280f17203030d32901384415bfd7f779adc400679118cb45a40d80ceb998e7"
+  },
+  {
+   "id": 8681,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "384be2758d71fece206397d0b013ef59e3ba81be98cdd1fe4aad44fbf7dda64f"
+  },
+  {
+   "id": 8697,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3f2a83ea8563d01d34d4ca877be6cd864a2722b997dc97d62bfa7462445abb53"
+  },
+  {
+   "id": 8707,
+   "wave": "xe3",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e7a4d4bd9cad3be886f688bda415d9224d8e74a2c21ea6df598bbbe590ea229a"
+  },
+  {
+   "id": 8711,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "46d3fa8699f9e6491cdd3e0b1151a5dbac8a8de74ba04c34d64b488ae97b654f"
+  },
+  {
+   "id": 8712,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "46fd571c8e55468594a6d397ff208327e4465eace1153b95e98ff75ab36e9db1"
+  },
+  {
+   "id": 8771,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6739ecf77dfa5eaca55d2f51e234d3e2fb4c0329fe13a6d9fa809dce4abf0416"
+  },
+  {
+   "id": 8773,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "68309c692605d4179c1ebd68d018a844c74d608456a4cbd42e5347bf0e4d5495"
+  },
+  {
+   "id": 8801,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "747a22520a7f34d39d21e7512f8446a5741d960bba026a826393df9844a06aca"
+  },
+  {
+   "id": 8823,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7fa86122f741facd604fb4ffd8df5d12e35f14d717eae9bb0210ed1571e760f4"
+  },
+  {
+   "id": 8825,
+   "wave": "xe3",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a61e1cbbb9893dbfbbc9efb73b73744f0dda2dcae91daf5441e0a14cf1b74d6e"
+  },
+  {
+   "id": 8828,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "82a42a386e686626459672a6250d53e1c12fc46ea5f1c7db3d7918898cbfa839"
+  },
+  {
+   "id": 8858,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "02ecf5ec0586b0a96d4fdf0e60f417ef379e7ad233f143f6d7e781d9f038551d"
+  },
+  {
+   "id": 8892,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9ce8e563ac096817095c321e236e520b3edec92eb9ac236ce77064be2fc62afb"
+  },
+  {
+   "id": 8895,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9df793007a69d53f6d835c31cdf20d1fdd8cc1ef17984fad08081d8c05ba23c9"
+  },
+  {
+   "id": 8896,
+   "wave": "xe3",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b8f48ca5a6cabb2225d5a5e3571f30b6403e44b82f98a525d5576b95a983775a"
+  },
+  {
+   "id": 8900,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9f033e10f6a2506d3360f139beebbe028b7d0173f3f9ac7924405cb1509c0063"
+  },
+  {
+   "id": 8906,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a210f15fc28e3f66a0e281e1560e87586869de070ca61fe58a84ca3a1a377dc3"
+  },
+  {
+   "id": 8909,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a4471fa3a65475bfa0931cff3541ea220a76d8c2367880d290404b40f31c4992"
+  },
+  {
+   "id": 8912,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a5aef94ccb6809e987ea34c2abccfe7355c2f76fdbc2c68a993d14ec154ec207"
+  },
+  {
+   "id": 8914,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a6bb4a122d0dcd3353adb732fe40894a66a12b1b8ebe5a0f1b16a80d2f1c527d"
+  },
+  {
+   "id": 8923,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bb9168276ccb14137a5b984f45b10012dee9dddcb8d639baf821d046d2d090e6"
+  },
+  {
+   "id": 8927,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "aedbb5a0b4740bd39e94c47330672658e5cea0850611c3d88b7d06cfebe35b10"
+  },
+  {
+   "id": 8928,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "af2d48a2c5d3ab8d73e80b26b58c1aa490cf16c8cad2b8773ab57198bdd97727"
+  },
+  {
+   "id": 8929,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "af38db2a1b60213774be3650521e70db63fe949c77b7e60e08e1b5bd3131d4e3"
+  },
+  {
+   "id": 8949,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "baf874897a4e32aab3fc68bda951d9efe169e79b4ac08f2305bd76c0012b3814"
+  },
+  {
+   "id": 8950,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bb3eb0ea35ecc3619c3b2bac2763d39d18db0ea914142397e784a5eedb3a829b"
+  },
+  {
+   "id": 8952,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bc35d7ba94da0005097d37170270cb4b666efc22ed2d7f3896f2490e8ff69255"
+  },
+  {
+   "id": 8962,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c18e1e4ae9ee2b2676efbd8ee0ca1348ea8e7a1615e9d833954a6a6315ef3543"
+  },
+  {
+   "id": 8996,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "cea1222bb2f73bc12d1e7f4fa5bd1b5b06464d61c703d804c2eb55bc18bc42bc"
+  },
+  {
+   "id": 9021,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d767a7ca43c71c479a7914d2d1e972617d7e46ebd0b0a2723f49626494f26c50"
+  },
+  {
+   "id": 9036,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "de2d88fb7b97fa0617c433844725dc28c42f8b9b88eb53ffc0f3e6f6be6ba3bb"
+  },
+  {
+   "id": 9091,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fac1827d97e060648d1457db498af2c244789dc9676446307f4ab63a7f3f4ff7"
+  },
+  {
+   "id": 21896,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0157fa88c15d36757ce7280168580761a9d3b7010e9faad290a59e2f8196074a"
+  },
+  {
+   "id": 21902,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "023fd8fff48bbb05e08ee9b325b847b93cc8b267f10be07c25510c6cf8a28f8e"
+  },
+  {
+   "id": 21924,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "05645d3dc1b630c6ade3178baca9a8e084023ccc2d38009dae3a998653abc782"
+  },
+  {
+   "id": 21926,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "05b4c3a2f3c26a67af4abd6a6f8c4b08ab2e0242a2b130dbb2a49d238ef16d0a"
+  },
+  {
+   "id": 21939,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "08118c3ef02b03c67d52a13a5f13e288d44fe2257a8e8b4be0b2e0e21bc7cd67"
+  },
+  {
+   "id": 22075,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1d0f6d2ebe776d50bd2923c7c5c798cbf2dfdeeecb8a459d11bdbb9a631686de"
+  },
+  {
+   "id": 22136,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "24af83518b7cf28c5e0c8afa89f0f82e260ee876bee604652146e0487ea64c55"
+  },
+  {
+   "id": 22166,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2879c6b72f5810506c3d1c7ee08ed83bfed3299eeb67275a56b67c475c1dcf02"
+  },
+  {
+   "id": 22181,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2b233d33b2adf3c90fee5d6fbff56165047b865444f13c37b35efac20c00be62"
+  },
+  {
+   "id": 22193,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2c515d4d3a6551d1da435d25a1e356e942c7084ac92ee7b0e740827bd6e4d2ae"
+  },
+  {
+   "id": 22210,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2f356132f24f4bb6caa4c2f2c500170aa8e6bdec68670073faf8304d4eeadddc"
+  },
+  {
+   "id": 22233,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "325fe8af1348ad02b95cd76bddb0f908a40995269a818a195c81d20e0eb86abc"
+  },
+  {
+   "id": 22240,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "32f4d66d79b2856ad6a343d1243dad59ecf6c5030bf7bba7e4e8fd79d2d0f22d"
+  },
+  {
+   "id": 22244,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "334ef205334595177fe45c4cb7c151c56b2fe907eaf34fd0901f79cd8874f44c"
+  },
+  {
+   "id": 22330,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "41ad11d817b20bf62c487560c36532ba7cc369828496ab1188846a63eff35d37"
+  },
+  {
+   "id": 22359,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4526ea5bf41a7a5b338b5b055ce5fb8fc9c5c3b57ab1fbb6460bc58fbb42b754"
+  },
+  {
+   "id": 22363,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "466c50783ecf67e8eddffa80d1bfd246ef187a3b871c4f0624843db98508b94f"
+  },
+  {
+   "id": 22376,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "492ca45ab4981ca42f33803befd265df9371e2f777556921a8a162925452bfc8"
+  },
+  {
+   "id": 22406,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4e90ce316ea4d8a113ec804fb3afb18cca07196e85af314e18a7d342c430a6d5"
+  },
+  {
+   "id": 22419,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5184926acede454ce1704e1e52cc151cbb0efa96c84f8e736293faa277987024"
+  },
+  {
+   "id": 22472,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5a9c031aae2a283855aa2a94e51038c9733f761b17f3875ddf57af50fda102da"
+  },
+  {
+   "id": 22484,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5ce1ff0646d8a37d5e55fac53def4710d53ce7999493da323cc6820f51ce7d1f"
+  },
+  {
+   "id": 22528,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "63d9a730c34fd826abe467cd5703da5e0e73b5b8ea0258d6df8d40fd807922e7"
+  },
+  {
+   "id": 22548,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "66142a78dca726f5838931778dda94987ae94cd709e67d67c620c2695355aa5b"
+  },
+  {
+   "id": 22561,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "67dab879d6bfc65449b29a3909680f27fc7cd89cc03719348db4fee650560dc4"
+  },
+  {
+   "id": 22562,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6841aaa65e3d885c47965d7138bb18f03fe9237c929a93cf7e110f61aefe0c86"
+  },
+  {
+   "id": 22613,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "704100a8a341636aab65aa2f693e8232523282fcb1a78d53c7cfeb556823a6f2"
+  },
+  {
+   "id": 22644,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "757c0f6b6b39786bc8f8e655dc1a060fb7432e369707cc1290e6db0b28295a18"
+  },
+  {
+   "id": 22702,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "808786c20c09b3edf503e4db0b572e6380430b6bcb0aca5eece47adc83f57797"
+  },
+  {
+   "id": 22748,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "899511fb1a637b9fc74c7419fc8779687e68cb1de37abbc4dfc2ec6d358bfab7"
+  },
+  {
+   "id": 22754,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8a6a958de5481bdb0733e382a34c5219ad07a9b3081b1a2eb97c10805b195fba"
+  },
+  {
+   "id": 22784,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8f513a0ab4d1f942b681930084f04e16810c79aef64738d9abaccf4c174736dd"
+  },
+  {
+   "id": 22791,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9035a3b3b190ec0451d41f7762365437392ad6b8ad239bf9c34f0028d4f1a609"
+  },
+  {
+   "id": 22818,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "94abde675f86e3b3d9ecea84d873e705cff9fa91ae0761260e63f222994dfd28"
+  },
+  {
+   "id": 22896,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9f932273a5ea2533216f64606039353cdb821eb931ebe348725fdab3e7bfd200"
+  },
+  {
+   "id": 22903,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a06656e908e130826666fa4a168827bea095437ac38dc7d2e70dfefa82cdbeeb"
+  },
+  {
+   "id": 22904,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a09e7308099f3ab317c14307a5b047a8f078f3474a280f1ee50990c5b1ac342c"
+  },
+  {
+   "id": 22919,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a2ae9d01d6b7c6832b7c1da4c8e4549681ca46f149db96656a5136be32f4910e"
+  },
+  {
+   "id": 22928,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a3b25bbde96287c4fd9d1b37e48bd405329e8a915ac05c225146c5e32af490d8"
+  },
+  {
+   "id": 22937,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a5ee2bbdc53bce22f9dc5661ccf33d4772158331def26f5940bbd75772c25eca"
+  },
+  {
+   "id": 22941,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a6e629546b49b57d8e4dd3f2608baaab1189da4bca7dd19151e0f5f1343fae3a"
+  },
+  {
+   "id": 22957,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a8b403f955a73a7a3128686f3faea49d3e40ff2f7b538569b14184c78ca5dd17"
+  },
+  {
+   "id": 22972,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "aad220249d0c879297df68c6f57e7c385281626a6aee3a86f90485402422d86b"
+  },
+  {
+   "id": 22989,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "adf5334bcd36866a9a9bd99cd8ba4c2fe37e524589003db0ad4b8559ed1f2c0e"
+  },
+  {
+   "id": 23001,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b019d18e0c6b143806c9ef9ce3696ba43f50a10dd58eea1827c8f79acd567b1e"
+  },
+  {
+   "id": 23023,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b44273c649d5d047fc8fb8fda44bd929642485890e443a5193a1d53f30839b4f"
+  },
+  {
+   "id": 23068,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bb08e731c2f980454f3a723574905b8241eeacbc86b798b6dbf740bd9ae4cd6b"
+  },
+  {
+   "id": 23071,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bb4d72c3d276e79e17416be6878a02fe829d252102d10422bddcc30bcb779c66"
+  },
+  {
+   "id": 23082,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bda3a5058565cdefba3cc97e3f01e39df90d304edb3e6b027984cc21e2f3c604"
+  },
+  {
+   "id": 23098,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c0315260f41fc3c9954e2cbda01959bbf7140b176c382fb95360c74ae7280cea"
+  },
+  {
+   "id": 23104,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c16b94612fdbed996be91b34faa8fee5f74e35ee40ef52939ed4fbea1a5dd2a0"
+  },
+  {
+   "id": 23105,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c2066f9113f7205a9283d44e1dc0b8c8031af728353612893724c56db1dcee1b"
+  },
+  {
+   "id": 23115,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c34b09a64d45a69fb997b755e6937aca13d1f704f1fd142059a88c769e7022c2"
+  },
+  {
+   "id": 23232,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d6abab932c56394b3b4fe74cf1bd1e8849e84797ccc434c17b7b1910e59a0c3f"
+  },
+  {
+   "id": 23299,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e27c7ef38898cf6404eeca474a14f53ba0061aa2a44aefa81945551d1a9f2db7"
+  },
+  {
+   "id": 23307,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e3fb9765f9ee829b39b43729e203d3173d94334321fd466d24ed66cac2b83a8a"
+  },
+  {
+   "id": 23351,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "eb0fbd8b409ce5d263ee60a71cf4760d52f0e69c77131114adc8b87270cdfe8c"
+  },
+  {
+   "id": 23370,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ef7b53e5508ee73f6870c383efce8185d4b365a9fbdae2f25706114aa5bbe7a4"
+  },
+  {
+   "id": 23382,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f22a6727e177eba3aef848c9bb6a41bdb2e03629d414ddb74879dab8f596b116"
+  },
+  {
+   "id": 23449,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "017b5423742ce4a726a31d213a0075943b070fa596d44b72aee2c28749e4133a"
+  },
+  {
+   "id": 23459,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0608339d362c4706bb275fe565d01f68f81ffc1a3f8468136b9d95cbbdb541bd"
+  },
+  {
+   "id": 23480,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0eda969b59f012d98744c6de4c2aafb9ee24c47555ee9011b5d2b602f3726752"
+  },
+  {
+   "id": 23491,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "14db3e625d9ab28a1c6f0ef9ff567997bf43502d6641f29c26eb370370f553c4"
+  },
+  {
+   "id": 23523,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2593bce791f8c3c4bac7c4285af3ce26995439f3864833eb76c3e6cc2fa4f1e2"
+  },
+  {
+   "id": 23529,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "27e2a6b1f48dd54db0ae2000aeb7f92661cf2cf597194bfa974acd69f2f1d0d1"
+  },
+  {
+   "id": 23534,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "29d1a5ce552a7198b71047e8624fd574537e12d8bc33d5730d1cc0f6cb467118"
+  },
+  {
+   "id": 23551,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "328337dc95a500ca4b4ea532d72fe61a5abe788ebfd0804d2feccbbf97b553ea"
+  },
+  {
+   "id": 23556,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3521a87e08522ae7f0c8a9170dae4d2c532ec66869a086ef83b362a1e1e241bf"
+  },
+  {
+   "id": 23558,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "35704d18b11852b23161154fa3d39ca7f93d3ffea1018e7eb057c44281f8f7be"
+  },
+  {
+   "id": 23573,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3a9d0ad212737c227d3fc55a506b8d9c7e2b8bcd0a3aa13b733192ed2f483ace"
+  },
+  {
+   "id": 23580,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "3fffa2b9865d437b0b662d856b0248f3323ca63e7aecefd312a61305cbceba54"
+  },
+  {
+   "id": 23584,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "421c9476f6f33a0052f14c6ad6db050a3b51cfac342b644520478a91f304c8ae"
+  },
+  {
+   "id": 23585,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4278a7a319e2809097983e7a6ebff4ae815e3e8bd386e358ccaa3dfa7a40f288"
+  },
+  {
+   "id": 23586,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "42ad1ee7bdfae5bbc48f3a2009aff187a9ed5fcb1321cbce402487208848e394"
+  },
+  {
+   "id": 23594,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "459b12e15d912802bd92392a108f26bcda914e61b674aed56101f8afe88edb91"
+  },
+  {
+   "id": 23602,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4962233627c17833a769ab972410ae5066876cf92d3dbac610893995b6c24610"
+  },
+  {
+   "id": 23616,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4f02a23c7826f21fa01a9e30cde0fe96a11a4999f1aa52e42f2e5da6dfd41d7e"
+  },
+  {
+   "id": 23617,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4f2d41ac89903ff56925f4f12c1f01bf32a367136d6980e842117ca6cdd77323"
+  },
+  {
+   "id": 23623,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "519587b4ffcaad667400b0af88bd434618742ec28f2479c41c124570668fc898"
+  },
+  {
+   "id": 23630,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "52ba390d4ade0e3648cebe4fbb8401a9e3b959307afb2a45a58e2ca45faccf52"
+  },
+  {
+   "id": 23631,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "52f6d77568f174ed2fba03bd03e639c3c63061dbaf9834e47d9ed356c43572eb"
+  },
+  {
+   "id": 23632,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "530dafab5325d2dc0c7b94e0bf139f0fe3dc4df276765367f6bdf558759b82fa"
+  },
+  {
+   "id": 23646,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "572b644223c8b48bfbf76e395d18a6fa1d997727e6a6fec8f7e219a3dc2c76ee"
+  },
+  {
+   "id": 23652,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5a5d4c55043a0663261456175607c8acbce41204aea8a9244c3dcb2e7371b6da"
+  },
+  {
+   "id": 23655,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5bad4face7fcbf079b32d2eb4da5e3a1e53ce43dc04d6f935ce997a2d1d163e0"
+  },
+  {
+   "id": 23661,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5c99165d67ecc769fb88dac512486118d866e6e0fcae6ef3e48aa4abf917bc90"
+  },
+  {
+   "id": 23670,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6146a46329b50be8e4218c41b4a4a938708559551cabe29676f063afb0a78f60"
+  },
+  {
+   "id": 23688,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "69a8728c298888621b1741c6ae3e1ef1b778c2f03dd871da35b9c8f27230f1f8"
+  },
+  {
+   "id": 23691,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6bdc2f5c42ac9a4b2bad14f80b1af6a9cf3de129af8cccfa67818e40f9ac0c6d"
+  },
+  {
+   "id": 23697,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6e325a850c0021db5ff911ddf843a2bcdda660eedeb1fa83eb255451ef7ac9f0"
+  },
+  {
+   "id": 23707,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "73d954ec8039927d23a479613ac8894a27944aaca57a59d5e4ff7252262c978a"
+  },
+  {
+   "id": 23709,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7467bd8eae05648fea34f2e1308a95c8fa1f8fcf6dcaae8a9bd9bfc04ba5619c"
+  },
+  {
+   "id": 23721,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7ae11e630344255ac096927855ffb699c4a4a8cb4a78d7396717bdc6c182d5a6"
+  },
+  {
+   "id": 23722,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7b523494efff4b6c3cb47499d4c132dc404b3bf703e8bd7bf7c1524db340993e"
+  },
+  {
+   "id": 23724,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7e34e5a9a988399b2892d660f94b2ba2d968cd81b776970d9e49bc00fe927066"
+  },
+  {
+   "id": 23730,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7feba1c33aa891f66d10295902187fb02caa00b4a85262871fb2afa00f786c45"
+  },
+  {
+   "id": 23746,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "84c7ed6388d7234cc8925b7b9e05ae30accbe182b866e89c961cb87b89e75f45"
+  },
+  {
+   "id": 23747,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "84db62af766e51a4c542e2ed12596263487a81b9278c432738c2a68f6ff44e12"
+  },
+  {
+   "id": 23754,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8abb413fdf81e0e12ca8b9ac407ce1ad91e08502f087beec912c3683bc61b81b"
+  },
+  {
+   "id": 23771,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9016967d24267dcb39b53bbd411cb8d785b1d17bb6ff3b593e4d9b63e061d6ef"
+  },
+  {
+   "id": 23774,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "91214f07bc70b01ea09453042d03454db7cf36aad31f64fed3216ccf7331692b"
+  },
+  {
+   "id": 23781,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "97dc98ce6fbc863d8279a3ececd2675f14425ce1b41a44c3d9225739a64e21f8"
+  },
+  {
+   "id": 23782,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "97f2c3c58fd61b1ff9f06ece98e52112c421f5fe6d8a39fbbcbbd3a72f67f0ac"
+  },
+  {
+   "id": 23786,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9a0dda22d331f676144f21e6e5e31a4849bc637a88c1c8d08de1533dcf40cd84"
+  },
+  {
+   "id": 23795,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9e783b8c1509eee4a699de627a0d4b524e9d6c1d4c23414e8d4d22cea6674a28"
+  },
+  {
+   "id": 23824,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ab4641aec27210690932e46b454e355b451129d18a4c2b7aaedea305f1c6f67f"
+  },
+  {
+   "id": 23829,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "acccd3c2b40806dd529caddba22628b65ba94e390a7f383c8f2d171dbe7b0856"
+  },
+  {
+   "id": 23835,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ad7fca3bbc5ac56da8a89b0f2c888281e1fcd86e615f686573674e23d7bfae8f"
+  },
+  {
+   "id": 23843,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b0f005b0192e53b3de9cbbb1b609bf718c24ec1864e80928145dfe8f1fc7d420"
+  },
+  {
+   "id": 23846,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b1c30dc21b95f7bf07600ab383c39976c3104a33b215f4d449983180cbfc08d3"
+  },
+  {
+   "id": 23851,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b281cf974933715723819c276675c34770b8e8a3c8a0bc9b1ded6f24c1d34623"
+  },
+  {
+   "id": 23854,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b3b2815a114d6d2f8b340b72ec9cbb98978c7c9f8746cadda78b01e65680180a"
+  },
+  {
+   "id": 23868,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b6a2018bafbb949c899a48781bc1661e5cb86f0de85c01b860d67b07d541d49e"
+  },
+  {
+   "id": 23874,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b9d0d99c3610f53b4240dabe93aef854ddb5f627d092700b390c8a2ebeb3ab92"
+  },
+  {
+   "id": 23888,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bff82baa4e954579013194d852e8c78f79d47497a8d15efbc4a5af5c3adbdf48"
+  },
+  {
+   "id": 23900,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c60e09ec13a067f849ba4c84c03e913494dd1d96617600f8dbb126b08f085b9c"
+  },
+  {
+   "id": 23917,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "cd5ea3a73cf2ccd0dbb4f7d820325c2f7d35ca93186510042e46bf17f1f5601f"
+  },
+  {
+   "id": 23926,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d042bbf0f315240e58646812b0a2e35ab21d6cad8b4e9935a95c33d8a3d8b8e0"
+  },
+  {
+   "id": 23928,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d1a88756fde73557385e21a15316bf8022a139e9dd3cfc5b89f15d28cbd3a5b1"
+  },
+  {
+   "id": 23929,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d2b8e3854839c5f80b7e3601e65db791839bd3e018ce33d4f615017ae201b886"
+  },
+  {
+   "id": 23955,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "db14c32ebc2b30ba828e19c6ef75a5d51b432d053cd7542fe41c4c36be183445"
+  },
+  {
+   "id": 23966,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "de1bc560b7de52d597af3e2ce2acb8e6ba4c0fa540150cf19a3b14e2821ec00f"
+  },
+  {
+   "id": 23973,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e2315f0af1005931b1640353e99e1e7ebe11590e0873fb5bc03a55e12a356a87"
+  },
+  {
+   "id": 23996,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ec1de12502626970d53eaf43e86684fd6e8003c03ba7b2df053394d80e3c0b24"
+  },
+  {
+   "id": 24007,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ee2c86a53e5a54753fb7415e7b858dfffacd3a9247c0f7f3f97ce340263494ae"
+  },
+  {
+   "id": 24011,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f00897af75cbcbb55b3911695f826e8e8b1564acc2fe64f18c080f08a1b3f902"
+  },
+  {
+   "id": 24025,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f5f8cce9930a291ccb70e7a291d8a085201310f04deb9618a62b0d2f94e3e195"
+  },
+  {
+   "id": 24030,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f85a1b36430193a72e827489055ce04bf9f72cf2b740c6b281fe7af25cb96043"
+  },
+  {
+   "id": 24034,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f8c7a1f1889dbf1b8c67e995039b7d50f89128b7a516319cdd22fc3603b5c1bf"
+  },
+  {
+   "id": 24039,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fbc39a98ee2ea26e1c1e26b58c88fc6f756561c21f2b6b2a5bcc977cd47e5fce"
+  },
+  {
+   "id": 27717,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "01d2e8fceac16bf2d36ca0e3953be6528a0846f42a66ef7decc4c17083addeaf"
+  },
+  {
+   "id": 27724,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0536ebbb93730fed4ce903a0498ce9291c04b078de470c060feecf69b27827cf"
+  },
+  {
+   "id": 27725,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0561f87ea8cbca9d532f462ea3e96a1210ce96d01eaed02c0b8d47ea83a29f81"
+  },
+  {
+   "id": 27736,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "08221953505fe8387ca23af6620f6b5984cc517389b9449ba0c4ef81618b5b95"
+  },
+  {
+   "id": 27763,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "0ed74f49ad686e4b98c500572f4146b9d4e2a5d26959c411cf4a91250f141167"
+  },
+  {
+   "id": 27773,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "10fb501d6b79c8500fce518f3b2c87448ad010ee1554da5d7dc9fdbb46a441a7"
+  },
+  {
+   "id": 27781,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "12f58c0f135651afca2a27b160c04d2e2eaec61f518e5cd63a3624f62417b352"
+  },
+  {
+   "id": 27785,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "134031d2428525252d0c6e4f4790ec2ccf76797f37a335f8dc2fa74a61def3a3"
+  },
+  {
+   "id": 27787,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "1391f9ec85bdb087b39fc1bd46ac77f4e84f4d1ed5a73f6f2a22b8f925e42690"
+  },
+  {
+   "id": 27794,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "150db9df824ede4009c002a09dbe6c885a0ccc81591753ba2c4ba05fcd16310d"
+  },
+  {
+   "id": 27797,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "15d5cce4bf29ef12f58ee4200b8da9b8033b037eb0b611a6f7c8fe285c27e735"
+  },
+  {
+   "id": 27801,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "17c2596d0444cd25438d088bc68601bc18d2547fabfd3fd3593e96509b604bb3"
+  },
+  {
+   "id": 27804,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "182f704909849e0d1315133275c1ea180a633e09f9e7cf1d4cbd3a7b52aa6029"
+  },
+  {
+   "id": 27840,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "21de193bd5934c45c9e7fb026154a88eafe1f84bc10fae478710fc2540cb5532"
+  },
+  {
+   "id": 27842,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "228ae2db391a15a2b5b23b8bb17632e31a351c92525f62649ca2f031407f66f8"
+  },
+  {
+   "id": 27844,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "22af55ce238e9b57a5529bcb7159e90d0613f949e359fda14f47bde00a329a45"
+  },
+  {
+   "id": 27852,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2424719e6b65a449c06c9a66ad44128d7d0b239c7a20478edf95301f57eea014"
+  },
+  {
+   "id": 27869,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "2b2afa5f3c8f1807073e80f4ddb6a95e547425bf32072e30710d2a80619c0f01"
+  },
+  {
+   "id": 27896,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "328e61638477d4bd78fef299df98128f2da30dab3239534a495eb25aca064d70"
+  },
+  {
+   "id": 27941,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "425ee2ca1574458fbcd093d28f8dab76e9872fd77873c4752f87cd46723d0ffb"
+  },
+  {
+   "id": 27959,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "47c980501509764237ef5c39cd545e72c9a9eca5e4577473440a31d6675365e5"
+  },
+  {
+   "id": 27977,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4cc0dcd3ce667366e5185b6dc3ee8dded7c9786f056ea9d7f5246bd18099a4e6"
+  },
+  {
+   "id": 27979,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "4d75a96f3cee11cde9cd2ec8d23be00d60e65cc621718765002c3ae2d5ac66b7"
+  },
+  {
+   "id": 27994,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "526186e533afbd1a83f58e47cfa6dbae92f310f0bc19e1e9f184fa02fe9bf37f"
+  },
+  {
+   "id": 28001,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "53ace11db4b7ffb509f5cade6c7b7dbedcdcc35a29aeeee0b04727ceb7c0839e"
+  },
+  {
+   "id": 28007,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5487213df0d5752c69bdb56474504243b3a8a0f6927aedd6ea2e1d8841dd50de"
+  },
+  {
+   "id": 28037,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "5cbe267d0c3c942e10760ade041b815445181c4ea22f859122b30062b86b9df1"
+  },
+  {
+   "id": 28069,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "62d88bafd0196730982e60ccd5c0567e1153672705f4f6982bd6666aa2fde4a0"
+  },
+  {
+   "id": 28082,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "656211b07b816cec52437e9158a9ea6b5fd5bc6225e7b1849729a3bfe95f76fa"
+  },
+  {
+   "id": 28088,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "6972098c612449573eaeb368a9936e5704488f018c1b46e3fb9a0c6568dbf1da"
+  },
+  {
+   "id": 28124,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "76aed4ea7451997a61baceb77c89d0e9455433ea95374ffa098c550e5891f6f0"
+  },
+  {
+   "id": 28128,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "78d698bdf6fb3b3a3d2f1d043582fa8d132a6149eff775e3efd855dc41bfad13"
+  },
+  {
+   "id": 28132,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7928ef1a7715d4e155ee0aaf6b1393428d69f5082f77cc4b0a2666a3929abb7d"
+  },
+  {
+   "id": 28134,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "79e5398ed3fc3eccab142b16af7c621f3641f849f7850344cd4bb5874cded46c"
+  },
+  {
+   "id": 28138,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7a6f140e2582fab51df116a766e442bf7322bec8b2dd89390b93724cad5da15f"
+  },
+  {
+   "id": 28140,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7a83ac71e91cfe803ba9c7756ea79a639ea293babc74b9f3008a2566b5001658"
+  },
+  {
+   "id": 28145,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "7bc05c7c204d436020aae4e0c3edcbac9ff9adc37b3ac5953e8c14b8e9bfe0f0"
+  },
+  {
+   "id": 28183,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "855633dac512e932d5414525dcbc1e3ba9f8f878432a477cf7c9c6cb399b0a0a"
+  },
+  {
+   "id": 28193,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8828b5bf3bcae3eb83201a15a9fb8624cc745a7049c537ce6f411859c6d34464"
+  },
+  {
+   "id": 28196,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "893023f08d9a6c68fe9e1ba3b04845beab1ff31e43bd45b1383b531f71fbf4b1"
+  },
+  {
+   "id": 28202,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8bdffc70dcf08acb7b6335e93ec07c6d7405ad2ac4777369a61d8a9a7ff332a6"
+  },
+  {
+   "id": 28208,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "8cfde9ecc559fadfad3a1eb30aed4345204b1fd6572001288f213eac8bc41b93"
+  },
+  {
+   "id": 28219,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "90c98a03682a3d271da7dbc1489670d788ab070a4ab15faa2d3c1680b4dafde1"
+  },
+  {
+   "id": 28220,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "91b295fed6ae038b61f6763d2febb0b7efe14cdb01ea94eb5e928d20f67ce74a"
+  },
+  {
+   "id": 28221,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "91f248f5014355029bd5ed44846494c95506e369dce6b50e8b3445895087eb1b"
+  },
+  {
+   "id": 28250,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "9bbfb7dfdec0d5a72fcd74d2628791fda7f71bf3b579cd332c6df896ac3b98e7"
+  },
+  {
+   "id": 28275,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a1f10f8e566ec2cb6084389a9e8f461f6006a7a583992d8c0ba5aebd3665320d"
+  },
+  {
+   "id": 28287,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a4b7294a2862284410369129adf4edf5476047ea91969b159474dde8a5b0cb25"
+  },
+  {
+   "id": 28302,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "a7f6242d8a2ee9d570ff6abe7d807e8a1d06ca37f57282f6587da3801d84e1a9"
+  },
+  {
+   "id": 28336,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b36033e6637776c2916dcaaf55cfd4887ff8ce3b1f1615920722d68eee663eec"
+  },
+  {
+   "id": 28347,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b58f3a4c2164819f216ac73e0f0bf60f8558fd90d378c9878d3a67b37fb9a65d"
+  },
+  {
+   "id": 28349,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b6161bbd59251c169184f4d575117ae302dcdfb5946b48dd08074bc0e0ecd631"
+  },
+  {
+   "id": 28355,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b835042595f12768c237a151699994ed84cd8cc61c68dda9df320533172596ac"
+  },
+  {
+   "id": 28362,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "b921d40b52d9f51a9d29b07d3d1814073030b29d868dbde3b073452709adf7c8"
+  },
+  {
+   "id": 28367,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "ba2449e97aa8c67b1b12052a2fa66b64c3000b2f9b31df3a6f7021b910381aa9"
+  },
+  {
+   "id": 28370,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bb488957f71701ce9f432cdfe1c280ccc3ff0e83ff3cc62953ccf744613d5d84"
+  },
+  {
+   "id": 28373,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bbaafd6fc14c64e225c11c489a9b5db36c4f49e0491ae3f2b6f0517bf9b882ae"
+  },
+  {
+   "id": 28375,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bc151e22271ef579521819d2f797b9a7c89b279d3fa7c003d18eb2cf47ef7d4a"
+  },
+  {
+   "id": 28382,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bcfcab327f431dbc3cbe2a0325cb37e7dcb32684cf96ea4e7ca1a1a72ed4a73e"
+  },
+  {
+   "id": 28390,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "bf82e8713c18a7ea260cc709e04a6d58b5049a94ed6d2b0ccbfb2d03bd3d8dee"
+  },
+  {
+   "id": 28403,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c39c0ab5c0f2f24bb17af127cec5314b10fcd997f2e51f14b7b266e62bc95a7c"
+  },
+  {
+   "id": 28405,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c47e710320d4f62d6938c08cb644f3aba2b66a000c64e0983c5dd5e9c341b9fb"
+  },
+  {
+   "id": 28420,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "c94ac97be39a5600ed79ca721ed4cb12abe1b763faf88d24ae6c71d01fb462fd"
+  },
+  {
+   "id": 28427,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "cb78b01b0b23b78d9e873fbb6029e7c1ae7691a8fd6758087cee7aa765f8b9c3"
+  },
+  {
+   "id": 28430,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "cb96185c538f8ba20c6a8aca9a7f0502eb0c9fb9dd6a57efe4c1d0f907055ca5"
+  },
+  {
+   "id": 28433,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "cbb2e11f8ada8ebb0fcec765243ed48cec8439dd0acf3d5135f97636ff315629"
+  },
+  {
+   "id": 28493,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d686181dd42455a481245c56bf68b03b25ca9d759259c59bf6373303eb30fd36"
+  },
+  {
+   "id": 28505,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "d9d97aca51983373d8056f8017855009d4da6d46a6113cff601501b422bf0eca"
+  },
+  {
+   "id": 28521,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "dd773d5fe0d80382c9c52f4ca5c7adaf62e823c1665a60e95ecb5954e66edd13"
+  },
+  {
+   "id": 28532,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e03413f182e7cdbea25f417e1ded734a5874af1eb9a60020699523ef414aaaa8"
+  },
+  {
+   "id": 28541,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e27115d9e82e5a357e367d9fa7eb2c515efeaf0fa57d0e4589cf606d1d19672b"
+  },
+  {
+   "id": 28547,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e325a7a5d97d5da02653ac172e40d51dd7423034ac9f58b62b4df27b89326f98"
+  },
+  {
+   "id": 28550,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e37d708347d771ccbebffeaeb420668eb812bed90384df7ee1270e15419aeae3"
+  },
+  {
+   "id": 28553,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e4305b09adeb743b5bf003755e0aca5f2d2102b8a0444bed03182ccaf8b25d29"
+  },
+  {
+   "id": 28560,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e4eba705ba89b4dca4ae8e362f95f39f7882559decbffbe8390d2880a538bab6"
+  },
+  {
+   "id": 28574,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "e7dc8c45b235bba30bd1d6786d52006e78e0a2975b3984be4e3681461de22126"
+  },
+  {
+   "id": 28600,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f037f60b5e85a1eb1136d5cf4120507fb08995eb3417ea34bf749cc51b3a1b80"
+  },
+  {
+   "id": 28614,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f29b85338315ca68442c5dd1beb1a2bcd170ca39fd272ecb55cf81705ce3728a"
+  },
+  {
+   "id": 28639,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "f9495a9856e6aa416b7f7c4716993d237891edfc29ef6dbf11ee999c38f0aa74"
+  },
+  {
+   "id": 28647,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fb3d6706438f855f46636b0b0f3b49066f40ade4552c9170375e2aa6ed08cd43"
+  },
+  {
+   "id": 28649,
+   "wave": "xe2",
+   "topic": "modal-verbs",
+   "spec_version": 3,
+   "content_hash": "fbb50316c4b1a65314d14a48186f7ec92e0c0ca297f352f63f406d6ff08bcfe2"
+  },
+  {
+   "id": 31185,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "12c5109807cd6cb5bdace19277044ef3a84525afa706c24d5daf4727f69d54fe"
+  },
+  {
+   "id": 31211,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "1c2d4571e1f8c121c24b34113f6506e1785e8738835554be7204d6ba17df0b30"
+  },
+  {
+   "id": 31289,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "3b5e06328719a0612dc75b7aef10d7976a9721e9e0d491c622b3360cb222526c"
+  },
+  {
+   "id": 31305,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "455198fd79c45451461b5d5a15ed8ad690de563073077647e00c35bd070df4e6"
+  },
+  {
+   "id": 31320,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "4cfbd5e815b5eeb43b67647b0d8893a8c93eb8b68ff382336a3360aa202dae7e"
+  },
+  {
+   "id": 31331,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "50cca56f17d658ee00532a99dfc2eac665f6823c3c32903ff76d06bd2f90edc2"
+  },
+  {
+   "id": 31338,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "53997b360cb12adfd62573e375c8147c66fd4bdc4bc25de62ffaf5f27f8adb9d"
+  },
+  {
+   "id": 31506,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "947622a475753f7f34d48272799180497117bebb421061d19960362829ef6796"
+  },
+  {
+   "id": 31689,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "daec8909154721a5a773f631dcc6ad6719d96c987c9025d8bf72c52b931b590f"
+  },
+  {
+   "id": 31692,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "dc2c5cda3c1900e14b25b6212aa85fe56870214ac263abb45d6ad8650c2b97c7"
+  },
+  {
+   "id": 31727,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "ebfb111bf8889f8bdf19327e7908d896362235f4adda059abfd2a43fb70ddfc3"
+  },
+  {
+   "id": 31739,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "f0294315dad3e5bfd7492db2e1fa4ed1dd27164828c3547e6968441b08ee3cff"
+  },
+  {
+   "id": 31762,
+   "wave": "xe2",
+   "topic": "modal-ability-permission",
+   "spec_version": 1,
+   "content_hash": "f9fce5af56c55fa43257816f56ba427606ebf50bf7f264ec48adaa61b424b6a8"
+  }
+ ],
+ "edited": [
+  {
+   "id": 7386,
+   "topic": "future-forms",
+   "before_hash": "9aef8d7f2676ba90351d732d41368104e2082dfe1a33fde8f34c6d07b11f1be9",
+   "after_hash": "b7f9d3d5a25a405b5aa92287eda99b35e9355df3a1c8fa52100fbe519ea00deb",
+   "ours": false
+  },
+  {
+   "id": 8662,
+   "topic": "future-forms",
+   "before_hash": "5deb18262d7d7cdfd994f3725af8212b97d010cf15fd79c775ea2188b91f26c1",
+   "after_hash": "085a52c123d146792e99996e396e2ab87b42db491547abe83279404c487e6f04",
+   "ours": false
+  },
+  {
+   "id": 28875,
+   "topic": "reporting-verbs",
+   "before_hash": "83744e29ab7ce596807596977547f3131b0f8de2d9b8967c2ce9467a17d331ba",
+   "after_hash": "f84a18ac77ff329a9f21f39fbdeb27a0d75fc19d39d292fda07a651b080f57ca",
+   "ours": false
+  }
+ ],
+ "retired_by_rv1": [
+  5806,
+  5845,
+  7175,
+  7423,
+  7565,
+  7835,
+  8202,
+  8277,
+  8574,
+  8654
+ ]
+}

@@ -1,0 +1,1082 @@
+{
+ "format": "xe4-opus-manifest/1",
+ "step": "XE-4 (Opus re-review)",
+ "model": "claude-opus-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "medium",
+ "max_tokens": "per request",
+ "chunk": 20,
+ "no_pilot": true,
+ "rv1_bundle_sha256": "d3e711987cf0a1610dc207271983be0081185e3a206b11160b52e99033b92ea6",
+ "export": {
+  "exported_at": "2026-11-26T15:19:03+00:00",
+  "edited_state": {
+   "7386": "before_rv1",
+   "8662": "before_rv1",
+   "28875": "before_rv1"
+  },
+  "spec_versions_now": {
+   "modal-verbs": 3,
+   "modal-ability-permission": 1
+  }
+ },
+ "prompt_sha256": "dd8d21fe5c6ffebb8a3df265a033e175499061452b9d3120a3bbb16aab749fea",
+ "requests_sha256": "82c1f50b675b231f49b9a99ea854cbf7592ad6752298ba2d541adb10aa559f28",
+ "requests_file": "tmp/xe4/opus-requests.jsonl",
+ "scope": {
+  "items": 542,
+  "requests": 30,
+  "why": {
+   "item_changed": 3,
+   "spec_changed": 539
+  }
+ },
+ "price_usd_per_mtok": {
+  "input": 2,
+  "output": 10
+ },
+ "estimate": {
+  "note": "Input approximated at 3 characters per token; replaced by count_tokens before the owner is asked.",
+  "approx_input_tokens": 406326,
+  "expected_output_tokens": 140920,
+  "worst_output_tokens": 331200,
+  "expected_usd": 2.2219,
+  "worst_usd": 4.1247
+ },
+ "requests": [
+  {
+   "custom_id": "xe4o-future-forms-01",
+   "topic": "future-forms",
+   "items": [
+    7386,
+    8662
+   ],
+   "types": [
+    "gap_choice",
+    "multiple_choice"
+   ],
+   "why": {
+    "item_changed": 2
+   },
+   "max_tokens": 2700,
+   "approx_input_tokens": 6777
+  },
+  {
+   "custom_id": "xe4o-modal-ability-permission-01",
+   "topic": "modal-ability-permission",
+   "items": [
+    31185,
+    31211,
+    31289,
+    31305,
+    31320,
+    31331,
+    31338,
+    31506,
+    31689,
+    31692,
+    31727,
+    31739,
+    31762
+   ],
+   "types": [
+    "gap_choice"
+   ],
+   "why": {
+    "spec_changed": 13
+   },
+   "max_tokens": 9300,
+   "approx_input_tokens": 9459
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-01",
+   "topic": "modal-verbs",
+   "items": [
+    5789,
+    5792,
+    5793,
+    5794,
+    5795,
+    5796,
+    5797,
+    5804,
+    5805,
+    5809,
+    5811,
+    5812,
+    5813,
+    5814,
+    5815,
+    5816,
+    5817,
+    5818,
+    5819,
+    5820
+   ],
+   "types": [
+    "multiple_choice"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 15736
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-02",
+   "topic": "modal-verbs",
+   "items": [
+    5821,
+    5822,
+    5825,
+    5830,
+    5831,
+    5844,
+    5847,
+    5848,
+    5853,
+    5863,
+    5865,
+    5869,
+    5871,
+    5874,
+    5875,
+    5876,
+    5877,
+    5878,
+    5883,
+    5884
+   ],
+   "types": [
+    "multiple_choice"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 15893
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-03",
+   "topic": "modal-verbs",
+   "items": [
+    5886,
+    5888,
+    5891,
+    5892,
+    5893,
+    5894,
+    5895,
+    5896,
+    5899,
+    5902,
+    5903,
+    5904,
+    6898,
+    6899,
+    6907,
+    6916,
+    6920,
+    6926,
+    6928,
+    6930
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 15463
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-04",
+   "topic": "modal-verbs",
+   "items": [
+    6941,
+    6942,
+    6944,
+    6957,
+    6977,
+    6982,
+    6987,
+    6995,
+    6998,
+    7000,
+    7003,
+    7006,
+    7007,
+    7009,
+    7017,
+    7024,
+    7026,
+    7031,
+    7039,
+    7040
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14414
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-05",
+   "topic": "modal-verbs",
+   "items": [
+    7052,
+    7054,
+    7059,
+    7067,
+    7070,
+    7078,
+    7108,
+    7116,
+    7122,
+    7124,
+    7125,
+    7127,
+    7140,
+    7144,
+    7179,
+    7183,
+    7194,
+    7201,
+    7202,
+    7211
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14423
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-06",
+   "topic": "modal-verbs",
+   "items": [
+    7212,
+    7217,
+    7226,
+    7227,
+    7231,
+    7236,
+    7245,
+    7246,
+    7252,
+    7253,
+    7254,
+    7257,
+    7260,
+    7263,
+    7272,
+    7276,
+    7288,
+    7294,
+    7295,
+    7296
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14818
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-07",
+   "topic": "modal-verbs",
+   "items": [
+    7297,
+    7308,
+    7313,
+    7317,
+    7322,
+    7327,
+    7329,
+    7330,
+    7339,
+    7349,
+    7354,
+    7356,
+    7367,
+    7373,
+    7375,
+    7380,
+    7394,
+    7396,
+    7411,
+    7418
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14518
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-08",
+   "topic": "modal-verbs",
+   "items": [
+    7433,
+    7437,
+    7439,
+    7444,
+    7446,
+    7458,
+    7460,
+    7464,
+    7466,
+    7468,
+    7475,
+    7478,
+    7479,
+    7481,
+    7490,
+    7493,
+    7504,
+    7508,
+    7521,
+    7532
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14379
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-09",
+   "topic": "modal-verbs",
+   "items": [
+    7535,
+    7541,
+    7545,
+    7552,
+    7564,
+    7568,
+    7575,
+    7578,
+    7580,
+    7581,
+    7583,
+    7598,
+    7605,
+    7625,
+    7626,
+    7652,
+    7665,
+    7667,
+    7668,
+    7676
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "multiple_choice"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14426
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-10",
+   "topic": "modal-verbs",
+   "items": [
+    7679,
+    7691,
+    7703,
+    7707,
+    7708,
+    7714,
+    7717,
+    7731,
+    7737,
+    7743,
+    7758,
+    7783,
+    7796,
+    7811,
+    7822,
+    7824,
+    7825,
+    7836,
+    7842,
+    7851
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14541
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-11",
+   "topic": "modal-verbs",
+   "items": [
+    7857,
+    7864,
+    7912,
+    7920,
+    7923,
+    7924,
+    7925,
+    7934,
+    7938,
+    7947,
+    7951,
+    7952,
+    7960,
+    7976,
+    7986,
+    7993,
+    7994,
+    8003,
+    8007,
+    8028
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14464
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-12",
+   "topic": "modal-verbs",
+   "items": [
+    8036,
+    8065,
+    8079,
+    8093,
+    8094,
+    8102,
+    8104,
+    8107,
+    8113,
+    8114,
+    8142,
+    8158,
+    8163,
+    8175,
+    8182,
+    8186,
+    8188,
+    8216,
+    8219,
+    8228
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14547
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-13",
+   "topic": "modal-verbs",
+   "items": [
+    8229,
+    8239,
+    8244,
+    8250,
+    8257,
+    8259,
+    8261,
+    8274,
+    8288,
+    8308,
+    8316,
+    8319,
+    8331,
+    8335,
+    8343,
+    8360,
+    8361,
+    8378,
+    8382,
+    8400
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14361
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-14",
+   "topic": "modal-verbs",
+   "items": [
+    8401,
+    8423,
+    8427,
+    8446,
+    8449,
+    8464,
+    8466,
+    8468,
+    8469,
+    8483,
+    8488,
+    8492,
+    8495,
+    8532,
+    8533,
+    8538,
+    8543,
+    8560,
+    8620,
+    8622
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14462
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-15",
+   "topic": "modal-verbs",
+   "items": [
+    8634,
+    8642,
+    8680,
+    8681,
+    8697,
+    8707,
+    8711,
+    8712,
+    8771,
+    8773,
+    8801,
+    8823,
+    8825,
+    8828,
+    8858,
+    8892,
+    8895,
+    8896,
+    8900,
+    8906
+   ],
+   "types": [
+    "gap_choice",
+    "gap_fill",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14370
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-16",
+   "topic": "modal-verbs",
+   "items": [
+    8909,
+    8912,
+    8914,
+    8923,
+    8927,
+    8928,
+    8929,
+    8949,
+    8950,
+    8952,
+    8962,
+    8996,
+    9021,
+    9036,
+    9091,
+    21896,
+    21902,
+    21924,
+    21926,
+    21939
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "gap_fill"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14388
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-17",
+   "topic": "modal-verbs",
+   "items": [
+    22075,
+    22136,
+    22166,
+    22181,
+    22193,
+    22210,
+    22233,
+    22240,
+    22244,
+    22330,
+    22359,
+    22363,
+    22376,
+    22406,
+    22419,
+    22472,
+    22484,
+    22528,
+    22548,
+    22561
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 13071
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-18",
+   "topic": "modal-verbs",
+   "items": [
+    22562,
+    22613,
+    22644,
+    22702,
+    22748,
+    22754,
+    22784,
+    22791,
+    22818,
+    22896,
+    22903,
+    22904,
+    22919,
+    22928,
+    22937,
+    22941,
+    22957,
+    22972,
+    22989,
+    23001
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 13224
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-19",
+   "topic": "modal-verbs",
+   "items": [
+    23023,
+    23068,
+    23071,
+    23082,
+    23098,
+    23104,
+    23105,
+    23115,
+    23232,
+    23299,
+    23307,
+    23351,
+    23370,
+    23382,
+    23449,
+    23459,
+    23480,
+    23491,
+    23523,
+    23529
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 13893
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-20",
+   "topic": "modal-verbs",
+   "items": [
+    23534,
+    23551,
+    23556,
+    23558,
+    23573,
+    23580,
+    23584,
+    23585,
+    23586,
+    23594,
+    23602,
+    23616,
+    23617,
+    23623,
+    23630,
+    23631,
+    23632,
+    23646,
+    23652,
+    23655
+   ],
+   "types": [
+    "gap_choice",
+    "multiple_choice"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14102
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-21",
+   "topic": "modal-verbs",
+   "items": [
+    23661,
+    23670,
+    23688,
+    23691,
+    23697,
+    23707,
+    23709,
+    23721,
+    23722,
+    23724,
+    23730,
+    23746,
+    23747,
+    23754,
+    23771,
+    23774,
+    23781,
+    23782,
+    23786,
+    23795
+   ],
+   "types": [
+    "gap_choice",
+    "multiple_choice"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14097
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-22",
+   "topic": "modal-verbs",
+   "items": [
+    23824,
+    23829,
+    23835,
+    23843,
+    23846,
+    23851,
+    23854,
+    23868,
+    23874,
+    23888,
+    23900,
+    23917,
+    23926,
+    23928,
+    23929,
+    23955,
+    23966,
+    23973,
+    23996,
+    24007
+   ],
+   "types": [
+    "gap_choice",
+    "multiple_choice"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 13712
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-23",
+   "topic": "modal-verbs",
+   "items": [
+    24011,
+    24025,
+    24030,
+    24034,
+    24039,
+    27717,
+    27724,
+    27725,
+    27736,
+    27763,
+    27773,
+    27781,
+    27785,
+    27787,
+    27794,
+    27797,
+    27801,
+    27804,
+    27840,
+    27842
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 13839
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-24",
+   "topic": "modal-verbs",
+   "items": [
+    27844,
+    27852,
+    27869,
+    27896,
+    27941,
+    27959,
+    27977,
+    27979,
+    27994,
+    28001,
+    28007,
+    28037,
+    28069,
+    28082,
+    28088,
+    28124,
+    28128,
+    28132,
+    28134,
+    28138
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14546
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-25",
+   "topic": "modal-verbs",
+   "items": [
+    28140,
+    28145,
+    28183,
+    28193,
+    28196,
+    28202,
+    28208,
+    28219,
+    28220,
+    28221,
+    28250,
+    28275,
+    28287,
+    28302,
+    28336,
+    28347,
+    28349,
+    28355,
+    28362,
+    28367
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14782
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-26",
+   "topic": "modal-verbs",
+   "items": [
+    28370,
+    28373,
+    28375,
+    28382,
+    28390,
+    28403,
+    28405,
+    28420,
+    28427,
+    28430,
+    28433,
+    28493,
+    28505,
+    28521,
+    28532,
+    28541,
+    28547,
+    28550,
+    28553,
+    28560
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 20
+   },
+   "max_tokens": 12000,
+   "approx_input_tokens": 14701
+  },
+  {
+   "custom_id": "xe4o-modal-verbs-27",
+   "topic": "modal-verbs",
+   "items": [
+    28574,
+    28600,
+    28614,
+    28639,
+    28647,
+    28649
+   ],
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice",
+    "transformation"
+   ],
+   "why": {
+    "spec_changed": 6
+   },
+   "max_tokens": 5100,
+   "approx_input_tokens": 11160
+  },
+  {
+   "custom_id": "xe4o-reporting-verbs-01",
+   "topic": "reporting-verbs",
+   "items": [
+    28875
+   ],
+   "types": [
+    "gap_choice"
+   ],
+   "why": {
+    "item_changed": 1
+   },
+   "max_tokens": 2100,
+   "approx_input_tokens": 3760
+  }
+ ]
+}

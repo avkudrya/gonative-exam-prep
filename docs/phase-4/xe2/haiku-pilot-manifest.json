@@ -1,0 +1,126 @@
+{
+ "format": "xe2-haiku-manifest/1",
+ "step": "XE-2.1 pilot",
+ "model": "claude-haiku-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "high",
+ "max_tokens": 32000,
+ "chunk": 20,
+ "prompt_sha256": "2ebd5e86e105389edb3f7dd63b32f9575cb905a425d13f1bd4ac22f6c483d9f5",
+ "requests_sha256": "333e40649f642ee8e8f820ddd15a8266f7062699990466baaf5b724d14df88f6",
+ "requests_file": "tmp/xe2/haiku-pilot-requests.jsonl",
+ "scope": {
+  "items": 66,
+  "requests": 4
+ },
+ "price_usd_per_mtok": {
+  "input": 0.05,
+  "output": 0.25
+ },
+ "estimate": {
+  "note": "Input approximated at 3 characters per token; replaced by count_tokens before the owner is asked.",
+  "approx_input_tokens": 25723,
+  "expected_output_tokens": 46200,
+  "worst_output_tokens": 128000,
+  "expected_usd": 0.0129,
+  "worst_usd": 0.0333
+ },
+ "requests": [
+  {
+   "custom_id": "xe2h-adverbs-frequency-01",
+   "topic": "adverbs-frequency",
+   "items": [
+    21914,
+    21930,
+    21975,
+    21983,
+    22028,
+    22047,
+    22096,
+    22102,
+    22104,
+    22157,
+    22161,
+    22200,
+    22262,
+    22285,
+    22291,
+    22308,
+    22319,
+    22325,
+    22342,
+    22344
+   ],
+   "approx_input_tokens": 6453
+  },
+  {
+   "custom_id": "xe2h-articles-01",
+   "topic": "articles",
+   "items": [
+    309,
+    310,
+    311,
+    312,
+    329,
+    330,
+    331,
+    333,
+    334,
+    344,
+    347,
+    349,
+    350,
+    351,
+    356,
+    358,
+    361,
+    363,
+    364,
+    365
+   ],
+   "approx_input_tokens": 7714
+  },
+  {
+   "custom_id": "xe2h-causative-01",
+   "topic": "causative",
+   "items": [
+    28894,
+    29083,
+    29314,
+    29927,
+    29960,
+    30976
+   ],
+   "approx_input_tokens": 3805
+  },
+  {
+   "custom_id": "xe2h-comparatives-superlatives-01",
+   "topic": "comparatives-superlatives",
+   "items": [
+    1090,
+    1091,
+    1092,
+    1094,
+    1095,
+    1096,
+    1097,
+    1221,
+    1222,
+    1223,
+    1225,
+    1227,
+    1228,
+    1522,
+    1523,
+    1525,
+    1526,
+    1527,
+    1528,
+    1529
+   ],
+   "approx_input_tokens": 7751
+  }
+ ],
+ "part_of": "7a8dcd95573abe526e0c742e038afb143cf912f49811718afedd4c928e2b8b16"
+}

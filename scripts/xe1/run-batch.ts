@@ -8,7 +8,8 @@
  *   poll   — the batch status
  *   fetch  — results → tmp/xe1/<step>-results.jsonl, actual cost from usage → docs/phase-4/xe1/<step>-costs.json
  *
- * usage: node --import tsx scripts/xe1/run-batch.ts <mode> <step>      (step: haiku-pilot | haiku | opus-pilot | opus)
+ * usage: [XE_WAVE=xe2] node --import tsx scripts/xe1/run-batch.ts <mode> <step>      (step: haiku-pilot | haiku | opus-pilot | opus | opus2)
+ * XE_WAVE picks the wave's folders (docs/phase-4/<wave>, tmp/<wave>); default xe1.
  * The API key is read from MultiAdmin's .env (CLAUDE_API_KEY or ANTHROPIC_API_KEY) and never printed.
  */
 import Anthropic from '@anthropic-ai/sdk';
@@ -23,7 +24,9 @@ if (!['count', 'submit', 'poll', 'fetch'].includes(mode) || !STEPS.includes(step
 }
 const family = step.replace(/-pilot$/, '');
 const isPilot = step !== family;
-const DOCS = 'docs/phase-4/xe1';
+const WAVE = process.env.XE_WAVE ?? 'xe1';
+if (!/^xe[0-9]+$/.test(WAVE)) throw new Error('XE_WAVE must look like xe2');
+const DOCS = `docs/phase-4/${WAVE}`;
 const manifestPath = `${DOCS}/${step}-manifest.json`;
 const countPath = `${DOCS}/${step}-count.json`;
 // One owner authorization per family covers its pilot and full run under one limit; the pilot's spend counts against it.
@@ -31,7 +34,7 @@ const countPath = `${DOCS}/${step}-count.json`;
 const authPath = `${DOCS}/${family}-authorization.json`;
 const fencePath = `${DOCS}/${step}-submission.json`;
 const costsPath = `${DOCS}/${step}-costs.json`;
-const resultsPath = `tmp/xe1/${step}-results.jsonl`;
+const resultsPath = `tmp/${WAVE}/${step}-results.jsonl`;
 
 const read = (p: string) => JSON.parse(readFileSync(p, 'utf8'));
 const sha = (s: string) => createHash('sha256').update(s).digest('hex');

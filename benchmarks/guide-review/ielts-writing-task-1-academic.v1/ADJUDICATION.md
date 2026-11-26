@@ -1,8 +1,8 @@
 # Разбор проверки: руководство Academic Task 1 v1
 
 **Проверка:** GPT-5.4 (`gpt-5.4-2026-03-05`), 2026-11-26, **$0.2336**, в раунде 1 Фазы 5 («да … до $5»).
-**Файл:** `packages/exam-domain/guides/ielts-writing-task-1-academic.v1.json`. После правок статус `reviewed`; утверждение
-(`approved`) — за владельцем.
+**Файл:** `packages/exam-domain/guides/ielts-writing-task-1-academic.v1.json`. После правок статус `reviewed`.
+**Утверждено владельцем 2026-11-26** («утверждаю»): статус `approved`.
 
 ## Итог
 

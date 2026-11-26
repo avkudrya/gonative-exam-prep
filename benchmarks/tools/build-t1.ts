@@ -15,8 +15,8 @@ import {existsSync, mkdirSync, readFileSync, writeFileSync} from 'node:fs';
 import {dirname, join, resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {
-  chartTable, checkNumbers, codePointLength, countWords, formatNumber, normalizeResponse, sliceCodePoints,
-  type Chart, type ChartSpec,
+  chartBrief, chartTable, checkNumbers, codePointLength, countWords, formatNumber, normalizeResponse, sliceCodePoints,
+  type Chart, type ChartBrief, type ChartSpec,
 } from '../../packages/exam-domain/src/index.js';
 import {usable, type Base} from './build.js';
 import {listForm, paragraphs, sentences, type Expected} from './g-cases.js';
@@ -30,7 +30,8 @@ export type T1Expected = Expected & {
 };
 export interface T1Item {
   id: string; set: 'S' | 'G' | 'N'; split: 'dev' | 'test'; examKey: string; taskKey: 'task-1'; taskRef: string;
-  prompt: string; stimulus: ChartSpec; text: string; expected: T1Expected; source: Record<string, string>;
+  /** stimulus: the data; visual: what the assessor reads (tables and code facts, chartBrief). */
+  prompt: string; stimulus: ChartSpec; visual: ChartBrief[]; text: string; expected: T1Expected; source: Record<string, string>;
 }
 
 const EXAM_KEY = 'ielts-academic';
@@ -175,7 +176,7 @@ export function buildT1Items(tasks: Task[], bases: T1Base[], essays: Base[]): T1
   for (const t of tasks) if (!SPLIT[taskId(t)]) throw new Error(`task ${t.ref} has no split`);
   const items: T1Item[] = [];
   const item = (id: string, set: T1Item['set'], t: Task, text: string, expected: T1Expected, source: Record<string, string>): T1Item => ({
-    id, set, split: SPLIT[taskId(t)], examKey: EXAM_KEY, taskKey: 'task-1', taskRef: t.ref, prompt: t.text, stimulus: t.stimulus,
+    id, set, split: SPLIT[taskId(t)], examKey: EXAM_KEY, taskKey: 'task-1', taskRef: t.ref, prompt: t.text, stimulus: t.stimulus, visual: chartBrief(t.stimulus),
     text: normalizeResponse(text), expected, source,
   });
   const clean = bases.filter(usable).map(b => ({...b, text: normalizeResponse(b.text)})).sort((a, b) => a.id.localeCompare(b.id));

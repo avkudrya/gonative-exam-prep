@@ -162,5 +162,7 @@ test('the Academic Task 1 guide fits the verified Task 1 rubric, not Task 2, and
   assert.ok(!JSON.stringify(task1).includes('task_response') && !JSON.stringify(task1).includes('tr.cap.'), 'no Task 2 criterion leaks in');
   // Review P5.3: the Task 1 descriptors set no paragraphing requirement below band 8, so there is no paragraph cap.
   assert.deepEqual(ccTask1().limiters.map(l => l.id), ['cc.cap.off_topic']);
-  assert.equal(task1.status, 'reviewed');
+  // Approved by the owner after the P5.3 review: «утверждаю».
+  assert.equal(task1.status, 'approved');
+  assert.equal(task1.approvedAt, '2026-11-26');
 });

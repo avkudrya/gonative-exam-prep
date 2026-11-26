@@ -223,6 +223,16 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const n2 = (n: number) => String(Math.round(n * 100) / 100);
 
 /** Axis ticks from 0 (or the minimum, if negative) to a round maximum: steps of 1, 2, 2.5 or 5 × 10^k, 4–6 intervals. */
+/**
+ * What the assessor receives instead of a picture (P5-plan §2.3): each chart as its data table and the facts code computed
+ * from it. The guide tells the model to treat these as the true content of the visual.
+ */
+export type ChartBrief = {kind: Chart['kind']; title: string; table: ReturnType<typeof chartTable>; facts: string[]};
+
+export function chartBrief(spec: ChartSpec): ChartBrief[] {
+  return spec.charts.map(c => ({kind: c.kind, title: c.title, table: chartTable(c), facts: chartFacts(c).map(f => f.text)}));
+}
+
 export function niceTicks(min: number, max: number): number[] {
   const lo = Math.min(0, min);
   const hi = max <= lo ? lo + 1 : max;

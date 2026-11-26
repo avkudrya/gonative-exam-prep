@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "clarity": {"type": "string", "enum": ["ok", "issue"]},
+          "toneFit": {"type": "string", "enum": ["ok", "issue"]},
+          "points": {"type": "string", "enum": ["ok", "overlap", "too_thin", "too_much"]},
+          "plausibility": {"type": "string", "enum": ["ok", "issue"]},
+          "difficulty": {"type": "string", "enum": ["easier", "standard", "harder"]},
+          "fairness": {"type": "string", "enum": ["ok", "issue"]},
+          "originality": {"type": "string", "enum": ["original", "common_theme", "near_copy"]},
+          "verdict": {"type": "string", "enum": ["approve", "revise", "reject"]},
+          "issues": {"type": "array", "items": {"type": "string"}},
+          "revisedSituation": {"type": ["string", "null"]},
+          "revisedPoints": {"anyOf": [{"type": "array", "items": {"type": "string"}}, {"type": "null"}]}
+        },
+        "required": ["id", "clarity", "toneFit", "points", "plausibility", "difficulty", "fairness", "originality", "verdict", "issues", "revisedSituation", "revisedPoints"],
+        "additionalProperties": false
+      }
+    },
+    "overall": {"type": "string"}
+  },
+  "required": ["items", "overall"],
+  "additionalProperties": false
+}

@@ -5,3 +5,4 @@ export * from './text.js';
 export * from './assessment-guide.js';
 export * from './chart-spec.js';
 export * from './chart-numbers.js';
+export * from './letter-spec.js';

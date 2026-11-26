@@ -1,0 +1,28 @@
+{
+ "purpose": "P5.7 review of the 24 own General Training Task 1 letter tasks (situation, reader, three points, tone) by a second vendor before they enter the product library (Claude wrote them; code checked them)",
+ "source": "benchmarks/task-review/task1-general.v1/input.json",
+ "sourceSha256": "51757689fb603497f0da16cddd9418f2e90d10f2f7390d0c8e0dfa76e57fd26e",
+ "payload": "raw",
+ "product": "exam",
+ "task": "exam.task_review",
+ "route": {
+  "provider": "openai",
+  "model": "gpt-5.4",
+  "reasoning_effort": "medium",
+  "max_output_tokens": 16000,
+  "timeout": 900
+ },
+ "pricingUsdPerMillion": {
+  "input": 2.5,
+  "output": 15.0
+ },
+ "estimate": {
+  "inputTokens": 4087,
+  "maxOutputTokens": 16000,
+  "maxUsd": 0.25,
+  "expectedUsd": 0.1
+ },
+ "capUsd": 0.5,
+ "userData": "none: our own tasks, no essays",
+ "approval": "2026-11-26: «да, раунд 3 до $5» (ADR-004 round yes; round 3 = General Training materials)"
+}

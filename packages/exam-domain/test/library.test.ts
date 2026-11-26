@@ -56,3 +56,26 @@ test('the Academic Task 1 library holds every own task once with valid illustrat
   const types = task1.tasks.reduce((m: Record<string, number>, t: {type: string}) => ({...m, [t.type]: (m[t.type] ?? 0) + 1}), {});
   assert.deepEqual(types, {line: 6, bar: 6, pie: 4, pair: 4, table: 4});
 });
+
+// P5.7: the General Training Task 1 library — our own letter tasks, the instruction composed by code, reviewed by a second vendor.
+const letters = read('packages/exam-domain/library/ielts-writing-task-1-general.v1.json');
+const letterSources = read('benchmarks/sources/task1-general-letters.json');
+
+test('the General Training Task 1 library holds every own letter task once, composed from its spec and approved by the review', async () => {
+  const {checkLetterSpec, letterInstruction} = await import('../src/index.js');
+  const {createHash} = await import('node:crypto');
+  assert.equal(letters.source.sha256, createHash('sha256').update(readFileSync(root + letters.source.file)).digest('hex'), 'the library names its exact source');
+  assert.deepEqual([letters.taskKey, letters.rubricKey, letters.examKeys], ['task-1', 'ielts-writing-task-1', ['ielts-general-training']]);
+  assert.equal(letters.tasks.length, letterSources.items.length);
+  const bySource = new Map(letterSources.items.map((i: {id: string}) => [`gonative-t1g:${i.id}`, i]));
+  for (const t of letters.tasks) {
+    const s = bySource.get(t.ref) as {topic: string; spec: {tone: string; purpose: string}};
+    assert.ok(s, t.ref);
+    assert.deepEqual([t.type, t.purpose, t.topic, t.stimulus], [s.spec.tone, s.spec.purpose, s.topic, s.spec], t.ref);
+    assert.deepEqual(checkLetterSpec(t.stimulus), [], t.ref);
+    assert.equal(t.text, letterInstruction(t.stimulus), `${t.ref}: the text is composed from the spec`);
+    assert.ok(t.review.verdict === 'approve' && t.review.originality !== 'near_copy', t.ref);
+  }
+  const tones = letters.tasks.reduce((m: Record<string, number>, t: {type: string}) => ({...m, [t.type]: (m[t.type] ?? 0) + 1}), {});
+  assert.deepEqual(tones, {formal: 8, semi_formal: 8, informal: 8});
+});

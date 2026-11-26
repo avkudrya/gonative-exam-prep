@@ -1022,5 +1022,18 @@
    "type": "gap_choice",
    "haiku_verdict": "fixed"
   }
+ ],
+ "observations": [
+  {
+   "id": 422,
+   "kind": "teacher_ru_typo",
+   "language": "ru",
+   "note": "Mnemonic teacher text kept word for word (Opus confirmed the content): 'Артикль ни используется в словосочетании at night' should read 'не используется'. A correction is a new review of the text, not an edit in place."
+  },
+  {
+   "topic": "sentence-punctuation",
+   "kind": "low_variety",
+   "note": "All 44 served items are B2 multiple_choice with the stem 'Which sentence is correct?' and a semicolon in the key (16 of them '; however,'). There is no B1. Learners get ten near-identical questions per session; the topic needs other punctuation points (commas after introductory clauses, relative-clause commas, apostrophes, colons) and B1 items."
+  }
  ]
 }

@@ -1,0 +1,27 @@
+{
+ "purpose": "P5.8 semantic review of the General Training Task 1 (letter) assessment guide by a second vendor (Claude drafted it)",
+ "guide": "packages/exam-domain/guides/ielts-writing-task-1-general.v1.json",
+ "guideSha256": "b58fcf7ef01afd48f22f6fc46ad771dde8efde0c8592d039759052960d7a0de0",
+ "product": "exam",
+ "task": "exam.guide_review",
+ "route": {
+  "provider": "openai",
+  "model": "gpt-5.4",
+  "reasoning_effort": "medium",
+  "max_output_tokens": 16000,
+  "timeout": 600
+ },
+ "pricingUsdPerMillion": {
+  "input": 2.5,
+  "output": 15.0
+ },
+ "estimate": {
+  "inputTokens": 7143,
+  "maxOutputTokens": 16000,
+  "maxUsd": 0.258,
+  "expectedUsd": 0.138
+ },
+ "capUsd": 0.5,
+ "userData": "none: the guide only, no essays",
+ "approval": "2026-11-26: «да, раунд 3 до $5» (ADR-004 round yes; round 3 = General Training materials)"
+}

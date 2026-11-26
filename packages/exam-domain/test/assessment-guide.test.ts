@@ -166,3 +166,26 @@ test('the Academic Task 1 guide fits the verified Task 1 rubric, not Task 2, and
   assert.equal(task1.status, 'approved');
   assert.equal(task1.approvedAt, '2026-11-26');
 });
+
+// P5.8: the General Training Task 1 guide (a letter): Task Achievement for letters, CC/LR/GRA adapted from the Academic Task 1 guide.
+const letterGuide = assessmentGuide.parse(JSON.parse(readFileSync(new URL('../guides/ielts-writing-task-1-general.v1.json', import.meta.url), 'utf8')));
+
+test('the General Training Task 1 guide fits the verified GT Task 1 rubric and its limiters cap Task Achievement for letters', () => {
+  const {rubric} = findTask(catalogExam('ielts-general-training').versions[0], 'writing', 'task-1')!;
+  assert.deepEqual(checkGuideAgainstRubric(letterGuide, rubric), []);
+  const ids = letterGuide.criteria.flatMap(c => [...c.bands.flatMap(b => b.features.map(f => f.id)), ...c.limiters.map(l => l.id)]);
+  assert.equal(new Set(ids).size, ids.length, 'ids are unique');
+  const ta = letterGuide.criteria.find(c => c.criterionKey === 'task_achievement')!;
+  assert.deepEqual(ta.limiters.map(l => [l.id, l.capBand]), [['ta.cap.missing_point', 4], ['ta.cap.no_purpose', 4], ['ta.cap.wrong_tone', 4],
+    ['ta.cap.not_letter', 4], ['ta.cap.unrelated', 1]]);
+  const missing = bandFromChecklist(ta, letterGuide.floorBand, checklist(ta, 9, ['ta.cap.missing_point']));
+  assert.equal(missing.high, 4, 'a point not dealt with: Task Achievement at most 4');
+  // Off-topic caps in the other criteria follow the letter's own unrelated limiter.
+  for (const c of letterGuide.criteria) for (const l of c.limiters) {
+    if (l.autoTrigger?.kind === 'limiter') assert.equal(l.autoTrigger.limiterId, 'ta.cap.unrelated', l.id);
+  }
+  // Reviewed by GPT-5.4 (P5.8 ADJUDICATION); the owner approves it before the measurement.
+  assert.equal(letterGuide.status, 'reviewed');
+  const text = JSON.stringify(letterGuide);
+  for (const word of ['visual', 'overview', 'chart', 'figures', 'report on the data', 'task_response']) assert.ok(!text.includes(word), `no "${word}" from Academic or Task 2`);
+});

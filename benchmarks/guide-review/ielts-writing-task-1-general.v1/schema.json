@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "verdict": {"type": "string", "enum": ["equivalent", "too_strict", "too_lenient", "wrong_band", "not_in_descriptors", "unclear"]},
+          "comment": {"type": "string"},
+          "suggestion": {"type": "string"}
+        },
+        "required": ["id", "verdict", "comment", "suggestion"],
+        "additionalProperties": false
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterionKey": {"type": "string"},
+          "band": {"type": "integer"},
+          "aspect": {"type": "string"}
+        },
+        "required": ["criterionKey", "band", "aspect"],
+        "additionalProperties": false
+      }
+    },
+    "computationComments": {"type": "array", "items": {"type": "string"}},
+    "overall": {"type": "string"}
+  },
+  "required": ["items", "gaps", "computationComments", "overall"],
+  "additionalProperties": false
+}

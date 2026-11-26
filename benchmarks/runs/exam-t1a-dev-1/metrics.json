@@ -1,0 +1,209 @@
+{
+    "bench": "exam-t1a-dev-1",
+    "guide": "ielts-writing-task-1-academic@v1",
+    "items": 39,
+    "cells": {
+        "p1-sonnet-t1": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 39,
+            "done": 39,
+            "partial": 0,
+            "costUsd": {
+                "total": 2.6759,
+                "mean": 0.0686,
+                "p90": 0.0737
+            },
+            "latencyMs": {
+                "p50": 5440,
+                "p90": 6940
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 1,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 14.359,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 39,
+                "per100": {
+                    "error": 392.3,
+                    "weakness": 182.1,
+                    "suggestion": 92.3,
+                    "strength": 769.2
+                },
+                "repeatsPer100": 128.2,
+                "adviceFlagsPer100": {
+                    "structureDemand": 5.1,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 61.5
+                },
+                "script": {
+                    "texts": 716,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 79,
+                "recall": 0.987,
+                "recallModerateMajor": 0.969,
+                "recallLocalized": 0.987,
+                "precision": 0.934,
+                "unmatchedFindings": 9,
+                "errorFindingsPerAssessment": 4.5,
+                "bundled": 0,
+                "suggestionsOnErrors": 5,
+                "languageStrengthsOnErrors": 6
+            },
+            "clean": {
+                "essays": 15,
+                "inventedErrors": 1,
+                "essaysWithInventedErrors": 1,
+                "weaknesses": 0.6,
+                "suggestions": 1.27,
+                "strengths": 9.53,
+                "repetitionWeaknesses": 0.07,
+                "prioritySkills": 0.67,
+                "essaysWithIdiomDemand": 3
+            },
+            "checks": {
+                "total": 56,
+                "passRate": 0.982,
+                "failed": [
+                    {
+                        "item": "g-t1-no-overview-dev",
+                        "check": "band:task_achievement",
+                        "ok": false
+                    }
+                ]
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        },
+        "p1-haiku-t1": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-haiku-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 39,
+            "done": 39,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.1768,
+                "mean": 0.0045,
+                "p90": 0.0053
+            },
+            "latencyMs": {
+                "p50": 6659,
+                "p90": 9331
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 2,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 9.667,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 39,
+                "per100": {
+                    "error": 325.6,
+                    "weakness": 133.3,
+                    "suggestion": 115.4,
+                    "strength": 392.3
+                },
+                "repeatsPer100": 82.1,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 53.8
+                },
+                "script": {
+                    "texts": 533,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 79,
+                "recall": 0.924,
+                "recallModerateMajor": 0.813,
+                "recallLocalized": 0.924,
+                "precision": 0.918,
+                "unmatchedFindings": 9,
+                "errorFindingsPerAssessment": 3.7,
+                "bundled": 0,
+                "suggestionsOnErrors": 2,
+                "languageStrengthsOnErrors": 3
+            },
+            "clean": {
+                "essays": 15,
+                "inventedErrors": 4,
+                "essaysWithInventedErrors": 4,
+                "weaknesses": 0.67,
+                "suggestions": 1.4,
+                "strengths": 4.6,
+                "repetitionWeaknesses": 0,
+                "prioritySkills": 0.93,
+                "essaysWithIdiomDemand": 4
+            },
+            "checks": {
+                "total": 56,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

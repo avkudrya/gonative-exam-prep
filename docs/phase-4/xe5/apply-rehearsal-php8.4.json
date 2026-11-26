@@ -1,0 +1,87 @@
+{
+    "php": "8.4.8",
+    "bundle_sha256": "6224d718a3626eb5c2ba735be951d66a4e6fa1b31711e7bf32a393684fcb2de0",
+    "scope": {
+        "items": 74,
+        "topics": 1,
+        "explanation_rows_before": 0,
+        "earlier_reviews": 0
+    },
+    "preview": {
+        "apply": false,
+        "bundle_sha256": "6224d718a3626eb5c2ba735be951d66a4e6fa1b31711e7bf32a393684fcb2de0",
+        "state_token": "d8cae45aa49ff7ff8c8ed9d67deca9199f8c2329012e3eddd797630844c9a808",
+        "items": 74,
+        "ru_mode": {
+            "new": 74
+        },
+        "rows": 222,
+        "rows_replaced": 0,
+        "rows_inserted": 222,
+        "reviews": 222,
+        "topics": 1,
+        "created": 0,
+        "existing": 0,
+        "seconds": 0
+    },
+    "stale_token": "explanations_preview_state_changed",
+    "writes_after_refusal": 0,
+    "apply": {
+        "apply": true,
+        "bundle_sha256": "6224d718a3626eb5c2ba735be951d66a4e6fa1b31711e7bf32a393684fcb2de0",
+        "state_token": "d8cae45aa49ff7ff8c8ed9d67deca9199f8c2329012e3eddd797630844c9a808",
+        "items": 74,
+        "ru_mode": {
+            "new": 74
+        },
+        "rows": 222,
+        "rows_replaced": 0,
+        "rows_inserted": 222,
+        "reviews": 222,
+        "topics": 1,
+        "created": 74,
+        "existing": 0,
+        "shown": 222,
+        "seconds": 0.2
+    },
+    "preview_after": {
+        "created": 0,
+        "existing": 74,
+        "shown": 222,
+        "seconds": 0.1
+    },
+    "replay": {
+        "created": 0,
+        "existing": 74
+    },
+    "rows_after": [
+        {
+            "language": "en",
+            "provenance": "ai_generated",
+            "status": "ai_cross_reviewed",
+            "n": 74
+        },
+        {
+            "language": "ru",
+            "provenance": "ai_generated",
+            "status": "ai_cross_reviewed",
+            "n": 74
+        },
+        {
+            "language": "uk",
+            "provenance": "ai_generated",
+            "status": "ai_cross_reviewed",
+            "n": 74
+        }
+    ],
+    "reviews_after": [
+        {
+            "reason": "explanations_xe5",
+            "status": "ai_cross_reviewed",
+            "n": 222
+        }
+    ],
+    "unchanged": "items, topics and specifications unchanged",
+    "replaced_rows_keep_ids": "yes",
+    "earlier_reviews_untouched": "yes"
+}

@@ -1,0 +1,81 @@
+{
+ "format": "xe5-wg-handoff/1",
+ "note": "XE-5: items whose key Opus found wrong (no explanation shown), doubts it noted, and answers the checker misses, among the 74 sentence-punctuation items of bank-ai/pb1. Bank repairs or retirement are WG decisions.",
+ "doubts": [
+  {
+   "id": 33259,
+   "problem": "'will' after past 'said' is less natural than 'would' here."
+  },
+  {
+   "id": 33266,
+   "problem": "A phrase subject is listed as a B1 point in the specification, but the item is marked B2."
+  },
+  {
+   "id": 33238,
+   "problem": "The subject is a simple phrase (a B1 point in the specification), but the item is marked B2."
+  },
+  {
+   "id": 33239,
+   "problem": "One wrong option has a comma after 'that', which is not one of the error types listed in the specification."
+  },
+  {
+   "id": 33241,
+   "problem": "The meaning is a contrast, so 'but' would sound more natural, though the full stop is correct."
+  },
+  {
+   "id": 33243,
+   "problem": "The subject is short for a B2 long-subject item, and one wrong option has a comma inside the subject, which is not a listed error type."
+  },
+  {
+   "id": 33244,
+   "problem": "One wrong option has a single comma before 'who', which touches relative-clause commas (excluded by the specification)."
+  },
+  {
+   "id": 33254,
+   "problem": "The subject is a simple phrase (a B1 point in the specification), but the item is marked B2."
+  },
+  {
+   "id": 33285,
+   "problem": "Marked B2, but a phrase subject is listed as a B1 error_correction point."
+  },
+  {
+   "id": 33286,
+   "problem": "The contrast would sound more natural with 'but'."
+  },
+  {
+   "id": 33288,
+   "problem": "The second option has two errors, not exactly one."
+  },
+  {
+   "id": 33290,
+   "problem": "The relative clause follows a singular definite head, which the specification advises against."
+  },
+  {
+   "id": 33292,
+   "problem": "The first option has two errors, not exactly one."
+  },
+  {
+   "id": 33294,
+   "problem": "Marked B2, but a phrase subject is listed as a B1 error_correction point."
+  },
+  {
+   "id": 33296,
+   "problem": "Marked B2, but a phrase subject is listed as a B1 error_correction point."
+  },
+  {
+   "id": 33297,
+   "problem": "'needs repair soon' is slightly unnatural, the head 'The car' is singular definite, and the third option's error (comma before 'that') is not from the listed errors."
+  },
+  {
+   "id": 33300,
+   "problem": "The third option has two wrong commas instead of exactly one error."
+  },
+  {
+   "id": 33311,
+   "problem": "Marked B2, but a phrase subject is listed as a B1 error-correction point."
+  }
+ ],
+ "rejected": [],
+ "accepted_missing": [],
+ "not_reviewed_yet": []
+}

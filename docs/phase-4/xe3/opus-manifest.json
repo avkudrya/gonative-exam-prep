@@ -1,0 +1,678 @@
+{
+ "format": "xe3-opus-manifest/1",
+ "step": "XE-3.2",
+ "model": "claude-opus-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "medium",
+ "max_tokens": "per request",
+ "chunk": 20,
+ "prompt_sha256": "a9cb5a85e94fd5fd236bc5fdfdb547a1fff51a667fe6f2ed5b4c07d2c3104306",
+ "requests_sha256": "05d2b0f14fa5cb5e756cc17815b7fde8cf5ee44c121015809697b747ebf8833d",
+ "requests_file": "tmp/xe3/opus-requests.jsonl",
+ "no_pilot": true,
+ "after": "XE-3.1 (haiku-manifest.json)",
+ "scope": {
+  "items": 137,
+  "requests": 34,
+  "why": {
+   "missing": 15,
+   "check": 100,
+   "teacher": 7,
+   "reject": 16
+  }
+ },
+ "price_usd_per_mtok": {
+  "input": 2,
+  "output": 10
+ },
+ "estimate": {
+  "note": "Input approximated at 3 characters per token; replaced by count_tokens before the owner is asked.",
+  "approx_input_tokens": 226824,
+  "expected_output_tokens": 35620,
+  "worst_output_tokens": 133200,
+  "expected_usd": 0.8098,
+  "worst_usd": 1.7856
+ },
+ "requests": [
+  {
+   "custom_id": "xe3o-articles-01",
+   "topic": "articles",
+   "items": [
+    374,
+    375,
+    382,
+    385,
+    389,
+    391,
+    393,
+    397,
+    406,
+    413,
+    421,
+    424,
+    435,
+    459,
+    3648
+   ],
+   "max_tokens": 10500,
+   "types": [
+    "gap_fill",
+    "multiple_choice"
+   ],
+   "why": {
+    "missing": 15
+   },
+   "approx_input_tokens": 8517
+  },
+  {
+   "custom_id": "xe3o-causative-01",
+   "topic": "causative",
+   "items": [
+    30256,
+    30286
+   ],
+   "max_tokens": 2700,
+   "types": [
+    "gap_choice"
+   ],
+   "why": {
+    "check": 2
+   },
+   "approx_input_tokens": 3665
+  },
+  {
+   "custom_id": "xe3o-comparatives-superlatives-01",
+   "topic": "comparatives-superlatives",
+   "items": [
+    1531,
+    1536,
+    2166,
+    7653
+   ],
+   "max_tokens": 3900,
+   "types": [
+    "error_correction",
+    "word_forms"
+   ],
+   "why": {
+    "teacher": 3,
+    "check": 1
+   },
+   "approx_input_tokens": 6249
+  },
+  {
+   "custom_id": "xe3o-complex-sentences-01",
+   "topic": "complex-sentences",
+   "items": [
+    27114,
+    27482,
+    27560,
+    27771,
+    30896
+   ],
+   "max_tokens": 4500,
+   "types": [
+    "error_correction",
+    "ordering"
+   ],
+   "why": {
+    "check": 5
+   },
+   "approx_input_tokens": 9396
+  },
+  {
+   "custom_id": "xe3o-conditionals-01",
+   "topic": "conditionals",
+   "items": [
+    7267,
+    7821,
+    8041,
+    8109,
+    8392,
+    8511
+   ],
+   "max_tokens": 5100,
+   "types": [
+    "gap_fill",
+    "multiple_choice"
+   ],
+   "why": {
+    "check": 6
+   },
+   "approx_input_tokens": 9834
+  },
+  {
+   "custom_id": "xe3o-countable-quantifiers-01",
+   "topic": "countable-quantifiers",
+   "items": [
+    22595,
+    22616,
+    23672,
+    23796
+   ],
+   "max_tokens": 3900,
+   "types": [
+    "error_correction",
+    "multiple_choice"
+   ],
+   "why": {
+    "check": 3,
+    "reject": 1
+   },
+   "approx_input_tokens": 7493
+  },
+  {
+   "custom_id": "xe3o-demonstratives-01",
+   "topic": "demonstratives",
+   "items": [
+    23377
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "error_correction"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 4792
+  },
+  {
+   "custom_id": "xe3o-future-continuous-perfect-01",
+   "topic": "future-continuous-perfect",
+   "items": [
+    29532,
+    29634
+   ],
+   "max_tokens": 2700,
+   "types": [
+    "gap_choice",
+    "gap_fill"
+   ],
+   "why": {
+    "check": 2
+   },
+   "approx_input_tokens": 4993
+  },
+  {
+   "custom_id": "xe3o-future-forms-01",
+   "topic": "future-forms",
+   "items": [
+    7198,
+    7386,
+    8443,
+    8471,
+    8662,
+    28223,
+    28502
+   ],
+   "max_tokens": 5700,
+   "types": [
+    "gap_choice",
+    "gap_fill",
+    "multiple_choice"
+   ],
+   "why": {
+    "check": 7
+   },
+   "approx_input_tokens": 8733
+  },
+  {
+   "custom_id": "xe3o-gerund-infinitive-01",
+   "topic": "gerund-infinitive",
+   "items": [
+    4090,
+    4097,
+    4098
+   ],
+   "max_tokens": 3300,
+   "types": [
+    "gap_fill"
+   ],
+   "why": {
+    "check": 3
+   },
+   "approx_input_tokens": 6610
+  },
+  {
+   "custom_id": "xe3o-have-got-01",
+   "topic": "have-got",
+   "items": [
+    23162
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "gap_fill"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 4921
+  },
+  {
+   "custom_id": "xe3o-indefinite-pronouns-01",
+   "topic": "indefinite-pronouns",
+   "items": [
+    28959,
+    29225,
+    29452,
+    29744
+   ],
+   "max_tokens": 3900,
+   "types": [
+    "error_correction",
+    "gap_choice",
+    "multiple_choice"
+   ],
+   "why": {
+    "check": 4
+   },
+   "approx_input_tokens": 5250
+  },
+  {
+   "custom_id": "xe3o-modal-verbs-01",
+   "topic": "modal-verbs",
+   "items": [
+    8288,
+    8707,
+    8825,
+    8896
+   ],
+   "max_tokens": 3900,
+   "types": [
+    "error_correction",
+    "gap_fill",
+    "transformation"
+   ],
+   "why": {
+    "check": 4
+   },
+   "approx_input_tokens": 10408
+  },
+  {
+   "custom_id": "xe3o-passive-advanced-01",
+   "topic": "passive-advanced",
+   "items": [
+    28719
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "transformation"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 4649
+  },
+  {
+   "custom_id": "xe3o-passive-voice-01",
+   "topic": "passive-voice",
+   "items": [
+    8234,
+    27791
+   ],
+   "max_tokens": 2700,
+   "types": [
+    "gap_fill",
+    "transformation"
+   ],
+   "why": {
+    "check": 2
+   },
+   "approx_input_tokens": 5801
+  },
+  {
+   "custom_id": "xe3o-past-continuous-01",
+   "topic": "past-continuous",
+   "items": [
+    25646,
+    25870
+   ],
+   "max_tokens": 2700,
+   "types": [
+    "gap_choice",
+    "gap_fill"
+   ],
+   "why": {
+    "check": 2
+   },
+   "approx_input_tokens": 7492
+  },
+  {
+   "custom_id": "xe3o-past-perfect-01",
+   "topic": "past-perfect",
+   "items": [
+    25460,
+    26127
+   ],
+   "max_tokens": 2700,
+   "types": [
+    "gap_fill"
+   ],
+   "why": {
+    "check": 2
+   },
+   "approx_input_tokens": 7116
+  },
+  {
+   "custom_id": "xe3o-past-simple-01",
+   "topic": "past-simple",
+   "items": [
+    1935,
+    1949,
+    1994,
+    1996,
+    2065
+   ],
+   "max_tokens": 4500,
+   "types": [
+    "word_forms"
+   ],
+   "why": {
+    "teacher": 4,
+    "reject": 1,
+    "check": 1
+   },
+   "approx_input_tokens": 6742
+  },
+  {
+   "custom_id": "xe3o-prepositions-time-place-01",
+   "topic": "prepositions-time-place",
+   "items": [
+    28335
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "gap_fill"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 6892
+  },
+  {
+   "custom_id": "xe3o-present-continuous-01",
+   "topic": "present-continuous",
+   "items": [
+    6931,
+    7556,
+    7634,
+    7638,
+    7681,
+    7739,
+    7893,
+    8431,
+    8665,
+    8685,
+    8925,
+    28316
+   ],
+   "max_tokens": 8700,
+   "types": [
+    "gap_choice",
+    "gap_fill",
+    "ordering"
+   ],
+   "why": {
+    "check": 12
+   },
+   "approx_input_tokens": 8859
+  },
+  {
+   "custom_id": "xe3o-present-perfect-01",
+   "topic": "present-perfect",
+   "items": [
+    28449,
+    28495
+   ],
+   "max_tokens": 2700,
+   "types": [
+    "error_correction",
+    "gap_fill"
+   ],
+   "why": {
+    "check": 2
+   },
+   "approx_input_tokens": 6668
+  },
+  {
+   "custom_id": "xe3o-present-perfect-vs-past-simple-01",
+   "topic": "present-perfect-vs-past-simple",
+   "items": [
+    9042
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "gap_fill"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 5790
+  },
+  {
+   "custom_id": "xe3o-present-simple-01",
+   "topic": "present-simple",
+   "items": [
+    8043,
+    28576
+   ],
+   "max_tokens": 2700,
+   "types": [
+    "gap_choice",
+    "gap_fill"
+   ],
+   "why": {
+    "check": 2
+   },
+   "approx_input_tokens": 5343
+  },
+  {
+   "custom_id": "xe3o-present-simple-vs-continuous-01",
+   "topic": "present-simple-vs-continuous",
+   "items": [
+    8799,
+    8903
+   ],
+   "max_tokens": 2700,
+   "types": [
+    "gap_fill"
+   ],
+   "why": {
+    "check": 2
+   },
+   "approx_input_tokens": 7163
+  },
+  {
+   "custom_id": "xe3o-pronouns-possessives-01",
+   "topic": "pronouns-possessives",
+   "items": [
+    23925
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "gap_fill"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 6361
+  },
+  {
+   "custom_id": "xe3o-relative-clauses-01",
+   "topic": "relative-clauses",
+   "items": [
+    6906,
+    6999,
+    7075,
+    7661,
+    7974
+   ],
+   "max_tokens": 4500,
+   "types": [
+    "gap_fill"
+   ],
+   "why": {
+    "check": 5
+   },
+   "approx_input_tokens": 7506
+  },
+  {
+   "custom_id": "xe3o-reported-commands-01",
+   "topic": "reported-commands",
+   "items": [
+    31736
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "ordering"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 3226
+  },
+  {
+   "custom_id": "xe3o-reported-questions-01",
+   "topic": "reported-questions",
+   "items": [
+    31265
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "transformation"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 3891
+  },
+  {
+   "custom_id": "xe3o-reported-speech-01",
+   "topic": "reported-speech",
+   "items": [
+    5951,
+    7728,
+    7800,
+    7862,
+    7919,
+    7962,
+    7975,
+    8004,
+    8012,
+    8044,
+    8076,
+    8172,
+    8176,
+    8450,
+    8857
+   ],
+   "max_tokens": 10500,
+   "types": [
+    "gap_fill",
+    "ordering",
+    "transformation"
+   ],
+   "why": {
+    "check": 15
+   },
+   "approx_input_tokens": 11782
+  },
+  {
+   "custom_id": "xe3o-reporting-verbs-01",
+   "topic": "reporting-verbs",
+   "items": [
+    28721,
+    28806,
+    28875,
+    29154,
+    29202,
+    29566,
+    29774
+   ],
+   "max_tokens": 5700,
+   "types": [
+    "gap_choice"
+   ],
+   "why": {
+    "check": 6,
+    "reject": 1
+   },
+   "approx_input_tokens": 5366
+  },
+  {
+   "custom_id": "xe3o-there-is-are-01",
+   "topic": "there-is-are",
+   "items": [
+    22073,
+    22238,
+    22284,
+    22410,
+    22636,
+    22731,
+    22824,
+    22840,
+    22853,
+    22866,
+    23093,
+    23134,
+    23158
+   ],
+   "max_tokens": 9300,
+   "types": [
+    "error_correction",
+    "gap_fill"
+   ],
+   "why": {
+    "reject": 13
+   },
+   "approx_input_tokens": 7256
+  },
+  {
+   "custom_id": "xe3o-too-enough-01",
+   "topic": "too-enough",
+   "items": [
+    30829
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "multiple_choice"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 4146
+  },
+  {
+   "custom_id": "xe3o-wish-if-only-01",
+   "topic": "wish-if-only",
+   "items": [
+    26797,
+    29517
+   ],
+   "max_tokens": 2700,
+   "types": [
+    "error_correction"
+   ],
+   "why": {
+    "check": 2
+   },
+   "approx_input_tokens": 6559
+  },
+  {
+   "custom_id": "xe3o-word-formation-01",
+   "topic": "word-formation",
+   "items": [
+    27545
+   ],
+   "max_tokens": 2100,
+   "types": [
+    "multiple_choice"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 7355
+  }
+ ]
+}

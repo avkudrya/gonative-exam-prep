@@ -1,0 +1,32 @@
+{
+ "format": "xe3-wg-handoff/1",
+ "note": "XE-3: items without an explanation (key wrong or several correct answers) and answers the checker misses, among the items WG repaired and the XE-1 items whose gap may stay empty. Bank repairs or retirement are WG decisions.",
+ "rejected": [
+  {
+   "id": 7386,
+   "topic": "future-forms",
+   "type": "gap_choice",
+   "cefr": "B1",
+   "by": "opus",
+   "reason": "'Will travel' is also acceptable for a plan already arranged, and the specification does not allow testing will against the present continuous for plans."
+  },
+  {
+   "id": 8662,
+   "topic": "future-forms",
+   "type": "multiple_choice",
+   "cefr": "A2",
+   "by": "opus",
+   "reason": "With an exact time ('at 7 p.m. tonight') the present simple 'go' is also possible for a fixed event, and the item contrasts the present simple with the present continuous alone."
+  },
+  {
+   "id": 28875,
+   "topic": "reporting-verbs",
+   "type": "gap_choice",
+   "cefr": "B2",
+   "by": "opus",
+   "reason": "'Denied' also takes a that-clause, so 'she denied that we should use recycled materials' is grammatical and competes with 'suggested'."
+  }
+ ],
+ "accepted_missing": [],
+ "not_reviewed_yet": []
+}

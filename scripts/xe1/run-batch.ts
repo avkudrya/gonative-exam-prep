@@ -65,7 +65,8 @@ async function count() {
     out[r.custom_id] = (await client.messages.countTokens({model, system, messages, thinking, output_config} as any)).input_tokens;
   }
   const input = Object.values(out).reduce((a, b) => a + b, 0);
-  const worstOut = requests.length * manifest.max_tokens;
+  // Each request's own max_tokens (XE-3 sizes it by the request's items; earlier manifests use one value for all).
+  const worstOut = requests.reduce((s, r) => s + Number(r.params.max_tokens), 0);
   const expectedOut = manifest.estimate.expected_output_tokens;
   const result = {requests_sha256: manifest.requests_sha256, input_tokens: input, expected_usd: +usd(input, expectedOut).toFixed(4),
     worst_usd: +usd(input, worstOut).toFixed(4), per_request: out};

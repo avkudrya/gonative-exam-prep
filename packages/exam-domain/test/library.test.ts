@@ -36,7 +36,7 @@ const task1 = read('packages/exam-domain/library/ielts-writing-task-1-academic.v
 const task1Sources = read('benchmarks/sources/task1-academic-charts.json');
 
 test('the Academic Task 1 library holds every own task once with valid illustrative data, approved or revised as reviewed', async () => {
-  const {checkChartSpec} = await import('../src/index.js');
+  const {chartBrief, checkChartSpec} = await import('../src/index.js');
   const {createHash} = await import('node:crypto');
   assert.equal(task1.source.sha256, createHash('sha256').update(readFileSync(root + task1.source.file)).digest('hex'), 'the library names its exact source');
   assert.deepEqual([task1.taskKey, task1.rubricKey, task1.examKeys], ['task-1', 'ielts-writing-task-1', ['ielts-academic']]);
@@ -47,6 +47,8 @@ test('the Academic Task 1 library holds every own task once with valid illustrat
     assert.ok(s, t.ref);
     assert.deepEqual([t.type, t.text, t.stimulus], [s.type, s.instruction, s.spec], t.ref);
     assert.deepEqual(checkChartSpec(t.stimulus), [], t.ref);
+    // P5.6: what the assessor reads is computed by code from the data and shipped with the task (MultiAdmin imports it as is).
+    assert.deepEqual(t.visual, chartBrief(t.stimulus), `${t.ref}: visual is chartBrief(stimulus)`);
     assert.ok(['approve', 'revise'].includes(t.review.verdict) && t.review.originality !== 'near_copy', t.ref);
     assert.equal(t.review.verdict === 'revise', task1.review.revisionsApplied.includes(t.ref.split(':')[1]), t.ref);
     assert.match(t.text, /Write at least 150 words\.$/, t.ref);

@@ -1,0 +1,29 @@
+{
+ "format": "rw1-manifest/1",
+ "step": "P4.14 measurement (haiku)",
+ "model": "claude-haiku-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "low",
+ "max_tokens": 1500,
+ "no_pilot": true,
+ "dataset": "benchmarks/datasets/exam-rewrite-v1",
+ "dataset_sha256": "5629429dee30feb446e846a28f8259ae9500778228dc55b4125353aea3e58574",
+ "prompt_sha256": "478540bc329ad4157694412483a35b714385c2bca48f2b18f45c70c9e4877229",
+ "requests_sha256": "65cbef2c5f315f53998b57c883aa782d67bbbb137a0e717448e59b2b790e3bef",
+ "requests_file": "tmp/rw1/haiku-requests.jsonl",
+ "scope": {
+  "cases": 60
+ },
+ "price_usd_per_mtok": {
+  "input": 0.05,
+  "output": 0.25
+ },
+ "estimate": {
+  "approx_input_tokens": 57505,
+  "expected_output_tokens": 15000,
+  "worst_output_tokens": 90000,
+  "expected_usd": 0.0066,
+  "worst_usd": 0.0254
+ }
+}

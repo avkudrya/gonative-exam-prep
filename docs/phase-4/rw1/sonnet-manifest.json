@@ -1,0 +1,29 @@
+{
+ "format": "rw1-manifest/1",
+ "step": "P4.14 measurement (sonnet)",
+ "model": "claude-sonnet-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "low",
+ "max_tokens": 1500,
+ "no_pilot": true,
+ "dataset": "benchmarks/datasets/exam-rewrite-v1",
+ "dataset_sha256": "5629429dee30feb446e846a28f8259ae9500778228dc55b4125353aea3e58574",
+ "prompt_sha256": "478540bc329ad4157694412483a35b714385c2bca48f2b18f45c70c9e4877229",
+ "requests_sha256": "0d20d576e5af43edf8b7eb5fb5a8b4ec0057622246b3ad9126ab0a5fd08439dd",
+ "requests_file": "tmp/rw1/sonnet-requests.jsonl",
+ "scope": {
+  "cases": 60
+ },
+ "price_usd_per_mtok": {
+  "input": 1,
+  "output": 5
+ },
+ "estimate": {
+  "approx_input_tokens": 57545,
+  "expected_output_tokens": 15000,
+  "worst_output_tokens": 90000,
+  "expected_usd": 0.1325,
+  "worst_usd": 0.5075
+ }
+}

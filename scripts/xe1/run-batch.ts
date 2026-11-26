@@ -8,7 +8,7 @@
  *   poll   — the batch status
  *   fetch  — results → tmp/xe1/<step>-results.jsonl, actual cost from usage → docs/phase-4/xe1/<step>-costs.json
  *
- * usage: [XE_WAVE=xe2] node --import tsx scripts/xe1/run-batch.ts <mode> <step>      (step: haiku-pilot | haiku | opus-pilot | opus | opus2)
+ * usage: [XE_WAVE=xe2] node --import tsx scripts/xe1/run-batch.ts <mode> <step>      (step: haiku-pilot | haiku | opus-pilot | opus | opus2 | sonnet)
  * XE_WAVE picks the wave's folders (docs/phase-4/<wave>, tmp/<wave>); default xe1.
  * The API key is read from MultiAdmin's .env (CLAUDE_API_KEY or ANTHROPIC_API_KEY) and never printed.
  */
@@ -18,14 +18,15 @@ import {readFileSync, writeFileSync} from 'node:fs';
 
 const MULTIADMIN_ENV = '/Users/avkudrya/Documents/Projects/My/MultiVerse/MultiAdmin/.env';
 const [mode, step] = process.argv.slice(2);
-const STEPS = ['haiku-pilot', 'haiku', 'opus-pilot', 'opus', 'opus2'];
+const STEPS = ['haiku-pilot', 'haiku', 'opus-pilot', 'opus', 'opus2', 'sonnet'];
 if (!['count', 'submit', 'poll', 'fetch'].includes(mode) || !STEPS.includes(step)) {
   throw new Error(`usage: run-batch.ts count|submit|poll|fetch ${STEPS.join('|')}`);
 }
 const family = step.replace(/-pilot$/, '');
 const isPilot = step !== family;
 const WAVE = process.env.XE_WAVE ?? 'xe1';
-if (!/^xe[0-9]+$/.test(WAVE)) throw new Error('XE_WAVE must look like xe2');
+// rw1: the P4.14 rewrite-check measurement (benchmarks/rewrite-check), the same frozen-manifest protocol.
+if (!/^(xe|rw)[0-9]+$/.test(WAVE)) throw new Error('XE_WAVE must look like xe2 or rw1');
 const DOCS = `docs/phase-4/${WAVE}`;
 const manifestPath = `${DOCS}/${step}-manifest.json`;
 const countPath = `${DOCS}/${step}-count.json`;

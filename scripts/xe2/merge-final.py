@@ -21,18 +21,39 @@ TEACHER = {i['id']: i['explanations']['ru']['text'] for i in json.loads((out / '
            if (i.get('explanations') or {}).get('ru', {}).get('provenance') == 'imported:mnemonic'}
 haiku = {r['id']: r for r in json.loads((out / 'haiku-checked.json').read_text())['items']}
 # XE-2.2 (Opus on every item) and, if it ran, opus2 (the items Opus returned nothing for).
-opus, missing_answers = {}, []
+opus, missing_answers, seen_by_opus2 = {}, [], set()
 for name in ('opus-checked.json', 'opus2-checked.json'):
     if not (out / name).exists():
         continue
     data = json.loads((out / name).read_text())
     opus.update({r['id']: r for r in data['items']})
+    if name == 'opus2-checked.json':
+        seen_by_opus2 = {r['id'] for r in data['items']}
     missing_answers += data['accepted_missing']
 
-final, rejected, unreviewed, stats = [], [], [], collections.Counter()
+# WG 2026-11-26: a typed gap may have an answer and also allow an empty answer (`allow_empty`); the views of XE-1 and of this wave's
+# first runs did not show that, so such items wait for a review that sees it.
+items_raw = {i['id']: i for i in json.loads((out / 'items.json').read_text())['items']}
+def empty_also_ok(item_id):
+    i = items_raw[item_id]
+    return i['type'] == 'gap_fill' and any(g.get('allow_empty') and g.get('accepted') for g in i['payload']['gaps'])
+recheck = {i for i in items_raw if empty_also_ok(i)}
+stats = collections.Counter()
+# Answers the checker already accepts (contractions, full forms) are not a repair: scripts/xe2/classify-missing.php.
+classified = out / 'missing-classified.json'
+if classified.exists():
+    c = json.loads(classified.read_text())
+    stats['missing: already accepted by the checker'] = len(c['already_accepted'])
+    stats['missing: closed item (not an answer to add)'] = len(c['closed_item'])
+    missing_answers = [{'id': m['id'], 'missing': m['missing']} for m in c['to_add']]
+
+final, rejected, unreviewed = [], [], []
 for item_id, inv in sorted(inventory.items()):
     teacher = TEACHER.get(item_id)
     o, h = opus.get(item_id), haiku.get(item_id)
+    # opus2 sees the empty answer in its item view (scripts/xe2/build-opus2-manifest.ts).
+    if o and item_id in recheck and item_id not in seen_by_opus2:
+        o = None
     if o:
         source = 'opus'
         if o['action'] == 'reject':

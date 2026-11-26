@@ -1,0 +1,891 @@
+{
+ "format": "xe2-wg-handoff/1",
+ "note": "XE-2 wave 2: items without an explanation (key wrong or several correct answers) and answers the checker misses. Bank repairs or retirement are WG decisions.",
+ "rejected": [
+  {
+   "id": 311,
+   "topic": "articles",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "This is a generic statement with a singular noun, which the ambiguity rules forbid testing, since several article forms (even literary zero-article 'Woman') can express a generalisation."
+  },
+  {
+   "id": 384,
+   "topic": "articles",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "This is a generic sentence with a singular noun where both 'An' and 'The' work, which the specification says must not be tested."
+  },
+  {
+   "id": 1054,
+   "topic": "relative-clauses",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "The corrected sentence still lacks the commas that the non-defining clause about the identified noun 'my boss' needs."
+  },
+  {
+   "id": 1536,
+   "topic": "comparatives-superlatives",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "'Clever' allows both 'cleverer' and 'more clever', so 'more clever' is an equally correct correction."
+  },
+  {
+   "id": 1539,
+   "topic": "comparatives-superlatives",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "The specification itself treats 'more happy' as correct alongside 'happier', so the marked words are not clearly wrong and the item tests -er vs more with a two-syllable adjective."
+  },
+  {
+   "id": 1925,
+   "topic": "past-simple",
+   "type": "word_forms",
+   "by": "opus",
+   "reason": "'saw' is a meaning-dependent homograph (also the past of 'see') and has no sense gloss, so under the ambiguity rules it is not a valid word_forms item."
+  },
+  {
+   "id": 1997,
+   "topic": "past-simple",
+   "type": "word_forms",
+   "by": "opus",
+   "reason": "'Bid' has meaning-dependent forms (bid/bid for offering a price, bade/bidden for commanding or greeting) and the base has no sense gloss."
+  },
+  {
+   "id": 2065,
+   "topic": "past-simple",
+   "type": "word_forms",
+   "by": "opus",
+   "reason": "The standard past participle of 'beat' is 'beaten'; 'beat' as a participle is an informal American variant and may not be the first answer."
+  },
+  {
+   "id": 2096,
+   "topic": "past-simple",
+   "type": "word_forms",
+   "by": "opus",
+   "reason": "'Hang' has meaning-dependent forms (hung / hanged) and the base has no sense gloss, so it is not a valid word_forms item."
+  },
+  {
+   "id": 2118,
+   "topic": "past-simple",
+   "type": "word_forms",
+   "by": "opus",
+   "reason": "Without a sense gloss, 'ring' also has the regular forms 'ringed' (= surround, put a ring on), which the key does not accept."
+  },
+  {
+   "id": 2166,
+   "topic": "comparatives-superlatives",
+   "type": "word_forms",
+   "by": "opus",
+   "reason": "'simple' is a two-syllable adjective where 'more simple' / 'the most simple' are also correct, but the key accepts only 'simpler' / 'the simplest'."
+  },
+  {
+   "id": 5852,
+   "topic": "modal-verbs",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'He had to be very nervous' can also be read as a past deduction (have to for strong probability, as the teacher's note itself says), so both options are defensible."
+  },
+  {
+   "id": 6012,
+   "topic": "conditionals",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "'was' after I is informal but not wrong in the second conditional, so the marked word is not a real error."
+  },
+  {
+   "id": 6013,
+   "topic": "conditionals",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "'was' after he is informal but acceptable in the second conditional, so the marked word is not a real error."
+  },
+  {
+   "id": 6348,
+   "topic": "present-simple",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "With a future time like 'tonight', the specification treats both present simple and present continuous as usually correct, so 'visits' is not clearly an error."
+  },
+  {
+   "id": 6890,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "Permission on one specific past occasion ('yesterday') is expressed with 'were allowed to', not affirmative 'could', so the required rewrite teaches a non-standard use."
+  },
+  {
+   "id": 7001,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "'Could' is for general past permission, so it does not fit permission on one specific occasion ('yesterday'); the rewrite changes the meaning of 'were allowed to'."
+  },
+  {
+   "id": 7037,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "'Could' is not used for permission on one specific past occasion ('yesterday'); 'were allowed to' is needed, so the required rewrite is not correct."
+  },
+  {
+   "id": 7158,
+   "topic": "present-simple",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "With 'never' no auxiliary is needed; 'They never eat breakfast' is the correct sentence and 'They do never eat' is non-standard."
+  },
+  {
+   "id": 7176,
+   "topic": "present-simple",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "The gap forces 'He never is late', which is non-standard; with 'be' the adverb follows the verb: 'He is never late'."
+  },
+  {
+   "id": 7188,
+   "topic": "modal-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "Without context 'must' (deduction or requirement) and 'should' are also grammatical and possible, so 'can' is not the only answer."
+  },
+  {
+   "id": 7323,
+   "topic": "present-simple",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "The completed sentence 'She never is late for class' has non-standard word order; with 'be' the adverb normally follows the verb ('She is never late')."
+  },
+  {
+   "id": 7325,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "For permission on one specific past occasion ('despite the difficulties') English uses 'were allowed to', not affirmative 'could', so the rewrite does not keep a correct meaning."
+  },
+  {
+   "id": 7653,
+   "topic": "comparatives-superlatives",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "Replacing 'most carefulest' with 'the most careful' gives 'the the most careful', because the sentence already has 'the'; the correct replacement is 'most careful'."
+  },
+  {
+   "id": 8043,
+   "topic": "present-simple",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'She did her homework every evening.' is also correct as a past habit, since nothing in the sentence rules out the past."
+  },
+  {
+   "id": 8044,
+   "topic": "reported-speech",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "Reported 'must' may also stay 'must' ('They said that they must leave then'), but this correct answer is not accepted."
+  },
+  {
+   "id": 8088,
+   "topic": "modal-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'There is no restriction' signals permission, not absence of necessity, so 'don't have to park here' does not follow logically from the context."
+  },
+  {
+   "id": 8089,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "The instruction is garbled and rewriting 'will have to' as 'must' contradicts the topic rule that future obligation uses 'will have to'."
+  },
+  {
+   "id": 8141,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "Affirmative 'could' is not used for permission on one specific past occasion (after the guide arrived); 'were allowed to' is needed, so the required rewrite is unnatural."
+  },
+  {
+   "id": 8197,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "Affirmative 'could' is not used for permission on one specific past occasion ('yesterday'); 'were allowed to' is needed, so the required rewrite is unnatural."
+  },
+  {
+   "id": 8431,
+   "topic": "present-continuous",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "'She is now cooking dinner' is also a correct order of the same words and is not accepted."
+  },
+  {
+   "id": 8450,
+   "topic": "reported-speech",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "Without a backshift instruction or a clear change, 'He asked who is coming to the meeting' is also correct if the meeting is still ahead, but it is not accepted."
+  },
+  {
+   "id": 8665,
+   "topic": "present-continuous",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "With a future time like 'this weekend' both the present continuous and the present simple are accepted by the ambiguity rules, so 'visit' is also correct."
+  },
+  {
+   "id": 8685,
+   "topic": "present-continuous",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'They have a meeting right now' is also natural English (a scheduled meeting), so 'have' is a second correct answer."
+  },
+  {
+   "id": 8707,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "The instruction asks for 'could', which cannot express one specific past achievement, and it contradicts the key 'was able to'."
+  },
+  {
+   "id": 8811,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "Affirmative 'could' is not used for permission on one specific past occasion, so the forced rewrite with 'could' does not keep the meaning of 'were allowed to'."
+  },
+  {
+   "id": 8825,
+   "topic": "modal-verbs",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "The gap prompts '(be able to)', but the stored key is 'could', which does not use the given verb; the key should be 'was able to'."
+  },
+  {
+   "id": 8857,
+   "topic": "reported-speech",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "Where someone lives is usually still true, so 'He asked where I live' is also correct but not accepted."
+  },
+  {
+   "id": 8896,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "The instruction asks for 'could', which cannot express one specific past achievement, and it contradicts the key 'was able to'."
+  },
+  {
+   "id": 8925,
+   "topic": "present-continuous",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "With a future time like 'this evening', both 'are playing' (arrangement) and 'play' can be correct, so the item cannot test the tense choice."
+  },
+  {
+   "id": 21962,
+   "topic": "question-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "With no time marker, 'Did he like pizza?' is also correct, so 'Does' is not the only answer."
+  },
+  {
+   "id": 22238,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "'This morning' does not fix the tense, so 'There were' is an equally valid correction of 'There is'."
+  },
+  {
+   "id": 22284,
+   "topic": "there-is-are",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'This year' does not fix the tense, so 'were' also fits the gap."
+  },
+  {
+   "id": 22410,
+   "topic": "there-is-are",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "Without a cue or present anchor, 'were' also fits ('There were no bananas in the basket today'), since 'today' does not fix the tense."
+  },
+  {
+   "id": 22424,
+   "topic": "pronouns-possessives",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'them' also gives a correct sentence ('we took them' = we took their suitcases), so the key is not the only correct option."
+  },
+  {
+   "id": 22450,
+   "topic": "question-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Who did call the phone just now?' is a grammatical emphatic subject question, so 'did call' also fits the gap, which the specification forbids testing this way."
+  },
+  {
+   "id": 22492,
+   "topic": "question-forms",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'Who did call the phone a moment ago?' is a grammatical emphatic subject question, so 'did call' is also correct."
+  },
+  {
+   "id": 22514,
+   "topic": "pronouns-possessives",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'his' is also a correct possessive pronoun ('Is it his?') and the hint does not fix the owner, against the rule that 'his' is never a distractor for a possessive pronoun."
+  },
+  {
+   "id": 22636,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "With no time marker 'is' is an equally correct correction ('There is some bread on the table'), so the A2 item lacks the required tense anchor."
+  },
+  {
+   "id": 22670,
+   "topic": "question-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "The emphatic subject question 'Who did close the door yesterday?' is also grammatical, so 'did close' fits the gap too."
+  },
+  {
+   "id": 22731,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "At A2 'today' does not fix the tense, so 'There were many books on the shelf today' is an equally correct fix."
+  },
+  {
+   "id": 22821,
+   "topic": "question-forms",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "Replacing the marked words with the subject question 'Who saw you' also gives a correct sentence, so the correction is not unique (the specification excludes subject vs object questions from error_correction)."
+  },
+  {
+   "id": 22824,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "Without a present anchor, 'was' also corrects the agreement error ('There was a cat on the sofa'), so the item needs a marker such as 'now'."
+  },
+  {
+   "id": 22840,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "The A2 item has no time anchor, so 'were' is also a valid correction ('How many apples were there in the basket?')."
+  },
+  {
+   "id": 22853,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "Without a present anchor, 'were' also corrects the sentence ('There were two cats outside the house')."
+  },
+  {
+   "id": 22866,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "'Today' does not fix the tense, so 'wasn't any' is also a valid correction that the key misses."
+  },
+  {
+   "id": 22869,
+   "topic": "question-forms",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "The movable adverb 'now' also fits before 'going' ('Are they now going to the park?'), so the order is not unique."
+  },
+  {
+   "id": 22887,
+   "topic": "imperatives",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Don't be tired now' is illogical with the reason 'You need some rest' (being tired is not a choice and the reason implies the person is tired), so the context does not support the key."
+  },
+  {
+   "id": 22952,
+   "topic": "question-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Who did eat the last piece of cake yesterday?' is a grammatical emphatic subject question, so 'did eat' is also correct."
+  },
+  {
+   "id": 22995,
+   "topic": "question-forms",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'Who did close the door this morning?' is a grammatical emphatic subject question, so 'did close' is also correct."
+  },
+  {
+   "id": 23014,
+   "topic": "question-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'did paint' also makes a grammatical emphatic subject question (Who did paint this painting?), so two options fit; the specification forbids testing subject vs object with a one-word gap."
+  },
+  {
+   "id": 23055,
+   "topic": "question-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'did make' also makes a grammatical emphatic subject question (Who did make that noise?), so two options fit; the specification forbids testing subject vs object with a one-word gap."
+  },
+  {
+   "id": 23093,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "'today' does not fix the tense, so 'There was a lot of rain today' is an equally correct correction."
+  },
+  {
+   "id": 23134,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "There is no time anchor, so 'There was some bread on the table' is also a correct correction."
+  },
+  {
+   "id": 23158,
+   "topic": "there-is-are",
+   "type": "error_correction",
+   "by": "opus",
+   "reason": "There is no time anchor, so 'There were two cars in the garage' is also a correct correction."
+  },
+  {
+   "id": 23182,
+   "topic": "there-is-are",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "A2 items need a present or past anchor and 'today' does not decide the tense, so 'There was a new café' would also fit."
+  },
+  {
+   "id": 23324,
+   "topic": "question-forms",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'did break' is also grammatical as an emphatic subject question, so two options fit the gap."
+  },
+  {
+   "id": 23925,
+   "topic": "pronouns-possessives",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'This is not my book. It is mine.' contradicts itself, so the key makes no sense in this context."
+  },
+  {
+   "id": 27772,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "Performing in the school play is one specific past occasion, which needs 'were allowed to'; 'could' is for general past permission and is also ambiguous with ability, so the rewrite does not keep the meaning."
+  },
+  {
+   "id": 28118,
+   "topic": "passive-voice",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "The passive of 'The town festival attracted many visitors' is 'Many visitors were attracted by the town festival'; the key's 'attracted to' drops the agent and changes the structure and meaning."
+  },
+  {
+   "id": 28335,
+   "topic": "prepositions-time-place",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "In an open gap, 'at the pool' (place of activity) is also correct, but only 'in' is accepted."
+  },
+  {
+   "id": 28571,
+   "topic": "modal-verbs",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'Don't have to' also fits ('you won't need them, so please leave them at home'), so the context does not force a prohibition and 'mustn't' is not the only answer."
+  },
+  {
+   "id": 28576,
+   "topic": "present-simple",
+   "type": "gap_fill",
+   "by": "opus",
+   "reason": "'The band' is a collective noun that can take a plural verb in British English ('The band play'), so the subject does not clearly show number and 'play' is also acceptable."
+  },
+  {
+   "id": 28959,
+   "topic": "indefinite-pronouns",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "In this offer both 'someone' and 'anyone' are correct, and the ambiguity rules forbid offering them together."
+  },
+  {
+   "id": 29452,
+   "topic": "indefinite-pronouns",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'My pet dog found nobody strange in the garden this morning' is also grammatical and plausible, so 'nobody' is a second correct answer."
+  },
+  {
+   "id": 29744,
+   "topic": "indefinite-pronouns",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'While packing boxes, I found nothing I had forgotten to put in the moving van' is also grammatical and makes sense, so 'nothing' is a second correct answer."
+  },
+  {
+   "id": 30108,
+   "topic": "indefinite-pronouns",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "Without a context excluding it, 'If no one wants to help at the farm, please speak to the manager' is also grammatical and sensible, so both options fit."
+  },
+  {
+   "id": 30829,
+   "topic": "too-enough",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "'very' also fits grammatically ('have very fresh fruit for all the customers'), so the key is not the only correct option."
+  },
+  {
+   "id": 30838,
+   "topic": "modal-perfects",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'could have missed' is also acceptable as speculation about a possible past event, so two options fit the gap."
+  },
+  {
+   "id": 31102,
+   "topic": "modal-perfects",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'must have' also fits as a deduction from the evidence that you were very tired and sore afterwards ('You must have stayed too long')."
+  },
+  {
+   "id": 31265,
+   "topic": "reported-questions",
+   "type": "transformation",
+   "by": "opus",
+   "reason": "Nothing shows she has left hospital, so the still-true present 'She asked why she is in hospital' is also correct but is not accepted."
+  },
+  {
+   "id": 31266,
+   "topic": "indirect-questions",
+   "type": "ordering",
+   "by": "opus",
+   "reason": "Present simple 'stays' for a future weather question is unnatural here; the embedded question needs 'will stay'."
+  },
+  {
+   "id": 31442,
+   "topic": "indefinite-pronouns",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'everyone' also fits grammatically and plausibly ('said everyone has already moved in next door'), so 'someone' is not the only correct choice."
+  },
+  {
+   "id": 31448,
+   "topic": "indefinite-pronouns",
+   "type": "gap_choice",
+   "by": "opus",
+   "reason": "'I didn't find everything I wanted to keep' is also grammatical and meaningful, so 'anything' is not the only correct choice."
+  },
+  {
+   "id": 31568,
+   "topic": "modal-obligation-advice",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "By the topic's rules, 'must' is not used for a future obligation ('tomorrow'); 'will have to' is needed but is not among the options."
+  },
+  {
+   "id": 31679,
+   "topic": "modal-deduction",
+   "type": "multiple_choice",
+   "by": "opus",
+   "reason": "The evidence is ambiguous: 'the car is in the driveway' can mean their car is at home, which supports 'can't' as much as 'must', so the sure deduction has no single clear answer."
+  }
+ ],
+ "accepted_missing": [
+  {
+   "id": 7336,
+   "missing": "Every morning she drinks coffee."
+  },
+  {
+   "id": 31447,
+   "missing": "let me practice"
+  },
+  {
+   "id": 31562,
+   "missing": "to practice"
+  },
+  {
+   "id": 31597,
+   "missing": "asked her to practice"
+  },
+  {
+   "id": 27482,
+   "missing": "Although she had a summer job"
+  },
+  {
+   "id": 27482,
+   "missing": "Even though she had a summer job"
+  },
+  {
+   "id": 27482,
+   "missing": "Though she had a summer job"
+  },
+  {
+   "id": 27482,
+   "missing": "Despite the fact that she had a summer job"
+  },
+  {
+   "id": 27771,
+   "missing": "Although they were tired"
+  },
+  {
+   "id": 27771,
+   "missing": "Even though they were tired"
+  },
+  {
+   "id": 27771,
+   "missing": "Though they were tired"
+  },
+  {
+   "id": 26541,
+   "missing": "'s been"
+  },
+  {
+   "id": 26550,
+   "missing": "'s been"
+  },
+  {
+   "id": 26659,
+   "missing": "'s been playing"
+  },
+  {
+   "id": 26748,
+   "missing": "'s been walking"
+  },
+  {
+   "id": 26760,
+   "missing": "'s been"
+  },
+  {
+   "id": 7556,
+   "missing": "'s not cooking"
+  },
+  {
+   "id": 7596,
+   "missing": "Now he is fixing the car."
+  },
+  {
+   "id": 7634,
+   "missing": "'s waiting"
+  },
+  {
+   "id": 7638,
+   "missing": "'s knocking"
+  },
+  {
+   "id": 7681,
+   "missing": "'s painting"
+  },
+  {
+   "id": 23377,
+   "missing": "That book"
+  },
+  {
+   "id": 7718,
+   "missing": "'s not"
+  },
+  {
+   "id": 7739,
+   "missing": "'s painting"
+  },
+  {
+   "id": 7893,
+   "missing": "'s cooking"
+  },
+  {
+   "id": 28449,
+   "missing": "have learnt"
+  },
+  {
+   "id": 1935,
+   "missing": "forbad"
+  },
+  {
+   "id": 1949,
+   "missing": "weaved"
+  },
+  {
+   "id": 1531,
+   "missing": "more lively"
+  },
+  {
+   "id": 1531,
+   "missing": "the most lively"
+  },
+  {
+   "id": 29225,
+   "missing": "isn't anyone"
+  },
+  {
+   "id": 29225,
+   "missing": "is no one"
+  },
+  {
+   "id": 31769,
+   "missing": "to practice"
+  },
+  {
+   "id": 8288,
+   "missing": "should have apologised"
+  },
+  {
+   "id": 23162,
+   "missing": "'s not got"
+  },
+  {
+   "id": 27747,
+   "missing": "'s skiing"
+  },
+  {
+   "id": 27816,
+   "missing": "'s visiting"
+  },
+  {
+   "id": 31401,
+   "missing": "to practice"
+  },
+  {
+   "id": 31404,
+   "missing": "made me practice"
+  },
+  {
+   "id": 31428,
+   "missing": "practice"
+  },
+  {
+   "id": 22595,
+   "missing": "some sugar"
+  },
+  {
+   "id": 26797,
+   "missing": "was able to"
+  },
+  {
+   "id": 26797,
+   "missing": "were able to"
+  },
+  {
+   "id": 25295,
+   "missing": "'s been raining"
+  },
+  {
+   "id": 28719,
+   "missing": "The registration form must be completed."
+  },
+  {
+   "id": 7862,
+   "missing": "She said that she was learning French at that moment."
+  },
+  {
+   "id": 29517,
+   "missing": "was able to"
+  },
+  {
+   "id": 6931,
+   "missing": "'s waiting"
+  },
+  {
+   "id": 6946,
+   "missing": "'s playing"
+  },
+  {
+   "id": 6354,
+   "missing": "'s leaving"
+  },
+  {
+   "id": 6355,
+   "missing": "'s crying"
+  },
+  {
+   "id": 1994,
+   "missing": "spit"
+  },
+  {
+   "id": 1996,
+   "missing": "betted"
+  },
+  {
+   "id": 28207,
+   "missing": "'s learning"
+  },
+  {
+   "id": 28316,
+   "missing": "'s starting"
+  },
+  {
+   "id": 28356,
+   "missing": "'s planting"
+  },
+  {
+   "id": 7187,
+   "missing": "'s just finished"
+  },
+  {
+   "id": 7225,
+   "missing": "'s lived"
+  },
+  {
+   "id": 7765,
+   "missing": "'s just written"
+  },
+  {
+   "id": 7911,
+   "missing": "'s just begun"
+  },
+  {
+   "id": 7931,
+   "missing": "'s seen"
+  },
+  {
+   "id": 7937,
+   "missing": "'s taken"
+  },
+  {
+   "id": 8234,
+   "missing": "The work has been completed already."
+  },
+  {
+   "id": 22073,
+   "missing": "are no"
+  },
+  {
+   "id": 25694,
+   "missing": "'s known"
+  },
+  {
+   "id": 25741,
+   "missing": "'s been"
+  },
+  {
+   "id": 25835,
+   "missing": "'s been"
+  },
+  {
+   "id": 25878,
+   "missing": "'s been playing"
+  },
+  {
+   "id": 25892,
+   "missing": "'s known"
+  },
+  {
+   "id": 25902,
+   "missing": "'s been"
+  }
+ ],
+ "not_reviewed_yet": []
+}

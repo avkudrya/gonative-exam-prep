@@ -4,7 +4,10 @@
  * `why` tells Opus what the first pass left open (reject, teacher, rewrite, missing) or `check` for a clean result.
  * Pilot: the first request holding each new type (error_correction, transformation, word_forms), read by hand before the full run.
  *
- * usage: node --import tsx scripts/xe2/build-opus-manifest.ts
+ * `rest` (XE-2.2b, opus2): the items without an Opus result — the ones Opus skipped and the items held back because a gap may also stay
+ * empty (WG 2026-11-26: the first views did not show `allow_empty` next to an answer; they now carry `empty_ok`). 10 items per request.
+ *
+ * usage: node --import tsx scripts/xe2/build-opus-manifest.ts [rest]
  * in:  tmp/xe2/haiku-requests.jsonl, tmp/xe2/haiku-checked.json, tmp/xe2/topics.json, scripts/xe2/prompts/opus-review.md
  * out: tmp/xe2/opus-requests.jsonl, tmp/xe2/opus-pilot-requests.jsonl, docs/phase-4/xe2/opus-manifest.json, opus-pilot-manifest.json
  */
@@ -12,8 +15,9 @@ import {createHash} from 'node:crypto';
 import {readFileSync, writeFileSync} from 'node:fs';
 
 const MODEL = 'claude-opus-5-5';
-const CHUNK = 20;
+const CHUNK = process.argv[2] === 'rest' ? 10 : 20;
 const MAX_TOKENS = 12000;
+const REST = process.argv[2] === 'rest';
 const EFFORT = 'medium';
 // Batches: 50 % of the list price ($4 / $20 per MTok).
 const PRICE = {input: 2, output: 10};
@@ -28,6 +32,7 @@ const sha = (s: string) => createHash('sha256').update(s).digest('hex');
 const prompt = readFileSync('scripts/xe2/prompts/opus-review.md', 'utf8');
 const topics = new Map<string, any>(read('tmp/xe2/topics.json').topics.map((t: any) => [t.slug, t]));
 const checked = new Map<number, any>(read('tmp/xe2/haiku-checked.json').items.map((r: any) => [r.id, r]));
+const raw = new Map<number, any>(read('tmp/xe2/items.json').items.map((i: any) => [i.id, i]));
 
 // The item views the first pass saw, with their topic.
 const views = new Map<number, {topic: string; view: any}>();
@@ -50,6 +55,10 @@ function why(id: number): string[] {
 function opusView(id: number) {
   const {view} = views.get(id)!;
   const {draft, ru_original, ...task} = view;
+  const item = raw.get(id);
+  if (REST && item.type === 'gap_fill') {
+    task.key = task.key.map((k: any, n: number) => (item.payload.gaps[n]?.allow_empty && item.payload.gaps[n]?.accepted.length ? {...k, empty_ok: true} : k));
+  }
   const c = checked.get(id);
   return {...task, teacher_ru: ru_original, why: why(id),
     first: c ? {key_ok: c.key_ok, verdict: c.verdict, reason: c.reason, teacher_ru: c.ru_original, en: c.en, ru: c.ru, uk: c.uk} : null};
@@ -74,8 +83,9 @@ const schema = {
   }}},
 };
 
+const scope = REST ? read('docs/phase-4/xe2/wg-handoff.json').not_reviewed_yet.map((r: any) => r.id as number) : [...views.keys()];
 const byTopic = new Map<string, number[]>();
-for (const id of [...views.keys()].sort((a, b) => a - b)) {
+for (const id of [...scope].sort((a, b) => a - b)) {
   const t = views.get(id)!.topic;
   byTopic.set(t, [...(byTopic.get(t) ?? []), id]);
 }
@@ -86,7 +96,7 @@ for (const [slug, ids] of [...byTopic.entries()].sort(([a], [b]) => a.localeComp
   const spec = `Topic: ${slug} (CEFR ${topic.cefr.join('-')}), specification version ${topic.spec.version}:\n${JSON.stringify(topic.spec.spec)}`;
   for (let i = 0; i < ids.length; i += CHUNK) {
     const chunk = ids.slice(i, i + CHUNK);
-    const custom_id = `xe2o-${slug}-${String(i / CHUNK + 1).padStart(2, '0')}`.slice(0, 64);
+    const custom_id = `${REST ? 'xe2p' : 'xe2o'}-${slug}-${String(i / CHUNK + 1).padStart(2, '0')}`.slice(0, 64);
     const body = `Items (${chunk.length}):\n${JSON.stringify(chunk.map(opusView))}`;
     const params = {model: MODEL, max_tokens: MAX_TOKENS, thinking: {type: 'adaptive'}, output_config: {effort: EFFORT, format: {type: 'json_schema', schema}},
       system: prompt, messages: [{role: 'user', content: [{type: 'text', text: spec}, {type: 'text', text: body}]}]};
@@ -119,6 +129,13 @@ function manifestOf(step: string, file: string, reqLines: string[], reqs: typeof
   };
 }
 
+if (REST) {
+  // No pilot: the same settings as the reviewed XE-2.2 run.
+  const rest = manifestOf('XE-2.2b', 'tmp/xe2/opus2-requests.jsonl', lines, requests, {no_pilot: true, after: 'XE-2.2 (opus-manifest.json)'});
+  writeFileSync('docs/phase-4/xe2/opus2-manifest.json', JSON.stringify(rest, null, 1) + '\n');
+  console.log(JSON.stringify({rest: {...rest, requests: rest.requests.length}}, null, 1));
+  process.exit(0);
+}
 const full = manifestOf('XE-2.2', 'tmp/xe2/opus-requests.jsonl', lines, requests);
 writeFileSync('docs/phase-4/xe2/opus-manifest.json', JSON.stringify(full, null, 1) + '\n');
 const pilotIds = [...new Set(['error_correction', 'transformation', 'word_forms'].map(t => requests.find(r => r.types.includes(t))!.custom_id))];

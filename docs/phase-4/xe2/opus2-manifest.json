@@ -1,0 +1,110 @@
+{
+ "format": "xe2-opus-manifest/1",
+ "step": "XE-2.2b",
+ "model": "claude-opus-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "medium",
+ "max_tokens": 12000,
+ "chunk": 10,
+ "prompt_sha256": "a9cb5a85e94fd5fd236bc5fdfdb547a1fff51a667fe6f2ed5b4c07d2c3104306",
+ "requests_sha256": "afd3f7563cbccdd2d7fde8989e41f690e1e0b27bae685a0edc0b242e6ec88780",
+ "requests_file": "tmp/xe2/opus2-requests.jsonl",
+ "no_pilot": true,
+ "after": "XE-2.2 (opus-manifest.json)",
+ "scope": {
+  "items": 8,
+  "requests": 5,
+  "why": {
+   "check": 8
+  }
+ },
+ "price_usd_per_mtok": {
+  "input": 2,
+  "output": 10
+ },
+ "estimate": {
+  "note": "Input approximated at 3 characters per token; replaced by count_tokens before the owner is asked.",
+  "approx_input_tokens": 30456,
+  "expected_output_tokens": 2080,
+  "worst_output_tokens": 60000,
+  "expected_usd": 0.0817,
+  "worst_usd": 0.6609
+ },
+ "requests": [
+  {
+   "custom_id": "xe2p-articles-01",
+   "topic": "articles",
+   "items": [
+    373,
+    28286,
+    28313,
+    28481
+   ],
+   "types": [
+    "gap_choice",
+    "gap_fill"
+   ],
+   "why": {
+    "check": 4
+   },
+   "approx_input_tokens": 7069
+  },
+  {
+   "custom_id": "xe2p-indirect-questions-01",
+   "topic": "indirect-questions",
+   "items": [
+    29158
+   ],
+   "types": [
+    "gap_choice"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 4420
+  },
+  {
+   "custom_id": "xe2p-modal-verbs-01",
+   "topic": "modal-verbs",
+   "items": [
+    8488
+   ],
+   "types": [
+    "multiple_choice"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 9387
+  },
+  {
+   "custom_id": "xe2p-verb-object-infinitive-01",
+   "topic": "verb-object-infinitive",
+   "items": [
+    31582
+   ],
+   "types": [
+    "error_correction"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 3280
+  },
+  {
+   "custom_id": "xe2p-wish-if-only-01",
+   "topic": "wish-if-only",
+   "items": [
+    26730
+   ],
+   "types": [
+    "gap_fill"
+   ],
+   "why": {
+    "check": 1
+   },
+   "approx_input_tokens": 6300
+  }
+ ]
+}

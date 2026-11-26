@@ -1,0 +1,185 @@
+{
+ "purpose": "P5.9 clean base letters for the General Training Task 1 benchmark set S-GT1: one vendor writes, the other proofreads and checks the task and tone (docs/phase-5/P5-plan.md §3)",
+ "product": "exam",
+ "tasks": "packages/exam-domain/library/ielts-writing-task-1-general.v1.json",
+ "output": "benchmarks/sources/gt1-bases.jsonl",
+ "routes": {
+  "anthropic": {
+   "provider": "anthropic",
+   "model": "claude-sonnet-5-5",
+   "reasoning_effort": "low",
+   "max_output_tokens": 2000,
+   "timeout": 600
+  },
+  "openai": {
+   "provider": "openai",
+   "model": "gpt-5.4",
+   "reasoning_effort": "low",
+   "max_output_tokens": 2000,
+   "timeout": 600
+  }
+ },
+ "promptVersions": {
+  "write": "exam-gt1-base-write-1",
+  "check": "exam-gt1-base-check-1"
+ },
+ "capUsd": 2.0,
+ "userData": "none: our own tasks and model-written letters",
+ "approval": {
+  "by": "owner",
+  "date": "2026-11-26",
+  "note": "«да, раунд 3 до $5» (ADR-004 round yes; round 3 = General Training materials); this step's cap within the round"
+ },
+ "items": [
+  {
+   "id": "gb01",
+   "taskId": "gt1-01",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb02",
+   "taskId": "gt1-02",
+   "author": "openai"
+  },
+  {
+   "id": "gb03",
+   "taskId": "gt1-03",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb04",
+   "taskId": "gt1-04",
+   "author": "openai"
+  },
+  {
+   "id": "gb05",
+   "taskId": "gt1-05",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb06",
+   "taskId": "gt1-06",
+   "author": "openai"
+  },
+  {
+   "id": "gb07",
+   "taskId": "gt1-07",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb08",
+   "taskId": "gt1-08",
+   "author": "openai"
+  },
+  {
+   "id": "gb09",
+   "taskId": "gt1-09",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb10",
+   "taskId": "gt1-10",
+   "author": "openai"
+  },
+  {
+   "id": "gb11",
+   "taskId": "gt1-11",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb12",
+   "taskId": "gt1-12",
+   "author": "openai"
+  },
+  {
+   "id": "gb13",
+   "taskId": "gt1-13",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb14",
+   "taskId": "gt1-14",
+   "author": "openai"
+  },
+  {
+   "id": "gb15",
+   "taskId": "gt1-15",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb16",
+   "taskId": "gt1-16",
+   "author": "openai"
+  },
+  {
+   "id": "gb17",
+   "taskId": "gt1-17",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb18",
+   "taskId": "gt1-18",
+   "author": "openai"
+  },
+  {
+   "id": "gb19",
+   "taskId": "gt1-19",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb20",
+   "taskId": "gt1-20",
+   "author": "openai"
+  },
+  {
+   "id": "gb21",
+   "taskId": "gt1-21",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb22",
+   "taskId": "gt1-22",
+   "author": "openai"
+  },
+  {
+   "id": "gb23",
+   "taskId": "gt1-23",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb24",
+   "taskId": "gt1-24",
+   "author": "openai"
+  },
+  {
+   "id": "gb25",
+   "taskId": "gt1-01",
+   "author": "openai"
+  },
+  {
+   "id": "gb26",
+   "taskId": "gt1-06",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb27",
+   "taskId": "gt1-09",
+   "author": "openai"
+  },
+  {
+   "id": "gb28",
+   "taskId": "gt1-14",
+   "author": "anthropic"
+  },
+  {
+   "id": "gb29",
+   "taskId": "gt1-17",
+   "author": "openai"
+  },
+  {
+   "id": "gb30",
+   "taskId": "gt1-22",
+   "author": "anthropic"
+  }
+ ]
+}

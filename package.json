@@ -21,6 +21,7 @@
     "check": "npm run typecheck && npm test && npm run typecheck:web && npm run lint && npm run build && npm run test:web",
     "bench:build": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build.ts",
     "bench:t1": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build-t1.ts",
+    "bench:gt1": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build-gt1.ts",
     "bench:dense": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/dense.ts",
     "bench:h1": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/ellipse.ts",
     "test:web": "npm run test --workspace web"

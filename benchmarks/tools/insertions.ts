@@ -453,3 +453,64 @@ export function insertErrors(text: string, seed: string, options: InsertOptions 
 export function unknownSkills(): string[] {
   return insertionRules.filter(r => !seedSkills.includes(r.skill)).map(r => r.id);
 }
+
+const LETTER_MISSPELLINGS: Record<string, string> = {
+  convenient: 'convinient', recommend: 'recomend', accommodation: 'accomodation', necessary: 'neccessary', receive: 'recieve',
+  received: 'recieved', appreciate: 'apreciate', grateful: 'greatful', definitely: 'definately', immediately: 'immediatly',
+  unfortunately: 'unfortunatly', available: 'availible', opportunity: 'oportunity', experience: 'experiance', colleagues: 'collegues',
+  responsible: 'responsable', until: 'untill', really: 'realy', believe: 'beleive', especially: 'especialy', apologize: 'appologize',
+};
+/** Gerunds after "for" in thanks and apologies, as learners write them with the base form ("thank you for help"). */
+const GERUND_BASE: Record<string, string> = {
+  looking: 'look', helping: 'help', considering: 'consider', taking: 'take', letting: 'let', reading: 'read', missing: 'miss',
+  making: 'make', giving: 'give', organizing: 'organize', inviting: 'invite', having: 'have', being: 'be', lending: 'lend',
+};
+const WEEKDAYS = 'Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|weekdays|weekends';
+
+/**
+ * Typical learner errors in General Training Task 1 letters (P5.9), used together with insertionRules for set S-GT1: letter
+ * language (look forward to, thank you for, on Monday, I have been … for) offers too few places for the essay catalogue alone.
+ * No rule touches the opening or closing line: the code check of the opening and closing must find nothing in an S-GT1 letter.
+ */
+function letterRules(): InsertionRule[] {
+  return [
+    {id: 'verb_form.look_forward_to', skill: 'grammar.verb_tenses', severity: 'moderate',
+      pattern: /\b(look(?:ing)? forward to) (hearing|seeing|receiving|meeting|welcoming)\b/gi,
+      replace: m => `${m[1]} ${m[2].replace(/ing$/, '').replace(/^receiv$/i, 'receive').replace(/^welcom$/i, 'welcome')}`},
+    {id: 'verb_form.gerund_after_for', skill: 'grammar.verb_tenses', severity: 'moderate',
+      pattern: new RegExp(`\\b((?:thank(?:s| you)(?: so much| very much)?|sorry|apologi[sz]e|grateful) for) (${words(GERUND_BASE)})\\b`, 'gi'),
+      replace: m => `${m[1]} ${fromMap(GERUND_BASE)(m[2])}`},
+    {id: 'tense.present_for_duration', skill: 'grammar.verb_tenses', severity: 'moderate',
+      pattern: /\b(I|we) have been (a member|members|living|working|using|visiting)\b/g,
+      replace: m => `${m[1]} ${m[1] === 'I' ? 'am' : 'are'} ${m[2]}`},
+    {id: 'preposition.on_weekday', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: new RegExp(`\\b(on) (${WEEKDAYS})\\b`, 'g'), replace: m => `in ${m[2]}`},
+    {id: 'preposition.interested_in', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: /\b(interested) in\b/gi, replace: m => `${m[1]} on`},
+    {id: 'preposition.complain_about', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: /\b(complain(?:ing|ed|s)?) about\b/gi, replace: m => `${m[1]} for`},
+    {id: 'preposition.arrive_at', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: /\b(arriv(?:e|ed|es|ing)) (at|in)\b/gi, replace: m => `${m[1]} to`},
+    {id: 'collocation.make_take', skill: 'vocabulary.collocations', severity: 'minor',
+      pattern: /\b(take|took|taken|taking) (a day off|a week off|a break|a look|photos|a trip)\b/gi,
+      replace: m => `${({take: 'make', took: 'made', taken: 'made', taking: 'making'} as Record<string, string>)[m[1].toLowerCase()]} ${m[2]}`},
+    {id: 'collocation.make_difference', skill: 'vocabulary.collocations', severity: 'minor',
+      pattern: /\b(make|made|making) (a (?:big |real |significant |huge )?difference|a mistake|a decision|an effort)\b/gi,
+      replace: m => `${({make: 'do', made: 'did', making: 'doing'} as Record<string, string>)[m[1].toLowerCase()]} ${m[2]}`},
+    {id: 'word_choice.say_tell', skill: 'vocabulary.word_choice', severity: 'minor',
+      pattern: /\b(tell|told) (you|me|us|him|her|them) (about|that|how|what|which|when|where)\b/gi,
+      replace: m => `${m[1].toLowerCase() === 'tell' ? 'say' : 'said'} ${m[2]} ${m[3]}`},
+    {id: 'agreement.everyone', skill: 'grammar.subject_verb_agreement', severity: 'moderate',
+      pattern: /\b(everyone|everybody|nobody|someone|each of us) (is|was|has|knows|seems)\b/gi,
+      replace: m => `${m[1]} ${({is: 'are', was: 'were', has: 'have', knows: 'know', seems: 'seem'} as Record<string, string>)[m[2].toLowerCase()]}`},
+    {id: 'spelling.letter', skill: 'mechanics.spelling', severity: 'minor',
+      pattern: new RegExp(`\\b(${words(LETTER_MISSPELLINGS)})\\b`, 'gi'), replace: m => fromMap(LETTER_MISSPELLINGS)(m[1])},
+    {id: 'tense.perfect_finished_time', skill: 'grammar.verb_tenses', severity: 'moderate',
+      pattern: /\b(I|we) (stayed|ordered|bought|visited|started|moved|travel(?:l)?ed|went)\b(?=[^.!?]*\b(?:last|ago|yesterday)\b)/g,
+      replace: m => `${m[1]} have ${({went: 'gone'} as Record<string, string>)[m[2]] ?? m[2]}`},
+    {id: 'preposition.adjective_with', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: /\b(pleased|satisfied|disappointed|happy|familiar) with\b/gi, replace: m => `${m[1]} from`},
+  ];
+}
+
+export const letterInsertionRules: readonly InsertionRule[] = letterRules();

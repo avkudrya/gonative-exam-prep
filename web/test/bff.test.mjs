@@ -31,6 +31,7 @@ test('BFF: allowlist, CSRF, session cookie, error projection, no essay or token 
     }
     if (path === `attempts/${ATTEMPT}/submit`) return json(202, {attempt: summary, assessment: {uuid: ATTEMPT, status: 'queued', feedback_language: 'en', created_at: null, finished_at: null, result: null}, reused: false});
     if (path === `attempts/${ATTEMPT}/vocabulary/list`) return json(201, {list: {lesson_id: 2, name: 'IELTS', words: 1, url: 'javascript:alert(1)'}, quota: {tier: 'free', limit: 100, remaining: 99}});
+    if (path === `attempts/${ATTEMPT}/rewrite-check`) return json(200, {check: {verdict: 'correct', explanation: 'Now it is right.', new_error_quote: null, checks: {limit: 20, used: 1, remaining: 19}}});
     if (path === `attempts/${ATTEMPT}/vocabulary`) return json(200, {words: [], list: {lesson_id: 2, name: 'IELTS', words: 1, url: 'https://gonative.example.test/courses/1/2'}, quota: {tier: 'exams', limit: null, remaining: null}});
     if (path.startsWith('attempts?') || path === 'attempts') return json(200, {attempts: [summary], page: 1, per_page: 20, total: 1});
     return problem(404, 'not_found');
@@ -150,6 +151,18 @@ test('BFF: allowlist, CSRF, session cookie, error projection, no essay or token 
   r = await send(`attempts/${ATTEMPT}/vocabulary`, 'GET', undefined, {Cookie});
   assert.equal(r.status, 200);
   assert.equal((await r.json()).list.url, 'https://gonative.example.test/courses/1/2');
+
+  // P4.14: a rewrite check takes one finding id and one sentence up to 400 characters; nothing else reaches the backend.
+  const beforeChecks = calls();
+  for (const bad of [{finding_id: 'f1'}, {finding_id: '../f1', text: 'x'}, {finding_id: 'f1', text: ''}, {finding_id: 'f1', text: 'a'.repeat(401)},
+    {finding_id: 'f1', text: 'ok', extra: 1}]) {
+    r = await send(`attempts/${ATTEMPT}/rewrite-check`, 'POST', bad, {Cookie});
+    assert.equal(r.status, 422);
+  }
+  assert.equal(calls(), beforeChecks);
+  r = await send(`attempts/${ATTEMPT}/rewrite-check`, 'POST', {finding_id: 'f1', text: 'More people use buses.'}, {Cookie});
+  assert.equal(r.status, 200);
+  assert.equal((await r.json()).check.verdict, 'correct');
 
   // Sign-out clears the cookie; an expired session clears it too.
   r = await send('auth/logout', 'POST', {}, {Cookie});

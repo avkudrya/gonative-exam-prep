@@ -3,7 +3,7 @@ import {highlightSegments, normalizeResponse} from '@gonative/exam-domain';
 import {useLocale, useTranslations} from 'next-intl';
 import {useEffect, useMemo, useRef, useState, type FormEvent, type KeyboardEvent} from 'react';
 import {useRouter} from '../i18n/navigation';
-import type {Assessment, Attempt, ResultFinding} from '../lib/api/schemas';
+import type {Assessment, Attempt, ResultFinding, RewriteCheck, RewriteChecks} from '../lib/api/schemas';
 import {reportKinds} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
 import {EssayWords} from './essay-words';
@@ -18,7 +18,8 @@ const criterionOrder = ['task_response', 'coherence_cohesion', 'lexical_resource
 /** 6 → "6", 5.5 → "5.5": ranges are shown as they come, never rounded into something more precise. */
 const band = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1));
 
-export function ResultView({attempt, assessment, practiceSkills = []}: {attempt: Attempt; assessment: Assessment & {result: Result}; practiceSkills?: string[]}) {
+export function ResultView({attempt, assessment, practiceSkills = [], rewriteChecks}: {attempt: Attempt; assessment: Assessment & {result: Result}; practiceSkills?: string[];
+  rewriteChecks?: RewriteChecks}) {
   const t = useTranslations('Result');
   const result = assessment.result;
   const language = assessment.feedback_language;
@@ -176,7 +177,7 @@ export function ResultView({attempt, assessment, practiceSkills = []}: {attempt:
       </section>
     </div>
 
-    <SelfCheck cards={cards} language={language}/>
+    <SelfCheck cards={cards} language={language} uuid={attempt.uuid} checks={rewriteChecks?.enabled ? rewriteChecks : undefined}/>
 
     <EssayWords uuid={attempt.uuid}/>
 
@@ -192,27 +193,69 @@ const severityOrder = {major: 0, moderate: 1, minor: 2} as const;
 
 /**
  * P4.5 "rewrite your own sentences": the clearest errors (with a correction), the most serious first. The learner
- * writes the sentence again in their head or on paper, then opens the correction to compare. Nothing is sent.
+ * writes the sentence again, then opens the correction to compare. P4.14: with AI checks on, the learner may type the
+ * sentence and have it checked; the text goes to the backend for this one check and is not stored.
  */
-function SelfCheck({cards, language}: {cards: ResultFinding[]; language: string}) {
+function SelfCheck({cards, language, uuid, checks}: {cards: ResultFinding[]; language: string; uuid: string; checks?: RewriteChecks}) {
   const t = useTranslations('Result');
   const [open, setOpen] = useState<Set<string>>(new Set());
+  const [remaining, setRemaining] = useState(checks?.remaining ?? 0);
   const items = cards.filter(f => f.kind === 'error' && f.quote && f.suggestion)
     .sort((a, b) => severityOrder[a.severity] - severityOrder[b.severity]).slice(0, 5);
   if (items.length === 0) return null;
   return <section id="rewrite" aria-labelledby="rewrite-title" className="self-check">
     <h2 id="rewrite-title">{t('selfCheckTitle')}</h2>
-    <p className="hint">{t('selfCheckIntro')}</p>
+    <p className="hint">{checks ? t('selfCheckIntroAi') : t('selfCheckIntro')}</p>
     <ol>
       {items.map(f => <li key={f.id}>
         <p className="quote" lang="en">“{f.quote}”</p>
+        {checks && <RewriteField uuid={uuid} findingId={f.id} language={language} remaining={remaining} onUsed={setRemaining}/>}
         {open.has(f.id) ? <>
           <p><span className="suggestion" lang="en">{f.suggestion}</span></p>
           <p lang={language}>{f.explanation}</p>
         </> : <button type="button" className="text-button" onClick={() => setOpen(new Set([...open, f.id]))}>{t('selfCheckShow')}</button>}
       </li>)}
     </ol>
+    {checks && <p className="hint">{t('selfCheckRemaining', {count: remaining})}</p>}
   </section>;
+}
+
+/** P4.14: one sentence typed by the learner and its AI check: "correct" or "not quite yet" with one sentence why. */
+function RewriteField({uuid, findingId, language, remaining, onUsed}: {uuid: string; findingId: string; language: string; remaining: number;
+  onUsed: (remaining: number) => void}) {
+  const t = useTranslations('Result');
+  const [text, setText] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [check, setCheck] = useState<RewriteCheck | null>(null);
+  const [error, setError] = useState('');
+  async function submit(event: FormEvent) {
+    event.preventDefault();
+    if (!text.trim() || busy) return;
+    setBusy(true);
+    setError('');
+    const result = await bff<{check: RewriteCheck}>(`attempts/${uuid}/rewrite-check`, {body: {finding_id: findingId, text: text.trim()}});
+    setBusy(false);
+    if (!result.ok) {
+      setCheck(null);
+      setError(result.error === 'exams_rewrite_checks_exhausted' || result.error === 'exams_monthly_ai_budget_exhausted' ? t('selfCheckExhausted')
+        : result.error === 'exams_requests_rate_limited' ? t('selfCheckRate') : t('selfCheckFailed'));
+      if (result.error === 'exams_rewrite_checks_exhausted') onUsed(0);
+      return;
+    }
+    setCheck(result.data.check);
+    onUsed(result.data.check.checks.remaining);
+  }
+  return <form className="rewrite-check" onSubmit={e => void submit(e)}>
+    <label className="sr-only" htmlFor={`rewrite-${findingId}`}>{t('selfCheckLabel')}</label>
+    <textarea id={`rewrite-${findingId}`} lang="en" rows={2} maxLength={400} value={text} placeholder={t('selfCheckPlaceholder')}
+      onChange={e => { setText(e.target.value); setCheck(null); }}/>
+    <button type="submit" className="button" disabled={busy || !text.trim() || remaining < 1}>{busy ? t('selfCheckChecking') : t('selfCheckCheck')}</button>
+    {check && <p className={`feedback ${check.verdict === 'correct' ? 'ok' : 'error'}`} role="status">
+      <strong>{check.verdict === 'correct' ? t('selfCheckCorrect') : t('selfCheckNotYet')}</strong>{' '}
+      <span lang={language}>{check.explanation}</span>
+    </p>}
+    {error && <p className="feedback error" role="alert">{error}</p>}
+  </form>;
 }
 
 function Rewrite({attempt}: {attempt: Attempt}) {

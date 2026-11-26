@@ -45,5 +45,5 @@ export default async function AttemptPage({params}: {params: Promise<{locale: st
   // Practice is an extra: without it the feedback stands as before.
   const practice = assessment ? await practiceSkills() : [];
   return <AssessmentView key={`${attempt.uuid}:${assessment?.uuid ?? ''}:${assessment?.status ?? ''}`} attempt={attempt} assessment={assessment}
-    examName={examName} feedbackLanguage={feedbackLanguage} practiceSkills={practice} {...quota}/>;
+    examName={examName} feedbackLanguage={feedbackLanguage} practiceSkills={practice} rewriteChecks={entitlements.rewrite_checks} {...quota}/>;
 }

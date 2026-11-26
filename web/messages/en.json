@@ -455,7 +455,18 @@
     },
     "selfCheckTitle": "Fix it yourself",
     "selfCheckIntro": "Rewrite each sentence correctly without looking, then open the correction to compare.",
-    "selfCheckShow": "Show the correction"
+    "selfCheckShow": "Show the correction",
+    "selfCheckIntroAi": "Rewrite each sentence correctly without looking and check it, or open the correction to compare.",
+    "selfCheckLabel": "Your version of the sentence",
+    "selfCheckPlaceholder": "Your corrected sentence",
+    "selfCheckCheck": "Check",
+    "selfCheckChecking": "Checking…",
+    "selfCheckCorrect": "Correct.",
+    "selfCheckNotYet": "Not quite yet.",
+    "selfCheckRemaining": "Checks left this month: {count}",
+    "selfCheckExhausted": "No checks are left this month. You can still open the correction.",
+    "selfCheckRate": "Too many checks in a row. Try again in a minute.",
+    "selfCheckFailed": "The check is unavailable right now. Try again later."
   },
   "Report": {
     "title": "Report a problem with this feedback",

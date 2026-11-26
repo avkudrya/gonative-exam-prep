@@ -40,7 +40,17 @@ export const entitlementsSchema = z.object({
   period: z.object({start: z.string().max(10), end: z.string().max(10)}),
   assessments: z.object({limit: z.int(), used: z.int(), pending: z.int(), remaining: z.int()}),
   concurrent: z.int(),
+  // P4.14: AI checks in «Fix it yourself»; absent from an older backend.
+  rewrite_checks: z.object({enabled: z.boolean(), limit: z.int(), used: z.int(), remaining: z.int()}).optional(),
 });
+
+/** P4.14: the AI check of one rewritten sentence (the backend stores nothing). */
+export const rewriteCheckSchema = z.object({check: z.object({
+  verdict: z.enum(['correct', 'error_remains', 'new_error']),
+  explanation: z.string().max(400),
+  new_error_quote: z.string().max(200).nullable(),
+  checks: z.object({limit: z.int(), used: z.int(), remaining: z.int()}),
+})});
 
 const scaleSchema = z.object({
   kind: z.string().max(32),
@@ -318,6 +328,8 @@ export type PracticeSession = z.infer<typeof practiceSessionSchema>;
 export type Identity = z.infer<typeof identitySchema>;
 export type Profile = z.infer<typeof profileSchema>;
 export type Entitlements = z.infer<typeof entitlementsSchema>;
+export type RewriteChecks = NonNullable<Entitlements['rewrite_checks']>;
+export type RewriteCheck = z.infer<typeof rewriteCheckSchema>['check'];
 export type Catalog = z.infer<typeof catalogSchema>;
 export type PracticeTask = z.infer<typeof practiceTaskSchema>;
 export type AttemptSummary = z.infer<typeof attemptSummarySchema>;

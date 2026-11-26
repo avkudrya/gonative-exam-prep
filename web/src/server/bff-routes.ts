@@ -1,7 +1,7 @@
 import 'server-only';
 import {z} from 'zod';
 import {
-  assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, comparisonSchema, entitlementsSchema,
+  assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, comparisonSchema, entitlementsSchema, rewriteCheckSchema,
   feedbackLanguageSchema, identitySchema, interfaceLocaleSchema, practiceTaskSchema, profileSchema, reportKinds,
   practiceAnswerSchema, practiceResultSchema, practiceSessionSchema, practiceSkillsSchema,
   recommendationSchema, reportSchema, reportedResultSchema, skillsSchema, vocabularyListSchema, vocabularySchema,
@@ -107,6 +107,8 @@ const reportInput = z.object({
 }).strict();
 
 const vocabularyInput = z.object({dictionary_ids: z.array(z.int().positive()).min(1).max(15).nullable()}).strict();
+// P4.14: one rewritten sentence of «Fix it yourself»; the backend checks it with AI and stores nothing.
+const rewriteInput = z.object({finding_id: z.string().regex(/^[A-Za-z0-9_-]{1,40}$/), text: z.string().min(1).max(400)}).strict();
 
 const reportedInput = z.object({
   exam_key: examKey,
@@ -243,7 +245,7 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
     if (method === 'DELETE') return route(root, deleted);
     return null;
   }
-  const attempt = /^attempts\/([^/]+)(?:\/(draft|submit|assessment|reports|vocabulary|vocabulary\/list))?$/.exec(path);
+  const attempt = /^attempts\/([^/]+)(?:\/(draft|submit|assessment|reports|vocabulary|vocabulary\/list|rewrite-check))?$/.exec(path);
   if (!attempt || !uuidPattern.test(attempt[1]) || !noQuery(search)) return null;
   const root = `attempts/${attempt[1].toLowerCase()}`;
   const action = attempt[2];
@@ -268,5 +270,6 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
   // `list: null` means the free GoNative quota had no room.
   if (action === 'vocabulary' && method === 'GET') return route(`${root}/vocabulary`, parse(vocabularySchema));
   if (action === 'vocabulary/list' && method === 'POST') return route(`${root}/vocabulary/list`, parse(vocabularyListSchema), {input: vocabularyInput});
+  if (action === 'rewrite-check' && method === 'POST') return route(`${root}/rewrite-check`, parse(rewriteCheckSchema), {input: rewriteInput, timeoutMs: 30000});
   return null;
 }

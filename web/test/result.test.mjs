@@ -9,7 +9,7 @@ const TOKEN = '31|result-session-fixture';
 const PROMPT = 'Some say cities should ban cars from the centre, others disagree. Discuss both views and give your opinion.';
 
 test('Feedback: submit, waiting, result with highlights, reports, rewrite, failure, quota, partial', {timeout: 240000}, async t => {
-  const state = {attempts: new Map(), remaining: 2, submits: [], reports: [], creates: [], lists: [], polls: 0, outcome: 'assessed', submitError: null, failPut: false};
+  const state = {attempts: new Map(), remaining: 2, submits: [], reports: [], creates: [], lists: [], polls: 0, outcome: 'assessed', submitError: null, failPut: false, rewriteOn: false, rewrites: []};
   const make = (over = {}) => {
     const a = {uuid: randomUUID(), status: 'draft', revision: 1, response_text: ESSAY, assessment: null, result: null, from: null, ...over};
     state.attempts.set(a.uuid, a);
@@ -25,17 +25,23 @@ test('Feedback: submit, waiting, result with highlights, reports, rewrite, failu
     if (headers.authorization !== `Bearer ${TOKEN}`) return problem(401, 'exams_unauthenticated');
     if (path === 'auth/me') return json(200, {user: {email: 'learner@example.test', name: null, has_password: true}, account_state: 'active'});
     if (path === 'profile') return json(200, {profile: profileFixture({target_exam_key: 'ielts-academic'})});
-    if (path === 'entitlements') return json(200, {plan: 'free', period: {start: '2026-11-01', end: '2026-12-01'}, assessments: {limit: 2, used: 2 - state.remaining, pending: 0, remaining: state.remaining}, concurrent: 1});
+    if (path === 'entitlements') return json(200, {plan: 'free', period: {start: '2026-11-01', end: '2026-12-01'}, assessments: {limit: 2, used: 2 - state.remaining, pending: 0, remaining: state.remaining}, concurrent: 1,
+      ...(state.rewriteOn ? {rewrite_checks: {enabled: true, limit: 20, used: state.rewrites.length, remaining: 20 - state.rewrites.length}} : {})});
     if (path === 'attempts' && method === 'POST') {
       state.creates.push(body);
       const a = make({response_text: ESSAY, revision: 0, from: body.from_attempt});
       return json(201, {attempt: {...summary(a), prompt: {text: PROMPT}, response_text: a.response_text, assessments: []}});
     }
-    const m = /^attempts\/([0-9a-f-]{36})(?:\/(draft|submit|assessment|reports|vocabulary|vocabulary\/list))?$/.exec(path);
+    const m = /^attempts\/([0-9a-f-]{36})(?:\/(draft|submit|assessment|reports|vocabulary|vocabulary\/list|rewrite-check))?$/.exec(path);
     const a = m && state.attempts.get(m[1]);
     if (!a) return problem(404, 'not_found');
     const action = m[2];
     if (!action && method === 'GET') return json(200, {attempt: {...summary(a), prompt: {text: PROMPT}, response_text: a.response_text, assessments: []}});
+    if (action === 'rewrite-check') {
+      state.rewrites.push(body);
+      return json(200, {check: {verdict: 'error_remains', explanation: "'peoples' is still wrong: the plural of 'person' is 'people'.", new_error_quote: null,
+        checks: {limit: 20, used: state.rewrites.length, remaining: 20 - state.rewrites.length}}});
+    }
     if (action === 'draft') {
       if (state.failPut) return {status: 503, body: {}};
       a.response_text = body.response_text; a.revision++;
@@ -191,6 +197,24 @@ test('Feedback: submit, waiting, result with highlights, reports, rewrite, failu
   assert.equal(await own.locator('.suggestion').count(), 0);
   await own.getByRole('button', {name: 'Show the correction'}).first().click();
   assert.equal(await own.locator('.suggestion').count(), 1);
+  assert.equal(await own.locator('textarea').count(), 0, 'without AI checks the self-check stays as it was');
+
+  // P4.14: with AI checks on, a typed sentence is checked; the answer and the checks left are shown.
+  state.rewriteOn = true;
+  await page.reload();
+  const ai = page.getByRole('region', {name: 'Fix it yourself'});
+  await ai.getByText('Checks left this month: 20').waitFor();
+  const field = ai.getByLabel('Your version of the sentence').first();
+  assert.equal(await ai.getByRole('button', {name: 'Check'}).first().isDisabled(), true, 'nothing to check yet');
+  await field.fill('  More peoples use buses now.  ');
+  await ai.getByRole('button', {name: 'Check'}).first().click();
+  await ai.getByText('Not quite yet.').waitFor();
+  await ai.getByText("'peoples' is still wrong: the plural of 'person' is 'people'.").waitFor();
+  await ai.getByText('Checks left this month: 19').waitFor();
+  assert.equal(state.rewrites.length, 1);
+  assert.equal(state.rewrites[0].text, 'More peoples use buses now.');
+  assert.match(state.rewrites[0].finding_id, /^[A-Za-z0-9_-]+$/);
+  state.rewriteOn = false;
 
   // Words for GoNative: untick one, the list is made from the rest and opens in GoNative.
   const words = page.getByRole('region', {name: 'Words for GoNative'});

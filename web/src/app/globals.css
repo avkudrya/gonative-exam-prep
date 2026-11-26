@@ -487,3 +487,7 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 12px; text-align: le
   .practice-card { padding: 14px; }
   .practice-text { font-size: 17px; }
 }
+/* P4.14: AI check of a rewritten sentence in «Fix it yourself». */
+.rewrite-check { display: grid; gap: 6px; margin: 6px 0; max-width: 720px; }
+.rewrite-check textarea { width: 100%; font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; resize: vertical; }
+.rewrite-check .button { justify-self: start; }

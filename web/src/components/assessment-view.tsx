@@ -2,7 +2,7 @@
 import {useTranslations} from 'next-intl';
 import {useEffect, useState} from 'react';
 import {Link, useRouter} from '../i18n/navigation';
-import type {Assessment, Attempt, FeedbackLanguage} from '../lib/api/schemas';
+import type {Assessment, Attempt, FeedbackLanguage, RewriteChecks} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
 import {ResultView} from './result';
 import {SubmitDialog} from './submit-dialog';
@@ -12,10 +12,12 @@ const POLL_MS = 2500;
 const PATIENCE_MS = 5 * 60000;
 
 /** A submitted essay: waiting for the assessment, its failure, or the feedback. */
-export function AssessmentView({attempt, assessment, examName, remaining, limit, feedbackLanguage, practiceSkills = []}: {
+export function AssessmentView({attempt, assessment, examName, remaining, limit, feedbackLanguage, practiceSkills = [], rewriteChecks}: {
   attempt: Attempt; assessment: Assessment | null; examName: string; remaining: number; limit: number; feedbackLanguage: FeedbackLanguage;
   /** P4.8: skills the bank can train; their fix groups get a practice button. */
   practiceSkills?: string[];
+  /** P4.14: AI checks in «Fix it yourself» (off or absent: the self-check stays as it was). */
+  rewriteChecks?: RewriteChecks;
 }) {
   const t = useTranslations('Assessment');
   const waiting = !assessment || assessment.status === 'queued' || assessment.status === 'running';
@@ -28,7 +30,7 @@ export function AssessmentView({attempt, assessment, examName, remaining, limit,
       <h1>{attempt.topic ?? t('ownTask')}</h1>
     </header>
     {waiting ? <Waiting uuid={attempt.uuid} since={assessment?.created_at ?? attempt.submitted_at}/>
-      : assessment && result ? <ResultView attempt={attempt} assessment={{...assessment, result}} practiceSkills={practiceSkills}/>
+      : assessment && result ? <ResultView attempt={attempt} assessment={{...assessment, result}} practiceSkills={practiceSkills} rewriteChecks={rewriteChecks}/>
       : <div className="notice-block" role="alert">
         <h2>{t('failedTitle')}</h2>
         <p>{t('failedBody')}</p>

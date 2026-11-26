@@ -4,3 +4,4 @@ export * from './skills.js';
 export * from './text.js';
 export * from './assessment-guide.js';
 export * from './chart-spec.js';
+export * from './chart-numbers.js';

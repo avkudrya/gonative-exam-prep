@@ -274,6 +274,69 @@ function rules(): InsertionRule[] {
 
 export const insertionRules: readonly InsertionRule[] = rules();
 
+/** Irregular past forms of report verbs regularised, as learners do ("rised", "falled"). */
+const REGULARISED_PAST: Record<string, string> = {rose: 'rised', fell: 'falled', grew: 'growed', stood: 'standed', overtook: 'overtaked'};
+const PLURAL_FOR_SINGULAR_VERB: Record<string, string> = {was: 'were', is: 'are', has: 'have'};
+const SINGULAR_FOR_PLURAL_VERB: Record<string, string> = {were: 'was', are: 'is', have: 'has'};
+const ADJ_FOR_REPORT_ADV: Record<string, string> = {
+  sharply: 'sharp', slightly: 'slight', gradually: 'gradual', considerably: 'considerable', markedly: 'marked',
+  substantially: 'substantial', noticeably: 'noticeable', consistently: 'consistent', modestly: 'modest', marginally: 'marginal',
+};
+const ADV_FOR_REPORT_ADJ: Record<string, string> = Object.fromEntries(
+  ['sharp', 'steady', 'slight', 'significant', 'dramatic', 'gradual', 'considerable', 'rapid', 'marked', 'substantial']
+    .map(a => [a, a === 'steady' ? 'steadily' : a.endsWith('ic') ? `${a}ally` : a.endsWith('le') ? `${a.slice(0, -1)}y` : `${a}ly`]));
+const REPORT_MISSPELLINGS: Record<string, string> = {
+  proportion: 'propotion', proportions: 'propotions', percentage: 'percantage', approximately: 'aproximately',
+  category: 'catagory', categories: 'catagories', gradually: 'gradualy', respectively: 'respectivly', accounted: 'acounted',
+  steadily: 'steadly', considerably: 'considerbly', dramatically: 'dramaticly', significantly: 'significantely',
+  decreased: 'decresed', remained: 'remaind', compared: 'comparred', slightly: 'slighly', figures: 'figueres',
+};
+const CHANGE_VERBS = 'rose|increased|fell|decreased|dropped|declined|grew|climbed|rising|falling|increasing|decreasing';
+
+/**
+ * Typical learner errors in Academic Task 1 reports (P5.4), used together with insertionRules for set S-T1: report
+ * language (rose, fell, the number of, between … and …) offers too few places for the essay catalogue alone. No rule
+ * changes a figure: the code check of figures must find nothing in an S-T1 report.
+ */
+function reportRules(): InsertionRule[] {
+  return [
+    {id: 'tense.regularised_past', skill: 'grammar.verb_tenses', severity: 'moderate',
+      pattern: new RegExp(`\\b(${words(REGULARISED_PAST)})\\b`, 'gi'), replace: m => fromMap(REGULARISED_PAST)(m[1])},
+    {id: 'agreement.number_of', skill: 'grammar.subject_verb_agreement', severity: 'moderate',
+      pattern: /\b(the (?:number|proportion|percentage|amount|share|total) of (?:(?!who\b|which\b|that\b)[a-z]+ ){1,3}?)(was|is|has)\b/gi,
+      replace: m => `${m[1]}${fromMap(PLURAL_FOR_SINGULAR_VERB)(m[2])}`},
+    {id: 'agreement.plural_figures', skill: 'grammar.subject_verb_agreement', severity: 'moderate',
+      pattern: /\b(the (?:figures|numbers|proportions|percentages|shares|totals|sales|prices)) (were|are|have)\b/gi,
+      replace: m => `${m[1]} ${fromMap(SINGULAR_FOR_PLURAL_VERB)(m[2])}`},
+    {id: 'preposition.change_by', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: new RegExp(`\\b(${CHANGE_VERBS}) by\\b`, 'gi'), replace: m => `${m[1]} with`},
+    {id: 'preposition.between_to', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: /\b(between) ((?:1[89]|20)\d\d) and ((?:1[89]|20)\d\d)\b/gi, replace: m => `${m[1]} ${m[2]} to ${m[3]}`},
+    {id: 'preposition.accounted_for', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: /\b(account(?:s|ed|ing)?) for\b/gi, replace: m => `${m[1]} to`},
+    {id: 'preposition.reached_to', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: /\b(reach(?:es|ed|ing)?) (just |only |almost |about |around )?(\d)/gi, replace: m => `${m[1]} to ${m[2] ?? ''}${m[3]}`},
+    {id: 'preposition.stood_at', skill: 'grammar.prepositions', severity: 'minor',
+      pattern: /\b(st(?:ood|ands|and|anding)) at\b/gi, replace: m => `${m[1]} on`},
+    {id: 'article.superlative', skill: 'grammar.articles', severity: 'moderate',
+      pattern: /\b(the) (highest|lowest|largest|smallest|biggest) (figure|share|proportion|number|level|point|percentage|amount|category|value|total)\b/gi,
+      replace: m => `${m[2]} ${m[3]}`},
+    {id: 'article.missing_a_change', skill: 'grammar.articles', severity: 'moderate',
+      pattern: new RegExp(`\\b(a) (${words(ADV_FOR_REPORT_ADJ)}) (rise|fall|increase|decrease|drop|decline)\\b`, 'gi'),
+      replace: m => `${m[2]} ${m[3]}`},
+    {id: 'word_form.adverb_for_adjective', skill: 'vocabulary.word_formation', severity: 'moderate',
+      pattern: new RegExp(`\\b(${words(ADV_FOR_REPORT_ADJ)}) (rise|fall|increase|decrease|drop|decline|growth|change)\\b`, 'gi'),
+      replace: m => `${fromMap(ADV_FOR_REPORT_ADJ)(m[1])} ${m[2]}`},
+    {id: 'word_form.adjective_for_adverb', skill: 'vocabulary.word_formation', severity: 'minor',
+      pattern: new RegExp(`\\b(${CHANGE_VERBS}|changed|remained) (${words(ADJ_FOR_REPORT_ADV)})\\b`, 'gi'),
+      replace: m => `${m[1]} ${fromMap(ADJ_FOR_REPORT_ADV)(m[2])}`},
+    {id: 'spelling.report', skill: 'mechanics.spelling', severity: 'minor',
+      pattern: new RegExp(`\\b(${words(REPORT_MISSPELLINGS)})\\b`, 'gi'), replace: m => fromMap(REPORT_MISSPELLINGS)(m[1])},
+  ];
+}
+
+export const reportInsertionRules: readonly InsertionRule[] = reportRules();
+
 /** The error family a rule belongs to (`preposition.3` → `preposition`); selection spreads errors across families. */
 export function family(ruleId: string): string {
   return ruleId.split('.')[0];
@@ -330,6 +393,8 @@ export interface InsertOptions {
   minFamilies?: number;
   /** Characters of untouched text between two insertions, so one finding cannot cover two errors. */
   gap?: number;
+  /** The rules to draw from; the essay catalogue by default. */
+  rules?: readonly InsertionRule[];
 }
 
 /**
@@ -337,12 +402,12 @@ export interface InsertOptions {
  * candidates: such a base is replaced rather than given a thinner error set.
  */
 export function insertErrors(text: string, seed: string, options: InsertOptions = {}): {text: string; errors: InsertedError[]} {
-  const {min = 6, max = 10, minFamilies = 5, gap = 25} = options;
+  const {min = 6, max = 10, minFamilies = 5, gap = 25, rules: ruleList = insertionRules} = options;
   const random = seededRandom(seed);
   const target = min + Math.floor(random() * (max - min + 1));
 
   const byFamily = new Map<string, Candidate[]>();
-  for (const c of shuffle(candidates(text), random)) {
+  for (const c of shuffle(candidates(text, ruleList), random)) {
     const key = family(c.rule.id);
     byFamily.set(key, [...(byFamily.get(key) ?? []), c]);
   }

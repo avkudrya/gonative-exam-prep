@@ -38,7 +38,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const sources = join(root, 'benchmarks/sources');
 
 /** Bases usable for S: cross-checked clean, or adjudicated by the owner's reviewer. */
-export function usable(base: Base): boolean {
+export function usable(base: Pick<Base, 'check' | 'adjudication'>): boolean {
   if (base.adjudication) return base.adjudication.status !== 'rejected';
 
   return base.check?.clean === true;

@@ -1,0 +1,186 @@
+{
+ "purpose": "P5.4 clean base reports for the Academic Task 1 benchmark set S-T1: one vendor writes, the other proofreads and checks the data (docs/phase-5/P5-plan.md §2.4)",
+ "product": "exam",
+ "tasks": "benchmarks/sources/task1-academic-charts.json",
+ "reviewInput": "benchmarks/task-review/task1-academic.v1/input.json",
+ "output": "benchmarks/sources/t1a-bases.jsonl",
+ "routes": {
+  "anthropic": {
+   "provider": "anthropic",
+   "model": "claude-sonnet-5-5",
+   "reasoning_effort": "low",
+   "max_output_tokens": 2000,
+   "timeout": 600
+  },
+  "openai": {
+   "provider": "openai",
+   "model": "gpt-5.4",
+   "reasoning_effort": "low",
+   "max_output_tokens": 2000,
+   "timeout": 600
+  }
+ },
+ "promptVersions": {
+  "write": "exam-t1-base-write-1",
+  "check": "exam-t1-base-check-1"
+ },
+ "capUsd": 2.0,
+ "userData": "none: our own tasks, invented data and model-written reports",
+ "approval": {
+  "by": "owner",
+  "date": "2026-11-26",
+  "note": "«да, раунд 1 Фазы 5, материалы Academic, до $5» (ADR-004 round yes); this step's cap within the round"
+ },
+ "items": [
+  {
+   "id": "tb01",
+   "taskId": "t1a-01",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb02",
+   "taskId": "t1a-02",
+   "author": "openai"
+  },
+  {
+   "id": "tb03",
+   "taskId": "t1a-03",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb04",
+   "taskId": "t1a-04",
+   "author": "openai"
+  },
+  {
+   "id": "tb05",
+   "taskId": "t1a-05",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb06",
+   "taskId": "t1a-06",
+   "author": "openai"
+  },
+  {
+   "id": "tb07",
+   "taskId": "t1a-07",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb08",
+   "taskId": "t1a-08",
+   "author": "openai"
+  },
+  {
+   "id": "tb09",
+   "taskId": "t1a-09",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb10",
+   "taskId": "t1a-10",
+   "author": "openai"
+  },
+  {
+   "id": "tb11",
+   "taskId": "t1a-11",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb12",
+   "taskId": "t1a-12",
+   "author": "openai"
+  },
+  {
+   "id": "tb13",
+   "taskId": "t1a-13",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb14",
+   "taskId": "t1a-14",
+   "author": "openai"
+  },
+  {
+   "id": "tb15",
+   "taskId": "t1a-15",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb16",
+   "taskId": "t1a-16",
+   "author": "openai"
+  },
+  {
+   "id": "tb17",
+   "taskId": "t1a-17",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb18",
+   "taskId": "t1a-18",
+   "author": "openai"
+  },
+  {
+   "id": "tb19",
+   "taskId": "t1a-19",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb20",
+   "taskId": "t1a-20",
+   "author": "openai"
+  },
+  {
+   "id": "tb21",
+   "taskId": "t1a-21",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb22",
+   "taskId": "t1a-22",
+   "author": "openai"
+  },
+  {
+   "id": "tb23",
+   "taskId": "t1a-23",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb24",
+   "taskId": "t1a-24",
+   "author": "openai"
+  },
+  {
+   "id": "tb25",
+   "taskId": "t1a-01",
+   "author": "openai"
+  },
+  {
+   "id": "tb26",
+   "taskId": "t1a-04",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb27",
+   "taskId": "t1a-07",
+   "author": "openai"
+  },
+  {
+   "id": "tb28",
+   "taskId": "t1a-13",
+   "author": "openai"
+  },
+  {
+   "id": "tb29",
+   "taskId": "t1a-17",
+   "author": "anthropic"
+  },
+  {
+   "id": "tb30",
+   "taskId": "t1a-23",
+   "author": "openai"
+  }
+ ]
+}

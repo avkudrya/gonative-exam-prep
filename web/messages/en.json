@@ -383,15 +383,15 @@
   "Assessment": {
     "back": "← Writing",
     "ownTask": "Own task",
-    "waitingTitle": "Assessing your essay…",
+    "waitingTitle": "Assessing your {kind, select, report {report} other {essay}}…",
     "waitingBody": "Each of the four criteria is assessed separately. It usually takes about half a minute; you can leave this page and come back.",
     "slowTitle": "This is taking longer than usual",
-    "slowBody": "Your essay is in the queue. Come back to this page later: the feedback will appear here.",
+    "slowBody": "Your {kind, select, report {report} other {essay}} is in the queue. Come back to this page later: the feedback will appear here.",
     "elapsed": "{seconds} s",
-    "failedTitle": "We could not assess this essay",
+    "failedTitle": "We could not assess this {kind, select, report {report} other {essay}}",
     "failedBody": "Something went wrong on our side. This attempt was not counted against your free feedbacks.",
     "retry": "Try again",
-    "showEssay": "Show the essay",
+    "showEssay": "Show the {kind, select, report {report} other {essay}}",
     "showTask": "Show the task and the chart"
   },
   "Result": {
@@ -407,6 +407,7 @@
     "fixesTitle": "Fix these first",
     "showInEssay": "Show in essay",
     "essayTitle": "Your essay",
+    "reportTitle": "Your report",
     "findingsTitle": "Comments ({count})",
     "filterLabel": "Filter comments",
     "filterAll": "All",
@@ -472,6 +473,13 @@
       "mechanics": {
         "spelling": "Spelling",
         "punctuation": "Punctuation"
+      }
+    },
+    "skillsReport": {
+      "task": {
+        "position_clarity": "Overview",
+        "idea_development": "Key features and comparisons",
+        "requirement_coverage": "Accurate and complete data"
       }
     },
     "selfCheckTitle": "Fix it yourself",

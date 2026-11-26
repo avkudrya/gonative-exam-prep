@@ -21,7 +21,9 @@ export function ChartView({spec, compact = false}: {spec: ChartSpec; compact?: b
       return <figure key={i} className="chart">
         {svg && !compact ? <div className="chart-svg" dangerouslySetInnerHTML={{__html: svg}}/> : null}
         {svg && compact ? <div className="chart-svg" aria-hidden="true" dangerouslySetInnerHTML={{__html: svg}}/> : null}
-        {(!svg || tables) && !compact && <div className="table-wrap" id={`${id}-t${i}`}>
+        {/* In a list preview a table task shows its table too, smaller and hidden from screen readers like the picture. */}
+        {((!svg || tables) && !compact || !svg && compact) && <div className="table-wrap" id={compact ? undefined : `${id}-t${i}`}
+          aria-hidden={compact || undefined}>
           <table className="chart-table">
             <caption>{table.caption}</caption>
             <thead><tr>{table.head.map((h, k) => <th key={k} scope="col">{h}</th>)}</tr></thead>
@@ -29,7 +31,6 @@ export function ChartView({spec, compact = false}: {spec: ChartSpec; compact?: b
               ? <th key={k} scope="row">{cell}</th> : <td key={k}>{cell}</td>)}</tr>)}</tbody>
           </table>
         </div>}
-        {!svg && compact && <figcaption className="chart-caption">{table.caption}</figcaption>}
       </figure>;
     })}
     {!compact && <div className="chart-actions">

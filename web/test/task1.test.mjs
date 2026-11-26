@@ -70,7 +70,8 @@ test('Task 1: chart tasks for Academic only, the chart and its table, report edi
   await page.waitForURL(/task=task-1/);
   assert.equal(await page.locator('.task').count(), 3);
   assert.equal(await page.getByRole('tab', {name: 'My own task'}).count(), 0, 'no own task for a chart task');
-  assert.equal(await page.locator('.task .chart-svg svg').count(), 2, 'line and pie are drawn; the table task shows its caption');
+  assert.equal(await page.locator('.task .chart-svg svg').count(), 2, 'line and pie are drawn');
+  assert.equal(await page.locator('.task .chart-table').count(), 1, 'the table task shows its table');
   await page.getByText('describe a chart or a table in at least 150 words', {exact: false}).waitFor();
   await page.getByRole('button', {name: 'Pie chart'}).click();
   assert.equal(await page.locator('.task').count(), 1);

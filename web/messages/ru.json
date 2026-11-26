@@ -383,15 +383,15 @@
   "Assessment": {
     "back": "← Writing",
     "ownTask": "Своё задание",
-    "waitingTitle": "Оцениваем эссе…",
+    "waitingTitle": "Оцениваем {kind, select, report {отчёт} other {эссе}}…",
     "waitingBody": "Каждый из четырёх критериев оценивается отдельно. Обычно это занимает около полуминуты; можно уйти со страницы и вернуться.",
     "slowTitle": "Это занимает больше времени, чем обычно",
-    "slowBody": "Эссе в очереди. Загляните на эту страницу позже: разбор появится здесь.",
+    "slowBody": "{kind, select, report {Отчёт} other {Эссе}} в очереди. Загляните на эту страницу позже: разбор появится здесь.",
     "elapsed": "{seconds} с",
-    "failedTitle": "Не получилось оценить эссе",
+    "failedTitle": "Не получилось оценить {kind, select, report {отчёт} other {эссе}}",
     "failedBody": "У нас что-то пошло не так. Эта попытка не засчитана в бесплатные разборы.",
     "retry": "Попробовать снова",
-    "showEssay": "Показать эссе",
+    "showEssay": "Показать {kind, select, report {отчёт} other {эссе}}",
     "showTask": "Показать задание и график"
   },
   "Result": {
@@ -407,6 +407,7 @@
     "fixesTitle": "Исправьте в первую очередь",
     "showInEssay": "Показать в тексте",
     "essayTitle": "Ваше эссе",
+    "reportTitle": "Ваш отчёт",
     "findingsTitle": "Замечания ({count})",
     "filterLabel": "Фильтр замечаний",
     "filterAll": "Все",
@@ -472,6 +473,13 @@
       "mechanics": {
         "spelling": "Орфография",
         "punctuation": "Пунктуация"
+      }
+    },
+    "skillsReport": {
+      "task": {
+        "position_clarity": "Обзор",
+        "idea_development": "Ключевые особенности и сравнения",
+        "requirement_coverage": "Точность и полнота данных"
       }
     },
     "selfCheckTitle": "Исправьте сами",

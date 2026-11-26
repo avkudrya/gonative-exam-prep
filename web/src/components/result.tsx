@@ -51,7 +51,10 @@ export function ResultView({attempt, assessment, practiceSkills = [], rewriteChe
   const fixSkills = (result.top_skills ?? [])
     .map(g => ({...g, examples: g.finding_ids.map(id => byId.get(id)).filter((f): f is ResultFinding => Boolean(f))}))
     .filter(g => g.examples.length > 0);
-  const skillName = (skill: string) => (t.has(`skills.${skill}`) ? t(`skills.${skill}`) : skill);
+  // A Task 1 report uses the same task skills, named for describing data (overview, key features, accurate figures).
+  const report = attempt.task_key === 'task-1';
+  const skillName = (skill: string) => (report && t.has(`skillsReport.${skill}`) ? t(`skillsReport.${skill}`)
+    : t.has(`skills.${skill}`) ? t(`skills.${skill}`) : skill);
 
   function select(id: string, from: 'essay' | 'list') {
     setSelected(id);
@@ -123,7 +126,7 @@ export function ResultView({attempt, assessment, practiceSkills = [], rewriteChe
 
     <div className="review">
       <section aria-labelledby="essay-title" className="review-essay">
-        <h2 id="essay-title">{t('essayTitle')}</h2>
+        <h2 id="essay-title">{report ? t('reportTitle') : t('essayTitle')}</h2>
         <p className="legend"><span className="hl error">{t('kinds.error')}</span> <span className="hl weakness">{t('kinds.weakness')}</span> <span className="hl optional">{t('kinds.suggestion')}</span> <span className="hl strength">{t('kinds.strength')}</span></p>
         <div className="essay-marked" lang="en" ref={essayRef}>
           {segments.map(segment => {

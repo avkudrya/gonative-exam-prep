@@ -231,7 +231,8 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
 .chart-svg svg { display: block; width: 100%; max-width: 640px; height: auto; }
 .chart-view.compact { margin: 0; }
 .chart-view.compact .chart-svg svg { max-width: 100%; }
-.chart-caption { color: var(--muted); font-size: 14px; }
+.chart-view.compact .chart-table { font-size: 12px; }
+.chart-view.compact .chart-table th, .chart-view.compact .chart-table td { padding: 2px 6px; }
 .chart-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline; }
 .table-wrap { overflow-x: auto; }
 .chart-table { border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }

@@ -24,6 +24,7 @@ export function AssessmentView({attempt, assessment, examName, remaining, limit,
   const t = useTranslations('Assessment');
   const waiting = !assessment || assessment.status === 'queued' || assessment.status === 'running';
   const result = assessment && (assessment.status === 'assessed' || assessment.status === 'partial') ? assessment.result : null;
+  const kind = attempt.task_key === 'task-1' ? 'report' : 'essay';
 
   return <section className="page result-page">
     <Link className="back" href="/ielts/writing">{t('back')}</Link>
@@ -37,21 +38,21 @@ export function AssessmentView({attempt, assessment, examName, remaining, limit,
       <p className="prompt-text">{attempt.prompt.text}</p>
       <ChartView spec={attempt.prompt.stimulus}/>
     </details>}
-    {waiting ? <Waiting uuid={attempt.uuid} since={assessment?.created_at ?? attempt.submitted_at}/>
+    {waiting ? <Waiting uuid={attempt.uuid} since={assessment?.created_at ?? attempt.submitted_at} kind={kind}/>
       : assessment && result ? <ResultView attempt={attempt} assessment={{...assessment, result}} practiceSkills={practiceSkills} rewriteChecks={rewriteChecks}/>
       : <div className="notice-block" role="alert">
-        <h2>{t('failedTitle')}</h2>
+        <h2>{t('failedTitle', {kind})}</h2>
         <p>{t('failedBody')}</p>
         <SubmitDialog uuid={attempt.uuid} words={attempt.word_count ?? 0} minWords={taskRules(attempt.task_key).minWords} remaining={remaining} limit={limit}
           feedbackLanguage={feedbackLanguage} label={t('retry')}/>
-        <details className="essay-details"><summary>{t('showEssay')}</summary>
+        <details className="essay-details"><summary>{t('showEssay', {kind})}</summary>
           <div className="essay-readonly" lang="en">{attempt.response_text}</div>
         </details>
       </div>}
   </section>;
 }
 
-function Waiting({uuid, since}: {uuid: string; since: string | null}) {
+function Waiting({uuid, since, kind}: {uuid: string; since: string | null; kind: 'report' | 'essay'}) {
   const t = useTranslations('Assessment');
   const router = useRouter();
   const started = since ? Date.parse(since) : NaN;
@@ -89,8 +90,8 @@ function Waiting({uuid, since}: {uuid: string; since: string | null}) {
   return <div className="waiting" role="status" aria-live="polite">
     <span className="spinner" aria-hidden="true"/>
     <div>
-      <h2>{patient ? t('waitingTitle') : t('slowTitle')}</h2>
-      <p>{patient ? t('waitingBody') : t('slowBody')}</p>
+      <h2>{patient ? t('waitingTitle', {kind}) : t('slowTitle')}</h2>
+      <p>{patient ? t('waitingBody') : t('slowBody', {kind})}</p>
       <p className="hint">{t('elapsed', {seconds})}</p>
     </div>
   </div>;

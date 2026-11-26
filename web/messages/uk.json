@@ -383,15 +383,15 @@
   "Assessment": {
     "back": "← Writing",
     "ownTask": "Своє завдання",
-    "waitingTitle": "Оцінюємо есе…",
+    "waitingTitle": "Оцінюємо {kind, select, report {звіт} other {есе}}…",
     "waitingBody": "Кожен із чотирьох критеріїв оцінюється окремо. Зазвичай це займає близько пів хвилини; можна піти зі сторінки й повернутися.",
     "slowTitle": "Це займає більше часу, ніж зазвичай",
-    "slowBody": "Есе в черзі. Зазирніть на цю сторінку пізніше: розбір з’явиться тут.",
+    "slowBody": "{kind, select, report {Звіт} other {Есе}} в черзі. Зазирніть на цю сторінку пізніше: розбір з’явиться тут.",
     "elapsed": "{seconds} с",
-    "failedTitle": "Не вдалося оцінити есе",
+    "failedTitle": "Не вдалося оцінити {kind, select, report {звіт} other {есе}}",
     "failedBody": "У нас щось пішло не так. Цю спробу не зараховано в безкоштовні розбори.",
     "retry": "Спробувати знову",
-    "showEssay": "Показати есе",
+    "showEssay": "Показати {kind, select, report {звіт} other {есе}}",
     "showTask": "Показати завдання і графік"
   },
   "Result": {
@@ -407,6 +407,7 @@
     "fixesTitle": "Виправте насамперед",
     "showInEssay": "Показати в тексті",
     "essayTitle": "Ваше есе",
+    "reportTitle": "Ваш звіт",
     "findingsTitle": "Зауваження ({count})",
     "filterLabel": "Фільтр зауважень",
     "filterAll": "Усі",
@@ -472,6 +473,13 @@
       "mechanics": {
         "spelling": "Орфографія",
         "punctuation": "Пунктуація"
+      }
+    },
+    "skillsReport": {
+      "task": {
+        "position_clarity": "Огляд",
+        "idea_development": "Ключові особливості та порівняння",
+        "requirement_coverage": "Точність і повнота даних"
       }
     },
     "selfCheckTitle": "Виправте самі",

@@ -1,0 +1,107 @@
+{
+    "php": "8.4.8",
+    "bundle_sha256": "56183731a264342e0a18de6362a569f80eb0912ad4d8441cb34b14214c1eb20d",
+    "scope": {
+        "items": 542,
+        "topics": 8,
+        "explanation_rows_before": 1617,
+        "earlier_reviews": 1620
+    },
+    "preview": {
+        "apply": false,
+        "bundle_sha256": "56183731a264342e0a18de6362a569f80eb0912ad4d8441cb34b14214c1eb20d",
+        "state_token": "89bab8ea921f0b91b7a89a2366b31f08ddde774d67dc6feae479137ff326e512",
+        "items": 540,
+        "ru_mode": {
+            "new": 3,
+            "replace": 491,
+            "teacher_keep": 46
+        },
+        "rows": 1620,
+        "rows_replaced": 1611,
+        "rows_inserted": 9,
+        "reviews": 1620,
+        "topics": 4,
+        "created": 0,
+        "existing": 0,
+        "seconds": 0
+    },
+    "stale_token": "explanations_preview_state_changed",
+    "writes_after_refusal": 0,
+    "apply": {
+        "apply": true,
+        "bundle_sha256": "56183731a264342e0a18de6362a569f80eb0912ad4d8441cb34b14214c1eb20d",
+        "state_token": "89bab8ea921f0b91b7a89a2366b31f08ddde774d67dc6feae479137ff326e512",
+        "items": 540,
+        "ru_mode": {
+            "new": 3,
+            "replace": 491,
+            "teacher_keep": 46
+        },
+        "rows": 1620,
+        "rows_replaced": 1611,
+        "rows_inserted": 9,
+        "reviews": 1620,
+        "topics": 4,
+        "created": 540,
+        "existing": 0,
+        "shown": 1620,
+        "seconds": 2.3
+    },
+    "preview_after": {
+        "created": 0,
+        "existing": 540,
+        "shown": 1620,
+        "seconds": 1.6
+    },
+    "replay": {
+        "created": 0,
+        "existing": 540
+    },
+    "rows_after": [
+        {
+            "language": "en",
+            "provenance": "ai_generated",
+            "status": "ai_cross_reviewed",
+            "n": 542
+        },
+        {
+            "language": "ru",
+            "provenance": "ai_generated",
+            "status": "ai_cross_reviewed",
+            "n": 496
+        },
+        {
+            "language": "ru",
+            "provenance": "imported:mnemonic",
+            "status": "ai_cross_reviewed",
+            "n": 46
+        },
+        {
+            "language": "uk",
+            "provenance": "ai_generated",
+            "status": "ai_cross_reviewed",
+            "n": 542
+        }
+    ],
+    "reviews_after": [
+        {
+            "reason": "explanations_xe2",
+            "status": "ai_cross_reviewed",
+            "n": 1608
+        },
+        {
+            "reason": "explanations_xe3",
+            "status": "ai_cross_reviewed",
+            "n": 12
+        },
+        {
+            "reason": "explanations_xe4",
+            "status": "ai_cross_reviewed",
+            "n": 1620
+        }
+    ],
+    "unchanged": "items, topics and specifications unchanged",
+    "replaced_rows_keep_ids": "yes",
+    "earlier_reviews_untouched": "yes"
+}

@@ -1,0 +1,27 @@
+{
+ "format": "xe4-wg-handoff/1",
+ "note": "XE-4: items whose key Opus found wrong under the new spec (no explanation shown) and answers the checker misses, among the items of the two topics rv1 revised and the three items rv1 edited. Bank repairs or retirement are WG decisions.",
+ "rejected": [
+  {
+   "id": 28355,
+   "topic": "modal-verbs",
+   "type": "transformation",
+   "cefr": "B1",
+   "reason": "Affirmative 'could' is used for general past permission, not for permission on one specific occasion ('yesterday'), where 'were allowed to' is needed."
+  },
+  {
+   "id": 28649,
+   "topic": "modal-verbs",
+   "type": "gap_choice",
+   "cefr": "A2",
+   "reason": "Nothing in the sentence forces an obligation, so 'can' and 'may' (customers are allowed to pay first) also give a correct, meaningful sentence."
+  }
+ ],
+ "accepted_missing": [
+  {
+   "id": 8028,
+   "missing": "ought to have called"
+  }
+ ],
+ "not_reviewed_yet": []
+}

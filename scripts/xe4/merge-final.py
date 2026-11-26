@@ -5,7 +5,7 @@
 - `fix`: Opus's texts; Russian is the teacher's text whenever Opus confirmed it;
 - `reject`: no explanation (it stays hidden); listed for WG with the reason;
 - an item Opus returned nothing for stays hidden and is listed for a later run;
-- answers the checker misses go to WG.
+- answers the checker misses go to WG, after scripts/xe2/classify-missing.php (tmp/xe4/missing-classified.json) if it ran.
 
 usage: python3 -I scripts/xe4/merge-final.py
 out:   tmp/xe4/final.json (bank content, not in Git), docs/phase-4/xe4/wg-handoff.json (ids, reasons; no texts)
@@ -20,6 +20,13 @@ TEACHER = {i: rows(i)['ru']['text'] for i in items if rows(i).get('ru', {}).get(
 checked = json.loads((out / 'opus-checked.json').read_text())
 opus = {r['id']: r for r in checked['items']}
 stats = collections.Counter()
+missing_answers = checked['accepted_missing']
+classified = out / 'missing-classified.json'
+if classified.exists():  # scripts/xe2/classify-missing.php: answers the checker already accepts are not WG's work
+    c = json.loads(classified.read_text())
+    stats['missing: already accepted by the checker'] = len(c['already_accepted'])
+    stats['missing: closed item (not an answer to add)'] = len(c['closed_item'])
+    missing_answers = [{'id': m['id'], 'missing': m['missing']} for m in c['to_add']]
 
 final, rejected, unreviewed = [], [], []
 for item_id, item in sorted(items.items()):
@@ -56,5 +63,5 @@ for item_id, item in sorted(items.items()):
 Path('docs/phase-4/xe4/wg-handoff.json').write_text(json.dumps({
     'format': 'xe4-wg-handoff/1', 'note': 'XE-4: items whose key Opus found wrong under the new spec (no explanation shown) and answers the '
     'checker misses, among the items of the two topics rv1 revised and the three items rv1 edited. Bank repairs or retirement are WG decisions.',
-    'rejected': rejected, 'accepted_missing': checked['accepted_missing'], 'not_reviewed_yet': unreviewed}, ensure_ascii=False, indent=1) + '\n')
-print(json.dumps({'items': len(items), 'explained': len(final), **dict(sorted(stats.items())), 'accepted_missing': len(checked['accepted_missing'])}, indent=1))
+    'rejected': rejected, 'accepted_missing': missing_answers, 'not_reviewed_yet': unreviewed}, ensure_ascii=False, indent=1) + '\n')
+print(json.dumps({'items': len(items), 'explained': len(final), **dict(sorted(stats.items())), 'accepted_missing': len(missing_answers)}, indent=1))

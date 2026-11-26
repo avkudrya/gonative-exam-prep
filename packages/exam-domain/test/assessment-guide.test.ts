@@ -184,8 +184,9 @@ test('the General Training Task 1 guide fits the verified GT Task 1 rubric and i
   for (const c of letterGuide.criteria) for (const l of c.limiters) {
     if (l.autoTrigger?.kind === 'limiter') assert.equal(l.autoTrigger.limiterId, 'ta.cap.unrelated', l.id);
   }
-  // Reviewed by GPT-5.4 (P5.8 ADJUDICATION); the owner approves it before the measurement.
-  assert.equal(letterGuide.status, 'reviewed');
+  // Reviewed by GPT-5.4 (P5.8 ADJUDICATION), approved by the owner: «утверждаю, потолок 4» (missing point caps TA at 4).
+  assert.equal(letterGuide.status, 'approved');
+  assert.equal(letterGuide.approvedAt, '2026-11-26');
   const text = JSON.stringify(letterGuide);
   for (const word of ['visual', 'overview', 'chart', 'figures', 'report on the data', 'task_response']) assert.ok(!text.includes(word), `no "${word}" from Academic or Task 2`);
 });

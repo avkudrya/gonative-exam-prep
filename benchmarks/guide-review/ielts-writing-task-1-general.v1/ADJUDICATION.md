@@ -2,8 +2,8 @@
 
 **Проверка:** GPT-5.4 (`gpt-5.4-2026-03-05`), 2026-11-26, **$0.1721**, событие `ai_usage_events` #173551. Раунд 3 Фазы 5
 («да, раунд 3 до $5»).
-**Файл:** `packages/exam-domain/guides/ielts-writing-task-1-general.v1.json`. После правок статус `reviewed`, ждёт утверждения
-владельцем.
+**Файл:** `packages/exam-domain/guides/ielts-writing-task-1-general.v1.json`. После правок статус `reviewed`.
+**Утверждено владельцем 2026-11-26** («утверждаю, потолок 4»): статус `approved`, потолок за пропущенный пункт — TA 4.
 
 ## Итог
 

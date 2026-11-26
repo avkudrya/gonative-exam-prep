@@ -1,0 +1,28 @@
+{
+ "purpose": "P5.2 review of the 24 own Academic Task 1 tasks (instruction, data, code facts) by a second vendor before they enter the product library (Claude wrote them; code checked and drew the data)",
+ "source": "benchmarks/task-review/task1-academic.v1/input.json",
+ "sourceSha256": "c9d7454681fe98835038084bb1a67ebee4a4736185927882322ff396701af400",
+ "payload": "raw",
+ "product": "exam",
+ "task": "exam.task_review",
+ "route": {
+  "provider": "openai",
+  "model": "gpt-5.4",
+  "reasoning_effort": "medium",
+  "max_output_tokens": 20000,
+  "timeout": 900
+ },
+ "pricingUsdPerMillion": {
+  "input": 2.5,
+  "output": 15.0
+ },
+ "estimate": {
+  "inputTokens": 9831,
+  "maxOutputTokens": 20000,
+  "maxUsd": 0.325,
+  "expectedUsd": 0.145
+ },
+ "capUsd": 0.5,
+ "userData": "none: our own tasks and invented data, no essays",
+ "approval": "2026-11-26: «да, раунд 1 Фазы 5, материалы Academic, до $5» (ADR-004 round yes)"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "clarity": {"type": "string", "enum": ["ok", "issue"]},
+          "plausibility": {"type": "string", "enum": ["ok", "issue"]},
+          "features": {"type": "string", "enum": ["ok", "too_few", "too_many"]},
+          "difficulty": {"type": "string", "enum": ["easier", "standard", "harder"]},
+          "fairness": {"type": "string", "enum": ["ok", "issue"]},
+          "originality": {"type": "string", "enum": ["original", "common_theme", "near_copy"]},
+          "verdict": {"type": "string", "enum": ["approve", "revise", "reject"]},
+          "issues": {"type": "array", "items": {"type": "string"}},
+          "revisedInstruction": {"type": ["string", "null"]},
+          "dataChanges": {"type": "array", "items": {"type": "string"}}
+        },
+        "required": ["id", "clarity", "plausibility", "features", "difficulty", "fairness", "originality", "verdict", "issues", "revisedInstruction", "dataChanges"],
+        "additionalProperties": false
+      }
+    },
+    "overall": {"type": "string"}
+  },
+  "required": ["items", "overall"],
+  "additionalProperties": false
+}

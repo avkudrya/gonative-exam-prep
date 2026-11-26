@@ -41,8 +41,11 @@ if (hash_file('sha256', $sourcePath) !== $manifest['sourceSha256']) {
     fail('The prompts changed since the manifest: update sourceSha256 and the estimate first.');
 }
 $source = json_decode(file_get_contents($sourcePath), true, flags: JSON_THROW_ON_ERROR);
-$user = json_encode(['prompts' => array_map(fn ($p) => ['id' => $p['id'], 'type' => $p['type'], 'text' => $p['text']], $source['prompts'])],
-    JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+// payload "raw" (P5.2): the source is already the review input (tasks with data tables and code facts), sent as it is.
+$raw = ($manifest['payload'] ?? null) === 'raw';
+$user = $raw ? json_encode($source, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT)
+    : json_encode(['prompts' => array_map(fn ($p) => ['id' => $p['id'], 'type' => $p['type'], 'text' => $p['text']], $source['prompts'])],
+        JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 $system = file_get_contents("{$dir}/system.txt");
 $schema = file_get_contents("{$dir}/schema.json");
 $route = $manifest['route'];
@@ -50,7 +53,7 @@ $p = $manifest['pricingUsdPerMillion'];
 // About 4 characters per token, plus the schema; the call is refused if the worst case exceeds the cap.
 $inputTokens = (int) ceil((strlen($system) + strlen($user) + strlen($schema)) / 4);
 $maxUsd = ($inputTokens * $p['input'] + $route['max_output_tokens'] * $p['output']) / 1e6;
-printf("prompts: %d, input ≈ %d tokens, worst case $%.3f, cap $%.2f\n", count($source['prompts']), $inputTokens, $maxUsd, $manifest['capUsd']);
+printf("items: %d, input ≈ %d tokens, worst case $%.3f, cap $%.2f\n", count($source[$raw ? 'items' : 'prompts']), $inputTokens, $maxUsd, $manifest['capUsd']);
 if ($maxUsd > $manifest['capUsd']) {
     fail(sprintf('Worst case $%.2f exceeds the cap $%.2f.', $maxUsd, $manifest['capUsd']));
 }

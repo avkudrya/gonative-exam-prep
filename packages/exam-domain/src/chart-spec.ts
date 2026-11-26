@@ -244,8 +244,11 @@ function marker(kind: typeof MARKERS[number], x: number, y: number, color: strin
   return `<path d="M${n2(x - s)} ${n2(y - s)}L${n2(x + s)} ${n2(y + s)}M${n2(x + s)} ${n2(y - s)}L${n2(x - s)} ${n2(y + s)}" stroke="${color}" stroke-width="2"/>`;
 }
 
+/** Legend columns: fewer when a label is long, so labels never run into each other. */
+const columns = (names: string[], max: number) => Math.min(names.length, Math.max(...names.map(n => n.length)) > 20 ? 2 : Math.max(...names.map(n => n.length)) > 12 ? Math.min(3, max) : max);
+
 function legend(names: string[], lines: boolean): string {
-  const per = Math.min(3, names.length);
+  const per = columns(names, 3);
   return names.map((name, i) => {
     const col = i % per;
     const row = Math.floor(i / per);
@@ -298,9 +301,9 @@ function axisSvg(c: AxisChart): string {
 }
 
 function pieSvg(c: z.infer<typeof pieChart>): string {
-  const r = 120;
+  const r = 112;
   const cxp = W / 2;
-  const cyp = M.top + 130;
+  const cyp = M.top + 142;
   const total = c.slices.reduce((t, s) => t + s.value, 0);
   let angle = -Math.PI / 2;
   const parts: string[] = [];
@@ -316,7 +319,7 @@ function pieSvg(c: z.infer<typeof pieChart>): string {
     angle = a2;
   });
   const names = c.slices.map(s => s.label);
-  const per = Math.min(4, names.length);
+  const per = columns(names, 4);
   names.forEach((name, i) => {
     const x = M.left + (i % per) * ((W - M.left - M.right) / per);
     const yy = H - 52 + Math.floor(i / per) * 18;

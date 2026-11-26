@@ -1,0 +1,1421 @@
+{
+ "items": [
+  {
+   "id": "t1a-01",
+   "type": "line",
+   "topic": "transport",
+   "instruction": "The line graph shows how many people travelled to work by car, bus and bicycle in a European city between 2000 and 2020. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "line",
+     "table": {
+      "caption": "Commuters by mode of transport, 2000–2020 (thousand)",
+      "head": [
+       "",
+       "2000",
+       "2005",
+       "2010",
+       "2015",
+       "2020"
+      ],
+      "rows": [
+       [
+        "Car",
+        "420",
+        "450",
+        "430",
+        "380",
+        "300"
+       ],
+       [
+        "Bus",
+        "210",
+        "230",
+        "260",
+        "300",
+        "330"
+       ],
+       [
+        "Bicycle",
+        "40",
+        "42",
+        "41",
+        "40",
+        "41"
+       ]
+      ]
+     },
+     "facts": [
+      "Car fell from 420 thousand in 2000 to 300 thousand in 2020 (-28.6%).",
+      "Car was highest in 2005 (450 thousand) and lowest in 2020 (300 thousand).",
+      "Bus rose from 210 thousand in 2000 to 330 thousand in 2020 (+57.1%).",
+      "Bus was highest in 2020 (330 thousand) and lowest in 2000 (210 thousand).",
+      "Bicycle stayed about the same from 40 thousand in 2000 to 41 thousand in 2020 (+2.5%).",
+      "Bicycle was highest in 2005 (42 thousand) and lowest in 2000 (40 thousand).",
+      "In 2000 the highest was Car; in 2020 it was Bus.",
+      "The largest increase was in Bus (+120 thousand).",
+      "The largest decrease was in Car (−120 thousand).",
+      "Car and Bus changed places between 2015 and 2020."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-02",
+   "type": "line",
+   "topic": "technology",
+   "instruction": "The line graph shows the percentage of households with internet access in three countries from 2004 to 2022. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "line",
+     "table": {
+      "caption": "Households with internet access, 2004–2022 (%)",
+      "head": [
+       "",
+       "2004",
+       "2007",
+       "2010",
+       "2013",
+       "2016",
+       "2019",
+       "2022"
+      ],
+      "rows": [
+       [
+        "Country A",
+        "32",
+        "51",
+        "68",
+        "80",
+        "88",
+        "93",
+        "95"
+       ],
+       [
+        "Country B",
+        "12",
+        "20",
+        "35",
+        "55",
+        "70",
+        "82",
+        "90"
+       ],
+       [
+        "Country C",
+        "5",
+        "8",
+        "14",
+        "25",
+        "41",
+        "58",
+        "72"
+       ]
+      ]
+     },
+     "facts": [
+      "Country A rose from 32% in 2004 to 95% in 2022 (+196.9%).",
+      "Country A was highest in 2022 (95%) and lowest in 2004 (32%).",
+      "Country B rose from 12% in 2004 to 90% in 2022 (+650%).",
+      "Country B was highest in 2022 (90%) and lowest in 2004 (12%).",
+      "Country C rose from 5% in 2004 to 72% in 2022 (+1,340%).",
+      "Country C was highest in 2022 (72%) and lowest in 2004 (5%).",
+      "In 2004 the highest was Country A; in 2022 it was Country A.",
+      "The largest increase was in Country B (+78%)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-03",
+   "type": "line",
+   "topic": "tourism",
+   "instruction": "The line graph shows the number of domestic and overseas visitors to a coastal town in each month of 2023. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "line",
+     "table": {
+      "caption": "Visitors to a coastal town by month, 2023 (thousand)",
+      "head": [
+       "",
+       "Jan",
+       "Feb",
+       "Mar",
+       "Apr",
+       "May",
+       "Jun",
+       "Jul",
+       "Aug",
+       "Sep",
+       "Oct",
+       "Nov",
+       "Dec"
+      ],
+      "rows": [
+       [
+        "Domestic",
+        "12",
+        "11",
+        "15",
+        "22",
+        "30",
+        "45",
+        "68",
+        "72",
+        "40",
+        "25",
+        "15",
+        "18"
+       ],
+       [
+        "Overseas",
+        "3",
+        "3",
+        "5",
+        "9",
+        "14",
+        "20",
+        "26",
+        "28",
+        "18",
+        "9",
+        "4",
+        "6"
+       ]
+      ]
+     },
+     "facts": [
+      "Domestic fluctuated from 12 thousand in Jan to 18 thousand in Dec (+50%).",
+      "Domestic was highest in Aug (72 thousand) and lowest in Feb (11 thousand).",
+      "Overseas rose from 3 thousand in Jan to 6 thousand in Dec (+100%).",
+      "Overseas was highest in Aug (28 thousand) and lowest in Jan (3 thousand).",
+      "In Jan the highest was Domestic; in Dec it was Domestic.",
+      "The largest increase was in Domestic (+6 thousand)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-04",
+   "type": "line",
+   "topic": "energy",
+   "instruction": "The line graph shows how much electricity was produced from coal, gas and renewable sources in one country between 2005 and 2025. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "line",
+     "table": {
+      "caption": "Electricity produced by source, 2005–2025 (TWh)",
+      "head": [
+       "",
+       "2005",
+       "2010",
+       "2015",
+       "2020",
+       "2025"
+      ],
+      "rows": [
+       [
+        "Coal",
+        "180",
+        "175",
+        "160",
+        "130",
+        "95"
+       ],
+       [
+        "Gas",
+        "90",
+        "110",
+        "125",
+        "130",
+        "120"
+       ],
+       [
+        "Renewables",
+        "15",
+        "30",
+        "55",
+        "90",
+        "140"
+       ]
+      ]
+     },
+     "facts": [
+      "Coal fell from 180 TWh in 2005 to 95 TWh in 2025 (-47.2%).",
+      "Coal was highest in 2005 (180 TWh) and lowest in 2025 (95 TWh).",
+      "Gas rose from 90 TWh in 2005 to 120 TWh in 2025 (+33.3%).",
+      "Gas was highest in 2020 (130 TWh) and lowest in 2005 (90 TWh).",
+      "Renewables rose from 15 TWh in 2005 to 140 TWh in 2025 (+833.3%).",
+      "Renewables was highest in 2025 (140 TWh) and lowest in 2005 (15 TWh).",
+      "In 2005 the highest was Coal; in 2025 it was Renewables.",
+      "The largest increase was in Renewables (+125 TWh).",
+      "The largest decrease was in Coal (−85 TWh).",
+      "Coal and Renewables changed places between 2020 and 2025.",
+      "Gas and Renewables changed places between 2020 and 2025."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-05",
+   "type": "line",
+   "topic": "housing",
+   "instruction": "The line graph shows the average price of a two-bedroom flat in two cities between 2010 and 2022. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "line",
+     "table": {
+      "caption": "Average price of a two-bedroom flat, 2010–2022 (thousand euros)",
+      "head": [
+       "",
+       "2010",
+       "2012",
+       "2014",
+       "2016",
+       "2018",
+       "2020",
+       "2022"
+      ],
+      "rows": [
+       [
+        "City P",
+        "180",
+        "190",
+        "205",
+        "230",
+        "260",
+        "250",
+        "270"
+       ],
+       [
+        "City Q",
+        "150",
+        "152",
+        "160",
+        "175",
+        "210",
+        "240",
+        "265"
+       ]
+      ]
+     },
+     "facts": [
+      "City P rose from 180 thousand euros in 2010 to 270 thousand euros in 2022 (+50%).",
+      "City P was highest in 2022 (270 thousand euros) and lowest in 2010 (180 thousand euros).",
+      "City Q rose from 150 thousand euros in 2010 to 265 thousand euros in 2022 (+76.7%).",
+      "City Q was highest in 2022 (265 thousand euros) and lowest in 2010 (150 thousand euros).",
+      "In 2010 the highest was City P; in 2022 it was City P.",
+      "The largest increase was in City Q (+115 thousand euros)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-06",
+   "type": "line",
+   "topic": "education",
+   "instruction": "The line graph shows how many students at one secondary school studied four foreign languages from 2015 to 2023. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "line",
+     "table": {
+      "caption": "Students learning foreign languages at a school, 2015–2023",
+      "head": [
+       "",
+       "2015",
+       "2017",
+       "2019",
+       "2021",
+       "2023"
+      ],
+      "rows": [
+       [
+        "Spanish",
+        "120",
+        "135",
+        "150",
+        "160",
+        "175"
+       ],
+       [
+        "French",
+        "140",
+        "130",
+        "118",
+        "110",
+        "100"
+       ],
+       [
+        "German",
+        "80",
+        "78",
+        "75",
+        "72",
+        "70"
+       ],
+       [
+        "Chinese",
+        "10",
+        "18",
+        "30",
+        "45",
+        "62"
+       ]
+      ]
+     },
+     "facts": [
+      "Spanish rose from 120 in 2015 to 175 in 2023 (+45.8%).",
+      "Spanish was highest in 2023 (175) and lowest in 2015 (120).",
+      "French fell from 140 in 2015 to 100 in 2023 (-28.6%).",
+      "French was highest in 2015 (140) and lowest in 2023 (100).",
+      "German fell from 80 in 2015 to 70 in 2023 (-12.5%).",
+      "German was highest in 2015 (80) and lowest in 2023 (70).",
+      "Chinese rose from 10 in 2015 to 62 in 2023 (+520%).",
+      "Chinese was highest in 2023 (62) and lowest in 2015 (10).",
+      "In 2015 the highest was French; in 2023 it was Spanish.",
+      "The largest increase was in Spanish (+55).",
+      "The largest decrease was in French (−40).",
+      "Spanish and French changed places between 2015 and 2017."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-07",
+   "type": "bar",
+   "topic": "leisure",
+   "instruction": "The bar chart shows how many hours a week people in four age groups spent on sport, reading and watching TV. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "bar",
+     "table": {
+      "caption": "Weekly hours spent on leisure activities by age group",
+      "head": [
+       "",
+       "16–24",
+       "25–44",
+       "45–64",
+       "65+"
+      ],
+      "rows": [
+       [
+        "Sport",
+        "6",
+        "4",
+        "3",
+        "2"
+       ],
+       [
+        "Reading",
+        "2",
+        "2.5",
+        "3.5",
+        "6"
+       ],
+       [
+        "Watching TV",
+        "10",
+        "9",
+        "12",
+        "20"
+       ]
+      ]
+     },
+     "facts": [
+      "Sport fell from 6 in 16–24 to 2 in 65+ (-66.7%).",
+      "Sport was highest in 16–24 (6) and lowest in 65+ (2).",
+      "Reading rose from 2 in 16–24 to 6 in 65+ (+200%).",
+      "Reading was highest in 65+ (6) and lowest in 16–24 (2).",
+      "Watching TV rose from 10 in 16–24 to 20 in 65+ (+100%).",
+      "Watching TV was highest in 65+ (20) and lowest in 25–44 (9).",
+      "In 16–24 the highest was Watching TV; in 65+ it was Watching TV.",
+      "The largest increase was in Watching TV (+10).",
+      "The largest decrease was in Sport (−4).",
+      "Sport and Reading changed places between 25–44 and 45–64."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-08",
+   "type": "bar",
+   "topic": "environment",
+   "instruction": "The bar chart shows how much of five types of waste a town recycled in 2010 and in 2020. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "bar",
+     "table": {
+      "caption": "Waste recycled in a town by material, 2010 and 2020 (tonnes)",
+      "head": [
+       "",
+       "Paper",
+       "Glass",
+       "Plastic",
+       "Metal",
+       "Food waste"
+      ],
+      "rows": [
+       [
+        "2010",
+        "520",
+        "310",
+        "90",
+        "60",
+        "40"
+       ],
+       [
+        "2020",
+        "610",
+        "330",
+        "240",
+        "95",
+        "210"
+       ]
+      ]
+     },
+     "facts": [
+      "2010 fell from 520 tonnes in Paper to 40 tonnes in Food waste (-92.3%).",
+      "2010 was highest in Paper (520 tonnes) and lowest in Food waste (40 tonnes).",
+      "2020 fell from 610 tonnes in Paper to 210 tonnes in Food waste (-65.6%).",
+      "2020 was highest in Paper (610 tonnes) and lowest in Metal (95 tonnes).",
+      "In Paper the highest was 2020; in Food waste it was 2020.",
+      "The largest decrease was in 2010 (−480 tonnes)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-09",
+   "type": "bar",
+   "topic": "work",
+   "instruction": "The bar chart shows the percentage of employees in five sectors who worked from home at least one day a week in 2019 and in 2023. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "bar",
+     "table": {
+      "caption": "Employees working from home at least one day a week, by sector (%)",
+      "head": [
+       "",
+       "Finance",
+       "Education",
+       "Retail",
+       "Manufacturing",
+       "Healthcare"
+      ],
+      "rows": [
+       [
+        "2019",
+        "22",
+        "8",
+        "4",
+        "5",
+        "6"
+       ],
+       [
+        "2023",
+        "68",
+        "25",
+        "9",
+        "12",
+        "14"
+       ]
+      ]
+     },
+     "facts": [
+      "2019 fluctuated from 22% in Finance to 6% in Healthcare (-72.7%).",
+      "2019 was highest in Finance (22%) and lowest in Retail (4%).",
+      "2023 fluctuated from 68% in Finance to 14% in Healthcare (-79.4%).",
+      "2023 was highest in Finance (68%) and lowest in Retail (9%).",
+      "In Finance the highest was 2023; in Healthcare it was 2023.",
+      "The largest decrease was in 2023 (−54%)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-10",
+   "type": "bar",
+   "topic": "environment",
+   "instruction": "The bar chart shows how many litres of water an average person used each day for five activities in two countries. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "bar",
+     "table": {
+      "caption": "Daily water use per person by activity (litres)",
+      "head": [
+       "",
+       "Showering",
+       "Toilet",
+       "Cooking and drinking",
+       "Laundry",
+       "Garden"
+      ],
+      "rows": [
+       [
+        "Country A",
+        "55",
+        "35",
+        "10",
+        "20",
+        "15"
+       ],
+       [
+        "Country B",
+        "30",
+        "25",
+        "8",
+        "12",
+        "2"
+       ]
+      ]
+     },
+     "facts": [
+      "Country A fell from 55 litres in Showering to 15 litres in Garden (-72.7%).",
+      "Country A was highest in Showering (55 litres) and lowest in Cooking and drinking (10 litres).",
+      "Country B fell from 30 litres in Showering to 2 litres in Garden (-93.3%).",
+      "Country B was highest in Showering (30 litres) and lowest in Garden (2 litres).",
+      "In Showering the highest was Country A; in Garden it was Country A.",
+      "The largest decrease was in Country A (−40 litres)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-11",
+   "type": "bar",
+   "topic": "transport",
+   "instruction": "The bar chart shows the number of new petrol, diesel and electric cars sold in one country between 2015 and 2023. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "bar",
+     "table": {
+      "caption": "New cars sold by type, 2015–2023 (thousand)",
+      "head": [
+       "",
+       "2015",
+       "2017",
+       "2019",
+       "2021",
+       "2023"
+      ],
+      "rows": [
+       [
+        "Petrol",
+        "820",
+        "790",
+        "720",
+        "560",
+        "410"
+       ],
+       [
+        "Diesel",
+        "610",
+        "520",
+        "400",
+        "250",
+        "150"
+       ],
+       [
+        "Electric",
+        "10",
+        "25",
+        "60",
+        "180",
+        "350"
+       ]
+      ]
+     },
+     "facts": [
+      "Petrol fell from 820 thousand in 2015 to 410 thousand in 2023 (-50%).",
+      "Petrol was highest in 2015 (820 thousand) and lowest in 2023 (410 thousand).",
+      "Diesel fell from 610 thousand in 2015 to 150 thousand in 2023 (-75.4%).",
+      "Diesel was highest in 2015 (610 thousand) and lowest in 2023 (150 thousand).",
+      "Electric rose from 10 thousand in 2015 to 350 thousand in 2023 (+3,400%).",
+      "Electric was highest in 2023 (350 thousand) and lowest in 2015 (10 thousand).",
+      "In 2015 the highest was Petrol; in 2023 it was Petrol.",
+      "The largest increase was in Electric (+340 thousand).",
+      "The largest decrease was in Diesel (−460 thousand).",
+      "Diesel and Electric changed places between 2021 and 2023."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-12",
+   "type": "bar",
+   "topic": "culture",
+   "instruction": "The bar chart shows the number of visitors to a city museum last year, by age group. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "bar",
+     "table": {
+      "caption": "Museum visitors by age group (thousand)",
+      "head": [
+       "",
+       "Under 18",
+       "18–30",
+       "31–50",
+       "51–65",
+       "Over 65"
+      ],
+      "rows": [
+       [
+        "Visitors",
+        "150",
+        "95",
+        "180",
+        "140",
+        "110"
+       ]
+      ]
+     },
+     "facts": [
+      "Visitors fell from 150 thousand in Under 18 to 110 thousand in Over 65 (-26.7%).",
+      "Visitors was highest in 31–50 (180 thousand) and lowest in 18–30 (95 thousand)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-13",
+   "type": "pie",
+   "topic": "economy",
+   "instruction": "The pie chart shows how an average household in one country divided its spending in 2020. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "pie",
+     "table": {
+      "caption": "Household spending, 2020",
+      "head": [
+       "",
+       "Share"
+      ],
+      "rows": [
+       [
+        "Housing",
+        "34.5%"
+       ],
+       [
+        "Food",
+        "22%"
+       ],
+       [
+        "Transport",
+        "15.5%"
+       ],
+       [
+        "Leisure",
+        "12%"
+       ],
+       [
+        "Other",
+        "16%"
+       ]
+      ]
+     },
+     "facts": [
+      "The largest share was Housing (34.5%).",
+      "The smallest share was Leisure (12%).",
+      "In order: Housing 34.5%, Food 22%, Other 16%, Transport 15.5%, Leisure 12%.",
+      "Housing and Food together made up 56.5%."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-14",
+   "type": "pie",
+   "topic": "education",
+   "instruction": "The pie chart shows where a university's income came from in one year. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "pie",
+     "table": {
+      "caption": "Sources of a university's income",
+      "head": [
+       "",
+       "Share"
+      ],
+      "rows": [
+       [
+        "Tuition fees",
+        "45%"
+       ],
+       [
+        "Government grants",
+        "28%"
+       ],
+       [
+        "Research contracts",
+        "15%"
+       ],
+       [
+        "Donations",
+        "5%"
+       ],
+       [
+        "Other",
+        "7%"
+       ]
+      ]
+     },
+     "facts": [
+      "The largest share was Tuition fees (45%).",
+      "The smallest share was Donations (5%).",
+      "In order: Tuition fees 45%, Government grants 28%, Research contracts 15%, Other 7%, Donations 5%.",
+      "Tuition fees and Government grants together made up 73%."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-15",
+   "type": "pie",
+   "topic": "transport",
+   "instruction": "The pie chart shows how the employees of a large company travel to work. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "pie",
+     "table": {
+      "caption": "How employees travel to work",
+      "head": [
+       "",
+       "Share"
+      ],
+      "rows": [
+       [
+        "Car",
+        "38%"
+       ],
+       [
+        "Bus",
+        "22%"
+       ],
+       [
+        "Train",
+        "17%"
+       ],
+       [
+        "Bicycle",
+        "12%"
+       ],
+       [
+        "Walking",
+        "9%"
+       ],
+       [
+        "Other",
+        "2%"
+       ]
+      ]
+     },
+     "facts": [
+      "The largest share was Car (38%).",
+      "The smallest share was Other (2%).",
+      "In order: Car 38%, Bus 22%, Train 17%, Bicycle 12%, Walking 9%, Other 2%.",
+      "Car and Bus together made up 60%."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-16",
+   "type": "pie",
+   "topic": "tourism",
+   "instruction": "The pie chart shows the main reasons visitors gave for coming to a city last year. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "pie",
+     "table": {
+      "caption": "Main reason for visiting a city",
+      "head": [
+       "",
+       "Share"
+      ],
+      "rows": [
+       [
+        "Holiday",
+        "46%"
+       ],
+       [
+        "Visiting friends and family",
+        "24%"
+       ],
+       [
+        "Business",
+        "21%"
+       ],
+       [
+        "Study",
+        "6%"
+       ],
+       [
+        "Other",
+        "3%"
+       ]
+      ]
+     },
+     "facts": [
+      "The largest share was Holiday (46%).",
+      "The smallest share was Other (3%).",
+      "In order: Holiday 46%, Visiting friends and family 24%, Business 21%, Study 6%, Other 3%.",
+      "Holiday and Visiting friends and family together made up 70%."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-17",
+   "type": "pair",
+   "topic": "energy",
+   "instruction": "The pie charts show the sources of electricity in one country in 2000 and in 2020. Describe the most important trends and differences, using figures from the charts to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "pie",
+     "table": {
+      "caption": "Electricity sources, 2000",
+      "head": [
+       "",
+       "Share"
+      ],
+      "rows": [
+       [
+        "Coal",
+        "52%"
+       ],
+       [
+        "Gas",
+        "24%"
+       ],
+       [
+        "Nuclear",
+        "18%"
+       ],
+       [
+        "Renewables",
+        "6%"
+       ]
+      ]
+     },
+     "facts": [
+      "The largest share was Coal (52%).",
+      "The smallest share was Renewables (6%).",
+      "In order: Coal 52%, Gas 24%, Nuclear 18%, Renewables 6%.",
+      "Coal and Gas together made up 76%."
+     ]
+    },
+    {
+     "kind": "pie",
+     "table": {
+      "caption": "Electricity sources, 2020",
+      "head": [
+       "",
+       "Share"
+      ],
+      "rows": [
+       [
+        "Coal",
+        "18%"
+       ],
+       [
+        "Gas",
+        "34%"
+       ],
+       [
+        "Nuclear",
+        "16%"
+       ],
+       [
+        "Renewables",
+        "32%"
+       ]
+      ]
+     },
+     "facts": [
+      "The largest share was Gas (34%).",
+      "The smallest share was Nuclear (16%).",
+      "In order: Gas 34%, Renewables 32%, Coal 18%, Nuclear 16%.",
+      "Gas and Renewables together made up 66%."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-18",
+   "type": "pair",
+   "topic": "environment",
+   "instruction": "The pie charts show what household waste in one city consisted of in 1995 and in 2020. Describe the most important trends and differences, using figures from the charts to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "pie",
+     "table": {
+      "caption": "Household waste, 1995",
+      "head": [
+       "",
+       "Share"
+      ],
+      "rows": [
+       [
+        "Food",
+        "30%"
+       ],
+       [
+        "Paper",
+        "34%"
+       ],
+       [
+        "Plastic",
+        "8%"
+       ],
+       [
+        "Glass",
+        "12%"
+       ],
+       [
+        "Other",
+        "16%"
+       ]
+      ]
+     },
+     "facts": [
+      "The largest share was Paper (34%).",
+      "The smallest share was Plastic (8%).",
+      "In order: Paper 34%, Food 30%, Other 16%, Glass 12%, Plastic 8%.",
+      "Paper and Food together made up 64%."
+     ]
+    },
+    {
+     "kind": "pie",
+     "table": {
+      "caption": "Household waste, 2020",
+      "head": [
+       "",
+       "Share"
+      ],
+      "rows": [
+       [
+        "Food",
+        "26%"
+       ],
+       [
+        "Paper",
+        "20%"
+       ],
+       [
+        "Plastic",
+        "22%"
+       ],
+       [
+        "Glass",
+        "7%"
+       ],
+       [
+        "Other",
+        "25%"
+       ]
+      ]
+     },
+     "facts": [
+      "The largest share was Food (26%).",
+      "The smallest share was Glass (7%).",
+      "In order: Food 26%, Other 25%, Plastic 22%, Paper 20%, Glass 7%.",
+      "Food and Other together made up 51%."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-19",
+   "type": "table",
+   "topic": "culture",
+   "instruction": "The table shows how many people visited three museums in a city from 2018 to 2020. Describe the most important trends and differences, using figures from the table to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "table",
+     "table": {
+      "caption": "Visitors to three museums, 2018–2020 (thousand)",
+      "head": [
+       "",
+       "2018",
+       "2019",
+       "2020"
+      ],
+      "rows": [
+       [
+        "Science museum",
+        "120",
+        "135",
+        "60"
+       ],
+       [
+        "History museum",
+        "90",
+        "95",
+        "70"
+       ],
+       [
+        "Art gallery",
+        "150",
+        "140",
+        "50"
+       ]
+      ]
+     },
+     "facts": [
+      "2018: highest Art gallery (150 thousand), lowest History museum (90 thousand).",
+      "2019: highest Art gallery (140 thousand), lowest History museum (95 thousand).",
+      "2020: highest History museum (70 thousand), lowest Art gallery (50 thousand).",
+      "Science museum: highest in 2019 (135 thousand).",
+      "History museum: highest in 2019 (95 thousand).",
+      "Art gallery: highest in 2018 (150 thousand)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-20",
+   "type": "table",
+   "topic": "health",
+   "instruction": "The table shows the average number of hours people in four age groups slept per night in 1990, 2005 and 2020. Describe the most important trends and differences, using figures from the table to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "table",
+     "table": {
+      "caption": "Average hours of sleep per night by age group (hours)",
+      "head": [
+       "",
+       "1990",
+       "2005",
+       "2020"
+      ],
+      "rows": [
+       [
+        "Teenagers",
+        "8.6",
+        "8.1",
+        "7.4"
+       ],
+       [
+        "Adults 25–44",
+        "7.5",
+        "7.2",
+        "6.9"
+       ],
+       [
+        "Adults 45–64",
+        "7.2",
+        "7",
+        "6.9"
+       ],
+       [
+        "Over 65",
+        "7",
+        "7",
+        "7.1"
+       ]
+      ]
+     },
+     "facts": [
+      "1990: highest Teenagers (8.6 hours), lowest Over 65 (7 hours).",
+      "2005: highest Teenagers (8.1 hours), lowest Over 65 (7 hours).",
+      "2020: highest Teenagers (7.4 hours), lowest Adults 45–64 (6.9 hours).",
+      "Teenagers: highest in 1990 (8.6 hours).",
+      "Adults 25–44: highest in 1990 (7.5 hours).",
+      "Adults 45–64: highest in 1990 (7.2 hours).",
+      "Over 65: highest in 2020 (7.1 hours)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-21",
+   "type": "table",
+   "topic": "culture",
+   "instruction": "The table shows how many cinema tickets were sold in four countries in 2000, 2010 and 2020. Describe the most important trends and differences, using figures from the table to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "table",
+     "table": {
+      "caption": "Cinema tickets sold, 2000–2020 (million)",
+      "head": [
+       "",
+       "2000",
+       "2010",
+       "2020"
+      ],
+      "rows": [
+       [
+        "Country A",
+        "120",
+        "140",
+        "60"
+       ],
+       [
+        "Country B",
+        "85",
+        "78",
+        "35"
+       ],
+       [
+        "Country C",
+        "40",
+        "65",
+        "30"
+       ],
+       [
+        "Country D",
+        "150",
+        "155",
+        "70"
+       ]
+      ]
+     },
+     "facts": [
+      "2000: highest Country D (150 million), lowest Country C (40 million).",
+      "2010: highest Country D (155 million), lowest Country C (65 million).",
+      "2020: highest Country D (70 million), lowest Country C (30 million).",
+      "Country A: highest in 2010 (140 million).",
+      "Country B: highest in 2000 (85 million).",
+      "Country C: highest in 2010 (65 million).",
+      "Country D: highest in 2010 (155 million)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-22",
+   "type": "table",
+   "topic": "health",
+   "instruction": "The table shows the percentage of men and women in five countries who exercise at least three times a week. Describe the most important trends and differences, using figures from the table to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "table",
+     "table": {
+      "caption": "People who exercise at least three times a week (%)",
+      "head": [
+       "",
+       "Men",
+       "Women"
+      ],
+      "rows": [
+       [
+        "Country A",
+        "48",
+        "41"
+       ],
+       [
+        "Country B",
+        "35",
+        "38"
+       ],
+       [
+        "Country C",
+        "52",
+        "50"
+       ],
+       [
+        "Country D",
+        "29",
+        "22"
+       ],
+       [
+        "Country E",
+        "44",
+        "46"
+       ]
+      ]
+     },
+     "facts": [
+      "Men: highest Country C (52%), lowest Country D (29%).",
+      "Women: highest Country C (50%), lowest Country D (22%).",
+      "Country A: highest in Men (48%).",
+      "Country B: highest in Women (38%).",
+      "Country C: highest in Men (52%).",
+      "Country D: highest in Men (29%).",
+      "Country E: highest in Women (46%)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-23",
+   "type": "pair",
+   "topic": "tourism",
+   "instruction": "The bar chart shows the number of international and domestic tourists who visited a region between 2016 and 2022, and the table shows how much they spent on average per visit. Describe the most important trends and differences, using figures from the chart and the table to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "bar",
+     "table": {
+      "caption": "Tourists visiting a region, 2016–2022 (million)",
+      "head": [
+       "",
+       "2016",
+       "2018",
+       "2020",
+       "2022"
+      ],
+      "rows": [
+       [
+        "International",
+        "2.4",
+        "2.9",
+        "0.8",
+        "2.6"
+       ],
+       [
+        "Domestic",
+        "5.1",
+        "5.4",
+        "4",
+        "6.2"
+       ]
+      ]
+     },
+     "facts": [
+      "International rose from 2.4 million in 2016 to 2.6 million in 2022 (+8.3%).",
+      "International was highest in 2018 (2.9 million) and lowest in 2020 (0.8 million).",
+      "Domestic rose from 5.1 million in 2016 to 6.2 million in 2022 (+21.6%).",
+      "Domestic was highest in 2022 (6.2 million) and lowest in 2020 (4 million).",
+      "In 2016 the highest was Domestic; in 2022 it was Domestic.",
+      "The largest increase was in Domestic (+1.1 million)."
+     ]
+    },
+    {
+     "kind": "table",
+     "table": {
+      "caption": "Average spending per visit (euros)",
+      "head": [
+       "",
+       "International",
+       "Domestic"
+      ],
+      "rows": [
+       [
+        "2016",
+        "640",
+        "180"
+       ],
+       [
+        "2018",
+        "690",
+        "195"
+       ],
+       [
+        "2020",
+        "520",
+        "150"
+       ],
+       [
+        "2022",
+        "760",
+        "230"
+       ]
+      ]
+     },
+     "facts": [
+      "International: highest 2022 (760 euros), lowest 2020 (520 euros).",
+      "Domestic: highest 2022 (230 euros), lowest 2020 (150 euros).",
+      "2016: highest in International (640 euros).",
+      "2018: highest in International (690 euros).",
+      "2020: highest in International (520 euros).",
+      "2022: highest in International (760 euros)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1a-24",
+   "type": "pair",
+   "topic": "culture",
+   "instruction": "The line graph shows visits to a city library and the number of online loans between 2010 and 2022, and the pie chart shows what library members used it for in 2022. Describe the most important trends and differences, using figures from the graph and the pie chart to support your description. Write at least 150 words.",
+   "charts": [
+    {
+     "kind": "line",
+     "table": {
+      "caption": "Library visits and online loans, 2010–2022 (thousand)",
+      "head": [
+       "",
+       "2010",
+       "2012",
+       "2014",
+       "2016",
+       "2018",
+       "2020",
+       "2022"
+      ],
+      "rows": [
+       [
+        "Visits",
+        "410",
+        "395",
+        "370",
+        "340",
+        "320",
+        "220",
+        "310"
+       ],
+       [
+        "Online loans",
+        "20",
+        "40",
+        "75",
+        "120",
+        "190",
+        "310",
+        "330"
+       ]
+      ]
+     },
+     "facts": [
+      "Visits fell from 410 thousand in 2010 to 310 thousand in 2022 (-24.4%).",
+      "Visits was highest in 2010 (410 thousand) and lowest in 2020 (220 thousand).",
+      "Online loans rose from 20 thousand in 2010 to 330 thousand in 2022 (+1,550%).",
+      "Online loans was highest in 2022 (330 thousand) and lowest in 2010 (20 thousand).",
+      "In 2010 the highest was Visits; in 2022 it was Online loans.",
+      "The largest increase was in Online loans (+310 thousand).",
+      "The largest decrease was in Visits (−100 thousand).",
+      "Visits and Online loans changed places between 2018 and 2020."
+     ]
+    },
+    {
+     "kind": "pie",
+     "table": {
+      "caption": "What members used the library for, 2022",
+      "head": [
+       "",
+       "Share"
+      ],
+      "rows": [
+       [
+        "Borrowing books",
+        "35%"
+       ],
+       [
+        "Studying",
+        "27%"
+       ],
+       [
+        "Using computers",
+        "18%"
+       ],
+       [
+        "Events",
+        "12%"
+       ],
+       [
+        "Other",
+        "8%"
+       ]
+      ]
+     },
+     "facts": [
+      "The largest share was Borrowing books (35%).",
+      "The smallest share was Other (8%).",
+      "In order: Borrowing books 35%, Studying 27%, Using computers 18%, Events 12%, Other 8%.",
+      "Borrowing books and Studying together made up 62%."
+     ]
+    }
+   ]
+  }
+ ]
+}

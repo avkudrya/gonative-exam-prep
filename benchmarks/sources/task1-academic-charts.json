@@ -1,0 +1,1387 @@
+{
+ "format": "task1-academic-charts/1",
+ "about": "GoNative own Academic Writing Task 1 practice tasks (P5.2). Data invented for practice; not official IELTS material.",
+ "items": [
+  {
+   "id": "t1a-01",
+   "type": "line",
+   "topic": "transport",
+   "instruction": "The line graph shows how many people travelled to work by car, bus and bicycle in a European city between 2000 and 2020. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "line",
+      "title": "Commuters by mode of transport, 2000–2020",
+      "x": {
+       "label": "Year",
+       "categories": [
+        "2000",
+        "2005",
+        "2010",
+        "2015",
+        "2020"
+       ]
+      },
+      "y": {
+       "label": "Commuters",
+       "unit": "thousand"
+      },
+      "series": [
+       {
+        "name": "Car",
+        "values": [
+         420,
+         450,
+         430,
+         380,
+         300
+        ]
+       },
+       {
+        "name": "Bus",
+        "values": [
+         210,
+         230,
+         260,
+         300,
+         330
+        ]
+       },
+       {
+        "name": "Bicycle",
+        "values": [
+         40,
+         42,
+         41,
+         40,
+         41
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-02",
+   "type": "line",
+   "topic": "technology",
+   "instruction": "The line graph shows the percentage of households with internet access in three countries from 2004 to 2022. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "line",
+      "title": "Households with internet access, 2004–2022",
+      "x": {
+       "label": "Year",
+       "categories": [
+        "2004",
+        "2007",
+        "2010",
+        "2013",
+        "2016",
+        "2019",
+        "2022"
+       ]
+      },
+      "y": {
+       "label": "Households",
+       "unit": "%"
+      },
+      "series": [
+       {
+        "name": "Country A",
+        "values": [
+         32,
+         51,
+         68,
+         80,
+         88,
+         93,
+         95
+        ]
+       },
+       {
+        "name": "Country B",
+        "values": [
+         12,
+         20,
+         35,
+         55,
+         70,
+         82,
+         90
+        ]
+       },
+       {
+        "name": "Country C",
+        "values": [
+         5,
+         8,
+         14,
+         25,
+         41,
+         58,
+         72
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-03",
+   "type": "line",
+   "topic": "tourism",
+   "instruction": "The line graph shows the number of domestic and overseas visitors to a coastal town in each month of 2023. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "line",
+      "title": "Visitors to a coastal town by month, 2023",
+      "x": {
+       "label": "Month",
+       "categories": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+       ]
+      },
+      "y": {
+       "label": "Visitors",
+       "unit": "thousand"
+      },
+      "series": [
+       {
+        "name": "Domestic",
+        "values": [
+         12,
+         11,
+         15,
+         22,
+         30,
+         45,
+         68,
+         72,
+         40,
+         25,
+         15,
+         18
+        ]
+       },
+       {
+        "name": "Overseas",
+        "values": [
+         3,
+         3,
+         5,
+         9,
+         14,
+         20,
+         26,
+         28,
+         18,
+         9,
+         4,
+         6
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-04",
+   "type": "line",
+   "topic": "energy",
+   "instruction": "The line graph shows the amount of electricity produced from coal, gas and renewable sources in one country from 2005 to 2025. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "line",
+      "title": "Electricity produced by source, 2005–2025",
+      "x": {
+       "label": "Year",
+       "categories": [
+        "2005",
+        "2010",
+        "2015",
+        "2020",
+        "2025"
+       ]
+      },
+      "y": {
+       "label": "Electricity",
+       "unit": "TWh"
+      },
+      "series": [
+       {
+        "name": "Coal",
+        "values": [
+         180,
+         175,
+         160,
+         130,
+         95
+        ]
+       },
+       {
+        "name": "Gas",
+        "values": [
+         90,
+         110,
+         125,
+         130,
+         120
+        ]
+       },
+       {
+        "name": "Renewables",
+        "values": [
+         15,
+         30,
+         55,
+         90,
+         140
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-05",
+   "type": "line",
+   "topic": "housing",
+   "instruction": "The line graph shows the average price of a two-bedroom flat in two cities between 2010 and 2022. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "line",
+      "title": "Average price of a two-bedroom flat, 2010–2022",
+      "x": {
+       "label": "Year",
+       "categories": [
+        "2010",
+        "2012",
+        "2014",
+        "2016",
+        "2018",
+        "2020",
+        "2022"
+       ]
+      },
+      "y": {
+       "label": "Price",
+       "unit": "thousand euros"
+      },
+      "series": [
+       {
+        "name": "City P",
+        "values": [
+         180,
+         190,
+         205,
+         230,
+         260,
+         250,
+         270
+        ]
+       },
+       {
+        "name": "City Q",
+        "values": [
+         150,
+         152,
+         160,
+         175,
+         210,
+         240,
+         265
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-06",
+   "type": "line",
+   "topic": "education",
+   "instruction": "The line graph shows how many students at one secondary school studied four foreign languages from 2015 to 2023. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "line",
+      "title": "Students learning foreign languages at a school, 2015–2023",
+      "x": {
+       "label": "Year",
+       "categories": [
+        "2015",
+        "2017",
+        "2019",
+        "2021",
+        "2023"
+       ]
+      },
+      "y": {
+       "label": "Students",
+       "unit": ""
+      },
+      "series": [
+       {
+        "name": "Spanish",
+        "values": [
+         120,
+         135,
+         150,
+         160,
+         175
+        ]
+       },
+       {
+        "name": "French",
+        "values": [
+         140,
+         130,
+         118,
+         110,
+         100
+        ]
+       },
+       {
+        "name": "German",
+        "values": [
+         80,
+         78,
+         75,
+         72,
+         70
+        ]
+       },
+       {
+        "name": "Chinese",
+        "values": [
+         10,
+         18,
+         30,
+         45,
+         62
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-07",
+   "type": "bar",
+   "topic": "leisure",
+   "instruction": "The bar chart shows how many hours a week people in four age groups spent on sport, reading and watching TV. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "bar",
+      "title": "Weekly hours spent on leisure activities by age group",
+      "x": {
+       "label": "Age group",
+       "categories": [
+        "16–24",
+        "25–44",
+        "45–64",
+        "65+"
+       ]
+      },
+      "y": {
+       "label": "Hours per week",
+       "unit": ""
+      },
+      "series": [
+       {
+        "name": "Sport",
+        "values": [
+         6,
+         4,
+         3,
+         2
+        ]
+       },
+       {
+        "name": "Reading",
+        "values": [
+         2,
+         2.5,
+         3.5,
+         6
+        ]
+       },
+       {
+        "name": "Watching TV",
+        "values": [
+         10,
+         9,
+         12,
+         20
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-08",
+   "type": "bar",
+   "topic": "environment",
+   "instruction": "The bar chart shows how much of five types of waste a town recycled in 2010 and in 2020. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "bar",
+      "title": "Waste recycled in a town by material, 2010 and 2020",
+      "x": {
+       "label": "Material",
+       "categories": [
+        "Paper",
+        "Glass",
+        "Plastic",
+        "Metal",
+        "Food waste"
+       ]
+      },
+      "y": {
+       "label": "Waste recycled",
+       "unit": "tonnes"
+      },
+      "series": [
+       {
+        "name": "2010",
+        "values": [
+         520,
+         310,
+         90,
+         60,
+         40
+        ]
+       },
+       {
+        "name": "2020",
+        "values": [
+         610,
+         330,
+         240,
+         95,
+         210
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-09",
+   "type": "bar",
+   "topic": "work",
+   "instruction": "The bar chart shows the percentage of employees in five sectors who worked from home at least one day a week in 2019 and in 2023. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "bar",
+      "title": "Employees working from home at least one day a week, by sector",
+      "x": {
+       "label": "Sector",
+       "categories": [
+        "Finance",
+        "Education",
+        "Retail",
+        "Manufacturing",
+        "Healthcare"
+       ]
+      },
+      "y": {
+       "label": "Employees",
+       "unit": "%"
+      },
+      "series": [
+       {
+        "name": "2019",
+        "values": [
+         22,
+         8,
+         4,
+         5,
+         6
+        ]
+       },
+       {
+        "name": "2023",
+        "values": [
+         68,
+         25,
+         9,
+         12,
+         14
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-10",
+   "type": "bar",
+   "topic": "environment",
+   "instruction": "The bar chart shows how many litres of water an average person used each day for five activities in two countries. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "bar",
+      "title": "Daily water use per person by activity",
+      "x": {
+       "label": "Activity",
+       "categories": [
+        "Showering",
+        "Toilet",
+        "Cooking and drinking",
+        "Laundry",
+        "Garden"
+       ]
+      },
+      "y": {
+       "label": "Water",
+       "unit": "litres"
+      },
+      "series": [
+       {
+        "name": "Country A",
+        "values": [
+         55,
+         35,
+         10,
+         20,
+         15
+        ]
+       },
+       {
+        "name": "Country B",
+        "values": [
+         30,
+         25,
+         8,
+         12,
+         2
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-11",
+   "type": "bar",
+   "topic": "transport",
+   "instruction": "The bar chart shows the number of new petrol, diesel and electric cars sold in one country between 2015 and 2023. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "bar",
+      "title": "New cars sold by type, 2015–2023",
+      "x": {
+       "label": "Year",
+       "categories": [
+        "2015",
+        "2017",
+        "2019",
+        "2021",
+        "2023"
+       ]
+      },
+      "y": {
+       "label": "Cars sold",
+       "unit": "thousand"
+      },
+      "series": [
+       {
+        "name": "Petrol",
+        "values": [
+         820,
+         790,
+         720,
+         560,
+         410
+        ]
+       },
+       {
+        "name": "Diesel",
+        "values": [
+         610,
+         520,
+         400,
+         250,
+         150
+        ]
+       },
+       {
+        "name": "Electric",
+        "values": [
+         10,
+         25,
+         60,
+         180,
+         350
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-12",
+   "type": "bar",
+   "topic": "culture",
+   "instruction": "The bar chart shows the number of visitors to a city museum last year, by age group. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "bar",
+      "title": "Museum visitors by age group",
+      "x": {
+       "label": "Age group",
+       "categories": [
+        "Under 18",
+        "18–30",
+        "31–50",
+        "51–65",
+        "Over 65"
+       ]
+      },
+      "y": {
+       "label": "Visitors",
+       "unit": "thousand"
+      },
+      "series": [
+       {
+        "name": "Visitors",
+        "values": [
+         150,
+         95,
+         180,
+         140,
+         110
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-13",
+   "type": "pie",
+   "topic": "economy",
+   "instruction": "The pie chart shows how an average household in one country divided its spending in 2020. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "pie",
+      "title": "Household spending, 2020",
+      "slices": [
+       {
+        "label": "Housing",
+        "value": 34.5
+       },
+       {
+        "label": "Food",
+        "value": 22
+       },
+       {
+        "label": "Transport",
+        "value": 15.5
+       },
+       {
+        "label": "Leisure",
+        "value": 12
+       },
+       {
+        "label": "Other",
+        "value": 16
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-14",
+   "type": "pie",
+   "topic": "education",
+   "instruction": "The pie chart shows where a university's income came from in one year. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "pie",
+      "title": "Sources of a university's income",
+      "slices": [
+       {
+        "label": "Tuition fees",
+        "value": 45
+       },
+       {
+        "label": "Government grants",
+        "value": 28
+       },
+       {
+        "label": "Research contracts",
+        "value": 15
+       },
+       {
+        "label": "Donations",
+        "value": 5
+       },
+       {
+        "label": "Other",
+        "value": 7
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-15",
+   "type": "pie",
+   "topic": "transport",
+   "instruction": "The pie chart shows how the employees of a large company travel to work. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "pie",
+      "title": "How employees travel to work",
+      "slices": [
+       {
+        "label": "Car",
+        "value": 38
+       },
+       {
+        "label": "Bus",
+        "value": 22
+       },
+       {
+        "label": "Train",
+        "value": 17
+       },
+       {
+        "label": "Bicycle",
+        "value": 12
+       },
+       {
+        "label": "Walking",
+        "value": 9
+       },
+       {
+        "label": "Other",
+        "value": 2
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-16",
+   "type": "pie",
+   "topic": "tourism",
+   "instruction": "The pie chart shows the main reasons visitors gave for coming to a city last year. Describe the most important trends and differences, using figures from the chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "pie",
+      "title": "Main reason for visiting a city",
+      "slices": [
+       {
+        "label": "Holiday",
+        "value": 46
+       },
+       {
+        "label": "Visiting friends and family",
+        "value": 24
+       },
+       {
+        "label": "Business",
+        "value": 21
+       },
+       {
+        "label": "Study",
+        "value": 6
+       },
+       {
+        "label": "Other",
+        "value": 3
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-17",
+   "type": "pair",
+   "topic": "energy",
+   "instruction": "The pie charts show the sources of electricity in one country in 2000 and in 2020. Describe the most important trends and differences, using figures from the charts to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "pie",
+      "title": "Electricity sources, 2000",
+      "slices": [
+       {
+        "label": "Coal",
+        "value": 52
+       },
+       {
+        "label": "Gas",
+        "value": 24
+       },
+       {
+        "label": "Nuclear",
+        "value": 18
+       },
+       {
+        "label": "Renewables",
+        "value": 6
+       }
+      ]
+     },
+     {
+      "kind": "pie",
+      "title": "Electricity sources, 2020",
+      "slices": [
+       {
+        "label": "Coal",
+        "value": 18
+       },
+       {
+        "label": "Gas",
+        "value": 34
+       },
+       {
+        "label": "Nuclear",
+        "value": 16
+       },
+       {
+        "label": "Renewables",
+        "value": 32
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-18",
+   "type": "pair",
+   "topic": "environment",
+   "instruction": "The pie charts show what household waste in one city consisted of in 1995 and in 2020. Describe the most important trends and differences, using figures from the charts to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "pie",
+      "title": "Household waste, 1995",
+      "slices": [
+       {
+        "label": "Food",
+        "value": 30
+       },
+       {
+        "label": "Paper",
+        "value": 34
+       },
+       {
+        "label": "Plastic",
+        "value": 8
+       },
+       {
+        "label": "Glass",
+        "value": 12
+       },
+       {
+        "label": "Other",
+        "value": 16
+       }
+      ]
+     },
+     {
+      "kind": "pie",
+      "title": "Household waste, 2020",
+      "slices": [
+       {
+        "label": "Food",
+        "value": 26
+       },
+       {
+        "label": "Paper",
+        "value": 20
+       },
+       {
+        "label": "Plastic",
+        "value": 22
+       },
+       {
+        "label": "Glass",
+        "value": 7
+       },
+       {
+        "label": "Other",
+        "value": 25
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-19",
+   "type": "table",
+   "topic": "culture",
+   "instruction": "The table shows how many people visited three museums in a city from 2018 to 2020. Describe the most important trends and differences, using figures from the table to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "table",
+      "title": "Visitors to three museums, 2018–2020",
+      "unit": "thousand",
+      "columns": [
+       "2018",
+       "2019",
+       "2020"
+      ],
+      "rows": [
+       {
+        "label": "Science museum",
+        "values": [
+         120,
+         135,
+         60
+        ]
+       },
+       {
+        "label": "History museum",
+        "values": [
+         90,
+         95,
+         70
+        ]
+       },
+       {
+        "label": "Art gallery",
+        "values": [
+         150,
+         140,
+         50
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-20",
+   "type": "table",
+   "topic": "health",
+   "instruction": "The table shows the average number of hours people in four age groups slept per night in 1990, 2005 and 2020. Describe the most important trends and differences, using figures from the table to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "table",
+      "title": "Average hours of sleep per night by age group",
+      "unit": "hours",
+      "columns": [
+       "1990",
+       "2005",
+       "2020"
+      ],
+      "rows": [
+       {
+        "label": "Teenagers",
+        "values": [
+         8.6,
+         8.1,
+         7.4
+        ]
+       },
+       {
+        "label": "Adults 25–44",
+        "values": [
+         7.5,
+         7.2,
+         6.9
+        ]
+       },
+       {
+        "label": "Adults 45–64",
+        "values": [
+         7.2,
+         7,
+         6.9
+        ]
+       },
+       {
+        "label": "Over 65",
+        "values": [
+         7,
+         7,
+         7.1
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-21",
+   "type": "table",
+   "topic": "culture",
+   "instruction": "The table shows how many cinema tickets were sold in four countries in 2000, 2010 and 2020. Describe the most important trends and differences, using figures from the table to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "table",
+      "title": "Cinema tickets sold, 2000–2020",
+      "unit": "million",
+      "columns": [
+       "2000",
+       "2010",
+       "2020"
+      ],
+      "rows": [
+       {
+        "label": "Country A",
+        "values": [
+         120,
+         140,
+         60
+        ]
+       },
+       {
+        "label": "Country B",
+        "values": [
+         85,
+         78,
+         35
+        ]
+       },
+       {
+        "label": "Country C",
+        "values": [
+         40,
+         65,
+         30
+        ]
+       },
+       {
+        "label": "Country D",
+        "values": [
+         150,
+         155,
+         70
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-22",
+   "type": "table",
+   "topic": "health",
+   "instruction": "The table shows the percentage of men and women in five countries who exercise at least three times a week. Describe the most important trends and differences, using figures from the table to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "table",
+      "title": "People who exercise at least three times a week",
+      "unit": "%",
+      "columns": [
+       "Men",
+       "Women"
+      ],
+      "rows": [
+       {
+        "label": "Country A",
+        "values": [
+         48,
+         41
+        ]
+       },
+       {
+        "label": "Country B",
+        "values": [
+         35,
+         38
+        ]
+       },
+       {
+        "label": "Country C",
+        "values": [
+         52,
+         50
+        ]
+       },
+       {
+        "label": "Country D",
+        "values": [
+         29,
+         22
+        ]
+       },
+       {
+        "label": "Country E",
+        "values": [
+         44,
+         46
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-23",
+   "type": "pair",
+   "topic": "tourism",
+   "instruction": "The bar chart shows the number of international and domestic tourists who visited a region between 2016 and 2022, and the table shows how much they spent on average per visit. Describe the most important trends and differences, using figures from the chart and the table to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "bar",
+      "title": "Tourists visiting a region, 2016–2022",
+      "x": {
+       "label": "Year",
+       "categories": [
+        "2016",
+        "2018",
+        "2020",
+        "2022"
+       ]
+      },
+      "y": {
+       "label": "Tourists",
+       "unit": "million"
+      },
+      "series": [
+       {
+        "name": "International",
+        "values": [
+         2.4,
+         2.9,
+         0.8,
+         2.6
+        ]
+       },
+       {
+        "name": "Domestic",
+        "values": [
+         5.1,
+         5.4,
+         4,
+         6.2
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "table",
+      "title": "Average spending per visit",
+      "unit": "euros",
+      "columns": [
+       "International",
+       "Domestic"
+      ],
+      "rows": [
+       {
+        "label": "2016",
+        "values": [
+         640,
+         180
+        ]
+       },
+       {
+        "label": "2018",
+        "values": [
+         690,
+         195
+        ]
+       },
+       {
+        "label": "2020",
+        "values": [
+         520,
+         150
+        ]
+       },
+       {
+        "label": "2022",
+        "values": [
+         760,
+         230
+        ]
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  },
+  {
+   "id": "t1a-24",
+   "type": "pair",
+   "topic": "culture",
+   "instruction": "The line graph shows visits to a city library and the number of online loans between 2010 and 2022, and the pie chart shows what library members used the library for in 2022. Describe the most important trends and differences, using figures from the graph and the pie chart to support your description. Write at least 150 words.",
+   "spec": {
+    "format": "chart-spec/1",
+    "charts": [
+     {
+      "kind": "line",
+      "title": "Library visits and online loans, 2010–2022",
+      "x": {
+       "label": "Year",
+       "categories": [
+        "2010",
+        "2012",
+        "2014",
+        "2016",
+        "2018",
+        "2020",
+        "2022"
+       ]
+      },
+      "y": {
+       "label": "Number",
+       "unit": "thousand"
+      },
+      "series": [
+       {
+        "name": "Visits",
+        "values": [
+         410,
+         395,
+         370,
+         340,
+         320,
+         220,
+         310
+        ]
+       },
+       {
+        "name": "Online loans",
+        "values": [
+         20,
+         40,
+         75,
+         120,
+         190,
+         310,
+         330
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "pie",
+      "title": "What members used the library for, 2022",
+      "slices": [
+       {
+        "label": "Borrowing books",
+        "value": 35
+       },
+       {
+        "label": "Studying",
+        "value": 27
+       },
+       {
+        "label": "Using computers",
+        "value": 18
+       },
+       {
+        "label": "Events",
+        "value": 12
+       },
+       {
+        "label": "Other",
+        "value": 8
+       }
+      ]
+     }
+    ],
+    "data": "illustrative"
+   }
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "format": "xe2-opus-manifest/1",
+ "step": "XE-2.2 pilot",
+ "model": "claude-opus-5-5",
+ "batches": true,
+ "thinking": "adaptive",
+ "effort": "medium",
+ "max_tokens": 12000,
+ "chunk": 20,
+ "prompt_sha256": "7560a8f31d80587fa09d79774879ce3983ff15874c2fb0d8443fbb00f388ceaf",
+ "requests_sha256": "272c4170818cbeae9be3cec50110546147c32fa3b9656f06fdbbbe537dc8c30f",
+ "requests_file": "tmp/xe2/opus-pilot-requests.jsonl",
+ "part_of": "8f1490858338ce63356b1c7009a6ede063b60af8aa9d7c600c79d6e1a312a0b0",
+ "scope": {
+  "items": 46,
+  "requests": 3,
+  "why": {
+   "check": 43,
+   "teacher": 3
+  }
+ },
+ "price_usd_per_mtok": {
+  "input": 2,
+  "output": 10
+ },
+ "estimate": {
+  "note": "Input approximated at 3 characters per token; replaced by count_tokens before the owner is asked.",
+  "approx_input_tokens": 25560,
+  "expected_output_tokens": 11960,
+  "worst_output_tokens": 36000,
+  "expected_usd": 0.1707,
+  "worst_usd": 0.4111
+ },
+ "requests": [
+  {
+   "custom_id": "xe2o-adverbs-frequency-01",
+   "topic": "adverbs-frequency",
+   "items": [
+    21914,
+    21930,
+    21975,
+    21983,
+    22028,
+    22047,
+    22096,
+    22102,
+    22104,
+    22157,
+    22161,
+    22200,
+    22262,
+    22285,
+    22291,
+    22308,
+    22319,
+    22325,
+    22342,
+    22344
+   ],
+   "types": [
+    "error_correction",
+    "ordering"
+   ],
+   "why": {
+    "check": 20
+   },
+   "approx_input_tokens": 8906
+  },
+  {
+   "custom_id": "xe2o-causative-01",
+   "topic": "causative",
+   "items": [
+    28894,
+    29083,
+    29314,
+    29927,
+    29960,
+    30976
+   ],
+   "types": [
+    "transformation"
+   ],
+   "why": {
+    "check": 6
+   },
+   "approx_input_tokens": 5223
+  },
+  {
+   "custom_id": "xe2o-comparatives-superlatives-01",
+   "topic": "comparatives-superlatives",
+   "items": [
+    1090,
+    1091,
+    1092,
+    1094,
+    1095,
+    1096,
+    1097,
+    1221,
+    1222,
+    1223,
+    1225,
+    1227,
+    1228,
+    1522,
+    1523,
+    1525,
+    1526,
+    1527,
+    1528,
+    1529
+   ],
+   "types": [
+    "gap_choice",
+    "word_forms"
+   ],
+   "why": {
+    "check": 17,
+    "teacher": 3
+   },
+   "approx_input_tokens": 11431
+  }
+ ]
+}

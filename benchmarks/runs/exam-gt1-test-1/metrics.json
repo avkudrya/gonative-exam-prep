@@ -1,0 +1,132 @@
+{
+    "bench": "exam-gt1-test-1",
+    "guide": "ielts-writing-task-1-general@v1",
+    "items": 38,
+    "cells": {
+        "p1-sonnet-gt11": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 2,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 76,
+            "done": 76,
+            "partial": 0,
+            "costUsd": {
+                "total": 5.3518,
+                "mean": 0.0704,
+                "p90": 0.0738
+            },
+            "latencyMs": {
+                "p50": 5608,
+                "p90": 6406
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 1,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 14.066,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 38,
+                "per100": {
+                    "error": 305.3,
+                    "weakness": 128.9,
+                    "suggestion": 121.1,
+                    "strength": 842.1
+                },
+                "repeatsPer100": 94.7,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 5.3
+                },
+                "script": {
+                    "texts": 683,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 72,
+                "recall": 1,
+                "recallModerateMajor": 1,
+                "recallLocalized": 1,
+                "precision": 0.982,
+                "unmatchedFindings": 2,
+                "errorFindingsPerAssessment": 3.7,
+                "bundled": 0,
+                "suggestionsOnErrors": 5,
+                "languageStrengthsOnErrors": 6
+            },
+            "clean": {
+                "essays": 15,
+                "inventedErrors": 0,
+                "essaysWithInventedErrors": 0,
+                "weaknesses": 0.53,
+                "suggestions": 1.33,
+                "strengths": 9.93,
+                "repetitionWeaknesses": 0,
+                "prioritySkills": 0.53,
+                "essaysWithIdiomDemand": 8
+            },
+            "checks": {
+                "total": 56,
+                "passRate": 0.982,
+                "failed": [
+                    {
+                        "item": "g-gt1-wrong-tone-test",
+                        "check": "band:task_achievement",
+                        "ok": false
+                    }
+                ]
+            },
+            "stability": {
+                "lexical_resource": {
+                    "meanSd": 0.026,
+                    "maxSd": 0.5,
+                    "items": 38
+                },
+                "task_achievement": {
+                    "meanSd": 0.039,
+                    "maxSd": 0.5,
+                    "items": 38
+                },
+                "coherence_cohesion": {
+                    "meanSd": 0.013,
+                    "maxSd": 0.5,
+                    "items": 38
+                },
+                "grammatical_range_accuracy": {
+                    "meanSd": 0.039,
+                    "maxSd": 0.5,
+                    "items": 38
+                }
+            },
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

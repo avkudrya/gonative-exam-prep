@@ -1,3 +1,4 @@
+import {chartSpec} from '@gonative/exam-domain';
 import {z} from 'zod';
 
 /*
@@ -89,7 +90,8 @@ export const practiceTaskSchema = z.object({
   topic: z.string().max(200),
   task_type: z.string().max(32),
   difficulty: z.string().max(32).nullable(),
-  prompt: z.object({text: z.string().max(4000)}),
+  // Academic Task 1 (P5.6): the visual's data; the site draws the chart and its table from it.
+  prompt: z.object({text: z.string().max(4000), stimulus: chartSpec.optional()}),
   official: z.literal(false),
 });
 
@@ -115,7 +117,7 @@ export const attemptSummarySchema = z.object({
 });
 
 export const attemptSchema = attemptSummarySchema.extend({
-  prompt: z.object({text: z.string().max(4000)}),
+  prompt: z.object({text: z.string().max(4000), stimulus: chartSpec.optional()}),
   response_text: z.string().max(40000),
   assessments: z.array(z.object({uuid, status: z.enum(assessmentStatuses), created_at: isoOrNull})),
 });

@@ -46,7 +46,7 @@ export function EssayTimer({uuid, minutes}: {uuid: string; minutes: number}) {
     <span className="timer-value" aria-live={left === 0 ? 'polite' : 'off'}>{left === 0 ? t('timeUp') : label}</span>
     {running
       ? <button type="button" onClick={() => update({endsAt: null, left})}>{t('pause')}</button>
-      : left > 0 && <button type="button" onClick={() => update({endsAt: Date.now() + left, left})}>{t(left === full ? 'startTimer' : 'resume')}</button>}
+      : left > 0 && <button type="button" onClick={() => update({endsAt: Date.now() + left, left})}>{left === full ? t('startTimer', {minutes}) : t('resume')}</button>}
     {left !== full && <button type="button" onClick={() => update({endsAt: null, left: full})}>{t('reset')}</button>}
   </div>;
 }

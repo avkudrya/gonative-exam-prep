@@ -6,6 +6,8 @@ import type {Assessment, Attempt, FeedbackLanguage, RewriteChecks} from '../lib/
 import {bff} from '../lib/bff-client';
 import {ResultView} from './result';
 import {SubmitDialog} from './submit-dialog';
+import {ChartView} from './chart-view';
+import {taskRules} from '../lib/writing';
 
 const POLL_MS = 2500;
 /** After this long the page stops polling and says the result will appear later. */
@@ -26,15 +28,21 @@ export function AssessmentView({attempt, assessment, examName, remaining, limit,
   return <section className="page result-page">
     <Link className="back" href="/ielts/writing">{t('back')}</Link>
     <header className="result-head">
-      <p className="eyebrow">{examName} · Writing Task 2</p>
+      <p className="eyebrow">{examName} · {attempt.task_key === 'task-1' ? 'Writing Task 1' : 'Writing Task 2'}</p>
       <h1>{attempt.topic ?? t('ownTask')}</h1>
     </header>
+    {/* A report is checked against its data: the chart and its table stay at hand next to the feedback. */}
+    {attempt.prompt.stimulus && <details className="task-details">
+      <summary>{t('showTask')}</summary>
+      <p className="prompt-text">{attempt.prompt.text}</p>
+      <ChartView spec={attempt.prompt.stimulus}/>
+    </details>}
     {waiting ? <Waiting uuid={attempt.uuid} since={assessment?.created_at ?? attempt.submitted_at}/>
       : assessment && result ? <ResultView attempt={attempt} assessment={{...assessment, result}} practiceSkills={practiceSkills} rewriteChecks={rewriteChecks}/>
       : <div className="notice-block" role="alert">
         <h2>{t('failedTitle')}</h2>
         <p>{t('failedBody')}</p>
-        <SubmitDialog uuid={attempt.uuid} words={attempt.word_count ?? 0} remaining={remaining} limit={limit}
+        <SubmitDialog uuid={attempt.uuid} words={attempt.word_count ?? 0} minWords={taskRules(attempt.task_key).minWords} remaining={remaining} limit={limit}
           feedbackLanguage={feedbackLanguage} label={t('retry')}/>
         <details className="essay-details"><summary>{t('showEssay')}</summary>
           <div className="essay-readonly" lang="en">{attempt.response_text}</div>

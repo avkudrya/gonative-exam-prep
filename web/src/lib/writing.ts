@@ -3,6 +3,16 @@ import {countWords, normalizeResponse} from '@gonative/exam-domain';
 /** IELTS Writing Task 2: 40 minutes, at least 250 words (verified catalog). */
 export const TASK2_MINUTES = 40;
 export const TASK2_MIN_WORDS = 250;
+
+/** Exam conditions per task (verified catalog): Academic Task 1 reports a visual in 20 minutes and at least 150 words. */
+export const writingTasks = ['task-1', 'task-2'] as const;
+export type WritingTask = typeof writingTasks[number];
+export function taskRules(taskKey: string): {minutes: number; minWords: number} {
+  return taskKey === 'task-1' ? {minutes: 20, minWords: 150} : {minutes: TASK2_MINUTES, minWords: TASK2_MIN_WORDS};
+}
+
+/** Kinds of visual in the Academic Task 1 library (P5.2). */
+export const chartTypes = ['line', 'bar', 'pie', 'table', 'pair'] as const;
 /** Backend limits: essay text (code points) and own task text (characters, words). */
 export const MAX_ESSAY_CHARS = 20000;
 export const CUSTOM_PROMPT = {min: 20, max: 600, minWords: 4};

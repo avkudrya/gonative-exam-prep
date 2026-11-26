@@ -13,7 +13,8 @@ type Result = NonNullable<Assessment['result']>;
 const kindOrder = {error: 0, weakness: 1, suggestion: 2, strength: 3} as const;
 /** CSS class of a kind: `.suggestion` already styles corrected wording, so the optional kind is `.optional`. */
 const kindClass = (kind: keyof typeof kindOrder) => (kind === 'suggestion' ? 'optional' : kind);
-const criterionOrder = ['task_response', 'coherence_cohesion', 'lexical_resource', 'grammatical_range_accuracy'];
+// Task 1 is assessed on Task Achievement, Task 2 on Task Response; the other three are shared.
+const criterionOrder = ['task_achievement', 'task_response', 'coherence_cohesion', 'lexical_resource', 'grammatical_range_accuracy'];
 
 /** 6 → "6", 5.5 → "5.5": ranges are shown as they come, never rounded into something more precise. */
 const band = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1));

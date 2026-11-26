@@ -223,6 +223,24 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
 /* Editor */
 .editor { max-width: 860px; }
 .prompt-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; margin-bottom: 16px; }
+
+/* Academic Task 1 (P5.6): the visual, drawn by code (currentColor follows the theme), and its data as a table. */
+.chart-view { display: grid; gap: 12px; margin: 12px 0; }
+.chart-view .chart { margin: 0; display: grid; gap: 8px; }
+.chart-svg { color: var(--ink); overflow-x: auto; }
+.chart-svg svg { display: block; width: 100%; max-width: 640px; height: auto; }
+.chart-view.compact { margin: 0; }
+.chart-view.compact .chart-svg svg { max-width: 100%; }
+.chart-caption { color: var(--muted); font-size: 14px; }
+.chart-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline; }
+.table-wrap { overflow-x: auto; }
+.chart-table { border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+.chart-table caption { text-align: left; color: var(--muted); padding-bottom: 6px; }
+.chart-table th, .chart-table td { border: 1px solid var(--line); padding: 4px 10px; text-align: right; }
+.chart-table th[scope="row"], .chart-table thead th:first-child { text-align: left; }
+.chart-table thead th { background: var(--paper); }
+.task-details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 18px; margin-bottom: 16px; }
+.task-details summary { cursor: pointer; color: var(--accent); }
 .prompt-meta { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
 .prompt-title { font-size: 20px; margin: 0 0 8px; }
 .prompt-text { color: var(--ink); white-space: pre-line; }

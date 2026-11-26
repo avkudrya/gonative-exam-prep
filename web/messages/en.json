@@ -252,7 +252,13 @@
       "advantages": "Advantages and disadvantages",
       "problem_solution": "Problem and solution",
       "two_part": "Two questions",
-      "other": "Task 2"
+      "other": "Task 2",
+      "line": "Line graph",
+      "bar": "Bar chart",
+      "pie": "Pie chart",
+      "table": "Table",
+      "pair": "Two visuals",
+      "otherReport": "Task 1"
     },
     "write": "Write this essay",
     "creating": "Opening…",
@@ -274,8 +280,17 @@
       "rate_limited": "Too many requests. Wait a minute and try again.",
       "exams_rate_limited": "Too many requests. Wait a minute and try again.",
       "unauthenticated": "Your session has ended. Sign in again.",
-      "unavailable": "The service is temporarily unavailable. Try again in a moment."
-    }
+      "unavailable": "The service is temporarily unavailable. Try again in a moment.",
+      "exams_custom_prompt_unavailable": "Task 1 is written on a practice task with its chart."
+    },
+    "taskLabel": "Task",
+    "tasks": {
+      "task-1": "Task 1: chart",
+      "task-2": "Task 2: essay"
+    },
+    "libraryHintReport": "Original practice tasks in the IELTS Academic Task 1 format, written by GoNative: describe a chart or a table in at least 150 words. The data is invented; these are not official IELTS tasks.",
+    "writeReport": "Write this report",
+    "noTasksReport": "No Task 1 practice tasks are available right now."
   },
   "Editor": {
     "title": "Essay",
@@ -291,7 +306,7 @@
     "overMinimum": "Minimum length reached. The count is approximate.",
     "tooLong": "The essay is longer than {max} characters and cannot be saved.",
     "timer": "Timer",
-    "startTimer": "Start 40-minute timer",
+    "startTimer": "Start {minutes}-minute timer",
     "pause": "Pause",
     "resume": "Resume",
     "reset": "Reset",
@@ -319,7 +334,10 @@
     "deleteConfirm": "Delete this draft permanently?",
     "deleteYes": "Delete",
     "cancel": "Cancel",
-    "deleteFailed": "Could not delete the draft. Try again."
+    "deleteFailed": "Could not delete the draft. Try again.",
+    "taskReport": "Writing Task 1",
+    "reportLabel": "Your report",
+    "placeholderReport": "Start writing your report here…"
   },
   "Submit": {
     "open": "Get feedback",
@@ -373,7 +391,8 @@
     "failedTitle": "We could not assess this essay",
     "failedBody": "Something went wrong on our side. This attempt was not counted against your free feedbacks.",
     "retry": "Try again",
-    "showEssay": "Show the essay"
+    "showEssay": "Show the essay",
+    "showTask": "Show the task and the chart"
   },
   "Result": {
     "scoreNote": "Score ranges are approximate estimates by IELTS criteria, not official results. The comments and corrections matter more than the numbers.",
@@ -412,13 +431,15 @@
       "task_response": "Task Response",
       "coherence_cohesion": "Coherence and Cohesion",
       "lexical_resource": "Lexical Resource",
-      "grammatical_range_accuracy": "Grammatical Range and Accuracy"
+      "grammatical_range_accuracy": "Grammatical Range and Accuracy",
+      "task_achievement": "Task Achievement"
     },
     "criteriaShort": {
       "task_response": "Task",
       "coherence_cohesion": "Coherence",
       "lexical_resource": "Vocabulary",
-      "grammatical_range_accuracy": "Grammar"
+      "grammatical_range_accuracy": "Grammar",
+      "task_achievement": "Task"
     },
     "skills": {
       "grammar": {
@@ -766,5 +787,10 @@
     "nothing": "nothing (the gap stays empty)",
     "translation": "Translation:",
     "topic": "Topic: {topic}"
+  },
+  "Chart": {
+    "showTable": "Show the data as a table",
+    "hideTable": "Hide the table",
+    "illustrative": "The data is invented for practice."
   }
 }

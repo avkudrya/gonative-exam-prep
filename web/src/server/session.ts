@@ -4,6 +4,7 @@ import {cache} from 'react';
 import {z} from 'zod';
 import {assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceSessionSchema, practiceSkillsSchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
+import {writingTasks, type WritingTask} from '../lib/writing';
 
 /** Server components read the session from the httpOnly cookie; `null` means "not signed in". */
 export async function sessionToken() {
@@ -34,11 +35,14 @@ export async function currentEntitlements() {
 }
 
 /** Public catalog: exams whose Writing Task 2 can be assessed. The session is not sent. */
+/** Exams with an assessable Writing task, and which of their tasks the backend assesses (Task 1 only where it says so). */
 export const assessableExams = cache(async () => {
   const catalog = catalogSchema.parse(await backend('catalog', 'GET', undefined, undefined, {maxBytes: 512 * 1024}));
   return catalog.exams
-    .filter(exam => exam.sections.some(s => s.key === 'writing' && s.tasks.some(task => task.key === 'task-2' && task.assessable)))
-    .map(exam => ({key: exam.exam_key, name: exam.official_name}));
+    .map(exam => ({key: exam.exam_key, name: exam.official_name,
+      tasks: (exam.sections.find(s => s.key === 'writing')?.tasks ?? [])
+        .filter(task => task.assessable && (writingTasks as readonly string[]).includes(task.key)).map(task => task.key as WritingTask).sort()}))
+    .filter(exam => exam.tasks.includes('task-2'));
 });
 
 /** One attempt of the signed-in member, or `null` when it does not exist or is not theirs. */
@@ -59,9 +63,10 @@ export async function recentAttempts(perPage = 5) {
   return {attempts: attemptSummarySchema.array().parse(result.attempts), total: Number(result.total) || 0};
 }
 
-export async function practiceTasks(exam: string) {
+export async function practiceTasks(exam: string, task: WritingTask = 'task-2') {
   const token = await sessionToken();
-  const result = await backend(`tasks?${new URLSearchParams({exam})}`, 'GET', undefined, token ?? undefined, {maxBytes: 256 * 1024}) as {tasks: unknown};
+  // Task 1 tasks carry their chart data: a larger answer.
+  const result = await backend(`tasks?${new URLSearchParams({exam, task})}`, 'GET', undefined, token ?? undefined, {maxBytes: 1024 * 1024}) as {tasks: unknown};
   return practiceTaskSchema.array().parse(result.tasks);
 }
 

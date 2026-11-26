@@ -252,7 +252,13 @@
       "advantages": "Переваги й недоліки",
       "problem_solution": "Проблема й рішення",
       "two_part": "Два запитання",
-      "other": "Task 2"
+      "other": "Task 2",
+      "line": "Лінійний графік",
+      "bar": "Стовпчикова діаграма",
+      "pie": "Кругова діаграма",
+      "table": "Таблиця",
+      "pair": "Два графіки",
+      "otherReport": "Task 1"
     },
     "write": "Писати це есе",
     "creating": "Відкриваємо…",
@@ -274,8 +280,17 @@
       "rate_limited": "Забагато запитів. Зачекайте хвилину й спробуйте знову.",
       "exams_rate_limited": "Забагато запитів. Зачекайте хвилину й спробуйте знову.",
       "unauthenticated": "Сесія закінчилася. Увійдіть знову.",
-      "unavailable": "Сервіс тимчасово недоступний. Спробуйте трохи згодом."
-    }
+      "unavailable": "Сервіс тимчасово недоступний. Спробуйте трохи згодом.",
+      "exams_custom_prompt_unavailable": "Task 1 пишеться за завданням для практики з його графіком."
+    },
+    "taskLabel": "Завдання",
+    "tasks": {
+      "task-1": "Task 1: графік",
+      "task-2": "Task 2: есе"
+    },
+    "libraryHintReport": "Оригінальні завдання у форматі IELTS Academic Task 1, написані GoNative: опишіть графік або таблицю, не менше 150 слів. Дані вигадані, це не офіційні завдання IELTS.",
+    "writeReport": "Писати цей звіт",
+    "noTasksReport": "Завдань Task 1 для практики зараз немає."
   },
   "Editor": {
     "title": "Есе",
@@ -291,7 +306,7 @@
     "overMinimum": "Мінімальну довжину набрано. Підрахунок приблизний.",
     "tooLong": "Есе довше за {max} символів і не може бути збережене.",
     "timer": "Таймер",
-    "startTimer": "Запустити таймер на 40 хвилин",
+    "startTimer": "Запустити таймер на {minutes} хвилин",
     "pause": "Пауза",
     "resume": "Продовжити",
     "reset": "Скинути",
@@ -319,7 +334,10 @@
     "deleteConfirm": "Видалити цю чернетку безповоротно?",
     "deleteYes": "Видалити",
     "cancel": "Скасувати",
-    "deleteFailed": "Не вдалося видалити чернетку. Спробуйте знову."
+    "deleteFailed": "Не вдалося видалити чернетку. Спробуйте знову.",
+    "taskReport": "Writing Task 1",
+    "reportLabel": "Ваш звіт",
+    "placeholderReport": "Почніть писати звіт тут…"
   },
   "Submit": {
     "open": "Отримати розбір",
@@ -373,7 +391,8 @@
     "failedTitle": "Не вдалося оцінити есе",
     "failedBody": "У нас щось пішло не так. Цю спробу не зараховано в безкоштовні розбори.",
     "retry": "Спробувати знову",
-    "showEssay": "Показати есе"
+    "showEssay": "Показати есе",
+    "showTask": "Показати завдання і графік"
   },
   "Result": {
     "scoreNote": "Діапазони балів — орієнтовна оцінка за критеріями IELTS, а не офіційний результат. Зауваження й виправлення важливіші за числа.",
@@ -412,13 +431,15 @@
       "task_response": "Task Response — відповідь на завдання",
       "coherence_cohesion": "Coherence and Cohesion — зв’язність",
       "lexical_resource": "Lexical Resource — лексика",
-      "grammatical_range_accuracy": "Grammatical Range and Accuracy — граматика"
+      "grammatical_range_accuracy": "Grammatical Range and Accuracy — граматика",
+      "task_achievement": "Task Achievement — виконання завдання"
     },
     "criteriaShort": {
       "task_response": "Завдання",
       "coherence_cohesion": "Зв’язність",
       "lexical_resource": "Лексика",
-      "grammatical_range_accuracy": "Граматика"
+      "grammatical_range_accuracy": "Граматика",
+      "task_achievement": "Завдання"
     },
     "skills": {
       "grammar": {
@@ -766,5 +787,10 @@
     "nothing": "нічого (пропуск лишається порожнім)",
     "translation": "Переклад:",
     "topic": "Тема: {topic}"
+  },
+  "Chart": {
+    "showTable": "Показати дані таблицею",
+    "hideTable": "Сховати таблицю",
+    "illustrative": "Дані вигадані для практики."
   }
 }

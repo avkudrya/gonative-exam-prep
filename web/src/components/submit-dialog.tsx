@@ -24,8 +24,8 @@ function newRequestKey() {
  * "Get feedback": confirms what will be spent, saves the draft first, then submits once.
  * The request key is fixed while the dialog is open, so a retried click never queues a second assessment.
  */
-export function SubmitDialog({uuid, words, remaining, limit, feedbackLanguage, beforeSubmit, label}: {
-  uuid: string; words: number; remaining: number; limit: number; feedbackLanguage: FeedbackLanguage;
+export function SubmitDialog({uuid, words, minWords = TASK2_MIN_WORDS, remaining, limit, feedbackLanguage, beforeSubmit, label}: {
+  uuid: string; words: number; minWords?: number; remaining: number; limit: number; feedbackLanguage: FeedbackLanguage;
   /** Saves the draft; resolves to false when the text could not be saved. */
   beforeSubmit?: () => Promise<boolean>;
   label?: string;
@@ -79,7 +79,7 @@ export function SubmitDialog({uuid, words, remaining, limit, feedbackLanguage, b
     <dialog ref={dialog} className="dialog" aria-labelledby="submit-title">
       <h2 id="submit-title">{t('title')}</h2>
       <ul className="facts">
-        <li>{t('words', {count: words})}{words < TASK2_MIN_WORDS && !free && <> — {t('underMinimum', {min: TASK2_MIN_WORDS})}</>}</li>
+        <li>{t('words', {count: words})}{words < minWords && !free && <> — {t('underMinimum', {min: minWords})}</>}</li>
         <li>{free ? t('freeShort') : noQuota ? t('noQuota') : t('quota', {remaining, limit})}</li>
         <li>{t('language', {language: t(`languages.${feedbackLanguage}`)})} <Link href="/settings">{t('change')}</Link></li>
         <li>{t('frozen')}</li>

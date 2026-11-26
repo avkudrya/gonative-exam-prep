@@ -5,7 +5,8 @@ import {Link, useRouter} from '../i18n/navigation';
 import type {Attempt, FeedbackLanguage} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
 import {forgetLocalDraft, useDraftSync} from '../lib/draft-sync';
-import {MAX_ESSAY_CHARS, TASK2_MIN_WORDS, TASK2_MINUTES, wordsIn} from '../lib/writing';
+import {MAX_ESSAY_CHARS, taskRules, wordsIn} from '../lib/writing';
+import {ChartView} from './chart-view';
 import {EssayTimer} from './essay-timer';
 import {SubmitDialog} from './submit-dialog';
 
@@ -19,6 +20,8 @@ export function EssayEditor({attempt, examName, remaining, limit, feedbackLangua
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [deleteError, setDeleteError] = useState('');
   const words = wordsIn(draft.text);
+  const {minutes, minWords} = taskRules(attempt.task_key);
+  const report = attempt.task_key === 'task-1';
   const chars = Array.from(draft.text).length;
 
   async function remove() {
@@ -39,17 +42,18 @@ export function EssayEditor({attempt, examName, remaining, limit, feedbackLangua
     <Link className="back" href="/ielts/writing">{t('back')}</Link>
     <article className="prompt-card" aria-labelledby="prompt-title">
       <div className="prompt-meta">
-        <span>{examName} · {t('task')}</span>
+        <span>{examName} · {t(report ? 'taskReport' : 'task')}</span>
         {attempt.source === 'library' ? <span className="badge">{t('unofficial')}</span> : <span className="badge">{t('ownTask')}</span>}
       </div>
       <h1 id="prompt-title" className="prompt-title">{attempt.topic ?? t('ownTask')}</h1>
       <p className="prompt-text">{attempt.prompt.text}</p>
-      <p className="hint">{t('instructions', {minutes: TASK2_MINUTES, words: TASK2_MIN_WORDS})}</p>
+      {attempt.prompt.stimulus && <ChartView spec={attempt.prompt.stimulus}/>}
+      <p className="hint">{t('instructions', {minutes, words: minWords})}</p>
     </article>
 
     <div className="editor-bar">
       <span className="word-count" aria-live="polite">{t('wordCount', {count: words})}</span>
-      <EssayTimer uuid={attempt.uuid} minutes={TASK2_MINUTES}/>
+      <EssayTimer uuid={attempt.uuid} minutes={minutes}/>
       <span className={`sync ${draft.state}`} role="status">{t(`sync.${draft.state}`)}</span>
     </div>
 
@@ -67,17 +71,17 @@ export function EssayEditor({attempt, examName, remaining, limit, feedbackLangua
       {t('locked')} <button type="button" className="text-button" onClick={() => router.refresh()}>{t('reload')}</button>
     </p>}
 
-    <label className="sr-only" htmlFor="essay">{t('essayLabel')}</label>
+    <label className="sr-only" htmlFor="essay">{t(report ? 'reportLabel' : 'essayLabel')}</label>
     <textarea id="essay" className="essay" value={draft.text} lang="en" spellCheck={false} autoCorrect="off" autoCapitalize="sentences"
-      readOnly={draft.state === 'locked' || draft.state === 'expired'} placeholder={t('placeholder')}
+      readOnly={draft.state === 'locked' || draft.state === 'expired'} placeholder={t(report ? 'placeholderReport' : 'placeholder')}
       onChange={event => draft.setText(event.target.value)} aria-describedby="essay-hint"/>
     <p className="hint" id="essay-hint">
-      {words < TASK2_MIN_WORDS ? t('underMinimum', {words: TASK2_MIN_WORDS}) : t('overMinimum')}
+      {words < minWords ? t('underMinimum', {words: minWords}) : t('overMinimum')}
       {chars > MAX_ESSAY_CHARS && <> {t('tooLong', {max: MAX_ESSAY_CHARS})}</>}
     </p>
 
     <div className="editor-actions">
-      <SubmitDialog uuid={attempt.uuid} words={words} remaining={remaining} limit={limit} feedbackLanguage={feedbackLanguage}
+      <SubmitDialog uuid={attempt.uuid} words={words} minWords={minWords} remaining={remaining} limit={limit} feedbackLanguage={feedbackLanguage}
         beforeSubmit={draft.saveNow}/>
       {confirmDelete ? <div className="confirm" role="group" aria-label={t('deleteDraft')}>
         <span>{t('deleteConfirm')}</span>

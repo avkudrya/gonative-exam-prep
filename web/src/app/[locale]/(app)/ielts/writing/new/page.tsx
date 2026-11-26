@@ -13,7 +13,7 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
 
 export default async function NewEssayPage({params, searchParams}: {
   params: Promise<{locale: string}>;
-  searchParams: Promise<{exam?: string | string[]}>;
+  searchParams: Promise<{exam?: string | string[]; task?: string | string[]}>;
 }) {
   const {locale} = await params;
   setRequestLocale(locale);
@@ -26,13 +26,15 @@ export default async function NewEssayPage({params, searchParams}: {
     return <Unavailable locale={locale}/>;
   }
   if (!exams.length) return <Unavailable locale={locale}/>;
-  const requested = (await searchParams).exam;
-  const exam = exams.find(e => e.key === requested)?.key ?? exams.find(e => e.key === member.profile.target_exam_key)?.key ?? exams[0].key;
+  const query = await searchParams;
+  const exam = exams.find(e => e.key === query.exam) ?? exams.find(e => e.key === member.profile.target_exam_key) ?? exams[0];
+  // Task 1 only where the backend assesses it (Academic, EXAM_TASK1_ENABLED); otherwise Task 2.
+  const task = exam.tasks.find(t => t === query.task) ?? 'task-2';
   let tasks: PracticeTask[];
   try {
-    tasks = await practiceTasks(exam);
+    tasks = await practiceTasks(exam.key, task);
   } catch {
     tasks = [];
   }
-  return <NewEssay exams={exams} exam={exam} tasks={tasks}/>;
+  return <NewEssay exams={exams} exam={exam.key} task={task} taskKeys={exam.tasks} tasks={tasks}/>;
 }

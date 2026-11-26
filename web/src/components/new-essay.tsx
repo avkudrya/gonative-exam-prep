@@ -4,7 +4,7 @@ import {useState, type FormEvent} from 'react';
 import {Link, useRouter} from '../i18n/navigation';
 import type {Attempt, PracticeTask} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
-import {chartTypes, CUSTOM_PROMPT, customPromptProblem, taskTypes, type WritingTask} from '../lib/writing';
+import {chartTypes, CUSTOM_PROMPT, customPromptProblem, letterTones, taskGenre, taskTypes, type WritingTask} from '../lib/writing';
 import {ChartView} from './chart-view';
 
 const knownErrors = new Set(['exams_draft_limit', 'exams_custom_prompt_invalid', 'exams_custom_prompt_unavailable', 'exams_practice_task_unavailable', 'exams_task_unavailable', 'rate_limited', 'exams_rate_limited', 'unauthenticated']);
@@ -14,7 +14,10 @@ export function NewEssay({exams, exam, task: taskKey, taskKeys, tasks}: {
 }) {
   const t = useTranslations('NewEssay');
   const router = useRouter();
-  const report = taskKey === 'task-1';
+  // Task 1 is a report on a visual (Academic) or a letter (General Training); both only from the library.
+  const genre = taskGenre(exam, taskKey);
+  const report = genre !== 'essay';
+  const suffix = genre === 'letter' ? 'Letter' : 'Report';
   const [mode, setMode] = useState<'library' | 'own'>('library');
   const [type, setType] = useState<string>('all');
   const [busy, setBusy] = useState<string | null>(null);
@@ -22,7 +25,7 @@ export function NewEssay({exams, exam, task: taskKey, taskKeys, tasks}: {
   const [prompt, setPrompt] = useState('');
   const [promptProblem, setPromptProblem] = useState<string | null>(null);
   const shown = type === 'all' ? tasks : tasks.filter(task => task.task_type === type);
-  const known: readonly string[] = report ? chartTypes : taskTypes;
+  const known: readonly string[] = genre === 'letter' ? letterTones : report ? chartTypes : taskTypes;
   const types = known.filter(value => tasks.some(task => task.task_type === value));
 
   async function create(source: {practice_task: string} | {custom_prompt: string}, key: string) {
@@ -53,34 +56,34 @@ export function NewEssay({exams, exam, task: taskKey, taskKeys, tasks}: {
     </nav>
     {taskKeys.length > 1 && <nav className="segmented" aria-label={t('taskLabel')}>
       {taskKeys.map(key => <Link key={key} href={{pathname: '/ielts/writing/new', query: {exam, task: key}}}
-        aria-current={key === taskKey ? 'page' : undefined} replace>{t(`tasks.${key}`)}</Link>)}
+        aria-current={key === taskKey ? 'page' : undefined} replace>{t(`tasks.${key === 'task-1' && taskGenre(exam, key) === 'letter' ? 'task-1-letter' : key}`)}</Link>)}
     </nav>}
-    {/* A Task 1 visual has data that an own task cannot carry: only library tasks. */}
+    {/* A Task 1 visual has data, and a letter task its reader, tone and points, that an own task cannot carry: only library tasks. */}
     {!report && <div className="tabs" role="tablist" aria-label={t('sourceLabel')}>
       {(['library', 'own'] as const).map(value => <button key={value} type="button" role="tab" aria-selected={mode === value}
         id={`tab-${value}`} aria-controls={`panel-${value}`} onClick={() => setMode(value)}>{t(`modes.${value}`)}</button>)}
     </div>}
     {error && <p className="feedback error" role="alert">{t(`errors.${error}`)}</p>}
     {mode === 'library' || report ? <div id="panel-library" role={report ? undefined : 'tabpanel'} aria-labelledby={report ? undefined : 'tab-library'}>
-      <p className="hint">{t(report ? 'libraryHintReport' : 'libraryHint')}</p>
+      <p className="hint">{t(report ? `libraryHint${suffix}` : 'libraryHint')}</p>
       {types.length > 1 && <div className="chips" role="group" aria-label={t('typeLabel')}>
         {(['all', ...types] as const).map(value => <button key={value} type="button" aria-pressed={type === value}
           onClick={() => setType(value)}>{t(`types.${value}`)}</button>)}
       </div>}
-      {shown.length ? <ul className={`tasks${report ? ' chart-tasks' : ''}`}>
+      {shown.length ? <ul className={`tasks${genre === 'report' ? ' chart-tasks' : ''}`}>
         {shown.map(task => <li key={task.uuid} className="task">
           <div className="task-head">
             <span className="badge">{t(`types.${known.includes(task.task_type) ? task.task_type : report ? 'otherReport' : 'other'}`)}</span>
             <span className="task-topic">{task.topic}</span>
           </div>
-          {task.prompt.stimulus && <ChartView spec={task.prompt.stimulus} compact/>}
+          {task.prompt.stimulus?.format === 'chart-spec/1' && <ChartView spec={task.prompt.stimulus} compact/>}
           <p className="task-prompt">{task.prompt.text}</p>
           <button type="button" className="button" disabled={busy !== null}
             onClick={() => void create({practice_task: task.uuid}, task.uuid)}>
-            {busy === task.uuid ? t('creating') : t(report ? 'writeReport' : 'write')}
+            {busy === task.uuid ? t('creating') : t(report ? `write${suffix}` : 'write')}
           </button>
         </li>)}
-      </ul> : <p className="empty">{t(report ? 'noTasksReport' : 'noTasks')}</p>}
+      </ul> : <p className="empty">{t(report ? `noTasks${suffix}` : 'noTasks')}</p>}
     </div> : <form id="panel-own" role="tabpanel" aria-labelledby="tab-own" onSubmit={submitOwn} className="own-task">
       <div className="field">
         <label htmlFor="own-prompt">{t('ownLabel')}</label>

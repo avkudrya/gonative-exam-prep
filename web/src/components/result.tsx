@@ -6,6 +6,7 @@ import {useRouter} from '../i18n/navigation';
 import type {Assessment, Attempt, ResultFinding, RewriteCheck, RewriteChecks} from '../lib/api/schemas';
 import {reportKinds} from '../lib/api/schemas';
 import {bff} from '../lib/bff-client';
+import {taskGenre} from '../lib/writing';
 import {EssayWords} from './essay-words';
 import {PracticeButton} from './practice-button';
 
@@ -51,9 +52,10 @@ export function ResultView({attempt, assessment, practiceSkills = [], rewriteChe
   const fixSkills = (result.top_skills ?? [])
     .map(g => ({...g, examples: g.finding_ids.map(id => byId.get(id)).filter((f): f is ResultFinding => Boolean(f))}))
     .filter(g => g.examples.length > 0);
-  // A Task 1 report uses the same task skills, named for describing data (overview, key features, accurate figures).
-  const report = attempt.task_key === 'task-1';
-  const skillName = (skill: string) => (report && t.has(`skillsReport.${skill}`) ? t(`skillsReport.${skill}`)
+  // Task 1 uses the same task skills, named for describing data (a report) or for a letter (purpose, points, all the task).
+  const genre = taskGenre(attempt.exam_key, attempt.task_key);
+  const genreSkills = {essay: null, report: 'skillsReport', letter: 'skillsLetter'}[genre];
+  const skillName = (skill: string) => (genreSkills && t.has(`${genreSkills}.${skill}`) ? t(`${genreSkills}.${skill}`)
     : t.has(`skills.${skill}`) ? t(`skills.${skill}`) : skill);
 
   function select(id: string, from: 'essay' | 'list') {
@@ -126,7 +128,7 @@ export function ResultView({attempt, assessment, practiceSkills = [], rewriteChe
 
     <div className="review">
       <section aria-labelledby="essay-title" className="review-essay">
-        <h2 id="essay-title">{report ? t('reportTitle') : t('essayTitle')}</h2>
+        <h2 id="essay-title">{t({essay: 'essayTitle', report: 'reportTitle', letter: 'letterTitle'}[genre])}</h2>
         <p className="legend"><span className="hl error">{t('kinds.error')}</span> <span className="hl weakness">{t('kinds.weakness')}</span> <span className="hl optional">{t('kinds.suggestion')}</span> <span className="hl strength">{t('kinds.strength')}</span></p>
         <div className="essay-marked" lang="en" ref={essayRef}>
           {segments.map(segment => {

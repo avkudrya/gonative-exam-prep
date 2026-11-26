@@ -258,7 +258,10 @@
       "pie": "Кругова діаграма",
       "table": "Таблиця",
       "pair": "Два графіки",
-      "otherReport": "Task 1"
+      "otherReport": "Task 1",
+      "formal": "Офіційний",
+      "semi_formal": "Напівофіційний",
+      "informal": "Неофіційний"
     },
     "write": "Писати це есе",
     "creating": "Відкриваємо…",
@@ -286,11 +289,15 @@
     "taskLabel": "Завдання",
     "tasks": {
       "task-1": "Task 1: графік",
-      "task-2": "Task 2: есе"
+      "task-2": "Task 2: есе",
+      "task-1-letter": "Task 1: лист"
     },
     "libraryHintReport": "Оригінальні завдання у форматі IELTS Academic Task 1, написані GoNative: опишіть графік або таблицю, не менше 150 слів. Дані вигадані, це не офіційні завдання IELTS.",
     "writeReport": "Писати цей звіт",
-    "noTasksReport": "Завдань Task 1 для практики зараз немає."
+    "noTasksReport": "Завдань Task 1 для практики зараз немає.",
+    "libraryHintLetter": "Оригінальні завдання у форматі IELTS General Training Task 1, написані GoNative: напишіть лист, розкривши всі три пункти, не менше 150 слів. Це не офіційні завдання IELTS.",
+    "writeLetter": "Писати цей лист",
+    "noTasksLetter": "Листів Task 1 для практики зараз немає."
   },
   "Editor": {
     "title": "Есе",
@@ -337,7 +344,9 @@
     "deleteFailed": "Не вдалося видалити чернетку. Спробуйте знову.",
     "taskReport": "Writing Task 1",
     "reportLabel": "Ваш звіт",
-    "placeholderReport": "Почніть писати звіт тут…"
+    "placeholderReport": "Почніть писати звіт тут…",
+    "letterLabel": "Ваш лист",
+    "placeholderLetter": "Почніть писати лист тут…"
   },
   "Submit": {
     "open": "Отримати розбір",
@@ -383,16 +392,17 @@
   "Assessment": {
     "back": "← Writing",
     "ownTask": "Своє завдання",
-    "waitingTitle": "Оцінюємо {kind, select, report {звіт} other {есе}}…",
+    "waitingTitle": "Оцінюємо {kind, select, report {звіт} letter {лист} other {есе}}…",
     "waitingBody": "Кожен із чотирьох критеріїв оцінюється окремо. Зазвичай це займає близько пів хвилини; можна піти зі сторінки й повернутися.",
     "slowTitle": "Це займає більше часу, ніж зазвичай",
-    "slowBody": "{kind, select, report {Звіт} other {Есе}} в черзі. Зазирніть на цю сторінку пізніше: розбір з’явиться тут.",
+    "slowBody": "{kind, select, report {Звіт} letter {Лист} other {Есе}} в черзі. Зазирніть на цю сторінку пізніше: розбір з’явиться тут.",
     "elapsed": "{seconds} с",
-    "failedTitle": "Не вдалося оцінити {kind, select, report {звіт} other {есе}}",
+    "failedTitle": "Не вдалося оцінити {kind, select, report {звіт} letter {лист} other {есе}}",
     "failedBody": "У нас щось пішло не так. Цю спробу не зараховано в безкоштовні розбори.",
     "retry": "Спробувати знову",
-    "showEssay": "Показати {kind, select, report {звіт} other {есе}}",
-    "showTask": "Показати завдання і графік"
+    "showEssay": "Показати {kind, select, report {звіт} letter {лист} other {есе}}",
+    "showTask": "Показати завдання і графік",
+    "showTaskLetter": "Показати завдання"
   },
   "Result": {
     "scoreNote": "Діапазони балів — орієнтовна оцінка за критеріями IELTS, а не офіційний результат. Зауваження й виправлення важливіші за числа.",
@@ -495,7 +505,15 @@
     "selfCheckRemaining": "Залишилось перевірок цього місяця: {count}",
     "selfCheckExhausted": "Перевірки цього місяця закінчилися. Виправлення й далі можна відкрити.",
     "selfCheckRate": "Забагато перевірок поспіль. Спробуйте за хвилину.",
-    "selfCheckFailed": "Перевірка зараз недоступна. Спробуйте пізніше."
+    "selfCheckFailed": "Перевірка зараз недоступна. Спробуйте пізніше.",
+    "letterTitle": "Ваш лист",
+    "skillsLetter": {
+      "task": {
+        "position_clarity": "Мета листа",
+        "idea_development": "Розкриття пунктів",
+        "requirement_coverage": "Усі пункти завдання"
+      }
+    }
   },
   "Report": {
     "title": "Поскаржитися на розбір",

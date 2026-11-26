@@ -1,4 +1,7 @@
-import {chartSpec} from '@gonative/exam-domain';
+import {chartSpec, letterSpec} from '@gonative/exam-domain';
+
+/** A task's structured part: Academic Task 1 chart data or a General Training Task 1 letter task. */
+const stimulus = z.discriminatedUnion('format', [chartSpec, letterSpec]);
 import {z} from 'zod';
 
 /*
@@ -90,8 +93,8 @@ export const practiceTaskSchema = z.object({
   topic: z.string().max(200),
   task_type: z.string().max(32),
   difficulty: z.string().max(32).nullable(),
-  // Academic Task 1 (P5.6): the visual's data; the site draws the chart and its table from it.
-  prompt: z.object({text: z.string().max(4000), stimulus: chartSpec.optional()}),
+  // Academic Task 1 (P5.6): the visual's data, drawn by the site; General Training Task 1 (P5.11): the letter task.
+  prompt: z.object({text: z.string().max(4000), stimulus: stimulus.optional()}),
   official: z.literal(false),
 });
 
@@ -117,7 +120,7 @@ export const attemptSummarySchema = z.object({
 });
 
 export const attemptSchema = attemptSummarySchema.extend({
-  prompt: z.object({text: z.string().max(4000), stimulus: chartSpec.optional()}),
+  prompt: z.object({text: z.string().max(4000), stimulus: stimulus.optional()}),
   response_text: z.string().max(40000),
   assessments: z.array(z.object({uuid, status: z.enum(assessmentStatuses), created_at: isoOrNull})),
 });

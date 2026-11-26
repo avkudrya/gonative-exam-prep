@@ -215,7 +215,7 @@ main { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 48px; fle
 .task { display: flex; flex-direction: column; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
 .task-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .task-topic { font-weight: 600; }
-.task-prompt { color: var(--ink); font-size: 15px; flex: 1; margin: 0; }
+.task-prompt { color: var(--ink); font-size: 15px; flex: 1; margin: 0; white-space: pre-line; }
 .task .button { align-self: flex-start; }
 .own-task { max-width: 680px; }
 .own-task textarea { resize: vertical; }

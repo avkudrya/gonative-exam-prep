@@ -11,6 +11,19 @@ export function taskRules(taskKey: string): {minutes: number; minWords: number} 
   return taskKey === 'task-1' ? {minutes: 20, minWords: 150} : {minutes: TASK2_MINUTES, minWords: TASK2_MIN_WORDS};
 }
 
+/**
+ * What the learner writes: a Task 2 essay, an Academic Task 1 report on a visual, or a General Training Task 1 letter
+ * (catalog responseGenre; the two Task 1 share the rubric, the exam decides).
+ */
+export type TaskGenre = 'essay' | 'report' | 'letter';
+export function taskGenre(examKey: string, taskKey: string): TaskGenre {
+  if (taskKey !== 'task-1') return 'essay';
+  return examKey === 'ielts-general-training' ? 'letter' : 'report';
+}
+
+/** Tones of the General Training Task 1 library (P5.7); a letter task's type is its tone. */
+export const letterTones = ['formal', 'semi_formal', 'informal'] as const;
+
 /** Kinds of visual in the Academic Task 1 library (P5.2). */
 export const chartTypes = ['line', 'bar', 'pie', 'table', 'pair'] as const;
 /** Backend limits: essay text (code points) and own task text (characters, words). */

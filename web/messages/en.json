@@ -258,7 +258,10 @@
       "pie": "Pie chart",
       "table": "Table",
       "pair": "Two visuals",
-      "otherReport": "Task 1"
+      "otherReport": "Task 1",
+      "formal": "Formal",
+      "semi_formal": "Semi-formal",
+      "informal": "Informal"
     },
     "write": "Write this essay",
     "creating": "Opening…",
@@ -286,11 +289,15 @@
     "taskLabel": "Task",
     "tasks": {
       "task-1": "Task 1: chart",
-      "task-2": "Task 2: essay"
+      "task-2": "Task 2: essay",
+      "task-1-letter": "Task 1: letter"
     },
     "libraryHintReport": "Original practice tasks in the IELTS Academic Task 1 format, written by GoNative: describe a chart or a table in at least 150 words. The data is invented; these are not official IELTS tasks.",
     "writeReport": "Write this report",
-    "noTasksReport": "No Task 1 practice tasks are available right now."
+    "noTasksReport": "No Task 1 practice tasks are available right now.",
+    "libraryHintLetter": "Original IELTS-style General Training Task 1 tasks written by GoNative: write a letter that covers all three points, in at least 150 words. These are not official IELTS tasks.",
+    "writeLetter": "Write this letter",
+    "noTasksLetter": "There are no Task 1 letters to practise right now."
   },
   "Editor": {
     "title": "Essay",
@@ -337,7 +344,9 @@
     "deleteFailed": "Could not delete the draft. Try again.",
     "taskReport": "Writing Task 1",
     "reportLabel": "Your report",
-    "placeholderReport": "Start writing your report here…"
+    "placeholderReport": "Start writing your report here…",
+    "letterLabel": "Your letter",
+    "placeholderLetter": "Start writing your letter here…"
   },
   "Submit": {
     "open": "Get feedback",
@@ -383,16 +392,17 @@
   "Assessment": {
     "back": "← Writing",
     "ownTask": "Own task",
-    "waitingTitle": "Assessing your {kind, select, report {report} other {essay}}…",
+    "waitingTitle": "Assessing your {kind, select, report {report} letter {letter} other {essay}}…",
     "waitingBody": "Each of the four criteria is assessed separately. It usually takes about half a minute; you can leave this page and come back.",
     "slowTitle": "This is taking longer than usual",
-    "slowBody": "Your {kind, select, report {report} other {essay}} is in the queue. Come back to this page later: the feedback will appear here.",
+    "slowBody": "Your {kind, select, report {report} letter {letter} other {essay}} is in the queue. Come back to this page later: the feedback will appear here.",
     "elapsed": "{seconds} s",
-    "failedTitle": "We could not assess this {kind, select, report {report} other {essay}}",
+    "failedTitle": "We could not assess this {kind, select, report {report} letter {letter} other {essay}}",
     "failedBody": "Something went wrong on our side. This attempt was not counted against your free feedbacks.",
     "retry": "Try again",
-    "showEssay": "Show the {kind, select, report {report} other {essay}}",
-    "showTask": "Show the task and the chart"
+    "showEssay": "Show the {kind, select, report {report} letter {letter} other {essay}}",
+    "showTask": "Show the task and the chart",
+    "showTaskLetter": "Show the task"
   },
   "Result": {
     "scoreNote": "Score ranges are approximate estimates by IELTS criteria, not official results. The comments and corrections matter more than the numbers.",
@@ -495,7 +505,15 @@
     "selfCheckRemaining": "Checks left this month: {count}",
     "selfCheckExhausted": "No checks are left this month. You can still open the correction.",
     "selfCheckRate": "Too many checks in a row. Try again in a minute.",
-    "selfCheckFailed": "The check is unavailable right now. Try again later."
+    "selfCheckFailed": "The check is unavailable right now. Try again later.",
+    "letterTitle": "Your letter",
+    "skillsLetter": {
+      "task": {
+        "position_clarity": "Purpose of the letter",
+        "idea_development": "Developing the points",
+        "requirement_coverage": "All points of the task"
+      }
+    }
   },
   "Report": {
     "title": "Report a problem with this feedback",

@@ -7,7 +7,7 @@ import {bff} from '../lib/bff-client';
 import {ResultView} from './result';
 import {SubmitDialog} from './submit-dialog';
 import {ChartView} from './chart-view';
-import {taskRules} from '../lib/writing';
+import {taskGenre, taskRules, type TaskGenre} from '../lib/writing';
 
 const POLL_MS = 2500;
 /** After this long the page stops polling and says the result will appear later. */
@@ -24,7 +24,7 @@ export function AssessmentView({attempt, assessment, examName, remaining, limit,
   const t = useTranslations('Assessment');
   const waiting = !assessment || assessment.status === 'queued' || assessment.status === 'running';
   const result = assessment && (assessment.status === 'assessed' || assessment.status === 'partial') ? assessment.result : null;
-  const kind = attempt.task_key === 'task-1' ? 'report' : 'essay';
+  const kind = taskGenre(attempt.exam_key, attempt.task_key);
 
   return <section className="page result-page">
     <Link className="back" href="/ielts/writing">{t('back')}</Link>
@@ -34,9 +34,9 @@ export function AssessmentView({attempt, assessment, examName, remaining, limit,
     </header>
     {/* A report is checked against its data: the chart and its table stay at hand next to the feedback. */}
     {attempt.prompt.stimulus && <details className="task-details">
-      <summary>{t('showTask')}</summary>
+      <summary>{t(kind === 'letter' ? 'showTaskLetter' : 'showTask')}</summary>
       <p className="prompt-text">{attempt.prompt.text}</p>
-      <ChartView spec={attempt.prompt.stimulus}/>
+      {attempt.prompt.stimulus.format === 'chart-spec/1' && <ChartView spec={attempt.prompt.stimulus}/>}
     </details>}
     {waiting ? <Waiting uuid={attempt.uuid} since={assessment?.created_at ?? attempt.submitted_at} kind={kind}/>
       : assessment && result ? <ResultView attempt={attempt} assessment={{...assessment, result}} practiceSkills={practiceSkills} rewriteChecks={rewriteChecks}/>
@@ -52,7 +52,7 @@ export function AssessmentView({attempt, assessment, examName, remaining, limit,
   </section>;
 }
 
-function Waiting({uuid, since, kind}: {uuid: string; since: string | null; kind: 'report' | 'essay'}) {
+function Waiting({uuid, since, kind}: {uuid: string; since: string | null; kind: TaskGenre}) {
   const t = useTranslations('Assessment');
   const router = useRouter();
   const started = since ? Date.parse(since) : NaN;

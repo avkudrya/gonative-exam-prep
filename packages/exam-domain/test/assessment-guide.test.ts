@@ -139,3 +139,28 @@ test('an incomplete checklist is an integrity error, not a lower band', () => {
   assert.deepEqual(missingAnswers(gra, partial), ['gra9.punctuation_throughout', 'gra.cap.simple_only']);
   assert.throws(() => bandFromChecklist(gra, 3, partial), /unanswered/);
 });
+
+// P5.3: the Academic Task 1 guide (draft until the second-vendor review and the owner's approval).
+const task1 = assessmentGuide.parse(JSON.parse(readFileSync(new URL('../guides/ielts-writing-task-1-academic.v1.json', import.meta.url), 'utf8')));
+const ccTask1 = () => task1.criteria.find(c => c.criterionKey === 'coherence_cohesion')!;
+
+test('the Academic Task 1 guide fits the verified Task 1 rubric, not Task 2, and its limiters cap Task Achievement', () => {
+  const {rubric} = findTask(catalogExam('ielts-academic').versions[0], 'writing', 'task-1')!;
+  assert.deepEqual(checkGuideAgainstRubric(task1, rubric), []);
+  const {rubric: task2} = findTask(catalogExam('ielts-academic').versions[0], 'writing', 'task-2')!;
+  assert.ok(checkGuideAgainstRubric(task1, task2).length > 0, 'a Task 1 guide must not pass for Task 2');
+  const ids = task1.criteria.flatMap(c => [...c.bands.flatMap(b => b.features.map(f => f.id)), ...c.limiters.map(l => l.id)]);
+  assert.equal(new Set(ids).size, ids.length, 'ids are unique');
+  const limiterIds = new Set(task1.criteria.flatMap(c => c.limiters.map(l => l.id)));
+  for (const c of task1.criteria) for (const l of c.limiters) {
+    if (l.autoTrigger?.kind === 'limiter') assert.ok(limiterIds.has(l.autoTrigger.limiterId), l.id);
+  }
+  const ta = task1.criteria.find(c => c.criterionKey === 'task_achievement')!;
+  assert.equal(bandFromChecklist(ta, task1.floorBand, checklist(ta, 9)).high, 9);
+  const noOverview = bandFromChecklist(ta, task1.floorBand, checklist(ta, 9, ['ta.cap.no_overview']));
+  assert.deepEqual([noOverview.low, noOverview.high], [5, 5], 'no overview: Task Achievement at most 5');
+  assert.ok(!JSON.stringify(task1).includes('task_response') && !JSON.stringify(task1).includes('tr.cap.'), 'no Task 2 criterion leaks in');
+  // Review P5.3: the Task 1 descriptors set no paragraphing requirement below band 8, so there is no paragraph cap.
+  assert.deepEqual(ccTask1().limiters.map(l => l.id), ['cc.cap.off_topic']);
+  assert.equal(task1.status, 'reviewed');
+});

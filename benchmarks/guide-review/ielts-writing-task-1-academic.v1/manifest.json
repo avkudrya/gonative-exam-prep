@@ -1,0 +1,27 @@
+{
+ "purpose": "P5.3 semantic review of the Academic Task 1 assessment guide by a second vendor (Claude drafted it)",
+ "guide": "packages/exam-domain/guides/ielts-writing-task-1-academic.v1.json",
+ "guideSha256": "80303ff5800413fff62cfbfc4305fc990989e6963a7514ca130ed5d2f427494e",
+ "product": "exam",
+ "task": "exam.guide_review",
+ "route": {
+  "provider": "openai",
+  "model": "gpt-5.4",
+  "reasoning_effort": "medium",
+  "max_output_tokens": 16000,
+  "timeout": 600
+ },
+ "pricingUsdPerMillion": {
+  "input": 2.5,
+  "output": 15.0
+ },
+ "estimate": {
+  "inputTokens": 7257,
+  "maxOutputTokens": 16000,
+  "maxUsd": 0.258,
+  "expectedUsd": 0.123
+ },
+ "capUsd": 0.5,
+ "userData": "none: the guide only, no essays",
+ "approval": "2026-11-26: «да, раунд 1 Фазы 5, материалы Academic, до $5» (ADR-004 round yes)"
+}

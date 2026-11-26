@@ -1,0 +1,104 @@
+{
+ "haiku": {
+  "checks": 60,
+  "request_issues": [],
+  "accuracy": 0.933,
+  "per_class": {
+   "correct": 1.0,
+   "error_remains": 0.8,
+   "new_error": 1.0
+  },
+  "false_correct_rate": 0.0,
+  "false_correct": 0,
+  "correct_rejected": 0,
+  "alternative_correct_accepted": 9,
+  "confusion": {
+   "error_remains": {
+    "new_error": 4,
+    "error_remains": 16
+   },
+   "new_error": {
+    "new_error": 20
+   },
+   "correct": {
+    "correct": 20
+   }
+  },
+  "language_wrong": [],
+  "explanation_over_200": [],
+  "new_error_without_quote": [],
+  "usd": 0.004323,
+  "usd_per_check_batches": 7.2e-05,
+  "tokens_per_check": {
+   "input": 1032,
+   "output": 82
+  },
+  "passes": true,
+  "wrong": [
+   {
+    "id": "rw03-error_remains",
+    "expected": "error_remains",
+    "got": "new_error",
+    "alternative": false,
+    "explanation": "The article error is still present in another form: 'a inefficient' needs 'an' before the vowel sound. The rest of the sentence is fine."
+   },
+   {
+    "id": "rw06-error_remains",
+    "expected": "error_remains",
+    "got": "new_error",
+    "alternative": false,
+    "explanation": "The adverb error is fixed by using an adverb, but 'effective enough' is wrong here: 'effective' is an adjective, so it should be 'effectively enough'."
+   },
+   {
+    "id": "rw16-error_remains",
+    "expected": "error_remains",
+    "got": "new_error",
+    "alternative": false,
+    "explanation": "Ошибка с 'has become' исправлена не полностью: 'have' неверно, с 'tourism' нужно 'has'. Форма 'became' тоже остаётся неправильной, нужна 'become'."
+   },
+   {
+    "id": "rw12-error_remains",
+    "expected": "error_remains",
+    "got": "new_error",
+    "alternative": false,
+    "explanation": "The error with the verb is fixed, but 'These pattern' is wrong: after 'these' the noun must be plural, 'patterns'."
+   }
+  ]
+ },
+ "sonnet": {
+  "checks": 60,
+  "request_issues": [],
+  "accuracy": 1.0,
+  "per_class": {
+   "correct": 1.0,
+   "error_remains": 1.0,
+   "new_error": 1.0
+  },
+  "false_correct_rate": 0.0,
+  "false_correct": 0,
+  "correct_rejected": 0,
+  "alternative_correct_accepted": 9,
+  "confusion": {
+   "error_remains": {
+    "error_remains": 20
+   },
+   "correct": {
+    "correct": 20
+   },
+   "new_error": {
+    "new_error": 20
+   }
+  },
+  "language_wrong": [],
+  "explanation_over_200": [],
+  "new_error_without_quote": [],
+  "usd": 0.084498,
+  "usd_per_check_batches": 0.001408,
+  "tokens_per_check": {
+   "input": 1032,
+   "output": 75
+  },
+  "passes": true,
+  "wrong": []
+ }
+}

@@ -5,6 +5,7 @@ import {
   feedbackLanguageSchema, identitySchema, interfaceLocaleSchema, practiceTaskSchema, profileSchema, reportKinds,
   practiceAnswerSchema, practiceResultSchema, practiceSessionSchema, practiceSkillsSchema,
   recommendationSchema, reportSchema, reportedResultSchema, skillsSchema, vocabularyListSchema, vocabularySchema,
+  writingSessionSchema, writingSessionsSchema,
 } from '../lib/api/schemas';
 
 /*
@@ -231,6 +232,28 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
       return route(`${root}/answers/${practice[3]}`, parse(z.object({result: practiceResultSchema})), {input: z.object({answer: practiceAnswerSchema}).strict(), maxBody: 16 * 1024});
     }
     return null;
+  }
+  // P5.12: full Writing simulation. Drafts go through attempts/{uuid}/draft; the submit sends both answers once.
+  if (path === 'writing-sessions' && noQuery(search)) {
+    if (method === 'GET') return route(path, parse(writingSessionsSchema), {maxBytes: 2 * 1024 * 1024});
+    if (method === 'POST') {
+      return route(path, r => ({data: z.object({session: writingSessionSchema}).parse(r), status: 201}),
+        {input: z.object({exam_key: examKey}).strict(), maxBytes: 512 * 1024});
+    }
+    return null;
+  }
+  const simulation = /^writing-sessions\/([^/]+)(?:\/(swap|start|abandon|submit))?$/.exec(path);
+  if (simulation && uuidPattern.test(simulation[1]) && noQuery(search)) {
+    const root = `writing-sessions/${simulation[1].toLowerCase()}`;
+    const one = parse(z.object({session: writingSessionSchema}));
+    if (!simulation[2]) return method === 'GET' ? route(root, one, {maxBytes: 512 * 1024}) : null;
+    if (method !== 'POST') return null;
+    if (simulation[2] === 'start') return route(`${root}/start`, one, {input: z.object({timer_mode: z.enum(['soft', 'strict'])}).strict(), maxBytes: 512 * 1024});
+    if (simulation[2] === 'submit') {
+      return route(`${root}/submit`, r => ({data: z.object({session: writingSessionSchema}).parse(r), status: 202}),
+        {input: empty, requestKey: true, maxBytes: 512 * 1024, timeoutMs: 20000});
+    }
+    return route(`${root}/${simulation[2]}`, one, {input: empty, maxBytes: 512 * 1024});
   }
   // P4.5: the learner marks a next step done or hides it.
   const step = /^recommendations\/([^/]+)\/(done|dismiss)$/.exec(path);

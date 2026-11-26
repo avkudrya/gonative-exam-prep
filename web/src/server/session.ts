@@ -2,7 +2,7 @@ import 'server-only';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
 import {z} from 'zod';
-import {assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceSessionSchema, practiceSkillsSchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
+import {writingSessionSchema, writingSessionsSchema, assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceSessionSchema, practiceSkillsSchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
 import {writingTasks, type WritingTask} from '../lib/writing';
 
@@ -40,6 +40,8 @@ export const assessableExams = cache(async () => {
   const catalog = catalogSchema.parse(await backend('catalog', 'GET', undefined, undefined, {maxBytes: 512 * 1024}));
   return catalog.exams
     .map(exam => ({key: exam.exam_key, name: exam.official_name,
+      // P5.12: the backend can run a full Writing simulation of this exam.
+      simulation: exam.sections.find(s => s.key === 'writing')?.simulation === true,
       tasks: (exam.sections.find(s => s.key === 'writing')?.tasks ?? [])
         .filter(task => task.assessable && (writingTasks as readonly string[]).includes(task.key)).map(task => task.key as WritingTask).sort()}))
     .filter(exam => exam.tasks.includes('task-2'));
@@ -137,4 +139,22 @@ export async function currentReportedResults() {
   const token = await sessionToken();
   const result = await backend('reported-results', 'GET', undefined, token ?? undefined) as {reported_results: unknown};
   return reportedResultSchema.array().parse(result.reported_results);
+}
+
+/** P5.12: whether simulations are on, the open session and the recent submitted ones. */
+export async function writingSessions() {
+  const token = await sessionToken();
+  return writingSessionsSchema.parse(await backend('writing-sessions', 'GET', undefined, token ?? undefined, {maxBytes: 2 * 1024 * 1024}));
+}
+
+/** One Writing simulation of the signed-in member, or `null` when it does not exist or is not theirs. */
+export async function writingSession(uuid: string) {
+  const token = await sessionToken();
+  try {
+    const result = await backend(`writing-sessions/${uuid}`, 'GET', undefined, token ?? undefined, {maxBytes: 512 * 1024}) as {session: unknown};
+    return writingSessionSchema.parse(result.session);
+  } catch (error) {
+    if (error instanceof BackendError && error.status === 404) return null;
+    throw error;
+  }
 }

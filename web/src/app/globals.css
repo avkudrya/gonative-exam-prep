@@ -510,3 +510,20 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 12px; text-align: le
 .rewrite-check { display: grid; gap: 6px; margin: 6px 0; max-width: 720px; }
 .rewrite-check textarea { width: 100%; font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; resize: vertical; }
 .rewrite-check .button { justify-self: start; }
+
+/* P5.12: full Writing test */
+.writing-hero .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.simulation .prompt-card + .prompt-card { margin-top: 16px; }
+.simulation .choice { margin-top: 24px; }
+.simulation-bar { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; margin-bottom: 8px;
+  background: var(--paper); border-bottom: 1px solid var(--line); }
+.simulation-bar .timer-value { font-size: 22px; }
+.timer.soon .timer-value { color: var(--danger); }
+.simulation-score { display: flex; align-items: center; gap: 16px; margin: 16px 0 24px; }
+.simulation-score .range-value { font-size: 40px; }
+.simulation-tasks { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.simulation-tasks li { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 8px; align-content: start; }
+.simulation-tasks h2 { font-size: 16px; margin: 0; }
+.simulation-tasks .prompt-title { margin: 0; font-size: 15px; }
+.simulation-tasks .range { margin: 0; font-size: 20px; font-weight: 600; color: var(--accent); }
+@media (max-width: 640px) { .simulation-score .range-value { font-size: 30px; } }

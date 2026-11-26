@@ -74,6 +74,9 @@ export const catalogSchema = z.object({
     sections: z.array(z.object({
       key,
       official_name: z.string().max(200).nullable(),
+      time_minutes: z.int().nullable().optional(),
+      // P5.12: a full simulation of this section can start.
+      simulation: z.boolean().optional(),
       tasks: z.array(z.object({
         key,
         official_name: z.string().max(200).nullable(),
@@ -336,6 +339,37 @@ export type Entitlements = z.infer<typeof entitlementsSchema>;
 export type RewriteChecks = NonNullable<Entitlements['rewrite_checks']>;
 export type RewriteCheck = z.infer<typeof rewriteCheckSchema>['check'];
 export type Catalog = z.infer<typeof catalogSchema>;
+
+/** P5.12: a full Writing simulation — a pair of library tasks, one timer, the two attempts and, once submitted, the summary. */
+export const writingSessionStatuses = ['ready', 'started', 'submitted', 'abandoned'] as const;
+export const writingSessionSchema = z.object({
+  uuid,
+  exam_key: key,
+  section_key: key,
+  status: z.enum(writingSessionStatuses),
+  timer_mode: z.enum(['soft', 'strict']).nullable(),
+  duration_seconds: z.int().positive().max(14400),
+  swaps_left: z.int().min(0).max(1),
+  started_at: isoOrNull,
+  deadline_at: isoOrNull,
+  submitted_at: isoOrNull,
+  server_time: iso,
+  tasks: z.array(z.object({
+    task_key: key,
+    practice_task: practiceTaskSchema.nullable(),
+    time_minutes: z.int().nullable(),
+    attempt: attemptSummarySchema.nullable(),
+  })).length(2),
+  summary: z.object({
+    status: z.enum(['pending', 'complete', 'partial']),
+    calibration: z.string().max(32),
+    weights: z.record(z.string().max(64), z.number()).nullable(),
+    writing: presentedEstimateSchema.nullable(),
+    tasks: z.array(z.object({task_key: key, status: z.string().max(32), attempt: uuid.nullable(), estimate: presentedEstimateSchema.nullable()})).length(2),
+  }).nullable(),
+});
+export const writingSessionsSchema = z.object({enabled: z.boolean(), open: writingSessionSchema.nullable(), sessions: z.array(writingSessionSchema).max(50)});
+export type WritingSession = z.infer<typeof writingSessionSchema>;
 export type PracticeTask = z.infer<typeof practiceTaskSchema>;
 export type AttemptSummary = z.infer<typeof attemptSummarySchema>;
 export type Attempt = z.infer<typeof attemptSchema>;

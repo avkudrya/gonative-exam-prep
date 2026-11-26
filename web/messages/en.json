@@ -137,7 +137,9 @@
       "partial": "Partial feedback",
       "failed": "Not assessed"
     },
-    "allEssays": "All essays ({count})"
+    "allEssays": "All essays ({count})",
+    "simulation": "Full Writing test",
+    "simulationHint": "60 minutes, both tasks"
   },
   "Legal": {
     "documents": "Documents",
@@ -818,5 +820,96 @@
     "showTable": "Show the data as a table",
     "hideTable": "Hide the table",
     "illustrative": "The data is invented for practice."
+  },
+  "Simulation": {
+    "title": "Full Writing test",
+    "back": "← Writing",
+    "backToSimulations": "← Full Writing test",
+    "lead": "Both Writing tasks in a row, as in the exam: one timer for 60 minutes, then feedback on each task and an overall Writing range.",
+    "factTasks": "Two practice tasks from our library that you have not written yet. You can swap the pair once before you start.",
+    "factTimer": "The soft timer warns you when time is up and lets you finish. The strict timer submits your answers at 60:00.",
+    "factQuota": "Each written answer uses one feedback from your monthly quota (two for both tasks).",
+    "factEstimate": "The overall range counts Task 2 twice as much as Task 1. It is an approximate estimate, not an official IELTS score.",
+    "exam": "Exam",
+    "choosePair": "Choose my tasks",
+    "preparing": "Choosing…",
+    "pastTitle": "Your full tests",
+    "readyTitle": "Your tasks",
+    "readyLead": "Read both tasks. The {minutes}-minute timer starts when you press Start.",
+    "timerMode": "Timer",
+    "timerSoft": "Soft: warn me at the end and let me finish",
+    "timerStrict": "Strict (exam mode): submit my answers when time is up",
+    "timerSoftShort": "Soft timer",
+    "timerStrictShort": "Strict timer: answers are submitted at 00:00",
+    "start": "Start the test",
+    "starting": "Starting…",
+    "swap": "Other tasks",
+    "swapUsed": "You have already swapped the tasks once.",
+    "leave": "Leave the test",
+    "taskLabel": {
+      "essay": "Task 2: essay",
+      "report": "Task 1: report",
+      "letter": "Task 1: letter"
+    },
+    "taskMissing": "This task is no longer available",
+    "unofficial": "Practice task, not official",
+    "taskRules": "Suggested time {minutes} minutes · at least {words} words",
+    "timeLeft": "Time left",
+    "timeUp": "Time is up",
+    "timeUpSoft": "Time is up. You can finish your answers and submit them when you are ready.",
+    "tasks": "Tasks",
+    "words": "{count, plural, one {# word} other {# words}}",
+    "submit": "Submit both tasks",
+    "sending": "Sending…",
+    "retry": "Try again",
+    "submitTitle": "Submit your answers?",
+    "notWritten": "not written, will not be assessed",
+    "underMinimum": "fewer than {min} words",
+    "submitQuota": "Uses {count, plural, one {# feedback} other {# feedbacks}} of your quota ({remaining} of {limit} left).",
+    "submitLanguage": "Feedback language: {language}.",
+    "submitFrozen": "After submitting, the answers cannot be changed.",
+    "languages": {
+      "en": "English",
+      "ru": "Russian",
+      "uk": "Ukrainian"
+    },
+    "confirm": "Submit",
+    "cancel": "Keep writing",
+    "summaryTitle": "Writing: overall result",
+    "rangeLabel": "approximately {low} to {high}",
+    "approximate": "approximate",
+    "calibrated": "estimate",
+    "weights": "Task 2 counts twice as much as Task 1. This is not an official IELTS score.",
+    "summaryStatus": {
+      "pending": "We are checking both answers. This usually takes a minute or two.",
+      "complete": "Ready",
+      "partial": "An overall range needs feedback on both tasks. Open each task below."
+    },
+    "taskStatus": {
+      "pending": "Checking…",
+      "not_submitted": "Not written",
+      "no_range": "No range",
+      "failed": "Feedback failed: open the task to try again"
+    },
+    "openFeedback": "Open feedback",
+    "again": "Take another full test",
+    "disclaimer": "Estimates are approximate and come from AI feedback on practice tasks.",
+    "errors": {
+      "exams_simulation_unavailable": "The full test is not available right now.",
+      "exams_simulation_task_unavailable": "One of the tasks is no longer available. Leave the test and start a new one.",
+      "exams_draft_limit": "You have too many open drafts. Submit or delete some first.",
+      "exams_monthly_quota_exhausted": "Not enough feedbacks left this month for these answers.",
+      "exams_monthly_ai_budget_exhausted": "Not enough feedbacks left this month for these answers.",
+      "exams_concurrency_limit": "Another answer is still being checked. Try again in a minute.",
+      "exams_assessment_unavailable": "Feedback is not available right now. Your answers are saved.",
+      "exams_response_empty": "Write at least one answer first.",
+      "exams_requests_rate_limited": "Too many requests. Try again in a minute.",
+      "exams_rate_limited": "Too many requests. Try again in a minute.",
+      "rate_limited": "Too many requests. Try again in a minute.",
+      "not_saved": "Your answers could not be saved. Check your connection and try again.",
+      "unauthenticated": "Your session has ended. Sign in again; your answers are saved.",
+      "offline": "No connection. Your answers are saved on this device.",
+      "unavailable": "Something went wrong. Try again."
+    }
   }
 }

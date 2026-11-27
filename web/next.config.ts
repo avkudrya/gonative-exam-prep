@@ -10,14 +10,17 @@ const config: NextConfig = {
     return config;
   },
   async headers() {
-    // Closed to crawlers until the owner opens launch indexing (Phase 6).
+    // Pages get X-Robots-Tag from the proxy, per host (P6.2): the landing hosts' public pages may open for indexing,
+    // everything else stays closed. API routes never pass the proxy, so they are closed here.
     return [{
       source: '/:path*',
       headers: [
-        {key: 'X-Robots-Tag', value: 'noindex, nofollow'},
         {key: 'X-Content-Type-Options', value: 'nosniff'},
         {key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin'},
       ],
+    }, {
+      source: '/api/:path*',
+      headers: [{key: 'X-Robots-Tag', value: 'noindex, nofollow'}],
     }];
   },
 };

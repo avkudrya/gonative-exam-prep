@@ -27,3 +27,40 @@ export function landingExamFor(hostHeader: string | null | undefined): LandingEx
 export function appOrigin() {
   return (process.env.EXAMS_WEB_ORIGIN ?? 'https://exams.mnemonicwords.app').replace(/\/$/, '');
 }
+
+/**
+ * Public pages of a landing host (Phase 6, P6.2): the landing at /{locale} and the preparation guide at
+ * /{locale}/guide and /{locale}/guide/{chapter}. Everything else on a landing host belongs to the application host.
+ */
+const PUBLIC_PATH = /^\/(?:[a-z]{2}(?:\/guide(?:\/[a-z0-9-]+)?)?)?\/?$/;
+export function isPublicPath(pathname: string) {
+  return PUBLIC_PATH.test(pathname);
+}
+
+/** A guide path, which lives only on the landing host. */
+export function isGuidePath(pathname: string) {
+  return /^\/[a-z]{2}\/guide(?:\/|$)/.test(pathname);
+}
+
+/**
+ * Whether the public pages of the landing hosts may be indexed. Off unless EXAMS_PUBLIC_INDEXING=open: the owner
+ * opens it after proofreading (P6.7). The application host and private pages stay closed either way.
+ */
+export function publicIndexing() {
+  return process.env.EXAMS_PUBLIC_INDEXING === 'open';
+}
+
+/** Where the exam's public pages live, for links from the application host. */
+export function landingOrigin(exam: LandingExam = 'ielts') {
+  const configured = process.env.EXAMS_LANDING_ORIGIN;
+  if (configured) return configured.replace(/\/$/, '');
+  for (const [host, hostExam] of landingMap()) if (hostExam === exam) return `https://${host}`;
+  return 'https://ielts.mnemonicwords.app';
+}
+
+/** The public URL of a path on a landing host (no port in production; *.localhost runs over plain HTTP in tests). */
+export function publicUrl(host: string, path: string) {
+  const hostname = host.replace(/:\d+$/, '');
+  const scheme = hostname === 'localhost' || hostname.endsWith('.localhost') ? 'http' : 'https';
+  return `${scheme}://${host}${path}`;
+}

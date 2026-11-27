@@ -527,3 +527,32 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 12px; text-align: le
 .simulation-tasks .prompt-title { margin: 0; font-size: 15px; }
 .simulation-tasks .range { margin: 0; font-size: 20px; font-weight: 600; color: var(--accent); }
 @media (max-width: 640px) { .simulation-score .range-value { font-size: 30px; } }
+
+/* Public pages: guide (P6.2) */
+.landing a.brand { color: inherit; text-decoration: none; }
+.guide-hero { padding-bottom: 16px; }
+.guide-chapters { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; counter-reset: chapter; }
+.guide-chapters li { counter-increment: chapter; padding-left: 40px; position: relative; }
+.guide-chapters li::before { content: counter(chapter); position: absolute; left: 0; top: 2px; width: 28px; height: 28px; border-radius: 50%;
+  display: grid; place-items: center; font-weight: 600; font-size: 14px; background: var(--line); }
+.guide-chapters h3 { font-size: 18px; margin: 0 0 4px; }
+.guide-chapters p { color: var(--muted); margin: 0; }
+.guide-chapter { max-width: 760px; padding: 32px 0 56px; }
+.guide-chapter h1 { font-size: clamp(28px, 4.4vw, 42px); letter-spacing: -0.8px; margin: 8px 0; }
+.guide-chapter .lead { font-size: 18px; }
+.guide-crumbs { font-size: 14px; color: var(--muted); }
+.guide-byline { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+.guide-contents { border: 1px solid var(--line); border-radius: 12px; padding: 12px 20px; margin: 20px 0; }
+.guide-contents h2 { font-size: 16px; margin: 4px 0 8px; }
+.guide-contents ol { margin: 0; padding-left: 20px; }
+.guide-section { padding-top: 12px; scroll-margin-top: 16px; }
+.guide-section h2, .guide-practice h2, .guide-sources h2, .guide-related h2 { font-size: 22px; margin: 20px 0 10px; }
+.guide-section li { margin: 6px 0; }
+.guide-tip, .guide-note { border-left: 4px solid var(--accent); padding: 8px 14px; border-radius: 0 8px 8px 0; background: var(--accent-soft); }
+.guide-note { border-left-color: var(--line); background: transparent; color: var(--muted); }
+.guide-table { overflow-x: auto; margin: 12px 0; }
+.guide-table table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.guide-table th, .guide-table td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; white-space: normal; min-width: 5.5em; }
+.guide-table thead th { font-weight: 600; }
+.guide-practice { border: 1px solid var(--line); border-radius: 12px; padding: 4px 20px 20px; margin: 28px 0; }
+.guide-sources ul, .guide-related ul { padding-left: 20px; }

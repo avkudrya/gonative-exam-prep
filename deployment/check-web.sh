@@ -73,6 +73,15 @@ status=$(request "$LANDING_HOST" '/en/login?next=%2Fielts%2Fwriting')
 [[ "$status" = 308 ]] && grep -qiF "location: $APP_ORIGIN/en/login?next=%2Fielts%2Fwriting" "$CHECK_TMP/h" \
   || fail 'Landing host does not send other paths to the application host'
 [[ $(request "$LANDING_HOST" /api/bff/auth/me) = 404 ]] || fail 'BFF answers on the landing host'
+# The guide (P6.2): on the landing host, closed to indexing until the owner opens it (P6.7); the application host
+# sends it to the landing host.
+for route in /en/guide /en/guide/ielts-format; do
+  [[ $(request "$LANDING_HOST" "$route") = 200 ]] || fail "Guide not 200: $route"
+  [[ "${EXAMS_PUBLIC_INDEXING:-}" = open ]] || noindex "guide $route"
+done
+status=$(request "$APP_HOST" /en/guide/ielts-format)
+[[ "$status" = 308 ]] && grep -qiF "location: https://$LANDING_HOST/en/guide/ielts-format" "$CHECK_TMP/h" \
+  || fail 'Application host does not send the guide to the landing host'
 
 # 4. BFF origin protection: a foreign Origin is refused; the public origin passes the check
 #    (and then stops at the content type, before any backend call).

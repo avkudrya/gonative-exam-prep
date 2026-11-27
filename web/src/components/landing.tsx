@@ -1,16 +1,10 @@
 import type {Metadata} from 'next';
 import {getTranslations} from 'next-intl/server';
 import {routing} from '../i18n/routing';
-import {appOrigin, type LandingExam} from '../lib/hosts';
-import {LanguageSwitch} from './language-switch';
-import {ThemeSwitch} from './theme-switch';
+import {appOrigin, publicIndexing, publicUrl, type LandingExam} from '../lib/hosts';
+import {PublicShell} from './public-shell';
 
-/** The public URL of a landing host (no port in production; *.localhost runs over plain HTTP in tests). */
-function landingUrl(host: string, locale: string) {
-  const hostname = host.replace(/:\d+$/, '');
-  const scheme = hostname === 'localhost' || hostname.endsWith('.localhost') ? 'http' : 'https';
-  return `${scheme}://${host}/${locale}`;
-}
+const landingUrl = (host: string, locale: string) => publicUrl(host, `/${locale}`);
 
 export async function landingMetadata(locale: string, host: string): Promise<Metadata> {
   const t = await getTranslations({locale, namespace: 'Landing'});
@@ -21,7 +15,7 @@ export async function landingMetadata(locale: string, host: string): Promise<Met
       canonical: landingUrl(host, locale),
       languages: {...Object.fromEntries(routing.locales.map(l => [l, landingUrl(host, l)])), 'x-default': landingUrl(host, routing.defaultLocale)},
     },
-    robots: {index: false, follow: false},
+    robots: publicIndexing() ? {index: true, follow: true} : {index: false, follow: false},
   };
 }
 
@@ -35,16 +29,7 @@ export async function Landing({locale, exam}: {locale: string; exam: LandingExam
   const features = ['criteria', 'highlights', 'language', 'progress', 'tasks', 'privacy'] as const;
   const faq = ['official', 'accuracy', 'training', 'price', 'languages', 'variants'] as const;
 
-  return <div className="site landing">
-    <a className="skip" href="#main">{t('skip')}</a>
-    <header className="header">
-      <span className="brand">GoNative <strong>Exams</strong> <span className="brand-exam">IELTS</span></span>
-      <div className="header-tools">
-        <LanguageSwitch/>
-        <a className="text-link" href={`${app}/${locale}/login`}>{t('signIn')}</a>
-      </div>
-    </header>
-    <main id="main">
+  return <PublicShell locale={locale}>
       <section className="landing-hero">
         <p className="eyebrow">{t('eyebrow')}</p>
         <h1>{t('title')}</h1>
@@ -109,16 +94,5 @@ export async function Landing({locale, exam}: {locale: string; exam: LandingExam
         <h2>{t('finalTitle')}</h2>
         <a className="button primary" href={register('final')}>{t('cta')}</a>
       </section>
-    </main>
-    <footer className="footer">
-      <div className="footer-main">
-        <nav className="footer-links" aria-label={t('legal')}>
-          <a href={`${app}/${locale}/terms`}>{t('terms')}</a>
-          <a href={`${app}/${locale}/privacy`}>{t('privacy')}</a>
-        </nav>
-        <p className="disclaimer">{t('disclaimer')}</p>
-      </div>
-      <div className="footer-tools"><ThemeSwitch/></div>
-    </footer>
-  </div>;
+  </PublicShell>;
 }

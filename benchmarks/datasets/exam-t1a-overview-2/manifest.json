@@ -1,0 +1,43 @@
+{
+  "id": "exam-t1a-overview-2",
+  "purpose": "Round 6: exam-t1-6 on g-t1-no-overview-dev, 3 repeats (exam-t1-4 5/5/5, exam-t1-5 7/7/7 in exam-t1a-overview-1)",
+  "budgetUsd": 0.3,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-1-academic.v1.json",
+  "guideSha256": "9ed762d5479e8d9261c202ec9160f38927d846f20b183c5d06978bbe97cbfa08",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-1",
+  "items": "items.jsonl",
+  "itemsSha256": "d2e674fd6b7a3545cae70acef98f683e8506e22b42d990d9c71b0f91f2571494",
+  "feedbackLanguage": "en",
+  "sources": {
+    "G": "benchmarks/datasets/exam-t1a-v1 (synthetic, npm run bench:t1): g-t1-no-overview-dev"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet-t16",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 3,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-t1-6"
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-27",
+    "capUsd": 4,
+    "note": "«да на раунд exam-t1-6 до $4»"
+  }
+}

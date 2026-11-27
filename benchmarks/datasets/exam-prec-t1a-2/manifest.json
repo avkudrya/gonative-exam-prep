@@ -1,0 +1,43 @@
+{
+  "id": "exam-prec-t1a-2",
+  "purpose": "Round 6: exam-t1-6 on exam-precision-v1 Academic; baselines in exam-prec-t1a-1",
+  "budgetUsd": 0.4,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-1-academic.v1.json",
+  "guideSha256": "9ed762d5479e8d9261c202ec9160f38927d846f20b183c5d06978bbe97cbfa08",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-1",
+  "items": "../exam-precision-v1/items-t1a.jsonl",
+  "itemsSha256": "3f4319ea0a0cad9ff454beb45f3aab49f29930a93b2c4fe4cbe8c759605c4c8b",
+  "feedbackLanguage": "en",
+  "sources": {
+    "P": "benchmarks/sources/precision-v1.json (written in the session; npm run bench:precision)"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet-t16",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-t1-6"
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-27",
+    "capUsd": 4,
+    "note": "«да на раунд exam-t1-6 до $4»"
+  }
+}

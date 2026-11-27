@@ -1030,3 +1030,5 @@ lint и сборка проходят. Существующие приложен
   варианта и одно повторное имя исправлены в библиотеке. Библиотеки Academic `v3` (academic-3…10) и General Training `v1`
   (gt-1…10), все `published`; MultiAdmin `4040bdf2` без миграции. Дальше владелец: деплой сайта (выбор экзамена), деплой
   MultiAdmin, `exam:import-reading --apply` (18 insert).
+- **2026-11-27. Сайт `6886d55` задеплоен** (релиз `20261127185626-x7NJbsN0`): выбор Academic / General Training на странице
+  Reading. Дальше владелец: деплой MultiAdmin `4040bdf2`, `exam:import-reading --apply` (18 insert).

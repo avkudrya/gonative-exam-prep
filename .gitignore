@@ -18,3 +18,7 @@ benchmarks/runs/**/responses/
 benchmarks/guide-review/**/response.json
 # Raw second-vendor task review: may describe official questions; the adjudication is committed instead
 benchmarks/task-review/**/response.json
+
+# Listening audio (voice trials, pilot): large and regenerated from paid, reusable steps; reports are committed instead
+benchmarks/runs/**/audio/
+benchmarks/runs/**/clips/

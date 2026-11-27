@@ -1,0 +1,219 @@
+{
+    "bench": "exam-prec-t1a-1",
+    "guide": "ielts-writing-task-1-academic@v1",
+    "items": 4,
+    "cells": {
+        "p1-sonnet-t14": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 4,
+            "done": 4,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.3019,
+                "mean": 0.0755,
+                "p90": 0.0771
+            },
+            "latencyMs": {
+                "p50": 5776,
+                "p90": 6578
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 17,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 4,
+                "per100": {
+                    "error": 600,
+                    "weakness": 325,
+                    "suggestion": 150,
+                    "strength": 625
+                },
+                "repeatsPer100": 325,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 50
+                },
+                "script": {
+                    "texts": 84,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 12,
+                "recall": 1,
+                "recallModerateMajor": 1,
+                "recallLocalized": 1,
+                "precision": 0.917,
+                "unmatchedFindings": 2,
+                "errorFindingsPerAssessment": 6,
+                "bundled": 0,
+                "suggestionsOnErrors": 2,
+                "languageStrengthsOnErrors": 0
+            },
+            "clean": null,
+            "checks": {
+                "total": 4,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "probes": {
+                "valid": 8,
+                "validNamed": 0,
+                "falseErrors": 0,
+                "falseErrorsNamed": 0,
+                "falseErrorsUnnamed": 0,
+                "falseErrorRate": 0,
+                "validWithSuggestion": 1,
+                "errors": 12,
+                "found": 12,
+                "recall": 1,
+                "correctionsAccepted": 12,
+                "correctionsUnlisted": 0,
+                "correctionsOutside": 0,
+                "falseErrorList": [],
+                "unlisted": [],
+                "outside": []
+            },
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        },
+        "p1-sonnet-t15": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 4,
+            "done": 4,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.3127,
+                "mean": 0.0782,
+                "p90": 0.0799
+            },
+            "latencyMs": {
+                "p50": 5823,
+                "p90": 6027
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 16,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 4,
+                "per100": {
+                    "error": 600,
+                    "weakness": 275,
+                    "suggestion": 100,
+                    "strength": 625
+                },
+                "repeatsPer100": 275,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 50
+                },
+                "script": {
+                    "texts": 80,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 12,
+                "recall": 1,
+                "recallModerateMajor": 1,
+                "recallLocalized": 1,
+                "precision": 0.917,
+                "unmatchedFindings": 2,
+                "errorFindingsPerAssessment": 6,
+                "bundled": 0,
+                "suggestionsOnErrors": 0,
+                "languageStrengthsOnErrors": 0
+            },
+            "clean": null,
+            "checks": {
+                "total": 4,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "probes": {
+                "valid": 8,
+                "validNamed": 0,
+                "falseErrors": 0,
+                "falseErrorsNamed": 0,
+                "falseErrorsUnnamed": 0,
+                "falseErrorRate": 0,
+                "validWithSuggestion": 1,
+                "errors": 12,
+                "found": 12,
+                "recall": 1,
+                "correctionsAccepted": 12,
+                "correctionsUnlisted": 0,
+                "correctionsOutside": 0,
+                "falseErrorList": [],
+                "unlisted": [],
+                "outside": []
+            },
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

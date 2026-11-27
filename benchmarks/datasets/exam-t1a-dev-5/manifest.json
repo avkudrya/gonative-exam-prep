@@ -1,0 +1,46 @@
+{
+  "id": "exam-t1a-dev-5",
+  "purpose": "Round 5: exam-t1-5 on dev Academic Task 1 (S, G, N); baseline exam-t1a-dev-4",
+  "budgetUsd": 3.1,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-1-academic.v1.json",
+  "guideSha256": "9ed762d5479e8d9261c202ec9160f38927d846f20b183c5d06978bbe97cbfa08",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-1",
+  "items": "../exam-t1a-v1/items.jsonl",
+  "itemsSha256": "050f26d549cf1410719bcb3924f989a1c3b6d8e6ce768af5bfea43a1f1647a9b",
+  "select": {
+    "split": "dev"
+  },
+  "feedbackLanguage": "en",
+  "sources": {
+    "S, G, N": "benchmarks/datasets/exam-t1a-v1 (synthetic, npm run bench:t1)"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet-t15",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-t1-5"
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-27",
+    "capUsd": 13,
+    "note": "«да, раунд 5 до $13» — регрессия новых версий промптов на dev"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "exam-prec-gt1-1",
+  "purpose": "Round 5: exam-precision-v1 (gt1) — false errors on accepted variants, found mistakes, corrections right in their sentence; current prompt against the new one",
+  "budgetUsd": 1.0,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-1-general.v1.json",
+  "guideSha256": "63370e78313c477b82a4b7e5280a5a2a82613318b883f06125b40633fe4df7b2",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-general-training.json",
+  "rubricKey": "ielts-writing-task-1",
+  "items": "../exam-precision-v1/items-gt1.jsonl",
+  "itemsSha256": "ede49d2c58eb38683579e120a7b986bea4fb94cf72913a20d46b3d6322d01da9",
+  "feedbackLanguage": "en",
+  "sources": {
+    "P": "benchmarks/sources/precision-v1.json (written in the session; npm run bench:precision)"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet-gt11",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-gt1-1"
+      }
+    },
+    {
+      "key": "p1-sonnet-gt12",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-gt1-2"
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-27",
+    "capUsd": 13,
+    "note": "«да, раунд 5 до $13» — точность объяснений и исправлений (тесты 06–09)"
+  }
+}

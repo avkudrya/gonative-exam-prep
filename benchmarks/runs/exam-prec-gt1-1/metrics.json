@@ -1,0 +1,225 @@
+{
+    "bench": "exam-prec-gt1-1",
+    "guide": "ielts-writing-task-1-general@v1",
+    "items": 4,
+    "cells": {
+        "p1-sonnet-gt11": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 4,
+            "done": 4,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.2841,
+                "mean": 0.071,
+                "p90": 0.0738
+            },
+            "latencyMs": {
+                "p50": 6039,
+                "p90": 7042
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 15.25,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 4,
+                "per100": {
+                    "error": 550,
+                    "weakness": 125,
+                    "suggestion": 125,
+                    "strength": 725
+                },
+                "repeatsPer100": 275,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 0
+                },
+                "script": {
+                    "texts": 77,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 10,
+                "recall": 0.9,
+                "recallModerateMajor": 0.9,
+                "recallLocalized": 0.9,
+                "precision": 0.818,
+                "unmatchedFindings": 4,
+                "errorFindingsPerAssessment": 5.5,
+                "bundled": 0,
+                "suggestionsOnErrors": 0,
+                "languageStrengthsOnErrors": 0
+            },
+            "clean": null,
+            "checks": null,
+            "stability": null,
+            "probes": {
+                "valid": 10,
+                "validNamed": 4,
+                "falseErrors": 1,
+                "falseErrorsNamed": 1,
+                "falseErrorsUnnamed": 0,
+                "falseErrorRate": 0.1,
+                "validWithSuggestion": 2,
+                "errors": 10,
+                "found": 9,
+                "recall": 0.9,
+                "correctionsAccepted": 9,
+                "correctionsUnlisted": 0,
+                "correctionsOutside": 0,
+                "falseErrorList": [
+                    {
+                        "item": "p-gt1-04",
+                        "probe": "spend-on-doing",
+                        "quote": "spend ages on looking at them",
+                        "correction": "spend ages looking at them"
+                    }
+                ],
+                "unlisted": [],
+                "outside": []
+            },
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        },
+        "p1-sonnet-gt12": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 4,
+            "done": 4,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.3026,
+                "mean": 0.0756,
+                "p90": 0.0774
+            },
+            "latencyMs": {
+                "p50": 5792,
+                "p90": 6325
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 16,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 4,
+                "per100": {
+                    "error": 525,
+                    "weakness": 150,
+                    "suggestion": 125,
+                    "strength": 800
+                },
+                "repeatsPer100": 275,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 0
+                },
+                "script": {
+                    "texts": 80,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 10,
+                "recall": 0.9,
+                "recallModerateMajor": 0.9,
+                "recallLocalized": 0.9,
+                "precision": 0.857,
+                "unmatchedFindings": 3,
+                "errorFindingsPerAssessment": 5.3,
+                "bundled": 0,
+                "suggestionsOnErrors": 1,
+                "languageStrengthsOnErrors": 1
+            },
+            "clean": null,
+            "checks": null,
+            "stability": null,
+            "probes": {
+                "valid": 10,
+                "validNamed": 4,
+                "falseErrors": 1,
+                "falseErrorsNamed": 1,
+                "falseErrorsUnnamed": 0,
+                "falseErrorRate": 0.1,
+                "validWithSuggestion": 1,
+                "errors": 10,
+                "found": 9,
+                "recall": 0.9,
+                "correctionsAccepted": 9,
+                "correctionsUnlisted": 0,
+                "correctionsOutside": 0,
+                "falseErrorList": [
+                    {
+                        "item": "p-gt1-04",
+                        "probe": "spend-on-doing",
+                        "quote": "spend ages on looking at them",
+                        "correction": "spend ages looking at them"
+                    }
+                ],
+                "unlisted": [],
+                "outside": []
+            },
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

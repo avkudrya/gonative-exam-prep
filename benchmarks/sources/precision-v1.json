@@ -1,0 +1,658 @@
+{
+ "id": "exam-precision-v1",
+ "about": "Round 5 (owner tests 06-09): probes of accepted variants and real mistakes; texts written in the session, not taken from the owner tests.",
+ "items": [
+  {
+   "id": "p-t2-01",
+   "task": "t2",
+   "ref": "gonative-bench:p24",
+   "text": "Traffic congestion has become a daily frustration in many cities, and it wastes both time and money. In my view, it has several connected causes, and it can only be reduced if governments, employers and drivers all play a part.\n\nThe most obvious cause is the growing number of private cars. As incomes rise, more families can afford a car, and many people would rather drive than wait for a crowded bus. Another cause is poor planning: in a city whose roads were designed a century ago, even a modest increase in traffic leads to long queues. Commuters also tend to travel at the same time, so the roads are almost empty at noon but full at eight in the morning. In many cities, the council are now trying to spread these peaks by encouraging flexible working hours.\n\nSeveral measures could solve the problem. First, public transport must become cheaper and more reliable; if a bus ticket is more cheaper than a day of parking, people will leave their cars at home. Second, employers could let staff work from home on some days, which would reduce the number of journeys at peak times. Third, cities could charge drivers who enter the centre during the busiest hours. Whether such a charge is fair depends of how the money is spent. If it is used to improve buses and cycle lanes, most residents will probably accept it.\n\nIn conclusion, congestion is caused mainly by car ownership, old road networks and fixed working hours. I would recommend local authorities to combine a congestion charge with better public transport, because neither measure works well on its own.",
+   "probes": [
+    {
+     "id": "whose-inanimate",
+     "kind": "valid",
+     "quote": "a city whose roads",
+     "sentence": "Another cause is poor planning: in a city whose roads were designed a century ago, even a modest increase in traffic leads to long queues.",
+     "class": "whose for things",
+     "named": false
+    },
+    {
+     "id": "collective-plural",
+     "kind": "valid",
+     "quote": "the council are",
+     "sentence": "In many cities, the council are now trying to spread these peaks by encouraging flexible working hours.",
+     "class": "collective noun with plural verb (British)",
+     "named": false
+    },
+    {
+     "id": "double-comparative",
+     "kind": "error",
+     "quote": "more cheaper",
+     "sentence": "First, public transport must become cheaper and more reliable; if a bus ticket is more cheaper than a day of parking, people will leave their cars at home.",
+     "class": "double comparative",
+     "accepted": [
+      "First, public transport must become cheaper and more reliable; if a bus ticket is cheaper than a day of parking, people will leave their cars at home."
+     ]
+    },
+    {
+     "id": "depend-of",
+     "kind": "error",
+     "quote": "depends of",
+     "sentence": "Whether such a charge is fair depends of how the money is spent.",
+     "class": "preposition after depend",
+     "accepted": [
+      "Whether such a charge is fair depends on how the money is spent.",
+      "Whether such a charge is fair depends upon how the money is spent."
+     ]
+    },
+    {
+     "id": "recommend-to",
+     "kind": "valid",
+     "quote": "recommend local authorities to combine",
+     "sentence": "I would recommend local authorities to combine a congestion charge with better public transport, because neither measure works well on its own.",
+     "class": "recommend someone to do",
+     "named": true
+    }
+   ]
+  },
+  {
+   "id": "p-t2-02",
+   "task": "t2",
+   "ref": "gonative-bench:p13",
+   "text": "Over the past decade, a growing number of universities have started to offer whole degree programmes online. While this way of studying has clear benefits, I believe that its drawbacks are almost as important, so the advantages only slightly outweigh the disadvantages.\n\nThe main advantage is flexibility. Students who are working full-time this year can watch lectures in the evening, and those who live far from a university no longer need to move to another city. Online courses are also often less expensive, because universities spend less on buildings and students save on rent and travel. Everyone can study at their own pace, which suits people with young children.\n\nHowever, there are serious disadvantages. Many online students say that they have nobody to turn to when they are stuck. Without classmates, it is also harder to stay motivated, and some students give up before the end of the first year. Despite of these problems, the number of online students continues to grow. Employers sometimes doubt the value of an online degree, although this attitude is slowly changing. Practical subjects such as nursing or engineering are also hard to teach without laboratories and real patients. Students may also spend many hours on solving technical problems instead of learning.\n\nIn conclusion, online degrees make higher education available to people who could not otherwise study, which is a major benefit. Universities should, however, provide regular contact with tutors, so that every student knows where to get support. Students should also make sure that they choose a course which have a good reputation with employers.",
+   "probes": [
+    {
+     "id": "present-continuous-current",
+     "kind": "valid",
+     "quote": "who are working full-time this year",
+     "sentence": "Students who are working full-time this year can watch lectures in the evening, and those who live far from a university no longer need to move to another city.",
+     "class": "present continuous for a current situation",
+     "named": true
+    },
+    {
+     "id": "singular-they",
+     "kind": "valid",
+     "quote": "Everyone can study at their own pace",
+     "sentence": "Everyone can study at their own pace, which suits people with young children.",
+     "class": "singular they",
+     "named": false
+    },
+    {
+     "id": "preposition-at-end",
+     "kind": "valid",
+     "quote": "nobody to turn to",
+     "sentence": "Many online students say that they have nobody to turn to when they are stuck.",
+     "class": "preposition at the end",
+     "named": false
+    },
+    {
+     "id": "despite-of",
+     "kind": "error",
+     "quote": "Despite of",
+     "sentence": "Despite of these problems, the number of online students continues to grow.",
+     "class": "despite without of",
+     "accepted": [
+      "Despite these problems, the number of online students continues to grow.",
+      "In spite of these problems, the number of online students continues to grow."
+     ]
+    },
+    {
+     "id": "spend-on-doing",
+     "kind": "valid",
+     "quote": "spend many hours on solving",
+     "sentence": "Students may also spend many hours on solving technical problems instead of learning.",
+     "class": "spend time on doing",
+     "named": true
+    },
+    {
+     "id": "relative-agreement",
+     "kind": "error",
+     "quote": "which have",
+     "sentence": "Students should also make sure that they choose a course which have a good reputation with employers.",
+     "class": "agreement in a relative clause",
+     "accepted": [
+      "Students should also make sure that they choose a course which has a good reputation with employers.",
+      "Students should also make sure that they choose a course that has a good reputation with employers."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-t2-03",
+   "task": "t2",
+   "ref": "gonative-bench:p06",
+   "text": "Many governments are worried about rising rates of obesity and diabetes, and some have introduced a high tax on sugary drinks and snacks. I largely agree with this policy, although I believe it should be part of a wider strategy.\n\nThe strongest argument for such a tax is that price affects behaviour. When a can of cola costs noticeably more, many people choose water or a cheaper, healthier drink instead. The data from countries that have tried this approach is encouraging: sales of sugary drinks have fallen, and some manufacturers have reduced the sugar in their recipes. The money raised can also be used to fund sports facilities or cooking lessons in schools.\n\nCritics argue that the tax punishes people on low incomes, who spend a larger part of their budget on food. This concern is reasonable, but the health problems caused by sugar are also more common among poorer families, so they would gain the most from healthier habits. Others say that the government should not tell adults what to eat. However, a tax does not ban anything; it simply makes the real cost of unhealthy products more visible. Since the tax was introduced in my country, I notice that my friends buy fewer fizzy drinks.\n\nA tax alone will not solve the problem, though. I suggest that the government also require clear labels on all packaged food, so that shoppers can compare products quickly. In addition, doctors should give patients more informations about a healthy diet.\n\nIn conclusion, I agree that a high tax on sugary products is a sensible measure, provided that it is combined with education and better labelling.",
+   "probes": [
+    {
+     "id": "data-singular",
+     "kind": "valid",
+     "quote": "The data from countries that have tried this approach is encouraging",
+     "sentence": "The data from countries that have tried this approach is encouraging: sales of sugary drinks have fallen, and some manufacturers have reduced the sugar in their recipes.",
+     "class": "data with a singular verb",
+     "named": false
+    },
+    {
+     "id": "since-perfect",
+     "kind": "error",
+     "quote": "I notice",
+     "sentence": "Since the tax was introduced in my country, I notice that my friends buy fewer fizzy drinks.",
+     "class": "present perfect with since",
+     "accepted": [
+      "Since the tax was introduced in my country, I have noticed that my friends buy fewer fizzy drinks.",
+      "Since the tax was introduced in my country, I have noticed that my friends are buying fewer fizzy drinks.",
+      "Since the tax was introduced in my country, I have noticed that my friends have bought fewer fizzy drinks."
+     ]
+    },
+    {
+     "id": "subjunctive",
+     "kind": "valid",
+     "quote": "the government also require",
+     "sentence": "I suggest that the government also require clear labels on all packaged food, so that shoppers can compare products quickly.",
+     "class": "mandative subjunctive",
+     "named": false
+    },
+    {
+     "id": "uncountable-plural",
+     "kind": "error",
+     "quote": "more informations",
+     "sentence": "In addition, doctors should give patients more informations about a healthy diet.",
+     "class": "uncountable noun in the plural",
+     "accepted": [
+      "In addition, doctors should give patients more information about a healthy diet."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-t2-04",
+   "task": "t2",
+   "ref": "gonative-bench:p28",
+   "text": "In many countries, the number of people who live alone has risen sharply. In this essay, I will discuss the advantages and disadvantages of this trend and explain why I think the disadvantages are slightly greater.\n\nLiving alone gives people independence. They can decide when to eat, sleep and invite friends, and they do not have to share a kitchen with someone whose habits are different to their own. For young professionals, having their own flat is also a sign of success. In addition, people who live alone often become more confident, because they have to solve everyday problems without help.\n\nOn the other hand, living alone can be expensive and lonely. A single person pays the same rent and bills as a couple but has only one income. Loneliness is an even bigger problem, especially for older people. Many of them spend weeks without a real conversation, and doctors say that this affects both mental and physical health. Can you imagine how difficult is it to be ill with nobody to help you? There is also an effect on cities. When more people live alone, more homes are needed, and none of the new flats are cheap.\n\nGovernments could reduce these problems. They could support shared housing for students and older people, and they could fund clubs where people who live alone can meet. As soon as a person will retire, they should be offered information about local activities.\n\nIn conclusion, living alone brings freedom, but for many people its financial and social costs are higher than its benefits.",
+   "probes": [
+    {
+     "id": "different-to",
+     "kind": "valid",
+     "quote": "different to their own",
+     "sentence": "They can decide when to eat, sleep and invite friends, and they do not have to share a kitchen with someone whose habits are different to their own.",
+     "class": "different to (British)",
+     "named": false
+    },
+    {
+     "id": "embedded-order",
+     "kind": "error",
+     "quote": "how difficult is it",
+     "sentence": "Can you imagine how difficult is it to be ill with nobody to help you?",
+     "class": "word order in an embedded question",
+     "accepted": [
+      "Can you imagine how difficult it is to be ill with nobody to help you?"
+     ]
+    },
+    {
+     "id": "none-plural",
+     "kind": "valid",
+     "quote": "none of the new flats are cheap",
+     "sentence": "When more people live alone, more homes are needed, and none of the new flats are cheap.",
+     "class": "none with a plural verb",
+     "named": false
+    },
+    {
+     "id": "time-clause-will",
+     "kind": "error",
+     "quote": "will retire",
+     "sentence": "As soon as a person will retire, they should be offered information about local activities.",
+     "class": "present for the future in a time clause",
+     "accepted": [
+      "As soon as a person retires, they should be offered information about local activities.",
+      "As soon as a person has retired, they should be offered information about local activities."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-gt1-01",
+   "task": "gt1",
+   "ref": "gonative-t1g:gt1-14",
+   "text": "Dear Mr Hughes,\n\nI have been a member of the Riverside Running Club for almost four years, and I have always enjoyed the Tuesday and Thursday sessions. I am writing because the new training times are causing problems for many of us.\n\nSince last month, training has started at 5 p.m. instead of 7 p.m. Several of us are working on a big project at the moment and cannot leave the office so early. Last week only six people came, and the coach had to cancel the session. Do you know how many members come on Thursdays now? Could you tell me why were the times changed?\n\nI would like to suggest a better arrangement. We could keep one early session for members who prefer it and move the other one back to 7 p.m. If this is not possible, perhaps the club could ask the members which time suit them best. I would be happy to collect the answers myself.\n\nI look forward to hear from you.\n\nYours sincerely,\nDaniel Ortega",
+   "probes": [
+    {
+     "id": "present-continuous-current",
+     "kind": "valid",
+     "quote": "are working on a big project at the moment",
+     "sentence": "Several of us are working on a big project at the moment and cannot leave the office so early.",
+     "class": "present continuous for a current situation",
+     "named": true
+    },
+    {
+     "id": "subject-question",
+     "kind": "valid",
+     "quote": "how many members come",
+     "sentence": "Do you know how many members come on Thursdays now?",
+     "class": "question about the subject",
+     "named": true
+    },
+    {
+     "id": "embedded-order",
+     "kind": "error",
+     "quote": "why were the times changed",
+     "sentence": "Could you tell me why were the times changed?",
+     "class": "word order in an embedded question",
+     "accepted": [
+      "Could you tell me why the times were changed?",
+      "Could you tell me why the times have been changed?"
+     ]
+    },
+    {
+     "id": "subject-question-agreement",
+     "kind": "error",
+     "quote": "which time suit",
+     "sentence": "If this is not possible, perhaps the club could ask the members which time suit them best.",
+     "class": "agreement in a question about the subject",
+     "accepted": [
+      "If this is not possible, perhaps the club could ask the members which time suits them best.",
+      "If this is not possible, perhaps the club could ask the members which time would suit them best.",
+      "If this is not possible, perhaps the club could ask the members which times suit them best."
+     ]
+    },
+    {
+     "id": "look-forward-to",
+     "kind": "error",
+     "quote": "look forward to hear",
+     "sentence": "I look forward to hear from you.",
+     "class": "to + -ing after look forward",
+     "accepted": [
+      "I look forward to hearing from you."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-gt1-02",
+   "task": "gt1",
+   "ref": "gonative-t1g:gt1-05",
+   "text": "Dear Sir or Madam,\n\nI am writing to report a bag that I left on one of your trains last Friday, 14 March.\n\nI travelled from Leeds to York on the 08:15 service and got off at York at about nine o'clock. I was sitting in the third carriage from the front, and I put the bag on the rack above my seat. I only realised that I had forgotten it when I reached my office. The conductor I spoke to at the station suggested that I write to you.\n\nThe bag is a dark green rucksack with a brown leather strap. Inside there were my laptop, a blue notebook and some other equipments for work. The notebook is particularly important to me, as it contains all my notes for an exam next month.\n\nPlease let me know when your office will be open next week. Should I come to the station to collect the bag, or your staff will send it to me by post? You can to contact me on 07700 900123 at any time.\n\nThank you in advance for your help.\n\nYours faithfully,\nAnna Kowalski",
+   "probes": [
+    {
+     "id": "preposition-at-end",
+     "kind": "valid",
+     "quote": "The conductor I spoke to",
+     "sentence": "The conductor I spoke to at the station suggested that I write to you.",
+     "class": "preposition at the end",
+     "named": false
+    },
+    {
+     "id": "uncountable-plural",
+     "kind": "error",
+     "quote": "other equipments",
+     "sentence": "Inside there were my laptop, a blue notebook and some other equipments for work.",
+     "class": "uncountable noun in the plural",
+     "accepted": [
+      "Inside there were my laptop, a blue notebook and some other equipment for work.",
+      "Inside there was my laptop, a blue notebook and some other equipment for work."
+     ]
+    },
+    {
+     "id": "embedded-will",
+     "kind": "valid",
+     "quote": "when your office will be open",
+     "sentence": "Please let me know when your office will be open next week.",
+     "class": "will in a reported question",
+     "named": true
+    },
+    {
+     "id": "alternative-question",
+     "kind": "error",
+     "quote": "or your staff will send it",
+     "sentence": "Should I come to the station to collect the bag, or your staff will send it to me by post?",
+     "class": "word order in a direct alternative question",
+     "accepted": [
+      "Should I come to the station to collect the bag, or will your staff send it to me by post?"
+     ]
+    },
+    {
+     "id": "modal-to",
+     "kind": "error",
+     "quote": "can to contact",
+     "sentence": "You can to contact me on 07700 900123 at any time.",
+     "class": "base form after a modal verb",
+     "accepted": [
+      "You can contact me on 07700 900123 at any time."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-gt1-03",
+   "task": "gt1",
+   "ref": "gonative-t1g:gt1-21",
+   "text": "Dear Sam,\n\nSorry I haven't written for ages! I've got some big news: a month ago I started a new job as a sales assistant at a bike shop in the city centre.\n\nI spend most of the day helping customers to choose bikes, and I also do small repairs. What I like most is the team. Everyone is friendly, and the manager always has time for a chat. What I don't like so much is working on Saturdays, because that's when all my friends are free. I'll try and swap some shifts with a colleague next month.\n\nMy daily life has changed a lot. I get up at six now, which is much more early than before. I cycle to work, so I'm fitter than I used to be, but in the evenings I'm usually too tired to go out. If you will come to visit in the summer, I can show you the shop. It's closed on Sundays, so we could go cycling together on the weekend.\n\nWrite soon and tell me all your news!\n\nLove,\nMia",
+   "probes": [
+    {
+     "id": "have-got",
+     "kind": "valid",
+     "quote": "I've got some big news",
+     "sentence": "I've got some big news: a month ago I started a new job as a sales assistant at a bike shop in the city centre.",
+     "class": "have got",
+     "named": false
+    },
+    {
+     "id": "help-to-infinitive",
+     "kind": "valid",
+     "quote": "helping customers to choose",
+     "sentence": "I spend most of the day helping customers to choose bikes, and I also do small repairs.",
+     "class": "help someone to do",
+     "named": false
+    },
+    {
+     "id": "try-and",
+     "kind": "valid",
+     "quote": "I'll try and swap",
+     "sentence": "I'll try and swap some shifts with a colleague next month.",
+     "class": "try and (informal)",
+     "named": false
+    },
+    {
+     "id": "comparative-form",
+     "kind": "error",
+     "quote": "much more early",
+     "sentence": "I get up at six now, which is much more early than before.",
+     "class": "comparative of early",
+     "accepted": [
+      "I get up at six now, which is much earlier than before."
+     ]
+    },
+    {
+     "id": "if-will",
+     "kind": "error",
+     "quote": "If you will come",
+     "sentence": "If you will come to visit in the summer, I can show you the shop.",
+     "class": "present for the future after if",
+     "accepted": [
+      "If you come to visit in the summer, I can show you the shop.",
+      "If you come to visit in the summer, I will show you the shop.",
+      "If you come to visit in the summer, I'll show you the shop."
+     ]
+    },
+    {
+     "id": "on-the-weekend",
+     "kind": "valid",
+     "quote": "on the weekend",
+     "sentence": "It's closed on Sundays, so we could go cycling together on the weekend.",
+     "class": "on the weekend (American)",
+     "named": false
+    }
+   ]
+  },
+  {
+   "id": "p-gt1-04",
+   "task": "gt1",
+   "ref": "gonative-t1g:gt1-23",
+   "text": "Dear Priya,\n\nI hope you're well! Can you believe it's been ten years since we left school? I'm organising a reunion for our class, and I'd love your help.\n\nThe party will be on Saturday 12 July at the Old Mill restaurant, from seven until late. So far, twenty-three people have said they're coming, including Mr Grant, our old maths teacher!\n\nThe problem is that I'm moving house in June, so I won't have much time for the organisation. I also need someone who knows everybody, and you were always the person who everyone talked to. Could you help me with contacting the people I can't find and to choose the music? You could also make a slideshow of our old photos. I'm sure people would spend ages on looking at them.\n\nI know you are very busy since you started your new job, so just tell me what you can manage. Let me know soon!\n\nBest wishes,\nLeo",
+   "probes": [
+    {
+     "id": "who-object",
+     "kind": "valid",
+     "quote": "the person who everyone talked to",
+     "sentence": "I also need someone who knows everybody, and you were always the person who everyone talked to.",
+     "class": "who as an object",
+     "named": false
+    },
+    {
+     "id": "parallel-after-and",
+     "kind": "error",
+     "quote": "and to choose",
+     "sentence": "Could you help me with contacting the people I can't find and to choose the music?",
+     "class": "parallel forms after and",
+     "accepted": [
+      "Could you help me with contacting the people I can't find and choosing the music?",
+      "Could you help me contact the people I can't find and choose the music?",
+      "Could you help me to contact the people I can't find and to choose the music?",
+      "Could you help me to contact the people I can't find and choose the music?"
+     ]
+    },
+    {
+     "id": "spend-on-doing",
+     "kind": "valid",
+     "quote": "spend ages on looking",
+     "sentence": "I'm sure people would spend ages on looking at them.",
+     "class": "spend time on doing",
+     "named": true
+    },
+    {
+     "id": "since-perfect",
+     "kind": "error",
+     "quote": "you are very busy",
+     "sentence": "I know you are very busy since you started your new job, so just tell me what you can manage.",
+     "class": "present perfect with since",
+     "accepted": [
+      "I know you have been very busy since you started your new job, so just tell me what you can manage.",
+      "I know you've been very busy since you started your new job, so just tell me what you can manage."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-t1a-01",
+   "task": "t1a",
+   "ref": "gonative-t1a:t1a-01",
+   "text": "The line graph shows how many people travelled to work by car, bus and bicycle in a European city between 2000 and 2020.\n\nOverall, the car was the most popular way to commute for most of the period, but its use fell, while the number of bus passengers rose steadily. Cycling remained far less common than the other two modes.\n\nIn 2000, 420 thousand people drove to work, which was twice as many as the number who took the bus (210 thousand). Car commuting increased with 30 thousand between 2000 and 2005 and then declined, reaching 300 thousand in 2020. In 2005, the most of commuters went by car.\n\nBy contrast, bus use grew in every period. Between 2010 and 2020, it grows by 70 thousand, and by 2020 the bus carried more commuters than the car. Compared to 2000, the figure for bus passengers in 2020 was over 50% higher.\n\nThe number of cyclists hardly changed. It stayed between 40 and 42 thousand throughout, which was less than a tenth of the number of car commuters in 2000.",
+   "probes": [
+    {
+     "id": "increase-by",
+     "kind": "error",
+     "quote": "increased with 30 thousand",
+     "sentence": "Car commuting increased with 30 thousand between 2000 and 2005 and then declined, reaching 300 thousand in 2020.",
+     "class": "by with an amount of change",
+     "accepted": [
+      "Car commuting increased by 30 thousand between 2000 and 2005 and then declined, reaching 300 thousand in 2020."
+     ]
+    },
+    {
+     "id": "most-of",
+     "kind": "error",
+     "quote": "the most of commuters",
+     "sentence": "In 2005, the most of commuters went by car.",
+     "class": "most without the of",
+     "accepted": [
+      "In 2005, most commuters went by car.",
+      "In 2005, most of the commuters went by car."
+     ]
+    },
+    {
+     "id": "report-tense",
+     "kind": "error",
+     "quote": "it grows by 70 thousand",
+     "sentence": "Between 2010 and 2020, it grows by 70 thousand, and by 2020 the bus carried more commuters than the car.",
+     "class": "past tense for a finished period",
+     "accepted": [
+      "Between 2010 and 2020, it grew by 70 thousand, and by 2020 the bus carried more commuters than the car."
+     ]
+    },
+    {
+     "id": "compared-to",
+     "kind": "valid",
+     "quote": "Compared to 2000",
+     "sentence": "Compared to 2000, the figure for bus passengers in 2020 was over 50% higher.",
+     "class": "compared to",
+     "named": false
+    },
+    {
+     "id": "less-than-fraction",
+     "kind": "valid",
+     "quote": "less than a tenth",
+     "sentence": "It stayed between 40 and 42 thousand throughout, which was less than a tenth of the number of car commuters in 2000.",
+     "class": "less than with a fraction",
+     "named": false
+    }
+   ]
+  },
+  {
+   "id": "p-t1a-02",
+   "task": "t1a",
+   "ref": "gonative-t1a:t1a-11",
+   "text": "The bar chart compares sales of new petrol, diesel and electric cars in one country between 2015 and 2023.\n\nOverall, sales of petrol and diesel cars fell considerably, whereas electric car sales rose rapidly, so that by 2023 electric cars were not far behind petrol cars.\n\nPetrol cars were the best-selling type throughout. Petrol sales halved over the period, falling from 820 thousand to 410 thousand. They fell in every period shown, with the steepest drop between 2019 and 2021, when they decreased by 160 thousand. Diesel sales dropped even more sharply, and in 2023 only 150 thousands diesel cars were sold.\n\nElectric cars followed the opposite trend. Only 10 thousand were sold in 2015, but since 2019 electric car sales rise every year. In 2021, electric cars accounted for nearly a fifth of all new cars sold. Between 2021 and 2023, the number of electric cars sold rose at 350 thousand, almost double the 2021 figure. By 2023, more electric cars than diesel cars were sold: 350 thousand compared with 150 thousand.",
+   "probes": [
+    {
+     "id": "halved",
+     "kind": "valid",
+     "quote": "Petrol sales halved",
+     "sentence": "Petrol sales halved over the period, falling from 820 thousand to 410 thousand.",
+     "class": "halve as an intransitive verb",
+     "named": false
+    },
+    {
+     "id": "numeral-thousand",
+     "kind": "error",
+     "quote": "150 thousands",
+     "sentence": "Diesel sales dropped even more sharply, and in 2023 only 150 thousands diesel cars were sold.",
+     "class": "thousand after a number",
+     "accepted": [
+      "Diesel sales dropped even more sharply, and in 2023 only 150 thousand diesel cars were sold.",
+      "Diesel sales dropped even more sharply, and in 2023 only 150,000 diesel cars were sold."
+     ]
+    },
+    {
+     "id": "since-perfect",
+     "kind": "error",
+     "quote": "electric car sales rise",
+     "sentence": "Only 10 thousand were sold in 2015, but since 2019 electric car sales rise every year.",
+     "class": "present perfect with since",
+     "accepted": [
+      "Only 10 thousand were sold in 2015, but since 2019 electric car sales have risen every year.",
+      "Only 10 thousand were sold in 2015, but since 2019 electric car sales have been rising every year."
+     ]
+    },
+    {
+     "id": "approximate-fraction",
+     "kind": "valid",
+     "quote": "nearly a fifth",
+     "sentence": "In 2021, electric cars accounted for nearly a fifth of all new cars sold.",
+     "class": "approximate fraction that fits the data (18%)",
+     "named": false
+    },
+    {
+     "id": "rise-to",
+     "kind": "error",
+     "quote": "rose at 350 thousand",
+     "sentence": "Between 2021 and 2023, the number of electric cars sold rose at 350 thousand, almost double the 2021 figure.",
+     "class": "to with the end value",
+     "accepted": [
+      "Between 2021 and 2023, the number of electric cars sold rose to 350 thousand, almost double the 2021 figure."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-t1a-03",
+   "task": "t1a",
+   "ref": "gonative-t1a:t1a-13",
+   "text": "The pie chart shows how an average household in one country divided its spending in 2020.\n\nOverall, housing was by far the largest expense, while leisure accounted for the smallest share of the budget.\n\nHousing took just over a third of household spending, at 34.5%. Food was the second large category at 22%, so these two items together made up more than half of the total. In fact, housing alone accounted for slightly more than food and leisure combined, which together made up 34%.\n\nTransport and leisure together makes up 27.5% of spending. Comparing with food, transport took a smaller share, at 15.5%, and leisure accounted for 12%. The remaining 16% went on other items, which was slightly more than the share for transport. Leisure, at 12%, was the smallest single category, about a third of the share for housing.\n\nIn other words, essential costs such as housing, food and transport accounted for almost three quarters of household spending, and only a small part of the budget was left for leisure.",
+   "probes": [
+    {
+     "id": "approximate-fraction",
+     "kind": "valid",
+     "quote": "just over a third",
+     "sentence": "Housing took just over a third of household spending, at 34.5%.",
+     "class": "approximate fraction that fits the data (34.5%)",
+     "named": false
+    },
+    {
+     "id": "superlative",
+     "kind": "error",
+     "quote": "second large",
+     "sentence": "Food was the second large category at 22%, so these two items together made up more than half of the total.",
+     "class": "superlative after second",
+     "accepted": [
+      "Food was the second largest category at 22%, so these two items together made up more than half of the total.",
+      "Food was the second-largest category at 22%, so these two items together made up more than half of the total."
+     ]
+    },
+    {
+     "id": "plural-agreement",
+     "kind": "error",
+     "quote": "makes up",
+     "sentence": "Transport and leisure together makes up 27.5% of spending.",
+     "class": "agreement with two subjects",
+     "accepted": [
+      "Transport and leisure together make up 27.5% of spending.",
+      "Transport and leisure together made up 27.5% of spending."
+     ]
+    },
+    {
+     "id": "compared-with",
+     "kind": "error",
+     "quote": "Comparing with food",
+     "sentence": "Comparing with food, transport took a smaller share, at 15.5%, and leisure accounted for 12%.",
+     "class": "compared with",
+     "accepted": [
+      "Compared with food, transport took a smaller share, at 15.5%, and leisure accounted for 12%.",
+      "Compared to food, transport took a smaller share, at 15.5%, and leisure accounted for 12%."
+     ]
+    },
+    {
+     "id": "approximate-fraction-2",
+     "kind": "valid",
+     "quote": "almost three quarters",
+     "sentence": "In other words, essential costs such as housing, food and transport accounted for almost three quarters of household spending, and only a small part of the budget was left for leisure.",
+     "class": "approximate fraction that fits the data (72%)",
+     "named": false
+    }
+   ]
+  },
+  {
+   "id": "p-t1a-04",
+   "task": "t1a",
+   "ref": "gonative-t1a:t1a-19",
+   "text": "The table shows how many people visited three museums in a city from 2018 to 2020.\n\nOverall, all three museums were less popular in 2020 than in the previous two years, and the art gallery saw the biggest change.\n\nIn 2018, the art gallery attracted 150 thousand visitors, more than either of the museums. The art gallery was the most visited of the three in 2018 and 2019, but it has become the least visited in 2020, with only 50 thousand.\n\nThe science museum grew in 2019, when it attracted 15 thousand visitors more then in 2018. However, its visitor numbers more than halved in 2020, falling from 135 thousand to 60 thousand.\n\nThe history museum was the most stable of the three. It lost less visitors than the others in 2020, falling from 95 thousand to 70 thousand. None of the museums were as popular in 2020 as they had been in 2019.",
+   "probes": [
+    {
+     "id": "present-perfect-past-time",
+     "kind": "error",
+     "quote": "has become",
+     "sentence": "The art gallery was the most visited of the three in 2018 and 2019, but it has become the least visited in 2020, with only 50 thousand.",
+     "class": "past simple with a past time",
+     "accepted": [
+      "The art gallery was the most visited of the three in 2018 and 2019, but it became the least visited in 2020, with only 50 thousand.",
+      "The art gallery was the most visited of the three in 2018 and 2019, but it was the least visited in 2020, with only 50 thousand."
+     ]
+    },
+    {
+     "id": "than-then",
+     "kind": "error",
+     "quote": "more then",
+     "sentence": "The science museum grew in 2019, when it attracted 15 thousand visitors more then in 2018.",
+     "class": "than in a comparison",
+     "accepted": [
+      "The science museum grew in 2019, when it attracted 15 thousand visitors more than in 2018.",
+      "The science museum grew in 2019, when it attracted 15 thousand more visitors than in 2018."
+     ]
+    },
+    {
+     "id": "more-than-halved",
+     "kind": "valid",
+     "quote": "more than halved",
+     "sentence": "However, its visitor numbers more than halved in 2020, falling from 135 thousand to 60 thousand.",
+     "class": "more than halved (fits the data)",
+     "named": false
+    },
+    {
+     "id": "fewer-countable",
+     "kind": "error",
+     "quote": "less visitors",
+     "sentence": "It lost less visitors than the others in 2020, falling from 95 thousand to 70 thousand.",
+     "class": "fewer with countable nouns",
+     "accepted": [
+      "It lost fewer visitors than the others in 2020, falling from 95 thousand to 70 thousand."
+     ]
+    },
+    {
+     "id": "none-plural",
+     "kind": "valid",
+     "quote": "None of the museums were",
+     "sentence": "None of the museums were as popular in 2020 as they had been in 2019.",
+     "class": "none with a plural verb",
+     "named": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "exam-t1a-overview-1",
+  "purpose": "Round 5: does exam-t1-5 weaken the Task 1 limiters? g-t1-no-overview-dev failed in exam-t1a-dev-5 (TA 7, expected <= 5); both TA <= 5 limiter items, 3 repeats, exam-t1-4 vs exam-t1-5",
+  "budgetUsd": 1.2,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-1-academic.v1.json",
+  "guideSha256": "9ed762d5479e8d9261c202ec9160f38927d846f20b183c5d06978bbe97cbfa08",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-1",
+  "items": "items.jsonl",
+  "itemsSha256": "8f6c1e55f0595471a52fbd20f7f1f8ec0b87bdbd2417f0ee560a3f0bbf11d38f",
+  "feedbackLanguage": "en",
+  "sources": {
+    "G": "benchmarks/datasets/exam-t1a-v1 (synthetic, npm run bench:t1): g-t1-no-overview-dev, g-t1-data-dump-dev"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet-t14",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 3,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-t1-4"
+      }
+    },
+    {
+      "key": "p1-sonnet-t15",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 3,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-t1-5"
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-27",
+    "capUsd": 13,
+    "note": "«да, раунд 5 до $13» — проверка ограничителей Task 1 после регрессии exam-t1a-dev-5"
+  }
+}

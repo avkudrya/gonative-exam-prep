@@ -1,0 +1,243 @@
+{
+    "bench": "exam-prec-t2-1",
+    "guide": "ielts-writing-task-2@v2",
+    "items": 4,
+    "cells": {
+        "p1-sonnet-p16": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 4,
+            "done": 4,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.2514,
+                "mean": 0.0629,
+                "p90": 0.0639
+            },
+            "latencyMs": {
+                "p50": 5680,
+                "p90": 6301
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 16.25,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 4,
+                "per100": {
+                    "error": 500,
+                    "weakness": 375,
+                    "suggestion": 75,
+                    "strength": 675
+                },
+                "repeatsPer100": 225,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 0
+                },
+                "script": {
+                    "texts": 81,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 8,
+                "recall": 1,
+                "recallModerateMajor": 1,
+                "recallLocalized": 1,
+                "precision": 0.7,
+                "unmatchedFindings": 6,
+                "errorFindingsPerAssessment": 5,
+                "bundled": 0,
+                "suggestionsOnErrors": 0,
+                "languageStrengthsOnErrors": 0
+            },
+            "clean": null,
+            "checks": null,
+            "stability": null,
+            "probes": {
+                "valid": 11,
+                "validNamed": 3,
+                "falseErrors": 4,
+                "falseErrorsNamed": 3,
+                "falseErrorsUnnamed": 1,
+                "falseErrorRate": 0.364,
+                "validWithSuggestion": 1,
+                "errors": 8,
+                "found": 8,
+                "recall": 1,
+                "correctionsAccepted": 8,
+                "correctionsUnlisted": 0,
+                "correctionsOutside": 0,
+                "falseErrorList": [
+                    {
+                        "item": "p-t2-01",
+                        "probe": "collective-plural",
+                        "quote": "the council are now trying",
+                        "correction": "the council is now trying"
+                    },
+                    {
+                        "item": "p-t2-01",
+                        "probe": "recommend-to",
+                        "quote": "recommend local authorities to combine",
+                        "correction": "recommend that local authorities combine"
+                    },
+                    {
+                        "item": "p-t2-02",
+                        "probe": "present-continuous-current",
+                        "quote": "Students who are working full-time this year",
+                        "correction": "Students who work full-time"
+                    },
+                    {
+                        "item": "p-t2-02",
+                        "probe": "spend-on-doing",
+                        "quote": "spend many hours on solving technical problems",
+                        "correction": "spend many hours solving technical problems"
+                    }
+                ],
+                "unlisted": [],
+                "outside": []
+            },
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        },
+        "p1-sonnet-p17": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 4,
+            "done": 4,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.2701,
+                "mean": 0.0675,
+                "p90": 0.0702
+            },
+            "latencyMs": {
+                "p50": 5832,
+                "p90": 6981
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 16,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 4,
+                "per100": {
+                    "error": 375,
+                    "weakness": 450,
+                    "suggestion": 150,
+                    "strength": 625
+                },
+                "repeatsPer100": 200,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 0
+                },
+                "script": {
+                    "texts": 80,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": {
+                "expected": 8,
+                "recall": 1,
+                "recallModerateMajor": 1,
+                "recallLocalized": 1,
+                "precision": 0.933,
+                "unmatchedFindings": 1,
+                "errorFindingsPerAssessment": 3.8,
+                "bundled": 0,
+                "suggestionsOnErrors": 2,
+                "languageStrengthsOnErrors": 0
+            },
+            "clean": null,
+            "checks": null,
+            "stability": null,
+            "probes": {
+                "valid": 11,
+                "validNamed": 3,
+                "falseErrors": 1,
+                "falseErrorsNamed": 0,
+                "falseErrorsUnnamed": 1,
+                "falseErrorRate": 0.091,
+                "validWithSuggestion": 3,
+                "errors": 8,
+                "found": 8,
+                "recall": 1,
+                "correctionsAccepted": 8,
+                "correctionsUnlisted": 0,
+                "correctionsOutside": 0,
+                "falseErrorList": [
+                    {
+                        "item": "p-t2-01",
+                        "probe": "collective-plural",
+                        "quote": "the council are now trying",
+                        "correction": "the council is now trying"
+                    }
+                ],
+                "unlisted": [],
+                "outside": []
+            },
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

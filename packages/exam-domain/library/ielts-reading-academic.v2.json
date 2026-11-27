@@ -1,0 +1,808 @@
+{
+  "libraryKey": "ielts-reading-academic",
+  "version": "v2",
+  "about": "Original IELTS-style Academic Reading practice tests written for GoNative Exam Prep by AI (not official IELTS material), each question checked by code, by two blind solvers and by a third controller model.",
+  "note": "academic-2 of v1 with the attention researcher of passage 3 renamed (the same name was used for another person in passage 1).",
+  "examKey": "ielts-academic",
+  "sectionKey": "reading",
+  "origin": "generated",
+  "pipeline": {
+    "round": "exam-reading-pilot-1",
+    "prompts": "rd-1",
+    "report": "benchmarks/runs/exam-reading-pilot-1/report.json"
+  },
+  "tests": [
+    {
+      "key": "academic-2",
+      "status": "published",
+      "title": "Academic Reading practice test 2",
+      "sections": [
+        {
+          "topic": "The durability of Roman concrete",
+          "text": "The Secret of Roman Concrete\n\nA. Along the coasts of the Mediterranean, the remains of Roman harbours still stand in the waves, their piers battered by salt water for some two thousand years. In Rome itself, the Pantheon, completed in the second century AD, still carries the largest unreinforced concrete dome in the world. Such survivals are all the more striking when set beside the record of modern construction. Many of the bridges, car parks and sea walls built during the twentieth century began to crack and crumble within fifty or a hundred years, and engineers today typically design new structures to last around a century. The contrast has prompted a simple but persistent question: what did Roman builders understand that their modern successors have overlooked?\n\nB. Part of the answer lies in the ingredients. Modern concrete is held together by Portland cement, a material patented in Britain in the early nineteenth century and made by heating limestone and clay in kilns to about 1,450°C. Roman builders instead combined lime with volcanic ash, the best of which was dug from deposits around the Bay of Naples, near the town of Pozzuoli. Their lime was produced at roughly 900°C, a far lower temperature, and the ash supplied silica and alumina that reacted with it to form a dense, stone-like binder. Into this paste workers packed fist-sized chunks of rock or broken brick, building up walls and foundations layer by layer rather than pouring a liquid mixture into moulds, as is common practice today.\n\nC. For centuries, observers assumed that the harbour structures had simply been lucky, or that the calm waters of the Mediterranean had treated them unusually kindly. Seawater normally attacks concrete: salts seep into tiny pores and react with the cement, causing it to swell and split. Yet when a team led by the geologist Ines Varga examined cores drilled from an ancient pier, they found the opposite process at work. As seawater percolated through the material, it dissolved some of the volcanic ash and allowed new minerals to grow in the spaces left behind. Long, plate-shaped crystals had formed within the pores and cracks, interlocking like the fibres of a woven mat. Rather than weakening the concrete, the sea appeared to have been slowly reinforcing it, so that the oldest sections were in some respects stronger than when they were first built.\n\nD. A second clue came from something earlier researchers had dismissed as a flaw. Roman concrete is dotted with small white lumps of lime, a few millimetres across, which were long blamed on careless mixing or poor-quality materials. Materials scientist Tomas Reyes and his colleagues argued instead that these lumps, known as lime clasts, were a by-product of 'hot mixing', in which builders added quicklime directly to the ash and water, generating intense heat. To test the idea, the team made samples using this method, deliberately cracked them and then allowed water to run through the gaps. Within two weeks the cracks had sealed completely: the water had dissolved calcium from the clasts, which then recrystallised as calcium carbonate and filled the openings. Identical samples made without the clasts continued to leak.\n\nE. None of this means that Roman concrete is simply superior. It is considerably weaker under compression than its modern equivalent, and it hardens slowly, sometimes over months, whereas contractors today expect a new floor slab to bear loads within days. Nor could it support the slender towers and long spans of contemporary architecture. These depend on steel bars embedded in the concrete to resist bending and stretching, and here lies a paradox. Steel gives modern structures much of their strength, but once moisture and salt reach it, the metal begins to rust. Because rust occupies more space than the original steel, it pushes outwards and breaks the surrounding concrete apart from within. Roman builders, who used no such reinforcement, never faced this particular form of decay.\n\nF. Engineers are now trying to combine the strengths of both traditions. Few expect ancient recipes simply to replace modern ones. Cement production is responsible for roughly eight per cent of global carbon dioxide emissions, partly because of the fuel burned to reach such high kiln temperatures, so a mixture that needs less heat and lasts longer could bring considerable environmental benefits. Several laboratories are experimenting with recipes that add volcanic ash, or industrial waste with similar chemistry, to modern cement, and some are testing whether lime clasts could give new buildings the ability to repair their own cracks. The coastal engineer Marta Lindqvist believes Roman-style concrete may prove most valuable for sea walls and other marine structures, where corrosion is the greatest threat. She warns, however, that promising laboratory results do not guarantee success outdoors. 'The Romans had centuries to demonstrate that their concrete worked,' she says. 'We will need patience before we can claim the same for ours.'",
+          "title": "The Secret of Roman Concrete",
+          "groups": [
+            {
+              "type": "matching_information",
+              "reuse": true,
+              "options": [
+                {
+                  "id": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "text": "F"
+                }
+              ],
+              "questions": [
+                {
+                  "answer": [
+                    "B"
+                  ],
+                  "prompt": "a reference to the place where a key ingredient was obtained",
+                  "numbers": [
+                    1
+                  ],
+                  "evidence": "the best of which was dug from deposits around the Bay of Naples, near the town of Pozzuoli",
+                  "explanation": {
+                    "en": "Paragraph B says the best volcanic ash came from deposits near Pozzuoli on the Bay of Naples. This is the place where an ingredient was obtained.",
+                    "ru": "В абзаце B сказано, что лучший вулканический пепел добывали из отложений возле Поццуоли на берегу Неаполитанского залива. Это и есть место, где получали один из ингредиентов.",
+                    "uk": "В абзаці B сказано, що найкращий вулканічний попіл добували з покладів біля Поццуолі на березі Неаполітанської затоки. Саме це місце, де отримували один з інгредієнтів."
+                  }
+                },
+                {
+                  "answer": [
+                    "E"
+                  ],
+                  "prompt": "an explanation of how a material used inside modern concrete can cause it to break",
+                  "numbers": [
+                    2
+                  ],
+                  "evidence": "Because rust occupies more space than the original steel, it pushes outwards and breaks the surrounding concrete apart from within",
+                  "explanation": {
+                    "en": "Paragraph E explains that the steel bars inside modern concrete rust, and the rust pushes outwards and breaks the concrete.",
+                    "ru": "В абзаце E объясняется, что стальные прутья внутри современного бетона ржавеют, а ржавчина давит изнутри и разрушает бетон.",
+                    "uk": "В абзаці E пояснюється, що сталеві стрижні всередині сучасного бетону іржавіють, а іржа тисне зсередини й руйнує бетон."
+                  }
+                },
+                {
+                  "answer": [
+                    "D"
+                  ],
+                  "prompt": "a description of a test in which damaged samples were exposed to water",
+                  "numbers": [
+                    3
+                  ],
+                  "evidence": "the team made samples using this method, deliberately cracked them and then allowed water to run through the gaps",
+                  "explanation": {
+                    "en": "Paragraph D describes how Reyes's team cracked their samples on purpose and then let water run through them. Paragraph C also mentions water, but it describes old harbour concrete, not a test.",
+                    "ru": "В абзаце D описано, как команда Рейеса специально раскалывала образцы, а затем пропускала через них воду. В абзаце C тоже упоминается вода, но там речь идёт о старом портовом бетоне, а не об эксперименте.",
+                    "uk": "В абзаці D описано, як команда Рейеса навмисно розколювала зразки, а потім пропускала крізь них воду. В абзаці C теж згадується вода, але там ідеться про старий портовий бетон, а не про експеримент."
+                  }
+                },
+                {
+                  "answer": [
+                    "A"
+                  ],
+                  "prompt": "a comparison between how long ancient and modern structures have lasted",
+                  "numbers": [
+                    4
+                  ],
+                  "evidence": "began to crack and crumble within fifty or a hundred years",
+                  "explanation": {
+                    "en": "Paragraph A contrasts Roman harbours that have lasted two thousand years with twentieth-century structures that began to crack within fifty or a hundred years.",
+                    "ru": "В абзаце A римские гавани, простоявшие две тысячи лет, противопоставляются сооружениям XX века, которые начали трескаться уже через пятьдесят–сто лет.",
+                    "uk": "В абзаці A римські гавані, що простояли дві тисячі років, протиставляються спорудам XX століття, які почали тріскатися вже через п'ятдесят–сто років."
+                  }
+                }
+              ],
+              "instruction": "The reading passage has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+              "type": "table_completion",
+              "limit": {
+                "words": 1,
+                "number": true
+              },
+              "questions": [
+                {
+                  "answer": [
+                    "ash"
+                  ],
+                  "prompt": "Main binder | Roman: lime combined with volcanic ______ | Modern: Portland cement",
+                  "numbers": [
+                    5
+                  ],
+                  "evidence": "Roman builders instead combined lime with volcanic ash",
+                  "explanation": {
+                    "en": "Paragraph B says the Romans mixed lime with volcanic ash instead of using Portland cement.",
+                    "ru": "В абзаце B сказано, что римляне смешивали известь с вулканическим пеплом (\"volcanic ash\"), а не использовали портландцемент.",
+                    "uk": "В абзаці B сказано, що римляни змішували вапно з вулканічним попелом (\"volcanic ash\"), а не використовували портландцемент."
+                  }
+                },
+                {
+                  "answer": [
+                    "1,450",
+                    "1450"
+                  ],
+                  "prompt": "Temperature needed to make the binder | Roman: about 900°C | Modern: about ______°C",
+                  "numbers": [
+                    6
+                  ],
+                  "evidence": "made by heating limestone and clay in kilns to about 1,450°C",
+                  "explanation": {
+                    "en": "Paragraph B says Portland cement is made in kilns at about 1,450°C. The figure 900°C belongs to Roman lime, which is already given in the table.",
+                    "ru": "В абзаце B сказано, что портландцемент получают в печах при температуре около \"1,450°C\". Цифра 900°C относится к римской извести, и она уже указана в таблице.",
+                    "uk": "В абзаці B сказано, що портландцемент отримують у печах за температури близько \"1,450°C\". Цифра 900°C стосується римського вапна, і вона вже вказана в таблиці."
+                  }
+                },
+                {
+                  "answer": [
+                    "brick"
+                  ],
+                  "prompt": "Large pieces in the mixture | Roman: fist-sized chunks of rock or broken ______ | Modern: liquid mixture poured into moulds",
+                  "numbers": [
+                    7
+                  ],
+                  "evidence": "workers packed fist-sized chunks of rock or broken brick",
+                  "explanation": {
+                    "en": "Paragraph B says Roman workers packed chunks of rock or broken brick into the paste.",
+                    "ru": "В абзаце B сказано, что римские рабочие укладывали в раствор куски камня или битого кирпича (\"chunks of rock or broken brick\").",
+                    "uk": "В абзаці B сказано, що римські робітники вкладали в розчин шматки каменю або битої цегли (\"chunks of rock or broken brick\")."
+                  }
+                },
+                {
+                  "answer": [
+                    "crystals"
+                  ],
+                  "prompt": "Effect of seawater | Roman: plate-shaped ______ grow in pores and cracks | Modern: salts make the concrete swell and split",
+                  "numbers": [
+                    8
+                  ],
+                  "evidence": "Long, plate-shaped crystals had formed within the pores and cracks",
+                  "explanation": {
+                    "en": "Paragraph C says that in Roman harbour concrete, long plate-shaped crystals formed in the pores and cracks. The word 'minerals' is used in general, but the plate-shaped things are the crystals.",
+                    "ru": "В абзаце C сказано, что в римском портовом бетоне в порах и трещинах образовались длинные пластинчатые кристаллы (\"crystals\"). Слово \"minerals\" употребляется в общем смысле, а пластинчатые образования — это именно кристаллы.",
+                    "uk": "В абзаці C сказано, що в римському портовому бетоні в порах і тріщинах утворилися довгі пластинчасті кристали (\"crystals\"). Слово \"minerals\" вжито в загальному значенні, а пластинчасті утворення — це саме кристали."
+                  }
+                },
+                {
+                  "answer": [
+                    "clasts"
+                  ],
+                  "prompt": "Response to small cracks | Roman: sealed by calcium from lime ______ | Modern: no self-repair",
+                  "numbers": [
+                    9
+                  ],
+                  "evidence": "the water had dissolved calcium from the clasts, which then recrystallised as calcium carbonate",
+                  "explanation": {
+                    "en": "Paragraph D explains that water dissolved calcium from the lime clasts, and this calcium filled the cracks.",
+                    "ru": "В абзаце D объясняется, что вода растворяла кальций (\"calcium\") из известковых включений (\"lime clasts\"), и этот кальций заполнял трещины.",
+                    "uk": "В абзаці D пояснюється, що вода розчиняла кальцій (\"calcium\") з вапняних включень (\"lime clasts\"), і цей кальцій заповнював тріщини."
+                  }
+                }
+              ],
+              "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+              "type": "true_false_not_given",
+              "questions": [
+                {
+                  "answer": [
+                    "T"
+                  ],
+                  "prompt": "The concrete dome of the Pantheon contains no reinforcement.",
+                  "numbers": [
+                    10
+                  ],
+                  "evidence": "still carries the largest unreinforced concrete dome in the world",
+                  "explanation": {
+                    "en": "Paragraph A calls the Pantheon's dome 'unreinforced', which means it has no reinforcement inside it.",
+                    "ru": "В абзаце A купол Пантеона назван \"unreinforced\", то есть внутри него нет никакой арматуры.",
+                    "uk": "В абзаці A купол Пантеону названо \"unreinforced\", тобто всередині нього немає жодної арматури."
+                  }
+                },
+                {
+                  "answer": [
+                    "F"
+                  ],
+                  "prompt": "Portland cement was first patented in Italy.",
+                  "numbers": [
+                    11
+                  ],
+                  "evidence": "a material patented in Britain in the early nineteenth century",
+                  "explanation": {
+                    "en": "Paragraph B says Portland cement was patented in Britain. Italy is mentioned only as the source of the Romans' volcanic ash.",
+                    "ru": "В абзаце B сказано, что портландцемент был запатентован в Британии. Италия упоминается только как место, откуда римляне брали вулканический пепел.",
+                    "uk": "В абзаці B сказано, що портландцемент було запатентовано в Британії. Італія згадується лише як місце, звідки римляни брали вулканічний попіл."
+                  }
+                },
+                {
+                  "answer": [
+                    "F"
+                  ],
+                  "prompt": "Varga's team discovered that seawater had made the ancient pier weaker over time.",
+                  "numbers": [
+                    12
+                  ],
+                  "evidence": "Rather than weakening the concrete, the sea appeared to have been slowly reinforcing it",
+                  "explanation": {
+                    "en": "Paragraph C says the opposite: the sea made the pier stronger, not weaker. Seawater weakens normal concrete, but this is not what the team found in the Roman pier.",
+                    "ru": "В абзаце C сказано обратное: море сделало пирс прочнее, а не слабее. Морская вода разрушает обычный бетон, но в римском пирсе команда обнаружила совсем другое.",
+                    "uk": "В абзаці C сказано протилежне: море зробило пірс міцнішим, а не слабшим. Морська вода руйнує звичайний бетон, але в римському пірсі команда виявила зовсім інше."
+                  }
+                },
+                {
+                  "answer": [
+                    "NG"
+                  ],
+                  "prompt": "Marta Lindqvist has personally tested Roman-style concrete in sea walls.",
+                  "numbers": [
+                    13
+                  ],
+                  "explanation": {
+                    "en": "Paragraph F says Lindqvist believes Roman-style concrete may be most useful for sea walls, and she warns about laboratory results. It does not say whether she has carried out any tests herself.",
+                    "ru": "В абзаце F сказано, что, по мнению Линдквист, бетон по римскому образцу может быть особенно полезен для морских дамб, и она призывает осторожно относиться к лабораторным результатам. Но там не говорится, проводила ли она какие-либо испытания сама.",
+                    "uk": "В абзаці F сказано, що, на думку Ліндквіст, бетон за римським зразком може бути особливо корисним для морських дамб, і вона закликає обережно ставитися до лабораторних результатів. Але там не сказано, чи проводила вона якісь випробування сама."
+                  }
+                }
+              ],
+              "instruction": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+          ]
+        },
+        {
+          "topic": "Reading past climates in ice",
+          "text": "Archives in the Ice\n\nA. Every winter, snow falls on the high plateaus of Greenland and Antarctica, and in the coldest parts of those ice sheets it never melts. Instead, each year's snow is buried by the next, and over centuries the weight above squeezes the fluffy crystals into dense glacial ice. As this happens, small pockets of the atmosphere become sealed between the grains. The result is a frozen archive, stacked in order from the most recent snowfall at the surface to the oldest ice near the rock beneath, and reading it has become one of the most powerful ways of discovering what the Earth's climate was like long before anyone kept weather records.\n\nB. Retrieving the archive begins with choosing where to drill. According to glaciologist Mirela Kossak, who has led several expeditions for the Polar Stratigraphy Group, the ideal site is a broad dome where the ice is thick but moves slowly. \"Near the coast, ice flows towards the sea and its layers get stretched and tangled,\" she explains. \"On a dome, they stay roughly where they were laid down.\" The drill itself is a hollow rotating tube with cutting teeth at its lower end. Lowered on a cable, it carves out a cylinder of ice a few metres long, which is hauled to the surface before the drill descends again. Because the enormous pressure at depth would gradually squeeze the borehole shut, the hole is filled with a fluid whose density roughly matches that of the surrounding ice. Reaching the bottom of a sheet three kilometres thick can take several summer seasons.\n\nC. Not every core can travel straight away. At depths of a few hundred metres, the trapped air is under such high pressure that the ice tends to crack or shatter when it is brought up. Kossak's team found that this brittle ice could be handled safely only if it was left to rest in a cold store at the drilling site for about a year, allowing the stresses inside it to relax. Eventually, each section is measured, photographed and labelled with its depth before being packed into insulated containers and shipped to a laboratory, where it is kept well below freezing, since even brief warming could alter its chemistry.\n\nD. Before any measurement means anything, the ice has to be dated. In the upper part of a core, this can be done by counting annual layers, much as one might count the rings of a tree. Summer and winter snow differ in texture and in the amount of dust and sea salt they contain, so each year usually leaves a recognisable band. Deeper down, however, the weight above has thinned the layers until they are too narrow to tell apart. Here researchers turn to other clues. Thin bands of ash from large volcanic eruptions act as time markers that can be matched between cores and sometimes linked to eruptions of known date. Beyond that, computer models of how the ice has flowed and compressed are used to estimate the ages of the deepest sections.\n\nE. With a timescale in place, the analysis can begin. The most widely used temperature signal comes from the water itself. Oxygen atoms exist in lighter and heavier forms, and the colder the air when snow forms, the smaller the proportion of heavy oxygen it contains. By measuring this ratio along a core, scientists can trace past warming and cooling. The bubbles offer something more direct: genuine samples of ancient atmosphere, in which concentrations of greenhouse gases such as carbon dioxide and methane can be measured. Dust provides a third line of evidence, since ice laid down during glacial periods typically contains far more of it, reflecting a drier, windier world.\n\nF. Impressive as these records are, they have limits. One problem is that the air in a bubble is always younger than the ice around it. Near the surface, snow remains porous for decades or longer, and air keeps circulating through it until the pores finally close. At sites with very little snowfall, the gap between the age of the ice and that of its air can reach several thousand years, and it must be estimated rather than measured. The bottom of the sheet brings further difficulty: heat rising from the rock can melt the deepest ice, and layers close to the bed are often folded, so the oldest part of the record may be scrambled or missing. Finally, a core describes conditions at a single location. Kossak warns that a temperature history from central Antarctica should not be treated as a global average, and that ice records are most valuable when compared with evidence from ocean sediments and caves.\n\nG. At present, the longest continuous ice-core record reaches back about 800,000 years. Many researchers hope to go further, to a period roughly a million years ago when the rhythm of the ice ages appears to have changed. Ice that old will only be found where the bed is cold and the ice has barely moved, and the Polar Stratigraphy Group has spent three seasons surveying possible sites with radar. Kossak is cautiously optimistic: such ice probably exists, she says, but it may form a layer only a few metres thick at the very bottom of the sheet.",
+          "title": "Archives in the Ice",
+          "groups": [
+            {
+              "type": "short_answer",
+              "limit": {
+                "words": 3,
+                "number": false
+              },
+              "questions": [
+                {
+                  "answer": [
+                    "near the coast",
+                    "the coast",
+                    "coast"
+                  ],
+                  "prompt": "According to Kossak, in which part of an ice sheet do the layers become stretched and tangled?",
+                  "numbers": [
+                    14
+                  ],
+                  "evidence": "Near the coast, ice flows towards the sea and its layers get stretched and tangled",
+                  "explanation": {
+                    "en": "Paragraph B quotes Kossak saying that near the coast the ice flows towards the sea, which stretches and tangles its layers. This is why she prefers a dome away from the coast.",
+                    "ru": "В абзаце B приводятся слова Коссак о том, что у побережья лёд течёт к морю, из-за чего его слои растягиваются и перепутываются. Поэтому она предпочитает купол вдали от побережья.",
+                    "uk": "В абзаці B наведено слова Коссак про те, що біля узбережжя лід тече до моря, через що його шари розтягуються й переплутуються. Тому вона віддає перевагу куполу далеко від узбережжя."
+                  }
+                },
+                {
+                  "answer": [
+                    "several summer seasons"
+                  ],
+                  "prompt": "How much time may be needed to drill all the way through ice that is three kilometres deep?",
+                  "numbers": [
+                    15
+                  ],
+                  "evidence": "Reaching the bottom of a sheet three kilometres thick can take several summer seasons.",
+                  "explanation": {
+                    "en": "Paragraph B says that reaching the bottom of a three-kilometre sheet can take several summer seasons. The question uses 'ice three kilometres deep' to restate 'a sheet three kilometres thick'.",
+                    "ru": "В абзаце B сказано, что, чтобы добраться до дна ледяного щита толщиной три километра, может понадобиться несколько летних сезонов. Выражение «ice three kilometres deep» в вопросе — это перефразировка «a sheet three kilometres thick».",
+                    "uk": "В абзаці B сказано, що, щоб дістатися дна крижаного щита завтовшки три кілометри, може знадобитися кілька літніх сезонів. Вираз «ice three kilometres deep» у питанні — це перефразування «a sheet three kilometres thick»."
+                  }
+                },
+                {
+                  "answer": [
+                    "methane"
+                  ],
+                  "prompt": "Apart from carbon dioxide, which greenhouse gas does the passage say can be measured in the trapped bubbles?",
+                  "numbers": [
+                    16
+                  ],
+                  "evidence": "concentrations of greenhouse gases such as carbon dioxide and methane can be measured",
+                  "explanation": {
+                    "en": "Paragraph E explains that the bubbles are real samples of old air, and names carbon dioxide and methane as gases measured in them.",
+                    "ru": "В абзаце E объясняется, что пузырьки — это настоящие образцы древнего воздуха, а среди газов, которые в них измеряют, названы углекислый газ («carbon dioxide») и метан («methane»).",
+                    "uk": "В абзаці E пояснюється, що бульбашки — це справжні зразки давнього повітря, а серед газів, які в них вимірюють, названо вуглекислий газ («carbon dioxide») і метан («methane»)."
+                  }
+                },
+                {
+                  "answer": [
+                    "drier, windier world",
+                    "drier windier world",
+                    "drier, windier",
+                    "drier windier"
+                  ],
+                  "prompt": "What kind of world is suggested by the large amount of dust in ice from glacial periods?",
+                  "numbers": [
+                    17
+                  ],
+                  "evidence": "ice laid down during glacial periods typically contains far more of it, reflecting a drier, windier world",
+                  "explanation": {
+                    "en": "Paragraph E says that ice from glacial periods usually holds much more dust. This reflects a drier, windier world.",
+                    "ru": "В абзаце E говорится, что лёд ледниковых периодов обычно содержит гораздо больше пыли («dust»). Это говорит о том, что мир тогда был суше и ветренее.",
+                    "uk": "В абзаці E сказано, що лід льодовикових періодів зазвичай містить набагато більше пилу («dust»). Це свідчить про те, що світ тоді був сухішим і вітрянішим."
+                  }
+                }
+              ],
+              "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            },
+            {
+              "type": "flow_chart_completion",
+              "limit": {
+                "words": 1,
+                "number": false
+              },
+              "questions": [
+                {
+                  "answer": [
+                    "slowly"
+                  ],
+                  "prompt": "Choose a broad dome, where the thick ice moves ______.",
+                  "numbers": [
+                    18
+                  ],
+                  "evidence": "the ideal site is a broad dome where the ice is thick but moves slowly",
+                  "explanation": {
+                    "en": "Paragraph B says the best site is a broad dome where the ice is thick but moves slowly, so its layers stay in place.",
+                    "ru": "В абзаце B сказано, что лучшее место — широкий купол («dome»), где лёд толстый, но движется медленно, поэтому его слои остаются на месте.",
+                    "uk": "В абзаці B сказано, що найкраще місце — широкий купол («dome»), де лід товстий, але рухається повільно, тому його шари залишаються на місці."
+                  }
+                },
+                {
+                  "answer": [
+                    "teeth"
+                  ],
+                  "prompt": "Lower the drill: a hollow rotating tube with cutting ______ at its lower end removes a cylinder of ice.",
+                  "numbers": [
+                    19
+                  ],
+                  "evidence": "The drill itself is a hollow rotating tube with cutting teeth at its lower end.",
+                  "explanation": {
+                    "en": "Paragraph B describes the drill as a hollow rotating tube with cutting teeth at its lower end.",
+                    "ru": "В абзаце B бур описан как полая вращающаяся труба с режущими зубьями («teeth») на нижнем конце.",
+                    "uk": "В абзаці B бур описано як порожнисту трубу, що обертається, з ріжучими зубцями («teeth») на нижньому кінці."
+                  }
+                },
+                {
+                  "answer": [
+                    "fluid"
+                  ],
+                  "prompt": "Fill the borehole with a ______ of similar density to the ice, so that pressure cannot close it.",
+                  "numbers": [
+                    20
+                  ],
+                  "evidence": "the hole is filled with a fluid whose density roughly matches that of the surrounding ice",
+                  "explanation": {
+                    "en": "Paragraph B explains that pressure would slowly close the hole, so it is filled with a fluid whose density is close to that of the ice.",
+                    "ru": "В абзаце B объясняется, что давление постепенно закрыло бы скважину, поэтому её заполняют жидкостью («fluid»), плотность которой близка к плотности льда.",
+                    "uk": "В абзаці B пояснюється, що тиск поступово закрив би свердловину, тому її заповнюють рідиною («fluid»), густина якої близька до густини льоду."
+                  }
+                },
+                {
+                  "answer": [
+                    "relax"
+                  ],
+                  "prompt": "Keep brittle ice in a cold store at the site for about a year so that the stresses inside it can ______.",
+                  "numbers": [
+                    21
+                  ],
+                  "evidence": "left to rest in a cold store at the drilling site for about a year, allowing the stresses inside it to relax",
+                  "explanation": {
+                    "en": "Paragraph C says brittle ice is left in a cold store at the site for about a year so the stresses inside it can relax. 'Rest' does not fit, because it is the stresses that must change, not the ice.",
+                    "ru": "В абзаце C сказано, что хрупкий лёд оставляют примерно на год в холодильном хранилище прямо на месте, чтобы внутренние напряжения («stresses») в нём ослабли («relax»). Слово «Rest» не подходит: меняться должны именно напряжения, а не сам лёд.",
+                    "uk": "В абзаці C сказано, що крихкий лід залишають приблизно на рік у холодильному сховищі просто на місці, щоб внутрішні напруження («stresses») в ньому послабилися («relax»). Слово «Rest» не підходить: змінюватися мають саме напруження, а не сам лід."
+                  }
+                },
+                {
+                  "answer": [
+                    "insulated"
+                  ],
+                  "prompt": "Measure, photograph and label each section, then ship it to the laboratory in ______ containers.",
+                  "numbers": [
+                    22
+                  ],
+                  "evidence": "packed into insulated containers and shipped to a laboratory",
+                  "explanation": {
+                    "en": "Paragraph C says each section is labelled and then packed into insulated containers to be shipped to a laboratory.",
+                    "ru": "В абзаце C говорится, что каждый фрагмент маркируют («labelled»), а затем упаковывают в теплоизолированные контейнеры («insulated containers») для отправки в лабораторию.",
+                    "uk": "В абзаці C сказано, що кожен фрагмент маркують («labelled»), а потім пакують у теплоізольовані контейнери («insulated containers») для відправлення до лабораторії."
+                  }
+                }
+              ],
+              "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+              "type": "multiple_choice_multi",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "the amount of dust it contains"
+                },
+                {
+                  "id": "B",
+                  "text": "the proportion of methane in its bubbles"
+                },
+                {
+                  "id": "C",
+                  "text": "the texture of the snow"
+                },
+                {
+                  "id": "D",
+                  "text": "the amount of volcanic ash it holds"
+                },
+                {
+                  "id": "E",
+                  "text": "the thickness of each layer"
+                }
+              ],
+              "questions": [
+                {
+                  "answer": [
+                    "A",
+                    "C"
+                  ],
+                  "prompt": "Which TWO differences between summer and winter snow does the writer mention as helping to make each year's band recognisable?",
+                  "numbers": [
+                    23,
+                    24
+                  ],
+                  "evidence": "Summer and winter snow differ in texture and in the amount of dust and sea salt they contain",
+                  "explanation": {
+                    "en": "Paragraph D says summer and winter snow differ in texture and in the amount of dust (and sea salt). Volcanic ash is mentioned, but as a marker for deeper ice, not as a seasonal difference, and layer thickness is only mentioned as a problem deeper down.",
+                    "ru": "В абзаце D сказано, что летний и зимний снег различаются по текстуре и по количеству пыли (и морской соли). Вулканический пепел упоминается, но как ориентир для более глубокого льда, а не как сезонное различие, а толщина слоёв упоминается только как проблема на большей глубине.",
+                    "uk": "В абзаці D сказано, що літній і зимовий сніг відрізняються текстурою та кількістю пилу (і морської солі). Вулканічний попіл згадується, але як орієнтир для глибшого льоду, а не як сезонна відмінність, а товщина шарів згадується лише як проблема на більшій глибині."
+                  }
+                }
+              ],
+              "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+              "type": "multiple_choice_multi",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Kossak expects the oldest ice to form a thick layer."
+                },
+                {
+                  "id": "B",
+                  "text": "Researchers want to study a time when the pattern of ice ages seems to have shifted."
+                },
+                {
+                  "id": "C",
+                  "text": "Kossak doubts that such ancient ice exists."
+                },
+                {
+                  "id": "D",
+                  "text": "Suitable ice is likely to be found only where the ground beneath it is cold."
+                },
+                {
+                  "id": "E",
+                  "text": "The group has already recovered ice that is over a million years old."
+                }
+              ],
+              "questions": [
+                {
+                  "answer": [
+                    "B",
+                    "D"
+                  ],
+                  "prompt": "Which TWO of the following statements about the search for older ice are supported by the passage?",
+                  "numbers": [
+                    25,
+                    26
+                  ],
+                  "evidence": "a period roughly a million years ago when the rhythm of the ice ages appears to have changed. Ice that old will only be found where the bed is cold",
+                  "explanation": {
+                    "en": "Paragraph G says researchers want to reach a time when the rhythm of the ice ages seems to have changed, and that such ice will only be found where the bed is cold. The longest record so far is about 800,000 years, and Kossak thinks the ice probably exists but may be only a few metres thick, so E, A and C are wrong.",
+                    "ru": "В абзаце G сказано, что исследователи хотят добраться до времени, когда ритм ледниковых периодов, по-видимому, изменился, и что такой лёд можно найти только там, где ложе холодное. Самая длинная запись на сегодня охватывает около 800 000 лет, а Коссак считает, что такой лёд, вероятно, существует, но может быть толщиной всего несколько метров, поэтому варианты «E», «A» и «C» неверны.",
+                    "uk": "В абзаці G сказано, що дослідники хочуть дістатися часу, коли ритм льодовикових періодів, схоже, змінився, і що такий лід можна знайти лише там, де ложе холодне. Найдовший запис на сьогодні охоплює близько 800 000 років, а Коссак вважає, що такий лід, імовірно, існує, але може мати товщину лише кілька метрів, тому варіанти «E», «A» і «C» неправильні."
+                  }
+                }
+              ],
+              "instruction": "Choose TWO letters, A–E, for each question."
+            }
+          ]
+        },
+        {
+          "topic": "The uses of boredom",
+          "text": "In Defence of Boredom\n\nA. Few states of mind have a worse reputation than boredom. We speak of being \"bored to death\", we apologise to guests if an evening drags, and we treat a dull afternoon as time that has simply been lost. Modern life has organised itself around making sure that such afternoons never happen: an entire entertainment industry now competes to fill every spare minute, and the smartphone means that nobody need endure even a few seconds of empty time in a queue or on a station platform. The assumption behind all this is that boredom is a defect, something to be cured as quickly as possible. I believe this assumption is wrong. A moderate amount of boredom is not merely bearable; it is one of the more useful experiences an ordinary day can offer.\n\nB. To see why, it helps to consider what boredom actually is. Psychologists generally describe it as an uncomfortable state in which we have attention to spare but can find nothing that seems worth spending it on. Understood in this way, boredom is less like an illness and more like hunger. Hunger is unpleasant, yet nobody regards it as a fault in the body; it is a message that we need to eat. Boredom, similarly, tells us that what we are currently doing is not rewarding enough and that we should change it. It is a signal, not a malfunction. Reaching for a distraction the moment it appears is rather like swallowing a painkiller to cope with a stone in your shoe: the discomfort fades, but the cause remains exactly where it was.\n\nC. The habit of silencing this signal may also be changing our attention itself. The attention researcher Hana Okoro followed two groups of commuters for six weeks. One group used their phones throughout every journey; the other agreed to travel without them. At the end of the period, both groups were given the same unexciting reading task, and those who had spent their journeys on their phones rated it as more tedious and abandoned it considerably earlier. Okoro's interpretation is that constant stimulation raises the threshold at which ordinary tasks begin to feel tedious, so that activities which once seemed acceptable come to feel intolerable. Her study was small, and I would not claim that it proves phones damage concentration on their own; people who choose to look at screens all day may differ in other ways. But it fits an experience many of us will recognise: the more entertainment we consume, the less patience we seem to have for anything that is not entertaining.\n\nD. Boredom's best-known defenders point to creativity, and here there is genuine evidence, though less than enthusiasts suggest. In one experiment by the cognitive psychologist Tomas Ferreira, volunteers spent twenty minutes sorting a large box of buttons by colour, while a second group watched a short comedy clip. Both groups were then given the opening of a story and asked to write as many different endings as they could. The button-sorters produced a noticeably wider range of endings. Ferreira believes that when the outside world offers too little, the mind begins to wander in search of the stimulation it lacks, and this wandering brings unrelated ideas together. It is an attractive finding, but popular writing has often turned it into a promise that boredom will make anyone inventive. It will not. Boredom creates room for new ideas; it does not supply them.\n\nE. Nor should every kind of boredom be welcomed. Chronic boredom, the kind experienced by people confined for long periods or trapped in work of unbroken monotony, is associated with low mood, poor health and risky behaviour. I have no wish to defend it. The distinction that matters is between a passing episode, which we are free to respond to, and a lasting condition from which there is no way out. The value of brief boredom lies precisely in that response: it pushes us to look for something better to do, to think, or to notice what is around us. When escape is impossible, the signal becomes nothing more than suffering.\n\nF. This is why I think the modern instinct to rescue children from boredom deserves more scrutiny. Many parents feel that a child complaining of having nothing to do represents a failure on their part, and they hurry to provide an activity or a screen. Yet children who are left to deal with empty time themselves often learn to invent their own occupations, constructing games, stories and projects that no adult would have thought to suggest. In removing the discomfort, we may also remove the opportunity to discover how to make use of it.\n\nG. None of this means that we should seek out tedium or abandon entertainment. The practical lesson is modest. Leave the phone in your pocket during short waits; let a slow train journey be slow; notice the restless feeling of boredom and ask what it is telling you before deciding what to do about it. The goal is not to enjoy being bored, but to stop running from it, and to treat it as information rather than as an enemy.",
+          "title": "In Defence of Boredom",
+          "groups": [
+            {
+              "type": "yes_no_not_given",
+              "questions": [
+                {
+                  "answer": [
+                    "Y"
+                  ],
+                  "prompt": "The widespread belief that boredom should be eliminated as quickly as possible is mistaken.",
+                  "numbers": [
+                    27
+                  ],
+                  "evidence": "I believe this assumption is wrong.",
+                  "explanation": {
+                    "en": "In paragraph A the writer describes the common assumption that boredom is a defect to be cured, and then says directly that this assumption is wrong.",
+                    "ru": "В абзаце A автор описывает распространённое представление о том, что скука — это недостаток, который нужно лечить, а затем прямо говорит, что это представление ошибочно.",
+                    "uk": "В абзаці A автор описує поширене уявлення про те, що нудьга — це вада, яку треба лікувати, а потім прямо каже, що це уявлення хибне."
+                  }
+                },
+                {
+                  "answer": [
+                    "N"
+                  ],
+                  "prompt": "Feeling bored shows that the mind is not working properly.",
+                  "numbers": [
+                    28
+                  ],
+                  "evidence": "It is a signal, not a malfunction.",
+                  "explanation": {
+                    "en": "In paragraph B the writer says boredom is a useful message, like hunger, and specifically not a malfunction. The statement says the opposite.",
+                    "ru": "В абзаце B автор пишет, что скука — полезный сигнал, как голод, и подчёркивает, что это вовсе не сбой. В утверждении сказано обратное.",
+                    "uk": "В абзаці B автор пише, що нудьга — корисний сигнал, як голод, і наголошує, що це зовсім не збій. Твердження каже протилежне."
+                  }
+                },
+                {
+                  "answer": [
+                    "N"
+                  ],
+                  "prompt": "Okoro's study demonstrates that phones by themselves reduce people's ability to concentrate.",
+                  "numbers": [
+                    29
+                  ],
+                  "evidence": "I would not claim that it proves phones damage concentration on their own",
+                  "explanation": {
+                    "en": "In paragraph C the writer says the study was small and does not prove that phones alone harm concentration, because phone users may differ in other ways.",
+                    "ru": "В абзаце C автор отмечает, что исследование было небольшим и не доказывает, что концентрацию ухудшают именно телефоны сами по себе: пользователи телефонов могут отличаться и по другим признакам.",
+                    "uk": "В абзаці C автор зазначає, що дослідження було невеликим і не доводить, що концентрацію погіршують саме телефони самі по собі, адже користувачі телефонів можуть відрізнятися й за іншими ознаками."
+                  }
+                },
+                {
+                  "answer": [
+                    "Y"
+                  ],
+                  "prompt": "The connection between boredom and creativity has been exaggerated in popular writing.",
+                  "numbers": [
+                    30
+                  ],
+                  "evidence": "popular writing has often turned it into a promise that boredom will make anyone inventive. It will not.",
+                  "explanation": {
+                    "en": "In paragraph D the writer accepts there is some evidence but says popular writing promises too much, since boredom does not make everyone inventive.",
+                    "ru": "В абзаце D автор признаёт, что определённые данные есть, но считает, что популярные тексты обещают слишком много: скука делает изобретательным далеко не каждого.",
+                    "uk": "В абзаці D автор визнає, що певні докази є, але вважає, що популярні тексти обіцяють забагато: нудьга робить винахідливим далеко не кожного."
+                  }
+                },
+                {
+                  "answer": [
+                    "NG"
+                  ],
+                  "prompt": "Schools should give pupils more unstructured time during the day.",
+                  "numbers": [
+                    31
+                  ],
+                  "explanation": {
+                    "en": "Paragraph F discusses parents rescuing children from boredom at home, but the writer never mentions schools or timetables, so their view on this is unknown.",
+                    "ru": "В абзаце F речь идёт о родителях, которые дома спасают детей от скуки, но о школах и расписании автор нигде не упоминает, поэтому его мнение на этот счёт неизвестно.",
+                    "uk": "В абзаці F ідеться про батьків, які вдома рятують дітей від нудьги, але про школи й розклад автор ніде не згадує, тож його думка щодо цього невідома."
+                  }
+                }
+              ],
+              "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+              "type": "matching_sentence_endings",
+              "reuse": false,
+              "options": [
+                {
+                  "id": "A",
+                  "text": "frequently create activities that adults would not have suggested."
+                },
+                {
+                  "id": "B",
+                  "text": "came up with a greater variety of story endings."
+                },
+                {
+                  "id": "C",
+                  "text": "leaves people with no means of escape."
+                },
+                {
+                  "id": "D",
+                  "text": "rated the reading task as less tedious than the other group did."
+                },
+                {
+                  "id": "E",
+                  "text": "has mental capacity available but no worthwhile use for it."
+                },
+                {
+                  "id": "F",
+                  "text": "indicates that a change of activity is needed."
+                },
+                {
+                  "id": "G",
+                  "text": "gave up a dull reading task earlier than the other group."
+                },
+                {
+                  "id": "H",
+                  "text": "wrote fewer endings than people who had watched a comedy clip."
+                },
+                {
+                  "id": "I",
+                  "text": "is usually a sign of physical illness."
+                }
+              ],
+              "questions": [
+                {
+                  "answer": [
+                    "E"
+                  ],
+                  "prompt": "Psychologists see boredom as a state in which a person",
+                  "numbers": [
+                    32
+                  ],
+                  "evidence": "an uncomfortable state in which we have attention to spare but can find nothing that seems worth spending it on",
+                  "explanation": {
+                    "en": "Paragraph B: having attention to spare is restated as having mental capacity available, and finding nothing worth spending it on as having no worthwhile use for it.",
+                    "ru": "Абзац B: мысль о том, что у человека есть свободное внимание, передана как наличие незанятых умственных ресурсов, а то, что его не на что стоящее потратить, — как отсутствие для них достойного применения.",
+                    "uk": "Абзац B: думку про те, що людина має вільну увагу, передано як наявність незайнятих розумових ресурсів, а те, що її немає на що варте витратити, — як відсутність для них гідного застосування."
+                  }
+                },
+                {
+                  "answer": [
+                    "F"
+                  ],
+                  "prompt": "Like hunger, boredom",
+                  "numbers": [
+                    33
+                  ],
+                  "evidence": "Boredom, similarly, tells us that what we are currently doing is not rewarding enough and that we should change it",
+                  "explanation": {
+                    "en": "Paragraph B compares boredom with hunger: both are messages, and boredom tells us to change what we are doing. Ending I is wrong because the writer says boredom is less like an illness.",
+                    "ru": "В абзаце B скука сравнивается с голодом: и то и другое — сигналы, и скука подсказывает нам, что пора сменить занятие. Вариант I не подходит, потому что, по словам автора, скука как раз меньше похожа на болезнь.",
+                    "uk": "В абзаці B нудьгу порівнюють із голодом: і те, і інше — сигнали, і нудьга підказує нам, що час змінити заняття. Варіант I не підходить, бо, за словами автора, нудьга якраз менше схожа на хворобу."
+                  }
+                },
+                {
+                  "answer": [
+                    "G"
+                  ],
+                  "prompt": "Commuters who used their phones throughout their journeys",
+                  "numbers": [
+                    34
+                  ],
+                  "evidence": "those who had spent their journeys on their phones rated it as more tedious and abandoned it considerably earlier",
+                  "explanation": {
+                    "en": "Paragraph C says the phone users abandoned the reading task earlier. Ending D is wrong because they found the task more tedious, not less.",
+                    "ru": "В абзаце C сказано, что пользователи телефонов раньше бросали задание на чтение. Вариант D неверен: задание показалось им более скучным, а не менее.",
+                    "uk": "В абзаці C сказано, що користувачі телефонів раніше кидали завдання з читання. Варіант D неправильний: завдання здалося їм нуднішим, а не менш нудним."
+                  }
+                },
+                {
+                  "answer": [
+                    "B"
+                  ],
+                  "prompt": "Volunteers who had spent twenty minutes sorting buttons",
+                  "numbers": [
+                    35
+                  ],
+                  "evidence": "The button-sorters produced a noticeably wider range of endings.",
+                  "explanation": {
+                    "en": "Paragraph D says the button-sorters produced a wider range of story endings. Ending H reverses the result.",
+                    "ru": "В абзаце D сказано, что участники, сортировавшие пуговицы, придумали более разнообразные концовки историй. Вариант H переворачивает этот результат.",
+                    "uk": "В абзаці D сказано, що учасники, які сортували ґудзики, вигадали різноманітніші кінцівки історій. Варіант H перевертає цей результат."
+                  }
+                },
+                {
+                  "answer": [
+                    "C"
+                  ],
+                  "prompt": "Chronic boredom, unlike brief boredom,",
+                  "numbers": [
+                    36
+                  ],
+                  "evidence": "a lasting condition from which there is no way out",
+                  "explanation": {
+                    "en": "Paragraph E contrasts a passing episode that we can respond to with a lasting condition from which there is no way out.",
+                    "ru": "В абзаце E противопоставляются временный эпизод, на который можно как-то отреагировать, и устойчивое состояние, из которого нет выхода.",
+                    "uk": "В абзаці E протиставлено тимчасовий епізод, на який можна якось відреагувати, і стійкий стан, з якого немає виходу."
+                  }
+                }
+              ],
+              "instruction": "Complete each sentence with the correct ending, A–I, from the box below. Write the correct letter, A–I. You may use each letter only once."
+            },
+            {
+              "type": "sentence_completion",
+              "limit": {
+                "words": 2,
+                "number": false
+              },
+              "questions": [
+                {
+                  "answer": [
+                    "entertainment industry"
+                  ],
+                  "prompt": "According to the writer, a whole ______ now tries to occupy people's every free moment.",
+                  "numbers": [
+                    37
+                  ],
+                  "evidence": "an entire entertainment industry now competes to fill every spare minute",
+                  "explanation": {
+                    "en": "Paragraph A says an entire entertainment industry competes to fill every spare minute; 'every free moment' restates 'every spare minute'.",
+                    "ru": "В абзаце A говорится, что целая индустрия развлечений соперничает за то, чтобы заполнить каждую свободную минуту; «every free moment» — это перефразировка «every spare minute».",
+                    "uk": "В абзаці A сказано, що ціла індустрія розваг змагається за те, щоб заповнити кожну вільну хвилину; «every free moment» — це перефразування «every spare minute»."
+                  }
+                },
+                {
+                  "answer": [
+                    "stone"
+                  ],
+                  "prompt": "The writer compares escaping boredom through distraction to taking medicine for the pain caused by a ______ in your shoe.",
+                  "numbers": [
+                    38
+                  ],
+                  "evidence": "swallowing a painkiller to cope with a stone in your shoe",
+                  "explanation": {
+                    "en": "Paragraph B: reaching for a distraction is like swallowing a painkiller for a stone in your shoe, because the cause of the discomfort stays.",
+                    "ru": "Абзац B: хвататься за развлечение — всё равно что глотать обезболивающее, когда в ботинок попал камешек: причина дискомфорта никуда не девается.",
+                    "uk": "Абзац B: хапатися за розвагу — те саме, що ковтати знеболювальне, коли в черевик потрапив камінчик: причина дискомфорту нікуди не зникає."
+                  }
+                },
+                {
+                  "answer": [
+                    "threshold"
+                  ],
+                  "prompt": "Okoro argues that constant stimulation increases the ______ at which everyday tasks start to seem dull.",
+                  "numbers": [
+                    39
+                  ],
+                  "evidence": "constant stimulation raises the threshold at which ordinary tasks begin to feel tedious",
+                  "explanation": {
+                    "en": "Paragraph C gives Okoro's interpretation: stimulation 'raises the threshold' at which ordinary tasks feel tedious.",
+                    "ru": "В абзаце C приводится толкование Окоро: стимуляция «raises the threshold», то есть повышает порог, за которым обычные дела начинают казаться скучными.",
+                    "uk": "В абзаці C наведено тлумачення Окоро: стимуляція «raises the threshold», тобто підвищує поріг, за яким звичайні справи починають здаватися нудними."
+                  }
+                },
+                {
+                  "answer": [
+                    "wander"
+                  ],
+                  "prompt": "Ferreira thinks that a mind given too little by the outside world will start to ______ while it looks for stimulation.",
+                  "numbers": [
+                    40
+                  ],
+                  "evidence": "the mind begins to wander in search of the stimulation it lacks",
+                  "explanation": {
+                    "en": "Paragraph D: when the outside world offers too little, the mind begins to wander in search of stimulation.",
+                    "ru": "Абзац D: когда внешний мир даёт слишком мало, ум начинает блуждать в поисках стимуляции.",
+                    "uk": "Абзац D: коли зовнішній світ дає занадто мало, розум починає блукати в пошуках стимуляції."
+                  }
+                }
+              ],
+              "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

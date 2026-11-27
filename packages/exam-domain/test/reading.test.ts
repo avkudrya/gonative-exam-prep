@@ -71,12 +71,14 @@ test('raw score to an approximate band: official thresholds, half bands between 
   assert.deepEqual(shown, {precision: 'approximate', low: 5.5, high: 6.5});
 });
 
-test('the Reading library: every test passes the form checks, 40 questions, a known status, explanations in en, ru and uk', () => {
-  const library = JSON.parse(readFileSync(new URL('../library/ielts-reading-academic.v1.json', import.meta.url), 'utf8')) as
-    {examKey: 'ielts-academic'; tests: {key: string; status: string; sections: ReadingSection[]}[]};
-  assert.ok(library.tests.length >= 2);
-  for (const t of library.tests) {
-    assert.deepEqual(checkReadingTest({id: t.key, exam: library.examKey, sections: t.sections}), [], t.key);
+test('the Reading libraries: every test passes the form checks, 40 questions, a known status, explanations in en, ru and uk', () => {
+  type Library = {version: string; examKey: 'ielts-academic'; tests: {key: string; status: string; sections: ReadingSection[]}[]};
+  const libraries = ['v1', 'v2'].map(v => JSON.parse(readFileSync(new URL(`../library/ielts-reading-academic.${v}.json`, import.meta.url), 'utf8')) as Library);
+  // v2 replaces academic-2 of v1 (the same name was used for two people, review 2026-11-27); one published copy of each test.
+  const published = libraries.flatMap(l => l.tests.filter(t => t.status === 'published').map(t => t.key));
+  assert.deepEqual(published.sort(), ['academic-1', 'academic-2']);
+  for (const t of libraries.flatMap(l => l.tests)) {
+    assert.deepEqual(checkReadingTest({id: t.key, exam: "ielts-academic", sections: t.sections}), [], t.key);
     assert.ok(['review', 'published', 'retired'].includes(t.status), t.key);
     for (const s of t.sections) for (const g of s.groups) for (const q of g.questions) {
       for (const lang of ['en', 'ru', 'uk'] as const) assert.ok(q.explanation[lang]?.trim(), `${t.key} ${q.numbers.join('-')} ${lang}`);

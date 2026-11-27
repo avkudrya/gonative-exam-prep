@@ -1010,4 +1010,8 @@ lint и сборка проходят. Существующие приложен
   включил `EXAM_READING_ENABLED` и `EXAM_READING_DRAFTS`; сайт `2ecbfe9` задеплоен (релиз `20261127161915-prBZSq3x`).
   Строка флага сначала была без `=true` — пункт меню не появлялся; после исправления владелец прошёл один тест. Дальше: отзыв
   владельца по живой проверке, вычитка `review.md`, затем статус `published` и снятие `EXAM_READING_DRAFTS`.
+- **2026-11-27. Вычитка тестов Reading** (владелец поручил её Claude): 80 вопросов, ошибок ключа нет; дефект — одно имя у двух
+  людей в academic-2 (и неверный род в ru/uk) — исправлен в библиотеке `v2`; v1 academic-1 `published`, academic-2 `retired`,
+  v2 academic-2 `published` (MultiAdmin `e1e58ebc`, без миграции). Дальше владелец: деплой, `exam:import-reading --apply`,
+  убрать `EXAM_READING_DRAFTS` ([P7.4](docs/phase-7/P7.4-reading-product.md) §5).
 

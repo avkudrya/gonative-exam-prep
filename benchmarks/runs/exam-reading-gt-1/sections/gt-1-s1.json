@@ -1,0 +1,1128 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-1|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.278116,
+            "provider": "anthropic",
+            "outputTokens": 13182
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012728,
+            "provider": "anthropic",
+            "outputTokens": 656
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.021655,
+            "provider": "openai",
+            "outputTokens": 1131
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.028924,
+            "provider": "anthropic",
+            "outputTokens": 715
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.004762,
+            "provider": "anthropic",
+            "outputTokens": 31
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.004943,
+            "provider": "openai",
+            "outputTokens": 111
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.014568,
+            "provider": "xai",
+            "outputTokens": 1358
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.080188,
+            "provider": "anthropic",
+            "outputTokens": 3675
+        }
+    ],
+    "draft": {
+        "title": "Riverside Community Leisure Centre: Notices for Users",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a limit on the number of young children one adult can look after",
+                        "options": [],
+                        "evidence": "one adult may supervise no more than two such children",
+                        "explanation": "Section C, the swimming rules, says one adult may supervise no more than two children under eight. Section B mentions children too, but only about joining adult classes with a parent."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a temporary change of location for some activities",
+                        "options": [],
+                        "evidence": "bookings for that period will be moved to the hall at Greenway Primary School",
+                        "explanation": "Section A explains that while the sports hall floor is replaced in August, badminton and five-a-side will take place at a nearby school instead."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a request to bring certain personal items",
+                        "options": [],
+                        "evidence": "we ask you to bring your own towel and a bottle of water",
+                        "explanation": "Section B says that mats and weights are provided but class users should bring a towel and water. Section C lists things that must NOT be taken onto the poolside, which is different."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a purchase that people living together can share",
+                        "options": [],
+                        "evidence": "can be shared between members of the same household",
+                        "explanation": "Section D says the ten-visit card can be used by different people from the same household."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a way of pausing membership for a period",
+                        "options": [],
+                        "evidence": "you can freeze your membership for up to three months without charge",
+                        "explanation": "Section E says members who cannot exercise because of illness, injury or pregnancy can 'freeze' (pause) their membership for free. Cancelling, also in E, ends the membership rather than pausing it."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a consequence for people who book places but do not come",
+                        "options": [],
+                        "evidence": "anyone who fails to turn up three times in a month will lose the right to book ahead",
+                        "explanation": "Section B says people who miss booked classes three times in a month cannot book ahead for four weeks. Section C also mentions a ban, but that is for ignoring lifeguards, not for missing bookings."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "the reason why entry stops before the building closes",
+                        "options": [],
+                        "evidence": "last admission to the pool and gym is forty-five minutes before closing, so that staff have time to clean and lock up",
+                        "explanation": "Section A explains that the last entry is 45 minutes before closing so staff can clean and lock up."
+                    }
+                ],
+                "instruction": "The notices have five sections, A–E. Which section contains the following information? Write the correct letter, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The centre opens at the same time every day of the week.",
+                        "options": [],
+                        "evidence": "from 6.30 a.m. to 10 p.m. Monday to Friday, and from 8 a.m. to 6 p.m. at weekends",
+                        "explanation": "Section A gives different opening times: 6.30 a.m. on weekdays but 8 a.m. at weekends, so the statement is false."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "On most public holidays, the centre keeps the same hours as on Saturdays and Sundays.",
+                        "options": [],
+                        "evidence": "On public holidays we follow the weekend timetable, except on Christmas Day and New Year's Day",
+                        "explanation": "Section A says public holidays follow the weekend timetable, apart from two days when the centre is closed. So on most public holidays the hours are the same as at weekends."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The café serves hot food as well as drinks.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Section A gives the café's hours and mentions hot drinks, but it says nothing about whether any food, hot or cold, is served."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The Saturday circuit session is shorter than most other classes.",
+                        "options": [],
+                        "evidence": "the Saturday morning circuit session runs for a full hour and a half",
+                        "explanation": "Section B says most classes last fifty minutes, but the Saturday circuit session lasts an hour and a half, so it is longer, not shorter."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The Tuesday evening yoga class was created with people new to yoga in mind.",
+                        "options": [],
+                        "evidence": "which instructor Oliwia Brennan designed specifically for beginners",
+                        "explanation": "Section B says the Tuesday class was designed for beginners, which means people new to yoga."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Fourteen-year-olds may attend adult classes on their own.",
+                        "options": [],
+                        "evidence": "Children aged twelve to fifteen may join adult classes only if a parent or guardian takes part alongside them",
+                        "explanation": "Section B says children aged twelve to fifteen can join adult classes only with a parent or guardian taking part, so a fourteen-year-old cannot go alone."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Everyone using the pool must wear a swimming cap.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Section C lists several pool rules, such as showering first and not bringing glass bottles, but swimming caps are never mentioned."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Students must show evidence of their status to pay the reduced price.",
+                        "options": [],
+                        "evidence": "provided they can show proof of age or student status",
+                        "explanation": "Section D says the reduced rate is only given if people can show proof of age or that they are students."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The ten-visit card costs less for people over sixty-five.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Section D says people over sixty-five get a reduced rate for single activities and gives one price for the ten-visit card, but it does not say whether older people pay less for the card."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information in the notices? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "people": [
+            {
+                "name": "Priya Nandakumar",
+                "role": "centre manager",
+                "gender": "unknown"
+            },
+            {
+                "name": "Oliwia Brennan",
+                "role": "yoga instructor who designed the beginners' class",
+                "gender": "unknown"
+            },
+            {
+                "name": "Desmond Achterberg",
+                "role": "aquatics supervisor",
+                "gender": "unknown"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "The centre is open from 6.30 a.m. to 10 p.m. Monday to Friday, and from 8 a.m. to 6 p.m. at weekends. On public holidays we follow the weekend timetable, except on Christmas Day and New Year's Day, when the building is closed completely. Please note that the last admission to the pool and gym is forty-five minutes before closing, so that staff have time to clean and lock up. The café keeps slightly shorter hours, opening at 8 a.m. every day and serving its final hot drinks at 4 p.m. During the first two weeks of August, the sports hall will be shut while its floor is replaced; badminton and five-a-side bookings for that period will be moved to the hall at Greenway Primary School, a ten-minute walk away. Questions can be emailed to the centre manager, Priya Nandakumar.",
+                "label": "A"
+            },
+            {
+                "text": "Our weekly programme includes yoga, Pilates, circuit training, aqua aerobics and a gentle exercise class for people returning to activity after illness or injury. Most classes last fifty minutes, although the Saturday morning circuit session runs for a full hour and a half. Non-members can reserve a place up to seven days in advance online or at reception. If you can no longer attend, please cancel at least two hours before the start; anyone who fails to turn up three times in a month will lose the right to book ahead for the following four weeks. Newcomers to yoga are encouraged to try the Tuesday evening class, which instructor Oliwia Brennan designed specifically for beginners. Mats and light weights are provided, but we ask you to bring your own towel and a bottle of water. Children aged twelve to fifteen may join adult classes only if a parent or guardian takes part alongside them.",
+                "label": "B"
+            },
+            {
+                "text": "All swimmers must shower before entering the water. Children under eight must be accompanied in the pool by an adult aged eighteen or over, and one adult may supervise no more than two such children. The pool is divided into lanes during lunchtime and early-morning sessions: choose the slow, medium or fast lane according to your speed, and always swim on the left. Diving is permitted only at the deep end and only when a lifeguard has removed the barrier rope. Inflatable toys are welcome during family sessions on Sunday afternoons but are not allowed at other times. Glass bottles, food and outdoor shoes must not be taken onto the poolside. Our aquatics supervisor, Desmond Achterberg, reminds users that lifeguards' instructions must be followed immediately; anyone who repeatedly ignores them may be asked to leave and could be banned from future sessions.",
+                "label": "C"
+            },
+            {
+                "text": "Non-members pay £5.20 for a single swim and £7 for a gym session or a fitness class. Under-sixteens, students and people over sixty-five receive a reduced rate of £3.50 for any of these activities, provided they can show proof of age or student status. Families of up to two adults and three children can buy a family swim ticket for £14. A ten-visit card, priced at £45, offers better value for regular users and can be shared between members of the same household; however, it expires six months after the date of purchase and cannot be refunded. Badminton courts cost £9 per hour, and racquets can be hired from reception for £1.50 each. Prices were last revised in January and are not expected to change again before the end of the year.",
+                "label": "D"
+            },
+            {
+                "text": "Membership gives unlimited use of the pool, gym and classes, plus priority booking: members can reserve class places fourteen days ahead instead of seven. A standard monthly membership costs £32, while a concession membership, available to the same groups who qualify for reduced single prices, costs £22. You can join at reception or online, but your first visit must include a short induction with a member of the gym team, covering the safe use of equipment. There is no joining fee for anyone who signs up before the end of March. Memberships run on a rolling basis, and you may cancel at any time by giving one full month's notice in writing. If you are unable to exercise because of illness, injury or pregnancy, you can freeze your membership for up to three months without charge; a doctor's note may be requested.",
+                "label": "E"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "one adult may supervise no more than two such children",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "badminton and five-a-side bookings for that period will be moved to the hall at Greenway Primary School",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "we ask you to bring your own towel and a bottle of water",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "can be shared between members of the same household",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "you can freeze your membership for up to three months without charge",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "anyone who fails to turn up three times in a month will lose the right to book ahead for the following four weeks",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "so that staff have time to clean and lock up",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "from 6.30 a.m. to 10 p.m. Monday to Friday, and from 8 a.m. to 6 p.m. at weekends",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "On public holidays we follow the weekend timetable, except on Christmas Day and New Year's Day",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the Saturday morning circuit session runs for a full hour and a half",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Tuesday evening class, which instructor Oliwia Brennan designed specifically for beginners",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Children aged twelve to fifteen may join adult classes only if a parent or guardian takes part alongside them.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "provided they can show proof of age or student status",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "one adult may supervise no more than two such children",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "badminton and five-a-side bookings for that period will be moved to the hall at Greenway Primary School",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "we ask you to bring your own towel and a bottle of water",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "A ten-visit card, priced at £45, offers better value for regular users and can be shared between members of the same household",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "you can freeze your membership for up to three months without charge",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "anyone who fails to turn up three times in a month will lose the right to book ahead for the following four weeks",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "so that staff have time to clean and lock up",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The centre is open from 6.30 a.m. to 10 p.m. Monday to Friday, and from 8 a.m. to 6 p.m. at weekends.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "On public holidays we follow the weekend timetable, except on Christmas Day and New Year's Day, when the building is closed completely.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Most classes last fifty minutes, although the Saturday morning circuit session runs for a full hour and a half.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Newcomers to yoga are encouraged to try the Tuesday evening class, which instructor Oliwia Brennan designed specifically for beginners.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Children aged twelve to fifteen may join adult classes only if a parent or guardian takes part alongside them.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Under-sixteens, students and people over sixty-five receive a reduced rate of £3.50 for any of these activities, provided they can show proof of age or student status.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q9": {
+                "marks": [
+                    false
+                ],
+                "quote": "A ten-visit card, priced at £45, offers better value for regular users",
+                "answer": [
+                    "F"
+                ],
+                "correct": false
+            }
+        },
+        "disputed": [
+            "b2q9"
+        ]
+    },
+    "revise": {
+        "b2q9": {
+            "action": "rewrite",
+            "before": {
+                "answer": [
+                    "NG"
+                ],
+                "prompt": "The ten-visit card costs less for people over sixty-five.",
+                "options": [],
+                "evidence": "",
+                "explanation": "Section D says people over sixty-five get a reduced rate for single activities and gives one price for the ten-visit card, but it does not say whether older people pay less for the card."
+            },
+            "reason": "The passage gives one price (£45) for the ten-visit card and says nothing about a concession on it. One reader could take that as NOT GIVEN, another as FALSE, because everyone seems to pay £45. The statement is replaced with one about the card's popularity, which the passage clearly does not mention, so only NOT GIVEN is defensible."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "one adult may supervise no more than two such children",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "badminton and five-a-side bookings for that period will be moved to the hall at Greenway Primary School",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "we ask you to bring your own towel and a bottle of water",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "it can be shared between members of the same household",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "you can freeze your membership for up to three months without charge",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "anyone who fails to turn up three times in a month will lose the right to book ahead",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "open from 6.30 a.m. to 10 p.m. Monday to Friday, and from 8 a.m. to 6 p.m. at weekends",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "On public holidays we follow the weekend timetable, except on Christmas Day and New Year's Day",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Most classes last fifty minutes, although the Saturday morning circuit session runs for a full hour and a half",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "the Tuesday evening class, which instructor Oliwia Brennan designed specifically for beginners",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Children aged twelve to fifteen may join adult classes only if a parent or guardian takes part alongside them",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q8": {
+            "marks": [
+                true
+            ],
+            "quote": "provided they can show proof of age or student status",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 1,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b2q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b2q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        }
+    },
+    "section": {
+        "text": "Riverside Community Leisure Centre: Notices for Users\n\nA. The centre is open from 6.30 a.m. to 10 p.m. Monday to Friday, and from 8 a.m. to 6 p.m. at weekends. On public holidays we follow the weekend timetable, except on Christmas Day and New Year's Day, when the building is closed completely. Please note that the last admission to the pool and gym is forty-five minutes before closing, so that staff have time to clean and lock up. The café keeps slightly shorter hours, opening at 8 a.m. every day and serving its final hot drinks at 4 p.m. During the first two weeks of August, the sports hall will be shut while its floor is replaced; badminton and five-a-side bookings for that period will be moved to the hall at Greenway Primary School, a ten-minute walk away. Questions can be emailed to the centre manager, Priya Nandakumar.\n\nB. Our weekly programme includes yoga, Pilates, circuit training, aqua aerobics and a gentle exercise class for people returning to activity after illness or injury. Most classes last fifty minutes, although the Saturday morning circuit session runs for a full hour and a half. Non-members can reserve a place up to seven days in advance online or at reception. If you can no longer attend, please cancel at least two hours before the start; anyone who fails to turn up three times in a month will lose the right to book ahead for the following four weeks. Newcomers to yoga are encouraged to try the Tuesday evening class, which instructor Oliwia Brennan designed specifically for beginners. Mats and light weights are provided, but we ask you to bring your own towel and a bottle of water. Children aged twelve to fifteen may join adult classes only if a parent or guardian takes part alongside them.\n\nC. All swimmers must shower before entering the water. Children under eight must be accompanied in the pool by an adult aged eighteen or over, and one adult may supervise no more than two such children. The pool is divided into lanes during lunchtime and early-morning sessions: choose the slow, medium or fast lane according to your speed, and always swim on the left. Diving is permitted only at the deep end and only when a lifeguard has removed the barrier rope. Inflatable toys are welcome during family sessions on Sunday afternoons but are not allowed at other times. Glass bottles, food and outdoor shoes must not be taken onto the poolside. Our aquatics supervisor, Desmond Achterberg, reminds users that lifeguards' instructions must be followed immediately; anyone who repeatedly ignores them may be asked to leave and could be banned from future sessions.\n\nD. Non-members pay £5.20 for a single swim and £7 for a gym session or a fitness class. Under-sixteens, students and people over sixty-five receive a reduced rate of £3.50 for any of these activities, provided they can show proof of age or student status. Families of up to two adults and three children can buy a family swim ticket for £14. A ten-visit card, priced at £45, offers better value for regular users and can be shared between members of the same household; however, it expires six months after the date of purchase and cannot be refunded. Badminton courts cost £9 per hour, and racquets can be hired from reception for £1.50 each. Prices were last revised in January and are not expected to change again before the end of the year.\n\nE. Membership gives unlimited use of the pool, gym and classes, plus priority booking: members can reserve class places fourteen days ahead instead of seven. A standard monthly membership costs £32, while a concession membership, available to the same groups who qualify for reduced single prices, costs £22. You can join at reception or online, but your first visit must include a short induction with a member of the gym team, covering the safe use of equipment. There is no joining fee for anyone who signs up before the end of March. Memberships run on a rolling basis, and you may cancel at any time by giving one full month's notice in writing. If you are unable to exercise because of illness, injury or pregnancy, you can freeze your membership for up to three months without charge; a doctor's note may be requested.",
+        "title": "Riverside Community Leisure Centre: Notices for Users",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a limit on the number of young children one adult can look after",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "one adult may supervise no more than two such children",
+                        "explanation": {
+                            "en": "Section C, the swimming rules, says one adult may supervise no more than two children under eight. Section B mentions children too, but only about joining adult classes with a parent.",
+                            "ru": "В разделе C, где собраны правила плавания, сказано, что один взрослый может присматривать не более чем за двумя детьми младше восьми лет. В разделе B дети тоже упоминаются, но только в связи с посещением занятий для взрослых вместе с родителем.",
+                            "uk": "У розділі C, де зібрано правила плавання, сказано, що один дорослий може наглядати не більше ніж за двома дітьми віком до восьми років. У розділі B діти теж згадуються, але лише щодо відвідування занять для дорослих разом із батьками."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a temporary change of location for some activities",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "bookings for that period will be moved to the hall at Greenway Primary School",
+                        "explanation": {
+                            "en": "Section A explains that while the sports hall floor is replaced in August, badminton and five-a-side will take place at a nearby school instead.",
+                            "ru": "В разделе A объясняется, что в августе в спортзале меняют пол. На это время бадминтон и мини-футбол (пять на пять) перенесут в соседнюю школу.",
+                            "uk": "У розділі A пояснюється, що в серпні в спортзалі замінюють підлогу. На цей час бадмінтон і міні-футбол (п'ять на п'ять) перенесуть до сусідньої школи."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a request to bring certain personal items",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "we ask you to bring your own towel and a bottle of water",
+                        "explanation": {
+                            "en": "Section B says that mats and weights are provided but class users should bring a towel and water. Section C lists things that must NOT be taken onto the poolside, which is different.",
+                            "ru": "В разделе B сказано, что коврики и гантели предоставляются, а полотенце и воду участникам занятий нужно приносить с собой. В разделе C перечислено то, что НЕЛЬЗЯ проносить к бассейну, а это другое.",
+                            "uk": "У розділі B сказано, що килимки й гантелі надаються, а рушник і воду учасникам занять треба приносити із собою. У розділі C перелічено те, що НЕ МОЖНА проносити до басейну, а це інше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a purchase that people living together can share",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "can be shared between members of the same household",
+                        "explanation": {
+                            "en": "Section D says the ten-visit card can be used by different people from the same household.",
+                            "ru": "В разделе D сказано, что абонементом на десять посещений могут пользоваться разные люди, живущие в одном доме.",
+                            "uk": "У розділі D сказано, що абонементом на десять відвідувань можуть користуватися різні люди, які живуть в одному домі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a way of pausing membership for a period",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "you can freeze your membership for up to three months without charge",
+                        "explanation": {
+                            "en": "Section E says members who cannot exercise because of illness, injury or pregnancy can 'freeze' (pause) their membership for free. Cancelling, also in E, ends the membership rather than pausing it.",
+                            "ru": "В разделе E сказано, что члены клуба, которые не могут заниматься из-за болезни, травмы или беременности, могут бесплатно 'freeze' (приостановить) членство. Отмена членства, о которой тоже говорится в разделе E, прекращает его, а не приостанавливает.",
+                            "uk": "У розділі E сказано, що члени клубу, які не можуть займатися через хворобу, травму чи вагітність, можуть безкоштовно 'freeze' (призупинити) членство. Скасування членства, про яке теж ідеться в розділі E, припиняє його, а не призупиняє."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a consequence for people who book places but do not come",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "anyone who fails to turn up three times in a month will lose the right to book ahead",
+                        "explanation": {
+                            "en": "Section B says people who miss booked classes three times in a month cannot book ahead for four weeks. Section C also mentions a ban, but that is for ignoring lifeguards, not for missing bookings.",
+                            "ru": "В разделе B сказано, что тот, кто трижды за месяц пропустил забронированные занятия, не может бронировать заранее в течение четырёх недель. В разделе C тоже упоминается запрет, но он назначается за то, что человек не слушается спасателей, а не за пропуск бронирований.",
+                            "uk": "У розділі B сказано, що той, хто тричі за місяць пропустив заброньовані заняття, не може бронювати заздалегідь протягом чотирьох тижнів. У розділі C теж згадується заборона, але її призначають за те, що людина не слухається рятувальників, а не за пропуск бронювань."
+                        }
+                    }
+                ],
+                "instruction": "The notices have five sections, A–E. Which section contains the following information? Write the correct letter, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The centre opens at the same time every day of the week.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "from 6.30 a.m. to 10 p.m. Monday to Friday, and from 8 a.m. to 6 p.m. at weekends",
+                        "explanation": {
+                            "en": "Section A gives different opening times: 6.30 a.m. on weekdays but 8 a.m. at weekends, so the statement is false.",
+                            "ru": "В разделе A указано разное время открытия: в будни в 6:30 утра, а в выходные в 8 утра. Поэтому утверждение неверно.",
+                            "uk": "У розділі A вказано різний час відкриття: у будні о 6:30 ранку, а у вихідні о 8 ранку. Тому твердження хибне."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "On most public holidays, the centre keeps the same hours as on Saturdays and Sundays.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "On public holidays we follow the weekend timetable, except on Christmas Day and New Year's Day",
+                        "explanation": {
+                            "en": "Section A says public holidays follow the weekend timetable, apart from two days when the centre is closed. So on most public holidays the hours are the same as at weekends.",
+                            "ru": "В разделе A сказано, что в праздничные дни центр работает по расписанию выходных, кроме двух дней, когда он закрыт. Значит, в большинство праздников часы работы такие же, как в выходные.",
+                            "uk": "У розділі A сказано, що у святкові дні центр працює за розкладом вихідних, окрім двох днів, коли він зачинений. Отже, у більшість свят години роботи такі самі, як у вихідні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The café serves hot food as well as drinks.",
+                        "numbers": [
+                            9
+                        ],
+                        "explanation": {
+                            "en": "Section A gives the café's hours and mentions hot drinks, but it says nothing about whether any food, hot or cold, is served.",
+                            "ru": "В разделе A указаны часы работы кафе и упоминаются горячие напитки, но ничего не сказано о том, подают ли там какую-нибудь еду, горячую или холодную.",
+                            "uk": "У розділі A вказано години роботи кафе та згадано гарячі напої, але нічого не сказано про те, чи подають там якусь їжу, гарячу чи холодну."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The Saturday circuit session is shorter than most other classes.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "the Saturday morning circuit session runs for a full hour and a half",
+                        "explanation": {
+                            "en": "Section B says most classes last fifty minutes, but the Saturday circuit session lasts an hour and a half, so it is longer, not shorter.",
+                            "ru": "В разделе B сказано, что большинство занятий длится пятьдесят минут, а субботняя круговая тренировка идёт полтора часа. То есть она длиннее, а не короче.",
+                            "uk": "У розділі B сказано, що більшість занять триває п'ятдесят хвилин, а суботнє колове тренування триває півтори години. Тобто воно довше, а не коротше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The Tuesday evening yoga class was created with people new to yoga in mind.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "which instructor Oliwia Brennan designed specifically for beginners",
+                        "explanation": {
+                            "en": "Section B says the Tuesday class was designed for beginners, which means people new to yoga.",
+                            "ru": "В разделе B сказано, что занятие по вторникам было разработано для начинающих, то есть для тех, кто раньше не занимался йогой.",
+                            "uk": "У розділі B сказано, що заняття у вівторок було розроблене для початківців, тобто для тих, хто раніше не займався йогою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Fourteen-year-olds may attend adult classes on their own.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "Children aged twelve to fifteen may join adult classes only if a parent or guardian takes part alongside them",
+                        "explanation": {
+                            "en": "Section B says children aged twelve to fifteen can join adult classes only with a parent or guardian taking part, so a fourteen-year-old cannot go alone.",
+                            "ru": "В разделе B сказано, что дети от двенадцати до пятнадцати лет могут ходить на занятия для взрослых только вместе с родителем или опекуном, который тоже занимается. Поэтому четырнадцатилетний подросток не может пойти один.",
+                            "uk": "У розділі B сказано, що діти віком від дванадцяти до п'ятнадцяти років можуть відвідувати заняття для дорослих лише разом із батьками чи опікуном, який теж займається. Тому чотирнадцятирічний підліток не може піти сам."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Everyone using the pool must wear a swimming cap.",
+                        "numbers": [
+                            13
+                        ],
+                        "explanation": {
+                            "en": "Section C lists several pool rules, such as showering first and not bringing glass bottles, but swimming caps are never mentioned.",
+                            "ru": "В разделе C перечислено несколько правил бассейна, например сначала принять душ и не приносить стеклянные бутылки, но о шапочках для плавания нигде не говорится.",
+                            "uk": "У розділі C перелічено кілька правил басейну, наприклад спершу прийняти душ і не приносити скляні пляшки, але про шапочки для плавання ніде не згадано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Students must show evidence of their status to pay the reduced price.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "provided they can show proof of age or student status",
+                        "explanation": {
+                            "en": "Section D says the reduced rate is only given if people can show proof of age or that they are students.",
+                            "ru": "В разделе D сказано, что льготный тариф дают только тем, кто может подтвердить свой возраст или то, что он студент.",
+                            "uk": "У розділі D сказано, що пільговий тариф надають лише тим, хто може підтвердити свій вік або те, що він студент."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information in the notices? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7",
+            "b2q8"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first",
+            "b2q9": "revised"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q7",
+        "14": "b2q8"
+    },
+    "translation": {
+        "missing": []
+    }
+}

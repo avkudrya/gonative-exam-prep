@@ -1,0 +1,1194 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-1|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.337372,
+            "provider": "anthropic",
+            "outputTokens": 16126
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.016172,
+            "provider": "anthropic",
+            "outputTokens": 771
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.02128,
+            "provider": "openai",
+            "outputTokens": 985
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.027644,
+            "provider": "xai",
+            "outputTokens": 3341
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.117204,
+            "provider": "anthropic",
+            "outputTokens": 5490
+        }
+    ],
+    "draft": {
+        "title": "Riders Against the Clock",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "A familiar figure with an unexpectedly long history"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Speeding up the last leg of a telegram's journey"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Decline, then a comeback powered by gridlock"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "A shared identity built on hard and risky work"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Adapting to survive the arrival of electronic messages"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "New technology, new cargo, but the same core purpose"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "The invention of the modern bicycle"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "How courier races became international competitions"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Why cities are turning against delivery riders"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "The bicycle courier seems like a product of the modern, impatient city, yet the job is considerably older than most people imagine.",
+                        "explanation": "Paragraph A describes the courier as a common sight in big cities and says the job is much older than people think. This matches a familiar figure with a long history."
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "that final stretch was often the slowest part of the journey",
+                        "explanation": "Paragraph B explains that telegraph companies gave messengers bicycles to speed up the slow final part of delivering a telegram. Improved bicycle designs are only mentioned briefly, so the heading about the invention of the bicycle is a detail, not the main idea."
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "The revival came in the 1970s and 1980s, and it was driven by traffic.",
+                        "explanation": "Paragraph C first describes how the trade lost ground and then how heavy traffic in business districts brought it back. Gridlock means very heavy traffic."
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "With the revival came a distinctive culture.",
+                        "explanation": "Paragraph D covers the couriers' own culture (radio, slang, bikes, races) and the dangers and lack of sick pay. Races are only one detail, so the heading about international competitions does not sum up the whole paragraph."
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "Many courier firms closed, but others adapted by changing what they carried.",
+                        "explanation": "Paragraph E explains how fax and email reduced demand for paper deliveries and how some firms survived by carrying different things. This is adapting to electronic messages."
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "the courier's essential skill remains the same",
+                        "explanation": "Paragraph F describes apps, electric bikes, food and cargo deliveries, but ends by saying the courier's basic skill has not changed. Cities are actually encouraging cargo bikes, so the heading about cities turning against riders is wrong."
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "final stretch"
+                        ],
+                        "prompt": "The ______ between the local telegraph office and the person receiving the telegram was frequently the slowest part of the delivery.",
+                        "options": [],
+                        "evidence": "that final stretch was often the slowest part of the journey",
+                        "explanation": "Paragraph B says a telegram travelled fast but still had to be carried from the office to the person, and this final stretch was often the slowest part."
+                    },
+                    {
+                        "answer": [
+                            "message"
+                        ],
+                        "prompt": "Many early telegraph messengers were paid by the ______, which gave them a reason to cycle quickly.",
+                        "options": [],
+                        "evidence": "many were paid by the message rather than by the hour, which encouraged them to ride fast",
+                        "explanation": "Paragraph B says many messengers were paid by the message, not by the hour, and this encouraged them to ride fast. 'Hour' is wrong because the passage says that was not how they were paid."
+                    },
+                    {
+                        "answer": [
+                            "stationary traffic"
+                        ],
+                        "prompt": "Unlike cars, riders could find a way through ______ and carry a contract across town in less than twenty minutes.",
+                        "options": [],
+                        "evidence": "who could slip through stationary traffic and deliver a contract across the city in under twenty minutes",
+                        "explanation": "Paragraph C says courier companies hired riders because they could slip through traffic that was not moving and deliver quickly."
+                    },
+                    {
+                        "answer": [
+                            "two-way radio"
+                        ],
+                        "prompt": "During the revival years, couriers kept in contact with the person who gave out their jobs by using a ______.",
+                        "options": [],
+                        "evidence": "Riders communicated with a central dispatcher by two-way radio",
+                        "explanation": "Paragraph D says riders talked to a central dispatcher, the person who gave out jobs, by two-way radio. Today apps have replaced this dispatcher, but the sentence is about the revival years."
+                    },
+                    {
+                        "answer": [
+                            "electric bikes"
+                        ],
+                        "prompt": "Many riders today make long shifts less physically tiring by using ______.",
+                        "options": [],
+                        "evidence": "many riders use electric bikes that reduce the physical strain of long shifts",
+                        "explanation": "Paragraph F says electric bikes reduce the physical strain of long shifts. 'Cargo bikes' is wrong because they are mentioned for parcel deliveries, not for making shifts less tiring."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What point does the writer make in the first paragraph?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "The courier's job has existed for longer than many people assume."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Couriers ride more dangerously than other road users."
+                            },
+                            {
+                                "id": "C",
+                                "text": "The courier's job first appeared in London."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Couriers are found mainly in financial districts."
+                            }
+                        ],
+                        "evidence": "yet the job is considerably older than most people imagine",
+                        "explanation": "In Paragraph A the writer says the job is much older than most people imagine. The writer only says couriers' speed 'looks almost reckless', which is not the same as saying they ride more dangerously than others."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does Beatrix Oyelaran say about the early telegraph messengers?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They were the first young workers to be paid by the hour."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Bicycles turned them into an organised delivery system."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They were more reliable than adult messengers."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They made sending a telegram cheaper."
+                            }
+                        ],
+                        "evidence": "'turned a scattered group of errand boys into the first real delivery network of the industrial city.'",
+                        "explanation": "In Paragraph B Oyelaran says the arrangement changed scattered errand boys into a real delivery network. The passage says many messengers were paid by the message, not by the hour, and it does not compare them with adults or discuss cost."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "According to Yusuf Demirel, experienced couriers",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "refused to work in certain parts of the city."
+                            },
+                            {
+                                "id": "B",
+                                "text": "taught new riders how to read city maps."
+                            },
+                            {
+                                "id": "C",
+                                "text": "shared practical knowledge about streets that maps could not provide."
+                            },
+                            {
+                                "id": "D",
+                                "text": "avoided taking part in races between couriers."
+                            }
+                        ],
+                        "evidence": "experienced couriers would teach newcomers which streets to avoid at certain times of day, a kind of knowledge that, as he puts it, 'no map could give you.'",
+                        "explanation": "In Paragraph D Demirel says experienced riders taught newcomers which streets to avoid at certain times, knowledge that no map could give. They avoided some streets at some times, but did not refuse to work in whole areas."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What did Camille Thornquist's study of one courier firm find?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Most courier firms had closed by 2005."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Medical samples became the firm's largest type of delivery."
+                            },
+                            {
+                                "id": "C",
+                                "text": "The firm's total number of deliveries rose after 1990."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Documents became a much smaller share of the firm's deliveries."
+                            }
+                        ],
+                        "evidence": "documents made up roughly four in every five deliveries in 1990 but fewer than one in three by 2005",
+                        "explanation": "In Paragraph E the study shows documents fell from about four in five deliveries to fewer than one in three. The study looked at only one firm and did not say which item became largest or whether total deliveries rose."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Beatrix Oyelaran",
+                "role": "urban historian who describes early telegraph messengers as the first delivery network",
+                "gender": "female"
+            },
+            {
+                "name": "Yusuf Demirel",
+                "role": "former bicycle courier who rode in central London for eleven years",
+                "gender": "male"
+            },
+            {
+                "name": "Camille Thornquist",
+                "role": "transport researcher who studied the job records of one courier firm",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Anyone who has stood at a busy junction in central London, New York or Chicago has probably seen one: a rider with a bag slung across the back, weaving between taxis and buses with a speed that looks almost reckless. The bicycle courier seems like a product of the modern, impatient city, yet the job is considerably older than most people imagine. Its history, with its sudden booms and near-disappearances, offers a surprisingly clear picture of how city dwellers have exchanged information, and how often they have changed their minds about the best way to do it.",
+                "label": "A"
+            },
+            {
+                "text": "The story begins in the late nineteenth century, when improved bicycle designs made cycling practical for ordinary people. Telegraph companies quickly saw the advantage. A telegram could cross a continent in minutes, but it still had to be carried from the local office to the person whose name was on the envelope, and that final stretch was often the slowest part of the journey. Offices had long employed boys to run these messages on foot; given bicycles, the same boys could reach far more addresses in a single shift. Most were teenagers, and many were paid by the message rather than by the hour, which encouraged them to ride fast. According to urban historian Beatrix Oyelaran, this arrangement 'turned a scattered group of errand boys into the first real delivery network of the industrial city.' She regards it as the model for every courier service that followed.",
+                "label": "B"
+            },
+            {
+                "text": "During the twentieth century, the trade gradually lost ground. As telephones spread into offices and homes, fewer messages needed to be written down and carried at all, and motor vans took over most of the heavier deliveries, so in many cities the cycling messenger became a far less familiar sight. The revival came in the 1970s and 1980s, and it was driven by traffic. Financial and legal districts in large cities had become so congested that a car could take longer to cross a few blocks than a person on foot. At the same time, banks, law firms and advertising agencies depended on original paper documents, often ones that needed a signature, arriving the same day. Courier companies responded by hiring riders, who could slip through stationary traffic and deliver a contract across the city in under twenty minutes. Riders usually received a share of the fee for each job, so the busiest could earn a good living.",
+                "label": "C"
+            },
+            {
+                "text": "With the revival came a distinctive culture. Riders communicated with a central dispatcher by two-way radio, developed their own slang and often favoured simple, tough machines, including fixed-gear bikes with few parts to break. Informal races between couriers grew into organised events, some of them international. Yusuf Demirel, who rode in central London for eleven years, remembers the work as 'half sport, half survival'. The survival part was real. Most riders were self-employed, so they had no sick pay, and a single collision could leave them without income for weeks. Demirel recalls that experienced couriers would teach newcomers which streets to avoid at certain times of day, a kind of knowledge that, as he puts it, 'no map could give you.'",
+                "label": "D"
+            },
+            {
+                "text": "From the late 1980s, the industry faced its most serious threat yet. Fax machines became standard office equipment and email soon followed, allowing documents to travel between offices in seconds, and demand for paper deliveries fell sharply. Many courier firms closed, but others adapted by changing what they carried. Things that cannot be sent down a cable, such as medical samples, computer parts and items needed urgently on film sets, became an increasingly important part of the business. A study by transport researcher Camille Thornquist, who examined the job records of one mid-sized courier firm, found that documents made up roughly four in every five deliveries in 1990 but fewer than one in three by 2005. Her conclusion is that the firms which survived were those that stopped thinking of themselves as paper carriers.",
+                "label": "E"
+            },
+            {
+                "text": "Today, the rider with a bag on the back is more likely to be delivering a takeaway meal than a legal contract. Smartphone apps now assign jobs automatically, replacing the human dispatcher, and many riders use electric bikes that reduce the physical strain of long shifts. Some veterans of the earlier era feel that the sense of community has weakened, since app riders rarely meet each other. Food delivery riders also face many of the same dangers as their predecessors, and in several countries there has been heated debate over whether they should count as employees. Yet the bicycle's basic advantages have not changed. Several cities are now encouraging cargo bikes for the last stage of parcel deliveries, hoping to reduce both congestion and air pollution. More than a century after the first telegraph boys pedalled away from their offices, the courier's essential skill remains the same: getting something small across a crowded city faster than anything else can.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The bicycle courier seems like a product of the modern, impatient city, yet the job is considerably older than most people imagine.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "that final stretch was often the slowest part of the journey",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "During the twentieth century, the trade gradually lost ground. ... The revival came in the 1970s and 1980s, and it was driven by traffic.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "With the revival came a distinctive culture. ... The survival part was real.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Fax machines became standard office equipment and email soon followed ... others adapted by changing what they carried.",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Smartphone apps now assign jobs automatically ... Yet the bicycle's basic advantages have not changed.",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "that final stretch was often the slowest part of the journey",
+                "answer": [
+                    "final stretch"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "many were paid by the message rather than by the hour, which encouraged them to ride fast",
+                "answer": [
+                    "message"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "who could slip through stationary traffic and deliver a contract across the city in under twenty minutes",
+                "answer": [
+                    "stationary traffic"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Riders communicated with a central dispatcher by two-way radio",
+                "answer": [
+                    "two-way radio"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "many riders use electric bikes that reduce the physical strain of long shifts",
+                "answer": [
+                    "electric bikes"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "yet the job is considerably older than most people imagine",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "turned a scattered group of errand boys into the first real delivery network of the industrial city.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "experienced couriers would teach newcomers which streets to avoid at certain times of day, a kind of knowledge that, as he puts it, 'no map could give you.'",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "documents made up roughly four in every five deliveries in 1990 but fewer than one in three by 2005",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The bicycle courier seems like a product of the modern, impatient city, yet the job is considerably older than most people imagine.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A telegram could cross a continent in minutes, but it still had to be carried from the local office to the person whose name was on the envelope, and that final stretch was often the slowest part of the journey.",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "During the twentieth century, the trade gradually lost ground... The revival came in the 1970s and 1980s, and it was driven by traffic.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "With the revival came a distinctive culture... The survival part was real. Most riders were self-employed, so they had no sick pay, and a single collision could leave them without income for weeks.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Fax machines became standard office equipment and email soon followed... Many courier firms closed, but others adapted by changing what they carried.",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Smartphone apps now assign jobs automatically... the rider with a bag on the back is more likely to be delivering a takeaway meal than a legal contract... the courier's essential skill remains the same",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "that final stretch was often the slowest part of the journey",
+                "answer": [
+                    "final stretch"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "many were paid by the message rather than by the hour, which encouraged them to ride fast",
+                "answer": [
+                    "message"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "who could slip through stationary traffic and deliver a contract across the city in under twenty minutes",
+                "answer": [
+                    "stationary traffic"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Riders communicated with a central dispatcher by two-way radio",
+                "answer": [
+                    "two-way radio"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "many riders use electric bikes that reduce the physical strain of long shifts",
+                "answer": [
+                    "electric bikes"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The bicycle courier seems like a product of the modern, impatient city, yet the job is considerably older than most people imagine.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "this arrangement 'turned a scattered group of errand boys into the first real delivery network of the industrial city.'",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "experienced couriers would teach newcomers which streets to avoid at certain times of day, a kind of knowledge that, as he puts it, 'no map could give you.'",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "documents made up roughly four in every five deliveries in 1990 but fewer than one in three by 2005",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The bicycle courier seems like a product of the modern, impatient city, yet the job is considerably older than most people imagine.",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "it still had to be carried from the local office to the person whose name was on the envelope, and that final stretch was often the slowest part of the journey.",
+            "answer": [
+                "ii"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "During the twentieth century, the trade gradually lost ground. The revival came in the 1970s and 1980s, and it was driven by traffic.",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "With the revival came a distinctive culture. The survival part was real. Most riders were self-employed, so they had no sick pay, and a single collision could leave them without income for weeks.",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Fax machines became standard office equipment and email soon followed, allowing documents to travel between offices in seconds, and demand for paper deliveries fell sharply. Many courier firms closed, but others adapted by changing what they carried.",
+            "answer": [
+                "v"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Smartphone apps now assign jobs automatically, replacing the human dispatcher, and many riders use electric bikes. More than a century after the first telegraph boys pedalled away from their offices, the courier's essential skill remains the same.",
+            "answer": [
+                "vi"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "that final stretch was often the slowest part of the journey.",
+            "answer": [
+                "final stretch"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "many were paid by the message rather than by the hour, which encouraged them to ride fast.",
+            "answer": [
+                "message"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "who could slip through stationary traffic and deliver a contract across the city in under twenty minutes.",
+            "answer": [
+                "stationary traffic"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Riders communicated with a central dispatcher by two-way radio",
+            "answer": [
+                "two-way radio"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "yet the job is considerably older than most people imagine.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "turned a scattered group of errand boys into the first real delivery network of the industrial city.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "experienced couriers would teach newcomers which streets to avoid at certain times of day, a kind of knowledge that, as he puts it, 'no map could give you.'",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Riders Against the Clock\n\nA. Anyone who has stood at a busy junction in central London, New York or Chicago has probably seen one: a rider with a bag slung across the back, weaving between taxis and buses with a speed that looks almost reckless. The bicycle courier seems like a product of the modern, impatient city, yet the job is considerably older than most people imagine. Its history, with its sudden booms and near-disappearances, offers a surprisingly clear picture of how city dwellers have exchanged information, and how often they have changed their minds about the best way to do it.\n\nB. The story begins in the late nineteenth century, when improved bicycle designs made cycling practical for ordinary people. Telegraph companies quickly saw the advantage. A telegram could cross a continent in minutes, but it still had to be carried from the local office to the person whose name was on the envelope, and that final stretch was often the slowest part of the journey. Offices had long employed boys to run these messages on foot; given bicycles, the same boys could reach far more addresses in a single shift. Most were teenagers, and many were paid by the message rather than by the hour, which encouraged them to ride fast. According to urban historian Beatrix Oyelaran, this arrangement 'turned a scattered group of errand boys into the first real delivery network of the industrial city.' She regards it as the model for every courier service that followed.\n\nC. During the twentieth century, the trade gradually lost ground. As telephones spread into offices and homes, fewer messages needed to be written down and carried at all, and motor vans took over most of the heavier deliveries, so in many cities the cycling messenger became a far less familiar sight. The revival came in the 1970s and 1980s, and it was driven by traffic. Financial and legal districts in large cities had become so congested that a car could take longer to cross a few blocks than a person on foot. At the same time, banks, law firms and advertising agencies depended on original paper documents, often ones that needed a signature, arriving the same day. Courier companies responded by hiring riders, who could slip through stationary traffic and deliver a contract across the city in under twenty minutes. Riders usually received a share of the fee for each job, so the busiest could earn a good living.\n\nD. With the revival came a distinctive culture. Riders communicated with a central dispatcher by two-way radio, developed their own slang and often favoured simple, tough machines, including fixed-gear bikes with few parts to break. Informal races between couriers grew into organised events, some of them international. Yusuf Demirel, who rode in central London for eleven years, remembers the work as 'half sport, half survival'. The survival part was real. Most riders were self-employed, so they had no sick pay, and a single collision could leave them without income for weeks. Demirel recalls that experienced couriers would teach newcomers which streets to avoid at certain times of day, a kind of knowledge that, as he puts it, 'no map could give you.'\n\nE. From the late 1980s, the industry faced its most serious threat yet. Fax machines became standard office equipment and email soon followed, allowing documents to travel between offices in seconds, and demand for paper deliveries fell sharply. Many courier firms closed, but others adapted by changing what they carried. Things that cannot be sent down a cable, such as medical samples, computer parts and items needed urgently on film sets, became an increasingly important part of the business. A study by transport researcher Camille Thornquist, who examined the job records of one mid-sized courier firm, found that documents made up roughly four in every five deliveries in 1990 but fewer than one in three by 2005. Her conclusion is that the firms which survived were those that stopped thinking of themselves as paper carriers.\n\nF. Today, the rider with a bag on the back is more likely to be delivering a takeaway meal than a legal contract. Smartphone apps now assign jobs automatically, replacing the human dispatcher, and many riders use electric bikes that reduce the physical strain of long shifts. Some veterans of the earlier era feel that the sense of community has weakened, since app riders rarely meet each other. Food delivery riders also face many of the same dangers as their predecessors, and in several countries there has been heated debate over whether they should count as employees. Yet the bicycle's basic advantages have not changed. Several cities are now encouraging cargo bikes for the last stage of parcel deliveries, hoping to reduce both congestion and air pollution. More than a century after the first telegraph boys pedalled away from their offices, the courier's essential skill remains the same: getting something small across a crowded city faster than anything else can.",
+        "title": "Riders Against the Clock",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "A familiar figure with an unexpectedly long history"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Speeding up the last leg of a telegram's journey"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Decline, then a comeback powered by gridlock"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "A shared identity built on hard and risky work"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Adapting to survive the arrival of electronic messages"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "New technology, new cargo, but the same core purpose"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "The invention of the modern bicycle"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "How courier races became international competitions"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Why cities are turning against delivery riders"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "The bicycle courier seems like a product of the modern, impatient city, yet the job is considerably older than most people imagine.",
+                        "explanation": {
+                            "en": "Paragraph A describes the courier as a common sight in big cities and says the job is much older than people think. This matches a familiar figure with a long history.",
+                            "ru": "В абзаце A курьер описан как привычная фигура в больших городах, а сама профессия названа гораздо более старой, чем принято думать. Это соответствует заголовку о знакомой фигуре с долгой историей.",
+                            "uk": "В абзаці A кур'єра описано як звичну постать у великих містах, а саму професію названо значно старшою, ніж прийнято вважати. Це відповідає заголовку про знайому постать із довгою історією."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "that final stretch was often the slowest part of the journey",
+                        "explanation": {
+                            "en": "Paragraph B explains that telegraph companies gave messengers bicycles to speed up the slow final part of delivering a telegram. Improved bicycle designs are only mentioned briefly, so the heading about the invention of the bicycle is a detail, not the main idea.",
+                            "ru": "В абзаце B объясняется, что телеграфные компании выдавали посыльным велосипеды, чтобы ускорить медленный последний этап доставки телеграммы. Усовершенствованные конструкции велосипедов упоминаются лишь мимоходом, поэтому заголовок об изобретении велосипеда описывает деталь, а не главную мысль.",
+                            "uk": "В абзаці B пояснюється, що телеграфні компанії видавали посильним велосипеди, щоб пришвидшити повільний останній етап доставки телеграми. Удосконалені конструкції велосипедів згадано лише побіжно, тож заголовок про винайдення велосипеда стосується деталі, а не головної думки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "The revival came in the 1970s and 1980s, and it was driven by traffic.",
+                        "explanation": {
+                            "en": "Paragraph C first describes how the trade lost ground and then how heavy traffic in business districts brought it back. Gridlock means very heavy traffic.",
+                            "ru": "В абзаце C сначала рассказывается, как профессия сдала позиции, а затем — как плотное движение в деловых районах её возродило. \"Gridlock\" означает очень плотное движение, сплошной затор.",
+                            "uk": "В абзаці C спершу розповідається, як професія втратила позиції, а потім — як щільний рух у ділових районах її відродив. \"Gridlock\" означає дуже щільний рух, суцільний затор."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "With the revival came a distinctive culture.",
+                        "explanation": {
+                            "en": "Paragraph D covers the couriers' own culture (radio, slang, bikes, races) and the dangers and lack of sick pay. Races are only one detail, so the heading about international competitions does not sum up the whole paragraph.",
+                            "ru": "В абзаце D речь идёт о собственной культуре курьеров (рации, сленг, велосипеды, гонки), а также об опасностях работы и отсутствии оплаты больничных. Гонки — лишь одна деталь, поэтому заголовок о международных соревнованиях не передаёт содержание всего абзаца.",
+                            "uk": "В абзаці D ідеться про власну культуру кур'єрів (рації, сленг, велосипеди, перегони), а також про небезпеки роботи й відсутність оплати лікарняних. Перегони — лише одна деталь, тому заголовок про міжнародні змагання не передає змісту всього абзацу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Many courier firms closed, but others adapted by changing what they carried.",
+                        "explanation": {
+                            "en": "Paragraph E explains how fax and email reduced demand for paper deliveries and how some firms survived by carrying different things. This is adapting to electronic messages.",
+                            "ru": "В абзаце E объясняется, как факс и электронная почта снизили спрос на доставку бумажных документов и как некоторые фирмы выжили, начав возить другие грузы. Это и есть приспособление к электронным сообщениям.",
+                            "uk": "В абзаці E пояснюється, як факс і електронна пошта зменшили попит на доставку паперових документів і як деякі фірми вижили, почавши возити інші вантажі. Це і є пристосування до електронних повідомлень."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "the courier's essential skill remains the same",
+                        "explanation": {
+                            "en": "Paragraph F describes apps, electric bikes, food and cargo deliveries, but ends by saying the courier's basic skill has not changed. Cities are actually encouraging cargo bikes, so the heading about cities turning against riders is wrong.",
+                            "ru": "В абзаце F описываются приложения, электровелосипеды, доставка еды и грузов, но в конце сказано, что главный навык курьера не изменился. На самом деле города поощряют грузовые велосипеды, поэтому заголовок о том, что города ополчились против велосипедистов, неверен.",
+                            "uk": "В абзаці F описано застосунки, електровелосипеди, доставку їжі та вантажів, але наприкінці сказано, що головна навичка кур'єра не змінилася. Насправді міста заохочують вантажні велосипеди, тому заголовок про те, що міста повстали проти велосипедистів, хибний."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "final stretch"
+                        ],
+                        "prompt": "The ______ between the local telegraph office and the person receiving the telegram was frequently the slowest part of the delivery.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "that final stretch was often the slowest part of the journey",
+                        "explanation": {
+                            "en": "Paragraph B says a telegram travelled fast but still had to be carried from the office to the person, and this final stretch was often the slowest part.",
+                            "ru": "В абзаце B сказано, что телеграмма передавалась быстро, но её всё равно нужно было доставить от телеграфа до адресата, и этот последний отрезок часто оказывался самым медленным.",
+                            "uk": "В абзаці B сказано, що телеграма передавалася швидко, але її однаково треба було доставити від телеграфу до адресата, і цей останній відрізок часто виявлявся найповільнішим."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "message"
+                        ],
+                        "prompt": "Many early telegraph messengers were paid by the ______, which gave them a reason to cycle quickly.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "many were paid by the message rather than by the hour, which encouraged them to ride fast",
+                        "explanation": {
+                            "en": "Paragraph B says many messengers were paid by the message, not by the hour, and this encouraged them to ride fast. 'Hour' is wrong because the passage says that was not how they were paid.",
+                            "ru": "В абзаце B сказано, что многим посыльным платили за каждое сообщение, а не за час работы, и это побуждало их ездить быстро. \"Hour\" — неверный ответ, потому что в тексте прямо сказано, что платили им не так.",
+                            "uk": "В абзаці B сказано, що багатьом посильним платили за кожне повідомлення, а не за годину роботи, і це спонукало їх їздити швидко. \"Hour\" — неправильна відповідь, бо в тексті прямо сказано, що платили їм не так."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "stationary traffic"
+                        ],
+                        "prompt": "Unlike cars, riders could find a way through ______ and carry a contract across town in less than twenty minutes.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "who could slip through stationary traffic and deliver a contract across the city in under twenty minutes",
+                        "explanation": {
+                            "en": "Paragraph C says courier companies hired riders because they could slip through traffic that was not moving and deliver quickly.",
+                            "ru": "В абзаце C сказано, что курьерские компании нанимали велосипедистов, потому что те могли проскользнуть сквозь стоящий транспорт и быстро доставить отправление.",
+                            "uk": "В абзаці C сказано, що кур'єрські компанії наймали велосипедистів, бо ті могли прослизнути крізь транспорт, що стояв, і швидко доставити відправлення."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "two-way radio"
+                        ],
+                        "prompt": "During the revival years, couriers kept in contact with the person who gave out their jobs by using a ______.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "Riders communicated with a central dispatcher by two-way radio",
+                        "explanation": {
+                            "en": "Paragraph D says riders talked to a central dispatcher, the person who gave out jobs, by two-way radio. Today apps have replaced this dispatcher, but the sentence is about the revival years.",
+                            "ru": "В абзаце D сказано, что велосипедисты связывались по рации с центральным диспетчером — человеком, который раздавал заказы. Сегодня этого диспетчера заменили приложения, но предложение относится к годам возрождения профессии.",
+                            "uk": "В абзаці D сказано, що велосипедисти зв'язувалися по рації з центральним диспетчером — людиною, яка роздавала замовлення. Сьогодні цього диспетчера замінили застосунки, але речення стосується років відродження професії."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Couriers ride more dangerously than other road users."
+                    },
+                    {
+                        "id": "B",
+                        "text": "The courier's job first appeared in London."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Couriers are found mainly in financial districts."
+                    },
+                    {
+                        "id": "D",
+                        "text": "The courier's job has existed for longer than many people assume."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What point does the writer make in the first paragraph?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "yet the job is considerably older than most people imagine",
+                        "explanation": {
+                            "en": "In Paragraph A the writer says the job is much older than most people imagine. The writer only says couriers' speed 'looks almost reckless', which is not the same as saying they ride more dangerously than others.",
+                            "ru": "В абзаце A автор пишет, что эта профессия гораздо старше, чем думает большинство людей. Автор лишь говорит, что скорость курьеров \"looks almost reckless\", а это не то же самое, что утверждать, будто они ездят опаснее других.",
+                            "uk": "В абзаці A автор пише, що ця професія значно старша, ніж думає більшість людей. Автор лише каже, що швидкість кур'єрів \"looks almost reckless\", а це не те саме, що стверджувати, ніби вони їздять небезпечніше за інших."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Bicycles turned them into an organised delivery system."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They were the first young workers to be paid by the hour."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They made sending a telegram cheaper."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They were more reliable than adult messengers."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does Beatrix Oyelaran say about the early telegraph messengers?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "'turned a scattered group of errand boys into the first real delivery network of the industrial city.'",
+                        "explanation": {
+                            "en": "In Paragraph B Oyelaran says the arrangement changed scattered errand boys into a real delivery network. The passage says many messengers were paid by the message, not by the hour, and it does not compare them with adults or discuss cost.",
+                            "ru": "В абзаце B Oyelaran утверждает, что такая система превратила разрозненных мальчиков на побегушках в настоящую сеть доставки. В тексте сказано, что многим посыльным платили за каждое сообщение, а не за час, но нет ни сравнения со взрослыми, ни рассуждений о стоимости.",
+                            "uk": "В абзаці B Oyelaran стверджує, що така система перетворила розрізнених хлопчиків на побігеньках на справжню мережу доставки. У тексті сказано, що багатьом посильним платили за кожне повідомлення, а не погодинно, але там немає ні порівняння з дорослими, ні міркувань про вартість."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "taught new riders how to read city maps."
+                    },
+                    {
+                        "id": "B",
+                        "text": "shared practical knowledge about streets that maps could not provide."
+                    },
+                    {
+                        "id": "C",
+                        "text": "refused to work in certain parts of the city."
+                    },
+                    {
+                        "id": "D",
+                        "text": "avoided taking part in races between couriers."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to Yusuf Demirel, experienced couriers",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "experienced couriers would teach newcomers which streets to avoid at certain times of day, a kind of knowledge that, as he puts it, 'no map could give you.'",
+                        "explanation": {
+                            "en": "In Paragraph D Demirel says experienced riders taught newcomers which streets to avoid at certain times, knowledge that no map could give. They avoided some streets at some times, but did not refuse to work in whole areas.",
+                            "ru": "В абзаце D Demirel рассказывает, что опытные курьеры учили новичков, каких улиц избегать в определённое время, — таких знаний не дала бы ни одна карта. Они избегали некоторых улиц в некоторые часы, но не отказывались работать в целых районах.",
+                            "uk": "В абзаці D Demirel розповідає, що досвідчені кур'єри вчили новачків, яких вулиць уникати в певний час, — таких знань не дала б жодна мапа. Вони уникали деяких вулиць у певні години, але не відмовлялися працювати в цілих районах."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

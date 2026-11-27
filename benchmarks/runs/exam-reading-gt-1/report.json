@@ -1,0 +1,306 @@
+{
+    "id": "exam-reading-gt-1",
+    "exam": "ielts-general-training",
+    "prompts": "rd-2",
+    "routes": {
+        "exam.reading.generate": [
+            {
+                "provider": "anthropic",
+                "model": "claude-opus-5-5",
+                "reasoning_effort": "high",
+                "max_output_tokens": 32000,
+                "timeout": 900
+            }
+        ],
+        "exam.reading.solve_a": [
+            {
+                "provider": "anthropic",
+                "model": "claude-sonnet-5-5",
+                "reasoning_effort": "medium",
+                "max_output_tokens": 12000,
+                "timeout": 600
+            }
+        ],
+        "exam.reading.solve_b": [
+            {
+                "provider": "openai",
+                "model": "gpt-5.4",
+                "reasoning_effort": "medium",
+                "max_output_tokens": 12000,
+                "timeout": 600
+            }
+        ],
+        "exam.reading.control": [
+            {
+                "provider": "xai",
+                "model": "grok-4.7",
+                "temperature": 0,
+                "max_output_tokens": 8000,
+                "timeout": 600
+            }
+        ]
+    },
+    "budgetUsd": 21,
+    "spentUsd": 1.403605,
+    "sections": [
+        {
+            "key": "gt-1|s1",
+            "status": "succeeded",
+            "costUsd": 0.445884,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 0,
+                "generated": 16,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 1,
+                "disputedFirst": 1
+            },
+            "file": "sections/gt-1-s1.json"
+        },
+        {
+            "key": "gt-1|s2",
+            "status": "succeeded",
+            "costUsd": 0.438049,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-1-s2.json"
+        },
+        {
+            "key": "gt-1|s3",
+            "status": "succeeded",
+            "costUsd": 0.519672,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-1-s3.json"
+        },
+        {
+            "key": "gt-2|s1",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-2|s2",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-2|s3",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-3|s1",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-3|s2",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-3|s3",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-4|s1",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-4|s2",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-4|s3",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-5|s1",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-5|s2",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-5|s3",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-6|s1",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-6|s2",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-6|s3",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-7|s1",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-7|s2",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-7|s3",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-8|s1",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-8|s2",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-8|s3",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-9|s1",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-9|s2",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-9|s3",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-10|s1",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-10|s2",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        },
+        {
+            "key": "gt-10|s3",
+            "status": "not_run",
+            "costUsd": 0,
+            "metrics": null,
+            "file": null
+        }
+    ],
+    "tests": [
+        {
+            "id": "gt-1",
+            "file": "tests/gt-1.json",
+            "questions": 40
+        }
+    ],
+    "totals": {
+        "generated": 46,
+        "disputedFirst": 1,
+        "discarded": 0,
+        "controlCorrect": 40,
+        "controlMarks": 40,
+        "discardRate": 0,
+        "controlAgreement": 1
+    }
+}

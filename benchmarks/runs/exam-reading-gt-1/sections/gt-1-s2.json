@@ -1,0 +1,1226 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-1|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.281684,
+            "provider": "anthropic",
+            "outputTokens": 13356
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.01534,
+            "provider": "anthropic",
+            "outputTokens": 687
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018713,
+            "provider": "openai",
+            "outputTokens": 804
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.016092,
+            "provider": "xai",
+            "outputTokens": 1389
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.10622,
+            "provider": "anthropic",
+            "outputTokens": 4979
+        }
+    ],
+    "draft": {
+        "title": "Your First Weeks on the Shop Floor",
+        "blocks": [
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "buddy"
+                        ],
+                        "prompt": "First two weeks: work alongside a ______, an experienced colleague on the same shifts",
+                        "options": [],
+                        "evidence": "you will be paired with a buddy: an experienced colleague who works the same shifts as you",
+                        "explanation": "Paragraph A says new staff are paired with a buddy for their first two weeks. 'First two weeks' and 'same shifts' restate the passage."
+                    },
+                    {
+                        "answer": [
+                            "shirts"
+                        ],
+                        "prompt": "Uniform: two free replacement ______ given each year",
+                        "options": [],
+                        "evidence": "Each employee receives two replacement shirts a year free of charge",
+                        "explanation": "Paragraph B says each employee gets two replacement shirts a year at no cost. Any more are taken from wages, so they are not free."
+                    },
+                    {
+                        "answer": [
+                            "hairnets"
+                        ],
+                        "prompt": "Fresh food counters: long hair tied back; staff wear the ______ that the store supplies",
+                        "options": [],
+                        "evidence": "must tie long hair back and wear one of the hairnets provided",
+                        "explanation": "Paragraph B says staff on the fresh food counters must wear one of the hairnets provided. 'Supplies' restates 'provided'."
+                    },
+                    {
+                        "answer": [
+                            "briefing"
+                        ],
+                        "prompt": "Arrive at least ten minutes early to change and attend the duty manager's ______",
+                        "options": [],
+                        "evidence": "attend the briefing that the duty manager holds at the start of each shift",
+                        "explanation": "Paragraph C says arriving early lets you attend the briefing the duty manager holds at the start of each shift."
+                    },
+                    {
+                        "answer": [
+                            "locker"
+                        ],
+                        "prompt": "Personal phones: must be left in your ______ during working time",
+                        "options": [],
+                        "evidence": "Personal phones must stay in your locker while you are working",
+                        "explanation": "Paragraph C says phones must stay in your locker while you are working. For urgent calls, you tell the duty manager instead."
+                    },
+                    {
+                        "answer": [
+                            "scanner"
+                        ],
+                        "prompt": "Out-of-date items: remove at once and record on the handheld ______",
+                        "options": [],
+                        "evidence": "recorded on your handheld scanner rather than simply thrown away",
+                        "explanation": "Paragraph D says expired items must be recorded on your handheld scanner, not simply thrown away, so that future orders can be adjusted."
+                    },
+                    {
+                        "answer": [
+                            "sign"
+                        ],
+                        "prompt": "Spills: stay next to it while a colleague fetches cleaning equipment and a yellow warning ______",
+                        "options": [],
+                        "evidence": "ask a colleague to bring a yellow warning sign and cleaning equipment",
+                        "explanation": "Paragraph E says you stay beside the spill and a colleague brings a yellow warning sign and cleaning equipment."
+                    },
+                    {
+                        "answer": [
+                            "trolley"
+                        ],
+                        "prompt": "Loads that feel too heavy: use a ______ or get assistance",
+                        "options": [],
+                        "evidence": "If a load feels too heavy, use a trolley or ask for help.",
+                        "explanation": "Paragraph E ends by saying that if a load is too heavy, you should use a trolley or ask for help. 'Get assistance' restates 'ask for help'."
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "A new employee who wants to change their working hours should speak to",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "their buddy."
+                            },
+                            {
+                                "id": "B",
+                                "text": "their section leader."
+                            },
+                            {
+                                "id": "C",
+                                "text": "the duty manager."
+                            },
+                            {
+                                "id": "D",
+                                "text": "the store manager."
+                            }
+                        ],
+                        "evidence": "Requests for holiday, changes to your hours and any queries about pay should still go to your section leader.",
+                        "explanation": "Paragraph A says the buddy is not your supervisor, and changes to hours go to the section leader. The buddy helps with small practical questions, so that option is a trap."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "According to the guide, name badges must be worn because",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "managers use them to check who is working."
+                            },
+                            {
+                                "id": "B",
+                                "text": "they help new staff learn their colleagues' names."
+                            },
+                            {
+                                "id": "C",
+                                "text": "customers giving feedback recall names more easily than faces."
+                            },
+                            {
+                                "id": "D",
+                                "text": "they are part of the uniform issued on the first day."
+                            }
+                        ],
+                        "evidence": "customers who wish to praise or complain about the service they received tend to remember a name far better than a face",
+                        "explanation": "Paragraph B explains that customers who want to praise or complain remember a name better than a face. The uniform is mentioned in the same paragraph, but it is not given as the reason for badges."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What can happen to staff who miss the shift briefing?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They may lose part of their pay for that shift."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They may not be able to answer questions from customers."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They may have to stay late to unload deliveries."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They may be moved to a different section."
+                            }
+                        ],
+                        "evidence": "so missing it can leave you unable to answer customers' questions",
+                        "explanation": "Paragraph C says the briefing covers price changes, promotions and late deliveries, so missing it can leave you unable to answer customers. Late deliveries are a topic of the briefing, not a consequence of missing it."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Why does the guide say new stock should not be placed in front of older stock?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It takes more time than putting it at the back."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Customers prefer to buy the newest products."
+                            },
+                            {
+                                "id": "C",
+                                "text": "The older goods stay out of sight until they are out of date."
+                            },
+                            {
+                                "id": "D",
+                                "text": "New deliveries are more likely to be damaged at the front."
+                            }
+                        ],
+                        "evidence": "this leaves older products hidden until they expire",
+                        "explanation": "Paragraph D says putting new stock in front leaves older products hidden until they expire, which wastes money and food. The idea that it takes more time is wrong: the passage says it is quicker."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What did Joaquín Albarrán's review of injury reports show?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Most back injuries happened while deliveries were being unloaded."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Spills caused more injuries than lifting heavy goods."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Most back strains happened near the end of shifts, when staff were tired and in a hurry."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Staff who watched the training video had fewer injuries."
+                            }
+                        ],
+                        "evidence": "most back strains occurred not while deliveries were being unloaded but towards the end of shifts, when staff were tired and hurrying to finish",
+                        "explanation": "Paragraph E reports that most back strains happened towards the end of shifts, not during deliveries. The option about deliveries says the opposite, and the review did not compare spills with lifting or check who watched the video."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "If a customer asks a question that an employee cannot answer, the employee should",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "give their best guess to save the customer time."
+                            },
+                            {
+                                "id": "B",
+                                "text": "admit they do not know and find a colleague who does."
+                            },
+                            {
+                                "id": "C",
+                                "text": "pass the question to their section leader as a complaint."
+                            },
+                            {
+                                "id": "D",
+                                "text": "walk the customer to the nearest aisle."
+                            }
+                        ],
+                        "evidence": "If you do not know the answer to a question, say so and find someone who does",
+                        "explanation": "Paragraph F tells staff to say they do not know and find someone who does. It warns that a confident guess usually wastes more of the customer's time. The section leader is only mentioned for complaints that staff cannot settle."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What is the main point Deepa Raghunathan makes?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "New staff should learn all the routines before their first shift."
+                            },
+                            {
+                                "id": "B",
+                                "text": "New starters who ask questions adapt most quickly."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Managers dislike answering the same question more than once."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Most mistakes made by new staff are noticed within a week."
+                            }
+                        ],
+                        "evidence": "The new starters who settle in fastest are not the ones who already know everything. They are the ones who ask.",
+                        "explanation": "In Paragraph G, she says the people who settle in fastest are those who ask questions. She also says she would rather answer the same question three times, so the option about disliking repeated questions is wrong."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Joaquín Albarrán",
+                "role": "regional safety adviser who reviewed injury reports from twelve stores",
+                "gender": "unknown"
+            },
+            {
+                "name": "Deepa Raghunathan",
+                "role": "manager of the chain's largest store",
+                "gender": "unknown"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Welcome to Calloway's. This section of your induction guide explains the routines you will follow every day on the shop floor. Nobody expects you to remember everything at once, which is why, for your first two weeks, you will be paired with a buddy: an experienced colleague who works the same shifts as you and can answer the small, practical questions that come up constantly when you are new. Please remember, though, that your buddy is not your supervisor. Requests for holiday, changes to your hours and any queries about pay should still go to your section leader.",
+                "label": "A"
+            },
+            {
+                "text": "Your uniform will be issued on your first day, and keeping it clean and presentable is your responsibility. Each employee receives two replacement shirts a year free of charge; any further replacements are paid for through a deduction from your wages. Your name badge must be worn whenever you are on the shop floor, because customers who wish to praise or complain about the service they received tend to remember a name far better than a face. Jewellery should be kept simple, and anyone working on the fresh food counters must tie long hair back and wear one of the hairnets provided.",
+                "label": "B"
+            },
+            {
+                "text": "Every shift begins at the clocking-in terminal beside the staff room. Aim to arrive at least ten minutes before your official start time so that you can change, put your belongings in a locker and attend the briefing that the duty manager holds at the start of each shift. This rarely lasts more than five minutes, but it covers price changes, promotions beginning that day and any deliveries that are running late, so missing it can leave you unable to answer customers' questions. Personal phones must stay in your locker while you are working. If you are expecting an urgent call, let the duty manager know and a message will be passed to you.",
+                "label": "C"
+            },
+            {
+                "text": "Much of your time will be spent refilling shelves, and the key rule here is one you will hear repeated throughout the company: first in, first out. Newer stock goes to the back, and items with the earliest date are moved to the front. It can be tempting to put fresh deliveries straight in front because it is quicker, but this leaves older products hidden until they expire, which costs the store money and creates waste that could easily have been avoided. Any item you find that is past its date must be taken off the shelf at once and recorded on your handheld scanner rather than simply thrown away, so that future orders can be adjusted.",
+                "label": "D"
+            },
+            {
+                "text": "Slips on spilled liquids are among the most common causes of accidents in supermarkets. If you discover a spill, stay beside it and ask a colleague to bring a yellow warning sign and cleaning equipment; never leave a spill unattended, even briefly, as a customer could walk straight into it. Heavy goods such as multipacks of bottled water should be lifted with your knees bent and your back straight, as demonstrated in your training video. Last year our regional safety adviser, Joaquín Albarrán, examined injury reports from twelve of our stores and found that most back strains occurred not while deliveries were being unloaded but towards the end of shifts, when staff were tired and hurrying to finish. If a load feels too heavy, use a trolley or ask for help.",
+                "label": "E"
+            },
+            {
+                "text": "Customers will regularly ask you where to find things. Wherever possible, walk with them to the right aisle instead of pointing; it takes a few seconds longer but is remembered far longer. If you do not know the answer to a question, say so and find someone who does, since a confident guess usually ends up wasting more of the customer's time. Complaints you cannot settle yourself should be passed to your section leader, and you should never argue with a customer, however unreasonable they seem. Staff trained on the tills will also need to follow the company's policy on age-restricted goods, which is covered separately in Section 4 of this guide.",
+                "label": "F"
+            },
+            {
+                "text": "Finally, a word from Deepa Raghunathan, who manages our largest store: 'The new starters who settle in fastest are not the ones who already know everything. They are the ones who ask. I would much rather answer the same question three times than discover a week later that someone has been quietly doing a task the wrong way.'",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "you will be paired with a buddy: an experienced colleague who works the same shifts as you",
+                "answer": [
+                    "buddy"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Each employee receives two replacement shirts a year free of charge",
+                "answer": [
+                    "shirts"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "must tie long hair back and wear one of the hairnets provided",
+                "answer": [
+                    "hairnets"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "attend the briefing that the duty manager holds at the start of each shift",
+                "answer": [
+                    "briefing"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Personal phones must stay in your locker while you are working.",
+                "answer": [
+                    "locker"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "recorded on your handheld scanner rather than simply thrown away",
+                "answer": [
+                    "scanner"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "ask a colleague to bring a yellow warning sign and cleaning equipment",
+                "answer": [
+                    "sign"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "If a load feels too heavy, use a trolley or ask for help.",
+                "answer": [
+                    "trolley"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Requests for holiday, changes to your hours and any queries about pay should still go to your section leader.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "customers who wish to praise or complain about the service they received tend to remember a name far better than a face",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "missing it can leave you unable to answer customers' questions",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "this leaves older products hidden until they expire",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "most back strains occurred not while deliveries were being unloaded but towards the end of shifts, when staff were tired and hurrying to finish",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you do not know the answer to a question, say so and find someone who does",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "The new starters who settle in fastest are not the ones who already know everything. They are the ones who ask.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "for your first two weeks, you will be paired with a buddy: an experienced colleague who works the same shifts as you",
+                "answer": [
+                    "buddy"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Each employee receives two replacement shirts a year free of charge",
+                "answer": [
+                    "shirts"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "anyone working on the fresh food counters must tie long hair back and wear one of the hairnets provided",
+                "answer": [
+                    "hairnets"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "attend the briefing that the duty manager holds at the start of each shift",
+                "answer": [
+                    "briefing"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Personal phones must stay in your locker while you are working",
+                "answer": [
+                    "locker"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "recorded on your handheld scanner",
+                "answer": [
+                    "scanner"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "ask a colleague to bring a yellow warning sign and cleaning equipment",
+                "answer": [
+                    "sign"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "If a load feels too heavy, use a trolley or ask for help",
+                "answer": [
+                    "trolley"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Requests for holiday, changes to your hours and any queries about pay should still go to your section leader",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Your name badge must be worn whenever you are on the shop floor, because customers who wish to praise or complain about the service they received tend to remember a name far better than a face",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "missing it can leave you unable to answer customers' questions",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "this leaves older products hidden until they expire",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "most back strains occurred not while deliveries were being unloaded but towards the end of shifts, when staff were tired and hurrying to finish",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you do not know the answer to a question, say so and find someone who does",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "The new starters who settle in fastest are not the ones who already know everything. They are the ones who ask.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "you will be paired with a buddy: an experienced colleague who works the same shifts as you",
+            "answer": [
+                "buddy"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Each employee receives two replacement shirts a year free of charge",
+            "answer": [
+                "shirts"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "anyone working on the fresh food counters must tie long hair back and wear one of the hairnets provided",
+            "answer": [
+                "hairnets"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "attend the briefing that the duty manager holds at the start of each shift",
+            "answer": [
+                "briefing"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Personal phones must stay in your locker while you are working",
+            "answer": [
+                "locker"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "recorded on your handheld scanner rather than simply thrown away",
+            "answer": [
+                "scanner"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "ask a colleague to bring a yellow warning sign and cleaning equipment",
+            "answer": [
+                "sign"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "changes to your hours and any queries about pay should still go to your section leader",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "customers who wish to praise or complain about the service they received tend to remember a name far better than a face",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "missing it can leave you unable to answer customers' questions",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "this leaves older products hidden until they expire",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "most back strains occurred not while deliveries were being unloaded but towards the end of shifts, when staff were tired and hurrying to finish",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "If you do not know the answer to a question, say so and find someone who does",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Your First Weeks on the Shop Floor\n\nA. Welcome to Calloway's. This section of your induction guide explains the routines you will follow every day on the shop floor. Nobody expects you to remember everything at once, which is why, for your first two weeks, you will be paired with a buddy: an experienced colleague who works the same shifts as you and can answer the small, practical questions that come up constantly when you are new. Please remember, though, that your buddy is not your supervisor. Requests for holiday, changes to your hours and any queries about pay should still go to your section leader.\n\nB. Your uniform will be issued on your first day, and keeping it clean and presentable is your responsibility. Each employee receives two replacement shirts a year free of charge; any further replacements are paid for through a deduction from your wages. Your name badge must be worn whenever you are on the shop floor, because customers who wish to praise or complain about the service they received tend to remember a name far better than a face. Jewellery should be kept simple, and anyone working on the fresh food counters must tie long hair back and wear one of the hairnets provided.\n\nC. Every shift begins at the clocking-in terminal beside the staff room. Aim to arrive at least ten minutes before your official start time so that you can change, put your belongings in a locker and attend the briefing that the duty manager holds at the start of each shift. This rarely lasts more than five minutes, but it covers price changes, promotions beginning that day and any deliveries that are running late, so missing it can leave you unable to answer customers' questions. Personal phones must stay in your locker while you are working. If you are expecting an urgent call, let the duty manager know and a message will be passed to you.\n\nD. Much of your time will be spent refilling shelves, and the key rule here is one you will hear repeated throughout the company: first in, first out. Newer stock goes to the back, and items with the earliest date are moved to the front. It can be tempting to put fresh deliveries straight in front because it is quicker, but this leaves older products hidden until they expire, which costs the store money and creates waste that could easily have been avoided. Any item you find that is past its date must be taken off the shelf at once and recorded on your handheld scanner rather than simply thrown away, so that future orders can be adjusted.\n\nE. Slips on spilled liquids are among the most common causes of accidents in supermarkets. If you discover a spill, stay beside it and ask a colleague to bring a yellow warning sign and cleaning equipment; never leave a spill unattended, even briefly, as a customer could walk straight into it. Heavy goods such as multipacks of bottled water should be lifted with your knees bent and your back straight, as demonstrated in your training video. Last year our regional safety adviser, Joaquín Albarrán, examined injury reports from twelve of our stores and found that most back strains occurred not while deliveries were being unloaded but towards the end of shifts, when staff were tired and hurrying to finish. If a load feels too heavy, use a trolley or ask for help.\n\nF. Customers will regularly ask you where to find things. Wherever possible, walk with them to the right aisle instead of pointing; it takes a few seconds longer but is remembered far longer. If you do not know the answer to a question, say so and find someone who does, since a confident guess usually ends up wasting more of the customer's time. Complaints you cannot settle yourself should be passed to your section leader, and you should never argue with a customer, however unreasonable they seem. Staff trained on the tills will also need to follow the company's policy on age-restricted goods, which is covered separately in Section 4 of this guide.\n\nG. Finally, a word from Deepa Raghunathan, who manages our largest store: 'The new starters who settle in fastest are not the ones who already know everything. They are the ones who ask. I would much rather answer the same question three times than discover a week later that someone has been quietly doing a task the wrong way.'",
+        "title": "Your First Weeks on the Shop Floor",
+        "groups": [
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "buddy"
+                        ],
+                        "prompt": "First two weeks: work alongside a ______, an experienced colleague on the same shifts",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "you will be paired with a buddy: an experienced colleague who works the same shifts as you",
+                        "explanation": {
+                            "en": "Paragraph A says new staff are paired with a buddy for their first two weeks. 'First two weeks' and 'same shifts' restate the passage.",
+                            "ru": "В абзаце A сказано, что новых сотрудников на первые две недели закрепляют за напарником. Слова \"First two weeks\" и \"same shifts\" пересказывают текст другими словами.",
+                            "uk": "В абзаці A сказано, що нових працівників на перші два тижні закріплюють за напарником. Слова \"First two weeks\" і \"same shifts\" переказують текст іншими словами."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "shirts"
+                        ],
+                        "prompt": "Uniform: two free replacement ______ given each year",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Each employee receives two replacement shirts a year free of charge",
+                        "explanation": {
+                            "en": "Paragraph B says each employee gets two replacement shirts a year at no cost. Any more are taken from wages, so they are not free.",
+                            "ru": "В абзаце B сказано, что каждый сотрудник бесплатно получает две сменные рубашки в год. Стоимость дополнительных вычитается из зарплаты, так что они не бесплатные.",
+                            "uk": "В абзаці B сказано, що кожен працівник безкоштовно отримує дві змінні сорочки на рік. Вартість додаткових вираховують із зарплати, тож вони не безкоштовні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "hairnets"
+                        ],
+                        "prompt": "Fresh food counters: long hair tied back; staff wear the ______ that the store supplies",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "must tie long hair back and wear one of the hairnets provided",
+                        "explanation": {
+                            "en": "Paragraph B says staff on the fresh food counters must wear one of the hairnets provided. 'Supplies' restates 'provided'.",
+                            "ru": "В абзаце B сказано, что сотрудники прилавков со свежими продуктами должны носить одну из выданных сеточек для волос. \"Supplies\" — это перефразировка \"provided\".",
+                            "uk": "В абзаці B сказано, що працівники прилавків зі свіжими продуктами мають носити одну з виданих сіточок для волосся. \"Supplies\" перефразовує \"provided\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "briefing"
+                        ],
+                        "prompt": "Arrive at least ten minutes early to change and attend the duty manager's ______",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "attend the briefing that the duty manager holds at the start of each shift",
+                        "explanation": {
+                            "en": "Paragraph C says arriving early lets you attend the briefing the duty manager holds at the start of each shift.",
+                            "ru": "В абзаце C сказано, что если прийти пораньше, можно попасть на планёрку, которую дежурный менеджер проводит в начале каждой смены.",
+                            "uk": "В абзаці C сказано, що, прийшовши раніше, можна потрапити на інструктаж, який черговий менеджер проводить на початку кожної зміни."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "locker"
+                        ],
+                        "prompt": "Personal phones: must be left in your ______ during working time",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Personal phones must stay in your locker while you are working",
+                        "explanation": {
+                            "en": "Paragraph C says phones must stay in your locker while you are working. For urgent calls, you tell the duty manager instead.",
+                            "ru": "В абзаце C сказано, что во время работы телефон должен лежать в шкафчике. В срочных случаях нужно обратиться к дежурному менеджеру.",
+                            "uk": "В абзаці C сказано, що під час роботи телефон має лежати в шафці. У термінових випадках слід звернутися до чергового менеджера."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "scanner"
+                        ],
+                        "prompt": "Out-of-date items: remove at once and record on the handheld ______",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "recorded on your handheld scanner rather than simply thrown away",
+                        "explanation": {
+                            "en": "Paragraph D says expired items must be recorded on your handheld scanner, not simply thrown away, so that future orders can be adjusted.",
+                            "ru": "В абзаце D сказано, что просроченные товары нельзя просто выбрасывать: их нужно отметить в ручном сканере, чтобы можно было скорректировать будущие заказы.",
+                            "uk": "В абзаці D сказано, що прострочені товари не можна просто викидати: їх треба зафіксувати в ручному сканері, щоб можна було скоригувати майбутні замовлення."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "sign"
+                        ],
+                        "prompt": "Spills: stay next to it while a colleague fetches cleaning equipment and a yellow warning ______",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "ask a colleague to bring a yellow warning sign and cleaning equipment",
+                        "explanation": {
+                            "en": "Paragraph E says you stay beside the spill and a colleague brings a yellow warning sign and cleaning equipment.",
+                            "ru": "В абзаце E сказано, что вы остаётесь рядом с разлитой жидкостью, а коллега приносит жёлтую предупреждающую табличку и уборочный инвентарь.",
+                            "uk": "В абзаці E сказано, що ви залишаєтеся біля розлитої рідини, а колега приносить жовту попереджувальну табличку та інвентар для прибирання."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "their buddy."
+                    },
+                    {
+                        "id": "B",
+                        "text": "the store manager."
+                    },
+                    {
+                        "id": "C",
+                        "text": "the duty manager."
+                    },
+                    {
+                        "id": "D",
+                        "text": "their section leader."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "A new employee who wants to change their working hours should speak to",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Requests for holiday, changes to your hours and any queries about pay should still go to your section leader.",
+                        "explanation": {
+                            "en": "Paragraph A says the buddy is not your supervisor, and changes to hours go to the section leader. The buddy helps with small practical questions, so that option is a trap.",
+                            "ru": "В абзаце A сказано, что напарник не является вашим руководителем, а по поводу изменений в графике нужно обращаться к руководителю отдела. Напарник помогает лишь с мелкими практическими вопросами, поэтому этот вариант — ловушка.",
+                            "uk": "В абзаці A сказано, що напарник не є вашим керівником, а щодо змін у графіку слід звертатися до керівника відділу. Напарник допомагає лише з дрібними практичними питаннями, тому цей варіант — пастка."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "customers giving feedback recall names more easily than faces."
+                    },
+                    {
+                        "id": "B",
+                        "text": "they help new staff learn their colleagues' names."
+                    },
+                    {
+                        "id": "C",
+                        "text": "they are part of the uniform issued on the first day."
+                    },
+                    {
+                        "id": "D",
+                        "text": "managers use them to check who is working."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to the guide, name badges must be worn because",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "customers who wish to praise or complain about the service they received tend to remember a name far better than a face",
+                        "explanation": {
+                            "en": "Paragraph B explains that customers who want to praise or complain remember a name better than a face. The uniform is mentioned in the same paragraph, but it is not given as the reason for badges.",
+                            "ru": "В абзаце B объясняется, что покупатели, которые хотят похвалить сотрудника или пожаловаться, лучше запоминают имя, чем лицо. Униформа упоминается в том же абзаце, но не как причина ношения бейджей.",
+                            "uk": "В абзаці B пояснюється, що покупці, які хочуть похвалити працівника або поскаржитися, краще запам'ятовують ім'я, ніж обличчя. Уніформу згадано в тому самому абзаці, але не як причину носіння бейджів."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They may be moved to a different section."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They may not be able to answer questions from customers."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They may lose part of their pay for that shift."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They may have to stay late to unload deliveries."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What can happen to staff who miss the shift briefing?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "so missing it can leave you unable to answer customers' questions",
+                        "explanation": {
+                            "en": "Paragraph C says the briefing covers price changes, promotions and late deliveries, so missing it can leave you unable to answer customers. Late deliveries are a topic of the briefing, not a consequence of missing it.",
+                            "ru": "В абзаце C сказано, что на планёрке обсуждают изменения цен, акции и задержки поставок, поэтому, пропустив её, вы можете не суметь ответить на вопросы покупателей. Задержки поставок — это тема планёрки, а не последствие её пропуска.",
+                            "uk": "В абзаці C сказано, що на інструктажі йдеться про зміни цін, акції та затримки поставок, тож, пропустивши його, ви можете не змогти відповісти на запитання покупців. Затримки поставок — це тема інструктажу, а не наслідок його пропуску."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Customers prefer to buy the newest products."
+                    },
+                    {
+                        "id": "B",
+                        "text": "New deliveries are more likely to be damaged at the front."
+                    },
+                    {
+                        "id": "C",
+                        "text": "The older goods stay out of sight until they are out of date."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It takes more time than putting it at the back."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Why does the guide say new stock should not be placed in front of older stock?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "this leaves older products hidden until they expire",
+                        "explanation": {
+                            "en": "Paragraph D says putting new stock in front leaves older products hidden until they expire, which wastes money and food. The idea that it takes more time is wrong: the passage says it is quicker.",
+                            "ru": "В абзаце D сказано, что если ставить новый товар вперёд, старый остаётся спрятанным, пока у него не истечёт срок годности, а это потеря денег и продуктов. Вариант о том, что это занимает больше времени, неверен: в тексте сказано, что так быстрее.",
+                            "uk": "В абзаці D сказано, що коли ставити новий товар уперед, старий залишається схованим, доки в нього не мине термін придатності, а це втрата грошей і продуктів. Варіант про те, що це забирає більше часу, хибний: у тексті сказано, що так швидше."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Most back injuries happened while deliveries were being unloaded."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Staff who watched the training video had fewer injuries."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Spills caused more injuries than lifting heavy goods."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Most back strains happened near the end of shifts, when staff were tired and in a hurry."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What did Joaquín Albarrán's review of injury reports show?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "most back strains occurred not while deliveries were being unloaded but towards the end of shifts, when staff were tired and hurrying to finish",
+                        "explanation": {
+                            "en": "Paragraph E reports that most back strains happened towards the end of shifts, not during deliveries. The option about deliveries says the opposite, and the review did not compare spills with lifting or check who watched the video.",
+                            "ru": "В абзаце E говорится, что большинство травм спины пришлось на конец смены, а не на время приёма поставок. Вариант про поставки утверждает обратное, а в ходе проверки не сравнивали разливы с подъёмом тяжестей и не выясняли, кто смотрел видео.",
+                            "uk": "В абзаці E йдеться про те, що більшість травм спини сталася наприкінці змін, а не під час приймання поставок. Варіант про поставки стверджує протилежне, а під час перевірки не порівнювали розливи з підніманням вантажів і не з'ясовували, хто дивився відео."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "admit they do not know and find a colleague who does."
+                    },
+                    {
+                        "id": "B",
+                        "text": "give their best guess to save the customer time."
+                    },
+                    {
+                        "id": "C",
+                        "text": "walk the customer to the nearest aisle."
+                    },
+                    {
+                        "id": "D",
+                        "text": "pass the question to their section leader as a complaint."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "If a customer asks a question that an employee cannot answer, the employee should",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "If you do not know the answer to a question, say so and find someone who does",
+                        "explanation": {
+                            "en": "Paragraph F tells staff to say they do not know and find someone who does. It warns that a confident guess usually wastes more of the customer's time. The section leader is only mentioned for complaints that staff cannot settle.",
+                            "ru": "В абзаце F сотрудникам советуют честно сказать, что они не знают, и найти того, кто знает. Там же предупреждают, что уверенная догадка обычно отнимает у покупателя больше времени. Руководитель отдела упоминается только в связи с жалобами, которые сотрудники не могут уладить сами.",
+                            "uk": "В абзаці F працівникам радять чесно сказати, що вони не знають, і знайти того, хто знає. Там же попереджають, що впевнена здогадка зазвичай забирає в покупця більше часу. Керівника відділу згадано лише у зв'язку зі скаргами, які працівники не можуть залагодити самі."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6"
+    },
+    "translation": {
+        "missing": []
+    }
+}

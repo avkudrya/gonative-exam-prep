@@ -1,0 +1,1271 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-1|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.356276,
+            "provider": "anthropic",
+            "outputTokens": 17203
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": true,
+            "costUsd": 0.017358,
+            "provider": "anthropic",
+            "outputTokens": 800
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": true,
+            "costUsd": 0.025825,
+            "provider": "openai",
+            "outputTokens": 1233
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": true,
+            "costUsd": 0.019718,
+            "provider": "xai",
+            "outputTokens": 1904
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.053432,
+            "provider": "anthropic",
+            "outputTokens": 2354
+        }
+    ],
+    "draft": {
+        "title": "Playing to Learn?",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Treating the debate about play in early schooling as a contest between two sides has been harmful.",
+                        "options": [],
+                        "evidence": "in my view that framing has done more damage than anything either side has actually said",
+                        "explanation": "In paragraph A the writer says that presenting the issue as a contest between two camps 'has done more damage' than either side's arguments. This matches the statement."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Varga's research would have been more convincing if it had included children from a wider range of ages.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "In paragraph B the writer's only reservations about Varga's study are the small classes and the volunteer teachers. The writer says nothing about the age range of the children, so we cannot know the writer's view."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Children should be taught the connection between letters and sounds in an explicit way.",
+                        "options": [],
+                        "evidence": "On this last point I think he is right",
+                        "explanation": "In paragraph C Reinholt says the link between letters and sounds must be taught directly, and the writer agrees: 'On this last point I think he is right'."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The evidence that early gains disappear shows that play-based teaching is not worth the time it takes.",
+                        "options": [],
+                        "evidence": "But his wider conclusion does not follow.",
+                        "explanation": "In paragraph C Reinholt concludes from fade-out that play gives only a temporary lead, but the writer rejects this, saying the conclusion 'does not follow' because benefits may appear elsewhere."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "National testing should be removed from the first years of school.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph F says pressure from national testing is part of the reason play has lost ground. However, the writer never says whether such tests should be removed."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Schools would benefit more from buying better play materials than from developing their teachers.",
+                        "options": [],
+                        "evidence": "invest less in equipment and more in the people who use it",
+                        "explanation": "In paragraph G the writer argues the opposite: schools should spend less on equipment and more on the people who use it, because 'the adult matters more than the activity'."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Helena Varga"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Tomas Reinholt"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Lucien Barre"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Amara Osei"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Ingrid Solberg"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Research finding no benefit from play may have examined classrooms where adults did little teaching.",
+                        "options": [],
+                        "evidence": "studies that found no lasting benefit may simply have been studying classrooms where little teaching took place",
+                        "explanation": "In paragraph E Osei argues that studies showing no lasting benefit may have looked at classrooms where 'little teaching took place', such as those with unsupervised free time."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Most children are unlikely to work out how written symbols correspond to speech sounds without being taught.",
+                        "options": [],
+                        "evidence": "the link between letters and sounds must be taught directly and systematically, since few children discover it by themselves",
+                        "explanation": "In paragraph C Reinholt insists that the link between letters and sounds must be taught directly because 'few children discover it by themselves'."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Children engage with number concepts when they have a personal reason, such as wanting to succeed in a game.",
+                        "options": [],
+                        "evidence": "a child who wants to win the shop game has a reason to care whether seven is more than five",
+                        "explanation": "In paragraph B Varga explains her results through motivation: wanting to win the shop game gives a child a reason to care about numbers."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Inexperienced teachers often turn to written exercises because they require little effort to prepare and assess.",
+                        "options": [],
+                        "evidence": "they fall back on worksheets because worksheets are easy to plan and easy to check",
+                        "explanation": "In paragraph F Solberg reports that new teachers use worksheets because they are 'easy to plan and easy to check', which the statement restates as easy to prepare and assess."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Abilities such as waiting and planning are a better guide to children's later progress than early literacy results.",
+                        "options": [],
+                        "evidence": "He believes these capacities, rather than early reading scores, are what predict success later in school.",
+                        "explanation": "In paragraph D Barre defines self-regulation as the ability to wait, plan and follow rules, and believes these capacities, not early reading scores, predict later success."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Children from play-centred classes lose their early lead within about two years.",
+                        "options": [],
+                        "evidence": "were ahead at six but indistinguishable from their peers by the age of eight",
+                        "explanation": "In paragraph C Reinholt's review found that children from play-heavy classrooms were ahead at six but no different from others by eight, which is about two years later."
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the writer conclude about the evidence on play in the first paragraph?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It shows that play should replace traditional lessons."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It suggests that play is effective when adults give it a clear purpose."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It is too limited to support any conclusion."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It mainly supports those who favour teaching basic skills."
+                            }
+                        ],
+                        "evidence": "play can be a powerful way of teaching, but only when adults shape it with clear purposes in mind",
+                        "explanation": "In paragraph A the writer says the evidence shows play can teach well 'only when adults shape it with clear purposes in mind'. The writer does not say play should replace lessons or that either camp wins."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What reservation does the writer express about Varga's study?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It measured only children's mathematical skills."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The teachers' enthusiasm may have contributed to the results."
+                            },
+                            {
+                                "id": "C",
+                                "text": "The children were too young to be tested reliably."
+                            },
+                            {
+                                "id": "D",
+                                "text": "The guided-play activities were not clearly described."
+                            }
+                        ],
+                        "evidence": "her teachers volunteered for the project, which may say as much about their enthusiasm as about the method",
+                        "explanation": "In paragraph B the writer notes that the teachers volunteered, so the good results may reflect their enthusiasm rather than the method. The writer does not criticise what was measured or the children's age."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Why does the writer mention tests designed for eight-year-olds?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "To show that reading is best taught directly"
+                            },
+                            {
+                                "id": "B",
+                                "text": "To suggest that such tests may miss some benefits of play"
+                            },
+                            {
+                                "id": "C",
+                                "text": "To argue that such tests are unfair to children from play-based classes"
+                            },
+                            {
+                                "id": "D",
+                                "text": "To claim that such tests are more accurate than those for younger children"
+                            }
+                        ],
+                        "evidence": "A lead that vanishes from test scores may reappear elsewhere, and tests designed for eight-year-olds measure a fairly narrow set of skills.",
+                        "explanation": "In paragraph C the writer says these tests measure a narrow set of skills, so an advantage from play could exist in areas the tests do not measure. The writer does not call the tests unfair."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What did Osei find during her classroom observations?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Most play-based classrooms had no adult present during play."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The term 'play-based' was used for very different kinds of practice."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Teachers who asked questions had less paperwork to do."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Play-based classrooms achieved better results than Reinholt had reported."
+                            }
+                        ],
+                        "evidence": "the label meant very different things",
+                        "explanation": "In paragraph E Osei found that classrooms calling themselves play-based did very different things, from active teaching to unsupervised free time. She did not say most classrooms had no adult, only that in some the teachers did paperwork."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does Solberg recommend for trainee teachers?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They should read more research about play-based learning."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They should watch guided play being done well in real classrooms."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They should stop using worksheets altogether."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They should spend less time preparing for national tests."
+                            }
+                        ],
+                        "evidence": "She proposes that trainee teachers spend time in classrooms where the approach is practised well",
+                        "explanation": "In paragraph F Solberg proposes that trainees spend time in classrooms where guided play is practised well 'rather than simply reading about it', so option A is the opposite of her idea."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "In many countries, the first years of school have become a battleground. On one side are those who believe that young children learn best through play: building, pretending, sorting and exploring. On the other are those who argue that the early years are precious precisely because they are the time to master the basics of reading and arithmetic, and that every hour spent in the sand tray is an hour taken from the alphabet. The argument is usually framed as a contest between two camps, and in my view that framing has done more damage than anything either side has actually said. The evidence, read carefully, points to a less dramatic but more useful conclusion: play can be a powerful way of teaching, but only when adults shape it with clear purposes in mind.",
+                "label": "A"
+            },
+            {
+                "text": "The case for play has been made most forcefully by Dr Helena Varga, a developmental psychologist whose team followed some 300 five-year-olds through their first school year. Half of the classes used what Varga calls 'guided play': activities that children experience as games but that teachers have designed around a specific goal, such as a pretend shop in which prices must be compared, or a treasure hunt that requires reading simple clues. The other classes received conventional whole-class lessons covering the same content. By the end of the year, children in the guided-play classes knew more mathematical vocabulary and could explain their reasoning more fully. Varga argues that the explanation lies in motivation: a child who wants to win the shop game has a reason to care whether seven is more than five. I find her results persuasive, though it is worth noting that her classes were small and her teachers volunteered for the project, which may say as much about their enthusiasm as about the method.",
+                "label": "B"
+            },
+            {
+                "text": "Not everyone is convinced. Professor Tomas Reinholt, who studies the economics of education, points out that early advantages of many kinds tend to disappear. In his own review of comparable programmes, children who had experienced play-heavy classrooms were ahead at six but indistinguishable from their peers by the age of eight. For Reinholt, this 'fade-out' suggests that schools are investing time in a method that produces only a temporary lead. He is especially critical of attempts to teach reading through play alone, insisting that the link between letters and sounds must be taught directly and systematically, since few children discover it by themselves. On this last point I think he is right, and many supporters of play now accept it. But his wider conclusion does not follow. A lead that vanishes from test scores may reappear elsewhere, and tests designed for eight-year-olds measure a fairly narrow set of skills.",
+                "label": "C"
+            },
+            {
+                "text": "That is the argument of Dr Lucien Barre, who has spent a decade measuring what he calls 'self-regulation': a child's ability to wait, to follow rules, to plan and to recover from frustration. In Barre's studies, children who regularly took part in structured pretend play, in which they had to stay in role and follow agreed rules, showed stronger self-control a year later than those who did not. He believes these capacities, rather than early reading scores, are what predict success later in school. Barre is careful, however, not to claim that play improves academic results directly; his position is that researchers have been looking in the wrong place for its benefits.",
+                "label": "D"
+            },
+            {
+                "text": "Another researcher complicates the picture further. Dr Amara Osei spent two years observing classrooms that described themselves as play-based, and she found that the label meant very different things. In some, teachers moved among the children, asking questions and introducing new words. In others, 'play time' was essentially unsupervised free time, during which teachers caught up on paperwork. Osei argues that much of the disagreement between Varga and Reinholt disappears once this is recognised: studies that found no lasting benefit may simply have been studying classrooms where little teaching took place. She is sceptical of any research, on either side, that does not record what adults were actually doing.",
+                "label": "E"
+            },
+            {
+                "text": "Why, then, has play lost ground in so many early classrooms? Part of the answer is pressure from national testing, which rewards what can be quickly counted. Part is that guided play is harder to do well than either free play or traditional lessons. Ingrid Solberg, who trains early-years teachers, reports that many new teachers have never seen skilled guided play in action, and that they fall back on worksheets because worksheets are easy to plan and easy to check. She proposes that trainee teachers spend time in classrooms where the approach is practised well, rather than simply reading about it.",
+                "label": "F"
+            },
+            {
+                "text": "It is tempting to declare a winner, but the research does not allow it. The strongest version of the anti-play argument, that play is a pleasant distraction from learning, is not supported by the evidence. Nor is the strongest version of the pro-play argument, that children left to themselves will discover everything they need. What the studies suggest is that the adult matters more than the activity. A well-designed game led by an attentive teacher can teach mathematical language and self-control at the same time; a pile of blocks in a corner, ignored by everyone, teaches very little. Schools that want the benefits of play should therefore invest less in equipment and more in the people who use it.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "in my view that framing has done more damage than anything either side has actually said",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "On this last point I think he is right, and many supporters of play now accept it.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "But his wider conclusion does not follow. A lead that vanishes from test scores may reappear elsewhere",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Schools that want the benefits of play should therefore invest less in equipment and more in the people who use it.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "studies that found no lasting benefit may simply have been studying classrooms where little teaching took place",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the link between letters and sounds must be taught directly and systematically, since few children discover it by themselves",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a child who wants to win the shop game has a reason to care whether seven is more than five",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "they fall back on worksheets because worksheets are easy to plan and easy to check",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "He believes these capacities, rather than early reading scores, are what predict success later in school.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "children who had experienced play-heavy classrooms were ahead at six but indistinguishable from their peers by the age of eight",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "play can be a powerful way of teaching, but only when adults shape it with clear purposes in mind",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "her teachers volunteered for the project, which may say as much about their enthusiasm as about the method",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "A lead that vanishes from test scores may reappear elsewhere, and tests designed for eight-year-olds measure a fairly narrow set of skills.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "she found that the label meant very different things",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "She proposes that trainee teachers spend time in classrooms where the approach is practised well, rather than simply reading about it.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the argument is usually framed as a contest between two camps, and in my view that framing has done more damage than anything either side has actually said",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the link between letters and sounds must be taught directly and systematically ... On this last point I think he is right",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "But his wider conclusion does not follow. A lead that vanishes from test scores may reappear elsewhere",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Schools that want the benefits of play should therefore invest less in equipment and more in the people who use it",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "studies that found no lasting benefit may simply have been studying classrooms where little teaching took place",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "few children discover it by themselves",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a child who wants to win the shop game has a reason to care whether seven is more than five",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "they fall back on worksheets because worksheets are easy to plan and easy to check",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "He believes these capacities, rather than early reading scores, are what predict success later in school",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "children who had experienced play-heavy classrooms were ahead at six but indistinguishable from their peers by the age of eight",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The evidence, read carefully, points to a less dramatic but more useful conclusion: play can be a powerful way of teaching, but only when adults shape it with clear purposes in mind",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "it is worth noting that her classes were small and her teachers volunteered for the project, which may say as much about their enthusiasm as about the method",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "tests designed for eight-year-olds measure a fairly narrow set of skills",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "she found that the label meant very different things",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "She proposes that trainee teachers spend time in classrooms where the approach is practised well, rather than simply reading about it",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "in my view that framing has done more damage than anything either side has actually said",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the link between letters and sounds must be taught directly and systematically... On this last point I think he is right",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "But his wider conclusion does not follow",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "studies that found no lasting benefit may simply have been studying classrooms where little teaching took place",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the link between letters and sounds must be taught directly and systematically, since few children discover it by themselves",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "a child who wants to win the shop game has a reason to care whether seven is more than five",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "they fall back on worksheets because worksheets are easy to plan and easy to check",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "these capacities, rather than early reading scores, are what predict success later in school",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "play can be a powerful way of teaching, but only when adults shape it with clear purposes in mind",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "her teachers volunteered for the project, which may say as much about their enthusiasm as about the method",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "tests designed for eight-year-olds measure a fairly narrow set of skills",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "she found that the label meant very different things",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 17,
+        "agreedFirst": 17,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Playing to Learn?\n\nA. In many countries, the first years of school have become a battleground. On one side are those who believe that young children learn best through play: building, pretending, sorting and exploring. On the other are those who argue that the early years are precious precisely because they are the time to master the basics of reading and arithmetic, and that every hour spent in the sand tray is an hour taken from the alphabet. The argument is usually framed as a contest between two camps, and in my view that framing has done more damage than anything either side has actually said. The evidence, read carefully, points to a less dramatic but more useful conclusion: play can be a powerful way of teaching, but only when adults shape it with clear purposes in mind.\n\nB. The case for play has been made most forcefully by Dr Helena Varga, a developmental psychologist whose team followed some 300 five-year-olds through their first school year. Half of the classes used what Varga calls 'guided play': activities that children experience as games but that teachers have designed around a specific goal, such as a pretend shop in which prices must be compared, or a treasure hunt that requires reading simple clues. The other classes received conventional whole-class lessons covering the same content. By the end of the year, children in the guided-play classes knew more mathematical vocabulary and could explain their reasoning more fully. Varga argues that the explanation lies in motivation: a child who wants to win the shop game has a reason to care whether seven is more than five. I find her results persuasive, though it is worth noting that her classes were small and her teachers volunteered for the project, which may say as much about their enthusiasm as about the method.\n\nC. Not everyone is convinced. Professor Tomas Reinholt, who studies the economics of education, points out that early advantages of many kinds tend to disappear. In his own review of comparable programmes, children who had experienced play-heavy classrooms were ahead at six but indistinguishable from their peers by the age of eight. For Reinholt, this 'fade-out' suggests that schools are investing time in a method that produces only a temporary lead. He is especially critical of attempts to teach reading through play alone, insisting that the link between letters and sounds must be taught directly and systematically, since few children discover it by themselves. On this last point I think he is right, and many supporters of play now accept it. But his wider conclusion does not follow. A lead that vanishes from test scores may reappear elsewhere, and tests designed for eight-year-olds measure a fairly narrow set of skills.\n\nD. That is the argument of Dr Lucien Barre, who has spent a decade measuring what he calls 'self-regulation': a child's ability to wait, to follow rules, to plan and to recover from frustration. In Barre's studies, children who regularly took part in structured pretend play, in which they had to stay in role and follow agreed rules, showed stronger self-control a year later than those who did not. He believes these capacities, rather than early reading scores, are what predict success later in school. Barre is careful, however, not to claim that play improves academic results directly; his position is that researchers have been looking in the wrong place for its benefits.\n\nE. Another researcher complicates the picture further. Dr Amara Osei spent two years observing classrooms that described themselves as play-based, and she found that the label meant very different things. In some, teachers moved among the children, asking questions and introducing new words. In others, 'play time' was essentially unsupervised free time, during which teachers caught up on paperwork. Osei argues that much of the disagreement between Varga and Reinholt disappears once this is recognised: studies that found no lasting benefit may simply have been studying classrooms where little teaching took place. She is sceptical of any research, on either side, that does not record what adults were actually doing.\n\nF. Why, then, has play lost ground in so many early classrooms? Part of the answer is pressure from national testing, which rewards what can be quickly counted. Part is that guided play is harder to do well than either free play or traditional lessons. Ingrid Solberg, who trains early-years teachers, reports that many new teachers have never seen skilled guided play in action, and that they fall back on worksheets because worksheets are easy to plan and easy to check. She proposes that trainee teachers spend time in classrooms where the approach is practised well, rather than simply reading about it.\n\nG. It is tempting to declare a winner, but the research does not allow it. The strongest version of the anti-play argument, that play is a pleasant distraction from learning, is not supported by the evidence. Nor is the strongest version of the pro-play argument, that children left to themselves will discover everything they need. What the studies suggest is that the adult matters more than the activity. A well-designed game led by an attentive teacher can teach mathematical language and self-control at the same time; a pile of blocks in a corner, ignored by everyone, teaches very little. Schools that want the benefits of play should therefore invest less in equipment and more in the people who use it.",
+        "title": "Playing to Learn?",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Treating the debate about play in early schooling as a contest between two sides has been harmful.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "in my view that framing has done more damage than anything either side has actually said",
+                        "explanation": {
+                            "en": "In paragraph A the writer says that presenting the issue as a contest between two camps 'has done more damage' than either side's arguments. This matches the statement.",
+                            "ru": "В абзаце A автор говорит, что представление проблемы как спора двух лагерей \"has done more damage\", чем аргументы любой из сторон. Это совпадает с утверждением.",
+                            "uk": "В абзаці A автор каже, що подання проблеми як суперечки двох таборів \"has done more damage\", ніж аргументи будь-якої зі сторін. Це збігається з твердженням."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Varga's research would have been more convincing if it had included children from a wider range of ages.",
+                        "numbers": [
+                            2
+                        ],
+                        "explanation": {
+                            "en": "In paragraph B the writer's only reservations about Varga's study are the small classes and the volunteer teachers. The writer says nothing about the age range of the children, so we cannot know the writer's view.",
+                            "ru": "В абзаце B у автора есть только две оговорки к исследованию Варги: маленькие классы и учителя-добровольцы. О возрасте детей автор ничего не говорит, поэтому мы не можем знать его мнение.",
+                            "uk": "В абзаці B автор має лише два застереження щодо дослідження Варги: малі класи та вчителі-добровольці. Про вік дітей автор нічого не каже, тож ми не можемо знати його думку."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Children should be taught the connection between letters and sounds in an explicit way.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "On this last point I think he is right",
+                        "explanation": {
+                            "en": "In paragraph C Reinholt says the link between letters and sounds must be taught directly, and the writer agrees: 'On this last point I think he is right'.",
+                            "ru": "В абзаце C Райнхольт говорит, что связь между буквами и звуками нужно объяснять напрямую, и автор соглашается: \"On this last point I think he is right\".",
+                            "uk": "В абзаці C Райнгольт каже, що зв'язок між літерами та звуками треба пояснювати безпосередньо, і автор погоджується: \"On this last point I think he is right\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The evidence that early gains disappear shows that play-based teaching is not worth the time it takes.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "But his wider conclusion does not follow.",
+                        "explanation": {
+                            "en": "In paragraph C Reinholt concludes from fade-out that play gives only a temporary lead, but the writer rejects this, saying the conclusion 'does not follow' because benefits may appear elsewhere.",
+                            "ru": "В абзаце C Райнхольт делает из эффекта угасания вывод, что игра даёт лишь временное преимущество, но автор с этим не согласен: он говорит, что этот вывод \"does not follow\", потому что польза может проявиться в другом.",
+                            "uk": "В абзаці C Райнгольт робить з ефекту згасання висновок, що гра дає лише тимчасову перевагу, але автор із цим не згоден: він каже, що цей висновок \"does not follow\", бо користь може виявитися в іншому."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "National testing should be removed from the first years of school.",
+                        "numbers": [
+                            5
+                        ],
+                        "explanation": {
+                            "en": "Paragraph F says pressure from national testing is part of the reason play has lost ground. However, the writer never says whether such tests should be removed.",
+                            "ru": "В абзаце F сказано, что давление национальных тестов — одна из причин, по которым игра сдала позиции. Однако автор нигде не говорит, следует ли отменить такие тесты.",
+                            "uk": "В абзаці F сказано, що тиск національних тестів — одна з причин, чому гра втратила позиції. Проте автор ніде не каже, чи слід скасувати такі тести."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Helena Varga"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Tomas Reinholt"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Lucien Barre"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Amara Osei"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Ingrid Solberg"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Research finding no benefit from play may have examined classrooms where adults did little teaching.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "studies that found no lasting benefit may simply have been studying classrooms where little teaching took place",
+                        "explanation": {
+                            "en": "In paragraph E Osei argues that studies showing no lasting benefit may have looked at classrooms where 'little teaching took place', such as those with unsupervised free time.",
+                            "ru": "В абзаце E Осей утверждает, что исследования, не выявившие долгосрочной пользы, возможно, изучали классы, где \"little teaching took place\", например те, где дети проводили свободное время без присмотра.",
+                            "uk": "В абзаці E Осей стверджує, що дослідження, які не виявили тривалої користі, можливо, вивчали класи, де \"little teaching took place\", наприклад ті, де діти проводили вільний час без нагляду."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Most children are unlikely to work out how written symbols correspond to speech sounds without being taught.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "the link between letters and sounds must be taught directly and systematically, since few children discover it by themselves",
+                        "explanation": {
+                            "en": "In paragraph C Reinholt insists that the link between letters and sounds must be taught directly because 'few children discover it by themselves'.",
+                            "ru": "В абзаце C Райнхольт настаивает, что связь между буквами и звуками нужно объяснять напрямую, потому что \"few children discover it by themselves\".",
+                            "uk": "В абзаці C Райнгольт наполягає, що зв'язок між літерами та звуками треба пояснювати безпосередньо, бо \"few children discover it by themselves\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Children engage with number concepts when they have a personal reason, such as wanting to succeed in a game.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "a child who wants to win the shop game has a reason to care whether seven is more than five",
+                        "explanation": {
+                            "en": "In paragraph B Varga explains her results through motivation: wanting to win the shop game gives a child a reason to care about numbers.",
+                            "ru": "В абзаце B Варга объясняет свои результаты мотивацией: желание выиграть в игре в магазин даёт ребёнку причину интересоваться числами.",
+                            "uk": "В абзаці B Варга пояснює свої результати мотивацією: бажання виграти в грі в магазин дає дитині причину цікавитися числами."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Inexperienced teachers often turn to written exercises because they require little effort to prepare and assess.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "they fall back on worksheets because worksheets are easy to plan and easy to check",
+                        "explanation": {
+                            "en": "In paragraph F Solberg reports that new teachers use worksheets because they are 'easy to plan and easy to check', which the statement restates as easy to prepare and assess.",
+                            "ru": "В абзаце F Сольберг сообщает, что молодые учителя используют рабочие листы, потому что их \"easy to plan and easy to check\"; в утверждении это перефразировано как «легко подготовить и оценить».",
+                            "uk": "В абзаці F Сольберг повідомляє, що молоді вчителі використовують робочі аркуші, бо їх \"easy to plan and easy to check\"; у твердженні це перефразовано як «легко підготувати й оцінити»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Abilities such as waiting and planning are a better guide to children's later progress than early literacy results.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "He believes these capacities, rather than early reading scores, are what predict success later in school.",
+                        "explanation": {
+                            "en": "In paragraph D Barre defines self-regulation as the ability to wait, plan and follow rules, and believes these capacities, not early reading scores, predict later success.",
+                            "ru": "В абзаце D Барре определяет саморегуляцию как умение ждать, планировать и следовать правилам и считает, что именно эти способности, а не ранние результаты по чтению, предсказывают будущий успех.",
+                            "uk": "В абзаці D Барре визначає саморегуляцію як уміння чекати, планувати й дотримуватися правил і вважає, що саме ці здібності, а не ранні результати з читання, передбачають майбутній успіх."
+                        }
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It is too limited to support any conclusion."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It suggests that play is effective when adults give it a clear purpose."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It shows that play should replace traditional lessons."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It mainly supports those who favour teaching basic skills."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the writer conclude about the evidence on play in the first paragraph?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "play can be a powerful way of teaching, but only when adults shape it with clear purposes in mind",
+                        "explanation": {
+                            "en": "In paragraph A the writer says the evidence shows play can teach well 'only when adults shape it with clear purposes in mind'. The writer does not say play should replace lessons or that either camp wins.",
+                            "ru": "В абзаце A автор говорит, что, согласно данным, игра может хорошо обучать \"only when adults shape it with clear purposes in mind\". Автор не утверждает, что игра должна заменить уроки или что какой-то из лагерей прав.",
+                            "uk": "В абзаці A автор каже, що, згідно з даними, гра може добре навчати \"only when adults shape it with clear purposes in mind\". Автор не стверджує, що гра має замінити уроки або що якийсь із таборів має рацію."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The guided-play activities were not clearly described."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It measured only children's mathematical skills."
+                    },
+                    {
+                        "id": "C",
+                        "text": "The teachers' enthusiasm may have contributed to the results."
+                    },
+                    {
+                        "id": "D",
+                        "text": "The children were too young to be tested reliably."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What reservation does the writer express about Varga's study?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "her teachers volunteered for the project, which may say as much about their enthusiasm as about the method",
+                        "explanation": {
+                            "en": "In paragraph B the writer notes that the teachers volunteered, so the good results may reflect their enthusiasm rather than the method. The writer does not criticise what was measured or the children's age.",
+                            "ru": "В абзаце B автор отмечает, что учителя были добровольцами, поэтому хорошие результаты могут объясняться их энтузиазмом, а не методом. Автор не критикует ни то, что измерялось, ни возраст детей.",
+                            "uk": "В абзаці B автор зазначає, що вчителі були добровольцями, тож добрі результати можуть пояснюватися їхнім ентузіазмом, а не методом. Автор не критикує ні того, що вимірювалося, ні віку дітей."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To claim that such tests are more accurate than those for younger children"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To show that reading is best taught directly"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To argue that such tests are unfair to children from play-based classes"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To suggest that such tests may miss some benefits of play"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Why does the writer mention tests designed for eight-year-olds?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "A lead that vanishes from test scores may reappear elsewhere, and tests designed for eight-year-olds measure a fairly narrow set of skills.",
+                        "explanation": {
+                            "en": "In paragraph C the writer says these tests measure a narrow set of skills, so an advantage from play could exist in areas the tests do not measure. The writer does not call the tests unfair.",
+                            "ru": "В абзаце C автор говорит, что эти тесты измеряют узкий набор навыков, поэтому преимущество от игры может проявляться в областях, которые тесты не измеряют. Автор не называет тесты несправедливыми.",
+                            "uk": "В абзаці C автор каже, що ці тести вимірюють вузький набір навичок, тож перевага від гри може виявлятися в сферах, яких тести не вимірюють. Автор не називає тести несправедливими."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The term 'play-based' was used for very different kinds of practice."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Most play-based classrooms had no adult present during play."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Play-based classrooms achieved better results than Reinholt had reported."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Teachers who asked questions had less paperwork to do."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What did Osei find during her classroom observations?",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "the label meant very different things",
+                        "explanation": {
+                            "en": "In paragraph E Osei found that classrooms calling themselves play-based did very different things, from active teaching to unsupervised free time. She did not say most classrooms had no adult, only that in some the teachers did paperwork.",
+                            "ru": "В абзаце E Осей обнаружила, что в классах, называвших себя игровыми, происходило совершенно разное — от активного обучения до свободного времени без присмотра. Она не говорила, что в большинстве классов не было взрослого, а лишь что в некоторых учителя занимались бумажной работой.",
+                            "uk": "В абзаці E Осей виявила, що в класах, які називали себе ігровими, відбувалися зовсім різні речі — від активного навчання до вільного часу без нагляду. Вона не казала, що в більшості класів не було дорослого, а лише що в деяких учителі займалися паперовою роботою."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b2q1",
+        "7": "b2q2",
+        "8": "b2q3",
+        "9": "b2q4",
+        "10": "b2q5",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

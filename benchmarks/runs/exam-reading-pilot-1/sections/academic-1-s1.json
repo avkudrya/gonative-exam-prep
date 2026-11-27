@@ -1,0 +1,957 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-1|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.302552,
+            "provider": "anthropic",
+            "outputTokens": 14522
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": true,
+            "costUsd": 0.012634,
+            "provider": "anthropic",
+            "outputTokens": 593
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": true,
+            "costUsd": 0.016193,
+            "provider": "openai",
+            "outputTokens": 756
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": true,
+            "costUsd": 0.014836,
+            "provider": "xai",
+            "outputTokens": 1397
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.090928,
+            "provider": "anthropic",
+            "outputTokens": 4250
+        }
+    ],
+    "draft": {
+        "title": "Saving Seeds for Tomorrow's Harvests",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "In the past, farmers generally saved part of their own harvest to use as seed rather than purchasing it.",
+                        "options": [],
+                        "evidence": "For most of the history of agriculture, farmers did not buy their seed; they kept it.",
+                        "explanation": "Paragraph A says farmers did not buy seed but kept it, setting aside the best part of each harvest for the next season. This is the same idea as the statement."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The wild relatives of crops mostly grow in remote places that farming has not reached.",
+                        "options": [],
+                        "evidence": "they tend to grow at field edges, on roadsides and in grasslands that are easily ploughed or built on",
+                        "explanation": "Paragraph B says wild relatives usually grow at the edges of fields and on roadsides, which are close to farming, not remote. This is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Seeds must be dried before freezing because ice can form inside them and damage their cells.",
+                        "options": [],
+                        "evidence": "if too much remains, ice crystals form when the seeds are frozen and burst their cells",
+                        "explanation": "Paragraph C explains that seeds are dried because too much water turns into ice crystals during freezing and bursts the cells. The statement says the same thing."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The seeds of wheat stay alive in cold storage for longer than those of most other grain crops.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C says the seeds of many grain crops can live for decades and some for centuries, but it never compares wheat with other crops. Wheat is only mentioned in Paragraph A, about farmers saving seed."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Seeds are tested for germination only when a sample first enters the seed bank.",
+                        "options": [],
+                        "evidence": "staff remove a few seeds from each sample at regular intervals and attempt to germinate them",
+                        "explanation": "Paragraph D says germination tests happen at regular intervals during storage, not just once on arrival. So the statement contradicts the passage."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Marsh's research showed that regeneration problems were less common in smaller collections.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D says Marsh studied records from one large national collection and found problems with pollen from nearby plants. It says nothing about smaller collections or any comparison between collections of different sizes."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Seeds in the Svalbard vault would stay cold even if the power supply stopped.",
+                        "options": [],
+                        "evidence": "the surrounding permafrost would keep the samples cold even if the electricity failed",
+                        "explanation": "Paragraph E says the frozen ground around the vault would keep the samples cold if the electricity failed. 'Power supply stopped' restates 'electricity failed'."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Most bananas grown as crops can be stored as seed in a conventional seed bank.",
+                        "options": [],
+                        "evidence": "most cultivated bananas produce no viable seed at all",
+                        "explanation": "Paragraph F says most cultivated bananas have no viable seed, so they must be kept as living plants, plantlets or frozen tissue instead. They cannot be stored as seed in an ordinary seed bank."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "insects"
+                        ],
+                        "prompt": "Arrival of samples: seeds are cleaned and examined for damage or ______",
+                        "options": [],
+                        "evidence": "inspected for damage or insects",
+                        "explanation": "Paragraph C says that after cleaning, the seeds are inspected for damage or insects. 'Examined' in the notes restates 'inspected'."
+                    },
+                    {
+                        "answer": [
+                            "jars"
+                        ],
+                        "prompt": "Packaging: airtight foil packets or ______ made of glass",
+                        "options": [],
+                        "evidence": "sealed in airtight foil packets or glass jars",
+                        "explanation": "Paragraph C says the dried seeds are sealed in foil packets or glass jars. The notes say 'made of glass' instead of 'glass'."
+                    },
+                    {
+                        "answer": [
+                            "eighteen",
+                            "18"
+                        ],
+                        "prompt": "Temperature of storage rooms: approximately minus ______ degrees Celsius",
+                        "options": [],
+                        "evidence": "rooms kept at around minus eighteen degrees Celsius",
+                        "explanation": "Paragraph C gives the storage temperature as around minus eighteen degrees Celsius. 'Approximately' restates 'around'."
+                    },
+                    {
+                        "answer": [
+                            "germinate"
+                        ],
+                        "prompt": "Checks during storage: staff regularly try to ______ a small number of seeds from each sample",
+                        "options": [],
+                        "evidence": "attempt to germinate them",
+                        "explanation": "Paragraph D says staff take a few seeds from each sample at regular intervals and attempt to germinate them. 'Try to' restates 'attempt to'."
+                    },
+                    {
+                        "answer": [
+                            "pollen"
+                        ],
+                        "prompt": "Risk during regeneration: wind-pollinated crops such as maize may receive ______ from nearby plants",
+                        "options": [],
+                        "evidence": "frequently received pollen from neighbouring plants",
+                        "explanation": "Paragraph D reports Marsh's finding that maize plots often received pollen from neighbouring plants. 'Nearby' restates 'neighbouring'."
+                    },
+                    {
+                        "answer": [
+                            "dried"
+                        ],
+                        "prompt": "Limit: recalcitrant seeds, e.g. cocoa and coconut, cannot survive being ______",
+                        "options": [],
+                        "evidence": "which die if they are dried",
+                        "explanation": "Paragraph F says recalcitrant seeds die if they are dried, so they cannot be frozen in the usual way. 'Cannot survive being dried' means the same as 'die if they are dried'."
+                    },
+                    {
+                        "answer": [
+                            "nitrogen"
+                        ],
+                        "prompt": "Alternative method: cryopreservation, in which small pieces of tissue are kept in liquid ______",
+                        "options": [],
+                        "evidence": "small pieces of tissue are stored in liquid nitrogen",
+                        "explanation": "Paragraph F describes cryopreservation as storing small pieces of tissue in liquid nitrogen. This method is used for plants that cannot be stored as seed."
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For most of the history of agriculture, farmers did not buy their seed; they kept it. After each harvest, the best heads of wheat or the healthiest beans were set aside for the following season, and over thousands of years this quiet selection produced an enormous range of local types, each suited to a particular soil, climate or taste. During the twentieth century, much of that variety began to disappear. As high-yielding modern varieties spread, farmers in many regions abandoned the older types their families had grown for generations, and once a variety is no longer planted, it can vanish within a few seasons. Seed banks were established largely in response to this loss.",
+                "label": "A"
+            },
+            {
+                "text": "The value of old varieties is not merely historical. Plant breeders depend on genetic variation, and the traits they need most urgently, such as tolerance of drought, heat or salty soil, or resistance to a newly arrived disease, are often found not in modern crops but in traditional varieties and in the wild species from which crops were domesticated. These wild relatives have survived for millennia without human care, and many carry genes that domestication left behind. Yet they are themselves under threat, since they tend to grow at field edges, on roadsides and in grasslands that are easily ploughed or built on. For this reason, many conservationists regard collecting their seed as no less urgent than preserving farmers' varieties.",
+                "label": "B"
+            },
+            {
+                "text": "A seed bank is, at its simplest, a cold store combined with careful record-keeping. When a sample arrives, usually gathered by a collecting team that has noted exactly where and when the plants were found, the seeds are first cleaned of chaff and soil and inspected for damage or insects. They are then dried slowly until only a small fraction of their weight is water. Moisture is the main enemy of a stored seed: if too much remains, ice crystals form when the seeds are frozen and burst their cells. Finally, the seeds are sealed in airtight foil packets or glass jars and placed in rooms kept at around minus eighteen degrees Celsius. Under these conditions, the seeds of many grain crops can remain alive for decades, and some may last for centuries.",
+                "label": "C"
+            },
+            {
+                "text": "Storage, however, is not the end of the process. Even in a freezer, seeds slowly age, so staff remove a few seeds from each sample at regular intervals and attempt to germinate them. If the proportion that sprouts falls below an agreed level, the sample must be regenerated: it is planted out, grown to maturity and harvested to produce fresh seed. This step is costly and surprisingly risky. A study led by agronomist Lena Marsh, which examined decades of records from a large national collection, found that regeneration plots of crops such as maize, whose flowers are pollinated by wind, frequently received pollen from neighbouring plants, so the new seed no longer matched the original sample. Marsh concluded that separating plots by distance, although expensive, was essential.",
+                "label": "D"
+            },
+            {
+                "text": "Because any single building can be damaged by war, flood or simple mismanagement, collections are commonly duplicated elsewhere. The best-known backup facility is the Svalbard Global Seed Vault, cut into a mountainside on a Norwegian island far inside the Arctic Circle, where the surrounding permafrost would keep the samples cold even if the electricity failed. Deposits there remain the property of the institutions that sent them, and the vault's staff do not open the boxes. The arrangement proved its worth in 2015, when a research centre whose gene bank near Aleppo had been disrupted by the conflict in Syria withdrew copies of its own samples in order to rebuild its working collection elsewhere.",
+                "label": "E"
+            },
+            {
+                "text": "Not every plant, however, can be protected in this way. Many species, including cocoa, coconut and numerous tropical trees, produce what botanists call recalcitrant seeds, which die if they are dried and therefore cannot be frozen by the usual method. Other crops, such as bananas and potatoes, are normally grown not from seed but from shoots or tubers, and most cultivated bananas produce no viable seed at all. These must be maintained as living plants in field collections, as tiny plantlets in test tubes, or by cryopreservation, in which small pieces of tissue are stored in liquid nitrogen at far lower temperatures than an ordinary seed bank uses.",
+                "label": "F"
+            },
+            {
+                "text": "A deeper criticism concerns what a seed bank cannot preserve. A sample stored in 1980 reflects the conditions of 1980; while it waits in the freezer, the pests, diseases and climate outside continue to change. The ecologist Tomás Ferreira argues that populations growing in farmers' fields and in the wild keep adapting, and that conservation on farms and in protected habitats should be treated as a partner to seed banks rather than an old-fashioned alternative. He adds that a stored seed arrives without the knowledge of how it was grown, cooked or valued, which survives only in the communities that cultivated it. Seed banks, in this view, are an indispensable insurance policy, but not a replacement for living diversity.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "For most of the history of agriculture, farmers did not buy their seed; they kept it.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "they tend to grow at field edges, on roadsides and in grasslands that are easily ploughed or built on",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "if too much remains, ice crystals form when the seeds are frozen and burst their cells",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "staff remove a few seeds from each sample at regular intervals and attempt to germinate them",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "where the surrounding permafrost would keep the samples cold even if the electricity failed",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "most cultivated bananas produce no viable seed at all",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "inspected for damage or insects",
+                "answer": [
+                    "insects"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "sealed in airtight foil packets or glass jars",
+                "answer": [
+                    "jars"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "rooms kept at around minus eighteen degrees Celsius",
+                "answer": [
+                    "eighteen"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "attempt to germinate them",
+                "answer": [
+                    "germinate"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "frequently received pollen from neighbouring plants",
+                "answer": [
+                    "pollen"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "which die if they are dried and therefore cannot be frozen",
+                "answer": [
+                    "dried"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "stored in liquid nitrogen",
+                "answer": [
+                    "nitrogen"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "For most of the history of agriculture, farmers did not buy their seed; they kept it.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "they tend to grow at field edges, on roadsides and in grasslands that are easily ploughed or built on",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Moisture is the main enemy of a stored seed: if too much remains, ice crystals form when the seeds are frozen and burst their cells.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "staff remove a few seeds from each sample at regular intervals and attempt to germinate them",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "the surrounding permafrost would keep the samples cold even if the electricity failed",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "most cultivated bananas produce no viable seed at all",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "inspected for damage or insects",
+                "answer": [
+                    "insects"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "airtight foil packets or glass jars",
+                "answer": [
+                    "jars"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "rooms kept at around minus eighteen degrees Celsius",
+                "answer": [
+                    "eighteen"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "attempt to germinate them",
+                "answer": [
+                    "germinate"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "received pollen from neighbouring plants",
+                "answer": [
+                    "pollen"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "recalcitrant seeds, which die if they are dried",
+                "answer": [
+                    "dried"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "stored in liquid nitrogen",
+                "answer": [
+                    "nitrogen"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "farmers did not buy their seed; they kept it. After each harvest, the best heads of wheat or the healthiest beans were set aside",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "they tend to grow at field edges, on roadsides and in grasslands that are easily ploughed or built on",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "if too much remains, ice crystals form when the seeds are frozen and burst their cells",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "staff remove a few seeds from each sample at regular intervals and attempt to germinate them",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "the surrounding permafrost would keep the samples cold even if the electricity failed",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "inspected for damage or insects",
+            "answer": [
+                "insects"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "sealed in airtight foil packets or glass jars",
+            "answer": [
+                "jars"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "rooms kept at around minus eighteen degrees Celsius",
+            "answer": [
+                "eighteen"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "attempt to germinate them",
+            "answer": [
+                "germinate"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "received pollen from neighbouring plants",
+            "answer": [
+                "pollen"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "recalcitrant seeds, which die if they are dried",
+            "answer": [
+                "dried"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Saving Seeds for Tomorrow's Harvests\n\nA. For most of the history of agriculture, farmers did not buy their seed; they kept it. After each harvest, the best heads of wheat or the healthiest beans were set aside for the following season, and over thousands of years this quiet selection produced an enormous range of local types, each suited to a particular soil, climate or taste. During the twentieth century, much of that variety began to disappear. As high-yielding modern varieties spread, farmers in many regions abandoned the older types their families had grown for generations, and once a variety is no longer planted, it can vanish within a few seasons. Seed banks were established largely in response to this loss.\n\nB. The value of old varieties is not merely historical. Plant breeders depend on genetic variation, and the traits they need most urgently, such as tolerance of drought, heat or salty soil, or resistance to a newly arrived disease, are often found not in modern crops but in traditional varieties and in the wild species from which crops were domesticated. These wild relatives have survived for millennia without human care, and many carry genes that domestication left behind. Yet they are themselves under threat, since they tend to grow at field edges, on roadsides and in grasslands that are easily ploughed or built on. For this reason, many conservationists regard collecting their seed as no less urgent than preserving farmers' varieties.\n\nC. A seed bank is, at its simplest, a cold store combined with careful record-keeping. When a sample arrives, usually gathered by a collecting team that has noted exactly where and when the plants were found, the seeds are first cleaned of chaff and soil and inspected for damage or insects. They are then dried slowly until only a small fraction of their weight is water. Moisture is the main enemy of a stored seed: if too much remains, ice crystals form when the seeds are frozen and burst their cells. Finally, the seeds are sealed in airtight foil packets or glass jars and placed in rooms kept at around minus eighteen degrees Celsius. Under these conditions, the seeds of many grain crops can remain alive for decades, and some may last for centuries.\n\nD. Storage, however, is not the end of the process. Even in a freezer, seeds slowly age, so staff remove a few seeds from each sample at regular intervals and attempt to germinate them. If the proportion that sprouts falls below an agreed level, the sample must be regenerated: it is planted out, grown to maturity and harvested to produce fresh seed. This step is costly and surprisingly risky. A study led by agronomist Lena Marsh, which examined decades of records from a large national collection, found that regeneration plots of crops such as maize, whose flowers are pollinated by wind, frequently received pollen from neighbouring plants, so the new seed no longer matched the original sample. Marsh concluded that separating plots by distance, although expensive, was essential.\n\nE. Because any single building can be damaged by war, flood or simple mismanagement, collections are commonly duplicated elsewhere. The best-known backup facility is the Svalbard Global Seed Vault, cut into a mountainside on a Norwegian island far inside the Arctic Circle, where the surrounding permafrost would keep the samples cold even if the electricity failed. Deposits there remain the property of the institutions that sent them, and the vault's staff do not open the boxes. The arrangement proved its worth in 2015, when a research centre whose gene bank near Aleppo had been disrupted by the conflict in Syria withdrew copies of its own samples in order to rebuild its working collection elsewhere.\n\nF. Not every plant, however, can be protected in this way. Many species, including cocoa, coconut and numerous tropical trees, produce what botanists call recalcitrant seeds, which die if they are dried and therefore cannot be frozen by the usual method. Other crops, such as bananas and potatoes, are normally grown not from seed but from shoots or tubers, and most cultivated bananas produce no viable seed at all. These must be maintained as living plants in field collections, as tiny plantlets in test tubes, or by cryopreservation, in which small pieces of tissue are stored in liquid nitrogen at far lower temperatures than an ordinary seed bank uses.\n\nG. A deeper criticism concerns what a seed bank cannot preserve. A sample stored in 1980 reflects the conditions of 1980; while it waits in the freezer, the pests, diseases and climate outside continue to change. The ecologist Tomás Ferreira argues that populations growing in farmers' fields and in the wild keep adapting, and that conservation on farms and in protected habitats should be treated as a partner to seed banks rather than an old-fashioned alternative. He adds that a stored seed arrives without the knowledge of how it was grown, cooked or valued, which survives only in the communities that cultivated it. Seed banks, in this view, are an indispensable insurance policy, but not a replacement for living diversity.",
+        "title": "Saving Seeds for Tomorrow's Harvests",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "In the past, farmers generally saved part of their own harvest to use as seed rather than purchasing it.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "For most of the history of agriculture, farmers did not buy their seed; they kept it.",
+                        "explanation": {
+                            "en": "Paragraph A says farmers did not buy seed but kept it, setting aside the best part of each harvest for the next season. This is the same idea as the statement.",
+                            "ru": "В абзаце A сказано, что фермеры не покупали семена, а сохраняли их, откладывая лучшую часть каждого урожая на следующий сезон. Это та же мысль, что и в утверждении.",
+                            "uk": "В абзаці A сказано, що фермери не купували насіння, а зберігали його, відкладаючи найкращу частину кожного врожаю на наступний сезон. Це та сама думка, що й у твердженні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The wild relatives of crops mostly grow in remote places that farming has not reached.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "they tend to grow at field edges, on roadsides and in grasslands that are easily ploughed or built on",
+                        "explanation": {
+                            "en": "Paragraph B says wild relatives usually grow at the edges of fields and on roadsides, which are close to farming, not remote. This is the opposite of the statement.",
+                            "ru": "В абзаце B говорится, что дикие родственники культур обычно растут по краям полей и на обочинах дорог, то есть рядом с сельхозугодьями, а не в отдалённых местах. Это противоположно утверждению.",
+                            "uk": "В абзаці B ідеться про те, що дикі родичі культур зазвичай ростуть по краях полів і на узбіччях доріг, тобто поруч із сільськогосподарськими угіддями, а не у віддалених місцях. Це протилежне твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Seeds must be dried before freezing because ice can form inside them and damage their cells.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "if too much remains, ice crystals form when the seeds are frozen and burst their cells",
+                        "explanation": {
+                            "en": "Paragraph C explains that seeds are dried because too much water turns into ice crystals during freezing and bursts the cells. The statement says the same thing.",
+                            "ru": "В абзаце C объясняется, что семена сушат, потому что при замораживании лишняя вода превращается в кристаллы льда и разрывает клетки. В утверждении говорится то же самое.",
+                            "uk": "В абзаці C пояснюється, що насіння сушать, бо під час заморожування зайва вода перетворюється на кристали льоду й розриває клітини. У твердженні сказано те саме."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The seeds of wheat stay alive in cold storage for longer than those of most other grain crops.",
+                        "numbers": [
+                            4
+                        ],
+                        "explanation": {
+                            "en": "Paragraph C says the seeds of many grain crops can live for decades and some for centuries, but it never compares wheat with other crops. Wheat is only mentioned in Paragraph A, about farmers saving seed.",
+                            "ru": "В абзаце C сказано, что семена многих зерновых культур могут жить десятилетиями, а некоторые — веками, но пшеница там ни с чем не сравнивается. Пшеница упоминается только в абзаце A, где речь идёт о том, как фермеры сохраняли семена.",
+                            "uk": "В абзаці C сказано, що насіння багатьох зернових культур може жити десятиліттями, а деяке — століттями, але пшеницю там ні з чим не порівнюють. Пшениця згадується лише в абзаці A, де йдеться про те, як фермери зберігали насіння."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Seeds are tested for germination only when a sample first enters the seed bank.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "staff remove a few seeds from each sample at regular intervals and attempt to germinate them",
+                        "explanation": {
+                            "en": "Paragraph D says germination tests happen at regular intervals during storage, not just once on arrival. So the statement contradicts the passage.",
+                            "ru": "В абзаце D сказано, что всхожесть семян проверяют через регулярные промежутки времени в течение всего хранения, а не один раз при поступлении. Значит, утверждение противоречит тексту.",
+                            "uk": "В абзаці D сказано, що схожість насіння перевіряють через регулярні проміжки часу протягом усього зберігання, а не один раз після надходження. Отже, твердження суперечить тексту."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Marsh's research showed that regeneration problems were less common in smaller collections.",
+                        "numbers": [
+                            6
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D says Marsh studied records from one large national collection and found problems with pollen from nearby plants. It says nothing about smaller collections or any comparison between collections of different sizes.",
+                            "ru": "В абзаце D говорится, что в исследовании Marsh изучались записи одной крупной национальной коллекции и были выявлены проблемы, связанные с пыльцой соседних растений. О небольших коллекциях или о сравнении коллекций разного размера там ничего не сказано.",
+                            "uk": "В абзаці D ідеться про те, що в дослідженні Marsh вивчали записи однієї великої національної колекції та виявили проблеми, пов’язані з пилком сусідніх рослин. Про невеликі колекції чи порівняння колекцій різного розміру там нічого не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Seeds in the Svalbard vault would stay cold even if the power supply stopped.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "the surrounding permafrost would keep the samples cold even if the electricity failed",
+                        "explanation": {
+                            "en": "Paragraph E says the frozen ground around the vault would keep the samples cold if the electricity failed. 'Power supply stopped' restates 'electricity failed'.",
+                            "ru": "В абзаце E сказано, что мёрзлая земля вокруг хранилища сохранила бы образцы холодными, если бы отключилось электричество. «Power supply stopped» — это перефразирование «electricity failed».",
+                            "uk": "В абзаці E сказано, що мерзла земля навколо сховища зберегла б зразки холодними, якби зникла електрика. «Power supply stopped» — це перефразування «electricity failed»."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "insects"
+                        ],
+                        "prompt": "Arrival of samples: seeds are cleaned and examined for damage or ______",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "inspected for damage or insects",
+                        "explanation": {
+                            "en": "Paragraph C says that after cleaning, the seeds are inspected for damage or insects. 'Examined' in the notes restates 'inspected'.",
+                            "ru": "В абзаце C сказано, что после очистки семена осматривают на наличие повреждений или насекомых. «Examined» в заметках — это перефразирование «inspected».",
+                            "uk": "В абзаці C сказано, що після очищення насіння оглядають на наявність пошкоджень або комах. «Examined» у нотатках — це перефразування «inspected»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "jars"
+                        ],
+                        "prompt": "Packaging: airtight foil packets or ______ made of glass",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "sealed in airtight foil packets or glass jars",
+                        "explanation": {
+                            "en": "Paragraph C says the dried seeds are sealed in foil packets or glass jars. The notes say 'made of glass' instead of 'glass'.",
+                            "ru": "В абзаце C сказано, что высушенные семена запечатывают в пакеты из фольги или в стеклянные банки. В заметках вместо «glass» написано «made of glass».",
+                            "uk": "В абзаці C сказано, що висушене насіння запечатують у пакети з фольги або в скляні банки. У нотатках замість «glass» написано «made of glass»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "eighteen",
+                            "18"
+                        ],
+                        "prompt": "Temperature of storage rooms: approximately minus ______ degrees Celsius",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "rooms kept at around minus eighteen degrees Celsius",
+                        "explanation": {
+                            "en": "Paragraph C gives the storage temperature as around minus eighteen degrees Celsius. 'Approximately' restates 'around'.",
+                            "ru": "В абзаце C указана температура хранения — около минус восемнадцати градусов Цельсия. «Approximately» — это перефразирование «around».",
+                            "uk": "В абзаці C вказано температуру зберігання — близько мінус вісімнадцяти градусів Цельсія. «Approximately» — це перефразування «around»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "germinate"
+                        ],
+                        "prompt": "Checks during storage: staff regularly try to ______ a small number of seeds from each sample",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "attempt to germinate them",
+                        "explanation": {
+                            "en": "Paragraph D says staff take a few seeds from each sample at regular intervals and attempt to germinate them. 'Try to' restates 'attempt to'.",
+                            "ru": "В абзаце D сказано, что сотрудники через регулярные промежутки времени берут по несколько семян из каждого образца и пытаются их прорастить. «Try to» — это перефразирование «attempt to».",
+                            "uk": "В абзаці D сказано, що працівники через регулярні проміжки часу беруть по кілька насінин із кожного зразка й намагаються їх пророщувати. «Try to» — це перефразування «attempt to»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "pollen"
+                        ],
+                        "prompt": "Risk during regeneration: wind-pollinated crops such as maize may receive ______ from nearby plants",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "frequently received pollen from neighbouring plants",
+                        "explanation": {
+                            "en": "Paragraph D reports Marsh's finding that maize plots often received pollen from neighbouring plants. 'Nearby' restates 'neighbouring'.",
+                            "ru": "В абзаце D приводится вывод Marsh о том, что на участки с кукурузой часто попадала пыльца с соседних растений. «Nearby» — это перефразирование «neighbouring».",
+                            "uk": "В абзаці D наведено висновок Marsh про те, що на ділянки з кукурудзою часто потрапляв пилок із сусідніх рослин. «Nearby» — це перефразування «neighbouring»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "dried"
+                        ],
+                        "prompt": "Limit: recalcitrant seeds, e.g. cocoa and coconut, cannot survive being ______",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "which die if they are dried",
+                        "explanation": {
+                            "en": "Paragraph F says recalcitrant seeds die if they are dried, so they cannot be frozen in the usual way. 'Cannot survive being dried' means the same as 'die if they are dried'.",
+                            "ru": "В абзаце F сказано, что так называемые рекальцитрантные семена погибают при высушивании, поэтому их нельзя заморозить обычным способом. «Cannot survive being dried» означает то же самое, что «die if they are dried».",
+                            "uk": "В абзаці F сказано, що так зване рекальцитрантне насіння гине під час висушування, тому його не можна заморозити звичайним способом. «Cannot survive being dried» означає те саме, що «die if they are dried»."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6"
+    },
+    "translation": {
+        "missing": []
+    }
+}

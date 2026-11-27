@@ -1,0 +1,85 @@
+{
+  "id": "exam-reading-pilot-1",
+  "about": "P7.3 Reading content pilot (docs/phase-7/P7.1-reading-design.md §4, §9): two Academic tests, six sections covering all 14 question types. Opus writes, Sonnet and GPT-5.4 solve blind, Grok 4.7 is the controller that takes no part in the selection. Owner approval 2026-11-27, cap $8. Frozen: a change needs a new id.",
+  "exam": "ielts-academic",
+  "budgetUsd": 8,
+  "routes": {
+    "exam.reading.generate": [{"provider": "anthropic", "model": "claude-opus-5-5", "reasoning_effort": "high", "max_output_tokens": 32000, "timeout": 900}],
+    "exam.reading.solve_a": [{"provider": "anthropic", "model": "claude-sonnet-5-5", "reasoning_effort": "medium", "max_output_tokens": 12000, "timeout": 600}],
+    "exam.reading.solve_b": [{"provider": "openai", "model": "gpt-5.4", "reasoning_effort": "medium", "max_output_tokens": 12000, "timeout": 600}],
+    "exam.reading.control": [{"provider": "xai", "model": "grok-4.7", "temperature": 0, "max_output_tokens": 8000, "timeout": 600}]
+  },
+  "tests": [
+    {
+      "id": "academic-1",
+      "sections": [
+        {
+          "topic": "Seed banks and the future of crops",
+          "angle": "why the seeds of crop plants and their wild relatives are stored, how a seed bank works, and the limits of the approach",
+          "words": {"min": 780, "max": 880},
+          "blocks": [
+            {"type": "true_false_not_given", "count": 7, "spare": 1},
+            {"type": "note_completion", "count": 6, "spare": 1, "limit": {"words": 1, "number": false, "phrase": "ONE WORD ONLY"}}
+          ]
+        },
+        {
+          "topic": "Urban heat islands",
+          "angle": "why cities are warmer than the surrounding countryside, what this costs, and the ways cities are trying to cool themselves",
+          "words": {"min": 780, "max": 880},
+          "paragraphs": 6,
+          "blocks": [
+            {"type": "matching_headings", "count": 6, "spare": 0, "reuse": false},
+            {"type": "summary_completion", "count": 4, "spare": 1, "limit": {"words": 2, "number": false, "phrase": "NO MORE THAN TWO WORDS"}},
+            {"type": "multiple_choice", "count": 3, "spare": 1}
+          ]
+        },
+        {
+          "topic": "Learning through play",
+          "angle": "an argued article on whether play-based learning helps children in the first years of school; the writer takes a clear position and reports the views of several fictional researchers who disagree with each other",
+          "words": {"min": 820, "max": 920},
+          "blocks": [
+            {"type": "yes_no_not_given", "count": 5, "spare": 1},
+            {"type": "matching_features", "count": 5, "spare": 1, "reuse": true},
+            {"type": "multiple_choice", "count": 4, "spare": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academic-2",
+      "sections": [
+        {
+          "topic": "The durability of Roman concrete",
+          "angle": "why some ancient Roman concrete has lasted for two thousand years, how it differs from modern concrete, and what engineers hope to learn from it",
+          "words": {"min": 780, "max": 880},
+          "paragraphs": 6,
+          "blocks": [
+            {"type": "matching_information", "count": 4, "spare": 1, "reuse": true},
+            {"type": "table_completion", "count": 5, "spare": 1, "limit": {"words": 1, "number": true, "phrase": "ONE WORD AND/OR A NUMBER"}},
+            {"type": "true_false_not_given", "count": 4, "spare": 1}
+          ]
+        },
+        {
+          "topic": "Reading past climates in ice",
+          "angle": "how ice cores are drilled, dated and analysed to reconstruct the climate of the past, and what their limits are",
+          "words": {"min": 780, "max": 880},
+          "blocks": [
+            {"type": "short_answer", "count": 4, "spare": 1, "limit": {"words": 3, "number": false, "phrase": "NO MORE THAN THREE WORDS"}},
+            {"type": "flow_chart_completion", "count": 5, "spare": 1, "limit": {"words": 1, "number": false, "phrase": "ONE WORD ONLY"}},
+            {"type": "multiple_choice_multi", "count": 2, "spare": 1}
+          ]
+        },
+        {
+          "topic": "The uses of boredom",
+          "angle": "an argued article on whether boredom is good for us; the writer takes a clear position against the common view, discussing attention, creativity and constant entertainment",
+          "words": {"min": 820, "max": 920},
+          "blocks": [
+            {"type": "yes_no_not_given", "count": 5, "spare": 1},
+            {"type": "matching_sentence_endings", "count": 5, "spare": 1, "reuse": false},
+            {"type": "sentence_completion", "count": 4, "spare": 1, "limit": {"words": 2, "number": false, "phrase": "NO MORE THAN TWO WORDS"}}
+          ]
+        }
+      ]
+    }
+  ]
+}

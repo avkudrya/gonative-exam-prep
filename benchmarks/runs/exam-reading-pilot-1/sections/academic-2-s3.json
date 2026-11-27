@@ -1,0 +1,1133 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-2|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.232496,
+            "provider": "anthropic",
+            "outputTokens": 11009
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": true,
+            "costUsd": 0.015596,
+            "provider": "anthropic",
+            "outputTokens": 811
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": true,
+            "costUsd": 0.024673,
+            "provider": "openai",
+            "outputTokens": 1267
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": true,
+            "costUsd": 0.016632,
+            "provider": "xai",
+            "outputTokens": 1586
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.095524,
+            "provider": "anthropic",
+            "outputTokens": 4488
+        }
+    ],
+    "draft": {
+        "title": "In Defence of Boredom",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "The widespread belief that boredom should be eliminated as quickly as possible is mistaken.",
+                        "options": [],
+                        "evidence": "I believe this assumption is wrong.",
+                        "explanation": "In paragraph A the writer describes the common assumption that boredom is a defect to be cured, and then says directly that this assumption is wrong."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Feeling bored shows that the mind is not working properly.",
+                        "options": [],
+                        "evidence": "It is a signal, not a malfunction.",
+                        "explanation": "In paragraph B the writer says boredom is a useful message, like hunger, and specifically not a malfunction. The statement says the opposite."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Lindqvist's study demonstrates that phones by themselves reduce people's ability to concentrate.",
+                        "options": [],
+                        "evidence": "I would not claim that it proves phones damage concentration on their own",
+                        "explanation": "In paragraph C the writer says the study was small and does not prove that phones alone harm concentration, because phone users may differ in other ways."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "The connection between boredom and creativity has been exaggerated in popular writing.",
+                        "options": [],
+                        "evidence": "popular writing has often turned it into a promise that boredom will make anyone inventive. It will not.",
+                        "explanation": "In paragraph D the writer accepts there is some evidence but says popular writing promises too much, since boredom does not make everyone inventive."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Long-lasting boredom can be just as valuable as brief episodes of boredom.",
+                        "options": [],
+                        "evidence": "Nor should every kind of boredom be welcomed.",
+                        "explanation": "In paragraph E the writer says chronic boredom is linked to low mood and poor health and refuses to defend it; only brief boredom has value."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Schools should give pupils more unstructured time during the day.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph F discusses parents rescuing children from boredom at home, but the writer never mentions schools or timetables, so their view on this is unknown."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_sentence_endings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "frequently create activities that adults would not have suggested."
+                    },
+                    {
+                        "id": "B",
+                        "text": "came up with a greater variety of story endings."
+                    },
+                    {
+                        "id": "C",
+                        "text": "leaves people with no means of escape."
+                    },
+                    {
+                        "id": "D",
+                        "text": "rated the reading task as less tedious than the other group did."
+                    },
+                    {
+                        "id": "E",
+                        "text": "has mental capacity available but no worthwhile use for it."
+                    },
+                    {
+                        "id": "F",
+                        "text": "indicates that a change of activity is needed."
+                    },
+                    {
+                        "id": "G",
+                        "text": "gave up a dull reading task earlier than the other group."
+                    },
+                    {
+                        "id": "H",
+                        "text": "wrote fewer endings than people who had watched a comedy clip."
+                    },
+                    {
+                        "id": "I",
+                        "text": "is usually a sign of physical illness."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Psychologists see boredom as a state in which a person",
+                        "options": [],
+                        "evidence": "an uncomfortable state in which we have attention to spare but can find nothing that seems worth spending it on",
+                        "explanation": "Paragraph B: having attention to spare is restated as having mental capacity available, and finding nothing worth spending it on as having no worthwhile use for it."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Like hunger, boredom",
+                        "options": [],
+                        "evidence": "Boredom, similarly, tells us that what we are currently doing is not rewarding enough and that we should change it",
+                        "explanation": "Paragraph B compares boredom with hunger: both are messages, and boredom tells us to change what we are doing. Ending I is wrong because the writer says boredom is less like an illness."
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Commuters who used their phones throughout their journeys",
+                        "options": [],
+                        "evidence": "those who had spent their journeys on their phones rated it as more tedious and abandoned it considerably earlier",
+                        "explanation": "Paragraph C says the phone users abandoned the reading task earlier. Ending D is wrong because they found the task more tedious, not less."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Volunteers who had spent twenty minutes sorting buttons",
+                        "options": [],
+                        "evidence": "The button-sorters produced a noticeably wider range of endings.",
+                        "explanation": "Paragraph D says the button-sorters produced a wider range of story endings. Ending H reverses the result."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Chronic boredom, unlike brief boredom,",
+                        "options": [],
+                        "evidence": "a lasting condition from which there is no way out",
+                        "explanation": "Paragraph E contrasts a passing episode that we can respond to with a lasting condition from which there is no way out."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Children who are left to cope with empty time on their own",
+                        "options": [],
+                        "evidence": "children who are left to deal with empty time themselves often learn to invent their own occupations",
+                        "explanation": "Paragraph F says these children invent their own games, stories and projects that no adult would have thought to suggest."
+                    }
+                ],
+                "instruction": "Complete each sentence with the correct ending, A–I, from the box below. Write the correct letter, A–I. You may use each letter only once."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "entertainment industry"
+                        ],
+                        "prompt": "According to the writer, a whole ______ now tries to occupy people's every free moment.",
+                        "options": [],
+                        "evidence": "an entire entertainment industry now competes to fill every spare minute",
+                        "explanation": "Paragraph A says an entire entertainment industry competes to fill every spare minute; 'every free moment' restates 'every spare minute'."
+                    },
+                    {
+                        "answer": [
+                            "stone"
+                        ],
+                        "prompt": "The writer compares escaping boredom through distraction to taking medicine for the pain caused by a ______ in your shoe.",
+                        "options": [],
+                        "evidence": "swallowing a painkiller to cope with a stone in your shoe",
+                        "explanation": "Paragraph B: reaching for a distraction is like swallowing a painkiller for a stone in your shoe, because the cause of the discomfort stays."
+                    },
+                    {
+                        "answer": [
+                            "threshold"
+                        ],
+                        "prompt": "Lindqvist argues that constant stimulation increases the ______ at which everyday tasks start to seem dull.",
+                        "options": [],
+                        "evidence": "constant stimulation raises the threshold at which ordinary tasks begin to feel tedious",
+                        "explanation": "Paragraph C gives Lindqvist's interpretation: stimulation 'raises the threshold' at which ordinary tasks feel tedious."
+                    },
+                    {
+                        "answer": [
+                            "wander"
+                        ],
+                        "prompt": "Ferreira thinks that a mind given too little by the outside world will start to ______ while it looks for stimulation.",
+                        "options": [],
+                        "evidence": "the mind begins to wander in search of the stimulation it lacks",
+                        "explanation": "Paragraph D: when the outside world offers too little, the mind begins to wander in search of stimulation."
+                    },
+                    {
+                        "answer": [
+                            "short waits"
+                        ],
+                        "prompt": "The writer advises readers not to take out their phones during ______.",
+                        "options": [],
+                        "evidence": "Leave the phone in your pocket during short waits",
+                        "explanation": "Paragraph G gives the practical advice to leave the phone in your pocket during short waits."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Few states of mind have a worse reputation than boredom. We speak of being \"bored to death\", we apologise to guests if an evening drags, and we treat a dull afternoon as time that has simply been lost. Modern life has organised itself around making sure that such afternoons never happen: an entire entertainment industry now competes to fill every spare minute, and the smartphone means that nobody need endure even a few seconds of empty time in a queue or on a station platform. The assumption behind all this is that boredom is a defect, something to be cured as quickly as possible. I believe this assumption is wrong. A moderate amount of boredom is not merely bearable; it is one of the more useful experiences an ordinary day can offer.",
+                "label": "A"
+            },
+            {
+                "text": "To see why, it helps to consider what boredom actually is. Psychologists generally describe it as an uncomfortable state in which we have attention to spare but can find nothing that seems worth spending it on. Understood in this way, boredom is less like an illness and more like hunger. Hunger is unpleasant, yet nobody regards it as a fault in the body; it is a message that we need to eat. Boredom, similarly, tells us that what we are currently doing is not rewarding enough and that we should change it. It is a signal, not a malfunction. Reaching for a distraction the moment it appears is rather like swallowing a painkiller to cope with a stone in your shoe: the discomfort fades, but the cause remains exactly where it was.",
+                "label": "B"
+            },
+            {
+                "text": "The habit of silencing this signal may also be changing our attention itself. The attention researcher Marta Lindqvist followed two groups of commuters for six weeks. One group used their phones throughout every journey; the other agreed to travel without them. At the end of the period, both groups were given the same unexciting reading task, and those who had spent their journeys on their phones rated it as more tedious and abandoned it considerably earlier. Lindqvist's interpretation is that constant stimulation raises the threshold at which ordinary tasks begin to feel tedious, so that activities which once seemed acceptable come to feel intolerable. Her study was small, and I would not claim that it proves phones damage concentration on their own; people who choose to look at screens all day may differ in other ways. But it fits an experience many of us will recognise: the more entertainment we consume, the less patience we seem to have for anything that is not entertaining.",
+                "label": "C"
+            },
+            {
+                "text": "Boredom's best-known defenders point to creativity, and here there is genuine evidence, though less than enthusiasts suggest. In one experiment by the cognitive psychologist Tomas Ferreira, volunteers spent twenty minutes sorting a large box of buttons by colour, while a second group watched a short comedy clip. Both groups were then given the opening of a story and asked to write as many different endings as they could. The button-sorters produced a noticeably wider range of endings. Ferreira believes that when the outside world offers too little, the mind begins to wander in search of the stimulation it lacks, and this wandering brings unrelated ideas together. It is an attractive finding, but popular writing has often turned it into a promise that boredom will make anyone inventive. It will not. Boredom creates room for new ideas; it does not supply them.",
+                "label": "D"
+            },
+            {
+                "text": "Nor should every kind of boredom be welcomed. Chronic boredom, the kind experienced by people confined for long periods or trapped in work of unbroken monotony, is associated with low mood, poor health and risky behaviour. I have no wish to defend it. The distinction that matters is between a passing episode, which we are free to respond to, and a lasting condition from which there is no way out. The value of brief boredom lies precisely in that response: it pushes us to look for something better to do, to think, or to notice what is around us. When escape is impossible, the signal becomes nothing more than suffering.",
+                "label": "E"
+            },
+            {
+                "text": "This is why I think the modern instinct to rescue children from boredom deserves more scrutiny. Many parents feel that a child complaining of having nothing to do represents a failure on their part, and they hurry to provide an activity or a screen. Yet children who are left to deal with empty time themselves often learn to invent their own occupations, constructing games, stories and projects that no adult would have thought to suggest. In removing the discomfort, we may also remove the opportunity to discover how to make use of it.",
+                "label": "F"
+            },
+            {
+                "text": "None of this means that we should seek out tedium or abandon entertainment. The practical lesson is modest. Leave the phone in your pocket during short waits; let a slow train journey be slow; notice the restless feeling of boredom and ask what it is telling you before deciding what to do about it. The goal is not to enjoy being bored, but to stop running from it, and to treat it as information rather than as an enemy.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The assumption behind all this is that boredom is a defect, something to be cured as quickly as possible. I believe this assumption is wrong.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "It is a signal, not a malfunction.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "I would not claim that it proves phones damage concentration on their own",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "popular writing has often turned it into a promise that boredom will make anyone inventive. It will not.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Chronic boredom... is associated with low mood, poor health and risky behaviour. I have no wish to defend it.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "an uncomfortable state in which we have attention to spare but can find nothing that seems worth spending it on",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Boredom, similarly, tells us that what we are currently doing is not rewarding enough and that we should change it.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "those who had spent their journeys on their phones rated it as more tedious and abandoned it considerably earlier",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The button-sorters produced a noticeably wider range of endings.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "When escape is impossible, the signal becomes nothing more than suffering.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "children who are left to deal with empty time themselves often learn to invent their own occupations, constructing games, stories and projects that no adult would have thought to suggest",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "an entire entertainment industry now competes to fill every spare minute",
+                "answer": [
+                    "entertainment industry"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "swallowing a painkiller to cope with a stone in your shoe",
+                "answer": [
+                    "stone"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "constant stimulation raises the threshold at which ordinary tasks begin to feel tedious",
+                "answer": [
+                    "threshold"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the mind begins to wander in search of the stimulation it lacks",
+                "answer": [
+                    "wander"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Leave the phone in your pocket during short waits",
+                "answer": [
+                    "short waits"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The assumption behind all this is that boredom is a defect, something to be cured as quickly as possible. I believe this assumption is wrong.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "It is a signal, not a malfunction.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "I would not claim that it proves phones damage concentration on their own",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "popular writing has often turned it into a promise that boredom will make anyone inventive",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "The value of brief boredom lies precisely in that response... When escape is impossible, the signal becomes nothing more than suffering.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "we have attention to spare but can find nothing that seems worth spending it on",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Boredom, similarly, tells us that what we are currently doing is not rewarding enough and that we should change it.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "those who had spent their journeys on their phones rated it as more tedious and abandoned it considerably earlier",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The button-sorters produced a noticeably wider range of endings.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "a lasting condition from which there is no way out",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "children who are left to deal with empty time themselves often learn to invent their own occupations, constructing games, stories and projects that no adult would have thought to suggest",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "an entire entertainment industry now competes to fill every spare minute",
+                "answer": [
+                    "entertainment industry"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a stone in your shoe",
+                "answer": [
+                    "stone"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "constant stimulation raises the threshold at which ordinary tasks begin to feel tedious",
+                "answer": [
+                    "threshold"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the mind begins to wander in search of the stimulation it lacks",
+                "answer": [
+                    "wander"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Leave the phone in your pocket during short waits",
+                "answer": [
+                    "short waits"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The assumption behind all this is that boredom is a defect, something to be cured as quickly as possible. I believe this assumption is wrong.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "It is a signal, not a malfunction.",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "I would not claim that it proves phones damage concentration on their own",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "popular writing has often turned it into a promise that boredom will make anyone inventive. It will not.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "an uncomfortable state in which we have attention to spare but can find nothing that seems worth spending it on",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Boredom, similarly, tells us that what we are currently doing is not rewarding enough and that we should change it.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "those who had spent their journeys on their phones rated it as more tedious and abandoned it considerably earlier",
+            "answer": [
+                "G"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "The button-sorters produced a noticeably wider range of endings.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "a lasting condition from which there is no way out",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "an entire entertainment industry now competes to fill every spare minute",
+            "answer": [
+                "entertainment industry"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "swallowing a painkiller to cope with a stone in your shoe",
+            "answer": [
+                "stone"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "constant stimulation raises the threshold at which ordinary tasks begin to feel tedious",
+            "answer": [
+                "threshold"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "the mind begins to wander in search of the stimulation it lacks",
+            "answer": [
+                "wander"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 17,
+        "agreedFirst": 17,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "In Defence of Boredom\n\nA. Few states of mind have a worse reputation than boredom. We speak of being \"bored to death\", we apologise to guests if an evening drags, and we treat a dull afternoon as time that has simply been lost. Modern life has organised itself around making sure that such afternoons never happen: an entire entertainment industry now competes to fill every spare minute, and the smartphone means that nobody need endure even a few seconds of empty time in a queue or on a station platform. The assumption behind all this is that boredom is a defect, something to be cured as quickly as possible. I believe this assumption is wrong. A moderate amount of boredom is not merely bearable; it is one of the more useful experiences an ordinary day can offer.\n\nB. To see why, it helps to consider what boredom actually is. Psychologists generally describe it as an uncomfortable state in which we have attention to spare but can find nothing that seems worth spending it on. Understood in this way, boredom is less like an illness and more like hunger. Hunger is unpleasant, yet nobody regards it as a fault in the body; it is a message that we need to eat. Boredom, similarly, tells us that what we are currently doing is not rewarding enough and that we should change it. It is a signal, not a malfunction. Reaching for a distraction the moment it appears is rather like swallowing a painkiller to cope with a stone in your shoe: the discomfort fades, but the cause remains exactly where it was.\n\nC. The habit of silencing this signal may also be changing our attention itself. The attention researcher Marta Lindqvist followed two groups of commuters for six weeks. One group used their phones throughout every journey; the other agreed to travel without them. At the end of the period, both groups were given the same unexciting reading task, and those who had spent their journeys on their phones rated it as more tedious and abandoned it considerably earlier. Lindqvist's interpretation is that constant stimulation raises the threshold at which ordinary tasks begin to feel tedious, so that activities which once seemed acceptable come to feel intolerable. Her study was small, and I would not claim that it proves phones damage concentration on their own; people who choose to look at screens all day may differ in other ways. But it fits an experience many of us will recognise: the more entertainment we consume, the less patience we seem to have for anything that is not entertaining.\n\nD. Boredom's best-known defenders point to creativity, and here there is genuine evidence, though less than enthusiasts suggest. In one experiment by the cognitive psychologist Tomas Ferreira, volunteers spent twenty minutes sorting a large box of buttons by colour, while a second group watched a short comedy clip. Both groups were then given the opening of a story and asked to write as many different endings as they could. The button-sorters produced a noticeably wider range of endings. Ferreira believes that when the outside world offers too little, the mind begins to wander in search of the stimulation it lacks, and this wandering brings unrelated ideas together. It is an attractive finding, but popular writing has often turned it into a promise that boredom will make anyone inventive. It will not. Boredom creates room for new ideas; it does not supply them.\n\nE. Nor should every kind of boredom be welcomed. Chronic boredom, the kind experienced by people confined for long periods or trapped in work of unbroken monotony, is associated with low mood, poor health and risky behaviour. I have no wish to defend it. The distinction that matters is between a passing episode, which we are free to respond to, and a lasting condition from which there is no way out. The value of brief boredom lies precisely in that response: it pushes us to look for something better to do, to think, or to notice what is around us. When escape is impossible, the signal becomes nothing more than suffering.\n\nF. This is why I think the modern instinct to rescue children from boredom deserves more scrutiny. Many parents feel that a child complaining of having nothing to do represents a failure on their part, and they hurry to provide an activity or a screen. Yet children who are left to deal with empty time themselves often learn to invent their own occupations, constructing games, stories and projects that no adult would have thought to suggest. In removing the discomfort, we may also remove the opportunity to discover how to make use of it.\n\nG. None of this means that we should seek out tedium or abandon entertainment. The practical lesson is modest. Leave the phone in your pocket during short waits; let a slow train journey be slow; notice the restless feeling of boredom and ask what it is telling you before deciding what to do about it. The goal is not to enjoy being bored, but to stop running from it, and to treat it as information rather than as an enemy.",
+        "title": "In Defence of Boredom",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "The widespread belief that boredom should be eliminated as quickly as possible is mistaken.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "I believe this assumption is wrong.",
+                        "explanation": {
+                            "en": "In paragraph A the writer describes the common assumption that boredom is a defect to be cured, and then says directly that this assumption is wrong.",
+                            "ru": "В абзаце A автор описывает распространённое представление о том, что скука — это недостаток, который нужно лечить, а затем прямо говорит, что это представление ошибочно.",
+                            "uk": "В абзаці A автор описує поширене уявлення про те, що нудьга — це вада, яку треба лікувати, а потім прямо каже, що це уявлення хибне."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Feeling bored shows that the mind is not working properly.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "It is a signal, not a malfunction.",
+                        "explanation": {
+                            "en": "In paragraph B the writer says boredom is a useful message, like hunger, and specifically not a malfunction. The statement says the opposite.",
+                            "ru": "В абзаце B автор пишет, что скука — полезный сигнал, как голод, и подчёркивает, что это вовсе не сбой. В утверждении сказано обратное.",
+                            "uk": "В абзаці B автор пише, що нудьга — корисний сигнал, як голод, і наголошує, що це зовсім не збій. Твердження каже протилежне."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Lindqvist's study demonstrates that phones by themselves reduce people's ability to concentrate.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "I would not claim that it proves phones damage concentration on their own",
+                        "explanation": {
+                            "en": "In paragraph C the writer says the study was small and does not prove that phones alone harm concentration, because phone users may differ in other ways.",
+                            "ru": "В абзаце C автор отмечает, что исследование было небольшим и не доказывает, что концентрацию ухудшают именно телефоны сами по себе: пользователи телефонов могут отличаться и по другим признакам.",
+                            "uk": "В абзаці C автор зазначає, що дослідження було невеликим і не доводить, що концентрацію погіршують саме телефони самі по собі, адже користувачі телефонів можуть відрізнятися й за іншими ознаками."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "The connection between boredom and creativity has been exaggerated in popular writing.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "popular writing has often turned it into a promise that boredom will make anyone inventive. It will not.",
+                        "explanation": {
+                            "en": "In paragraph D the writer accepts there is some evidence but says popular writing promises too much, since boredom does not make everyone inventive.",
+                            "ru": "В абзаце D автор признаёт, что определённые данные есть, но считает, что популярные тексты обещают слишком много: скука делает изобретательным далеко не каждого.",
+                            "uk": "В абзаці D автор визнає, що певні докази є, але вважає, що популярні тексти обіцяють забагато: нудьга робить винахідливим далеко не кожного."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Schools should give pupils more unstructured time during the day.",
+                        "numbers": [
+                            5
+                        ],
+                        "explanation": {
+                            "en": "Paragraph F discusses parents rescuing children from boredom at home, but the writer never mentions schools or timetables, so their view on this is unknown.",
+                            "ru": "В абзаце F речь идёт о родителях, которые дома спасают детей от скуки, но о школах и расписании автор нигде не упоминает, поэтому его мнение на этот счёт неизвестно.",
+                            "uk": "В абзаці F ідеться про батьків, які вдома рятують дітей від нудьги, але про школи й розклад автор ніде не згадує, тож його думка щодо цього невідома."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_sentence_endings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "frequently create activities that adults would not have suggested."
+                    },
+                    {
+                        "id": "B",
+                        "text": "came up with a greater variety of story endings."
+                    },
+                    {
+                        "id": "C",
+                        "text": "leaves people with no means of escape."
+                    },
+                    {
+                        "id": "D",
+                        "text": "rated the reading task as less tedious than the other group did."
+                    },
+                    {
+                        "id": "E",
+                        "text": "has mental capacity available but no worthwhile use for it."
+                    },
+                    {
+                        "id": "F",
+                        "text": "indicates that a change of activity is needed."
+                    },
+                    {
+                        "id": "G",
+                        "text": "gave up a dull reading task earlier than the other group."
+                    },
+                    {
+                        "id": "H",
+                        "text": "wrote fewer endings than people who had watched a comedy clip."
+                    },
+                    {
+                        "id": "I",
+                        "text": "is usually a sign of physical illness."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Psychologists see boredom as a state in which a person",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "an uncomfortable state in which we have attention to spare but can find nothing that seems worth spending it on",
+                        "explanation": {
+                            "en": "Paragraph B: having attention to spare is restated as having mental capacity available, and finding nothing worth spending it on as having no worthwhile use for it.",
+                            "ru": "Абзац B: мысль о том, что у человека есть свободное внимание, передана как наличие незанятых умственных ресурсов, а то, что его не на что стоящее потратить, — как отсутствие для них достойного применения.",
+                            "uk": "Абзац B: думку про те, що людина має вільну увагу, передано як наявність незайнятих розумових ресурсів, а те, що її немає на що варте витратити, — як відсутність для них гідного застосування."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Like hunger, boredom",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "Boredom, similarly, tells us that what we are currently doing is not rewarding enough and that we should change it",
+                        "explanation": {
+                            "en": "Paragraph B compares boredom with hunger: both are messages, and boredom tells us to change what we are doing. Ending I is wrong because the writer says boredom is less like an illness.",
+                            "ru": "В абзаце B скука сравнивается с голодом: и то и другое — сигналы, и скука подсказывает нам, что пора сменить занятие. Вариант I не подходит, потому что, по словам автора, скука как раз меньше похожа на болезнь.",
+                            "uk": "В абзаці B нудьгу порівнюють із голодом: і те, і інше — сигнали, і нудьга підказує нам, що час змінити заняття. Варіант I не підходить, бо, за словами автора, нудьга якраз менше схожа на хворобу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Commuters who used their phones throughout their journeys",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "those who had spent their journeys on their phones rated it as more tedious and abandoned it considerably earlier",
+                        "explanation": {
+                            "en": "Paragraph C says the phone users abandoned the reading task earlier. Ending D is wrong because they found the task more tedious, not less.",
+                            "ru": "В абзаце C сказано, что пользователи телефонов раньше бросали задание на чтение. Вариант D неверен: задание показалось им более скучным, а не менее.",
+                            "uk": "В абзаці C сказано, що користувачі телефонів раніше кидали завдання з читання. Варіант D неправильний: завдання здалося їм нуднішим, а не менш нудним."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Volunteers who had spent twenty minutes sorting buttons",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "The button-sorters produced a noticeably wider range of endings.",
+                        "explanation": {
+                            "en": "Paragraph D says the button-sorters produced a wider range of story endings. Ending H reverses the result.",
+                            "ru": "В абзаце D сказано, что участники, сортировавшие пуговицы, придумали более разнообразные концовки историй. Вариант H переворачивает этот результат.",
+                            "uk": "В абзаці D сказано, що учасники, які сортували ґудзики, вигадали різноманітніші кінцівки історій. Варіант H перевертає цей результат."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Chronic boredom, unlike brief boredom,",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "a lasting condition from which there is no way out",
+                        "explanation": {
+                            "en": "Paragraph E contrasts a passing episode that we can respond to with a lasting condition from which there is no way out.",
+                            "ru": "В абзаце E противопоставляются временный эпизод, на который можно как-то отреагировать, и устойчивое состояние, из которого нет выхода.",
+                            "uk": "В абзаці E протиставлено тимчасовий епізод, на який можна якось відреагувати, і стійкий стан, з якого немає виходу."
+                        }
+                    }
+                ],
+                "instruction": "Complete each sentence with the correct ending, A–I, from the box below. Write the correct letter, A–I. You may use each letter only once."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "entertainment industry"
+                        ],
+                        "prompt": "According to the writer, a whole ______ now tries to occupy people's every free moment.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "an entire entertainment industry now competes to fill every spare minute",
+                        "explanation": {
+                            "en": "Paragraph A says an entire entertainment industry competes to fill every spare minute; 'every free moment' restates 'every spare minute'.",
+                            "ru": "В абзаце A говорится, что целая индустрия развлечений соперничает за то, чтобы заполнить каждую свободную минуту; «every free moment» — это перефразировка «every spare minute».",
+                            "uk": "В абзаці A сказано, що ціла індустрія розваг змагається за те, щоб заповнити кожну вільну хвилину; «every free moment» — це перефразування «every spare minute»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "stone"
+                        ],
+                        "prompt": "The writer compares escaping boredom through distraction to taking medicine for the pain caused by a ______ in your shoe.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "swallowing a painkiller to cope with a stone in your shoe",
+                        "explanation": {
+                            "en": "Paragraph B: reaching for a distraction is like swallowing a painkiller for a stone in your shoe, because the cause of the discomfort stays.",
+                            "ru": "Абзац B: хвататься за развлечение — всё равно что глотать обезболивающее, когда в ботинок попал камешек: причина дискомфорта никуда не девается.",
+                            "uk": "Абзац B: хапатися за розвагу — те саме, що ковтати знеболювальне, коли в черевик потрапив камінчик: причина дискомфорту нікуди не зникає."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "threshold"
+                        ],
+                        "prompt": "Lindqvist argues that constant stimulation increases the ______ at which everyday tasks start to seem dull.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "constant stimulation raises the threshold at which ordinary tasks begin to feel tedious",
+                        "explanation": {
+                            "en": "Paragraph C gives Lindqvist's interpretation: stimulation 'raises the threshold' at which ordinary tasks feel tedious.",
+                            "ru": "В абзаце C приводится толкование Линдквиста: стимуляция «raises the threshold», то есть повышает порог, за которым обычные дела начинают казаться скучными.",
+                            "uk": "В абзаці C наведено тлумачення Ліндквіста: стимуляція «raises the threshold», тобто підвищує поріг, за яким звичайні справи починають здаватися нудними."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "wander"
+                        ],
+                        "prompt": "Ferreira thinks that a mind given too little by the outside world will start to ______ while it looks for stimulation.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "the mind begins to wander in search of the stimulation it lacks",
+                        "explanation": {
+                            "en": "Paragraph D: when the outside world offers too little, the mind begins to wander in search of stimulation.",
+                            "ru": "Абзац D: когда внешний мир даёт слишком мало, ум начинает блуждать в поисках стимуляции.",
+                            "uk": "Абзац D: коли зовнішній світ дає занадто мало, розум починає блукати в пошуках стимуляції."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q6",
+        "6": "b2q1",
+        "7": "b2q2",
+        "8": "b2q3",
+        "9": "b2q4",
+        "10": "b2q5",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

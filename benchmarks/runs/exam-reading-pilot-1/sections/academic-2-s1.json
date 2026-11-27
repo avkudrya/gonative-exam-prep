@@ -1,0 +1,1050 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-2|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.277324,
+            "provider": "anthropic",
+            "outputTokens": 13251
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": true,
+            "costUsd": 0.01474,
+            "provider": "anthropic",
+            "outputTokens": 749
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": true,
+            "costUsd": 0.01972,
+            "provider": "openai",
+            "outputTokens": 964
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": true,
+            "costUsd": 0.02021,
+            "provider": "xai",
+            "outputTokens": 2244
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.072544,
+            "provider": "anthropic",
+            "outputTokens": 3341
+        }
+    ],
+    "draft": {
+        "title": "The Secret of Roman Concrete",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a reference to the place where a key ingredient was obtained",
+                        "options": [],
+                        "evidence": "the best of which was dug from deposits around the Bay of Naples, near the town of Pozzuoli",
+                        "explanation": "Paragraph B says the best volcanic ash came from deposits near Pozzuoli on the Bay of Naples. This is the place where an ingredient was obtained."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "an explanation of how a material used inside modern concrete can cause it to break",
+                        "options": [],
+                        "evidence": "Because rust occupies more space than the original steel, it pushes outwards and breaks the surrounding concrete apart from within",
+                        "explanation": "Paragraph E explains that the steel bars inside modern concrete rust, and the rust pushes outwards and breaks the concrete."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a description of a test in which damaged samples were exposed to water",
+                        "options": [],
+                        "evidence": "the team made samples using this method, deliberately cracked them and then allowed water to run through the gaps",
+                        "explanation": "Paragraph D describes how Reyes's team cracked their samples on purpose and then let water run through them. Paragraph C also mentions water, but it describes old harbour concrete, not a test."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a comparison between how long ancient and modern structures have lasted",
+                        "options": [],
+                        "evidence": "began to crack and crumble within fifty or a hundred years",
+                        "explanation": "Paragraph A contrasts Roman harbours that have lasted two thousand years with twentieth-century structures that began to crack within fifty or a hundred years."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "a figure showing the environmental impact of an industry",
+                        "options": [],
+                        "evidence": "Cement production is responsible for roughly eight per cent of global carbon dioxide emissions",
+                        "explanation": "Paragraph F gives the figure of about eight per cent of world carbon dioxide emissions for cement production. Paragraph B gives kiln temperatures but says nothing about the environment."
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "table_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "ash"
+                        ],
+                        "prompt": "Main binder | Roman: lime combined with volcanic ______ | Modern: Portland cement",
+                        "options": [],
+                        "evidence": "Roman builders instead combined lime with volcanic ash",
+                        "explanation": "Paragraph B says the Romans mixed lime with volcanic ash instead of using Portland cement."
+                    },
+                    {
+                        "answer": [
+                            "1,450",
+                            "1450"
+                        ],
+                        "prompt": "Temperature needed to make the binder | Roman: about 900°C | Modern: about ______°C",
+                        "options": [],
+                        "evidence": "made by heating limestone and clay in kilns to about 1,450°C",
+                        "explanation": "Paragraph B says Portland cement is made in kilns at about 1,450°C. The figure 900°C belongs to Roman lime, which is already given in the table."
+                    },
+                    {
+                        "answer": [
+                            "brick"
+                        ],
+                        "prompt": "Large pieces in the mixture | Roman: fist-sized chunks of rock or broken ______ | Modern: liquid mixture poured into moulds",
+                        "options": [],
+                        "evidence": "workers packed fist-sized chunks of rock or broken brick",
+                        "explanation": "Paragraph B says Roman workers packed chunks of rock or broken brick into the paste."
+                    },
+                    {
+                        "answer": [
+                            "crystals"
+                        ],
+                        "prompt": "Effect of seawater | Roman: plate-shaped ______ grow in pores and cracks | Modern: salts make the concrete swell and split",
+                        "options": [],
+                        "evidence": "Long, plate-shaped crystals had formed within the pores and cracks",
+                        "explanation": "Paragraph C says that in Roman harbour concrete, long plate-shaped crystals formed in the pores and cracks. The word 'minerals' is used in general, but the plate-shaped things are the crystals."
+                    },
+                    {
+                        "answer": [
+                            "clasts"
+                        ],
+                        "prompt": "Response to small cracks | Roman: sealed by calcium from lime ______ | Modern: no self-repair",
+                        "options": [],
+                        "evidence": "the water had dissolved calcium from the clasts, which then recrystallised as calcium carbonate",
+                        "explanation": "Paragraph D explains that water dissolved calcium from the lime clasts, and this calcium filled the cracks."
+                    },
+                    {
+                        "answer": [
+                            "rust"
+                        ],
+                        "prompt": "Main weakness | Roman: weak under compression and slow to harden | Modern: embedded steel bars may ______",
+                        "options": [],
+                        "evidence": "once moisture and salt reach it, the metal begins to rust",
+                        "explanation": "Paragraph E says the steel inside modern concrete begins to rust when moisture and salt reach it, and this damages the concrete."
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The concrete dome of the Pantheon contains no reinforcement.",
+                        "options": [],
+                        "evidence": "still carries the largest unreinforced concrete dome in the world",
+                        "explanation": "Paragraph A calls the Pantheon's dome 'unreinforced', which means it has no reinforcement inside it."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Portland cement was first patented in Italy.",
+                        "options": [],
+                        "evidence": "a material patented in Britain in the early nineteenth century",
+                        "explanation": "Paragraph B says Portland cement was patented in Britain. Italy is mentioned only as the source of the Romans' volcanic ash."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Varga's team discovered that seawater had made the ancient pier weaker over time.",
+                        "options": [],
+                        "evidence": "Rather than weakening the concrete, the sea appeared to have been slowly reinforcing it",
+                        "explanation": "Paragraph C says the opposite: the sea made the pier stronger, not weaker. Seawater weakens normal concrete, but this is not what the team found in the Roman pier."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "In Reyes's experiment, the cracks in samples containing lime clasts closed within a fortnight.",
+                        "options": [],
+                        "evidence": "Within two weeks the cracks had sealed completely",
+                        "explanation": "Paragraph D says the cracks sealed completely within two weeks, which is the same as a fortnight. The samples without clasts are the ones that continued to leak."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Marta Lindqvist has personally tested Roman-style concrete in sea walls.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph F says Lindqvist believes Roman-style concrete may be most useful for sea walls, and she warns about laboratory results. It does not say whether she has carried out any tests herself."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Along the coasts of the Mediterranean, the remains of Roman harbours still stand in the waves, their piers battered by salt water for some two thousand years. In Rome itself, the Pantheon, completed in the second century AD, still carries the largest unreinforced concrete dome in the world. Such survivals are all the more striking when set beside the record of modern construction. Many of the bridges, car parks and sea walls built during the twentieth century began to crack and crumble within fifty or a hundred years, and engineers today typically design new structures to last around a century. The contrast has prompted a simple but persistent question: what did Roman builders understand that their modern successors have overlooked?",
+                "label": "A"
+            },
+            {
+                "text": "Part of the answer lies in the ingredients. Modern concrete is held together by Portland cement, a material patented in Britain in the early nineteenth century and made by heating limestone and clay in kilns to about 1,450°C. Roman builders instead combined lime with volcanic ash, the best of which was dug from deposits around the Bay of Naples, near the town of Pozzuoli. Their lime was produced at roughly 900°C, a far lower temperature, and the ash supplied silica and alumina that reacted with it to form a dense, stone-like binder. Into this paste workers packed fist-sized chunks of rock or broken brick, building up walls and foundations layer by layer rather than pouring a liquid mixture into moulds, as is common practice today.",
+                "label": "B"
+            },
+            {
+                "text": "For centuries, observers assumed that the harbour structures had simply been lucky, or that the calm waters of the Mediterranean had treated them unusually kindly. Seawater normally attacks concrete: salts seep into tiny pores and react with the cement, causing it to swell and split. Yet when a team led by the geologist Ines Varga examined cores drilled from an ancient pier, they found the opposite process at work. As seawater percolated through the material, it dissolved some of the volcanic ash and allowed new minerals to grow in the spaces left behind. Long, plate-shaped crystals had formed within the pores and cracks, interlocking like the fibres of a woven mat. Rather than weakening the concrete, the sea appeared to have been slowly reinforcing it, so that the oldest sections were in some respects stronger than when they were first built.",
+                "label": "C"
+            },
+            {
+                "text": "A second clue came from something earlier researchers had dismissed as a flaw. Roman concrete is dotted with small white lumps of lime, a few millimetres across, which were long blamed on careless mixing or poor-quality materials. Materials scientist Tomas Reyes and his colleagues argued instead that these lumps, known as lime clasts, were a by-product of 'hot mixing', in which builders added quicklime directly to the ash and water, generating intense heat. To test the idea, the team made samples using this method, deliberately cracked them and then allowed water to run through the gaps. Within two weeks the cracks had sealed completely: the water had dissolved calcium from the clasts, which then recrystallised as calcium carbonate and filled the openings. Identical samples made without the clasts continued to leak.",
+                "label": "D"
+            },
+            {
+                "text": "None of this means that Roman concrete is simply superior. It is considerably weaker under compression than its modern equivalent, and it hardens slowly, sometimes over months, whereas contractors today expect a new floor slab to bear loads within days. Nor could it support the slender towers and long spans of contemporary architecture. These depend on steel bars embedded in the concrete to resist bending and stretching, and here lies a paradox. Steel gives modern structures much of their strength, but once moisture and salt reach it, the metal begins to rust. Because rust occupies more space than the original steel, it pushes outwards and breaks the surrounding concrete apart from within. Roman builders, who used no such reinforcement, never faced this particular form of decay.",
+                "label": "E"
+            },
+            {
+                "text": "Engineers are now trying to combine the strengths of both traditions. Few expect ancient recipes simply to replace modern ones. Cement production is responsible for roughly eight per cent of global carbon dioxide emissions, partly because of the fuel burned to reach such high kiln temperatures, so a mixture that needs less heat and lasts longer could bring considerable environmental benefits. Several laboratories are experimenting with recipes that add volcanic ash, or industrial waste with similar chemistry, to modern cement, and some are testing whether lime clasts could give new buildings the ability to repair their own cracks. The coastal engineer Marta Lindqvist believes Roman-style concrete may prove most valuable for sea walls and other marine structures, where corrosion is the greatest threat. She warns, however, that promising laboratory results do not guarantee success outdoors. 'The Romans had centuries to demonstrate that their concrete worked,' she says. 'We will need patience before we can claim the same for ours.'",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the best of which was dug from deposits around the Bay of Naples, near the town of Pozzuoli",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "once moisture and salt reach it, the metal begins to rust. Because rust occupies more space than the original steel, it pushes outwards and breaks the surrounding concrete apart from within",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "deliberately cracked them and then allowed water to run through the gaps",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Many of the bridges, car parks and sea walls built during the twentieth century began to crack and crumble within fifty or a hundred years",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Cement production is responsible for roughly eight per cent of global carbon dioxide emissions",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Roman builders instead combined lime with volcanic ash",
+                "answer": [
+                    "ash"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "heating limestone and clay in kilns to about 1,450°C",
+                "answer": [
+                    "1,450"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "fist-sized chunks of rock or broken brick",
+                "answer": [
+                    "brick"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Long, plate-shaped crystals had formed within the pores and cracks",
+                "answer": [
+                    "crystals"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the water had dissolved calcium from the clasts, which then recrystallised as calcium carbonate and filled the openings",
+                "answer": [
+                    "clasts"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "once moisture and salt reach it, the metal begins to rust",
+                "answer": [
+                    "rust"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the largest unreinforced concrete dome in the world",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a material patented in Britain in the early nineteenth century",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Rather than weakening the concrete, the sea appeared to have been slowly reinforcing it",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Within two weeks the cracks had sealed completely",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the best of which was dug from deposits around the Bay of Naples, near the town of Pozzuoli",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "once moisture and salt reach it, the metal begins to rust. Because rust occupies more space than the original steel, it pushes outwards and breaks the surrounding concrete apart from within",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the team made samples using this method, deliberately cracked them and then allowed water to run through the gaps",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "their piers battered by salt water for some two thousand years... Many of the bridges, car parks and sea walls built during the twentieth century began to crack and crumble within fifty or a hundred years",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Cement production is responsible for roughly eight per cent of global carbon dioxide emissions",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "combined lime with volcanic ash",
+                "answer": [
+                    "ash"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "made by heating limestone and clay in kilns to about 1,450°C",
+                "answer": [
+                    "1,450"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "broken brick",
+                "answer": [
+                    "brick"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Long, plate-shaped crystals had formed within the pores and cracks",
+                "answer": [
+                    "crystals"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the water had dissolved calcium from the clasts",
+                "answer": [
+                    "clasts"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the metal begins to rust",
+                "answer": [
+                    "rust"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the largest unreinforced concrete dome in the world",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a material patented in Britain in the early nineteenth century",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Rather than weakening the concrete, the sea appeared to have been slowly reinforcing it, so that the oldest sections were in some respects stronger than when they were first built",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Within two weeks the cracks had sealed completely",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the best of which was dug from deposits around the Bay of Naples, near the town of Pozzuoli",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "once moisture and salt reach it, the metal begins to rust. Because rust occupies more space than the original steel, it pushes outwards and breaks the surrounding concrete apart from within",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the team made samples using this method, deliberately cracked them and then allowed water to run through the gaps",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Many of the bridges, car parks and sea walls built during the twentieth century began to crack and crumble within fifty or a hundred years, and engineers today typically design new structures to last around a century",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Roman builders instead combined lime with volcanic ash",
+            "answer": [
+                "ash"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "heating limestone and clay in kilns to about 1,450°C",
+            "answer": [
+                "1,450"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "fist-sized chunks of rock or broken brick",
+            "answer": [
+                "brick"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Long, plate-shaped crystals had formed within the pores and cracks",
+            "answer": [
+                "crystals"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "the water had dissolved calcium from the clasts",
+            "answer": [
+                "clasts"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "still carries the largest unreinforced concrete dome in the world",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "a material patented in Britain in the early nineteenth century",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Rather than weakening the concrete, the sea appeared to have been slowly reinforcing it",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b3q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The Secret of Roman Concrete\n\nA. Along the coasts of the Mediterranean, the remains of Roman harbours still stand in the waves, their piers battered by salt water for some two thousand years. In Rome itself, the Pantheon, completed in the second century AD, still carries the largest unreinforced concrete dome in the world. Such survivals are all the more striking when set beside the record of modern construction. Many of the bridges, car parks and sea walls built during the twentieth century began to crack and crumble within fifty or a hundred years, and engineers today typically design new structures to last around a century. The contrast has prompted a simple but persistent question: what did Roman builders understand that their modern successors have overlooked?\n\nB. Part of the answer lies in the ingredients. Modern concrete is held together by Portland cement, a material patented in Britain in the early nineteenth century and made by heating limestone and clay in kilns to about 1,450°C. Roman builders instead combined lime with volcanic ash, the best of which was dug from deposits around the Bay of Naples, near the town of Pozzuoli. Their lime was produced at roughly 900°C, a far lower temperature, and the ash supplied silica and alumina that reacted with it to form a dense, stone-like binder. Into this paste workers packed fist-sized chunks of rock or broken brick, building up walls and foundations layer by layer rather than pouring a liquid mixture into moulds, as is common practice today.\n\nC. For centuries, observers assumed that the harbour structures had simply been lucky, or that the calm waters of the Mediterranean had treated them unusually kindly. Seawater normally attacks concrete: salts seep into tiny pores and react with the cement, causing it to swell and split. Yet when a team led by the geologist Ines Varga examined cores drilled from an ancient pier, they found the opposite process at work. As seawater percolated through the material, it dissolved some of the volcanic ash and allowed new minerals to grow in the spaces left behind. Long, plate-shaped crystals had formed within the pores and cracks, interlocking like the fibres of a woven mat. Rather than weakening the concrete, the sea appeared to have been slowly reinforcing it, so that the oldest sections were in some respects stronger than when they were first built.\n\nD. A second clue came from something earlier researchers had dismissed as a flaw. Roman concrete is dotted with small white lumps of lime, a few millimetres across, which were long blamed on careless mixing or poor-quality materials. Materials scientist Tomas Reyes and his colleagues argued instead that these lumps, known as lime clasts, were a by-product of 'hot mixing', in which builders added quicklime directly to the ash and water, generating intense heat. To test the idea, the team made samples using this method, deliberately cracked them and then allowed water to run through the gaps. Within two weeks the cracks had sealed completely: the water had dissolved calcium from the clasts, which then recrystallised as calcium carbonate and filled the openings. Identical samples made without the clasts continued to leak.\n\nE. None of this means that Roman concrete is simply superior. It is considerably weaker under compression than its modern equivalent, and it hardens slowly, sometimes over months, whereas contractors today expect a new floor slab to bear loads within days. Nor could it support the slender towers and long spans of contemporary architecture. These depend on steel bars embedded in the concrete to resist bending and stretching, and here lies a paradox. Steel gives modern structures much of their strength, but once moisture and salt reach it, the metal begins to rust. Because rust occupies more space than the original steel, it pushes outwards and breaks the surrounding concrete apart from within. Roman builders, who used no such reinforcement, never faced this particular form of decay.\n\nF. Engineers are now trying to combine the strengths of both traditions. Few expect ancient recipes simply to replace modern ones. Cement production is responsible for roughly eight per cent of global carbon dioxide emissions, partly because of the fuel burned to reach such high kiln temperatures, so a mixture that needs less heat and lasts longer could bring considerable environmental benefits. Several laboratories are experimenting with recipes that add volcanic ash, or industrial waste with similar chemistry, to modern cement, and some are testing whether lime clasts could give new buildings the ability to repair their own cracks. The coastal engineer Marta Lindqvist believes Roman-style concrete may prove most valuable for sea walls and other marine structures, where corrosion is the greatest threat. She warns, however, that promising laboratory results do not guarantee success outdoors. 'The Romans had centuries to demonstrate that their concrete worked,' she says. 'We will need patience before we can claim the same for ours.'",
+        "title": "The Secret of Roman Concrete",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a reference to the place where a key ingredient was obtained",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "the best of which was dug from deposits around the Bay of Naples, near the town of Pozzuoli",
+                        "explanation": {
+                            "en": "Paragraph B says the best volcanic ash came from deposits near Pozzuoli on the Bay of Naples. This is the place where an ingredient was obtained.",
+                            "ru": "В абзаце B сказано, что лучший вулканический пепел добывали из отложений возле Поццуоли на берегу Неаполитанского залива. Это и есть место, где получали один из ингредиентов.",
+                            "uk": "В абзаці B сказано, що найкращий вулканічний попіл добували з покладів біля Поццуолі на березі Неаполітанської затоки. Саме це місце, де отримували один з інгредієнтів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "an explanation of how a material used inside modern concrete can cause it to break",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Because rust occupies more space than the original steel, it pushes outwards and breaks the surrounding concrete apart from within",
+                        "explanation": {
+                            "en": "Paragraph E explains that the steel bars inside modern concrete rust, and the rust pushes outwards and breaks the concrete.",
+                            "ru": "В абзаце E объясняется, что стальные прутья внутри современного бетона ржавеют, а ржавчина давит изнутри и разрушает бетон.",
+                            "uk": "В абзаці E пояснюється, що сталеві стрижні всередині сучасного бетону іржавіють, а іржа тисне зсередини й руйнує бетон."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a description of a test in which damaged samples were exposed to water",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "the team made samples using this method, deliberately cracked them and then allowed water to run through the gaps",
+                        "explanation": {
+                            "en": "Paragraph D describes how Reyes's team cracked their samples on purpose and then let water run through them. Paragraph C also mentions water, but it describes old harbour concrete, not a test.",
+                            "ru": "В абзаце D описано, как команда Рейеса специально раскалывала образцы, а затем пропускала через них воду. В абзаце C тоже упоминается вода, но там речь идёт о старом портовом бетоне, а не об эксперименте.",
+                            "uk": "В абзаці D описано, як команда Рейеса навмисно розколювала зразки, а потім пропускала крізь них воду. В абзаці C теж згадується вода, але там ідеться про старий портовий бетон, а не про експеримент."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a comparison between how long ancient and modern structures have lasted",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "began to crack and crumble within fifty or a hundred years",
+                        "explanation": {
+                            "en": "Paragraph A contrasts Roman harbours that have lasted two thousand years with twentieth-century structures that began to crack within fifty or a hundred years.",
+                            "ru": "В абзаце A римские гавани, простоявшие две тысячи лет, противопоставляются сооружениям XX века, которые начали трескаться уже через пятьдесят–сто лет.",
+                            "uk": "В абзаці A римські гавані, що простояли дві тисячі років, протиставляються спорудам XX століття, які почали тріскатися вже через п'ятдесят–сто років."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "table_completion",
+                "limit": {
+                    "words": 1,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "ash"
+                        ],
+                        "prompt": "Main binder | Roman: lime combined with volcanic ______ | Modern: Portland cement",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Roman builders instead combined lime with volcanic ash",
+                        "explanation": {
+                            "en": "Paragraph B says the Romans mixed lime with volcanic ash instead of using Portland cement.",
+                            "ru": "В абзаце B сказано, что римляне смешивали известь с вулканическим пеплом (\"volcanic ash\"), а не использовали портландцемент.",
+                            "uk": "В абзаці B сказано, що римляни змішували вапно з вулканічним попелом (\"volcanic ash\"), а не використовували портландцемент."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "1,450",
+                            "1450"
+                        ],
+                        "prompt": "Temperature needed to make the binder | Roman: about 900°C | Modern: about ______°C",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "made by heating limestone and clay in kilns to about 1,450°C",
+                        "explanation": {
+                            "en": "Paragraph B says Portland cement is made in kilns at about 1,450°C. The figure 900°C belongs to Roman lime, which is already given in the table.",
+                            "ru": "В абзаце B сказано, что портландцемент получают в печах при температуре около \"1,450°C\". Цифра 900°C относится к римской извести, и она уже указана в таблице.",
+                            "uk": "В абзаці B сказано, що портландцемент отримують у печах за температури близько \"1,450°C\". Цифра 900°C стосується римського вапна, і вона вже вказана в таблиці."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "brick"
+                        ],
+                        "prompt": "Large pieces in the mixture | Roman: fist-sized chunks of rock or broken ______ | Modern: liquid mixture poured into moulds",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "workers packed fist-sized chunks of rock or broken brick",
+                        "explanation": {
+                            "en": "Paragraph B says Roman workers packed chunks of rock or broken brick into the paste.",
+                            "ru": "В абзаце B сказано, что римские рабочие укладывали в раствор куски камня или битого кирпича (\"chunks of rock or broken brick\").",
+                            "uk": "В абзаці B сказано, що римські робітники вкладали в розчин шматки каменю або битої цегли (\"chunks of rock or broken brick\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "crystals"
+                        ],
+                        "prompt": "Effect of seawater | Roman: plate-shaped ______ grow in pores and cracks | Modern: salts make the concrete swell and split",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Long, plate-shaped crystals had formed within the pores and cracks",
+                        "explanation": {
+                            "en": "Paragraph C says that in Roman harbour concrete, long plate-shaped crystals formed in the pores and cracks. The word 'minerals' is used in general, but the plate-shaped things are the crystals.",
+                            "ru": "В абзаце C сказано, что в римском портовом бетоне в порах и трещинах образовались длинные пластинчатые кристаллы (\"crystals\"). Слово \"minerals\" употребляется в общем смысле, а пластинчатые образования — это именно кристаллы.",
+                            "uk": "В абзаці C сказано, що в римському портовому бетоні в порах і тріщинах утворилися довгі пластинчасті кристали (\"crystals\"). Слово \"minerals\" вжито в загальному значенні, а пластинчасті утворення — це саме кристали."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "clasts"
+                        ],
+                        "prompt": "Response to small cracks | Roman: sealed by calcium from lime ______ | Modern: no self-repair",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "the water had dissolved calcium from the clasts, which then recrystallised as calcium carbonate",
+                        "explanation": {
+                            "en": "Paragraph D explains that water dissolved calcium from the lime clasts, and this calcium filled the cracks.",
+                            "ru": "В абзаце D объясняется, что вода растворяла кальций (\"calcium\") из известковых включений (\"lime clasts\"), и этот кальций заполнял трещины.",
+                            "uk": "В абзаці D пояснюється, що вода розчиняла кальцій (\"calcium\") з вапняних включень (\"lime clasts\"), і цей кальцій заповнював тріщини."
+                        }
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The concrete dome of the Pantheon contains no reinforcement.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "still carries the largest unreinforced concrete dome in the world",
+                        "explanation": {
+                            "en": "Paragraph A calls the Pantheon's dome 'unreinforced', which means it has no reinforcement inside it.",
+                            "ru": "В абзаце A купол Пантеона назван \"unreinforced\", то есть внутри него нет никакой арматуры.",
+                            "uk": "В абзаці A купол Пантеону названо \"unreinforced\", тобто всередині нього немає жодної арматури."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Portland cement was first patented in Italy.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "a material patented in Britain in the early nineteenth century",
+                        "explanation": {
+                            "en": "Paragraph B says Portland cement was patented in Britain. Italy is mentioned only as the source of the Romans' volcanic ash.",
+                            "ru": "В абзаце B сказано, что портландцемент был запатентован в Британии. Италия упоминается только как место, откуда римляне брали вулканический пепел.",
+                            "uk": "В абзаці B сказано, що портландцемент було запатентовано в Британії. Італія згадується лише як місце, звідки римляни брали вулканічний попіл."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Varga's team discovered that seawater had made the ancient pier weaker over time.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "Rather than weakening the concrete, the sea appeared to have been slowly reinforcing it",
+                        "explanation": {
+                            "en": "Paragraph C says the opposite: the sea made the pier stronger, not weaker. Seawater weakens normal concrete, but this is not what the team found in the Roman pier.",
+                            "ru": "В абзаце C сказано обратное: море сделало пирс прочнее, а не слабее. Морская вода разрушает обычный бетон, но в римском пирсе команда обнаружила совсем другое.",
+                            "uk": "В абзаці C сказано протилежне: море зробило пірс міцнішим, а не слабшим. Морська вода руйнує звичайний бетон, але в римському пірсі команда виявила зовсім інше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Marta Lindqvist has personally tested Roman-style concrete in sea walls.",
+                        "numbers": [
+                            13
+                        ],
+                        "explanation": {
+                            "en": "Paragraph F says Lindqvist believes Roman-style concrete may be most useful for sea walls, and she warns about laboratory results. It does not say whether she has carried out any tests herself.",
+                            "ru": "В абзаце F сказано, что, по мнению Линдквист, бетон по римскому образцу может быть особенно полезен для морских дамб, и она призывает осторожно относиться к лабораторным результатам. Но там не говорится, проводила ли она какие-либо испытания сама.",
+                            "uk": "В абзаці F сказано, що, на думку Ліндквіст, бетон за римським зразком може бути особливо корисним для морських дамб, і вона закликає обережно ставитися до лабораторних результатів. Але там не сказано, чи проводила вона якісь випробування сама."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q5"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b2q1",
+        "6": "b2q2",
+        "7": "b2q3",
+        "8": "b2q4",
+        "9": "b2q5",
+        "10": "b3q1",
+        "11": "b3q2",
+        "12": "b3q3",
+        "13": "b3q5"
+    },
+    "translation": {
+        "missing": []
+    }
+}

@@ -1,0 +1,1188 @@
+{
+    "form": {
+        "first": [
+            "group 2 (summary_completion), question 11: \"air conditioning units\" is over the word limit"
+        ],
+        "afterRepair": []
+    },
+    "plan": "academic-1|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.265876,
+            "provider": "anthropic",
+            "outputTokens": 12681
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.125084,
+            "provider": "anthropic",
+            "outputTokens": 4544
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": true,
+            "costUsd": 0.014812,
+            "provider": "anthropic",
+            "outputTokens": 612
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": true,
+            "costUsd": 0.01681,
+            "provider": "openai",
+            "outputTokens": 682
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": true,
+            "costUsd": 0.013588,
+            "provider": "xai",
+            "outputTokens": 988
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.087668,
+            "provider": "anthropic",
+            "outputTokens": 4093
+        }
+    ],
+    "draft": {
+        "title": "The Hidden Heat of Cities",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Drawbacks of the remedies and the case for combining them"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "How satellites have changed the measurement of urban heat"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Why built-up areas trap and produce warmth"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Heat that falls hardest on those with the least"
+                    },
+                    {
+                        "id": "v",
+                        "text": "A familiar temperature gap that is widest after sunset"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Why green roofs outperform street trees"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "The wider price paid for a hotter city"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "The rising cost of air conditioning for households"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Cooling the city with paler surfaces and more greenery"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "the contrast is usually greatest after dark rather than in the heat of the afternoon",
+                        "explanation": "Paragraph A introduces the urban heat island as a recorded difference between city and countryside and explains that it is largest at night. This matches heading v."
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "Several features of the built environment combine to produce this effect.",
+                        "explanation": "Paragraph B lists the causes: heat-storing materials, few plants, the shape of streets and heat produced by the city itself. Heading iii sums up all of these causes."
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "The consequences go well beyond discomfort.",
+                        "explanation": "Paragraph C describes several costs of the heat: deaths, pressure on electricity networks, extra emissions and ozone pollution. Air conditioning costs (heading viii) are only one small detail, not the main idea."
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "The hottest districts were, almost without exception, the poorest",
+                        "explanation": "Paragraph D shows that poorer neighbourhoods suffer the most heat. Satellites are mentioned only as the tool Venn's team used, so heading ii describes a detail, not the main idea."
+                    },
+                    {
+                        "answer": [
+                            "ix"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "the simplest measures involve changing the colour of surfaces",
+                        "explanation": "Paragraph E describes two ways of cooling cities: lighter, reflective surfaces and vegetation such as trees and parks. Heading vi is wrong because green roofs had only a modest effect at street level."
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "most specialists now favour a mixture of measures chosen to suit local conditions rather than a single remedy",
+                        "explanation": "Paragraph F explains the problems with reflective pavements and trees and says experts prefer a mix of measures, which matches heading i."
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "storage heater"
+                        ],
+                        "prompt": "Cities are warmer partly because materials such as asphalt and concrete keep the sun's energy for hours, acting rather like the stones inside a ______.",
+                        "options": [],
+                        "evidence": "behaving much like the stones of a storage heater",
+                        "explanation": "Paragraph B compares heat-storing building materials to the stones of a storage heater."
+                    },
+                    {
+                        "answer": [
+                            "sweat"
+                        ],
+                        "prompt": "In rural areas, much of the sun's energy goes into evaporating water, which cools the area in the same way that ______ cools a person's skin.",
+                        "options": [],
+                        "evidence": "in the same way that sweat cools the skin",
+                        "explanation": "Paragraph B compares cooling by evaporation in the countryside to the way sweat cools the skin."
+                    },
+                    {
+                        "answer": [
+                            "drains"
+                        ],
+                        "prompt": "In cities, rain quickly disappears into ______, so much less energy is used for evaporation.",
+                        "options": [],
+                        "evidence": "in a city where rain runs quickly into drains",
+                        "explanation": "Paragraph B says city rain runs quickly into drains, so less cooling by evaporation takes place."
+                    },
+                    {
+                        "answer": [
+                            "urban canyons"
+                        ],
+                        "prompt": "Narrow streets between tall buildings, known as ______, stop cool breezes and keep heat from escaping at night.",
+                        "options": [],
+                        "evidence": "what climate scientists call 'urban canyons', which block cooling breezes",
+                        "explanation": "Paragraph B gives the name scientists use for narrow streets lined with tall buildings: 'urban canyons'."
+                    },
+                    {
+                        "answer": [
+                            "air-conditioning units"
+                        ],
+                        "prompt": "Cities also create heat themselves, for example from engines, factories and the ______ that push warm air out into the street.",
+                        "options": [],
+                        "evidence": "the air-conditioning units that push warm air out of buildings and into the street",
+                        "explanation": "Paragraph B says, ironically, that air-conditioning units add heat to the street by pushing warm air out of buildings."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "According to the writer, the temperature difference between a city and the countryside is usually largest",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "in the middle of the afternoon."
+                            },
+                            {
+                                "id": "B",
+                                "text": "on windy, cloudy nights."
+                            },
+                            {
+                                "id": "C",
+                                "text": "after dark."
+                            },
+                            {
+                                "id": "D",
+                                "text": "at the start of a heatwave."
+                            }
+                        ],
+                        "evidence": "the contrast is usually greatest after dark rather than in the heat of the afternoon",
+                        "explanation": "Paragraph A says the gap is greatest after dark, not in the afternoon. Option B is wrong because the passage mentions calm, clear nights, not windy, cloudy ones."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Why do doctors believe warm nights can be dangerous?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They increase the amount of ozone in the air."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The body does not get an opportunity to recover."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Elderly people are more likely to be alone at night."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Power networks are more likely to fail at night."
+                            }
+                        ],
+                        "evidence": "because the body never gets the chance to recover",
+                        "explanation": "Paragraph C says warm nights may be as dangerous as hot days because the body never gets the chance to recover. Ozone and power networks are mentioned, but not as reasons why nights are dangerous."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does Marta Venn believe about the temperature differences her team found?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They are mainly caused by activity in the city's port."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They partly result from planning decisions that ignored local residents."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They could be removed by providing air conditioning in poorer districts."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They are smaller than the satellite images first suggested."
+                            }
+                        ],
+                        "evidence": "decisions about where to plant trees, build highways or locate industry have often been made with little regard for the people living nearby",
+                        "explanation": "In paragraph D, Venn says the pattern is 'no accident' because past decisions paid little attention to nearby residents. The port is mentioned only to describe the city."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What did Tomas Reiner find about green roofs?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They lowered afternoon street temperatures by up to two degrees."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They had only a limited effect on temperatures at street level."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They needed more water than newly planted trees."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They worked best when combined with reflective paint."
+                            }
+                        ],
+                        "evidence": "Reiner found their effect at street level to be modest, since most of the cooling stays on the rooftop",
+                        "explanation": "Paragraph E says green roofs had a modest effect at street level because most of the cooling stays on the roof. The two-degree drop in option A was recorded under the new street trees, not green roofs."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "On a still summer evening, a cyclist leaving the centre of a large city for the open fields beyond may notice the air growing noticeably cooler with every kilometre. The effect is not imagined. Meteorologists have long recorded that built-up areas are warmer than the land around them, a pattern known as the urban heat island. The size of the gap varies with the city and the weather, but it is often a few degrees and can, on calm, clear nights, exceed ten. Surprisingly, the contrast is usually greatest after dark rather than in the heat of the afternoon. During the day, sunshine warms town and countryside alike; it is at night, when fields cool quickly but streets go on releasing the warmth they have stored, that the difference becomes most obvious.",
+                "label": "A"
+            },
+            {
+                "text": "Several features of the built environment combine to produce this effect. The first is the choice of materials. Asphalt, brick and concrete absorb a large share of the sunlight that falls on them and hold that energy for hours, behaving much like the stones of a storage heater. The second is the absence of plants. In the countryside, a good deal of the sun's energy is spent evaporating water from soil and leaves, a process that cools the surroundings in the same way that sweat cools the skin; in a city where rain runs quickly into drains, far less energy is used up in this way. The shape of the city matters too. Tall buildings lining narrow streets form what climate scientists call 'urban canyons', which block cooling breezes and prevent heat from escaping to the open sky at night. Finally, cities generate heat of their own, from engines, factories and, ironically, the air-conditioning units that push warm air out of buildings and into the street.",
+                "label": "B"
+            },
+            {
+                "text": "The consequences go well beyond discomfort. During heatwaves, death rates rise sharply in cities, and doctors point out that the warm nights may be as dangerous as the hot days, because the body never gets the chance to recover. Elderly people living alone, and those with heart or lung conditions, are at particular risk. Higher temperatures also raise the demand for electricity as residents switch on fans and air conditioners, which in turn can strain power networks at exactly the moment they are most needed. Where that electricity comes from burning fossil fuels, the extra demand adds to the emissions that are warming the planet as a whole. Heat even affects the air people breathe: warm, sunny conditions speed up the chemical reactions that form ground-level ozone, a pollutant that irritates the lungs.",
+                "label": "C"
+            },
+            {
+                "text": "Nor is the burden shared equally. When a team led by the geographer Marta Venn mapped surface temperatures across one large port city using satellite images, they found differences of up to seven degrees between neighbourhoods only a few kilometres apart. The hottest districts were, almost without exception, the poorest, with densely packed housing, few parks and wide roads offering little shade. Wealthier suburbs, by contrast, were lined with mature trees and private gardens. Venn argues that this pattern is no accident, since decisions about where to plant trees, build highways or locate industry have often been made with little regard for the people living nearby. Residents of the hottest areas are also the least likely to own air conditioning or to be able to afford running it.",
+                "label": "D"
+            },
+            {
+                "text": "Cities have begun to fight back, and the simplest measures involve changing the colour of surfaces. Roofs coated with pale, reflective paint can stay many degrees cooler than dark ones on a sunny day, lowering the temperature of the rooms beneath them as well as of the surrounding air. Some authorities are experimenting with lighter-coloured paving for the same reason. Vegetation offers a second approach. Trees shade streets and walls while also releasing water vapour through their leaves, and parks can form pockets of cooler air that spread into neighbouring blocks. In a three-year trial, the urban ecologist Tomas Reiner compared streets that had received new tree planting with similar streets that had not, and recorded afternoon air temperatures up to two degrees lower beneath the young canopy. Green roofs, covered with low-growing plants, also help, though Reiner found their effect at street level to be modest, since most of the cooling stays on the rooftop.",
+                "label": "E"
+            },
+            {
+                "text": "None of these solutions is perfect. Reflective pavements can bounce sunlight back onto pedestrians and the walls of nearby buildings, so that people walking on them may actually feel hotter. Trees need water, space for their roots and years of care before they provide meaningful shade, and in dry regions irrigating them may compete with other needs. For these reasons, most specialists now favour a mixture of measures chosen to suit local conditions rather than a single remedy. The heat island will not disappear while cities remain dense collections of stone and steel, but with careful planning its worst effects can be softened. As global temperatures continue to rise, that task is likely to become one of the most pressing challenges facing those who design and run the world's cities.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Surprisingly, the contrast is usually greatest after dark rather than in the heat of the afternoon.",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Several features of the built environment combine to produce this effect.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The consequences go well beyond discomfort.",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Nor is the burden shared equally.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the simplest measures involve changing the colour of surfaces",
+                "answer": [
+                    "ix"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "None of these solutions is perfect.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "behaving much like the stones of a storage heater",
+                "answer": [
+                    "storage heater"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "in the same way that sweat cools the skin",
+                "answer": [
+                    "sweat"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "in a city where rain runs quickly into drains",
+                "answer": [
+                    "drains"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "form what climate scientists call 'urban canyons'",
+                "answer": [
+                    "urban canyons"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the air-conditioning units that push warm air out of buildings and into the street",
+                "answer": [
+                    "air-conditioning units"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the contrast is usually greatest after dark rather than in the heat of the afternoon",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "because the body never gets the chance to recover",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "decisions about where to plant trees, build highways or locate industry have often been made with little regard for the people living nearby",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Reiner found their effect at street level to be modest",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Surprisingly, the contrast is usually greatest after dark rather than in the heat of the afternoon.",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Several features of the built environment combine to produce this effect.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The consequences go well beyond discomfort.",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The hottest districts were, almost without exception, the poorest",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the simplest measures involve changing the colour of surfaces... Vegetation offers a second approach.",
+                "answer": [
+                    "ix"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "None of these solutions is perfect... most specialists now favour a mixture of measures chosen to suit local conditions rather than a single remedy.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "behaving much like the stones of a storage heater",
+                "answer": [
+                    "storage heater"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "in the same way that sweat cools the skin",
+                "answer": [
+                    "sweat"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "in a city where rain runs quickly into drains",
+                "answer": [
+                    "drains"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Tall buildings lining narrow streets form what climate scientists call 'urban canyons'",
+                "answer": [
+                    "urban canyons"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the air-conditioning units that push warm air out of buildings and into the street",
+                "answer": [
+                    "air-conditioning units"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the contrast is usually greatest after dark",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the warm nights may be as dangerous as the hot days, because the body never gets the chance to recover",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Venn argues that this pattern is no accident, since decisions about where to plant trees, build highways or locate industry have often been made with little regard for the people living nearby.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Green roofs, covered with low-growing plants, also help, though Reiner found their effect at street level to be modest, since most of the cooling stays on the rooftop.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Surprisingly, the contrast is usually greatest after dark rather than in the heat of the afternoon.",
+            "answer": [
+                "v"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Several features of the built environment combine to produce this effect.",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "The consequences go well beyond discomfort.",
+            "answer": [
+                "vii"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "The hottest districts were, almost without exception, the poorest",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Roofs coated with pale, reflective paint can stay many degrees cooler",
+            "answer": [
+                "ix"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "None of these solutions is perfect.",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "behaving much like the stones of a storage heater",
+            "answer": [
+                "storage heater"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "a process that cools the surroundings in the same way that sweat cools the skin",
+            "answer": [
+                "sweat"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "in a city where rain runs quickly into drains",
+            "answer": [
+                "drains"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Tall buildings lining narrow streets form what climate scientists call 'urban canyons'",
+            "answer": [
+                "urban canyons"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the contrast is usually greatest after dark rather than in the heat of the afternoon",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the warm nights may be as dangerous as the hot days, because the body never gets the chance to recover",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "decisions about where to plant trees, build highways or locate industry have often been made with little regard for the people living nearby",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The Hidden Heat of Cities\n\nA. On a still summer evening, a cyclist leaving the centre of a large city for the open fields beyond may notice the air growing noticeably cooler with every kilometre. The effect is not imagined. Meteorologists have long recorded that built-up areas are warmer than the land around them, a pattern known as the urban heat island. The size of the gap varies with the city and the weather, but it is often a few degrees and can, on calm, clear nights, exceed ten. Surprisingly, the contrast is usually greatest after dark rather than in the heat of the afternoon. During the day, sunshine warms town and countryside alike; it is at night, when fields cool quickly but streets go on releasing the warmth they have stored, that the difference becomes most obvious.\n\nB. Several features of the built environment combine to produce this effect. The first is the choice of materials. Asphalt, brick and concrete absorb a large share of the sunlight that falls on them and hold that energy for hours, behaving much like the stones of a storage heater. The second is the absence of plants. In the countryside, a good deal of the sun's energy is spent evaporating water from soil and leaves, a process that cools the surroundings in the same way that sweat cools the skin; in a city where rain runs quickly into drains, far less energy is used up in this way. The shape of the city matters too. Tall buildings lining narrow streets form what climate scientists call 'urban canyons', which block cooling breezes and prevent heat from escaping to the open sky at night. Finally, cities generate heat of their own, from engines, factories and, ironically, the air-conditioning units that push warm air out of buildings and into the street.\n\nC. The consequences go well beyond discomfort. During heatwaves, death rates rise sharply in cities, and doctors point out that the warm nights may be as dangerous as the hot days, because the body never gets the chance to recover. Elderly people living alone, and those with heart or lung conditions, are at particular risk. Higher temperatures also raise the demand for electricity as residents switch on fans and air conditioners, which in turn can strain power networks at exactly the moment they are most needed. Where that electricity comes from burning fossil fuels, the extra demand adds to the emissions that are warming the planet as a whole. Heat even affects the air people breathe: warm, sunny conditions speed up the chemical reactions that form ground-level ozone, a pollutant that irritates the lungs.\n\nD. Nor is the burden shared equally. When a team led by the geographer Marta Venn mapped surface temperatures across one large port city using satellite images, they found differences of up to seven degrees between neighbourhoods only a few kilometres apart. The hottest districts were, almost without exception, the poorest, with densely packed housing, few parks and wide roads offering little shade. Wealthier suburbs, by contrast, were lined with mature trees and private gardens. Venn argues that this pattern is no accident, since decisions about where to plant trees, build highways or locate industry have often been made with little regard for the people living nearby. Residents of the hottest areas are also the least likely to own air conditioning or to be able to afford running it.\n\nE. Cities have begun to fight back, and the simplest measures involve changing the colour of surfaces. Roofs coated with pale, reflective paint can stay many degrees cooler than dark ones on a sunny day, lowering the temperature of the rooms beneath them as well as of the surrounding air. Some authorities are experimenting with lighter-coloured paving for the same reason. Vegetation offers a second approach. Trees shade streets and walls while also releasing water vapour through their leaves, and parks can form pockets of cooler air that spread into neighbouring blocks. In a three-year trial, the urban ecologist Tomas Reiner compared streets that had received new tree planting with similar streets that had not, and recorded afternoon air temperatures up to two degrees lower beneath the young canopy. Green roofs, covered with low-growing plants, also help, though Reiner found their effect at street level to be modest, since most of the cooling stays on the rooftop.\n\nF. None of these solutions is perfect. Reflective pavements can bounce sunlight back onto pedestrians and the walls of nearby buildings, so that people walking on them may actually feel hotter. Trees need water, space for their roots and years of care before they provide meaningful shade, and in dry regions irrigating them may compete with other needs. For these reasons, most specialists now favour a mixture of measures chosen to suit local conditions rather than a single remedy. The heat island will not disappear while cities remain dense collections of stone and steel, but with careful planning its worst effects can be softened. As global temperatures continue to rise, that task is likely to become one of the most pressing challenges facing those who design and run the world's cities.",
+        "title": "The Hidden Heat of Cities",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Drawbacks of the remedies and the case for combining them"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "How satellites have changed the measurement of urban heat"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Why built-up areas trap and produce warmth"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Heat that falls hardest on those with the least"
+                    },
+                    {
+                        "id": "v",
+                        "text": "A familiar temperature gap that is widest after sunset"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Why green roofs outperform street trees"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "The wider price paid for a hotter city"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "The rising cost of air conditioning for households"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Cooling the city with paler surfaces and more greenery"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "the contrast is usually greatest after dark rather than in the heat of the afternoon",
+                        "explanation": {
+                            "en": "Paragraph A introduces the urban heat island as a recorded difference between city and countryside and explains that it is largest at night. This matches heading v.",
+                            "ru": "Абзац A вводит понятие городского острова тепла как зафиксированной разницы температур между городом и сельской местностью и объясняет, что сильнее всего она проявляется ночью. Это соответствует заголовку v.",
+                            "uk": "Абзац A вводить поняття міського острова тепла як зафіксованої різниці температур між містом і сільською місцевістю та пояснює, що найбільшою вона є вночі. Це відповідає заголовку v."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Several features of the built environment combine to produce this effect.",
+                        "explanation": {
+                            "en": "Paragraph B lists the causes: heat-storing materials, few plants, the shape of streets and heat produced by the city itself. Heading iii sums up all of these causes.",
+                            "ru": "В абзаце B перечислены причины: материалы, накапливающие тепло, мало растительности, форма улиц и тепло, которое производит сам город. Заголовок iii обобщает все эти причины.",
+                            "uk": "В абзаці B перелічено причини: матеріали, що накопичують тепло, мало рослин, форма вулиць і тепло, яке виробляє саме місто. Заголовок iii підсумовує всі ці причини."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "The consequences go well beyond discomfort.",
+                        "explanation": {
+                            "en": "Paragraph C describes several costs of the heat: deaths, pressure on electricity networks, extra emissions and ozone pollution. Air conditioning costs (heading viii) are only one small detail, not the main idea.",
+                            "ru": "Абзац C описывает несколько видов ущерба от жары: смерти, нагрузку на электросети, дополнительные выбросы и загрязнение озоном. Расходы на кондиционирование (заголовок viii) — лишь одна мелкая деталь, а не основная мысль.",
+                            "uk": "Абзац C описує кілька видів шкоди від спеки: смерті, навантаження на електромережі, додаткові викиди та забруднення озоном. Витрати на кондиціонування (заголовок viii) — лише одна дрібна деталь, а не головна думка."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "The hottest districts were, almost without exception, the poorest",
+                        "explanation": {
+                            "en": "Paragraph D shows that poorer neighbourhoods suffer the most heat. Satellites are mentioned only as the tool Venn's team used, so heading ii describes a detail, not the main idea.",
+                            "ru": "Абзац D показывает, что сильнее всего от жары страдают более бедные районы. Спутники упоминаются лишь как инструмент, которым пользовалась команда Венна, поэтому заголовок ii описывает деталь, а не основную мысль.",
+                            "uk": "Абзац D показує, що найбільше від спеки страждають бідніші райони. Супутники згадано лише як інструмент, яким користувалася команда Венна, тому заголовок ii описує деталь, а не головну думку."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ix"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "the simplest measures involve changing the colour of surfaces",
+                        "explanation": {
+                            "en": "Paragraph E describes two ways of cooling cities: lighter, reflective surfaces and vegetation such as trees and parks. Heading vi is wrong because green roofs had only a modest effect at street level.",
+                            "ru": "Абзац E описывает два способа охлаждения городов: более светлые поверхности, отражающие солнечный свет, и растительность — деревья и парки. Заголовок vi не подходит, потому что зелёные крыши дали лишь скромный эффект на уровне улиц.",
+                            "uk": "Абзац E описує два способи охолодження міст: світліші поверхні, що відбивають сонячне світло, і рослинність — дерева та парки. Заголовок vi не підходить, бо зелені дахи мали лише помірний ефект на рівні вулиць."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "most specialists now favour a mixture of measures chosen to suit local conditions rather than a single remedy",
+                        "explanation": {
+                            "en": "Paragraph F explains the problems with reflective pavements and trees and says experts prefer a mix of measures, which matches heading i.",
+                            "ru": "Абзац F объясняет, какие проблемы есть у отражающих дорожных покрытий и у деревьев, и сообщает, что эксперты предпочитают сочетание разных мер. Это соответствует заголовку i.",
+                            "uk": "Абзац F пояснює, які проблеми мають дорожні покриття, що відбивають світло, і дерева, та зазначає, що експерти віддають перевагу поєднанню різних заходів. Це відповідає заголовку i."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "storage heater"
+                        ],
+                        "prompt": "Cities are warmer partly because materials such as asphalt and concrete keep the sun's energy for hours, acting rather like the stones inside a ______.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "behaving much like the stones of a storage heater",
+                        "explanation": {
+                            "en": "Paragraph B compares heat-storing building materials to the stones of a storage heater.",
+                            "ru": "В абзаце B строительные материалы, накапливающие тепло, сравниваются с камнями в теплоаккумулирующем обогревателе.",
+                            "uk": "В абзаці B будівельні матеріали, що накопичують тепло, порівнюються з камінням у теплоакумулювальному обігрівачі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "sweat"
+                        ],
+                        "prompt": "In rural areas, much of the sun's energy goes into evaporating water, which cools the area in the same way that ______ cools a person's skin.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "in the same way that sweat cools the skin",
+                        "explanation": {
+                            "en": "Paragraph B compares cooling by evaporation in the countryside to the way sweat cools the skin.",
+                            "ru": "В абзаце B охлаждение за счёт испарения в сельской местности сравнивается с тем, как пот охлаждает кожу.",
+                            "uk": "В абзаці B охолодження завдяки випаровуванню в сільській місцевості порівнюється з тим, як піт охолоджує шкіру."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "drains"
+                        ],
+                        "prompt": "In cities, rain quickly disappears into ______, so much less energy is used for evaporation.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "in a city where rain runs quickly into drains",
+                        "explanation": {
+                            "en": "Paragraph B says city rain runs quickly into drains, so less cooling by evaporation takes place.",
+                            "ru": "В абзаце B сказано, что в городе дождевая вода быстро уходит в водостоки, поэтому охлаждения за счёт испарения происходит меньше.",
+                            "uk": "В абзаці B сказано, що в місті дощова вода швидко стікає в зливові стоки, тому охолодження завдяки випаровуванню відбувається менше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "urban canyons"
+                        ],
+                        "prompt": "Narrow streets between tall buildings, known as ______, stop cool breezes and keep heat from escaping at night.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "what climate scientists call 'urban canyons', which block cooling breezes",
+                        "explanation": {
+                            "en": "Paragraph B gives the name scientists use for narrow streets lined with tall buildings: 'urban canyons'.",
+                            "ru": "В абзаце B приводится название, которым учёные называют узкие улицы, застроенные высокими зданиями: 'urban canyons'.",
+                            "uk": "В абзаці B наведено назву, якою науковці називають вузькі вулиці, забудовані високими будинками: 'urban canyons'."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "on windy, cloudy nights."
+                    },
+                    {
+                        "id": "B",
+                        "text": "in the middle of the afternoon."
+                    },
+                    {
+                        "id": "C",
+                        "text": "at the start of a heatwave."
+                    },
+                    {
+                        "id": "D",
+                        "text": "after dark."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "According to the writer, the temperature difference between a city and the countryside is usually largest",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "the contrast is usually greatest after dark rather than in the heat of the afternoon",
+                        "explanation": {
+                            "en": "Paragraph A says the gap is greatest after dark, not in the afternoon. Option A is wrong because the passage mentions calm, clear nights, not windy, cloudy ones.",
+                            "ru": "В абзаце A сказано, что разница наибольшая после наступления темноты, а не днём. Вариант A неверен, потому что в тексте говорится о тихих ясных ночах, а не о ветреных и облачных.",
+                            "uk": "В абзаці A сказано, що різниця найбільша після настання темряви, а не вдень. Варіант A неправильний, бо в тексті йдеться про тихі ясні ночі, а не про вітряні й хмарні."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The body does not get an opportunity to recover."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Elderly people are more likely to be alone at night."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They increase the amount of ozone in the air."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Power networks are more likely to fail at night."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why do doctors believe warm nights can be dangerous?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "because the body never gets the chance to recover",
+                        "explanation": {
+                            "en": "Paragraph C says warm nights may be as dangerous as hot days because the body never gets the chance to recover. Ozone and power networks are mentioned, but not as reasons why nights are dangerous.",
+                            "ru": "В абзаце C сказано, что тёплые ночи могут быть так же опасны, как жаркие дни, потому что организм так и не получает возможности восстановиться. Озон и электросети упоминаются, но не как причины того, что ночи опасны.",
+                            "uk": "В абзаці C сказано, що теплі ночі можуть бути так само небезпечними, як спекотні дні, бо організм так і не отримує змоги відновитися. Озон і електромережі згадано, але не як причини того, що ночі небезпечні."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They could be removed by providing air conditioning in poorer districts."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They partly result from planning decisions that ignored local residents."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They are smaller than the satellite images first suggested."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They are mainly caused by activity in the city's port."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does Marta Venn believe about the temperature differences her team found?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "decisions about where to plant trees, build highways or locate industry have often been made with little regard for the people living nearby",
+                        "explanation": {
+                            "en": "In paragraph D, Venn says the pattern is 'no accident' because past decisions paid little attention to nearby residents. The port is mentioned only to describe the city.",
+                            "ru": "В абзаце D Венн говорит, что такая картина — 'no accident', потому что при принятии прежних решений мало считались с местными жителями. Порт упоминается лишь для описания города.",
+                            "uk": "В абзаці D Венн каже, що така картина — 'no accident', бо під час ухвалення попередніх рішень мало зважали на місцевих мешканців. Порт згадано лише для опису міста."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

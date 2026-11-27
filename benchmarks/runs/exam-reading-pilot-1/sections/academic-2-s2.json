@@ -1,0 +1,1103 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-2|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.415156,
+            "provider": "anthropic",
+            "outputTokens": 20142
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": true,
+            "costUsd": 0.01437,
+            "provider": "anthropic",
+            "outputTokens": 645
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": true,
+            "costUsd": 0.021725,
+            "provider": "openai",
+            "outputTokens": 1049
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.025356,
+            "provider": "anthropic",
+            "outputTokens": 472
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": true,
+            "costUsd": 0.005366,
+            "provider": "anthropic",
+            "outputTokens": 66
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": true,
+            "costUsd": 0.006368,
+            "provider": "openai",
+            "outputTokens": 196
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": true,
+            "costUsd": 0.023258,
+            "provider": "xai",
+            "outputTokens": 2710
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.070744,
+            "provider": "anthropic",
+            "outputTokens": 3263
+        }
+    ],
+    "draft": {
+        "title": "Archives in the Ice",
+        "blocks": [
+            {
+                "type": "short_answer",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "near the coast",
+                            "the coast",
+                            "coast"
+                        ],
+                        "prompt": "According to Kossak, in which part of an ice sheet do the layers become stretched and tangled?",
+                        "options": [],
+                        "evidence": "Near the coast, ice flows towards the sea and its layers get stretched and tangled",
+                        "explanation": "Paragraph B quotes Kossak saying that near the coast the ice flows towards the sea, which stretches and tangles its layers. This is why she prefers a dome away from the coast."
+                    },
+                    {
+                        "answer": [
+                            "several summer seasons"
+                        ],
+                        "prompt": "How much time may be needed to drill all the way through ice that is three kilometres deep?",
+                        "options": [],
+                        "evidence": "Reaching the bottom of a sheet three kilometres thick can take several summer seasons.",
+                        "explanation": "Paragraph B says that reaching the bottom of a three-kilometre sheet can take several summer seasons. The question uses 'ice three kilometres deep' to restate 'a sheet three kilometres thick'."
+                    },
+                    {
+                        "answer": [
+                            "methane"
+                        ],
+                        "prompt": "Apart from carbon dioxide, which greenhouse gas does the passage say can be measured in the trapped bubbles?",
+                        "options": [],
+                        "evidence": "concentrations of greenhouse gases such as carbon dioxide and methane can be measured",
+                        "explanation": "Paragraph E explains that the bubbles are real samples of old air, and names carbon dioxide and methane as gases measured in them."
+                    },
+                    {
+                        "answer": [
+                            "drier, windier world",
+                            "drier windier world"
+                        ],
+                        "prompt": "What kind of world is suggested by the large amount of dust in ice from glacial periods?",
+                        "options": [],
+                        "evidence": "ice laid down during glacial periods typically contains far more of it, reflecting a drier, windier world",
+                        "explanation": "Paragraph E says glacial-period ice usually holds much more dust, and that this reflects a drier, windier world."
+                    },
+                    {
+                        "answer": [
+                            "radar"
+                        ],
+                        "prompt": "What has the Polar Stratigraphy Group used to examine possible sites for very old ice?",
+                        "options": [],
+                        "evidence": "the Polar Stratigraphy Group has spent three seasons surveying possible sites with radar",
+                        "explanation": "Paragraph G states that the group spent three seasons surveying possible sites with radar. 'Examine' in the question restates 'surveying'."
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            },
+            {
+                "type": "flow_chart_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "slowly"
+                        ],
+                        "prompt": "Choose a broad dome, where the thick ice moves ______.",
+                        "options": [],
+                        "evidence": "the ideal site is a broad dome where the ice is thick but moves slowly",
+                        "explanation": "Paragraph B says the best site is a broad dome where the ice is thick but moves slowly, so its layers stay in place."
+                    },
+                    {
+                        "answer": [
+                            "teeth"
+                        ],
+                        "prompt": "Lower the drill: a hollow rotating tube with cutting ______ at its lower end removes a cylinder of ice.",
+                        "options": [],
+                        "evidence": "The drill itself is a hollow rotating tube with cutting teeth at its lower end.",
+                        "explanation": "Paragraph B describes the drill as a hollow rotating tube with cutting teeth at its lower end."
+                    },
+                    {
+                        "answer": [
+                            "fluid"
+                        ],
+                        "prompt": "Fill the borehole with a ______ of similar density to the ice, so that pressure cannot close it.",
+                        "options": [],
+                        "evidence": "the hole is filled with a fluid whose density roughly matches that of the surrounding ice",
+                        "explanation": "Paragraph B explains that pressure would slowly close the hole, so it is filled with a fluid whose density is close to that of the ice."
+                    },
+                    {
+                        "answer": [
+                            "relax"
+                        ],
+                        "prompt": "Keep brittle ice in a cold store at the site for about a year so that the stresses inside it can ______.",
+                        "options": [],
+                        "evidence": "left to rest in a cold store at the drilling site for about a year, allowing the stresses inside it to relax",
+                        "explanation": "Paragraph C says brittle ice is left in a cold store at the site for about a year so the stresses inside it can relax. 'Rest' does not fit, because it is the stresses that must change, not the ice."
+                    },
+                    {
+                        "answer": [
+                            "insulated"
+                        ],
+                        "prompt": "Measure, photograph and label each section, then ship it to the laboratory in ______ containers.",
+                        "options": [],
+                        "evidence": "packed into insulated containers and shipped to a laboratory",
+                        "explanation": "Paragraph C says each section is labelled and then packed into insulated containers to be shipped to a laboratory."
+                    },
+                    {
+                        "answer": [
+                            "layers"
+                        ],
+                        "prompt": "In the upper part of the core, find the age of the ice by counting yearly ______.",
+                        "options": [],
+                        "evidence": "this can be done by counting annual layers",
+                        "explanation": "Paragraph D says the upper part of a core is dated by counting annual layers. 'Yearly' in the flow chart means the same as 'annual'."
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO differences between summer and winter snow does the writer mention as helping to make each year's band recognisable?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "the texture of the snow"
+                            },
+                            {
+                                "id": "B",
+                                "text": "the amount of dust it contains"
+                            },
+                            {
+                                "id": "C",
+                                "text": "the thickness of each layer"
+                            },
+                            {
+                                "id": "D",
+                                "text": "the proportion of methane in its bubbles"
+                            },
+                            {
+                                "id": "E",
+                                "text": "the amount of volcanic ash it holds"
+                            }
+                        ],
+                        "evidence": "Summer and winter snow differ in texture and in the amount of dust and sea salt they contain",
+                        "explanation": "Paragraph D says summer and winter snow differ in texture and in the amount of dust (and sea salt). Volcanic ash is mentioned, but as a marker for deeper ice, not as a seasonal difference, and layer thickness is only mentioned as a problem deeper down."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO of the following statements about the search for older ice are supported by the passage?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Suitable ice is likely to be found only where the ground beneath it is cold."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Researchers want to study a time when the pattern of ice ages seems to have shifted."
+                            },
+                            {
+                                "id": "C",
+                                "text": "The group has already recovered ice that is over a million years old."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Kossak expects the oldest ice to form a thick layer."
+                            },
+                            {
+                                "id": "E",
+                                "text": "Kossak doubts that such ancient ice exists."
+                            }
+                        ],
+                        "evidence": "a period roughly a million years ago when the rhythm of the ice ages appears to have changed. Ice that old will only be found where the bed is cold",
+                        "explanation": "Paragraph G says researchers want to reach a time when the rhythm of the ice ages seems to have changed, and that such ice will only be found where the bed is cold. The longest record so far is about 800,000 years, and Kossak thinks the ice probably exists but may be only a few metres thick, so C, D and E are wrong."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO problems does the writer link to the ice at the very bottom of an ice sheet?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It may have been melted by heat from below."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Its layers are frequently folded."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Its air has been contaminated by drilling fluid."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It is too brittle to be transported."
+                            },
+                            {
+                                "id": "E",
+                                "text": "It contains too much dust to be dated."
+                            }
+                        ],
+                        "evidence": "heat rising from the rock can melt the deepest ice, and layers close to the bed are often folded",
+                        "explanation": "Paragraph F says heat from the rock can melt the deepest ice and that layers near the bed are often folded. Brittle ice (D) is found at a few hundred metres, not at the bottom, as Paragraph C explains."
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Every winter, snow falls on the high plateaus of Greenland and Antarctica, and in the coldest parts of those ice sheets it never melts. Instead, each year's snow is buried by the next, and over centuries the weight above squeezes the fluffy crystals into dense glacial ice. As this happens, small pockets of the atmosphere become sealed between the grains. The result is a frozen archive, stacked in order from the most recent snowfall at the surface to the oldest ice near the rock beneath, and reading it has become one of the most powerful ways of discovering what the Earth's climate was like long before anyone kept weather records.",
+                "label": "A"
+            },
+            {
+                "text": "Retrieving the archive begins with choosing where to drill. According to glaciologist Mirela Kossak, who has led several expeditions for the Polar Stratigraphy Group, the ideal site is a broad dome where the ice is thick but moves slowly. \"Near the coast, ice flows towards the sea and its layers get stretched and tangled,\" she explains. \"On a dome, they stay roughly where they were laid down.\" The drill itself is a hollow rotating tube with cutting teeth at its lower end. Lowered on a cable, it carves out a cylinder of ice a few metres long, which is hauled to the surface before the drill descends again. Because the enormous pressure at depth would gradually squeeze the borehole shut, the hole is filled with a fluid whose density roughly matches that of the surrounding ice. Reaching the bottom of a sheet three kilometres thick can take several summer seasons.",
+                "label": "B"
+            },
+            {
+                "text": "Not every core can travel straight away. At depths of a few hundred metres, the trapped air is under such high pressure that the ice tends to crack or shatter when it is brought up. Kossak's team found that this brittle ice could be handled safely only if it was left to rest in a cold store at the drilling site for about a year, allowing the stresses inside it to relax. Eventually, each section is measured, photographed and labelled with its depth before being packed into insulated containers and shipped to a laboratory, where it is kept well below freezing, since even brief warming could alter its chemistry.",
+                "label": "C"
+            },
+            {
+                "text": "Before any measurement means anything, the ice has to be dated. In the upper part of a core, this can be done by counting annual layers, much as one might count the rings of a tree. Summer and winter snow differ in texture and in the amount of dust and sea salt they contain, so each year usually leaves a recognisable band. Deeper down, however, the weight above has thinned the layers until they are too narrow to tell apart. Here researchers turn to other clues. Thin bands of ash from large volcanic eruptions act as time markers that can be matched between cores and sometimes linked to eruptions of known date. Beyond that, computer models of how the ice has flowed and compressed are used to estimate the ages of the deepest sections.",
+                "label": "D"
+            },
+            {
+                "text": "With a timescale in place, the analysis can begin. The most widely used temperature signal comes from the water itself. Oxygen atoms exist in lighter and heavier forms, and the colder the air when snow forms, the smaller the proportion of heavy oxygen it contains. By measuring this ratio along a core, scientists can trace past warming and cooling. The bubbles offer something more direct: genuine samples of ancient atmosphere, in which concentrations of greenhouse gases such as carbon dioxide and methane can be measured. Dust provides a third line of evidence, since ice laid down during glacial periods typically contains far more of it, reflecting a drier, windier world.",
+                "label": "E"
+            },
+            {
+                "text": "Impressive as these records are, they have limits. One problem is that the air in a bubble is always younger than the ice around it. Near the surface, snow remains porous for decades or longer, and air keeps circulating through it until the pores finally close. At sites with very little snowfall, the gap between the age of the ice and that of its air can reach several thousand years, and it must be estimated rather than measured. The bottom of the sheet brings further difficulty: heat rising from the rock can melt the deepest ice, and layers close to the bed are often folded, so the oldest part of the record may be scrambled or missing. Finally, a core describes conditions at a single location. Kossak warns that a temperature history from central Antarctica should not be treated as a global average, and that ice records are most valuable when compared with evidence from ocean sediments and caves.",
+                "label": "F"
+            },
+            {
+                "text": "At present, the longest continuous ice-core record reaches back about 800,000 years. Many researchers hope to go further, to a period roughly a million years ago when the rhythm of the ice ages appears to have changed. Ice that old will only be found where the bed is cold and the ice has barely moved, and the Polar Stratigraphy Group has spent three seasons surveying possible sites with radar. Kossak is cautiously optimistic: such ice probably exists, she says, but it may form a layer only a few metres thick at the very bottom of the sheet.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Near the coast, ice flows towards the sea and its layers get stretched and tangled",
+                "answer": [
+                    "Near the coast"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Reaching the bottom of a sheet three kilometres thick can take several summer seasons.",
+                "answer": [
+                    "several summer seasons"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "concentrations of greenhouse gases such as carbon dioxide and methane can be measured",
+                "answer": [
+                    "methane"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    false
+                ],
+                "quote": "reflecting a drier, windier world",
+                "answer": [
+                    "drier, windier"
+                ],
+                "correct": false
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "has spent three seasons surveying possible sites with radar",
+                "answer": [
+                    "radar"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a broad dome where the ice is thick but moves slowly",
+                "answer": [
+                    "slowly"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a hollow rotating tube with cutting teeth at its lower end",
+                "answer": [
+                    "teeth"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the hole is filled with a fluid whose density roughly matches that of the surrounding ice",
+                "answer": [
+                    "fluid"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "allowing the stresses inside it to relax",
+                "answer": [
+                    "relax"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "packed into insulated containers and shipped to a laboratory",
+                "answer": [
+                    "insulated"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "this can be done by counting annual layers",
+                "answer": [
+                    "layers"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Summer and winter snow differ in texture and in the amount of dust and sea salt they contain",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Ice that old will only be found where the bed is cold and the ice has barely moved",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "heat rising from the rock can melt the deepest ice, and layers close to the bed are often folded",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Near the coast, ice flows towards the sea and its layers get stretched and tangled",
+                "answer": [
+                    "near the coast"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Reaching the bottom of a sheet three kilometres thick can take several summer seasons.",
+                "answer": [
+                    "several summer seasons"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "concentrations of greenhouse gases such as carbon dioxide and methane can be measured",
+                "answer": [
+                    "methane"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "reflecting a drier, windier world",
+                "answer": [
+                    "drier, windier world"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the Polar Stratigraphy Group has spent three seasons surveying possible sites with radar",
+                "answer": [
+                    "radar"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the ideal site is a broad dome where the ice is thick but moves slowly",
+                "answer": [
+                    "slowly"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The drill itself is a hollow rotating tube with cutting teeth at its lower end.",
+                "answer": [
+                    "teeth"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the hole is filled with a fluid whose density roughly matches that of the surrounding ice",
+                "answer": [
+                    "fluid"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "allowing the stresses inside it to relax",
+                "answer": [
+                    "relax"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "being packed into insulated containers and shipped to a laboratory",
+                "answer": [
+                    "insulated"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "this can be done by counting annual layers",
+                "answer": [
+                    "layers"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Summer and winter snow differ in texture and in the amount of dust and sea salt they contain",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Many researchers hope to go further, to a period roughly a million years ago when the rhythm of the ice ages appears to have changed. Ice that old will only be found where the bed is cold and the ice has barely moved",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "heat rising from the rock can melt the deepest ice, and layers close to the bed are often folded",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": [
+            "b1q4"
+        ]
+    },
+    "revise": {
+        "b1q4": {
+            "action": "add_variant",
+            "before": {
+                "answer": [
+                    "drier, windier world",
+                    "drier windier world"
+                ],
+                "prompt": "What kind of world is suggested by the large amount of dust in ice from glacial periods?",
+                "options": [],
+                "evidence": "ice laid down during glacial periods typically contains far more of it, reflecting a drier, windier world",
+                "explanation": "Paragraph E says glacial-period ice usually holds much more dust, and that this reflects a drier, windier world."
+            },
+            "reason": "The question asks what kind of world is suggested, so 'drier, windier' answers it fully. It uses the passage's exact words and stays within the three-word limit, so it should be accepted alongside the existing key."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Near the coast, ice flows towards the sea and its layers get stretched and tangled",
+            "answer": [
+                "Near the coast"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Reaching the bottom of a sheet three kilometres thick can take several summer seasons.",
+            "answer": [
+                "several summer seasons"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "greenhouse gases such as carbon dioxide and methane can be measured",
+            "answer": [
+                "methane"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "reflecting a drier, windier world",
+            "answer": [
+                "drier, windier world"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "a broad dome where the ice is thick but moves slowly",
+            "answer": [
+                "slowly"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "a hollow rotating tube with cutting teeth at its lower end",
+            "answer": [
+                "teeth"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the hole is filled with a fluid whose density roughly matches that of the surrounding ice",
+            "answer": [
+                "fluid"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "allowing the stresses inside it to relax",
+            "answer": [
+                "relax"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "packed into insulated containers",
+            "answer": [
+                "insulated"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "Summer and winter snow differ in texture and in the amount of dust and sea salt they contain",
+            "answer": [
+                "A",
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "a period roughly a million years ago when the rhythm of the ice ages appears to have changed. Ice that old will only be found where the bed is cold",
+            "answer": [
+                "B",
+                "D"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 14,
+        "agreedFirst": 13,
+        "discardRate": 0,
+        "agreedRevised": 1,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "ice laid down during glacial periods typically contains far more of it, reflecting a drier, windier world",
+                "answer": [
+                    "drier, windier"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Dust provides a third line of evidence, since ice laid down during glacial periods typically contains far more of it, reflecting a drier, windier world.",
+                "answer": [
+                    "drier, windier world"
+                ],
+                "correct": true
+            }
+        }
+    },
+    "section": {
+        "text": "Archives in the Ice\n\nA. Every winter, snow falls on the high plateaus of Greenland and Antarctica, and in the coldest parts of those ice sheets it never melts. Instead, each year's snow is buried by the next, and over centuries the weight above squeezes the fluffy crystals into dense glacial ice. As this happens, small pockets of the atmosphere become sealed between the grains. The result is a frozen archive, stacked in order from the most recent snowfall at the surface to the oldest ice near the rock beneath, and reading it has become one of the most powerful ways of discovering what the Earth's climate was like long before anyone kept weather records.\n\nB. Retrieving the archive begins with choosing where to drill. According to glaciologist Mirela Kossak, who has led several expeditions for the Polar Stratigraphy Group, the ideal site is a broad dome where the ice is thick but moves slowly. \"Near the coast, ice flows towards the sea and its layers get stretched and tangled,\" she explains. \"On a dome, they stay roughly where they were laid down.\" The drill itself is a hollow rotating tube with cutting teeth at its lower end. Lowered on a cable, it carves out a cylinder of ice a few metres long, which is hauled to the surface before the drill descends again. Because the enormous pressure at depth would gradually squeeze the borehole shut, the hole is filled with a fluid whose density roughly matches that of the surrounding ice. Reaching the bottom of a sheet three kilometres thick can take several summer seasons.\n\nC. Not every core can travel straight away. At depths of a few hundred metres, the trapped air is under such high pressure that the ice tends to crack or shatter when it is brought up. Kossak's team found that this brittle ice could be handled safely only if it was left to rest in a cold store at the drilling site for about a year, allowing the stresses inside it to relax. Eventually, each section is measured, photographed and labelled with its depth before being packed into insulated containers and shipped to a laboratory, where it is kept well below freezing, since even brief warming could alter its chemistry.\n\nD. Before any measurement means anything, the ice has to be dated. In the upper part of a core, this can be done by counting annual layers, much as one might count the rings of a tree. Summer and winter snow differ in texture and in the amount of dust and sea salt they contain, so each year usually leaves a recognisable band. Deeper down, however, the weight above has thinned the layers until they are too narrow to tell apart. Here researchers turn to other clues. Thin bands of ash from large volcanic eruptions act as time markers that can be matched between cores and sometimes linked to eruptions of known date. Beyond that, computer models of how the ice has flowed and compressed are used to estimate the ages of the deepest sections.\n\nE. With a timescale in place, the analysis can begin. The most widely used temperature signal comes from the water itself. Oxygen atoms exist in lighter and heavier forms, and the colder the air when snow forms, the smaller the proportion of heavy oxygen it contains. By measuring this ratio along a core, scientists can trace past warming and cooling. The bubbles offer something more direct: genuine samples of ancient atmosphere, in which concentrations of greenhouse gases such as carbon dioxide and methane can be measured. Dust provides a third line of evidence, since ice laid down during glacial periods typically contains far more of it, reflecting a drier, windier world.\n\nF. Impressive as these records are, they have limits. One problem is that the air in a bubble is always younger than the ice around it. Near the surface, snow remains porous for decades or longer, and air keeps circulating through it until the pores finally close. At sites with very little snowfall, the gap between the age of the ice and that of its air can reach several thousand years, and it must be estimated rather than measured. The bottom of the sheet brings further difficulty: heat rising from the rock can melt the deepest ice, and layers close to the bed are often folded, so the oldest part of the record may be scrambled or missing. Finally, a core describes conditions at a single location. Kossak warns that a temperature history from central Antarctica should not be treated as a global average, and that ice records are most valuable when compared with evidence from ocean sediments and caves.\n\nG. At present, the longest continuous ice-core record reaches back about 800,000 years. Many researchers hope to go further, to a period roughly a million years ago when the rhythm of the ice ages appears to have changed. Ice that old will only be found where the bed is cold and the ice has barely moved, and the Polar Stratigraphy Group has spent three seasons surveying possible sites with radar. Kossak is cautiously optimistic: such ice probably exists, she says, but it may form a layer only a few metres thick at the very bottom of the sheet.",
+        "title": "Archives in the Ice",
+        "groups": [
+            {
+                "type": "short_answer",
+                "limit": {
+                    "words": 3,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "near the coast",
+                            "the coast",
+                            "coast"
+                        ],
+                        "prompt": "According to Kossak, in which part of an ice sheet do the layers become stretched and tangled?",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Near the coast, ice flows towards the sea and its layers get stretched and tangled",
+                        "explanation": {
+                            "en": "Paragraph B quotes Kossak saying that near the coast the ice flows towards the sea, which stretches and tangles its layers. This is why she prefers a dome away from the coast.",
+                            "ru": "В абзаце B приводятся слова Коссак о том, что у побережья лёд течёт к морю, из-за чего его слои растягиваются и перепутываются. Поэтому она предпочитает купол вдали от побережья.",
+                            "uk": "В абзаці B наведено слова Коссак про те, що біля узбережжя лід тече до моря, через що його шари розтягуються й переплутуються. Тому вона віддає перевагу куполу далеко від узбережжя."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "several summer seasons"
+                        ],
+                        "prompt": "How much time may be needed to drill all the way through ice that is three kilometres deep?",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Reaching the bottom of a sheet three kilometres thick can take several summer seasons.",
+                        "explanation": {
+                            "en": "Paragraph B says that reaching the bottom of a three-kilometre sheet can take several summer seasons. The question uses 'ice three kilometres deep' to restate 'a sheet three kilometres thick'.",
+                            "ru": "В абзаце B сказано, что, чтобы добраться до дна ледяного щита толщиной три километра, может понадобиться несколько летних сезонов. Выражение «ice three kilometres deep» в вопросе — это перефразировка «a sheet three kilometres thick».",
+                            "uk": "В абзаці B сказано, що, щоб дістатися дна крижаного щита завтовшки три кілометри, може знадобитися кілька літніх сезонів. Вираз «ice three kilometres deep» у питанні — це перефразування «a sheet three kilometres thick»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "methane"
+                        ],
+                        "prompt": "Apart from carbon dioxide, which greenhouse gas does the passage say can be measured in the trapped bubbles?",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "concentrations of greenhouse gases such as carbon dioxide and methane can be measured",
+                        "explanation": {
+                            "en": "Paragraph E explains that the bubbles are real samples of old air, and names carbon dioxide and methane as gases measured in them.",
+                            "ru": "В абзаце E объясняется, что пузырьки — это настоящие образцы древнего воздуха, а среди газов, которые в них измеряют, названы углекислый газ («carbon dioxide») и метан («methane»).",
+                            "uk": "В абзаці E пояснюється, що бульбашки — це справжні зразки давнього повітря, а серед газів, які в них вимірюють, названо вуглекислий газ («carbon dioxide») і метан («methane»)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "drier, windier world",
+                            "drier windier world",
+                            "drier, windier",
+                            "drier windier"
+                        ],
+                        "prompt": "What kind of world is suggested by the large amount of dust in ice from glacial periods?",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "ice laid down during glacial periods typically contains far more of it, reflecting a drier, windier world",
+                        "explanation": {
+                            "en": "Paragraph E says that ice from glacial periods usually holds much more dust. This reflects a drier, windier world.",
+                            "ru": "В абзаце E говорится, что лёд ледниковых периодов обычно содержит гораздо больше пыли («dust»). Это говорит о том, что мир тогда был суше и ветренее.",
+                            "uk": "В абзаці E сказано, що лід льодовикових періодів зазвичай містить набагато більше пилу («dust»). Це свідчить про те, що світ тоді був сухішим і вітрянішим."
+                        }
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            },
+            {
+                "type": "flow_chart_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "slowly"
+                        ],
+                        "prompt": "Choose a broad dome, where the thick ice moves ______.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "the ideal site is a broad dome where the ice is thick but moves slowly",
+                        "explanation": {
+                            "en": "Paragraph B says the best site is a broad dome where the ice is thick but moves slowly, so its layers stay in place.",
+                            "ru": "В абзаце B сказано, что лучшее место — широкий купол («dome»), где лёд толстый, но движется медленно, поэтому его слои остаются на месте.",
+                            "uk": "В абзаці B сказано, що найкраще місце — широкий купол («dome»), де лід товстий, але рухається повільно, тому його шари залишаються на місці."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "teeth"
+                        ],
+                        "prompt": "Lower the drill: a hollow rotating tube with cutting ______ at its lower end removes a cylinder of ice.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "The drill itself is a hollow rotating tube with cutting teeth at its lower end.",
+                        "explanation": {
+                            "en": "Paragraph B describes the drill as a hollow rotating tube with cutting teeth at its lower end.",
+                            "ru": "В абзаце B бур описан как полая вращающаяся труба с режущими зубьями («teeth») на нижнем конце.",
+                            "uk": "В абзаці B бур описано як порожнисту трубу, що обертається, з ріжучими зубцями («teeth») на нижньому кінці."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "fluid"
+                        ],
+                        "prompt": "Fill the borehole with a ______ of similar density to the ice, so that pressure cannot close it.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "the hole is filled with a fluid whose density roughly matches that of the surrounding ice",
+                        "explanation": {
+                            "en": "Paragraph B explains that pressure would slowly close the hole, so it is filled with a fluid whose density is close to that of the ice.",
+                            "ru": "В абзаце B объясняется, что давление постепенно закрыло бы скважину, поэтому её заполняют жидкостью («fluid»), плотность которой близка к плотности льда.",
+                            "uk": "В абзаці B пояснюється, що тиск поступово закрив би свердловину, тому її заповнюють рідиною («fluid»), густина якої близька до густини льоду."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "relax"
+                        ],
+                        "prompt": "Keep brittle ice in a cold store at the site for about a year so that the stresses inside it can ______.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "left to rest in a cold store at the drilling site for about a year, allowing the stresses inside it to relax",
+                        "explanation": {
+                            "en": "Paragraph C says brittle ice is left in a cold store at the site for about a year so the stresses inside it can relax. 'Rest' does not fit, because it is the stresses that must change, not the ice.",
+                            "ru": "В абзаце C сказано, что хрупкий лёд оставляют примерно на год в холодильном хранилище прямо на месте, чтобы внутренние напряжения («stresses») в нём ослабли («relax»). Слово «Rest» не подходит: меняться должны именно напряжения, а не сам лёд.",
+                            "uk": "В абзаці C сказано, що крихкий лід залишають приблизно на рік у холодильному сховищі просто на місці, щоб внутрішні напруження («stresses») в ньому послабилися («relax»). Слово «Rest» не підходить: змінюватися мають саме напруження, а не сам лід."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "insulated"
+                        ],
+                        "prompt": "Measure, photograph and label each section, then ship it to the laboratory in ______ containers.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "packed into insulated containers and shipped to a laboratory",
+                        "explanation": {
+                            "en": "Paragraph C says each section is labelled and then packed into insulated containers to be shipped to a laboratory.",
+                            "ru": "В абзаце C говорится, что каждый фрагмент маркируют («labelled»), а затем упаковывают в теплоизолированные контейнеры («insulated containers») для отправки в лабораторию.",
+                            "uk": "В абзаці C сказано, що кожен фрагмент маркують («labelled»), а потім пакують у теплоізольовані контейнери («insulated containers») для відправлення до лабораторії."
+                        }
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "the amount of dust it contains"
+                    },
+                    {
+                        "id": "B",
+                        "text": "the proportion of methane in its bubbles"
+                    },
+                    {
+                        "id": "C",
+                        "text": "the texture of the snow"
+                    },
+                    {
+                        "id": "D",
+                        "text": "the amount of volcanic ash it holds"
+                    },
+                    {
+                        "id": "E",
+                        "text": "the thickness of each layer"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "C"
+                        ],
+                        "prompt": "Which TWO differences between summer and winter snow does the writer mention as helping to make each year's band recognisable?",
+                        "numbers": [
+                            10,
+                            11
+                        ],
+                        "evidence": "Summer and winter snow differ in texture and in the amount of dust and sea salt they contain",
+                        "explanation": {
+                            "en": "Paragraph D says summer and winter snow differ in texture and in the amount of dust (and sea salt). Volcanic ash is mentioned, but as a marker for deeper ice, not as a seasonal difference, and layer thickness is only mentioned as a problem deeper down.",
+                            "ru": "В абзаце D сказано, что летний и зимний снег различаются по текстуре и по количеству пыли (и морской соли). Вулканический пепел упоминается, но как ориентир для более глубокого льда, а не как сезонное различие, а толщина слоёв упоминается только как проблема на большей глубине.",
+                            "uk": "В абзаці D сказано, що літній і зимовий сніг відрізняються текстурою та кількістю пилу (і морської солі). Вулканічний попіл згадується, але як орієнтир для глибшого льоду, а не як сезонна відмінність, а товщина шарів згадується лише як проблема на більшій глибині."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Kossak expects the oldest ice to form a thick layer."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Researchers want to study a time when the pattern of ice ages seems to have shifted."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Kossak doubts that such ancient ice exists."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Suitable ice is likely to be found only where the ground beneath it is cold."
+                    },
+                    {
+                        "id": "E",
+                        "text": "The group has already recovered ice that is over a million years old."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B",
+                            "D"
+                        ],
+                        "prompt": "Which TWO of the following statements about the search for older ice are supported by the passage?",
+                        "numbers": [
+                            12,
+                            13
+                        ],
+                        "evidence": "a period roughly a million years ago when the rhythm of the ice ages appears to have changed. Ice that old will only be found where the bed is cold",
+                        "explanation": {
+                            "en": "Paragraph G says researchers want to reach a time when the rhythm of the ice ages seems to have changed, and that such ice will only be found where the bed is cold. The longest record so far is about 800,000 years, and Kossak thinks the ice probably exists but may be only a few metres thick, so E, A and C are wrong.",
+                            "ru": "В абзаце G сказано, что исследователи хотят добраться до времени, когда ритм ледниковых периодов, по-видимому, изменился, и что такой лёд можно найти только там, где ложе холодное. Самая длинная запись на сегодня охватывает около 800 000 лет, а Коссак считает, что такой лёд, вероятно, существует, но может быть толщиной всего несколько метров, поэтому варианты «E», «A» и «C» неверны.",
+                            "uk": "В абзаці G сказано, що дослідники хочуть дістатися часу, коли ритм льодовикових періодів, схоже, змінився, і що такий лід можна знайти лише там, де ложе холодне. Найдовший запис на сьогодні охоплює близько 800 000 років, а Коссак вважає, що такий лід, імовірно, існує, але може мати товщину лише кілька метрів, тому варіанти «E», «A» і «C» неправильні."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "revised",
+            "b1q5": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b2q1",
+        "6": "b2q2",
+        "7": "b2q3",
+        "8": "b2q4",
+        "9": "b2q5",
+        "10": "b3q1",
+        "12": "b3q2"
+    },
+    "translation": {
+        "missing": []
+    }
+}

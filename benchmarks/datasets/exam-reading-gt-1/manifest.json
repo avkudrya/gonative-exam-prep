@@ -1,0 +1,964 @@
+{
+  "id": "exam-reading-gt-1",
+  "about": "P7.5 Reading set (docs/phase-7/P7.5-reading-set.md): ten General Training tests written with prompts rd-2; owner approval 2026-11-27 «да, до $40» for both rounds (General Training $21, Academic $19). Frozen: a change needs a new id.",
+  "exam": "ielts-general-training",
+  "budgetUsd": 21,
+  "prompts": "rd-2",
+  "routes": {
+    "exam.reading.generate": [
+      {
+        "provider": "anthropic",
+        "model": "claude-opus-5-5",
+        "reasoning_effort": "high",
+        "max_output_tokens": 32000,
+        "timeout": 900
+      }
+    ],
+    "exam.reading.solve_a": [
+      {
+        "provider": "anthropic",
+        "model": "claude-sonnet-5-5",
+        "reasoning_effort": "medium",
+        "max_output_tokens": 12000,
+        "timeout": 600
+      }
+    ],
+    "exam.reading.solve_b": [
+      {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "reasoning_effort": "medium",
+        "max_output_tokens": 12000,
+        "timeout": 600
+      }
+    ],
+    "exam.reading.control": [
+      {
+        "provider": "xai",
+        "model": "grok-4.7",
+        "temperature": 0,
+        "max_output_tokens": 8000,
+        "timeout": 600
+      }
+    ]
+  },
+  "avoidNames": [
+    "Lena Marsh",
+    "Tomás Ferreira",
+    "Marta Venn",
+    "Tomas Reiner",
+    "Helena Varga",
+    "Tomas Reinholt",
+    "Lucien Barre",
+    "Amara Osei",
+    "Ingrid Solberg",
+    "Ines Varga",
+    "Tomas Reyes",
+    "Marta Lindqvist",
+    "Mirela Kossak",
+    "Hana Okoro",
+    "Tomas Ferreira"
+  ],
+  "avoidRounds": [
+    "exam-reading-academic-2"
+  ],
+  "tests": [
+    {
+      "id": "gt-1",
+      "sections": [
+        {
+          "topic": "A community leisure centre",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "five short notices (A–E) from a community leisure centre: opening hours, classes, swimming rules, prices and membership",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 5,
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 6,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "true_false_not_given",
+              "count": 8,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Starting work in a supermarket",
+          "angle": "what an employee needs to know and do",
+          "genre": "an extract from a supermarket chain's induction guide for new shop-floor staff",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "note_completion",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 6,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "The bicycle courier",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on the history of bicycle couriers in big cities",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 6,
+              "spare": 0
+            },
+            {
+              "type": "sentence_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        }
+      ]
+    },
+    {
+      "id": "gt-2",
+      "sections": [
+        {
+          "topic": "Evening courses for adults",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "five short advertisements (A–E) for evening courses at an adult education college",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 5,
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 7,
+              "spare": 1
+            },
+            {
+              "type": "short_answer",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": true,
+                "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "Health and safety in the office",
+          "angle": "what an employee needs to know and do",
+          "genre": "workplace guidance for office staff on safe lifting and comfortable screen work",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "summary_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "matching_features",
+              "count": 7,
+              "spare": 1,
+              "reuse": true
+            }
+          ]
+        },
+        {
+          "topic": "Why we keep pets",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on why people keep pets and what pets give them",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 6,
+              "spare": 1
+            },
+            {
+              "type": "multiple_choice_multi",
+              "count": 2,
+              "spare": 1
+            },
+            {
+              "type": "sentence_completion",
+              "count": 3,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gt-3",
+      "sections": [
+        {
+          "topic": "Getting around the city",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "an information leaflet in short sections (A–E) on a city's public transport passes, fares and discounts",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 5,
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 7,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "sentence_completion",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": true,
+                "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "Part-time work in a hotel",
+          "angle": "what an employee needs to know and do",
+          "genre": "a hotel's advertisement for part-time staff together with its guidance on how to apply",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "flow_chart_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            },
+            {
+              "type": "true_false_not_given",
+              "count": 7,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Street markets return",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on the revival of street markets",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 7,
+              "spare": 0
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            },
+            {
+              "type": "summary_completion",
+              "count": 3,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ],
+          "paragraphs": 7
+        }
+      ]
+    },
+    {
+      "id": "gt-4",
+      "sections": [
+        {
+          "topic": "Holiday cottages",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "short descriptions (A–F) of six holiday cottages to rent in the countryside",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 6,
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 6,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "true_false_not_given",
+              "count": 8,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Flexible working",
+          "angle": "what an employee needs to know and do",
+          "genre": "a company's policy document on flexible hours and working from home",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "table_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": true,
+                "phrase": "ONE WORD AND/OR A NUMBER"
+              }
+            },
+            {
+              "type": "short_answer",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 3,
+                "number": false,
+                "phrase": "NO MORE THAN THREE WORDS"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "Sleep across a lifetime",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on how sleep changes through a person's life",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 6,
+              "spare": 0
+            },
+            {
+              "type": "sentence_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        }
+      ]
+    },
+    {
+      "id": "gt-5",
+      "sections": [
+        {
+          "topic": "Living in a block of flats",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "five notices (A–E) for residents of a block of flats: recycling, repairs, parking, deliveries and noise",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 5,
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 7,
+              "spare": 1
+            },
+            {
+              "type": "short_answer",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": true,
+                "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "Dealing with complaints",
+          "angle": "what an employee needs to know and do",
+          "genre": "an extract from a training booklet for customer service staff on handling complaints",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "note_completion",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 6,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Keepers of the light",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on the working lives of lighthouse keepers",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 6,
+              "spare": 1
+            },
+            {
+              "type": "multiple_choice_multi",
+              "count": 2,
+              "spare": 1
+            },
+            {
+              "type": "sentence_completion",
+              "count": 3,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gt-6",
+      "sections": [
+        {
+          "topic": "Visiting the museum",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "a visitor guide in short sections (A–E) to a national museum: tickets, guided tours, facilities and family activities",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 5,
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 7,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "sentence_completion",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": true,
+                "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "Volunteering in a charity shop",
+          "angle": "what an employee needs to know and do",
+          "genre": "an extract from a charity shop's handbook for new volunteers",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "summary_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "matching_features",
+              "count": 7,
+              "spare": 1,
+              "reuse": true
+            }
+          ]
+        },
+        {
+          "topic": "On foot",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on why walking is good for people and for cities",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 7,
+              "spare": 0
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            },
+            {
+              "type": "summary_completion",
+              "count": 3,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ],
+          "paragraphs": 7
+        }
+      ]
+    },
+    {
+      "id": "gt-7",
+      "sections": [
+        {
+          "topic": "Choosing a gym",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "five short descriptions (A–E) of gyms and fitness clubs in one town, compared for a newcomer",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 5,
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 6,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "true_false_not_given",
+              "count": 8,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Starting a small business",
+          "angle": "what an employee needs to know and do",
+          "genre": "guidance from a local business advice office for people starting a small business",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "flow_chart_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            },
+            {
+              "type": "true_false_not_given",
+              "count": 7,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Growing together",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on the rise of community gardens",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 6,
+              "spare": 0
+            },
+            {
+              "type": "sentence_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        }
+      ]
+    },
+    {
+      "id": "gt-8",
+      "sections": [
+        {
+          "topic": "Your local library",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "a public library's leaflet in short sections (A–E): borrowing, e-books, study rooms and children's events",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 5,
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 7,
+              "spare": 1
+            },
+            {
+              "type": "short_answer",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": true,
+                "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "First aid at work",
+          "angle": "what an employee needs to know and do",
+          "genre": "workplace guidance on the duties of a first aider and how to report an accident",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "table_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": true,
+                "phrase": "ONE WORD AND/OR A NUMBER"
+              }
+            },
+            {
+              "type": "short_answer",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 3,
+                "number": false,
+                "phrase": "NO MORE THAN THREE WORDS"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "The night train comes back",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on the return of night trains",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 6,
+              "spare": 1
+            },
+            {
+              "type": "multiple_choice_multi",
+              "count": 2,
+              "spare": 1
+            },
+            {
+              "type": "sentence_completion",
+              "count": 3,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gt-9",
+      "sections": [
+        {
+          "topic": "Summer camps",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "short descriptions (A–E) of five summer camps for children",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 5,
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 7,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "sentence_completion",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": true,
+                "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "Holidays and sick leave",
+          "angle": "what an employee needs to know and do",
+          "genre": "an extract from an employee handbook on annual leave and sick leave",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "note_completion",
+              "count": 7,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 6,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Making the forecast",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on how weather forecasts are made",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 7,
+              "spare": 0
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            },
+            {
+              "type": "summary_completion",
+              "count": 3,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ],
+          "paragraphs": 7
+        }
+      ]
+    },
+    {
+      "id": "gt-10",
+      "sections": [
+        {
+          "topic": "Moving house",
+          "angle": "practical everyday information a resident or visitor needs",
+          "genre": "a checklist in short sections (A–E) for people moving house: utilities, post, registering with local services",
+          "words": {
+            "min": 660,
+            "max": 720
+          },
+          "paragraphs": 5,
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 6,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "true_false_not_given",
+              "count": 8,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Team leaders wanted",
+          "angle": "what an employee needs to know and do",
+          "genre": "a warehouse company's advertisement for team leaders together with advice on its interview day",
+          "words": {
+            "min": 700,
+            "max": 760
+          },
+          "blocks": [
+            {
+              "type": "summary_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "matching_features",
+              "count": 7,
+              "spare": 1,
+              "reuse": true
+            }
+          ]
+        },
+        {
+          "topic": "From leaf to cup",
+          "angle": "an engaging, informative account for an adult general reader",
+          "genre": "a magazine article for a general reader on the journey of tea from leaf to cup",
+          "words": {
+            "min": 780,
+            "max": 850
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 6,
+              "spare": 0
+            },
+            {
+              "type": "sentence_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        }
+      ]
+    }
+  ]
+}

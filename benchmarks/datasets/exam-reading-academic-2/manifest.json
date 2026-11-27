@@ -1,0 +1,831 @@
+{
+  "id": "exam-reading-academic-2",
+  "about": "P7.5 Reading set (docs/phase-7/P7.5-reading-set.md): eight more Academic tests written with prompts rd-2; owner approval 2026-11-27 «да, до $40» for both rounds (General Training $21, Academic $19). Frozen: a change needs a new id.",
+  "exam": "ielts-academic",
+  "budgetUsd": 19,
+  "prompts": "rd-2",
+  "routes": {
+    "exam.reading.generate": [
+      {
+        "provider": "anthropic",
+        "model": "claude-opus-5-5",
+        "reasoning_effort": "high",
+        "max_output_tokens": 32000,
+        "timeout": 900
+      }
+    ],
+    "exam.reading.solve_a": [
+      {
+        "provider": "anthropic",
+        "model": "claude-sonnet-5-5",
+        "reasoning_effort": "medium",
+        "max_output_tokens": 12000,
+        "timeout": 600
+      }
+    ],
+    "exam.reading.solve_b": [
+      {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "reasoning_effort": "medium",
+        "max_output_tokens": 12000,
+        "timeout": 600
+      }
+    ],
+    "exam.reading.control": [
+      {
+        "provider": "xai",
+        "model": "grok-4.7",
+        "temperature": 0,
+        "max_output_tokens": 8000,
+        "timeout": 600
+      }
+    ]
+  },
+  "avoidNames": [
+    "Lena Marsh",
+    "Tomás Ferreira",
+    "Marta Venn",
+    "Tomas Reiner",
+    "Helena Varga",
+    "Tomas Reinholt",
+    "Lucien Barre",
+    "Amara Osei",
+    "Ingrid Solberg",
+    "Ines Varga",
+    "Tomas Reyes",
+    "Marta Lindqvist",
+    "Mirela Kossak",
+    "Hana Okoro",
+    "Tomas Ferreira"
+  ],
+  "avoidRounds": [
+    "exam-reading-gt-1"
+  ],
+  "tests": [
+    {
+      "id": "academic-3",
+      "sections": [
+        {
+          "topic": "How bats find their way in the dark",
+          "angle": "how echolocation works, how it was discovered, and what engineers have borrowed from it",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 7,
+              "spare": 1
+            },
+            {
+              "type": "note_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "Charging drivers to enter city centres",
+          "angle": "why some cities charge vehicles to enter the centre, what has happened where they did, and the objections",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "short_answer",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 3,
+                "number": false,
+                "phrase": "NO MORE THAN THREE WORDS"
+              }
+            },
+            {
+              "type": "flow_chart_completion",
+              "count": 5,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            },
+            {
+              "type": "multiple_choice_multi",
+              "count": 2,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Is multitasking a myth?",
+          "angle": "an argued article on whether people can really do two demanding things at once; the writer takes a clear position and reports the views of several fictional researchers who disagree",
+          "words": {
+            "min": 820,
+            "max": 920
+          },
+          "blocks": [
+            {
+              "type": "yes_no_not_given",
+              "count": 5,
+              "spare": 1
+            },
+            {
+              "type": "matching_features",
+              "count": 5,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "multiple_choice",
+              "count": 4,
+              "spare": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academic-4",
+      "sections": [
+        {
+          "topic": "The box that changed trade",
+          "angle": "how the standard shipping container was developed and how it reshaped ports, shipping and world trade",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 4,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "table_completion",
+              "count": 5,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": true,
+                "phrase": "ONE WORD AND/OR A NUMBER"
+              }
+            },
+            {
+              "type": "true_false_not_given",
+              "count": 4,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        },
+        {
+          "topic": "Restoring coral reefs",
+          "angle": "why coral reefs are declining and what restoration projects can and cannot achieve",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 6,
+              "spare": 1
+            },
+            {
+              "type": "matching_features",
+              "count": 4,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "summary_completion",
+              "count": 3,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "The value of handwriting",
+          "angle": "an argued article on whether children should still learn to write by hand in a digital age; the writer takes a clear position",
+          "words": {
+            "min": 820,
+            "max": 920
+          },
+          "blocks": [
+            {
+              "type": "yes_no_not_given",
+              "count": 5,
+              "spare": 1
+            },
+            {
+              "type": "matching_sentence_endings",
+              "count": 5,
+              "spare": 1,
+              "reuse": false
+            },
+            {
+              "type": "sentence_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academic-5",
+      "sections": [
+        {
+          "topic": "Noise and wildlife",
+          "angle": "how man-made noise affects birds, whales and other animals, and how scientists study it",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 6,
+              "spare": 0
+            },
+            {
+              "type": "sentence_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        },
+        {
+          "topic": "Printing and the spread of reading",
+          "angle": "how the printing press changed the production of books and the spread of literacy in Europe",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 6,
+              "spare": 0
+            },
+            {
+              "type": "summary_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        },
+        {
+          "topic": "Do open-plan offices work?",
+          "angle": "an argued article on open-plan offices; the writer takes a clear position and reports the views of several fictional researchers",
+          "words": {
+            "min": 820,
+            "max": 920
+          },
+          "blocks": [
+            {
+              "type": "yes_no_not_given",
+              "count": 6,
+              "spare": 1
+            },
+            {
+              "type": "multiple_choice",
+              "count": 4,
+              "spare": 1
+            },
+            {
+              "type": "summary_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academic-6",
+      "sections": [
+        {
+          "topic": "Drinking water from the sea",
+          "angle": "how desalination works, where it is used, and its costs to energy and the environment",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 7,
+              "spare": 1
+            },
+            {
+              "type": "note_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "The psychology of waiting in line",
+          "angle": "why waiting feels longer or shorter and how organisations manage queues",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "short_answer",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 3,
+                "number": false,
+                "phrase": "NO MORE THAN THREE WORDS"
+              }
+            },
+            {
+              "type": "flow_chart_completion",
+              "count": 5,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            },
+            {
+              "type": "multiple_choice_multi",
+              "count": 2,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "In praise of failure in science",
+          "angle": "an argued article on why failed experiments and negative results deserve more attention; the writer takes a clear position",
+          "words": {
+            "min": 820,
+            "max": 920
+          },
+          "blocks": [
+            {
+              "type": "yes_no_not_given",
+              "count": 5,
+              "spare": 1
+            },
+            {
+              "type": "matching_features",
+              "count": 5,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "multiple_choice",
+              "count": 4,
+              "spare": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academic-7",
+      "sections": [
+        {
+          "topic": "Mangroves on the front line",
+          "angle": "how mangrove forests protect coasts and why they have been lost and are now being replanted",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 4,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "table_completion",
+              "count": 5,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": true,
+                "phrase": "ONE WORD AND/OR A NUMBER"
+              }
+            },
+            {
+              "type": "true_false_not_given",
+              "count": 4,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        },
+        {
+          "topic": "The making of modern maps",
+          "angle": "how map-making changed from surveying on foot to satellites and digital mapping",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 6,
+              "spare": 1
+            },
+            {
+              "type": "matching_features",
+              "count": 4,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "summary_completion",
+              "count": 3,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "A four-day working week?",
+          "angle": "an argued article on whether a four-day working week is a good idea; the writer takes a clear position and reports several fictional researchers",
+          "words": {
+            "min": 820,
+            "max": 920
+          },
+          "blocks": [
+            {
+              "type": "yes_no_not_given",
+              "count": 5,
+              "spare": 1
+            },
+            {
+              "type": "matching_sentence_endings",
+              "count": 5,
+              "spare": 1,
+              "reuse": false
+            },
+            {
+              "type": "sentence_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academic-8",
+      "sections": [
+        {
+          "topic": "Do plants talk to each other?",
+          "angle": "what is known, and what is still disputed, about chemical signals between plants and fungal networks in the soil",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 6,
+              "spare": 0
+            },
+            {
+              "type": "sentence_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        },
+        {
+          "topic": "The public library through history",
+          "angle": "how public libraries began, how they spread and how their role has changed",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "matching_headings",
+              "count": 6,
+              "spare": 0
+            },
+            {
+              "type": "summary_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            },
+            {
+              "type": "multiple_choice",
+              "count": 3,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        },
+        {
+          "topic": "Are cities greener than the countryside?",
+          "angle": "an argued article on whether city living is better for the environment than rural living; the writer takes a clear position",
+          "words": {
+            "min": 820,
+            "max": 920
+          },
+          "blocks": [
+            {
+              "type": "yes_no_not_given",
+              "count": 6,
+              "spare": 1
+            },
+            {
+              "type": "multiple_choice",
+              "count": 4,
+              "spare": 1
+            },
+            {
+              "type": "summary_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academic-9",
+      "sections": [
+        {
+          "topic": "Listening to volcanoes",
+          "angle": "how scientists monitor volcanoes and why forecasting eruptions remains difficult",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 7,
+              "spare": 1
+            },
+            {
+              "type": "note_completion",
+              "count": 6,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "The economics of fast fashion",
+          "angle": "how fast fashion works as a business and what it costs workers and the environment",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "short_answer",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 3,
+                "number": false,
+                "phrase": "NO MORE THAN THREE WORDS"
+              }
+            },
+            {
+              "type": "flow_chart_completion",
+              "count": 5,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": false,
+                "phrase": "ONE WORD ONLY"
+              }
+            },
+            {
+              "type": "multiple_choice_multi",
+              "count": 2,
+              "spare": 1
+            }
+          ]
+        },
+        {
+          "topic": "Learning an instrument as an adult",
+          "angle": "an argued article on whether adults can and should learn a musical instrument; the writer takes a clear position and reports several fictional researchers",
+          "words": {
+            "min": 820,
+            "max": 920
+          },
+          "blocks": [
+            {
+              "type": "yes_no_not_given",
+              "count": 5,
+              "spare": 1
+            },
+            {
+              "type": "matching_features",
+              "count": 5,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "multiple_choice",
+              "count": 4,
+              "spare": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "academic-10",
+      "sections": [
+        {
+          "topic": "Wolves return to Europe",
+          "angle": "how wolves have returned to parts of Europe, why, and the conflicts with farmers",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "matching_information",
+              "count": 4,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "table_completion",
+              "count": 5,
+              "spare": 1,
+              "limit": {
+                "words": 1,
+                "number": true,
+                "phrase": "ONE WORD AND/OR A NUMBER"
+              }
+            },
+            {
+              "type": "true_false_not_given",
+              "count": 4,
+              "spare": 1
+            }
+          ],
+          "paragraphs": 6
+        },
+        {
+          "topic": "How we smell",
+          "angle": "how the human sense of smell works and why it was long underestimated",
+          "words": {
+            "min": 780,
+            "max": 880
+          },
+          "blocks": [
+            {
+              "type": "true_false_not_given",
+              "count": 6,
+              "spare": 1
+            },
+            {
+              "type": "matching_features",
+              "count": 4,
+              "spare": 1,
+              "reuse": true
+            },
+            {
+              "type": "summary_completion",
+              "count": 3,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        },
+        {
+          "topic": "Should young children get homework?",
+          "angle": "an argued article on homework in primary school; the writer takes a clear position",
+          "words": {
+            "min": 820,
+            "max": 920
+          },
+          "blocks": [
+            {
+              "type": "yes_no_not_given",
+              "count": 5,
+              "spare": 1
+            },
+            {
+              "type": "matching_sentence_endings",
+              "count": 5,
+              "spare": 1,
+              "reuse": false
+            },
+            {
+              "type": "sentence_completion",
+              "count": 4,
+              "spare": 1,
+              "limit": {
+                "words": 2,
+                "number": false,
+                "phrase": "NO MORE THAN TWO WORDS"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

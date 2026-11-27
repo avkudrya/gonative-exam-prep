@@ -34,12 +34,22 @@ test('Guide (P6.2): chapters on the landing host, closed to indexing until the o
   assert.equal(ld['@graph'][0].dateModified, '2026-11-27');
   await page.getByText('Facts checked against official IELTS pages on November 27, 2026').waitFor();
   assert.ok(await page.locator('.guide-sources a[href^="https://ielts.org/"]').count() >= 5, 'official sources are linked');
-  // A link to a chapter not written yet stays plain text: no broken links.
-  assert.equal(await page.locator('main a[href$="/guide/writing-task-2"]').count(), 0);
   const cta = new URL(await page.locator('.guide-practice a.button').getAttribute('href'));
   assert.equal(cta.origin, app);
   assert.deepEqual(Object.fromEntries(cta.searchParams), {exam: 'ielts', utm_source: 'ielts_guide', utm_medium: 'guide', utm_campaign: 'ielts-format'});
   assert.doesNotMatch(await page.locator('main').textContent(), /guarantee|your (exact )?IELTS score/i);
+
+  // Every chapter listed on the contents page opens, and every guide link inside it leads to a chapter that exists.
+  await page.goto(`${landing}/en/guide`);
+  const chapters = await page.locator('.guide-chapters a').evaluateAll(links => links.map(a => a.getAttribute('href')));
+  assert.ok(chapters.length >= 7, `${chapters.length} chapters`);
+  const linked = new Set();
+  for (const href of chapters) {
+    assert.equal((await page.goto(`${landing}${href}`)).status(), 200, href);
+    for (const target of await page.locator('main a[href*="/guide/"]').evaluateAll(links => links.map(a => a.getAttribute('href')))) linked.add(target);
+    assert.equal(await page.locator('.guide-practice a.button, .guide-note').count() > 0, true, `${href} ends with practice or a note`);
+  }
+  for (const href of linked) assert.ok(chapters.includes(href), `${href} is linked but not a chapter`);
 
   // A language the chapter is not written in, an unknown chapter: not found.
   assert.equal((await page.goto(`${landing}/ru/guide/ielts-format`)).status(), 404);

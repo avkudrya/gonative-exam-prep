@@ -1,0 +1,85 @@
+{
+    "bench": "exam-examples-t1a-1",
+    "guide": "ielts-writing-task-1-academic@v1",
+    "items": 1,
+    "cells": {
+        "p1-sonnet-t16": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 1,
+            "done": 1,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.0779,
+                "mean": 0.0779,
+                "p90": 0.0779
+            },
+            "latencyMs": {
+                "p50": 5591,
+                "p90": 5591
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 13,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 1,
+                "per100": {
+                    "error": 200,
+                    "weakness": 0,
+                    "suggestion": 300,
+                    "strength": 800
+                },
+                "repeatsPer100": 0,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 100
+                },
+                "script": {
+                    "texts": 17,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": null,
+            "clean": null,
+            "checks": {
+                "total": 1,
+                "passRate": 1,
+                "failed": []
+            },
+            "stability": null,
+            "probes": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

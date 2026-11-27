@@ -1,0 +1,43 @@
+{
+  "id": "exam-examples-t1a-1",
+  "purpose": "P6.5: feedback on our sample answers for the public example pages (exam-t1-6)",
+  "budgetUsd": 0.16,
+  "guide": "../../../packages/exam-domain/guides/ielts-writing-task-1-academic.v1.json",
+  "guideSha256": "9ed762d5479e8d9261c202ec9160f38927d846f20b183c5d06978bbe97cbfa08",
+  "catalog": "../../../packages/exam-domain/catalog/ielts-academic.json",
+  "rubricKey": "ielts-writing-task-1",
+  "items": "../exam-examples-v1/items-t1a.jsonl",
+  "itemsSha256": "33c2c26e9c395e382ead576be4aaeda89b4e428a5e010bca3f8ffb3f1ed9e502",
+  "feedbackLanguage": "en",
+  "sources": {
+    "E": "benchmarks/sources/examples-v1.json (written in the session, npm run bench:examples)"
+  },
+  "cells": [
+    {
+      "key": "p1-sonnet-t16",
+      "pipeline": "p1",
+      "validate": false,
+      "repeats": 1,
+      "routes": {
+        "exam.assess": [
+          {
+            "provider": "anthropic",
+            "model": "claude-sonnet-5-5",
+            "reasoning_effort": "low",
+            "max_output_tokens": 8000,
+            "timeout": 600
+          }
+        ]
+      },
+      "prompts": {
+        "p1": "exam-t1-6"
+      }
+    }
+  ],
+  "approval": {
+    "by": "owner",
+    "date": "2026-11-27",
+    "capUsd": 1,
+    "note": "«да, до $1, запускай оценку образцов» — P6.5, примеры разборов"
+  }
+}

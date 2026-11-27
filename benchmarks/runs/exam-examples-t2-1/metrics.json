@@ -1,0 +1,81 @@
+{
+    "bench": "exam-examples-t2-1",
+    "guide": "ielts-writing-task-2@v2",
+    "items": 3,
+    "cells": {
+        "p1-sonnet-p17": {
+            "config": {
+                "pipeline": "p1",
+                "validate": false,
+                "repeats": 1,
+                "routes": {
+                    "exam.assess": [
+                        {
+                            "provider": "anthropic",
+                            "model": "claude-sonnet-5-5",
+                            "reasoning_effort": "low",
+                            "max_output_tokens": 8000,
+                            "timeout": 600
+                        }
+                    ]
+                }
+            },
+            "units": 3,
+            "done": 3,
+            "partial": 0,
+            "costUsd": {
+                "total": 0.2062,
+                "mean": 0.0687,
+                "p90": 0.0757
+            },
+            "latencyMs": {
+                "p50": 5769,
+                "p90": 7749
+            },
+            "problems": {
+                "unanswered": 0,
+                "unknownIds": 0,
+                "failedCalls": 0,
+                "invalidBand": 0,
+                "quoteNotFound": 0,
+                "evidenceMissing": 0
+            },
+            "findings": {
+                "keptPerAssessment": 17.667,
+                "droppedByValidator": 0,
+                "dropRate": 0
+            },
+            "feedback": {
+                "assessments": 3,
+                "per100": {
+                    "error": 633.3,
+                    "weakness": 366.7,
+                    "suggestion": 133.3,
+                    "strength": 633.3
+                },
+                "repeatsPer100": 200,
+                "adviceFlagsPer100": {
+                    "structureDemand": 0,
+                    "sequenceDemand": 0,
+                    "evidenceDemand": 0
+                },
+                "script": {
+                    "texts": 65,
+                    "russianLetters": 0,
+                    "ukrainianLetters": 0
+                }
+            },
+            "inserted": null,
+            "clean": null,
+            "checks": null,
+            "stability": null,
+            "probes": null,
+            "agreement": {
+                "staircase": {
+                    "traits": null,
+                    "raters": null
+                }
+            }
+        }
+    }
+}

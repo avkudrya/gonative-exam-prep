@@ -25,7 +25,8 @@
     "bench:precision": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build-precision.ts",
     "bench:dense": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/dense.ts",
     "bench:h1": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/ellipse.ts",
-    "test:web": "npm run test --workspace web"
+    "test:web": "npm run test --workspace web",
+    "bench:examples": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build-examples.ts"
   },
   "dependencies": {
     "@fontsource/noto-sans": "5.3.0",

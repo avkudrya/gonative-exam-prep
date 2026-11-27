@@ -48,6 +48,7 @@ export const entitlementsSchema = z.object({
   rewrite_checks: z.object({enabled: z.boolean(), limit: z.int(), used: z.int(), remaining: z.int()}).optional(),
   // P7.4: Reading tests started this month; limit null = no limit. Absent from an older backend.
   reading_tests: z.object({enabled: z.boolean(), limit: z.int().nullable(), used: z.int(), remaining: z.int().nullable()}).optional(),
+  listening_tests: z.object({enabled: z.boolean(), limit: z.int().nullable(), used: z.int(), remaining: z.int().nullable()}).optional(),
 });
 
 /** P4.14: the AI check of one rewritten sentence (the backend stores nothing). */
@@ -449,3 +450,82 @@ export type ReadingAttempt = z.infer<typeof readingAttemptSchema>;
 export type ReadingSummary = z.infer<typeof readingSummarySchema>;
 export type ReadingIndex = z.infer<typeof readingIndexSchema>;
 export type ReadingGroup = z.infer<typeof readingGroupSchema>;
+
+/*
+ * P7.10: IELTS Listening. Before the submit a part carries the questions without keys or the transcript, and a link to its
+ * recording only while it may be heard (strict: from shortly before its start on the server's schedule). After the submit: the
+ * review — keys, explanations, the transcript with the start of every turn and where each answer is heard. The band only as a
+ * presented estimate (ADR-003), after a full test in strict mode.
+ */
+const listeningQuestionSchema = readingQuestionSchema.extend({
+  heard: z.object({turn: z.int().min(0).max(200), start_ms: z.int().min(0).nullable()}).nullable().optional(),
+});
+export const listeningGroupSchema = z.object({
+  type: z.string().max(40),
+  instruction: z.string().max(800),
+  title: z.string().max(200).optional(),
+  options: z.array(readingOptionSchema).max(12).optional(),
+  figure: z.record(z.string(), z.unknown()).optional(),
+  limit: z.object({words: z.int().min(1).max(5), number: z.boolean()}).optional(),
+  reuse: z.boolean().optional(),
+  questions: z.array(listeningQuestionSchema).max(10),
+});
+const listeningAudioSchema = z.object({url: z.url().max(4000), expires_at: iso}).nullable();
+const listeningPartSchema = z.object({
+  position: z.int().min(1).max(4),
+  title: z.string().max(200),
+  context: z.string().max(1000),
+  duration_ms: z.int().positive().max(3600000),
+  starts_at: isoOrNull,
+  ends_at: isoOrNull,
+  closed: z.boolean(),
+  audio: listeningAudioSchema,
+  groups: z.array(listeningGroupSchema).max(10),
+  speakers: z.array(z.object({id: z.string().max(40), name: z.string().max(120)})).max(6).optional(),
+  turns: z.array(z.object({speaker: z.string().max(120), text: z.string().max(3000), start_ms: z.int().min(0).nullable()})).max(200).optional(),
+});
+const listeningBase = {
+  uuid,
+  status: z.enum(['started', 'submitted', 'abandoned']),
+  mode: z.enum(['test', 'part']),
+  part: z.int().min(1).max(4).nullable(),
+  timer_mode: z.enum(['soft', 'strict']),
+  duration_ms: z.int().positive().max(14400000),
+  test: z.object({uuid, title: z.string().max(160)}),
+  started_at: isoOrNull,
+  deadline_at: isoOrNull,
+  submitted_at: isoOrNull,
+  server_time: iso,
+};
+export const listeningAttemptSchema = z.object({
+  ...listeningBase,
+  parts: z.array(listeningPartSchema).max(4).optional(),
+  answers: z.record(z.string().regex(/^\d{1,2}$/), z.string().max(200)).optional(),
+  revision: z.int().min(0).optional(),
+  result: z.object({
+    correct: z.int().min(0).max(40),
+    total: z.int().min(1).max(40),
+    questions: z.array(z.object({number: z.int().min(1).max(40), given: z.string().max(200).nullable(), correct: z.boolean(), expected: z.string().max(200)})).max(40),
+    by_type: z.array(z.object({type: z.string().max(40), correct: z.int().min(0), total: z.int().min(1)})).max(20),
+    by_part: z.array(z.object({part: z.int().min(1).max(4), correct: z.int().min(0), total: z.int().min(1)})).max(4),
+  }).optional(),
+  estimate: presentedEstimateSchema.nullable().optional(),
+});
+export const listeningSummarySchema = z.object({...listeningBase, correct: z.int().nullable(), total: z.int().nullable(), estimate: presentedEstimateSchema.nullable()});
+export const listeningIndexSchema = z.object({
+  enabled: z.boolean(),
+  usage: z.object({enabled: z.boolean(), limit: z.int().nullable(), used: z.int(), remaining: z.int().nullable()}),
+  tests: z.array(z.object({
+    uuid, title: z.string().max(160), review: z.boolean(),
+    parts: z.array(z.object({position: z.int(), title: z.string().max(200), topic: z.string().max(200), questions: z.int(), numbers: z.array(z.int()).length(2),
+      duration_ms: z.int().positive()})).max(4),
+  })).max(100),
+  sound_check: z.object({text: z.string().max(400), duration_ms: z.int().positive(), url: z.url().max(4000)}).nullable(),
+  open: listeningSummarySchema.nullable(),
+  attempts: z.array(listeningSummarySchema).max(50),
+});
+export type ListeningAttempt = z.infer<typeof listeningAttemptSchema>;
+export type ListeningSummary = z.infer<typeof listeningSummarySchema>;
+export type ListeningIndex = z.infer<typeof listeningIndexSchema>;
+export type ListeningGroup = z.infer<typeof listeningGroupSchema>;
+export type ListeningPart = z.infer<typeof listeningPartSchema>;

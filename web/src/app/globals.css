@@ -621,6 +621,21 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 12px; text-align: le
 .reading-gap { font: inherit; width: 14em; max-width: 100%; margin: 0 4px; padding: 2px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); }
 .reading-question select { font: inherit; padding: 2px 6px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
 .text-button.flag { font-size: 13px; }
+/* P7.10: Listening — the player above the questions, the map drawn from its spec, the transcript in the review. */
+.listening-sound-check { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 20px; margin: 12px 0; }
+.listening-sound-check h2 { font-size: 16px; margin: 0 0 4px; }
+.listening-sound-check p { margin: 0 0 8px; }
+.listening-player { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 8px 0; }
+.listening-player audio { width: min(100%, 520px); }
+.listening-controls, .listening-volume { display: flex; gap: 8px; align-items: center; }
+.listening-controls select { font: inherit; padding: 2px 6px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.listening-questions { max-width: 860px; }
+.listening-context { color: var(--muted); margin-top: 0; }
+.listening-group-title { font-weight: 600; margin: 4px 0 8px; }
+.listening-map { margin: 8px 0 12px; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 8px; max-width: 640px; }
+.listening-map svg { width: 100%; height: auto; display: block; color: #232a35; }
+.listening-transcript p { margin: 0 0 10px; padding: 4px 6px; border-radius: 6px; scroll-margin-top: 80px; }
+.listening-transcript p.active { background: var(--accent-soft); outline: 2px solid var(--accent); }
 .reading-map { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 12px; }
 .reading-map button { font: inherit; font-size: 13px; width: 34px; height: 30px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); cursor: pointer; }
 .reading-map button.answered { background: var(--accent-soft); border-color: var(--accent); }

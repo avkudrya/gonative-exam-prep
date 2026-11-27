@@ -5,7 +5,7 @@ import {
   feedbackLanguageSchema, identitySchema, interfaceLocaleSchema, practiceTaskSchema, profileSchema, reportKinds,
   practiceAnswerSchema, practiceResultSchema, practiceSessionSchema, practiceSkillsSchema,
   recommendationSchema, reportSchema, reportedResultSchema, skillsSchema, vocabularyListSchema, vocabularySchema,
-  writingSessionSchema, writingSessionsSchema, readingAttemptSchema, readingIndexSchema,
+  writingSessionSchema, writingSessionsSchema, readingAttemptSchema, readingIndexSchema, listeningAttemptSchema, listeningIndexSchema,
 } from '../lib/api/schemas';
 
 /*
@@ -275,6 +275,29 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
     }
     if (method !== 'POST') return null;
     if (reading[2] === 'submit') return route(`${root}/submit`, one, {input: z.object({answers: answers.optional()}).strict(), maxBody: 32 * 1024, maxBytes: 1024 * 1024, timeoutMs: 20000});
+    return route(`${root}/abandon`, one, {input: empty, maxBytes: 1024 * 1024});
+  }
+  // P7.10: IELTS Listening. The same answers as Reading; the recordings are played from storage, never through the BFF.
+  if (path === 'listening' && method === 'GET' && noQuery(search)) return route(path, parse(listeningIndexSchema), {maxBytes: 512 * 1024});
+  if (path === 'listening/attempts' && method === 'POST' && noQuery(search)) {
+    return route(path, r => ({data: z.object({attempt: listeningAttemptSchema}).parse(r), status: 201}), {
+      input: z.object({test: z.string().regex(uuidPattern), mode: z.enum(['test', 'part']), part: z.int().min(1).max(4).optional(),
+        timer_mode: z.enum(['soft', 'strict'])}).strict(),
+      maxBytes: 1024 * 1024,
+    });
+  }
+  const listening = /^listening\/attempts\/([^/]+)(?:\/(answers|submit|abandon))?$/.exec(path);
+  if (listening && uuidPattern.test(listening[1]) && noQuery(search)) {
+    const root = `listening/attempts/${listening[1].toLowerCase()}`;
+    const one = parse(z.object({attempt: listeningAttemptSchema}));
+    const answers = z.record(z.string().regex(/^\d{1,2}$/), z.string().max(200).nullable()).refine(v => Object.keys(v).length <= 40);
+    if (!listening[2]) return method === 'GET' ? route(root, one, {maxBytes: 2 * 1024 * 1024}) : null;
+    if (listening[2] === 'answers' && method === 'PUT') {
+      return route(`${root}/answers`, parse(z.object({revision: z.int().min(0), answers: z.record(z.string().regex(/^\d{1,2}$/), z.string().max(200)), server_time: z.string().max(64)})),
+        {input: z.object({answers}).strict(), maxBody: 32 * 1024});
+    }
+    if (method !== 'POST') return null;
+    if (listening[2] === 'submit') return route(`${root}/submit`, one, {input: z.object({answers: answers.optional()}).strict(), maxBody: 32 * 1024, maxBytes: 2 * 1024 * 1024, timeoutMs: 20000});
     return route(`${root}/abandon`, one, {input: empty, maxBytes: 1024 * 1024});
   }
   // P4.5: the learner marks a next step done or hides it.

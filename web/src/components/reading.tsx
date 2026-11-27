@@ -21,17 +21,17 @@ const OPTION_TYPES = new Set(['true_false_not_given', 'yes_no_not_given', 'multi
 const LIST_TYPES = new Set(['matching_headings', 'matching_information', 'matching_features', 'matching_sentence_endings']);
 const startErrors = new Set(['exams_reading_unavailable', 'exams_reading_quota_exhausted', 'exams_reading_test_unknown', 'exams_rate_limited', 'rate_limited', 'unauthenticated', 'offline']);
 const submitErrors = new Set(['exams_reading_not_open', 'exams_reading_unavailable', 'exams_rate_limited', 'rate_limited', 'unauthenticated', 'offline']);
-const band = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1));
+export const band = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1));
 const paragraphsOf = (text: string) => text.split(/\n{2,}/);
 const numbersOf = (sections: Section[]) => sections.flatMap(s => s.groups.flatMap(g => g.questions.flatMap(q => q.numbers)));
 
-function minutes(ms: number) {
+export function minutes(ms: number) {
   const s = Math.ceil(ms / 1000);
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
 }
 
 /** State kept in this browser too; read after the first render, so the server and the client draw the same page. */
-function readStored<T>(key: string): T | null {
+export function readStored<T>(key: string): T | null {
   try {
     const raw = window.localStorage.getItem(key);
     return raw ? JSON.parse(raw) as T : null;
@@ -40,7 +40,7 @@ function readStored<T>(key: string): T | null {
   }
 }
 
-function useLocal<T>(key: string, initial: T): [T, (v: T) => void] {
+export function useLocal<T>(key: string, initial: T): [T, (v: T) => void] {
   const [value, setValue] = useState<T>(initial);
   useEffect(() => {
     const stored = readStored<T>(key);
@@ -203,13 +203,13 @@ const FIXED_OPTIONS: Record<string, {id: string; text: string}[]> = {
   yes_no_not_given: [{id: 'Y', text: 'YES'}, {id: 'N', text: 'NO'}, {id: 'NG', text: 'NOT GIVEN'}],
 };
 
-function optionText(group: ReadingGroup, id: string | null | undefined) {
+export function optionText(group: ReadingGroup, id: string | null | undefined) {
   if (!id) return '';
   const option = (group.options ?? FIXED_OPTIONS[group.type])?.find(o => o.id === id);
   return option ? (OPTION_TYPES.has(group.type) && group.type !== 'multiple_choice' ? option.text : `${option.id}. ${option.text}`) : id;
 }
 
-function GroupHead({group}: {group: ReadingGroup}) {
+export function GroupHead({group}: {group: ReadingGroup}) {
   const t = useTranslations('Reading');
   return <>
     <p className="reading-instruction">{group.instruction}</p>
@@ -220,7 +220,7 @@ function GroupHead({group}: {group: ReadingGroup}) {
 }
 
 /** The input of one question while answering. */
-function QuestionInput({group, question, answers, set}: {group: ReadingGroup; question: Question; answers: Answers; set: (n: number, v: string) => void}) {
+export function QuestionInput({group, question, answers, set, disabled = false}: {group: ReadingGroup; question: Question; answers: Answers; set: (n: number, v: string) => void; disabled?: boolean}) {
   const t = useTranslations('Reading');
   const n = question.numbers[0];
   const name = `q-${n}`;
@@ -231,13 +231,13 @@ function QuestionInput({group, question, answers, set}: {group: ReadingGroup; qu
       const sorted = [...next].sort();
       question.numbers.forEach((x, i) => set(x, sorted[i] ?? ''));
     };
-    return <fieldset className="reading-options">
+    return <fieldset className="reading-options" disabled={disabled}>
       <legend className="sr-only">{t('chooseTwo')}</legend>
       {group.options?.map(o => <label key={o.id}><input type="checkbox" checked={chosen.includes(o.id)} onChange={() => toggle(o.id)}/> <strong>{o.id}</strong> {o.text}</label>)}
     </fieldset>;
   }
   if (OPTION_TYPES.has(group.type)) {
-    return <fieldset className="reading-options">
+    return <fieldset className="reading-options" disabled={disabled}>
       <legend className="sr-only">{t('question', {n})}</legend>
       {group.options?.map(o => <label key={o.id}>
         <input type="radio" name={name} value={o.id} checked={answers[n] === o.id} onChange={() => set(n, o.id)}/> {group.type === 'multiple_choice' ? <><strong>{o.id}</strong> {o.text}</> : o.text}
@@ -245,17 +245,17 @@ function QuestionInput({group, question, answers, set}: {group: ReadingGroup; qu
     </fieldset>;
   }
   if (LIST_TYPES.has(group.type)) {
-    return <select aria-label={t('question', {n})} value={answers[n] ?? ''} onChange={e => set(n, e.target.value)}>
+    return <select aria-label={t('question', {n})} disabled={disabled} value={answers[n] ?? ''} onChange={e => set(n, e.target.value)}>
       <option value="">—</option>
       {group.options?.map(o => <option key={o.id} value={o.id}>{o.id}</option>)}
     </select>;
   }
-  return <input type="text" className="reading-gap" aria-label={t('question', {n})} maxLength={120} autoComplete="off" spellCheck={false}
+  return <input type="text" className="reading-gap" aria-label={t('question', {n})} disabled={disabled} maxLength={120} autoComplete="off" spellCheck={false}
     value={answers[n] ?? ''} onChange={e => set(n, e.target.value)}/>;
 }
 
 /** A completion prompt with the input in place of its gap; other prompts above their input. */
-function Prompt({group, question, input}: {group: ReadingGroup; question: Question; input: React.ReactNode}) {
+export function Prompt({group, question, input}: {group: ReadingGroup; question: Question; input: React.ReactNode}) {
   const gap = /_{3,}/;
   if (gap.test(question.prompt) && !OPTION_TYPES.has(group.type) && !LIST_TYPES.has(group.type)) {
     const [before, after] = question.prompt.split(gap);

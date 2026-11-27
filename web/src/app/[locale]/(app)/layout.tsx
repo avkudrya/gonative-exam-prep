@@ -25,7 +25,9 @@ export default async function AppLayout({children, params}: {children: React.Rea
       <section className="notice-page" role="status"><h1>{t('cleanupTitle')}</h1><p>{t('cleanupBody')}</p></section>
     </SiteShell>;
   }
-  // P7.4: the Reading link only while Reading is on (an older backend or an error: no link).
-  const reading = identity ? await currentEntitlements().then(e => e.reading_tests?.enabled === true).catch(() => false) : false;
-  return <SiteShell locale={locale} email={identity?.user.email} reading={reading}>{children}</SiteShell>;
+  // P7.4, P7.10: the Reading and Listening links only while they are on (an older backend or an error: no link).
+  const entitlements = identity ? await currentEntitlements().catch(() => null) : null;
+  const reading = entitlements?.reading_tests?.enabled === true;
+  const listening = entitlements?.listening_tests?.enabled === true;
+  return <SiteShell locale={locale} email={identity?.user.email} reading={reading} listening={listening}>{children}</SiteShell>;
 }

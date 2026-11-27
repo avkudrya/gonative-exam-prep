@@ -29,6 +29,7 @@
     "bench:examples": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build-examples.ts",
     "bench:reading": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/reading-review.ts",
     "bench:reading-library": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build-reading-library.ts",
+    "bench:listening-library": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build-listening-library.ts",
     "bench:listening-check": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/listening-check.ts"
   },
   "dependencies": {

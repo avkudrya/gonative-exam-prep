@@ -1,4 +1,4 @@
-import {readFileSync} from 'node:fs';
+import {readdirSync, readFileSync} from 'node:fs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {
@@ -128,4 +128,31 @@ test('compass points: north is up, and halves round the same way as in PHP', () 
   // Exactly between two points (22.5°) goes to the counter-clockwise one, on both sides.
   const half = Math.tan(Math.PI / 8);
   assert.equal(compass(0, 0, 1, -half), compass(0, 0, 1, -half));
+});
+
+test('the Listening library: every test passes the checks, every question is explained in three languages, audio named by content', () => {
+  const dir = new URL('../library/', import.meta.url);
+  const files = readdirSync(dir).filter(f => /^ielts-listening\.v\d+\.json$/.test(f));
+  assert.ok(files.length >= 1);
+  for (const file of files) {
+    const l = JSON.parse(readFileSync(new URL(file, dir), 'utf8'));
+    assert.deepEqual([l.libraryKey, l.sectionKey, l.examKeys], ['ielts-listening', 'listening', ['ielts-academic', 'ielts-general-training']], file);
+    const named = (a: {file: string; sha256: string; bytes: number; durationMs: number}) => {
+      assert.equal(a.file, `exam/listening/${a.sha256}.mp3`, file);
+      assert.ok(/^[0-9a-f]{64}$/.test(a.sha256) && a.bytes > 0 && a.durationMs > 0, file);
+    };
+    named(l.soundCheck);
+    assert.ok(l.soundCheck.text.trim(), 'sound check text');
+    for (const t of l.tests) {
+      assert.ok(['review', 'published', 'retired'].includes(t.status), t.key);
+      assert.deepEqual(checkListeningTest({id: t.key, parts: t.parts}), [], `${file} ${t.key}`);
+      for (const p of t.parts) {
+        named(p.audio);
+        assert.ok(p.turns.every((turn: {say?: string}) => turn.say === undefined), 'no text for the voice in the product');
+        for (const g of p.groups) for (const q of g.questions) {
+          for (const lang of ['en', 'ru', 'uk']) assert.ok(q.explanation[lang]?.trim(), `${t.key} ${q.numbers.join('-')} ${lang}`);
+        }
+      }
+    }
+  }
 });

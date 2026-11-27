@@ -43,7 +43,7 @@
         "voice": "en-GB-Chirp3-HD-Charon"
     },
     "budgetUsd": 10,
-    "spentUsd": 4.435002,
+    "spentUsd": 4.438122,
     "parts": [
         {
             "key": "l1|p1",
@@ -307,6 +307,24 @@
             "problems": []
         }
     ],
+    "soundCheck": {
+        "wer": 0.125,
+        "file": "audio/sound-check.mp3",
+        "text": "This is a sound check. Adjust the volume so that you can hear this sentence clearly.",
+        "bytes": 70028,
+        "heard": "This is a soundcheck. Adjust the volume so that you can hear this sentence clearly.",
+        "voice": {
+            "voice": "en-GB-Chirp3-HD-Charon",
+            "provider": "google"
+        },
+        "sha256": "f179b6c97627caec33a57884f27137e28fba998bb2fc6c6d28aca868e14c4908",
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -1.9
+        },
+        "durationMs": 5755,
+        "costUsd": 0.00312
+    },
     "totals": {
         "generated": 94,
         "disputedFirst": 0,

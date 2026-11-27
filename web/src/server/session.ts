@@ -2,7 +2,7 @@ import 'server-only';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
 import {z} from 'zod';
-import {readingAttemptSchema, readingIndexSchema, writingSessionSchema, writingSessionsSchema, assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceSessionSchema, practiceSkillsSchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
+import {listeningAttemptSchema, listeningIndexSchema, readingAttemptSchema, readingIndexSchema, writingSessionSchema, writingSessionsSchema, assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceSessionSchema, practiceSkillsSchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
 import {writingTasks, type WritingTask} from '../lib/writing';
 
@@ -172,6 +172,24 @@ export async function readingAttempt(uuid: string) {
   try {
     const result = await backend(`reading/attempts/${uuid}`, 'GET', undefined, token ?? undefined, {maxBytes: 1024 * 1024}) as {attempt: unknown};
     return readingAttemptSchema.parse(result.attempt);
+  } catch (error) {
+    if (error instanceof BackendError && error.status === 404) return null;
+    throw error;
+  }
+}
+
+/** P7.10: Listening — whether it is on, the month's count, the tests, the sound check, the open attempt and the recent ones. */
+export async function listeningIndex() {
+  const token = await sessionToken();
+  return listeningIndexSchema.parse(await backend('listening', 'GET', undefined, token ?? undefined, {maxBytes: 512 * 1024}));
+}
+
+/** One Listening attempt of the signed-in member, or `null` when it does not exist or is not theirs. */
+export async function listeningAttempt(uuid: string) {
+  const token = await sessionToken();
+  try {
+    const result = await backend(`listening/attempts/${uuid}`, 'GET', undefined, token ?? undefined, {maxBytes: 2 * 1024 * 1024}) as {attempt: unknown};
+    return listeningAttemptSchema.parse(result.attempt);
   } catch (error) {
     if (error instanceof BackendError && error.status === 404) return null;
     throw error;

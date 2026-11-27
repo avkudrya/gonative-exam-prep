@@ -1,0 +1,501 @@
+{
+ "about": "Our own Listening part 2 (written for the tests): a map, three multiple-choice questions and notes, with a fake assembled recording. Shared with MultiAdmin's ListeningForm tests (P7.7); `mapDescription` is describeMap of its figure.",
+ "part": {
+  "title": "Part 2",
+  "context": "You will hear a volunteer coordinator welcoming new volunteers to a community park.",
+  "speakers": [
+   {
+    "id": "tessa",
+    "name": "Tessa Marlow",
+    "gender": "female",
+    "accent": "australian",
+    "role": "volunteer coordinator"
+   }
+  ],
+  "turns": [
+   {
+    "speaker": "tessa",
+    "text": "Good morning, everyone, and welcome to Riverside Community Park. My name's Tessa Marlow and I coordinate the volunteer programme here. Before we start work today, I'd like to show you where everything is, tell you a little about how the volunteer days are organised, and go through a few things you'll need to bring. We're standing just inside the main gate, at the bottom of the map in your welcome pack, so you might like to have that in front of you."
+   },
+   {
+    "speaker": "tessa",
+    "text": "Right, let's start with the buildings. On your left, the large building is the visitor centre, where you'll sign in each time you come. If you walk up the main path from the gate, the first building you pass on your right, between the path and the car park, is the first aid room. Please make sure you know where it is, because it isn't always staffed, and the key is kept at the visitor centre."
+   },
+   {
+    "speaker": "tessa",
+    "text": "Carry on up the path and you'll come to a junction, where another path crosses the park from west to east. If you turn right there and follow it right to the end, you'll find the compost area on your left. That's where all the garden waste goes, and on a typical Saturday it's where the busiest team will be working, turning the heaps and sorting branches. Just to the north of the compost, in the corner of the park, there's a small woodland, and hidden among the trees is the bird hide. It was built by volunteers two years ago, and it's a lovely quiet place to have your lunch."
+   },
+   {
+    "speaker": "tessa",
+    "text": "Now, if you go back to the junction and turn left instead, the playground will be on your right. Behind the playground there are two small buildings side by side. The one further west is the old ticket office, which is closed to the public at the moment. The tool shed is the other one, the building closer to the lake, and that's where you'll collect gloves, spades and anything else you need at the start of the day."
+   },
+   {
+    "speaker": "tessa",
+    "text": "Let me say a word about how the volunteer days work. We meet every Saturday and on the first Wednesday of each month. You don't have to come every week. Most people come two or three times a month, and that's absolutely fine. What we do ask is that you let us know by Thursday evening if you're planning to come on the Saturday, so that we can plan the teams. You can do that by text or on the website, but please don't just leave a message on the office phone, because it isn't checked at weekends."
+   },
+   {
+    "speaker": "tessa",
+    "text": "As for the work itself, it changes with the seasons. In spring we're mostly planting, and in summer a lot of the time goes on watering and cutting back the paths. Autumn is the season most volunteers enjoy, I think, because that's when we collect seeds from the meadow and store them for the following year. Over the winter, the main job is repairing fences and benches, which is hard work but very satisfying."
+   },
+   {
+    "speaker": "tessa",
+    "text": "Finally, a few practical points that people often ask me about on their first day. Please wear strong boots, not trainers, because some of the ground is very uneven. We provide gloves, but a lot of people prefer to bring their own. Tea and coffee are free in the visitor centre, and on Saturdays there's soup at lunchtime for a small charge of £2. And if you'd like one of our green volunteer T-shirts to wear on work days, you can buy them from the office for £8.50. Right, any questions before we head up to the tool shed?"
+   }
+  ],
+  "groups": [
+   {
+    "type": "map_labelling",
+    "instruction": "Label the map below. Choose the correct letter, A-E.",
+    "figure": {
+     "format": "map-spec/1",
+     "title": "Riverside Community Park",
+     "grid": {
+      "cols": 12,
+      "rows": 8
+     },
+     "features": [
+      {
+       "letter": "A",
+       "kind": "building",
+       "x": 0,
+       "y": 0,
+       "w": 2,
+       "h": 2
+      },
+      {
+       "letter": "B",
+       "kind": "building",
+       "x": 2,
+       "y": 0,
+       "w": 2,
+       "h": 2
+      },
+      {
+       "label": "Lake",
+       "kind": "water",
+       "x": 5,
+       "y": 0,
+       "w": 3,
+       "h": 3
+      },
+      {
+       "letter": "C",
+       "kind": "trees",
+       "x": 9,
+       "y": 0,
+       "w": 3,
+       "h": 2
+      },
+      {
+       "letter": "D",
+       "kind": "area",
+       "x": 9,
+       "y": 2,
+       "w": 3,
+       "h": 2
+      },
+      {
+       "label": "Playground",
+       "kind": "field",
+       "x": 0,
+       "y": 2,
+       "w": 3,
+       "h": 2
+      },
+      {
+       "label": "Visitor centre",
+       "kind": "building",
+       "x": 0,
+       "y": 5,
+       "w": 3,
+       "h": 3
+      },
+      {
+       "letter": "E",
+       "kind": "building",
+       "x": 6,
+       "y": 5,
+       "w": 2,
+       "h": 2
+      },
+      {
+       "label": "Car park",
+       "kind": "car_park",
+       "x": 9,
+       "y": 5,
+       "w": 3,
+       "h": 3
+      }
+     ],
+     "paths": [
+      {
+       "kind": "path",
+       "label": "Main path",
+       "points": [
+        [
+         4,
+         8
+        ],
+        [
+         4,
+         4
+        ],
+        [
+         12,
+         4
+        ]
+       ]
+      },
+      {
+       "kind": "path",
+       "points": [
+        [
+         0,
+         4
+        ],
+        [
+         4,
+         4
+        ]
+       ]
+      }
+     ],
+     "entrances": [
+      {
+       "label": "Main gate",
+       "x": 4,
+       "y": 8
+      }
+     ],
+     "data": "illustrative"
+    },
+    "questions": [
+     {
+      "numbers": [
+       11
+      ],
+      "prompt": "First aid room",
+      "answer": [
+       "E"
+      ],
+      "evidence": "the first building you pass on your right, between the path and the car park, is the first aid room",
+      "explanation": {
+       "en": "Walking north from the gate, the first building on the right, between the path and the car park, is E."
+      }
+     },
+     {
+      "numbers": [
+       12
+      ],
+      "prompt": "Compost area",
+      "answer": [
+       "D"
+      ],
+      "evidence": "follow it right to the end, you'll find the compost area on your left",
+      "explanation": {
+       "en": "Turning right (east) at the junction and going to the end, the area on the left (north side) is D."
+      }
+     },
+     {
+      "numbers": [
+       13
+      ],
+      "prompt": "Bird hide",
+      "answer": [
+       "C"
+      ],
+      "evidence": "in the corner of the park, there's a small woodland, and hidden among the trees is the bird hide",
+      "explanation": {
+       "en": "The woodland north of the compost area, in the north-east corner, is C."
+      }
+     },
+     {
+      "numbers": [
+       14
+      ],
+      "prompt": "Tool shed",
+      "answer": [
+       "B"
+      ],
+      "evidence": "The tool shed is the other one, the building closer to the lake",
+      "explanation": {
+       "en": "Of the two buildings behind the playground, the one further west (A) is the ticket office; the tool shed is B, nearer the lake."
+      }
+     }
+    ]
+   },
+   {
+    "type": "multiple_choice",
+    "instruction": "Choose the correct letter, A, B or C.",
+    "options": [
+     {
+      "id": "A",
+      "text": "come to the park every Saturday"
+     },
+     {
+      "id": "B",
+      "text": "say in advance which Saturdays they will come"
+     },
+     {
+      "id": "C",
+      "text": "phone the office before they arrive"
+     }
+    ],
+    "questions": [
+     {
+      "numbers": [
+       15
+      ],
+      "prompt": "What does the speaker ask volunteers to do?",
+      "answer": [
+       "B"
+      ],
+      "evidence": "let us know by Thursday evening if you're planning to come on the Saturday",
+      "explanation": {
+       "en": "Volunteers must say by Thursday if they will come on Saturday. Weekly visits are not required, and the office phone is not checked at weekends."
+      }
+     }
+    ]
+   },
+   {
+    "type": "multiple_choice",
+    "instruction": "Choose the correct letter, A, B or C.",
+    "options": [
+     {
+      "id": "A",
+      "text": "spring"
+     },
+     {
+      "id": "B",
+      "text": "summer"
+     },
+     {
+      "id": "C",
+      "text": "autumn"
+     }
+    ],
+    "questions": [
+     {
+      "numbers": [
+       16
+      ],
+      "prompt": "Which season do most volunteers enjoy most?",
+      "answer": [
+       "C"
+      ],
+      "evidence": "Autumn is the season most volunteers enjoy",
+      "explanation": {
+       "en": "She says autumn is the season most volunteers enjoy, because they collect seeds then."
+      }
+     }
+    ]
+   },
+   {
+    "type": "multiple_choice",
+    "instruction": "Choose the correct letter, A, B or C.",
+    "options": [
+     {
+      "id": "A",
+      "text": "planting along the paths"
+     },
+     {
+      "id": "B",
+      "text": "mending fences and seats"
+     },
+     {
+      "id": "C",
+      "text": "collecting seeds for spring"
+     }
+    ],
+    "questions": [
+     {
+      "numbers": [
+       17
+      ],
+      "prompt": "What is the main work in winter?",
+      "answer": [
+       "B"
+      ],
+      "evidence": "the main job is repairing fences and benches",
+      "explanation": {
+       "en": "In winter the main job is repairing fences and benches. Planting is in spring and seed collecting in autumn."
+      }
+     }
+    ]
+   },
+   {
+    "type": "note_completion",
+    "title": "Practical points",
+    "instruction": "Complete the notes. Write ONE WORD AND/OR A NUMBER for each answer.",
+    "limit": {
+     "words": 1,
+     "number": true
+    },
+    "questions": [
+     {
+      "numbers": [
+       18
+      ],
+      "prompt": "Wear strong ____, not trainers",
+      "answer": [
+       "boots"
+      ],
+      "evidence": "Please wear strong boots, not trainers",
+      "explanation": {
+       "en": "Volunteers should wear strong boots because the ground is uneven."
+      }
+     },
+     {
+      "numbers": [
+       19
+      ],
+      "prompt": "Soup on Saturdays: £____",
+      "answer": [
+       "2",
+       "two"
+      ],
+      "evidence": "soup at lunchtime for a small charge of £2",
+      "explanation": {
+       "en": "Soup at lunchtime on Saturdays costs £2."
+      }
+     },
+     {
+      "numbers": [
+       20
+      ],
+      "prompt": "Volunteer T-shirt from the office: £____",
+      "answer": [
+       "8.50"
+      ],
+      "evidence": "from the office for £8.50",
+      "explanation": {
+       "en": "The green volunteer T-shirts cost £8.50 from the office."
+      }
+     }
+    ]
+   }
+  ],
+  "audio": {
+   "file": "fixture/part-2.mp3",
+   "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+   "bytes": 1,
+   "durationMs": 349600,
+   "voices": {
+    "tessa": {
+     "provider": "fake",
+     "voice": "f1"
+    },
+    "narrator": {
+     "provider": "fake",
+     "voice": "n1"
+    }
+   },
+   "segments": [
+    {
+     "kind": "narrator",
+     "startMs": 0,
+     "endMs": 4000,
+     "text": "Part 2. You will hear a volunteer coordinator welcoming new volunteers to a community park. First, you have some time to look at questions 11 to 14."
+    },
+    {
+     "kind": "pause",
+     "startMs": 4000,
+     "endMs": 34000,
+     "purpose": "read",
+     "questions": [
+      11,
+      14
+     ]
+    },
+    {
+     "kind": "turn",
+     "startMs": 34000,
+     "endMs": 64200,
+     "turn": 0
+    },
+    {
+     "kind": "turn",
+     "startMs": 64200,
+     "endMs": 90533,
+     "turn": 1
+    },
+    {
+     "kind": "turn",
+     "startMs": 90533,
+     "endMs": 129200,
+     "turn": 2
+    },
+    {
+     "kind": "turn",
+     "startMs": 129200,
+     "endMs": 157067,
+     "turn": 3
+    },
+    {
+     "kind": "narrator",
+     "startMs": 157067,
+     "endMs": 159067,
+     "text": "Now look at questions 15 to 17."
+    },
+    {
+     "kind": "pause",
+     "startMs": 159067,
+     "endMs": 189067,
+     "purpose": "read",
+     "questions": [
+      15,
+      17
+     ]
+    },
+    {
+     "kind": "turn",
+     "startMs": 189067,
+     "endMs": 222334,
+     "turn": 4
+    },
+    {
+     "kind": "turn",
+     "startMs": 222334,
+     "endMs": 249667,
+     "turn": 5
+    },
+    {
+     "kind": "narrator",
+     "startMs": 249667,
+     "endMs": 251667,
+     "text": "Now look at questions 18 to 20."
+    },
+    {
+     "kind": "pause",
+     "startMs": 251667,
+     "endMs": 281667,
+     "purpose": "read",
+     "questions": [
+      18,
+      20
+     ]
+    },
+    {
+     "kind": "turn",
+     "startMs": 281667,
+     "endMs": 316600,
+     "turn": 6
+    },
+    {
+     "kind": "narrator",
+     "startMs": 316600,
+     "endMs": 319600,
+     "text": "That is the end of Part 2. You now have 30 seconds to check your answers."
+    },
+    {
+     "kind": "pause",
+     "startMs": 319600,
+     "endMs": 349600,
+     "purpose": "check"
+    }
+   ]
+  }
+ },
+ "index": 1,
+ "mapDescription": "Riverside Community Park. North is at the top. The map is 12 squares from west to east (columns 1-12) and 8 squares from north to south (rows 1-8).\nPlaces:\n- letter A (building): columns 1-2, rows 1-2.\n- letter B (building): columns 3-4, rows 1-2.\n- Lake (water): columns 6-8, rows 1-3.\n- letter C (trees): columns 10-12, rows 1-2.\n- letter D (area): columns 10-12, rows 3-4.\n- Playground (field): columns 1-3, rows 3-4.\n- Visitor centre (building): columns 1-3, rows 6-8.\n- letter E (building): columns 7-8, rows 6-7.\n- Car park (car park): columns 10-12, rows 6-8.\nRoads and paths (grid points, column line then row line, 0 is the west or north edge):\n- path \"Main path\": (4, 8) to (4, 4) to (12, 4).\n- path: (0, 4) to (4, 4).\nEntrance \"Main gate\" at grid point (4, 8).\nLetters:\n- A: next to letter B, Playground; north-west of entrance \"Main gate\".\n- B: next to letter A, Playground; north of entrance \"Main gate\".\n- C: next to letter D; north-east of entrance \"Main gate\".\n- D: next to letter C; north-east of entrance \"Main gate\".\n- E: next to nothing; north-east of entrance \"Main gate\"."
+}

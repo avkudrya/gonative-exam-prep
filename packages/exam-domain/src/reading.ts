@@ -78,7 +78,9 @@ export type ReadingSection = {title: string; text: string; groups: ReadingGroup[
 export type ReadingTest = {id: string; exam: ReadingExam; sections: ReadingSection[]};
 
 const normalize = (text: string) => text.normalize('NFC').replace(/[’‘]/g, "'").replace(/[–—]/g, '-');
-const fold = (text: string) => normalize(text).toLowerCase();
+/** How quotes and answers are matched against a text: NFC, straight apostrophes, plain hyphens, lower case. */
+export const matchFold = (text: string) => normalize(text).toLowerCase();
+const fold = matchFold;
 const optionsOf = (group: ReadingGroup): Option[] =>
   group.type === 'true_false_not_given' ? TRUE_FALSE_NOT_GIVEN : group.type === 'yes_no_not_given' ? YES_NO_NOT_GIVEN : group.options ?? [];
 
@@ -161,7 +163,11 @@ export function checkReadingTest(test: ReadingTest): string[] {
  * thresholds; halfway between two of them counts as the half band. Below the lowest threshold there is no number.
  */
 export function readingEstimate(raw: number, exam: ReadingExam): {low: number; high: number} | null {
-  const steps = READING_THRESHOLDS[exam];
+  return bandFromRaw(raw, READING_THRESHOLDS[exam]);
+}
+
+/** Raw score out of 40 → estimate by a table of official approximate thresholds (Reading and Listening, P7.6 §9). */
+export function bandFromRaw(raw: number, steps: {band: number; raw: number}[]): {low: number; high: number} | null {
   if (!Number.isInteger(raw) || raw < 0 || raw > 40) throw new RangeError(`raw score ${raw}`);
   const reached = steps.filter(s => raw >= s.raw).pop();
   if (!reached) return null;

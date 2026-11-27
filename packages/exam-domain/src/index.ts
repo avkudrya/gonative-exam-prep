@@ -8,3 +8,5 @@ export * from './chart-numbers.js';
 export * from './letter-spec.js';
 export * from './letter-checks.js';
 export * from './reading.js';
+export * from './map-spec.js';
+export * from './listening.js';

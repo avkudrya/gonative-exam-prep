@@ -1,0 +1,568 @@
+{
+ "about": "exam-domain readingEstimate; MultiAdmin ReadingScore must give the same (P7.2)",
+ "cases": [
+  {
+   "exam": "ielts-academic",
+   "raw": 0,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 1,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 2,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 3,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 4,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 5,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 6,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 7,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 8,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 9,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 10,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 11,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 12,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 13,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 14,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 15,
+   "expected": null
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 16,
+   "expected": {
+    "low": 5,
+    "high": 5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 17,
+   "expected": {
+    "low": 5,
+    "high": 5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 18,
+   "expected": {
+    "low": 5,
+    "high": 5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 19,
+   "expected": {
+    "low": 5,
+    "high": 5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 20,
+   "expected": {
+    "low": 5.5,
+    "high": 5.5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 21,
+   "expected": {
+    "low": 5.5,
+    "high": 5.5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 22,
+   "expected": {
+    "low": 5.5,
+    "high": 5.5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 23,
+   "expected": {
+    "low": 6,
+    "high": 6
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 24,
+   "expected": {
+    "low": 6,
+    "high": 6
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 25,
+   "expected": {
+    "low": 6,
+    "high": 6
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 26,
+   "expected": {
+    "low": 6,
+    "high": 6
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 27,
+   "expected": {
+    "low": 6.5,
+    "high": 6.5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 28,
+   "expected": {
+    "low": 6.5,
+    "high": 6.5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 29,
+   "expected": {
+    "low": 6.5,
+    "high": 6.5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 30,
+   "expected": {
+    "low": 7,
+    "high": 7
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 31,
+   "expected": {
+    "low": 7,
+    "high": 7
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 32,
+   "expected": {
+    "low": 7,
+    "high": 7
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 33,
+   "expected": {
+    "low": 7.5,
+    "high": 7.5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 34,
+   "expected": {
+    "low": 7.5,
+    "high": 7.5
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 35,
+   "expected": {
+    "low": 8,
+    "high": 9
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 36,
+   "expected": {
+    "low": 8,
+    "high": 9
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 37,
+   "expected": {
+    "low": 8,
+    "high": 9
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 38,
+   "expected": {
+    "low": 8,
+    "high": 9
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 39,
+   "expected": {
+    "low": 8,
+    "high": 9
+   }
+  },
+  {
+   "exam": "ielts-academic",
+   "raw": 40,
+   "expected": {
+    "low": 8,
+    "high": 9
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 0,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 1,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 2,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 3,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 4,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 5,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 6,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 7,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 8,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 9,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 10,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 11,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 12,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 13,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 14,
+   "expected": null
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 15,
+   "expected": {
+    "low": 4,
+    "high": 4
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 16,
+   "expected": {
+    "low": 4,
+    "high": 4
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 17,
+   "expected": {
+    "low": 4,
+    "high": 4
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 18,
+   "expected": {
+    "low": 4,
+    "high": 4
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 19,
+   "expected": {
+    "low": 4.5,
+    "high": 4.5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 20,
+   "expected": {
+    "low": 4.5,
+    "high": 4.5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 21,
+   "expected": {
+    "low": 4.5,
+    "high": 4.5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 22,
+   "expected": {
+    "low": 4.5,
+    "high": 4.5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 23,
+   "expected": {
+    "low": 5,
+    "high": 5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 24,
+   "expected": {
+    "low": 5,
+    "high": 5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 25,
+   "expected": {
+    "low": 5,
+    "high": 5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 26,
+   "expected": {
+    "low": 5,
+    "high": 5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 27,
+   "expected": {
+    "low": 5.5,
+    "high": 5.5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 28,
+   "expected": {
+    "low": 5.5,
+    "high": 5.5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 29,
+   "expected": {
+    "low": 5.5,
+    "high": 5.5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 30,
+   "expected": {
+    "low": 6,
+    "high": 6
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 31,
+   "expected": {
+    "low": 6,
+    "high": 6
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 32,
+   "expected": {
+    "low": 6,
+    "high": 6
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 33,
+   "expected": {
+    "low": 6.5,
+    "high": 6.5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 34,
+   "expected": {
+    "low": 6.5,
+    "high": 6.5
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 35,
+   "expected": {
+    "low": 7,
+    "high": 8
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 36,
+   "expected": {
+    "low": 7,
+    "high": 8
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 37,
+   "expected": {
+    "low": 7,
+    "high": 8
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 38,
+   "expected": {
+    "low": 7,
+    "high": 8
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 39,
+   "expected": {
+    "low": 7,
+    "high": 8
+   }
+  },
+  {
+   "exam": "ielts-general-training",
+   "raw": 40,
+   "expected": {
+    "low": 7,
+    "high": 8
+   }
+  }
+ ]
+}

@@ -1,0 +1,194 @@
+{
+ "about": "Our own sample section for the Reading form checks (exam-domain) and ReadingAnswers (MultiAdmin); keep both copies identical.",
+ "section": {
+  "title": "Urban beekeeping",
+  "text": "Urban beekeeping\n\nA. Twenty years ago, few people kept bees in cities. Today, rooftop hives can be found in many European capitals, and some city councils even offer training courses for beginners.\n\nB. Supporters argue that urban hives help to pollinate parks and gardens. In one study in a northern city, fruit trees within 500 metres of a hive produced 20% more fruit than trees further away.\n\nC. However, ecologists warn that too many hives may harm wild bees, which compete with honeybees for the same flowers. In the author's view, cities should count their hives before encouraging more of them.\n\nD. Honey produced in cities is often surprisingly clean. Tests show that bees filter many pollutants, so city honey can be as pure as honey from the countryside.",
+  "groups": [
+   {
+    "type": "matching_headings",
+    "instruction": "Choose the correct heading for paragraphs A and B.",
+    "options": [
+     {
+      "id": "i",
+      "text": "A growing trend"
+     },
+     {
+      "id": "ii",
+      "text": "Benefits for plants"
+     },
+     {
+      "id": "iii",
+      "text": "The price of honey"
+     }
+    ],
+    "questions": [
+     {
+      "numbers": [
+       1
+      ],
+      "prompt": "Paragraph A",
+      "answer": [
+       "i"
+      ],
+      "evidence": "Today, rooftop hives can be found in many European capitals",
+      "explanation": {
+       "en": "See the passage."
+      }
+     },
+     {
+      "numbers": [
+       2
+      ],
+      "prompt": "Paragraph B",
+      "answer": [
+       "ii"
+      ],
+      "evidence": "urban hives help to pollinate parks and gardens",
+      "explanation": {
+       "en": "See the passage."
+      }
+     }
+    ]
+   },
+   {
+    "type": "true_false_not_given",
+    "instruction": "Do the following statements agree with the information given in the passage?",
+    "questions": [
+     {
+      "numbers": [
+       3
+      ],
+      "prompt": "Some city councils train new beekeepers.",
+      "answer": [
+       "T"
+      ],
+      "evidence": "some city councils even offer training courses for beginners",
+      "explanation": {
+       "en": "See the passage."
+      }
+     },
+     {
+      "numbers": [
+       4
+      ],
+      "prompt": "Urban hives produce more honey than rural ones.",
+      "answer": [
+       "NG"
+      ],
+      "explanation": {
+       "en": "The passage compares purity, not amount."
+      }
+     },
+     {
+      "numbers": [
+       5
+      ],
+      "prompt": "City honey contains more pollutants than country honey.",
+      "answer": [
+       "F"
+      ],
+      "evidence": "city honey can be as pure as honey from the countryside",
+      "explanation": {
+       "en": "See the passage."
+      }
+     }
+    ]
+   },
+   {
+    "type": "yes_no_not_given",
+    "instruction": "Do the following statements agree with the views of the writer?",
+    "questions": [
+     {
+      "numbers": [
+       6
+      ],
+      "prompt": "Cities should know how many hives they have before adding more.",
+      "answer": [
+       "Y"
+      ],
+      "evidence": "cities should count their hives before encouraging more of them",
+      "explanation": {
+       "en": "See the passage."
+      }
+     }
+    ]
+   },
+   {
+    "type": "sentence_completion",
+    "instruction": "Complete the sentences. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage.",
+    "limit": {
+     "words": 2,
+     "number": true
+    },
+    "questions": [
+     {
+      "numbers": [
+       7
+      ],
+      "prompt": "Fruit trees near a hive produced ____ more fruit.",
+      "answer": [
+       "20%",
+       "20 percent"
+      ],
+      "evidence": "produced 20% more fruit",
+      "explanation": {
+       "en": "See the passage."
+      }
+     },
+     {
+      "numbers": [
+       8
+      ],
+      "prompt": "Honeybees compete with ____ for flowers.",
+      "answer": [
+       "wild bees"
+      ],
+      "evidence": "too many hives may harm wild bees",
+      "explanation": {
+       "en": "See the passage."
+      }
+     }
+    ]
+   },
+   {
+    "type": "multiple_choice_multi",
+    "instruction": "Choose TWO letters, A-D.",
+    "options": [
+     {
+      "id": "A",
+      "text": "training for beginners"
+     },
+     {
+      "id": "B",
+      "text": "tax benefits"
+     },
+     {
+      "id": "C",
+      "text": "cleaner honey"
+     },
+     {
+      "id": "D",
+      "text": "fewer wild flowers"
+     }
+    ],
+    "questions": [
+     {
+      "numbers": [
+       9,
+       10
+      ],
+      "prompt": "Which TWO advantages of urban beekeeping are mentioned?",
+      "answer": [
+       "A",
+       "C"
+      ],
+      "evidence": "city honey can be as pure as honey from the countryside",
+      "explanation": {
+       "en": "See the passage."
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

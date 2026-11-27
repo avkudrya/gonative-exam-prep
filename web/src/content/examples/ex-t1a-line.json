@@ -1,0 +1,325 @@
+{
+    "id": "ex-t1a-line",
+    "exam_key": "ielts-academic",
+    "task_key": "task-1",
+    "task_ref": "gonative-t1a:t1a-01",
+    "prompt": {
+        "text": "The line graph shows how many people travelled to work by car, bus and bicycle in a European city between 2000 and 2020. Describe the most important trends and differences, using figures from the graph to support your description. Write at least 150 words.",
+        "stimulus": {
+            "format": "chart-spec/1",
+            "charts": [
+                {
+                    "kind": "line",
+                    "title": "Commuters by mode of transport, 2000–2020",
+                    "x": {
+                        "label": "Year",
+                        "categories": [
+                            "2000",
+                            "2005",
+                            "2010",
+                            "2015",
+                            "2020"
+                        ]
+                    },
+                    "y": {
+                        "label": "Commuters",
+                        "unit": "thousand"
+                    },
+                    "series": [
+                        {
+                            "name": "Car",
+                            "values": [
+                                420,
+                                450,
+                                430,
+                                380,
+                                300
+                            ]
+                        },
+                        {
+                            "name": "Bus",
+                            "values": [
+                                210,
+                                230,
+                                260,
+                                300,
+                                330
+                            ]
+                        },
+                        {
+                            "name": "Bicycle",
+                            "values": [
+                                40,
+                                42,
+                                41,
+                                40,
+                                41
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "data": "illustrative"
+        }
+    },
+    "response_text": "The line graph illustrates the number of people who commuted to work by car, bus and bicycle in a European city from 2000 to 2020.\n\nOverall, car use declined over the period while bus travel rose steadily, so that by 2020 more people travelled by bus than by car. Cycling remained by far the least popular way of getting to work.\n\nIn 2000, 420 thousand people drove to work, which was twice as many as those who took the bus (210 thousand). The number of car commuters increased slightly to a peak of 450 thousand in 2005, but after that it fell continuously, reaching 300 thousand in 2020.\n\nBy contrast, the figure for buses grew throughout the period. It went up from 210 thousand to 260 thousand in 2010 and then to 330 thousand in 2020, overtaking cars in the last five years. Bicycle use was almost unchanged, staying at around 40 thousand during all the twenty years, with a small rise to 42 thousand in 2005.",
+    "word_count": 167,
+    "pipeline_version": "p1/exam-t1-6",
+    "left_out": [
+        "f3"
+    ],
+    "assessment": {
+        "uuid": "example-ex-t1a-line",
+        "status": "assessed",
+        "feedback_language": "en",
+        "result": {
+            "status": "complete",
+            "calibration": "uncalibrated",
+            "word_count": 167,
+            "criteria": [
+                {
+                    "criterion_key": "task_achievement",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "Your report opens with a clear overview: car use declines, bus travel rises steadily, buses overtake cars by 2020, and cycling stays the least used mode. The key features are well chosen and supported with accurate figures: the car peak of 450 thousand in 2005, the fall to 300 thousand, the bus rise to 330 thousand, and the stable cycling figure of about 40 thousand. The comparison of 420 with 210 in 2000 is correct, and the crossover is placed correctly in the last five years. What holds the report back is small: the 2015 values of 380 and 300 are not mentioned, which would have pinpointed when buses overtook cars, and the bus rise is described without a figure for the largest change.",
+                    "finding_ids": [
+                        "f1",
+                        "f2"
+                    ]
+                },
+                {
+                    "criterion_key": "coherence_cohesion",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The report is easy to follow. It has four clear paragraphs: an introduction, an overview, then one paragraph on cars and one on buses and bicycles. The overview states the main trends and the crossover. Linking is varied and natural: \"Overall\", \"so that\", \"but after that\", \"By contrast\", \"overtaking\", and reference words such as \"it\" and \"those\". Only small slips remain, for example the bus paragraph jumping from 2000 to 2010 without mentioning 2005 or 2015, and the phrase \"the last five years\", which is slightly loose for the 2015-2020 interval.",
+                    "finding_ids": [
+                        "f4",
+                        "f5",
+                        "f6"
+                    ]
+                },
+                {
+                    "criterion_key": "lexical_resource",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 6.5,
+                        "high": 7.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The vocabulary is precise and varied for describing data. Trend verbs and nouns such as \"declined\", \"peak\", \"overtaking\" and \"almost unchanged\" are used accurately, and the collocations are natural (\"reaching 300 thousand\", \"by far the least popular way of getting to work\"). Paraphrasing is good, with \"commuted\", \"drove to work\" and \"took the bus\" avoiding repetition. Spelling and word formation are accurate. What holds it back from a higher level is a fairly safe range of change vocabulary, with no more specific or less common expressions for the size or speed of change, and one slightly unnatural phrase, \"during all the twenty years\".",
+                    "finding_ids": [
+                        "f7",
+                        "f8",
+                        "f9",
+                        "f10"
+                    ]
+                },
+                {
+                    "criterion_key": "grammatical_range_accuracy",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "You use a wide range of structures accurately: relative clauses (\"which was twice as many as those who took the bus\"), result clauses (\"so that by 2020 more people travelled by bus than by car\"), participle phrases (\"reaching 300 thousand\", \"overtaking cars\") and contrast with \"but after that\". Nearly every sentence is error-free and punctuation is well controlled. The only small slip is one preposition-and-article phrase, which does not affect meaning.",
+                    "finding_ids": [
+                        "f11",
+                        "f12",
+                        "f13"
+                    ]
+                }
+            ],
+            "findings": [
+                {
+                    "id": "f1",
+                    "kind": "strength",
+                    "skill": "task.position_clarity",
+                    "criterion_key": "task_achievement",
+                    "severity": "minor",
+                    "span": {
+                        "end": 263,
+                        "start": 141
+                    },
+                    "quote": "car use declined over the period while bus travel rose steadily, so that by 2020 more people travelled by bus than by car.",
+                    "explanation": "A clear overview that states the main trends and the key crossover."
+                },
+                {
+                    "id": "f2",
+                    "kind": "strength",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_achievement",
+                    "severity": "minor",
+                    "span": {
+                        "end": 439,
+                        "start": 340
+                    },
+                    "quote": "420 thousand people drove to work, which was twice as many as those who took the bus (210 thousand)",
+                    "explanation": "A relevant comparison supported by accurate figures."
+                },
+                {
+                    "id": "f4",
+                    "kind": "strength",
+                    "skill": "coherence.paragraphing",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 263,
+                        "start": 132
+                    },
+                    "quote": "Overall, car use declined over the period while bus travel rose steadily, so that by 2020 more people travelled by bus than by car.",
+                    "explanation": "A clear overview that gives the main trends and the crossover, placed before the details, so the reader knows what to expect."
+                },
+                {
+                    "id": "f5",
+                    "kind": "strength",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 664,
+                        "start": 592
+                    },
+                    "quote": "By contrast, the figure for buses grew throughout the period. It went up",
+                    "explanation": "The contrast linker marks the shift from cars to buses, and \"It\" refers back clearly to \"the figure\", so the sentences connect smoothly."
+                },
+                {
+                    "id": "f6",
+                    "kind": "suggestion",
+                    "skill": "coherence.progression",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 779,
+                        "start": 741
+                    },
+                    "quote": "overtaking cars in the last five years",
+                    "suggestion": "overtaking cars between 2015 and 2020",
+                    "explanation": "Giving the exact years ties the crossover to the data and makes the time reference clearer."
+                },
+                {
+                    "id": "f7",
+                    "kind": "strength",
+                    "skill": "vocabulary.collocations",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 329,
+                        "start": 264
+                    },
+                    "quote": "Cycling remained by far the least popular way of getting to work.",
+                    "explanation": "Natural, precise phrasing with a good collocation (\"by far the least popular\") and a paraphrase of the commuting idea."
+                },
+                {
+                    "id": "f8",
+                    "kind": "strength",
+                    "skill": "vocabulary.range",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 204,
+                        "start": 141
+                    },
+                    "quote": "car use declined over the period while bus travel rose steadily",
+                    "explanation": "Accurate trend verbs with suitable adverbs, and varied nouns for the modes of transport."
+                },
+                {
+                    "id": "f9",
+                    "kind": "error",
+                    "skill": "vocabulary.collocations",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 872,
+                        "start": 845
+                    },
+                    "quote": "during all the twenty years",
+                    "suggestion": "throughout the twenty years",
+                    "explanation": "\"During all the\" is an unnatural collocation here; \"throughout the twenty years\" (or \"over the whole twenty years\") is the natural way to say it."
+                },
+                {
+                    "id": "f10",
+                    "kind": "suggestion",
+                    "skill": "vocabulary.word_choice",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 558,
+                        "start": 538
+                    },
+                    "quote": "it fell continuously",
+                    "suggestion": "it fell steadily",
+                    "explanation": "\"Steadily\" is the more usual collocation with fell for a gradual decline and fits the data's regular drops."
+                },
+                {
+                    "id": "f11",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 440,
+                        "start": 331
+                    },
+                    "quote": "In 2000, 420 thousand people drove to work, which was twice as many as those who took the bus (210 thousand).",
+                    "explanation": "A non-defining relative clause and a comparison are used accurately, with correct punctuation."
+                },
+                {
+                    "id": "f12",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 262,
+                        "start": 141
+                    },
+                    "quote": "car use declined over the period while bus travel rose steadily, so that by 2020 more people travelled by bus than by car",
+                    "explanation": "A contrast clause and a result clause are combined correctly in one sentence."
+                },
+                {
+                    "id": "f13",
+                    "kind": "error",
+                    "skill": "grammar.articles",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 872,
+                        "start": 845
+                    },
+                    "quote": "during all the twenty years",
+                    "suggestion": "during all twenty years",
+                    "explanation": "The article is not used between 'all' and a number in this phrase; 'all twenty years' or 'all the twenty years' is awkward, and 'the whole twenty years' is another option."
+                }
+            ],
+            "top_fixes": [
+                "f9",
+                "f13"
+            ],
+            "top_skills": [
+                {
+                    "skill": "vocabulary.collocations",
+                    "finding_ids": [
+                        "f9"
+                    ],
+                    "places": 1
+                },
+                {
+                    "skill": "grammar.articles",
+                    "finding_ids": [
+                        "f13"
+                    ],
+                    "places": 1
+                }
+            ]
+        }
+    }
+}

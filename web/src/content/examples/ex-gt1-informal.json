@@ -1,0 +1,258 @@
+{
+    "id": "ex-gt1-informal",
+    "exam_key": "ielts-general-training",
+    "task_key": "task-1",
+    "task_ref": "gonative-t1g:gt1-19",
+    "prompt": {
+        "text": "A friend looked after your home and your pet while you were away on holiday.\n\nWrite a letter to your friend. In your letter:\n• thank your friend for their help\n• tell them about your holiday\n• offer to do something for them in return\n\nWrite at least 150 words. You do not need to include any addresses.\nBegin your letter with: Dear …,",
+        "stimulus": {
+            "format": "letter-spec/1",
+            "tone": "informal",
+            "purpose": "thanks",
+            "situation": "A friend looked after your home and your pet while you were away on holiday.",
+            "recipient": "your friend",
+            "points": [
+                "thank your friend for their help",
+                "tell them about your holiday",
+                "offer to do something for them in return"
+            ],
+            "opening": "Dear …,"
+        }
+    },
+    "response_text": "Dear Sam,\n\nI just wanted to say a huge thank you for looking after the flat and Biscuit while I was away. I know how busy you've been at work, so it really means a lot. Biscuit clearly had a great time with you – he's been sulking ever since I got back!\n\nThe holiday was fantastic. We spent the first few days in Lisbon, wandering around the old town and eating far too many custard tarts, and then took the train down to the coast. The beaches were almost empty because it was the end of the season, and the water was still warm enough to swim. The highlight was a boat trip along the cliffs, where we saw dolphins swimming right next to us. I'll show you the photos when we meet.\n\nAnyway, I'd love to return the favour. You mentioned that you're going to visit your parents in December, so why don't I water your plants and collect your post while you're away? And let me take you out for dinner next weekend – my treat, of course.\n\nLet me know when you're free.\n\nLots of love,\nMaria",
+    "word_count": 189,
+    "pipeline_version": "p1/exam-gt1-2",
+    "left_out": [],
+    "assessment": {
+        "uuid": "example-ex-gt1-informal",
+        "status": "assessed",
+        "feedback_language": "en",
+        "result": {
+            "status": "complete",
+            "calibration": "uncalibrated",
+            "word_count": 189,
+            "criteria": [
+                {
+                    "criterion_key": "task_achievement",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 8,
+                        "high": 9
+                    },
+                    "confidence": "medium",
+                    "summary": "This is a complete, well-judged letter to a friend. The purpose is clear from the first sentence, and all three points are fully developed with relevant detail: the thanks come with a personal touch, the holiday is described with specific places and events, and the offers are concrete and linked to your friend's plans. The informal tone is consistent from the opening to the closing and suits the situation. I found nothing irrelevant or missing.",
+                    "finding_ids": [
+                        "f1",
+                        "f2",
+                        "f3"
+                    ]
+                },
+                {
+                    "criterion_key": "coherence_cohesion",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 8,
+                        "high": 9
+                    },
+                    "confidence": "medium",
+                    "summary": "The letter is very easy to follow. It moves from thanks, to the holiday, to the offer, and ends with a short close that asks for a reply. Each paragraph has one clear job, and the breaks fall where the letter moves on. Links are natural and unobtrusive, for example 'Anyway, I'd love to return the favour', 'so why don't I...' and 'And let me take you out'. Reference words such as 'it' and 'there' are used accurately, and nothing needs re-reading. No slips in organisation or linking stand out.",
+                    "finding_ids": [
+                        "f4",
+                        "f5",
+                        "f6"
+                    ]
+                },
+                {
+                    "criterion_key": "lexical_resource",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The vocabulary is natural, precise and well suited to an informal letter to a friend. Phrases such as \"return the favour\", \"my treat, of course\", \"wandering around the old town\" and \"the highlight was a boat trip along the cliffs\" are idiomatic and collocate well. Descriptions are specific (custard tarts, dolphins, empty beaches at the end of the season) and the wording is varied. No spelling, word-formation or word-choice errors are noticeable, so the only thing keeping it from the top level is that the range, while fluent, rarely goes beyond everyday vocabulary.",
+                    "finding_ids": [
+                        "f7",
+                        "f8",
+                        "f9"
+                    ]
+                },
+                {
+                    "criterion_key": "grammatical_range_accuracy",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 8,
+                        "high": 9
+                    },
+                    "confidence": "medium",
+                    "summary": "Your letter uses a wide range of structures with full control: time clauses, reason clauses, relative clauses, a reported statement and a 'why don't I' suggestion are all used correctly. Punctuation is accurate, including the dashes, commas and apostrophes. I could not find any grammar or punctuation errors, and the sentences read naturally for an informal letter.",
+                    "finding_ids": [
+                        "f10",
+                        "f11",
+                        "f12"
+                    ]
+                }
+            ],
+            "findings": [
+                {
+                    "id": "f1",
+                    "kind": "strength",
+                    "skill": "task.requirement_coverage",
+                    "criterion_key": "task_achievement",
+                    "severity": "minor",
+                    "span": {
+                        "end": 105,
+                        "start": 11
+                    },
+                    "quote": "I just wanted to say a huge thank you for looking after the flat and Biscuit while I was away.",
+                    "explanation": "This sentence states the purpose of the letter immediately and in a natural, friendly tone."
+                },
+                {
+                    "id": "f2",
+                    "kind": "strength",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_achievement",
+                    "severity": "minor",
+                    "span": {
+                        "end": 642,
+                        "start": 546
+                    },
+                    "quote": "The highlight was a boat trip along the cliffs, where we saw dolphins swimming right next to us.",
+                    "explanation": "The holiday point is developed with specific, vivid details that a friend would enjoy reading."
+                },
+                {
+                    "id": "f3",
+                    "kind": "strength",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_achievement",
+                    "severity": "minor",
+                    "span": {
+                        "end": 862,
+                        "start": 722
+                    },
+                    "quote": "You mentioned that you're going to visit your parents in December, so why don't I water your plants and collect your post while you're away?",
+                    "explanation": "The offer is concrete and tied to the friend's situation, so it is believable and well developed."
+                },
+                {
+                    "id": "f4",
+                    "kind": "strength",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 721,
+                        "start": 683
+                    },
+                    "quote": "Anyway, I'd love to return the favour.",
+                    "explanation": "This light, informal link signals the move from the holiday to the offer, so the reader follows the shift without effort."
+                },
+                {
+                    "id": "f5",
+                    "kind": "strength",
+                    "skill": "coherence.progression",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 319,
+                        "start": 255
+                    },
+                    "quote": "The holiday was fantastic. We spent the first few days in Lisbon",
+                    "explanation": "The holiday paragraph opens with a general statement and then gives details in time order (Lisbon, the coast, the boat trip), so related information stays together."
+                },
+                {
+                    "id": "f6",
+                    "kind": "strength",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 821,
+                        "start": 722
+                    },
+                    "quote": "You mentioned that you're going to visit your parents in December, so why don't I water your plants",
+                    "explanation": "The offer follows logically from something the friend said, and 'so' connects the reason to the offer clearly."
+                },
+                {
+                    "id": "f7",
+                    "kind": "strength",
+                    "skill": "vocabulary.collocations",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 721,
+                        "start": 691
+                    },
+                    "quote": "I'd love to return the favour.",
+                    "explanation": "A natural idiomatic collocation that fits the friendly tone and the purpose of the offer."
+                },
+                {
+                    "id": "f8",
+                    "kind": "strength",
+                    "skill": "vocabulary.range",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 388,
+                        "start": 321
+                    },
+                    "quote": "wandering around the old town and eating far too many custard tarts",
+                    "explanation": "Vivid, precise and informal wording that makes the holiday description lively and specific."
+                },
+                {
+                    "id": "f9",
+                    "kind": "strength",
+                    "skill": "register.formality",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 253,
+                        "start": 213
+                    },
+                    "quote": "he's been sulking ever since I got back!",
+                    "explanation": "Precise, humorous word choice with a good everyday register for a letter to a friend."
+                },
+                {
+                    "id": "f10",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 642,
+                        "start": 546
+                    },
+                    "quote": "The highlight was a boat trip along the cliffs, where we saw dolphins swimming right next to us.",
+                    "explanation": "A relative clause with 'where' and a participle phrase are combined accurately in one sentence."
+                },
+                {
+                    "id": "f11",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 862,
+                        "start": 722
+                    },
+                    "quote": "You mentioned that you're going to visit your parents in December, so why don't I water your plants and collect your post while you're away?",
+                    "explanation": "A reported clause, a result link, a question form and a time clause are controlled correctly in one sentence."
+                },
+                {
+                    "id": "f12",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 432,
+                        "start": 282
+                    },
+                    "quote": "We spent the first few days in Lisbon, wandering around the old town and eating far too many custard tarts, and then took the train down to the coast.",
+                    "explanation": "Participle phrases and a compound verb structure are correctly punctuated and parallel."
+                }
+            ],
+            "top_fixes": [],
+            "top_skills": []
+        }
+    }
+}

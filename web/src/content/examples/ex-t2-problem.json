@@ -1,0 +1,266 @@
+{
+    "id": "ex-t2-problem",
+    "exam_key": "ielts-academic",
+    "task_key": "task-2",
+    "task_ref": "gonative-bench:p14",
+    "prompt": {
+        "text": "Many people today feel stressed by their jobs. What are the main reasons for this, and how can employers and individuals deal with it?"
+    },
+    "response_text": "Work-related stress has become a common problem in many countries. In this essay I will discuss the main reasons for this situation and suggest what both employers and workers can do about it.\n\nOne of the main reasons is the heavy workload. Many companies try to reduce costs, so fewer employees have to do the same amount of work, and they often stay at the office late in the evening. Another reason is technology. Because people can read e-mails on their phones, they are expected to answer messages at any time, even at weekends, and they never really rest. Finally, many workers feel insecure about their jobs, especially when the economy is weak, and this fear makes them anxious.\n\nThere are several ways to deal with this problem. Employers should make sure that the workload is realistic and hire more staff when it is necessary. They can also introduce clear rules about contacting employees after working hours. For example, some companies in Europe switch off their e-mail servers in the evening, which allow workers to disconnect completely. In addition, managers should talk regularly with their teams, so problems can be solved before they become serious.\n\nIndividuals can also take steps to protect themselves. It is important to have a healthy balance between work and free time, for instance by doing sport or spending time with family. People should also learn to say no when they are asked to do more than they can manage, and to ask for help if they feel overwhelmed.\n\nTo sum up, job stress is mainly caused by heavy workloads, constant connection and insecurity. Both companies and employees have a responsibility to reduce it, and the best results come when they work together.",
+    "word_count": 287,
+    "pipeline_version": "p1/exam-p1-7",
+    "left_out": [],
+    "assessment": {
+        "uuid": "example-ex-t2-problem",
+        "status": "assessed",
+        "feedback_language": "en",
+        "result": {
+            "status": "complete",
+            "calibration": "uncalibrated",
+            "word_count": 287,
+            "criteria": [
+                {
+                    "criterion_key": "task_response",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The essay answers every part of the question: it gives three clear reasons for job stress (heavy workload, technology, job insecurity), and it covers solutions for both employers and individuals. The essay form is consistent, and the introduction and conclusion match the body. Most ideas are explained, for example how constant e-mail access means people \"never really rest\". The employer solutions get a concrete example, but the individual solutions are listed more briefly and with less explanation. The reasons also stay fairly general, with little illustration beyond the e-mail server example.",
+                    "finding_ids": [
+                        "f1",
+                        "f2",
+                        "f3",
+                        "f11"
+                    ]
+                },
+                {
+                    "criterion_key": "coherence_cohesion",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The essay is easy to follow. It opens with an introduction that sets out the plan, then gives the causes in one paragraph, the employers' solutions in another, the individuals' solutions in a third, and a short conclusion. Each paragraph has a clear job, and the order of ideas is logical. Linking is varied and natural: it uses sequencing words (\"Another reason\", \"Finally\"), result and purpose links (\"so\", \"Because\") and reference (\"this fear\", \"it\"). Only a very small slip in a relative clause reference weakens the flow slightly. The cause and solution paragraphs follow the question order, which makes the whole argument straightforward.",
+                    "finding_ids": [
+                        "f5",
+                        "f6",
+                        "f11"
+                    ]
+                },
+                {
+                    "criterion_key": "lexical_resource",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 5.5,
+                        "high": 6.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The vocabulary is adequate and clear for the task, with sensible topic words such as \"workload\", \"reduce costs\", \"feel insecure\", \"disconnect completely\" and \"feel overwhelmed\". Collocations are mostly natural and spelling is accurate. The range is fairly plain and relies on common words (\"problem\", \"reasons\", \"ways\"), so precision and variety are limited rather than wide, which keeps it from a higher level. No word-choice errors block meaning.",
+                    "finding_ids": [
+                        "f8",
+                        "f9",
+                        "f10"
+                    ]
+                },
+                {
+                    "criterion_key": "grammatical_range_accuracy",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "You use a wide range of structures with good control: subordinate clauses of reason and time (\"Because people can read e-mails on their phones, they are expected to answer messages at any time\"), relative clauses, purpose and result clauses, and participial \"by doing\" phrases. Most sentences have no error and punctuation is handled well. The one clear slip is an agreement error in a non-defining relative clause (\"which allow workers\"). One more small point is that a comma is used before \"so problems can be solved\", which is acceptable. Overall the grammar is varied, flexible and accurate.",
+                    "finding_ids": [
+                        "f11",
+                        "f12",
+                        "f13"
+                    ]
+                }
+            ],
+            "findings": [
+                {
+                    "id": "f1",
+                    "kind": "strength",
+                    "skill": "task.requirement_coverage",
+                    "criterion_key": "task_response",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1699,
+                        "start": 1584
+                    },
+                    "quote": "Both companies and employees have a responsibility to reduce it, and the best results come when they work together.",
+                    "explanation": "The conclusion summarises the causes and answers the solution part of the question, linking back to both employers and individuals."
+                },
+                {
+                    "id": "f2",
+                    "kind": "weakness",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_response",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 1487,
+                        "start": 1354
+                    },
+                    "quote": "People should also learn to say no when they are asked to do more than they can manage, and to ask for help if they feel overwhelmed.",
+                    "explanation": "The individual solutions are stated but not explained. Develop one: say how refusing extra tasks protects health and how that benefits the employer too."
+                },
+                {
+                    "id": "f3",
+                    "kind": "weakness",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_response",
+                    "severity": "minor",
+                    "span": {
+                        "end": 686,
+                        "start": 562
+                    },
+                    "quote": "Finally, many workers feel insecure about their jobs, especially when the economy is weak, and this fear makes them anxious.",
+                    "explanation": "This reason is asserted with little support. Add a concrete consequence or example, such as workers accepting unpaid overtime because they fear redundancy."
+                },
+                {
+                    "id": "f5",
+                    "kind": "strength",
+                    "skill": "coherence.paragraphing",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 737,
+                        "start": 688
+                    },
+                    "quote": "There are several ways to deal with this problem.",
+                    "explanation": "This topic sentence clearly marks the move from causes to solutions, so the reader always knows where the argument is."
+                },
+                {
+                    "id": "f6",
+                    "kind": "strength",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 514,
+                        "start": 417
+                    },
+                    "quote": "Because people can read e-mails on their phones, they are expected to answer messages at any time",
+                    "explanation": "The cause and effect link is logical and clearly signalled, and the idea moves on smoothly to the next point."
+                },
+                {
+                    "id": "f8",
+                    "kind": "strength",
+                    "skill": "vocabulary.collocations",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 685,
+                        "start": 571
+                    },
+                    "quote": "many workers feel insecure about their jobs, especially when the economy is weak, and this fear makes them anxious",
+                    "explanation": "Natural, accurate wording with good collocations (feel insecure, the economy is weak)."
+                },
+                {
+                    "id": "f9",
+                    "kind": "suggestion",
+                    "skill": "vocabulary.word_choice",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 737,
+                        "start": 688
+                    },
+                    "quote": "There are several ways to deal with this problem.",
+                    "suggestion": "There are several ways to tackle this problem.",
+                    "explanation": "'Tackle' is a slightly more precise, natural academic collocation with 'problem' than the general 'deal with'."
+                },
+                {
+                    "id": "f10",
+                    "kind": "weakness",
+                    "skill": "vocabulary.range",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 837,
+                        "start": 738
+                    },
+                    "quote": "Employers should make sure that the workload is realistic and hire more staff when it is necessary.",
+                    "explanation": "Vocabulary stays at a general level. Using more specific terms, e.g. 'manageable workload', 'recruit additional staff', 'flexible working hours', would make meaning more exact."
+                },
+                {
+                    "id": "f11",
+                    "kind": "error",
+                    "skill": "grammar.subject_verb_agreement",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "also_criteria": [
+                        "coherence_cohesion",
+                        "task_response"
+                    ],
+                    "severity": "minor",
+                    "span": {
+                        "end": 1052,
+                        "start": 1008
+                    },
+                    "quote": "which allow workers to disconnect completely",
+                    "suggestion": "which allows workers to disconnect completely",
+                    "explanation": "The relative pronoun \"which\" refers to the whole action of switching off servers, which is singular, so the verb needs the third-person singular -s."
+                },
+                {
+                    "id": "f12",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 561,
+                        "start": 417
+                    },
+                    "quote": "Because people can read e-mails on their phones, they are expected to answer messages at any time, even at weekends, and they never really rest.",
+                    "explanation": "A subordinate clause, a passive and a coordinated clause are combined accurately with correct punctuation."
+                },
+                {
+                    "id": "f13",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1487,
+                        "start": 1354
+                    },
+                    "quote": "People should also learn to say no when they are asked to do more than they can manage, and to ask for help if they feel overwhelmed.",
+                    "explanation": "Several subordinate clauses and parallel infinitives are controlled accurately."
+                }
+            ],
+            "top_fixes": [
+                "f2",
+                "f11",
+                "f10"
+            ],
+            "top_skills": [
+                {
+                    "skill": "task.idea_development",
+                    "finding_ids": [
+                        "f2",
+                        "f3"
+                    ],
+                    "places": 2
+                },
+                {
+                    "skill": "grammar.subject_verb_agreement",
+                    "finding_ids": [
+                        "f11"
+                    ],
+                    "places": 1
+                },
+                {
+                    "skill": "vocabulary.range",
+                    "finding_ids": [
+                        "f10"
+                    ],
+                    "places": 1
+                }
+            ]
+        }
+    }
+}

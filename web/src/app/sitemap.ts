@@ -1,5 +1,6 @@
 import type {MetadataRoute} from 'next';
 import {headers} from 'next/headers';
+import {examples} from '../content/examples';
 import {chapterLocales, guide, guideChapters} from '../content/guide';
 import {routing} from '../i18n/routing';
 import {landingExamFor, publicIndexing, publicUrl} from '../lib/hosts';
@@ -23,5 +24,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       const locales = chapterLocales(entry.slug);
       return locales.length ? page(l => `/${l}/guide/${entry.slug}`, locales, Object.values(entry.locales)[0]?.checked) : [];
     }),
+    ...page(l => `/${l}/examples`, routing.locales),
+    ...examples.flatMap(e => page(l => `/${l}/examples/${e.slug}`, routing.locales)),
   ];
 }

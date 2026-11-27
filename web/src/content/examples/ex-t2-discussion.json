@@ -1,0 +1,271 @@
+{
+    "id": "ex-t2-discussion",
+    "exam_key": "ielts-academic",
+    "task_key": "task-2",
+    "task_ref": "gonative-bench:p07",
+    "prompt": {
+        "text": "Some people think that older people should be cared for by their own families, while others believe that the state should provide this care. Discuss both views and give your own opinion."
+    },
+    "response_text": "As people live longer, societies have to decide who should look after them when they can no longer manage alone. Some argue that this is a family duty, while others believe that the state should take responsibility. In my view, the best arrangement combines both, with the state providing the professional care that families cannot.\n\nThose who favour family care point to the emotional benefits. Older people who are looked after by their children or grandchildren usually remain in familiar surroundings and feel valued rather than forgotten. In many cultures, caring for one's parents is also seen as a natural way of repaying the care received in childhood, and it keeps generations in close contact. Moreover, family care costs the public budget very little, which matters in countries with ageing populations.\n\nOn the other hand, there are strong reasons for the state to provide this care. Many families simply lack the time, money or skills, especially when both partners work full time or live far from their parents. Conditions such as dementia require trained staff and specialised equipment that a relative cannot be expected to provide. When the whole burden falls on one family member, usually a daughter, it can damage her health, career and income.\n\nI believe that the two views are not really opposed. Families are best placed to offer company and emotional support, whereas the state should guarantee professional medical care and help for relatives who become carers, for instance through paid leave or day centres. This way, older people receive both the attention of their family and the expertise they need.\n\nIn conclusion, although families have an important role, the state should share the responsibility so that good care does not depend on how much time or money a family has.",
+    "word_count": 295,
+    "pipeline_version": "p1/exam-p1-7",
+    "left_out": [],
+    "assessment": {
+        "uuid": "example-ex-t2-discussion",
+        "status": "assessed",
+        "feedback_language": "en",
+        "result": {
+            "status": "complete",
+            "calibration": "uncalibrated",
+            "word_count": 295,
+            "criteria": [
+                {
+                    "criterion_key": "task_response",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "Both views are discussed in separate paragraphs, each with relevant, explained reasons, and your own opinion is clear from the introduction through to the conclusion: a combined arrangement in which the state provides professional care that families cannot. The ideas are well chosen and supported, for example the emotional benefits of family care, the burden on one relative, and the need for trained staff for conditions such as dementia. What holds the essay back from the top level is that some points are asserted rather than explored in depth. The cost argument for family care and the practical help the state could give to carers receive only brief treatment, and no concrete example shows how the combined model would work.",
+                    "finding_ids": [
+                        "f1",
+                        "f2",
+                        "f3",
+                        "f4"
+                    ]
+                },
+                {
+                    "criterion_key": "coherence_cohesion",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 8,
+                        "high": 9
+                    },
+                    "confidence": "medium",
+                    "summary": "The essay is very easy to follow. Each paragraph has one clear job: an introduction with a position, the case for family care, the case for state care, a synthesis of the two views, and a conclusion. Linking is natural and varied: 'Moreover', 'On the other hand', 'whereas', 'This way', and reference phrases such as 'this care' and 'the two views'. Nothing needs re-reading, and the breaks fall exactly where the argument moves on. I can point to no noticeable weaknesses in organisation or linking.",
+                    "finding_ids": [
+                        "f5",
+                        "f6",
+                        "f7"
+                    ]
+                },
+                {
+                    "criterion_key": "lexical_resource",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The vocabulary is wide, precise and natural, and it is used flexibly to express exact meanings. Collocations such as \"take responsibility\", \"the whole burden falls on\" and \"ageing populations\" sound natural, and the topic words are varied through \"older people\", \"relatives\" and \"carers\". Register is consistently academic. I found no spelling or word-formation errors and no clear word-choice mistakes. What keeps it from the top level is that the wording is accurate rather than strikingly sophisticated in a few places, and \"This way\" is slightly informal.",
+                    "finding_ids": [
+                        "f8",
+                        "f9",
+                        "f10"
+                    ]
+                },
+                {
+                    "criterion_key": "grammatical_range_accuracy",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 8,
+                        "high": 9
+                    },
+                    "confidence": "medium",
+                    "summary": "The essay uses a wide variety of structures with full control. It includes subordinate clauses (\"who are looked after by their children or grandchildren\"), a contrast with \"whereas\", \"so that\" purpose clauses, a \"when\" clause, and a concessive \"although\" opening. Complex sentences are accurate and flexible, and I found no grammar errors. Punctuation is also appropriate throughout, including commas around the non-defining phrase \"usually a daughter\".",
+                    "finding_ids": [
+                        "f11",
+                        "f12",
+                        "f13"
+                    ]
+                }
+            ],
+            "findings": [
+                {
+                    "id": "f1",
+                    "kind": "strength",
+                    "skill": "task.position_clarity",
+                    "criterion_key": "task_response",
+                    "severity": "minor",
+                    "span": {
+                        "end": 332,
+                        "start": 216
+                    },
+                    "quote": "In my view, the best arrangement combines both, with the state providing the professional care that families cannot.",
+                    "explanation": "The opinion is stated clearly in the introduction and stays consistent through the final paragraph and conclusion."
+                },
+                {
+                    "id": "f2",
+                    "kind": "strength",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_response",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1148,
+                        "start": 1026
+                    },
+                    "quote": "Conditions such as dementia require trained staff and specialised equipment that a relative cannot be expected to provide.",
+                    "explanation": "A specific condition is used to explain why state care is needed, which makes the argument convincing."
+                },
+                {
+                    "id": "f3",
+                    "kind": "weakness",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_response",
+                    "severity": "minor",
+                    "span": {
+                        "end": 814,
+                        "start": 704
+                    },
+                    "quote": "Moreover, family care costs the public budget very little, which matters in countries with ageing populations.",
+                    "explanation": "This idea is stated but not developed. Explain why the cost matters, for example by showing how rising numbers of older people could strain state budgets and what that would mean for services."
+                },
+                {
+                    "id": "f4",
+                    "kind": "suggestion",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_response",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1532,
+                        "start": 1486
+                    },
+                    "quote": "for instance through paid leave or day centres",
+                    "suggestion": "for instance through paid leave, which lets carers keep their income, or day centres, which give them regular rest",
+                    "explanation": "Briefly explaining how each measure helps carers would make the proposed combined model more concrete and fully supported."
+                },
+                {
+                    "id": "f5",
+                    "kind": "strength",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 895,
+                        "start": 816
+                    },
+                    "quote": "On the other hand, there are strong reasons for the state to provide this care.",
+                    "explanation": "This clearly signals the move from the family view to the state view, and 'this care' refers back to the topic smoothly."
+                },
+                {
+                    "id": "f6",
+                    "kind": "strength",
+                    "skill": "coherence.progression",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1317,
+                        "start": 1265
+                    },
+                    "quote": "I believe that the two views are not really opposed.",
+                    "explanation": "The fourth paragraph opens by pulling the two earlier paragraphs together, so the argument progresses logically toward the writer's position."
+                },
+                {
+                    "id": "f7",
+                    "kind": "strength",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1443,
+                        "start": 1318
+                    },
+                    "quote": "Families are best placed to offer company and emotional support, whereas the state should guarantee professional medical care",
+                    "explanation": "The contrast is handled precisely and links back to the earlier paragraphs on emotional and professional care."
+                },
+                {
+                    "id": "f8",
+                    "kind": "strength",
+                    "skill": "vocabulary.collocations",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1443,
+                        "start": 1318
+                    },
+                    "quote": "Families are best placed to offer company and emotional support, whereas the state should guarantee professional medical care",
+                    "explanation": "Precise, natural collocations (\"best placed to\", \"guarantee professional medical care\") express the contrast exactly in an academic register."
+                },
+                {
+                    "id": "f9",
+                    "kind": "strength",
+                    "skill": "vocabulary.word_choice",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1263,
+                        "start": 1149
+                    },
+                    "quote": "When the whole burden falls on one family member, usually a daughter, it can damage her health, career and income.",
+                    "explanation": "\"The burden falls on\" is a natural, idiomatic collocation, and the listed nouns are exact."
+                },
+                {
+                    "id": "f10",
+                    "kind": "suggestion",
+                    "skill": "register.formality",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1564,
+                        "start": 1534
+                    },
+                    "quote": "This way, older people receive",
+                    "suggestion": "In this way, older people receive",
+                    "explanation": "\"In this way\" is the more standard written form and suits the academic register better than the slightly informal \"This way\"."
+                },
+                {
+                    "id": "f11",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1443,
+                        "start": 1318
+                    },
+                    "quote": "Families are best placed to offer company and emotional support, whereas the state should guarantee professional medical care",
+                    "explanation": "Contrast is handled accurately with a compound-complex sentence and correct comma use."
+                },
+                {
+                    "id": "f12",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1802,
+                        "start": 1630
+                    },
+                    "quote": "In conclusion, although families have an important role, the state should share the responsibility so that good care does not depend on how much time or money a family has.",
+                    "explanation": "Concession, purpose and a noun clause are combined correctly in one sentence."
+                },
+                {
+                    "id": "f13",
+                    "kind": "strength",
+                    "skill": "mechanics.punctuation",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1263,
+                        "start": 1149
+                    },
+                    "quote": "When the whole burden falls on one family member, usually a daughter, it can damage her health, career and income.",
+                    "explanation": "Subordinate clause, apposition and a parallel list are all punctuated and formed correctly."
+                }
+            ],
+            "top_fixes": [
+                "f3"
+            ],
+            "top_skills": [
+                {
+                    "skill": "task.idea_development",
+                    "finding_ids": [
+                        "f3"
+                    ],
+                    "places": 1
+                }
+            ]
+        }
+    }
+}

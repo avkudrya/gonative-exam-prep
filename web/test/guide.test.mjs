@@ -101,6 +101,7 @@ test('Indexing open (P6.7): only the landing host\'s public pages', {timeout: 18
   const sitemap = await (await get(`${bind}/sitemap.xml`, `ielts.localhost:${port}`)).text();
   for (const loc of ['/en', '/ru', '/uk', '/en/guide', '/en/guide/ielts-format']) assert.match(sitemap, new RegExp(`<loc>${landing}${loc}</loc>`), loc);
   assert.doesNotMatch(sitemap, /\/ru\/guide/, 'no Russian guide until it is written');
+  for (const loc of ['/en/examples', '/uk/examples/academic-task-1-line-graph']) assert.match(sitemap, new RegExp(`<loc>${landing}${loc}</loc>`), loc);
 
   // The application host and private paths stay closed.
   for (const path of ['/en/login', '/en/privacy']) {

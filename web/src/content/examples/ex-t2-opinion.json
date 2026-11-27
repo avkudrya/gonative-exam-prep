@@ -1,0 +1,463 @@
+{
+    "id": "ex-t2-opinion",
+    "exam_key": "ielts-academic",
+    "task_key": "task-2",
+    "task_ref": "gonative-bench:p01",
+    "prompt": {
+        "text": "City councils should make all public transport free of charge so that fewer people drive into city centres. To what extent do you agree or disagree?"
+    },
+    "response_text": "Nowadays many city centres is full of cars and the traffic become worse every year. Some people think that city councils should make public transport free so less people will drive. I am agree with this idea in some extent.\n\nFirst of all, free buses and trains can help people to save money. Many people in my city spend a lot of money for petrol and parking, and if the bus is free they will choose it. For example, my brother drive to his office every day because the bus ticket is expensive, but if it was free he would take the bus. Also, less cars means less pollution and the air in the city will be more clean.\n\nSecondly, free transport is good for poor people. Students and old people often don't have enough money, so they stay at home. If transport is free they can go to work, to university or visit their friends easily. This make the society more equal.\n\nHowever, there are some problems. The council need a lot of money to pay for free transport and maybe they will take this money from other services like schools or hospitals. Also, if the buses are free they will be very crowded and the people who drive now will not want to use them.\n\nIn conclusion, I think that free public transport is a good idea because it save money for people and reduce the pollution, but the government must to find the money and make more buses. So I partly agree with this statement.",
+    "word_count": 258,
+    "pipeline_version": "p1/exam-p1-7",
+    "left_out": [
+        "f24"
+    ],
+    "assessment": {
+        "uuid": "example-ex-t2-opinion",
+        "status": "assessed",
+        "feedback_language": "en",
+        "result": {
+            "status": "complete",
+            "calibration": "uncalibrated",
+            "word_count": 258,
+            "criteria": [
+                {
+                    "criterion_key": "task_response",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 5.5,
+                        "high": 6.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The essay answers the question directly and keeps a clear, partly agreeing position from the introduction to the conclusion. It covers both benefits (savings, less pollution, help for poor people) and drawbacks (cost to the council, crowding). The ideas are relevant, but several are thinly supported. The claim that free transport will make people choose the bus is not fully explained, and the crowding point is stated without a result. The idea that people who drive now will not want to use crowded buses cuts against the main argument and is left unresolved. The conclusion adds the need for more buses, which was not developed in the body.",
+                    "finding_ids": [
+                        "f1",
+                        "f2",
+                        "f3",
+                        "f4"
+                    ]
+                },
+                {
+                    "criterion_key": "coherence_cohesion",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 5.5,
+                        "high": 6.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The essay is clearly organised into five paragraphs: an introduction, two paragraphs of advantages, a paragraph of problems and a conclusion. The argument moves forward logically, and the position (partly agree) is carried through to the end. Basic linking words (First of all, Secondly, However, Also, In conclusion) help the reader, but they are simple and somewhat mechanical, and \"Also\" is used twice to add points. Reference is mostly clear, though it is sometimes loose, as with \"they\" in the problems paragraph. Ideas are not linked in more varied or flexible ways within paragraphs, which keeps the essay from a higher level.",
+                    "finding_ids": [
+                        "f5",
+                        "f6",
+                        "f7",
+                        "f8"
+                    ]
+                },
+                {
+                    "criterion_key": "lexical_resource",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 4.5,
+                        "high": 5.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The vocabulary is simple but enough to express the main ideas about free transport, cost, pollution and fairness. Topic words such as \"public transport\", \"pollution\" and \"crowded\" are used correctly, and meaning is always clear. The range is narrow, with repeated basic words like \"money\", \"free\" and \"good\", and some collocation and word-choice slips, for example \"spend a lot of money for petrol\", \"less cars\" and \"in some extent\". Wider and more precise phrasing, such as \"reduce congestion\" or \"low-income groups\", would lift the range.",
+                    "finding_ids": [
+                        "f19",
+                        "f17",
+                        "f18",
+                        "f12",
+                        "f22",
+                        "f14"
+                    ]
+                },
+                {
+                    "criterion_key": "grammatical_range_accuracy",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 4.5,
+                        "high": 5.5
+                    },
+                    "confidence": "medium",
+                    "summary": "You use several sentence types, including complex sentences with 'if', 'because', 'so' and 'and', and some are correct, such as 'if it was free he would take the bus'. However, errors are frequent and repeat: subject-verb agreement slips ('city centres is', 'the traffic become', 'This make', 'it save', 'reduce'), a wrong verb pattern ('I am agree', 'must to find') and some preposition and comparative errors. They rarely block meaning but make the reader work a little. Fixing basic agreement would raise accuracy most.",
+                    "finding_ids": [
+                        "f15",
+                        "f16",
+                        "f17",
+                        "f18",
+                        "f19",
+                        "f20",
+                        "f21",
+                        "f22",
+                        "f23",
+                        "f25",
+                        "f26",
+                        "f27"
+                    ]
+                }
+            ],
+            "findings": [
+                {
+                    "id": "f1",
+                    "kind": "strength",
+                    "skill": "task.position_clarity",
+                    "criterion_key": "task_response",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1379,
+                        "start": 1341
+                    },
+                    "quote": "So I partly agree with this statement.",
+                    "explanation": "Your position is clear and consistent: you partly agree, and the body paragraphs weigh benefits against problems."
+                },
+                {
+                    "id": "f2",
+                    "kind": "weakness",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_response",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 1152,
+                        "start": 1043
+                    },
+                    "quote": "Also, if the buses are free they will be very crowded and the people who drive now will not want to use them.",
+                    "explanation": "This undermines your argument but you do not follow it through. Explain the result (drivers stay in cars, so traffic is not reduced) and say how it could be solved, for example with more frequent services."
+                },
+                {
+                    "id": "f3",
+                    "kind": "weakness",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_response",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 1042,
+                        "start": 964
+                    },
+                    "quote": "maybe they will take this money from other services like schools or hospitals.",
+                    "explanation": "The funding problem is only mentioned. Develop it: say what would happen if schools or hospitals lost money, and suggest another source such as a congestion charge on drivers."
+                },
+                {
+                    "id": "f4",
+                    "kind": "weakness",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_response",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1340,
+                        "start": 1278
+                    },
+                    "quote": "but the government must to find the money and make more buses.",
+                    "explanation": "The conclusion introduces the need for more buses, which was not discussed in the body. Develop this idea in the earlier paragraph instead."
+                },
+                {
+                    "id": "f5",
+                    "kind": "strength",
+                    "skill": "coherence.paragraphing",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 291,
+                        "start": 225
+                    },
+                    "quote": "First of all, free buses and trains can help people to save money.",
+                    "explanation": "Clear paragraph openings with topic sentences make the structure easy to follow."
+                },
+                {
+                    "id": "f6",
+                    "kind": "weakness",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1152,
+                        "start": 1043
+                    },
+                    "quote": "Also, if the buses are free they will be very crowded and the people who drive now will not want to use them.",
+                    "explanation": "\"Also\" adds this as one more point, but it is a different kind of problem (crowding) from the previous one (cost). Link it more precisely, e.g. by saying that crowding could undermine the aim of reducing car use."
+                },
+                {
+                    "id": "f7",
+                    "kind": "weakness",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 617,
+                        "start": 537
+                    },
+                    "quote": "Also, less cars means less pollution and the air in the city will be more clean.",
+                    "explanation": "\"Also\" is used for additions in several places and the link is basic. Vary how ideas are connected, for example by showing that pollution is a result of fewer cars."
+                },
+                {
+                    "id": "f8",
+                    "kind": "weakness",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 1041,
+                        "start": 964
+                    },
+                    "quote": "maybe they will take this money from other services like schools or hospitals",
+                    "explanation": "\"They\" is ambiguous, since the subject just before was the singular \"The council\". Keep the reference consistent, using \"it\" or repeating \"the council\"."
+                },
+                {
+                    "id": "f12",
+                    "kind": "error",
+                    "skill": "vocabulary.word_choice",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 573,
+                        "start": 543
+                    },
+                    "quote": "less cars means less pollution",
+                    "suggestion": "fewer cars means less pollution",
+                    "explanation": "'Cars' is countable, so use 'fewer'."
+                },
+                {
+                    "id": "f14",
+                    "kind": "weakness",
+                    "skill": "vocabulary.range",
+                    "criterion_key": "lexical_resource",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 667,
+                        "start": 629
+                    },
+                    "quote": "free transport is good for poor people",
+                    "explanation": "Basic words like 'good' and 'poor' are repeated and imprecise; use more specific ones, such as 'beneficial for low-income residents'."
+                },
+                {
+                    "id": "f15",
+                    "kind": "error",
+                    "skill": "grammar.subject_verb_agreement",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 34,
+                        "start": 9
+                    },
+                    "quote": "many city centres is full",
+                    "suggestion": "many city centres are full",
+                    "explanation": "A plural subject needs the plural verb 'are'."
+                },
+                {
+                    "id": "f16",
+                    "kind": "error",
+                    "skill": "grammar.subject_verb_agreement",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 71,
+                        "start": 47
+                    },
+                    "quote": "the traffic become worse",
+                    "suggestion": "the traffic becomes worse",
+                    "explanation": "Singular uncountable 'traffic' takes 'becomes'."
+                },
+                {
+                    "id": "f17",
+                    "kind": "error",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "also_criteria": [
+                        "lexical_resource"
+                    ],
+                    "severity": "moderate",
+                    "span": {
+                        "end": 222,
+                        "start": 182
+                    },
+                    "quote": "I am agree with this idea in some extent",
+                    "suggestion": "I agree with this idea to some extent",
+                    "explanation": "'Agree' is a verb and needs no 'am'; the fixed phrase is 'to some extent'."
+                },
+                {
+                    "id": "f18",
+                    "kind": "error",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "also_criteria": [
+                        "lexical_resource"
+                    ],
+                    "severity": "minor",
+                    "span": {
+                        "end": 180,
+                        "start": 155
+                    },
+                    "quote": "so less people will drive",
+                    "suggestion": "so fewer people will drive",
+                    "explanation": "Use 'fewer' with countable nouns."
+                },
+                {
+                    "id": "f19",
+                    "kind": "error",
+                    "skill": "grammar.prepositions",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "also_criteria": [
+                        "lexical_resource"
+                    ],
+                    "severity": "minor",
+                    "span": {
+                        "end": 346,
+                        "start": 315
+                    },
+                    "quote": "spend a lot of money for petrol",
+                    "suggestion": "spend a lot of money on petrol",
+                    "explanation": "'Spend money on' is the correct preposition."
+                },
+                {
+                    "id": "f20",
+                    "kind": "error",
+                    "skill": "grammar.subject_verb_agreement",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 447,
+                        "start": 417
+                    },
+                    "quote": "my brother drive to his office",
+                    "suggestion": "my brother drives to his office",
+                    "explanation": "Third person singular needs -s."
+                },
+                {
+                    "id": "f21",
+                    "kind": "error",
+                    "skill": "grammar.subject_verb_agreement",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 573,
+                        "start": 543
+                    },
+                    "quote": "less cars means less pollution",
+                    "suggestion": "fewer cars mean less pollution",
+                    "explanation": "'Cars' is countable, so use 'fewer'; the plural subject takes 'mean'."
+                },
+                {
+                    "id": "f22",
+                    "kind": "error",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "also_criteria": [
+                        "lexical_resource"
+                    ],
+                    "severity": "minor",
+                    "span": {
+                        "end": 616,
+                        "start": 606
+                    },
+                    "quote": "more clean",
+                    "suggestion": "cleaner",
+                    "explanation": "Short adjectives form the comparative with -er."
+                },
+                {
+                    "id": "f23",
+                    "kind": "error",
+                    "skill": "grammar.subject_verb_agreement",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 865,
+                        "start": 833
+                    },
+                    "quote": "This make the society more equal",
+                    "suggestion": "This makes society more equal",
+                    "explanation": "Singular subject needs 'makes'."
+                },
+                {
+                    "id": "f25",
+                    "kind": "error",
+                    "skill": "grammar.subject_verb_agreement",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 1276,
+                        "start": 1227
+                    },
+                    "quote": "it save money for people and reduce the pollution",
+                    "suggestion": "it saves money for people and reduces pollution",
+                    "explanation": "Both verbs need third person -s."
+                },
+                {
+                    "id": "f26",
+                    "kind": "error",
+                    "skill": "grammar.verb_tenses",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "moderate",
+                    "span": {
+                        "end": 1309,
+                        "start": 1297
+                    },
+                    "quote": "must to find",
+                    "suggestion": "must find",
+                    "explanation": "A modal verb is followed by the base form without 'to'."
+                },
+                {
+                    "id": "f27",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 535,
+                        "start": 499
+                    },
+                    "quote": "if it was free he would take the bus",
+                    "explanation": "A correct second conditional shows control of a complex structure."
+                }
+            ],
+            "top_fixes": [
+                "f15",
+                "f17",
+                "f26",
+                "f14",
+                "f3"
+            ],
+            "top_skills": [
+                {
+                    "skill": "grammar.subject_verb_agreement",
+                    "finding_ids": [
+                        "f15",
+                        "f16",
+                        "f20"
+                    ],
+                    "places": 6
+                },
+                {
+                    "skill": "grammar.sentence_structure",
+                    "finding_ids": [
+                        "f17",
+                        "f18",
+                        "f22"
+                    ],
+                    "places": 3
+                },
+                {
+                    "skill": "grammar.verb_tenses",
+                    "finding_ids": [
+                        "f26"
+                    ],
+                    "places": 1
+                },
+                {
+                    "skill": "task.idea_development",
+                    "finding_ids": [
+                        "f3",
+                        "f2",
+                        "f4"
+                    ],
+                    "places": 3
+                },
+                {
+                    "skill": "vocabulary.range",
+                    "finding_ids": [
+                        "f14"
+                    ],
+                    "places": 1
+                }
+            ]
+        }
+    }
+}

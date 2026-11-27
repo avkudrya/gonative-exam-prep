@@ -84,6 +84,7 @@ export async function Landing({locale, exam, host}: {locale: string; exam: Landi
           <p>{t('sample.summary')}</p>
         </div>
       </div>
+      <p><a className="button" href={`/${locale}/examples`}>{t('examplesLink')}</a></p>
     </section>
 
     <section aria-labelledby="after-title" className="landing-section">

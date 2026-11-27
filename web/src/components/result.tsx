@@ -20,8 +20,10 @@ const criterionOrder = ['task_achievement', 'task_response', 'coherence_cohesion
 /** 6 → "6", 5.5 → "5.5": ranges are shown as they come, never rounded into something more precise. */
 const band = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1));
 
-export function ResultView({attempt, assessment, practiceSkills = [], rewriteChecks}: {attempt: Attempt; assessment: Assessment & {result: Result}; practiceSkills?: string[];
-  rewriteChecks?: RewriteChecks}) {
+export function ResultView({attempt, assessment, practiceSkills = [], rewriteChecks, example = false}: {attempt: Attempt; assessment: Assessment & {result: Result}; practiceSkills?: string[];
+  rewriteChecks?: RewriteChecks;
+  /** P6.5: a public example on the landing host — the same feedback, without anything that calls the API. */
+  example?: boolean}) {
   const t = useTranslations('Result');
   const result = assessment.result;
   const language = assessment.feedback_language;
@@ -71,7 +73,7 @@ export function ResultView({attempt, assessment, practiceSkills = [], rewriteChe
   const strongest = (ids: string[]) => ids.map(id => byId.get(id)!).sort((a, b) => kindOrder[a.kind] - kindOrder[b.kind])[0];
 
   return <div className="result">
-    <LinkedPracticeResults key={attempt.uuid} attempt={attempt.uuid}/>
+    {!example && <LinkedPracticeResults key={attempt.uuid} attempt={attempt.uuid}/>}
     <p className="score-note">{t('scoreNote')}</p>
     {result.status === 'partial' && <p className="feedback error" role="status">{t('partial')}</p>}
 
@@ -110,7 +112,7 @@ export function ResultView({attempt, assessment, practiceSkills = [], rewriteChe
               <p lang={language}>{f.explanation}</p>
             </li>)}
           </ul>
-          {practiceSkills.includes(g.skill) && <PracticeButton skill={g.skill} attempt={attempt.uuid}/>}
+          {!example && practiceSkills.includes(g.skill) && <PracticeButton skill={g.skill} attempt={attempt.uuid}/>}
         </li>)}
       </ol>
     </section> : fixes.length > 0 && <section aria-labelledby="fixes-title" className="fixes">
@@ -174,7 +176,7 @@ export function ResultView({attempt, assessment, practiceSkills = [], rewriteChe
             <div className="finding-actions">
               {placed.has(f.id) ? <button type="button" className="text-button" onClick={() => select(f.id, 'list')}>{t('showInEssay')}</button>
                 : f.span && skipped.includes(f.id) ? <span className="hint">{t('notPlaced')}</span> : null}
-              <button type="button" className="text-button" onClick={() => setReportFor(f.id)}>{t('reportThis')}</button>
+              {!example && <button type="button" className="text-button" onClick={() => setReportFor(f.id)}>{t('reportThis')}</button>}
             </div>
             {reportFor === f.id && <ReportForm uuid={attempt.uuid} findingId={f.id} onClose={() => setReportFor(undefined)}/>}
           </li>;
@@ -183,14 +185,16 @@ export function ResultView({attempt, assessment, practiceSkills = [], rewriteChe
       </section>
     </div>
 
-    <SelfCheck cards={cards} language={language} uuid={attempt.uuid} checks={rewriteChecks?.enabled ? rewriteChecks : undefined}/>
+    {!example && <>
+      <SelfCheck cards={cards} language={language} uuid={attempt.uuid} checks={rewriteChecks?.enabled ? rewriteChecks : undefined}/>
 
-    <EssayWords uuid={attempt.uuid}/>
+      <EssayWords uuid={attempt.uuid}/>
 
-    <section className="result-actions" aria-label={t('actionsLabel')}>
-      <Rewrite attempt={attempt}/>
-      <button type="button" className="button" onClick={() => setReportFor(null)}>{t('reportGeneral')}</button>
-    </section>
+      <section className="result-actions" aria-label={t('actionsLabel')}>
+        <Rewrite attempt={attempt}/>
+        <button type="button" className="button" onClick={() => setReportFor(null)}>{t('reportGeneral')}</button>
+      </section>
+    </>}
     {reportFor === null && <ReportForm uuid={attempt.uuid} findingId={null} onClose={() => setReportFor(undefined)}/>}
   </div>;
 }

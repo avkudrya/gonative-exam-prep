@@ -564,3 +564,9 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 12px; text-align: le
 .landing-guide ul, .landing-free ul { padding-left: 20px; margin: 8px 0 16px; }
 .landing-guide li, .landing-free li { margin: 4px 0; }
 @media (max-width: 720px) { .landing-tasks { grid-template-columns: 1fr; } }
+/* Feedback examples (P6.5) */
+.example-page { padding: 32px 0 56px; }
+.example-page h1 { font-size: clamp(26px, 4vw, 38px); letter-spacing: -0.6px; margin: 4px 0 8px; }
+.examples-list h2 { font-size: 18px; margin: 4px 0 6px; }
+.examples-list .eyebrow { margin: 0; }
+@media (max-width: 560px) { .landing .header-tools { flex-wrap: wrap; row-gap: 6px; column-gap: 10px; } }

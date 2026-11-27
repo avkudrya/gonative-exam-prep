@@ -1,0 +1,284 @@
+{
+    "id": "ex-gt1-formal",
+    "exam_key": "ielts-general-training",
+    "task_key": "task-1",
+    "task_ref": "gonative-t1g:gt1-01",
+    "prompt": {
+        "text": "You ordered a washing machine from an online shop. It arrived two weeks late, and when it was installed you found that it was damaged.\n\nWrite a letter to the customer services manager of the shop. In your letter:\n• give details of your order\n• describe the problems with the delivery and the machine\n• say what you would like the shop to do\n\nWrite at least 150 words. You do not need to include any addresses.\nBegin your letter with: Dear Sir or Madam,",
+        "stimulus": {
+            "format": "letter-spec/1",
+            "tone": "formal",
+            "purpose": "complaint",
+            "situation": "You ordered a washing machine from an online shop. It arrived two weeks late, and when it was installed you found that it was damaged.",
+            "recipient": "the customer services manager of the shop",
+            "points": [
+                "give details of your order",
+                "describe the problems with the delivery and the machine",
+                "say what you would like the shop to do"
+            ],
+            "opening": "Dear Sir or Madam,"
+        }
+    },
+    "response_text": "Dear Sir or Madam,\n\nI am writing to complain about a washing machine which I ordered from your online shop last month.\n\nI placed the order on 3 March for a Brightwash 7 kg washing machine, order number BW-48213, and paid 420 euros including delivery. According to your website, the machine should be delivered within five working days.\n\nUnfortunately, it arrived two weeks late, on 24 March, and nobody informed me about the delay although I called your service line twice. When your technician installed the machine, we found that the door was cracked and the drum makes a loud noise when it turns. I have not been able to use it since it arrived, so I have to go to a laundrette every week.\n\nI would be grateful if you could replace the machine with a new one as soon as possible and collect the damaged one from my home. I also think that a refund of the delivery cost would be fair, considering the delay.\n\nI look forward to hearing from you.\n\nYours faithfully,\nAnna Kowalska",
+    "word_count": 178,
+    "pipeline_version": "p1/exam-gt1-2",
+    "left_out": [],
+    "assessment": {
+        "uuid": "example-ex-gt1-formal",
+        "status": "assessed",
+        "feedback_language": "en",
+        "result": {
+            "status": "complete",
+            "calibration": "uncalibrated",
+            "word_count": 178,
+            "criteria": [
+                {
+                    "criterion_key": "task_achievement",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "This is a clear formal complaint with a stated purpose in the first sentence. All three points are covered with relevant detail: the order (date, model, number, price), the delivery and machine problems (late arrival, unanswered calls, cracked door, noisy drum, laundrette costs) and the requested action (replacement, collection, partial refund). The tone is consistently formal and polite, and the opening and closing match it. It stops short of the top level because a few details could be developed further, such as the exact delivery promise or the deadline for action.",
+                    "finding_ids": [
+                        "f1",
+                        "f2",
+                        "f3",
+                        "f4"
+                    ]
+                },
+                {
+                    "criterion_key": "coherence_cohesion",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The letter is easy to follow. It states its purpose first, then gives the order details, then the problems with the delivery and the machine, then the request, and it ends with a suitable close. Each paragraph has one clear job, and the breaks fall where the letter moves on. Linking is accurate and varied: \"Unfortunately\", \"although\", \"When your technician installed the machine\", \"so I have to go\" and \"considering the delay\" all show the right relations. Reference is clear, with \"it\", \"the damaged one\" and \"the machine\" always pointing to the right thing. Only a few small things hold it back from the top level. Some links are simple, and the delivery paragraph packs several problems into a few sentences, so the delay and the damage could be separated a little more.",
+                    "finding_ids": [
+                        "f5",
+                        "f6",
+                        "f7"
+                    ]
+                },
+                {
+                    "criterion_key": "lexical_resource",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 6.5,
+                        "high": 7.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The vocabulary is accurate, precise and suited to a formal complaint. Phrases such as \"I am writing to complain about\", \"nobody informed me about the delay\", \"I would be grateful if you could replace the machine\" and \"a refund of the delivery cost would be fair, considering the delay\" fit the situation, and the collocations are natural. There are no spelling or word-formation errors. The range is mostly everyday and functional, so it stays short of a wider, more flexible lexical range.",
+                    "finding_ids": [
+                        "f8",
+                        "f9",
+                        "f10"
+                    ]
+                },
+                {
+                    "criterion_key": "grammatical_range_accuracy",
+                    "estimate": {
+                        "precision": "approximate",
+                        "low": 7.5,
+                        "high": 8.5
+                    },
+                    "confidence": "medium",
+                    "summary": "The letter uses a good variety of structures: relative clauses (\"which I ordered from your online shop\"), a concessive clause (\"although I called your service line twice\"), a time clause (\"When your technician installed the machine\"), a result clause (\"so I have to go to a laundrette every week\"), and a conditional with a polite request (\"I would be grateful if you could replace...\"). They are controlled well, and I found no grammar or punctuation errors. The range is wide and flexible enough to show strong control, though it stays within a fairly conventional formal-letter pattern.",
+                    "finding_ids": [
+                        "f11",
+                        "f12",
+                        "f13"
+                    ]
+                }
+            ],
+            "findings": [
+                {
+                    "id": "f1",
+                    "kind": "strength",
+                    "skill": "task.requirement_coverage",
+                    "criterion_key": "task_achievement",
+                    "severity": "minor",
+                    "span": {
+                        "end": 118,
+                        "start": 20
+                    },
+                    "quote": "I am writing to complain about a washing machine which I ordered from your online shop last month.",
+                    "explanation": "The purpose is stated clearly at the start in a suitably formal way."
+                },
+                {
+                    "id": "f2",
+                    "kind": "strength",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_achievement",
+                    "severity": "minor",
+                    "span": {
+                        "end": 250,
+                        "start": 120
+                    },
+                    "quote": "I placed the order on 3 March for a Brightwash 7 kg washing machine, order number BW-48213, and paid 420 euros including delivery.",
+                    "explanation": "Specific order details fully cover the first point and help the manager find the order."
+                },
+                {
+                    "id": "f3",
+                    "kind": "strength",
+                    "skill": "register.formality",
+                    "criterion_key": "task_achievement",
+                    "severity": "minor",
+                    "span": {
+                        "end": 823,
+                        "start": 694
+                    },
+                    "quote": "I would be grateful if you could replace the machine with a new one as soon as possible and collect the damaged one from my home.",
+                    "explanation": "The request is clear, polite and appropriately formal, with a specific action requested."
+                },
+                {
+                    "id": "f4",
+                    "kind": "suggestion",
+                    "skill": "task.idea_development",
+                    "criterion_key": "task_achievement",
+                    "severity": "minor",
+                    "span": {
+                        "end": 946,
+                        "start": 911
+                    },
+                    "quote": "I look forward to hearing from you.",
+                    "suggestion": "I look forward to hearing from you within seven days.",
+                    "explanation": "Adding a deadline would make the request for action firmer and more complete, though it is a detail you would be inventing."
+                },
+                {
+                    "id": "f5",
+                    "kind": "strength",
+                    "skill": "coherence.progression",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 118,
+                        "start": 20
+                    },
+                    "quote": "I am writing to complain about a washing machine which I ordered from your online shop last month.",
+                    "explanation": "The purpose is clear at the start, so the reader knows from the first sentence why the letter was written."
+                },
+                {
+                    "id": "f6",
+                    "kind": "strength",
+                    "skill": "coherence.cohesive_devices",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 823,
+                        "start": 694
+                    },
+                    "quote": "I would be grateful if you could replace the machine with a new one as soon as possible and collect the damaged one from my home.",
+                    "explanation": "The request follows logically from the problems described, and \"the damaged one\" refers back clearly to the machine."
+                },
+                {
+                    "id": "f7",
+                    "kind": "weakness",
+                    "skill": "coherence.paragraphing",
+                    "criterion_key": "coherence_cohesion",
+                    "severity": "minor",
+                    "span": {
+                        "end": 473,
+                        "start": 337
+                    },
+                    "quote": "Unfortunately, it arrived two weeks late, on 24 March, and nobody informed me about the delay although I called your service line twice.",
+                    "explanation": "The delay, the lack of information and the damage are packed into one paragraph. A separate short paragraph for the damage to the machine would make each problem easier to find."
+                },
+                {
+                    "id": "f8",
+                    "kind": "strength",
+                    "skill": "register.formality",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 823,
+                        "start": 694
+                    },
+                    "quote": "I would be grateful if you could replace the machine with a new one as soon as possible and collect the damaged one from my home.",
+                    "explanation": "Polite, formal wording with natural collocations (replace, collect) states the request clearly."
+                },
+                {
+                    "id": "f9",
+                    "kind": "strength",
+                    "skill": "vocabulary.word_choice",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 598,
+                        "start": 532
+                    },
+                    "quote": "the door was cracked and the drum makes a loud noise when it turns",
+                    "explanation": "Specific, precise vocabulary describes the damage concretely."
+                },
+                {
+                    "id": "f10",
+                    "kind": "suggestion",
+                    "skill": "register.formality",
+                    "criterion_key": "lexical_resource",
+                    "severity": "minor",
+                    "span": {
+                        "end": 885,
+                        "start": 824
+                    },
+                    "quote": "I also think that a refund of the delivery cost would be fair",
+                    "suggestion": "I also feel that a refund of the delivery cost would be appropriate",
+                    "explanation": "This is a small formal touch: 'appropriate' sounds slightly more formal than 'fair' in a complaint to a manager."
+                },
+                {
+                    "id": "f11",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 823,
+                        "start": 694
+                    },
+                    "quote": "I would be grateful if you could replace the machine with a new one as soon as possible and collect the damaged one from my home.",
+                    "explanation": "A correct conditional request with parallel verbs (replace... and collect) is handled accurately and suits the formal tone."
+                },
+                {
+                    "id": "f12",
+                    "kind": "strength",
+                    "skill": "grammar.sentence_structure",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 472,
+                        "start": 396
+                    },
+                    "quote": "nobody informed me about the delay although I called your service line twice",
+                    "explanation": "A concessive subordinate clause is used accurately with correct tense and word order."
+                },
+                {
+                    "id": "f13",
+                    "kind": "strength",
+                    "skill": "grammar.verb_tenses",
+                    "criterion_key": "grammatical_range_accuracy",
+                    "severity": "minor",
+                    "span": {
+                        "end": 692,
+                        "start": 600
+                    },
+                    "quote": "I have not been able to use it since it arrived, so I have to go to a laundrette every week.",
+                    "explanation": "The present perfect, a time clause with the simple past, and a result clause with a comma are all used correctly."
+                }
+            ],
+            "top_fixes": [
+                "f7"
+            ],
+            "top_skills": [
+                {
+                    "skill": "coherence.paragraphing",
+                    "finding_ids": [
+                        "f7"
+                    ],
+                    "places": 1
+                }
+            ]
+        }
+    }
+}

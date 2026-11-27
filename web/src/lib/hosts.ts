@@ -29,17 +29,17 @@ export function appOrigin() {
 }
 
 /**
- * Public pages of a landing host (Phase 6, P6.2): the landing at /{locale} and the preparation guide at
- * /{locale}/guide and /{locale}/guide/{chapter}. Everything else on a landing host belongs to the application host.
+ * Public pages of a landing host (Phase 6, P6.2): the landing at /{locale}, the preparation guide at
+ * /{locale}/guide and /{locale}/guide/{chapter}, and example feedback at /{locale}/examples and /{locale}/examples/{id}. Everything else on a landing host belongs to the application host.
  */
-const PUBLIC_PATH = /^\/(?:[a-z]{2}(?:\/guide(?:\/[a-z0-9-]+)?)?)?\/?$/;
+const PUBLIC_PATH = /^\/(?:[a-z]{2}(?:\/(?:guide|examples)(?:\/[a-z0-9-]+)?)?)?\/?$/;
 export function isPublicPath(pathname: string) {
   return PUBLIC_PATH.test(pathname);
 }
 
-/** A guide path, which lives only on the landing host. */
+/** A guide or example path (P6.4, P6.5), which lives only on the landing host. */
 export function isGuidePath(pathname: string) {
-  return /^\/[a-z]{2}\/guide(?:\/|$)/.test(pathname);
+  return /^\/[a-z]{2}\/(?:guide|examples)(?:\/|$)/.test(pathname);
 }
 
 /**

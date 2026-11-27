@@ -7,6 +7,7 @@ import {ThemeSwitch} from './theme-switch';
 export async function PublicShell({locale, children, className}: {locale: string; children: React.ReactNode; className?: string}) {
   const t = await getTranslations({locale, namespace: 'Landing'});
   const g = await getTranslations({locale, namespace: 'Guide'});
+  const e = await getTranslations({locale, namespace: 'Examples'});
   const app = appOrigin();
   return <div className={`site landing${className ? ` ${className}` : ''}`}>
     <a className="skip" href="#main">{t('skip')}</a>
@@ -14,6 +15,7 @@ export async function PublicShell({locale, children, className}: {locale: string
       <a className="brand" href={`/${locale}`}>GoNative <strong>Exams</strong> <span className="brand-exam">IELTS</span></a>
       <div className="header-tools">
         <a className="text-link" href={`/${locale}/guide`}>{g('nav')}</a>
+        <a className="text-link" href={`/${locale}/examples`}>{e('nav')}</a>
         <LanguageSwitch/>
         <a className="text-link" href={`${app}/${locale}/login`}>{t('signIn')}</a>
       </div>
@@ -23,6 +25,7 @@ export async function PublicShell({locale, children, className}: {locale: string
       <div className="footer-main">
         <nav className="footer-links" aria-label={t('legal')}>
           <a href={`/${locale}/guide`}>{g('nav')}</a>
+          <a href={`/${locale}/examples`}>{e('nav')}</a>
           <a href={`${app}/${locale}/terms`}>{t('terms')}</a>
           <a href={`${app}/${locale}/privacy`}>{t('privacy')}</a>
         </nav>

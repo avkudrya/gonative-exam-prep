@@ -27,7 +27,8 @@
     "bench:h1": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/ellipse.ts",
     "test:web": "npm run test --workspace web",
     "bench:examples": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build-examples.ts",
-    "bench:reading": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/reading-review.ts"
+    "bench:reading": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/reading-review.ts",
+    "bench:reading-library": "bash scripts/with-node24.sh node --import tsx benchmarks/tools/build-reading-library.ts"
   },
   "dependencies": {
     "@fontsource/noto-sans": "5.3.0",

@@ -70,3 +70,16 @@ test('raw score to an approximate band: official thresholds, half bands between 
   const shown = presentEstimate({...readingEstimate(23, 'ielts-academic')!, calibration: {status: 'uncalibrated'}} as never, scale);
   assert.deepEqual(shown, {precision: 'approximate', low: 5.5, high: 6.5});
 });
+
+test('the Reading library: every test passes the form checks, 40 questions, a known status, explanations in en, ru and uk', () => {
+  const library = JSON.parse(readFileSync(new URL('../library/ielts-reading-academic.v1.json', import.meta.url), 'utf8')) as
+    {examKey: 'ielts-academic'; tests: {key: string; status: string; sections: ReadingSection[]}[]};
+  assert.ok(library.tests.length >= 2);
+  for (const t of library.tests) {
+    assert.deepEqual(checkReadingTest({id: t.key, exam: library.examKey, sections: t.sections}), [], t.key);
+    assert.ok(['review', 'published', 'retired'].includes(t.status), t.key);
+    for (const s of t.sections) for (const g of s.groups) for (const q of g.questions) {
+      for (const lang of ['en', 'ru', 'uk'] as const) assert.ok(q.explanation[lang]?.trim(), `${t.key} ${q.numbers.join('-')} ${lang}`);
+    }
+  }
+});

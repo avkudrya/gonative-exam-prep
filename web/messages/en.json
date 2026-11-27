@@ -633,31 +633,10 @@
   "Landing": {
     "skip": "Skip to content",
     "signIn": "Sign in",
-    "metaTitle": "IELTS Writing Task 2 practice with feedback on your own text · GoNative Exams",
-    "metaDescription": "Write an IELTS Task 2 essay and get criterion-by-criterion feedback tied to your sentences, with approximate band ranges. Free to try.",
-    "eyebrow": "IELTS Writing Task 2",
-    "title": "Practise IELTS essays with feedback on your own sentences",
-    "lead": "Write a Task 2 essay and see exactly what holds it back: comments on each of the four IELTS criteria, mistakes marked in your text and the fixes that matter most.",
-    "cta": "Start for free",
-    "seeExample": "See an example",
-    "ctaNote": "2 free feedbacks a month. Drafts are unlimited. No card needed.",
-    "howTitle": "How it works",
-    "steps": {
-      "write": {
-        "title": "Write",
-        "text": "Choose one of our practice tasks or paste your own. Your draft saves itself; a 40-minute timer is there if you want exam conditions."
-      },
-      "feedback": {
-        "title": "Get feedback",
-        "text": "In about half a minute: comments by criterion, mistakes highlighted in your essay, corrections and explanations in English, Russian or Ukrainian."
-      },
-      "improve": {
-        "title": "Improve",
-        "text": "Fix the top issues, write a new version and watch your frequent problems become rarer."
-      }
-    },
-    "exampleTitle": "What feedback looks like",
-    "exampleNote": "A short example on our own sample text.",
+    "legal": "Legal",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "disclaimer": "Unofficial practice tool. IELTS is a registered trademark of its owners; this site is not affiliated with or endorsed by them. Score ranges are approximate, not official results.",
     "approximate": "approximate",
     "sample": {
       "kind": "Mistake",
@@ -665,67 +644,125 @@
       "explanation": "The subject “city centres” is plural, so the verb must be “are”.",
       "summary": "Mostly simple sentences; agreement and article errors are noticeable."
     },
-    "featuresTitle": "What you get",
-    "features": {
-      "criteria": {
-        "title": "All four criteria",
-        "text": "Task Response, Coherence and Cohesion, Lexical Resource, Grammatical Range and Accuracy — each with its own comments."
+    "cta": "Start for free",
+    "exampleNote": "A short example on our own sample text.",
+    "metaTitle": "IELTS Writing practice with feedback: Task 1, Task 2 and letters · GoNative Exams",
+    "metaDescription": "Practise IELTS Writing — Academic Task 1 charts, General Training letters, Task 2 essays and the full 60-minute test — and get feedback on each criterion with your mistakes marked. Free to try.",
+    "eyebrow": "IELTS Writing · Academic and General Training",
+    "title": "IELTS Writing practice with feedback on your own text",
+    "lead": "Write a Task 1 report, a letter, a Task 2 essay or the whole Writing test and see what holds you back: comments on each IELTS criterion, mistakes marked in your text and the fixes that matter most.",
+    "seeExample": "See an example",
+    "ctaNote": "2 free feedbacks a month. Drafts are unlimited. No card needed.",
+    "tasksTitle": "Practise every Writing task",
+    "tasks": {
+      "task2": {
+        "title": "Task 2 essays",
+        "text": "Opinion, discussion, problem–solution and two-part questions. Feedback on your position, ideas, organisation, vocabulary and grammar."
       },
-      "highlights": {
-        "title": "Mistakes in your text",
-        "text": "Every comment points to the exact words it is about, with a correction and a short explanation."
+      "chart": {
+        "title": "Academic Task 1 reports",
+        "text": "Line and bar charts, tables, pie charts and more, drawn from each task's data. Feedback checks your overview, the key features you chose and your figures."
       },
-      "language": {
-        "title": "Explanations in your language",
-        "text": "Choose English, Russian or Ukrainian for explanations; corrections are always in English."
+      "letter": {
+        "title": "General Training letters",
+        "text": "Formal, semi-formal and personal letters. Feedback on tone, all three points of the task and the language that fits the reader."
+      },
+      "simulation": {
+        "title": "The full Writing test",
+        "text": "Task 1 and Task 2 on one 60-minute timer, typed on screen as in the real computer test. Feedback on both and an approximate Writing range."
+      }
+    },
+    "howTitle": "How it works",
+    "steps": {
+      "write": {
+        "title": "Write",
+        "text": "Choose one of our practice tasks or, for Task 2, your own question. Your draft saves itself; turn on the timer when you want exam conditions."
+      },
+      "feedback": {
+        "title": "Get feedback",
+        "text": "In about half a minute: comments by criterion, mistakes highlighted in your text, corrections and explanations in English, Russian or Ukrainian."
+      },
+      "improve": {
+        "title": "Improve",
+        "text": "Fix the top issues yourself, practise your weak points and write the next version. Your progress shows which problems are getting rarer."
+      }
+    },
+    "exampleTitle": "What feedback looks like",
+    "afterTitle": "After the feedback",
+    "after": {
+      "rewrite": {
+        "title": "Fix it yourself",
+        "text": "Rewrite a marked sentence and check straight away whether your version is right."
+      },
+      "practice": {
+        "title": "Practice on your weak points",
+        "text": "Short exercises chosen from what your essays show, not a generic course."
+      },
+      "vocabulary": {
+        "title": "Words for your lists",
+        "text": "Useful vocabulary from your feedback goes into word lists you can learn in GoNative."
       },
       "progress": {
         "title": "Your progress",
-        "text": "See how each criterion changes over your essays and which mistakes you make most often."
+        "text": "How each criterion changes over your essays and which mistakes you make most often."
       },
-      "tasks": {
-        "title": "Practice tasks",
-        "text": "Original tasks in the Task 2 format, written by us and checked before use — or bring your own."
+      "languages": {
+        "title": "Explanations in your language",
+        "text": "English, Russian or Ukrainian for explanations; corrections are always in English."
       },
       "privacy": {
-        "title": "Your essays stay private",
-        "text": "Essays are stored encrypted, never published and not used to train AI models. Delete them at any time."
+        "title": "Your writing stays private",
+        "text": "Essays are never published and not used to train AI models. Delete them at any time."
       }
     },
     "honestTitle": "Honest about scores",
-    "honestText": "You get an approximate estimate of your level by IELTS criteria — a broad range, not an exact band and not an official score. GoNative Exams is not connected with IELTS or its owners. The real value is in the comments: what to fix and why.",
+    "honestText": "You get an approximate estimate of your level by IELTS criteria — a broad range, not an exact band and not an official result. GoNative Exams is not connected with IELTS or its owners. We test the feedback on our own sets of essays with known mistakes before every change; the real value is in the comments: what to fix and why.",
+    "guideTitle": "Preparing for IELTS?",
+    "guideText": "Our free guide covers the test format, how scores work and how to prepare, with the most detail on Writing.",
+    "guideLink": "Read the preparation guide",
+    "freeTitle": "Free to start",
+    "freeItems": {
+      "feedbacks": "2 full feedbacks a month — two tasks or one full test",
+      "drafts": "Unlimited drafts and practice tasks",
+      "practice": "Practice on your weak points and word lists",
+      "history": "Your history and progress"
+    },
     "faqTitle": "Questions",
     "faq": {
       "official": {
-        "q": "Is this my official IELTS score?",
+        "q": "Is this my official IELTS result?",
         "a": "No. The ranges are approximate practice estimates. Only an official IELTS test gives you an official result."
       },
       "accuracy": {
         "q": "Can the feedback be wrong?",
-        "a": "Yes. Feedback is produced automatically with AI and can miss a mistake or mark correct language. We tested it on our own essay sets before launch and keep checking it; you can report any comment you disagree with."
+        "a": "Yes. Feedback is produced automatically with AI and can miss a mistake or mark correct language. We measure it on our own essay sets before every change and keep checking it; you can report any comment you disagree with."
       },
       "training": {
-        "q": "Is my essay used to train AI?",
-        "a": "No. Your essay is sent to our AI provider only to produce your feedback and is not used to train models."
+        "q": "Is my writing used to train AI?",
+        "a": "No. Your text is sent to our AI provider only to produce your feedback and is not used to train models."
       },
       "price": {
         "q": "How much does it cost?",
-        "a": "You can try it for free: 2 feedbacks a month, unlimited drafts."
+        "a": "You can start for free: 2 feedbacks a month, unlimited drafts."
       },
       "languages": {
         "q": "In which languages are the explanations?",
-        "a": "In English, Russian or Ukrainian — you choose. The site itself is in English, Russian and Ukrainian."
+        "a": "In English, Russian or Ukrainian — you choose. The site itself is in the same three languages."
       },
       "variants": {
         "q": "Academic or General Training?",
-        "a": "Both. Writing Task 2 is the same in both versions; Task 1 is coming later."
+        "a": "Both. Academic Task 1 reports and General Training letters each have their own tasks and feedback; Task 2 and the full test work for both."
+      },
+      "computer": {
+        "q": "Why type instead of writing by hand?",
+        "a": "IELTS is now taken on computer, so typing an essay against the clock is part of the skill. Our editor counts your words and the timer works like the real one."
+      },
+      "tasks": {
+        "q": "Can I check an essay on my own task?",
+        "a": "Yes, for Task 2: paste your own question. Task 1 reports and letters use our tasks, because the feedback needs the chart's data or the letter's situation to check your answer."
       }
     },
-    "finalTitle": "Write your next essay with feedback",
-    "legal": "Legal",
-    "terms": "Terms of Use",
-    "privacy": "Privacy Policy",
-    "disclaimer": "Unofficial practice tool. IELTS is a registered trademark of its owners; this site is not affiliated with or endorsed by them. Score ranges are approximate, not official results."
+    "finalTitle": "Write your next task with feedback"
   },
   "Words": {
     "title": "Words for GoNative",

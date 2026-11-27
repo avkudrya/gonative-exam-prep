@@ -28,7 +28,7 @@ export default async function Root({params}: {params: Promise<{locale: string}>}
   const {locale} = await params;
   setRequestLocale(locale);
   const landing = await landingRequest();
-  if (landing) return <Landing locale={locale} exam={landing.exam}/>;
+  if (landing) return <Landing locale={locale} exam={landing.exam} host={landing.host}/>;
   let signedIn = false;
   try {
     signedIn = (await currentIdentity()) !== null;

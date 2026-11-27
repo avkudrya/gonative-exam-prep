@@ -19,7 +19,7 @@ test('Hosts: the IELTS landing on its own host, everything else on the applicati
   let response = await page.goto(`${landing}/`);
   assert.equal(page.url(), `${landing}/en`);
   assert.match(response.headers()['x-robots-tag'], /noindex/);
-  await page.getByRole('heading', {level: 1, name: 'Practise IELTS essays with feedback on your own sentences'}).waitFor();
+  await page.getByRole('heading', {level: 1, name: 'IELTS Writing practice with feedback on your own text'}).waitFor();
   assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'), `${landing}/en`);
   assert.equal(await page.locator('link[rel="alternate"][hreflang="ru"]').getAttribute('href'), `${landing}/ru`);
   assert.equal(await page.locator('link[rel="alternate"][hreflang="uk"]').getAttribute('href'), `${landing}/uk`);
@@ -28,7 +28,15 @@ test('Hosts: the IELTS landing on its own host, everything else on the applicati
   // Honest wording: the sample range is labelled approximate; no promise of an official or exact score.
   assert.equal(await page.locator('.landing-example .range-note').textContent(), 'approximate');
   assert.doesNotMatch(await page.locator('main').textContent(), /exact (band|score) calculator|guarantee/i);
-  await page.getByText('not an official score').waitFor();
+  await page.getByText('not an official result').first().waitFor();
+  // Every Writing task is on the page, the guide is linked, and the FAQ is marked up for search.
+  for (const name of ['Task 2 essays', 'Academic Task 1 reports', 'General Training letters', 'The full Writing test']) {
+    await page.getByRole('heading', {level: 3, name}).waitFor();
+  }
+  assert.equal(await page.getByRole('link', {name: 'Read the preparation guide'}).getAttribute('href'), '/en/guide');
+  const ld = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());
+  assert.deepEqual(ld['@graph'].map(node => node['@type']), ['WebSite', 'FAQPage']);
+  assert.equal(ld['@graph'][1].mainEntity.length, 8);
 
   // Calls to action lead to registration on the application host, with the exam and UTM labels.
   const cta = new URL(await page.getByRole('link', {name: 'Start for free'}).first().getAttribute('href'));
@@ -44,11 +52,11 @@ test('Hosts: the IELTS landing on its own host, everything else on the applicati
   await page.goto(`${landing}/en`);
   await page.getByRole('link', {name: 'RU'}).click();
   await page.waitForURL(`${landing}/ru`);
-  await page.getByRole('heading', {level: 1, name: 'Тренируйте эссе IELTS с разбором ваших собственных предложений'}).waitFor();
+  await page.getByRole('heading', {level: 1, name: 'Практика IELTS Writing с разбором вашего собственного текста'}).waitFor();
   // Ukrainian landing (owner 2026-11-25), labelled UA in the switch.
   await page.getByRole('link', {name: 'UA'}).click();
   await page.waitForURL(`${landing}/uk`);
-  await page.getByRole('heading', {level: 1, name: 'Тренуйте есе IELTS із розбором ваших власних речень'}).waitFor();
+  await page.getByRole('heading', {level: 1, name: 'Практика IELTS Writing з розбором вашого власного тексту'}).waitFor();
   assert.equal(await page.locator('html').getAttribute('lang'), 'uk');
 
   // Any other path on the landing host goes to the application host; the BFF does not answer there.

@@ -46,6 +46,8 @@ export const entitlementsSchema = z.object({
   concurrent: z.int(),
   // P4.14: AI checks in «Fix it yourself»; absent from an older backend.
   rewrite_checks: z.object({enabled: z.boolean(), limit: z.int(), used: z.int(), remaining: z.int()}).optional(),
+  // P7.4: Reading tests started this month; limit null = no limit. Absent from an older backend.
+  reading_tests: z.object({enabled: z.boolean(), limit: z.int().nullable(), used: z.int(), remaining: z.int().nullable()}).optional(),
 });
 
 /** P4.14: the AI check of one rewritten sentence (the backend stores nothing). */
@@ -384,3 +386,66 @@ export type Vocabulary = z.infer<typeof vocabularySchema>;
 export type Recommendation = z.infer<typeof recommendationSchema>;
 export type Plan = z.infer<typeof planSchema>;
 export type VocabularyList = z.infer<typeof vocabularyListSchema>;
+
+/*
+ * P7.4: IELTS Reading. Before the submit a section carries the questions without keys; after it the whole review (answer,
+ * evidence, explanation in en/ru/uk). The band only as a presented estimate (ADR-003), for a full test.
+ */
+const readingOptionSchema = z.object({id: z.string().max(8), text: z.string().max(400)});
+const readingQuestionSchema = z.object({
+  numbers: z.array(z.int().min(1).max(40)).min(1).max(2),
+  prompt: z.string().max(800),
+  answer: z.array(z.string().max(120)).max(10).optional(),
+  evidence: z.string().max(800).optional(),
+  explanation: z.object({en: z.string().max(1500), ru: z.string().max(2500).optional(), uk: z.string().max(2500).optional()}).optional(),
+});
+export const readingGroupSchema = z.object({
+  type: z.string().max(40),
+  instruction: z.string().max(800),
+  options: z.array(readingOptionSchema).max(12).optional(),
+  reuse: z.boolean().optional(),
+  limit: z.object({words: z.int().min(1).max(5), number: z.boolean()}).optional(),
+  questions: z.array(readingQuestionSchema).max(40),
+});
+const readingSectionSchema = z.object({position: z.int().min(1).max(3), title: z.string().max(200), text: z.string().max(30000), groups: z.array(readingGroupSchema).max(24)});
+const readingBase = {
+  uuid,
+  status: z.enum(['started', 'submitted', 'abandoned']),
+  mode: z.enum(['test', 'section']),
+  section: z.int().min(1).max(3).nullable(),
+  timer_mode: z.enum(['soft', 'strict']),
+  duration_seconds: z.int().positive().max(14400),
+  test: z.object({uuid, title: z.string().max(160), exam_key: key}),
+  started_at: isoOrNull,
+  deadline_at: isoOrNull,
+  submitted_at: isoOrNull,
+  server_time: iso,
+};
+export const readingAttemptSchema = z.object({
+  ...readingBase,
+  sections: z.array(readingSectionSchema).max(3).optional(),
+  answers: z.record(z.string().regex(/^\d{1,2}$/), z.string().max(200)).optional(),
+  revision: z.int().min(0).optional(),
+  result: z.object({
+    correct: z.int().min(0).max(40),
+    total: z.int().min(1).max(40),
+    questions: z.array(z.object({number: z.int().min(1).max(40), given: z.string().max(200).nullable(), correct: z.boolean(), expected: z.string().max(200)})).max(40),
+    by_type: z.array(z.object({type: z.string().max(40), correct: z.int().min(0), total: z.int().min(1)})).max(20),
+  }).optional(),
+  estimate: presentedEstimateSchema.nullable().optional(),
+});
+export const readingSummarySchema = z.object({...readingBase, correct: z.int().nullable(), total: z.int().nullable(), estimate: presentedEstimateSchema.nullable()});
+export const readingIndexSchema = z.object({
+  enabled: z.boolean(),
+  usage: z.object({enabled: z.boolean(), limit: z.int().nullable(), used: z.int(), remaining: z.int().nullable()}),
+  tests: z.array(z.object({
+    uuid, exam_key: key, title: z.string().max(160), review: z.boolean(),
+    sections: z.array(z.object({position: z.int(), title: z.string().max(200), topic: z.string().max(200), words: z.int(), questions: z.int(), numbers: z.array(z.int()).length(2)})).max(3),
+  })).max(100),
+  open: readingSummarySchema.nullable(),
+  attempts: z.array(readingSummarySchema).max(50),
+});
+export type ReadingAttempt = z.infer<typeof readingAttemptSchema>;
+export type ReadingSummary = z.infer<typeof readingSummarySchema>;
+export type ReadingIndex = z.infer<typeof readingIndexSchema>;
+export type ReadingGroup = z.infer<typeof readingGroupSchema>;

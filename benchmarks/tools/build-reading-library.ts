@@ -11,7 +11,7 @@
 import {readFileSync, writeFileSync} from 'node:fs';
 import {join, resolve, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {checkReadingTest, type ReadingTest} from '../../packages/exam-domain/src/index.js';
+import {checkReadingTest, type ReadingSection, type ReadingTest} from '../../packages/exam-domain/src/index.js';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const RUN = 'benchmarks/runs/exam-reading-pilot-1';
@@ -22,7 +22,7 @@ const TITLES: Record<string, string> = {'academic-1': 'Academic Reading practice
 
 const report = JSON.parse(readFileSync(join(root, RUN, 'report.json'), 'utf8')) as {id: string; prompts: string; tests: {id: string; file: string}[]};
 const tests = report.tests.map(entry => {
-  const test = JSON.parse(readFileSync(join(root, RUN, entry.file), 'utf8')) as ReadingTest & {sections: {meta?: {topic: string}}[]};
+  const test = JSON.parse(readFileSync(join(root, RUN, entry.file), 'utf8')) as ReadingTest;
   const problems = checkReadingTest(test);
   if (problems.length) throw new Error(`${test.id}: ${problems.join('; ')}`);
   if (!STATUS[test.id]) throw new Error(`${test.id}: no status`);
@@ -30,7 +30,7 @@ const tests = report.tests.map(entry => {
     key: test.id,
     status: STATUS[test.id],
     title: TITLES[test.id] ?? test.id,
-    sections: test.sections.map(({meta, ...section}) => ({topic: meta?.topic ?? section.title, ...section})),
+    sections: (test.sections as (ReadingSection & {meta?: {topic: string}})[]).map(({meta, ...section}) => ({topic: meta?.topic ?? section.title, ...section})),
   };
 });
 const library = {

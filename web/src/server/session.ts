@@ -2,7 +2,7 @@ import 'server-only';
 import {cookies} from 'next/headers';
 import {cache} from 'react';
 import {z} from 'zod';
-import {writingSessionSchema, writingSessionsSchema, assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceSessionSchema, practiceSkillsSchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
+import {readingAttemptSchema, readingIndexSchema, writingSessionSchema, writingSessionsSchema, assessmentSchema, attemptSchema, attemptSummarySchema, catalogSchema, entitlementsSchema, identitySchema, practiceSessionSchema, practiceSkillsSchema, practiceTaskSchema, profileSchema, planSchema, recommendationSchema, reportedResultSchema, skillsSchema} from '../lib/api/schemas';
 import {backend, BackendError, cookieName} from './upstream';
 import {writingTasks, type WritingTask} from '../lib/writing';
 
@@ -29,10 +29,11 @@ export async function currentProfile() {
   return profileSchema.parse(result.profile);
 }
 
-export async function currentEntitlements() {
+/** Deduplicated per request: the layout (Reading link) and the page may both ask. */
+export const currentEntitlements = cache(async () => {
   const token = await sessionToken();
   return entitlementsSchema.parse(await backend('entitlements', 'GET', undefined, token ?? undefined));
-}
+});
 
 /** Public catalog: exams whose Writing Task 2 can be assessed. The session is not sent. */
 /** Exams with an assessable Writing task, and which of their tasks the backend assesses (Task 1 only where it says so). */
@@ -153,6 +154,24 @@ export async function writingSession(uuid: string) {
   try {
     const result = await backend(`writing-sessions/${uuid}`, 'GET', undefined, token ?? undefined, {maxBytes: 512 * 1024}) as {session: unknown};
     return writingSessionSchema.parse(result.session);
+  } catch (error) {
+    if (error instanceof BackendError && error.status === 404) return null;
+    throw error;
+  }
+}
+
+/** P7.4: Reading — whether it is on, the month's count, the tests, the open attempt and the recent ones. */
+export async function readingIndex() {
+  const token = await sessionToken();
+  return readingIndexSchema.parse(await backend('reading', 'GET', undefined, token ?? undefined, {maxBytes: 512 * 1024}));
+}
+
+/** One Reading attempt of the signed-in member, or `null` when it does not exist or is not theirs. */
+export async function readingAttempt(uuid: string) {
+  const token = await sessionToken();
+  try {
+    const result = await backend(`reading/attempts/${uuid}`, 'GET', undefined, token ?? undefined, {maxBytes: 1024 * 1024}) as {attempt: unknown};
+    return readingAttemptSchema.parse(result.attempt);
   } catch (error) {
     if (error instanceof BackendError && error.status === 404) return null;
     throw error;

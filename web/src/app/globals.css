@@ -576,3 +576,67 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 12px; text-align: le
 .checker-tasks .prompt-text { white-space: pre-line; margin: 0; font-size: 15px; }
 .checker-tasks .button { align-self: flex-start; margin-top: auto; }
 @media (max-width: 720px) { .checker-tasks { grid-template-columns: 1fr; } }
+
+/* P7.4: IELTS Reading — the passage beside the questions (tabs below 960 px), timer bar, question map, review. */
+.reading-runner, .reading-review { max-width: 1280px; }
+.reading-tests { list-style: none; padding: 0; display: grid; gap: 16px; }
+.reading-test { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; display: grid; gap: 12px; }
+.reading-test-head { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.reading-test-head h2 { margin: 0; font-size: 18px; }
+.reading-test > .button { justify-self: start; }
+.reading-parts { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.reading-parts li { display: flex; gap: 12px; justify-content: space-between; align-items: center; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 8px; }
+.muted { color: var(--muted); }
+.reading-bar { position: sticky; top: 0; z-index: 5; display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  background: var(--paper); border-bottom: 1px solid var(--line); padding: 8px 0; margin-bottom: 12px; }
+.reading-bar .eyebrow { margin: 0; }
+.reading-timer { margin: 0; font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.reading-timer.warn { color: var(--danger); }
+.save-state { margin: 0; color: var(--muted); font-size: 13px; }
+.save-state.error { color: var(--danger); }
+.reading-parts-tabs, .reading-view-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+.reading-parts-tabs button, .reading-view-tabs button { font: inherit; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+.reading-parts-tabs button[aria-current="true"], .reading-view-tabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.reading-view-tabs { display: none; }
+.reading-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.reading-passage, .reading-questions { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px;
+  max-height: calc(100vh - 220px); overflow-y: auto; }
+.reading-passage h2 { font-size: 20px; margin-top: 0; }
+.reading-passage p { line-height: 1.65; }
+.reading-passage mark { background: #ffe58a; color: inherit; border-radius: 2px; }
+.reading-passage mark.evidence { background: var(--accent-soft); outline: 2px solid var(--accent); }
+:root[data-theme="dark"] .reading-passage mark { background: #5c4d14; }
+.reading-tools { display: flex; gap: 12px; justify-content: flex-end; position: sticky; top: -16px; background: var(--surface); padding: 4px 0; }
+.reading-group { border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 12px; }
+.reading-group:last-child { border-bottom: 0; }
+.reading-instruction { font-weight: 600; }
+.reading-list { background: var(--surface-2); border-radius: 8px; padding: 8px 12px; }
+.reading-list ul, .reading-choices { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 4px; }
+.reading-question { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 8px; padding: 8px 0; scroll-margin-top: 80px; }
+.reading-question.flagged .reading-number { background: #ffe58a; color: #232a35; }
+.reading-number { margin: 0; font-weight: 700; text-align: center; border-radius: 6px; padding: 2px 0; background: var(--surface-2); height: fit-content; }
+.reading-prompt { margin: 0 0 6px; line-height: 1.5; }
+.reading-options { border: 0; padding: 0; margin: 0 0 4px; display: grid; gap: 4px; }
+.reading-options label { display: flex; gap: 8px; align-items: baseline; }
+.reading-gap { font: inherit; width: 14em; max-width: 100%; margin: 0 4px; padding: 2px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.reading-question select { font: inherit; padding: 2px 6px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.text-button.flag { font-size: 13px; }
+.reading-map { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 12px; }
+.reading-map button { font: inherit; font-size: 13px; width: 34px; height: 30px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); cursor: pointer; }
+.reading-map button.answered { background: var(--accent-soft); border-color: var(--accent); }
+.reading-map button.flagged { box-shadow: inset 0 -3px 0 #e0b400; }
+.reading-score { display: flex; gap: 32px; flex-wrap: wrap; align-items: baseline; margin: 12px 0; }
+.reading-types { margin: 12px 0; }
+.reading-types caption { text-align: left; font-weight: 600; padding-bottom: 6px; }
+.reading-question.right .reading-number { background: var(--accent-soft); }
+.reading-question.wrong .reading-number { background: var(--danger-soft); }
+.reading-question.active { outline: 2px solid var(--accent); border-radius: 8px; }
+.reading-answer .ok { color: var(--accent); font-weight: 700; }
+.reading-answer .no { color: var(--danger); font-weight: 700; }
+.reading-explanation { color: var(--ink); background: var(--surface-2); border-radius: 8px; padding: 8px 12px; margin: 6px 0; }
+@media (max-width: 959px) {
+  .reading-view-tabs { display: flex; }
+  .reading-columns { grid-template-columns: minmax(0, 1fr); }
+  .reading-columns.show-text .reading-questions, .reading-columns.show-questions .reading-passage { display: none; }
+  .reading-passage, .reading-questions { max-height: none; }
+}

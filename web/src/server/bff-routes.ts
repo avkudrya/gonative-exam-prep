@@ -5,7 +5,7 @@ import {
   feedbackLanguageSchema, identitySchema, interfaceLocaleSchema, practiceTaskSchema, profileSchema, reportKinds,
   practiceAnswerSchema, practiceResultSchema, practiceSessionSchema, practiceSkillsSchema,
   recommendationSchema, reportSchema, reportedResultSchema, skillsSchema, vocabularyListSchema, vocabularySchema,
-  writingSessionSchema, writingSessionsSchema,
+  writingSessionSchema, writingSessionsSchema, readingAttemptSchema, readingIndexSchema,
 } from '../lib/api/schemas';
 
 /*
@@ -254,6 +254,28 @@ export function resolve(path: string, method: string, search: URLSearchParams): 
         {input: empty, requestKey: true, maxBytes: 512 * 1024, timeoutMs: 20000});
     }
     return route(`${root}/${simulation[2]}`, one, {input: empty, maxBytes: 512 * 1024});
+  }
+  // P7.4: IELTS Reading. Answers are question number → text (at most 40, 200 characters each); marking is by key on the backend.
+  if (path === 'reading' && method === 'GET' && noQuery(search)) return route(path, parse(readingIndexSchema), {maxBytes: 512 * 1024});
+  if (path === 'reading/attempts' && method === 'POST' && noQuery(search)) {
+    return route(path, r => ({data: z.object({attempt: readingAttemptSchema}).parse(r), status: 201}), {
+      input: z.object({test: z.string().regex(uuidPattern), mode: z.enum(['test', 'section']), section: z.int().min(1).max(3).optional(),
+        timer_mode: z.enum(['soft', 'strict'])}).strict(),
+      maxBytes: 1024 * 1024,
+    });
+  }
+  const reading = /^reading\/attempts\/([^/]+)(?:\/(answers|submit|abandon))?$/.exec(path);
+  if (reading && uuidPattern.test(reading[1]) && noQuery(search)) {
+    const root = `reading/attempts/${reading[1].toLowerCase()}`;
+    const one = parse(z.object({attempt: readingAttemptSchema}));
+    const answers = z.record(z.string().regex(/^\d{1,2}$/), z.string().max(200).nullable()).refine(v => Object.keys(v).length <= 40);
+    if (!reading[2]) return method === 'GET' ? route(root, one, {maxBytes: 1024 * 1024}) : null;
+    if (reading[2] === 'answers' && method === 'PUT') {
+      return route(`${root}/answers`, parse(z.object({revision: z.int().min(0), server_time: z.string().max(64)})), {input: z.object({answers}).strict(), maxBody: 32 * 1024});
+    }
+    if (method !== 'POST') return null;
+    if (reading[2] === 'submit') return route(`${root}/submit`, one, {input: z.object({answers: answers.optional()}).strict(), maxBody: 32 * 1024, maxBytes: 1024 * 1024, timeoutMs: 20000});
+    return route(`${root}/abandon`, one, {input: empty, maxBytes: 1024 * 1024});
   }
   // P4.5: the learner marks a next step done or hides it.
   const step = /^recommendations\/([^/]+)\/(done|dismiss)$/.exec(path);

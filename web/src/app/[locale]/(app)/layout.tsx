@@ -1,6 +1,6 @@
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {SiteShell} from '../../../components/site-shell';
-import {currentIdentity} from '../../../server/session';
+import {currentEntitlements, currentIdentity} from '../../../server/session';
 
 // Signed-in area: every page checks its own session (`requireAccount`) with its own return path;
 // the layout only draws the member shell and the notices that replace any page.
@@ -25,5 +25,7 @@ export default async function AppLayout({children, params}: {children: React.Rea
       <section className="notice-page" role="status"><h1>{t('cleanupTitle')}</h1><p>{t('cleanupBody')}</p></section>
     </SiteShell>;
   }
-  return <SiteShell locale={locale} email={identity?.user.email}>{children}</SiteShell>;
+  // P7.4: the Reading link only while Reading is on (an older backend or an error: no link).
+  const reading = identity ? await currentEntitlements().then(e => e.reading_tests?.enabled === true).catch(() => false) : false;
+  return <SiteShell locale={locale} email={identity?.user.email} reading={reading}>{children}</SiteShell>;
 }

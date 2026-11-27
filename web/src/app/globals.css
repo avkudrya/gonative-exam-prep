@@ -570,3 +570,9 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 12px; text-align: le
 .examples-list h2 { font-size: 18px; margin: 4px 0 6px; }
 .examples-list .eyebrow { margin: 0; }
 @media (max-width: 560px) { .landing .header-tools { flex-wrap: wrap; row-gap: 6px; column-gap: 10px; } }
+/* Checker pages (P6.5) */
+.checker-tasks { list-style: none; margin: 12px 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.checker-tasks li { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.checker-tasks .prompt-text { white-space: pre-line; margin: 0; font-size: 15px; }
+.checker-tasks .button { align-self: flex-start; margin-top: auto; }
+@media (max-width: 720px) { .checker-tasks { grid-template-columns: 1fr; } }

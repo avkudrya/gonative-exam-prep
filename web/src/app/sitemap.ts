@@ -1,5 +1,6 @@
 import type {MetadataRoute} from 'next';
 import {headers} from 'next/headers';
+import {checkers} from '../content/checkers';
 import {examples} from '../content/examples';
 import {chapterLocales, guide, guideChapters} from '../content/guide';
 import {routing} from '../i18n/routing';
@@ -19,6 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const hub = routing.locales.filter(l => guideChapters(l).length > 0);
   return [
     ...page(l => `/${l}`, routing.locales),
+    ...checkers.flatMap(c => page(l => `/${l}/${c.slug}`, routing.locales)),
     ...page(l => `/${l}/guide`, hub),
     ...guide.flatMap(entry => {
       const locales = chapterLocales(entry.slug);

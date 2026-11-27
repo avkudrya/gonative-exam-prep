@@ -27,6 +27,7 @@ export async function Landing({locale, exam, host}: {locale: string; exam: Landi
   const utm = (place: string) => new URLSearchParams({exam, utm_source: `${exam}_landing`, utm_medium: 'landing', utm_campaign: place}).toString();
   const register = (place: string) => `${app}/${locale}/register?${utm(place)}`;
   const tasks = ['task2', 'chart', 'letter', 'simulation'] as const;
+  const checkerOf: Partial<Record<typeof tasks[number], string>> = {task2: 'ielts-writing-task-2-checker', chart: 'ielts-academic-task-1-checker', letter: 'ielts-general-training-letter-checker'};
   const steps = ['write', 'feedback', 'improve'] as const;
   const after = ['rewrite', 'practice', 'vocabulary', 'progress', 'languages', 'privacy'] as const;
   const free = ['feedbacks', 'drafts', 'practice', 'history'] as const;
@@ -52,7 +53,7 @@ export async function Landing({locale, exam, host}: {locale: string; exam: Landi
     <section aria-labelledby="tasks-title" className="landing-section">
       <h2 id="tasks-title">{t('tasksTitle')}</h2>
       <ul className="landing-tasks">
-        {tasks.map(task => <li key={task}><h3>{t(`tasks.${task}.title`)}</h3><p>{t(`tasks.${task}.text`)}</p></li>)}
+        {tasks.map(task => <li key={task}><h3>{checkerOf[task] ? <a href={`/${locale}/${checkerOf[task]}`}>{t(`tasks.${task}.title`)}</a> : t(`tasks.${task}.title`)}</h3><p>{t(`tasks.${task}.text`)}</p></li>)}
       </ul>
     </section>
 

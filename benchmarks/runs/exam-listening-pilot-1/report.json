@@ -1,0 +1,322 @@
+{
+    "id": "exam-listening-pilot-1",
+    "routes": {
+        "exam.listening.generate": [
+            {
+                "provider": "anthropic",
+                "model": "claude-opus-5-5",
+                "reasoning_effort": "high",
+                "max_output_tokens": 32000,
+                "timeout": 900
+            }
+        ],
+        "exam.listening.solve_a": [
+            {
+                "provider": "anthropic",
+                "model": "claude-sonnet-5-5",
+                "reasoning_effort": "medium",
+                "max_output_tokens": 12000,
+                "timeout": 600
+            }
+        ],
+        "exam.listening.solve_b": [
+            {
+                "provider": "openai",
+                "model": "gpt-5.4",
+                "reasoning_effort": "medium",
+                "max_output_tokens": 12000,
+                "timeout": 600
+            }
+        ],
+        "exam.listening.control": [
+            {
+                "provider": "xai",
+                "model": "grok-4.7",
+                "temperature": 0,
+                "max_output_tokens": 8000,
+                "timeout": 600
+            }
+        ]
+    },
+    "narrator": {
+        "provider": "google",
+        "voice": "en-GB-Chirp3-HD-Charon"
+    },
+    "budgetUsd": 10,
+    "spentUsd": 4.435002,
+    "parts": [
+        {
+            "key": "l1|p1",
+            "status": "succeeded",
+            "costUsd": 0.569109,
+            "metrics": {
+                "control": {
+                    "marks": 10,
+                    "correct": 10
+                },
+                "discarded": 0,
+                "generated": 12,
+                "agreedFirst": 12,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "parts/l1-p1.json",
+            "audio": {
+                "file": "audio/l1-p1.mp3",
+                "durationMs": 335403,
+                "retried": [
+                    27
+                ],
+                "padded": [],
+                "loudness": {
+                    "lufs": -17,
+                    "truePeakDb": -2.4
+                },
+                "flagged": [],
+                "recording": []
+            }
+        },
+        {
+            "key": "l1|p2",
+            "status": "succeeded",
+            "costUsd": 0.847666,
+            "metrics": {
+                "control": {
+                    "marks": 10,
+                    "correct": 10
+                },
+                "discarded": 0,
+                "generated": 12,
+                "agreedFirst": 12,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "parts/l1-p2.json",
+            "audio": {
+                "file": "audio/l1-p2.mp3",
+                "durationMs": 340366,
+                "retried": [],
+                "padded": [
+                    {
+                        "addedMs": 321,
+                        "beforeTurn": 2
+                    }
+                ],
+                "loudness": {
+                    "lufs": -16.7,
+                    "truePeakDb": -2.6
+                },
+                "flagged": [],
+                "recording": []
+            }
+        },
+        {
+            "key": "l1|p3",
+            "status": "succeeded",
+            "costUsd": 0.624165,
+            "metrics": {
+                "control": {
+                    "marks": 10,
+                    "correct": 10
+                },
+                "discarded": 0,
+                "generated": 12,
+                "agreedFirst": 12,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "parts/l1-p3.json",
+            "audio": {
+                "file": "audio/l1-p3.mp3",
+                "durationMs": 376590,
+                "retried": [
+                    5
+                ],
+                "padded": [],
+                "loudness": {
+                    "lufs": -16.9,
+                    "truePeakDb": -1.6
+                },
+                "flagged": [],
+                "recording": []
+            }
+        },
+        {
+            "key": "l1|p4",
+            "status": "succeeded",
+            "costUsd": 0.46269,
+            "metrics": {
+                "control": {
+                    "marks": 10,
+                    "correct": 10
+                },
+                "discarded": 0,
+                "generated": 12,
+                "agreedFirst": 12,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "parts/l1-p4.json",
+            "audio": {
+                "file": "audio/l1-p4.mp3",
+                "durationMs": 348714,
+                "retried": [],
+                "padded": [],
+                "loudness": {
+                    "lufs": -16.4,
+                    "truePeakDb": -2.4
+                },
+                "flagged": [],
+                "recording": []
+            }
+        },
+        {
+            "key": "l2|p1",
+            "status": "succeeded",
+            "costUsd": 0.452835,
+            "metrics": {
+                "control": {
+                    "marks": 10,
+                    "correct": 10
+                },
+                "discarded": 0,
+                "generated": 12,
+                "agreedFirst": 12,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "parts/l2-p1.json",
+            "audio": {
+                "file": "audio/l2-p1.mp3",
+                "durationMs": 342699,
+                "retried": [],
+                "padded": [],
+                "loudness": {
+                    "lufs": -17,
+                    "truePeakDb": -1
+                },
+                "flagged": [],
+                "recording": []
+            }
+        },
+        {
+            "key": "l2|p2",
+            "status": "succeeded",
+            "costUsd": 0.541734,
+            "metrics": {
+                "control": {
+                    "marks": 10,
+                    "correct": 10
+                },
+                "discarded": 0,
+                "generated": 10,
+                "agreedFirst": 10,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "parts/l2-p2.json",
+            "audio": {
+                "file": "audio/l2-p2.mp3",
+                "durationMs": 346471,
+                "retried": [],
+                "padded": [],
+                "loudness": {
+                    "lufs": -17,
+                    "truePeakDb": -2.3
+                },
+                "flagged": [],
+                "recording": []
+            }
+        },
+        {
+            "key": "l2|p3",
+            "status": "succeeded",
+            "costUsd": 0.502646,
+            "metrics": {
+                "control": {
+                    "marks": 10,
+                    "correct": 10
+                },
+                "discarded": 0,
+                "generated": 12,
+                "agreedFirst": 12,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "parts/l2-p3.json",
+            "audio": {
+                "file": "audio/l2-p3.mp3",
+                "durationMs": 341724,
+                "retried": [],
+                "padded": [],
+                "loudness": {
+                    "lufs": -16.4,
+                    "truePeakDb": -1.9
+                },
+                "flagged": [],
+                "recording": []
+            }
+        },
+        {
+            "key": "l2|p4",
+            "status": "succeeded",
+            "costUsd": 0.434157,
+            "metrics": {
+                "control": {
+                    "marks": 10,
+                    "correct": 10
+                },
+                "discarded": 0,
+                "generated": 12,
+                "agreedFirst": 12,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "parts/l2-p4.json",
+            "audio": {
+                "file": "audio/l2-p4.mp3",
+                "durationMs": 371561,
+                "retried": [],
+                "padded": [],
+                "loudness": {
+                    "lufs": -16.9,
+                    "truePeakDb": -1.4
+                },
+                "flagged": [],
+                "recording": []
+            }
+        }
+    ],
+    "tests": [
+        {
+            "id": "l1",
+            "file": "tests/l1.json",
+            "problems": []
+        },
+        {
+            "id": "l2",
+            "file": "tests/l2.json",
+            "problems": []
+        }
+    ],
+    "totals": {
+        "generated": 94,
+        "disputedFirst": 0,
+        "discarded": 0,
+        "controlCorrect": 80,
+        "controlMarks": 80,
+        "turns": 200,
+        "turnsRetried": 2,
+        "turnsFlagged": 0,
+        "discardRate": 0,
+        "controlAgreement": 1
+    }
+}

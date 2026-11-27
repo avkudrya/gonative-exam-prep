@@ -56,10 +56,11 @@ test('Reading: a passage on a soft timer with autosave and the review; a full te
       reading_tests: {enabled: true, limit: 2, used: state.done.length, remaining: 2 - state.done.length}});
     if (path.startsWith('attempts?')) return json(200, {attempts: [], page: 1, per_page: 5, total: 0});
     if (path === 'reading' && method === 'GET') {
+      const listed = sections.map(s => ({position: s.position, title: s.title, topic: s.title, words: 850, questions: numbers(s).length, numbers: [Math.min(...numbers(s)), Math.max(...numbers(s))]}));
       const open = state.attempt?.status === 'started';
       return json(200, {enabled: true, usage: {enabled: true, limit: 2, used: state.done.length + (open ? 1 : 0), remaining: 2 - state.done.length - (open ? 1 : 0)},
-        tests: [{uuid: TEST.uuid, exam_key: 'ielts-academic', title: TEST.title, review: true,
-          sections: sections.map(s => ({position: s.position, title: s.title, topic: s.title, words: 850, questions: numbers(s).length, numbers: [Math.min(...numbers(s)), Math.max(...numbers(s))]}))}],
+        tests: [{uuid: TEST.uuid, exam_key: 'ielts-academic', title: TEST.title, review: true, sections: listed},
+          {uuid: randomUUID(), exam_key: 'ielts-general-training', title: 'General Training Reading practice test 1', review: false, sections: listed}],
         open: open ? summary() : null, attempts: state.attempt?.status === 'submitted' ? [summary()] : []});
     }
     if (path === 'reading/attempts' && method === 'POST') {
@@ -103,6 +104,14 @@ test('Reading: a passage on a soft timer with autosave and the review; a full te
   await page.waitForURL(`${origin}/en/ielts/reading`);
   await page.getByRole('heading', {name: TEST.title}).waitFor();
   await page.getByText('In review').waitFor();
+  // Tests of both exams: the profile's target exam first, General Training one click away.
+  const gt = page.getByRole('heading', {name: 'General Training Reading practice test 1'});
+  assert.equal(await gt.count(), 0);
+  await page.getByRole('radio', {name: 'General Training'}).check();
+  await gt.waitFor();
+  assert.equal(await page.getByRole('heading', {name: TEST.title}).count(), 0);
+  await page.getByRole('radio', {name: 'Academic'}).check();
+  await page.getByRole('heading', {name: TEST.title}).waitFor();
   await page.getByText('Free plan: 2 of 2 Reading tests left this month', {exact: false}).waitFor();
 
   // Passage 1 alone, soft timer.

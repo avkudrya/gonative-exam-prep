@@ -26,5 +26,5 @@ export default async function ReadingPage({params}: {params: Promise<{locale: st
   }
   if (!index.enabled) notFound();
   if (index.open) return redirect({href: `/ielts/reading/${index.open.uuid}`, locale});
-  return <ReadingHome index={index}/>;
+  return <ReadingHome index={index} defaultExam={member.profile.target_exam_key}/>;
 }

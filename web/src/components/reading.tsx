@@ -57,8 +57,12 @@ function useLocal<T>(key: string, initial: T): [T, (v: T) => void] {
 }
 
 /** The tests, the month's count and the recent attempts. */
-export function ReadingHome({index}: {index: ReadingIndex}) {
+/** P7.5: with tests of both IELTS Reading exams the learner picks one, starting from the target exam of the profile. */
+export function ReadingHome({index, defaultExam}: {index: ReadingIndex; defaultExam: string | null}) {
   const t = useTranslations('Reading');
+  const exams = [...new Set(index.tests.map(test => test.exam_key))];
+  const [exam, setExam] = useState(exams.find(e => e === defaultExam) ?? exams[0] ?? '');
+  const tests = index.tests.filter(test => test.exam_key === exam);
   const format = useFormatter();
   const router = useRouter();
   const [timer, setTimer] = useState<'soft' | 'strict'>('soft');
@@ -92,10 +96,14 @@ export function ReadingHome({index}: {index: ReadingIndex}) {
       <label><input type="radio" name="timer" value="soft" checked={timer === 'soft'} onChange={() => setTimer('soft')}/> {t('timerSoft')}</label>
       <label><input type="radio" name="timer" value="strict" checked={timer === 'strict'} onChange={() => setTimer('strict')}/> {t('timerStrict')}</label>
     </fieldset>
+    {exams.length > 1 && <fieldset className="choice">
+      <legend>{t('exam')}</legend>
+      {exams.map(e => <label key={e}><input type="radio" name="exam" value={e} checked={exam === e} onChange={() => setExam(e)}/> {t.has(`exams.${e}`) ? t(`exams.${e}`) : e}</label>)}
+    </fieldset>}
     {error && <p className="feedback error" role="alert">{t(`errors.${error}`)}</p>}
-    {index.tests.length === 0 && <p>{t('noTests')}</p>}
+    {tests.length === 0 && <p>{t('noTests')}</p>}
     <ul className="reading-tests">
-      {index.tests.map(test => <li key={test.uuid} className="reading-test">
+      {tests.map(test => <li key={test.uuid} className="reading-test">
         <div className="reading-test-head">
           <h2>{test.title}</h2>
           {test.review && <span className="badge">{t('reviewBadge')}</span>}

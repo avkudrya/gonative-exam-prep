@@ -1,0 +1,892 @@
+{
+    "id": "exam-listening-voices-1",
+    "budgetUsd": 1,
+    "combos": [
+        {
+            "samples": {
+                "dialogue": {
+                    "file": "audio/google-british-dialogue.mp3",
+                    "durationMs": 75777,
+                    "keysHeard": {
+                        "Fairbrook": true,
+                        "45.50": true,
+                        "07700 900 418": true
+                    },
+                    "maxWer": 0.25,
+                    "turns": [
+                        {
+                            "speaker": "staff",
+                            "voice": "en-GB-Chirp3-HD-Kore",
+                            "text": "Good morning, Harbour Bike Tours. How can I help you?",
+                            "said": null,
+                            "heard": "Good morning, Harbour Bike Tours. How can I help you?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 19
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-GB-Chirp3-HD-Charon",
+                            "text": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "said": null,
+                            "heard": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 20.3
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-GB-Chirp3-HD-Kore",
+                            "text": "That's lovely to hear. We have two rides on Saturdays: a short one along the river, which takes about two hours, and the longer coastal ride, which is closer to five hours with a stop for lunch.",
+                            "said": null,
+                            "heard": "That's lovely to hear. We have two rides on Saturdays: a short one along the river, which takes about two hours, and the longer coastal ride, which is closer to five hours with a stop for lunch.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 18.3
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-GB-Chirp3-HD-Charon",
+                            "text": "I think the coastal one. Is lunch included in the price?",
+                            "said": null,
+                            "heard": "I think the coastal one. Is lunch included in the price?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 16.1
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-GB-Chirp3-HD-Kore",
+                            "text": "It is, yes. The coastal ride is £45.50 per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "said": "It is, yes. The coastal ride is forty-five pounds fifty per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "heard": "It is, yes. The coastal ride is £45.50 per person and that covers the bike, a helmet and lunch at a cafe in the old fishing village. Can I take your name?",
+                            "wer": 0.031,
+                            "wordErrors": 1,
+                            "charsPerSecond": 17.7
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-GB-Chirp3-HD-Charon",
+                            "text": "Sure. It's Daniel Fairbrook. That's F-A-I-R-B-R-O-O-K.",
+                            "said": "Sure. It's Daniel Fairbrook. That's F, A, I, R, B, R, O, O, K.",
+                            "heard": "Sure, it's Daniel Fairbrook. That's F-A-I-R-B-R-O-O-K.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 8.2
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-GB-Chirp3-HD-Kore",
+                            "text": "Thank you, Mr Fairbrook. And a contact number?",
+                            "said": null,
+                            "heard": "Thank you, Mr Fairbrooke. And the contact number?",
+                            "wer": 0.25,
+                            "wordErrors": 2,
+                            "charsPerSecond": 19.6
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-GB-Chirp3-HD-Charon",
+                            "text": "My mobile is 07700 900 418.",
+                            "said": "My mobile is oh seven seven oh oh, nine oh oh, four one eight.",
+                            "heard": "My mobile is 07700 900 418.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 11.6
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-GB-Chirp3-HD-Kore",
+                            "text": "Lovely. Now, we meet outside the station at half past eight, so please don't be late, because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead.",
+                            "said": null,
+                            "heard": "Lovely. Now, we meet outside the station at half past eight so please don't be late, because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17.5
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-GB-Chirp3-HD-Charon",
+                            "text": "Great. Should I bring anything?",
+                            "said": null,
+                            "heard": "Great. Should I bring anything?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 12.5
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-GB-Chirp3-HD-Kore",
+                            "text": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July.",
+                            "said": null,
+                            "heard": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 15.8
+                        }
+                    ]
+                },
+                "lecture": {
+                    "file": "audio/google-british-lecture.mp3",
+                    "durationMs": 62916,
+                    "keysHeard": {
+                        "lamplighters": true,
+                        "nineteenth century": true
+                    },
+                    "maxWer": 0.029,
+                    "turns": [
+                        {
+                            "speaker": "lecturer",
+                            "voice": "en-GB-Chirp3-HD-Aoede",
+                            "text": "Today I want to look at something most of us never notice: the street light. Before the nineteenth century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them.",
+                            "said": null,
+                            "heard": "Today I want to look at something most of us never notice: the street light. Before the nineteenth century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 18.4
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "en-GB-Chirp3-HD-Aoede",
+                            "text": "The arrival of gas lighting changed that completely. From the eighteen-twenties onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "said": null,
+                            "heard": "The arrival of gas lighting changed that completely. From the 1820s onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "wer": 0.029,
+                            "wordErrors": 2,
+                            "charsPerSecond": 18.4
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "en-GB-Chirp3-HD-Aoede",
+                            "text": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story: the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "said": null,
+                            "heard": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story, the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17.3
+                        }
+                    ]
+                }
+            },
+            "key": "google-british",
+            "provider": "google",
+            "accent": "british",
+            "voices": {
+                "staff": "en-GB-Chirp3-HD-Kore",
+                "caller": "en-GB-Chirp3-HD-Charon",
+                "lecturer": "en-GB-Chirp3-HD-Aoede"
+            },
+            "note": null,
+            "costUsd": 0.08206
+        },
+        {
+            "samples": {
+                "dialogue": {
+                    "file": "audio/google-australian-dialogue.mp3",
+                    "durationMs": 78050,
+                    "keysHeard": {
+                        "Fairbrook": true,
+                        "45.50": true,
+                        "07700 900 418": true
+                    },
+                    "maxWer": 0.167,
+                    "turns": [
+                        {
+                            "speaker": "staff",
+                            "voice": "en-AU-Chirp3-HD-Aoede",
+                            "text": "Good morning, Harbour Bike Tours. How can I help you?",
+                            "said": null,
+                            "heard": "Good morning Harbour Bike Tours. How can I help you?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-AU-Chirp3-HD-Puck",
+                            "text": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "said": null,
+                            "heard": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 19.8
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-AU-Chirp3-HD-Aoede",
+                            "text": "That's lovely to hear. We have two rides on Saturdays: a short one along the river, which takes about two hours, and the longer coastal ride, which is closer to five hours with a stop for lunch.",
+                            "said": null,
+                            "heard": "That's lovely to hear. We have two rides on Saturdays: a short one along the river which takes about two hours, and the longer coastal ride which is closer to five hours with a stop for lunch.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17.2
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-AU-Chirp3-HD-Puck",
+                            "text": "I think the coastal one. Is lunch included in the price?",
+                            "said": null,
+                            "heard": "I think the coastal one. Is lunch included in the price?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 19.7
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-AU-Chirp3-HD-Aoede",
+                            "text": "It is, yes. The coastal ride is £45.50 per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "said": "It is, yes. The coastal ride is forty-five pounds fifty per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "heard": "It is, yes. The coastal ride is £45.50 per person and that covers the bike, a helmet and lunch at a cafe in the old fishing village. Can I take your name?",
+                            "wer": 0.031,
+                            "wordErrors": 1,
+                            "charsPerSecond": 15.5
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-AU-Chirp3-HD-Puck",
+                            "text": "Sure. It's Daniel Fairbrook. That's F-A-I-R-B-R-O-O-K.",
+                            "said": "Sure. It's Daniel Fairbrook. That's F, A, I, R, B, R, O, O, K.",
+                            "heard": "Sure, it's Daniel Fairbrooke. That's F-A-I-R-B-R-O-O-K.",
+                            "wer": 0.167,
+                            "wordErrors": 1,
+                            "charsPerSecond": 7.1
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-AU-Chirp3-HD-Aoede",
+                            "text": "Thank you, Mr Fairbrook. And a contact number?",
+                            "said": null,
+                            "heard": "Thank you, Mr Fairbrooke. And a contact number?",
+                            "wer": 0.125,
+                            "wordErrors": 1,
+                            "charsPerSecond": 16.6
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-AU-Chirp3-HD-Puck",
+                            "text": "My mobile is 07700 900 418.",
+                            "said": "My mobile is oh seven seven oh oh, nine oh oh, four one eight.",
+                            "heard": "My mobile is 07700 900418",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 13.3
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-AU-Chirp3-HD-Aoede",
+                            "text": "Lovely. Now, we meet outside the station at half past eight, so please don't be late, because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead.",
+                            "said": null,
+                            "heard": "Lovely. Now we meet outside the station at half past eight, so please don't be late, because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17.7
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-AU-Chirp3-HD-Puck",
+                            "text": "Great. Should I bring anything?",
+                            "said": null,
+                            "heard": "Great, should I bring anything?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 20.5
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-AU-Chirp3-HD-Aoede",
+                            "text": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July.",
+                            "said": null,
+                            "heard": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 14.5
+                        }
+                    ]
+                },
+                "lecture": {
+                    "file": "audio/google-australian-lecture.mp3",
+                    "durationMs": 61192,
+                    "keysHeard": {
+                        "lamplighters": true,
+                        "nineteenth century": true
+                    },
+                    "maxWer": 0.041,
+                    "turns": [
+                        {
+                            "speaker": "lecturer",
+                            "voice": "en-AU-Chirp3-HD-Charon",
+                            "text": "Today I want to look at something most of us never notice: the street light. Before the nineteenth century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them.",
+                            "said": null,
+                            "heard": "Today I want to look at something most of us never notice: the streetlight. Before the nineteenth century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns, householders were actually required by law to provide them.",
+                            "wer": 0.041,
+                            "wordErrors": 2,
+                            "charsPerSecond": 17.2
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "en-AU-Chirp3-HD-Charon",
+                            "text": "The arrival of gas lighting changed that completely. From the eighteen-twenties onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "said": null,
+                            "heard": "The arrival of gas lighting changed that completely. From the 1820s onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "wer": 0.029,
+                            "wordErrors": 2,
+                            "charsPerSecond": 19.6
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "en-AU-Chirp3-HD-Charon",
+                            "text": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story: the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "said": null,
+                            "heard": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture I'll look at the newest stage of the story, the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 18.4
+                        }
+                    ]
+                }
+            },
+            "key": "google-australian",
+            "provider": "google",
+            "accent": "australian",
+            "voices": {
+                "staff": "en-AU-Chirp3-HD-Aoede",
+                "caller": "en-AU-Chirp3-HD-Puck",
+                "lecturer": "en-AU-Chirp3-HD-Charon"
+            },
+            "note": null,
+            "costUsd": 0.08216
+        },
+        {
+            "samples": {
+                "dialogue": {
+                    "file": "audio/google-north-american-dialogue.mp3",
+                    "durationMs": 81628,
+                    "keysHeard": {
+                        "Fairbrook": true,
+                        "45.50": true,
+                        "07700 900 418": true
+                    },
+                    "maxWer": 0.167,
+                    "turns": [
+                        {
+                            "speaker": "staff",
+                            "voice": "en-US-Chirp3-HD-Leda",
+                            "text": "Good morning, Harbour Bike Tours. How can I help you?",
+                            "said": null,
+                            "heard": "Good morning, Harbor Bike Tours. How can I help you?",
+                            "wer": 0.1,
+                            "wordErrors": 1,
+                            "charsPerSecond": 17.5
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-US-Chirp3-HD-Orus",
+                            "text": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "said": null,
+                            "heard": "Oh, hello, I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 20.3
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-US-Chirp3-HD-Leda",
+                            "text": "That's lovely to hear. We have two rides on Saturdays: a short one along the river, which takes about two hours, and the longer coastal ride, which is closer to five hours with a stop for lunch.",
+                            "said": null,
+                            "heard": "That's lovely to hear. We have two rides on Saturdays: a short one along the river, which takes about two hours, and a longer coastal ride, which is closer to five hours with a stop for lunch.",
+                            "wer": 0.027,
+                            "wordErrors": 1,
+                            "charsPerSecond": 17.9
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-US-Chirp3-HD-Orus",
+                            "text": "I think the coastal one. Is lunch included in the price?",
+                            "said": null,
+                            "heard": "I think the coastal one. Is lunch included in the price?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 14.3
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-US-Chirp3-HD-Leda",
+                            "text": "It is, yes. The coastal ride is £45.50 per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "said": "It is, yes. The coastal ride is forty-five pounds fifty per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "heard": "It is, yes. The coastal ride is £45.50 per person, and that covers the bike, a helmet, and lunch at a café in the old fishing village. Can I take your name?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 14.4
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-US-Chirp3-HD-Orus",
+                            "text": "Sure. It's Daniel Fairbrook. That's F-A-I-R-B-R-O-O-K.",
+                            "said": "Sure. It's Daniel Fairbrook. That's F, A, I, R, B, R, O, O, K.",
+                            "heard": "Sure, it's Daniel Fairbrooke. That's F-A-I-R-B-R-O-O-K.",
+                            "wer": 0.167,
+                            "wordErrors": 1,
+                            "charsPerSecond": 9.3
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-US-Chirp3-HD-Leda",
+                            "text": "Thank you, Mr Fairbrook. And a contact number?",
+                            "said": null,
+                            "heard": "Thank you, Mr. Fairbrook. And a contact number?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 14
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-US-Chirp3-HD-Orus",
+                            "text": "My mobile is 07700 900 418.",
+                            "said": "My mobile is zero seven seven zero zero, nine zero zero, four one eight.",
+                            "heard": "My mobile is 07700 900418.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 11
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-US-Chirp3-HD-Leda",
+                            "text": "Lovely. Now, we meet outside the station at half past eight, so please don't be late, because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead.",
+                            "said": null,
+                            "heard": "Lovely. Now, we meet outside the station at half past eight, so please don’t be late because the group leaves on time. Oh, and if it’s raining heavily, we’ll text you by seven to let you know whether the ride is going ahead.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 16.1
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "en-US-Chirp3-HD-Orus",
+                            "text": "Great. Should I bring anything?",
+                            "said": null,
+                            "heard": "Great, should I bring anything?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 22.8
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "en-US-Chirp3-HD-Leda",
+                            "text": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July.",
+                            "said": null,
+                            "heard": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 12.8
+                        }
+                    ]
+                },
+                "lecture": {
+                    "file": "audio/google-north-american-lecture.mp3",
+                    "durationMs": 68663,
+                    "keysHeard": {
+                        "lamplighters": true,
+                        "nineteenth century": true
+                    },
+                    "maxWer": 0.029,
+                    "turns": [
+                        {
+                            "speaker": "lecturer",
+                            "voice": "en-US-Chirp3-HD-Kore",
+                            "text": "Today I want to look at something most of us never notice: the street light. Before the nineteenth century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them.",
+                            "said": null,
+                            "heard": "Today I want to look at something most of us never notice: the street light. Before the 19th century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 15.7
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "en-US-Chirp3-HD-Kore",
+                            "text": "The arrival of gas lighting changed that completely. From the eighteen-twenties onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "said": null,
+                            "heard": "The arrival of gas lighting changed that completely. From the 1820s onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "wer": 0.029,
+                            "wordErrors": 2,
+                            "charsPerSecond": 17.1
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "en-US-Chirp3-HD-Kore",
+                            "text": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story: the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "said": null,
+                            "heard": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story, the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 16.4
+                        }
+                    ]
+                }
+            },
+            "key": "google-north-american",
+            "provider": "google",
+            "accent": "north_american",
+            "voices": {
+                "staff": "en-US-Chirp3-HD-Leda",
+                "caller": "en-US-Chirp3-HD-Orus",
+                "lecturer": "en-US-Chirp3-HD-Kore"
+            },
+            "note": null,
+            "costUsd": 0.08346
+        },
+        {
+            "samples": {
+                "dialogue": {
+                    "file": "audio/xai-british-dialogue.mp3",
+                    "durationMs": 76012,
+                    "keysHeard": {
+                        "Fairbrook": true,
+                        "45.50": true,
+                        "07700 900 418": true
+                    },
+                    "maxWer": 0.125,
+                    "turns": [
+                        {
+                            "speaker": "staff",
+                            "voice": "eve",
+                            "text": "Good morning, Harbour Bike Tours. How can I help you?",
+                            "said": null,
+                            "heard": "Good morning Harbour Bike Tours, how can I help you?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 16.4
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "rex",
+                            "text": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "said": null,
+                            "heard": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 19.1
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "eve",
+                            "text": "That's lovely to hear. We have two rides on Saturdays: a short one along the river, which takes about two hours, and the longer coastal ride, which is closer to five hours with a stop for lunch.",
+                            "said": null,
+                            "heard": "That's lovely to hear. We have two rides on Saturdays, a short one along the river, which takes about two hours, and the longer coastal ride, which is closer to five hours with a stop for lunch.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17.3
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "rex",
+                            "text": "I think the coastal one. Is lunch included in the price?",
+                            "said": null,
+                            "heard": "I think the coastal one. Is lunch included in the price?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17.3
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "eve",
+                            "text": "It is, yes. The coastal ride is £45.50 per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "said": "It is, yes. The coastal ride is forty-five pounds fifty per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "heard": "It is, yes. The coastal ride is £45.50 per person and that covers the bike, a helmet, and lunch at a café in the old fishing village. Can I take your name?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 15.8
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "rex",
+                            "text": "Sure. It's Daniel Fairbrook. That's F-A-I-R-B-R-O-O-K.",
+                            "said": "Sure. It's Daniel Fairbrook. That's F, A, I, R, B, R, O, O, K.",
+                            "heard": "Sure, it's Daniel Fairbrook, that's F-A-I-R-B-R-O-O-K.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 10.7
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "eve",
+                            "text": "Thank you, Mr Fairbrook. And a contact number?",
+                            "said": null,
+                            "heard": "Thank you, Mr Fairbrooke. And a contact number?",
+                            "wer": 0.125,
+                            "wordErrors": 1,
+                            "charsPerSecond": 15.9
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "rex",
+                            "text": "My mobile is 07700 900 418.",
+                            "said": "My mobile is oh seven seven oh oh, nine oh oh, four one eight.",
+                            "heard": "My mobile is 07700 900418.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 12.8
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "eve",
+                            "text": "Lovely. Now, we meet outside the station at half past eight, so please don't be late, because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead.",
+                            "said": null,
+                            "heard": "Lovely. Now, we meet outside the station at half past eight, so please don't be late because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17.1
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "rex",
+                            "text": "Great. Should I bring anything?",
+                            "said": null,
+                            "heard": "Great. Should I bring anything?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 15.8
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "eve",
+                            "text": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July.",
+                            "said": null,
+                            "heard": "Just a water bottle and a light jacket; the wind on the cliffs can be surprisingly cold, even in July.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 16.7
+                        }
+                    ]
+                },
+                "lecture": {
+                    "file": "audio/xai-british-lecture.mp3",
+                    "durationMs": 67331,
+                    "keysHeard": {
+                        "lamplighters": true,
+                        "nineteenth century": true
+                    },
+                    "maxWer": 0.041,
+                    "turns": [
+                        {
+                            "speaker": "lecturer",
+                            "voice": "leo",
+                            "text": "Today I want to look at something most of us never notice: the street light. Before the nineteenth century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them.",
+                            "said": null,
+                            "heard": "Today I want to look at something most of us never notice: the streetlight. Before the nineteenth century city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them.",
+                            "wer": 0.041,
+                            "wordErrors": 2,
+                            "charsPerSecond": 15.9
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "leo",
+                            "text": "The arrival of gas lighting changed that completely. From the eighteen-twenties onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "said": null,
+                            "heard": "The arrival of gas lighting changed that completely. From the 1820s onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "wer": 0.029,
+                            "wordErrors": 2,
+                            "charsPerSecond": 17.6
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "leo",
+                            "text": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story: the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "said": null,
+                            "heard": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story, the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 16.7
+                        }
+                    ]
+                }
+            },
+            "key": "xai-british",
+            "provider": "xai",
+            "accent": "british",
+            "voices": {
+                "staff": "eve",
+                "caller": "rex",
+                "lecturer": "leo"
+            },
+            "note": "xAI documents a British accent only for the male voices Leo and Rex; the female voice Eve has no stated accent",
+            "costUsd": 0.04858
+        },
+        {
+            "samples": {
+                "dialogue": {
+                    "file": "audio/xai-north-american-dialogue.mp3",
+                    "durationMs": 75385,
+                    "keysHeard": {
+                        "Fairbrook": true,
+                        "45.50": true,
+                        "07700 900 418": true
+                    },
+                    "maxWer": 0.1,
+                    "turns": [
+                        {
+                            "speaker": "staff",
+                            "voice": "ara",
+                            "text": "Good morning, Harbour Bike Tours. How can I help you?",
+                            "said": null,
+                            "heard": "Good morning Harbor Bike Tours, how can I help you?",
+                            "wer": 0.1,
+                            "wordErrors": 1,
+                            "charsPerSecond": 16.4
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "sal",
+                            "text": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "said": null,
+                            "heard": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 20.7
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "ara",
+                            "text": "That's lovely to hear. We have two rides on Saturdays: a short one along the river, which takes about two hours, and the longer coastal ride, which is closer to five hours with a stop for lunch.",
+                            "said": null,
+                            "heard": "That's lovely to hear. We have two rides on Saturdays: a short one along the river, which takes about two hours, and the longer coastal ride, which is closer to five hours, with a stop for lunch.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17.8
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "sal",
+                            "text": "I think the coastal one. Is lunch included in the price?",
+                            "said": null,
+                            "heard": "I think the coastal one. Is lunch included in the price?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 15.8
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "ara",
+                            "text": "It is, yes. The coastal ride is £45.50 per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "said": "It is, yes. The coastal ride is forty-five pounds fifty per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?",
+                            "heard": "It is, yes. The coastal ride is £45.50 per person, and that covers the bike, a helmet, and lunch at a café in the old fishing village. Can I take your name?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 16.3
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "sal",
+                            "text": "Sure. It's Daniel Fairbrook. That's F-A-I-R-B-R-O-O-K.",
+                            "said": "Sure. It's Daniel Fairbrook. That's F, A, I, R, B, R, O, O, K.",
+                            "heard": "Sure, it's Daniel Fairbrook, that's F-A-I-R-B-R-O-O-K.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 10.7
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "ara",
+                            "text": "Thank you, Mr Fairbrook. And a contact number?",
+                            "said": null,
+                            "heard": "Thank you, Mr. Fairbrook. And a contact number?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 15.9
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "sal",
+                            "text": "My mobile is 07700 900 418.",
+                            "said": "My mobile is zero seven seven zero zero, nine zero zero, four one eight.",
+                            "heard": "My mobile is 07700 900418.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 12.4
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "ara",
+                            "text": "Lovely. Now, we meet outside the station at half past eight, so please don't be late, because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead.",
+                            "said": null,
+                            "heard": "Lovely. Now we meet outside the station at half past eight, so please don't be late, because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 18.4
+                        },
+                        {
+                            "speaker": "caller",
+                            "voice": "sal",
+                            "text": "Great. Should I bring anything?",
+                            "said": null,
+                            "heard": "Great! Should I bring anything?",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 15.8
+                        },
+                        {
+                            "speaker": "staff",
+                            "voice": "ara",
+                            "text": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July.",
+                            "said": null,
+                            "heard": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 15.9
+                        }
+                    ]
+                },
+                "lecture": {
+                    "file": "audio/xai-north-american-lecture.mp3",
+                    "durationMs": 64117,
+                    "keysHeard": {
+                        "lamplighters": true,
+                        "nineteenth century": true
+                    },
+                    "maxWer": 0.029,
+                    "turns": [
+                        {
+                            "speaker": "lecturer",
+                            "voice": "eve",
+                            "text": "Today I want to look at something most of us never notice: the street light. Before the nineteenth century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them.",
+                            "said": null,
+                            "heard": "Today I want to look at something most of us never notice: the street light. Before the nineteenth century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 16.8
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "eve",
+                            "text": "The arrival of gas lighting changed that completely. From the eighteen-twenties onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "said": null,
+                            "heard": "The arrival of gas lighting changed that completely. From the 1820s onwards, gas companies laid pipes under the main streets of large cities and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run.",
+                            "wer": 0.029,
+                            "wordErrors": 2,
+                            "charsPerSecond": 18.3
+                        },
+                        {
+                            "speaker": "lecturer",
+                            "voice": "eve",
+                            "text": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story: the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "said": null,
+                            "heard": "What interests historians is not only the technology, but the effect on daily life: shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story, the switch to LED lights, and the debate about whether our cities are now too bright.",
+                            "wer": 0,
+                            "wordErrors": 0,
+                            "charsPerSecond": 17.7
+                        }
+                    ]
+                }
+            },
+            "key": "xai-north-american",
+            "provider": "xai",
+            "accent": "north_american",
+            "voices": {
+                "staff": "ara",
+                "caller": "sal",
+                "lecturer": "eve"
+            },
+            "note": "accents of Ara, Sal and Eve are not documented; chosen as the likely American ones",
+            "costUsd": 0.04823
+        }
+    ],
+    "spentUsd": 0.34449
+}

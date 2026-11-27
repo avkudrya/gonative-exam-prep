@@ -1,0 +1,1189 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-8|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.265756,
+            "provider": "anthropic",
+            "outputTokens": 12261
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.01452,
+            "provider": "anthropic",
+            "outputTokens": 613
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.023585,
+            "provider": "openai",
+            "outputTokens": 1139
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.020398,
+            "provider": "xai",
+            "outputTokens": 2140
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.084736,
+            "provider": "anthropic",
+            "outputTokens": 3894
+        }
+    ],
+    "draft": {
+        "title": "Open to All: The Long Story of the Public Library",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Paying to read before free libraries existed"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "A private fortune spreads the library idea"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "How readers' choices disappointed reformers"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Collections guarded for the privileged"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Predictions that the internet would close libraries"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Public money and the argument for free reading"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Booksellers turn reading into a business"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "New purposes in the online age"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Serving communities beyond lending books"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "A library, in other words, was something to be guarded, not shared.",
+                        "explanation": "Paragraph A shows that early great libraries served rulers, priests, scholars and aristocrats, not ordinary people. Its whole point is that collections were protected for a privileged few."
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "yet they all depended on the ability to pay",
+                        "explanation": "Paragraph B describes subscription libraries, circulating libraries and mechanics' institutes, which all required payment. Booksellers' circulating libraries are only one example, so the heading about booksellers is too narrow."
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "paid for by the community as a whole, took hold in the middle of the nineteenth century",
+                        "explanation": "Paragraph C explains the reformers' arguments for free libraries and the law that let towns use a local tax to fund them. Readers preferring novels is only one detail, and Okoye says this popularity actually helped the libraries."
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "What turned scattered experiments into a national and then international network was private wealth.",
+                        "explanation": "Paragraph D is about a rich industrialist who paid for over 2,500 library buildings, spreading libraries widely. The open shelves and children's rooms are details of the new buildings."
+                    },
+                    {
+                        "answer": [
+                            "ix"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "During the twentieth century the library's role widened well beyond lending.",
+                        "explanation": "Paragraph E lists classes for immigrants, lectures, study space, mobile libraries and shelter for people out of work, all showing libraries serving communities in ways other than lending."
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "The prediction has not come true, though the library has had to reinvent itself once again.",
+                        "explanation": "Paragraph F explains how libraries found new roles in the internet era, such as free computers and help with online forms. The prediction that libraries would close is mentioned only to say it did not come true."
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "subscription"
+                        ],
+                        "prompt": "Before free libraries existed, groups of readers formed ______ libraries, sharing the cost of books among themselves.",
+                        "options": [],
+                        "evidence": "groups of merchants, clerks and craftsmen formed subscription libraries, pooling their money to buy books",
+                        "explanation": "Paragraph B says groups of merchants, clerks and craftsmen pooled their money in subscription libraries. Circulating libraries were run by booksellers as businesses, not formed by groups of readers."
+                    },
+                    {
+                        "answer": [
+                            "public house"
+                        ],
+                        "prompt": "In the nineteenth century, reformers claimed that reading would make workers more capable and keep men out of the ______.",
+                        "options": [],
+                        "evidence": "produce more capable workers and keep working men out of the public house",
+                        "explanation": "Paragraph C lists the reformers' arguments, including keeping working men out of the public house."
+                    },
+                    {
+                        "answer": [
+                            "local tax"
+                        ],
+                        "prompt": "A British law of 1850 allowed councils to pay for libraries with a ______, although many towns were slow to act.",
+                        "options": [],
+                        "evidence": "permitted town councils to fund a library through a local tax",
+                        "explanation": "Paragraph C says the 1850 law let town councils fund a library through a local tax, though many towns delayed."
+                    },
+                    {
+                        "answer": [
+                            "borrowing registers"
+                        ],
+                        "prompt": "A historian who studied the ______ of one town library found that most loans were novels.",
+                        "options": [],
+                        "evidence": "examined the borrowing registers of one northern English town library from the 1870s",
+                        "explanation": "Paragraph C says Philippa Okoye examined the borrowing registers and found about three-quarters of loans were novels."
+                    },
+                    {
+                        "answer": [
+                            "annual funding"
+                        ],
+                        "prompt": "Later, a wealthy donor paid for new buildings, provided that towns supplied the land and promised ______ to pay for books and staff.",
+                        "options": [],
+                        "evidence": "the town had to provide the land and commit to annual funding for books and staff",
+                        "explanation": "Paragraph D explains the donor's condition: towns had to give the land and commit to annual funding for books and staff."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does the writer say about the great libraries of the ancient and medieval world?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They were intended for a small and privileged group."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They lent their manuscripts to respectable visitors."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They became far more open once printing had begun."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They chained their books to keep out ordinary readers."
+                            }
+                        ],
+                        "evidence": "were built to serve rulers, priests and scholars, and ordinary people had no reason to expect entry",
+                        "explanation": "Paragraph A says these libraries served rulers, priests and scholars only. Books were chained to prevent theft, not to keep readers out, and even after printing the great libraries stayed private."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to Philippa Okoye, the large number of novels borrowed from the town library",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "helped councils defend the cost of the service."
+                            },
+                            {
+                                "id": "B",
+                                "text": "persuaded councils to reduce the local tax."
+                            },
+                            {
+                                "id": "C",
+                                "text": "showed the founders had misjudged their workers."
+                            },
+                            {
+                                "id": "D",
+                                "text": "resulted from a shortage of history and science books."
+                            }
+                        ],
+                        "evidence": "heavy use made it far easier for councils to justify the tax",
+                        "explanation": "In paragraph C, Okoye argues that the popularity of novels saved the library because heavy use made the tax easier to justify. Nothing is said about reducing the tax or a lack of other books."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why did the steel industrialist require towns to commit to annual funding?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "to make sure the libraries kept running after his gift was spent"
+                            },
+                            {
+                                "id": "B",
+                                "text": "to persuade towns to add children's rooms and open shelves"
+                            },
+                            {
+                                "id": "C",
+                                "text": "to recover part of the money he had paid for the buildings"
+                            },
+                            {
+                                "id": "D",
+                                "text": "to allow towns to buy more land for future library buildings"
+                            }
+                        ],
+                        "evidence": "so that the building would not become an empty monument once the donation had been spent",
+                        "explanation": "Paragraph D says the condition existed so the building would not become an empty monument once the money was used up. Open shelves and children's rooms are mentioned, but not as the reason for the condition."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What did Jun Takeda conclude from his survey of library visitors?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Libraries matter most as places open to all at no cost."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Libraries should lend more e-books to attract new visitors."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Most visitors now prefer to borrow material from home."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Libraries' collections are still their greatest attraction."
+                            }
+                        ],
+                        "evidence": "one of the last indoor spaces anyone can enter without being expected to spend money",
+                        "explanation": "Paragraph F says Takeda believes the library's most valuable asset is being a space anyone can enter without spending money. He says the collection is no longer the main asset, so the option about collections is the opposite of his view."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Philippa Okoye",
+                "role": "historian who studied the borrowing registers of a nineteenth-century English town library",
+                "gender": "female"
+            },
+            {
+                "name": "Jun Takeda",
+                "role": "sociologist who surveyed library visitors in four cities",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For most of recorded history, a large collection of books was a sign of power rather than a public service. The royal library at Nineveh, which held thousands of clay tablets, and the famous library of Alexandria were built to serve rulers, priests and scholars, and ordinary people had no reason to expect entry. In medieval Europe, the most important collections belonged to monasteries and universities, where valuable manuscripts were sometimes chained to desks to prevent theft. Even after the printing press made books far cheaper from the fifteenth century onwards, the great libraries of princes and aristocrats remained private spaces, opened only as a favour to visitors judged respectable. A library, in other words, was something to be guarded, not shared.",
+                "label": "A"
+            },
+            {
+                "text": "The first steps towards wider access came not from governments but from readers themselves. In eighteenth-century Britain and its American colonies, groups of merchants, clerks and craftsmen formed subscription libraries, pooling their money to buy books that none of them could have afforded alone. Members paid an entrance fee and an annual charge, and in return could borrow from a shared stock. At the same time, booksellers ran commercial circulating libraries, renting out popular titles, especially novels, by the week. Later, mechanics' institutes offered lectures and reading rooms to skilled workers. These arrangements greatly widened the reading public, yet they all depended on the ability to pay, and the poorest households, who had the least access to books at home, were largely left out.",
+                "label": "B"
+            },
+            {
+                "text": "The idea that a library should be free to every resident, and paid for by the community as a whole, took hold in the middle of the nineteenth century. Reformers argued that access to good books would encourage self-improvement, produce more capable workers and keep working men out of the public house. In 1850 a British law permitted town councils to fund a library through a local tax, although the sum allowed was tiny and many towns delayed for years before adopting the measure. Across the Atlantic, Boston opened a large free municipal library in 1854, and other American cities soon followed. The reformers' hopes were not always met. When the historian Philippa Okoye examined the borrowing registers of one northern English town library from the 1870s, she found that around three-quarters of loans were novels rather than the works of history and science the founders had in mind. Okoye argues, however, that this popularity was the library's salvation: heavy use made it far easier for councils to justify the tax.",
+                "label": "C"
+            },
+            {
+                "text": "What turned scattered experiments into a national and then international network was private wealth. Between the 1880s and the 1920s, a Scottish-born steel industrialist paid for more than 2,500 library buildings, mainly in the English-speaking world. His gifts came with a condition: the town had to provide the land and commit to annual funding for books and staff, so that the building would not become an empty monument once the donation had been spent. The new buildings also changed how libraries were used. Earlier libraries had generally kept books behind counters, so that readers had to request a title from an assistant; many of the new ones introduced open shelves, allowing visitors to browse freely, and set aside separate rooms for children.",
+                "label": "D"
+            },
+            {
+                "text": "During the twentieth century the library's role widened well beyond lending. Branches ran classes in reading and languages for new immigrants, hosted public lectures and offered quiet space to students who had none at home. Mobile libraries, vans fitted with shelves, carried books to villages and farms too remote to support a branch of their own. In wartime and during economic depressions, libraries recorded rising numbers of visitors, as people out of work came in search of information, warmth or simply somewhere to spend the day without paying.",
+                "label": "E"
+            },
+            {
+                "text": "The arrival of the internet led many commentators to predict that libraries would soon become obsolete: if information could be found online, why visit a building full of paper? The prediction has not come true, though the library has had to reinvent itself once again. Today a typical branch lends e-books as well as printed ones, offers free computers and internet connections, helps people complete official forms that are now available only online, and may even provide 3D printers and recording equipment. A survey of visitors in four cities by the sociologist Jun Takeda found that fewer than half of them had borrowed anything on the day they were questioned. The survey led him to argue that the library's most valuable asset is no longer its collection but its status as one of the last indoor spaces anyone can enter without being expected to spend money. Seen this way, the modern library is less a departure from its nineteenth-century origins than a return to them: the promise of access for all.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "A library, in other words, was something to be guarded, not shared.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "they all depended on the ability to pay, and the poorest households",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a library should be free to every resident, and paid for by the community as a whole",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "What turned scattered experiments into a national and then international network was private wealth.",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the library's role widened well beyond lending.",
+                "answer": [
+                    "ix"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the library has had to reinvent itself once again",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "formed subscription libraries, pooling their money to buy books",
+                "answer": [
+                    "subscription"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "keep working men out of the public house",
+                "answer": [
+                    "public house"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "permitted town councils to fund a library through a local tax",
+                "answer": [
+                    "local tax"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "examined the borrowing registers of one northern English town library",
+                "answer": [
+                    "borrowing registers"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "commit to annual funding for books and staff",
+                "answer": [
+                    "annual funding"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "were built to serve rulers, priests and scholars, and ordinary people had no reason to expect entry",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "heavy use made it far easier for councils to justify the tax",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "so that the building would not become an empty monument once the donation had been spent",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "its status as one of the last indoor spaces anyone can enter without being expected to spend money",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "ordinary people had no reason to expect entry... opened only as a favour to visitors judged respectable. A library, in other words, was something to be guarded, not shared.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "groups of merchants, clerks and craftsmen formed subscription libraries... Members paid an entrance fee and an annual charge",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The idea that a library should be free to every resident, and paid for by the community as a whole... a British law permitted town councils to fund a library through a local tax",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "What turned scattered experiments into a national and then international network was private wealth.",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "During the twentieth century the library's role widened well beyond lending.",
+                "answer": [
+                    "ix"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "The prediction has not come true, though the library has had to reinvent itself once again. Today a typical branch lends e-books as well as printed ones",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "formed subscription libraries",
+                "answer": [
+                    "subscription"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "keep working men out of the public house",
+                "answer": [
+                    "public house"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "fund a library through a local tax",
+                "answer": [
+                    "local tax"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "examined the borrowing registers",
+                "answer": [
+                    "borrowing registers"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "commit to annual funding for books and staff",
+                "answer": [
+                    "annual funding"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "built to serve rulers, priests and scholars, and ordinary people had no reason to expect entry",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "this popularity was the library's salvation: heavy use made it far easier for councils to justify the tax",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "so that the building would not become an empty monument once the donation had been spent",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the library's most valuable asset is no longer its collection but its status as one of the last indoor spaces anyone can enter without being expected to spend money",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "A library, in other words, was something to be guarded, not shared.",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "groups of merchants, clerks and craftsmen formed subscription libraries, pooling their money to buy books that none of them could have afforded alone.",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "The idea that a library should be free to every resident, and paid for by the community as a whole, took hold in the middle of the nineteenth century.",
+            "answer": [
+                "vi"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "a Scottish-born steel industrialist paid for more than 2,500 library buildings, mainly in the English-speaking world.",
+            "answer": [
+                "ii"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "During the twentieth century the library's role widened well beyond lending.",
+            "answer": [
+                "ix"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "the library has had to reinvent itself once again. Today a typical branch lends e-books as well as printed ones",
+            "answer": [
+                "viii"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "formed subscription libraries, pooling their money to buy books",
+            "answer": [
+                "subscription"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "keep working men out of the public house",
+            "answer": [
+                "public house"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "fund a library through a local tax",
+            "answer": [
+                "local tax"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "examined the borrowing registers of one northern English town library",
+            "answer": [
+                "borrowing registers"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "built to serve rulers, priests and scholars, and ordinary people had no reason to expect entry",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "heavy use made it far easier for councils to justify the tax",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "so that the building would not become an empty monument once the donation had been spent",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Open to All: The Long Story of the Public Library\n\nA. For most of recorded history, a large collection of books was a sign of power rather than a public service. The royal library at Nineveh, which held thousands of clay tablets, and the famous library of Alexandria were built to serve rulers, priests and scholars, and ordinary people had no reason to expect entry. In medieval Europe, the most important collections belonged to monasteries and universities, where valuable manuscripts were sometimes chained to desks to prevent theft. Even after the printing press made books far cheaper from the fifteenth century onwards, the great libraries of princes and aristocrats remained private spaces, opened only as a favour to visitors judged respectable. A library, in other words, was something to be guarded, not shared.\n\nB. The first steps towards wider access came not from governments but from readers themselves. In eighteenth-century Britain and its American colonies, groups of merchants, clerks and craftsmen formed subscription libraries, pooling their money to buy books that none of them could have afforded alone. Members paid an entrance fee and an annual charge, and in return could borrow from a shared stock. At the same time, booksellers ran commercial circulating libraries, renting out popular titles, especially novels, by the week. Later, mechanics' institutes offered lectures and reading rooms to skilled workers. These arrangements greatly widened the reading public, yet they all depended on the ability to pay, and the poorest households, who had the least access to books at home, were largely left out.\n\nC. The idea that a library should be free to every resident, and paid for by the community as a whole, took hold in the middle of the nineteenth century. Reformers argued that access to good books would encourage self-improvement, produce more capable workers and keep working men out of the public house. In 1850 a British law permitted town councils to fund a library through a local tax, although the sum allowed was tiny and many towns delayed for years before adopting the measure. Across the Atlantic, Boston opened a large free municipal library in 1854, and other American cities soon followed. The reformers' hopes were not always met. When the historian Philippa Okoye examined the borrowing registers of one northern English town library from the 1870s, she found that around three-quarters of loans were novels rather than the works of history and science the founders had in mind. Okoye argues, however, that this popularity was the library's salvation: heavy use made it far easier for councils to justify the tax.\n\nD. What turned scattered experiments into a national and then international network was private wealth. Between the 1880s and the 1920s, a Scottish-born steel industrialist paid for more than 2,500 library buildings, mainly in the English-speaking world. His gifts came with a condition: the town had to provide the land and commit to annual funding for books and staff, so that the building would not become an empty monument once the donation had been spent. The new buildings also changed how libraries were used. Earlier libraries had generally kept books behind counters, so that readers had to request a title from an assistant; many of the new ones introduced open shelves, allowing visitors to browse freely, and set aside separate rooms for children.\n\nE. During the twentieth century the library's role widened well beyond lending. Branches ran classes in reading and languages for new immigrants, hosted public lectures and offered quiet space to students who had none at home. Mobile libraries, vans fitted with shelves, carried books to villages and farms too remote to support a branch of their own. In wartime and during economic depressions, libraries recorded rising numbers of visitors, as people out of work came in search of information, warmth or simply somewhere to spend the day without paying.\n\nF. The arrival of the internet led many commentators to predict that libraries would soon become obsolete: if information could be found online, why visit a building full of paper? The prediction has not come true, though the library has had to reinvent itself once again. Today a typical branch lends e-books as well as printed ones, offers free computers and internet connections, helps people complete official forms that are now available only online, and may even provide 3D printers and recording equipment. A survey of visitors in four cities by the sociologist Jun Takeda found that fewer than half of them had borrowed anything on the day they were questioned. The survey led him to argue that the library's most valuable asset is no longer its collection but its status as one of the last indoor spaces anyone can enter without being expected to spend money. Seen this way, the modern library is less a departure from its nineteenth-century origins than a return to them: the promise of access for all.",
+        "title": "Open to All: The Long Story of the Public Library",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Paying to read before free libraries existed"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "A private fortune spreads the library idea"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "How readers' choices disappointed reformers"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Collections guarded for the privileged"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Predictions that the internet would close libraries"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Public money and the argument for free reading"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Booksellers turn reading into a business"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "New purposes in the online age"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Serving communities beyond lending books"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "A library, in other words, was something to be guarded, not shared.",
+                        "explanation": {
+                            "en": "Paragraph A shows that early great libraries served rulers, priests, scholars and aristocrats, not ordinary people. Its whole point is that collections were protected for a privileged few.",
+                            "ru": "Абзац A показывает, что первые великие библиотеки служили правителям, жрецам, учёным и аристократам, а не простым людям. Главная мысль абзаца в том, что коллекции берегли для немногих избранных.",
+                            "uk": "Абзац A показує, що перші великі бібліотеки служили правителям, жерцям, ученим і аристократам, а не простим людям. Головна думка абзацу полягає в тому, що колекції оберігали для небагатьох привілейованих."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "yet they all depended on the ability to pay",
+                        "explanation": {
+                            "en": "Paragraph B describes subscription libraries, circulating libraries and mechanics' institutes, which all required payment. Booksellers' circulating libraries are only one example, so the heading about booksellers is too narrow.",
+                            "ru": "Абзац B описывает подписные библиотеки, платные библиотеки с выдачей книг и институты механиков, и за все из них нужно было платить. Библиотеки книготорговцев — лишь один из примеров, поэтому заголовок о книготорговцах слишком узкий.",
+                            "uk": "Абзац B описує бібліотеки за передплатою, платні бібліотеки з видачею книжок та інститути механіків, і за всі з них треба було платити. Бібліотеки книгарів — лише один із прикладів, тому заголовок про книгарів надто вузький."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "paid for by the community as a whole, took hold in the middle of the nineteenth century",
+                        "explanation": {
+                            "en": "Paragraph C explains the reformers' arguments for free libraries and the law that let towns use a local tax to fund them. Readers preferring novels is only one detail, and Okoye says this popularity actually helped the libraries.",
+                            "ru": "Абзац C объясняет доводы реформаторов в пользу бесплатных библиотек и закон, который позволил городам финансировать их за счёт местного налога. То, что читатели предпочитали романы, — лишь одна деталь, и Okoye говорит, что эта популярность на самом деле помогла библиотекам.",
+                            "uk": "Абзац C пояснює аргументи реформаторів на користь безкоштовних бібліотек і закон, який дозволив містам фінансувати їх за рахунок місцевого податку. Те, що читачі віддавали перевагу романам, — лише одна деталь, і Okoye каже, що ця популярність насправді допомогла бібліотекам."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "What turned scattered experiments into a national and then international network was private wealth.",
+                        "explanation": {
+                            "en": "Paragraph D is about a rich industrialist who paid for over 2,500 library buildings, spreading libraries widely. The open shelves and children's rooms are details of the new buildings.",
+                            "ru": "Абзац D рассказывает о богатом промышленнике, который оплатил более 2 500 библиотечных зданий и тем самым широко распространил библиотеки. Открытые полки и детские залы — лишь детали новых зданий.",
+                            "uk": "Абзац D розповідає про багатого промисловця, який оплатив понад 2 500 бібліотечних будівель і таким чином широко поширив бібліотеки. Відкриті полиці та дитячі зали — лише деталі нових будівель."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ix"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "During the twentieth century the library's role widened well beyond lending.",
+                        "explanation": {
+                            "en": "Paragraph E lists classes for immigrants, lectures, study space, mobile libraries and shelter for people out of work, all showing libraries serving communities in ways other than lending.",
+                            "ru": "Абзац E перечисляет занятия для иммигрантов, лекции, места для учёбы, передвижные библиотеки и приют для безработных. Всё это показывает, что библиотеки служили обществу не только выдачей книг.",
+                            "uk": "Абзац E перелічує заняття для іммігрантів, лекції, місця для навчання, пересувні бібліотеки та прихисток для безробітних. Усе це показує, що бібліотеки служили громаді не лише видачею книжок."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "The prediction has not come true, though the library has had to reinvent itself once again.",
+                        "explanation": {
+                            "en": "Paragraph F explains how libraries found new roles in the internet era, such as free computers and help with online forms. The prediction that libraries would close is mentioned only to say it did not come true.",
+                            "ru": "Абзац F объясняет, как библиотеки нашли новые роли в эпоху интернета, например бесплатные компьютеры и помощь с онлайн-формами. Прогноз о закрытии библиотек упоминается только для того, чтобы сказать, что он не сбылся.",
+                            "uk": "Абзац F пояснює, як бібліотеки знайшли нові ролі в епоху інтернету, наприклад безкоштовні комп'ютери та допомогу з онлайн-формами. Прогноз про закриття бібліотек згадується лише для того, щоб сказати, що він не справдився."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "subscription"
+                        ],
+                        "prompt": "Before free libraries existed, groups of readers formed ______ libraries, sharing the cost of books among themselves.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "groups of merchants, clerks and craftsmen formed subscription libraries, pooling their money to buy books",
+                        "explanation": {
+                            "en": "Paragraph B says groups of merchants, clerks and craftsmen pooled their money in subscription libraries. Circulating libraries were run by booksellers as businesses, not formed by groups of readers.",
+                            "ru": "В абзаце B сказано, что группы торговцев, конторских служащих и ремесленников складывались деньгами, создавая подписные библиотеки. Платные библиотеки с выдачей книг держали книготорговцы как бизнес, их не создавали группы читателей.",
+                            "uk": "В абзаці B сказано, що групи торговців, конторських службовців і ремісників складалися грошима, створюючи бібліотеки за передплатою. Платні бібліотеки з видачею книжок тримали книгарі як бізнес, їх не створювали групи читачів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "public house"
+                        ],
+                        "prompt": "In the nineteenth century, reformers claimed that reading would make workers more capable and keep men out of the ______.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "produce more capable workers and keep working men out of the public house",
+                        "explanation": {
+                            "en": "Paragraph C lists the reformers' arguments, including keeping working men out of the public house.",
+                            "ru": "Абзац C перечисляет доводы реформаторов, в том числе желание удержать рабочих от походов в пивную.",
+                            "uk": "Абзац C перелічує аргументи реформаторів, зокрема бажання втримати робітників від походів до пивниці."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "local tax"
+                        ],
+                        "prompt": "A British law of 1850 allowed councils to pay for libraries with a ______, although many towns were slow to act.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "permitted town councils to fund a library through a local tax",
+                        "explanation": {
+                            "en": "Paragraph C says the 1850 law let town councils fund a library through a local tax, though many towns delayed.",
+                            "ru": "В абзаце C сказано, что закон 1850 года позволил городским советам финансировать библиотеку за счёт местного налога, хотя многие города не спешили этим воспользоваться.",
+                            "uk": "В абзаці C сказано, що закон 1850 року дозволив міським радам фінансувати бібліотеку за рахунок місцевого податку, хоча багато міст не поспішали цим скористатися."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "borrowing registers"
+                        ],
+                        "prompt": "A historian who studied the ______ of one town library found that most loans were novels.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "examined the borrowing registers of one northern English town library from the 1870s",
+                        "explanation": {
+                            "en": "Paragraph C says Philippa Okoye examined the borrowing registers and found about three-quarters of loans were novels.",
+                            "ru": "В абзаце C сказано, что Philippa Okoye изучила журналы выдачи книг и выяснила, что около трёх четвертей выданных книг были романами.",
+                            "uk": "В абзаці C сказано, що Philippa Okoye вивчила журнали видачі книжок і з'ясувала, що близько трьох чвертей виданих книжок були романами."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They lent their manuscripts to respectable visitors."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They became far more open once printing had begun."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They were intended for a small and privileged group."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They chained their books to keep out ordinary readers."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the writer say about the great libraries of the ancient and medieval world?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "were built to serve rulers, priests and scholars, and ordinary people had no reason to expect entry",
+                        "explanation": {
+                            "en": "Paragraph A says these libraries served rulers, priests and scholars only. Books were chained to prevent theft, not to keep readers out, and even after printing the great libraries stayed private.",
+                            "ru": "Абзац A говорит, что эти библиотеки служили только правителям, жрецам и учёным. Книги приковывали цепями, чтобы их не украли, а не чтобы не пускать читателей, и даже после появления книгопечатания великие библиотеки оставались частными.",
+                            "uk": "Абзац A каже, що ці бібліотеки служили лише правителям, жерцям і ученим. Книжки приковували ланцюгами, щоб їх не вкрали, а не щоб не пускати читачів, і навіть після появи друкарства великі бібліотеки залишалися приватними."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "resulted from a shortage of history and science books."
+                    },
+                    {
+                        "id": "B",
+                        "text": "showed the founders had misjudged their workers."
+                    },
+                    {
+                        "id": "C",
+                        "text": "persuaded councils to reduce the local tax."
+                    },
+                    {
+                        "id": "D",
+                        "text": "helped councils defend the cost of the service."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "According to Philippa Okoye, the large number of novels borrowed from the town library",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "heavy use made it far easier for councils to justify the tax",
+                        "explanation": {
+                            "en": "In paragraph C, Okoye argues that the popularity of novels saved the library because heavy use made the tax easier to justify. Nothing is said about reducing the tax or a lack of other books.",
+                            "ru": "В абзаце C Okoye утверждает, что популярность романов спасла библиотеку: раз ею активно пользовались, налог было проще оправдать. О снижении налога или нехватке других книг ничего не сказано.",
+                            "uk": "В абзаці C Okoye стверджує, що популярність романів врятувала бібліотеку: оскільки нею активно користувалися, податок було легше виправдати. Про зниження податку чи брак інших книжок нічого не сказано."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "to make sure the libraries kept running after his gift was spent"
+                    },
+                    {
+                        "id": "B",
+                        "text": "to allow towns to buy more land for future library buildings"
+                    },
+                    {
+                        "id": "C",
+                        "text": "to persuade towns to add children's rooms and open shelves"
+                    },
+                    {
+                        "id": "D",
+                        "text": "to recover part of the money he had paid for the buildings"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why did the steel industrialist require towns to commit to annual funding?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "so that the building would not become an empty monument once the donation had been spent",
+                        "explanation": {
+                            "en": "Paragraph D says the condition existed so the building would not become an empty monument once the money was used up. Open shelves and children's rooms are mentioned, but not as the reason for the condition.",
+                            "ru": "В абзаце D сказано, что это условие существовало, чтобы здание не превратилось в пустой памятник, когда деньги закончатся. Открытые полки и детские залы упоминаются, но не как причина этого условия.",
+                            "uk": "В абзаці D сказано, що ця умова існувала для того, щоб будівля не перетворилася на порожній пам'ятник, коли гроші закінчаться. Відкриті полиці та дитячі зали згадуються, але не як причина цієї умови."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

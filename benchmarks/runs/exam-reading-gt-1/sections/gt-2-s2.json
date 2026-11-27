@@ -1,0 +1,1028 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-2|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.260284,
+            "provider": "anthropic",
+            "outputTokens": 12235
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.01264,
+            "provider": "anthropic",
+            "outputTokens": 656
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.0161,
+            "provider": "openai",
+            "outputTokens": 764
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.012982,
+            "provider": "xai",
+            "outputTokens": 1116
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.068328,
+            "provider": "anthropic",
+            "outputTokens": 3064
+        }
+    ],
+    "draft": {
+        "title": "Lifting and Screen Work: A Guide for Staff",
+        "blocks": [
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "corner"
+                        ],
+                        "prompt": "Before picking anything up, staff should check how heavy it is by tilting one ______.",
+                        "options": [],
+                        "evidence": "test the weight by tipping one corner",
+                        "explanation": "Paragraph B tells staff to test the weight by tipping one corner. 'Tilting' in the summary means the same as 'tipping'."
+                    },
+                    {
+                        "answer": [
+                            "waist"
+                        ],
+                        "prompt": "While an item is being carried, the load should be held near the ______.",
+                        "options": [],
+                        "evidence": "Keep the load close to your waist",
+                        "explanation": "Paragraph B says to keep the load close to your waist. 'Held near' restates 'close to'."
+                    },
+                    {
+                        "answer": [
+                            "feet"
+                        ],
+                        "prompt": "To change direction while holding something, staff should use their ______ rather than twist their body.",
+                        "options": [],
+                        "evidence": "turn by moving your feet instead",
+                        "explanation": "Paragraph B warns against twisting and says to turn by moving your feet instead. 'Knees' is wrong because the knees are for bending, not for turning."
+                    },
+                    {
+                        "answer": [
+                            "post room"
+                        ],
+                        "prompt": "Trolleys that staff can book are kept next to the ______ on each floor.",
+                        "options": [],
+                        "evidence": "two trolleys are kept beside the post room on every floor",
+                        "explanation": "In Paragraph B the facilities manager says the trolleys are kept beside the post room on every floor. 'Next to' means 'beside'."
+                    },
+                    {
+                        "answer": [
+                            "incident book"
+                        ],
+                        "prompt": "Even a minor strain that seems to cause no harm should be noted in the ______ at reception.",
+                        "options": [],
+                        "evidence": "should be recorded in the incident book at reception",
+                        "explanation": "Paragraph C says any strain or near miss should be recorded in the incident book at reception, even if you feel fine afterwards."
+                    },
+                    {
+                        "answer": [
+                            "forearms"
+                        ],
+                        "prompt": "When typing, staff should keep their ______ more or less horizontal.",
+                        "options": [],
+                        "evidence": "your forearms should be roughly horizontal when you type",
+                        "explanation": "Paragraph D says your forearms should be roughly horizontal when you type. 'More or less' restates 'roughly'. The feet are also mentioned, but they should rest flat on the floor."
+                    },
+                    {
+                        "answer": [
+                            "stand"
+                        ],
+                        "prompt": "People who work on a laptop for over an hour daily can be given a separate keyboard and a ______.",
+                        "options": [],
+                        "evidence": "will supply a separate keyboard and a stand to anyone using a laptop",
+                        "explanation": "Paragraph D says the facilities team will supply a separate keyboard and a stand to anyone using a laptop for more than an hour a day."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Farida Rahimi"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Bruno Esposito"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Rafael Takahashi"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Akosua Brandt"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Ioana Delacroix"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "has changed the way some office supplies arrive",
+                        "options": [],
+                        "evidence": "He has also asked suppliers to deliver paper in smaller packs",
+                        "explanation": "Paragraph B says the facilities manager, Bruno Esposito, asked suppliers to deliver paper in smaller packs. Changing how paper is delivered is a change to how supplies arrive."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "says that some staff are unwilling to ask for help because of how it might make them look",
+                        "options": [],
+                        "evidence": "many employees worry that asking for assistance will make them look weak or slow",
+                        "explanation": "In Paragraph C, Rafael Takahashi says employees worry that asking for assistance will make them look weak or slow."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "explains that using a screen may bring an eye problem that was already there to a person's attention",
+                        "options": [],
+                        "evidence": "it can reveal an existing problem that a person had not noticed",
+                        "explanation": "In Paragraph F, the optometrist Ioana Delacroix says screen work does not cause permanent damage, but it can reveal an existing problem."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "accepts that a required form is often not taken seriously",
+                        "options": [],
+                        "evidence": "many people treat the form as a box-ticking exercise",
+                        "explanation": "Paragraph G says Farida Rahimi admits that many people treat the workstation assessment as a box-ticking exercise, which means they do not take it seriously."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "is in charge of a team that provides extra equipment for people who often use portable computers",
+                        "options": [],
+                        "evidence": "Bruno Esposito's team will supply a separate keyboard and a stand to anyone using a laptop",
+                        "explanation": "Paragraph D says Bruno Esposito's team will supply a keyboard and a stand to anyone who uses a laptop for more than an hour a day."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "warns that a result may have been affected by people knowing they were being watched",
+                        "options": [],
+                        "evidence": "the workers knew they were being observed, so the result should not be treated as final",
+                        "explanation": "In Paragraph E, Akosua Brandt says the workers in her study knew they were being observed, so the result should not be treated as final."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "believes that small incidents should be written down even if nobody seems to be hurt",
+                        "options": [],
+                        "evidence": "any strain or near miss should be recorded in the incident book at reception, even if you feel fine afterwards",
+                        "explanation": "Paragraph C reports Rafael Takahashi's view that strains and near misses should be recorded even if you feel fine. The incident book is at reception, but the advice comes from Takahashi."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "may visit an employee's desk after reading their answers",
+                        "options": [],
+                        "evidence": "reviewed by Farida Rahimi, who may arrange a desk visit if anything looks wrong",
+                        "explanation": "Paragraph G says Farida Rahimi reviews the assessment form and may arrange a desk visit if anything looks wrong. The optometrist also visits the office, but she does not review the forms."
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–E. You may use any letter more than once."
+            }
+        ],
+        "people": [
+            {
+                "name": "Farida Rahimi",
+                "role": "occupational health nurse who put together the guide and reviews workstation assessments",
+                "gender": "female"
+            },
+            {
+                "name": "Bruno Esposito",
+                "role": "facilities manager",
+                "gender": "male"
+            },
+            {
+                "name": "Rafael Takahashi",
+                "role": "staff health and safety representative",
+                "gender": "male"
+            },
+            {
+                "name": "Akosua Brandt",
+                "role": "physiotherapist who studied breaks at a call centre",
+                "gender": "female"
+            },
+            {
+                "name": "Ioana Delacroix",
+                "role": "optometrist who visits the office twice a year",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Most people think of office work as low-risk, and compared with a building site or a warehouse it usually is. Yet the injuries that do occur in offices tend to build up slowly rather than happen in a single moment. Aching shoulders, a stiff lower back and tired eyes rarely send anyone to hospital, but they are among the commonest reasons staff here take time off. This guide explains what you can do yourself and what support the company provides. It was put together by our occupational health nurse, Farida Rahimi, with help from colleagues across the building.",
+                "label": "A"
+            },
+            {
+                "text": "Lifting is where office staff are most likely to hurt themselves suddenly. Boxes of printer paper, archive files and returned equipment are heavier than they look, and people often grab them in a hurry. Before you lift anything, test the weight by tipping one corner. If you cannot raise it comfortably, do not attempt to carry it alone. Keep the load close to your waist, bend at the knees rather than the hips, and avoid twisting your body while you hold it; turn by moving your feet instead. Bruno Esposito, our facilities manager, points out that two trolleys are kept beside the post room on every floor, and that staff should book them rather than carry stock up the stairs. He has also asked suppliers to deliver paper in smaller packs, so nobody needs to lift a full carton.",
+                "label": "B"
+            },
+            {
+                "text": "If something is too heavy, ask for help or report it. Rafael Takahashi, the staff health and safety representative, says many employees worry that asking for assistance will make them look weak or slow. \"The opposite is true,\" he says. \"Someone who stops to get a second pair of hands is doing their job properly.\" He adds that any strain or near miss should be recorded in the incident book at reception, even if you feel fine afterwards, because a pattern of small reports often reveals a problem with how a task is organised.",
+                "label": "C"
+            },
+            {
+                "text": "Screen work causes discomfort in a quieter way. Sitting in one position for hours places constant pressure on the same muscles, and the effects may not appear for weeks. The top of your monitor should be roughly level with your eyes, and the screen about an arm's length away. Your feet should rest flat on the floor or on a footrest, and your forearms should be roughly horizontal when you type. Laptops are a particular concern: because the screen and keyboard are joined, it is impossible to set both at the right height. Bruno Esposito's team will supply a separate keyboard and a stand to anyone using a laptop for more than an hour a day.",
+                "label": "D"
+            },
+            {
+                "text": "Changing position matters at least as much as perfect posture. Physiotherapist Akosua Brandt studied sixty staff at a regional call centre over six months. Those who stood up or walked for a few minutes every half hour reported noticeably less neck and back pain than those who took a single long break at lunch, even though both groups spent similar total time away from their desks. Brandt is careful to say that her study was small and that the workers knew they were being observed, so the result should not be treated as final. Even so, she recommends short, frequent breaks over occasional long ones.",
+                "label": "E"
+            },
+            {
+                "text": "Your eyes need attention too. Ioana Delacroix, an optometrist who visits the office twice a year, explains that staring at a screen reduces how often we blink, which leaves the eyes dry and sore. She suggests looking at something across the room from time to time to let the focusing muscles relax. She also stresses that screen work does not damage eyesight permanently, but it can reveal an existing problem that a person had not noticed. Anyone who uses a screen regularly is entitled to an eye test paid for by the company, and if you need glasses specifically for screen work, the company will contribute towards their cost.",
+                "label": "F"
+            },
+            {
+                "text": "Finally, every new member of staff must complete a workstation assessment within their first fortnight. The form takes about fifteen minutes and is reviewed by Farida Rahimi, who may arrange a desk visit if anything looks wrong. You should repeat the assessment whenever you move desks or your duties change significantly. Rahimi admits that many people treat the form as a box-ticking exercise, but she says the honest answers are what allow her team to fix problems before they turn into injuries.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "test the weight by tipping one corner",
+                "answer": [
+                    "corner"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Keep the load close to your waist",
+                "answer": [
+                    "waist"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "turn by moving your feet instead",
+                "answer": [
+                    "feet"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "two trolleys are kept beside the post room on every floor",
+                "answer": [
+                    "post room"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "should be recorded in the incident book at reception, even if you feel fine afterwards",
+                "answer": [
+                    "incident book"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "your forearms should be roughly horizontal when you type",
+                "answer": [
+                    "forearms"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "will supply a separate keyboard and a stand to anyone using a laptop for more than an hour a day",
+                "answer": [
+                    "stand"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "He has also asked suppliers to deliver paper in smaller packs",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "many employees worry that asking for assistance will make them look weak or slow",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it can reveal an existing problem that a person had not noticed",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Rahimi admits that many people treat the form as a box-ticking exercise",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Bruno Esposito's team will supply a separate keyboard and a stand to anyone using a laptop",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the workers knew they were being observed, so the result should not be treated as final",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "any strain or near miss should be recorded in the incident book at reception, even if you feel fine afterwards",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "reviewed by Farida Rahimi, who may arrange a desk visit if anything looks wrong",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "test the weight by tipping one corner",
+                "answer": [
+                    "corner"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Keep the load close to your waist",
+                "answer": [
+                    "waist"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "turn by moving your feet instead",
+                "answer": [
+                    "feet"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "two trolleys are kept beside the post room on every floor",
+                "answer": [
+                    "post room"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "should be recorded in the incident book at reception",
+                "answer": [
+                    "incident book"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "your forearms should be roughly horizontal when you type",
+                "answer": [
+                    "forearms"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "supply a separate keyboard and a stand",
+                "answer": [
+                    "stand"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "He has also asked suppliers to deliver paper in smaller packs",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "many employees worry that asking for assistance will make them look weak or slow",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "screen work does not damage eyesight permanently, but it can reveal an existing problem that a person had not noticed",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Rahimi admits that many people treat the form as a box-ticking exercise",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Bruno Esposito's team will supply a separate keyboard and a stand to anyone using a laptop for more than an hour a day",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the workers knew they were being observed, so the result should not be treated as final",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "any strain or near miss should be recorded in the incident book at reception, even if you feel fine afterwards",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "is reviewed by Farida Rahimi, who may arrange a desk visit if anything looks wrong",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "test the weight by tipping one corner",
+            "answer": [
+                "corner"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Keep the load close to your waist",
+            "answer": [
+                "waist"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "turn by moving your feet instead",
+            "answer": [
+                "feet"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "two trolleys are kept beside the post room on every floor",
+            "answer": [
+                "post room"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "recorded in the incident book at reception",
+            "answer": [
+                "incident book"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "your forearms should be roughly horizontal when you type",
+            "answer": [
+                "forearms"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "He has also asked suppliers to deliver paper in smaller packs",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "many employees worry that asking for assistance will make them look weak or slow",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "it can reveal an existing problem that a person had not noticed",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Rahimi admits that many people treat the form as a box-ticking exercise",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Bruno Esposito's team will supply a separate keyboard and a stand",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "the workers knew they were being observed, so the result should not be treated as final",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "any strain or near miss should be recorded in the incident book at reception, even if you feel fine afterwards",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Lifting and Screen Work: A Guide for Staff\n\nA. Most people think of office work as low-risk, and compared with a building site or a warehouse it usually is. Yet the injuries that do occur in offices tend to build up slowly rather than happen in a single moment. Aching shoulders, a stiff lower back and tired eyes rarely send anyone to hospital, but they are among the commonest reasons staff here take time off. This guide explains what you can do yourself and what support the company provides. It was put together by our occupational health nurse, Farida Rahimi, with help from colleagues across the building.\n\nB. Lifting is where office staff are most likely to hurt themselves suddenly. Boxes of printer paper, archive files and returned equipment are heavier than they look, and people often grab them in a hurry. Before you lift anything, test the weight by tipping one corner. If you cannot raise it comfortably, do not attempt to carry it alone. Keep the load close to your waist, bend at the knees rather than the hips, and avoid twisting your body while you hold it; turn by moving your feet instead. Bruno Esposito, our facilities manager, points out that two trolleys are kept beside the post room on every floor, and that staff should book them rather than carry stock up the stairs. He has also asked suppliers to deliver paper in smaller packs, so nobody needs to lift a full carton.\n\nC. If something is too heavy, ask for help or report it. Rafael Takahashi, the staff health and safety representative, says many employees worry that asking for assistance will make them look weak or slow. \"The opposite is true,\" he says. \"Someone who stops to get a second pair of hands is doing their job properly.\" He adds that any strain or near miss should be recorded in the incident book at reception, even if you feel fine afterwards, because a pattern of small reports often reveals a problem with how a task is organised.\n\nD. Screen work causes discomfort in a quieter way. Sitting in one position for hours places constant pressure on the same muscles, and the effects may not appear for weeks. The top of your monitor should be roughly level with your eyes, and the screen about an arm's length away. Your feet should rest flat on the floor or on a footrest, and your forearms should be roughly horizontal when you type. Laptops are a particular concern: because the screen and keyboard are joined, it is impossible to set both at the right height. Bruno Esposito's team will supply a separate keyboard and a stand to anyone using a laptop for more than an hour a day.\n\nE. Changing position matters at least as much as perfect posture. Physiotherapist Akosua Brandt studied sixty staff at a regional call centre over six months. Those who stood up or walked for a few minutes every half hour reported noticeably less neck and back pain than those who took a single long break at lunch, even though both groups spent similar total time away from their desks. Brandt is careful to say that her study was small and that the workers knew they were being observed, so the result should not be treated as final. Even so, she recommends short, frequent breaks over occasional long ones.\n\nF. Your eyes need attention too. Ioana Delacroix, an optometrist who visits the office twice a year, explains that staring at a screen reduces how often we blink, which leaves the eyes dry and sore. She suggests looking at something across the room from time to time to let the focusing muscles relax. She also stresses that screen work does not damage eyesight permanently, but it can reveal an existing problem that a person had not noticed. Anyone who uses a screen regularly is entitled to an eye test paid for by the company, and if you need glasses specifically for screen work, the company will contribute towards their cost.\n\nG. Finally, every new member of staff must complete a workstation assessment within their first fortnight. The form takes about fifteen minutes and is reviewed by Farida Rahimi, who may arrange a desk visit if anything looks wrong. You should repeat the assessment whenever you move desks or your duties change significantly. Rahimi admits that many people treat the form as a box-ticking exercise, but she says the honest answers are what allow her team to fix problems before they turn into injuries.",
+        "title": "Lifting and Screen Work: A Guide for Staff",
+        "groups": [
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "corner"
+                        ],
+                        "prompt": "Before picking anything up, staff should check how heavy it is by tilting one ______.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "test the weight by tipping one corner",
+                        "explanation": {
+                            "en": "Paragraph B tells staff to test the weight by tipping one corner. 'Tilting' in the summary means the same as 'tipping'.",
+                            "ru": "В абзаце B сотрудникам советуют проверить вес, наклонив один угол (\"tipping one corner\"). Слово \"Tilting\" в пересказе означает то же, что \"tipping\".",
+                            "uk": "В абзаці B працівникам радять перевірити вагу, нахиливши один кут (\"tipping one corner\"). Слово \"Tilting\" у переказі означає те саме, що \"tipping\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "waist"
+                        ],
+                        "prompt": "While an item is being carried, the load should be held near the ______.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Keep the load close to your waist",
+                        "explanation": {
+                            "en": "Paragraph B says to keep the load close to your waist. 'Held near' restates 'close to'.",
+                            "ru": "В абзаце B сказано, что груз нужно держать близко к поясу (\"waist\"). \"Held near\" передаёт тот же смысл, что \"close to\".",
+                            "uk": "В абзаці B сказано, що вантаж треба тримати близько до пояса (\"waist\"). \"Held near\" передає той самий зміст, що й \"close to\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "feet"
+                        ],
+                        "prompt": "To change direction while holding something, staff should use their ______ rather than twist their body.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "turn by moving your feet instead",
+                        "explanation": {
+                            "en": "Paragraph B warns against twisting and says to turn by moving your feet instead. 'Knees' is wrong because the knees are for bending, not for turning.",
+                            "ru": "Абзац B предостерегает от скручивания корпуса и советует вместо этого поворачиваться, переступая ногами (\"feet\"). Вариант \"Knees\" неверен: колени нужны, чтобы сгибаться, а не чтобы поворачиваться.",
+                            "uk": "Абзац B застерігає від скручування корпусу й радить натомість повертатися, переступаючи ногами (\"feet\"). Варіант \"Knees\" неправильний: коліна потрібні, щоб згинатися, а не щоб повертатися."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "post room"
+                        ],
+                        "prompt": "Trolleys that staff can book are kept next to the ______ on each floor.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "two trolleys are kept beside the post room on every floor",
+                        "explanation": {
+                            "en": "In Paragraph B the facilities manager says the trolleys are kept beside the post room on every floor. 'Next to' means 'beside'.",
+                            "ru": "В абзаце B завхоз говорит, что тележки стоят рядом с почтовой комнатой (\"post room\") на каждом этаже. \"Next to\" означает \"beside\".",
+                            "uk": "В абзаці B завгосп каже, що візки стоять поруч із поштовою кімнатою (\"post room\") на кожному поверсі. \"Next to\" означає \"beside\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "incident book"
+                        ],
+                        "prompt": "Even a minor strain that seems to cause no harm should be noted in the ______ at reception.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "should be recorded in the incident book at reception",
+                        "explanation": {
+                            "en": "Paragraph C says any strain or near miss should be recorded in the incident book at reception, even if you feel fine afterwards.",
+                            "ru": "В абзаце C сказано, что любое растяжение или случай, когда травма едва не произошла, нужно записывать в журнал происшествий (\"incident book\") на стойке регистрации (\"reception\"), даже если потом вы чувствуете себя нормально.",
+                            "uk": "В абзаці C сказано, що будь-яке розтягнення чи випадок, коли травма ледь не сталася, треба записувати в журнал інцидентів (\"incident book\") на рецепції (\"reception\"), навіть якщо потім ви почуваєтеся добре."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "forearms"
+                        ],
+                        "prompt": "When typing, staff should keep their ______ more or less horizontal.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "your forearms should be roughly horizontal when you type",
+                        "explanation": {
+                            "en": "Paragraph D says your forearms should be roughly horizontal when you type. 'More or less' restates 'roughly'. The feet are also mentioned, but they should rest flat on the floor.",
+                            "ru": "В абзаце D сказано, что при наборе текста предплечья должны быть примерно горизонтальны (\"horizontal\"). \"More or less\" передаёт смысл \"roughly\". Ступни (\"feet\") тоже упоминаются, но они должны стоять ровно на полу.",
+                            "uk": "В абзаці D сказано, що під час набору тексту передпліччя мають бути приблизно горизонтальними (\"horizontal\"). \"More or less\" передає зміст \"roughly\". Ступні (\"feet\") теж згадуються, але вони мають рівно стояти на підлозі."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Farida Rahimi"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Bruno Esposito"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Rafael Takahashi"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Akosua Brandt"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Ioana Delacroix"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "has changed the way some office supplies arrive",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "He has also asked suppliers to deliver paper in smaller packs",
+                        "explanation": {
+                            "en": "Paragraph B says the facilities manager, Bruno Esposito, asked suppliers to deliver paper in smaller packs. Changing how paper is delivered is a change to how supplies arrive.",
+                            "ru": "В абзаце B сказано, что завхоз Bruno Esposito попросил поставщиков привозить бумагу пачками поменьше. Изменить способ доставки бумаги — значит изменить то, как поступают расходные материалы.",
+                            "uk": "В абзаці B сказано, що завгосп Bruno Esposito попросив постачальників привозити папір меншими пачками. Змінити спосіб доставки паперу означає змінити те, як надходять витратні матеріали."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "says that some staff are unwilling to ask for help because of how it might make them look",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "many employees worry that asking for assistance will make them look weak or slow",
+                        "explanation": {
+                            "en": "In Paragraph C, Rafael Takahashi says employees worry that asking for assistance will make them look weak or slow.",
+                            "ru": "В абзаце C Rafael Takahashi говорит, что сотрудники боятся: если они попросят о помощи, их сочтут слабыми или медлительными.",
+                            "uk": "В абзаці C Rafael Takahashi каже, що працівники бояться: якщо вони попросять про допомогу, їх вважатимуть слабкими чи повільними."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "explains that using a screen may bring an eye problem that was already there to a person's attention",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "it can reveal an existing problem that a person had not noticed",
+                        "explanation": {
+                            "en": "In Paragraph F, the optometrist Ioana Delacroix says screen work does not cause permanent damage, but it can reveal an existing problem.",
+                            "ru": "В абзаце F оптометрист Ioana Delacroix говорит, что работа за экраном не наносит необратимого вреда, но может выявить уже существующую проблему.",
+                            "uk": "В абзаці F оптометристка Ioana Delacroix каже, що робота за екраном не завдає незворотної шкоди, але може виявити вже наявну проблему."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "accepts that a required form is often not taken seriously",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "many people treat the form as a box-ticking exercise",
+                        "explanation": {
+                            "en": "Paragraph G says Farida Rahimi admits that many people treat the workstation assessment as a box-ticking exercise, which means they do not take it seriously.",
+                            "ru": "В абзаце G сказано, что Farida Rahimi признаёт: многие относятся к оценке рабочего места как к формальности (\"box-ticking exercise\"), то есть не воспринимают её всерьёз.",
+                            "uk": "В абзаці G сказано, що Farida Rahimi визнає: багато хто ставиться до оцінки робочого місця як до формальності (\"box-ticking exercise\"), тобто не сприймає її серйозно."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "is in charge of a team that provides extra equipment for people who often use portable computers",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Bruno Esposito's team will supply a separate keyboard and a stand to anyone using a laptop",
+                        "explanation": {
+                            "en": "Paragraph D says Bruno Esposito's team will supply a keyboard and a stand to anyone who uses a laptop for more than an hour a day.",
+                            "ru": "В абзаце D сказано, что команда Bruno Esposito выдаст клавиатуру и подставку всем, кто работает за ноутбуком больше часа в день.",
+                            "uk": "В абзаці D сказано, що команда Bruno Esposito видасть клавіатуру й підставку всім, хто працює за ноутбуком понад годину на день."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "warns that a result may have been affected by people knowing they were being watched",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "the workers knew they were being observed, so the result should not be treated as final",
+                        "explanation": {
+                            "en": "In Paragraph E, Akosua Brandt says the workers in her study knew they were being observed, so the result should not be treated as final.",
+                            "ru": "В абзаце E Akosua Brandt говорит, что работники в её исследовании знали, что за ними наблюдают, поэтому результат не стоит считать окончательным.",
+                            "uk": "В абзаці E Akosua Brandt каже, що працівники в її дослідженні знали, що за ними спостерігають, тому результат не слід вважати остаточним."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "believes that small incidents should be written down even if nobody seems to be hurt",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "any strain or near miss should be recorded in the incident book at reception, even if you feel fine afterwards",
+                        "explanation": {
+                            "en": "Paragraph C reports Rafael Takahashi's view that strains and near misses should be recorded even if you feel fine. The incident book is at reception, but the advice comes from Takahashi.",
+                            "ru": "В абзаце C приводится мнение Rafael Takahashi: растяжения и случаи, когда травма едва не произошла, нужно записывать, даже если вы чувствуете себя нормально. Журнал происшествий находится на стойке регистрации, но этот совет даёт именно Takahashi.",
+                            "uk": "В абзаці C наведено думку Rafael Takahashi: розтягнення й випадки, коли травма ледь не сталася, треба записувати, навіть якщо ви почуваєтеся добре. Журнал інцидентів лежить на рецепції, але цю пораду дає саме Takahashi."
+                        }
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–E. You may use any letter more than once."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

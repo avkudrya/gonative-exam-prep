@@ -1,0 +1,1067 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-7|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.287912,
+            "provider": "anthropic",
+            "outputTokens": 13446
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.01526,
+            "provider": "anthropic",
+            "outputTokens": 793
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.022508,
+            "provider": "openai",
+            "outputTokens": 1131
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.018376,
+            "provider": "xai",
+            "outputTokens": 1906
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.083096,
+            "provider": "anthropic",
+            "outputTokens": 3828
+        }
+    ],
+    "draft": {
+        "title": "Mangroves on the Front Line",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a description of two different ways in which mangrove trees deal with salt",
+                        "options": [],
+                        "evidence": "Some species cope by filtering salt out at the roots, while others take it in and excrete it through glands on their leaves",
+                        "explanation": "Paragraph A explains that some species keep salt out at the roots and others remove it through their leaves. These are the two ways of dealing with salt."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a warning that the protection mangroves provide has limits",
+                        "options": [],
+                        "evidence": "Exceptionally powerful storm surges, she notes, can push water through even a healthy forest",
+                        "explanation": "In paragraph B, Seneviratne says very strong storm surges can still pass through a forest and that narrow belts protect less. This is a limit on the protection."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "an explanation of why mangrove soils are able to store so much carbon",
+                        "options": [],
+                        "evidence": "because dead plant material decomposes very slowly in the absence of oxygen",
+                        "explanation": "Paragraph C gives the reason: without oxygen, dead plant material breaks down very slowly, so the carbon stays in the soil."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a reason why the destruction of mangroves was not noticed for a long time",
+                        "options": [],
+                        "evidence": "their destruction attracted little attention until coastal communities began to notice increased flooding and smaller catches",
+                        "explanation": "Paragraph D says the land seemed to have no owner and no obvious use, so few people paid attention until flooding increased and fish catches fell."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "a comparison between two ways of organising restoration projects",
+                        "options": [],
+                        "evidence": "compared villages where restoration had been organised by outside agencies with villages where residents had helped to choose the sites and set the rules",
+                        "explanation": "In paragraph F, Nwosu compares projects run by outside agencies with projects in which local residents helped to make decisions. Paragraph E compares planting methods, not ways of organising projects."
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "table_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "60",
+                            "sixty"
+                        ],
+                        "prompt": "Wave reduction (Seneviratne) | Height of ordinary waves dropped by roughly ______ per cent across a forest 300 metres wide",
+                        "options": [],
+                        "evidence": "the height of ordinary waves fell by around 60 per cent",
+                        "explanation": "Paragraph B reports that ordinary waves became about 60 per cent lower between the seaward and landward edges of the forest. The number 300 is the width of the forest, not the reduction."
+                    },
+                    {
+                        "answer": [
+                            "sediment"
+                        ],
+                        "prompt": "Building up land | Roots hold back ______, which together with dead roots lifts the forest floor",
+                        "options": [],
+                        "evidence": "this trapped sediment, together with decaying roots, raises the forest floor",
+                        "explanation": "Paragraph C says that trapped sediment and decaying roots raise the forest floor. 'Lifts' restates 'raises'."
+                    },
+                    {
+                        "answer": [
+                            "shrimp"
+                        ],
+                        "prompt": "Causes of loss | In parts of Southeast Asia and Latin America, many forests were turned into ponds for ______ farming",
+                        "options": [],
+                        "evidence": "a major cause was the spread of shrimp farming",
+                        "explanation": "Paragraph D names shrimp farming as a major cause of loss in these regions: forests were replaced by ponds."
+                    },
+                    {
+                        "answer": [
+                            "mudflats"
+                        ],
+                        "prompt": "Replanting failures (Ruvalcaba) | Seedlings planted on open ______ below the forest edge usually died",
+                        "options": [],
+                        "evidence": "Where volunteers had pushed seedlings into open mudflats below the natural forest edge",
+                        "explanation": "Paragraph E says survival on open mudflats was often under 10 per cent, because the young trees were underwater for too long each day."
+                    },
+                    {
+                        "answer": [
+                            "seeds"
+                        ],
+                        "prompt": "Successful restoration (Ruvalcaba) | Once pond walls were broken open, ______ came in naturally from nearby forests",
+                        "options": [],
+                        "evidence": "Once tidal water could flow in and out again, seeds arrived naturally from nearby forests",
+                        "explanation": "Paragraph E explains that after the walls were broken, the tide carried seeds in from nearby forests. Nobody had to plant them."
+                    },
+                    {
+                        "answer": [
+                            "crabs"
+                        ],
+                        "prompt": "Community involvement (Nwosu) | Local families were given the right to gather ______ in restored areas",
+                        "options": [],
+                        "evidence": "gave local families the right to collect crabs from the restored areas",
+                        "explanation": "Paragraph F says agreements let families collect crabs, which made the forest a source of income worth protecting."
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "All mangrove species belong to the same plant family.",
+                        "options": [],
+                        "evidence": "drawn from several unrelated plant families",
+                        "explanation": "Paragraph A says mangroves come from several unrelated plant families, so they do not all belong to one family."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Seneviratne collected her measurements over more than one monsoon season.",
+                        "options": [],
+                        "evidence": "recorded conditions over two monsoon seasons",
+                        "explanation": "Paragraph B says she recorded conditions over two monsoon seasons, which is more than one."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Seneviratne also measured how much sediment built up in the forest she studied.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says she used pressure sensors to study waves, and paragraph C describes sediment building up in mangroves in general. The passage never says whether Seneviratne measured sediment."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Mangroves are being lost more slowly now than in earlier decades.",
+                        "options": [],
+                        "evidence": "The rate of loss has slowed considerably in recent years",
+                        "explanation": "Paragraph D states that the rate of loss has slowed a lot recently, so forests are disappearing more slowly than before."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The villages where outside agencies organised restoration received more money than the other villages.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph F compares how often young forests were cut down in the two groups of villages. It says nothing about how much money either group received."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "people": [
+            {
+                "name": "Nirmala Seneviratne",
+                "role": "coastal engineer who measured wave reduction through a mangrove forest",
+                "gender": "female"
+            },
+            {
+                "name": "Esteban Ruvalcaba",
+                "role": "ecologist who surveyed tree survival at mangrove restoration sites",
+                "gender": "male"
+            },
+            {
+                "name": "Adaeze Nwosu",
+                "role": "social scientist who studied community involvement in mangrove restoration",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Along sheltered tropical and subtropical coastlines, where rivers meet the sea, a peculiar kind of forest stands with its feet in salt water. Mangroves are not a single species but a collection of trees and shrubs, drawn from several unrelated plant families, that have independently evolved ways of surviving conditions that would kill most land plants. With each high tide, seawater floods their roots; as the tide retreats, it exposes soft, airless mud. Some species cope by filtering salt out at the roots, while others take it in and excrete it through glands on their leaves. Many send up pencil-like roots from the mud, which act as snorkels, allowing the buried root system to breathe. Others are propped up on arching stilt roots that make the forest look as though it is walking into the water.",
+                "label": "A"
+            },
+            {
+                "text": "It is this tangle of roots and trunks that makes mangroves so valuable to the people who live behind them. When waves enter a mangrove belt, they lose energy through friction as water is forced around countless obstacles. In a study on a low-lying delta coast, coastal engineer Nirmala Seneviratne placed pressure sensors at intervals through a forest 300 metres wide and recorded conditions over two monsoon seasons. She found that the height of ordinary waves fell by around 60 per cent between the seaward edge and the landward edge. Seneviratne is careful not to overstate the result. Exceptionally powerful storm surges, she notes, can push water through even a healthy forest, and a narrow fringe of trees offers far less protection than a broad one. Nevertheless, in her view, a wide belt can do much of the work of a concrete sea wall at a fraction of the cost, and unlike a wall it repairs itself.",
+                "label": "B"
+            },
+            {
+                "text": "Mangroves also shape the land itself. Their roots slow the movement of water so that fine particles carried by rivers and tides settle out instead of being washed away. Over time this trapped sediment, together with decaying roots, raises the forest floor. Where enough sediment is available, the ground can build up quickly enough to keep pace with the rising sea, something no artificial barrier can do. The same waterlogged soils lock away remarkable quantities of carbon, because dead plant material decomposes very slowly in the absence of oxygen. Researchers have found that, area for area, mangrove forests can store several times as much carbon as many forests on dry land, mostly in their soils. The shallow channels between the roots, meanwhile, shelter young fish, shrimp and crabs, many of which are later caught by fishers once they move into open water.",
+                "label": "C"
+            },
+            {
+                "text": "Despite these benefits, mangroves have been cleared on a vast scale. A substantial share of the world's mangrove area has disappeared since the middle of the twentieth century. In parts of Southeast Asia and Latin America, a major cause was the spread of shrimp farming: forests were cut down and replaced by rectangular ponds enclosed by earth walls. Such ponds were often productive for only a few years before disease and accumulated waste forced owners to abandon them and clear new ground. Elsewhere, mangroves gave way to rice paddies, oil palm plantations, ports and tourist resorts, or were thinned for timber and charcoal. Because the forests occupied land that seemed to have no owner and no obvious use, their destruction attracted little attention until coastal communities began to notice increased flooding and smaller catches. The rate of loss has slowed considerably in recent years, partly because the value of the forests is now more widely understood.",
+                "label": "D"
+            },
+            {
+                "text": "Replanting has become popular with governments, charities and companies, but early efforts produced disappointing results. Ecologist Esteban Ruvalcaba visited 46 restoration sites along one stretch of coast and counted how many trees were still alive five years after planting. Where volunteers had pushed seedlings into open mudflats below the natural forest edge, survival was often under 10 per cent: the young trees spent too long underwater each day and were swept away or drowned. Projects that planted a single fast-growing species in neat rows did somewhat better but created plantations that supported few animals. The most successful sites, Ruvalcaba found, were abandoned shrimp ponds where the earth walls had simply been broken open. Once tidal water could flow in and out again, seeds arrived naturally from nearby forests, and after five years these sites held a richer mix of species than any of the planted ones. His conclusion is that restoring the right water conditions often matters more than planting itself.",
+                "label": "E"
+            },
+            {
+                "text": "Even a well-designed project can fail if the people living nearby see no reason to protect it. Social scientist Adaeze Nwosu compared villages where restoration had been organised by outside agencies with villages where residents had helped to choose the sites and set the rules. In the second group, young forests were far less likely to be cut down again within a decade. Nwosu points in particular to agreements that gave local families the right to collect crabs from the restored areas, which turned the forest into a source of income worth defending. Her work suggests that mangroves will only hold the line against the sea if they are also valued by those who live on the shore.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some species cope by filtering salt out at the roots, while others take it in and excrete it through glands on their leaves.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Exceptionally powerful storm surges, she notes, can push water through even a healthy forest, and a narrow fringe of trees offers far less protection than a broad one.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "because dead plant material decomposes very slowly in the absence of oxygen",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Because the forests occupied land that seemed to have no owner and no obvious use, their destruction attracted little attention",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "compared villages where restoration had been organised by outside agencies with villages where residents had helped to choose the sites and set the rules",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the height of ordinary waves fell by around 60 per cent",
+                "answer": [
+                    "60"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Their roots slow the movement of water so that fine particles carried by rivers and tides settle out... this trapped sediment, together with decaying roots, raises the forest floor.",
+                "answer": [
+                    "sediment"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the spread of shrimp farming: forests were cut down and replaced by rectangular ponds",
+                "answer": [
+                    "shrimp"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "pushed seedlings into open mudflats below the natural forest edge, survival was often under 10 per cent",
+                "answer": [
+                    "mudflats"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Once tidal water could flow in and out again, seeds arrived naturally from nearby forests",
+                "answer": [
+                    "seeds"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "agreements that gave local families the right to collect crabs from the restored areas",
+                "answer": [
+                    "crabs"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Mangroves are not a single species but a collection of trees and shrubs, drawn from several unrelated plant families",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "recorded conditions over two monsoon seasons",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The rate of loss has slowed considerably in recent years",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some species cope by filtering salt out at the roots, while others take it in and excrete it through glands on their leaves.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Exceptionally powerful storm surges, she notes, can push water through even a healthy forest, and a narrow fringe of trees offers far less protection than a broad one.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The same waterlogged soils lock away remarkable quantities of carbon, because dead plant material decomposes very slowly in the absence of oxygen.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Because the forests occupied land that seemed to have no owner and no obvious use, their destruction attracted little attention",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Adaeze Nwosu compared villages where restoration had been organised by outside agencies with villages where residents had helped to choose the sites and set the rules.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "She found that the height of ordinary waves fell by around 60 per cent between the seaward edge and the landward edge.",
+                "answer": [
+                    "60"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Over time this trapped sediment, together with decaying roots, raises the forest floor.",
+                "answer": [
+                    "sediment"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a major cause was the spread of shrimp farming",
+                "answer": [
+                    "shrimp"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Where volunteers had pushed seedlings into open mudflats below the natural forest edge",
+                "answer": [
+                    "mudflats"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Once tidal water could flow in and out again, seeds arrived naturally from nearby forests",
+                "answer": [
+                    "seeds"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "agreements that gave local families the right to collect crabs from the restored areas",
+                "answer": [
+                    "crabs"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Mangroves are not a single species but a collection of trees and shrubs, drawn from several unrelated plant families",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "recorded conditions over two monsoon seasons",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The rate of loss has slowed considerably in recent years",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Some species cope by filtering salt out at the roots, while others take it in and excrete it through glands on their leaves.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Exceptionally powerful storm surges, she notes, can push water through even a healthy forest, and a narrow fringe of trees offers far less protection than a broad one.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "dead plant material decomposes very slowly in the absence of oxygen",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Because the forests occupied land that seemed to have no owner and no obvious use, their destruction attracted little attention",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the height of ordinary waves fell by around 60 per cent",
+            "answer": [
+                "60"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "this trapped sediment, together with decaying roots, raises the forest floor",
+            "answer": [
+                "sediment"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "a major cause was the spread of shrimp farming",
+            "answer": [
+                "shrimp"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "pushed seedlings into open mudflats below the natural forest edge",
+            "answer": [
+                "mudflats"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "seeds arrived naturally from nearby forests",
+            "answer": [
+                "seeds"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "drawn from several unrelated plant families",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "recorded conditions over two monsoon seasons",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "The rate of loss has slowed considerably in recent years",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Mangroves on the Front Line\n\nA. Along sheltered tropical and subtropical coastlines, where rivers meet the sea, a peculiar kind of forest stands with its feet in salt water. Mangroves are not a single species but a collection of trees and shrubs, drawn from several unrelated plant families, that have independently evolved ways of surviving conditions that would kill most land plants. With each high tide, seawater floods their roots; as the tide retreats, it exposes soft, airless mud. Some species cope by filtering salt out at the roots, while others take it in and excrete it through glands on their leaves. Many send up pencil-like roots from the mud, which act as snorkels, allowing the buried root system to breathe. Others are propped up on arching stilt roots that make the forest look as though it is walking into the water.\n\nB. It is this tangle of roots and trunks that makes mangroves so valuable to the people who live behind them. When waves enter a mangrove belt, they lose energy through friction as water is forced around countless obstacles. In a study on a low-lying delta coast, coastal engineer Nirmala Seneviratne placed pressure sensors at intervals through a forest 300 metres wide and recorded conditions over two monsoon seasons. She found that the height of ordinary waves fell by around 60 per cent between the seaward edge and the landward edge. Seneviratne is careful not to overstate the result. Exceptionally powerful storm surges, she notes, can push water through even a healthy forest, and a narrow fringe of trees offers far less protection than a broad one. Nevertheless, in her view, a wide belt can do much of the work of a concrete sea wall at a fraction of the cost, and unlike a wall it repairs itself.\n\nC. Mangroves also shape the land itself. Their roots slow the movement of water so that fine particles carried by rivers and tides settle out instead of being washed away. Over time this trapped sediment, together with decaying roots, raises the forest floor. Where enough sediment is available, the ground can build up quickly enough to keep pace with the rising sea, something no artificial barrier can do. The same waterlogged soils lock away remarkable quantities of carbon, because dead plant material decomposes very slowly in the absence of oxygen. Researchers have found that, area for area, mangrove forests can store several times as much carbon as many forests on dry land, mostly in their soils. The shallow channels between the roots, meanwhile, shelter young fish, shrimp and crabs, many of which are later caught by fishers once they move into open water.\n\nD. Despite these benefits, mangroves have been cleared on a vast scale. A substantial share of the world's mangrove area has disappeared since the middle of the twentieth century. In parts of Southeast Asia and Latin America, a major cause was the spread of shrimp farming: forests were cut down and replaced by rectangular ponds enclosed by earth walls. Such ponds were often productive for only a few years before disease and accumulated waste forced owners to abandon them and clear new ground. Elsewhere, mangroves gave way to rice paddies, oil palm plantations, ports and tourist resorts, or were thinned for timber and charcoal. Because the forests occupied land that seemed to have no owner and no obvious use, their destruction attracted little attention until coastal communities began to notice increased flooding and smaller catches. The rate of loss has slowed considerably in recent years, partly because the value of the forests is now more widely understood.\n\nE. Replanting has become popular with governments, charities and companies, but early efforts produced disappointing results. Ecologist Esteban Ruvalcaba visited 46 restoration sites along one stretch of coast and counted how many trees were still alive five years after planting. Where volunteers had pushed seedlings into open mudflats below the natural forest edge, survival was often under 10 per cent: the young trees spent too long underwater each day and were swept away or drowned. Projects that planted a single fast-growing species in neat rows did somewhat better but created plantations that supported few animals. The most successful sites, Ruvalcaba found, were abandoned shrimp ponds where the earth walls had simply been broken open. Once tidal water could flow in and out again, seeds arrived naturally from nearby forests, and after five years these sites held a richer mix of species than any of the planted ones. His conclusion is that restoring the right water conditions often matters more than planting itself.\n\nF. Even a well-designed project can fail if the people living nearby see no reason to protect it. Social scientist Adaeze Nwosu compared villages where restoration had been organised by outside agencies with villages where residents had helped to choose the sites and set the rules. In the second group, young forests were far less likely to be cut down again within a decade. Nwosu points in particular to agreements that gave local families the right to collect crabs from the restored areas, which turned the forest into a source of income worth defending. Her work suggests that mangroves will only hold the line against the sea if they are also valued by those who live on the shore.",
+        "title": "Mangroves on the Front Line",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a description of two different ways in which mangrove trees deal with salt",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Some species cope by filtering salt out at the roots, while others take it in and excrete it through glands on their leaves",
+                        "explanation": {
+                            "en": "Paragraph A explains that some species keep salt out at the roots and others remove it through their leaves. These are the two ways of dealing with salt.",
+                            "ru": "В абзаце A объясняется, что одни виды не пропускают соль уже на уровне корней, а другие выводят её через листья. Это и есть два способа справляться с солью.",
+                            "uk": "В абзаці A пояснюється, що одні види не пропускають сіль ще на рівні коренів, а інші виводять її через листя. Це і є два способи боротьби із сіллю."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a warning that the protection mangroves provide has limits",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Exceptionally powerful storm surges, she notes, can push water through even a healthy forest",
+                        "explanation": {
+                            "en": "In paragraph B, Seneviratne says very strong storm surges can still pass through a forest and that narrow belts protect less. This is a limit on the protection.",
+                            "ru": "В абзаце B Seneviratne говорит, что очень сильные штормовые нагоны всё же могут пройти сквозь лес, а узкие полосы леса защищают слабее. Это ограничение защитной функции.",
+                            "uk": "В абзаці B Seneviratne каже, що дуже сильні штормові нагони все ж можуть пройти крізь ліс, а вузькі смуги лісу захищають слабше. Це обмеження захисту."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "an explanation of why mangrove soils are able to store so much carbon",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "because dead plant material decomposes very slowly in the absence of oxygen",
+                        "explanation": {
+                            "en": "Paragraph C gives the reason: without oxygen, dead plant material breaks down very slowly, so the carbon stays in the soil.",
+                            "ru": "В абзаце C указана причина: без кислорода отмершие растительные остатки разлагаются очень медленно, поэтому углерод остаётся в почве.",
+                            "uk": "В абзаці C названо причину: без кисню відмерлі рослинні рештки розкладаються дуже повільно, тому вуглець залишається в ґрунті."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a reason why the destruction of mangroves was not noticed for a long time",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "their destruction attracted little attention until coastal communities began to notice increased flooding and smaller catches",
+                        "explanation": {
+                            "en": "Paragraph D says the land seemed to have no owner and no obvious use, so few people paid attention until flooding increased and fish catches fell.",
+                            "ru": "В абзаце D сказано, что у этих земель как будто не было ни владельца, ни очевидного применения, поэтому мало кто обращал на них внимание, пока не участились наводнения и не сократились уловы рыбы.",
+                            "uk": "В абзаці D сказано, що ці землі ніби не мали ні власника, ні очевидного призначення, тому мало хто звертав на них увагу, доки не почастішали повені й не скоротилися вилови риби."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "table_completion",
+                "limit": {
+                    "words": 1,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "60",
+                            "sixty"
+                        ],
+                        "prompt": "Wave reduction (Seneviratne) | Height of ordinary waves dropped by roughly ______ per cent across a forest 300 metres wide",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "the height of ordinary waves fell by around 60 per cent",
+                        "explanation": {
+                            "en": "Paragraph B reports that ordinary waves became about 60 per cent lower between the seaward and landward edges of the forest. The number 300 is the width of the forest, not the reduction.",
+                            "ru": "В абзаце B сообщается, что обычные волны становились примерно на 60 процентов ниже между морской и береговой границами леса. Число 300 — это ширина леса, а не величина снижения.",
+                            "uk": "В абзаці B повідомляється, що звичайні хвилі ставали приблизно на 60 відсотків нижчими між морським і береговим краями лісу. Число 300 — це ширина лісу, а не величина зменшення."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "sediment"
+                        ],
+                        "prompt": "Building up land | Roots hold back ______, which together with dead roots lifts the forest floor",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "this trapped sediment, together with decaying roots, raises the forest floor",
+                        "explanation": {
+                            "en": "Paragraph C says that trapped sediment and decaying roots raise the forest floor. 'Lifts' restates 'raises'.",
+                            "ru": "В абзаце C говорится, что задержанные наносы и гниющие корни поднимают поверхность лесной почвы. 'Lifts' — это перефразированное 'raises'.",
+                            "uk": "В абзаці C йдеться про те, що затримані наноси та гниюче коріння піднімають поверхню лісового ґрунту. 'Lifts' — це перефразоване 'raises'."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "shrimp"
+                        ],
+                        "prompt": "Causes of loss | In parts of Southeast Asia and Latin America, many forests were turned into ponds for ______ farming",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "a major cause was the spread of shrimp farming",
+                        "explanation": {
+                            "en": "Paragraph D names shrimp farming as a major cause of loss in these regions: forests were replaced by ponds.",
+                            "ru": "В абзаце D разведение креветок названо одной из главных причин исчезновения лесов в этих регионах: леса заменили прудами.",
+                            "uk": "В абзаці D розведення креветок названо однією з головних причин зникнення лісів у цих регіонах: ліси замінили ставками."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "mudflats"
+                        ],
+                        "prompt": "Replanting failures (Ruvalcaba) | Seedlings planted on open ______ below the forest edge usually died",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Where volunteers had pushed seedlings into open mudflats below the natural forest edge",
+                        "explanation": {
+                            "en": "Paragraph E says survival on open mudflats was often under 10 per cent, because the young trees were underwater for too long each day.",
+                            "ru": "В абзаце E сказано, что на открытых илистых отмелях выживало часто менее 10 процентов саженцев, потому что молодые деревья каждый день слишком долго находились под водой.",
+                            "uk": "В абзаці E сказано, що на відкритих мулистих мілинах часто виживало менше 10 відсотків саджанців, бо молоді дерева щодня надто довго перебували під водою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "seeds"
+                        ],
+                        "prompt": "Successful restoration (Ruvalcaba) | Once pond walls were broken open, ______ came in naturally from nearby forests",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "Once tidal water could flow in and out again, seeds arrived naturally from nearby forests",
+                        "explanation": {
+                            "en": "Paragraph E explains that after the walls were broken, the tide carried seeds in from nearby forests. Nobody had to plant them.",
+                            "ru": "В абзаце E объясняется, что после того как дамбы разрушили, прилив сам приносил семена из соседних лесов. Сажать их никому не пришлось.",
+                            "uk": "В абзаці E пояснюється, що після того як дамби зруйнували, приплив сам приносив насіння з сусідніх лісів. Нікому не довелося його висаджувати."
+                        }
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "All mangrove species belong to the same plant family.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "drawn from several unrelated plant families",
+                        "explanation": {
+                            "en": "Paragraph A says mangroves come from several unrelated plant families, so they do not all belong to one family.",
+                            "ru": "В абзаце A сказано, что мангры происходят из нескольких неродственных семейств растений, то есть все они не относятся к одному семейству.",
+                            "uk": "В абзаці A сказано, що мангри походять із кількох неспоріднених родин рослин, тож вони не належать до однієї родини."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Seneviratne collected her measurements over more than one monsoon season.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "recorded conditions over two monsoon seasons",
+                        "explanation": {
+                            "en": "Paragraph B says she recorded conditions over two monsoon seasons, which is more than one.",
+                            "ru": "В абзаце B сказано, что она фиксировала условия на протяжении двух сезонов муссонов, а это больше одного.",
+                            "uk": "В абзаці B сказано, що вона фіксувала умови протягом двох сезонів мусонів, а це більше, ніж один."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Seneviratne also measured how much sediment built up in the forest she studied.",
+                        "numbers": [
+                            12
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says she used pressure sensors to study waves, and paragraph C describes sediment building up in mangroves in general. The passage never says whether Seneviratne measured sediment.",
+                            "ru": "В абзаце B говорится, что она изучала волны с помощью датчиков давления, а в абзаце C описано накопление наносов в мангровых лесах в целом. Измеряла ли Seneviratne наносы, в тексте не сказано.",
+                            "uk": "В абзаці B йдеться про те, що вона досліджувала хвилі за допомогою датчиків тиску, а в абзаці C описано накопичення наносів у мангрових лісах загалом. Чи вимірювала Seneviratne наноси, у тексті не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Mangroves are being lost more slowly now than in earlier decades.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "The rate of loss has slowed considerably in recent years",
+                        "explanation": {
+                            "en": "Paragraph D states that the rate of loss has slowed a lot recently, so forests are disappearing more slowly than before.",
+                            "ru": "В абзаце D утверждается, что темпы исчезновения в последнее время заметно замедлились, то есть леса пропадают медленнее, чем раньше.",
+                            "uk": "В абзаці D зазначено, що темпи втрат останнім часом значно сповільнилися, тож ліси зникають повільніше, ніж раніше."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b2q1",
+        "6": "b2q2",
+        "7": "b2q3",
+        "8": "b2q4",
+        "9": "b2q5",
+        "10": "b3q1",
+        "11": "b3q2",
+        "12": "b3q3",
+        "13": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

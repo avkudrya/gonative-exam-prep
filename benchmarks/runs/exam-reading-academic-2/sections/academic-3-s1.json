@@ -1,0 +1,967 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-3|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.25576,
+            "provider": "anthropic",
+            "outputTokens": 12033
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012518,
+            "provider": "anthropic",
+            "outputTokens": 587
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01717,
+            "provider": "openai",
+            "outputTokens": 817
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.014688,
+            "provider": "xai",
+            "outputTokens": 1365
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.07776,
+            "provider": "anthropic",
+            "outputTokens": 3562
+        }
+    ],
+    "draft": {
+        "title": "Seeing with Sound",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Echolocation is used by some animals that live in water.",
+                        "options": [],
+                        "evidence": "dolphins and other toothed whales use the same principle underwater",
+                        "explanation": "Paragraph A says dolphins and other toothed whales use the same principle underwater. These are animals that live in water, so the statement is true."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "In the 1790s experiment, bats whose eyes were covered were unable to avoid the threads.",
+                        "options": [],
+                        "evidence": "the animals flew between the threads without touching them",
+                        "explanation": "Paragraph B says the bats flew between the threads without touching them. This is the opposite of being unable to avoid them."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The Swiss surgeon's findings quickly convinced most scholars that bats navigate by sound.",
+                        "options": [],
+                        "evidence": "many scholars found it impossible to accept that an animal could navigate by sounds that no one could detect",
+                        "explanation": "Paragraph B says many scholars could not accept the idea, and a rival theory about touch became widely accepted. So the findings did not quickly convince most scholars."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The microphone used by researchers in the late 1930s had first been designed for military purposes.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says only that the microphone was newly built and could pick up very high frequencies. It says nothing about why or for whom it was first designed."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Bats that call through their nostrils produce quieter calls than bats that call through their mouths.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C says some bats call through the mouth and others through the nostrils, and that calls can be very powerful in some species. It never compares how loud the two groups are."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Bats make their own hearing less sensitive at the moment they produce a call.",
+                        "options": [],
+                        "evidence": "To avoid deafening itself, a bat tightens tiny muscles in its middle ear at the moment it calls",
+                        "explanation": "Paragraph C explains that a bat tightens its middle-ear muscles when it calls so that it does not deafen itself. This means it reduces its hearing sensitivity while calling."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Bats that hunt among trees generally use higher-pitched calls than bats that hunt in open sky.",
+                        "options": [],
+                        "evidence": "whereas those that pick small prey from leaves in cluttered forest rely on higher ones",
+                        "explanation": "Paragraph D says open-sky hunters use lower calls, while bats taking prey from leaves in cluttered forest use higher ones. The statement says the same thing in different words."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Moths that can hear bat calls are caught less often than moths that cannot.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph E describes how moths with ears drop or fly in loops when a bat approaches. It does not say whether these moths are actually caught less often than moths without ears."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "touch"
+                        ],
+                        "prompt": "Early rival theory: bats have an unusually sensitive sense of ______ in their wings",
+                        "options": [],
+                        "evidence": "bats possessed an extraordinarily sensitive sense of touch in their wings",
+                        "explanation": "Paragraph B describes the rival theory that became widely accepted: bats were thought to have an extremely sensitive sense of touch in their wings."
+                    },
+                    {
+                        "answer": [
+                            "nostrils"
+                        ],
+                        "prompt": "Calls leave the bat either through the mouth or through the ______",
+                        "options": [],
+                        "evidence": "others send sound out through their nostrils",
+                        "explanation": "Paragraph C says some species call through an open mouth, while others send sound out through their nostrils."
+                    },
+                    {
+                        "answer": [
+                            "delay"
+                        ],
+                        "prompt": "Distance to an object is judged from the ______ between call and echo",
+                        "options": [],
+                        "evidence": "The delay between call and echo tells the animal how far away an object is",
+                        "explanation": "Paragraph C says the delay between a call and its echo tells the bat how far away an object is. Direction comes from differences between the ears, not from the delay."
+                    },
+                    {
+                        "answer": [
+                            "buzz"
+                        ],
+                        "prompt": "Just before capture: very fast calls known as the feeding ______",
+                        "options": [],
+                        "evidence": "a rapid sequence that researchers call the 'feeding buzz'",
+                        "explanation": "Paragraph D says that in the final moments before capture, the very fast calls are called the 'feeding buzz'."
+                    },
+                    {
+                        "answer": [
+                            "smell"
+                        ],
+                        "prompt": "Most Old World fruit bats locate food with large eyes and a good sense of ______",
+                        "options": [],
+                        "evidence": "find their food using large eyes and a keen sense of smell",
+                        "explanation": "Paragraph E says most fruit bats of Africa, Asia and Australia find food using large eyes and a keen sense of smell instead of echolocation."
+                    },
+                    {
+                        "answer": [
+                            "power"
+                        ],
+                        "prompt": "Mwangi's drone: used less battery ______ than a model that pulsed rapidly all the time",
+                        "options": [],
+                        "evidence": "the drone used noticeably less battery power than an identical model pulsing rapidly all the time",
+                        "explanation": "Paragraph F says Gareth Mwangi's bat-like drone used noticeably less battery power than an identical drone that pulsed rapidly all the time."
+                    },
+                    {
+                        "answer": [
+                            "poles"
+                        ],
+                        "prompt": "Arashiro's guide: users noticed thin ______ more reliably than with an ordinary device",
+                        "options": [],
+                        "evidence": "users detected thin poles more reliably than with a conventional device",
+                        "explanation": "Paragraph F reports that in Keiko Arashiro's small trial, users of the nose-leaf-shaped device detected thin poles more reliably than with a conventional device."
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Gareth Mwangi",
+                "role": "Engineer who designed a small indoor drone that changes its pulse rate like a hunting bat",
+                "gender": "male"
+            },
+            {
+                "name": "Keiko Arashiro",
+                "role": "Designer of a handheld guide for blind pedestrians with a sound emitter shaped like a bat's nose-leaf",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "On a warm summer evening, the small dark shapes that dart and swerve above a garden pond are doing something remarkable. Many of them are catching insects no bigger than a grain of rice, in light so poor that a human would struggle to see a hand in front of their face. For centuries, nobody could explain how they managed it. The answer, as we now know, is that most bats find their way by listening to the echoes of their own voices, a skill known as echolocation. They are not alone in this: dolphins and other toothed whales use the same principle underwater, and a handful of cave-dwelling birds rely on a simpler version.",
+                "label": "A"
+            },
+            {
+                "text": "The first serious attempt to solve the mystery took place in the 1790s, when an Italian naturalist released bats whose eyes had been covered into a darkened room crossed by fine threads. Remarkably, the animals flew between the threads without touching them. Soon afterwards, a Swiss surgeon showed that bats whose ears had been plugged with wax collided with obstacles and flew reluctantly. Hearing was clearly involved, yet the bats appeared to be silent, and many scholars found it impossible to accept that an animal could navigate by sounds that no one could detect. A rival theory, that bats possessed an extraordinarily sensitive sense of touch in their wings, became widely accepted, and the question remained essentially unanswered for well over a century. Only in the late 1930s did researchers, using a newly built microphone capable of picking up very high frequencies, demonstrate that flying bats produce a steady stream of calls pitched far above the limit of human hearing.",
+                "label": "B"
+            },
+            {
+                "text": "How does the system actually work? A hunting bat emits short pulses of sound, usually at frequencies between about 20 and 120 kilohertz; most adults cannot hear anything above roughly 20 kilohertz. Some species call through an open mouth, while others send sound out through their nostrils, which are often surrounded by folds of skin called nose-leaves that help to direct the beam. The calls are surprisingly powerful, in some species as intense at close range as a smoke alarm. To avoid deafening itself, a bat tightens tiny muscles in its middle ear at the moment it calls and relaxes them a fraction of a second later, just in time to catch the faint returning echo. The delay between call and echo tells the animal how far away an object is, while slight differences in the timing and loudness of the echo at each ear reveal its direction.",
+                "label": "C"
+            },
+            {
+                "text": "Bats also change the way they call as a hunt unfolds. While searching, a bat may produce around ten calls a second. Once it detects an insect, the calls become shorter and more frequent, until, in the final moments before capture, they can reach about two hundred a second, a rapid sequence that researchers call the 'feeding buzz'. The choice of pitch involves a trade-off. High-frequency sound has a short wavelength and so bounces back well even from tiny prey, but it fades quickly in air. For this reason, species that hunt in open sky tend to use lower calls, which travel further, whereas those that pick small prey from leaves in cluttered forest rely on higher ones.",
+                "label": "D"
+            },
+            {
+                "text": "Not every bat echolocates. Most of the fruit bats of Africa, Asia and Australia find their food using large eyes and a keen sense of smell, and only a few of them produce simple clicks, made with the tongue rather than the voice box. Meanwhile, the insects that bats eat have not stood still. Some moths have evolved ears that are sensitive to bat calls, and when they detect an approaching hunter they fold their wings and drop, or fly in erratic loops. Certain tiger moths go further, answering with ultrasonic clicks of their own that may warn the bat of their bad taste or confuse its sonar.",
+                "label": "E"
+            },
+            {
+                "text": "Human technology has followed a similar path, though largely by independent invention: naval sonar was developed in the early twentieth century with little reference to bats. The ultrasonic sensors that warn drivers when they are reversing towards a wall work on the same basic principle. More recently, however, engineers have begun to copy specific features of bat behaviour. Gareth Mwangi, an engineer working on small indoor drones, programmed one of his aircraft to pulse slowly in open space and to increase its rate sharply as it approached an obstacle, much as a hunting bat does. In his trials, the drone used noticeably less battery power than an identical model pulsing rapidly all the time, without hitting more obstacles. In another project, Keiko Arashiro shaped the sound emitter of a handheld guide for blind pedestrians to resemble a bat's nose-leaf; in a small trial, she reported, users detected thin poles more reliably than with a conventional device.",
+                "label": "F"
+            },
+            {
+                "text": "Even so, the machines remain crude by comparison. A bat leaving a crowded cave can pick out its own echoes from the calls of thousands of neighbours, a feat that engineers cannot yet reproduce and that biologists do not fully understand. After tens of millions of years of refinement, the bat's sonar still has a great deal to teach its imitators.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "dolphins and other toothed whales use the same principle underwater",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the animals flew between the threads without touching them",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "many scholars found it impossible to accept that an animal could navigate by sounds that no one could detect",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "a bat tightens tiny muscles in its middle ear at the moment it calls and relaxes them a fraction of a second later",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "those that pick small prey from leaves in cluttered forest rely on higher ones",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "possessed an extraordinarily sensitive sense of touch in their wings",
+                "answer": [
+                    "touch"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "others send sound out through their nostrils",
+                "answer": [
+                    "nostrils"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The delay between call and echo tells the animal how far away an object is",
+                "answer": [
+                    "delay"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a rapid sequence that researchers call the 'feeding buzz'",
+                "answer": [
+                    "buzz"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "find their food using large eyes and a keen sense of smell",
+                "answer": [
+                    "smell"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the drone used noticeably less battery power than an identical model",
+                "answer": [
+                    "power"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "users detected thin poles more reliably than with a conventional device",
+                "answer": [
+                    "poles"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "dolphins and other toothed whales use the same principle underwater",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the animals flew between the threads without touching them",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "many scholars found it impossible to accept that an animal could navigate by sounds that no one could detect. A rival theory ... became widely accepted",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "To avoid deafening itself, a bat tightens tiny muscles in its middle ear at the moment it calls",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "species that hunt in open sky tend to use lower calls ... whereas those that pick small prey from leaves in cluttered forest rely on higher ones",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a rival theory, that bats possessed an extraordinarily sensitive sense of touch in their wings",
+                "answer": [
+                    "touch"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some species call through an open mouth, while others send sound out through their nostrils",
+                "answer": [
+                    "nostrils"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The delay between call and echo tells the animal how far away an object is",
+                "answer": [
+                    "delay"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a rapid sequence that researchers call the 'feeding buzz'",
+                "answer": [
+                    "buzz"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "find their food using large eyes and a keen sense of smell",
+                "answer": [
+                    "smell"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the drone used noticeably less battery power than an identical model pulsing rapidly all the time",
+                "answer": [
+                    "power"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "users detected thin poles more reliably than with a conventional device",
+                "answer": [
+                    "poles"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "dolphins and other toothed whales use the same principle underwater",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the animals flew between the threads without touching them",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "many scholars found it impossible to accept that an animal could navigate by sounds that no one could detect",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "a bat tightens tiny muscles in its middle ear at the moment it calls",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "species that hunt in open sky tend to use lower calls, which travel further, whereas those that pick small prey from leaves in cluttered forest rely on higher ones",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "bats possessed an extraordinarily sensitive sense of touch in their wings",
+            "answer": [
+                "touch"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "others send sound out through their nostrils",
+            "answer": [
+                "nostrils"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "The delay between call and echo tells the animal how far away an object is",
+            "answer": [
+                "delay"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "a rapid sequence that researchers call the 'feeding buzz'",
+            "answer": [
+                "buzz"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "find their food using large eyes and a keen sense of smell",
+            "answer": [
+                "smell"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "the drone used noticeably less battery power than an identical model pulsing rapidly all the time",
+            "answer": [
+                "power"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Seeing with Sound\n\nA. On a warm summer evening, the small dark shapes that dart and swerve above a garden pond are doing something remarkable. Many of them are catching insects no bigger than a grain of rice, in light so poor that a human would struggle to see a hand in front of their face. For centuries, nobody could explain how they managed it. The answer, as we now know, is that most bats find their way by listening to the echoes of their own voices, a skill known as echolocation. They are not alone in this: dolphins and other toothed whales use the same principle underwater, and a handful of cave-dwelling birds rely on a simpler version.\n\nB. The first serious attempt to solve the mystery took place in the 1790s, when an Italian naturalist released bats whose eyes had been covered into a darkened room crossed by fine threads. Remarkably, the animals flew between the threads without touching them. Soon afterwards, a Swiss surgeon showed that bats whose ears had been plugged with wax collided with obstacles and flew reluctantly. Hearing was clearly involved, yet the bats appeared to be silent, and many scholars found it impossible to accept that an animal could navigate by sounds that no one could detect. A rival theory, that bats possessed an extraordinarily sensitive sense of touch in their wings, became widely accepted, and the question remained essentially unanswered for well over a century. Only in the late 1930s did researchers, using a newly built microphone capable of picking up very high frequencies, demonstrate that flying bats produce a steady stream of calls pitched far above the limit of human hearing.\n\nC. How does the system actually work? A hunting bat emits short pulses of sound, usually at frequencies between about 20 and 120 kilohertz; most adults cannot hear anything above roughly 20 kilohertz. Some species call through an open mouth, while others send sound out through their nostrils, which are often surrounded by folds of skin called nose-leaves that help to direct the beam. The calls are surprisingly powerful, in some species as intense at close range as a smoke alarm. To avoid deafening itself, a bat tightens tiny muscles in its middle ear at the moment it calls and relaxes them a fraction of a second later, just in time to catch the faint returning echo. The delay between call and echo tells the animal how far away an object is, while slight differences in the timing and loudness of the echo at each ear reveal its direction.\n\nD. Bats also change the way they call as a hunt unfolds. While searching, a bat may produce around ten calls a second. Once it detects an insect, the calls become shorter and more frequent, until, in the final moments before capture, they can reach about two hundred a second, a rapid sequence that researchers call the 'feeding buzz'. The choice of pitch involves a trade-off. High-frequency sound has a short wavelength and so bounces back well even from tiny prey, but it fades quickly in air. For this reason, species that hunt in open sky tend to use lower calls, which travel further, whereas those that pick small prey from leaves in cluttered forest rely on higher ones.\n\nE. Not every bat echolocates. Most of the fruit bats of Africa, Asia and Australia find their food using large eyes and a keen sense of smell, and only a few of them produce simple clicks, made with the tongue rather than the voice box. Meanwhile, the insects that bats eat have not stood still. Some moths have evolved ears that are sensitive to bat calls, and when they detect an approaching hunter they fold their wings and drop, or fly in erratic loops. Certain tiger moths go further, answering with ultrasonic clicks of their own that may warn the bat of their bad taste or confuse its sonar.\n\nF. Human technology has followed a similar path, though largely by independent invention: naval sonar was developed in the early twentieth century with little reference to bats. The ultrasonic sensors that warn drivers when they are reversing towards a wall work on the same basic principle. More recently, however, engineers have begun to copy specific features of bat behaviour. Gareth Mwangi, an engineer working on small indoor drones, programmed one of his aircraft to pulse slowly in open space and to increase its rate sharply as it approached an obstacle, much as a hunting bat does. In his trials, the drone used noticeably less battery power than an identical model pulsing rapidly all the time, without hitting more obstacles. In another project, Keiko Arashiro shaped the sound emitter of a handheld guide for blind pedestrians to resemble a bat's nose-leaf; in a small trial, she reported, users detected thin poles more reliably than with a conventional device.\n\nG. Even so, the machines remain crude by comparison. A bat leaving a crowded cave can pick out its own echoes from the calls of thousands of neighbours, a feat that engineers cannot yet reproduce and that biologists do not fully understand. After tens of millions of years of refinement, the bat's sonar still has a great deal to teach its imitators.",
+        "title": "Seeing with Sound",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Echolocation is used by some animals that live in water.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "dolphins and other toothed whales use the same principle underwater",
+                        "explanation": {
+                            "en": "Paragraph A says dolphins and other toothed whales use the same principle underwater. These are animals that live in water, so the statement is true.",
+                            "ru": "В абзаце A говорится, что дельфины и другие зубатые киты используют тот же принцип под водой. Это животные, которые живут в воде, поэтому утверждение верно (TRUE).",
+                            "uk": "В абзаці A сказано, що дельфіни та інші зубаті кити використовують той самий принцип під водою. Це тварини, які живуть у воді, тож твердження правильне (TRUE)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "In the 1790s experiment, bats whose eyes were covered were unable to avoid the threads.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "the animals flew between the threads without touching them",
+                        "explanation": {
+                            "en": "Paragraph B says the bats flew between the threads without touching them. This is the opposite of being unable to avoid them.",
+                            "ru": "В абзаце B говорится, что летучие мыши пролетали между нитями, не задевая их. Это прямо противоположно тому, что они не могли их избежать.",
+                            "uk": "В абзаці B сказано, що кажани пролітали між нитками, не зачіпаючи їх. Це прямо протилежне тому, що вони не могли їх уникнути."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The Swiss surgeon's findings quickly convinced most scholars that bats navigate by sound.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "many scholars found it impossible to accept that an animal could navigate by sounds that no one could detect",
+                        "explanation": {
+                            "en": "Paragraph B says many scholars could not accept the idea, and a rival theory about touch became widely accepted. So the findings did not quickly convince most scholars.",
+                            "ru": "В абзаце B сказано, что многие учёные не могли принять эту идею, а широкое признание получила конкурирующая теория об осязании. Значит, результаты не смогли быстро убедить большинство учёных.",
+                            "uk": "В абзаці B сказано, що багато науковців не могли прийняти цю ідею, а широкого визнання набула конкурентна теорія про дотик. Отже, результати не змогли швидко переконати більшість науковців."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The microphone used by researchers in the late 1930s had first been designed for military purposes.",
+                        "numbers": [
+                            4
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says only that the microphone was newly built and could pick up very high frequencies. It says nothing about why or for whom it was first designed.",
+                            "ru": "В абзаце B сказано лишь, что микрофон был недавно создан и мог улавливать очень высокие частоты. О том, зачем и для кого его изначально разработали, ничего не говорится.",
+                            "uk": "В абзаці B сказано лише, що мікрофон був нещодавно створений і міг уловлювати дуже високі частоти. Про те, навіщо і для кого його спочатку розробили, нічого не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Bats that call through their nostrils produce quieter calls than bats that call through their mouths.",
+                        "numbers": [
+                            5
+                        ],
+                        "explanation": {
+                            "en": "Paragraph C says some bats call through the mouth and others through the nostrils, and that calls can be very powerful in some species. It never compares how loud the two groups are.",
+                            "ru": "В абзаце C говорится, что одни летучие мыши издают сигналы ртом, а другие — через ноздри, и что у некоторых видов сигналы бывают очень мощными. Но громкость этих двух групп нигде не сравнивается.",
+                            "uk": "В абзаці C сказано, що одні кажани подають сигнали ротом, а інші — через ніздрі, і що в деяких видів сигнали бувають дуже потужними. Але гучність цих двох груп ніде не порівнюється."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Bats make their own hearing less sensitive at the moment they produce a call.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "To avoid deafening itself, a bat tightens tiny muscles in its middle ear at the moment it calls",
+                        "explanation": {
+                            "en": "Paragraph C explains that a bat tightens its middle-ear muscles when it calls so that it does not deafen itself. This means it reduces its hearing sensitivity while calling.",
+                            "ru": "В абзаце C объясняется, что, издавая сигнал, летучая мышь напрягает мышцы среднего уха, чтобы не оглушить себя. Значит, во время сигнала она снижает чувствительность своего слуха.",
+                            "uk": "В абзаці C пояснюється, що, подаючи сигнал, кажан напружує м'язи середнього вуха, щоб не оглушити себе. Отже, під час сигналу він знижує чутливість свого слуху."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Bats that hunt among trees generally use higher-pitched calls than bats that hunt in open sky.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "whereas those that pick small prey from leaves in cluttered forest rely on higher ones",
+                        "explanation": {
+                            "en": "Paragraph D says open-sky hunters use lower calls, while bats taking prey from leaves in cluttered forest use higher ones. The statement says the same thing in different words.",
+                            "ru": "В абзаце D говорится, что летучие мыши, охотящиеся в открытом небе, используют более низкие сигналы, а те, что снимают добычу с листьев в густом лесу, — более высокие. Утверждение говорит то же самое другими словами.",
+                            "uk": "В абзаці D сказано, що кажани, які полюють у відкритому небі, використовують нижчі сигнали, а ті, що знімають здобич із листя в густому лісі, — вищі. Твердження каже те саме іншими словами."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "touch"
+                        ],
+                        "prompt": "Early rival theory: bats have an unusually sensitive sense of ______ in their wings",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "bats possessed an extraordinarily sensitive sense of touch in their wings",
+                        "explanation": {
+                            "en": "Paragraph B describes the rival theory that became widely accepted: bats were thought to have an extremely sensitive sense of touch in their wings.",
+                            "ru": "В абзаце B описана конкурирующая теория, получившая широкое признание: считалось, что у летучих мышей в крыльях чрезвычайно чувствительное осязание.",
+                            "uk": "В абзаці B описано конкурентну теорію, яка набула широкого визнання: вважалося, що кажани мають у крилах надзвичайно чутливий дотик."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "nostrils"
+                        ],
+                        "prompt": "Calls leave the bat either through the mouth or through the ______",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "others send sound out through their nostrils",
+                        "explanation": {
+                            "en": "Paragraph C says some species call through an open mouth, while others send sound out through their nostrils.",
+                            "ru": "В абзаце C говорится, что одни виды издают сигналы через открытый рот, а другие испускают звук через ноздри.",
+                            "uk": "В абзаці C сказано, що одні види подають сигнали через відкритий рот, а інші випромінюють звук через ніздрі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "delay"
+                        ],
+                        "prompt": "Distance to an object is judged from the ______ between call and echo",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "The delay between call and echo tells the animal how far away an object is",
+                        "explanation": {
+                            "en": "Paragraph C says the delay between a call and its echo tells the bat how far away an object is. Direction comes from differences between the ears, not from the delay.",
+                            "ru": "В абзаце C сказано, что задержка между сигналом и его эхом сообщает летучей мыши, насколько далеко находится объект. Направление же определяется по разнице между ушами, а не по задержке.",
+                            "uk": "В абзаці C сказано, що затримка між сигналом і його луною повідомляє кажанові, наскільки далеко розташований об'єкт. Напрямок же визначається за різницею між вухами, а не за затримкою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "buzz"
+                        ],
+                        "prompt": "Just before capture: very fast calls known as the feeding ______",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "a rapid sequence that researchers call the 'feeding buzz'",
+                        "explanation": {
+                            "en": "Paragraph D says that in the final moments before capture, the very fast calls are called the 'feeding buzz'.",
+                            "ru": "В абзаце D говорится, что в последние мгновения перед поимкой добычи очень частые сигналы называются \"feeding buzz\".",
+                            "uk": "В абзаці D сказано, що в останні миті перед упійманням здобичі дуже часті сигнали називаються \"feeding buzz\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "smell"
+                        ],
+                        "prompt": "Most Old World fruit bats locate food with large eyes and a good sense of ______",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "find their food using large eyes and a keen sense of smell",
+                        "explanation": {
+                            "en": "Paragraph E says most fruit bats of Africa, Asia and Australia find food using large eyes and a keen sense of smell instead of echolocation.",
+                            "ru": "В абзаце E сказано, что большинство крыланов Африки, Азии и Австралии находят пищу с помощью больших глаз и острого обоняния, а не эхолокации.",
+                            "uk": "В абзаці E сказано, що більшість криланів Африки, Азії та Австралії знаходять їжу завдяки великим очам і гострому нюху, а не ехолокації."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "power"
+                        ],
+                        "prompt": "Mwangi's drone: used less battery ______ than a model that pulsed rapidly all the time",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "the drone used noticeably less battery power than an identical model pulsing rapidly all the time",
+                        "explanation": {
+                            "en": "Paragraph F says Gareth Mwangi's bat-like drone used noticeably less battery power than an identical drone that pulsed rapidly all the time.",
+                            "ru": "В абзаце F сказано, что созданный Gareth Mwangi дрон, работающий по принципу летучей мыши, расходовал заметно меньше заряда батареи, чем такой же дрон, который всё время посылал частые импульсы.",
+                            "uk": "В абзаці F сказано, що створений Gareth Mwangi дрон, який працює за принципом кажана, витрачав помітно менше заряду батареї, ніж такий самий дрон, що весь час посилав часті імпульси."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6"
+    },
+    "translation": {
+        "missing": []
+    }
+}

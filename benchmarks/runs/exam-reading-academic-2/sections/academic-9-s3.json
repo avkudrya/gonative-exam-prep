@@ -1,0 +1,1296 @@
+{
+    "form": {
+        "first": [
+            "the correct option is the longest in 4 of 5 multiple-choice questions (block 3 (multiple_choice), question 1; block 3 (multiple_choice), question 3; block 3 (multiple_choice), question 4; block 3 (multiple_choice), question 5); make the options alike in length so that length gives no hint"
+        ],
+        "afterRepair": []
+    },
+    "plan": "academic-9|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.28208,
+            "provider": "anthropic",
+            "outputTokens": 13013
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.190904,
+            "provider": "anthropic",
+            "outputTokens": 7189
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.017692,
+            "provider": "anthropic",
+            "outputTokens": 832
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.023545,
+            "provider": "openai",
+            "outputTokens": 1082
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.017142,
+            "provider": "xai",
+            "outputTokens": 1488
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.10456,
+            "provider": "anthropic",
+            "outputTokens": 4854
+        }
+    ],
+    "draft": {
+        "title": "Starting Late: The Case for Adult Musicians",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "The common idea that adulthood is too late to begin playing music is mostly mistaken.",
+                        "options": [],
+                        "evidence": "I think this belief is largely wrong",
+                        "explanation": "In paragraph A the writer describes the belief that 'the chance has passed' and then says this belief is 'largely wrong'. So the writer agrees with the statement."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Absolute pitch is of real value to adults who only want to play music informally with friends.",
+                        "options": [],
+                        "evidence": "it is of almost no consequence to someone whose ambition is to accompany friends singing folk songs",
+                        "explanation": "In paragraph B the writer calls absolute pitch impressive but says it hardly matters to someone who wants to play folk songs with friends. This is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Schools ought to offer more music lessons to young children.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B discusses research on children who trained early, but the writer never says whether schools should provide more lessons. The writer's view on this is not known."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Popular claims that music keeps the ageing mind sharp go beyond what research has shown.",
+                        "options": [],
+                        "evidence": "Here I believe the claims have run well ahead of the evidence.",
+                        "explanation": "In paragraph E the writer says the promise that music 'keeps the mind young' has gone further than the evidence supports, which matches the statement."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Online video tutorials are less effective for adult beginners than a human teacher.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "The passage talks about lessons, group learning and practice habits, but it never mentions online tutorials, so we cannot know the writer's opinion about them."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The main reason for an adult to take up an instrument should be to improve their health.",
+                        "options": [],
+                        "evidence": "Those who start for these reasons, rather than in the hope of a cognitive cure, are the ones most likely to find the effort repaid.",
+                        "explanation": "In paragraph G the writer says the right reasons are pleasure, slow improvement and company, not the hope of a 'cognitive cure'. This contradicts the statement."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the reading passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Signe Valdés"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Kwabena Rautio"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Lucinda Ferreyra"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Dong-hyun Albrecht"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Adult learners understood the written and theoretical side of music faster than younger learners did.",
+                        "options": [],
+                        "evidence": "They grasped notation, rhythm and the logic of chords considerably faster than the children",
+                        "explanation": "Paragraph C reports that in Valdés's study the adults learned notation and chords faster than the children."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Many people who stop lessons do so because they are too critical of themselves, not because they stop improving.",
+                        "options": [],
+                        "evidence": "most gave up not because progress stopped but because they judged it too harshly",
+                        "explanation": "Paragraph D: Rautio interviewed people who had abandoned lessons and found that harsh self-judgement, not a lack of progress, made them quit."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "The people studied may already have had the advantages that were credited to music.",
+                        "options": [],
+                        "evidence": "people who volunteer for a weekly group activity may already be healthier, more sociable and more optimistic than those who do not",
+                        "explanation": "Paragraph E: Ferreyra warns that the players in her survey chose to join, so they may have been healthier and happier before they started."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Short practice sessions on most days led to faster progress than long sessions done less often.",
+                        "options": [],
+                        "evidence": "those who played for around twenty minutes on most days advanced more quickly than those who saved their effort for long sessions at the weekend",
+                        "explanation": "Paragraph F reports Albrecht's finding that about twenty minutes on most days beat long weekend sessions."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Learning together with other beginners can make errors feel normal instead of embarrassing.",
+                        "options": [],
+                        "evidence": "see others stumbling over the same passages, which makes their own mistakes seem ordinary rather than shameful",
+                        "explanation": "Paragraph D: Rautio argues that in small groups beginners see others make the same mistakes, so their own errors seem ordinary."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Beginners are more likely to continue if their instrument sounds pleasant from the start.",
+                        "options": [],
+                        "evidence": "Learners who began on instruments that produce a pleasant tone almost immediately, such as the piano or ukulele, were more likely to persist",
+                        "explanation": "Paragraph F: Albrecht noticed that learners on instruments with a pleasant early tone kept going more often than violin beginners."
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A–D. You may use any letter more than once."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What point does the writer make about brain-imaging studies of early musical training?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They reveal an effect of early training without ruling out later change."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They prove that adult brains can no longer be altered by musical training."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They are less dependable than research on absolute pitch in young children."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They show that most celebrated professionals began their training as adults."
+                            }
+                        ],
+                        "evidence": "they do not tell us that later training leaves none",
+                        "explanation": "In paragraph B the writer says brain differences show early training 'leaves a mark' but do not show that later training has no effect. The passage never says adult brains cannot change, and it does not compare how reliable the two kinds of research are."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to Valdés, why did the adults in her study learn notation more quickly?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They could apply earlier learning to an unfamiliar set of symbols."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They attended more piano lessons each week than the children."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They practised their finger movements more often than the children."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They had listened to more recordings of piano music for decades."
+                            }
+                        ],
+                        "evidence": "because they could bring years of general learning, including reading and mathematics, to bear on a new symbolic system",
+                        "explanation": "Paragraph C explains that adults used years of general learning, such as reading and maths, on the new system of musical symbols. All the beginners had weekly lessons, and the recordings are mentioned by Rautio for a different point."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "How, according to Rautio, do adult learners differ from children?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Adults judge their playing against experts, not fellow learners."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Adults prefer studying alone to studying in small groups of beginners."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Adults make more mistakes than children during their first lessons."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Adults give up sooner because of the physical limits of their bodies."
+                            }
+                        ],
+                        "evidence": "adults, by contrast, measure themselves against the polished recordings they have listened to for decades",
+                        "explanation": "In paragraph D Rautio says children compare themselves with the child next to them, while adults compare themselves with polished recordings. He says frustration matters more than any limitation of the body, so the physical option is wrong."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does Ferreyra say would be needed to show that music caused the benefits she observed?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Tracking similar people placed in lessons purely by chance."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Surveying players in a much wider range of towns and regions."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Following the same ukulele and recorder groups for many more years."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Comparing the players of several different kinds of instrument."
+                            }
+                        ],
+                        "evidence": "Without following comparable people who were randomly assigned to lessons, she says, it is impossible to know",
+                        "explanation": "Paragraph E: Ferreyra says that without comparable people randomly assigned to lessons, nobody can know whether the music caused the benefits. More towns, longer study of the same groups or different instruments would not solve the problem that the players chose to join."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does the writer conclude about adult beginners in the final paragraph?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Few will become soloists, but that is the wrong test of success."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Many can become soloists if they organise their practice carefully."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They gain the most when they learn alongside children of school age."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They benefit most when they start in order to protect their memory."
+                            }
+                        ],
+                        "evidence": "a fifty-year-old beginner will become a concert soloist, and it would be dishonest to suggest otherwise. But that was never the right measure",
+                        "explanation": "In paragraph G the writer admits that adult beginners will not become concert soloists but says this was never the right way to measure success. The writer rejects starting 'in the hope of a cognitive cure', so the memory option is wrong."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Signe Valdés",
+                "role": "cognitive psychologist who compared adult and child piano beginners over two years",
+                "gender": "female"
+            },
+            {
+                "name": "Kwabena Rautio",
+                "role": "music educator who interviewed people who had abandoned lessons",
+                "gender": "male"
+            },
+            {
+                "name": "Lucinda Ferreyra",
+                "role": "researcher on ageing who surveyed community music groups for retired people",
+                "gender": "female"
+            },
+            {
+                "name": "Dong-hyun Albrecht",
+                "role": "researcher who studied how working adults organise their practice",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Ask a room of adults whether they wish they had learned to play an instrument, and a surprising number of hands will go up. Ask them why they do not start now, and the answer is usually some version of the same idea: the chance has passed. Music, according to this view, is a skill that must be planted in childhood, when the brain is supposedly at its most receptive, and anyone who begins in middle age is condemned to clumsy mediocrity. I think this belief is largely wrong, and that it discourages a great many people from an activity that could enrich their lives. Adults can learn an instrument, and most who want to should try, provided they understand what they are, and are not, signing up for.",
+                "label": "A"
+            },
+            {
+                "text": "The case for an early start is not invented. Researchers have found that people who began serious training in early childhood are more likely to have absolute pitch, the rare ability to name a note without hearing a reference, and brain-imaging studies have reported structural differences in those who trained from a young age. Yet these findings are narrower than they are often made to sound. Absolute pitch is impressive, but plenty of celebrated professionals manage without it, and it is of almost no consequence to someone whose ambition is to accompany friends singing folk songs. Brain differences, meanwhile, tell us that early training leaves a mark; they do not tell us that later training leaves none.",
+                "label": "B"
+            },
+            {
+                "text": "Signe Valdés, a cognitive psychologist, followed 140 beginners over two years: eighty adults aged between 35 and 68, and sixty children aged 8 to 11, all taking weekly piano lessons. The adults' advantage appeared early and in a place she had not expected. They grasped notation, rhythm and the logic of chords considerably faster than the children, apparently because they could bring years of general learning, including reading and mathematics, to bear on a new symbolic system. Where they fell behind was in the hands. Smooth, automatic finger movement came more slowly, and many adults reported the frustration of knowing exactly what a passage should sound like while being unable to produce it. By the end of the second year, however, the gap in physical fluency had narrowed noticeably, though it had not closed.",
+                "label": "C"
+            },
+            {
+                "text": "That frustration, according to music educator Kwabena Rautio, is the real danger for adult learners, more than any limitation of the body. Having interviewed several hundred people who had abandoned lessons, he concluded that most gave up not because progress stopped but because they judged it too harshly. Children tend to measure themselves against the child at the next music stand; adults, by contrast, measure themselves against the polished recordings they have listened to for decades, and inevitably find themselves wanting. Rautio's remedy is partly social. Beginners who learn in small groups, he argues, see others stumbling over the same passages, which makes their own mistakes seem ordinary rather than shameful.",
+                "label": "D"
+            },
+            {
+                "text": "Much of the public enthusiasm for adult music-making rests on a different promise: that it keeps the mind young. Here I believe the claims have run well ahead of the evidence. Lucinda Ferreyra, who studies ageing, surveyed members of community ukulele and recorder groups for retired people and found that they reported better mood and memory than other residents of the same towns. She is careful, though, to point out what her data cannot show. The players had chosen to join, and people who volunteer for a weekly group activity may already be healthier, more sociable and more optimistic than those who do not. Without following comparable people who were randomly assigned to lessons, she says, it is impossible to know whether the music produced the benefits or merely attracted those who already had them. Newspaper headlines announcing that the violin 'protects the brain' rarely include such caveats.",
+                "label": "E"
+            },
+            {
+                "text": "More practical guidance comes from Dong-hyun Albrecht, who examined how working adults organise their practice. Comparing learners in his study who had similar total practice time, he found that those who played for around twenty minutes on most days advanced more quickly than those who saved their effort for long sessions at the weekend. Albrecht also noticed that the choice of instrument mattered more than people expected. Learners who began on instruments that produce a pleasant tone almost immediately, such as the piano or ukulele, were more likely to persist than those who began on the violin, whose early squeaks can discourage even a determined beginner.",
+                "label": "F"
+            },
+            {
+                "text": "None of this means that a fifty-year-old beginner will become a concert soloist, and it would be dishonest to suggest otherwise. But that was never the right measure. The reasons for an adult to learn an instrument are the pleasure of making something with one's own hands, the satisfaction of slow improvement, and the company of others doing the same. Those who start for these reasons, rather than in the hope of a cognitive cure, are the ones most likely to find the effort repaid. The door, in other words, is not closed; it simply opens onto a different room from the one children enter.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "I think this belief is largely wrong",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "it is of almost no consequence to someone whose ambition is to accompany friends singing folk songs",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Here I believe the claims have run well ahead of the evidence.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Those who start for these reasons, rather than in the hope of a cognitive cure, are the ones most likely to find the effort repaid.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "They grasped notation, rhythm and the logic of chords considerably faster than the children",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "most gave up not because progress stopped but because they judged it too harshly",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "people who volunteer for a weekly group activity may already be healthier, more sociable and more optimistic than those who do not",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "those who played for around twenty minutes on most days advanced more quickly than those who saved their effort for long sessions at the weekend",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "which makes their own mistakes seem ordinary rather than shameful",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Learners who began on instruments that produce a pleasant tone almost immediately, such as the piano or ukulele, were more likely to persist",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Brain differences, meanwhile, tell us that early training leaves a mark; they do not tell us that later training leaves none.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "they could bring years of general learning, including reading and mathematics, to bear on a new symbolic system",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "adults, by contrast, measure themselves against the polished recordings they have listened to for decades",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Without following comparable people who were randomly assigned to lessons, she says, it is impossible to know",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "None of this means that a fifty-year-old beginner will become a concert soloist, and it would be dishonest to suggest otherwise. But that was never the right measure.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "I think this belief is largely wrong",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Absolute pitch is impressive, but plenty of celebrated professionals manage without it, and it is of almost no consequence to someone whose ambition is to accompany friends singing folk songs.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Here I believe the claims have run well ahead of the evidence.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Those who start for these reasons, rather than in the hope of a cognitive cure, are the ones most likely to find the effort repaid.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "They grasped notation, rhythm and the logic of chords considerably faster than the children",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "most gave up not because progress stopped but because they judged it too harshly",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The players had chosen to join, and people who volunteer for a weekly group activity may already be healthier, more sociable and more optimistic than those who do not.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "those who played for around twenty minutes on most days advanced more quickly than those who saved their effort for long sessions at the weekend",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Beginners who learn in small groups, he argues, see others stumbling over the same passages, which makes their own mistakes seem ordinary rather than shameful.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Learners who began on instruments that produce a pleasant tone almost immediately, such as the piano or ukulele, were more likely to persist",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Brain differences, meanwhile, tell us that early training leaves a mark; they do not tell us that later training leaves none.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "apparently because they could bring years of general learning, including reading and mathematics, to bear on a new symbolic system",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Children tend to measure themselves against the child at the next music stand; adults, by contrast, measure themselves against the polished recordings they have listened to for decades",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Without following comparable people who were randomly assigned to lessons, she says, it is impossible to know whether the music produced the benefits",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "None of this means that a fifty-year-old beginner will become a concert soloist, and it would be dishonest to suggest otherwise. But that was never the right measure.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "I think this belief is largely wrong",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "it is of almost no consequence to someone whose ambition is to accompany friends singing folk songs",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Here I believe the claims have run well ahead of the evidence.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "They grasped notation, rhythm and the logic of chords considerably faster than the children",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "most gave up not because progress stopped but because they judged it too harshly",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "people who volunteer for a weekly group activity may already be healthier, more sociable and more optimistic than those who do not",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "those who played for around twenty minutes on most days advanced more quickly than those who saved their effort for long sessions at the weekend",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Beginners who learn in small groups, he argues, see others stumbling over the same passages, which makes their own mistakes seem ordinary rather than shameful",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Brain differences, meanwhile, tell us that early training leaves a mark; they do not tell us that later training leaves none.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "they could bring years of general learning, including reading and mathematics, to bear on a new symbolic system",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "adults, by contrast, measure themselves against the polished recordings they have listened to for decades",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Without following comparable people who were randomly assigned to lessons, she says, it is impossible to know whether the music produced the benefits",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 17,
+        "agreedFirst": 17,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Starting Late: The Case for Adult Musicians\n\nA. Ask a room of adults whether they wish they had learned to play an instrument, and a surprising number of hands will go up. Ask them why they do not start now, and the answer is usually some version of the same idea: the chance has passed. Music, according to this view, is a skill that must be planted in childhood, when the brain is supposedly at its most receptive, and anyone who begins in middle age is condemned to clumsy mediocrity. I think this belief is largely wrong, and that it discourages a great many people from an activity that could enrich their lives. Adults can learn an instrument, and most who want to should try, provided they understand what they are, and are not, signing up for.\n\nB. The case for an early start is not invented. Researchers have found that people who began serious training in early childhood are more likely to have absolute pitch, the rare ability to name a note without hearing a reference, and brain-imaging studies have reported structural differences in those who trained from a young age. Yet these findings are narrower than they are often made to sound. Absolute pitch is impressive, but plenty of celebrated professionals manage without it, and it is of almost no consequence to someone whose ambition is to accompany friends singing folk songs. Brain differences, meanwhile, tell us that early training leaves a mark; they do not tell us that later training leaves none.\n\nC. Signe Valdés, a cognitive psychologist, followed 140 beginners over two years: eighty adults aged between 35 and 68, and sixty children aged 8 to 11, all taking weekly piano lessons. The adults' advantage appeared early and in a place she had not expected. They grasped notation, rhythm and the logic of chords considerably faster than the children, apparently because they could bring years of general learning, including reading and mathematics, to bear on a new symbolic system. Where they fell behind was in the hands. Smooth, automatic finger movement came more slowly, and many adults reported the frustration of knowing exactly what a passage should sound like while being unable to produce it. By the end of the second year, however, the gap in physical fluency had narrowed noticeably, though it had not closed.\n\nD. That frustration, according to music educator Kwabena Rautio, is the real danger for adult learners, more than any limitation of the body. Having interviewed several hundred people who had abandoned lessons, he concluded that most gave up not because progress stopped but because they judged it too harshly. Children tend to measure themselves against the child at the next music stand; adults, by contrast, measure themselves against the polished recordings they have listened to for decades, and inevitably find themselves wanting. Rautio's remedy is partly social. Beginners who learn in small groups, he argues, see others stumbling over the same passages, which makes their own mistakes seem ordinary rather than shameful.\n\nE. Much of the public enthusiasm for adult music-making rests on a different promise: that it keeps the mind young. Here I believe the claims have run well ahead of the evidence. Lucinda Ferreyra, who studies ageing, surveyed members of community ukulele and recorder groups for retired people and found that they reported better mood and memory than other residents of the same towns. She is careful, though, to point out what her data cannot show. The players had chosen to join, and people who volunteer for a weekly group activity may already be healthier, more sociable and more optimistic than those who do not. Without following comparable people who were randomly assigned to lessons, she says, it is impossible to know whether the music produced the benefits or merely attracted those who already had them. Newspaper headlines announcing that the violin 'protects the brain' rarely include such caveats.\n\nF. More practical guidance comes from Dong-hyun Albrecht, who examined how working adults organise their practice. Comparing learners in his study who had similar total practice time, he found that those who played for around twenty minutes on most days advanced more quickly than those who saved their effort for long sessions at the weekend. Albrecht also noticed that the choice of instrument mattered more than people expected. Learners who began on instruments that produce a pleasant tone almost immediately, such as the piano or ukulele, were more likely to persist than those who began on the violin, whose early squeaks can discourage even a determined beginner.\n\nG. None of this means that a fifty-year-old beginner will become a concert soloist, and it would be dishonest to suggest otherwise. But that was never the right measure. The reasons for an adult to learn an instrument are the pleasure of making something with one's own hands, the satisfaction of slow improvement, and the company of others doing the same. Those who start for these reasons, rather than in the hope of a cognitive cure, are the ones most likely to find the effort repaid. The door, in other words, is not closed; it simply opens onto a different room from the one children enter.",
+        "title": "Starting Late: The Case for Adult Musicians",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "The common idea that adulthood is too late to begin playing music is mostly mistaken.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "I think this belief is largely wrong",
+                        "explanation": {
+                            "en": "In paragraph A the writer describes the belief that 'the chance has passed' and then says this belief is 'largely wrong'. So the writer agrees with the statement.",
+                            "ru": "В абзаце A автор описывает убеждение, что «the chance has passed», а затем говорит, что это убеждение «largely wrong». Значит, автор согласен с утверждением.",
+                            "uk": "В абзаці A автор описує переконання, що «the chance has passed», а потім каже, що це переконання «largely wrong». Отже, автор погоджується з твердженням."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Absolute pitch is of real value to adults who only want to play music informally with friends.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "it is of almost no consequence to someone whose ambition is to accompany friends singing folk songs",
+                        "explanation": {
+                            "en": "In paragraph B the writer calls absolute pitch impressive but says it hardly matters to someone who wants to play folk songs with friends. This is the opposite of the statement.",
+                            "ru": "В абзаце B автор называет абсолютный слух впечатляющим, но говорит, что для человека, который хочет играть народные песни с друзьями, он почти не имеет значения. Это противоположно утверждению.",
+                            "uk": "В абзаці B автор називає абсолютний слух вражаючим, але каже, що для людини, яка хоче грати народні пісні з друзями, він майже не має значення. Це протилежне твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Schools ought to offer more music lessons to young children.",
+                        "numbers": [
+                            3
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B discusses research on children who trained early, but the writer never says whether schools should provide more lessons. The writer's view on this is not known.",
+                            "ru": "В абзаце B обсуждаются исследования детей, которые начали заниматься рано, но автор нигде не говорит, должны ли школы давать больше уроков. Мнение автора об этом неизвестно.",
+                            "uk": "В абзаці B ідеться про дослідження дітей, які почали навчатися рано, але автор ніде не каже, чи мають школи давати більше уроків. Думка автора щодо цього невідома."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Popular claims that music keeps the ageing mind sharp go beyond what research has shown.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "Here I believe the claims have run well ahead of the evidence.",
+                        "explanation": {
+                            "en": "In paragraph E the writer says the promise that music 'keeps the mind young' has gone further than the evidence supports, which matches the statement.",
+                            "ru": "В абзаце E автор говорит, что обещание, будто музыка «keeps the mind young», зашло дальше, чем позволяют имеющиеся данные, — это совпадает с утверждением.",
+                            "uk": "В абзаці E автор каже, що обіцянка, ніби музика «keeps the mind young», зайшла далі, ніж дозволяють наявні дані, — це збігається з твердженням."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Online video tutorials are less effective for adult beginners than a human teacher.",
+                        "numbers": [
+                            5
+                        ],
+                        "explanation": {
+                            "en": "The passage talks about lessons, group learning and practice habits, but it never mentions online tutorials, so we cannot know the writer's opinion about them.",
+                            "ru": "В тексте говорится об уроках, групповом обучении и привычках занятий, но онлайн-уроки не упоминаются вовсе, поэтому узнать мнение автора о них нельзя.",
+                            "uk": "У тексті йдеться про уроки, групове навчання та звички практики, але онлайн-уроки взагалі не згадуються, тож дізнатися думку автора про них неможливо."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the reading passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Signe Valdés"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Kwabena Rautio"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Lucinda Ferreyra"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Dong-hyun Albrecht"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Adult learners understood the written and theoretical side of music faster than younger learners did.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "They grasped notation, rhythm and the logic of chords considerably faster than the children",
+                        "explanation": {
+                            "en": "Paragraph C reports that in Valdés's study the adults learned notation and chords faster than the children.",
+                            "ru": "В абзаце C сообщается, что в исследовании Valdés взрослые осваивали нотную запись и аккорды быстрее, чем дети.",
+                            "uk": "В абзаці C повідомляється, що в дослідженні Valdés дорослі опановували нотний запис і акорди швидше, ніж діти."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Many people who stop lessons do so because they are too critical of themselves, not because they stop improving.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "most gave up not because progress stopped but because they judged it too harshly",
+                        "explanation": {
+                            "en": "Paragraph D: Rautio interviewed people who had abandoned lessons and found that harsh self-judgement, not a lack of progress, made them quit.",
+                            "ru": "Абзац D: Rautio опросил людей, бросивших занятия, и выяснил, что заставляла их бросить строгая самокритика, а не отсутствие прогресса.",
+                            "uk": "Абзац D: Rautio опитав людей, які кинули заняття, і з'ясував, що кинути їх змусила сувора самокритика, а не брак прогресу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "The people studied may already have had the advantages that were credited to music.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "people who volunteer for a weekly group activity may already be healthier, more sociable and more optimistic than those who do not",
+                        "explanation": {
+                            "en": "Paragraph E: Ferreyra warns that the players in her survey chose to join, so they may have been healthier and happier before they started.",
+                            "ru": "Абзац E: Ferreyra предупреждает, что участники её опроса сами решили присоединиться, поэтому они, возможно, были здоровее и счастливее ещё до начала занятий.",
+                            "uk": "Абзац E: Ferreyra застерігає, що учасники її опитування самі вирішили приєднатися, тому вони, можливо, були здоровішими й щасливішими ще до початку занять."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Short practice sessions on most days led to faster progress than long sessions done less often.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "those who played for around twenty minutes on most days advanced more quickly than those who saved their effort for long sessions at the weekend",
+                        "explanation": {
+                            "en": "Paragraph F reports Albrecht's finding that about twenty minutes on most days beat long weekend sessions.",
+                            "ru": "В абзаце F приводится вывод Albrecht: около двадцати минут в большинство дней дают лучший результат, чем долгие занятия по выходным.",
+                            "uk": "В абзаці F наводиться висновок Albrecht: близько двадцяти хвилин у більшість днів дають кращий результат, ніж довгі заняття у вихідні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Learning together with other beginners can make errors feel normal instead of embarrassing.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "see others stumbling over the same passages, which makes their own mistakes seem ordinary rather than shameful",
+                        "explanation": {
+                            "en": "Paragraph D: Rautio argues that in small groups beginners see others make the same mistakes, so their own errors seem ordinary.",
+                            "ru": "Абзац D: Rautio утверждает, что в небольших группах новички видят, как другие делают те же ошибки, поэтому собственные ошибки кажутся им обычным делом.",
+                            "uk": "Абзац D: Rautio стверджує, що в невеликих групах початківці бачать, як інші роблять ті самі помилки, тому власні помилки здаються їм звичайною справою."
+                        }
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A–D. You may use any letter more than once."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They reveal an effect of early training without ruling out later change."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They show that most celebrated professionals began their training as adults."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They are less dependable than research on absolute pitch in young children."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They prove that adult brains can no longer be altered by musical training."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What point does the writer make about brain-imaging studies of early musical training?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "they do not tell us that later training leaves none",
+                        "explanation": {
+                            "en": "In paragraph B the writer says brain differences show early training 'leaves a mark' but do not show that later training has no effect. The passage never says adult brains cannot change, and it does not compare how reliable the two kinds of research are.",
+                            "ru": "В абзаце B автор говорит, что различия в мозге показывают: раннее обучение «leaves a mark», — но не доказывают, что более позднее обучение не даёт эффекта. В тексте нигде не сказано, что мозг взрослых не может меняться, и надёжность двух видов исследований не сравнивается.",
+                            "uk": "В абзаці B автор каже, що відмінності в мозку показують: раннє навчання «leaves a mark», — але не доводять, що пізніше навчання не дає ефекту. У тексті ніде не сказано, що мозок дорослих не може змінюватися, і надійність двох видів досліджень не порівнюється."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They had listened to more recordings of piano music for decades."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They could apply earlier learning to an unfamiliar set of symbols."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They attended more piano lessons each week than the children."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They practised their finger movements more often than the children."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to Valdés, why did the adults in her study learn notation more quickly?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "because they could bring years of general learning, including reading and mathematics, to bear on a new symbolic system",
+                        "explanation": {
+                            "en": "Paragraph C explains that adults used years of general learning, such as reading and maths, on the new system of musical symbols. All the beginners had weekly lessons, and the recordings are mentioned by Rautio for a different point.",
+                            "ru": "В абзаце C объясняется, что взрослые применяли к новой системе музыкальных символов многолетний опыт общего обучения, например чтения и математики. Еженедельные уроки были у всех начинающих, а записи упоминает Rautio, причём совсем по другому поводу.",
+                            "uk": "В абзаці C пояснюється, що дорослі застосовували до нової системи музичних символів багаторічний досвід загального навчання, наприклад читання й математики. Щотижневі уроки мали всі початківці, а записи згадує Rautio, причому зовсім з іншого приводу."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Adults give up sooner because of the physical limits of their bodies."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Adults make more mistakes than children during their first lessons."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Adults judge their playing against experts, not fellow learners."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Adults prefer studying alone to studying in small groups of beginners."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "How, according to Rautio, do adult learners differ from children?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "adults, by contrast, measure themselves against the polished recordings they have listened to for decades",
+                        "explanation": {
+                            "en": "In paragraph D Rautio says children compare themselves with the child next to them, while adults compare themselves with polished recordings. He says frustration matters more than any limitation of the body, so the physical option is wrong.",
+                            "ru": "В абзаце D Rautio говорит, что дети сравнивают себя с ребёнком, сидящим рядом, а взрослые — с отшлифованными записями. По его словам, разочарование важнее любых физических ограничений, поэтому вариант о физических причинах неверен.",
+                            "uk": "В абзаці D Rautio каже, що діти порівнюють себе з дитиною поруч, а дорослі — з відшліфованими записами. За його словами, розчарування важить більше, ніж будь-які фізичні обмеження, тому варіант про фізичні причини хибний."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Comparing the players of several different kinds of instrument."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Surveying players in a much wider range of towns and regions."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Following the same ukulele and recorder groups for many more years."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Tracking similar people placed in lessons purely by chance."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What does Ferreyra say would be needed to show that music caused the benefits she observed?",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "Without following comparable people who were randomly assigned to lessons, she says, it is impossible to know",
+                        "explanation": {
+                            "en": "Paragraph E: Ferreyra says that without comparable people randomly assigned to lessons, nobody can know whether the music caused the benefits. More towns, longer study of the same groups or different instruments would not solve the problem that the players chose to join.",
+                            "ru": "Абзац E: Ferreyra говорит, что без сопоставимых людей, которых случайным образом направили бы на занятия, никто не может знать, действительно ли польза вызвана музыкой. Ни больше городов, ни более долгое наблюдение за теми же группами, ни другие инструменты не решили бы главную проблему: участники сами решили присоединиться.",
+                            "uk": "Абзац E: Ferreyra каже, що без порівнянних людей, яких випадково розподілили б на заняття, ніхто не може знати, чи справді користь спричинила саме музика. Ні більше міст, ні довше спостереження за тими самими групами, ні інші інструменти не розв'язали б головну проблему: учасники самі вирішили приєднатися."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b2q1",
+        "7": "b2q2",
+        "8": "b2q3",
+        "9": "b2q4",
+        "10": "b2q5",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

@@ -1,0 +1,968 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-6|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.327404,
+            "provider": "anthropic",
+            "outputTokens": 15466
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012576,
+            "provider": "anthropic",
+            "outputTokens": 604
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.017625,
+            "provider": "openai",
+            "outputTokens": 855
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01362,
+            "provider": "xai",
+            "outputTokens": 1209
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.079768,
+            "provider": "anthropic",
+            "outputTokens": 3676
+        }
+    ],
+    "draft": {
+        "title": "Turning the Sea into Tap Water",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The salt content of seawater is too high for the human body to process safely.",
+                        "options": [],
+                        "evidence": "far more than the human kidneys can cope with",
+                        "explanation": "Paragraph A says seawater has far more salt than human kidneys can cope with. This is the same idea in different words."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Thermal desalination only works well if the seawater is fairly clean.",
+                        "options": [],
+                        "evidence": "tolerates dirty or very salty water",
+                        "explanation": "Paragraph B says the thermal method tolerates dirty or very salty water, so it does not need clean water. The statement says the opposite."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Water leaving reverse osmosis membranes typically contains too many minerals to be used straight away.",
+                        "options": [],
+                        "evidence": "too pure: lacking minerals, it can corrode pipes",
+                        "explanation": "Paragraph C says the water is too pure and lacks minerals, so minerals are added back. The problem is too few minerals, not too many."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Reverse osmosis membranes usually need replacing every few years.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C says the membranes can be clogged by sand, algae and bacteria, so the water is pretreated. It never says how long membranes last or when they must be replaced."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "In certain Gulf states, the majority of drinking water is now obtained from seawater.",
+                        "options": [],
+                        "evidence": "in several of them, most drinking water now comes from the sea",
+                        "explanation": "Paragraph D says that in several Gulf countries most drinking water now comes from the sea. 'The majority' means 'most'."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The Australian desalination plants cost more to build than those in the Gulf region.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D says Australian cities built large plants during a drought and some stood idle, which could look like an expensive mistake. It never compares their building costs with plants in the Gulf."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Drawing water from wells beneath the seabed is more expensive than using open intake pipes.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph E says some newer plants use seabed wells and that suitable ground is not found on every coast. It says nothing about the cost of this method compared with intake pipes."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Abdelnour believes her results are likely to apply equally to sheltered bays.",
+                        "options": [],
+                        "evidence": "in sheltered bays brine would probably be diluted far less efficiently",
+                        "explanation": "In Paragraph F, Abdelnour warns that her study was on a coast with strong currents and that brine would mix less well in sheltered bays. So she does not expect the same results there."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the Reading Passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "membrane"
+                        ],
+                        "prompt": "Reverse osmosis: seawater pushed at high pressure against a very fine ______",
+                        "options": [],
+                        "evidence": "forced at high pressure against a membrane so fine",
+                        "explanation": "Paragraph B explains that in reverse osmosis seawater is pushed against a fine membrane that lets water through but holds salts back."
+                    },
+                    {
+                        "answer": [
+                            "pretreatment",
+                            "pre-treatment"
+                        ],
+                        "prompt": "Sand, algae and bacteria removed first, in a stage called ______",
+                        "options": [],
+                        "evidence": "a stage engineers call pretreatment",
+                        "explanation": "Paragraph C says the water is filtered and treated before reaching the membranes, and engineers call this stage pretreatment."
+                    },
+                    {
+                        "answer": [
+                            "electricity"
+                        ],
+                        "prompt": "Biggest running cost: ______, because of the high pressure involved",
+                        "options": [],
+                        "evidence": "electricity is the single largest operating cost",
+                        "explanation": "Paragraph C links the very high pressure to the fact that electricity is the single largest operating cost."
+                    },
+                    {
+                        "answer": [
+                            "larvae"
+                        ],
+                        "prompt": "Intake pipes: may trap fish and draw in eggs and ______",
+                        "options": [],
+                        "evidence": "suck in eggs and larvae, which rarely survive",
+                        "explanation": "Paragraph E says intake pipes can trap fish and suck in eggs and larvae, which rarely survive."
+                    },
+                    {
+                        "answer": [
+                            "brine"
+                        ],
+                        "prompt": "Waste: very salty ______ that sinks because it is denser than seawater",
+                        "options": [],
+                        "evidence": "brine tends to sink and spread across the seabed",
+                        "explanation": "Paragraph E says plants discharge brine, which is denser than the surrounding water and so sinks to the seabed."
+                    },
+                    {
+                        "answer": [
+                            "diffusers"
+                        ],
+                        "prompt": "Release through devices called ______ makes the waste mix quickly",
+                        "options": [],
+                        "evidence": "Where brine was released through diffusers, nozzles that spray it upwards so that it mixes rapidly with seawater",
+                        "explanation": "Paragraph F describes diffusers as nozzles that spray brine upwards so it mixes rapidly, which kept the affected area small."
+                    },
+                    {
+                        "answer": [
+                            "reservoirs"
+                        ],
+                        "prompt": "Renewable power: plants can run harder when power is plentiful, as water can be kept cheaply in ______",
+                        "options": [],
+                        "evidence": "can be stored cheaply in reservoirs, plants can run harder when power is plentiful",
+                        "explanation": "Paragraph G says fresh water, unlike electricity, can be stored cheaply in reservoirs, so plants can produce more when solar or wind power is plentiful."
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Soraya Abdelnour",
+                "role": "marine ecologist who surveyed the seabed around two brine outfalls",
+                "gender": "female"
+            },
+            {
+                "name": "Mikkel Oyarzún",
+                "role": "engineer who designs desalination systems powered by renewable energy",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Roughly 97 per cent of the water on Earth lies in the oceans, yet in its natural state it is useless for drinking or irrigation. A litre of typical seawater carries about 35 grams of dissolved salts, far more than the human kidneys can cope with. For most of history, coastal communities facing drought could only gaze at the waves. Today, however, many thousands of desalination plants operate around the world, and in some countries they have turned from a last resort into the backbone of the public supply.",
+                "label": "A"
+            },
+            {
+                "text": "Two broad families of technology do the work. The older one relies on heat, imitating the natural cycle in which the sun evaporates seawater and the vapour later falls as rain. In a thermal plant, seawater is boiled, often at reduced pressure so that it boils at a lower temperature, and the steam is condensed on cool surfaces, leaving the salt behind. The method is dependable and tolerates dirty or very salty water, but heating such huge volumes demands enormous amounts of fuel. For that reason, most plants built in recent decades use the second approach, reverse osmosis. Here seawater is forced at high pressure against a membrane so fine that water molecules squeeze through while most dissolved salts are held back.",
+                "label": "B"
+            },
+            {
+                "text": "Reverse osmosis sounds simple, but keeping it running is a delicate business. Sand, algae and bacteria in the incoming water would quickly clog the membranes, so the water is first filtered and treated, a stage engineers call pretreatment. The water that emerges on the other side is, in a sense, too pure: lacking minerals, it can corrode pipes, so plants usually add calcium and other minerals back before it reaches consumers. The pressure required, often sixty times that of the atmosphere or more, explains why electricity is the single largest operating cost. Engineers have cut consumption sharply by fitting devices that capture the pressure still held by the salty reject stream and use it to help push the next batch of water through. Even so, producing a cubic metre of desalinated water still takes several times more energy than treating the same amount of river water or groundwater.",
+                "label": "C"
+            },
+            {
+                "text": "Where the technology is used reflects geography and wealth. The countries around the Arabian Gulf, with little rainfall, few rivers and abundant oil and gas, were early adopters and remain the largest users; in several of them, most drinking water now comes from the sea. Elsewhere, desalination plays a supporting role. During a prolonged drought in the 2000s, several Australian cities commissioned large plants, only to leave some of them idle for years once the rains returned, a reminder that a plant built as insurance can look like an expensive mistake in wet years. Islands and dry coastal regions from the Mediterranean to California have also invested, while poorer inland areas, far from the sea and short of money, have largely been left out.",
+                "label": "D"
+            },
+            {
+                "text": "The environmental costs begin at the intake. Pipes drawing in vast quantities of seawater can trap fish against screens and suck in eggs and larvae, which rarely survive. Some newer plants instead take water from wells dug beneath the seabed, using the sand as a natural filter, although suitable ground is not found on every coast. A greater concern lies at the other end of the process. For every litre of fresh water produced, a plant typically discharges a similar or larger volume of brine, roughly twice as salty as the sea and sometimes carrying traces of the chemicals used in cleaning. Being denser than the surrounding water, brine tends to sink and spread across the seabed, where it can harm creatures that cannot move away.",
+                "label": "E"
+            },
+            {
+                "text": "How serious that harm is remains disputed. Soraya Abdelnour, a marine ecologist, spent three years surveying the seabed around two outfalls on the same coastline. Where brine was released through diffusers, nozzles that spray it upwards so that it mixes rapidly with seawater, changes in seabed life were confined to a narrow zone a few hundred metres wide. Where it simply poured from an open pipe, the affected area was considerably larger. Abdelnour cautions, however, that her study covered a coast with strong currents, and that in sheltered bays brine would probably be diluted far less efficiently.",
+                "label": "F"
+            },
+            {
+                "text": "Then there is the climate. Where the electricity comes from burning fossil fuels, every glass of desalinated water adds to greenhouse emissions, worsening the very shifts in rainfall that make desalination necessary. Pairing plants with solar or wind power offers one way out, and because fresh water, unlike electricity, can be stored cheaply in reservoirs, plants can run harder when power is plentiful. Mikkel Oyarzún, an engineer who designs such systems, argues that the remaining obstacle is financial rather than technical: plants are costly to build, and their output is hard to justify when rain is abundant. Desalination, in his view, works best alongside repairing leaking pipes and recycling wastewater, not as a substitute for using water wisely.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "A litre of typical seawater carries about 35 grams of dissolved salts, far more than the human kidneys can cope with.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The method is dependable and tolerates dirty or very salty water",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The water that emerges on the other side is, in a sense, too pure: lacking minerals, it can corrode pipes",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "in several of them, most drinking water now comes from the sea.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "in sheltered bays brine would probably be diluted far less efficiently.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "forced at high pressure against a membrane so fine",
+                "answer": [
+                    "membrane"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a stage engineers call pretreatment",
+                "answer": [
+                    "pretreatment"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "explains why electricity is the single largest operating cost",
+                "answer": [
+                    "electricity"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "suck in eggs and larvae",
+                "answer": [
+                    "larvae"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Being denser than the surrounding water, brine tends to sink",
+                "answer": [
+                    "brine"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "released through diffusers, nozzles that spray it upwards so that it mixes rapidly with seawater",
+                "answer": [
+                    "diffusers"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "fresh water, unlike electricity, can be stored cheaply in reservoirs",
+                "answer": [
+                    "reservoirs"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "A litre of typical seawater carries about 35 grams of dissolved salts, far more than the human kidneys can cope with.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The method is dependable and tolerates dirty or very salty water",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The water that emerges on the other side is, in a sense, too pure: lacking minerals",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "in several of them, most drinking water now comes from the sea",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Abdelnour cautions, however, that her study covered a coast with strong currents, and that in sheltered bays brine would probably be diluted far less efficiently.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "seawater is forced at high pressure against a membrane so fine",
+                "answer": [
+                    "membrane"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the water is first filtered and treated, a stage engineers call pretreatment",
+                "answer": [
+                    "pretreatment"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The pressure required, often sixty times that of the atmosphere or more, explains why electricity is the single largest operating cost.",
+                "answer": [
+                    "electricity"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "suck in eggs and larvae",
+                "answer": [
+                    "larvae"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "a plant typically discharges a similar or larger volume of brine... Being denser than the surrounding water, brine tends to sink",
+                "answer": [
+                    "brine"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Where brine was released through diffusers, nozzles that spray it upwards so that it mixes rapidly with seawater",
+                "answer": [
+                    "diffusers"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "because fresh water, unlike electricity, can be stored cheaply in reservoirs",
+                "answer": [
+                    "reservoirs"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "far more than the human kidneys can cope with",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "tolerates dirty or very salty water",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "too pure: lacking minerals",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "in several of them, most drinking water now comes from the sea",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "against a membrane so fine",
+            "answer": [
+                "membrane"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "a stage engineers call pretreatment",
+            "answer": [
+                "pretreatment"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "electricity is the single largest operating cost",
+            "answer": [
+                "electricity"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "suck in eggs and larvae",
+            "answer": [
+                "larvae"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "volume of brine, roughly twice as salty",
+            "answer": [
+                "brine"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "released through diffusers, nozzles that spray it upwards so that it mixes rapidly",
+            "answer": [
+                "diffusers"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Turning the Sea into Tap Water\n\nA. Roughly 97 per cent of the water on Earth lies in the oceans, yet in its natural state it is useless for drinking or irrigation. A litre of typical seawater carries about 35 grams of dissolved salts, far more than the human kidneys can cope with. For most of history, coastal communities facing drought could only gaze at the waves. Today, however, many thousands of desalination plants operate around the world, and in some countries they have turned from a last resort into the backbone of the public supply.\n\nB. Two broad families of technology do the work. The older one relies on heat, imitating the natural cycle in which the sun evaporates seawater and the vapour later falls as rain. In a thermal plant, seawater is boiled, often at reduced pressure so that it boils at a lower temperature, and the steam is condensed on cool surfaces, leaving the salt behind. The method is dependable and tolerates dirty or very salty water, but heating such huge volumes demands enormous amounts of fuel. For that reason, most plants built in recent decades use the second approach, reverse osmosis. Here seawater is forced at high pressure against a membrane so fine that water molecules squeeze through while most dissolved salts are held back.\n\nC. Reverse osmosis sounds simple, but keeping it running is a delicate business. Sand, algae and bacteria in the incoming water would quickly clog the membranes, so the water is first filtered and treated, a stage engineers call pretreatment. The water that emerges on the other side is, in a sense, too pure: lacking minerals, it can corrode pipes, so plants usually add calcium and other minerals back before it reaches consumers. The pressure required, often sixty times that of the atmosphere or more, explains why electricity is the single largest operating cost. Engineers have cut consumption sharply by fitting devices that capture the pressure still held by the salty reject stream and use it to help push the next batch of water through. Even so, producing a cubic metre of desalinated water still takes several times more energy than treating the same amount of river water or groundwater.\n\nD. Where the technology is used reflects geography and wealth. The countries around the Arabian Gulf, with little rainfall, few rivers and abundant oil and gas, were early adopters and remain the largest users; in several of them, most drinking water now comes from the sea. Elsewhere, desalination plays a supporting role. During a prolonged drought in the 2000s, several Australian cities commissioned large plants, only to leave some of them idle for years once the rains returned, a reminder that a plant built as insurance can look like an expensive mistake in wet years. Islands and dry coastal regions from the Mediterranean to California have also invested, while poorer inland areas, far from the sea and short of money, have largely been left out.\n\nE. The environmental costs begin at the intake. Pipes drawing in vast quantities of seawater can trap fish against screens and suck in eggs and larvae, which rarely survive. Some newer plants instead take water from wells dug beneath the seabed, using the sand as a natural filter, although suitable ground is not found on every coast. A greater concern lies at the other end of the process. For every litre of fresh water produced, a plant typically discharges a similar or larger volume of brine, roughly twice as salty as the sea and sometimes carrying traces of the chemicals used in cleaning. Being denser than the surrounding water, brine tends to sink and spread across the seabed, where it can harm creatures that cannot move away.\n\nF. How serious that harm is remains disputed. Soraya Abdelnour, a marine ecologist, spent three years surveying the seabed around two outfalls on the same coastline. Where brine was released through diffusers, nozzles that spray it upwards so that it mixes rapidly with seawater, changes in seabed life were confined to a narrow zone a few hundred metres wide. Where it simply poured from an open pipe, the affected area was considerably larger. Abdelnour cautions, however, that her study covered a coast with strong currents, and that in sheltered bays brine would probably be diluted far less efficiently.\n\nG. Then there is the climate. Where the electricity comes from burning fossil fuels, every glass of desalinated water adds to greenhouse emissions, worsening the very shifts in rainfall that make desalination necessary. Pairing plants with solar or wind power offers one way out, and because fresh water, unlike electricity, can be stored cheaply in reservoirs, plants can run harder when power is plentiful. Mikkel Oyarzún, an engineer who designs such systems, argues that the remaining obstacle is financial rather than technical: plants are costly to build, and their output is hard to justify when rain is abundant. Desalination, in his view, works best alongside repairing leaking pipes and recycling wastewater, not as a substitute for using water wisely.",
+        "title": "Turning the Sea into Tap Water",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The salt content of seawater is too high for the human body to process safely.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "far more than the human kidneys can cope with",
+                        "explanation": {
+                            "en": "Paragraph A says seawater has far more salt than human kidneys can cope with. This is the same idea in different words.",
+                            "ru": "В абзаце A сказано, что в морской воде гораздо больше соли, чем способны выдержать почки человека. Это та же мысль, только другими словами.",
+                            "uk": "В абзаці A сказано, що в морській воді значно більше солі, ніж здатні витримати нирки людини. Це та сама думка, лише іншими словами."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Thermal desalination only works well if the seawater is fairly clean.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "tolerates dirty or very salty water",
+                        "explanation": {
+                            "en": "Paragraph B says the thermal method tolerates dirty or very salty water, so it does not need clean water. The statement says the opposite.",
+                            "ru": "В абзаце B сказано, что термический метод справляется с грязной или очень солёной водой, то есть чистая вода ему не нужна. В утверждении сказано обратное.",
+                            "uk": "В абзаці B сказано, що термічний метод дає раду брудній або дуже солоній воді, тобто чиста вода йому не потрібна. У твердженні сказано протилежне."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Water leaving reverse osmosis membranes typically contains too many minerals to be used straight away.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "too pure: lacking minerals, it can corrode pipes",
+                        "explanation": {
+                            "en": "Paragraph C says the water is too pure and lacks minerals, so minerals are added back. The problem is too few minerals, not too many.",
+                            "ru": "В абзаце C сказано, что вода получается слишком чистой и в ней не хватает минералов, поэтому их добавляют обратно. Проблема в том, что минералов слишком мало, а не слишком много.",
+                            "uk": "В абзаці C сказано, що вода виходить надто чистою і в ній бракує мінералів, тому їх додають назад. Проблема в тому, що мінералів замало, а не забагато."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Reverse osmosis membranes usually need replacing every few years.",
+                        "numbers": [
+                            4
+                        ],
+                        "explanation": {
+                            "en": "Paragraph C says the membranes can be clogged by sand, algae and bacteria, so the water is pretreated. It never says how long membranes last or when they must be replaced.",
+                            "ru": "В абзаце C сказано, что мембраны могут забиваться песком, водорослями и бактериями, поэтому воду предварительно очищают. Но там ничего не говорится о том, сколько служат мембраны или когда их нужно менять.",
+                            "uk": "В абзаці C сказано, що мембрани можуть забиватися піском, водоростями й бактеріями, тому воду попередньо очищають. Але там нічого не сказано про те, скільки служать мембрани чи коли їх треба міняти."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "In certain Gulf states, the majority of drinking water is now obtained from seawater.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "in several of them, most drinking water now comes from the sea",
+                        "explanation": {
+                            "en": "Paragraph D says that in several Gulf countries most drinking water now comes from the sea. 'The majority' means 'most'.",
+                            "ru": "В абзаце D сказано, что в ряде стран Персидского залива бо́льшая часть питьевой воды сейчас поступает из моря. \"The majority\" означает то же, что \"most\" (большая часть).",
+                            "uk": "В абзаці D сказано, що в кількох країнах Перської затоки більша частина питної води зараз надходить із моря. \"The majority\" означає те саме, що \"most\" (більша частина)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The Australian desalination plants cost more to build than those in the Gulf region.",
+                        "numbers": [
+                            6
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D says Australian cities built large plants during a drought and some stood idle, which could look like an expensive mistake. It never compares their building costs with plants in the Gulf.",
+                            "ru": "В абзаце D сказано, что австралийские города построили крупные опреснительные станции во время засухи и некоторые из них простаивали, что может выглядеть как дорогая ошибка. Но стоимость их строительства нигде не сравнивается со станциями в странах Персидского залива.",
+                            "uk": "В абзаці D сказано, що австралійські міста збудували великі опріснювальні станції під час посухи і деякі з них простоювали, що може виглядати як дорога помилка. Але вартість їхнього будівництва ніде не порівнюється зі станціями в країнах Перської затоки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Drawing water from wells beneath the seabed is more expensive than using open intake pipes.",
+                        "numbers": [
+                            7
+                        ],
+                        "explanation": {
+                            "en": "Paragraph E says some newer plants use seabed wells and that suitable ground is not found on every coast. It says nothing about the cost of this method compared with intake pipes.",
+                            "ru": "В абзаце E сказано, что на некоторых новых станциях используют скважины на морском дне и что подходящий грунт есть не на каждом побережье. О стоимости этого способа по сравнению с водозаборными трубами ничего не сказано.",
+                            "uk": "В абзаці E сказано, що на деяких нових станціях використовують свердловини на морському дні і що придатний ґрунт є не на кожному узбережжі. Про вартість цього способу порівняно з водозабірними трубами нічого не сказано."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the Reading Passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "membrane"
+                        ],
+                        "prompt": "Reverse osmosis: seawater pushed at high pressure against a very fine ______",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "forced at high pressure against a membrane so fine",
+                        "explanation": {
+                            "en": "Paragraph B explains that in reverse osmosis seawater is pushed against a fine membrane that lets water through but holds salts back.",
+                            "ru": "В абзаце B объясняется, что при обратном осмосе (\"reverse osmosis\") морскую воду прижимают к тонкой мембране (\"membrane\"), которая пропускает воду, но задерживает соли.",
+                            "uk": "В абзаці B пояснюється, що під час зворотного осмосу (\"reverse osmosis\") морську воду притискають до тонкої мембрани (\"membrane\"), яка пропускає воду, але затримує солі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "pretreatment",
+                            "pre-treatment"
+                        ],
+                        "prompt": "Sand, algae and bacteria removed first, in a stage called ______",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "a stage engineers call pretreatment",
+                        "explanation": {
+                            "en": "Paragraph C says the water is filtered and treated before reaching the membranes, and engineers call this stage pretreatment.",
+                            "ru": "В абзаце C сказано, что перед попаданием на мембраны воду фильтруют и обрабатывают, и инженеры называют этот этап \"pretreatment\".",
+                            "uk": "В абзаці C сказано, що перед тим, як потрапити на мембрани, воду фільтрують і обробляють, а інженери називають цей етап \"pretreatment\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "electricity"
+                        ],
+                        "prompt": "Biggest running cost: ______, because of the high pressure involved",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "electricity is the single largest operating cost",
+                        "explanation": {
+                            "en": "Paragraph C links the very high pressure to the fact that electricity is the single largest operating cost.",
+                            "ru": "Абзац C связывает очень высокое давление с тем, что электроэнергия (\"electricity\") — самая крупная статья эксплуатационных расходов.",
+                            "uk": "Абзац C пов'язує дуже високий тиск із тим, що електроенергія (\"electricity\") — найбільша стаття експлуатаційних витрат."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "larvae"
+                        ],
+                        "prompt": "Intake pipes: may trap fish and draw in eggs and ______",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "suck in eggs and larvae, which rarely survive",
+                        "explanation": {
+                            "en": "Paragraph E says intake pipes can trap fish and suck in eggs and larvae, which rarely survive.",
+                            "ru": "В абзаце E сказано, что водозаборные трубы могут захватывать рыбу и засасывать икру и личинки (\"eggs and larvae\"), которые редко выживают.",
+                            "uk": "В абзаці E сказано, що водозабірні труби можуть захоплювати рибу й засмоктувати ікру та личинки (\"eggs and larvae\"), які рідко виживають."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "brine"
+                        ],
+                        "prompt": "Waste: very salty ______ that sinks because it is denser than seawater",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "brine tends to sink and spread across the seabed",
+                        "explanation": {
+                            "en": "Paragraph E says plants discharge brine, which is denser than the surrounding water and so sinks to the seabed.",
+                            "ru": "В абзаце E сказано, что станции сбрасывают рассол (\"brine\"), который плотнее окружающей воды и поэтому опускается на морское дно (\"seabed\").",
+                            "uk": "В абзаці E сказано, що станції скидають розсіл (\"brine\"), який щільніший за навколишню воду і тому опускається на морське дно (\"seabed\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "diffusers"
+                        ],
+                        "prompt": "Release through devices called ______ makes the waste mix quickly",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "Where brine was released through diffusers, nozzles that spray it upwards so that it mixes rapidly with seawater",
+                        "explanation": {
+                            "en": "Paragraph F describes diffusers as nozzles that spray brine upwards so it mixes rapidly, which kept the affected area small.",
+                            "ru": "В абзаце F диффузоры (\"diffusers\") описаны как сопла, которые выбрасывают рассол вверх, чтобы он быстро перемешивался с водой, — благодаря этому затронутая площадь оставалась небольшой.",
+                            "uk": "В абзаці F дифузори (\"diffusers\") описано як сопла, що викидають розсіл угору, щоб він швидко змішувався з водою, — завдяки цьому уражена площа залишалася невеликою."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6"
+    },
+    "translation": {
+        "missing": []
+    }
+}

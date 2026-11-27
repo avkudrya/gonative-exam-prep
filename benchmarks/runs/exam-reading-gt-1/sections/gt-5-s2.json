@@ -1,0 +1,1226 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-5|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.216432,
+            "provider": "anthropic",
+            "outputTokens": 9925
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.015302,
+            "provider": "anthropic",
+            "outputTokens": 703
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.017463,
+            "provider": "openai",
+            "outputTokens": 732
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.018396,
+            "provider": "xai",
+            "outputTokens": 1794
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.093336,
+            "provider": "anthropic",
+            "outputTokens": 4355
+        }
+    ],
+    "draft": {
+        "title": "Handling Complaints: A Guide for Front-Line Staff",
+        "blocks": [
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "email"
+                        ],
+                        "prompt": "Complaints may come face to face, by phone or by ______",
+                        "options": [],
+                        "evidence": "phones the helpline or writes to us by email",
+                        "explanation": "Paragraph A says the guidance applies whether customers speak in person, phone the helpline or write by email."
+                    },
+                    {
+                        "answer": [
+                            "notes"
+                        ],
+                        "prompt": "Make short ______ while the customer is speaking",
+                        "options": [],
+                        "evidence": "Take brief notes as they talk",
+                        "explanation": "Paragraph B tells staff to take brief notes as the customer talks; 'short' restates 'brief'."
+                    },
+                    {
+                        "answer": [
+                            "misunderstanding"
+                        ],
+                        "prompt": "Restate key points so the customer can correct any ______",
+                        "options": [],
+                        "evidence": "gives the customer a chance to correct any misunderstanding",
+                        "explanation": "Paragraph B explains that repeating the main points lets the customer correct any misunderstanding before staff act."
+                    },
+                    {
+                        "answer": [
+                            "blame"
+                        ],
+                        "prompt": "Recognise feelings without taking ______ for the problem",
+                        "options": [],
+                        "evidence": "recognises the customer's experience without accepting blame",
+                        "explanation": "Paragraph C says acknowledging feelings recognises the customer's experience without accepting blame."
+                    },
+                    {
+                        "answer": [
+                            "dismissive"
+                        ],
+                        "prompt": "Avoid expressions that may seem ______, e.g. 'calm down'",
+                        "options": [],
+                        "evidence": "which tend to sound dismissive even when they are not meant to",
+                        "explanation": "Paragraph C warns that phrases like 'calm down' tend to sound dismissive, even when this is not intended."
+                    },
+                    {
+                        "answer": [
+                            "statement"
+                        ],
+                        "prompt": "Refund within 30 days requires a receipt or bank ______",
+                        "options": [],
+                        "evidence": "provided the customer can show a receipt or a bank statement",
+                        "explanation": "Paragraph D says a full refund within thirty days is allowed if the customer can show a receipt or a bank statement."
+                    },
+                    {
+                        "answer": [
+                            "supervisor"
+                        ],
+                        "prompt": "Travel costs or vouchers: must be agreed by a ______",
+                        "options": [],
+                        "evidence": "such as compensation for travel costs or a goodwill voucher, must be approved by a supervisor",
+                        "explanation": "Paragraph D says anything beyond refunds and replacements, such as travel costs or goodwill vouchers, needs a supervisor's approval."
+                    },
+                    {
+                        "answer": [
+                            "description"
+                        ],
+                        "prompt": "Complaints log: record the customer's own ______ of the issue",
+                        "options": [],
+                        "evidence": "using the customer's own description of the problem",
+                        "explanation": "Paragraph E says staff should use the customer's own description of the problem, not their own summary."
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to the booklet, customers who complain usually",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "hope to go on dealing with the company."
+                            },
+                            {
+                                "id": "B",
+                                "text": "have already decided to leave the company."
+                            },
+                            {
+                                "id": "C",
+                                "text": "would rather write an email than phone."
+                            },
+                            {
+                                "id": "D",
+                                "text": "expect a solution within a few seconds."
+                            }
+                        ],
+                        "evidence": "Customers who bother to complain are usually telling us that they want to keep doing business with us",
+                        "explanation": "Paragraph A says complaining customers want to keep doing business with the company. It is customers who are finished with a company who leave without saying anything."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Why should staff repeat the customer's main points back to them?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "to gain time to think of a solution"
+                            },
+                            {
+                                "id": "B",
+                                "text": "to let the customer put right any error"
+                            },
+                            {
+                                "id": "C",
+                                "text": "to create a record for the complaints log"
+                            },
+                            {
+                                "id": "D",
+                                "text": "to defend the company against the complaint"
+                            }
+                        ],
+                        "evidence": "it gives the customer a chance to correct any misunderstanding before you act on it",
+                        "explanation": "Paragraph B says repeating the points gives the customer a chance to correct any misunderstanding. The booklet actually tells staff not to defend the company at this stage."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the writer say about acknowledging a customer's feelings?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It should come only after an investigation."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It must always include a formal apology."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It does not mean admitting the company was wrong."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It matters less than offering a quick solution."
+                            }
+                        ],
+                        "evidence": "This is not the same as admitting that the company is at fault.",
+                        "explanation": "Paragraph C says acknowledging feelings is different from admitting fault. An apology is only needed if a mistake is actually found."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Which of the following may any member of staff do without a supervisor's approval?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "pay back the cost of a customer's journey"
+                            },
+                            {
+                                "id": "B",
+                                "text": "give the customer a goodwill voucher"
+                            },
+                            {
+                                "id": "C",
+                                "text": "agree compensation for the customer's lost time"
+                            },
+                            {
+                                "id": "D",
+                                "text": "refund a recent purchase with proof of payment"
+                            }
+                        ],
+                        "evidence": "give a full refund on items bought within the last thirty days, provided the customer can show a receipt or a bank statement",
+                        "explanation": "Paragraph D allows all staff to give a refund on items bought within thirty days if there is a receipt or bank statement. Travel costs, vouchers and any other compensation need a supervisor's approval."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What did Ilse Mbatha's review of complaint records show?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Most complaints were settled within two working days."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Updates helped only when they contained new information."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Customers kept informed early were less likely to take things further."
+                            },
+                            {
+                                "id": "D",
+                                "text": "The branches that replied fastest received the fewest complaints."
+                            }
+                        ],
+                        "evidence": "customers who received an update before the deadline, even one saying only that the investigation was still going on, were much less likely to escalate their complaint",
+                        "explanation": "Paragraph E reports that customers who got an update before the deadline were much less likely to escalate. This was true even when the update gave no news, so the option about updates needing new information is wrong."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does Callixte Duarte advise staff to do after a difficult conversation?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "take a short break before the next customer"
+                            },
+                            {
+                                "id": "B",
+                                "text": "write down what happened straight away"
+                            },
+                            {
+                                "id": "C",
+                                "text": "ask a supervisor to take over the next call"
+                            },
+                            {
+                                "id": "D",
+                                "text": "give the customer one clear final warning"
+                            }
+                        ],
+                        "evidence": "recommends taking a few minutes away from your desk after any difficult exchange",
+                        "explanation": "Paragraph F says Duarte recommends spending a few minutes away from the desk. Writing an account is general advice from the booklet, not his recommendation."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Why should staff choose the category for a closed complaint carefully?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It decides how fast a complaint can be closed."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Customers can see it on their own records."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Supervisors use it to judge individual staff."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It helps managers notice problems that keep recurring."
+                            }
+                        ],
+                        "evidence": "several of the improvements introduced over the past year, including clearer labels on our returns envelopes, began as patterns that front-line staff had noticed and recorded",
+                        "explanation": "Paragraph G says team leaders read the categories every month, and that several improvements started as patterns staff had recorded. Nothing is said about judging staff or customers seeing the categories."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Ilse Mbatha",
+                "role": "manager of the customer service team who reviewed six months of complaint records",
+                "gender": "female"
+            },
+            {
+                "name": "Callixte Duarte",
+                "role": "senior trainer who advises taking a break after difficult exchanges",
+                "gender": "unknown"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Every complaint, however unpleasant it may feel at the time, is a chance to put something right. Customers who bother to complain are usually telling us that they want to keep doing business with us; those who are truly finished with a company tend to leave without a word. This section of the booklet explains what you need to know before a complaint reaches you and what you should do once it has. It applies whether the customer speaks to you face to face, phones the helpline or writes to us by email.",
+                "label": "A"
+            },
+            {
+                "text": "Your first task is simply to listen. Many staff feel pressure to offer a solution within seconds, but interrupting a customer who is still explaining the problem almost always makes matters worse. Let the person finish, even if you think you already know what they are going to say. Do not be tempted to defend the company at this stage. Take brief notes as they talk, and when they have finished, repeat the main points back to them in your own words. This shows that you have understood, and it gives the customer a chance to correct any misunderstanding before you act on it.",
+                "label": "B"
+            },
+            {
+                "text": "Next, acknowledge how the customer feels. This is not the same as admitting that the company is at fault. A sentence such as \"I can see why that would be frustrating\" recognises the customer's experience without accepting blame for something that has not yet been investigated. Avoid phrases like \"calm down\" or \"that's our policy\", which tend to sound dismissive even when they are not meant to. If you do discover that we have made a mistake, however, say so plainly and apologise; customers are far more forgiving of an honest error than of an excuse.",
+                "label": "C"
+            },
+            {
+                "text": "Before you promise anything, check what you are allowed to offer. All staff may replace faulty goods or give a full refund on items bought within the last thirty days, provided the customer can show a receipt or a bank statement. Anything beyond this, such as compensation for travel costs or a goodwill voucher, must be approved by a supervisor. Never promise an outcome you are not certain you can deliver: a broken promise turns one complaint into two. If you need to pass the matter on, tell the customer who will deal with it and when they can expect to hear back.",
+                "label": "D"
+            },
+            {
+                "text": "Some complaints cannot be settled during the first conversation. In these cases, record the details on the complaints log the same day, using the customer's own description of the problem rather than a summary of your own. Our policy is to send a written acknowledgement within two working days and a full response within ten. Ilse Mbatha, who manages our customer service team, reviewed six months of records last year and found that customers who received an update before the deadline, even one saying only that the investigation was still going on, were much less likely to escalate their complaint. Her review covered only our own branches, but its message is clear: silence is usually read as indifference.",
+                "label": "E"
+            },
+            {
+                "text": "Occasionally a customer becomes aggressive. You are not expected to put up with abuse. Stay calm, keep your voice low and steady, and explain politely that you want to help but cannot continue if the shouting goes on. If the behaviour continues, you may end a phone call after one clear warning, or ask a supervisor to take over a face-to-face conversation. Afterwards, write a short account of what happened while it is fresh in your mind. Callixte Duarte, our senior trainer, recommends taking a few minutes away from your desk after any difficult exchange, since carrying tension into the next conversation can affect how you treat a customer who has done nothing wrong.",
+                "label": "F"
+            },
+            {
+                "text": "Finally, remember that each complaint contains information. A single complaint about a late delivery may be bad luck; ten in a week suggest a problem with a supplier or a route. When you close a complaint on the log, choose the category that best describes the cause, not merely the symptom. Team leaders read these categories every month, and several of the improvements introduced over the past year, including clearer labels on our returns envelopes, began as patterns that front-line staff had noticed and recorded. The few seconds it takes to choose carefully are well spent.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "whether the customer speaks to you face to face, phones the helpline or writes to us by email",
+                "answer": [
+                    "email"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Take brief notes as they talk",
+                "answer": [
+                    "notes"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it gives the customer a chance to correct any misunderstanding before you act on it",
+                "answer": [
+                    "misunderstanding"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "recognises the customer's experience without accepting blame for something that has not yet been investigated",
+                "answer": [
+                    "blame"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "which tend to sound dismissive even when they are not meant to",
+                "answer": [
+                    "dismissive"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "provided the customer can show a receipt or a bank statement",
+                "answer": [
+                    "statement"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "must be approved by a supervisor",
+                "answer": [
+                    "supervisor"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "using the customer's own description of the problem rather than a summary of your own",
+                "answer": [
+                    "description"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Customers who bother to complain are usually telling us that they want to keep doing business with us",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "it gives the customer a chance to correct any misunderstanding before you act on it",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is not the same as admitting that the company is at fault.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "All staff may replace faulty goods or give a full refund on items bought within the last thirty days, provided the customer can show a receipt or a bank statement.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "customers who received an update before the deadline, even one saying only that the investigation was still going on, were much less likely to escalate their complaint",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "recommends taking a few minutes away from your desk after any difficult exchange",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "A single complaint about a late delivery may be bad luck; ten in a week suggest a problem with a supplier or a route.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "writes to us by email",
+                "answer": [
+                    "email"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Take brief notes as they talk",
+                "answer": [
+                    "notes"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it gives the customer a chance to correct any misunderstanding",
+                "answer": [
+                    "misunderstanding"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "recognises the customer's experience without accepting blame",
+                "answer": [
+                    "blame"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "which tend to sound dismissive",
+                "answer": [
+                    "dismissive"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "a receipt or a bank statement",
+                "answer": [
+                    "statement"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "must be approved by a supervisor",
+                "answer": [
+                    "supervisor"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "using the customer's own description of the problem",
+                "answer": [
+                    "description"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Customers who bother to complain are usually telling us that they want to keep doing business with us",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "repeat the main points back to them in your own words... it gives the customer a chance to correct any misunderstanding",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is not the same as admitting that the company is at fault",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "All staff may replace faulty goods or give a full refund on items bought within the last thirty days, provided the customer can show a receipt or a bank statement",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "customers who received an update before the deadline... were much less likely to escalate their complaint",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "recommends taking a few minutes away from your desk after any difficult exchange",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Team leaders read these categories every month, and several of the improvements introduced over the past year... began as patterns that front-line staff had noticed and recorded",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "writes to us by email",
+            "answer": [
+                "email"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Take brief notes as they talk",
+            "answer": [
+                "notes"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "correct any misunderstanding before you act on it",
+            "answer": [
+                "misunderstanding"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "without accepting blame for something that has not yet been investigated",
+            "answer": [
+                "blame"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "which tend to sound dismissive even when they are not meant to",
+            "answer": [
+                "dismissive"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "a receipt or a bank statement",
+            "answer": [
+                "statement"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "must be approved by a supervisor",
+            "answer": [
+                "supervisor"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Customers who bother to complain are usually telling us that they want to keep doing business with us",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "it gives the customer a chance to correct any misunderstanding before you act on it",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "This is not the same as admitting that the company is at fault.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "All staff may replace faulty goods or give a full refund on items bought within the last thirty days, provided the customer can show a receipt or a bank statement.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "customers who received an update before the deadline, even one saying only that the investigation was still going on, were much less likely to escalate their complaint",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "recommends taking a few minutes away from your desk after any difficult exchange",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Handling Complaints: A Guide for Front-Line Staff\n\nA. Every complaint, however unpleasant it may feel at the time, is a chance to put something right. Customers who bother to complain are usually telling us that they want to keep doing business with us; those who are truly finished with a company tend to leave without a word. This section of the booklet explains what you need to know before a complaint reaches you and what you should do once it has. It applies whether the customer speaks to you face to face, phones the helpline or writes to us by email.\n\nB. Your first task is simply to listen. Many staff feel pressure to offer a solution within seconds, but interrupting a customer who is still explaining the problem almost always makes matters worse. Let the person finish, even if you think you already know what they are going to say. Do not be tempted to defend the company at this stage. Take brief notes as they talk, and when they have finished, repeat the main points back to them in your own words. This shows that you have understood, and it gives the customer a chance to correct any misunderstanding before you act on it.\n\nC. Next, acknowledge how the customer feels. This is not the same as admitting that the company is at fault. A sentence such as \"I can see why that would be frustrating\" recognises the customer's experience without accepting blame for something that has not yet been investigated. Avoid phrases like \"calm down\" or \"that's our policy\", which tend to sound dismissive even when they are not meant to. If you do discover that we have made a mistake, however, say so plainly and apologise; customers are far more forgiving of an honest error than of an excuse.\n\nD. Before you promise anything, check what you are allowed to offer. All staff may replace faulty goods or give a full refund on items bought within the last thirty days, provided the customer can show a receipt or a bank statement. Anything beyond this, such as compensation for travel costs or a goodwill voucher, must be approved by a supervisor. Never promise an outcome you are not certain you can deliver: a broken promise turns one complaint into two. If you need to pass the matter on, tell the customer who will deal with it and when they can expect to hear back.\n\nE. Some complaints cannot be settled during the first conversation. In these cases, record the details on the complaints log the same day, using the customer's own description of the problem rather than a summary of your own. Our policy is to send a written acknowledgement within two working days and a full response within ten. Ilse Mbatha, who manages our customer service team, reviewed six months of records last year and found that customers who received an update before the deadline, even one saying only that the investigation was still going on, were much less likely to escalate their complaint. Her review covered only our own branches, but its message is clear: silence is usually read as indifference.\n\nF. Occasionally a customer becomes aggressive. You are not expected to put up with abuse. Stay calm, keep your voice low and steady, and explain politely that you want to help but cannot continue if the shouting goes on. If the behaviour continues, you may end a phone call after one clear warning, or ask a supervisor to take over a face-to-face conversation. Afterwards, write a short account of what happened while it is fresh in your mind. Callixte Duarte, our senior trainer, recommends taking a few minutes away from your desk after any difficult exchange, since carrying tension into the next conversation can affect how you treat a customer who has done nothing wrong.\n\nG. Finally, remember that each complaint contains information. A single complaint about a late delivery may be bad luck; ten in a week suggest a problem with a supplier or a route. When you close a complaint on the log, choose the category that best describes the cause, not merely the symptom. Team leaders read these categories every month, and several of the improvements introduced over the past year, including clearer labels on our returns envelopes, began as patterns that front-line staff had noticed and recorded. The few seconds it takes to choose carefully are well spent.",
+        "title": "Handling Complaints: A Guide for Front-Line Staff",
+        "groups": [
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "email"
+                        ],
+                        "prompt": "Complaints may come face to face, by phone or by ______",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "phones the helpline or writes to us by email",
+                        "explanation": {
+                            "en": "Paragraph A says the guidance applies whether customers speak in person, phone the helpline or write by email.",
+                            "ru": "В абзаце A сказано, что рекомендации действуют независимо от того, обращается ли клиент лично, звонит на горячую линию или пишет по электронной почте.",
+                            "uk": "В абзаці A сказано, що настанови діють незалежно від того, чи клієнт звертається особисто, телефонує на гарячу лінію чи пише електронною поштою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "notes"
+                        ],
+                        "prompt": "Make short ______ while the customer is speaking",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Take brief notes as they talk",
+                        "explanation": {
+                            "en": "Paragraph B tells staff to take brief notes as the customer talks; 'short' restates 'brief'.",
+                            "ru": "В абзаце B сотрудникам советуют делать краткие заметки, пока клиент говорит; «short» передаёт смысл слова «brief».",
+                            "uk": "В абзаці B працівникам радять робити стислі нотатки, поки клієнт говорить; «short» передає зміст слова «brief»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "misunderstanding"
+                        ],
+                        "prompt": "Restate key points so the customer can correct any ______",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "gives the customer a chance to correct any misunderstanding",
+                        "explanation": {
+                            "en": "Paragraph B explains that repeating the main points lets the customer correct any misunderstanding before staff act.",
+                            "ru": "В абзаце B объясняется, что повторение основных моментов позволяет клиенту исправить любое недопонимание до того, как сотрудники начнут действовать.",
+                            "uk": "В абзаці B пояснюється, що повторення основних моментів дає клієнтові змогу виправити будь-яке непорозуміння, перш ніж працівники почнуть діяти."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "blame"
+                        ],
+                        "prompt": "Recognise feelings without taking ______ for the problem",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "recognises the customer's experience without accepting blame",
+                        "explanation": {
+                            "en": "Paragraph C says acknowledging feelings recognises the customer's experience without accepting blame.",
+                            "ru": "В абзаце C говорится, что, признавая чувства клиента, сотрудник признаёт его опыт, но не берёт на себя вину.",
+                            "uk": "В абзаці C сказано, що, визнаючи почуття клієнта, працівник визнає його досвід, але не бере на себе провину."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "dismissive"
+                        ],
+                        "prompt": "Avoid expressions that may seem ______, e.g. 'calm down'",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "which tend to sound dismissive even when they are not meant to",
+                        "explanation": {
+                            "en": "Paragraph C warns that phrases like 'calm down' tend to sound dismissive, even when this is not intended.",
+                            "ru": "Абзац C предупреждает, что фразы вроде «calm down» обычно звучат пренебрежительно, даже если такого намерения нет.",
+                            "uk": "Абзац C попереджає, що фрази на кшталт «calm down» зазвичай звучать зневажливо, навіть якщо такого наміру немає."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "statement"
+                        ],
+                        "prompt": "Refund within 30 days requires a receipt or bank ______",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "provided the customer can show a receipt or a bank statement",
+                        "explanation": {
+                            "en": "Paragraph D says a full refund within thirty days is allowed if the customer can show a receipt or a bank statement.",
+                            "ru": "В абзаце D сказано, что полный возврат денег в течение тридцати дней допускается, если клиент может предъявить чек или банковскую выписку.",
+                            "uk": "В абзаці D сказано, що повне повернення коштів протягом тридцяти днів дозволене, якщо клієнт може показати чек або банківську виписку."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "supervisor"
+                        ],
+                        "prompt": "Travel costs or vouchers: must be agreed by a ______",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "such as compensation for travel costs or a goodwill voucher, must be approved by a supervisor",
+                        "explanation": {
+                            "en": "Paragraph D says anything beyond refunds and replacements, such as travel costs or goodwill vouchers, needs a supervisor's approval.",
+                            "ru": "В абзаце D говорится, что всё, кроме возврата денег и замены товара, например расходы на дорогу или ваучеры в качестве жеста доброй воли, требует одобрения руководителя.",
+                            "uk": "В абзаці D сказано, що все, окрім повернення коштів і заміни товару, наприклад витрати на дорогу чи ваучери як жест доброї волі, потребує схвалення керівника."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "expect a solution within a few seconds."
+                    },
+                    {
+                        "id": "B",
+                        "text": "hope to go on dealing with the company."
+                    },
+                    {
+                        "id": "C",
+                        "text": "would rather write an email than phone."
+                    },
+                    {
+                        "id": "D",
+                        "text": "have already decided to leave the company."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to the booklet, customers who complain usually",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Customers who bother to complain are usually telling us that they want to keep doing business with us",
+                        "explanation": {
+                            "en": "Paragraph A says complaining customers want to keep doing business with the company. It is customers who are finished with a company who leave without saying anything.",
+                            "ru": "В абзаце A говорится, что клиенты, которые жалуются, хотят и дальше иметь дело с компанией. Молча уходят как раз те клиенты, которые больше не хотят с ней сотрудничать.",
+                            "uk": "В абзаці A сказано, що клієнти, які скаржаться, хочуть і надалі мати справу з компанією. Мовчки йдуть якраз ті клієнти, які більше не хочуть із нею співпрацювати."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "to create a record for the complaints log"
+                    },
+                    {
+                        "id": "B",
+                        "text": "to defend the company against the complaint"
+                    },
+                    {
+                        "id": "C",
+                        "text": "to let the customer put right any error"
+                    },
+                    {
+                        "id": "D",
+                        "text": "to gain time to think of a solution"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Why should staff repeat the customer's main points back to them?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "it gives the customer a chance to correct any misunderstanding before you act on it",
+                        "explanation": {
+                            "en": "Paragraph B says repeating the points gives the customer a chance to correct any misunderstanding. The booklet actually tells staff not to defend the company at this stage.",
+                            "ru": "В абзаце B говорится, что повторение основных моментов даёт клиенту возможность исправить недопонимание. Более того, буклет прямо советует сотрудникам не защищать компанию на этом этапе.",
+                            "uk": "В абзаці B сказано, що повторення основних моментів дає клієнтові можливість виправити непорозуміння. Ба більше, брошура прямо радить працівникам не захищати компанію на цьому етапі."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It matters less than offering a quick solution."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It should come only after an investigation."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It must always include a formal apology."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It does not mean admitting the company was wrong."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What does the writer say about acknowledging a customer's feelings?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "This is not the same as admitting that the company is at fault.",
+                        "explanation": {
+                            "en": "Paragraph C says acknowledging feelings is different from admitting fault. An apology is only needed if a mistake is actually found.",
+                            "ru": "В абзаце C говорится, что признать чувства клиента — не то же самое, что признать вину. Извиняться нужно, только если ошибка действительно обнаружена.",
+                            "uk": "В абзаці C сказано, що визнати почуття клієнта — не те саме, що визнати провину. Вибачатися потрібно лише тоді, коли помилку справді виявлено."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "refund a recent purchase with proof of payment"
+                    },
+                    {
+                        "id": "B",
+                        "text": "agree compensation for the customer's lost time"
+                    },
+                    {
+                        "id": "C",
+                        "text": "give the customer a goodwill voucher"
+                    },
+                    {
+                        "id": "D",
+                        "text": "pay back the cost of a customer's journey"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Which of the following may any member of staff do without a supervisor's approval?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "give a full refund on items bought within the last thirty days, provided the customer can show a receipt or a bank statement",
+                        "explanation": {
+                            "en": "Paragraph D allows all staff to give a refund on items bought within thirty days if there is a receipt or bank statement. Travel costs, vouchers and any other compensation need a supervisor's approval.",
+                            "ru": "Абзац D разрешает всем сотрудникам возвращать деньги за товары, купленные в течение тридцати дней, при наличии чека или банковской выписки. Расходы на дорогу, ваучеры и любая другая компенсация требуют одобрения руководителя.",
+                            "uk": "Абзац D дозволяє всім працівникам повертати кошти за товари, придбані протягом тридцяти днів, за наявності чека або банківської виписки. Витрати на дорогу, ваучери та будь-яка інша компенсація потребують схвалення керівника."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Updates helped only when they contained new information."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Customers kept informed early were less likely to take things further."
+                    },
+                    {
+                        "id": "C",
+                        "text": "The branches that replied fastest received the fewest complaints."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Most complaints were settled within two working days."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What did Ilse Mbatha's review of complaint records show?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "customers who received an update before the deadline, even one saying only that the investigation was still going on, were much less likely to escalate their complaint",
+                        "explanation": {
+                            "en": "Paragraph E reports that customers who got an update before the deadline were much less likely to escalate. This was true even when the update gave no news, so the option about updates needing new information is wrong.",
+                            "ru": "В абзаце E сообщается, что клиенты, получившие сообщение о ходе рассмотрения до установленного срока, гораздо реже передавали жалобу выше. Так было даже тогда, когда в сообщении не было ничего нового, поэтому вариант о том, что такие сообщения должны содержать новую информацию, неверен.",
+                            "uk": "В абзаці E повідомляється, що клієнти, які отримали повідомлення про хід розгляду до визначеного терміну, значно рідше передавали скаргу вище. Так було навіть тоді, коли повідомлення не містило нічого нового, тож варіант про те, що такі повідомлення мають містити нову інформацію, неправильний."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "write down what happened straight away"
+                    },
+                    {
+                        "id": "B",
+                        "text": "ask a supervisor to take over the next call"
+                    },
+                    {
+                        "id": "C",
+                        "text": "take a short break before the next customer"
+                    },
+                    {
+                        "id": "D",
+                        "text": "give the customer one clear final warning"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does Callixte Duarte advise staff to do after a difficult conversation?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "recommends taking a few minutes away from your desk after any difficult exchange",
+                        "explanation": {
+                            "en": "Paragraph F says Duarte recommends spending a few minutes away from the desk. Writing an account is general advice from the booklet, not his recommendation.",
+                            "ru": "В абзаце F говорится, что Duarte советует провести несколько минут вдали от рабочего места. Записать, как всё произошло, — это общий совет из буклета, а не рекомендация Duarte.",
+                            "uk": "В абзаці F сказано, що Duarte радить провести кілька хвилин подалі від робочого місця. Записати, як усе відбувалося, — це загальна порада з брошури, а не рекомендація Duarte."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6"
+    },
+    "translation": {
+        "missing": []
+    }
+}

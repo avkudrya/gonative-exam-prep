@@ -1,0 +1,1006 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-4|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.244988,
+            "provider": "anthropic",
+            "outputTokens": 11394
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.011466,
+            "provider": "anthropic",
+            "outputTokens": 594
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.016488,
+            "provider": "openai",
+            "outputTokens": 819
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.04112,
+            "provider": "xai",
+            "outputTokens": 5860
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.076864,
+            "provider": "anthropic",
+            "outputTokens": 3535
+        }
+    ],
+    "draft": {
+        "title": "Flexible Working Policy: A Guide for Staff",
+        "blocks": [
+            {
+                "type": "table_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "six",
+                            "6"
+                        ],
+                        "prompt": "Who is eligible | permanent employees who have finished a probationary period of ______ months",
+                        "options": [],
+                        "evidence": "their probationary period, which normally lasts six months",
+                        "explanation": "Paragraph A says the policy covers permanent staff after their probationary period, which normally lasts six months. Do not confuse this with the three-month trial period in Paragraph F."
+                    },
+                    {
+                        "answer": [
+                            "30",
+                            "thirty"
+                        ],
+                        "prompt": "Lunch breaks | minimum length of ______ minutes, taken between noon and 2 p.m.",
+                        "options": [],
+                        "evidence": "Lunch breaks must last at least 30 minutes",
+                        "explanation": "Paragraph B states that lunch breaks must last 'at least 30 minutes', which the table restates as a minimum length."
+                    },
+                    {
+                        "answer": [
+                            "twelve",
+                            "12"
+                        ],
+                        "prompt": "Extra hours worked | no more than ______ can be carried forward and swapped for time off",
+                        "options": [],
+                        "evidence": "carried forward, up to a maximum of twelve, and exchanged for time off",
+                        "explanation": "Paragraph B says extra hours can be carried forward up to a maximum of twelve; anything above this is lost unless approved as overtime."
+                    },
+                    {
+                        "answer": [
+                            "two",
+                            "2"
+                        ],
+                        "prompt": "Working from home | allowed on a maximum of ______ days per week",
+                        "options": [],
+                        "evidence": "may work from home for up to two days a week",
+                        "explanation": "Paragraph C says suitable employees may work from home 'for up to two days a week', which means a maximum of two."
+                    },
+                    {
+                        "answer": [
+                            "reception"
+                        ],
+                        "prompt": "Staff not allowed to work from home | those in the warehouse, at ______ and in the vehicle workshop",
+                        "options": [],
+                        "evidence": "Staff in the warehouse, at reception and in the vehicle workshop are excluded",
+                        "explanation": "Paragraph C lists three groups who are excluded because they must be on site: warehouse, reception and vehicle workshop staff."
+                    },
+                    {
+                        "answer": [
+                            "calendar"
+                        ],
+                        "prompt": "Planning home-working days | days must be entered in the shared team ______",
+                        "options": [],
+                        "evidence": "recorded in the shared team calendar so that colleagues know where everyone will be",
+                        "explanation": "Paragraph C says home-working days should be fixed in advance and recorded in the shared team calendar."
+                    },
+                    {
+                        "answer": [
+                            "anchor"
+                        ],
+                        "prompt": "Weekly office attendance | each team chooses an '______ day' when all members are in the office",
+                        "options": [],
+                        "evidence": "Teams are asked to agree one 'anchor day' each week when all members come into the office",
+                        "explanation": "Paragraph C explains that each team agrees one 'anchor day' a week when everyone comes into the office."
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "short_answer",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "a staff survey",
+                            "staff survey"
+                        ],
+                        "prompt": "What did the company carry out before this policy was written?",
+                        "options": [],
+                        "evidence": "The policy was written by Zainab Holloway, our Head of People, after a staff survey",
+                        "explanation": "Paragraph A says the policy was written after a staff survey, in which more than half of respondents wanted more control over their schedule."
+                    },
+                    {
+                        "answer": [
+                            "the staff portal",
+                            "staff portal"
+                        ],
+                        "prompt": "Where can employees find the form needed to request a flexible arrangement?",
+                        "options": [],
+                        "evidence": "complete the online application form on the staff portal",
+                        "explanation": "Paragraph D says the online application form is on the staff portal. The form is then sent to the line manager, but that is where it goes, not where it is found."
+                    },
+                    {
+                        "answer": [
+                            "fourteen",
+                            "14",
+                            "fourteen days",
+                            "14 days"
+                        ],
+                        "prompt": "Within how many days will a manager arrange a meeting about a request?",
+                        "options": [],
+                        "evidence": "Your manager will arrange a meeting with you within fourteen days",
+                        "explanation": "Paragraph D gives fourteen days for the meeting. The ten working days mentioned later is the time limit for an appeal, not for the meeting."
+                    },
+                    {
+                        "answer": [
+                            "self-assessment",
+                            "a short self-assessment",
+                            "short self-assessment",
+                            "a self-assessment"
+                        ],
+                        "prompt": "What must employees complete about their workspace before they start working from home?",
+                        "options": [],
+                        "evidence": "you must complete a short self-assessment of your workspace",
+                        "explanation": "Paragraph E says that before working from home, staff must complete a short self-assessment covering lighting, seating and screen position."
+                    },
+                    {
+                        "answer": [
+                            "a photograph",
+                            "photograph"
+                        ],
+                        "prompt": "What does the IT helpdesk ask staff to include when reporting a technical problem?",
+                        "options": [],
+                        "evidence": "he asks staff to include a photograph of any error message they see",
+                        "explanation": "Paragraph E says Piotr Nakamura, who runs the helpdesk, asks staff to include a photograph of any error message."
+                    },
+                    {
+                        "answer": [
+                            "confidential paper documents"
+                        ],
+                        "prompt": "What must employees never take home?",
+                        "options": [],
+                        "evidence": "Confidential paper documents must never be taken home",
+                        "explanation": "Paragraph E states that confidential paper documents must never be taken home; sensitive material should be printed in the office instead."
+                    },
+                    {
+                        "answer": [
+                            "four weeks' notice",
+                            "four weeks",
+                            "4 weeks",
+                            "4 weeks' notice"
+                        ],
+                        "prompt": "How much notice will an employee usually receive if the company ends their arrangement?",
+                        "options": [],
+                        "evidence": "you will normally be given four weeks' notice",
+                        "explanation": "Paragraph F says an arrangement may be ended if it causes difficulties, but the employee will normally be given four weeks' notice. The three months mentioned in the same paragraph is the trial period."
+                    },
+                    {
+                        "answer": [
+                            "every two years",
+                            "every 2 years"
+                        ],
+                        "prompt": "How often will the policy itself be reviewed?",
+                        "options": [],
+                        "evidence": "This policy will itself be reviewed every two years",
+                        "explanation": "Paragraph G says the policy will be reviewed every two years. Do not confuse this with the twelve-month limit on formal requests in Paragraph D."
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Zainab Holloway",
+                "role": "Head of People who wrote the flexible working policy",
+                "gender": "female"
+            },
+            {
+                "name": "Piotr Nakamura",
+                "role": "runs the company's IT helpdesk",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "This policy explains how employees of Corran Freight Services can vary their working hours or work from home. It applies to all permanent staff who have completed their probationary period, which normally lasts six months. Temporary and agency workers are not covered, although managers may agree informal arrangements with them on a case-by-case basis. The policy was written by Zainab Holloway, our Head of People, after a staff survey in which more than half of respondents said that greater control over their schedule would improve their working lives.",
+                "label": "A"
+            },
+            {
+                "text": "Under our flexitime scheme, you may start work at any point between 7 a.m. and 10 a.m. and finish between 3.30 p.m. and 7 p.m., as long as you complete your contracted hours over each four-week period. Everyone must, however, be available during the 'core hours' of 10 a.m. to 3 p.m., when most meetings are scheduled and customers are most likely to call. Lunch breaks must last at least 30 minutes and should be taken between noon and 2 p.m. Hours worked beyond your contract can be carried forward, up to a maximum of twelve, and exchanged for time off; any extra above that limit will be lost unless your manager has approved it in advance as overtime.",
+                "label": "B"
+            },
+            {
+                "text": "Employees whose roles can be done remotely may work from home for up to two days a week. Staff in the warehouse, at reception and in the vehicle workshop are excluded, because their duties require them to be on site. On home-working days you are expected to be contactable by phone and through the company messaging system throughout core hours, and to attend video meetings with your camera switched on unless there is a good reason not to. Home-working days should be fixed in advance and recorded in the shared team calendar so that colleagues know where everyone will be. Teams are asked to agree one 'anchor day' each week when all members come into the office.",
+                "label": "C"
+            },
+            {
+                "text": "To request a flexible arrangement, complete the online application form on the staff portal and submit it to your line manager. You should explain which pattern you would like, when you would like it to begin and how you think any effect on your team could be managed. Your manager will arrange a meeting with you within fourteen days and will give you a written decision no later than one month after receiving the form. If the request is turned down, the reasons will be explained in writing, and you may appeal to the People Team within ten working days. You may make one formal request in any twelve-month period, although minor changes, such as swapping which day you spend at home, can be agreed informally.",
+                "label": "D"
+            },
+            {
+                "text": "Before you begin working from home, you must complete a short self-assessment of your workspace, which covers lighting, seating and the position of your screen. The company will provide a laptop, a headset and, if needed, a separate monitor; these remain company property and must be returned if you leave. We do not pay for home internet or heating, but a monthly allowance of £20 is added to the salary of anyone who works from home regularly. Technical problems should be reported to the IT helpdesk, run by Piotr Nakamura; he asks staff to include a photograph of any error message they see. Confidential paper documents must never be taken home; if you need to print sensitive material, do so in the office.",
+                "label": "E"
+            },
+            {
+                "text": "All arrangements begin with a trial period of three months, after which you and your manager will discuss whether the pattern is working and record the outcome on your file. An arrangement may be ended or changed if it is causing clear difficulties for the business, for example if customer response times become noticeably slower, but you will normally be given four weeks' notice. Likewise, you may return to your previous pattern at any time by informing your manager in writing.",
+                "label": "F"
+            },
+            {
+                "text": "This policy will itself be reviewed every two years. Questions about it should be directed to the People Team rather than to individual managers, so that the same answer is given to everyone. Ms Holloway has stressed that flexibility is a shared responsibility: it works best when employees plan ahead, keep their colleagues informed and remember that the needs of customers come first.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "which normally lasts six months",
+                "answer": [
+                    "six"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Lunch breaks must last at least 30 minutes",
+                "answer": [
+                    "30"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "up to a maximum of twelve, and exchanged for time off",
+                "answer": [
+                    "twelve"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "may work from home for up to two days a week",
+                "answer": [
+                    "two"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Staff in the warehouse, at reception and in the vehicle workshop are excluded",
+                "answer": [
+                    "reception"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "recorded in the shared team calendar",
+                "answer": [
+                    "calendar"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Teams are asked to agree one 'anchor day' each week",
+                "answer": [
+                    "anchor"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "after a staff survey in which more than half of respondents said",
+                "answer": [
+                    "staff survey"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "complete the online application form on the staff portal",
+                "answer": [
+                    "staff portal"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Your manager will arrange a meeting with you within fourteen days",
+                "answer": [
+                    "fourteen"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "you must complete a short self-assessment of your workspace",
+                "answer": [
+                    "self-assessment"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "he asks staff to include a photograph of any error message they see",
+                "answer": [
+                    "a photograph"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Confidential paper documents must never be taken home",
+                "answer": [
+                    "Confidential paper documents"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "you will normally be given four weeks' notice",
+                "answer": [
+                    "four weeks"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "This policy will itself be reviewed every two years.",
+                "answer": [
+                    "every two years"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "completed their probationary period, which normally lasts six months",
+                "answer": [
+                    "six"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Lunch breaks must last at least 30 minutes",
+                "answer": [
+                    "30"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Hours worked beyond your contract can be carried forward, up to a maximum of twelve",
+                "answer": [
+                    "twelve"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "may work from home for up to two days a week",
+                "answer": [
+                    "two"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Staff in the warehouse, at reception and in the vehicle workshop are excluded",
+                "answer": [
+                    "reception"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "recorded in the shared team calendar",
+                "answer": [
+                    "calendar"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "agree one 'anchor day' each week",
+                "answer": [
+                    "anchor"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The policy was written by Zainab Holloway, our Head of People, after a staff survey",
+                "answer": [
+                    "staff survey"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "complete the online application form on the staff portal",
+                "answer": [
+                    "staff portal"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Your manager will arrange a meeting with you within fourteen days",
+                "answer": [
+                    "fourteen days"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "you must complete a short self-assessment of your workspace",
+                "answer": [
+                    "self-assessment"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "he asks staff to include a photograph of any error message they see",
+                "answer": [
+                    "a photograph"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Confidential paper documents must never be taken home",
+                "answer": [
+                    "Confidential paper documents"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "you will normally be given four weeks' notice",
+                "answer": [
+                    "four weeks' notice"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "This policy will itself be reviewed every two years",
+                "answer": [
+                    "every two years"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "which normally lasts six months",
+            "answer": [
+                "six"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Lunch breaks must last at least 30 minutes",
+            "answer": [
+                "30"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "up to a maximum of twelve, and exchanged for time off",
+            "answer": [
+                "twelve"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "work from home for up to two days a week",
+            "answer": [
+                "two"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Staff in the warehouse, at reception and in the vehicle workshop are excluded",
+            "answer": [
+                "reception"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "recorded in the shared team calendar",
+            "answer": [
+                "calendar"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "after a staff survey in which more than half of respondents said",
+            "answer": [
+                "a staff survey"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "complete the online application form on the staff portal",
+            "answer": [
+                "the staff portal"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "arrange a meeting with you within fourteen days",
+            "answer": [
+                "fourteen days"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "you must complete a short self-assessment of your workspace",
+            "answer": [
+                "a short self-assessment"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "he asks staff to include a photograph of any error message they see",
+            "answer": [
+                "a photograph"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Confidential paper documents must never be taken home",
+            "answer": [
+                "Confidential paper documents"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "you will normally be given four weeks' notice",
+            "answer": [
+                "four weeks' notice"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Flexible Working Policy: A Guide for Staff\n\nA. This policy explains how employees of Corran Freight Services can vary their working hours or work from home. It applies to all permanent staff who have completed their probationary period, which normally lasts six months. Temporary and agency workers are not covered, although managers may agree informal arrangements with them on a case-by-case basis. The policy was written by Zainab Holloway, our Head of People, after a staff survey in which more than half of respondents said that greater control over their schedule would improve their working lives.\n\nB. Under our flexitime scheme, you may start work at any point between 7 a.m. and 10 a.m. and finish between 3.30 p.m. and 7 p.m., as long as you complete your contracted hours over each four-week period. Everyone must, however, be available during the 'core hours' of 10 a.m. to 3 p.m., when most meetings are scheduled and customers are most likely to call. Lunch breaks must last at least 30 minutes and should be taken between noon and 2 p.m. Hours worked beyond your contract can be carried forward, up to a maximum of twelve, and exchanged for time off; any extra above that limit will be lost unless your manager has approved it in advance as overtime.\n\nC. Employees whose roles can be done remotely may work from home for up to two days a week. Staff in the warehouse, at reception and in the vehicle workshop are excluded, because their duties require them to be on site. On home-working days you are expected to be contactable by phone and through the company messaging system throughout core hours, and to attend video meetings with your camera switched on unless there is a good reason not to. Home-working days should be fixed in advance and recorded in the shared team calendar so that colleagues know where everyone will be. Teams are asked to agree one 'anchor day' each week when all members come into the office.\n\nD. To request a flexible arrangement, complete the online application form on the staff portal and submit it to your line manager. You should explain which pattern you would like, when you would like it to begin and how you think any effect on your team could be managed. Your manager will arrange a meeting with you within fourteen days and will give you a written decision no later than one month after receiving the form. If the request is turned down, the reasons will be explained in writing, and you may appeal to the People Team within ten working days. You may make one formal request in any twelve-month period, although minor changes, such as swapping which day you spend at home, can be agreed informally.\n\nE. Before you begin working from home, you must complete a short self-assessment of your workspace, which covers lighting, seating and the position of your screen. The company will provide a laptop, a headset and, if needed, a separate monitor; these remain company property and must be returned if you leave. We do not pay for home internet or heating, but a monthly allowance of £20 is added to the salary of anyone who works from home regularly. Technical problems should be reported to the IT helpdesk, run by Piotr Nakamura; he asks staff to include a photograph of any error message they see. Confidential paper documents must never be taken home; if you need to print sensitive material, do so in the office.\n\nF. All arrangements begin with a trial period of three months, after which you and your manager will discuss whether the pattern is working and record the outcome on your file. An arrangement may be ended or changed if it is causing clear difficulties for the business, for example if customer response times become noticeably slower, but you will normally be given four weeks' notice. Likewise, you may return to your previous pattern at any time by informing your manager in writing.\n\nG. This policy will itself be reviewed every two years. Questions about it should be directed to the People Team rather than to individual managers, so that the same answer is given to everyone. Ms Holloway has stressed that flexibility is a shared responsibility: it works best when employees plan ahead, keep their colleagues informed and remember that the needs of customers come first.",
+        "title": "Flexible Working Policy: A Guide for Staff",
+        "groups": [
+            {
+                "type": "table_completion",
+                "limit": {
+                    "words": 1,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "six",
+                            "6"
+                        ],
+                        "prompt": "Who is eligible | permanent employees who have finished a probationary period of ______ months",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "their probationary period, which normally lasts six months",
+                        "explanation": {
+                            "en": "Paragraph A says the policy covers permanent staff after their probationary period, which normally lasts six months. Do not confuse this with the three-month trial period in Paragraph F.",
+                            "ru": "В абзаце A сказано, что правила распространяются на постоянных сотрудников после испытательного срока, который обычно длится шесть месяцев. Не путайте его с трёхмесячным пробным периодом из абзаца F.",
+                            "uk": "В абзаці A сказано, що правила поширюються на постійних працівників після випробувального терміну, який зазвичай триває шість місяців. Не плутайте його з тримісячним пробним періодом з абзацу F."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "30",
+                            "thirty"
+                        ],
+                        "prompt": "Lunch breaks | minimum length of ______ minutes, taken between noon and 2 p.m.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Lunch breaks must last at least 30 minutes",
+                        "explanation": {
+                            "en": "Paragraph B states that lunch breaks must last 'at least 30 minutes', which the table restates as a minimum length.",
+                            "ru": "В абзаце B говорится, что обеденный перерыв должен длиться «at least 30 minutes», а в таблице это передано как минимальная продолжительность.",
+                            "uk": "В абзаці B зазначено, що обідня перерва має тривати «at least 30 minutes», а в таблиці це подано як мінімальну тривалість."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "twelve",
+                            "12"
+                        ],
+                        "prompt": "Extra hours worked | no more than ______ can be carried forward and swapped for time off",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "carried forward, up to a maximum of twelve, and exchanged for time off",
+                        "explanation": {
+                            "en": "Paragraph B says extra hours can be carried forward up to a maximum of twelve; anything above this is lost unless approved as overtime.",
+                            "ru": "В абзаце B сказано, что лишние часы можно переносить на следующий период, но не более двенадцати; всё, что сверх этого, сгорает, если не оформлено как сверхурочная работа.",
+                            "uk": "В абзаці B сказано, що додаткові години можна переносити на наступний період, але не більше дванадцяти; усе, що понад це, згорає, якщо не погоджено як понаднормову роботу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "two",
+                            "2"
+                        ],
+                        "prompt": "Working from home | allowed on a maximum of ______ days per week",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "may work from home for up to two days a week",
+                        "explanation": {
+                            "en": "Paragraph C says suitable employees may work from home 'for up to two days a week', which means a maximum of two.",
+                            "ru": "В абзаце C сказано, что подходящие сотрудники могут работать из дома «for up to two days a week», то есть максимум два дня.",
+                            "uk": "В абзаці C сказано, що відповідні працівники можуть працювати з дому «for up to two days a week», тобто щонайбільше два дні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "reception"
+                        ],
+                        "prompt": "Staff not allowed to work from home | those in the warehouse, at ______ and in the vehicle workshop",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Staff in the warehouse, at reception and in the vehicle workshop are excluded",
+                        "explanation": {
+                            "en": "Paragraph C lists three groups who are excluded because they must be on site: warehouse, reception and vehicle workshop staff.",
+                            "ru": "В абзаце C перечислены три группы, которым работа из дома не разрешена, потому что они должны быть на месте: сотрудники склада, стойки регистрации и автомастерской.",
+                            "uk": "В абзаці C перелічено три групи, яким робота з дому не дозволена, бо вони мають бути на місці: працівники складу, рецепції та автомайстерні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "calendar"
+                        ],
+                        "prompt": "Planning home-working days | days must be entered in the shared team ______",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "recorded in the shared team calendar so that colleagues know where everyone will be",
+                        "explanation": {
+                            "en": "Paragraph C says home-working days should be fixed in advance and recorded in the shared team calendar.",
+                            "ru": "В абзаце C сказано, что дни работы из дома нужно определить заранее и внести в общий календарь команды.",
+                            "uk": "В абзаці C сказано, що дні роботи з дому треба визначити заздалегідь і внести до спільного календаря команди."
+                        }
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "short_answer",
+                "limit": {
+                    "words": 3,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "a staff survey",
+                            "staff survey"
+                        ],
+                        "prompt": "What did the company carry out before this policy was written?",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "The policy was written by Zainab Holloway, our Head of People, after a staff survey",
+                        "explanation": {
+                            "en": "Paragraph A says the policy was written after a staff survey, in which more than half of respondents wanted more control over their schedule.",
+                            "ru": "В абзаце A сказано, что правила были составлены по итогам опроса сотрудников, в котором больше половины ответивших хотели больше контролировать свой график.",
+                            "uk": "В абзаці A сказано, що правила було складено за підсумками опитування працівників, у якому понад половина респондентів хотіли більше контролювати свій графік."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "the staff portal",
+                            "staff portal"
+                        ],
+                        "prompt": "Where can employees find the form needed to request a flexible arrangement?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "complete the online application form on the staff portal",
+                        "explanation": {
+                            "en": "Paragraph D says the online application form is on the staff portal. The form is then sent to the line manager, but that is where it goes, not where it is found.",
+                            "ru": "В абзаце D сказано, что онлайн-форма заявления находится на портале для сотрудников. Потом форма отправляется непосредственному руководителю, но это то, куда она попадает, а не где её найти.",
+                            "uk": "В абзаці D сказано, що онлайн-форма заяви розміщена на порталі для працівників. Потім форму надсилають безпосередньому керівникові, але це те, куди вона потрапляє, а не де її знайти."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "fourteen",
+                            "14",
+                            "fourteen days",
+                            "14 days"
+                        ],
+                        "prompt": "Within how many days will a manager arrange a meeting about a request?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "Your manager will arrange a meeting with you within fourteen days",
+                        "explanation": {
+                            "en": "Paragraph D gives fourteen days for the meeting. The ten working days mentioned later is the time limit for an appeal, not for the meeting.",
+                            "ru": "В абзаце D на встречу отводится четырнадцать дней. Десять рабочих дней, упомянутые дальше, — это срок подачи апелляции, а не срок встречи.",
+                            "uk": "В абзаці D на зустріч відведено чотирнадцять днів. Десять робочих днів, згадані далі, — це строк подання апеляції, а не строк зустрічі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "self-assessment",
+                            "a short self-assessment",
+                            "short self-assessment",
+                            "a self-assessment"
+                        ],
+                        "prompt": "What must employees complete about their workspace before they start working from home?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "you must complete a short self-assessment of your workspace",
+                        "explanation": {
+                            "en": "Paragraph E says that before working from home, staff must complete a short self-assessment covering lighting, seating and screen position.",
+                            "ru": "В абзаце E сказано, что перед тем как работать из дома, сотрудники должны пройти короткую самопроверку, которая касается освещения, сиденья и положения экрана.",
+                            "uk": "В абзаці E сказано, що перш ніж працювати з дому, працівники мають пройти коротку самоперевірку, яка стосується освітлення, сидіння та положення екрана."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "a photograph",
+                            "photograph"
+                        ],
+                        "prompt": "What does the IT helpdesk ask staff to include when reporting a technical problem?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "he asks staff to include a photograph of any error message they see",
+                        "explanation": {
+                            "en": "Paragraph E says Piotr Nakamura, who runs the helpdesk, asks staff to include a photograph of any error message.",
+                            "ru": "В абзаце E сказано, что Piotr Nakamura, который руководит службой поддержки, просит сотрудников прикладывать фотографию любого сообщения об ошибке.",
+                            "uk": "В абзаці E сказано, що Piotr Nakamura, який керує службою підтримки, просить працівників додавати фото будь-якого повідомлення про помилку."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "confidential paper documents"
+                        ],
+                        "prompt": "What must employees never take home?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "Confidential paper documents must never be taken home",
+                        "explanation": {
+                            "en": "Paragraph E states that confidential paper documents must never be taken home; sensitive material should be printed in the office instead.",
+                            "ru": "В абзаце E говорится, что конфиденциальные бумажные документы ни в коем случае нельзя брать домой; секретные материалы нужно распечатывать в офисе.",
+                            "uk": "В абзаці E зазначено, що конфіденційні паперові документи в жодному разі не можна брати додому; секретні матеріали слід друкувати в офісі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "four weeks' notice",
+                            "four weeks",
+                            "4 weeks",
+                            "4 weeks' notice"
+                        ],
+                        "prompt": "How much notice will an employee usually receive if the company ends their arrangement?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "you will normally be given four weeks' notice",
+                        "explanation": {
+                            "en": "Paragraph F says an arrangement may be ended if it causes difficulties, but the employee will normally be given four weeks' notice. The three months mentioned in the same paragraph is the trial period.",
+                            "ru": "В абзаце F сказано, что договорённость может быть прекращена, если она создаёт трудности, но сотрудника, как правило, предупреждают за четыре недели. Три месяца, упомянутые в том же абзаце, — это пробный период.",
+                            "uk": "В абзаці F сказано, що домовленість можуть припинити, якщо вона створює труднощі, але працівника, як правило, попереджають за чотири тижні. Три місяці, згадані в тому самому абзаці, — це пробний період."
+                        }
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

@@ -1,0 +1,1198 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-7|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.349752,
+            "provider": "anthropic",
+            "outputTokens": 16464
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.01529,
+            "provider": "anthropic",
+            "outputTokens": 687
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.016855,
+            "provider": "openai",
+            "outputTokens": 694
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01987,
+            "provider": "xai",
+            "outputTokens": 2054
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.107516,
+            "provider": "anthropic",
+            "outputTokens": 5000
+        }
+    ],
+    "draft": {
+        "title": "Growing Together",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Agreed rules that keep a shared space running"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "The lessons of wartime food shortages"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "A transformed corner reflects a growing movement"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Why growing your own is cheaper than shopping"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Social connection as the real attraction"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "A familiar practice driven by new reasons"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Threats to a garden's survival"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "Measuring the health benefits of gardening"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Practical tips from a long-serving member"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "neglected corners of land are being turned into community gardens",
+                        "explanation": "Paragraph A describes one former shop site that is now a garden and then says such changes are happening in many towns and cities, with demand growing. So the main idea is one changed place that shows a wider trend."
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "It would be wrong, however, to see this as a purely modern trend.",
+                        "explanation": "Paragraph B shows that community gardening existed in the world wars and the 1970s, but says 'What has changed is the motivation'. The wartime heading only covers one detail, and the paragraph does not discuss lessons from food shortages."
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "believes the answer has less to do with vegetables than with company",
+                        "explanation": "Paragraph C reports Ellingsen's finding that most members join to meet people rather than for food. It is about social reasons, not about measuring health, so the health heading is wrong."
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "Keeping a shared garden running smoothly takes more organisation than visitors might expect.",
+                        "explanation": "Paragraph D explains the members' agreement, the watering rota and what happens when rules are broken, and Brannigan says the rules prevent arguments. The whole paragraph is about how rules keep the garden working."
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "Not every garden enjoys such a stable existence.",
+                        "explanation": "Paragraph E lists dangers: losing borrowed land to builders, volunteers getting tired, and friction between members. All of these threaten whether a garden can continue."
+                    },
+                    {
+                        "answer": [
+                            "ix"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "a retired bus driver who has belonged to the Harwick Street garden since it opened, has some straightforward advice",
+                        "explanation": "Paragraph F gives Tembo's advice to beginners: start small, ask questions and come regularly. The heading about saving money is wrong because Tembo says gardeners should not expect to save money."
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "permission",
+                            "anyone's permission"
+                        ],
+                        "prompt": "In the 1970s, some residents of American cities cultivated abandoned lots, frequently without seeking ______.",
+                        "options": [],
+                        "evidence": "often without asking anyone's permission",
+                        "explanation": "Paragraph B says these residents planted abandoned lots 'often without asking anyone's permission'. 'Frequently' restates 'often' and 'seeking' restates 'asking'."
+                    },
+                    {
+                        "answer": [
+                            "awkwardness"
+                        ],
+                        "prompt": "Older members especially appreciated that friendships developed without the ______ of a planned social gathering.",
+                        "options": [],
+                        "evidence": "without the awkwardness of an organised social event",
+                        "explanation": "Paragraph C says older members liked the garden because friendships formed naturally, without the awkwardness of an organised social event. 'A planned social gathering' restates 'an organised social event'."
+                    },
+                    {
+                        "answer": [
+                            "tool shed",
+                            "toolshed"
+                        ],
+                        "prompt": "To stop crops dying while their owners are away, a watering timetable is displayed on the ______ door.",
+                        "options": [],
+                        "evidence": "a rota posted on the door of the tool shed",
+                        "explanation": "Paragraph D says the watering rota is posted on the door of the tool shed so that crops do not die while their owner is on holiday. 'Timetable' restates 'rota'."
+                    },
+                    {
+                        "answer": [
+                            "smaller bed"
+                        ],
+                        "prompt": "Members joining the garden normally receive a ______ during their first season.",
+                        "options": [],
+                        "evidence": "Newcomers are usually given a smaller bed for their first season",
+                        "explanation": "Paragraph D says newcomers are usually given a smaller bed in their first season to see if they can manage it. 'Members joining' restates 'newcomers'."
+                    },
+                    {
+                        "answer": [
+                            "long lease"
+                        ],
+                        "prompt": "Brannigan's group kept its site by collecting enough funds to purchase a ______.",
+                        "options": [],
+                        "evidence": "members raised enough money to buy a long lease",
+                        "explanation": "Paragraph E says the garden survived only after members raised enough money to buy a long lease. 'Collecting enough funds to purchase' restates 'raised enough money to buy'."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does the writer suggest about the long waiting lists for garden plots?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Interest in plots has grown faster than the number available."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Councils have been slow to offer unused land to residents."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Most gardens limit their membership to around forty households."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Many applicants give up before a plot finally becomes free."
+                            }
+                        ],
+                        "evidence": "a sign of how far demand has outstripped supply",
+                        "explanation": "Paragraph A says the waiting lists show that demand has outstripped supply, meaning more people want plots than there are plots. The passage says some councils are now offering land, and 'forty households' refers only to Harwick Street."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does Ellingsen point out about her own study?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It cannot establish whether gardening reduces loneliness."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It found older members were the loneliest of all."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It relied mainly on members who had recently left."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It covered more cities than any earlier piece of research."
+                            }
+                        ],
+                        "evidence": "it cannot say whether gardening itself makes people less lonely",
+                        "explanation": "In paragraph C, Ellingsen says her study only included people who had already joined, so it cannot show whether gardening itself makes people less lonely. It studied current members, not people who had left, and it does not compare older members' loneliness or mention earlier research."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to Brannigan, the garden's rules",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "are stricter than those of most similar gardens."
+                            },
+                            {
+                                "id": "B",
+                                "text": "help to stop disagreements between the members."
+                            },
+                            {
+                                "id": "C",
+                                "text": "are frequently ignored by the newer members."
+                            },
+                            {
+                                "id": "D",
+                                "text": "were introduced after a serious dispute arose."
+                            }
+                        ],
+                        "evidence": "they actually prevent arguments",
+                        "explanation": "In paragraph D, Brannigan says the rules sound strict but actually prevent arguments, because everyone knows what is expected. She does not compare them with other gardens, and members have been asked to leave only twice, so the rules are not often ignored."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does Tembo tell people who are thinking of joining a garden?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Growing their own food will probably not cut their costs."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Experienced members may be unwilling to share their advice."
+                            },
+                            {
+                                "id": "C",
+                                "text": "A large plot will give them the greatest satisfaction."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Coming along matters most when the harvest is ready."
+                            }
+                        ],
+                        "evidence": "don't expect to save money",
+                        "explanation": "In paragraph F, Tembo warns that seeds, tools and failed crops add up, so newcomers should not expect to save money. He says the opposite of the other options: most members are happy to share, a small bed is more satisfying, and people should come regularly even when there is little to do."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Kavita Ellingsen",
+                "role": "Social researcher who interviewed community garden members in three cities",
+                "gender": "female"
+            },
+            {
+                "name": "Lucia Brannigan",
+                "role": "Coordinator of the Harwick Street community garden",
+                "gender": "female"
+            },
+            {
+                "name": "Marcus Tembo",
+                "role": "Retired bus driver and long-standing member of the Harwick Street garden",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "On a corner of Harwick Street, where a burnt-out shop once stood, there are now raised beds of beans, a bench made from old scaffolding boards and a hand-painted sign inviting passers-by to come in. Ten years ago the site was fenced off and littered with broken glass; today around forty households share it. Scenes like this have become increasingly common. In towns and cities across many countries, neglected corners of land are being turned into community gardens – spaces where neighbours grow food and flowers side by side rather than behind their own fences. Councils that once regarded such sites as eyesores are, in some cases, now actively offering them to residents' groups. Waiting lists for a plot can run to several years in some places, a sign of how far demand has outstripped supply.",
+                "label": "A"
+            },
+            {
+                "text": "It would be wrong, however, to see this as a purely modern trend. During both world wars, governments in Britain and the United States urged citizens to dig up lawns, parks and even sports grounds to grow vegetables, and millions responded. Much later, in the 1970s, residents of some American cities began clearing rubbish from abandoned lots and planting them, often without asking anyone's permission. Some of those early plots still exist today, surrounded by expensive apartment blocks. What has changed is the motivation. Wartime gardeners grew food because they had to; most of today's volunteers could easily buy their carrots at the supermarket, and many admit that their home-grown ones end up costing far more. So why do they bother?",
+                "label": "B"
+            },
+            {
+                "text": "Kavita Ellingsen, a social researcher who spent two years visiting gardens in three cities, believes the answer has less to do with vegetables than with company. In her study, which involved interviews with more than 200 members, only a small minority named fresh food as their main reason for joining. Far more mentioned meeting neighbours, escaping loneliness or simply having somewhere to go. 'People told me again and again that they came for the tomatoes and stayed for the conversations,' she says. Ellingsen found that older members in particular valued the garden as a place where friendships formed naturally, without the awkwardness of an organised social event. She is careful to point out, though, that her study looked only at people who had already joined, so it cannot say whether gardening itself makes people less lonely.",
+                "label": "C"
+            },
+            {
+                "text": "Keeping a shared garden running smoothly takes more organisation than visitors might expect. Lucia Brannigan, who coordinates the Harwick Street site, explains that every member signs a short agreement before receiving a plot. It sets out simple rules: no chemical weedkillers, no planting of trees that will shade other beds, and a commitment to spend at least two hours a month on shared tasks such as turning the compost or repairing paths. Watering is organised through a rota posted on the door of the tool shed, so that nobody's crops die while their owner is on holiday. Newcomers are usually given a smaller bed for their first season, to see whether they can keep up with it. Members who repeatedly ignore the rules can eventually be asked to give up their plot, though she says this has happened only twice. 'The rules sound strict,' Brannigan admits, 'but they actually prevent arguments. When everyone knows what's expected, there's very little to fall out about.'",
+                "label": "D"
+            },
+            {
+                "text": "Not every garden enjoys such a stable existence. Many are created on land that is only borrowed, sometimes from a council and sometimes from a private owner waiting for the right moment to build. When that moment comes, years of work can disappear within weeks. Brannigan's own group came close to losing its site when the owner received an offer from a developer; it survived only after members raised enough money to buy a long lease. Brannigan estimates that the campaign took eighteen months and involved almost every member. Other risks are less dramatic but just as serious. Gardens often depend on a handful of committed volunteers, and when those people move away or grow tired, enthusiasm can quickly fade. There can also be friction between long-standing members, who may resist change, and newcomers with fresh ideas about what the garden should be.",
+                "label": "E"
+            },
+            {
+                "text": "For anyone thinking of getting involved, Marcus Tembo, a retired bus driver who has belonged to the Harwick Street garden since it opened, has some straightforward advice. Start small, he says: a single bed tended well is more satisfying than a large plot overgrown with weeds. Ask experienced members questions, since most are delighted to share what they know. And don't expect to save money – seeds, tools and the occasional failed crop add up. 'If you want cheap vegetables, go to the market,' he laughs. 'You come here for something you can't buy.' Most importantly, he adds, turn up regularly, even when there is little to do: the conversations by the compost heap matter as much as the harvest.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Scenes like this have become increasingly common. In towns and cities across many countries, neglected corners of land are being turned into community gardens",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "It would be wrong, however, to see this as a purely modern trend. ... What has changed is the motivation.",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the answer has less to do with vegetables than with company",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "every member signs a short agreement before receiving a plot. It sets out simple rules",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Not every garden enjoys such a stable existence.",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Marcus Tembo, a retired bus driver who has belonged to the Harwick Street garden since it opened, has some straightforward advice.",
+                "answer": [
+                    "ix"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "often without asking anyone's permission",
+                "answer": [
+                    "permission"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "without the awkwardness of an organised social event",
+                "answer": [
+                    "awkwardness"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a rota posted on the door of the tool shed",
+                "answer": [
+                    "tool shed"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Newcomers are usually given a smaller bed for their first season",
+                "answer": [
+                    "smaller bed"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "members raised enough money to buy a long lease",
+                "answer": [
+                    "long lease"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a sign of how far demand has outstripped supply",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "her study looked only at people who had already joined, so it cannot say whether gardening itself makes people less lonely",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "they actually prevent arguments. When everyone knows what's expected, there's very little to fall out about.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "don't expect to save money – seeds, tools and the occasional failed crop add up",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "On a corner of Harwick Street, where a burnt-out shop once stood... Scenes like this have become increasingly common.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "It would be wrong, however, to see this as a purely modern trend... What has changed is the motivation.",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "believes the answer has less to do with vegetables than with company",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Keeping a shared garden running smoothly takes more organisation than visitors might expect... It sets out simple rules",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Not every garden enjoys such a stable existence... Other risks are less dramatic but just as serious.",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "has some straightforward advice. Start small, he says",
+                "answer": [
+                    "ix"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "often without asking anyone's permission",
+                "answer": [
+                    "permission"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "without the awkwardness of an organised social event",
+                "answer": [
+                    "awkwardness"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a rota posted on the door of the tool shed",
+                "answer": [
+                    "tool shed"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Newcomers are usually given a smaller bed for their first season",
+                "answer": [
+                    "smaller bed"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "members raised enough money to buy a long lease",
+                "answer": [
+                    "long lease"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Waiting lists for a plot can run to several years in some places, a sign of how far demand has outstripped supply.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "her study looked only at people who had already joined, so it cannot say whether gardening itself makes people less lonely",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "'The rules sound strict,' Brannigan admits, 'but they actually prevent arguments.'",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "don't expect to save money – seeds, tools and the occasional failed crop add up",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "On a corner of Harwick Street, where a burnt-out shop once stood, there are now raised beds of beans... Scenes like this have become increasingly common.",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "It would be wrong, however, to see this as a purely modern trend... What has changed is the motivation.",
+            "answer": [
+                "vi"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "believes the answer has less to do with vegetables than with company... Far more mentioned meeting neighbours, escaping loneliness",
+            "answer": [
+                "v"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "every member signs a short agreement before receiving a plot. It sets out simple rules... they actually prevent arguments.",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Not every garden enjoys such a stable existence. Many are created on land that is only borrowed... years of work can disappear within weeks.",
+            "answer": [
+                "vii"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Marcus Tembo... has some straightforward advice. Start small, he says",
+            "answer": [
+                "ix"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "planting them, often without asking anyone's permission",
+            "answer": [
+                "anyone's permission"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "friendships formed naturally, without the awkwardness of an organised social event",
+            "answer": [
+                "awkwardness"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "a rota posted on the door of the tool shed",
+            "answer": [
+                "tool shed"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Newcomers are usually given a smaller bed for their first season",
+            "answer": [
+                "smaller bed"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "a sign of how far demand has outstripped supply",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "it cannot say whether gardening itself makes people less lonely",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "they actually prevent arguments. When everyone knows what's expected, there's very little to fall out about.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Growing Together\n\nA. On a corner of Harwick Street, where a burnt-out shop once stood, there are now raised beds of beans, a bench made from old scaffolding boards and a hand-painted sign inviting passers-by to come in. Ten years ago the site was fenced off and littered with broken glass; today around forty households share it. Scenes like this have become increasingly common. In towns and cities across many countries, neglected corners of land are being turned into community gardens – spaces where neighbours grow food and flowers side by side rather than behind their own fences. Councils that once regarded such sites as eyesores are, in some cases, now actively offering them to residents' groups. Waiting lists for a plot can run to several years in some places, a sign of how far demand has outstripped supply.\n\nB. It would be wrong, however, to see this as a purely modern trend. During both world wars, governments in Britain and the United States urged citizens to dig up lawns, parks and even sports grounds to grow vegetables, and millions responded. Much later, in the 1970s, residents of some American cities began clearing rubbish from abandoned lots and planting them, often without asking anyone's permission. Some of those early plots still exist today, surrounded by expensive apartment blocks. What has changed is the motivation. Wartime gardeners grew food because they had to; most of today's volunteers could easily buy their carrots at the supermarket, and many admit that their home-grown ones end up costing far more. So why do they bother?\n\nC. Kavita Ellingsen, a social researcher who spent two years visiting gardens in three cities, believes the answer has less to do with vegetables than with company. In her study, which involved interviews with more than 200 members, only a small minority named fresh food as their main reason for joining. Far more mentioned meeting neighbours, escaping loneliness or simply having somewhere to go. 'People told me again and again that they came for the tomatoes and stayed for the conversations,' she says. Ellingsen found that older members in particular valued the garden as a place where friendships formed naturally, without the awkwardness of an organised social event. She is careful to point out, though, that her study looked only at people who had already joined, so it cannot say whether gardening itself makes people less lonely.\n\nD. Keeping a shared garden running smoothly takes more organisation than visitors might expect. Lucia Brannigan, who coordinates the Harwick Street site, explains that every member signs a short agreement before receiving a plot. It sets out simple rules: no chemical weedkillers, no planting of trees that will shade other beds, and a commitment to spend at least two hours a month on shared tasks such as turning the compost or repairing paths. Watering is organised through a rota posted on the door of the tool shed, so that nobody's crops die while their owner is on holiday. Newcomers are usually given a smaller bed for their first season, to see whether they can keep up with it. Members who repeatedly ignore the rules can eventually be asked to give up their plot, though she says this has happened only twice. 'The rules sound strict,' Brannigan admits, 'but they actually prevent arguments. When everyone knows what's expected, there's very little to fall out about.'\n\nE. Not every garden enjoys such a stable existence. Many are created on land that is only borrowed, sometimes from a council and sometimes from a private owner waiting for the right moment to build. When that moment comes, years of work can disappear within weeks. Brannigan's own group came close to losing its site when the owner received an offer from a developer; it survived only after members raised enough money to buy a long lease. Brannigan estimates that the campaign took eighteen months and involved almost every member. Other risks are less dramatic but just as serious. Gardens often depend on a handful of committed volunteers, and when those people move away or grow tired, enthusiasm can quickly fade. There can also be friction between long-standing members, who may resist change, and newcomers with fresh ideas about what the garden should be.\n\nF. For anyone thinking of getting involved, Marcus Tembo, a retired bus driver who has belonged to the Harwick Street garden since it opened, has some straightforward advice. Start small, he says: a single bed tended well is more satisfying than a large plot overgrown with weeds. Ask experienced members questions, since most are delighted to share what they know. And don't expect to save money – seeds, tools and the occasional failed crop add up. 'If you want cheap vegetables, go to the market,' he laughs. 'You come here for something you can't buy.' Most importantly, he adds, turn up regularly, even when there is little to do: the conversations by the compost heap matter as much as the harvest.",
+        "title": "Growing Together",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Agreed rules that keep a shared space running"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "The lessons of wartime food shortages"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "A transformed corner reflects a growing movement"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Why growing your own is cheaper than shopping"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Social connection as the real attraction"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "A familiar practice driven by new reasons"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Threats to a garden's survival"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "Measuring the health benefits of gardening"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Practical tips from a long-serving member"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "neglected corners of land are being turned into community gardens",
+                        "explanation": {
+                            "en": "Paragraph A describes one former shop site that is now a garden and then says such changes are happening in many towns and cities, with demand growing. So the main idea is one changed place that shows a wider trend.",
+                            "ru": "Абзац A описывает одно бывшее помещение магазина, на месте которого теперь сад, а затем говорит, что такие перемены происходят во многих городах и спрос растёт. Значит, главная мысль — одно изменившееся место, которое отражает более широкую тенденцию.",
+                            "uk": "Абзац A описує одне колишнє приміщення магазину, на місці якого тепер сад, а далі говорить, що такі зміни відбуваються в багатьох містах і попит зростає. Отже, головна думка — одне змінене місце, яке ілюструє ширшу тенденцію."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "It would be wrong, however, to see this as a purely modern trend.",
+                        "explanation": {
+                            "en": "Paragraph B shows that community gardening existed in the world wars and the 1970s, but says 'What has changed is the motivation'. The wartime heading only covers one detail, and the paragraph does not discuss lessons from food shortages.",
+                            "ru": "Абзац B показывает, что общественные сады существовали во время мировых войн и в 1970-е годы, но там сказано: «What has changed is the motivation». Заголовок про военное время охватывает лишь одну деталь, а об уроках нехватки продовольствия в абзаце речи не идёт.",
+                            "uk": "Абзац B показує, що громадські сади існували під час світових воєн і в 1970-х роках, але там сказано: «What has changed is the motivation». Заголовок про воєнний час стосується лише однієї деталі, а про уроки нестачі продовольства в абзаці не йдеться."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "believes the answer has less to do with vegetables than with company",
+                        "explanation": {
+                            "en": "Paragraph C reports Ellingsen's finding that most members join to meet people rather than for food. It is about social reasons, not about measuring health, so the health heading is wrong.",
+                            "ru": "В абзаце C приводится вывод, к которому пришла Ellingsen: большинство участников вступают, чтобы общаться с людьми, а не ради еды. Речь идёт о социальных причинах, а не об измерении здоровья, поэтому заголовок про здоровье не подходит.",
+                            "uk": "В абзаці C наведено висновок, до якого дійшла Ellingsen: більшість учасників приєднуються, щоб спілкуватися з людьми, а не заради їжі. Ідеться про соціальні причини, а не про вимірювання здоров'я, тому заголовок про здоров'я не підходить."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "Keeping a shared garden running smoothly takes more organisation than visitors might expect.",
+                        "explanation": {
+                            "en": "Paragraph D explains the members' agreement, the watering rota and what happens when rules are broken, and Brannigan says the rules prevent arguments. The whole paragraph is about how rules keep the garden working.",
+                            "ru": "Абзац D объясняет соглашение участников, график полива и то, что происходит при нарушении правил, а Brannigan говорит, что правила предотвращают ссоры. Весь абзац о том, как правила обеспечивают работу сада.",
+                            "uk": "Абзац D пояснює угоду учасників, графік поливу і те, що відбувається в разі порушення правил, а Brannigan каже, що правила запобігають сваркам. Увесь абзац про те, як правила забезпечують роботу саду."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Not every garden enjoys such a stable existence.",
+                        "explanation": {
+                            "en": "Paragraph E lists dangers: losing borrowed land to builders, volunteers getting tired, and friction between members. All of these threaten whether a garden can continue.",
+                            "ru": "Абзац E перечисляет угрозы: потерю земли, взятой во временное пользование, из-за застройщиков, усталость волонтёров и трения между участниками. Всё это ставит под вопрос, сможет ли сад продолжать существовать.",
+                            "uk": "Абзац E перелічує небезпеки: втрату землі, взятої в тимчасове користування, через забудовників, утому волонтерів і тертя між учасниками. Усе це ставить під загрозу подальше існування саду."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ix"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "a retired bus driver who has belonged to the Harwick Street garden since it opened, has some straightforward advice",
+                        "explanation": {
+                            "en": "Paragraph F gives Tembo's advice to beginners: start small, ask questions and come regularly. The heading about saving money is wrong because Tembo says gardeners should not expect to save money.",
+                            "ru": "В абзаце F приводятся советы Tembo новичкам: начинать с малого, задавать вопросы и приходить регулярно. Заголовок про экономию денег не подходит, потому что Tembo говорит, что садоводам не стоит рассчитывать на экономию.",
+                            "uk": "В абзаці F наведено поради Tembo новачкам: починати з малого, ставити запитання й приходити регулярно. Заголовок про економію грошей не підходить, бо Tembo каже, що садівникам не варто розраховувати на економію."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "permission",
+                            "anyone's permission"
+                        ],
+                        "prompt": "In the 1970s, some residents of American cities cultivated abandoned lots, frequently without seeking ______.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "often without asking anyone's permission",
+                        "explanation": {
+                            "en": "Paragraph B says these residents planted abandoned lots 'often without asking anyone's permission'. 'Frequently' restates 'often' and 'seeking' restates 'asking'.",
+                            "ru": "В абзаце B сказано, что эти жители засаживали заброшенные участки «often without asking anyone's permission». «Frequently» передаёт «often», а «seeking» — «asking».",
+                            "uk": "В абзаці B сказано, що ці мешканці засаджували покинуті ділянки «often without asking anyone's permission». «Frequently» передає «often», а «seeking» — «asking»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "awkwardness"
+                        ],
+                        "prompt": "Older members especially appreciated that friendships developed without the ______ of a planned social gathering.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "without the awkwardness of an organised social event",
+                        "explanation": {
+                            "en": "Paragraph C says older members liked the garden because friendships formed naturally, without the awkwardness of an organised social event. 'A planned social gathering' restates 'an organised social event'.",
+                            "ru": "В абзаце C говорится, что пожилым участникам нравился сад, потому что дружба там возникала естественно, без неловкости организованного мероприятия для общения. «A planned social gathering» — это перефразированное «an organised social event».",
+                            "uk": "В абзаці C йдеться про те, що літнім учасникам подобався сад, бо дружба там виникала природно, без ніяковості організованого заходу для спілкування. «A planned social gathering» — це перефразоване «an organised social event»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "tool shed",
+                            "toolshed"
+                        ],
+                        "prompt": "To stop crops dying while their owners are away, a watering timetable is displayed on the ______ door.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "a rota posted on the door of the tool shed",
+                        "explanation": {
+                            "en": "Paragraph D says the watering rota is posted on the door of the tool shed so that crops do not die while their owner is on holiday. 'Timetable' restates 'rota'.",
+                            "ru": "В абзаце D сказано, что график полива висит на двери сарая для инструментов, чтобы урожай не погиб, пока его хозяин в отпуске. «Timetable» — это перефразированное «rota».",
+                            "uk": "В абзаці D сказано, що графік поливу висить на дверях сараю для інструментів, щоб урожай не загинув, поки його власник у відпустці. «Timetable» — це перефразоване «rota»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "smaller bed"
+                        ],
+                        "prompt": "Members joining the garden normally receive a ______ during their first season.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "Newcomers are usually given a smaller bed for their first season",
+                        "explanation": {
+                            "en": "Paragraph D says newcomers are usually given a smaller bed in their first season to see if they can manage it. 'Members joining' restates 'newcomers'.",
+                            "ru": "В абзаце D говорится, что новичкам в первый сезон обычно дают грядку поменьше, чтобы проверить, справятся ли они. «Members joining» — это перефразированное «newcomers».",
+                            "uk": "В абзаці D йдеться про те, що новачкам у перший сезон зазвичай дають меншу грядку, щоб перевірити, чи вони впораються. «Members joining» — це перефразоване «newcomers»."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Interest in plots has grown faster than the number available."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Many applicants give up before a plot finally becomes free."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Councils have been slow to offer unused land to residents."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Most gardens limit their membership to around forty households."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does the writer suggest about the long waiting lists for garden plots?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "a sign of how far demand has outstripped supply",
+                        "explanation": {
+                            "en": "Paragraph A says the waiting lists show that demand has outstripped supply, meaning more people want plots than there are plots. The passage says some councils are now offering land, and 'forty households' refers only to Harwick Street.",
+                            "ru": "В абзаце A сказано, что листы ожидания показывают: спрос превысил предложение, то есть желающих получить участок больше, чем самих участков. В тексте говорится, что некоторые городские советы уже предлагают землю, а «forty households» относится только к Harwick Street.",
+                            "uk": "В абзаці A сказано, що списки очікування показують: попит перевищив пропозицію, тобто охочих отримати ділянку більше, ніж самих ділянок. У тексті йдеться про те, що деякі міські ради вже пропонують землю, а «forty households» стосується лише Harwick Street."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It found older members were the loneliest of all."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It cannot establish whether gardening reduces loneliness."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It relied mainly on members who had recently left."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It covered more cities than any earlier piece of research."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does Ellingsen point out about her own study?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "it cannot say whether gardening itself makes people less lonely",
+                        "explanation": {
+                            "en": "In paragraph C, Ellingsen says her study only included people who had already joined, so it cannot show whether gardening itself makes people less lonely. It studied current members, not people who had left, and it does not compare older members' loneliness or mention earlier research.",
+                            "ru": "В абзаце C Ellingsen говорит, что в её исследование вошли только люди, которые уже вступили в сад, поэтому оно не может показать, уменьшает ли одиночество само садоводство. Исследование касалось нынешних участников, а не тех, кто ушёл; в нём не сравнивается одиночество пожилых участников и не упоминаются более ранние работы.",
+                            "uk": "В абзаці C Ellingsen каже, що до її дослідження увійшли лише люди, які вже приєдналися до саду, тому воно не може показати, чи саме садівництво зменшує самотність. Дослідження стосувалося теперішніх учасників, а не тих, хто пішов; у ньому не порівнюється самотність літніх учасників і не згадуються попередні роботи."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "are frequently ignored by the newer members."
+                    },
+                    {
+                        "id": "B",
+                        "text": "were introduced after a serious dispute arose."
+                    },
+                    {
+                        "id": "C",
+                        "text": "help to stop disagreements between the members."
+                    },
+                    {
+                        "id": "D",
+                        "text": "are stricter than those of most similar gardens."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "According to Brannigan, the garden's rules",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "they actually prevent arguments",
+                        "explanation": {
+                            "en": "In paragraph D, Brannigan says the rules sound strict but actually prevent arguments, because everyone knows what is expected. She does not compare them with other gardens, and members have been asked to leave only twice, so the rules are not often ignored.",
+                            "ru": "В абзаце D Brannigan говорит, что правила кажутся строгими, но на деле предотвращают ссоры, потому что все знают, чего от них ждут. Она не сравнивает их с правилами других садов, а покинуть сад участников просили всего дважды, так что правила нарушают нечасто.",
+                            "uk": "В абзаці D Brannigan каже, що правила здаються суворими, але насправді запобігають сваркам, бо всі знають, чого від них очікують. Вона не порівнює їх із правилами інших садів, а залишити сад учасників просили лише двічі, тож правила порушують нечасто."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

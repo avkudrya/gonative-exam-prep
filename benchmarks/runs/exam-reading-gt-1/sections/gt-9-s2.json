@@ -1,0 +1,1221 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-9|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.331512,
+            "provider": "anthropic",
+            "outputTokens": 15497
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.014676,
+            "provider": "anthropic",
+            "outputTokens": 646
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.02066,
+            "provider": "openai",
+            "outputTokens": 938
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.02051,
+            "provider": "xai",
+            "outputTokens": 2130
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.067392,
+            "provider": "anthropic",
+            "outputTokens": 3054
+        }
+    ],
+    "draft": {
+        "title": "Time Off: Annual Leave and Sickness Absence",
+        "blocks": [
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "April"
+                        ],
+                        "prompt": "Leave year: starts on 1 ______ each year",
+                        "options": [],
+                        "evidence": "The leave year runs from 1 April to 31 March",
+                        "explanation": "Paragraph A says the leave year runs from 1 April, so it begins in April. March is when it ends, not when it starts."
+                    },
+                    {
+                        "answer": [
+                            "hours"
+                        ],
+                        "prompt": "Part-time staff: allowance measured in ______ instead of days",
+                        "options": [],
+                        "evidence": "their allowance is calculated in hours rather than days",
+                        "explanation": "Paragraph A explains that part-time allowances are worked out in hours, not days, because working patterns differ so much."
+                    },
+                    {
+                        "answer": [
+                            "portal"
+                        ],
+                        "prompt": "Requests: use the online ______ only; spoken or emailed requests are not accepted",
+                        "options": [],
+                        "evidence": "All requests for annual leave must be submitted through the online staff portal",
+                        "explanation": "Paragraph B says leave requests must go through the online staff portal and that verbal or email requests will not be recorded."
+                    },
+                    {
+                        "answer": [
+                            "bookings"
+                        ],
+                        "prompt": "Wait for approval before making any travel ______",
+                        "options": [],
+                        "evidence": "please do not make any travel bookings until your request has been approved",
+                        "explanation": "Paragraph B tells staff not to make travel bookings until their leave is approved, because the company will not pay costs already spent."
+                    },
+                    {
+                        "answer": [
+                            "June"
+                        ],
+                        "prompt": "Carried-over days (five at most): use before the end of ______",
+                        "options": [],
+                        "evidence": "these must be taken by the end of June",
+                        "explanation": "Paragraph C says up to five unused days can be carried over, but they must be taken by the end of June or they are lost."
+                    },
+                    {
+                        "answer": [
+                            "telephone"
+                        ],
+                        "prompt": "Illness: contact line manager by ______, not by text or email",
+                        "options": [],
+                        "evidence": "you must contact your line manager by telephone as early as possible",
+                        "explanation": "Paragraph D says sickness must be reported to the line manager by telephone; text messages and emails are not acceptable."
+                    },
+                    {
+                        "answer": [
+                            "supervisor"
+                        ],
+                        "prompt": "Manager unavailable: speak to the duty ______",
+                        "options": [],
+                        "evidence": "ask to speak to the duty supervisor instead",
+                        "explanation": "Paragraph D says that if your manager cannot be reached, you should ask for the duty supervisor."
+                    },
+                    {
+                        "answer": [
+                            "certificate"
+                        ],
+                        "prompt": "Absence longer than seven days: a medical ______ from a doctor is required",
+                        "options": [],
+                        "evidence": "you must provide a medical certificate from your doctor covering the whole period",
+                        "explanation": "Paragraph E says a self-certification form is enough for up to seven days, but longer absences need a medical certificate from a doctor."
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does the handbook say about employees who start work in the middle of the leave year?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They get a reduced allowance linked to when they joined."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They must wait until April before booking any leave."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They receive the full allowance calculated in hours."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They may take only public holidays in their first year."
+                            }
+                        ],
+                        "evidence": "Staff who join part-way through the year receive a share of the full allowance that reflects their start date",
+                        "explanation": "Paragraph A says new staff receive a share of the allowance based on their start date, so they get a reduced amount linked to when they joined. Calculating in hours applies to part-time staff, not new starters."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to the handbook, the amount of notice an employee must give depends on",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "how long the requested holiday will last."
+                            },
+                            {
+                                "id": "B",
+                                "text": "how busy the team is at that time of year."
+                            },
+                            {
+                                "id": "C",
+                                "text": "how quickly the line manager can reply."
+                            },
+                            {
+                                "id": "D",
+                                "text": "how many colleagues are already on leave."
+                            }
+                        ],
+                        "evidence": "you should give at least twice as much notice as the amount of time you wish to take",
+                        "explanation": "Paragraph B says notice should be at least twice the length of the leave requested, so it depends on how long the holiday is. The number of colleagues away affects whether a request is approved, not the notice needed."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Requests for leave during the summer and late December",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "are handled according to when they are submitted."
+                            },
+                            {
+                                "id": "B",
+                                "text": "must always be made at least two weeks in advance."
+                            },
+                            {
+                                "id": "C",
+                                "text": "are given first to staff with the longest service."
+                            },
+                            {
+                                "id": "D",
+                                "text": "are limited to a third of each person's allowance."
+                            }
+                        ],
+                        "evidence": "Requests for July, August and late December are dealt with strictly in the order in which they arrive",
+                        "explanation": "Paragraph B says requests for these busy periods are dealt with in the order they arrive. Two weeks is only the example for a week's holiday, and 'a third' refers to the share of the team that can be absent, not a person's allowance."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "An employee can receive payment for unused holiday",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "if illness prevented them from taking it."
+                            },
+                            {
+                                "id": "B",
+                                "text": "when they stop working for the company."
+                            },
+                            {
+                                "id": "C",
+                                "text": "if the days are not used by the end of June."
+                            },
+                            {
+                                "id": "D",
+                                "text": "when they have more than five days left over."
+                            }
+                        ],
+                        "evidence": "Untaken holiday cannot be exchanged for extra pay, except when an employee leaves the company",
+                        "explanation": "Paragraph C says unused holiday can only be turned into pay when someone leaves the company. Long-term illness only allows extra days to be carried over, and days unused after June are lost."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why must employees not report sickness by text message or email?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Written messages might not be noticed soon enough."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The duty supervisor cannot read staff messages."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Managers need to hear how serious the illness is."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Written messages are not recorded on the portal."
+                            }
+                        ],
+                        "evidence": "Text messages and emails are not acceptable, because your manager may not see them in time to arrange cover",
+                        "explanation": "Paragraph D explains that a manager might not see a text or email in time to arrange cover. The idea of messages not being recorded comes from Paragraph B and is about leave requests, not sickness."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "The return-to-work conversation is intended to",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "find out whether a medical certificate is needed."
+                            },
+                            {
+                                "id": "B",
+                                "text": "make sure the employee is ready and up to date."
+                            },
+                            {
+                                "id": "C",
+                                "text": "produce a formal record of why the absence occurred."
+                            },
+                            {
+                                "id": "D",
+                                "text": "decide what support the employee should be offered."
+                            }
+                        ],
+                        "evidence": "its aim is to check that you are well enough to be back and to bring you up to date with anything you have missed",
+                        "explanation": "Paragraph E says the chat checks that the employee is well enough to return and tells them what they have missed. It is described as informal, not a formal record, and identifying support is the purpose of the review meeting in Paragraph G."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "An employee who becomes ill while on holiday abroad",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "can get those holiday days back under certain conditions."
+                            },
+                            {
+                                "id": "B",
+                                "text": "must come home before the days count as sick leave."
+                            },
+                            {
+                                "id": "C",
+                                "text": "will be paid only the minimum amount required by law."
+                            },
+                            {
+                                "id": "D",
+                                "text": "should report the illness once they are back at work."
+                            }
+                        ],
+                        "evidence": "the days you are unwell can be treated as sick leave and your holiday returned to you",
+                        "explanation": "Paragraph F says sick days during a holiday can become sick leave and the holiday is returned, if the employee reports it on the first day, even when abroad, and later supplies a certificate. Reporting only after returning to work would be too late."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Gulnara Abenova",
+                "role": "HR adviser who answers questions about the leave policy",
+                "gender": "unknown"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "This section explains how holiday entitlement works at Fernleigh Freight Services and what you should do if you are too unwell to work. Full-time employees receive 25 days of paid annual leave each year, in addition to public holidays. Part-time colleagues receive the same entitlement on a proportional basis, and because working patterns vary so widely, their allowance is calculated in hours rather than days. The leave year runs from 1 April to 31 March. Staff who join part-way through the year receive a share of the full allowance that reflects their start date.",
+                "label": "A"
+            },
+            {
+                "text": "All requests for annual leave must be submitted through the online staff portal; requests made verbally or by email will not be recorded. As a general rule, you should give at least twice as much notice as the amount of time you wish to take, so a week's holiday should be requested no later than two weeks in advance. Your line manager will normally reply within five working days. Requests for July, August and late December are dealt with strictly in the order in which they arrive. A manager may decline a request if granting it would leave more than a third of the team absent at the same time. For this reason, please do not make any travel bookings until your request has been approved, as the company will not cover costs you have already paid.",
+                "label": "B"
+            },
+            {
+                "text": "We encourage everyone to take their full allowance, but we recognise that this is not always possible. Up to five unused days may be carried over into the following leave year, but these must be taken by the end of June; any days still unused after that date will be lost. Exceptions are made only where an employee has been unable to take leave because of long-term illness or parental leave. Untaken holiday cannot be exchanged for extra pay, except when an employee leaves the company, in which case any remaining days are added to the final salary payment.",
+                "label": "C"
+            },
+            {
+                "text": "If you are unable to come to work because of illness, you must contact your line manager by telephone as early as possible, and in any case no later than one hour after your usual start time. Text messages and emails are not acceptable, because your manager may not see them in time to arrange cover. When you call, explain briefly what is wrong, how long you expect to be away and whether any urgent tasks need to be passed to a colleague. If your manager cannot be reached, ask to speak to the duty supervisor instead.",
+                "label": "D"
+            },
+            {
+                "text": "For absences of up to seven calendar days, including weekends, you do not need to see a doctor. Instead, you should complete a self-certification form on the portal on the day you return. If you are off for longer than this, you must provide a medical certificate from your doctor covering the whole period. After every absence, however short, your manager will hold a brief return-to-work conversation with you. This is an informal chat rather than a formal interview: its aim is to check that you are well enough to be back and to bring you up to date with anything you have missed.",
+                "label": "E"
+            },
+            {
+                "text": "Once you have completed your three-month probationary period, you are entitled to company sick pay. This means full pay for up to four weeks of absence in any rolling twelve-month period, followed by half pay for a further four weeks. Employees who are still on probation receive only the minimum sick pay required by law. If you fall ill while on annual leave, the days you are unwell can be treated as sick leave and your holiday returned to you. To do this, you must report the illness on the first day it occurs, even if you are abroad, and later supply a medical certificate.",
+                "label": "F"
+            },
+            {
+                "text": "If an employee has four separate periods of sickness within six months, a review meeting will be arranged with their manager and, where appropriate, our occupational health service. The purpose of this meeting is to identify any support that might help, such as adjusted hours or changes to equipment; it is not a disciplinary step. Routine medical and dental appointments should be arranged outside working hours wherever possible. If this cannot be done, you may either make up the time later in the same week or use annual leave. Questions about any part of this policy should be directed to our HR adviser, Gulnara Abenova.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The leave year runs from 1 April to 31 March.",
+                "answer": [
+                    "April"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "their allowance is calculated in hours rather than days",
+                "answer": [
+                    "hours"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "All requests for annual leave must be submitted through the online staff portal",
+                "answer": [
+                    "portal"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "please do not make any travel bookings until your request has been approved",
+                "answer": [
+                    "bookings"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "these must be taken by the end of June",
+                "answer": [
+                    "June"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "you must contact your line manager by telephone as early as possible",
+                "answer": [
+                    "telephone"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "ask to speak to the duty supervisor instead",
+                "answer": [
+                    "supervisor"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "you must provide a medical certificate from your doctor",
+                "answer": [
+                    "certificate"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Staff who join part-way through the year receive a share of the full allowance that reflects their start date.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "you should give at least twice as much notice as the amount of time you wish to take",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "are dealt with strictly in the order in which they arrive",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "except when an employee leaves the company, in which case any remaining days are added to the final salary payment",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "because your manager may not see them in time to arrange cover",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "its aim is to check that you are well enough to be back and to bring you up to date with anything you have missed",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "the days you are unwell can be treated as sick leave and your holiday returned to you. To do this, you must report the illness on the first day it occurs",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The leave year runs from 1 April to 31 March.",
+                "answer": [
+                    "April"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "their allowance is calculated in hours rather than days",
+                "answer": [
+                    "hours"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "All requests for annual leave must be submitted through the online staff portal",
+                "answer": [
+                    "portal"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "please do not make any travel bookings until your request has been approved",
+                "answer": [
+                    "bookings"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "these must be taken by the end of June",
+                "answer": [
+                    "June"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "you must contact your line manager by telephone",
+                "answer": [
+                    "telephone"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "ask to speak to the duty supervisor instead",
+                "answer": [
+                    "supervisor"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "you must provide a medical certificate from your doctor",
+                "answer": [
+                    "certificate"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Staff who join part-way through the year receive a share of the full allowance that reflects their start date.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "you should give at least twice as much notice as the amount of time you wish to take",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Requests for July, August and late December are dealt with strictly in the order in which they arrive.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Untaken holiday cannot be exchanged for extra pay, except when an employee leaves the company",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Text messages and emails are not acceptable, because your manager may not see them in time to arrange cover.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "its aim is to check that you are well enough to be back and to bring you up to date with anything you have missed",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you fall ill while on annual leave, the days you are unwell can be treated as sick leave and your holiday returned to you. To do this, you must report the illness on the first day it occurs, even if you are abroad",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The leave year runs from 1 April to 31 March.",
+            "answer": [
+                "April"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "their allowance is calculated in hours rather than days.",
+            "answer": [
+                "hours"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "All requests for annual leave must be submitted through the online staff portal; requests made verbally or by email will not be recorded.",
+            "answer": [
+                "portal"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "please do not make any travel bookings until your request has been approved",
+            "answer": [
+                "bookings"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "these must be taken by the end of June",
+            "answer": [
+                "June"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "you must contact your line manager by telephone as early as possible",
+            "answer": [
+                "telephone"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "ask to speak to the duty supervisor instead.",
+            "answer": [
+                "supervisor"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Staff who join part-way through the year receive a share of the full allowance that reflects their start date.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "you should give at least twice as much notice as the amount of time you wish to take",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Requests for July, August and late December are dealt with strictly in the order in which they arrive.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Untaken holiday cannot be exchanged for extra pay, except when an employee leaves the company, in which case any remaining days are added to the final salary payment.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Text messages and emails are not acceptable, because your manager may not see them in time to arrange cover.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "its aim is to check that you are well enough to be back and to bring you up to date with anything you have missed.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Time Off: Annual Leave and Sickness Absence\n\nA. This section explains how holiday entitlement works at Fernleigh Freight Services and what you should do if you are too unwell to work. Full-time employees receive 25 days of paid annual leave each year, in addition to public holidays. Part-time colleagues receive the same entitlement on a proportional basis, and because working patterns vary so widely, their allowance is calculated in hours rather than days. The leave year runs from 1 April to 31 March. Staff who join part-way through the year receive a share of the full allowance that reflects their start date.\n\nB. All requests for annual leave must be submitted through the online staff portal; requests made verbally or by email will not be recorded. As a general rule, you should give at least twice as much notice as the amount of time you wish to take, so a week's holiday should be requested no later than two weeks in advance. Your line manager will normally reply within five working days. Requests for July, August and late December are dealt with strictly in the order in which they arrive. A manager may decline a request if granting it would leave more than a third of the team absent at the same time. For this reason, please do not make any travel bookings until your request has been approved, as the company will not cover costs you have already paid.\n\nC. We encourage everyone to take their full allowance, but we recognise that this is not always possible. Up to five unused days may be carried over into the following leave year, but these must be taken by the end of June; any days still unused after that date will be lost. Exceptions are made only where an employee has been unable to take leave because of long-term illness or parental leave. Untaken holiday cannot be exchanged for extra pay, except when an employee leaves the company, in which case any remaining days are added to the final salary payment.\n\nD. If you are unable to come to work because of illness, you must contact your line manager by telephone as early as possible, and in any case no later than one hour after your usual start time. Text messages and emails are not acceptable, because your manager may not see them in time to arrange cover. When you call, explain briefly what is wrong, how long you expect to be away and whether any urgent tasks need to be passed to a colleague. If your manager cannot be reached, ask to speak to the duty supervisor instead.\n\nE. For absences of up to seven calendar days, including weekends, you do not need to see a doctor. Instead, you should complete a self-certification form on the portal on the day you return. If you are off for longer than this, you must provide a medical certificate from your doctor covering the whole period. After every absence, however short, your manager will hold a brief return-to-work conversation with you. This is an informal chat rather than a formal interview: its aim is to check that you are well enough to be back and to bring you up to date with anything you have missed.\n\nF. Once you have completed your three-month probationary period, you are entitled to company sick pay. This means full pay for up to four weeks of absence in any rolling twelve-month period, followed by half pay for a further four weeks. Employees who are still on probation receive only the minimum sick pay required by law. If you fall ill while on annual leave, the days you are unwell can be treated as sick leave and your holiday returned to you. To do this, you must report the illness on the first day it occurs, even if you are abroad, and later supply a medical certificate.\n\nG. If an employee has four separate periods of sickness within six months, a review meeting will be arranged with their manager and, where appropriate, our occupational health service. The purpose of this meeting is to identify any support that might help, such as adjusted hours or changes to equipment; it is not a disciplinary step. Routine medical and dental appointments should be arranged outside working hours wherever possible. If this cannot be done, you may either make up the time later in the same week or use annual leave. Questions about any part of this policy should be directed to our HR adviser, Gulnara Abenova.",
+        "title": "Time Off: Annual Leave and Sickness Absence",
+        "groups": [
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "April"
+                        ],
+                        "prompt": "Leave year: starts on 1 ______ each year",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "The leave year runs from 1 April to 31 March",
+                        "explanation": {
+                            "en": "Paragraph A says the leave year runs from 1 April, so it begins in April. March is when it ends, not when it starts.",
+                            "ru": "В абзаце A сказано, что отпускной год начинается с \"1 April\", то есть в апреле (\"April\"). \"March\" — это месяц, когда он заканчивается, а не начинается.",
+                            "uk": "В абзаці A сказано, що відпускний рік починається з \"1 April\", тобто у квітні (\"April\"). \"March\" — це місяць, коли він закінчується, а не починається."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "hours"
+                        ],
+                        "prompt": "Part-time staff: allowance measured in ______ instead of days",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "their allowance is calculated in hours rather than days",
+                        "explanation": {
+                            "en": "Paragraph A explains that part-time allowances are worked out in hours, not days, because working patterns differ so much.",
+                            "ru": "В абзаце A объясняется, что для сотрудников на неполной ставке отпуск считается в часах (\"hours\"), а не в днях, потому что графики работы у всех очень разные.",
+                            "uk": "В абзаці A пояснюється, що для працівників на неповній ставці відпустку рахують у годинах (\"hours\"), а не в днях, бо графіки роботи в усіх дуже різні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "portal"
+                        ],
+                        "prompt": "Requests: use the online ______ only; spoken or emailed requests are not accepted",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "All requests for annual leave must be submitted through the online staff portal",
+                        "explanation": {
+                            "en": "Paragraph B says leave requests must go through the online staff portal and that verbal or email requests will not be recorded.",
+                            "ru": "В абзаце B сказано, что заявки на отпуск нужно подавать через онлайн-портал для сотрудников (\"online staff portal\"), а устные просьбы и письма по электронной почте не регистрируются.",
+                            "uk": "В абзаці B сказано, що заявки на відпустку треба подавати через онлайн-портал для працівників (\"online staff portal\"), а усні прохання та листи електронною поштою не реєструються."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "bookings"
+                        ],
+                        "prompt": "Wait for approval before making any travel ______",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "please do not make any travel bookings until your request has been approved",
+                        "explanation": {
+                            "en": "Paragraph B tells staff not to make travel bookings until their leave is approved, because the company will not pay costs already spent.",
+                            "ru": "В абзаце B сотрудников просят не бронировать поездки (\"travel bookings\"), пока отпуск не одобрен, потому что компания не возмещает уже потраченные деньги.",
+                            "uk": "В абзаці B працівників просять не бронювати поїздки (\"travel bookings\"), доки відпустку не схвалено, бо компанія не відшкодовує вже витрачені гроші."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "June"
+                        ],
+                        "prompt": "Carried-over days (five at most): use before the end of ______",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "these must be taken by the end of June",
+                        "explanation": {
+                            "en": "Paragraph C says up to five unused days can be carried over, but they must be taken by the end of June or they are lost.",
+                            "ru": "В абзаце C сказано, что можно перенести до пяти (\"five\") неиспользованных дней, но их нужно использовать до конца июня (\"end of June\"), иначе они сгорают.",
+                            "uk": "В абзаці C сказано, що можна перенести до п'яти (\"five\") невикористаних днів, але їх треба використати до кінця червня (\"end of June\"), інакше вони згорають."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "telephone"
+                        ],
+                        "prompt": "Illness: contact line manager by ______, not by text or email",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "you must contact your line manager by telephone as early as possible",
+                        "explanation": {
+                            "en": "Paragraph D says sickness must be reported to the line manager by telephone; text messages and emails are not acceptable.",
+                            "ru": "В абзаце D сказано, что о болезни нужно сообщать непосредственному руководителю по телефону (\"telephone\"); SMS и электронные письма не принимаются.",
+                            "uk": "В абзаці D сказано, що про хворобу треба повідомляти безпосередньому керівникові телефоном (\"telephone\"); SMS та електронні листи не приймаються."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "supervisor"
+                        ],
+                        "prompt": "Manager unavailable: speak to the duty ______",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "ask to speak to the duty supervisor instead",
+                        "explanation": {
+                            "en": "Paragraph D says that if your manager cannot be reached, you should ask for the duty supervisor.",
+                            "ru": "В абзаце D сказано, что если с руководителем не удаётся связаться, нужно попросить дежурного начальника смены (\"duty supervisor\").",
+                            "uk": "В абзаці D сказано, що якщо з керівником не вдається зв'язатися, треба попросити черговага керівника зміни (\"duty supervisor\")."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They must wait until April before booking any leave."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They receive the full allowance calculated in hours."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They get a reduced allowance linked to when they joined."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They may take only public holidays in their first year."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the handbook say about employees who start work in the middle of the leave year?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Staff who join part-way through the year receive a share of the full allowance that reflects their start date",
+                        "explanation": {
+                            "en": "Paragraph A says new staff receive a share of the allowance based on their start date, so they get a reduced amount linked to when they joined. Calculating in hours applies to part-time staff, not new starters.",
+                            "ru": "В абзаце A сказано, что новые сотрудники получают часть отпуска в зависимости от даты начала работы, то есть уменьшенное количество дней, привязанное к моменту, когда они пришли. Расчёт в часах относится к сотрудникам на неполной ставке, а не к новичкам.",
+                            "uk": "В абзаці A сказано, що нові працівники отримують частину відпустки залежно від дати початку роботи, тобто зменшену кількість днів, прив'язану до того, коли вони прийшли. Розрахунок у годинах стосується працівників на неповній ставці, а не новачків."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "how many colleagues are already on leave."
+                    },
+                    {
+                        "id": "B",
+                        "text": "how quickly the line manager can reply."
+                    },
+                    {
+                        "id": "C",
+                        "text": "how busy the team is at that time of year."
+                    },
+                    {
+                        "id": "D",
+                        "text": "how long the requested holiday will last."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "According to the handbook, the amount of notice an employee must give depends on",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "you should give at least twice as much notice as the amount of time you wish to take",
+                        "explanation": {
+                            "en": "Paragraph B says notice should be at least twice the length of the leave requested, so it depends on how long the holiday is. The number of colleagues away affects whether a request is approved, not the notice needed.",
+                            "ru": "В абзаце B сказано, что предупреждать нужно как минимум за срок, вдвое больший продолжительности отпуска, то есть это зависит от того, насколько длинный отпуск. Количество отсутствующих коллег влияет на то, одобрят ли заявку, а не на срок предупреждения.",
+                            "uk": "В абзаці B сказано, що попереджати треба щонайменше за строк, удвічі більший за тривалість відпустки, тобто це залежить від того, наскільки довга відпустка. Кількість відсутніх колег впливає на те, чи схвалять заявку, а не на строк попередження."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "are handled according to when they are submitted."
+                    },
+                    {
+                        "id": "B",
+                        "text": "are limited to a third of each person's allowance."
+                    },
+                    {
+                        "id": "C",
+                        "text": "are given first to staff with the longest service."
+                    },
+                    {
+                        "id": "D",
+                        "text": "must always be made at least two weeks in advance."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Requests for leave during the summer and late December",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "Requests for July, August and late December are dealt with strictly in the order in which they arrive",
+                        "explanation": {
+                            "en": "Paragraph B says requests for these busy periods are dealt with in the order they arrive. Two weeks is only the example for a week's holiday, and 'a third' refers to the share of the team that can be absent, not a person's allowance.",
+                            "ru": "В абзаце B сказано, что заявки на эти загруженные периоды рассматриваются в порядке поступления. \"Two weeks\" — это лишь пример для недельного отпуска, а \"a third\" — это доля команды, которая может отсутствовать одновременно, а не часть отпуска сотрудника.",
+                            "uk": "В абзаці B сказано, що заявки на ці завантажені періоди розглядаються в порядку надходження. \"Two weeks\" — це лише приклад для тижневої відпустки, а \"a third\" — це частка команди, яка може бути відсутня одночасно, а не частина відпустки працівника."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "if illness prevented them from taking it."
+                    },
+                    {
+                        "id": "B",
+                        "text": "when they stop working for the company."
+                    },
+                    {
+                        "id": "C",
+                        "text": "when they have more than five days left over."
+                    },
+                    {
+                        "id": "D",
+                        "text": "if the days are not used by the end of June."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "An employee can receive payment for unused holiday",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Untaken holiday cannot be exchanged for extra pay, except when an employee leaves the company",
+                        "explanation": {
+                            "en": "Paragraph C says unused holiday can only be turned into pay when someone leaves the company. Long-term illness only allows extra days to be carried over, and days unused after June are lost.",
+                            "ru": "В абзаце C сказано, что неиспользованный отпуск можно получить деньгами только при увольнении из компании. Длительная болезнь позволяет лишь перенести дополнительные дни, а дни, не использованные до конца июня, сгорают.",
+                            "uk": "В абзаці C сказано, що невикористану відпустку можна отримати грошима лише при звільненні з компанії. Тривала хвороба дозволяє тільки перенести додаткові дні, а дні, не використані до кінця червня, згорають."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Managers need to hear how serious the illness is."
+                    },
+                    {
+                        "id": "B",
+                        "text": "The duty supervisor cannot read staff messages."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Written messages might not be noticed soon enough."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Written messages are not recorded on the portal."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Why must employees not report sickness by text message or email?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "Text messages and emails are not acceptable, because your manager may not see them in time to arrange cover",
+                        "explanation": {
+                            "en": "Paragraph D explains that a manager might not see a text or email in time to arrange cover. The idea of messages not being recorded comes from Paragraph B and is about leave requests, not sickness.",
+                            "ru": "В абзаце D объясняется, что руководитель может не увидеть SMS или письмо вовремя и не успеть найти замену. Мысль о том, что сообщения не регистрируются, взята из абзаца B и касается заявок на отпуск, а не болезни.",
+                            "uk": "В абзаці D пояснюється, що керівник може не побачити SMS чи лист вчасно й не встигнути знайти заміну. Думка про те, що повідомлення не реєструються, взята з абзацу B і стосується заявок на відпустку, а не хвороби."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "find out whether a medical certificate is needed."
+                    },
+                    {
+                        "id": "B",
+                        "text": "decide what support the employee should be offered."
+                    },
+                    {
+                        "id": "C",
+                        "text": "produce a formal record of why the absence occurred."
+                    },
+                    {
+                        "id": "D",
+                        "text": "make sure the employee is ready and up to date."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "The return-to-work conversation is intended to",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "its aim is to check that you are well enough to be back and to bring you up to date with anything you have missed",
+                        "explanation": {
+                            "en": "Paragraph E says the chat checks that the employee is well enough to return and tells them what they have missed. It is described as informal, not a formal record, and identifying support is the purpose of the review meeting in Paragraph G.",
+                            "ru": "В абзаце E сказано, что во время беседы проверяют, достаточно ли сотрудник здоров, чтобы вернуться к работе, и рассказывают ему, что он пропустил. Она описана как неформальная, а не как официальная запись, а выявление необходимой поддержки — это цель встречи по итогам, описанной в абзаце G.",
+                            "uk": "В абзаці E сказано, що під час розмови перевіряють, чи достатньо працівник здоровий, щоб повернутися до роботи, і розповідають йому, що він пропустив. Її описано як неформальну, а не як офіційний запис, а визначення потрібної підтримки — це мета підсумкової зустрічі, описаної в абзаці G."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6"
+    },
+    "translation": {
+        "missing": []
+    }
+}

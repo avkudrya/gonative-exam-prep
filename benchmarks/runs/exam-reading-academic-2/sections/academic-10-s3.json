@@ -1,0 +1,1160 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-10|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.2813,
+            "provider": "anthropic",
+            "outputTokens": 12932
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.015288,
+            "provider": "anthropic",
+            "outputTokens": 780
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.022953,
+            "provider": "openai",
+            "outputTokens": 1145
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.017984,
+            "provider": "xai",
+            "outputTokens": 1788
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.088484,
+            "provider": "anthropic",
+            "outputTokens": 4096
+        }
+    ],
+    "draft": {
+        "title": "The Case Against the Worksheet",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The fact that homework is so widely set in primary schools shows that it works.",
+                        "options": [],
+                        "evidence": "the answer is far less convincing than its popularity suggests",
+                        "explanation": "In paragraph A the writer says homework's results are much less convincing than its popularity suggests, so being popular does not prove that it works."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "It is to be expected that homework does little for very young pupils.",
+                        "options": [],
+                        "evidence": "weak, or barely detectable, among younger pupils. This is not surprising.",
+                        "explanation": "In paragraph B the writer says the weak link for younger pupils is 'not surprising' and then explains why, so the writer expects this result."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Students in secondary school are currently given too much homework.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says homework is more useful for older teenagers, but the writer never says whether secondary students get too much or too little of it."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Lunde's study is strong enough on its own to settle whether homework builds good habits.",
+                        "options": [],
+                        "evidence": "so it should not be treated as the final word",
+                        "explanation": "In paragraph C the writer points out that Lunde's study is a single one using only two towns and should not be the final word, which is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Homework can put children whose parents have less time or confidence at a disadvantage.",
+                        "options": [],
+                        "evidence": "Moreover, homework tends to widen gaps between children.",
+                        "explanation": "In paragraph D the writer says homework widens gaps, because children with parents who can help return polished work while others may return nothing."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most parents would be glad to see homework removed from primary schools.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph G mentions that some parents value homework, and paragraph D reports complaints about arguments, but the writer never says what most parents would think about abolishing it."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the reading passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_sentence_endings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "has a closer connection with achievement among older students."
+                    },
+                    {
+                        "id": "B",
+                        "text": "may be left unfinished or done by an adult."
+                    },
+                    {
+                        "id": "C",
+                        "text": "may develop at the point when they become necessary."
+                    },
+                    {
+                        "id": "D",
+                        "text": "turned family evenings into arguments."
+                    },
+                    {
+                        "id": "E",
+                        "text": "is often selected because it is quick to mark."
+                    },
+                    {
+                        "id": "F",
+                        "text": "can signal that rest and play are part of education."
+                    },
+                    {
+                        "id": "G",
+                        "text": "was generally too difficult for the children."
+                    },
+                    {
+                        "id": "H",
+                        "text": "should be checked by parents before it is handed in."
+                    },
+                    {
+                        "id": "I",
+                        "text": "improves children's vocabulary more than reading does."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to large reviews of research, homework",
+                        "options": [],
+                        "evidence": "is clearest among older teenagers and weak, or barely detectable, among younger pupils",
+                        "explanation": "Paragraph B says the reviews found the link between homework and achievement is clearest for older teenagers, which matches a closer connection with achievement for older students."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Work set for a young child who cannot yet concentrate alone",
+                        "options": [],
+                        "evidence": "the task either goes unfinished or is quietly completed by an adult",
+                        "explanation": "Paragraph B explains that a six-year-old who lacks concentration either does not finish the task or an adult quietly does it."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Lunde's study suggests that good study habits",
+                        "options": [],
+                        "evidence": "good habits may be learned when they are needed, rather than drilled years in advance",
+                        "explanation": "Paragraph C says habits may be learned when they are needed, which is the same as developing at the point when they become necessary."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Adewale reports that parents most often complained that homework",
+                        "options": [],
+                        "evidence": "not that tasks were too hard but that evenings had turned into arguments",
+                        "explanation": "Paragraph D says the main complaint was that evenings had become arguments. The ending about tasks being too difficult is wrong because the passage says the complaint was 'not that tasks were too hard'."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Sotelo argues that much primary homework",
+                        "options": [],
+                        "evidence": "it is designed around what is easy to mark rather than what is useful to learn",
+                        "explanation": "In paragraph F Sotelo says homework is designed around what is easy to mark, which means it is chosen because it is quick to check."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Schools that protect children's evenings",
+                        "options": [],
+                        "evidence": "schools signal that rest, play and family life are part of a good education",
+                        "explanation": "Paragraph G says that by protecting evenings, schools show that rest, play and family life belong to a good education."
+                    }
+                ],
+                "instruction": "Complete each sentence with the correct ending, A–I, from the box below. Write the correct letter, A–I. You will not need all the endings."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "organisational skills",
+                            "organizational skills"
+                        ],
+                        "prompt": "A typical six-year-old does not yet have the concentration or the ______ required to work without help.",
+                        "options": [],
+                        "evidence": "often lacks the concentration and the organisational skills to work alone",
+                        "explanation": "Paragraph B says a six-year-old often lacks the concentration and the organisational skills to work alone; 'without help' restates 'alone'."
+                    },
+                    {
+                        "answer": [
+                            "two towns",
+                            "2 towns"
+                        ],
+                        "prompt": "Lunde's sample was taken from only ______, so her findings should be treated with caution.",
+                        "options": [],
+                        "evidence": "its sample was drawn from just two towns",
+                        "explanation": "Paragraph C says her sample came from just two towns, which is one reason it should not be the final word."
+                    },
+                    {
+                        "answer": [
+                            "late shifts"
+                        ],
+                        "prompt": "Children whose parents work ______ may come back to school with no homework done.",
+                        "options": [],
+                        "evidence": "a pupil whose parents work late shifts or struggle with the language of instruction may return with nothing",
+                        "explanation": "Paragraph D says pupils whose parents work late shifts may return with nothing, meaning no completed work."
+                    },
+                    {
+                        "answer": [
+                            "twenty minutes",
+                            "20 minutes"
+                        ],
+                        "prompt": "Instead of worksheets, pupils at Adewale's school are asked to spend ______ reading every evening.",
+                        "options": [],
+                        "evidence": "twenty minutes of reading each evening",
+                        "explanation": "Paragraph E says the worksheets were replaced by an expectation of twenty minutes of reading each evening."
+                    },
+                    {
+                        "answer": [
+                            "grandparent"
+                        ],
+                        "prompt": "One open-ended task Sotelo suggests is asking a child to interview a ______ about their early life.",
+                        "options": [],
+                        "evidence": "interviewing a grandparent about their childhood",
+                        "explanation": "Paragraph F gives interviewing a grandparent about their childhood as an example; 'early life' restates 'childhood'."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Ingeborg Lunde",
+                "role": "education researcher who followed 400 pupils from age seven to fourteen",
+                "gender": "female"
+            },
+            {
+                "name": "Femi Adewale",
+                "role": "head of a primary school that stopped setting worksheets",
+                "gender": "male"
+            },
+            {
+                "name": "Mariana Sotelo",
+                "role": "child psychologist",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Every weekday evening in households around the world, a familiar scene unfolds: a seven-year-old at the kitchen table, a worksheet of sums in front of her, and a tired parent trying to remember how long division was taught. Homework for young children has become so ordinary that it is rarely questioned. Schools set it partly because parents expect it, and parents expect it partly because schools set it. Yet when we ask what this nightly ritual actually achieves for pupils under the age of eleven, the answer is far less convincing than its popularity suggests. My own view is that most formal homework in primary school should be abolished, and replaced with something simpler and more valuable.",
+                "label": "A"
+            },
+            {
+                "text": "Start with the evidence. Large reviews of research, which pool the results of many separate studies, have repeatedly found that the link between homework and academic achievement is clearest among older teenagers and weak, or barely detectable, among younger pupils. This is not surprising. A fifteen-year-old preparing for examinations can consolidate what was taught in class and practise independently. A six-year-old, by contrast, often lacks the concentration and the organisational skills to work alone, so the task either goes unfinished or is quietly completed by an adult. In neither case does the child learn much.",
+                "label": "B"
+            },
+            {
+                "text": "Defenders of homework argue that its purpose in the early years is not to raise test scores but to build habits. Children who learn to sit down and finish a task at home, the argument runs, will be better prepared for the heavier demands of secondary school. This deserves to be taken seriously, but it rests on an assumption that has rarely been tested. Ingeborg Lunde, an education researcher who followed 400 pupils from the age of seven to fourteen, found no difference in the study routines of teenagers who had received regular homework in primary school and those who had received almost none. Her study is a single one, and its sample was drawn from just two towns, so it should not be treated as the final word. Still, it suggests that good habits may be learned when they are needed, rather than drilled years in advance.",
+                "label": "C"
+            },
+            {
+                "text": "There are also costs that rarely appear in the debate. Homework takes time from activities that matter enormously at this age: unstructured play, physical exercise, conversation with family and, not least, sleep. It can also become a source of conflict. Femi Adewale, the head of a primary school that stopped setting worksheets five years ago, says that the most common complaint he used to hear from parents was not that tasks were too hard but that evenings had turned into arguments. Since the change, he reports, evenings at home have become calmer, although he admits he has no firm data on pupils' results. Moreover, homework tends to widen gaps between children. A pupil whose parents have the time, confidence and education to help will return with polished work; a pupil whose parents work late shifts or struggle with the language of instruction may return with nothing, and feel ashamed.",
+                "label": "D"
+            },
+            {
+                "text": "None of this means that learning should stop at the school gate. The home activity that researchers most consistently link with progress at this age is reading, and in particular reading for pleasure. Children who read widely at home tend to develop richer vocabularies and better comprehension, and the benefit appears to grow over time. Crucially, reading does not require a parent to be an expert. A child can read alone, read aloud to a younger sibling, or listen to a story at bedtime. At Adewale's school, the worksheets were replaced by a simple expectation: twenty minutes of reading each evening, with the choice of book left entirely to the child.",
+                "label": "E"
+            },
+            {
+                "text": "Mariana Sotelo, a child psychologist, adds a further point. In her view, the problem with much primary homework is that it is designed around what is easy to mark rather than what is useful to learn. Worksheets can be checked quickly, but they rarely invite curiosity. She suggests that, where schools feel they must set something, it should be practical and open-ended — measuring ingredients for a recipe, for instance, or interviewing a grandparent about their childhood. Such tasks connect classroom learning to everyday life and give families something to share rather than something to fight over.",
+                "label": "F"
+            },
+            {
+                "text": "Critics will say that abolishing homework sends the wrong message, implying that education is unimportant. I would argue the opposite. By protecting children's evenings, schools signal that rest, play and family life are part of a good education, not distractions from it. Some parents, it is true, value homework as a window into what their child is studying; a short weekly note from the teacher could serve that purpose just as well. Schools also free teachers from the considerable burden of setting and checking tasks that, for this age group, do little good, and that time is better spent on lessons themselves.",
+                "label": "G"
+            },
+            {
+                "text": "The question, then, is not whether young children should learn at home, but how. A nightly book, chosen freely and enjoyed without pressure, will do more for most seven-year-olds than any number of photocopied sums. Schools that have the courage to stop setting worksheets are not lowering their standards; they are aligning their practice with what the evidence actually shows.",
+                "label": "H"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Yet when we ask what this nightly ritual actually achieves for pupils under the age of eleven, the answer is far less convincing than its popularity suggests.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is not surprising. A fifteen-year-old preparing for examinations can consolidate what was taught in class",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Her study is a single one, and its sample was drawn from just two towns, so it should not be treated as the final word.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "homework tends to widen gaps between children.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the link between homework and academic achievement is clearest among older teenagers and weak, or barely detectable, among younger pupils",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "so the task either goes unfinished or is quietly completed by an adult",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "good habits may be learned when they are needed, rather than drilled years in advance",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the most common complaint he used to hear from parents was not that tasks were too hard but that evenings had turned into arguments",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the problem with much primary homework is that it is designed around what is easy to mark rather than what is useful to learn",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "By protecting children's evenings, schools signal that rest, play and family life are part of a good education",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "often lacks the concentration and the organisational skills to work alone",
+                "answer": [
+                    "organisational skills"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "its sample was drawn from just two towns",
+                "answer": [
+                    "two towns"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a pupil whose parents work late shifts or struggle with the language of instruction may return with nothing",
+                "answer": [
+                    "late shifts"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "twenty minutes of reading each evening",
+                "answer": [
+                    "twenty minutes"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "interviewing a grandparent about their childhood",
+                "answer": [
+                    "grandparent"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "when we ask what this nightly ritual actually achieves for pupils under the age of eleven, the answer is far less convincing than its popularity suggests",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is not surprising. A fifteen-year-old preparing for examinations can consolidate what was taught in class and practise independently. A six-year-old, by contrast, often lacks the concentration and the organisational skills to work alone",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Her study is a single one, and its sample was drawn from just two towns, so it should not be treated as the final word",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "homework tends to widen gaps between children. A pupil whose parents have the time, confidence and education to help will return with polished work; a pupil whose parents work late shifts or struggle with the language of instruction may return with nothing",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Large reviews of research... have repeatedly found that the link between homework and academic achievement is clearest among older teenagers",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the task either goes unfinished or is quietly completed by an adult",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it suggests that good habits may be learned when they are needed, rather than drilled years in advance",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the most common complaint he used to hear from parents was not that tasks were too hard but that evenings had turned into arguments",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the problem with much primary homework is that it is designed around what is easy to mark rather than what is useful to learn",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "By protecting children's evenings, schools signal that rest, play and family life are part of a good education",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "often lacks the concentration and the organisational skills to work alone",
+                "answer": [
+                    "organisational skills"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "its sample was drawn from just two towns",
+                "answer": [
+                    "two towns"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "parents work late shifts",
+                "answer": [
+                    "late shifts"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "twenty minutes of reading each evening",
+                "answer": [
+                    "twenty minutes"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "interviewing a grandparent about their childhood",
+                "answer": [
+                    "grandparent"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the answer is far less convincing than its popularity suggests",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "This is not surprising.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "it should not be treated as the final word",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "homework tends to widen gaps between children",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the link between homework and academic achievement is clearest among older teenagers",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the task either goes unfinished or is quietly completed by an adult",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "good habits may be learned when they are needed",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "evenings had turned into arguments",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "it is designed around what is easy to mark",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "lacks the concentration and the organisational skills",
+            "answer": [
+                "organisational skills"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "drawn from just two towns",
+            "answer": [
+                "two towns"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "parents work late shifts",
+            "answer": [
+                "late shifts"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "twenty minutes of reading each evening",
+            "answer": [
+                "twenty minutes"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 17,
+        "agreedFirst": 17,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The Case Against the Worksheet\n\nA. Every weekday evening in households around the world, a familiar scene unfolds: a seven-year-old at the kitchen table, a worksheet of sums in front of her, and a tired parent trying to remember how long division was taught. Homework for young children has become so ordinary that it is rarely questioned. Schools set it partly because parents expect it, and parents expect it partly because schools set it. Yet when we ask what this nightly ritual actually achieves for pupils under the age of eleven, the answer is far less convincing than its popularity suggests. My own view is that most formal homework in primary school should be abolished, and replaced with something simpler and more valuable.\n\nB. Start with the evidence. Large reviews of research, which pool the results of many separate studies, have repeatedly found that the link between homework and academic achievement is clearest among older teenagers and weak, or barely detectable, among younger pupils. This is not surprising. A fifteen-year-old preparing for examinations can consolidate what was taught in class and practise independently. A six-year-old, by contrast, often lacks the concentration and the organisational skills to work alone, so the task either goes unfinished or is quietly completed by an adult. In neither case does the child learn much.\n\nC. Defenders of homework argue that its purpose in the early years is not to raise test scores but to build habits. Children who learn to sit down and finish a task at home, the argument runs, will be better prepared for the heavier demands of secondary school. This deserves to be taken seriously, but it rests on an assumption that has rarely been tested. Ingeborg Lunde, an education researcher who followed 400 pupils from the age of seven to fourteen, found no difference in the study routines of teenagers who had received regular homework in primary school and those who had received almost none. Her study is a single one, and its sample was drawn from just two towns, so it should not be treated as the final word. Still, it suggests that good habits may be learned when they are needed, rather than drilled years in advance.\n\nD. There are also costs that rarely appear in the debate. Homework takes time from activities that matter enormously at this age: unstructured play, physical exercise, conversation with family and, not least, sleep. It can also become a source of conflict. Femi Adewale, the head of a primary school that stopped setting worksheets five years ago, says that the most common complaint he used to hear from parents was not that tasks were too hard but that evenings had turned into arguments. Since the change, he reports, evenings at home have become calmer, although he admits he has no firm data on pupils' results. Moreover, homework tends to widen gaps between children. A pupil whose parents have the time, confidence and education to help will return with polished work; a pupil whose parents work late shifts or struggle with the language of instruction may return with nothing, and feel ashamed.\n\nE. None of this means that learning should stop at the school gate. The home activity that researchers most consistently link with progress at this age is reading, and in particular reading for pleasure. Children who read widely at home tend to develop richer vocabularies and better comprehension, and the benefit appears to grow over time. Crucially, reading does not require a parent to be an expert. A child can read alone, read aloud to a younger sibling, or listen to a story at bedtime. At Adewale's school, the worksheets were replaced by a simple expectation: twenty minutes of reading each evening, with the choice of book left entirely to the child.\n\nF. Mariana Sotelo, a child psychologist, adds a further point. In her view, the problem with much primary homework is that it is designed around what is easy to mark rather than what is useful to learn. Worksheets can be checked quickly, but they rarely invite curiosity. She suggests that, where schools feel they must set something, it should be practical and open-ended — measuring ingredients for a recipe, for instance, or interviewing a grandparent about their childhood. Such tasks connect classroom learning to everyday life and give families something to share rather than something to fight over.\n\nG. Critics will say that abolishing homework sends the wrong message, implying that education is unimportant. I would argue the opposite. By protecting children's evenings, schools signal that rest, play and family life are part of a good education, not distractions from it. Some parents, it is true, value homework as a window into what their child is studying; a short weekly note from the teacher could serve that purpose just as well. Schools also free teachers from the considerable burden of setting and checking tasks that, for this age group, do little good, and that time is better spent on lessons themselves.\n\nH. The question, then, is not whether young children should learn at home, but how. A nightly book, chosen freely and enjoyed without pressure, will do more for most seven-year-olds than any number of photocopied sums. Schools that have the courage to stop setting worksheets are not lowering their standards; they are aligning their practice with what the evidence actually shows.",
+        "title": "The Case Against the Worksheet",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The fact that homework is so widely set in primary schools shows that it works.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "the answer is far less convincing than its popularity suggests",
+                        "explanation": {
+                            "en": "In paragraph A the writer says homework's results are much less convincing than its popularity suggests, so being popular does not prove that it works.",
+                            "ru": "В абзаце A автор пишет, что результаты домашних заданий гораздо менее убедительны, чем можно было бы ожидать при их популярности. Значит, популярность не доказывает, что они действительно работают.",
+                            "uk": "В абзаці A автор пише, що результати домашніх завдань значно менш переконливі, ніж можна було б очікувати з огляду на їхню популярність. Отже, популярність не доводить, що вони справді працюють."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "It is to be expected that homework does little for very young pupils.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "weak, or barely detectable, among younger pupils. This is not surprising.",
+                        "explanation": {
+                            "en": "In paragraph B the writer says the weak link for younger pupils is 'not surprising' and then explains why, so the writer expects this result.",
+                            "ru": "В абзаце B автор называет слабую связь у младших школьников \"not surprising\" и затем объясняет почему. Значит, автор ожидал такого результата.",
+                            "uk": "В абзаці B автор називає слабкий зв'язок у молодших школярів \"not surprising\" і далі пояснює чому. Отже, автор очікував такого результату."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Students in secondary school are currently given too much homework.",
+                        "numbers": [
+                            3
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says homework is more useful for older teenagers, but the writer never says whether secondary students get too much or too little of it.",
+                            "ru": "В абзаце B говорится, что домашние задания полезнее для старших подростков, но автор нигде не пишет, слишком много или слишком мало их задают ученикам средней школы.",
+                            "uk": "В абзаці B ідеться про те, що домашні завдання корисніші для старших підлітків, але автор ніде не пише, забагато чи замало їх задають учням середньої школи."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Lunde's study is strong enough on its own to settle whether homework builds good habits.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "so it should not be treated as the final word",
+                        "explanation": {
+                            "en": "In paragraph C the writer points out that Lunde's study is a single one using only two towns and should not be the final word, which is the opposite of the statement.",
+                            "ru": "В абзаце C автор отмечает, что исследование Lunde — всего одно, проведено лишь в двух городах и не должно считаться последним словом. Это прямо противоположно утверждению.",
+                            "uk": "В абзаці C автор зазначає, що дослідження Lunde — лише одне, проведене тільки у двох містах і не має вважатися останнім словом. Це прямо протилежне твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Homework can put children whose parents have less time or confidence at a disadvantage.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Moreover, homework tends to widen gaps between children.",
+                        "explanation": {
+                            "en": "In paragraph D the writer says homework widens gaps, because children with parents who can help return polished work while others may return nothing.",
+                            "ru": "В абзаце D автор пишет, что домашние задания увеличивают разрыв между детьми: те, кому могут помочь родители, приносят тщательно выполненную работу, а другие могут не принести ничего.",
+                            "uk": "В абзаці D автор пише, що домашні завдання збільшують розрив між дітьми: ті, кому можуть допомогти батьки, приносять ретельно виконану роботу, а інші можуть не принести нічого."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the reading passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_sentence_endings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "has a closer connection with achievement among older students."
+                    },
+                    {
+                        "id": "B",
+                        "text": "may be left unfinished or done by an adult."
+                    },
+                    {
+                        "id": "C",
+                        "text": "may develop at the point when they become necessary."
+                    },
+                    {
+                        "id": "D",
+                        "text": "turned family evenings into arguments."
+                    },
+                    {
+                        "id": "E",
+                        "text": "is often selected because it is quick to mark."
+                    },
+                    {
+                        "id": "F",
+                        "text": "can signal that rest and play are part of education."
+                    },
+                    {
+                        "id": "G",
+                        "text": "was generally too difficult for the children."
+                    },
+                    {
+                        "id": "H",
+                        "text": "should be checked by parents before it is handed in."
+                    },
+                    {
+                        "id": "I",
+                        "text": "improves children's vocabulary more than reading does."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to large reviews of research, homework",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "is clearest among older teenagers and weak, or barely detectable, among younger pupils",
+                        "explanation": {
+                            "en": "Paragraph B says the reviews found the link between homework and achievement is clearest for older teenagers, which matches a closer connection with achievement for older students.",
+                            "ru": "В абзаце B сказано, что, по данным обзоров, связь между домашними заданиями и успеваемостью яснее всего видна у старших подростков. Это и есть более тесная связь с успеваемостью у старших учеников.",
+                            "uk": "В абзаці B сказано, що, за даними оглядів, зв'язок між домашніми завданнями й успішністю найчіткіше видно у старших підлітків. Це і є тісніший зв'язок з успішністю у старших учнів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Work set for a young child who cannot yet concentrate alone",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "the task either goes unfinished or is quietly completed by an adult",
+                        "explanation": {
+                            "en": "Paragraph B explains that a six-year-old who lacks concentration either does not finish the task or an adult quietly does it.",
+                            "ru": "В абзаце B объясняется, что шестилетний ребёнок, которому не хватает концентрации, либо не доделывает задание, либо за него потихоньку его выполняет взрослый.",
+                            "uk": "В абзаці B пояснюється, що шестирічна дитина, якій бракує зосередженості, або не доводить завдання до кінця, або за неї його потихеньку виконує дорослий."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Lunde's study suggests that good study habits",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "good habits may be learned when they are needed, rather than drilled years in advance",
+                        "explanation": {
+                            "en": "Paragraph C says habits may be learned when they are needed, which is the same as developing at the point when they become necessary.",
+                            "ru": "В абзаце C говорится, что привычки можно приобрести тогда, когда в них возникает потребность, — то есть они развиваются в тот момент, когда становятся необходимыми.",
+                            "uk": "В абзаці C ідеться про те, що звички можна набути тоді, коли в них виникає потреба, — тобто вони розвиваються в той момент, коли стають необхідними."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Adewale reports that parents most often complained that homework",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "not that tasks were too hard but that evenings had turned into arguments",
+                        "explanation": {
+                            "en": "Paragraph D says the main complaint was that evenings had become arguments. The ending about tasks being too difficult is wrong because the passage says the complaint was 'not that tasks were too hard'.",
+                            "ru": "В абзаце D сказано, что главная жалоба заключалась в том, что вечера превратились в споры. Вариант про слишком трудные задания неверен, потому что в тексте прямо сказано, что жалоба была \"not that tasks were too hard\".",
+                            "uk": "В абзаці D сказано, що головна скарга полягала в тому, що вечори перетворилися на суперечки. Варіант про надто складні завдання неправильний, бо в тексті прямо сказано, що скарга була \"not that tasks were too hard\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Sotelo argues that much primary homework",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "it is designed around what is easy to mark rather than what is useful to learn",
+                        "explanation": {
+                            "en": "In paragraph F Sotelo says homework is designed around what is easy to mark, which means it is chosen because it is quick to check.",
+                            "ru": "В абзаце F Sotelo говорит, что домашние задания составляют исходя из того, что легко проверить. То есть их выбирают потому, что их быстро проверять.",
+                            "uk": "В абзаці F Sotelo каже, що домашні завдання складають, зважаючи на те, що легко перевірити. Тобто їх обирають тому, що їх швидко перевіряти."
+                        }
+                    }
+                ],
+                "instruction": "Complete each sentence with the correct ending, A–I, from the box below. Write the correct letter, A–I. You will not need all the endings."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "organisational skills",
+                            "organizational skills"
+                        ],
+                        "prompt": "A typical six-year-old does not yet have the concentration or the ______ required to work without help.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "often lacks the concentration and the organisational skills to work alone",
+                        "explanation": {
+                            "en": "Paragraph B says a six-year-old often lacks the concentration and the organisational skills to work alone; 'without help' restates 'alone'.",
+                            "ru": "В абзаце B сказано, что шестилетнему ребёнку часто не хватает концентрации (\"concentration\") и организационных навыков (\"organisational skills\"), чтобы работать самостоятельно; \"without help\" — это перефразированное \"alone\".",
+                            "uk": "В абзаці B сказано, що шестирічній дитині часто бракує зосередженості (\"concentration\") та організаційних навичок (\"organisational skills\"), щоб працювати самостійно; \"without help\" — це перефразоване \"alone\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "two towns",
+                            "2 towns"
+                        ],
+                        "prompt": "Lunde's sample was taken from only ______, so her findings should be treated with caution.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "its sample was drawn from just two towns",
+                        "explanation": {
+                            "en": "Paragraph C says her sample came from just two towns, which is one reason it should not be the final word.",
+                            "ru": "В абзаце C сказано, что её выборка была взята всего из двух городов (\"two towns\") — это одна из причин, по которым исследование не стоит считать последним словом.",
+                            "uk": "В абзаці C сказано, що її вибірку взяли лише з двох міст (\"two towns\") — це одна з причин, чому дослідження не варто вважати останнім словом."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "late shifts"
+                        ],
+                        "prompt": "Children whose parents work ______ may come back to school with no homework done.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "a pupil whose parents work late shifts or struggle with the language of instruction may return with nothing",
+                        "explanation": {
+                            "en": "Paragraph D says pupils whose parents work late shifts may return with nothing, meaning no completed work.",
+                            "ru": "В абзаце D сказано, что ученики, чьи родители работают в поздние смены, могут вернуться ни с чем (\"nothing\"), то есть без выполненной работы.",
+                            "uk": "В абзаці D сказано, що учні, чиї батьки працюють у пізні зміни, можуть повернутися ні з чим (\"nothing\"), тобто без виконаної роботи."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "twenty minutes",
+                            "20 minutes"
+                        ],
+                        "prompt": "Instead of worksheets, pupils at Adewale's school are asked to spend ______ reading every evening.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "twenty minutes of reading each evening",
+                        "explanation": {
+                            "en": "Paragraph E says the worksheets were replaced by an expectation of twenty minutes of reading each evening.",
+                            "ru": "В абзаце E сказано, что вместо рабочих листов от учеников теперь ожидают двадцать минут чтения (\"twenty minutes of reading\") каждый вечер.",
+                            "uk": "В абзаці E сказано, що замість робочих аркушів від учнів тепер очікують двадцять хвилин читання (\"twenty minutes of reading\") щовечора."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b2q1",
+        "7": "b2q2",
+        "8": "b2q3",
+        "9": "b2q4",
+        "10": "b2q5",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

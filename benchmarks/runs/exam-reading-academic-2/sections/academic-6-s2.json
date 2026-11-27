@@ -1,0 +1,1046 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-6|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.21912,
+            "provider": "anthropic",
+            "outputTokens": 10030
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.01464,
+            "provider": "anthropic",
+            "outputTokens": 695
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.019953,
+            "provider": "openai",
+            "outputTokens": 944
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.017904,
+            "provider": "xai",
+            "outputTokens": 1842
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.08132,
+            "provider": "anthropic",
+            "outputTokens": 3761
+        }
+    ],
+    "draft": {
+        "title": "Why the Wait Feels Long",
+        "blocks": [
+            {
+                "type": "short_answer",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "mirrors"
+                        ],
+                        "prompt": "What do some hotels and office buildings place next to lifts, leading to fewer complaints about slow lifts?",
+                        "options": [],
+                        "evidence": "Hotels and office buildings often hang mirrors beside lifts",
+                        "explanation": "Paragraph B says buildings hang mirrors beside lifts so that people have something to do while waiting, and complaints about slow lifts then fall."
+                    },
+                    {
+                        "answer": [
+                            "a menu",
+                            "menu"
+                        ],
+                        "prompt": "What can a restaurant give diners as they sit down to make them feel their meal has begun?",
+                        "options": [],
+                        "evidence": "a restaurant that hands diners a menu as soon as they sit down",
+                        "explanation": "Paragraph B explains that handing diners a menu straight away makes them feel the meal has already started, even before the kitchen has the order."
+                    },
+                    {
+                        "answer": [
+                            "anxiety"
+                        ],
+                        "prompt": "Which feeling, produced by uncertain and unexplained waits, seems to make time stretch?",
+                        "options": [],
+                        "evidence": "Both conditions produce anxiety, and anxiety appears to stretch time",
+                        "explanation": "Paragraph C says that waits of unknown length and unexplained delays both produce anxiety, and anxiety appears to stretch time."
+                    },
+                    {
+                        "answer": [
+                            "a brief announcement",
+                            "brief announcement",
+                            "announcement"
+                        ],
+                        "prompt": "In Orla Fenwick's study, what had the driver made in the carriages where passengers gave shorter estimates?",
+                        "options": [],
+                        "evidence": "the driver had made a brief announcement explaining the hold-up",
+                        "explanation": "Paragraph C says passengers who heard a brief announcement explaining the delay guessed several minutes less than those who heard nothing."
+                    },
+                    {
+                        "answer": [
+                            "ropes and bends"
+                        ],
+                        "prompt": "What do some firms use to stop customers seeing the full length of a single line?",
+                        "options": [],
+                        "evidence": "some firms break it up with ropes and bends, so that no one can see its full length at once",
+                        "explanation": "Paragraph D says a long single line can put newcomers off, so some firms break it up with ropes and bends to hide its full length."
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            },
+            {
+                "type": "flow_chart_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "progress"
+                        ],
+                        "prompt": "Step 1: A month of observation shows that complaints increase when visitors notice no sign of ______.",
+                        "options": [],
+                        "evidence": "complaints rose sharply whenever visitors could see no sign of progress",
+                        "explanation": "Paragraph E says Haddad's team observed the hall for a month and found complaints rose when visitors could see no sign of progress."
+                    },
+                    {
+                        "answer": [
+                            "single"
+                        ],
+                        "prompt": "Step 2: The five separate lines are replaced by a ______ line serving every counter.",
+                        "options": [],
+                        "evidence": "replace the five separate lines in front of the counters with one single line that served all of them",
+                        "explanation": "Paragraph E says the first change was to replace five separate lines with one single line for all the counters."
+                    },
+                    {
+                        "answer": [
+                            "pessimistic"
+                        ],
+                        "prompt": "Step 3: Screens show expected waits, which are intentionally made ______.",
+                        "options": [],
+                        "evidence": "The estimates were kept deliberately pessimistic",
+                        "explanation": "Paragraph E says the estimates on the screens were deliberately pessimistic, so most visitors were called sooner than predicted."
+                    },
+                    {
+                        "answer": [
+                            "ticket"
+                        ],
+                        "prompt": "Step 4: Visitors receive a numbered ______ so they can wait in a nearby café.",
+                        "options": [],
+                        "evidence": "Visitors were then given a numbered ticket, which allowed them to wait in a nearby café",
+                        "explanation": "Paragraph E says visitors were given a numbered ticket, which meant they could wait in a café instead of standing in the hall."
+                    },
+                    {
+                        "answer": [
+                            "form"
+                        ],
+                        "prompt": "Step 5: Each visitor completes a short ______ while waiting.",
+                        "options": [],
+                        "evidence": "each person was asked to fill in a short form while waiting",
+                        "explanation": "Paragraph E says visitors filled in a short form while waiting, which kept them busy and saved time at the counter."
+                    },
+                    {
+                        "answer": [
+                            "complaints"
+                        ],
+                        "prompt": "Result after six months: the average wait is similar, but ______ are cut by half.",
+                        "options": [],
+                        "evidence": "the average wait had barely changed, yet complaints had fallen by half",
+                        "explanation": "Paragraph E says the average wait hardly changed, but complaints fell by half. The real wait was not much shorter, but it felt better to visitors."
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "C"
+                        ],
+                        "prompt": "Which TWO of the following does the writer mention as making a wait feel longer?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "having nothing to occupy one's attention"
+                            },
+                            {
+                                "id": "B",
+                                "text": "standing rather than being able to sit down"
+                            },
+                            {
+                                "id": "C",
+                                "text": "not knowing when the delay will end"
+                            },
+                            {
+                                "id": "D",
+                                "text": "waiting alongside a large number of people"
+                            },
+                            {
+                                "id": "E",
+                                "text": "hearing announcements about the hold-up"
+                            }
+                        ],
+                        "evidence": "empty time feels longer than occupied time",
+                        "explanation": "Paragraph B says empty time feels longer than occupied time, and paragraph C says a wait of unknown length feels longer. Announcements actually made waits feel shorter in Fenwick's study, and standing or crowds are not mentioned."
+                    },
+                    {
+                        "answer": [
+                            "B",
+                            "D"
+                        ],
+                        "prompt": "Which TWO statements about a single line serving several counters are made in the passage?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It considerably reduces the average time customers wait."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It ensures that customers are served in order of arrival."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It requires an organisation to employ additional staff."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Its length may discourage new arrivals from joining."
+                            },
+                            {
+                                "id": "E",
+                                "text": "It is mainly found in older supermarkets today."
+                            }
+                        ],
+                        "evidence": "every customer is served strictly in order of arrival",
+                        "explanation": "Paragraph D says a single line serves everyone strictly in order of arrival, and that newcomers may decide not to join a very long line. The passage says the average wait may be no shorter, and it is multiple parallel lines that are linked with older supermarkets."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "E"
+                        ],
+                        "prompt": "Which TWO concerns does Yuna Sorensen express?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Distractions may be used instead of hiring more employees."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Waiting-time screens are too costly for many organisations."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Customers soon learn to distrust explanations for delays."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Single lines may look too long for newcomers to join."
+                            },
+                            {
+                                "id": "E",
+                                "text": "Pessimistic estimates may make customers leave before queuing."
+                            }
+                        ],
+                        "evidence": "may feel less pressure to employ the extra staff who would actually reduce delays",
+                        "explanation": "Paragraph F says Sorensen worries that entertaining screens may replace extra staff, and that pessimistic estimates may make customers give up before joining. The point about long single lines comes from the writer in paragraph D, not from Sorensen."
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            }
+        ],
+        "people": [
+            {
+                "name": "Orla Fenwick",
+                "role": "psychologist who studied delayed train passengers' estimates of waiting time",
+                "gender": "female"
+            },
+            {
+                "name": "Bilal Haddad",
+                "role": "operations manager of a passport office who redesigned its queuing system",
+                "gender": "male"
+            },
+            {
+                "name": "Yuna Sorensen",
+                "role": "consumer researcher who criticises perception-based queue management",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Few experiences are as universal, or as quietly frustrating, as standing in a queue. The line might lead to a supermarket checkout, a hospital reception desk or a theme-park ride. Either way, most people have felt a ten-minute wait drag on as though it were half an hour, and an equally long one pass almost unnoticed. Psychologists who study queues explain this by separating two kinds of time: the duration a clock would record and the duration a person actually experiences. For the organisations that make customers wait, the second figure frequently matters more than the first. Satisfaction depends less on how long people stand in line than on how long they believe they have stood there.",
+                "label": "A"
+            },
+            {
+                "text": "One of the most reliable findings is that empty time feels longer than occupied time. When there is nothing to do, attention turns to the passing of time itself, and every minute becomes noticeable. This is why so many waiting areas offer something to look at or handle. Hotels and office buildings often hang mirrors beside lifts. People waiting for the doors to open can check their appearance or discreetly observe others, and complaints about slow lifts tend to fall as a result. A related effect concerns the moment at which a service seems to begin. People who are still waiting to be acknowledged feel more impatient than those who sense that the process is under way. This is why a restaurant that hands diners a menu as soon as they sit down makes them feel that their meal has already started, even if the kitchen has not yet received the order.",
+                "label": "B"
+            },
+            {
+                "text": "Uncertainty is another powerful influence. A wait of unknown length feels longer than one whose end is in sight, and a delay that nobody explains feels longer than one with an obvious cause. Both conditions produce anxiety, and anxiety appears to stretch time: the worried mind keeps checking whether anything has changed. In one study, the psychologist Orla Fenwick asked passengers on a train held outside a station to estimate how long they had been stationary. In some carriages the driver had made a brief announcement explaining the hold-up, and passengers there guessed, on average, several minutes less than those in carriages where the speakers had failed. Yet both groups had waited exactly the same time. Fenwick cautions that her sample came from a single railway line, but the result fits a wider pattern: information, even unwelcome information, makes waiting easier to bear.",
+                "label": "C"
+            },
+            {
+                "text": "Perhaps the strongest feelings in any queue concern fairness. Most cultures expect queues to follow the principle of first come, first served, and seeing someone who arrived later reach the front first can cause more irritation than the wait itself. Multiple parallel lines, common in older supermarkets, make such injustices highly visible, since one line inevitably moves faster than its neighbours. A single line that feeds several counters removes the problem, because every customer is served strictly in order of arrival. People tend to rate it as fairer even when the average wait is no shorter. The arrangement has a weakness, however. A single line serving many counters can grow very long, and newcomers who see it may decide not to join at all. For this reason some firms break it up with ropes and bends, so that no one can see its full length at once.",
+                "label": "D"
+            },
+            {
+                "text": "These principles can be combined, as a project led by Bilal Haddad, the operations manager of a busy passport office, illustrates. Haddad began by asking his team to spend a month observing the public hall. They found that complaints rose sharply whenever visitors could see no sign of progress. Their first change was to replace the five separate lines in front of the counters with one single line that served all of them. Next, they installed screens displaying the expected wait. The estimates were kept deliberately pessimistic, so that most visitors would be called sooner than predicted and feel pleasantly surprised. Visitors were then given a numbered ticket, which allowed them to wait in a nearby café rather than stand in the hall. Finally, each person was asked to fill in a short form while waiting, which kept them occupied and also reduced the time needed at the counter. After six months, the average wait had barely changed, yet complaints had fallen by half.",
+                "label": "E"
+            },
+            {
+                "text": "Not everyone welcomes this kind of management. Yuna Sorensen, a consumer researcher, argues that techniques designed to shorten perceived time can become a substitute for shortening real time. An organisation that installs entertaining screens, she points out, may feel less pressure to employ the extra staff who would actually reduce delays. She is also uneasy about deliberately pessimistic estimates, which may persuade some customers to give up and leave before they have joined the queue at all. Her criticisms do not mean that the psychology of waiting should be ignored. Rather, they suggest that the most successful approach combines genuine improvements in speed with honest information and thoughtful design, so that customers wait less and also feel that they have waited less.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Hotels and office buildings often hang mirrors beside lifts.",
+                "answer": [
+                    "mirrors"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a restaurant that hands diners a menu as soon as they sit down",
+                "answer": [
+                    "a menu"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Both conditions produce anxiety, and anxiety appears to stretch time",
+                "answer": [
+                    "anxiety"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the driver had made a brief announcement explaining the hold-up",
+                "answer": [
+                    "a brief announcement"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "some firms break it up with ropes and bends, so that no one can see its full length at once",
+                "answer": [
+                    "ropes and bends"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "complaints rose sharply whenever visitors could see no sign of progress",
+                "answer": [
+                    "progress"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "replace the five separate lines in front of the counters with one single line",
+                "answer": [
+                    "single"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The estimates were kept deliberately pessimistic",
+                "answer": [
+                    "pessimistic"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Visitors were then given a numbered ticket",
+                "answer": [
+                    "ticket"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "each person was asked to fill in a short form while waiting",
+                "answer": [
+                    "form"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "yet complaints had fallen by half",
+                "answer": [
+                    "complaints"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "empty time feels longer than occupied time. When there is nothing to do... A wait of unknown length feels longer than one whose end is in sight",
+                "answer": [
+                    "A",
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "every customer is served strictly in order of arrival... A single line serving many counters can grow very long, and newcomers who see it may decide not to join at all.",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "An organisation that installs entertaining screens... may feel less pressure to employ the extra staff... deliberately pessimistic estimates, which may persuade some customers to give up and leave",
+                "answer": [
+                    "A",
+                    "E"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Hotels and office buildings often hang mirrors beside lifts.",
+                "answer": [
+                    "mirrors"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a restaurant that hands diners a menu as soon as they sit down makes them feel that their meal has already started",
+                "answer": [
+                    "a menu"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Both conditions produce anxiety, and anxiety appears to stretch time",
+                "answer": [
+                    "anxiety"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the driver had made a brief announcement explaining the hold-up",
+                "answer": [
+                    "brief announcement"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "some firms break it up with ropes and bends, so that no one can see its full length at once",
+                "answer": [
+                    "ropes and bends"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "complaints rose sharply whenever visitors could see no sign of progress",
+                "answer": [
+                    "progress"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "replace the five separate lines in front of the counters with one single line that served all of them",
+                "answer": [
+                    "single"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The estimates were kept deliberately pessimistic",
+                "answer": [
+                    "pessimistic"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Visitors were then given a numbered ticket",
+                "answer": [
+                    "ticket"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "each person was asked to fill in a short form while waiting",
+                "answer": [
+                    "form"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "complaints had fallen by half",
+                "answer": [
+                    "complaints"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "empty time feels longer than occupied time. When there is nothing to do...; A wait of unknown length feels longer than one whose end is in sight",
+                "answer": [
+                    "A",
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "A single line that feeds several counters removes the problem, because every customer is served strictly in order of arrival... A single line serving many counters can grow very long, and newcomers who see it may decide not to join at all",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "techniques designed to shorten perceived time can become a substitute for shortening real time... may feel less pressure to employ the extra staff...; deliberately pessimistic estimates... may persuade some customers to give up and leave before they have joined the queue at all",
+                "answer": [
+                    "A",
+                    "E"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Hotels and office buildings often hang mirrors beside lifts.",
+            "answer": [
+                "mirrors"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "a restaurant that hands diners a menu as soon as they sit down makes them feel that their meal has already started",
+            "answer": [
+                "a menu"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Both conditions produce anxiety, and anxiety appears to stretch time",
+            "answer": [
+                "anxiety"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "the driver had made a brief announcement explaining the hold-up, and passengers there guessed, on average, several minutes less",
+            "answer": [
+                "a brief announcement"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "complaints rose sharply whenever visitors could see no sign of progress",
+            "answer": [
+                "progress"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "replace the five separate lines in front of the counters with one single line that served all of them",
+            "answer": [
+                "single"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "The estimates were kept deliberately pessimistic",
+            "answer": [
+                "pessimistic"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Visitors were then given a numbered ticket, which allowed them to wait in a nearby café",
+            "answer": [
+                "ticket"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "each person was asked to fill in a short form while waiting",
+            "answer": [
+                "form"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "empty time feels longer than occupied time. A wait of unknown length feels longer than one whose end is in sight",
+            "answer": [
+                "B",
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "every customer is served strictly in order of arrival. A single line serving many counters can grow very long, and newcomers who see it may decide not to join at all.",
+            "answer": [
+                "D",
+                "E"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 14,
+        "agreedFirst": 14,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Why the Wait Feels Long\n\nA. Few experiences are as universal, or as quietly frustrating, as standing in a queue. The line might lead to a supermarket checkout, a hospital reception desk or a theme-park ride. Either way, most people have felt a ten-minute wait drag on as though it were half an hour, and an equally long one pass almost unnoticed. Psychologists who study queues explain this by separating two kinds of time: the duration a clock would record and the duration a person actually experiences. For the organisations that make customers wait, the second figure frequently matters more than the first. Satisfaction depends less on how long people stand in line than on how long they believe they have stood there.\n\nB. One of the most reliable findings is that empty time feels longer than occupied time. When there is nothing to do, attention turns to the passing of time itself, and every minute becomes noticeable. This is why so many waiting areas offer something to look at or handle. Hotels and office buildings often hang mirrors beside lifts. People waiting for the doors to open can check their appearance or discreetly observe others, and complaints about slow lifts tend to fall as a result. A related effect concerns the moment at which a service seems to begin. People who are still waiting to be acknowledged feel more impatient than those who sense that the process is under way. This is why a restaurant that hands diners a menu as soon as they sit down makes them feel that their meal has already started, even if the kitchen has not yet received the order.\n\nC. Uncertainty is another powerful influence. A wait of unknown length feels longer than one whose end is in sight, and a delay that nobody explains feels longer than one with an obvious cause. Both conditions produce anxiety, and anxiety appears to stretch time: the worried mind keeps checking whether anything has changed. In one study, the psychologist Orla Fenwick asked passengers on a train held outside a station to estimate how long they had been stationary. In some carriages the driver had made a brief announcement explaining the hold-up, and passengers there guessed, on average, several minutes less than those in carriages where the speakers had failed. Yet both groups had waited exactly the same time. Fenwick cautions that her sample came from a single railway line, but the result fits a wider pattern: information, even unwelcome information, makes waiting easier to bear.\n\nD. Perhaps the strongest feelings in any queue concern fairness. Most cultures expect queues to follow the principle of first come, first served, and seeing someone who arrived later reach the front first can cause more irritation than the wait itself. Multiple parallel lines, common in older supermarkets, make such injustices highly visible, since one line inevitably moves faster than its neighbours. A single line that feeds several counters removes the problem, because every customer is served strictly in order of arrival. People tend to rate it as fairer even when the average wait is no shorter. The arrangement has a weakness, however. A single line serving many counters can grow very long, and newcomers who see it may decide not to join at all. For this reason some firms break it up with ropes and bends, so that no one can see its full length at once.\n\nE. These principles can be combined, as a project led by Bilal Haddad, the operations manager of a busy passport office, illustrates. Haddad began by asking his team to spend a month observing the public hall. They found that complaints rose sharply whenever visitors could see no sign of progress. Their first change was to replace the five separate lines in front of the counters with one single line that served all of them. Next, they installed screens displaying the expected wait. The estimates were kept deliberately pessimistic, so that most visitors would be called sooner than predicted and feel pleasantly surprised. Visitors were then given a numbered ticket, which allowed them to wait in a nearby café rather than stand in the hall. Finally, each person was asked to fill in a short form while waiting, which kept them occupied and also reduced the time needed at the counter. After six months, the average wait had barely changed, yet complaints had fallen by half.\n\nF. Not everyone welcomes this kind of management. Yuna Sorensen, a consumer researcher, argues that techniques designed to shorten perceived time can become a substitute for shortening real time. An organisation that installs entertaining screens, she points out, may feel less pressure to employ the extra staff who would actually reduce delays. She is also uneasy about deliberately pessimistic estimates, which may persuade some customers to give up and leave before they have joined the queue at all. Her criticisms do not mean that the psychology of waiting should be ignored. Rather, they suggest that the most successful approach combines genuine improvements in speed with honest information and thoughtful design, so that customers wait less and also feel that they have waited less.",
+        "title": "Why the Wait Feels Long",
+        "groups": [
+            {
+                "type": "short_answer",
+                "limit": {
+                    "words": 3,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "mirrors"
+                        ],
+                        "prompt": "What do some hotels and office buildings place next to lifts, leading to fewer complaints about slow lifts?",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Hotels and office buildings often hang mirrors beside lifts",
+                        "explanation": {
+                            "en": "Paragraph B says buildings hang mirrors beside lifts so that people have something to do while waiting, and complaints about slow lifts then fall.",
+                            "ru": "В абзаце B говорится, что в зданиях рядом с лифтами вешают зеркала, чтобы людям было чем заняться во время ожидания. После этого жалоб на медленные лифты становится меньше.",
+                            "uk": "В абзаці B сказано, що в будівлях біля ліфтів вішають дзеркала, щоб людям було чим зайнятися під час очікування. Після цього скарг на повільні ліфти стає менше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "a menu",
+                            "menu"
+                        ],
+                        "prompt": "What can a restaurant give diners as they sit down to make them feel their meal has begun?",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "a restaurant that hands diners a menu as soon as they sit down",
+                        "explanation": {
+                            "en": "Paragraph B explains that handing diners a menu straight away makes them feel the meal has already started, even before the kitchen has the order.",
+                            "ru": "В абзаце B объясняется, что если сразу дать посетителям меню, им кажется, что обед уже начался, хотя кухня ещё даже не получила заказ.",
+                            "uk": "В абзаці B пояснюється, що коли відвідувачам одразу дають меню, їм здається, що обід уже почався, хоча кухня ще навіть не отримала замовлення."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "anxiety"
+                        ],
+                        "prompt": "Which feeling, produced by uncertain and unexplained waits, seems to make time stretch?",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "Both conditions produce anxiety, and anxiety appears to stretch time",
+                        "explanation": {
+                            "en": "Paragraph C says that waits of unknown length and unexplained delays both produce anxiety, and anxiety appears to stretch time.",
+                            "ru": "В абзаце C говорится, что тревогу вызывают и ожидание неизвестной продолжительности, и необъяснённые задержки. А тревога, по-видимому, растягивает время.",
+                            "uk": "В абзаці C сказано, що тривогу викликають і очікування невідомої тривалості, і непояснені затримки. А тривога, схоже, розтягує час."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "a brief announcement",
+                            "brief announcement",
+                            "announcement"
+                        ],
+                        "prompt": "In Orla Fenwick's study, what had the driver made in the carriages where passengers gave shorter estimates?",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "the driver had made a brief announcement explaining the hold-up",
+                        "explanation": {
+                            "en": "Paragraph C says passengers who heard a brief announcement explaining the delay guessed several minutes less than those who heard nothing.",
+                            "ru": "В абзаце C говорится, что пассажиры, которые услышали короткое объявление с объяснением задержки, называли время ожидания на несколько минут меньше, чем те, кто ничего не услышал.",
+                            "uk": "В абзаці C сказано, що пасажири, які почули коротке оголошення з поясненням затримки, називали час очікування на кілька хвилин менший, ніж ті, хто нічого не почув."
+                        }
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            },
+            {
+                "type": "flow_chart_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "progress"
+                        ],
+                        "prompt": "Step 1: A month of observation shows that complaints increase when visitors notice no sign of ______.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "complaints rose sharply whenever visitors could see no sign of progress",
+                        "explanation": {
+                            "en": "Paragraph E says Haddad's team observed the hall for a month and found complaints rose when visitors could see no sign of progress.",
+                            "ru": "В абзаце E говорится, что команда Haddad месяц наблюдала за залом. Она выяснила, что жалоб становилось больше, когда посетители не видели никаких признаков того, что очередь продвигается.",
+                            "uk": "В абзаці E сказано, що команда Haddad місяць спостерігала за залом. Вона з'ясувала, що скарг ставало більше, коли відвідувачі не бачили жодних ознак того, що черга просувається."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "single"
+                        ],
+                        "prompt": "Step 2: The five separate lines are replaced by a ______ line serving every counter.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "replace the five separate lines in front of the counters with one single line that served all of them",
+                        "explanation": {
+                            "en": "Paragraph E says the first change was to replace five separate lines with one single line for all the counters.",
+                            "ru": "В абзаце E говорится, что первым изменением стала замена пяти отдельных очередей одной общей очередью ко всем окошкам.",
+                            "uk": "В абзаці E сказано, що першою зміною була заміна п'яти окремих черг однією спільною чергою до всіх віконець."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "pessimistic"
+                        ],
+                        "prompt": "Step 3: Screens show expected waits, which are intentionally made ______.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "The estimates were kept deliberately pessimistic",
+                        "explanation": {
+                            "en": "Paragraph E says the estimates on the screens were deliberately pessimistic, so most visitors were called sooner than predicted.",
+                            "ru": "В абзаце E говорится, что прогнозы на экранах намеренно делали пессимистичными, поэтому большинство посетителей вызывали раньше, чем было обещано.",
+                            "uk": "В абзаці E сказано, що прогнози на екранах навмисно робили песимістичними, тож більшість відвідувачів викликали раніше, ніж обіцяли."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ticket"
+                        ],
+                        "prompt": "Step 4: Visitors receive a numbered ______ so they can wait in a nearby café.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Visitors were then given a numbered ticket, which allowed them to wait in a nearby café",
+                        "explanation": {
+                            "en": "Paragraph E says visitors were given a numbered ticket, which meant they could wait in a café instead of standing in the hall.",
+                            "ru": "В абзаце E говорится, что посетителям выдавали талон с номером, поэтому они могли ждать в кафе, а не стоять в зале.",
+                            "uk": "В абзаці E сказано, що відвідувачам видавали талон із номером, тож вони могли чекати в кафе, а не стояти в залі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "form"
+                        ],
+                        "prompt": "Step 5: Each visitor completes a short ______ while waiting.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "each person was asked to fill in a short form while waiting",
+                        "explanation": {
+                            "en": "Paragraph E says visitors filled in a short form while waiting, which kept them busy and saved time at the counter.",
+                            "ru": "В абзаце E говорится, что во время ожидания посетители заполняли короткую анкету. Это давало им занятие и экономило время у окошка.",
+                            "uk": "В абзаці E сказано, що під час очікування відвідувачі заповнювали коротку анкету. Це давало їм заняття й заощаджувало час біля віконця."
+                        }
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "hearing announcements about the hold-up"
+                    },
+                    {
+                        "id": "B",
+                        "text": "not knowing when the delay will end"
+                    },
+                    {
+                        "id": "C",
+                        "text": "waiting alongside a large number of people"
+                    },
+                    {
+                        "id": "D",
+                        "text": "having nothing to occupy one's attention"
+                    },
+                    {
+                        "id": "E",
+                        "text": "standing rather than being able to sit down"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B",
+                            "D"
+                        ],
+                        "prompt": "Which TWO of the following does the writer mention as making a wait feel longer?",
+                        "numbers": [
+                            10,
+                            11
+                        ],
+                        "evidence": "empty time feels longer than occupied time",
+                        "explanation": {
+                            "en": "Paragraph B says empty time feels longer than occupied time, and paragraph C says a wait of unknown length feels longer. Announcements actually made waits feel shorter in Fenwick's study, and standing or crowds are not mentioned.",
+                            "ru": "В абзаце B говорится, что незанятое время кажется длиннее занятого, а в абзаце C — что ожидание неизвестной продолжительности кажется дольше. Объявления в исследовании Fenwick, наоборот, делали ожидание субъективно короче, а о том, что людям приходится стоять, или о толпе в тексте ничего не сказано.",
+                            "uk": "В абзаці B сказано, що порожній час здається довшим, ніж зайнятий, а в абзаці C — що очікування невідомої тривалості здається довшим. Оголошення в дослідженні Fenwick, навпаки, робили очікування коротшим на відчуття, а про те, що людям доводиться стояти, чи про натовп у тексті не згадується."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It considerably reduces the average time customers wait."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It is mainly found in older supermarkets today."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It requires an organisation to employ additional staff."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Its length may discourage new arrivals from joining."
+                    },
+                    {
+                        "id": "E",
+                        "text": "It ensures that customers are served in order of arrival."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D",
+                            "E"
+                        ],
+                        "prompt": "Which TWO statements about a single line serving several counters are made in the passage?",
+                        "numbers": [
+                            12,
+                            13
+                        ],
+                        "evidence": "every customer is served strictly in order of arrival",
+                        "explanation": {
+                            "en": "Paragraph D says a single line serves everyone strictly in order of arrival, and that newcomers may decide not to join a very long line. The passage says the average wait may be no shorter, and it is multiple parallel lines that are linked with older supermarkets.",
+                            "ru": "В абзаце D говорится, что в одной общей очереди всех обслуживают строго в порядке прихода и что новые посетители могут решить не вставать в очень длинную очередь. При этом в тексте сказано, что среднее время ожидания может и не сократиться, а со старыми супермаркетами связаны как раз несколько параллельных очередей.",
+                            "uk": "В абзаці D сказано, що в одній спільній черзі всіх обслуговують суворо в порядку прибуття і що нові відвідувачі можуть вирішити не ставати в дуже довгу чергу. Водночас у тексті сказано, що середній час очікування може й не скоротитися, а зі старими супермаркетами пов'язані якраз кілька паралельних черг."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b2q1",
+        "6": "b2q2",
+        "7": "b2q3",
+        "8": "b2q4",
+        "9": "b2q5",
+        "10": "b3q1",
+        "12": "b3q2"
+    },
+    "translation": {
+        "missing": []
+    }
+}

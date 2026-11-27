@@ -1,0 +1,1212 @@
+{
+    "form": {
+        "first": [
+            "the correct option is the longest in 3 of 4 multiple-choice questions (block 2 (multiple_choice), question 2; block 2 (multiple_choice), question 3; block 2 (multiple_choice), question 4); make the options alike in length so that length gives no hint"
+        ],
+        "afterRepair": []
+    },
+    "plan": "gt-9|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.324436,
+            "provider": "anthropic",
+            "outputTokens": 15124
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.146852,
+            "provider": "anthropic",
+            "outputTokens": 5121
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.016304,
+            "provider": "anthropic",
+            "outputTokens": 772
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.019728,
+            "provider": "openai",
+            "outputTokens": 877
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.016124,
+            "provider": "xai",
+            "outputTokens": 1414
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.094032,
+            "provider": "anthropic",
+            "outputTokens": 4378
+        }
+    ],
+    "draft": {
+        "title": "Behind the Forecast",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Using repeated runs to show how certain a forecast is"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "The rising cost of building faster supercomputers"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Collecting readings from many different sources"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Getting the message across to the public"
+                    },
+                    {
+                        "id": "v",
+                        "text": "A huge hidden effort behind a simple result"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "How satellites have made weather balloons unnecessary"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Combining imperfect readings into a single reliable picture"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "The skills that computers cannot yet replace"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Calculating the future one box at a time"
+                    },
+                    {
+                        "id": "x",
+                        "text": "Early attempts to predict the weather"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "Behind it lies one of the largest cooperative scientific efforts on the planet",
+                        "explanation": "Paragraph A contrasts the small symbol on a phone with the enormous work behind it, which Mapondera compares to an iceberg. The paragraph does not discuss the history of forecasting."
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "Ships, buoys and commercial aircraft add further data, while satellites watch clouds",
+                        "explanation": "Paragraph B lists the many sources of measurements: land stations, balloons, ships, buoys, aircraft and satellites. Satellites have not replaced balloons; both are described as still in use."
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "meteorologists must turn this untidy collection into a single, consistent description of the atmosphere at one moment",
+                        "explanation": "Paragraph C explains how messy, conflicting observations are blended into one consistent starting picture through data assimilation."
+                    },
+                    {
+                        "answer": [
+                            "ix"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "Forecasting models divide the atmosphere into a three-dimensional grid of boxes",
+                        "explanation": "Paragraph D describes how models split the atmosphere into boxes and apply physical laws to each one, step by step. Supercomputers are mentioned, but their cost is never discussed."
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "Instead of running the model once, they run it perhaps fifty times, each with slightly altered starting conditions.",
+                        "explanation": "Paragraph E explains that the model is run many times so that forecasters can see how confident they can be."
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "Experienced forecasters know these patterns and adjust the computer's output accordingly.",
+                        "explanation": "Paragraph F argues that people are still needed for local knowledge, for choosing between models and for deciding on warnings, which are things computers cannot yet do."
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph G",
+                        "options": [],
+                        "evidence": "Explaining the forecast to the public may be the hardest step of all.",
+                        "explanation": "Paragraph G is mainly about how the public misunderstands forecasts and why clear communication matters. The improvement in accuracy is only a final detail."
+                    }
+                ],
+                "instruction": "The passage has seven paragraphs, A–G. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–x. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why does Grete Mapondera compare the forecasting process to an iceberg?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Because most of the work is hidden from public view"
+                            },
+                            {
+                                "id": "B",
+                                "text": "Because forecasts are often less reliable than they look"
+                            },
+                            {
+                                "id": "C",
+                                "text": "Because the process moves slowly and resists change"
+                            },
+                            {
+                                "id": "D",
+                                "text": "Because only a few specialists fully understand it"
+                            }
+                        ],
+                        "evidence": "Everything that makes it possible is out of sight.",
+                        "explanation": "In paragraph A, Mapondera says the public sees only the tip and everything else is out of sight, meaning most of the work is hidden. She says nothing about reliability, speed or how many people understand it."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to the writer, why are forecasts for some regions less dependable?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Weather balloons are launched there less often."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Measuring equipment there is quite scarce."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Satellites cannot observe those areas clearly."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Ship readings from there often arrive late."
+                            }
+                        ],
+                        "evidence": "Large areas of ocean and remote land have few instruments, and these gaps are one reason why forecasts for some regions are less dependable than others",
+                        "explanation": "Paragraph B says some areas have few instruments, and these gaps make forecasts there less dependable. Balloons are released twice a day everywhere at the same moment, so the idea of less frequent launches is wrong."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the writer say about data assimilation?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It removes every faulty reading before the model runs."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It is the most exciting stage of the whole process."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It merges new readings with an earlier prediction."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It only takes place once the model has finished running."
+                            }
+                        ],
+                        "evidence": "blends the new observations with the previous forecast for the same time",
+                        "explanation": "Paragraph C says data assimilation blends new observations with the previous forecast. It gives less weight to doubtful readings rather than removing them, and specialists call it the least glamorous step, not the most exciting."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "In ensemble forecasting, what does it mean when the different versions spread out?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "The model probably contains a programming fault."
+                            },
+                            {
+                                "id": "B",
+                                "text": "More balloons must be released to collect data."
+                            },
+                            {
+                                "id": "C",
+                                "text": "The forecaster should choose the most common result."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Forecasters cannot be very sure of the outcome."
+                            }
+                        ],
+                        "evidence": "if they spread out in different directions, the outlook is genuinely uncertain",
+                        "explanation": "Paragraph E says that when the model runs spread out, the outlook is genuinely uncertain. Nothing suggests a fault in the model, a need for more balloons or simply picking the most common result."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "local effects"
+                        ],
+                        "prompt": "Despite huge computing power, human forecasters are still needed. According to Mapondera, computer models find it difficult to handle ______, such as fog lying in one valley.",
+                        "options": [],
+                        "evidence": "Models, she explains, still struggle with local effects",
+                        "explanation": "Paragraph F says models still struggle with local effects, and fog in a particular valley is given as an example."
+                    },
+                    {
+                        "answer": [
+                            "warning"
+                        ],
+                        "prompt": "Forecasters also choose which model to rely on and judge whether conditions are dangerous enough to justify a ______.",
+                        "options": [],
+                        "evidence": "judge when a situation is serious enough to issue a warning",
+                        "explanation": "Paragraph F says forecasters decide when a situation is serious enough to issue a warning."
+                    },
+                    {
+                        "answer": [
+                            "area"
+                        ],
+                        "prompt": "In Calder's survey, some people wrongly believed that a 40% chance of rain referred to the proportion of the day, or of the ______, that would be wet.",
+                        "options": [],
+                        "evidence": "rain would fall for 40% of the day, or over 40% of the area",
+                        "explanation": "Paragraph G says many people thought the figure meant rain for 40% of the day or over 40% of the area."
+                    },
+                    {
+                        "answer": [
+                            "clear communication"
+                        ],
+                        "prompt": "Calder believes that forecasters should put as much effort into ______ as into making forecasts accurate.",
+                        "options": [],
+                        "evidence": "forecasters should put as much effort into clear communication as into accuracy",
+                        "explanation": "Paragraph G reports Calder's view that clear communication deserves as much effort as accuracy."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Grete Mapondera",
+                "role": "senior forecaster at a national weather service",
+                "gender": "female"
+            },
+            {
+                "name": "Idris Calder",
+                "role": "researcher who studies how people use weather information",
+                "gender": "unknown"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "When you glance at the weather app on your phone and see a small cloud with a raindrop beside tomorrow's date, it is easy to forget how much work went into that tiny symbol. Behind it lies one of the largest cooperative scientific efforts on the planet, involving thousands of instruments, some of the most powerful computers ever built and a great many trained specialists. Grete Mapondera, a senior forecaster with twenty years' experience at a national weather service, likes to compare the process to an iceberg. 'The public sees only the tip,' she says. 'Everything that makes it possible is out of sight.'",
+                "label": "A"
+            },
+            {
+                "text": "Every forecast begins with measurement. Thousands of weather stations on land record temperature, air pressure, humidity and wind several times an hour. Twice a day, at the same moment all around the world, balloons are released carrying small instrument packages that radio back readings as they rise through the atmosphere. Ships, buoys and commercial aircraft add further data, while satellites watch clouds, measure the temperature of the sea surface and track water vapour from far above. Even so, coverage is uneven. Large areas of ocean and remote land have few instruments, and these gaps are one reason why forecasts for some regions are less dependable than others.",
+                "label": "B"
+            },
+            {
+                "text": "Raw measurements, however, cannot simply be fed into a computer. Instruments occasionally fail or give readings that disagree with their neighbours, and observations arrive at different times from different places. Before any prediction can be made, meteorologists must turn this untidy collection into a single, consistent description of the atmosphere at one moment, known as the 'initial state'. This step, called data assimilation, blends the new observations with the previous forecast for the same time, giving more weight to measurements that are considered reliable. Many specialists regard it as the least glamorous but most important part of the whole process, because a forecast can never be better than its starting point.",
+                "label": "C"
+            },
+            {
+                "text": "With the starting picture complete, the real calculation begins. Forecasting models divide the atmosphere into a three-dimensional grid of boxes, stacked in layers from the ground to well above the height at which aircraft fly. For each box, the computer applies the laws of physics that govern how air moves, warms, cools and releases moisture, working out what will happen a few minutes ahead, then repeating the step again and again until it reaches several days into the future. The finer the grid, the more detail the model can capture, but each reduction in box size multiplies the number of calculations. This is why major weather services rely on some of the fastest supercomputers in existence. Even so, many features, such as a single thunderstorm, are smaller than one box and have to be estimated rather than calculated directly.",
+                "label": "D"
+            },
+            {
+                "text": "There is a deeper difficulty. The atmosphere is what scientists call a chaotic system, meaning that tiny errors in the starting picture grow larger as time passes, until the forecast eventually bears little resemblance to reality. Since no set of observations is perfect, forecasters cannot escape this problem, but they have found a clever way to measure it. Instead of running the model once, they run it perhaps fifty times, each with slightly altered starting conditions. If most versions produce similar weather, confidence is high; if they spread out in different directions, the outlook is genuinely uncertain. This approach, known as ensemble forecasting, is behind many of the percentages you see in forecasts.",
+                "label": "E"
+            },
+            {
+                "text": "Given all this computing power, it might seem that people are no longer needed. Mapondera disagrees. Models, she explains, still struggle with local effects: fog that settles in a particular valley, or a sea breeze that keeps a coastal town several degrees cooler than the city inland. Experienced forecasters know these patterns and adjust the computer's output accordingly. They also decide which of several competing models to trust on a given day and, crucially, judge when a situation is serious enough to issue a warning. 'A model can tell you a storm is likely,' she says, 'but someone has to decide how loudly to sound the alarm.'",
+                "label": "F"
+            },
+            {
+                "text": "Explaining the forecast to the public may be the hardest step of all. Idris Calder, a researcher who studies how people use weather information, surveyed around 1,500 adults and found that fewer than half correctly understood a '40% chance of rain'. Many believed it meant that rain would fall for 40% of the day, or over 40% of the area. In fact, it means that, on days with similar conditions, rain would be expected at any given spot on about four occasions out of ten. Calder argues that forecasters should put as much effort into clear communication as into accuracy. Accuracy itself, meanwhile, keeps improving: a forecast for several days ahead is now roughly as reliable as a next-day forecast was in the early 1980s.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "it is easy to forget how much work went into that tiny symbol. Behind it lies one of the largest cooperative scientific efforts on the planet",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Thousands of weather stations on land record temperature, air pressure, humidity and wind several times an hour.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "meteorologists must turn this untidy collection into a single, consistent description of the atmosphere at one moment",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Forecasting models divide the atmosphere into a three-dimensional grid of boxes",
+                "answer": [
+                    "ix"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Instead of running the model once, they run it perhaps fifty times, each with slightly altered starting conditions.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Experienced forecasters know these patterns and adjust the computer's output accordingly.",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Explaining the forecast to the public may be the hardest step of all.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "'The public sees only the tip,' she says. 'Everything that makes it possible is out of sight.'",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Large areas of ocean and remote land have few instruments, and these gaps are one reason why forecasts for some regions are less dependable than others.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "This step, called data assimilation, blends the new observations with the previous forecast for the same time",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "if they spread out in different directions, the outlook is genuinely uncertain.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Models, she explains, still struggle with local effects: fog that settles in a particular valley",
+                "answer": [
+                    "local effects"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "judge when a situation is serious enough to issue a warning",
+                "answer": [
+                    "warning"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Many believed it meant that rain would fall for 40% of the day, or over 40% of the area.",
+                "answer": [
+                    "area"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "forecasters should put as much effort into clear communication as into accuracy",
+                "answer": [
+                    "clear communication"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Behind it lies one of the largest cooperative scientific efforts on the planet ... 'The public sees only the tip,' she says. 'Everything that makes it possible is out of sight.'",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Thousands of weather stations on land record temperature, air pressure, humidity and wind ... Ships, buoys and commercial aircraft add further data, while satellites watch clouds",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "meteorologists must turn this untidy collection into a single, consistent description of the atmosphere ... This step, called data assimilation, blends the new observations with the previous forecast",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Forecasting models divide the atmosphere into a three-dimensional grid of boxes ... For each box, the computer applies the laws of physics ... working out what will happen a few minutes ahead",
+                "answer": [
+                    "ix"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Instead of running the model once, they run it perhaps fifty times, each with slightly altered starting conditions. If most versions produce similar weather, confidence is high; if they spread out in different directions, the outlook is genuinely uncertain.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Models, she explains, still struggle with local effects ... Experienced forecasters know these patterns and adjust the computer's output accordingly. They also decide which of several competing models to trust",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Explaining the forecast to the public may be the hardest step of all ... Calder argues that forecasters should put as much effort into clear communication as into accuracy.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "'The public sees only the tip,' she says. 'Everything that makes it possible is out of sight.'",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Large areas of ocean and remote land have few instruments, and these gaps are one reason why forecasts for some regions are less dependable than others.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "This step, called data assimilation, blends the new observations with the previous forecast for the same time",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "if they spread out in different directions, the outlook is genuinely uncertain",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Models, she explains, still struggle with local effects: fog that settles in a particular valley",
+                "answer": [
+                    "local effects"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "judge when a situation is serious enough to issue a warning",
+                "answer": [
+                    "warning"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Many believed it meant that rain would fall for 40% of the day, or over 40% of the area.",
+                "answer": [
+                    "area"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Calder argues that forecasters should put as much effort into clear communication as into accuracy.",
+                "answer": [
+                    "clear communication"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The public sees only the tip,' she says. 'Everything that makes it possible is out of sight.",
+            "answer": [
+                "v"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Thousands of weather stations on land record temperature, air pressure, humidity and wind several times an hour. Twice a day, at the same moment all around the world, balloons are released",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "meteorologists must turn this untidy collection into a single, consistent description of the atmosphere at one moment, known as the 'initial state'.",
+            "answer": [
+                "vii"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Forecasting models divide the atmosphere into a three-dimensional grid of boxes",
+            "answer": [
+                "ix"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Instead of running the model once, they run it perhaps fifty times, each with slightly altered starting conditions.",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Experienced forecasters know these patterns and adjust the computer's output accordingly.",
+            "answer": [
+                "viii"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "Explaining the forecast to the public may be the hardest step of all.",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The public sees only the tip,' she says. 'Everything that makes it possible is out of sight.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Large areas of ocean and remote land have few instruments, and these gaps are one reason why forecasts for some regions are less dependable than others.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "This step, called data assimilation, blends the new observations with the previous forecast for the same time",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Models, she explains, still struggle with local effects: fog that settles in a particular valley",
+            "answer": [
+                "local effects"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "judge when a situation is serious enough to issue a warning.",
+            "answer": [
+                "warning"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "rain would fall for 40% of the day, or over 40% of the area.",
+            "answer": [
+                "area"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Behind the Forecast\n\nA. When you glance at the weather app on your phone and see a small cloud with a raindrop beside tomorrow's date, it is easy to forget how much work went into that tiny symbol. Behind it lies one of the largest cooperative scientific efforts on the planet, involving thousands of instruments, some of the most powerful computers ever built and a great many trained specialists. Grete Mapondera, a senior forecaster with twenty years' experience at a national weather service, likes to compare the process to an iceberg. 'The public sees only the tip,' she says. 'Everything that makes it possible is out of sight.'\n\nB. Every forecast begins with measurement. Thousands of weather stations on land record temperature, air pressure, humidity and wind several times an hour. Twice a day, at the same moment all around the world, balloons are released carrying small instrument packages that radio back readings as they rise through the atmosphere. Ships, buoys and commercial aircraft add further data, while satellites watch clouds, measure the temperature of the sea surface and track water vapour from far above. Even so, coverage is uneven. Large areas of ocean and remote land have few instruments, and these gaps are one reason why forecasts for some regions are less dependable than others.\n\nC. Raw measurements, however, cannot simply be fed into a computer. Instruments occasionally fail or give readings that disagree with their neighbours, and observations arrive at different times from different places. Before any prediction can be made, meteorologists must turn this untidy collection into a single, consistent description of the atmosphere at one moment, known as the 'initial state'. This step, called data assimilation, blends the new observations with the previous forecast for the same time, giving more weight to measurements that are considered reliable. Many specialists regard it as the least glamorous but most important part of the whole process, because a forecast can never be better than its starting point.\n\nD. With the starting picture complete, the real calculation begins. Forecasting models divide the atmosphere into a three-dimensional grid of boxes, stacked in layers from the ground to well above the height at which aircraft fly. For each box, the computer applies the laws of physics that govern how air moves, warms, cools and releases moisture, working out what will happen a few minutes ahead, then repeating the step again and again until it reaches several days into the future. The finer the grid, the more detail the model can capture, but each reduction in box size multiplies the number of calculations. This is why major weather services rely on some of the fastest supercomputers in existence. Even so, many features, such as a single thunderstorm, are smaller than one box and have to be estimated rather than calculated directly.\n\nE. There is a deeper difficulty. The atmosphere is what scientists call a chaotic system, meaning that tiny errors in the starting picture grow larger as time passes, until the forecast eventually bears little resemblance to reality. Since no set of observations is perfect, forecasters cannot escape this problem, but they have found a clever way to measure it. Instead of running the model once, they run it perhaps fifty times, each with slightly altered starting conditions. If most versions produce similar weather, confidence is high; if they spread out in different directions, the outlook is genuinely uncertain. This approach, known as ensemble forecasting, is behind many of the percentages you see in forecasts.\n\nF. Given all this computing power, it might seem that people are no longer needed. Mapondera disagrees. Models, she explains, still struggle with local effects: fog that settles in a particular valley, or a sea breeze that keeps a coastal town several degrees cooler than the city inland. Experienced forecasters know these patterns and adjust the computer's output accordingly. They also decide which of several competing models to trust on a given day and, crucially, judge when a situation is serious enough to issue a warning. 'A model can tell you a storm is likely,' she says, 'but someone has to decide how loudly to sound the alarm.'\n\nG. Explaining the forecast to the public may be the hardest step of all. Idris Calder, a researcher who studies how people use weather information, surveyed around 1,500 adults and found that fewer than half correctly understood a '40% chance of rain'. Many believed it meant that rain would fall for 40% of the day, or over 40% of the area. In fact, it means that, on days with similar conditions, rain would be expected at any given spot on about four occasions out of ten. Calder argues that forecasters should put as much effort into clear communication as into accuracy. Accuracy itself, meanwhile, keeps improving: a forecast for several days ahead is now roughly as reliable as a next-day forecast was in the early 1980s.",
+        "title": "Behind the Forecast",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Using repeated runs to show how certain a forecast is"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "The rising cost of building faster supercomputers"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Collecting readings from many different sources"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Getting the message across to the public"
+                    },
+                    {
+                        "id": "v",
+                        "text": "A huge hidden effort behind a simple result"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "How satellites have made weather balloons unnecessary"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Combining imperfect readings into a single reliable picture"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "The skills that computers cannot yet replace"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Calculating the future one box at a time"
+                    },
+                    {
+                        "id": "x",
+                        "text": "Early attempts to predict the weather"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Behind it lies one of the largest cooperative scientific efforts on the planet",
+                        "explanation": {
+                            "en": "Paragraph A contrasts the small symbol on a phone with the enormous work behind it, which Mapondera compares to an iceberg. The paragraph does not discuss the history of forecasting.",
+                            "ru": "В абзаце A маленький значок на экране телефона противопоставляется огромной работе, которая за ним стоит; Mapondera сравнивает её с айсбергом. Об истории прогнозирования погоды в абзаце не говорится.",
+                            "uk": "В абзаці A маленький значок на екрані телефона протиставляється величезній роботі, що стоїть за ним; Mapondera порівнює її з айсбергом. Про історію прогнозування погоди в абзаці не йдеться."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Ships, buoys and commercial aircraft add further data, while satellites watch clouds",
+                        "explanation": {
+                            "en": "Paragraph B lists the many sources of measurements: land stations, balloons, ships, buoys, aircraft and satellites. Satellites have not replaced balloons; both are described as still in use.",
+                            "ru": "В абзаце B перечислено множество источников измерений: наземные станции, метеозонды, корабли, буи, самолёты и спутники. Спутники не заменили метеозонды: и те, и другие, судя по тексту, используются до сих пор.",
+                            "uk": "В абзаці B перелічено багато джерел вимірювань: наземні станції, метеозонди, кораблі, буї, літаки та супутники. Супутники не замінили метеозонди: і ті, й інші, за текстом, досі використовуються."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "meteorologists must turn this untidy collection into a single, consistent description of the atmosphere at one moment",
+                        "explanation": {
+                            "en": "Paragraph C explains how messy, conflicting observations are blended into one consistent starting picture through data assimilation.",
+                            "ru": "В абзаце C объясняется, как разрозненные и противоречивые наблюдения сводятся в единую согласованную исходную картину с помощью усвоения данных.",
+                            "uk": "В абзаці C пояснюється, як безладні й суперечливі спостереження поєднуються в одну узгоджену початкову картину за допомогою асиміляції даних."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ix"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "Forecasting models divide the atmosphere into a three-dimensional grid of boxes",
+                        "explanation": {
+                            "en": "Paragraph D describes how models split the atmosphere into boxes and apply physical laws to each one, step by step. Supercomputers are mentioned, but their cost is never discussed.",
+                            "ru": "В абзаце D описано, как модели делят атмосферу на ячейки и шаг за шагом применяют к каждой из них физические законы. Суперкомпьютеры упоминаются, но об их стоимости ничего не сказано.",
+                            "uk": "В абзаці D описано, як моделі поділяють атмосферу на комірки й крок за кроком застосовують до кожної з них фізичні закони. Суперкомп'ютери згадуються, але про їхню вартість нічого не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Instead of running the model once, they run it perhaps fifty times, each with slightly altered starting conditions.",
+                        "explanation": {
+                            "en": "Paragraph E explains that the model is run many times so that forecasters can see how confident they can be.",
+                            "ru": "В абзаце E объясняется, что модель запускают много раз, чтобы синоптики видели, насколько они могут быть уверены в прогнозе.",
+                            "uk": "В абзаці E пояснюється, що модель запускають багато разів, щоб синоптики бачили, наскільки вони можуть бути впевнені в прогнозі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "Experienced forecasters know these patterns and adjust the computer's output accordingly.",
+                        "explanation": {
+                            "en": "Paragraph F argues that people are still needed for local knowledge, for choosing between models and for deciding on warnings, which are things computers cannot yet do.",
+                            "ru": "В абзаце F утверждается, что люди по-прежнему нужны: они знают местные особенности, выбирают между моделями и решают, когда объявлять предупреждения, а компьютеры пока этого не умеют.",
+                            "uk": "В абзаці F стверджується, що люди досі потрібні: вони знають місцеві особливості, обирають між моделями та вирішують, коли оголошувати попередження, а комп'ютери поки що цього не вміють."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph G",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "Explaining the forecast to the public may be the hardest step of all.",
+                        "explanation": {
+                            "en": "Paragraph G is mainly about how the public misunderstands forecasts and why clear communication matters. The improvement in accuracy is only a final detail.",
+                            "ru": "Абзац G в основном о том, как люди неправильно понимают прогнозы и почему важно доносить их ясно. Рост точности упоминается лишь как заключительная деталь.",
+                            "uk": "Абзац G здебільшого про те, як люди неправильно розуміють прогнози і чому важливо чітко їх доносити. Зростання точності згадується лише як завершальна деталь."
+                        }
+                    }
+                ],
+                "instruction": "The passage has seven paragraphs, A–G. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–x. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Because only a few specialists fully understand it"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Because the process moves slowly and resists change"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Because forecasts are often less reliable than they look"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Because most of the work is hidden from public view"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Why does Grete Mapondera compare the forecasting process to an iceberg?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Everything that makes it possible is out of sight.",
+                        "explanation": {
+                            "en": "In paragraph A, Mapondera says the public sees only the tip and everything else is out of sight, meaning most of the work is hidden. She says nothing about reliability, speed or how many people understand it.",
+                            "ru": "В абзаце A Mapondera говорит, что публика видит лишь верхушку, а всё остальное скрыто от глаз, то есть бо́льшая часть работы не видна. О надёжности, скорости или о том, сколько людей это понимает, она ничего не говорит.",
+                            "uk": "В абзаці A Mapondera каже, що люди бачать лише верхівку, а все інше приховане від очей, тобто більша частина роботи непомітна. Про надійність, швидкість чи те, скільки людей це розуміє, вона нічого не каже."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Measuring equipment there is quite scarce."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Satellites cannot observe those areas clearly."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Weather balloons are launched there less often."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Ship readings from there often arrive late."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to the writer, why are forecasts for some regions less dependable?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "Large areas of ocean and remote land have few instruments, and these gaps are one reason why forecasts for some regions are less dependable than others",
+                        "explanation": {
+                            "en": "Paragraph B says some areas have few instruments, and these gaps make forecasts there less dependable. Balloons are released twice a day everywhere at the same moment, so the idea of less frequent launches is wrong.",
+                            "ru": "В абзаце B говорится, что в некоторых районах мало приборов и из-за этих пробелов прогнозы там менее надёжны. Метеозонды запускают дважды в сутки повсюду в один и тот же момент, поэтому утверждение о более редких запусках неверно.",
+                            "uk": "В абзаці B сказано, що в деяких районах мало приладів, і через ці прогалини прогнози там менш надійні. Метеозонди запускають двічі на добу всюди в один і той самий момент, тож твердження про рідші запуски хибне."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It removes every faulty reading before the model runs."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It merges new readings with an earlier prediction."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It only takes place once the model has finished running."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It is the most exciting stage of the whole process."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the writer say about data assimilation?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "blends the new observations with the previous forecast for the same time",
+                        "explanation": {
+                            "en": "Paragraph C says data assimilation blends new observations with the previous forecast. It gives less weight to doubtful readings rather than removing them, and specialists call it the least glamorous step, not the most exciting.",
+                            "ru": "В абзаце C сказано, что при усвоении данных новые наблюдения объединяются с предыдущим прогнозом. Сомнительным показаниям придаётся меньший вес, но их не удаляют, а специалисты называют этот этап наименее эффектным, а вовсе не самым интересным.",
+                            "uk": "В абзаці C сказано, що під час асиміляції даних нові спостереження поєднуються з попереднім прогнозом. Сумнівним показникам надається менша вага, але їх не видаляють, а фахівці називають цей етап найменш ефектним, а зовсім не найцікавішим."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "local effects"
+                        ],
+                        "prompt": "Despite huge computing power, human forecasters are still needed. According to Mapondera, computer models find it difficult to handle ______, such as fog lying in one valley.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Models, she explains, still struggle with local effects",
+                        "explanation": {
+                            "en": "Paragraph F says models still struggle with local effects, and fog in a particular valley is given as an example.",
+                            "ru": "В абзаце F говорится, что модели до сих пор плохо справляются с местными эффектами; в качестве примера приводится туман в конкретной долине.",
+                            "uk": "В абзаці F сказано, що моделі досі погано дають раду місцевим ефектам; як приклад наведено туман у певній долині."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "warning"
+                        ],
+                        "prompt": "Forecasters also choose which model to rely on and judge whether conditions are dangerous enough to justify a ______.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "judge when a situation is serious enough to issue a warning",
+                        "explanation": {
+                            "en": "Paragraph F says forecasters decide when a situation is serious enough to issue a warning.",
+                            "ru": "В абзаце F говорится, что именно синоптики решают, когда ситуация достаточно серьёзна, чтобы объявить предупреждение.",
+                            "uk": "В абзаці F сказано, що саме синоптики вирішують, коли ситуація достатньо серйозна, щоб оголосити попередження."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "area"
+                        ],
+                        "prompt": "In Calder's survey, some people wrongly believed that a 40% chance of rain referred to the proportion of the day, or of the ______, that would be wet.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "rain would fall for 40% of the day, or over 40% of the area",
+                        "explanation": {
+                            "en": "Paragraph G says many people thought the figure meant rain for 40% of the day or over 40% of the area.",
+                            "ru": "В абзаце G говорится, что многие считали, будто эта цифра означает дождь в течение 40% дня или более чем на 40% территории.",
+                            "uk": "В абзаці G сказано, що багато хто вважав, ніби ця цифра означає дощ протягом 40% дня або на понад 40% території."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

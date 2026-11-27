@@ -1,0 +1,1041 @@
+{
+    "form": {
+        "first": [
+            "group 1 (summary_completion), question 7: \"closed toe shoes\" is over the word limit"
+        ],
+        "afterRepair": []
+    },
+    "plan": "gt-10|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.273352,
+            "provider": "anthropic",
+            "outputTokens": 12546
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.118968,
+            "provider": "anthropic",
+            "outputTokens": 3901
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012826,
+            "provider": "anthropic",
+            "outputTokens": 660
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018218,
+            "provider": "openai",
+            "outputTokens": 902
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.014434,
+            "provider": "xai",
+            "outputTokens": 1346
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.052472,
+            "provider": "anthropic",
+            "outputTokens": 2285
+        }
+    ],
+    "draft": {
+        "title": "Team Leaders Wanted at Northgate Distribution",
+        "blocks": [
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "chilled section"
+                        ],
+                        "prompt": "Northgate needs more team leaders partly because the Halbrook site is about to add a ______ for fresh food.",
+                        "options": [],
+                        "evidence": "the site will open a new chilled section for fresh food",
+                        "explanation": "Paragraph A explains that the site will open a new area for fresh food, the chilled section, which will bring more orders and people."
+                    },
+                    {
+                        "answer": [
+                            "briefing"
+                        ],
+                        "prompt": "At the beginning of each shift, a team leader gives the team a short ______.",
+                        "options": [],
+                        "evidence": "They start every shift with a short briefing",
+                        "explanation": "In paragraph B, Owen Kariuki says team leaders start every shift with a short briefing."
+                    },
+                    {
+                        "answer": [
+                            "computer skills"
+                        ],
+                        "prompt": "As well as a year's relevant experience and good English, applicants need basic ______.",
+                        "options": [],
+                        "evidence": "good spoken and written English and basic computer skills",
+                        "explanation": "Paragraph C lists the requirements: experience, good spoken and written English, and basic computer skills."
+                    },
+                    {
+                        "answer": [
+                            "forklift licence",
+                            "forklift license"
+                        ],
+                        "prompt": "Having a ______ is an advantage, but it is not required because the company can provide the training.",
+                        "options": [],
+                        "evidence": "A forklift licence is useful but not essential, since we can arrange the training",
+                        "explanation": "Paragraph C says a forklift licence is useful but not essential. 'An advantage, but not required' restates 'useful but not essential'."
+                    },
+                    {
+                        "answer": [
+                            "shadowing"
+                        ],
+                        "prompt": "The induction opens with two weeks of ______, when newcomers work next to an experienced leader.",
+                        "options": [],
+                        "evidence": "a six-week induction that begins with a fortnight of shadowing",
+                        "explanation": "Paragraph D says the induction begins with a fortnight (two weeks) of shadowing an experienced leader."
+                    },
+                    {
+                        "answer": [
+                            "allowance"
+                        ],
+                        "prompt": "Leaders who work nights are paid an extra ______.",
+                        "options": [],
+                        "evidence": "Night-shift leaders receive an additional allowance",
+                        "explanation": "Paragraph D states that night-shift leaders receive an additional allowance. The pension and canteen are for all staff, not only night workers."
+                    },
+                    {
+                        "answer": [
+                            "closed-toe shoes"
+                        ],
+                        "prompt": "On the assessment day, candidates must wear ______ for the tour, although safety boots can be borrowed if requested beforehand.",
+                        "options": [],
+                        "evidence": "For the tour you must wear closed-toe shoes.",
+                        "explanation": "In paragraph E, Yara Bellamy says closed-toe shoes are required for the tour. Safety boots are only lent if candidates don't own any, so they are not the requirement itself."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Owen Kariuki"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Yara Bellamy"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Dev Sandoval"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Mirjam Tanaka"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Luka Petrović"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Learning to use the company's computer system is quicker than developing the ability to listen.",
+                        "options": [],
+                        "evidence": "most can learn the stock software in a few days. Listening well takes longer.",
+                        "explanation": "In paragraph D, Mirjam Tanaka says the stock software can be learned in a few days, but listening well takes longer."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "The hardest part of moving into a leadership role was dealing with people rather than with administration.",
+                        "options": [],
+                        "evidence": "the biggest adjustment was not the paperwork but the relationships",
+                        "explanation": "In paragraph C, Dev Sandoval says the biggest change after promotion was the relationships, not the paperwork."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "A worker who admits an error immediately is preferable to one who keeps it secret.",
+                        "options": [],
+                        "evidence": "I'd much rather have someone who owns up to a mistake straight away than someone who hides it",
+                        "explanation": "In paragraph B, Owen Kariuki says he prefers someone who owns up to a mistake straight away. Dev also talks about honesty, but only about interview answers."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Candidates who mention safety issues without being asked make a strong impression.",
+                        "options": [],
+                        "evidence": "He pays particular attention to whether candidates raise safety without being prompted.",
+                        "explanation": "In paragraph F, Luka Petrović says he watches whether candidates raise safety without being prompted, for example by noticing a blocked fire exit."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Assessors will notice candidates who make sure less talkative group members are heard.",
+                        "options": [],
+                        "evidence": "We notice who listens, who checks that quieter people have had their say",
+                        "explanation": "In paragraph F, Yara Bellamy says the assessors notice who checks that quieter people have had their say, not who is loudest."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Interviewees should be open about how they would now handle a past situation in another way.",
+                        "options": [],
+                        "evidence": "Be honest about what you'd do differently now.",
+                        "explanation": "In paragraph G, Dev Sandoval advises candidates to be honest about what they would do differently now. Owen asks the question, but this advice comes from Dev."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Every candidate is asked to talk about a time when things did not go as planned.",
+                        "options": [],
+                        "evidence": "He asks every candidate to describe a real occasion when a plan fell apart",
+                        "explanation": "Paragraph G says Owen Kariuki leads the final interview and asks every candidate about a time a plan fell apart."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Suitable footwear can be provided for candidates who give notice of their size.",
+                        "options": [],
+                        "evidence": "If you don't own safety boots, tell us your size in advance and we'll lend you a pair.",
+                        "explanation": "In paragraph E, Yara Bellamy says the company will lend safety boots if candidates give their size in advance. Luka is a safety officer, but he does not mention footwear."
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–E. You may use any letter more than once."
+            }
+        ],
+        "people": [
+            {
+                "name": "Owen Kariuki",
+                "role": "Site manager at Northgate Distribution who leads the final interviews",
+                "gender": "male"
+            },
+            {
+                "name": "Dev Sandoval",
+                "role": "Former picker, now night team leader in the ambient section",
+                "gender": "unknown"
+            },
+            {
+                "name": "Mirjam Tanaka",
+                "role": "Training lead who runs the induction for new team leaders",
+                "gender": "unknown"
+            },
+            {
+                "name": "Yara Bellamy",
+                "role": "Recruitment coordinator who organises the assessment day",
+                "gender": "female"
+            },
+            {
+                "name": "Luka Petrović",
+                "role": "Health and safety officer on the assessment panel",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Northgate Distribution is looking for eight team leaders to join its regional centre in Halbrook. Over the next year the site will open a new chilled section for fresh food, which means more orders, more vehicles and more people on every shift. Successful applicants will each be responsible for a team of between twelve and fifteen warehouse operatives, working either a day pattern (6 a.m. to 2 p.m.) or a night pattern (10 p.m. to 6 a.m.). Both are permanent, full-time positions, and the starting salary is reviewed after the first six months.",
+                "label": "A"
+            },
+            {
+                "text": "So what does the job actually involve? According to site manager Owen Kariuki, it is less about giving orders than people imagine. 'A good team leader isn't someone who walks around with a clipboard,' he says. 'They start every shift with a short briefing, share out the work fairly, keep an eye on accuracy and sort out problems before they grow.' When someone calls in sick or a delivery arrives late, the team leader decides how to move people around so that orders still leave on time. Owen adds that the quality he values most is the ability to stay calm when things go wrong. 'I'd much rather have someone who owns up to a mistake straight away than someone who hides it until the end of the shift.'",
+                "label": "B"
+            },
+            {
+                "text": "You do not need to have held the title of supervisor before. We ask for at least one year's experience in a warehouse, retail or delivery setting, along with good spoken and written English and basic computer skills. A forklift licence is useful but not essential, since we can arrange the training. Current Northgate employees are encouraged to apply. Dev Sandoval, who joined as a picker four years ago and now leads the night team in the ambient section, says the biggest adjustment was not the paperwork but the relationships. 'Suddenly I was giving feedback to people I'd been having lunch with the week before. You have to be fair to everyone, including your friends.'",
+                "label": "C"
+            },
+            {
+                "text": "New team leaders are not left to work things out alone. Training lead Mirjam Tanaka runs a six-week induction that begins with a fortnight of shadowing, during which each newcomer works alongside an experienced leader on the same shift pattern they will later take over. This is followed by a short course on coaching and handling difficult conversations. 'People often assume the system is the hard part,' Mirjam says, 'but most can learn the stock software in a few days. Listening well takes longer.' Night-shift leaders receive an additional allowance, and all staff have access to a pension scheme and a subsidised canteen.",
+                "label": "D"
+            },
+            {
+                "text": "Shortlisted candidates will be invited to an assessment day at the Halbrook site. Recruitment coordinator Yara Bellamy explains that it lasts about four hours and has three parts: a guided tour of the warehouse floor, a group exercise and a one-to-one interview. 'Please bring photo ID and proof of your right to work in the UK,' she says. 'For the tour you must wear closed-toe shoes. If you don't own safety boots, tell us your size in advance and we'll lend you a pair.' Candidates who arrive late may not be able to join the tour, because groups leave reception on the hour.",
+                "label": "E"
+            },
+            {
+                "text": "In the group exercise, candidates are given a realistic problem, such as planning a shift when three operatives are absent and a large order has just come in. Yara stresses that the assessors are not looking for the loudest voice in the room. 'We notice who listens, who checks that quieter people have had their say, and who keeps an eye on the clock.' Health and safety officer Luka Petrović also sits on the panel. He pays particular attention to whether candidates raise safety without being prompted. 'On the tour, I'm interested in people who spot a blocked fire exit or a pallet stacked too high and mention it. That tells me more than any answer they've rehearsed.'",
+                "label": "F"
+            },
+            {
+                "text": "The final interview is usually led by Owen himself. He asks every candidate to describe a real occasion when a plan fell apart and what they did next, so it is worth preparing two or three examples from your own working life. Dev's advice is simple: 'Be honest about what you'd do differently now.' To apply, complete the online form by 28 March. If you need any adjustments for the assessment day, contact Yara directly before you attend.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the site will open a new chilled section for fresh food",
+                "answer": [
+                    "chilled section"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "They start every shift with a short briefing",
+                "answer": [
+                    "briefing"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "good spoken and written English and basic computer skills",
+                "answer": [
+                    "computer skills"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "A forklift licence is useful but not essential, since we can arrange the training.",
+                "answer": [
+                    "forklift licence"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "begins with a fortnight of shadowing, during which each newcomer works alongside an experienced leader",
+                "answer": [
+                    "shadowing"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Night-shift leaders receive an additional allowance",
+                "answer": [
+                    "allowance"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "For the tour you must wear closed-toe shoes.",
+                "answer": [
+                    "closed-toe shoes"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "most can learn the stock software in a few days. Listening well takes longer.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the biggest adjustment was not the paperwork but the relationships",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "I'd much rather have someone who owns up to a mistake straight away than someone who hides it until the end of the shift.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "He pays particular attention to whether candidates raise safety without being prompted.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "We notice who listens, who checks that quieter people have had their say",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Be honest about what you'd do differently now.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "He asks every candidate to describe a real occasion when a plan fell apart and what they did next",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you don't own safety boots, tell us your size in advance and we'll lend you a pair.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the site will open a new chilled section for fresh food",
+                "answer": [
+                    "chilled section"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "They start every shift with a short briefing",
+                "answer": [
+                    "briefing"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "good spoken and written English and basic computer skills",
+                "answer": [
+                    "computer skills"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "A forklift licence is useful but not essential, since we can arrange the training",
+                "answer": [
+                    "forklift licence"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "begins with a fortnight of shadowing",
+                "answer": [
+                    "shadowing"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Night-shift leaders receive an additional allowance",
+                "answer": [
+                    "allowance"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "For the tour you must wear closed-toe shoes",
+                "answer": [
+                    "closed-toe shoes"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "'but most can learn the stock software in a few days. Listening well takes longer.'",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the biggest adjustment was not the paperwork but the relationships",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "I'd much rather have someone who owns up to a mistake straight away than someone who hides it until the end of the shift.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "He pays particular attention to whether candidates raise safety without being prompted.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "We notice who listens, who checks that quieter people have had their say",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Dev's advice is simple: 'Be honest about what you'd do differently now.'",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "He asks every candidate to describe a real occasion when a plan fell apart and what they did next",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you don't own safety boots, tell us your size in advance and we'll lend you a pair.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the site will open a new chilled section for fresh food",
+            "answer": [
+                "chilled section"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "They start every shift with a short briefing",
+            "answer": [
+                "briefing"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "good spoken and written English and basic computer skills",
+            "answer": [
+                "computer skills"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "A forklift licence is useful but not essential, since we can arrange the training",
+            "answer": [
+                "forklift licence"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "begins with a fortnight of shadowing, during which each newcomer works alongside an experienced leader",
+            "answer": [
+                "shadowing"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Night-shift leaders receive an additional allowance",
+            "answer": [
+                "allowance"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "most can learn the stock software in a few days. Listening well takes longer.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the biggest adjustment was not the paperwork but the relationships",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "I'd much rather have someone who owns up to a mistake straight away than someone who hides it",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "people who spot a blocked fire exit or a pallet stacked too high and mention it",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "who checks that quieter people have had their say",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Be honest about what you'd do differently now.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "He asks every candidate to describe a real occasion when a plan fell apart",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Team Leaders Wanted at Northgate Distribution\n\nA. Northgate Distribution is looking for eight team leaders to join its regional centre in Halbrook. Over the next year the site will open a new chilled section for fresh food, which means more orders, more vehicles and more people on every shift. Successful applicants will each be responsible for a team of between twelve and fifteen warehouse operatives, working either a day pattern (6 a.m. to 2 p.m.) or a night pattern (10 p.m. to 6 a.m.). Both are permanent, full-time positions, and the starting salary is reviewed after the first six months.\n\nB. So what does the job actually involve? According to site manager Owen Kariuki, it is less about giving orders than people imagine. 'A good team leader isn't someone who walks around with a clipboard,' he says. 'They start every shift with a short briefing, share out the work fairly, keep an eye on accuracy and sort out problems before they grow.' When someone calls in sick or a delivery arrives late, the team leader decides how to move people around so that orders still leave on time. Owen adds that the quality he values most is the ability to stay calm when things go wrong. 'I'd much rather have someone who owns up to a mistake straight away than someone who hides it until the end of the shift.'\n\nC. You do not need to have held the title of supervisor before. We ask for at least one year's experience in a warehouse, retail or delivery setting, along with good spoken and written English and basic computer skills. A forklift licence is useful but not essential, since we can arrange the training. Current Northgate employees are encouraged to apply. Dev Sandoval, who joined as a picker four years ago and now leads the night team in the ambient section, says the biggest adjustment was not the paperwork but the relationships. 'Suddenly I was giving feedback to people I'd been having lunch with the week before. You have to be fair to everyone, including your friends.'\n\nD. New team leaders are not left to work things out alone. Training lead Mirjam Tanaka runs a six-week induction that begins with a fortnight of shadowing, during which each newcomer works alongside an experienced leader on the same shift pattern they will later take over. This is followed by a short course on coaching and handling difficult conversations. 'People often assume the system is the hard part,' Mirjam says, 'but most can learn the stock software in a few days. Listening well takes longer.' Night-shift leaders receive an additional allowance, and all staff have access to a pension scheme and a subsidised canteen.\n\nE. Shortlisted candidates will be invited to an assessment day at the Halbrook site. Recruitment coordinator Yara Bellamy explains that it lasts about four hours and has three parts: a guided tour of the warehouse floor, a group exercise and a one-to-one interview. 'Please bring photo ID and proof of your right to work in the UK,' she says. 'For the tour you must wear closed-toe shoes. If you don't own safety boots, tell us your size in advance and we'll lend you a pair.' Candidates who arrive late may not be able to join the tour, because groups leave reception on the hour.\n\nF. In the group exercise, candidates are given a realistic problem, such as planning a shift when three operatives are absent and a large order has just come in. Yara stresses that the assessors are not looking for the loudest voice in the room. 'We notice who listens, who checks that quieter people have had their say, and who keeps an eye on the clock.' Health and safety officer Luka Petrović also sits on the panel. He pays particular attention to whether candidates raise safety without being prompted. 'On the tour, I'm interested in people who spot a blocked fire exit or a pallet stacked too high and mention it. That tells me more than any answer they've rehearsed.'\n\nG. The final interview is usually led by Owen himself. He asks every candidate to describe a real occasion when a plan fell apart and what they did next, so it is worth preparing two or three examples from your own working life. Dev's advice is simple: 'Be honest about what you'd do differently now.' To apply, complete the online form by 28 March. If you need any adjustments for the assessment day, contact Yara directly before you attend.",
+        "title": "Team Leaders Wanted at Northgate Distribution",
+        "groups": [
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "chilled section"
+                        ],
+                        "prompt": "Northgate needs more team leaders partly because the Halbrook site is about to add a ______ for fresh food.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "the site will open a new chilled section for fresh food",
+                        "explanation": {
+                            "en": "Paragraph A explains that the site will open a new area for fresh food, the chilled section, which will bring more orders and people.",
+                            "ru": "В абзаце A объясняется, что на складе откроется новый участок для свежих продуктов — «chilled section», и это принесёт больше заказов и потребует больше людей.",
+                            "uk": "В абзаці A пояснюється, що на складі відкриється нова ділянка для свіжих продуктів — «chilled section», і це принесе більше замовлень і потребуватиме більше людей."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "briefing"
+                        ],
+                        "prompt": "At the beginning of each shift, a team leader gives the team a short ______.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "They start every shift with a short briefing",
+                        "explanation": {
+                            "en": "In paragraph B, Owen Kariuki says team leaders start every shift with a short briefing.",
+                            "ru": "В абзаце B Owen Kariuki говорит, что тимлидеры начинают каждую смену с короткого инструктажа.",
+                            "uk": "В абзаці B Owen Kariuki каже, що керівники команд починають кожну зміну з короткого інструктажу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "computer skills"
+                        ],
+                        "prompt": "As well as a year's relevant experience and good English, applicants need basic ______.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "good spoken and written English and basic computer skills",
+                        "explanation": {
+                            "en": "Paragraph C lists the requirements: experience, good spoken and written English, and basic computer skills.",
+                            "ru": "В абзаце C перечислены требования: опыт работы, хороший устный и письменный английский и базовые навыки работы с компьютером.",
+                            "uk": "В абзаці C перелічено вимоги: досвід роботи, добра усна й письмова англійська та базові навички роботи з комп’ютером."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "forklift licence",
+                            "forklift license"
+                        ],
+                        "prompt": "Having a ______ is an advantage, but it is not required because the company can provide the training.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "A forklift licence is useful but not essential, since we can arrange the training",
+                        "explanation": {
+                            "en": "Paragraph C says a forklift licence is useful but not essential. 'An advantage, but not required' restates 'useful but not essential'.",
+                            "ru": "В абзаце C сказано, что права на погрузчик полезны, но не обязательны. «An advantage, but not required» — это перефразированное «useful but not essential».",
+                            "uk": "В абзаці C сказано, що посвідчення водія навантажувача корисне, але не обов’язкове. «An advantage, but not required» — це перефразоване «useful but not essential»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "shadowing"
+                        ],
+                        "prompt": "The induction opens with two weeks of ______, when newcomers work next to an experienced leader.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "a six-week induction that begins with a fortnight of shadowing",
+                        "explanation": {
+                            "en": "Paragraph D says the induction begins with a fortnight (two weeks) of shadowing an experienced leader.",
+                            "ru": "В абзаце D говорится, что вводное обучение начинается с «fortnight» (двух недель), в течение которых новичок работает рядом с опытным руководителем и наблюдает за ним.",
+                            "uk": "В абзаці D йдеться про те, що вступне навчання починається з «fortnight» (двох тижнів), протягом яких новачок працює поруч із досвідченим керівником і спостерігає за ним."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "allowance"
+                        ],
+                        "prompt": "Leaders who work nights are paid an extra ______.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "Night-shift leaders receive an additional allowance",
+                        "explanation": {
+                            "en": "Paragraph D states that night-shift leaders receive an additional allowance. The pension and canteen are for all staff, not only night workers.",
+                            "ru": "В абзаце D указано, что руководители ночных смен получают дополнительную надбавку. Пенсия и столовая положены всем сотрудникам, а не только тем, кто работает ночью.",
+                            "uk": "В абзаці D зазначено, що керівники нічних змін отримують додаткову надбавку. Пенсія та їдальня передбачені для всіх працівників, а не лише для тих, хто працює вночі."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Owen Kariuki"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Yara Bellamy"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Dev Sandoval"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Mirjam Tanaka"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Luka Petrović"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Learning to use the company's computer system is quicker than developing the ability to listen.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "most can learn the stock software in a few days. Listening well takes longer.",
+                        "explanation": {
+                            "en": "In paragraph D, Mirjam Tanaka says the stock software can be learned in a few days, but listening well takes longer.",
+                            "ru": "В абзаце D Mirjam Tanaka говорит, что программу учёта товаров можно освоить за несколько дней, а вот научиться хорошо слушать — дольше.",
+                            "uk": "В абзаці D Mirjam Tanaka каже, що програму обліку товарів можна опанувати за кілька днів, а от навчитися добре слухати — довше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "The hardest part of moving into a leadership role was dealing with people rather than with administration.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "the biggest adjustment was not the paperwork but the relationships",
+                        "explanation": {
+                            "en": "In paragraph C, Dev Sandoval says the biggest change after promotion was the relationships, not the paperwork.",
+                            "ru": "В абзаце C, по словам Dev Sandoval, главное, что изменилось после повышения, — это отношения с людьми, а не бумажная работа.",
+                            "uk": "В абзаці C, за словами Dev Sandoval, найбільше після підвищення змінилися стосунки з людьми, а не паперова робота."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "A worker who admits an error immediately is preferable to one who keeps it secret.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "I'd much rather have someone who owns up to a mistake straight away than someone who hides it",
+                        "explanation": {
+                            "en": "In paragraph B, Owen Kariuki says he prefers someone who owns up to a mistake straight away. Dev also talks about honesty, but only about interview answers.",
+                            "ru": "В абзаце B Owen Kariuki говорит, что предпочитает человека, который сразу признаёт свою ошибку. Dev тоже говорит о честности, но только об ответах на собеседовании.",
+                            "uk": "В абзаці B Owen Kariuki каже, що віддає перевагу людині, яка одразу визнає свою помилку. Dev теж говорить про чесність, але лише про відповіді на співбесіді."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Candidates who mention safety issues without being asked make a strong impression.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "He pays particular attention to whether candidates raise safety without being prompted.",
+                        "explanation": {
+                            "en": "In paragraph F, Luka Petrović says he watches whether candidates raise safety without being prompted, for example by noticing a blocked fire exit.",
+                            "ru": "В абзаце F Luka Petrović говорит, что следит, заговорят ли кандидаты о безопасности сами, без подсказки, — например, заметят ли заблокированный пожарный выход.",
+                            "uk": "В абзаці F Luka Petrović каже, що стежить, чи заговорять кандидати про безпеку самі, без підказки, — наприклад, чи помітять заблокований пожежний вихід."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Assessors will notice candidates who make sure less talkative group members are heard.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "We notice who listens, who checks that quieter people have had their say",
+                        "explanation": {
+                            "en": "In paragraph F, Yara Bellamy says the assessors notice who checks that quieter people have had their say, not who is loudest.",
+                            "ru": "В абзаце F Yara Bellamy говорит, что оценщики обращают внимание на тех, кто следит, чтобы более тихие участники тоже высказались, а не на самых громких.",
+                            "uk": "В абзаці F Yara Bellamy каже, що оцінювачі звертають увагу на тих, хто стежить, щоб тихіші учасники теж висловилися, а не на найгучніших."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Interviewees should be open about how they would now handle a past situation in another way.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "Be honest about what you'd do differently now.",
+                        "explanation": {
+                            "en": "In paragraph G, Dev Sandoval advises candidates to be honest about what they would do differently now. Owen asks the question, but this advice comes from Dev.",
+                            "ru": "В абзаце G Dev Sandoval советует кандидатам честно сказать, что они сделали бы сейчас по-другому. Вопрос задаёт Owen, но этот совет даёт именно Dev.",
+                            "uk": "В абзаці G Dev Sandoval радить кандидатам чесно сказати, що вони зробили б зараз інакше. Запитання ставить Owen, але цю пораду дає саме Dev."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Every candidate is asked to talk about a time when things did not go as planned.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "He asks every candidate to describe a real occasion when a plan fell apart",
+                        "explanation": {
+                            "en": "Paragraph G says Owen Kariuki leads the final interview and asks every candidate about a time a plan fell apart.",
+                            "ru": "В абзаце G сказано, что Owen Kariuki проводит финальное собеседование и просит каждого кандидата рассказать о случае, когда план провалился.",
+                            "uk": "В абзаці G сказано, що Owen Kariuki проводить фінальну співбесіду і просить кожного кандидата розповісти про випадок, коли план провалився."
+                        }
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–E. You may use any letter more than once."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

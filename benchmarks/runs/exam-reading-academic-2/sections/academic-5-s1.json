@@ -1,0 +1,1194 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-5|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.209432,
+            "provider": "anthropic",
+            "outputTokens": 9609
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.015996,
+            "provider": "anthropic",
+            "outputTokens": 756
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.020598,
+            "provider": "openai",
+            "outputTokens": 944
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.018136,
+            "provider": "xai",
+            "outputTokens": 1767
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.09186,
+            "provider": "anthropic",
+            "outputTokens": 4250
+        }
+    ],
+    "draft": {
+        "title": "A Noisier World for Wildlife",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "A form of pollution that can quickly be undone"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "An approach that isolates noise from other urban factors"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Species that have benefited from human noise"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Why sound matters to animals and why it is now under threat"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Long-term underwater recording of whales near ships"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Birds altering their songs to cope with city noise"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "New laws limiting noise in protected areas"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "How sound behaves at sea and why ships interfere"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Disagreement over whether city birds sing better"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "for a great many animals, hearing is not a minor sense",
+                        "explanation": "Paragraph A explains how animals depend on sound and how human noise now reaches once-silent places. It introduces the whole problem rather than one example."
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "sing at a higher pitch than members of the same species in quieter areas",
+                        "explanation": "Paragraph B describes birds singing higher, louder or at night to be heard over traffic. It does not say any species benefits from noise, and it reports no disagreement among researchers."
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "Because the woods were otherwise identical, any difference could be linked to sound alone.",
+                        "explanation": "Paragraph C is about Nakamura's experiment, which separates the effect of noise from light, pollution and buildings. Its main point is the method that tests noise alone."
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "Sound travels much faster and farther in water than in air",
+                        "explanation": "Paragraph D explains how sound travels in water and how ship noise overlaps with whale calls, causing masking and stress. It is about the problem at sea, not a research method."
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "left them recording for eighteen months",
+                        "explanation": "Paragraph E describes Lindgren's hydrophones recording beside a shipping lane and what they showed about whale calls when ships were nearby."
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "it disappears almost as soon as its source is removed",
+                        "explanation": "Paragraph F stresses that noise, unlike chemicals, stops quickly, so practical measures work fast. Laws are not mentioned, so the heading about new laws is wrong."
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "partners"
+                        ],
+                        "prompt": "Birds sing both to protect their territories and to find ______.",
+                        "options": [],
+                        "evidence": "Birds use song to defend territories and attract partners",
+                        "explanation": "Paragraph A says birds use song to defend territories and attract partners. 'Find' restates 'attract'."
+                    },
+                    {
+                        "answer": [
+                            "crowded restaurant"
+                        ],
+                        "prompt": "Humans, too, speak more loudly without realising it when they are in a ______.",
+                        "options": [],
+                        "evidence": "who raise their voices in a crowded restaurant without thinking about it",
+                        "explanation": "Paragraph B compares louder bird song with people who raise their voices in a crowded restaurant 'without thinking about it'."
+                    },
+                    {
+                        "answer": [
+                            "roads"
+                        ],
+                        "prompt": "Nakamura chose a woodland site where there were no ______ close by.",
+                        "options": [],
+                        "evidence": "in a remote woodland with no roads nearby",
+                        "explanation": "Paragraph C says the experiment took place in a remote woodland with no roads nearby, so real traffic could not affect the results."
+                    },
+                    {
+                        "answer": [
+                            "ship movements"
+                        ],
+                        "prompt": "Lindgren compared the calls found by his software with publicly available records of ______.",
+                        "options": [],
+                        "evidence": "matched them against public records of ship movements",
+                        "explanation": "Paragraph E says the detected whale calls were matched against public records of ship movements."
+                    },
+                    {
+                        "answer": [
+                            "building"
+                        ],
+                        "prompt": "Rourke believes a site's natural sounds should be recorded before any ______ takes place.",
+                        "options": [],
+                        "evidence": "recording the natural sounds of a site before any building begins",
+                        "explanation": "Paragraph F says Rourke wants the natural sounds of a site recorded before any building begins, so planners know what could be lost."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does the writer suggest about birds that change their songs in noisy areas?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Their ability to adjust does not prove they are unharmed."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They attract more females than birds in quiet areas do."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They sing at night because street lighting confuses them."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They use less energy than birds living in quieter places."
+                            }
+                        ],
+                        "evidence": "flexibility is not the same as being unaffected",
+                        "explanation": "Paragraph B says the birds are flexible but this does not mean they are unaffected. The passage suggests changed songs may cost more energy, not less, and robins sing at night because streets are calmer, not because of lighting."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Why did Nakamura carry out her experiment in a remote woodland?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "To study a species that is found only in forests"
+                            },
+                            {
+                                "id": "B",
+                                "text": "To exclude factors such as light and pollution"
+                            },
+                            {
+                                "id": "C",
+                                "text": "To avoid disturbing birds that nest in cities"
+                            },
+                            {
+                                "id": "D",
+                                "text": "To record traffic noise without any interruption"
+                            }
+                        ],
+                        "evidence": "A noisy street is also a brightly lit, polluted and heavily built-up one",
+                        "explanation": "Paragraph C explains that city streets differ in light, pollution and buildings as well as noise. The quiet woodland let Nakamura test the effect of sound alone."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "In paragraph D, the term 'masking' refers to",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "the stress that whales experience when a vessel passes."
+                            },
+                            {
+                                "id": "B",
+                                "text": "the way whales copy the low sounds made by engines."
+                            },
+                            {
+                                "id": "C",
+                                "text": "the shrinking of the range in which whales can communicate."
+                            },
+                            {
+                                "id": "D",
+                                "text": "the tendency of whales to avoid busy shipping lanes."
+                            }
+                        ],
+                        "evidence": "the area over which two whales can hear each other may shrink dramatically when a vessel passes, an effect known as masking",
+                        "explanation": "Paragraph D defines masking as the reduced area over which whales can hear each other. Stress is mentioned in the next sentence as a separate effect ('as well')."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What limitation of his research does Lindgren mention?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "His software sometimes mistook ship noise for calls."
+                            },
+                            {
+                                "id": "B",
+                                "text": "His hydrophones recorded for too short a period."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Records of ship movements were often incomplete."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Whales that stop calling cannot be detected."
+                            }
+                        ],
+                        "evidence": "a whale that falls silent in response to noise is invisible to his equipment",
+                        "explanation": "In paragraph E, Lindgren warns that hydrophones only record whales that call, so silent whales are missed. He does not criticise his software, the recording period or the ship records."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Ottilie Nakamura",
+                "role": "Field biologist who used loudspeakers in a remote woodland to test the effect of traffic noise on nesting birds",
+                "gender": "female"
+            },
+            {
+                "name": "Bayo Lindgren",
+                "role": "Marine acoustician who recorded whale calls with hydrophones beside a shipping lane",
+                "gender": "male"
+            },
+            {
+                "name": "Catalina Rourke",
+                "role": "Ecologist who recommends recording a site's natural sounds before building begins",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For most of the history of life on Earth, the loudest sounds were natural ones: thunder, waves, the calls of other animals. Today, the hum of roads, the roar of aircraft and the throb of ship engines reach places that were once almost silent. Because noise leaves no visible trace, it was long treated as a nuisance for people rather than as a form of pollution affecting nature. Yet for a great many animals, hearing is not a minor sense. Birds use song to defend territories and attract partners, bats and dolphins find food by listening to echoes, and many prey species depend on detecting the faint rustle of an approaching predator. When human sound drowns out these signals, the consequences can reach far beyond simple annoyance.",
+                "label": "A"
+            },
+            {
+                "text": "Some of the clearest evidence comes from cities. Researchers have found that several bird species living near busy roads sing at a higher pitch than members of the same species in quieter areas, lifting their songs above the low rumble of traffic. Others simply sing more loudly, a response also seen in humans, who raise their voices in a crowded restaurant without thinking about it. In some cities, robins have been recorded singing at night, when the streets are calmer. These adjustments show that birds can be remarkably flexible, but flexibility is not the same as being unaffected. A higher or louder song may demand more energy, and it may not carry the same information to a listening female as the song it replaced.",
+                "label": "B"
+            },
+            {
+                "text": "Studies like these face a basic problem. A noisy street is also a brightly lit, polluted and heavily built-up one, so it is hard to know whether noise itself is responsible for what scientists observe. To get around this, the field biologist Ottilie Nakamura designed an experiment in a remote woodland with no roads nearby. She placed weatherproof loudspeakers among a group of nest boxes and played recordings of traffic for part of each breeding season, leaving a similar group of boxes undisturbed for comparison. Because the woods were otherwise identical, any difference could be linked to sound alone. In her study, parents nesting near the speakers made fewer feeding visits to their young, apparently spending more time scanning for danger they could no longer hear, and their chicks left the nest at a lower weight. Nakamura is careful to describe the result as a single study of one species, but she argues that the method itself is what matters: it allows noise to be switched on and off like a variable in a laboratory.",
+                "label": "C"
+            },
+            {
+                "text": "Beneath the sea, the problem takes a different form. Sound travels much faster and farther in water than in air, which is why many marine animals rely on it more than on sight. Large whales produce low-frequency calls that can be detected across great distances, but the engines and propellers of cargo ships produce noise in much the same frequency range. As a result, the area over which two whales can hear each other may shrink dramatically when a vessel passes, an effect known as masking. There are signs that the noise causes stress as well. On one occasion when shipping in a busy bay was briefly interrupted, researchers found that levels of stress-related hormones in the droppings of local whales fell noticeably compared with previous years.",
+                "label": "D"
+            },
+            {
+                "text": "Studying animals that may be hundreds of kilometres away and rarely come to the surface requires patience and technology. The marine acoustician Bayo Lindgren fixed a line of underwater microphones, or hydrophones, to the seabed alongside a major shipping lane and left them recording for eighteen months. No team could listen to so much sound, so he trained computer software to pick out whale calls automatically and then matched them against public records of ship movements. His analysis suggested that whales calling while a large ship was nearby repeated their calls more often, as if trying to make sure they were heard. Lindgren points out, however, that hydrophones only record the animals that call; a whale that falls silent in response to noise is invisible to his equipment, so the true effect may be larger than his data show.",
+                "label": "E"
+            },
+            {
+                "text": "Unlike many pollutants, noise has one encouraging feature: it disappears almost as soon as its source is removed. Chemicals can remain in soil and water for decades, but a quiet road is quiet immediately. This means that practical measures can bring rapid benefits. Ships that reduce their speed in sensitive areas produce considerably less underwater noise, and newer propeller designs can make them quieter still. On land, low-noise road surfaces and barriers can reduce disturbance, and construction work can be scheduled to avoid the breeding season. The ecologist Catalina Rourke believes the most important change is a simpler one: recording the natural sounds of a site before any building begins, so that planners know what they stand to lose. As she notes, the quieter places that result are rarely appreciated by wildlife alone.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Because noise leaves no visible trace, it was long treated as a nuisance for people rather than as a form of pollution affecting nature. Yet for a great many animals, hearing is not a minor sense.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "several bird species living near busy roads sing at a higher pitch than members of the same species in quieter areas",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "To get around this, the field biologist Ottilie Nakamura designed an experiment in a remote woodland with no roads nearby.",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Sound travels much faster and farther in water than in air, which is why many marine animals rely on it more than on sight.",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "left them recording for eighteen months",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "noise has one encouraging feature: it disappears almost as soon as its source is removed.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Birds use song to defend territories and attract partners",
+                "answer": [
+                    "partners"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "humans, who raise their voices in a crowded restaurant without thinking about it",
+                "answer": [
+                    "crowded restaurant"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a remote woodland with no roads nearby",
+                "answer": [
+                    "roads"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "matched them against public records of ship movements",
+                "answer": [
+                    "ship movements"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "recording the natural sounds of a site before any building begins",
+                "answer": [
+                    "building"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "These adjustments show that birds can be remarkably flexible, but flexibility is not the same as being unaffected.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A noisy street is also a brightly lit, polluted and heavily built-up one, so it is hard to know whether noise itself is responsible",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the area over which two whales can hear each other may shrink dramatically when a vessel passes, an effect known as masking",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a whale that falls silent in response to noise is invisible to his equipment",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Yet for a great many animals, hearing is not a minor sense... When human sound drowns out these signals, the consequences can reach far beyond simple annoyance.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "several bird species living near busy roads sing at a higher pitch... Others simply sing more loudly... robins have been recorded singing at night",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "A noisy street is also a brightly lit, polluted and heavily built-up one... To get around this... in a remote woodland with no roads nearby... any difference could be linked to sound alone.",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Sound travels much faster and farther in water than in air... the engines and propellers of cargo ships produce noise in much the same frequency range.",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "fixed a line of underwater microphones... alongside a major shipping lane and left them recording for eighteen months.",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Unlike many pollutants, noise has one encouraging feature: it disappears almost as soon as its source is removed.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Birds use song to defend territories and attract partners",
+                "answer": [
+                    "partners"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "humans, who raise their voices in a crowded restaurant without thinking about it",
+                "answer": [
+                    "crowded restaurant"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a remote woodland with no roads nearby",
+                "answer": [
+                    "roads"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "matched them against public records of ship movements",
+                "answer": [
+                    "ship movements"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "recording the natural sounds of a site before any building begins",
+                "answer": [
+                    "building"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "These adjustments show that birds can be remarkably flexible, but flexibility is not the same as being unaffected.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A noisy street is also a brightly lit, polluted and heavily built-up one, so it is hard to know whether noise itself is responsible... Because the woods were otherwise identical, any difference could be linked to sound alone.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the area over which two whales can hear each other may shrink dramatically when a vessel passes, an effect known as masking",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a whale that falls silent in response to noise is invisible to his equipment",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Yet for a great many animals, hearing is not a minor sense. ... When human sound drowns out these signals, the consequences can reach far beyond simple annoyance.",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Researchers have found that several bird species living near busy roads sing at a higher pitch than members of the same species in quieter areas",
+            "answer": [
+                "vi"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Because the woods were otherwise identical, any difference could be linked to sound alone.",
+            "answer": [
+                "ii"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Sound travels much faster and farther in water than in air ... an effect known as masking.",
+            "answer": [
+                "viii"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "fixed a line of underwater microphones, or hydrophones, to the seabed alongside a major shipping lane and left them recording for eighteen months.",
+            "answer": [
+                "v"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Unlike many pollutants, noise has one encouraging feature: it disappears almost as soon as its source is removed.",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Birds use song to defend territories and attract partners",
+            "answer": [
+                "partners"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "who raise their voices in a crowded restaurant without thinking about it",
+            "answer": [
+                "crowded restaurant"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "in a remote woodland with no roads nearby",
+            "answer": [
+                "roads"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "matched them against public records of ship movements",
+            "answer": [
+                "ship movements"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "flexibility is not the same as being unaffected",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "A noisy street is also a brightly lit, polluted and heavily built-up one, so it is hard to know whether noise itself is responsible",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the area over which two whales can hear each other may shrink dramatically when a vessel passes, an effect known as masking",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "A Noisier World for Wildlife\n\nA. For most of the history of life on Earth, the loudest sounds were natural ones: thunder, waves, the calls of other animals. Today, the hum of roads, the roar of aircraft and the throb of ship engines reach places that were once almost silent. Because noise leaves no visible trace, it was long treated as a nuisance for people rather than as a form of pollution affecting nature. Yet for a great many animals, hearing is not a minor sense. Birds use song to defend territories and attract partners, bats and dolphins find food by listening to echoes, and many prey species depend on detecting the faint rustle of an approaching predator. When human sound drowns out these signals, the consequences can reach far beyond simple annoyance.\n\nB. Some of the clearest evidence comes from cities. Researchers have found that several bird species living near busy roads sing at a higher pitch than members of the same species in quieter areas, lifting their songs above the low rumble of traffic. Others simply sing more loudly, a response also seen in humans, who raise their voices in a crowded restaurant without thinking about it. In some cities, robins have been recorded singing at night, when the streets are calmer. These adjustments show that birds can be remarkably flexible, but flexibility is not the same as being unaffected. A higher or louder song may demand more energy, and it may not carry the same information to a listening female as the song it replaced.\n\nC. Studies like these face a basic problem. A noisy street is also a brightly lit, polluted and heavily built-up one, so it is hard to know whether noise itself is responsible for what scientists observe. To get around this, the field biologist Ottilie Nakamura designed an experiment in a remote woodland with no roads nearby. She placed weatherproof loudspeakers among a group of nest boxes and played recordings of traffic for part of each breeding season, leaving a similar group of boxes undisturbed for comparison. Because the woods were otherwise identical, any difference could be linked to sound alone. In her study, parents nesting near the speakers made fewer feeding visits to their young, apparently spending more time scanning for danger they could no longer hear, and their chicks left the nest at a lower weight. Nakamura is careful to describe the result as a single study of one species, but she argues that the method itself is what matters: it allows noise to be switched on and off like a variable in a laboratory.\n\nD. Beneath the sea, the problem takes a different form. Sound travels much faster and farther in water than in air, which is why many marine animals rely on it more than on sight. Large whales produce low-frequency calls that can be detected across great distances, but the engines and propellers of cargo ships produce noise in much the same frequency range. As a result, the area over which two whales can hear each other may shrink dramatically when a vessel passes, an effect known as masking. There are signs that the noise causes stress as well. On one occasion when shipping in a busy bay was briefly interrupted, researchers found that levels of stress-related hormones in the droppings of local whales fell noticeably compared with previous years.\n\nE. Studying animals that may be hundreds of kilometres away and rarely come to the surface requires patience and technology. The marine acoustician Bayo Lindgren fixed a line of underwater microphones, or hydrophones, to the seabed alongside a major shipping lane and left them recording for eighteen months. No team could listen to so much sound, so he trained computer software to pick out whale calls automatically and then matched them against public records of ship movements. His analysis suggested that whales calling while a large ship was nearby repeated their calls more often, as if trying to make sure they were heard. Lindgren points out, however, that hydrophones only record the animals that call; a whale that falls silent in response to noise is invisible to his equipment, so the true effect may be larger than his data show.\n\nF. Unlike many pollutants, noise has one encouraging feature: it disappears almost as soon as its source is removed. Chemicals can remain in soil and water for decades, but a quiet road is quiet immediately. This means that practical measures can bring rapid benefits. Ships that reduce their speed in sensitive areas produce considerably less underwater noise, and newer propeller designs can make them quieter still. On land, low-noise road surfaces and barriers can reduce disturbance, and construction work can be scheduled to avoid the breeding season. The ecologist Catalina Rourke believes the most important change is a simpler one: recording the natural sounds of a site before any building begins, so that planners know what they stand to lose. As she notes, the quieter places that result are rarely appreciated by wildlife alone.",
+        "title": "A Noisier World for Wildlife",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "A form of pollution that can quickly be undone"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "An approach that isolates noise from other urban factors"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Species that have benefited from human noise"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Why sound matters to animals and why it is now under threat"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Long-term underwater recording of whales near ships"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Birds altering their songs to cope with city noise"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "New laws limiting noise in protected areas"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "How sound behaves at sea and why ships interfere"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Disagreement over whether city birds sing better"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "for a great many animals, hearing is not a minor sense",
+                        "explanation": {
+                            "en": "Paragraph A explains how animals depend on sound and how human noise now reaches once-silent places. It introduces the whole problem rather than one example.",
+                            "ru": "Абзац A объясняет, как животные зависят от звука и как шум, создаваемый человеком, теперь доходит до мест, где раньше царила тишина. Он вводит проблему в целом, а не приводит один пример.",
+                            "uk": "Абзац A пояснює, як тварини залежать від звуку і як шум, створений людиною, тепер сягає місць, де колись панувала тиша. Він представляє проблему загалом, а не наводить один приклад."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "sing at a higher pitch than members of the same species in quieter areas",
+                        "explanation": {
+                            "en": "Paragraph B describes birds singing higher, louder or at night to be heard over traffic. It does not say any species benefits from noise, and it reports no disagreement among researchers.",
+                            "ru": "В абзаце B описано, как птицы поют выше, громче или ночью, чтобы их было слышно сквозь шум транспорта. Там не говорится, что какой-либо вид выигрывает от шума, и не упоминаются разногласия между исследователями.",
+                            "uk": "В абзаці B описано, як птахи співають вище, гучніше або вночі, щоб їх було чути крізь шум транспорту. Там не сказано, що якийсь вид виграє від шуму, і не згадано про розбіжності між дослідниками."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "Because the woods were otherwise identical, any difference could be linked to sound alone.",
+                        "explanation": {
+                            "en": "Paragraph C is about Nakamura's experiment, which separates the effect of noise from light, pollution and buildings. Its main point is the method that tests noise alone.",
+                            "ru": "Абзац C посвящён эксперименту Nakamura, который отделяет влияние шума от влияния освещения, загрязнения и застройки. Главное в нём — метод, позволяющий проверить действие одного только шума.",
+                            "uk": "Абзац C присвячено експерименту Nakamura, який відокремлює вплив шуму від впливу освітлення, забруднення та забудови. Головне в ньому — метод, що дає змогу перевірити дію самого лише шуму."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "Sound travels much faster and farther in water than in air",
+                        "explanation": {
+                            "en": "Paragraph D explains how sound travels in water and how ship noise overlaps with whale calls, causing masking and stress. It is about the problem at sea, not a research method.",
+                            "ru": "Абзац D объясняет, как звук распространяется в воде и как шум судов накладывается на сигналы китов, вызывая маскировку и стресс. Речь идёт о проблеме в море, а не о методе исследования.",
+                            "uk": "Абзац D пояснює, як звук поширюється у воді і як шум суден накладається на сигнали китів, спричиняючи маскування та стрес. Ідеться про проблему в морі, а не про метод дослідження."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "left them recording for eighteen months",
+                        "explanation": {
+                            "en": "Paragraph E describes Lindgren's hydrophones recording beside a shipping lane and what they showed about whale calls when ships were nearby.",
+                            "ru": "В абзаце E описаны гидрофоны Lindgren, которые вели запись рядом с судоходным путём, и то, что они показали о сигналах китов, когда поблизости проходили суда.",
+                            "uk": "В абзаці E описано гідрофони Lindgren, які записували звук поруч із судноплавним шляхом, і те, що вони показали щодо сигналів китів, коли поблизу проходили судна."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "it disappears almost as soon as its source is removed",
+                        "explanation": {
+                            "en": "Paragraph F stresses that noise, unlike chemicals, stops quickly, so practical measures work fast. Laws are not mentioned, so the heading about new laws is wrong.",
+                            "ru": "Абзац F подчёркивает, что шум, в отличие от химических веществ, быстро прекращается, поэтому практические меры дают результат сразу. Законы не упоминаются, так что заголовок о новых законах не подходит.",
+                            "uk": "Абзац F наголошує, що шум, на відміну від хімічних речовин, швидко зникає, тож практичні заходи дають результат одразу. Закони не згадуються, тому заголовок про нові закони не підходить."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "partners"
+                        ],
+                        "prompt": "Birds sing both to protect their territories and to find ______.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "Birds use song to defend territories and attract partners",
+                        "explanation": {
+                            "en": "Paragraph A says birds use song to defend territories and attract partners. 'Find' restates 'attract'.",
+                            "ru": "В абзаце A сказано, что птицы с помощью пения защищают территорию и привлекают партнёров. «Find» передаёт смысл слова «attract».",
+                            "uk": "В абзаці A сказано, що птахи за допомогою співу захищають територію та приваблюють партнерів. «Find» передає зміст слова «attract»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "crowded restaurant"
+                        ],
+                        "prompt": "Humans, too, speak more loudly without realising it when they are in a ______.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "who raise their voices in a crowded restaurant without thinking about it",
+                        "explanation": {
+                            "en": "Paragraph B compares louder bird song with people who raise their voices in a crowded restaurant 'without thinking about it'.",
+                            "ru": "В абзаце B более громкое пение птиц сравнивается с тем, как люди повышают голос в переполненном ресторане «without thinking about it».",
+                            "uk": "В абзаці B гучніший спів птахів порівнюється з тим, як люди підвищують голос у переповненому ресторані «without thinking about it»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "roads"
+                        ],
+                        "prompt": "Nakamura chose a woodland site where there were no ______ close by.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "in a remote woodland with no roads nearby",
+                        "explanation": {
+                            "en": "Paragraph C says the experiment took place in a remote woodland with no roads nearby, so real traffic could not affect the results.",
+                            "ru": "В абзаце C сказано, что эксперимент проводился в отдалённом лесу, где поблизости не было дорог, поэтому настоящий транспорт не мог повлиять на результаты.",
+                            "uk": "В абзаці C сказано, що експеримент проводили у віддаленому лісі, де поблизу не було доріг, тож справжній транспорт не міг вплинути на результати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ship movements"
+                        ],
+                        "prompt": "Lindgren compared the calls found by his software with publicly available records of ______.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "matched them against public records of ship movements",
+                        "explanation": {
+                            "en": "Paragraph E says the detected whale calls were matched against public records of ship movements.",
+                            "ru": "В абзаце E сказано, что зафиксированные сигналы китов сопоставляли с открытыми данными о передвижении судов.",
+                            "uk": "В абзаці E сказано, що зафіксовані сигнали китів зіставляли з відкритими даними про рух суден."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Their ability to adjust does not prove they are unharmed."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They use less energy than birds living in quieter places."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They attract more females than birds in quiet areas do."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They sing at night because street lighting confuses them."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does the writer suggest about birds that change their songs in noisy areas?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "flexibility is not the same as being unaffected",
+                        "explanation": {
+                            "en": "Paragraph B says the birds are flexible but this does not mean they are unaffected. The passage suggests changed songs may cost more energy, not less, and robins sing at night because streets are calmer, not because of lighting.",
+                            "ru": "В абзаце B сказано, что птицы умеют приспосабливаться, но это не значит, что шум на них не влияет. Из текста следует, что изменённое пение может требовать больше энергии, а не меньше, а малиновки поют ночью потому, что на улицах тише, а не из-за освещения.",
+                            "uk": "В абзаці B сказано, що птахи здатні пристосовуватися, але це не означає, що шум на них не впливає. З тексту випливає, що змінений спів може вимагати більше енергії, а не менше, а вільшанки співають уночі, бо на вулицях тихіше, а не через освітлення."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To record traffic noise without any interruption"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To exclude factors such as light and pollution"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To study a species that is found only in forests"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To avoid disturbing birds that nest in cities"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Why did Nakamura carry out her experiment in a remote woodland?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "A noisy street is also a brightly lit, polluted and heavily built-up one",
+                        "explanation": {
+                            "en": "Paragraph C explains that city streets differ in light, pollution and buildings as well as noise. The quiet woodland let Nakamura test the effect of sound alone.",
+                            "ru": "В абзаце C объясняется, что городские улицы различаются не только шумом, но и освещением, загрязнением и застройкой. Тихий лес позволил Nakamura проверить влияние одного только звука.",
+                            "uk": "В абзаці C пояснюється, що міські вулиці відрізняються не лише шумом, а й освітленням, забрудненням і забудовою. Тихий ліс дав Nakamura змогу перевірити вплив самого лише звуку."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "the way whales copy the low sounds made by engines."
+                    },
+                    {
+                        "id": "B",
+                        "text": "the tendency of whales to avoid busy shipping lanes."
+                    },
+                    {
+                        "id": "C",
+                        "text": "the shrinking of the range in which whales can communicate."
+                    },
+                    {
+                        "id": "D",
+                        "text": "the stress that whales experience when a vessel passes."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "In paragraph D, the term 'masking' refers to",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "the area over which two whales can hear each other may shrink dramatically when a vessel passes, an effect known as masking",
+                        "explanation": {
+                            "en": "Paragraph D defines masking as the reduced area over which whales can hear each other. Stress is mentioned in the next sentence as a separate effect ('as well').",
+                            "ru": "В абзаце D маскировка определяется как сокращение площади, в пределах которой киты слышат друг друга. Стресс упоминается в следующем предложении как отдельное последствие («as well»).",
+                            "uk": "В абзаці D маскування визначено як зменшення площі, у межах якої кити чують одне одного. Стрес згадано в наступному реченні як окремий наслідок («as well»)."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

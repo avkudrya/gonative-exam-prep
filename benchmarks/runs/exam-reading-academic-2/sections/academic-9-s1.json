@@ -1,0 +1,968 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-9|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.219448,
+            "provider": "anthropic",
+            "outputTokens": 9925
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012982,
+            "provider": "anthropic",
+            "outputTokens": 641
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.016355,
+            "provider": "openai",
+            "outputTokens": 774
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.016656,
+            "provider": "xai",
+            "outputTokens": 1713
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.076128,
+            "provider": "anthropic",
+            "outputTokens": 3500
+        }
+    ],
+    "draft": {
+        "title": "Listening to Volcanoes",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Most of the earthquakes caused by rising magma are strong enough for people to feel.",
+                        "options": [],
+                        "evidence": "produces swarms of small earthquakes, most too weak to be felt by humans",
+                        "explanation": "Paragraph B says most of these earthquakes are too weak for people to feel. The statement says the opposite."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Earthquakes that occur closer and closer to the surface may show that magma is rising.",
+                        "options": [],
+                        "evidence": "a cluster of earthquakes that gradually becomes shallower may indicate that magma is approaching the surface",
+                        "explanation": "Paragraph B says that earthquakes becoming gradually shallower may mean magma is approaching the surface, which is the same idea."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Computer programs can now identify significant seismic changes more quickly than experienced analysts.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says an experienced analyst may need several days of recordings to judge a change, but computer programs are never mentioned, so we cannot compare their speed."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Satellite radar has shown that some volcanoes not believed to be active are in fact swelling.",
+                        "options": [],
+                        "evidence": "some of which were found to be inflating even though no one had suspected they were active",
+                        "explanation": "Paragraph C says radar found some remote volcanoes inflating although nobody suspected they were active. 'Swelling' restates 'inflating'."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Infrasound stations are cheaper to install than seismometers.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D says a few infrasound stations can detect distant explosions, and paragraph E mentions cheap seismic sensors, but the passage never compares the cost of infrasound stations with seismometers."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The 1991 eruption of Mount Pinatubo took place without any warning being given to local people.",
+                        "options": [],
+                        "evidence": "warnings based on monitoring at Mount Pinatubo in the Philippines allowed authorities to evacuate tens of thousands of people",
+                        "explanation": "Paragraph E says warnings were given and tens of thousands of people were evacuated before the eruption, so the statement is false."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Dmitri Saavedra's sensors have already been installed at several volcanoes in poorer countries.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph E says Saavedra developed cheap solar-powered sensors to help with unmonitored volcanoes, but it does not say whether or where they have been installed."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Ngaire Holcombe found that most of the episodes of unrest in her study led to an eruption.",
+                        "options": [],
+                        "evidence": "more than half of the well-documented episodes of unrest she examined ended without any eruption",
+                        "explanation": "Paragraph F says more than half of the episodes ended with no eruption, so most did not lead to an eruption."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "chamber"
+                        ],
+                        "prompt": "Ground deformation: magma collecting in a ______ under the mountain makes the ground rise",
+                        "options": [],
+                        "evidence": "When magma accumulates in a chamber beneath a mountain, the ground above can swell",
+                        "explanation": "Paragraph C says the ground swells when magma builds up in a chamber beneath the mountain."
+                    },
+                    {
+                        "answer": [
+                            "tiltmeters"
+                        ],
+                        "prompt": "Very small changes in slope are measured by ______",
+                        "options": [],
+                        "evidence": "sensitive tiltmeters that detect tiny changes in slope",
+                        "explanation": "Paragraph C names tiltmeters as the instruments that detect tiny changes in slope."
+                    },
+                    {
+                        "answer": [
+                            "microphones"
+                        ],
+                        "prompt": "Infrasound: low-frequency sound is recorded using ______",
+                        "options": [],
+                        "evidence": "using microphones that record infrasound",
+                        "explanation": "Paragraph D says researchers listen to volcanoes with microphones that record infrasound."
+                    },
+                    {
+                        "answer": [
+                            "network"
+                        ],
+                        "prompt": "Saavedra: a dense ______ of low-cost sensors may be better than a few costly ones",
+                        "options": [],
+                        "evidence": "a dense network of cheap instruments may be more useful than a few expensive ones",
+                        "explanation": "In paragraph E, Saavedra argues that a dense network of cheap instruments may be more useful than a few expensive ones."
+                    },
+                    {
+                        "answer": [
+                            "threshold"
+                        ],
+                        "prompt": "Holcombe: no single ______ (e.g. a daily number of earthquakes) suits every volcano",
+                        "options": [],
+                        "evidence": "no single threshold, such as a certain number of earthquakes per day, can be applied to every volcano",
+                        "explanation": "Paragraph F gives Holcombe's view that no one threshold, such as a number of earthquakes per day, works for all volcanoes."
+                    },
+                    {
+                        "answer": [
+                            "colours",
+                            "colors"
+                        ],
+                        "prompt": "Alert levels: frequently presented as ______",
+                        "options": [],
+                        "evidence": "alert levels, often shown as colours",
+                        "explanation": "Paragraph G says observatories use alert levels that are often shown as colours."
+                    },
+                    {
+                        "answer": [
+                            "ignore"
+                        ],
+                        "prompt": "Risk of false alarms: residents may ______ later warnings",
+                        "options": [],
+                        "evidence": "Repeated false alarms can lead residents to ignore future warnings",
+                        "explanation": "Paragraph G says repeated false alarms can make residents ignore future warnings; 'later' restates 'future'."
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Dmitri Saavedra",
+                "role": "engineer who developed low-cost solar-powered seismic sensors",
+                "gender": "male"
+            },
+            {
+                "name": "Ngaire Holcombe",
+                "role": "geophysicist who studied historical records of volcanic unrest",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "To the people who live beneath them, volcanoes can seem silent for generations. Yet a volcano that appears asleep is rarely completely quiet. Deep beneath the surface, molten rock, or magma, pushes against the surrounding crust, gases escape through cracks, and heated groundwater moves through fractured rock. Each of these processes produces signals that can be detected, provided the right instruments are in place. Over the past century, volcanologists have learned to interpret many of these signals, and their work has saved thousands of lives. Even so, predicting exactly when, or even whether, a restless volcano will erupt remains one of the most stubborn problems in the earth sciences.",
+                "label": "A"
+            },
+            {
+                "text": "The most widely used tool is the seismometer, an instrument that records vibrations in the ground. As magma forces its way upwards, it breaks rock and produces swarms of small earthquakes, most too weak to be felt by humans. Scientists pay particular attention to their depth: a cluster of earthquakes that gradually becomes shallower may indicate that magma is approaching the surface. Some volcanoes also generate a continuous, low humming known as tremor, which is thought to arise when fluids flow through underground channels. Because these signals are so varied, an experienced analyst often needs to examine several days of recordings before deciding whether a change is significant.",
+                "label": "B"
+            },
+            {
+                "text": "A second approach is to measure the shape of the volcano itself. When magma accumulates in a chamber beneath a mountain, the ground above can swell by centimetres or, occasionally, by metres. Before the 1980 eruption of Mount St Helens in the United States, part of the northern side of the mountain bulged outwards dramatically. Today, deformation is tracked with satellite positioning receivers fixed to the ground, with sensitive tiltmeters that detect tiny changes in slope, and with radar images taken from orbit, which allow scientists to map swelling across an entire region without setting foot on it. Satellite radar has proved especially valuable for remote volcanoes, some of which were found to be inflating even though no one had suspected they were active.",
+                "label": "C"
+            },
+            {
+                "text": "Gases offer further clues. As magma rises, falling pressure allows dissolved gases such as carbon dioxide and sulphur dioxide to escape, much as bubbles appear when a bottle of fizzy drink is opened. Changes in the quantity of these gases, or in the ratio between them, can reveal that fresh magma has arrived from depth. More recently, researchers have begun literally to listen to volcanoes using microphones that record infrasound, sound at frequencies too low for the human ear. Because infrasound can travel hundreds or even thousands of kilometres through the atmosphere, a few well-placed stations can detect explosions at volcanoes where no local instruments exist.",
+                "label": "D"
+            },
+            {
+                "text": "When these methods are combined, the results can be impressive. In 1991, warnings based on monitoring at Mount Pinatubo in the Philippines allowed authorities to evacuate tens of thousands of people before one of the largest eruptions of the twentieth century. However, such successes depend on knowing what is normal for a particular volcano, and that requires years of continuous observation. A large proportion of the world's potentially active volcanoes have no permanent instruments at all, often because they are in poorer countries or difficult terrain. To address this, engineer Dmitri Saavedra has developed solar-powered seismic sensors that cost a fraction of conventional equipment; he argues that a dense network of cheap instruments may be more useful than a few expensive ones.",
+                "label": "E"
+            },
+            {
+                "text": "The deeper difficulty is that unrest does not always end in an eruption. Magma may rise, stall and cool underground, producing all the warning signs without ever reaching the surface. In a study of historical records from volcanoes on several continents, geophysicist Ngaire Holcombe found that more than half of the well-documented episodes of unrest she examined ended without any eruption. She also found that the length of unrest varied enormously: some volcanoes erupted within days of the first signs, while others remained restless for over a decade before finally erupting or falling quiet. In Holcombe's view, this means that no single threshold, such as a certain number of earthquakes per day, can be applied to every volcano.",
+                "label": "F"
+            },
+            {
+                "text": "For this reason, many observatories now express forecasts as probabilities rather than firm predictions, and they use alert levels, often shown as colours, to communicate changing risk. This approach is more honest, but it creates its own problems. Officials must decide whether to order evacuations that disrupt lives and businesses, knowing that the volcano may do nothing. Repeated false alarms can lead residents to ignore future warnings, while a delayed decision can be fatal. Some observatories now hold regular public meetings in nearby villages to explain what the alert levels mean. Volcanologists increasingly argue that their task is not only to read the instruments but also to build trust with the communities who must act on what those instruments reveal.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "it breaks rock and produces swarms of small earthquakes, most too weak to be felt by humans",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a cluster of earthquakes that gradually becomes shallower may indicate that magma is approaching the surface",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "some of which were found to be inflating even though no one had suspected they were active",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "warnings based on monitoring at Mount Pinatubo in the Philippines allowed authorities to evacuate tens of thousands of people",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "more than half of the well-documented episodes of unrest she examined ended without any eruption",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "When magma accumulates in a chamber beneath a mountain, the ground above can swell",
+                "answer": [
+                    "chamber"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "sensitive tiltmeters that detect tiny changes in slope",
+                "answer": [
+                    "tiltmeters"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "using microphones that record infrasound",
+                "answer": [
+                    "microphones"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a dense network of cheap instruments may be more useful than a few expensive ones",
+                "answer": [
+                    "network"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "no single threshold, such as a certain number of earthquakes per day, can be applied to every volcano",
+                "answer": [
+                    "threshold"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "they use alert levels, often shown as colours",
+                "answer": [
+                    "colours"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Repeated false alarms can lead residents to ignore future warnings",
+                "answer": [
+                    "ignore"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "produces swarms of small earthquakes, most too weak to be felt by humans",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a cluster of earthquakes that gradually becomes shallower may indicate that magma is approaching the surface",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "some of which were found to be inflating even though no one had suspected they were active",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "warnings based on monitoring at Mount Pinatubo in the Philippines allowed authorities to evacuate tens of thousands of people before one of the largest eruptions",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "more than half of the well-documented episodes of unrest she examined ended without any eruption",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "magma accumulates in a chamber beneath a mountain",
+                "answer": [
+                    "chamber"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "sensitive tiltmeters that detect tiny changes in slope",
+                "answer": [
+                    "tiltmeters"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "using microphones that record infrasound",
+                "answer": [
+                    "microphones"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a dense network of cheap instruments may be more useful than a few expensive ones",
+                "answer": [
+                    "network"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "no single threshold, such as a certain number of earthquakes per day, can be applied to every volcano",
+                "answer": [
+                    "threshold"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "alert levels, often shown as colours",
+                "answer": [
+                    "colours"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Repeated false alarms can lead residents to ignore future warnings",
+                "answer": [
+                    "ignore"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "most too weak to be felt by humans",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "a cluster of earthquakes that gradually becomes shallower may indicate that magma is approaching the surface",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "some of which were found to be inflating even though no one had suspected they were active",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "warnings based on monitoring at Mount Pinatubo in the Philippines allowed authorities to evacuate tens of thousands of people",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "When magma accumulates in a chamber beneath a mountain",
+            "answer": [
+                "chamber"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "sensitive tiltmeters that detect tiny changes in slope",
+            "answer": [
+                "tiltmeters"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "using microphones that record infrasound",
+            "answer": [
+                "microphones"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "a dense network of cheap instruments",
+            "answer": [
+                "network"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "no single threshold, such as a certain number of earthquakes per day",
+            "answer": [
+                "threshold"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "alert levels, often shown as colours",
+            "answer": [
+                "colours"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Listening to Volcanoes\n\nA. To the people who live beneath them, volcanoes can seem silent for generations. Yet a volcano that appears asleep is rarely completely quiet. Deep beneath the surface, molten rock, or magma, pushes against the surrounding crust, gases escape through cracks, and heated groundwater moves through fractured rock. Each of these processes produces signals that can be detected, provided the right instruments are in place. Over the past century, volcanologists have learned to interpret many of these signals, and their work has saved thousands of lives. Even so, predicting exactly when, or even whether, a restless volcano will erupt remains one of the most stubborn problems in the earth sciences.\n\nB. The most widely used tool is the seismometer, an instrument that records vibrations in the ground. As magma forces its way upwards, it breaks rock and produces swarms of small earthquakes, most too weak to be felt by humans. Scientists pay particular attention to their depth: a cluster of earthquakes that gradually becomes shallower may indicate that magma is approaching the surface. Some volcanoes also generate a continuous, low humming known as tremor, which is thought to arise when fluids flow through underground channels. Because these signals are so varied, an experienced analyst often needs to examine several days of recordings before deciding whether a change is significant.\n\nC. A second approach is to measure the shape of the volcano itself. When magma accumulates in a chamber beneath a mountain, the ground above can swell by centimetres or, occasionally, by metres. Before the 1980 eruption of Mount St Helens in the United States, part of the northern side of the mountain bulged outwards dramatically. Today, deformation is tracked with satellite positioning receivers fixed to the ground, with sensitive tiltmeters that detect tiny changes in slope, and with radar images taken from orbit, which allow scientists to map swelling across an entire region without setting foot on it. Satellite radar has proved especially valuable for remote volcanoes, some of which were found to be inflating even though no one had suspected they were active.\n\nD. Gases offer further clues. As magma rises, falling pressure allows dissolved gases such as carbon dioxide and sulphur dioxide to escape, much as bubbles appear when a bottle of fizzy drink is opened. Changes in the quantity of these gases, or in the ratio between them, can reveal that fresh magma has arrived from depth. More recently, researchers have begun literally to listen to volcanoes using microphones that record infrasound, sound at frequencies too low for the human ear. Because infrasound can travel hundreds or even thousands of kilometres through the atmosphere, a few well-placed stations can detect explosions at volcanoes where no local instruments exist.\n\nE. When these methods are combined, the results can be impressive. In 1991, warnings based on monitoring at Mount Pinatubo in the Philippines allowed authorities to evacuate tens of thousands of people before one of the largest eruptions of the twentieth century. However, such successes depend on knowing what is normal for a particular volcano, and that requires years of continuous observation. A large proportion of the world's potentially active volcanoes have no permanent instruments at all, often because they are in poorer countries or difficult terrain. To address this, engineer Dmitri Saavedra has developed solar-powered seismic sensors that cost a fraction of conventional equipment; he argues that a dense network of cheap instruments may be more useful than a few expensive ones.\n\nF. The deeper difficulty is that unrest does not always end in an eruption. Magma may rise, stall and cool underground, producing all the warning signs without ever reaching the surface. In a study of historical records from volcanoes on several continents, geophysicist Ngaire Holcombe found that more than half of the well-documented episodes of unrest she examined ended without any eruption. She also found that the length of unrest varied enormously: some volcanoes erupted within days of the first signs, while others remained restless for over a decade before finally erupting or falling quiet. In Holcombe's view, this means that no single threshold, such as a certain number of earthquakes per day, can be applied to every volcano.\n\nG. For this reason, many observatories now express forecasts as probabilities rather than firm predictions, and they use alert levels, often shown as colours, to communicate changing risk. This approach is more honest, but it creates its own problems. Officials must decide whether to order evacuations that disrupt lives and businesses, knowing that the volcano may do nothing. Repeated false alarms can lead residents to ignore future warnings, while a delayed decision can be fatal. Some observatories now hold regular public meetings in nearby villages to explain what the alert levels mean. Volcanologists increasingly argue that their task is not only to read the instruments but also to build trust with the communities who must act on what those instruments reveal.",
+        "title": "Listening to Volcanoes",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Most of the earthquakes caused by rising magma are strong enough for people to feel.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "produces swarms of small earthquakes, most too weak to be felt by humans",
+                        "explanation": {
+                            "en": "Paragraph B says most of these earthquakes are too weak for people to feel. The statement says the opposite.",
+                            "ru": "В абзаце B говорится, что большинство этих землетрясений слишком слабые, чтобы люди могли их почувствовать. В утверждении сказано обратное.",
+                            "uk": "В абзаці B сказано, що більшість цих землетрусів надто слабкі, щоб люди могли їх відчути. У твердженні сказано протилежне."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Earthquakes that occur closer and closer to the surface may show that magma is rising.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "a cluster of earthquakes that gradually becomes shallower may indicate that magma is approaching the surface",
+                        "explanation": {
+                            "en": "Paragraph B says that earthquakes becoming gradually shallower may mean magma is approaching the surface, which is the same idea.",
+                            "ru": "В абзаце B сказано, что если землетрясения постепенно происходят всё ближе к поверхности, это может означать, что магма поднимается наверх. Это та же мысль, что и в утверждении.",
+                            "uk": "В абзаці B сказано, що коли землетруси поступово відбуваються дедалі ближче до поверхні, це може означати, що магма піднімається вгору. Це та сама думка, що й у твердженні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Computer programs can now identify significant seismic changes more quickly than experienced analysts.",
+                        "numbers": [
+                            3
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says an experienced analyst may need several days of recordings to judge a change, but computer programs are never mentioned, so we cannot compare their speed.",
+                            "ru": "В абзаце B сказано, что опытному аналитику могут понадобиться записи за несколько дней, чтобы оценить изменения. Но компьютерные программы в тексте вообще не упоминаются, поэтому сравнить их скорость нельзя.",
+                            "uk": "В абзаці B сказано, що досвідченому аналітикові можуть знадобитися записи за кілька днів, щоб оцінити зміни. Але комп’ютерні програми в тексті взагалі не згадуються, тому порівняти їхню швидкість неможливо."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Satellite radar has shown that some volcanoes not believed to be active are in fact swelling.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "some of which were found to be inflating even though no one had suspected they were active",
+                        "explanation": {
+                            "en": "Paragraph C says radar found some remote volcanoes inflating although nobody suspected they were active. 'Swelling' restates 'inflating'.",
+                            "ru": "В абзаце C говорится, что с помощью радара обнаружили: некоторые отдалённые вулканы \"inflating\" (раздуваются), хотя никто не подозревал, что они активны. \"Swelling\" в утверждении — это другими словами \"inflating\".",
+                            "uk": "В абзаці C сказано, що за допомогою радара виявили: деякі віддалені вулкани \"inflating\" (роздуваються), хоча ніхто не підозрював, що вони активні. \"Swelling\" у твердженні — це іншими словами \"inflating\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Infrasound stations are cheaper to install than seismometers.",
+                        "numbers": [
+                            5
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D says a few infrasound stations can detect distant explosions, and paragraph E mentions cheap seismic sensors, but the passage never compares the cost of infrasound stations with seismometers.",
+                            "ru": "В абзаце D сказано, что несколько инфразвуковых станций могут улавливать далёкие взрывы, а в абзаце E упоминаются дешёвые сейсмические датчики. Но стоимость инфразвуковых станций и сейсмометров в тексте нигде не сравнивается.",
+                            "uk": "В абзаці D сказано, що кілька інфразвукових станцій можуть уловлювати далекі вибухи, а в абзаці E згадано дешеві сейсмічні датчики. Але вартість інфразвукових станцій і сейсмометрів у тексті ніде не порівнюється."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The 1991 eruption of Mount Pinatubo took place without any warning being given to local people.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "warnings based on monitoring at Mount Pinatubo in the Philippines allowed authorities to evacuate tens of thousands of people",
+                        "explanation": {
+                            "en": "Paragraph E says warnings were given and tens of thousands of people were evacuated before the eruption, so the statement is false.",
+                            "ru": "В абзаце E говорится, что ещё до извержения людей предупредили и эвакуировали десятки тысяч человек, поэтому утверждение неверно (FALSE).",
+                            "uk": "В абзаці E сказано, що ще до виверження людей попередили й евакуювали десятки тисяч осіб, тому твердження хибне (FALSE)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Dmitri Saavedra's sensors have already been installed at several volcanoes in poorer countries.",
+                        "numbers": [
+                            7
+                        ],
+                        "explanation": {
+                            "en": "Paragraph E says Saavedra developed cheap solar-powered sensors to help with unmonitored volcanoes, but it does not say whether or where they have been installed.",
+                            "ru": "В абзаце E говорится, что Saavedra разработал дешёвые датчики на солнечных батареях, чтобы помочь следить за вулканами, которые никто не контролирует. Но не сказано, установили ли их и если да, то где.",
+                            "uk": "В абзаці E сказано, що Saavedra розробив дешеві датчики на сонячних батареях, щоб допомогти стежити за вулканами, які ніхто не контролює. Але не сказано, чи їх установили і якщо так, то де."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "chamber"
+                        ],
+                        "prompt": "Ground deformation: magma collecting in a ______ under the mountain makes the ground rise",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "When magma accumulates in a chamber beneath a mountain, the ground above can swell",
+                        "explanation": {
+                            "en": "Paragraph C says the ground swells when magma builds up in a chamber beneath the mountain.",
+                            "ru": "В абзаце C сказано, что земля вздувается, когда в камере (\"chamber\") под горой накапливается магма (\"magma\").",
+                            "uk": "В абзаці C сказано, що земля здувається, коли в камері (\"chamber\") під горою накопичується магма (\"magma\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "tiltmeters"
+                        ],
+                        "prompt": "Very small changes in slope are measured by ______",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "sensitive tiltmeters that detect tiny changes in slope",
+                        "explanation": {
+                            "en": "Paragraph C names tiltmeters as the instruments that detect tiny changes in slope.",
+                            "ru": "В абзаце C названы приборы, которые фиксируют малейшие изменения наклона, — \"tiltmeters\".",
+                            "uk": "В абзаці C названо прилади, які фіксують найменші зміни нахилу, — \"tiltmeters\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "microphones"
+                        ],
+                        "prompt": "Infrasound: low-frequency sound is recorded using ______",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "using microphones that record infrasound",
+                        "explanation": {
+                            "en": "Paragraph D says researchers listen to volcanoes with microphones that record infrasound.",
+                            "ru": "В абзаце D сказано, что исследователи «слушают» вулканы с помощью микрофонов (\"microphones\"), которые записывают инфразвук (\"infrasound\").",
+                            "uk": "В абзаці D сказано, що дослідники «слухають» вулкани за допомогою мікрофонів (\"microphones\"), які записують інфразвук (\"infrasound\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "network"
+                        ],
+                        "prompt": "Saavedra: a dense ______ of low-cost sensors may be better than a few costly ones",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "a dense network of cheap instruments may be more useful than a few expensive ones",
+                        "explanation": {
+                            "en": "In paragraph E, Saavedra argues that a dense network of cheap instruments may be more useful than a few expensive ones.",
+                            "ru": "В абзаце E Saavedra утверждает, что плотная сеть (\"dense network\") дешёвых приборов (\"cheap instruments\") может принести больше пользы, чем несколько дорогих.",
+                            "uk": "В абзаці E Saavedra стверджує, що щільна мережа (\"dense network\") дешевих приладів (\"cheap instruments\") може бути кориснішою, ніж кілька дорогих."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "threshold"
+                        ],
+                        "prompt": "Holcombe: no single ______ (e.g. a daily number of earthquakes) suits every volcano",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "no single threshold, such as a certain number of earthquakes per day, can be applied to every volcano",
+                        "explanation": {
+                            "en": "Paragraph F gives Holcombe's view that no one threshold, such as a number of earthquakes per day, works for all volcanoes.",
+                            "ru": "В абзаце F приводится мнение Holcombe: нет единого порога (\"threshold\") — например, определённого числа землетрясений в день, — который подходил бы для всех вулканов.",
+                            "uk": "В абзаці F наведено думку Holcombe: немає єдиного порогу (\"threshold\") — наприклад, певної кількості землетрусів на день, — який підходив би для всіх вулканів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "colours",
+                            "colors"
+                        ],
+                        "prompt": "Alert levels: frequently presented as ______",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "alert levels, often shown as colours",
+                        "explanation": {
+                            "en": "Paragraph G says observatories use alert levels that are often shown as colours.",
+                            "ru": "В абзаце G сказано, что обсерватории используют уровни тревоги (\"alert levels\"), которые часто обозначают цветами (\"colours\").",
+                            "uk": "В абзаці G сказано, що обсерваторії використовують рівні тривоги (\"alert levels\"), які часто позначають кольорами (\"colours\")."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6"
+    },
+    "translation": {
+        "missing": []
+    }
+}

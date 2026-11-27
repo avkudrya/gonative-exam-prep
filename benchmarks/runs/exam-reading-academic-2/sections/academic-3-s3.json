@@ -1,0 +1,1289 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-3|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.369604,
+            "provider": "anthropic",
+            "outputTokens": 17683
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.016742,
+            "provider": "anthropic",
+            "outputTokens": 722
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.02337,
+            "provider": "openai",
+            "outputTokens": 1065
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.017524,
+            "provider": "xai",
+            "outputTokens": 1546
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.111256,
+            "provider": "anthropic",
+            "outputTokens": 5188
+        }
+    ],
+    "draft": {
+        "title": "Two Things at Once?",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "People generally fail to realise how much is lost when they move from one task to another.",
+                        "options": [],
+                        "evidence": "people tend to underestimate them, because the feeling of being busy is easily confused with the feeling of being productive",
+                        "explanation": "In paragraph B the writer says people underestimate the costs of switching tasks. 'Fail to realise how much is lost' restates 'underestimate them'."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The fact that people can talk while driving proves that two demanding tasks can be done at the same time.",
+                        "options": [],
+                        "evidence": "Talking while driving is therefore not evidence against my position but an illustration of its limits.",
+                        "explanation": "In paragraph C the writer says talking while driving does not count against the argument, because experienced driving needs little conscious attention. The statement says the opposite."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Conference interpreters ought to have longer breaks than they normally take at present.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D says interpreters work in pairs and hand over about every half hour because the work is so tiring. The writer never says whether these breaks should be longer."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Valdivia's research shows that enough practice can remove the cost of switching tasks completely.",
+                        "options": [],
+                        "evidence": "even after six weeks of practice, the cost had shrunk rather than vanished",
+                        "explanation": "In paragraph E the writer points out that the switching cost became smaller but did not disappear. So the writer rejects the idea that practice removes it completely."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Office workers who multitask often perform worse on switching exercises than those who rarely do.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph F compares how skilled workers believed they were with how well they did, but it says nothing about how often they multitask. The writer gives no view on this comparison."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Changing the way work is organised would be more worthwhile than changing individual habits.",
+                        "options": [],
+                        "evidence": "a harder change to make than any personal habit, but a far more valuable one",
+                        "explanation": "In paragraph H the writer says changing how employers organise work is harder than changing a personal habit but 'far more valuable', which matches 'more worthwhile'."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the reading passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Elif Strandberg"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Rohan Valdivia"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Mireille Kowalczyk"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Kwame Iturbe"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "People's opinions of their own multitasking ability do not match how they actually perform.",
+                        "options": [],
+                        "evidence": "She found no connection between how skilled people believed they were and how well they actually did.",
+                        "explanation": "Paragraph F reports that Kowalczyk found no link between workers' beliefs about their skill and their real results."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Describing multitasking as impossible may stop people from trying to improve at it.",
+                        "options": [],
+                        "evidence": "calling multitasking a myth discourages people from developing it",
+                        "explanation": "In paragraph E Valdivia argues that the 'myth' label discourages people from developing the ability. Strandberg also dislikes the label, but because she finds it insulting, not because it stops improvement."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "One particular occupation shows that two demanding activities can be carried out together.",
+                        "options": [],
+                        "evidence": "Strandberg argues that this is plainly two demanding tasks performed together",
+                        "explanation": "Paragraph D explains that Strandberg studies conference interpreters and argues that their work is two demanding tasks done at once."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Calling multitasking a myth ignores the many processes the brain carries out at the same time.",
+                        "options": [],
+                        "evidence": "The brain, he points out, is always running many processes in parallel",
+                        "explanation": "In paragraph G Iturbe says the brain always runs processes such as balance and breathing in parallel, so he thinks the 'myth' claim is careless."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "This researcher admitted that the people studied all came from the same workplace.",
+                        "options": [],
+                        "evidence": "Kowalczyk is careful to point out that all her participants came from a single company",
+                        "explanation": "Paragraph F says Kowalczyk herself noted that her participants came from a single company, which is a limitation of her study."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Regular practice greatly reduced the time lost when changing from one task to another.",
+                        "options": [],
+                        "evidence": "the delay caused by each switch had shrunk to roughly a third of its original size",
+                        "explanation": "Paragraph E describes Valdivia's six-week study, in which the delay caused by each switch fell to about a third of its original size."
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A–D. You may use any letter more than once."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "In paragraph A, the writer refers to job advertisements in order to show",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "how commonly multitasking is viewed as a routine workplace ability"
+                            },
+                            {
+                                "id": "B",
+                                "text": "that employers have started to question the value of multitasking"
+                            },
+                            {
+                                "id": "C",
+                                "text": "that typing has become less valued than the ability to multitask"
+                            },
+                            {
+                                "id": "D",
+                                "text": "that most job candidates exaggerate their ability to multitask"
+                            }
+                        ],
+                        "evidence": "Job advertisements ask for candidates who can multitask, as though it were an ordinary skill like typing.",
+                        "explanation": "Paragraph A says advertisements treat multitasking as an ordinary skill, like typing. The passage does not say employers doubt it, that typing matters less, or that candidates exaggerate."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to the writer, why do people underestimate the cost of switching tasks?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Each individual delay is too brief to be measured reliably."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Being occupied is easily mistaken for achieving a lot."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Interruptions at work happen less often than people think."
+                            },
+                            {
+                                "id": "D",
+                                "text": "The mind changes between sets of rules without any effort."
+                            }
+                        ],
+                        "evidence": "because the feeling of being busy is easily confused with the feeling of being productive",
+                        "explanation": "Paragraph B says people confuse feeling busy with feeling productive. The delays are small but can still be measured, and the writer says changing rules is 'not free', so the effortless option is wrong."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the writer say tends to happen when driving suddenly becomes difficult?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "The driver deliberately ends the conversation to concentrate."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Talk often halts without the driver being aware of it."
+                            },
+                            {
+                                "id": "C",
+                                "text": "The driver makes more mistakes in what he or she says."
+                            },
+                            {
+                                "id": "D",
+                                "text": "The driver becomes conscious of the mental bottleneck."
+                            }
+                        ],
+                        "evidence": "the conversation tends to stop, often without the driver noticing that it has",
+                        "explanation": "Paragraph C says the conversation stops, often without the driver noticing. The option about ending the talk deliberately is wrong because the driver may not even realise it has stopped."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why does the writer mention that interpreters usually work in pairs?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "to show that the work is too tiring to sustain for long"
+                            },
+                            {
+                                "id": "B",
+                                "text": "to suggest that the two partners share listening and speaking"
+                            },
+                            {
+                                "id": "C",
+                                "text": "to explain how interpreters learn familiar phrases and patterns"
+                            },
+                            {
+                                "id": "D",
+                                "text": "to argue that interpreting is less demanding than it appears"
+                            }
+                        ],
+                        "evidence": "handing over to a colleague every half hour or so, because the strain soon becomes unsustainable",
+                        "explanation": "In paragraph D the writer says interpreters hand over to a partner because the strain becomes too great. The partners take turns; they do not divide listening and speaking between them."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why does the writer doubt that Valdivia's results apply to office work?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Office tasks are far less predictable than the ones he tested."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Six weeks is too short to produce any lasting improvement."
+                            },
+                            {
+                                "id": "C",
+                                "text": "His volunteers were already unusually skilled at switching."
+                            },
+                            {
+                                "id": "D",
+                                "text": "His study measured delays but ignored the number of errors."
+                            }
+                        ],
+                        "evidence": "Office life rarely offers such predictability: the message that interrupts a report is different every time.",
+                        "explanation": "Paragraph E says Valdivia's volunteers repeated the same two tasks, while office interruptions are different every time. The writer mentions six weeks only to note that the cost had not vanished, not to say the study was too short."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Elif Strandberg",
+                "role": "cognitive scientist who studies conference interpreters and argues that they perform two demanding tasks at once",
+                "gender": "female"
+            },
+            {
+                "name": "Rohan Valdivia",
+                "role": "researcher whose six-week laboratory study found that practice reduced task-switching costs",
+                "gender": "male"
+            },
+            {
+                "name": "Mireille Kowalczyk",
+                "role": "researcher who compared office workers' self-rated multitasking ability with their measured performance",
+                "gender": "female"
+            },
+            {
+                "name": "Kwame Iturbe",
+                "role": "neuroscientist who argues that calling multitasking a myth ignores the brain's parallel processes",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Ask almost anyone to describe a typical working day and you will hear about juggling: answering messages during meetings, listening to podcasts while drafting reports, switching between a dozen open windows. Job advertisements ask for candidates who can multitask, as though it were an ordinary skill like typing. My argument in this article is that, where both activities genuinely require thought, this ability does not exist in the form most people imagine. What looks like doing two things at once is almost always doing one thing and then the other in quick succession, and each switch costs more than we notice. Several researchers disagree with me, some strongly, and their objections deserve a fair hearing.",
+                "label": "A"
+            },
+            {
+                "text": "The basic evidence is not new. Researchers have long found that when people must respond to two signals presented very close together in time, their response to the second is delayed, as if it has to wait for the first to pass through some kind of mental bottleneck. Studies of task switching show a similar pattern: moving back and forth between two activities takes longer, and produces more errors, than finishing one before starting the other. Each change requires the mind to set aside one set of rules and retrieve another, and that adjustment is not free. A single cost may amount to only a fraction of a second, but across a day of constant interruptions the losses accumulate. Crucially, people tend to underestimate them, because the feeling of being busy is easily confused with the feeling of being productive.",
+                "label": "B"
+            },
+            {
+                "text": "None of this means that humans can do only one thing at a time in every sense. We walk while chatting, and an experienced driver can hold a conversation on an empty motorway. The difference is that one of these activities has become so well practised that it demands little conscious attention. Yet the arrangement is fragile. When the road ahead suddenly becomes complicated, the conversation tends to stop, often without the driver noticing that it has. That pause is the bottleneck reasserting itself. Talking while driving is therefore not evidence against my position but an illustration of its limits.",
+                "label": "C"
+            },
+            {
+                "text": "The most serious challenge comes from Elif Strandberg, a cognitive scientist who has spent a decade studying conference interpreters. Simultaneous interpreters listen to a speaker in one language while producing a translation in another, often only a few words behind. Strandberg argues that this is plainly two demanding tasks performed together, and she regards the 'myth' label as an insult to a profession built on exactly this ability. I admire interpreters enormously, but I do not think their case refutes mine. They train for years, and much of that training appears to turn parts of the work, such as common phrases and familiar sentence patterns, into routines that no longer require deliberate effort. Interpreters also typically work in pairs, handing over to a colleague every half hour or so, because the strain soon becomes unsustainable. An ability that must be rationed so carefully looks less like everyday multitasking than like an exceptional, hard-won skill.",
+                "label": "D"
+            },
+            {
+                "text": "Rohan Valdivia raises a different objection. In a laboratory study, he asked volunteers to alternate between two sorting tasks every day for six weeks. By the end, the delay caused by each switch had shrunk to roughly a third of its original size. Valdivia concludes that switching costs reflect inexperience rather than a fixed feature of the mind, and that calling multitasking a myth discourages people from developing it. His results are interesting, but his volunteers repeated the same two tasks thousands of times. Office life rarely offers such predictability: the message that interrupts a report is different every time. Moreover, even after six weeks of practice, the cost had shrunk rather than vanished.",
+                "label": "E"
+            },
+            {
+                "text": "Other findings support my position more directly. Mireille Kowalczyk asked more than two hundred office workers to rate their own ability to handle several tasks at once, and then measured their performance on a series of switching exercises. She found no connection between how skilled people believed they were and how well they actually did. Kowalczyk is careful to point out that all her participants came from a single company, but the result fits a wider pattern: confidence in multitasking seems to rest on the sensation of activity rather than on measured results.",
+                "label": "F"
+            },
+            {
+                "text": "Finally, the neuroscientist Kwame Iturbe objects to the whole debate. The brain, he points out, is always running many processes in parallel: maintaining balance, regulating breathing, making sense of what the eyes see. To declare multitasking a myth is, in his view, scientifically careless. He is right about the brain, and I accept that my claim concerns deliberate, effortful tasks rather than everything the nervous system does. But I do not accept that the disagreement is merely a matter of words. When managers expect staff to write a proposal while monitoring a constant stream of messages, they are not thinking about breathing. They are assuming a capacity that the evidence suggests most of us lack.",
+                "label": "G"
+            },
+            {
+                "text": "What follows in practice? Not, I think, that individuals should feel guilty every time they glance at a phone. The more useful lesson concerns design: offices, schedules and software could be arranged so that demanding work is protected from interruption for sensible stretches of time. That would require employers to stop treating constant availability as a virtue, which is a harder change to make than any personal habit, but a far more valuable one.",
+                "label": "H"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Crucially, people tend to underestimate them, because the feeling of being busy is easily confused with the feeling of being productive.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Talking while driving is therefore not evidence against my position but an illustration of its limits.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "even after six weeks of practice, the cost had shrunk rather than vanished.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "which is a harder change to make than any personal habit, but a far more valuable one.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "She found no connection between how skilled people believed they were and how well they actually did.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "calling multitasking a myth discourages people from developing it.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Strandberg argues that this is plainly two demanding tasks performed together",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The brain, he points out, is always running many processes in parallel",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Kowalczyk is careful to point out that all her participants came from a single company",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the delay caused by each switch had shrunk to roughly a third of its original size.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Job advertisements ask for candidates who can multitask, as though it were an ordinary skill like typing.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the feeling of being busy is easily confused with the feeling of being productive.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the conversation tends to stop, often without the driver noticing that it has.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "because the strain soon becomes unsustainable",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Office life rarely offers such predictability: the message that interrupts a report is different every time.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Crucially, people tend to underestimate them, because the feeling of being busy is easily confused with the feeling of being productive.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Talking while driving is therefore not evidence against my position but an illustration of its limits.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "even after six weeks of practice, the cost had shrunk rather than vanished",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "That would require employers to stop treating constant availability as a virtue, which is a harder change to make than any personal habit, but a far more valuable one.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "She found no connection between how skilled people believed they were and how well they actually did.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Valdivia concludes that switching costs reflect inexperience rather than a fixed feature of the mind, and that calling multitasking a myth discourages people from developing it.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Strandberg argues that this is plainly two demanding tasks performed together",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The brain, he points out, is always running many processes in parallel ... To declare multitasking a myth is, in his view, scientifically careless.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Kowalczyk is careful to point out that all her participants came from a single company",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "By the end, the delay caused by each switch had shrunk to roughly a third of its original size.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Job advertisements ask for candidates who can multitask, as though it were an ordinary skill like typing.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the feeling of being busy is easily confused with the feeling of being productive",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "When the road ahead suddenly becomes complicated, the conversation tends to stop, often without the driver noticing that it has.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Interpreters also typically work in pairs, handing over to a colleague every half hour or so, because the strain soon becomes unsustainable.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Office life rarely offers such predictability: the message that interrupts a report is different every time.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "people tend to underestimate them",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Talking while driving is therefore not evidence against my position but an illustration of its limits.",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "even after six weeks of practice, the cost had shrunk rather than vanished",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "She found no connection between how skilled people believed they were and how well they actually did.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "calling multitasking a myth discourages people from developing it",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Strandberg argues that this is plainly two demanding tasks performed together",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "To declare multitasking a myth is, in his view, scientifically careless.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "all her participants came from a single company",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Job advertisements ask for candidates who can multitask, as though it were an ordinary skill like typing.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the feeling of being busy is easily confused with the feeling of being productive",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the conversation tends to stop, often without the driver noticing that it has",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "because the strain soon becomes unsustainable",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 17,
+        "agreedFirst": 17,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Two Things at Once?\n\nA. Ask almost anyone to describe a typical working day and you will hear about juggling: answering messages during meetings, listening to podcasts while drafting reports, switching between a dozen open windows. Job advertisements ask for candidates who can multitask, as though it were an ordinary skill like typing. My argument in this article is that, where both activities genuinely require thought, this ability does not exist in the form most people imagine. What looks like doing two things at once is almost always doing one thing and then the other in quick succession, and each switch costs more than we notice. Several researchers disagree with me, some strongly, and their objections deserve a fair hearing.\n\nB. The basic evidence is not new. Researchers have long found that when people must respond to two signals presented very close together in time, their response to the second is delayed, as if it has to wait for the first to pass through some kind of mental bottleneck. Studies of task switching show a similar pattern: moving back and forth between two activities takes longer, and produces more errors, than finishing one before starting the other. Each change requires the mind to set aside one set of rules and retrieve another, and that adjustment is not free. A single cost may amount to only a fraction of a second, but across a day of constant interruptions the losses accumulate. Crucially, people tend to underestimate them, because the feeling of being busy is easily confused with the feeling of being productive.\n\nC. None of this means that humans can do only one thing at a time in every sense. We walk while chatting, and an experienced driver can hold a conversation on an empty motorway. The difference is that one of these activities has become so well practised that it demands little conscious attention. Yet the arrangement is fragile. When the road ahead suddenly becomes complicated, the conversation tends to stop, often without the driver noticing that it has. That pause is the bottleneck reasserting itself. Talking while driving is therefore not evidence against my position but an illustration of its limits.\n\nD. The most serious challenge comes from Elif Strandberg, a cognitive scientist who has spent a decade studying conference interpreters. Simultaneous interpreters listen to a speaker in one language while producing a translation in another, often only a few words behind. Strandberg argues that this is plainly two demanding tasks performed together, and she regards the 'myth' label as an insult to a profession built on exactly this ability. I admire interpreters enormously, but I do not think their case refutes mine. They train for years, and much of that training appears to turn parts of the work, such as common phrases and familiar sentence patterns, into routines that no longer require deliberate effort. Interpreters also typically work in pairs, handing over to a colleague every half hour or so, because the strain soon becomes unsustainable. An ability that must be rationed so carefully looks less like everyday multitasking than like an exceptional, hard-won skill.\n\nE. Rohan Valdivia raises a different objection. In a laboratory study, he asked volunteers to alternate between two sorting tasks every day for six weeks. By the end, the delay caused by each switch had shrunk to roughly a third of its original size. Valdivia concludes that switching costs reflect inexperience rather than a fixed feature of the mind, and that calling multitasking a myth discourages people from developing it. His results are interesting, but his volunteers repeated the same two tasks thousands of times. Office life rarely offers such predictability: the message that interrupts a report is different every time. Moreover, even after six weeks of practice, the cost had shrunk rather than vanished.\n\nF. Other findings support my position more directly. Mireille Kowalczyk asked more than two hundred office workers to rate their own ability to handle several tasks at once, and then measured their performance on a series of switching exercises. She found no connection between how skilled people believed they were and how well they actually did. Kowalczyk is careful to point out that all her participants came from a single company, but the result fits a wider pattern: confidence in multitasking seems to rest on the sensation of activity rather than on measured results.\n\nG. Finally, the neuroscientist Kwame Iturbe objects to the whole debate. The brain, he points out, is always running many processes in parallel: maintaining balance, regulating breathing, making sense of what the eyes see. To declare multitasking a myth is, in his view, scientifically careless. He is right about the brain, and I accept that my claim concerns deliberate, effortful tasks rather than everything the nervous system does. But I do not accept that the disagreement is merely a matter of words. When managers expect staff to write a proposal while monitoring a constant stream of messages, they are not thinking about breathing. They are assuming a capacity that the evidence suggests most of us lack.\n\nH. What follows in practice? Not, I think, that individuals should feel guilty every time they glance at a phone. The more useful lesson concerns design: offices, schedules and software could be arranged so that demanding work is protected from interruption for sensible stretches of time. That would require employers to stop treating constant availability as a virtue, which is a harder change to make than any personal habit, but a far more valuable one.",
+        "title": "Two Things at Once?",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "People generally fail to realise how much is lost when they move from one task to another.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "people tend to underestimate them, because the feeling of being busy is easily confused with the feeling of being productive",
+                        "explanation": {
+                            "en": "In paragraph B the writer says people underestimate the costs of switching tasks. 'Fail to realise how much is lost' restates 'underestimate them'.",
+                            "ru": "В абзаце B автор пишет, что люди недооценивают издержки переключения между задачами. «Fail to realise how much is lost» — это перефразировка «underestimate them».",
+                            "uk": "В абзаці B автор пише, що люди недооцінюють витрати на перемикання між завданнями. «Fail to realise how much is lost» — це перефразування «underestimate them»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The fact that people can talk while driving proves that two demanding tasks can be done at the same time.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Talking while driving is therefore not evidence against my position but an illustration of its limits.",
+                        "explanation": {
+                            "en": "In paragraph C the writer says talking while driving does not count against the argument, because experienced driving needs little conscious attention. The statement says the opposite.",
+                            "ru": "В абзаце C автор говорит, что разговор за рулём не опровергает этот довод, поскольку опытный водитель почти не тратит на вождение сознательного внимания. В утверждении сказано обратное.",
+                            "uk": "В абзаці C автор каже, що розмова за кермом не спростовує цей аргумент, бо досвідчений водій майже не витрачає на керування свідомої уваги. У твердженні сказано протилежне."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Conference interpreters ought to have longer breaks than they normally take at present.",
+                        "numbers": [
+                            3
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D says interpreters work in pairs and hand over about every half hour because the work is so tiring. The writer never says whether these breaks should be longer.",
+                            "ru": "В абзаце D говорится, что переводчики работают парами и сменяют друг друга примерно каждые полчаса, потому что работа очень утомительна. Автор нигде не говорит, должны ли эти перерывы быть длиннее.",
+                            "uk": "В абзаці D сказано, що перекладачі працюють парами й змінюють одне одного приблизно кожні пів години, бо робота дуже виснажлива. Автор ніде не каже, чи мають ці перерви бути довшими."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Valdivia's research shows that enough practice can remove the cost of switching tasks completely.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "even after six weeks of practice, the cost had shrunk rather than vanished",
+                        "explanation": {
+                            "en": "In paragraph E the writer points out that the switching cost became smaller but did not disappear. So the writer rejects the idea that practice removes it completely.",
+                            "ru": "В абзаце E автор указывает, что издержки переключения уменьшились, но не исчезли. Значит, автор отвергает идею, что практика полностью их устраняет.",
+                            "uk": "В абзаці E автор зазначає, що витрати на перемикання зменшилися, але не зникли. Отже, автор відкидає думку, що практика повністю їх усуває."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Office workers who multitask often perform worse on switching exercises than those who rarely do.",
+                        "numbers": [
+                            5
+                        ],
+                        "explanation": {
+                            "en": "Paragraph F compares how skilled workers believed they were with how well they did, but it says nothing about how often they multitask. The writer gives no view on this comparison.",
+                            "ru": "В абзаце F сравнивается, насколько умелыми работники себя считали и насколько хорошо они справились на деле, но ничего не говорится о том, как часто они выполняют несколько задач одновременно. Автор не высказывает мнения об этом сравнении.",
+                            "uk": "В абзаці F порівнюється, наскільки вправними працівники себе вважали і наскільки добре вони впоралися насправді, але нічого не сказано про те, як часто вони виконують кілька завдань одночасно. Автор не висловлює думки щодо цього порівняння."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the reading passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Elif Strandberg"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Rohan Valdivia"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Mireille Kowalczyk"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Kwame Iturbe"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "People's opinions of their own multitasking ability do not match how they actually perform.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "She found no connection between how skilled people believed they were and how well they actually did.",
+                        "explanation": {
+                            "en": "Paragraph F reports that Kowalczyk found no link between workers' beliefs about their skill and their real results.",
+                            "ru": "В абзаце F сообщается, что Kowalczyk не обнаружила связи между тем, как работники оценивали свои навыки, и их реальными результатами.",
+                            "uk": "В абзаці F повідомляється, що Kowalczyk не виявила зв'язку між тим, як працівники оцінювали свої навички, та їхніми реальними результатами."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Describing multitasking as impossible may stop people from trying to improve at it.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "calling multitasking a myth discourages people from developing it",
+                        "explanation": {
+                            "en": "In paragraph E Valdivia argues that the 'myth' label discourages people from developing the ability. Strandberg also dislikes the label, but because she finds it insulting, not because it stops improvement.",
+                            "ru": "В абзаце E Valdivia утверждает, что ярлык «myth» отбивает у людей желание развивать эту способность. Strandberg тоже недовольна этим ярлыком, но потому, что считает его оскорбительным, а не потому, что он мешает совершенствоваться.",
+                            "uk": "В абзаці E Valdivia стверджує, що ярлик «myth» відбиває в людей бажання розвивати цю здатність. Strandberg теж незадоволена цим ярликом, але тому, що вважає його образливим, а не тому, що він заважає вдосконалюватися."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "One particular occupation shows that two demanding activities can be carried out together.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Strandberg argues that this is plainly two demanding tasks performed together",
+                        "explanation": {
+                            "en": "Paragraph D explains that Strandberg studies conference interpreters and argues that their work is two demanding tasks done at once.",
+                            "ru": "В абзаце D объясняется, что Strandberg изучает конференц-переводчиков и утверждает, что их работа — это две сложные задачи, выполняемые одновременно.",
+                            "uk": "В абзаці D пояснюється, що Strandberg досліджує конференц-перекладачів і стверджує, що їхня робота — це два складні завдання, які виконуються одночасно."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Calling multitasking a myth ignores the many processes the brain carries out at the same time.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "The brain, he points out, is always running many processes in parallel",
+                        "explanation": {
+                            "en": "In paragraph G Iturbe says the brain always runs processes such as balance and breathing in parallel, so he thinks the 'myth' claim is careless.",
+                            "ru": "В абзаце G Iturbe говорит, что мозг всегда параллельно выполняет такие процессы, как поддержание равновесия и дыхание, поэтому он считает утверждение про «myth» непродуманным.",
+                            "uk": "В абзаці G Iturbe каже, що мозок завжди паралельно виконує такі процеси, як підтримання рівноваги та дихання, тому він вважає твердження про «myth» непродуманим."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "This researcher admitted that the people studied all came from the same workplace.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "Kowalczyk is careful to point out that all her participants came from a single company",
+                        "explanation": {
+                            "en": "Paragraph F says Kowalczyk herself noted that her participants came from a single company, which is a limitation of her study.",
+                            "ru": "В абзаце F сказано, что Kowalczyk сама отметила: все её участники работали в одной компании, и это ограничение её исследования.",
+                            "uk": "В абзаці F сказано, що Kowalczyk сама зазначила: усі її учасники працювали в одній компанії, і це обмеження її дослідження."
+                        }
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A–D. You may use any letter more than once."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "that most job candidates exaggerate their ability to multitask"
+                    },
+                    {
+                        "id": "B",
+                        "text": "how commonly multitasking is viewed as a routine workplace ability"
+                    },
+                    {
+                        "id": "C",
+                        "text": "that employers have started to question the value of multitasking"
+                    },
+                    {
+                        "id": "D",
+                        "text": "that typing has become less valued than the ability to multitask"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "In paragraph A, the writer refers to job advertisements in order to show",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Job advertisements ask for candidates who can multitask, as though it were an ordinary skill like typing.",
+                        "explanation": {
+                            "en": "Paragraph A says advertisements treat multitasking as an ordinary skill, like typing. The passage does not say employers doubt it, that typing matters less, or that candidates exaggerate.",
+                            "ru": "В абзаце A говорится, что в объявлениях многозадачность подаётся как обычный навык, вроде печати на клавиатуре. В тексте не сказано, что работодатели в этом сомневаются, что печать менее важна или что кандидаты преувеличивают.",
+                            "uk": "В абзаці A сказано, що в оголошеннях багатозадачність подають як звичайну навичку, на кшталт друку на клавіатурі. У тексті не сказано, що роботодавці в цьому сумніваються, що друк менш важливий чи що кандидати перебільшують."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The mind changes between sets of rules without any effort."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Each individual delay is too brief to be measured reliably."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Being occupied is easily mistaken for achieving a lot."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Interruptions at work happen less often than people think."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "According to the writer, why do people underestimate the cost of switching tasks?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "because the feeling of being busy is easily confused with the feeling of being productive",
+                        "explanation": {
+                            "en": "Paragraph B says people confuse feeling busy with feeling productive. The delays are small but can still be measured, and the writer says changing rules is 'not free', so the effortless option is wrong.",
+                            "ru": "В абзаце B говорится, что люди путают ощущение занятости с ощущением продуктивности. Задержки небольшие, но их всё же можно измерить, а автор говорит, что смена правил «not free», поэтому вариант о том, что это не требует усилий, неверен.",
+                            "uk": "В абзаці B сказано, що люди плутають відчуття зайнятості з відчуттям продуктивності. Затримки невеликі, але їх усе ж можна виміряти, а автор каже, що зміна правил «not free», тому варіант про те, що це не потребує зусиль, неправильний."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The driver makes more mistakes in what he or she says."
+                    },
+                    {
+                        "id": "B",
+                        "text": "The driver becomes conscious of the mental bottleneck."
+                    },
+                    {
+                        "id": "C",
+                        "text": "The driver deliberately ends the conversation to concentrate."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Talk often halts without the driver being aware of it."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What does the writer say tends to happen when driving suddenly becomes difficult?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "the conversation tends to stop, often without the driver noticing that it has",
+                        "explanation": {
+                            "en": "Paragraph C says the conversation stops, often without the driver noticing. The option about ending the talk deliberately is wrong because the driver may not even realise it has stopped.",
+                            "ru": "В абзаце C говорится, что разговор прерывается, причём водитель часто этого не замечает. Вариант о том, что водитель намеренно прекращает разговор, неверен: он может даже не осознавать, что разговор прервался.",
+                            "uk": "В абзаці C сказано, що розмова уривається, причому водій часто цього не помічає. Варіант про те, що водій навмисно припиняє розмову, неправильний: він може навіть не усвідомлювати, що розмова урвалася."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "to show that the work is too tiring to sustain for long"
+                    },
+                    {
+                        "id": "B",
+                        "text": "to argue that interpreting is less demanding than it appears"
+                    },
+                    {
+                        "id": "C",
+                        "text": "to suggest that the two partners share listening and speaking"
+                    },
+                    {
+                        "id": "D",
+                        "text": "to explain how interpreters learn familiar phrases and patterns"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why does the writer mention that interpreters usually work in pairs?",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "handing over to a colleague every half hour or so, because the strain soon becomes unsustainable",
+                        "explanation": {
+                            "en": "In paragraph D the writer says interpreters hand over to a partner because the strain becomes too great. The partners take turns; they do not divide listening and speaking between them.",
+                            "ru": "В абзаце D автор пишет, что переводчики передают работу напарнику, потому что нагрузка становится слишком большой. Напарники работают по очереди, а не делят между собой слушание и говорение.",
+                            "uk": "В абзаці D автор пише, що перекладачі передають роботу напарникові, бо навантаження стає надто великим. Напарники працюють по черзі, а не розподіляють між собою слухання й говоріння."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b2q1",
+        "7": "b2q2",
+        "8": "b2q3",
+        "9": "b2q4",
+        "10": "b2q5",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

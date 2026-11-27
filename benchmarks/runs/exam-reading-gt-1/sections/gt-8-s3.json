@@ -1,0 +1,1038 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-8|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.368324,
+            "provider": "anthropic",
+            "outputTokens": 17349
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.01434,
+            "provider": "anthropic",
+            "outputTokens": 646
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.02446,
+            "provider": "openai",
+            "outputTokens": 1232
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.014956,
+            "provider": "xai",
+            "outputTokens": 1318
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.06704,
+            "provider": "anthropic",
+            "outputTokens": 3045
+        }
+    ],
+    "draft": {
+        "title": "All Aboard the Night Train",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "In the early 2000s, a cheap flight could cost less than a bed on a sleeper train.",
+                        "options": [],
+                        "evidence": "Low-cost airlines could carry passengers across the continent in a couple of hours for less than the price of a bunk",
+                        "explanation": "Paragraph A says low-cost airlines charged less than the price of a bunk, which is a bed on a sleeper train. So the statement agrees with the passage."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "A sleeping car can carry more passengers than an ordinary carriage.",
+                        "options": [],
+                        "evidence": "a sleeping car holds far fewer people than an ordinary carriage",
+                        "explanation": "Paragraph B says a sleeping car holds far fewer people, which is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Germany's national rail operator said its sleeper services had been making a profit.",
+                        "options": [],
+                        "evidence": "arguing that they had been losing money for years",
+                        "explanation": "Paragraph B says the operator argued that its sleeper services had been losing money for years, so it did not claim they were profitable."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Austria's state railway ordered its new carriages from a manufacturer in another country.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C says the Austrian railway began investing in new carriages, but it does not say who built them or where they came from."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Some of the small private companies running night trains rent their trains rather than own them.",
+                        "options": [],
+                        "evidence": "some of which hire their locomotives and carriages instead of buying them",
+                        "explanation": "Paragraph C says some private companies hire their locomotives and carriages instead of buying them. To hire means to rent."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Moravec carried out her survey over a period of several years.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D tells us how many passengers and routes were in Moravec's survey, but it says nothing about how long the survey took."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Sarkis has two decades of experience in planning railway timetables.",
+                        "options": [],
+                        "evidence": "who spent twenty years planning timetables for a large operator",
+                        "explanation": "Paragraph E says Sarkis spent twenty years planning timetables. Twenty years is two decades."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO reasons does the writer give for why night trains were expensive to run?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Each sleeping car has room for relatively few passengers."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The trains cannot be reused for shorter trips in the daytime."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Staff working through the night must be paid higher wages."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Old sleeping cars needed frequent and costly repairs."
+                            },
+                            {
+                                "id": "E",
+                                "text": "Passengers expected breakfast to be included in the fare."
+                            }
+                        ],
+                        "evidence": "a sleeping car holds far fewer people than an ordinary carriage, and because the train spends the night on a single long journey, it cannot be used for several shorter trips during the day",
+                        "explanation": "Paragraph B gives two reasons: sleeping cars hold fewer people, and the train cannot be used for shorter trips during the day. Staff wages, repairs and breakfast are not given as reasons; breakfast is only mentioned later as being simple."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO findings come from Moravec's survey?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Saving on accommodation was the reason passengers gave most often."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Environmental concerns were mentioned more often than comfort."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Comfort was the most common reason for choosing the train."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Avoiding airport queues mattered more than the environment."
+                            },
+                            {
+                                "id": "E",
+                                "text": "Most of the people surveyed were travelling on business."
+                            }
+                        ],
+                        "evidence": "the reason given most often for choosing the train was a practical one: it saved the cost of a hotel room. \"People like to feel virtuous,\" she says, \"but what really persuades them is arriving in the city centre, rested, without having paid for an extra night's accommodation.\" Environmental motives came second, ahead of comfort and a dislike of airport security queues.",
+                        "explanation": "In Paragraph D, the top reason was saving the cost of a hotel, and environmental motives came second, ahead of comfort and airport queues. So comfort was not first, queues ranked below the environment, and the purpose of travel is never mentioned."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO difficulties for night trains does Sarkis mention?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Overnight trains may be diverted onto slower lines."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Each country on a route can charge separately for track use."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Building new carriages can take several years."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Passengers often complain about cramped compartments."
+                            },
+                            {
+                                "id": "E",
+                                "text": "Border checks frequently delay trains during the night."
+                            }
+                        ],
+                        "evidence": "Track maintenance is usually carried out after dark, so overnight trains are sometimes sent on slower diversions, and each country along the route may charge its own fee for using the rails.",
+                        "explanation": "In Paragraph E, Sarkis mentions slower diversions caused by night-time maintenance and separate fees in each country. The time needed to build carriages is mentioned in Paragraph G, not by Sarkis, cramped carriages are a passenger complaint in Paragraph F, and border checks are not mentioned."
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "affordable"
+                        ],
+                        "prompt": "In the past, travelling overnight by train was the only ______ means for many families of reaching faraway places.",
+                        "options": [],
+                        "evidence": "for many families an overnight journey was the only affordable way to reach a distant coast",
+                        "explanation": "Paragraph A says that for many families an overnight journey was the only affordable way to reach a distant coast or relatives abroad."
+                    },
+                    {
+                        "answer": [
+                            "underestimated"
+                        ],
+                        "prompt": "Austria's state railway took the view that demand for night trains had not disappeared but had been ______.",
+                        "options": [],
+                        "evidence": "betting that demand had been underestimated rather than lost",
+                        "explanation": "Paragraph C says the Austrian railway bet that demand had been underestimated rather than lost. 'Not disappeared' restates 'rather than lost'."
+                    },
+                    {
+                        "answer": [
+                            "ticket prices"
+                        ],
+                        "prompt": "Sarkis expects ______ to stay the main obstacle for night trains unless governments adopt shared rules.",
+                        "options": [],
+                        "evidence": "ticket prices will remain the biggest barrier unless governments agree on common rules",
+                        "explanation": "Paragraph E says that, in Sarkis's view, ticket prices will remain the biggest barrier. 'Main obstacle' restates 'biggest barrier'."
+                    },
+                    {
+                        "answer": [
+                            "countryside"
+                        ],
+                        "prompt": "Valtonen sees the time she spends reading or watching the ______ as part of the enjoyment of the trip.",
+                        "options": [],
+                        "evidence": "the hours spent reading or watching the countryside slip past the window are part of the pleasure",
+                        "explanation": "Paragraph F says Valtonen enjoys reading or watching the countryside slip past the window. 'Enjoyment' restates 'pleasure'."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Elspeth Moravec",
+                "role": "transport researcher who surveyed night-train passengers",
+                "gender": "female"
+            },
+            {
+                "name": "Gideon Sarkis",
+                "role": "former timetable planner for a large rail operator",
+                "gender": "male"
+            },
+            {
+                "name": "Corinna Valtonen",
+                "role": "teacher who regularly travels by night train",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For much of the twentieth century, falling asleep in one city and waking up in another was an ordinary part of European travel. Sleeper carriages linked capitals across the continent, and for many families an overnight journey was the only affordable way to reach a distant coast or visit relatives abroad. By the early 2000s, however, that world seemed to be fading. Low-cost airlines could carry passengers across the continent in a couple of hours for less than the price of a bunk, while new high-speed lines made many daytime rail journeys short enough to finish before dinner. One by one, overnight routes were cut from the timetables.",
+                "label": "A"
+            },
+            {
+                "text": "The trouble was partly financial. Night services are expensive to operate: a sleeping car holds far fewer people than an ordinary carriage, and because the train spends the night on a single long journey, it cannot be used for several shorter trips during the day, as a normal train would be. In 2016 Germany's national rail operator withdrew its own sleeper services, arguing that they had been losing money for years. Many observers assumed that this decision marked the end of the story.",
+                "label": "B"
+            },
+            {
+                "text": "It did not. Austria's state railway took over several of the abandoned routes and began investing in new carriages, betting that demand had been underestimated rather than lost. Within a few years the gamble appeared to be paying off, and other operators followed its example. Today, travellers can once again board an evening train in cities such as Vienna, Zurich or Brussels and step off the next morning hundreds of kilometres away. On some lines, demand has been so strong that tickets for summer weekends sell out months in advance. A handful of new routes have also been launched by small private companies, some of which hire their locomotives and carriages instead of buying them, a way of keeping start-up costs low.",
+                "label": "C"
+            },
+            {
+                "text": "Part of the explanation lies in changing attitudes to flying. A growing number of travellers, particularly younger ones, say they want to reduce the carbon footprint of their holidays, and rail produces far lower emissions per passenger than air travel over the same distance. Yet according to transport researcher Elspeth Moravec, concern for the planet is only part of the picture. In a survey of more than two thousand passengers on four overnight routes, she found that the reason given most often for choosing the train was a practical one: it saved the cost of a hotel room. \"People like to feel virtuous,\" she says, \"but what really persuades them is arriving in the city centre, rested, without having paid for an extra night's accommodation.\" Environmental motives came second, ahead of comfort and a dislike of airport security queues.",
+                "label": "D"
+            },
+            {
+                "text": "Not everyone is convinced the revival will last. Gideon Sarkis, who spent twenty years planning timetables for a large operator, points out that night trains face obstacles that daytime services rarely meet. Track maintenance is usually carried out after dark, so overnight trains are sometimes sent on slower diversions, and each country along the route may charge its own fee for using the rails. \"A train crossing three borders can receive three separate bills,\" he explains, \"and in the end it is the passengers who cover the difference.\" In his view, ticket prices will remain the biggest barrier unless governments agree on common rules for charging trains that cross their borders. He is not against night trains, he stresses; he simply wants their supporters to be realistic.",
+                "label": "E"
+            },
+            {
+                "text": "Passengers themselves report mixed experiences. Fares vary enormously, from the price of a reclining seat to several hundred euros for a private compartment with its own shower. Delays are common, and some newer carriages have been criticised for being cramped. Food on board is usually simple, often little more than a bread roll and coffee at breakfast. Even so, many travellers describe the journey as an experience in itself. Corinna Valtonen, a teacher who regularly takes an overnight service to visit her sister in another country, compares it to \"a small hotel that happens to move\". She admits that she rarely sleeps through the night, but says the hours spent reading or watching the countryside slip past the window are part of the pleasure rather than time wasted.",
+                "label": "F"
+            },
+            {
+                "text": "Whether night trains become a mainstream choice again may depend less on nostalgia than on investment. Operators need new rolling stock, which can take years to design and build, and booking a journey that crosses several national networks is still far more complicated than buying a plane ticket. Moravec believes that a single booking website covering every European operator would do more for night trains than any advertising campaign. For now, though, the sight of a sleeper pulling out of a station at dusk is no longer a scene from a museum. It is, once again, simply a way of getting somewhere.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Low-cost airlines could carry passengers across the continent in a couple of hours for less than the price of a bunk",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a sleeping car holds far fewer people than an ordinary carriage",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "arguing that they had been losing money for years",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "some of which hire their locomotives and carriages instead of buying them",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "who spent twenty years planning timetables for a large operator",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "a sleeping car holds far fewer people than an ordinary carriage, and because the train spends the night on a single long journey, it cannot be used for several shorter trips during the day",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "the reason given most often for choosing the train was a practical one: it saved the cost of a hotel room. Environmental motives came second, ahead of comfort and a dislike of airport security queues.",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "overnight trains are sometimes sent on slower diversions, and each country along the route may charge its own fee for using the rails",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the only affordable way to reach a distant coast",
+                "answer": [
+                    "affordable"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "betting that demand had been underestimated rather than lost",
+                "answer": [
+                    "underestimated"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "ticket prices will remain the biggest barrier",
+                "answer": [
+                    "ticket prices"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "watching the countryside slip past the window are part of the pleasure",
+                "answer": [
+                    "countryside"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Low-cost airlines could carry passengers across the continent in a couple of hours for less than the price of a bunk",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a sleeping car holds far fewer people than an ordinary carriage",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "they had been losing money for years",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "some of which hire their locomotives and carriages instead of buying them",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "spent twenty years planning timetables for a large operator",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "a sleeping car holds far fewer people than an ordinary carriage, and because the train spends the night on a single long journey, it cannot be used for several shorter trips during the day",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "the reason given most often for choosing the train was a practical one: it saved the cost of a hotel room... Environmental motives came second, ahead of comfort",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Track maintenance is usually carried out after dark, so overnight trains are sometimes sent on slower diversions, and each country along the route may charge its own fee for using the rails",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the only affordable way",
+                "answer": [
+                    "affordable"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "demand had been underestimated rather than lost",
+                "answer": [
+                    "underestimated"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "ticket prices will remain the biggest barrier",
+                "answer": [
+                    "ticket prices"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "watching the countryside slip past the window are part of the pleasure",
+                "answer": [
+                    "countryside"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "for less than the price of a bunk",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "a sleeping car holds far fewer people than an ordinary carriage",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "arguing that they had been losing money for years",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "some of which hire their locomotives and carriages instead of buying them",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "a sleeping car holds far fewer people than an ordinary carriage, and because the train spends the night on a single long journey, it cannot be used for several shorter trips during the day",
+            "answer": [
+                "B",
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "the reason given most often for choosing the train was a practical one: it saved the cost of a hotel room. Environmental motives came second, ahead of comfort",
+            "answer": [
+                "B",
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "an overnight journey was the only affordable way to reach a distant coast",
+            "answer": [
+                "affordable"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "demand had been underestimated rather than lost",
+            "answer": [
+                "underestimated"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "ticket prices will remain the biggest barrier unless governments agree on common rules",
+            "answer": [
+                "ticket prices"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 14,
+        "agreedFirst": 14,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "All Aboard the Night Train\n\nA. For much of the twentieth century, falling asleep in one city and waking up in another was an ordinary part of European travel. Sleeper carriages linked capitals across the continent, and for many families an overnight journey was the only affordable way to reach a distant coast or visit relatives abroad. By the early 2000s, however, that world seemed to be fading. Low-cost airlines could carry passengers across the continent in a couple of hours for less than the price of a bunk, while new high-speed lines made many daytime rail journeys short enough to finish before dinner. One by one, overnight routes were cut from the timetables.\n\nB. The trouble was partly financial. Night services are expensive to operate: a sleeping car holds far fewer people than an ordinary carriage, and because the train spends the night on a single long journey, it cannot be used for several shorter trips during the day, as a normal train would be. In 2016 Germany's national rail operator withdrew its own sleeper services, arguing that they had been losing money for years. Many observers assumed that this decision marked the end of the story.\n\nC. It did not. Austria's state railway took over several of the abandoned routes and began investing in new carriages, betting that demand had been underestimated rather than lost. Within a few years the gamble appeared to be paying off, and other operators followed its example. Today, travellers can once again board an evening train in cities such as Vienna, Zurich or Brussels and step off the next morning hundreds of kilometres away. On some lines, demand has been so strong that tickets for summer weekends sell out months in advance. A handful of new routes have also been launched by small private companies, some of which hire their locomotives and carriages instead of buying them, a way of keeping start-up costs low.\n\nD. Part of the explanation lies in changing attitudes to flying. A growing number of travellers, particularly younger ones, say they want to reduce the carbon footprint of their holidays, and rail produces far lower emissions per passenger than air travel over the same distance. Yet according to transport researcher Elspeth Moravec, concern for the planet is only part of the picture. In a survey of more than two thousand passengers on four overnight routes, she found that the reason given most often for choosing the train was a practical one: it saved the cost of a hotel room. \"People like to feel virtuous,\" she says, \"but what really persuades them is arriving in the city centre, rested, without having paid for an extra night's accommodation.\" Environmental motives came second, ahead of comfort and a dislike of airport security queues.\n\nE. Not everyone is convinced the revival will last. Gideon Sarkis, who spent twenty years planning timetables for a large operator, points out that night trains face obstacles that daytime services rarely meet. Track maintenance is usually carried out after dark, so overnight trains are sometimes sent on slower diversions, and each country along the route may charge its own fee for using the rails. \"A train crossing three borders can receive three separate bills,\" he explains, \"and in the end it is the passengers who cover the difference.\" In his view, ticket prices will remain the biggest barrier unless governments agree on common rules for charging trains that cross their borders. He is not against night trains, he stresses; he simply wants their supporters to be realistic.\n\nF. Passengers themselves report mixed experiences. Fares vary enormously, from the price of a reclining seat to several hundred euros for a private compartment with its own shower. Delays are common, and some newer carriages have been criticised for being cramped. Food on board is usually simple, often little more than a bread roll and coffee at breakfast. Even so, many travellers describe the journey as an experience in itself. Corinna Valtonen, a teacher who regularly takes an overnight service to visit her sister in another country, compares it to \"a small hotel that happens to move\". She admits that she rarely sleeps through the night, but says the hours spent reading or watching the countryside slip past the window are part of the pleasure rather than time wasted.\n\nG. Whether night trains become a mainstream choice again may depend less on nostalgia than on investment. Operators need new rolling stock, which can take years to design and build, and booking a journey that crosses several national networks is still far more complicated than buying a plane ticket. Moravec believes that a single booking website covering every European operator would do more for night trains than any advertising campaign. For now, though, the sight of a sleeper pulling out of a station at dusk is no longer a scene from a museum. It is, once again, simply a way of getting somewhere.",
+        "title": "All Aboard the Night Train",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "In the early 2000s, a cheap flight could cost less than a bed on a sleeper train.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Low-cost airlines could carry passengers across the continent in a couple of hours for less than the price of a bunk",
+                        "explanation": {
+                            "en": "Paragraph A says low-cost airlines charged less than the price of a bunk, which is a bed on a sleeper train. So the statement agrees with the passage.",
+                            "ru": "В абзаце A говорится, что бюджетные авиакомпании брали за билет меньше, чем стоило место \"bunk\", то есть спальная полка в ночном поезде. Значит, утверждение совпадает с текстом.",
+                            "uk": "В абзаці A сказано, що лоукост-авіакомпанії брали за квиток менше, ніж коштувало місце \"bunk\", тобто спальна полиця в нічному поїзді. Отже, твердження збігається з текстом."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "A sleeping car can carry more passengers than an ordinary carriage.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "a sleeping car holds far fewer people than an ordinary carriage",
+                        "explanation": {
+                            "en": "Paragraph B says a sleeping car holds far fewer people, which is the opposite of the statement.",
+                            "ru": "В абзаце B говорится, что спальный вагон вмещает гораздо меньше людей. Это прямо противоположно утверждению.",
+                            "uk": "В абзаці B сказано, що спальний вагон вміщує набагато менше людей. Це прямо протилежне твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Germany's national rail operator said its sleeper services had been making a profit.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "arguing that they had been losing money for years",
+                        "explanation": {
+                            "en": "Paragraph B says the operator argued that its sleeper services had been losing money for years, so it did not claim they were profitable.",
+                            "ru": "В абзаце B говорится, что оператор утверждал, будто его ночные поезда уже много лет приносили убытки. Значит, он не заявлял, что они прибыльны.",
+                            "uk": "В абзаці B сказано, що оператор стверджував, ніби його нічні поїзди вже багато років були збитковими. Отже, він не заявляв, що вони прибуткові."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Austria's state railway ordered its new carriages from a manufacturer in another country.",
+                        "numbers": [
+                            4
+                        ],
+                        "explanation": {
+                            "en": "Paragraph C says the Austrian railway began investing in new carriages, but it does not say who built them or where they came from.",
+                            "ru": "В абзаце C говорится, что австрийская железная дорога начала вкладывать деньги в новые вагоны, но не сказано, кто их построил и откуда они взялись.",
+                            "uk": "В абзаці C сказано, що австрійська залізниця почала вкладати гроші в нові вагони, але не сказано, хто їх збудував і звідки вони взялися."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Some of the small private companies running night trains rent their trains rather than own them.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "some of which hire their locomotives and carriages instead of buying them",
+                        "explanation": {
+                            "en": "Paragraph C says some private companies hire their locomotives and carriages instead of buying them. To hire means to rent.",
+                            "ru": "В абзаце C говорится, что некоторые частные компании не покупают локомотивы и вагоны, а берут их в аренду (\"hire\"). \"Hire\" означает то же, что \"rent\", то есть арендовать.",
+                            "uk": "В абзаці C сказано, що деякі приватні компанії не купують локомотиви й вагони, а беруть їх в оренду (\"hire\"). \"Hire\" означає те саме, що \"rent\", тобто орендувати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Moravec carried out her survey over a period of several years.",
+                        "numbers": [
+                            6
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D tells us how many passengers and routes were in Moravec's survey, but it says nothing about how long the survey took.",
+                            "ru": "В абзаце D указано, сколько пассажиров и маршрутов охватил опрос Moravec, но ничего не сказано о том, сколько времени он длился.",
+                            "uk": "В абзаці D зазначено, скільки пасажирів і маршрутів охопило опитування Moravec, але нічого не сказано про те, скільки часу воно тривало."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Staff working through the night must be paid higher wages."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Each sleeping car has room for relatively few passengers."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Passengers expected breakfast to be included in the fare."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Old sleeping cars needed frequent and costly repairs."
+                    },
+                    {
+                        "id": "E",
+                        "text": "The trains cannot be reused for shorter trips in the daytime."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B",
+                            "E"
+                        ],
+                        "prompt": "Which TWO reasons does the writer give for why night trains were expensive to run?",
+                        "numbers": [
+                            7,
+                            8
+                        ],
+                        "evidence": "a sleeping car holds far fewer people than an ordinary carriage, and because the train spends the night on a single long journey, it cannot be used for several shorter trips during the day",
+                        "explanation": {
+                            "en": "Paragraph B gives two reasons: sleeping cars hold fewer people, and the train cannot be used for shorter trips during the day. Staff wages, repairs and breakfast are not given as reasons; breakfast is only mentioned later as being simple.",
+                            "ru": "В абзаце B названы две причины: в спальных вагонах помещается меньше людей, а днём поезд нельзя использовать для более коротких поездок. Зарплаты персонала, ремонт и завтрак причинами не названы. Завтрак упоминается только дальше, и лишь как простой.",
+                            "uk": "В абзаці B названо дві причини: у спальних вагонах вміщується менше людей, а вдень поїзд не можна використовувати для коротших поїздок. Зарплати персоналу, ремонт і сніданок причинами не названо. Сніданок згадано лише далі, і тільки як простий."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Most of the people surveyed were travelling on business."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Environmental concerns were mentioned more often than comfort."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Saving on accommodation was the reason passengers gave most often."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Avoiding airport queues mattered more than the environment."
+                    },
+                    {
+                        "id": "E",
+                        "text": "Comfort was the most common reason for choosing the train."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B",
+                            "C"
+                        ],
+                        "prompt": "Which TWO findings come from Moravec's survey?",
+                        "numbers": [
+                            9,
+                            10
+                        ],
+                        "evidence": "the reason given most often for choosing the train was a practical one: it saved the cost of a hotel room. \"People like to feel virtuous,\" she says, \"but what really persuades them is arriving in the city centre, rested, without having paid for an extra night's accommodation.\" Environmental motives came second, ahead of comfort and a dislike of airport security queues.",
+                        "explanation": {
+                            "en": "In Paragraph D, the top reason was saving the cost of a hotel, and environmental motives came second, ahead of comfort and airport queues. So comfort was not first, queues ranked below the environment, and the purpose of travel is never mentioned.",
+                            "ru": "В абзаце D главной причиной оказалась экономия на гостинице, а экологические мотивы заняли второе место, выше комфорта и очередей в аэропорту. Значит, комфорт не был на первом месте, очереди оказались ниже экологии, а цель поездки вообще не упоминается.",
+                            "uk": "В абзаці D головною причиною виявилася економія на готелі, а екологічні мотиви посіли друге місце, вище за комфорт і черги в аеропорту. Отже, комфорт не був на першому місці, черги опинилися нижче за екологію, а мета поїздки взагалі не згадується."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "affordable"
+                        ],
+                        "prompt": "In the past, travelling overnight by train was the only ______ means for many families of reaching faraway places.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "for many families an overnight journey was the only affordable way to reach a distant coast",
+                        "explanation": {
+                            "en": "Paragraph A says that for many families an overnight journey was the only affordable way to reach a distant coast or relatives abroad.",
+                            "ru": "В абзаце A говорится, что для многих семей ночная поездка была единственным доступным по цене способом добраться до далёкого побережья или к родственникам за границей.",
+                            "uk": "В абзаці A сказано, що для багатьох родин нічна поїздка була єдиним доступним за ціною способом дістатися далекого узбережжя або родичів за кордоном."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "underestimated"
+                        ],
+                        "prompt": "Austria's state railway took the view that demand for night trains had not disappeared but had been ______.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "betting that demand had been underestimated rather than lost",
+                        "explanation": {
+                            "en": "Paragraph C says the Austrian railway bet that demand had been underestimated rather than lost. 'Not disappeared' restates 'rather than lost'.",
+                            "ru": "В абзаце C говорится, что австрийская железная дорога сделала ставку на то, что спрос был недооценён, а не потерян. \"Not disappeared\" передаёт другими словами \"rather than lost\".",
+                            "uk": "В абзаці C сказано, що австрійська залізниця зробила ставку на те, що попит був недооцінений, а не втрачений. \"Not disappeared\" іншими словами передає \"rather than lost\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ticket prices"
+                        ],
+                        "prompt": "Sarkis expects ______ to stay the main obstacle for night trains unless governments adopt shared rules.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "ticket prices will remain the biggest barrier unless governments agree on common rules",
+                        "explanation": {
+                            "en": "Paragraph E says that, in Sarkis's view, ticket prices will remain the biggest barrier. 'Main obstacle' restates 'biggest barrier'.",
+                            "ru": "В абзаце E говорится, что, по мнению Sarkis, главным препятствием останутся цены на билеты. \"Main obstacle\" передаёт другими словами \"biggest barrier\".",
+                            "uk": "В абзаці E сказано, що, на думку Sarkis, головною перешкодою залишаться ціни на квитки. \"Main obstacle\" іншими словами передає \"biggest barrier\"."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "9": "b2q2",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

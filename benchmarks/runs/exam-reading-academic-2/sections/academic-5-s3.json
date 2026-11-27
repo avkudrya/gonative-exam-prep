@@ -1,0 +1,1264 @@
+{
+    "form": {
+        "first": [
+            "the correct option is the longest in 3 of 5 multiple-choice questions (block 2 (multiple_choice), question 1; block 2 (multiple_choice), question 3; block 2 (multiple_choice), question 4); make the options alike in length so that length gives no hint"
+        ],
+        "afterRepair": []
+    },
+    "plan": "academic-5|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.29112,
+            "provider": "anthropic",
+            "outputTokens": 13675
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.164104,
+            "provider": "anthropic",
+            "outputTokens": 6081
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.016974,
+            "provider": "anthropic",
+            "outputTokens": 773
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.02414,
+            "provider": "openai",
+            "outputTokens": 1139
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.02841,
+            "provider": "xai",
+            "outputTokens": 3404
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.087696,
+            "provider": "anthropic",
+            "outputTokens": 4002
+        }
+    ],
+    "draft": {
+        "title": "The Trouble with Open Offices",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Saving money, rather than the original design philosophy, explains the spread of today's open-plan offices.",
+                        "options": [],
+                        "evidence": "Today's version, however, owes less to that philosophy than to accountancy.",
+                        "explanation": "In Paragraph A the writer says modern open offices come more from 'accountancy' (saving money on rent) than from the ideas of the Bürolandschaft movement. This matches the statement."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "People who promote open-plan offices usually begin by pointing to the money they save.",
+                        "options": [],
+                        "evidence": "Supporters rarely lead with this argument.",
+                        "explanation": "In Paragraph A the writer says supporters 'rarely lead with' the financial argument and talk about conversation and hierarchy instead. This is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Wearing headphones is an effective way for workers to reduce distraction in an open-plan office.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B mentions headphones only as one way people try to get privacy. The writer never says whether headphones actually reduce distraction, so the writer's view cannot be known."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Abalos's results deserve attention even though his study was limited in size.",
+                        "options": [],
+                        "evidence": "His study involved only two companies, and he is careful not to generalise too widely, but the pattern is difficult to dismiss.",
+                        "explanation": "In Paragraph B the writer admits the study covered only two companies but says the pattern is 'difficult to dismiss', meaning it should be taken seriously."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Okonjo's experiment should have included a larger number of participants.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D gives the number of volunteers (240) and points out one limitation: the tasks lasted only one afternoon. The writer says nothing about whether the group was too small."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Private offices should be brought back for most employees.",
+                        "options": [],
+                        "evidence": "None of this means that walls should simply return.",
+                        "explanation": "At the start of Paragraph E the writer clearly says the problems of open offices do not mean walls should return, and adds that private offices can isolate people. This contradicts the statement."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Most office work involves a mixture of collaborative moments and long periods of working alone.",
+                        "options": [],
+                        "evidence": "most office work alternates between such moments and long stretches of solitary concentration",
+                        "explanation": "In Paragraph E the writer says most office work moves between moments of learning from others and long periods of 'solitary concentration', which is what the statement says."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What was the main idea behind the Bürolandschaft movement?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "grouping desks to mirror how information moved between teams"
+                            },
+                            {
+                                "id": "B",
+                                "text": "placing senior managers in private rooms set well apart from their staff"
+                            },
+                            {
+                                "id": "C",
+                                "text": "fitting as many employees as possible into the smallest floor space"
+                            },
+                            {
+                                "id": "D",
+                                "text": "setting out desks in long straight rows without internal walls"
+                            }
+                        ],
+                        "evidence": "grouped desks organically to reflect how information actually flowed between teams",
+                        "explanation": "Paragraph A says the movement grouped desks to reflect how information flowed between teams. Fitting more people into less space describes today's offices, and long rows of desks are also part of the modern arrangement, not the 1950s idea."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What did Abalos find after the two firms moved into open floors?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Staff talked in person less and communicated more through screens."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Staff talked in person more and sent fewer written messages."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Staff talked in person more at first but less after some months."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Staff talked in person less but sent about the same number of emails."
+                            }
+                        ],
+                        "evidence": "face-to-face exchanges fell by roughly two-thirds in the months after the move, while emails and instant messages rose sharply",
+                        "explanation": "Paragraph B says face-to-face exchanges fell while emails and instant messages rose sharply. The emails did not stay the same, and there was no early increase in conversation."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "According to Thorvald, what does the most harm to concentration?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "a high overall level of sound across the whole office"
+                            },
+                            {
+                                "id": "B",
+                                "text": "the constant background hum of ventilation systems"
+                            },
+                            {
+                                "id": "C",
+                                "text": "speech that listeners can make out and follow"
+                            },
+                            {
+                                "id": "D",
+                                "text": "echoes created by hard floors and bare ceiling surfaces"
+                            }
+                        ],
+                        "evidence": "What damages it is intelligible speech: a conversation at the next desk that the brain cannot help following.",
+                        "explanation": "Paragraph C says the problem is 'intelligible speech' that the brain cannot help following. Thorvald says overall volume is rarely the problem, and a steady hum can actually help concentration."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What was surprising about Okonjo's findings?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Workers in the open setting made fewer errors than the researchers expected."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Open-setting workers felt more tired even when they scored equally well."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Workers who were easily distracted actually did better in the open setting."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Workers in the quiet room reported more tiredness than those in the open office."
+                            }
+                        ],
+                        "evidence": "they also reported greater fatigue at the end of the session, including participants whose scores were no worse than those of the quiet group",
+                        "explanation": "Paragraph D calls it 'more surprising' that people in the open setting felt more tired, even those whose scores were as good as the quiet group's. Easily distracted workers suffered most, not least, and the open group made more errors, not fewer."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What conclusion did Mendelsohn draw from the redesign he managed?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "The open desks had proved more popular than the booths."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The company had not provided enough space for quiet work."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Activity-based working was not suitable for his company."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Employees preferred to remain visible at their own desks."
+                            }
+                        ],
+                        "evidence": "The lesson he drew was that the company had underestimated the demand for quiet, not that the design had failed.",
+                        "explanation": "Paragraph F says Mendelsohn decided the company had underestimated how much quiet space people wanted. He specifically did not conclude that the design had failed, and it was the booths, not the open desks, that were full."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "filtering out"
+                        ],
+                        "prompt": "Okonjo believes that ______ unwanted noise is in itself an exhausting effort for workers.",
+                        "options": [],
+                        "evidence": "Okonjo argues that the effort of filtering out unwanted sound is itself tiring",
+                        "explanation": "Paragraph D says the effort of 'filtering out' unwanted sound is tiring. 'Exhausting' in the summary restates 'tiring'."
+                    },
+                    {
+                        "answer": [
+                            "output"
+                        ],
+                        "prompt": "Because this cost is hidden, managers who pay attention only to ______ may fail to notice it.",
+                        "options": [],
+                        "evidence": "its cost may be hidden from managers who look only at output",
+                        "explanation": "Paragraph D says the cost may be hidden from managers who 'look only at output'. 'Pay attention only to' restates 'look only at'."
+                    },
+                    {
+                        "answer": [
+                            "overheard conversation"
+                        ],
+                        "prompt": "The writer accepts that a junior employee may learn more from ______ than from any formal training.",
+                        "options": [],
+                        "evidence": "Some work genuinely benefits from overheard conversation",
+                        "explanation": "Paragraph E says some work benefits from 'overheard conversation', giving the example of a junior employee who learns by catching a colleague solving a problem."
+                    },
+                    {
+                        "answer": [
+                            "booths"
+                        ],
+                        "prompt": "In activity-based working, staff can use small enclosed ______ when they need to make phone calls.",
+                        "options": [],
+                        "evidence": "small enclosed booths for phone calls",
+                        "explanation": "Paragraph F lists 'small enclosed booths for phone calls' as one of the spaces in activity-based working."
+                    },
+                    {
+                        "answer": [
+                            "visible"
+                        ],
+                        "prompt": "Such designs fail if there are too few quiet spaces or if employees think they must stay ______ at their desks to appear hard-working.",
+                        "options": [],
+                        "evidence": "when people feel they must remain visible at their desks to be seen as hard-working",
+                        "explanation": "Paragraph F reports Okonjo's warning that these designs fail when people feel they must 'remain visible' at their desks. 'Stay' restates 'remain'."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Henrik Abalos",
+                "role": "organisational researcher who tracked two firms moving into open-plan offices",
+                "gender": "male"
+            },
+            {
+                "name": "Yasmin Thorvald",
+                "role": "acoustics engineer who advises companies on office design",
+                "gender": "female"
+            },
+            {
+                "name": "Mercedes Okonjo",
+                "role": "environmental psychologist who studied distraction and fatigue in open offices",
+                "gender": "female"
+            },
+            {
+                "name": "Tariq Mendelsohn",
+                "role": "facilities manager who oversaw an activity-based office redesign",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Walk into almost any modern workplace and you are likely to find the same arrangement: long rows of desks, no internal walls, and managers seated, at least in theory, among their staff. The open-plan office has become so familiar that it is easy to forget it was once a radical idea. Its roots lie partly in a German movement of the late 1950s known as Bürolandschaft, or 'office landscape', which grouped desks organically to reflect how information actually flowed between teams. Today's version, however, owes less to that philosophy than to accountancy. Removing walls allows more employees to fit into less floor space, and the savings on rent can be considerable. Supporters rarely lead with this argument. Instead, they claim that openness encourages conversation, speeds up decisions and breaks down hierarchy. It is these claims, rather than the financial ones, that deserve scrutiny.",
+                "label": "A"
+            },
+            {
+                "text": "The central promise is that people who can see one another will talk more. When the organisational researcher Henrik Abalos tracked two firms as they moved from cellular offices into open floors, he found the reverse. Using wearable sensors that recorded when colleagues were within speaking distance, his team observed that face-to-face exchanges fell by roughly two-thirds in the months after the move, while emails and instant messages rose sharply. Abalos's explanation is that people who feel constantly observed seek privacy in whatever way they can: they wear headphones, avoid eye contact and move conversations onto screens. \"Remove the walls,\" he says, \"and employees build invisible ones.\" His study involved only two companies, and he is careful not to generalise too widely, but the pattern is difficult to dismiss.",
+                "label": "B"
+            },
+            {
+                "text": "Noise is the most obvious complaint, and also the most misunderstood. Yasmin Thorvald, an acoustics engineer who advises companies on office design, points out that overall volume is rarely the real problem. A steady background hum, such as the sound of ventilation, can actually help concentration. What damages it is intelligible speech: a conversation at the next desk that the brain cannot help following. Thorvald's measurements suggest that a single nearby phone call can be more disruptive than the general noise of a busy café. Carpets and ceiling panels reduce echo, she says, but they cannot stop words from carrying across a few metres of open floor. Her advice to clients is therefore less about absorbing sound than about separating people who need to talk from people who need to think.",
+                "label": "C"
+            },
+            {
+                "text": "Distraction has consequences beyond irritation. The environmental psychologist Mercedes Okonjo asked 240 volunteers to complete demanding writing and checking tasks in either a quiet room or a simulated open office. Those in the open setting made more errors on average. More surprisingly, they also reported greater fatigue at the end of the session, including participants whose scores were no worse than those of the quiet group. Okonjo argues that the effort of filtering out unwanted sound is itself tiring, so its cost may be hidden from managers who look only at output. Her volunteers worked on set tasks for a single afternoon, so the effects over months remain unknown. Those who described themselves as easily distracted suffered most, which suggests that a single layout cannot suit everyone equally.",
+                "label": "D"
+            },
+            {
+                "text": "None of this means that walls should simply return. Defenders of open plans are right that private offices can isolate people and reinforce status; few would wish to revive the corridor of closed doors with the most senior names on the largest rooms. Nor is collaboration a myth. Some work genuinely benefits from overheard conversation: a junior employee who catches a colleague solving a problem may learn more than any training course could teach. The difficulty is that most office work alternates between such moments and long stretches of solitary concentration, and the standard open floor caters for only one of them.",
+                "label": "E"
+            },
+            {
+                "text": "The more promising approach, in my view, is to give employees a choice of settings. Some organisations have experimented with what is often called activity-based working, in which staff move between quiet zones, small enclosed booths for phone calls, and open areas for group work. Okonjo is cautiously supportive of such designs, but she warns that they fail when the quiet spaces are too few or when people feel they must remain visible at their desks to be seen as hard-working. Tariq Mendelsohn, a facilities manager who oversaw one such redesign, found that the booths were booked solid within a week, while a quarter of the open desks sat empty. The lesson he drew was that the company had underestimated the demand for quiet, not that the design had failed.",
+                "label": "F"
+            },
+            {
+                "text": "The question, then, is not whether open-plan offices work, but what they are being asked to do. If the aim is to cut costs, they succeed. If the aim is to make people collaborate, the evidence suggests that removing walls is a blunt and sometimes counterproductive tool. Collaboration depends on trust, shared goals and time, none of which can be delivered by a floor plan. Managers who knock down walls in the hope of creating a lively, creative atmosphere are, in effect, asking furniture to do the work of leadership. Organisations that want both conversation and concentration will need to design for both, and accept that the cheapest layout is rarely the most productive one.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Today's version, however, owes less to that philosophy than to accountancy. Removing walls allows more employees to fit into less floor space, and the savings on rent can be considerable.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Supporters rarely lead with this argument.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "he is careful not to generalise too widely, but the pattern is difficult to dismiss.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "None of this means that walls should simply return.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "most office work alternates between such moments and long stretches of solitary concentration",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "which grouped desks organically to reflect how information actually flowed between teams",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "face-to-face exchanges fell by roughly two-thirds in the months after the move, while emails and instant messages rose sharply",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "What damages it is intelligible speech: a conversation at the next desk that the brain cannot help following.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "they also reported greater fatigue at the end of the session, including participants whose scores were no worse than those of the quiet group",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the company had underestimated the demand for quiet, not that the design had failed",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the effort of filtering out unwanted sound is itself tiring",
+                "answer": [
+                    "filtering out"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "its cost may be hidden from managers who look only at output",
+                "answer": [
+                    "output"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some work genuinely benefits from overheard conversation: a junior employee who catches a colleague solving a problem may learn more than any training course could teach.",
+                "answer": [
+                    "overheard conversation"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "small enclosed booths for phone calls",
+                "answer": [
+                    "booths"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "people feel they must remain visible at their desks to be seen as hard-working",
+                "answer": [
+                    "visible"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Today's version, however, owes less to that philosophy than to accountancy.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Supporters rarely lead with this argument. Instead, they claim that openness encourages conversation",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "His study involved only two companies, and he is careful not to generalise too widely, but the pattern is difficult to dismiss.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "None of this means that walls should simply return.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "The difficulty is that most office work alternates between such moments and long stretches of solitary concentration",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Bürolandschaft, or 'office landscape', which grouped desks organically to reflect how information actually flowed between teams",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "face-to-face exchanges fell by roughly two-thirds in the months after the move, while emails and instant messages rose sharply",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "What damages it is intelligible speech: a conversation at the next desk that the brain cannot help following.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "More surprisingly, they also reported greater fatigue at the end of the session, including participants whose scores were no worse than those of the quiet group.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "The lesson he drew was that the company had underestimated the demand for quiet, not that the design had failed.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the effort of filtering out unwanted sound is itself tiring",
+                "answer": [
+                    "filtering out"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "its cost may be hidden from managers who look only at output",
+                "answer": [
+                    "output"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some work genuinely benefits from overheard conversation: a junior employee who catches a colleague solving a problem may learn more than any training course could teach.",
+                "answer": [
+                    "overheard conversation"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "small enclosed booths for phone calls",
+                "answer": [
+                    "booths"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "people feel they must remain visible at their desks to be seen as hard-working",
+                "answer": [
+                    "visible"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Today's version, however, owes less to that philosophy than to accountancy.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Supporters rarely lead with this argument.",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "His study involved only two companies, and he is careful not to generalise too widely, but the pattern is difficult to dismiss.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "None of this means that walls should simply return.",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "which grouped desks organically to reflect how information actually flowed between teams.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "face-to-face exchanges fell by roughly two-thirds in the months after the move, while emails and instant messages rose sharply.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "What damages it is intelligible speech: a conversation at the next desk that the brain cannot help following.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "More surprisingly, they also reported greater fatigue at the end of the session, including participants whose scores were no worse than those of the quiet group.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the effort of filtering out unwanted sound is itself tiring",
+            "answer": [
+                "filtering out"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "its cost may be hidden from managers who look only at output",
+            "answer": [
+                "output"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Some work genuinely benefits from overheard conversation: a junior employee who catches a colleague solving a problem may learn more than any training course could teach.",
+            "answer": [
+                "overheard conversation"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "small enclosed booths for phone calls",
+            "answer": [
+                "booths"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 17,
+        "agreedFirst": 17,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The Trouble with Open Offices\n\nA. Walk into almost any modern workplace and you are likely to find the same arrangement: long rows of desks, no internal walls, and managers seated, at least in theory, among their staff. The open-plan office has become so familiar that it is easy to forget it was once a radical idea. Its roots lie partly in a German movement of the late 1950s known as Bürolandschaft, or 'office landscape', which grouped desks organically to reflect how information actually flowed between teams. Today's version, however, owes less to that philosophy than to accountancy. Removing walls allows more employees to fit into less floor space, and the savings on rent can be considerable. Supporters rarely lead with this argument. Instead, they claim that openness encourages conversation, speeds up decisions and breaks down hierarchy. It is these claims, rather than the financial ones, that deserve scrutiny.\n\nB. The central promise is that people who can see one another will talk more. When the organisational researcher Henrik Abalos tracked two firms as they moved from cellular offices into open floors, he found the reverse. Using wearable sensors that recorded when colleagues were within speaking distance, his team observed that face-to-face exchanges fell by roughly two-thirds in the months after the move, while emails and instant messages rose sharply. Abalos's explanation is that people who feel constantly observed seek privacy in whatever way they can: they wear headphones, avoid eye contact and move conversations onto screens. \"Remove the walls,\" he says, \"and employees build invisible ones.\" His study involved only two companies, and he is careful not to generalise too widely, but the pattern is difficult to dismiss.\n\nC. Noise is the most obvious complaint, and also the most misunderstood. Yasmin Thorvald, an acoustics engineer who advises companies on office design, points out that overall volume is rarely the real problem. A steady background hum, such as the sound of ventilation, can actually help concentration. What damages it is intelligible speech: a conversation at the next desk that the brain cannot help following. Thorvald's measurements suggest that a single nearby phone call can be more disruptive than the general noise of a busy café. Carpets and ceiling panels reduce echo, she says, but they cannot stop words from carrying across a few metres of open floor. Her advice to clients is therefore less about absorbing sound than about separating people who need to talk from people who need to think.\n\nD. Distraction has consequences beyond irritation. The environmental psychologist Mercedes Okonjo asked 240 volunteers to complete demanding writing and checking tasks in either a quiet room or a simulated open office. Those in the open setting made more errors on average. More surprisingly, they also reported greater fatigue at the end of the session, including participants whose scores were no worse than those of the quiet group. Okonjo argues that the effort of filtering out unwanted sound is itself tiring, so its cost may be hidden from managers who look only at output. Her volunteers worked on set tasks for a single afternoon, so the effects over months remain unknown. Those who described themselves as easily distracted suffered most, which suggests that a single layout cannot suit everyone equally.\n\nE. None of this means that walls should simply return. Defenders of open plans are right that private offices can isolate people and reinforce status; few would wish to revive the corridor of closed doors with the most senior names on the largest rooms. Nor is collaboration a myth. Some work genuinely benefits from overheard conversation: a junior employee who catches a colleague solving a problem may learn more than any training course could teach. The difficulty is that most office work alternates between such moments and long stretches of solitary concentration, and the standard open floor caters for only one of them.\n\nF. The more promising approach, in my view, is to give employees a choice of settings. Some organisations have experimented with what is often called activity-based working, in which staff move between quiet zones, small enclosed booths for phone calls, and open areas for group work. Okonjo is cautiously supportive of such designs, but she warns that they fail when the quiet spaces are too few or when people feel they must remain visible at their desks to be seen as hard-working. Tariq Mendelsohn, a facilities manager who oversaw one such redesign, found that the booths were booked solid within a week, while a quarter of the open desks sat empty. The lesson he drew was that the company had underestimated the demand for quiet, not that the design had failed.\n\nG. The question, then, is not whether open-plan offices work, but what they are being asked to do. If the aim is to cut costs, they succeed. If the aim is to make people collaborate, the evidence suggests that removing walls is a blunt and sometimes counterproductive tool. Collaboration depends on trust, shared goals and time, none of which can be delivered by a floor plan. Managers who knock down walls in the hope of creating a lively, creative atmosphere are, in effect, asking furniture to do the work of leadership. Organisations that want both conversation and concentration will need to design for both, and accept that the cheapest layout is rarely the most productive one.",
+        "title": "The Trouble with Open Offices",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Saving money, rather than the original design philosophy, explains the spread of today's open-plan offices.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Today's version, however, owes less to that philosophy than to accountancy.",
+                        "explanation": {
+                            "en": "In Paragraph A the writer says modern open offices come more from 'accountancy' (saving money on rent) than from the ideas of the Bürolandschaft movement. This matches the statement.",
+                            "ru": "В абзаце A автор пишет, что современные открытые офисы появились скорее из соображений \"accountancy\" (экономии на аренде), чем из идей движения Bürolandschaft. Это совпадает с утверждением.",
+                            "uk": "В абзаці A автор пише, що сучасні відкриті офіси з'явилися радше з міркувань \"accountancy\" (економії на оренді), ніж з ідей руху Bürolandschaft. Це збігається з твердженням."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "People who promote open-plan offices usually begin by pointing to the money they save.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Supporters rarely lead with this argument.",
+                        "explanation": {
+                            "en": "In Paragraph A the writer says supporters 'rarely lead with' the financial argument and talk about conversation and hierarchy instead. This is the opposite of the statement.",
+                            "ru": "В абзаце A автор говорит, что сторонники \"rarely lead with\" финансовый аргумент, а вместо этого говорят об общении и иерархии. Это противоположно утверждению.",
+                            "uk": "В абзаці A автор каже, що прихильники \"rarely lead with\" фінансовий аргумент, а натомість говорять про спілкування та ієрархію. Це протилежне твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Wearing headphones is an effective way for workers to reduce distraction in an open-plan office.",
+                        "numbers": [
+                            3
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B mentions headphones only as one way people try to get privacy. The writer never says whether headphones actually reduce distraction, so the writer's view cannot be known.",
+                            "ru": "В абзаце B наушники упоминаются лишь как один из способов, которыми люди пытаются уединиться. Автор нигде не говорит, действительно ли наушники уменьшают отвлечение, поэтому его мнение узнать нельзя.",
+                            "uk": "В абзаці B навушники згадано лише як один зі способів, якими люди намагаються усамітнитися. Автор ніде не каже, чи справді навушники зменшують відволікання, тож його думку дізнатися неможливо."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Abalos's results deserve attention even though his study was limited in size.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "His study involved only two companies, and he is careful not to generalise too widely, but the pattern is difficult to dismiss.",
+                        "explanation": {
+                            "en": "In Paragraph B the writer admits the study covered only two companies but says the pattern is 'difficult to dismiss', meaning it should be taken seriously.",
+                            "ru": "В абзаце B автор признаёт, что исследование охватило только две компании, но называет закономерность \"difficult to dismiss\" — то есть к ней стоит отнестись серьёзно.",
+                            "uk": "В абзаці B автор визнає, що дослідження охопило лише дві компанії, але називає закономірність \"difficult to dismiss\" — тобто до неї варто поставитися серйозно."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Okonjo's experiment should have included a larger number of participants.",
+                        "numbers": [
+                            5
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D gives the number of volunteers (240) and points out one limitation: the tasks lasted only one afternoon. The writer says nothing about whether the group was too small.",
+                            "ru": "В абзаце D указано число добровольцев (240) и названо одно ограничение: задания длились всего полдня. О том, не была ли группа слишком маленькой, автор ничего не говорит.",
+                            "uk": "В абзаці D вказано кількість добровольців (240) і названо одне обмеження: завдання тривали лише пів дня. Про те, чи не була група замалою, автор нічого не каже."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Private offices should be brought back for most employees.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "None of this means that walls should simply return.",
+                        "explanation": {
+                            "en": "At the start of Paragraph E the writer clearly says the problems of open offices do not mean walls should return, and adds that private offices can isolate people. This contradicts the statement.",
+                            "ru": "В начале абзаца E автор прямо говорит, что недостатки открытых офисов не означают, что нужно возвращать стены, и добавляет, что отдельные кабинеты могут изолировать людей. Это противоречит утверждению.",
+                            "uk": "На початку абзацу E автор прямо каже, що недоліки відкритих офісів не означають, що слід повертати стіни, і додає, що окремі кабінети можуть ізолювати людей. Це суперечить твердженню."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "placing senior managers in private rooms set well apart from their staff"
+                    },
+                    {
+                        "id": "B",
+                        "text": "fitting as many employees as possible into the smallest floor space"
+                    },
+                    {
+                        "id": "C",
+                        "text": "grouping desks to mirror how information moved between teams"
+                    },
+                    {
+                        "id": "D",
+                        "text": "setting out desks in long straight rows without internal walls"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What was the main idea behind the Bürolandschaft movement?",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "grouped desks organically to reflect how information actually flowed between teams",
+                        "explanation": {
+                            "en": "Paragraph A says the movement grouped desks to reflect how information flowed between teams. Fitting more people into less space describes today's offices, and long rows of desks are also part of the modern arrangement, not the 1950s idea.",
+                            "ru": "В абзаце A сказано, что движение группировало столы так, чтобы отразить, как информация передавалась между командами. Размещение большего числа людей на меньшей площади описывает сегодняшние офисы, а длинные ряды столов — тоже черта современной планировки, а не идея 1950-х годов.",
+                            "uk": "В абзаці A сказано, що рух групував столи так, щоб відобразити, як інформація передавалася між командами. Розміщення більшої кількості людей на меншій площі описує сучасні офіси, а довгі ряди столів — теж риса сучасного планування, а не ідея 1950-х років."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Staff talked in person less but sent about the same number of emails."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Staff talked in person more at first but less after some months."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Staff talked in person more and sent fewer written messages."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Staff talked in person less and communicated more through screens."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What did Abalos find after the two firms moved into open floors?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "face-to-face exchanges fell by roughly two-thirds in the months after the move, while emails and instant messages rose sharply",
+                        "explanation": {
+                            "en": "Paragraph B says face-to-face exchanges fell while emails and instant messages rose sharply. The emails did not stay the same, and there was no early increase in conversation.",
+                            "ru": "В абзаце B говорится, что личного общения стало меньше, а число писем и мгновенных сообщений резко выросло. Количество писем не осталось прежним, и никакого первоначального роста общения не было.",
+                            "uk": "В абзаці B йдеться про те, що особистого спілкування поменшало, а кількість листів і миттєвих повідомлень різко зросла. Кількість листів не залишилася такою самою, і жодного початкового зростання спілкування не було."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "speech that listeners can make out and follow"
+                    },
+                    {
+                        "id": "B",
+                        "text": "echoes created by hard floors and bare ceiling surfaces"
+                    },
+                    {
+                        "id": "C",
+                        "text": "a high overall level of sound across the whole office"
+                    },
+                    {
+                        "id": "D",
+                        "text": "the constant background hum of ventilation systems"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to Thorvald, what does the most harm to concentration?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "What damages it is intelligible speech: a conversation at the next desk that the brain cannot help following.",
+                        "explanation": {
+                            "en": "Paragraph C says the problem is 'intelligible speech' that the brain cannot help following. Thorvald says overall volume is rarely the problem, and a steady hum can actually help concentration.",
+                            "ru": "В абзаце C сказано, что проблема — это \"intelligible speech\", за которой мозг не может не следить. Thorvald говорит, что общая громкость редко бывает проблемой, а ровный фоновый гул может даже помогать сосредоточиться.",
+                            "uk": "В абзаці C сказано, що проблема — це \"intelligible speech\", за якою мозок не може не стежити. Thorvald каже, що загальна гучність рідко буває проблемою, а рівний фоновий гул може навіть допомагати зосередитися."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Workers in the quiet room reported more tiredness than those in the open office."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Open-setting workers felt more tired even when they scored equally well."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Workers in the open setting made fewer errors than the researchers expected."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Workers who were easily distracted actually did better in the open setting."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What was surprising about Okonjo's findings?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "they also reported greater fatigue at the end of the session, including participants whose scores were no worse than those of the quiet group",
+                        "explanation": {
+                            "en": "Paragraph D calls it 'more surprising' that people in the open setting felt more tired, even those whose scores were as good as the quiet group's. Easily distracted workers suffered most, not least, and the open group made more errors, not fewer.",
+                            "ru": "В абзаце D автор называет \"more surprising\" то, что люди в открытом пространстве уставали сильнее — даже те, чьи результаты были не хуже, чем у группы в тишине. Сильнее всего страдали как раз легко отвлекающиеся сотрудники, а не наоборот, и группа в открытом пространстве делала больше ошибок, а не меньше.",
+                            "uk": "В абзаці D автор називає \"more surprising\" те, що люди у відкритому просторі втомлювалися більше — навіть ті, чиї результати були не гірші, ніж у групи в тиші. Найбільше страждали саме працівники, які легко відволікаються, а не навпаки, і група у відкритому просторі робила більше помилок, а не менше."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "filtering out"
+                        ],
+                        "prompt": "Okonjo believes that ______ unwanted noise is in itself an exhausting effort for workers.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Okonjo argues that the effort of filtering out unwanted sound is itself tiring",
+                        "explanation": {
+                            "en": "Paragraph D says the effort of 'filtering out' unwanted sound is tiring. 'Exhausting' in the summary restates 'tiring'.",
+                            "ru": "В абзаце D сказано, что усилия, необходимые для \"filtering out\" ненужных звуков, утомляют (\"tiring\"). Слово \"exhausting\" в кратком изложении перефразирует \"tiring\".",
+                            "uk": "В абзаці D сказано, що зусилля, потрібні для \"filtering out\" непотрібних звуків, втомлюють (\"tiring\"). Слово \"exhausting\" у короткому викладі перефразовує \"tiring\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "output"
+                        ],
+                        "prompt": "Because this cost is hidden, managers who pay attention only to ______ may fail to notice it.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "its cost may be hidden from managers who look only at output",
+                        "explanation": {
+                            "en": "Paragraph D says the cost may be hidden from managers who 'look only at output'. 'Pay attention only to' restates 'look only at'.",
+                            "ru": "В абзаце D сказано, что эти потери могут оставаться незаметными для руководителей, которые \"look only at output\". Выражение \"pay attention only to\" в кратком изложении перефразирует \"look only at\".",
+                            "uk": "В абзаці D сказано, що ці втрати можуть лишатися непомітними для керівників, які \"look only at output\". Вираз \"pay attention only to\" у короткому викладі перефразовує \"look only at\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "overheard conversation"
+                        ],
+                        "prompt": "The writer accepts that a junior employee may learn more from ______ than from any formal training.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "Some work genuinely benefits from overheard conversation",
+                        "explanation": {
+                            "en": "Paragraph E says some work benefits from 'overheard conversation', giving the example of a junior employee who learns by catching a colleague solving a problem.",
+                            "ru": "В абзаце E сказано, что некоторым видам работы идёт на пользу \"overheard conversation\", и приводится пример младшего сотрудника, который учится, случайно услышав, как коллега решает задачу.",
+                            "uk": "В абзаці E сказано, що деяким видам роботи йде на користь \"overheard conversation\", і наведено приклад молодшого працівника, який навчається, випадково почувши, як колега розв'язує проблему."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "booths"
+                        ],
+                        "prompt": "In activity-based working, staff can use small enclosed ______ when they need to make phone calls.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "small enclosed booths for phone calls",
+                        "explanation": {
+                            "en": "Paragraph F lists 'small enclosed booths for phone calls' as one of the spaces in activity-based working.",
+                            "ru": "В абзаце F \"small enclosed booths for phone calls\" названы одним из типов пространств в модели \"activity-based working\".",
+                            "uk": "В абзаці F \"small enclosed booths for phone calls\" названо одним із типів просторів у моделі \"activity-based working\"."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

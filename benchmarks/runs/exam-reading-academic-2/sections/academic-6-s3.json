@@ -1,0 +1,1356 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-6|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.3851,
+            "provider": "anthropic",
+            "outputTokens": 18322
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.017054,
+            "provider": "anthropic",
+            "outputTokens": 754
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.023858,
+            "provider": "openai",
+            "outputTokens": 1099
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.023292,
+            "provider": "anthropic",
+            "outputTokens": 369
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.00587,
+            "provider": "anthropic",
+            "outputTokens": 87
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.007163,
+            "provider": "openai",
+            "outputTokens": 228
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.019834,
+            "provider": "xai",
+            "outputTokens": 1935
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.101832,
+            "provider": "anthropic",
+            "outputTokens": 4700
+        }
+    ],
+    "draft": {
+        "title": "In Praise of Failure",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Scientific journals give a misleadingly successful impression of what research involves.",
+                        "options": [],
+                        "evidence": "offer something closer to a highlight reel than a full recording of the match",
+                        "explanation": "In Paragraph A the writer says journals are like a highlight reel rather than a full recording, after saying that real research is often unsuccessful. This means journals show mainly the successes, so the writer agrees."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The high proportion of positive findings in journals is probably a sign of scientists' skill at predicting results.",
+                        "options": [],
+                        "evidence": "A far more plausible explanation is that studies which find nothing are quietly left unpublished",
+                        "explanation": "In Paragraph B the writer says it would be 'pleasant' to believe scientists are gifted at predicting nature, but rejects this. The writer thinks the real reason is that negative studies are not published."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Reviews that combine the results of many studies should no longer be used to guide medical decisions.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C says that such reviews can exaggerate a treatment's benefit when disappointing studies are missing. However, the writer never says whether these reviews should stop being used."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "There is a legitimate reason why researchers may hesitate to publish experiments that failed.",
+                        "options": [],
+                        "evidence": "But there is also a more respectable reason, and it deserves to be taken seriously.",
+                        "explanation": "In Paragraph E the writer describes a 'respectable reason' – a failure may come from faulty equipment or clumsy technique – and says it should be taken seriously and that they accept the concern."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "All journals should be required to adopt the format in which studies are accepted before any data are collected.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph F describes this format and reports an editor's positive experience of it. The writer never says whether every journal should be forced to use it."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Every unsuccessful experiment deserves to be published as a complete journal article.",
+                        "options": [],
+                        "evidence": "Nor does every unsuccessful study need to become a full journal article",
+                        "explanation": "In Paragraph G the writer says a short, searchable record is often enough, so not every failed study needs a full article. This is the opposite of the statement."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Sunil Varghese"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Kaito Morimoto"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Ximena Arroyo"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Odette Lamarque"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Agata Wiśniewska"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "linked a change in publishing habits to increasing rivalry for money and recognition",
+                        "options": [],
+                        "evidence": "as the competition for research funding and for citations grew fiercer",
+                        "explanation": "In Paragraph D the historian Ximena Arroyo says the change came as competition for funding (money) and citations (recognition) grew fiercer."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "requires newcomers to study a record of earlier unsuccessful work",
+                        "options": [],
+                        "evidence": "new members must read it before they begin their own projects",
+                        "explanation": "In Paragraph E Odette Lamarque's group keeps an archive of reactions that did not work, and new members must read it before starting their projects."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "found that the great majority of studies examined reported results that confirmed the authors' expectations",
+                        "options": [],
+                        "evidence": "found that more than nine in ten claimed to support the hypothesis the authors had set out to test",
+                        "explanation": "In Paragraph B Sunil Varghese's analysis of about 1,500 studies found that more than nine in ten supported the authors' hypothesis."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "observed that reviewers judge a study's design more strictly when they cannot know its results",
+                        "options": [],
+                        "evidence": "Unable to see the outcome, they examine the methods far more critically",
+                        "explanation": "In Paragraph F Agata Wiśniewska says that because reviewers cannot see the outcome, they look at the methods more critically."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "reported that some abandoned work proved useful when it was tried again with improved tools",
+                        "options": [],
+                        "evidence": "several entries, revisited years later with better equipment, became the starting points for successful studies",
+                        "explanation": "In Paragraph E Odette Lamarque reports that some failed reactions, tried again later with better equipment, led to successful studies."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "discovered that several other teams had already given up on an approach he was pursuing",
+                        "options": [],
+                        "evidence": "did he discover that at least three other groups had tried the same method and given up",
+                        "explanation": "In Paragraph C Kaito Morimoto learned at a workshop that at least three other groups had tried and abandoned the crystal-growing method he was using."
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why does the writer compare scientific journals to a 'highlight reel'?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "to suggest that journals mostly show the successful parts of research"
+                            },
+                            {
+                                "id": "B",
+                                "text": "to suggest that journals are written chiefly to entertain their readers"
+                            },
+                            {
+                                "id": "C",
+                                "text": "to suggest that journals describe experiments too briefly to be useful"
+                            },
+                            {
+                                "id": "D",
+                                "text": "to suggest that journals prefer research that attracts public attention"
+                            }
+                        ],
+                        "evidence": "offer something closer to a highlight reel than a full recording of the match",
+                        "explanation": "In Paragraph A the writer contrasts the run of success in journals with the many experiments that go wrong. A highlight reel shows only the best moments, so journals show mainly successes; nothing is said about entertainment, brevity or public attention."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to the writer, what happens when reviews of a medical treatment leave out disappointing studies?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "The treatment is tested again by many separate laboratories."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The treatment's benefit appears greater than it actually is."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Doctors become unwilling to trust any of the published estimates."
+                            },
+                            {
+                                "id": "D",
+                                "text": "The published studies are judged less strictly by their reviewers."
+                            }
+                        ],
+                        "evidence": "the combined estimate makes the treatment look more effective than it really is",
+                        "explanation": "Paragraph C says the combined estimate makes the treatment look more effective than it is. The passage says doctors may act on an exaggerated benefit, not that they stop trusting estimates."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "The writer refers to the experiment of 1887 in order to show that",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "older instruments were far less sensitive than modern equipment."
+                            },
+                            {
+                                "id": "B",
+                                "text": "careless experiments were once common in physics journals."
+                            },
+                            {
+                                "id": "C",
+                                "text": "an experiment that finds nothing can still be highly significant."
+                            },
+                            {
+                                "id": "D",
+                                "text": "the theory of relativity was based entirely on a single result."
+                            }
+                        ],
+                        "evidence": "History offers reminders of how valuable a null result can be.",
+                        "explanation": "In Paragraph D the experiment found no trace of the ether, yet this result later became important evidence for special relativity. The passage says the instrument was very sensitive and the work was not careless, and it calls the result 'important evidence', not the only basis of the theory."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What does the writer suggest is the best response to the worry that failures may be caused by poor technique?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "publishing only those failures that have been repeated several times"
+                            },
+                            {
+                                "id": "B",
+                                "text": "keeping failed results private until better equipment is available"
+                            },
+                            {
+                                "id": "C",
+                                "text": "asking senior scientists to approve each failure before it is released"
+                            },
+                            {
+                                "id": "D",
+                                "text": "reporting procedures fully enough for others to assess each failure"
+                            }
+                        ],
+                        "evidence": "The answer is to describe methods in enough detail that others can judge whether a failure is informative.",
+                        "explanation": "In Paragraph E the writer accepts the concern but says the solution is to describe methods in detail so that others can judge the failure. Better equipment is mentioned only in Lamarque's example, and the writer says the concern does not justify keeping failures private."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What warning does the writer give in the final paragraph?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Short records of failed work are seldom searched by other scientists."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Accepting failure should not be used to excuse poor-quality research."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Researchers should not rely on memory to recall their past experiments."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Celebrating failure may discourage young scientists from taking risks."
+                            }
+                        ],
+                        "evidence": "praising failure must not become an excuse for careless work",
+                        "explanation": "Paragraph G warns that praising failure must not become an excuse for careless work. The writer actually recommends short, searchable records and mentions memory only to say knowledge should be stored elsewhere, not as a warning to researchers."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Sunil Varghese",
+                "role": "meta-researcher who analysed about 1,500 published studies",
+                "gender": "male"
+            },
+            {
+                "name": "Kaito Morimoto",
+                "role": "doctoral student in materials science who repeated a method others had abandoned",
+                "gender": "male"
+            },
+            {
+                "name": "Ximena Arroyo",
+                "role": "historian of science",
+                "gender": "female"
+            },
+            {
+                "name": "Odette Lamarque",
+                "role": "chemist whose group keeps an archive of failed reactions",
+                "gender": "female"
+            },
+            {
+                "name": "Agata Wiśniewska",
+                "role": "journal editor",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Open almost any scientific journal and you will find a remarkable run of success. Hypotheses are confirmed, new effects are detected and promising treatments appear to work. Anyone who has spent time in a laboratory knows that this is not what research actually looks like. Many experiments do not go to plan: reactions refuse to start, cells die for no obvious reason and carefully predicted effects simply fail to appear. The journals, in other words, offer something closer to a highlight reel than a full recording of the match. My argument is that the missing footage matters, and that science would be healthier, faster and cheaper if failed experiments and negative results were treated as part of the record rather than as private embarrassments.",
+                "label": "A"
+            },
+            {
+                "text": "The imbalance is not imagined. Researchers who study the scientific literature itself have repeatedly found that published papers report positive results far more often than negative ones. In one recent analysis, the meta-researcher Sunil Varghese and his team examined around 1,500 studies in nutrition and ecology and found that more than nine in ten claimed to support the hypothesis the authors had set out to test. It would be pleasant to conclude that scientists are unusually gifted at predicting nature. A far more plausible explanation is that studies which find nothing are quietly left unpublished, a problem long known as the 'file drawer' effect.",
+                "label": "B"
+            },
+            {
+                "text": "The cost of those drawers is easy to underestimate. Consider Kaito Morimoto, a doctoral student in materials science, who spent eight months trying to grow a particular crystal using a technique described in a promising conference talk. Only when he mentioned his difficulties at a workshop did he discover that at least three other groups had tried the same method and given up. None had reported the attempt, so each group had paid for the same lesson separately. Multiply that experience across thousands of laboratories and the waste becomes considerable. There is a subtler danger too. When researchers pool the results of many studies to judge whether a medical treatment works, they usually include only the studies that were published. If the disappointing ones are missing, the combined estimate makes the treatment look more effective than it really is, and doctors may make decisions on the basis of an exaggerated benefit.",
+                "label": "C"
+            },
+            {
+                "text": "History offers reminders of how valuable a null result can be. In 1887, two American physicists built an apparatus to detect the 'ether', the invisible medium through which light was then thought to travel. Far from being a careless piece of work, their instrument was among the most sensitive of its day, yet it detected no trace of the ether. The apparent failure later came to be seen as important evidence for the theory of special relativity. The historian of science Ximena Arroyo argues that journals of that era printed accounts of unsuccessful experiments more readily than today's journals do. In her view, the change came during the twentieth century, as the competition for research funding and for citations grew fiercer and novelty became the quality that editors prized above all.",
+                "label": "D"
+            },
+            {
+                "text": "Why, then, do scientists keep their failures to themselves? Part of the answer is incentives: a negative result rarely leads to a prestigious publication, and careers are built on publications. But there is also a more respectable reason, and it deserves to be taken seriously. An experiment can fail because the idea behind it is wrong, or simply because the equipment was faulty or the technique was clumsy. Publishing every disappointment could fill the literature with noise. I accept this concern, but I do not think it justifies silence. The answer is to describe methods in enough detail that others can judge whether a failure is informative. The chemist Odette Lamarque has shown what this might look like. Her group keeps a shared archive of every reaction that did not work, with notes on conditions and suspected causes, and new members must read it before they begin their own projects. She reports that several entries, revisited years later with better equipment, became the starting points for successful studies.",
+                "label": "E"
+            },
+            {
+                "text": "Some institutions are beginning to move in the same direction. A number of journals now offer a format in which a study is accepted for publication on the strength of its question and design, before any data have been collected; whatever the results, the paper appears. Agata Wiśniewska, who edits one such journal, says that in her experience the format has changed how reviewers behave. Unable to see the outcome, they examine the methods far more critically, because the quality of the design is the only thing left to judge. Online repositories for negative results have also appeared, and some funding bodies now expect researchers to report the outcomes of projects they paid for, including the unwelcome ones.",
+                "label": "F"
+            },
+            {
+                "text": "None of this means that failure should be celebrated for its own sake. A sloppy experiment that goes wrong teaches nobody anything, and praising failure must not become an excuse for careless work. Nor does every unsuccessful study need to become a full journal article; often a short, searchable record of what was tried and what happened would be enough. What matters is that the knowledge exists somewhere other than in one researcher's memory. Science advances by ruling things out as much as by finding things in, and a discipline that hides half of its results is working with only half of its evidence.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The journals, in other words, offer something closer to a highlight reel than a full recording of the match.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A far more plausible explanation is that studies which find nothing are quietly left unpublished",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    false
+                ],
+                "quote": "the combined estimate makes the treatment look more effective than it really is",
+                "answer": [
+                    "N"
+                ],
+                "correct": false
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "there is also a more respectable reason, and it deserves to be taken seriously.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Nor does every unsuccessful study need to become a full journal article",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "as the competition for research funding and for citations grew fiercer and novelty became the quality that editors prized above all.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "new members must read it before they begin their own projects.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "found that more than nine in ten claimed to support the hypothesis the authors had set out to test.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Unable to see the outcome, they examine the methods far more critically",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "several entries, revisited years later with better equipment, became the starting points for successful studies.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "he discover that at least three other groups had tried the same method and given up.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The journals, in other words, offer something closer to a highlight reel than a full recording of the match.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the combined estimate makes the treatment look more effective than it really is",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "yet it detected no trace of the ether. The apparent failure later came to be seen as important evidence for the theory of special relativity.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The answer is to describe methods in enough detail that others can judge whether a failure is informative.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "praising failure must not become an excuse for careless work.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The journals, in other words, offer something closer to a highlight reel than a full recording of the match.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "It would be pleasant to conclude that scientists are unusually gifted at predicting nature. A far more plausible explanation is that studies which find nothing are quietly left unpublished",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "But there is also a more respectable reason, and it deserves to be taken seriously.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Nor does every unsuccessful study need to become a full journal article",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Ximena Arroyo argues that journals of that era printed accounts of unsuccessful experiments more readily than today's journals do. In her view, the change came during the twentieth century, as the competition for research funding and for citations grew fiercer",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Her group keeps a shared archive of every reaction that did not work... and new members must read it before they begin their own projects.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Sunil Varghese and his team examined around 1,500 studies in nutrition and ecology and found that more than nine in ten claimed to support the hypothesis the authors had set out to test.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Agata Wiśniewska... says that in her experience the format has changed how reviewers behave. Unable to see the outcome, they examine the methods far more critically",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "She reports that several entries, revisited years later with better equipment, became the starting points for successful studies.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Only when he mentioned his difficulties at a workshop did he discover that at least three other groups had tried the same method and given up.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The journals, in other words, offer something closer to a highlight reel than a full recording of the match.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the combined estimate makes the treatment look more effective than it really is",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "History offers reminders of how valuable a null result can be... their instrument was among the most sensitive of its day, yet it detected no trace of the ether. The apparent failure later came to be seen as important evidence",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The answer is to describe methods in enough detail that others can judge whether a failure is informative.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "praising failure must not become an excuse for careless work",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": [
+            "b1q3"
+        ]
+    },
+    "revise": {
+        "b1q3": {
+            "action": "keep",
+            "reason": "The key is correct. The writer warns that pooled reviews can overstate a treatment's benefit when unpublished studies are missing, but never says whether such reviews should still be used. The solver who answered NO treated that warning as an opinion on whether reviews should be used."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The journals, in other words, offer something closer to a highlight reel than a full recording of the match.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "A far more plausible explanation is that studies which find nothing are quietly left unpublished",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "But there is also a more respectable reason, and it deserves to be taken seriously.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Nor does every unsuccessful study need to become a full journal article",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "In her view, the change came during the twentieth century, as the competition for research funding and for citations grew fiercer",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "new members must read it before they begin their own projects",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "more than nine in ten claimed to support the hypothesis the authors had set out to test",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Unable to see the outcome, they examine the methods far more critically",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "several entries, revisited years later with better equipment, became the starting points for successful studies",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The journals, in other words, offer something closer to a highlight reel than a full recording of the match.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the combined estimate makes the treatment look more effective than it really is",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "History offers reminders of how valuable a null result can be.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "The answer is to describe methods in enough detail that others can judge whether a failure is informative.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 1,
+        "generated": 17,
+        "agreedFirst": 16,
+        "discardRate": 0.0588,
+        "agreedRevised": 0,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b1q3": {
+                "marks": [
+                    false
+                ],
+                "quote": "If the disappointing ones are missing, the combined estimate makes the treatment look more effective than it really is, and doctors may make decisions on the basis of an exaggerated benefit.",
+                "answer": [
+                    "N"
+                ],
+                "correct": false
+            }
+        },
+        "b": {
+            "b1q3": {
+                "marks": [
+                    false
+                ],
+                "quote": "When researchers pool the results of many studies to judge whether a medical treatment works, they usually include only the studies that were published. If the disappointing ones are missing, the combined estimate makes the treatment look more effective than it really is, and doctors may make decisions on the basis of an exaggerated benefit.",
+                "answer": [
+                    "N"
+                ],
+                "correct": false
+            }
+        }
+    },
+    "section": {
+        "text": "In Praise of Failure\n\nA. Open almost any scientific journal and you will find a remarkable run of success. Hypotheses are confirmed, new effects are detected and promising treatments appear to work. Anyone who has spent time in a laboratory knows that this is not what research actually looks like. Many experiments do not go to plan: reactions refuse to start, cells die for no obvious reason and carefully predicted effects simply fail to appear. The journals, in other words, offer something closer to a highlight reel than a full recording of the match. My argument is that the missing footage matters, and that science would be healthier, faster and cheaper if failed experiments and negative results were treated as part of the record rather than as private embarrassments.\n\nB. The imbalance is not imagined. Researchers who study the scientific literature itself have repeatedly found that published papers report positive results far more often than negative ones. In one recent analysis, the meta-researcher Sunil Varghese and his team examined around 1,500 studies in nutrition and ecology and found that more than nine in ten claimed to support the hypothesis the authors had set out to test. It would be pleasant to conclude that scientists are unusually gifted at predicting nature. A far more plausible explanation is that studies which find nothing are quietly left unpublished, a problem long known as the 'file drawer' effect.\n\nC. The cost of those drawers is easy to underestimate. Consider Kaito Morimoto, a doctoral student in materials science, who spent eight months trying to grow a particular crystal using a technique described in a promising conference talk. Only when he mentioned his difficulties at a workshop did he discover that at least three other groups had tried the same method and given up. None had reported the attempt, so each group had paid for the same lesson separately. Multiply that experience across thousands of laboratories and the waste becomes considerable. There is a subtler danger too. When researchers pool the results of many studies to judge whether a medical treatment works, they usually include only the studies that were published. If the disappointing ones are missing, the combined estimate makes the treatment look more effective than it really is, and doctors may make decisions on the basis of an exaggerated benefit.\n\nD. History offers reminders of how valuable a null result can be. In 1887, two American physicists built an apparatus to detect the 'ether', the invisible medium through which light was then thought to travel. Far from being a careless piece of work, their instrument was among the most sensitive of its day, yet it detected no trace of the ether. The apparent failure later came to be seen as important evidence for the theory of special relativity. The historian of science Ximena Arroyo argues that journals of that era printed accounts of unsuccessful experiments more readily than today's journals do. In her view, the change came during the twentieth century, as the competition for research funding and for citations grew fiercer and novelty became the quality that editors prized above all.\n\nE. Why, then, do scientists keep their failures to themselves? Part of the answer is incentives: a negative result rarely leads to a prestigious publication, and careers are built on publications. But there is also a more respectable reason, and it deserves to be taken seriously. An experiment can fail because the idea behind it is wrong, or simply because the equipment was faulty or the technique was clumsy. Publishing every disappointment could fill the literature with noise. I accept this concern, but I do not think it justifies silence. The answer is to describe methods in enough detail that others can judge whether a failure is informative. The chemist Odette Lamarque has shown what this might look like. Her group keeps a shared archive of every reaction that did not work, with notes on conditions and suspected causes, and new members must read it before they begin their own projects. She reports that several entries, revisited years later with better equipment, became the starting points for successful studies.\n\nF. Some institutions are beginning to move in the same direction. A number of journals now offer a format in which a study is accepted for publication on the strength of its question and design, before any data have been collected; whatever the results, the paper appears. Agata Wiśniewska, who edits one such journal, says that in her experience the format has changed how reviewers behave. Unable to see the outcome, they examine the methods far more critically, because the quality of the design is the only thing left to judge. Online repositories for negative results have also appeared, and some funding bodies now expect researchers to report the outcomes of projects they paid for, including the unwelcome ones.\n\nG. None of this means that failure should be celebrated for its own sake. A sloppy experiment that goes wrong teaches nobody anything, and praising failure must not become an excuse for careless work. Nor does every unsuccessful study need to become a full journal article; often a short, searchable record of what was tried and what happened would be enough. What matters is that the knowledge exists somewhere other than in one researcher's memory. Science advances by ruling things out as much as by finding things in, and a discipline that hides half of its results is working with only half of its evidence.",
+        "title": "In Praise of Failure",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Scientific journals give a misleadingly successful impression of what research involves.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "offer something closer to a highlight reel than a full recording of the match",
+                        "explanation": {
+                            "en": "In Paragraph A the writer says journals are like a highlight reel rather than a full recording, after saying that real research is often unsuccessful. This means journals show mainly the successes, so the writer agrees.",
+                            "ru": "В абзаце A автор сначала говорит, что настоящие исследования часто оказываются неудачными, а затем сравнивает журналы с подборкой лучших моментов («highlight reel»), а не с полной записью. Значит, журналы показывают в основном успехи, так что автор согласен с утверждением.",
+                            "uk": "В абзаці A автор спершу каже, що справжні дослідження часто бувають невдалими, а потім порівнює журнали з добіркою найкращих моментів («highlight reel»), а не з повним записом. Отже, журнали показують переважно успіхи, тож автор погоджується з твердженням."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The high proportion of positive findings in journals is probably a sign of scientists' skill at predicting results.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "A far more plausible explanation is that studies which find nothing are quietly left unpublished",
+                        "explanation": {
+                            "en": "In Paragraph B the writer says it would be 'pleasant' to believe scientists are gifted at predicting nature, but rejects this. The writer thinks the real reason is that negative studies are not published.",
+                            "ru": "В абзаце B автор пишет, что было бы «pleasant» поверить, будто у учёных есть дар предсказывать природу, но отвергает эту мысль. По мнению автора, настоящая причина в том, что исследования с отрицательными результатами не публикуются.",
+                            "uk": "В абзаці B автор пише, що було б «pleasant» вірити, ніби науковці мають хист передбачати природу, але відкидає цю думку. На думку автора, справжня причина в тому, що дослідження з негативними результатами не публікуються."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "There is a legitimate reason why researchers may hesitate to publish experiments that failed.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "But there is also a more respectable reason, and it deserves to be taken seriously.",
+                        "explanation": {
+                            "en": "In Paragraph E the writer describes a 'respectable reason' – a failure may come from faulty equipment or clumsy technique – and says it should be taken seriously and that they accept the concern.",
+                            "ru": "В абзаце E автор описывает «respectable reason»: неудача может быть вызвана неисправным оборудованием или неумелой техникой. Автор пишет, что к этому нужно относиться серьёзно, и признаёт это опасение.",
+                            "uk": "В абзаці E автор описує «respectable reason»: невдача може бути спричинена несправним обладнанням або невправною технікою. Автор пише, що до цього слід ставитися серйозно, і визнає це побоювання."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "All journals should be required to adopt the format in which studies are accepted before any data are collected.",
+                        "numbers": [
+                            4
+                        ],
+                        "explanation": {
+                            "en": "Paragraph F describes this format and reports an editor's positive experience of it. The writer never says whether every journal should be forced to use it.",
+                            "ru": "В абзаце F описан этот формат и приведён положительный опыт одного редактора. Но автор нигде не говорит, нужно ли обязать все журналы его использовать.",
+                            "uk": "В абзаці F описано цей формат і наведено позитивний досвід одного редактора. Але автор ніде не каже, чи треба зобов'язати всі журнали його використовувати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Every unsuccessful experiment deserves to be published as a complete journal article.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Nor does every unsuccessful study need to become a full journal article",
+                        "explanation": {
+                            "en": "In Paragraph G the writer says a short, searchable record is often enough, so not every failed study needs a full article. This is the opposite of the statement.",
+                            "ru": "В абзаце G автор пишет, что часто достаточно краткой записи, которую можно найти поиском, поэтому не каждому неудачному исследованию нужна полноценная статья. Это противоположно утверждению.",
+                            "uk": "В абзаці G автор пише, що часто достатньо короткого запису, який можна знайти пошуком, тому не кожне невдале дослідження потребує повноцінної статті. Це протилежне твердженню."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Sunil Varghese"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Kaito Morimoto"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Ximena Arroyo"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Odette Lamarque"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Agata Wiśniewska"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "linked a change in publishing habits to increasing rivalry for money and recognition",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "as the competition for research funding and for citations grew fiercer",
+                        "explanation": {
+                            "en": "In Paragraph D the historian Ximena Arroyo says the change came as competition for funding (money) and citations (recognition) grew fiercer.",
+                            "ru": "В абзаце D историк науки Ximena Arroyo говорит, что перемены произошли, когда усилилась конкуренция за «funding» (то есть деньги) и «citations» (то есть признание).",
+                            "uk": "В абзаці D історикиня науки Ximena Arroyo каже, що зміни відбулися, коли посилилася конкуренція за «funding» (тобто гроші) і «citations» (тобто визнання)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "requires newcomers to study a record of earlier unsuccessful work",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "new members must read it before they begin their own projects",
+                        "explanation": {
+                            "en": "In Paragraph E Odette Lamarque's group keeps an archive of reactions that did not work, and new members must read it before starting their projects.",
+                            "ru": "В абзаце E группа Odette Lamarque ведёт архив реакций, которые не удались, и новые сотрудники обязаны прочитать его, прежде чем начинать свои проекты.",
+                            "uk": "В абзаці E група Odette Lamarque веде архів реакцій, які не вдалися, і нові учасники мусять прочитати його, перш ніж розпочинати свої проєкти."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "found that the great majority of studies examined reported results that confirmed the authors' expectations",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "found that more than nine in ten claimed to support the hypothesis the authors had set out to test",
+                        "explanation": {
+                            "en": "In Paragraph B Sunil Varghese's analysis of about 1,500 studies found that more than nine in ten supported the authors' hypothesis.",
+                            "ru": "В абзаце B анализ примерно 1500 исследований, проведённый Sunil Varghese, показал, что более девяти из десяти подтверждали гипотезу авторов.",
+                            "uk": "В абзаці B аналіз приблизно 1500 досліджень, проведений Sunil Varghese, показав, що понад дев'ять із десяти підтверджували гіпотезу авторів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "observed that reviewers judge a study's design more strictly when they cannot know its results",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "Unable to see the outcome, they examine the methods far more critically",
+                        "explanation": {
+                            "en": "In Paragraph F Agata Wiśniewska says that because reviewers cannot see the outcome, they look at the methods more critically.",
+                            "ru": "В абзаце F Agata Wiśniewska говорит, что рецензенты не видят результата и поэтому оценивают методы более критично.",
+                            "uk": "В абзаці F Agata Wiśniewska каже, що рецензенти не бачать результату й тому оцінюють методи критичніше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "reported that some abandoned work proved useful when it was tried again with improved tools",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "several entries, revisited years later with better equipment, became the starting points for successful studies",
+                        "explanation": {
+                            "en": "In Paragraph E Odette Lamarque reports that some failed reactions, tried again later with better equipment, led to successful studies.",
+                            "ru": "В абзаце E Odette Lamarque сообщает, что некоторые неудачные реакции, повторённые позже на более совершенном оборудовании, привели к успешным исследованиям.",
+                            "uk": "В абзаці E Odette Lamarque повідомляє, що деякі невдалі реакції, повторені згодом на кращому обладнанні, привели до успішних досліджень."
+                        }
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "to suggest that journals are written chiefly to entertain their readers"
+                    },
+                    {
+                        "id": "B",
+                        "text": "to suggest that journals describe experiments too briefly to be useful"
+                    },
+                    {
+                        "id": "C",
+                        "text": "to suggest that journals mostly show the successful parts of research"
+                    },
+                    {
+                        "id": "D",
+                        "text": "to suggest that journals prefer research that attracts public attention"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Why does the writer compare scientific journals to a 'highlight reel'?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "offer something closer to a highlight reel than a full recording of the match",
+                        "explanation": {
+                            "en": "In Paragraph A the writer contrasts the run of success in journals with the many experiments that go wrong. A highlight reel shows only the best moments, so journals show mainly successes; nothing is said about entertainment, brevity or public attention.",
+                            "ru": "В абзаце A автор противопоставляет череду успехов в журналах множеству экспериментов, которые заканчиваются неудачей. Подборка лучших моментов («highlight reel») показывает только самое удачное, поэтому журналы показывают в основном успехи; о развлечении, краткости или внимании публики ничего не сказано.",
+                            "uk": "В абзаці A автор протиставляє низку успіхів у журналах безлічі експериментів, які закінчуються невдачею. Добірка найкращих моментів («highlight reel») показує лише найвдаліше, тож журнали показують переважно успіхи; про розвагу, стислість чи увагу публіки нічого не сказано."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The published studies are judged less strictly by their reviewers."
+                    },
+                    {
+                        "id": "B",
+                        "text": "The treatment is tested again by many separate laboratories."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Doctors become unwilling to trust any of the published estimates."
+                    },
+                    {
+                        "id": "D",
+                        "text": "The treatment's benefit appears greater than it actually is."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "According to the writer, what happens when reviews of a medical treatment leave out disappointing studies?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "the combined estimate makes the treatment look more effective than it really is",
+                        "explanation": {
+                            "en": "Paragraph C says the combined estimate makes the treatment look more effective than it is. The passage says doctors may act on an exaggerated benefit, not that they stop trusting estimates.",
+                            "ru": "В абзаце C сказано, что сводная оценка делает лечение более эффективным на вид, чем оно есть на самом деле. В тексте говорится, что врачи могут опираться на преувеличенную пользу, а не что они перестают доверять оценкам.",
+                            "uk": "В абзаці C сказано, що зведена оцінка робить лікування на вигляд ефективнішим, ніж воно є насправді. У тексті йдеться про те, що лікарі можуть спиратися на перебільшену користь, а не про те, що вони перестають довіряти оцінкам."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "an experiment that finds nothing can still be highly significant."
+                    },
+                    {
+                        "id": "B",
+                        "text": "careless experiments were once common in physics journals."
+                    },
+                    {
+                        "id": "C",
+                        "text": "older instruments were far less sensitive than modern equipment."
+                    },
+                    {
+                        "id": "D",
+                        "text": "the theory of relativity was based entirely on a single result."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "The writer refers to the experiment of 1887 in order to show that",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "History offers reminders of how valuable a null result can be.",
+                        "explanation": {
+                            "en": "In Paragraph D the experiment found no trace of the ether, yet this result later became important evidence for special relativity. The passage says the instrument was very sensitive and the work was not careless, and it calls the result 'important evidence', not the only basis of the theory.",
+                            "ru": "В абзаце D эксперимент не обнаружил никаких следов эфира, однако позже этот результат стал важным доказательством специальной теории относительности. В тексте сказано, что прибор был очень чувствительным, а работа не была небрежной, и результат назван «important evidence», а не единственной основой теории.",
+                            "uk": "В абзаці D експеримент не виявив жодних слідів ефіру, проте згодом цей результат став важливим доказом спеціальної теорії відносності. У тексті сказано, що прилад був дуже чутливим, а робота не була недбалою, і результат названо «important evidence», а не єдиною основою теорії."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "publishing only those failures that have been repeated several times"
+                    },
+                    {
+                        "id": "B",
+                        "text": "reporting procedures fully enough for others to assess each failure"
+                    },
+                    {
+                        "id": "C",
+                        "text": "asking senior scientists to approve each failure before it is released"
+                    },
+                    {
+                        "id": "D",
+                        "text": "keeping failed results private until better equipment is available"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the writer suggest is the best response to the worry that failures may be caused by poor technique?",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "The answer is to describe methods in enough detail that others can judge whether a failure is informative.",
+                        "explanation": {
+                            "en": "In Paragraph E the writer accepts the concern but says the solution is to describe methods in detail so that others can judge the failure. Better equipment is mentioned only in Lamarque's example, and the writer says the concern does not justify keeping failures private.",
+                            "ru": "В абзаце E автор признаёт это опасение, но считает, что решение — подробно описывать методы, чтобы другие могли сами оценить неудачу. Более совершенное оборудование упоминается только в примере Lamarque, а автор пишет, что это опасение не оправдывает того, чтобы скрывать неудачи.",
+                            "uk": "В абзаці E автор визнає це побоювання, але вважає, що розв'язання — докладно описувати методи, щоб інші могли самі оцінити невдачу. Краще обладнання згадано лише в прикладі Lamarque, а автор пише, що це побоювання не виправдовує приховування невдач."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q4",
+        "4": "b1q5",
+        "5": "b1q6",
+        "6": "b2q1",
+        "7": "b2q2",
+        "8": "b2q3",
+        "9": "b2q4",
+        "10": "b2q5",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

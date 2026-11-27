@@ -1,0 +1,1000 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-8|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.372804,
+            "provider": "anthropic",
+            "outputTokens": 17593
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012128,
+            "provider": "anthropic",
+            "outputTokens": 647
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01769,
+            "provider": "openai",
+            "outputTokens": 891
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.035418,
+            "provider": "xai",
+            "outputTokens": 4898
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.061132,
+            "provider": "anthropic",
+            "outputTokens": 2738
+        }
+    ],
+    "draft": {
+        "title": "First Aid at Work: What Every Employee Should Know",
+        "blocks": [
+            {
+                "type": "table_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "three",
+                            "3"
+                        ],
+                        "prompt": "Number of first aiders present | At least ______ on site at all times",
+                        "options": [],
+                        "evidence": "so at least three should be on site at any time",
+                        "explanation": "Paragraph B says that, because of how the fourteen first aiders are spread across shifts, at least three are on site at any time. Fourteen is the total number, not the number present."
+                    },
+                    {
+                        "answer": [
+                            "staircase"
+                        ],
+                        "prompt": "Contact details | Displayed on green noticeboards next to each ______ and on the intranet",
+                        "options": [],
+                        "evidence": "shown on the green noticeboards beside each staircase and on the staff intranet",
+                        "explanation": "Paragraph B says the names and extensions appear on green noticeboards 'beside each staircase'; 'next to' restates 'beside'."
+                    },
+                    {
+                        "answer": [
+                            "six",
+                            "6"
+                        ],
+                        "prompt": "Practice sessions | Organised by the coordinator every ______ months",
+                        "options": [],
+                        "evidence": "also runs an informal practice session every six months",
+                        "explanation": "Paragraph B says the health and safety coordinator runs a practice session every six months. The three years refers to how long the certificate is valid."
+                    },
+                    {
+                        "answer": [
+                            "400"
+                        ],
+                        "prompt": "Calling a first aider | Dial ______ on an internal phone to reach security",
+                        "options": [],
+                        "evidence": "dialling 400 from any internal phone, which connects directly to the security desk",
+                        "explanation": "Paragraph D says that dialling 400 from an internal phone connects you to the security desk, which then contacts a first aider."
+                    },
+                    {
+                        "answer": [
+                            "card"
+                        ],
+                        "prompt": "First aid kits | Contents checked monthly; date recorded on a ______ in the lid",
+                        "options": [],
+                        "evidence": "records the date on a card fixed inside the lid",
+                        "explanation": "Paragraph E says the first aider responsible for each kit checks it once a month and writes the date on a card fixed inside the lid."
+                    },
+                    {
+                        "answer": [
+                            "loading"
+                        ],
+                        "prompt": "Eye-wash bottles | Found in the ______ bays; discard once opened or out of date",
+                        "options": [],
+                        "evidence": "Eye-wash bottles are also mounted in the loading bays.",
+                        "explanation": "Paragraph E says eye-wash bottles are mounted in the loading bays, and must be thrown away once opened or past the expiry date."
+                    },
+                    {
+                        "answer": [
+                            "24",
+                            "twenty-four"
+                        ],
+                        "prompt": "Accident book | Entry to be made within ______ hours of the accident",
+                        "options": [],
+                        "evidence": "the entry should be completed within 24 hours",
+                        "explanation": "Paragraph F says an entry in the accident book should be completed within 24 hours."
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "short_answer",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "a refresher course",
+                            "refresher course"
+                        ],
+                        "prompt": "What must first aiders complete once their three-year certificate runs out?",
+                        "options": [],
+                        "evidence": "the certificate they receive is valid for three years, after which a refresher course is required",
+                        "explanation": "Paragraph B says that after the three-year certificate period a refresher course is required. The two-day course is the original training, not what is needed later."
+                    },
+                    {
+                        "answer": [
+                            "everyday painkillers",
+                            "painkillers"
+                        ],
+                        "prompt": "Which common type of medicine is mentioned as something first aiders will not hand out?",
+                        "options": [],
+                        "evidence": "will not give out tablets of any kind, not even everyday painkillers",
+                        "explanation": "Paragraph C says first aiders will not give out any tablets, 'not even everyday painkillers', because they cannot know about allergies or other medication."
+                    },
+                    {
+                        "answer": [
+                            "danger"
+                        ],
+                        "prompt": "What is a first aider trained to check the area for before approaching a casualty?",
+                        "options": [],
+                        "evidence": "a first aider is trained to check the area for danger",
+                        "explanation": "Paragraph C says that before approaching an injured person, a first aider checks the area for danger, such as moving vehicles or spilled chemicals."
+                    },
+                    {
+                        "answer": [
+                            "guard on duty",
+                            "the guard",
+                            "guard"
+                        ],
+                        "prompt": "Who contacts the nearest first aider after an employee has dialled the internal number?",
+                        "options": [],
+                        "evidence": "the guard on duty will radio the nearest available first aider",
+                        "explanation": "Paragraph D says the call goes to the security desk, where the guard on duty radios the nearest available first aider. The employee does not contact the first aider directly."
+                    },
+                    {
+                        "answer": [
+                            "the main gate",
+                            "main gate"
+                        ],
+                        "prompt": "Where should a colleague wait for an ambulance that has been called?",
+                        "options": [],
+                        "evidence": "ask a colleague to wait at the main gate to guide the crew",
+                        "explanation": "Paragraph D says a colleague should wait at the main gate so that the ambulance crew can be guided to the right part of the building."
+                    },
+                    {
+                        "answer": [
+                            "a single plaster",
+                            "single plaster",
+                            "plaster"
+                        ],
+                        "prompt": "What small item is given as an example of something you should report taking from a first aid kit?",
+                        "options": [],
+                        "evidence": "If you take anything from a kit, even a single plaster, please let that person know",
+                        "explanation": "Paragraph E says you should tell the responsible first aider if you take anything from a kit, 'even a single plaster', so it can be replaced."
+                    },
+                    {
+                        "answer": [
+                            "a locked cabinet",
+                            "locked cabinet"
+                        ],
+                        "prompt": "Where are completed pages from the accident book stored?",
+                        "options": [],
+                        "evidence": "reception staff remove it and file it in a locked cabinet",
+                        "explanation": "Paragraph F says reception staff remove completed pages and file them in a locked cabinet because they contain personal information. The book itself is kept at reception, but finished pages go into the cabinet."
+                    },
+                    {
+                        "answer": [
+                            "safety cutters"
+                        ],
+                        "prompt": "What did the company start using after a review of last year's records?",
+                        "options": [],
+                        "evidence": "led the company to switch to safety cutters with retractable blades",
+                        "explanation": "Paragraph G says the review of last year's records led the company to replace ordinary craft knives with safety cutters. Craft knives are what caused the injuries, not the new tool."
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Delphine Asante",
+                "role": "Health and safety coordinator who runs practice sessions and reviews the accident book",
+                "gender": "female"
+            },
+            {
+                "name": "Ravindra Coulibaly",
+                "role": "Senior first aider who comments on the most common injuries",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "This guidance applies to everyone who works at the Harrowfield distribution centre, including temporary workers and visiting contractors. It explains what our first aiders do, what is expected of you if a colleague is injured or suddenly becomes ill, and how accidents must be reported. Do not assume it only concerns trained first aiders: in most incidents, the first person to arrive is an ordinary employee, and their actions in the first few minutes matter.",
+                "label": "A"
+            },
+            {
+                "text": "At present, the centre has fourteen qualified first aiders spread across the three shifts, so at least three should be on site at any time. Their names and phone extensions are shown on the green noticeboards beside each staircase and on the staff intranet. Each first aider has completed a two-day course with an approved training provider, and the certificate they receive is valid for three years, after which a refresher course is required. Our health and safety coordinator, Delphine Asante, also runs an informal practice session every six months, because skills such as resuscitation fade if they are not used.",
+                "label": "B"
+            },
+            {
+                "text": "First aiders have a limited role. Their job is to keep the casualty as safe and comfortable as possible until professional help arrives or the person recovers; they are not doctors, and they are not expected to diagnose conditions. For this reason, first aiders will not give out tablets of any kind, not even everyday painkillers, since they cannot know whether a colleague has an allergy or is taking other medication. Before approaching anyone who is hurt, a first aider is trained to check the area for danger, such as moving vehicles or spilled chemicals. This is not selfishness: a rescuer who is injured cannot help anybody.",
+                "label": "C"
+            },
+            {
+                "text": "If you are the first to find an injured or unwell colleague, stay calm and do not try to move them unless they are in immediate danger. Contact a first aider by dialling 400 from any internal phone, which connects directly to the security desk; the guard on duty will radio the nearest available first aider. Where the situation is serious, for example if the person is unconscious, has difficulty breathing or is bleeding heavily, call the emergency services first and the security desk second. If an ambulance is on its way, ask a colleague to wait at the main gate to guide the crew straight to the right part of the building. Finally, keep onlookers away, as a crowd gets in the helpers' way.",
+                "label": "D"
+            },
+            {
+                "text": "First aid kits are kept in every department and can be recognised by a white cross on a green background. Each kit is assigned to a named first aider, who checks its contents once a month and records the date on a card fixed inside the lid. If you take anything from a kit, even a single plaster, please let that person know so it can be replaced. Eye-wash bottles are also mounted in the loading bays. These are sealed for hygiene reasons and must be thrown away once opened or once the expiry date has passed, whichever comes first.",
+                "label": "E"
+            },
+            {
+                "text": "Every accident at work must be entered in the accident book, however minor. The book is held at reception, and the entry should be completed within 24 hours, ideally by the injured person. If they are unable to do so, a witness or the first aider who dealt with the incident may write it instead. The record should state the date, time and exact location, describe what happened and the injury caused, and note any treatment given. Stick to facts: the book is not the place for opinions about who was to blame. Once a page has been completed, reception staff remove it and file it in a locked cabinet, because it contains personal information. Ms Asante reviews new entries every Friday and reports serious incidents to the authorities when the law requires it.",
+                "label": "F"
+            },
+            {
+                "text": "We also ask you to report near misses, that is, events which could have caused an injury but did not, such as a pallet falling into an empty aisle. These are recorded on a yellow form available from any supervisor. Ravindra Coulibaly, a senior first aider, points out that the most common injury he treats is a cut hand from opening boxes with ordinary craft knives. A review of last year's records, including several near misses with knives, led the company to switch to safety cutters with retractable blades. Nobody will be criticised for making a report; the aim is to learn, not to punish.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "so at least three should be on site at any time",
+                "answer": [
+                    "three"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "shown on the green noticeboards beside each staircase and on the staff intranet",
+                "answer": [
+                    "staircase"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "also runs an informal practice session every six months",
+                "answer": [
+                    "six"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Contact a first aider by dialling 400 from any internal phone, which connects directly to the security desk",
+                "answer": [
+                    "400"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "records the date on a card fixed inside the lid",
+                "answer": [
+                    "card"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Eye-wash bottles are also mounted in the loading bays.",
+                "answer": [
+                    "loading"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "the entry should be completed within 24 hours",
+                "answer": [
+                    "24"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "after which a refresher course is required",
+                "answer": [
+                    "refresher course"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "not even everyday painkillers",
+                "answer": [
+                    "painkillers"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "check the area for danger, such as moving vehicles or spilled chemicals",
+                "answer": [
+                    "danger"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the guard on duty will radio the nearest available first aider",
+                "answer": [
+                    "the guard",
+                    "guard on duty",
+                    "the guard on duty"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "ask a colleague to wait at the main gate to guide the crew",
+                "answer": [
+                    "main gate",
+                    "the main gate"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you take anything from a kit, even a single plaster, please let that person know",
+                "answer": [
+                    "plaster",
+                    "a plaster",
+                    "single plaster"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "reception staff remove it and file it in a locked cabinet",
+                "answer": [
+                    "locked cabinet",
+                    "a locked cabinet"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "led the company to switch to safety cutters with retractable blades",
+                "answer": [
+                    "safety cutters"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "so at least three should be on site at any time",
+                "answer": [
+                    "three"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "shown on the green noticeboards beside each staircase and on the staff intranet",
+                "answer": [
+                    "staircase"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "runs an informal practice session every six months",
+                "answer": [
+                    "six"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Contact a first aider by dialling 400 from any internal phone",
+                "answer": [
+                    "400"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "records the date on a card fixed inside the lid",
+                "answer": [
+                    "card"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Eye-wash bottles are also mounted in the loading bays",
+                "answer": [
+                    "loading"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "the entry should be completed within 24 hours",
+                "answer": [
+                    "24"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the certificate they receive is valid for three years, after which a refresher course is required",
+                "answer": [
+                    "a refresher course"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "they will not give out tablets of any kind, not even everyday painkillers",
+                "answer": [
+                    "everyday painkillers"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a first aider is trained to check the area for danger",
+                "answer": [
+                    "danger"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the guard on duty will radio the nearest available first aider",
+                "answer": [
+                    "guard on duty"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "ask a colleague to wait at the main gate",
+                "answer": [
+                    "main gate"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you take anything from a kit, even a single plaster",
+                "answer": [
+                    "a single plaster"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "reception staff remove it and file it in a locked cabinet",
+                "answer": [
+                    "a locked cabinet"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "led the company to switch to safety cutters with retractable blades",
+                "answer": [
+                    "safety cutters"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "at least three should be on site at any time",
+            "answer": [
+                "three"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "on the green noticeboards beside each staircase and on the staff intranet",
+            "answer": [
+                "staircase"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "runs an informal practice session every six months",
+            "answer": [
+                "six"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "dialling 400 from any internal phone, which connects directly to the security desk",
+            "answer": [
+                "400"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "records the date on a card fixed inside the lid",
+            "answer": [
+                "card"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Eye-wash bottles are also mounted in the loading bays",
+            "answer": [
+                "loading"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "valid for three years, after which a refresher course is required",
+            "answer": [
+                "a refresher course"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "will not give out tablets of any kind, not even everyday painkillers",
+            "answer": [
+                "everyday painkillers"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "a first aider is trained to check the area for danger",
+            "answer": [
+                "danger"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "the guard on duty will radio the nearest available first aider",
+            "answer": [
+                "guard on duty"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "ask a colleague to wait at the main gate to guide the crew",
+            "answer": [
+                "the main gate"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "even a single plaster, please let that person know so it can be replaced",
+            "answer": [
+                "a single plaster"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "file it in a locked cabinet, because it contains personal information",
+            "answer": [
+                "a locked cabinet"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "First Aid at Work: What Every Employee Should Know\n\nA. This guidance applies to everyone who works at the Harrowfield distribution centre, including temporary workers and visiting contractors. It explains what our first aiders do, what is expected of you if a colleague is injured or suddenly becomes ill, and how accidents must be reported. Do not assume it only concerns trained first aiders: in most incidents, the first person to arrive is an ordinary employee, and their actions in the first few minutes matter.\n\nB. At present, the centre has fourteen qualified first aiders spread across the three shifts, so at least three should be on site at any time. Their names and phone extensions are shown on the green noticeboards beside each staircase and on the staff intranet. Each first aider has completed a two-day course with an approved training provider, and the certificate they receive is valid for three years, after which a refresher course is required. Our health and safety coordinator, Delphine Asante, also runs an informal practice session every six months, because skills such as resuscitation fade if they are not used.\n\nC. First aiders have a limited role. Their job is to keep the casualty as safe and comfortable as possible until professional help arrives or the person recovers; they are not doctors, and they are not expected to diagnose conditions. For this reason, first aiders will not give out tablets of any kind, not even everyday painkillers, since they cannot know whether a colleague has an allergy or is taking other medication. Before approaching anyone who is hurt, a first aider is trained to check the area for danger, such as moving vehicles or spilled chemicals. This is not selfishness: a rescuer who is injured cannot help anybody.\n\nD. If you are the first to find an injured or unwell colleague, stay calm and do not try to move them unless they are in immediate danger. Contact a first aider by dialling 400 from any internal phone, which connects directly to the security desk; the guard on duty will radio the nearest available first aider. Where the situation is serious, for example if the person is unconscious, has difficulty breathing or is bleeding heavily, call the emergency services first and the security desk second. If an ambulance is on its way, ask a colleague to wait at the main gate to guide the crew straight to the right part of the building. Finally, keep onlookers away, as a crowd gets in the helpers' way.\n\nE. First aid kits are kept in every department and can be recognised by a white cross on a green background. Each kit is assigned to a named first aider, who checks its contents once a month and records the date on a card fixed inside the lid. If you take anything from a kit, even a single plaster, please let that person know so it can be replaced. Eye-wash bottles are also mounted in the loading bays. These are sealed for hygiene reasons and must be thrown away once opened or once the expiry date has passed, whichever comes first.\n\nF. Every accident at work must be entered in the accident book, however minor. The book is held at reception, and the entry should be completed within 24 hours, ideally by the injured person. If they are unable to do so, a witness or the first aider who dealt with the incident may write it instead. The record should state the date, time and exact location, describe what happened and the injury caused, and note any treatment given. Stick to facts: the book is not the place for opinions about who was to blame. Once a page has been completed, reception staff remove it and file it in a locked cabinet, because it contains personal information. Ms Asante reviews new entries every Friday and reports serious incidents to the authorities when the law requires it.\n\nG. We also ask you to report near misses, that is, events which could have caused an injury but did not, such as a pallet falling into an empty aisle. These are recorded on a yellow form available from any supervisor. Ravindra Coulibaly, a senior first aider, points out that the most common injury he treats is a cut hand from opening boxes with ordinary craft knives. A review of last year's records, including several near misses with knives, led the company to switch to safety cutters with retractable blades. Nobody will be criticised for making a report; the aim is to learn, not to punish.",
+        "title": "First Aid at Work: What Every Employee Should Know",
+        "groups": [
+            {
+                "type": "table_completion",
+                "limit": {
+                    "words": 1,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "three",
+                            "3"
+                        ],
+                        "prompt": "Number of first aiders present | At least ______ on site at all times",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "so at least three should be on site at any time",
+                        "explanation": {
+                            "en": "Paragraph B says that, because of how the fourteen first aiders are spread across shifts, at least three are on site at any time. Fourteen is the total number, not the number present.",
+                            "ru": "В абзаце B сказано, что благодаря тому, как четырнадцать ответственных за первую помощь распределены по сменам, на месте в любое время находятся как минимум трое («three»). Четырнадцать («fourteen») — это их общее число, а не количество присутствующих.",
+                            "uk": "В абзаці B сказано, що завдяки тому, як чотирнадцять відповідальних за першу допомогу розподілені між змінами, на місці будь-коли перебувають щонайменше троє («three»). Чотирнадцять («fourteen») — це їхня загальна кількість, а не кількість присутніх."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "staircase"
+                        ],
+                        "prompt": "Contact details | Displayed on green noticeboards next to each ______ and on the intranet",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "shown on the green noticeboards beside each staircase and on the staff intranet",
+                        "explanation": {
+                            "en": "Paragraph B says the names and extensions appear on green noticeboards 'beside each staircase'; 'next to' restates 'beside'.",
+                            "ru": "В абзаце B говорится, что имена и добавочные номера вывешены на зелёных досках объявлений «beside each staircase»; «next to» — это перефразирование «beside».",
+                            "uk": "В абзаці B йдеться про те, що імена та внутрішні номери розміщені на зелених дошках оголошень «beside each staircase»; «next to» — це перефразування «beside»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "six",
+                            "6"
+                        ],
+                        "prompt": "Practice sessions | Organised by the coordinator every ______ months",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "also runs an informal practice session every six months",
+                        "explanation": {
+                            "en": "Paragraph B says the health and safety coordinator runs a practice session every six months. The three years refers to how long the certificate is valid.",
+                            "ru": "В абзаце B сказано, что координатор по охране труда проводит практическое занятие раз в полгода («every six months»). Три года («three years») — это срок действия сертификата.",
+                            "uk": "В абзаці B сказано, що координаторка з охорони праці проводить практичне заняття раз на пів року («every six months»). Три роки («three years») — це строк дії сертифіката."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "400"
+                        ],
+                        "prompt": "Calling a first aider | Dial ______ on an internal phone to reach security",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "dialling 400 from any internal phone, which connects directly to the security desk",
+                        "explanation": {
+                            "en": "Paragraph D says that dialling 400 from an internal phone connects you to the security desk, which then contacts a first aider.",
+                            "ru": "В абзаце D сказано, что, набрав 400 с внутреннего телефона, вы попадёте на пост охраны, а охрана уже связывается с ответственным за первую помощь.",
+                            "uk": "В абзаці D сказано, що, набравши 400 з внутрішнього телефону, ви потрапите на пост охорони, а охорона вже зв'язується з відповідальним за першу допомогу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "card"
+                        ],
+                        "prompt": "First aid kits | Contents checked monthly; date recorded on a ______ in the lid",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "records the date on a card fixed inside the lid",
+                        "explanation": {
+                            "en": "Paragraph E says the first aider responsible for each kit checks it once a month and writes the date on a card fixed inside the lid.",
+                            "ru": "В абзаце E сказано, что ответственный за каждую аптечку раз в месяц проверяет её и записывает дату на карточке, прикреплённой с внутренней стороны крышки.",
+                            "uk": "В абзаці E сказано, що відповідальний за кожну аптечку раз на місяць перевіряє її та записує дату на картці, прикріпленій з внутрішнього боку кришки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "loading"
+                        ],
+                        "prompt": "Eye-wash bottles | Found in the ______ bays; discard once opened or out of date",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "Eye-wash bottles are also mounted in the loading bays.",
+                        "explanation": {
+                            "en": "Paragraph E says eye-wash bottles are mounted in the loading bays, and must be thrown away once opened or past the expiry date.",
+                            "ru": "В абзаце E сказано, что флаконы для промывания глаз закреплены в зонах погрузки, и их нужно выбрасывать после вскрытия или по истечении срока годности.",
+                            "uk": "В абзаці E сказано, що флакони для промивання очей закріплені в зонах навантаження, і їх треба викидати після відкриття або після закінчення терміну придатності."
+                        }
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "short_answer",
+                "limit": {
+                    "words": 3,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "a refresher course",
+                            "refresher course"
+                        ],
+                        "prompt": "What must first aiders complete once their three-year certificate runs out?",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "the certificate they receive is valid for three years, after which a refresher course is required",
+                        "explanation": {
+                            "en": "Paragraph B says that after the three-year certificate period a refresher course is required. The two-day course is the original training, not what is needed later.",
+                            "ru": "В абзаце B сказано, что по окончании трёхлетнего срока действия сертификата нужно пройти курс повышения квалификации («refresher course»). Двухдневный курс — это первоначальное обучение, а не то, что требуется позже.",
+                            "uk": "В абзаці B сказано, що після закінчення трирічного строку дії сертифіката треба пройти курс підвищення кваліфікації («refresher course»). Дводенний курс — це початкове навчання, а не те, що потрібно згодом."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "everyday painkillers",
+                            "painkillers"
+                        ],
+                        "prompt": "Which common type of medicine is mentioned as something first aiders will not hand out?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "will not give out tablets of any kind, not even everyday painkillers",
+                        "explanation": {
+                            "en": "Paragraph C says first aiders will not give out any tablets, 'not even everyday painkillers', because they cannot know about allergies or other medication.",
+                            "ru": "В абзаце C сказано, что ответственные за первую помощь не выдают никаких таблеток, «not even everyday painkillers», потому что не могут знать об аллергиях или других лекарствах, которые принимает человек.",
+                            "uk": "В абзаці C сказано, що відповідальні за першу допомогу не видають жодних таблеток, «not even everyday painkillers», бо не можуть знати про алергії чи інші ліки, які людина приймає."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "danger"
+                        ],
+                        "prompt": "What is a first aider trained to check the area for before approaching a casualty?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "a first aider is trained to check the area for danger",
+                        "explanation": {
+                            "en": "Paragraph C says that before approaching an injured person, a first aider checks the area for danger, such as moving vehicles or spilled chemicals.",
+                            "ru": "В абзаце C сказано, что, прежде чем подойти к пострадавшему, ответственный за первую помощь проверяет, нет ли вокруг опасности, например движущихся машин или пролитых химикатов.",
+                            "uk": "В абзаці C сказано, що перш ніж підійти до потерпілого, відповідальний за першу допомогу перевіряє, чи немає довкола небезпеки, наприклад транспорту, що рухається, або розлитих хімікатів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "guard on duty",
+                            "the guard",
+                            "guard"
+                        ],
+                        "prompt": "Who contacts the nearest first aider after an employee has dialled the internal number?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "the guard on duty will radio the nearest available first aider",
+                        "explanation": {
+                            "en": "Paragraph D says the call goes to the security desk, where the guard on duty radios the nearest available first aider. The employee does not contact the first aider directly.",
+                            "ru": "В абзаце D сказано, что звонок поступает на пост охраны, где дежурный охранник по рации вызывает ближайшего свободного ответственного за первую помощь. Сотрудник не связывается с ним напрямую.",
+                            "uk": "В абзаці D сказано, що дзвінок надходить на пост охорони, де черговий охоронець по рації викликає найближчого вільного відповідального за першу допомогу. Працівник не зв'язується з ним напряму."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "the main gate",
+                            "main gate"
+                        ],
+                        "prompt": "Where should a colleague wait for an ambulance that has been called?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "ask a colleague to wait at the main gate to guide the crew",
+                        "explanation": {
+                            "en": "Paragraph D says a colleague should wait at the main gate so that the ambulance crew can be guided to the right part of the building.",
+                            "ru": "В абзаце D сказано, что кто-то из коллег должен ждать у главных ворот, чтобы провести бригаду скорой помощи в нужную часть здания.",
+                            "uk": "В абзаці D сказано, що хтось із колег має чекати біля головних воріт, щоб провести бригаду швидкої допомоги до потрібної частини будівлі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "a single plaster",
+                            "single plaster",
+                            "plaster"
+                        ],
+                        "prompt": "What small item is given as an example of something you should report taking from a first aid kit?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "If you take anything from a kit, even a single plaster, please let that person know",
+                        "explanation": {
+                            "en": "Paragraph E says you should tell the responsible first aider if you take anything from a kit, 'even a single plaster', so it can be replaced.",
+                            "ru": "В абзаце E сказано, что если вы что-то взяли из аптечки, «even a single plaster», нужно сообщить об этом ответственному, чтобы взятое можно было восполнить.",
+                            "uk": "В абзаці E сказано, що коли ви щось узяли з аптечки, «even a single plaster», треба повідомити про це відповідальному, щоб узяте можна було поповнити."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "a locked cabinet",
+                            "locked cabinet"
+                        ],
+                        "prompt": "Where are completed pages from the accident book stored?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "reception staff remove it and file it in a locked cabinet",
+                        "explanation": {
+                            "en": "Paragraph F says reception staff remove completed pages and file them in a locked cabinet because they contain personal information. The book itself is kept at reception, but finished pages go into the cabinet.",
+                            "ru": "В абзаце F сказано, что сотрудники ресепшена вынимают заполненные страницы и хранят их в запирающемся шкафу, потому что там есть личные данные. Сам журнал лежит на ресепшене, но заполненные страницы убирают в шкаф.",
+                            "uk": "В абзаці F сказано, що працівники рецепції виймають заповнені сторінки й зберігають їх у шафі, що замикається, бо там є особисті дані. Сам журнал лежить на рецепції, але заповнені сторінки прибирають до шафи."
+                        }
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

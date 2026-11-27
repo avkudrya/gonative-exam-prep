@@ -1,0 +1,834 @@
+{
+    "id": "academic-6",
+    "exam": "ielts-academic",
+    "source": "Created by AI for GoNative Exam Prep, checked by two blind solvers and a controller (exam-reading-academic-2)",
+    "sections": [
+        {
+            "text": "Turning the Sea into Tap Water\n\nA. Roughly 97 per cent of the water on Earth lies in the oceans, yet in its natural state it is useless for drinking or irrigation. A litre of typical seawater carries about 35 grams of dissolved salts, far more than the human kidneys can cope with. For most of history, coastal communities facing drought could only gaze at the waves. Today, however, many thousands of desalination plants operate around the world, and in some countries they have turned from a last resort into the backbone of the public supply.\n\nB. Two broad families of technology do the work. The older one relies on heat, imitating the natural cycle in which the sun evaporates seawater and the vapour later falls as rain. In a thermal plant, seawater is boiled, often at reduced pressure so that it boils at a lower temperature, and the steam is condensed on cool surfaces, leaving the salt behind. The method is dependable and tolerates dirty or very salty water, but heating such huge volumes demands enormous amounts of fuel. For that reason, most plants built in recent decades use the second approach, reverse osmosis. Here seawater is forced at high pressure against a membrane so fine that water molecules squeeze through while most dissolved salts are held back.\n\nC. Reverse osmosis sounds simple, but keeping it running is a delicate business. Sand, algae and bacteria in the incoming water would quickly clog the membranes, so the water is first filtered and treated, a stage engineers call pretreatment. The water that emerges on the other side is, in a sense, too pure: lacking minerals, it can corrode pipes, so plants usually add calcium and other minerals back before it reaches consumers. The pressure required, often sixty times that of the atmosphere or more, explains why electricity is the single largest operating cost. Engineers have cut consumption sharply by fitting devices that capture the pressure still held by the salty reject stream and use it to help push the next batch of water through. Even so, producing a cubic metre of desalinated water still takes several times more energy than treating the same amount of river water or groundwater.\n\nD. Where the technology is used reflects geography and wealth. The countries around the Arabian Gulf, with little rainfall, few rivers and abundant oil and gas, were early adopters and remain the largest users; in several of them, most drinking water now comes from the sea. Elsewhere, desalination plays a supporting role. During a prolonged drought in the 2000s, several Australian cities commissioned large plants, only to leave some of them idle for years once the rains returned, a reminder that a plant built as insurance can look like an expensive mistake in wet years. Islands and dry coastal regions from the Mediterranean to California have also invested, while poorer inland areas, far from the sea and short of money, have largely been left out.\n\nE. The environmental costs begin at the intake. Pipes drawing in vast quantities of seawater can trap fish against screens and suck in eggs and larvae, which rarely survive. Some newer plants instead take water from wells dug beneath the seabed, using the sand as a natural filter, although suitable ground is not found on every coast. A greater concern lies at the other end of the process. For every litre of fresh water produced, a plant typically discharges a similar or larger volume of brine, roughly twice as salty as the sea and sometimes carrying traces of the chemicals used in cleaning. Being denser than the surrounding water, brine tends to sink and spread across the seabed, where it can harm creatures that cannot move away.\n\nF. How serious that harm is remains disputed. Soraya Abdelnour, a marine ecologist, spent three years surveying the seabed around two outfalls on the same coastline. Where brine was released through diffusers, nozzles that spray it upwards so that it mixes rapidly with seawater, changes in seabed life were confined to a narrow zone a few hundred metres wide. Where it simply poured from an open pipe, the affected area was considerably larger. Abdelnour cautions, however, that her study covered a coast with strong currents, and that in sheltered bays brine would probably be diluted far less efficiently.\n\nG. Then there is the climate. Where the electricity comes from burning fossil fuels, every glass of desalinated water adds to greenhouse emissions, worsening the very shifts in rainfall that make desalination necessary. Pairing plants with solar or wind power offers one way out, and because fresh water, unlike electricity, can be stored cheaply in reservoirs, plants can run harder when power is plentiful. Mikkel Oyarzún, an engineer who designs such systems, argues that the remaining obstacle is financial rather than technical: plants are costly to build, and their output is hard to justify when rain is abundant. Desalination, in his view, works best alongside repairing leaking pipes and recycling wastewater, not as a substitute for using water wisely.",
+            "title": "Turning the Sea into Tap Water",
+            "groups": [
+                {
+                    "type": "true_false_not_given",
+                    "questions": [
+                        {
+                            "answer": [
+                                "T"
+                            ],
+                            "prompt": "The salt content of seawater is too high for the human body to process safely.",
+                            "numbers": [
+                                1
+                            ],
+                            "evidence": "far more than the human kidneys can cope with",
+                            "explanation": {
+                                "en": "Paragraph A says seawater has far more salt than human kidneys can cope with. This is the same idea in different words.",
+                                "ru": "В абзаце A сказано, что в морской воде гораздо больше соли, чем способны выдержать почки человека. Это та же мысль, только другими словами.",
+                                "uk": "В абзаці A сказано, що в морській воді значно більше солі, ніж здатні витримати нирки людини. Це та сама думка, лише іншими словами."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "F"
+                            ],
+                            "prompt": "Thermal desalination only works well if the seawater is fairly clean.",
+                            "numbers": [
+                                2
+                            ],
+                            "evidence": "tolerates dirty or very salty water",
+                            "explanation": {
+                                "en": "Paragraph B says the thermal method tolerates dirty or very salty water, so it does not need clean water. The statement says the opposite.",
+                                "ru": "В абзаце B сказано, что термический метод справляется с грязной или очень солёной водой, то есть чистая вода ему не нужна. В утверждении сказано обратное.",
+                                "uk": "В абзаці B сказано, що термічний метод дає раду брудній або дуже солоній воді, тобто чиста вода йому не потрібна. У твердженні сказано протилежне."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "F"
+                            ],
+                            "prompt": "Water leaving reverse osmosis membranes typically contains too many minerals to be used straight away.",
+                            "numbers": [
+                                3
+                            ],
+                            "evidence": "too pure: lacking minerals, it can corrode pipes",
+                            "explanation": {
+                                "en": "Paragraph C says the water is too pure and lacks minerals, so minerals are added back. The problem is too few minerals, not too many.",
+                                "ru": "В абзаце C сказано, что вода получается слишком чистой и в ней не хватает минералов, поэтому их добавляют обратно. Проблема в том, что минералов слишком мало, а не слишком много.",
+                                "uk": "В абзаці C сказано, що вода виходить надто чистою і в ній бракує мінералів, тому їх додають назад. Проблема в тому, що мінералів замало, а не забагато."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "NG"
+                            ],
+                            "prompt": "Reverse osmosis membranes usually need replacing every few years.",
+                            "numbers": [
+                                4
+                            ],
+                            "explanation": {
+                                "en": "Paragraph C says the membranes can be clogged by sand, algae and bacteria, so the water is pretreated. It never says how long membranes last or when they must be replaced.",
+                                "ru": "В абзаце C сказано, что мембраны могут забиваться песком, водорослями и бактериями, поэтому воду предварительно очищают. Но там ничего не говорится о том, сколько служат мембраны или когда их нужно менять.",
+                                "uk": "В абзаці C сказано, що мембрани можуть забиватися піском, водоростями й бактеріями, тому воду попередньо очищають. Але там нічого не сказано про те, скільки служать мембрани чи коли їх треба міняти."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "T"
+                            ],
+                            "prompt": "In certain Gulf states, the majority of drinking water is now obtained from seawater.",
+                            "numbers": [
+                                5
+                            ],
+                            "evidence": "in several of them, most drinking water now comes from the sea",
+                            "explanation": {
+                                "en": "Paragraph D says that in several Gulf countries most drinking water now comes from the sea. 'The majority' means 'most'.",
+                                "ru": "В абзаце D сказано, что в ряде стран Персидского залива бо́льшая часть питьевой воды сейчас поступает из моря. \"The majority\" означает то же, что \"most\" (большая часть).",
+                                "uk": "В абзаці D сказано, що в кількох країнах Перської затоки більша частина питної води зараз надходить із моря. \"The majority\" означає те саме, що \"most\" (більша частина)."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "NG"
+                            ],
+                            "prompt": "The Australian desalination plants cost more to build than those in the Gulf region.",
+                            "numbers": [
+                                6
+                            ],
+                            "explanation": {
+                                "en": "Paragraph D says Australian cities built large plants during a drought and some stood idle, which could look like an expensive mistake. It never compares their building costs with plants in the Gulf.",
+                                "ru": "В абзаце D сказано, что австралийские города построили крупные опреснительные станции во время засухи и некоторые из них простаивали, что может выглядеть как дорогая ошибка. Но стоимость их строительства нигде не сравнивается со станциями в странах Персидского залива.",
+                                "uk": "В абзаці D сказано, що австралійські міста збудували великі опріснювальні станції під час посухи і деякі з них простоювали, що може виглядати як дорога помилка. Але вартість їхнього будівництва ніде не порівнюється зі станціями в країнах Перської затоки."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "NG"
+                            ],
+                            "prompt": "Drawing water from wells beneath the seabed is more expensive than using open intake pipes.",
+                            "numbers": [
+                                7
+                            ],
+                            "explanation": {
+                                "en": "Paragraph E says some newer plants use seabed wells and that suitable ground is not found on every coast. It says nothing about the cost of this method compared with intake pipes.",
+                                "ru": "В абзаце E сказано, что на некоторых новых станциях используют скважины на морском дне и что подходящий грунт есть не на каждом побережье. О стоимости этого способа по сравнению с водозаборными трубами ничего не сказано.",
+                                "uk": "В абзаці E сказано, що на деяких нових станціях використовують свердловини на морському дні і що придатний ґрунт є не на кожному узбережжі. Про вартість цього способу порівняно з водозабірними трубами нічого не сказано."
+                            }
+                        }
+                    ],
+                    "instruction": "Do the following statements agree with the information given in the Reading Passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+                },
+                {
+                    "type": "note_completion",
+                    "limit": {
+                        "words": 1,
+                        "number": false
+                    },
+                    "questions": [
+                        {
+                            "answer": [
+                                "membrane"
+                            ],
+                            "prompt": "Reverse osmosis: seawater pushed at high pressure against a very fine ______",
+                            "numbers": [
+                                8
+                            ],
+                            "evidence": "forced at high pressure against a membrane so fine",
+                            "explanation": {
+                                "en": "Paragraph B explains that in reverse osmosis seawater is pushed against a fine membrane that lets water through but holds salts back.",
+                                "ru": "В абзаце B объясняется, что при обратном осмосе (\"reverse osmosis\") морскую воду прижимают к тонкой мембране (\"membrane\"), которая пропускает воду, но задерживает соли.",
+                                "uk": "В абзаці B пояснюється, що під час зворотного осмосу (\"reverse osmosis\") морську воду притискають до тонкої мембрани (\"membrane\"), яка пропускає воду, але затримує солі."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "pretreatment",
+                                "pre-treatment"
+                            ],
+                            "prompt": "Sand, algae and bacteria removed first, in a stage called ______",
+                            "numbers": [
+                                9
+                            ],
+                            "evidence": "a stage engineers call pretreatment",
+                            "explanation": {
+                                "en": "Paragraph C says the water is filtered and treated before reaching the membranes, and engineers call this stage pretreatment.",
+                                "ru": "В абзаце C сказано, что перед попаданием на мембраны воду фильтруют и обрабатывают, и инженеры называют этот этап \"pretreatment\".",
+                                "uk": "В абзаці C сказано, що перед тим, як потрапити на мембрани, воду фільтрують і обробляють, а інженери називають цей етап \"pretreatment\"."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "electricity"
+                            ],
+                            "prompt": "Biggest running cost: ______, because of the high pressure involved",
+                            "numbers": [
+                                10
+                            ],
+                            "evidence": "electricity is the single largest operating cost",
+                            "explanation": {
+                                "en": "Paragraph C links the very high pressure to the fact that electricity is the single largest operating cost.",
+                                "ru": "Абзац C связывает очень высокое давление с тем, что электроэнергия (\"electricity\") — самая крупная статья эксплуатационных расходов.",
+                                "uk": "Абзац C пов'язує дуже високий тиск із тим, що електроенергія (\"electricity\") — найбільша стаття експлуатаційних витрат."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "larvae"
+                            ],
+                            "prompt": "Intake pipes: may trap fish and draw in eggs and ______",
+                            "numbers": [
+                                11
+                            ],
+                            "evidence": "suck in eggs and larvae, which rarely survive",
+                            "explanation": {
+                                "en": "Paragraph E says intake pipes can trap fish and suck in eggs and larvae, which rarely survive.",
+                                "ru": "В абзаце E сказано, что водозаборные трубы могут захватывать рыбу и засасывать икру и личинки (\"eggs and larvae\"), которые редко выживают.",
+                                "uk": "В абзаці E сказано, що водозабірні труби можуть захоплювати рибу й засмоктувати ікру та личинки (\"eggs and larvae\"), які рідко виживають."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "brine"
+                            ],
+                            "prompt": "Waste: very salty ______ that sinks because it is denser than seawater",
+                            "numbers": [
+                                12
+                            ],
+                            "evidence": "brine tends to sink and spread across the seabed",
+                            "explanation": {
+                                "en": "Paragraph E says plants discharge brine, which is denser than the surrounding water and so sinks to the seabed.",
+                                "ru": "В абзаце E сказано, что станции сбрасывают рассол (\"brine\"), который плотнее окружающей воды и поэтому опускается на морское дно (\"seabed\").",
+                                "uk": "В абзаці E сказано, що станції скидають розсіл (\"brine\"), який щільніший за навколишню воду і тому опускається на морське дно (\"seabed\")."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "diffusers"
+                            ],
+                            "prompt": "Release through devices called ______ makes the waste mix quickly",
+                            "numbers": [
+                                13
+                            ],
+                            "evidence": "Where brine was released through diffusers, nozzles that spray it upwards so that it mixes rapidly with seawater",
+                            "explanation": {
+                                "en": "Paragraph F describes diffusers as nozzles that spray brine upwards so it mixes rapidly, which kept the affected area small.",
+                                "ru": "В абзаце F диффузоры (\"diffusers\") описаны как сопла, которые выбрасывают рассол вверх, чтобы он быстро перемешивался с водой, — благодаря этому затронутая площадь оставалась небольшой.",
+                                "uk": "В абзаці F дифузори (\"diffusers\") описано як сопла, що викидають розсіл угору, щоб він швидко змішувався з водою, — завдяки цьому уражена площа залишалася невеликою."
+                            }
+                        }
+                    ],
+                    "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+                }
+            ],
+            "meta": {
+                "plan": "academic-6|s1",
+                "topic": "Drinking water from the sea"
+            }
+        },
+        {
+            "text": "Why the Wait Feels Long\n\nA. Few experiences are as universal, or as quietly frustrating, as standing in a queue. The line might lead to a supermarket checkout, a hospital reception desk or a theme-park ride. Either way, most people have felt a ten-minute wait drag on as though it were half an hour, and an equally long one pass almost unnoticed. Psychologists who study queues explain this by separating two kinds of time: the duration a clock would record and the duration a person actually experiences. For the organisations that make customers wait, the second figure frequently matters more than the first. Satisfaction depends less on how long people stand in line than on how long they believe they have stood there.\n\nB. One of the most reliable findings is that empty time feels longer than occupied time. When there is nothing to do, attention turns to the passing of time itself, and every minute becomes noticeable. This is why so many waiting areas offer something to look at or handle. Hotels and office buildings often hang mirrors beside lifts. People waiting for the doors to open can check their appearance or discreetly observe others, and complaints about slow lifts tend to fall as a result. A related effect concerns the moment at which a service seems to begin. People who are still waiting to be acknowledged feel more impatient than those who sense that the process is under way. This is why a restaurant that hands diners a menu as soon as they sit down makes them feel that their meal has already started, even if the kitchen has not yet received the order.\n\nC. Uncertainty is another powerful influence. A wait of unknown length feels longer than one whose end is in sight, and a delay that nobody explains feels longer than one with an obvious cause. Both conditions produce anxiety, and anxiety appears to stretch time: the worried mind keeps checking whether anything has changed. In one study, the psychologist Orla Fenwick asked passengers on a train held outside a station to estimate how long they had been stationary. In some carriages the driver had made a brief announcement explaining the hold-up, and passengers there guessed, on average, several minutes less than those in carriages where the speakers had failed. Yet both groups had waited exactly the same time. Fenwick cautions that her sample came from a single railway line, but the result fits a wider pattern: information, even unwelcome information, makes waiting easier to bear.\n\nD. Perhaps the strongest feelings in any queue concern fairness. Most cultures expect queues to follow the principle of first come, first served, and seeing someone who arrived later reach the front first can cause more irritation than the wait itself. Multiple parallel lines, common in older supermarkets, make such injustices highly visible, since one line inevitably moves faster than its neighbours. A single line that feeds several counters removes the problem, because every customer is served strictly in order of arrival. People tend to rate it as fairer even when the average wait is no shorter. The arrangement has a weakness, however. A single line serving many counters can grow very long, and newcomers who see it may decide not to join at all. For this reason some firms break it up with ropes and bends, so that no one can see its full length at once.\n\nE. These principles can be combined, as a project led by Bilal Haddad, the operations manager of a busy passport office, illustrates. Haddad began by asking his team to spend a month observing the public hall. They found that complaints rose sharply whenever visitors could see no sign of progress. Their first change was to replace the five separate lines in front of the counters with one single line that served all of them. Next, they installed screens displaying the expected wait. The estimates were kept deliberately pessimistic, so that most visitors would be called sooner than predicted and feel pleasantly surprised. Visitors were then given a numbered ticket, which allowed them to wait in a nearby café rather than stand in the hall. Finally, each person was asked to fill in a short form while waiting, which kept them occupied and also reduced the time needed at the counter. After six months, the average wait had barely changed, yet complaints had fallen by half.\n\nF. Not everyone welcomes this kind of management. Yuna Sorensen, a consumer researcher, argues that techniques designed to shorten perceived time can become a substitute for shortening real time. An organisation that installs entertaining screens, she points out, may feel less pressure to employ the extra staff who would actually reduce delays. She is also uneasy about deliberately pessimistic estimates, which may persuade some customers to give up and leave before they have joined the queue at all. Her criticisms do not mean that the psychology of waiting should be ignored. Rather, they suggest that the most successful approach combines genuine improvements in speed with honest information and thoughtful design, so that customers wait less and also feel that they have waited less.",
+            "title": "Why the Wait Feels Long",
+            "groups": [
+                {
+                    "type": "short_answer",
+                    "limit": {
+                        "words": 3,
+                        "number": false
+                    },
+                    "questions": [
+                        {
+                            "answer": [
+                                "mirrors"
+                            ],
+                            "prompt": "What do some hotels and office buildings place next to lifts, leading to fewer complaints about slow lifts?",
+                            "numbers": [
+                                14
+                            ],
+                            "evidence": "Hotels and office buildings often hang mirrors beside lifts",
+                            "explanation": {
+                                "en": "Paragraph B says buildings hang mirrors beside lifts so that people have something to do while waiting, and complaints about slow lifts then fall.",
+                                "ru": "В абзаце B говорится, что в зданиях рядом с лифтами вешают зеркала, чтобы людям было чем заняться во время ожидания. После этого жалоб на медленные лифты становится меньше.",
+                                "uk": "В абзаці B сказано, що в будівлях біля ліфтів вішають дзеркала, щоб людям було чим зайнятися під час очікування. Після цього скарг на повільні ліфти стає менше."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "a menu",
+                                "menu"
+                            ],
+                            "prompt": "What can a restaurant give diners as they sit down to make them feel their meal has begun?",
+                            "numbers": [
+                                15
+                            ],
+                            "evidence": "a restaurant that hands diners a menu as soon as they sit down",
+                            "explanation": {
+                                "en": "Paragraph B explains that handing diners a menu straight away makes them feel the meal has already started, even before the kitchen has the order.",
+                                "ru": "В абзаце B объясняется, что если сразу дать посетителям меню, им кажется, что обед уже начался, хотя кухня ещё даже не получила заказ.",
+                                "uk": "В абзаці B пояснюється, що коли відвідувачам одразу дають меню, їм здається, що обід уже почався, хоча кухня ще навіть не отримала замовлення."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "anxiety"
+                            ],
+                            "prompt": "Which feeling, produced by uncertain and unexplained waits, seems to make time stretch?",
+                            "numbers": [
+                                16
+                            ],
+                            "evidence": "Both conditions produce anxiety, and anxiety appears to stretch time",
+                            "explanation": {
+                                "en": "Paragraph C says that waits of unknown length and unexplained delays both produce anxiety, and anxiety appears to stretch time.",
+                                "ru": "В абзаце C говорится, что тревогу вызывают и ожидание неизвестной продолжительности, и необъяснённые задержки. А тревога, по-видимому, растягивает время.",
+                                "uk": "В абзаці C сказано, що тривогу викликають і очікування невідомої тривалості, і непояснені затримки. А тривога, схоже, розтягує час."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "a brief announcement",
+                                "brief announcement",
+                                "announcement"
+                            ],
+                            "prompt": "In Orla Fenwick's study, what had the driver made in the carriages where passengers gave shorter estimates?",
+                            "numbers": [
+                                17
+                            ],
+                            "evidence": "the driver had made a brief announcement explaining the hold-up",
+                            "explanation": {
+                                "en": "Paragraph C says passengers who heard a brief announcement explaining the delay guessed several minutes less than those who heard nothing.",
+                                "ru": "В абзаце C говорится, что пассажиры, которые услышали короткое объявление с объяснением задержки, называли время ожидания на несколько минут меньше, чем те, кто ничего не услышал.",
+                                "uk": "В абзаці C сказано, що пасажири, які почули коротке оголошення з поясненням затримки, називали час очікування на кілька хвилин менший, ніж ті, хто нічого не почув."
+                            }
+                        }
+                    ],
+                    "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+                },
+                {
+                    "type": "flow_chart_completion",
+                    "limit": {
+                        "words": 1,
+                        "number": false
+                    },
+                    "questions": [
+                        {
+                            "answer": [
+                                "progress"
+                            ],
+                            "prompt": "Step 1: A month of observation shows that complaints increase when visitors notice no sign of ______.",
+                            "numbers": [
+                                18
+                            ],
+                            "evidence": "complaints rose sharply whenever visitors could see no sign of progress",
+                            "explanation": {
+                                "en": "Paragraph E says Haddad's team observed the hall for a month and found complaints rose when visitors could see no sign of progress.",
+                                "ru": "В абзаце E говорится, что команда Haddad месяц наблюдала за залом. Она выяснила, что жалоб становилось больше, когда посетители не видели никаких признаков того, что очередь продвигается.",
+                                "uk": "В абзаці E сказано, що команда Haddad місяць спостерігала за залом. Вона з'ясувала, що скарг ставало більше, коли відвідувачі не бачили жодних ознак того, що черга просувається."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "single"
+                            ],
+                            "prompt": "Step 2: The five separate lines are replaced by a ______ line serving every counter.",
+                            "numbers": [
+                                19
+                            ],
+                            "evidence": "replace the five separate lines in front of the counters with one single line that served all of them",
+                            "explanation": {
+                                "en": "Paragraph E says the first change was to replace five separate lines with one single line for all the counters.",
+                                "ru": "В абзаце E говорится, что первым изменением стала замена пяти отдельных очередей одной общей очередью ко всем окошкам.",
+                                "uk": "В абзаці E сказано, що першою зміною була заміна п'яти окремих черг однією спільною чергою до всіх віконець."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "pessimistic"
+                            ],
+                            "prompt": "Step 3: Screens show expected waits, which are intentionally made ______.",
+                            "numbers": [
+                                20
+                            ],
+                            "evidence": "The estimates were kept deliberately pessimistic",
+                            "explanation": {
+                                "en": "Paragraph E says the estimates on the screens were deliberately pessimistic, so most visitors were called sooner than predicted.",
+                                "ru": "В абзаце E говорится, что прогнозы на экранах намеренно делали пессимистичными, поэтому большинство посетителей вызывали раньше, чем было обещано.",
+                                "uk": "В абзаці E сказано, що прогнози на екранах навмисно робили песимістичними, тож більшість відвідувачів викликали раніше, ніж обіцяли."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "ticket"
+                            ],
+                            "prompt": "Step 4: Visitors receive a numbered ______ so they can wait in a nearby café.",
+                            "numbers": [
+                                21
+                            ],
+                            "evidence": "Visitors were then given a numbered ticket, which allowed them to wait in a nearby café",
+                            "explanation": {
+                                "en": "Paragraph E says visitors were given a numbered ticket, which meant they could wait in a café instead of standing in the hall.",
+                                "ru": "В абзаце E говорится, что посетителям выдавали талон с номером, поэтому они могли ждать в кафе, а не стоять в зале.",
+                                "uk": "В абзаці E сказано, що відвідувачам видавали талон із номером, тож вони могли чекати в кафе, а не стояти в залі."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "form"
+                            ],
+                            "prompt": "Step 5: Each visitor completes a short ______ while waiting.",
+                            "numbers": [
+                                22
+                            ],
+                            "evidence": "each person was asked to fill in a short form while waiting",
+                            "explanation": {
+                                "en": "Paragraph E says visitors filled in a short form while waiting, which kept them busy and saved time at the counter.",
+                                "ru": "В абзаце E говорится, что во время ожидания посетители заполняли короткую анкету. Это давало им занятие и экономило время у окошка.",
+                                "uk": "В абзаці E сказано, що під час очікування відвідувачі заповнювали коротку анкету. Це давало їм заняття й заощаджувало час біля віконця."
+                            }
+                        }
+                    ],
+                    "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+                },
+                {
+                    "type": "multiple_choice_multi",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "hearing announcements about the hold-up"
+                        },
+                        {
+                            "id": "B",
+                            "text": "not knowing when the delay will end"
+                        },
+                        {
+                            "id": "C",
+                            "text": "waiting alongside a large number of people"
+                        },
+                        {
+                            "id": "D",
+                            "text": "having nothing to occupy one's attention"
+                        },
+                        {
+                            "id": "E",
+                            "text": "standing rather than being able to sit down"
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "B",
+                                "D"
+                            ],
+                            "prompt": "Which TWO of the following does the writer mention as making a wait feel longer?",
+                            "numbers": [
+                                23,
+                                24
+                            ],
+                            "evidence": "empty time feels longer than occupied time",
+                            "explanation": {
+                                "en": "Paragraph B says empty time feels longer than occupied time, and paragraph C says a wait of unknown length feels longer. Announcements actually made waits feel shorter in Fenwick's study, and standing or crowds are not mentioned.",
+                                "ru": "В абзаце B говорится, что незанятое время кажется длиннее занятого, а в абзаце C — что ожидание неизвестной продолжительности кажется дольше. Объявления в исследовании Fenwick, наоборот, делали ожидание субъективно короче, а о том, что людям приходится стоять, или о толпе в тексте ничего не сказано.",
+                                "uk": "В абзаці B сказано, що порожній час здається довшим, ніж зайнятий, а в абзаці C — що очікування невідомої тривалості здається довшим. Оголошення в дослідженні Fenwick, навпаки, робили очікування коротшим на відчуття, а про те, що людям доводиться стояти, чи про натовп у тексті не згадується."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose TWO letters, A–E, for each question."
+                },
+                {
+                    "type": "multiple_choice_multi",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "It considerably reduces the average time customers wait."
+                        },
+                        {
+                            "id": "B",
+                            "text": "It is mainly found in older supermarkets today."
+                        },
+                        {
+                            "id": "C",
+                            "text": "It requires an organisation to employ additional staff."
+                        },
+                        {
+                            "id": "D",
+                            "text": "Its length may discourage new arrivals from joining."
+                        },
+                        {
+                            "id": "E",
+                            "text": "It ensures that customers are served in order of arrival."
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "D",
+                                "E"
+                            ],
+                            "prompt": "Which TWO statements about a single line serving several counters are made in the passage?",
+                            "numbers": [
+                                25,
+                                26
+                            ],
+                            "evidence": "every customer is served strictly in order of arrival",
+                            "explanation": {
+                                "en": "Paragraph D says a single line serves everyone strictly in order of arrival, and that newcomers may decide not to join a very long line. The passage says the average wait may be no shorter, and it is multiple parallel lines that are linked with older supermarkets.",
+                                "ru": "В абзаце D говорится, что в одной общей очереди всех обслуживают строго в порядке прихода и что новые посетители могут решить не вставать в очень длинную очередь. При этом в тексте сказано, что среднее время ожидания может и не сократиться, а со старыми супермаркетами связаны как раз несколько параллельных очередей.",
+                                "uk": "В абзаці D сказано, що в одній спільній черзі всіх обслуговують суворо в порядку прибуття і що нові відвідувачі можуть вирішити не ставати в дуже довгу чергу. Водночас у тексті сказано, що середній час очікування може й не скоротитися, а зі старими супермаркетами пов'язані якраз кілька паралельних черг."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose TWO letters, A–E, for each question."
+                }
+            ],
+            "meta": {
+                "plan": "academic-6|s2",
+                "topic": "The psychology of waiting in line"
+            }
+        },
+        {
+            "text": "In Praise of Failure\n\nA. Open almost any scientific journal and you will find a remarkable run of success. Hypotheses are confirmed, new effects are detected and promising treatments appear to work. Anyone who has spent time in a laboratory knows that this is not what research actually looks like. Many experiments do not go to plan: reactions refuse to start, cells die for no obvious reason and carefully predicted effects simply fail to appear. The journals, in other words, offer something closer to a highlight reel than a full recording of the match. My argument is that the missing footage matters, and that science would be healthier, faster and cheaper if failed experiments and negative results were treated as part of the record rather than as private embarrassments.\n\nB. The imbalance is not imagined. Researchers who study the scientific literature itself have repeatedly found that published papers report positive results far more often than negative ones. In one recent analysis, the meta-researcher Sunil Varghese and his team examined around 1,500 studies in nutrition and ecology and found that more than nine in ten claimed to support the hypothesis the authors had set out to test. It would be pleasant to conclude that scientists are unusually gifted at predicting nature. A far more plausible explanation is that studies which find nothing are quietly left unpublished, a problem long known as the 'file drawer' effect.\n\nC. The cost of those drawers is easy to underestimate. Consider Kaito Morimoto, a doctoral student in materials science, who spent eight months trying to grow a particular crystal using a technique described in a promising conference talk. Only when he mentioned his difficulties at a workshop did he discover that at least three other groups had tried the same method and given up. None had reported the attempt, so each group had paid for the same lesson separately. Multiply that experience across thousands of laboratories and the waste becomes considerable. There is a subtler danger too. When researchers pool the results of many studies to judge whether a medical treatment works, they usually include only the studies that were published. If the disappointing ones are missing, the combined estimate makes the treatment look more effective than it really is, and doctors may make decisions on the basis of an exaggerated benefit.\n\nD. History offers reminders of how valuable a null result can be. In 1887, two American physicists built an apparatus to detect the 'ether', the invisible medium through which light was then thought to travel. Far from being a careless piece of work, their instrument was among the most sensitive of its day, yet it detected no trace of the ether. The apparent failure later came to be seen as important evidence for the theory of special relativity. The historian of science Ximena Arroyo argues that journals of that era printed accounts of unsuccessful experiments more readily than today's journals do. In her view, the change came during the twentieth century, as the competition for research funding and for citations grew fiercer and novelty became the quality that editors prized above all.\n\nE. Why, then, do scientists keep their failures to themselves? Part of the answer is incentives: a negative result rarely leads to a prestigious publication, and careers are built on publications. But there is also a more respectable reason, and it deserves to be taken seriously. An experiment can fail because the idea behind it is wrong, or simply because the equipment was faulty or the technique was clumsy. Publishing every disappointment could fill the literature with noise. I accept this concern, but I do not think it justifies silence. The answer is to describe methods in enough detail that others can judge whether a failure is informative. The chemist Odette Lamarque has shown what this might look like. Her group keeps a shared archive of every reaction that did not work, with notes on conditions and suspected causes, and new members must read it before they begin their own projects. She reports that several entries, revisited years later with better equipment, became the starting points for successful studies.\n\nF. Some institutions are beginning to move in the same direction. A number of journals now offer a format in which a study is accepted for publication on the strength of its question and design, before any data have been collected; whatever the results, the paper appears. Agata Wiśniewska, who edits one such journal, says that in her experience the format has changed how reviewers behave. Unable to see the outcome, they examine the methods far more critically, because the quality of the design is the only thing left to judge. Online repositories for negative results have also appeared, and some funding bodies now expect researchers to report the outcomes of projects they paid for, including the unwelcome ones.\n\nG. None of this means that failure should be celebrated for its own sake. A sloppy experiment that goes wrong teaches nobody anything, and praising failure must not become an excuse for careless work. Nor does every unsuccessful study need to become a full journal article; often a short, searchable record of what was tried and what happened would be enough. What matters is that the knowledge exists somewhere other than in one researcher's memory. Science advances by ruling things out as much as by finding things in, and a discipline that hides half of its results is working with only half of its evidence.",
+            "title": "In Praise of Failure",
+            "groups": [
+                {
+                    "type": "yes_no_not_given",
+                    "questions": [
+                        {
+                            "answer": [
+                                "Y"
+                            ],
+                            "prompt": "Scientific journals give a misleadingly successful impression of what research involves.",
+                            "numbers": [
+                                27
+                            ],
+                            "evidence": "offer something closer to a highlight reel than a full recording of the match",
+                            "explanation": {
+                                "en": "In Paragraph A the writer says journals are like a highlight reel rather than a full recording, after saying that real research is often unsuccessful. This means journals show mainly the successes, so the writer agrees.",
+                                "ru": "В абзаце A автор сначала говорит, что настоящие исследования часто оказываются неудачными, а затем сравнивает журналы с подборкой лучших моментов («highlight reel»), а не с полной записью. Значит, журналы показывают в основном успехи, так что автор согласен с утверждением.",
+                                "uk": "В абзаці A автор спершу каже, що справжні дослідження часто бувають невдалими, а потім порівнює журнали з добіркою найкращих моментів («highlight reel»), а не з повним записом. Отже, журнали показують переважно успіхи, тож автор погоджується з твердженням."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "N"
+                            ],
+                            "prompt": "The high proportion of positive findings in journals is probably a sign of scientists' skill at predicting results.",
+                            "numbers": [
+                                28
+                            ],
+                            "evidence": "A far more plausible explanation is that studies which find nothing are quietly left unpublished",
+                            "explanation": {
+                                "en": "In Paragraph B the writer says it would be 'pleasant' to believe scientists are gifted at predicting nature, but rejects this. The writer thinks the real reason is that negative studies are not published.",
+                                "ru": "В абзаце B автор пишет, что было бы «pleasant» поверить, будто у учёных есть дар предсказывать природу, но отвергает эту мысль. По мнению автора, настоящая причина в том, что исследования с отрицательными результатами не публикуются.",
+                                "uk": "В абзаці B автор пише, що було б «pleasant» вірити, ніби науковці мають хист передбачати природу, але відкидає цю думку. На думку автора, справжня причина в тому, що дослідження з негативними результатами не публікуються."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "Y"
+                            ],
+                            "prompt": "There is a legitimate reason why researchers may hesitate to publish experiments that failed.",
+                            "numbers": [
+                                29
+                            ],
+                            "evidence": "But there is also a more respectable reason, and it deserves to be taken seriously.",
+                            "explanation": {
+                                "en": "In Paragraph E the writer describes a 'respectable reason' – a failure may come from faulty equipment or clumsy technique – and says it should be taken seriously and that they accept the concern.",
+                                "ru": "В абзаце E автор описывает «respectable reason»: неудача может быть вызвана неисправным оборудованием или неумелой техникой. Автор пишет, что к этому нужно относиться серьёзно, и признаёт это опасение.",
+                                "uk": "В абзаці E автор описує «respectable reason»: невдача може бути спричинена несправним обладнанням або невправною технікою. Автор пише, що до цього слід ставитися серйозно, і визнає це побоювання."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "NG"
+                            ],
+                            "prompt": "All journals should be required to adopt the format in which studies are accepted before any data are collected.",
+                            "numbers": [
+                                30
+                            ],
+                            "explanation": {
+                                "en": "Paragraph F describes this format and reports an editor's positive experience of it. The writer never says whether every journal should be forced to use it.",
+                                "ru": "В абзаце F описан этот формат и приведён положительный опыт одного редактора. Но автор нигде не говорит, нужно ли обязать все журналы его использовать.",
+                                "uk": "В абзаці F описано цей формат і наведено позитивний досвід одного редактора. Але автор ніде не каже, чи треба зобов'язати всі журнали його використовувати."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "N"
+                            ],
+                            "prompt": "Every unsuccessful experiment deserves to be published as a complete journal article.",
+                            "numbers": [
+                                31
+                            ],
+                            "evidence": "Nor does every unsuccessful study need to become a full journal article",
+                            "explanation": {
+                                "en": "In Paragraph G the writer says a short, searchable record is often enough, so not every failed study needs a full article. This is the opposite of the statement.",
+                                "ru": "В абзаце G автор пишет, что часто достаточно краткой записи, которую можно найти поиском, поэтому не каждому неудачному исследованию нужна полноценная статья. Это противоположно утверждению.",
+                                "uk": "В абзаці G автор пише, що часто достатньо короткого запису, який можна знайти пошуком, тому не кожне невдале дослідження потребує повноцінної статті. Це протилежне твердженню."
+                            }
+                        }
+                    ],
+                    "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+                },
+                {
+                    "type": "matching_features",
+                    "reuse": true,
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "Sunil Varghese"
+                        },
+                        {
+                            "id": "B",
+                            "text": "Kaito Morimoto"
+                        },
+                        {
+                            "id": "C",
+                            "text": "Ximena Arroyo"
+                        },
+                        {
+                            "id": "D",
+                            "text": "Odette Lamarque"
+                        },
+                        {
+                            "id": "E",
+                            "text": "Agata Wiśniewska"
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "C"
+                            ],
+                            "prompt": "linked a change in publishing habits to increasing rivalry for money and recognition",
+                            "numbers": [
+                                32
+                            ],
+                            "evidence": "as the competition for research funding and for citations grew fiercer",
+                            "explanation": {
+                                "en": "In Paragraph D the historian Ximena Arroyo says the change came as competition for funding (money) and citations (recognition) grew fiercer.",
+                                "ru": "В абзаце D историк науки Ximena Arroyo говорит, что перемены произошли, когда усилилась конкуренция за «funding» (то есть деньги) и «citations» (то есть признание).",
+                                "uk": "В абзаці D історикиня науки Ximena Arroyo каже, що зміни відбулися, коли посилилася конкуренція за «funding» (тобто гроші) і «citations» (тобто визнання)."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "D"
+                            ],
+                            "prompt": "requires newcomers to study a record of earlier unsuccessful work",
+                            "numbers": [
+                                33
+                            ],
+                            "evidence": "new members must read it before they begin their own projects",
+                            "explanation": {
+                                "en": "In Paragraph E Odette Lamarque's group keeps an archive of reactions that did not work, and new members must read it before starting their projects.",
+                                "ru": "В абзаце E группа Odette Lamarque ведёт архив реакций, которые не удались, и новые сотрудники обязаны прочитать его, прежде чем начинать свои проекты.",
+                                "uk": "В абзаці E група Odette Lamarque веде архів реакцій, які не вдалися, і нові учасники мусять прочитати його, перш ніж розпочинати свої проєкти."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "A"
+                            ],
+                            "prompt": "found that the great majority of studies examined reported results that confirmed the authors' expectations",
+                            "numbers": [
+                                34
+                            ],
+                            "evidence": "found that more than nine in ten claimed to support the hypothesis the authors had set out to test",
+                            "explanation": {
+                                "en": "In Paragraph B Sunil Varghese's analysis of about 1,500 studies found that more than nine in ten supported the authors' hypothesis.",
+                                "ru": "В абзаце B анализ примерно 1500 исследований, проведённый Sunil Varghese, показал, что более девяти из десяти подтверждали гипотезу авторов.",
+                                "uk": "В абзаці B аналіз приблизно 1500 досліджень, проведений Sunil Varghese, показав, що понад дев'ять із десяти підтверджували гіпотезу авторів."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "E"
+                            ],
+                            "prompt": "observed that reviewers judge a study's design more strictly when they cannot know its results",
+                            "numbers": [
+                                35
+                            ],
+                            "evidence": "Unable to see the outcome, they examine the methods far more critically",
+                            "explanation": {
+                                "en": "In Paragraph F Agata Wiśniewska says that because reviewers cannot see the outcome, they look at the methods more critically.",
+                                "ru": "В абзаце F Agata Wiśniewska говорит, что рецензенты не видят результата и поэтому оценивают методы более критично.",
+                                "uk": "В абзаці F Agata Wiśniewska каже, що рецензенти не бачать результату й тому оцінюють методи критичніше."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "D"
+                            ],
+                            "prompt": "reported that some abandoned work proved useful when it was tried again with improved tools",
+                            "numbers": [
+                                36
+                            ],
+                            "evidence": "several entries, revisited years later with better equipment, became the starting points for successful studies",
+                            "explanation": {
+                                "en": "In Paragraph E Odette Lamarque reports that some failed reactions, tried again later with better equipment, led to successful studies.",
+                                "ru": "В абзаце E Odette Lamarque сообщает, что некоторые неудачные реакции, повторённые позже на более совершенном оборудовании, привели к успешным исследованиям.",
+                                "uk": "В абзаці E Odette Lamarque повідомляє, що деякі невдалі реакції, повторені згодом на кращому обладнанні, привели до успішних досліджень."
+                            }
+                        }
+                    ],
+                    "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–E. You may use any letter more than once."
+                },
+                {
+                    "type": "multiple_choice",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "to suggest that journals are written chiefly to entertain their readers"
+                        },
+                        {
+                            "id": "B",
+                            "text": "to suggest that journals describe experiments too briefly to be useful"
+                        },
+                        {
+                            "id": "C",
+                            "text": "to suggest that journals mostly show the successful parts of research"
+                        },
+                        {
+                            "id": "D",
+                            "text": "to suggest that journals prefer research that attracts public attention"
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "C"
+                            ],
+                            "prompt": "Why does the writer compare scientific journals to a 'highlight reel'?",
+                            "numbers": [
+                                37
+                            ],
+                            "evidence": "offer something closer to a highlight reel than a full recording of the match",
+                            "explanation": {
+                                "en": "In Paragraph A the writer contrasts the run of success in journals with the many experiments that go wrong. A highlight reel shows only the best moments, so journals show mainly successes; nothing is said about entertainment, brevity or public attention.",
+                                "ru": "В абзаце A автор противопоставляет череду успехов в журналах множеству экспериментов, которые заканчиваются неудачей. Подборка лучших моментов («highlight reel») показывает только самое удачное, поэтому журналы показывают в основном успехи; о развлечении, краткости или внимании публики ничего не сказано.",
+                                "uk": "В абзаці A автор протиставляє низку успіхів у журналах безлічі експериментів, які закінчуються невдачею. Добірка найкращих моментів («highlight reel») показує лише найвдаліше, тож журнали показують переважно успіхи; про розвагу, стислість чи увагу публіки нічого не сказано."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose the correct letter, A, B, C or D."
+                },
+                {
+                    "type": "multiple_choice",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "The published studies are judged less strictly by their reviewers."
+                        },
+                        {
+                            "id": "B",
+                            "text": "The treatment is tested again by many separate laboratories."
+                        },
+                        {
+                            "id": "C",
+                            "text": "Doctors become unwilling to trust any of the published estimates."
+                        },
+                        {
+                            "id": "D",
+                            "text": "The treatment's benefit appears greater than it actually is."
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "D"
+                            ],
+                            "prompt": "According to the writer, what happens when reviews of a medical treatment leave out disappointing studies?",
+                            "numbers": [
+                                38
+                            ],
+                            "evidence": "the combined estimate makes the treatment look more effective than it really is",
+                            "explanation": {
+                                "en": "Paragraph C says the combined estimate makes the treatment look more effective than it is. The passage says doctors may act on an exaggerated benefit, not that they stop trusting estimates.",
+                                "ru": "В абзаце C сказано, что сводная оценка делает лечение более эффективным на вид, чем оно есть на самом деле. В тексте говорится, что врачи могут опираться на преувеличенную пользу, а не что они перестают доверять оценкам.",
+                                "uk": "В абзаці C сказано, що зведена оцінка робить лікування на вигляд ефективнішим, ніж воно є насправді. У тексті йдеться про те, що лікарі можуть спиратися на перебільшену користь, а не про те, що вони перестають довіряти оцінкам."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose the correct letter, A, B, C or D."
+                },
+                {
+                    "type": "multiple_choice",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "an experiment that finds nothing can still be highly significant."
+                        },
+                        {
+                            "id": "B",
+                            "text": "careless experiments were once common in physics journals."
+                        },
+                        {
+                            "id": "C",
+                            "text": "older instruments were far less sensitive than modern equipment."
+                        },
+                        {
+                            "id": "D",
+                            "text": "the theory of relativity was based entirely on a single result."
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "A"
+                            ],
+                            "prompt": "The writer refers to the experiment of 1887 in order to show that",
+                            "numbers": [
+                                39
+                            ],
+                            "evidence": "History offers reminders of how valuable a null result can be.",
+                            "explanation": {
+                                "en": "In Paragraph D the experiment found no trace of the ether, yet this result later became important evidence for special relativity. The passage says the instrument was very sensitive and the work was not careless, and it calls the result 'important evidence', not the only basis of the theory.",
+                                "ru": "В абзаце D эксперимент не обнаружил никаких следов эфира, однако позже этот результат стал важным доказательством специальной теории относительности. В тексте сказано, что прибор был очень чувствительным, а работа не была небрежной, и результат назван «important evidence», а не единственной основой теории.",
+                                "uk": "В абзаці D експеримент не виявив жодних слідів ефіру, проте згодом цей результат став важливим доказом спеціальної теорії відносності. У тексті сказано, що прилад був дуже чутливим, а робота не була недбалою, і результат названо «important evidence», а не єдиною основою теорії."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose the correct letter, A, B, C or D."
+                },
+                {
+                    "type": "multiple_choice",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "publishing only those failures that have been repeated several times"
+                        },
+                        {
+                            "id": "B",
+                            "text": "reporting procedures fully enough for others to assess each failure"
+                        },
+                        {
+                            "id": "C",
+                            "text": "asking senior scientists to approve each failure before it is released"
+                        },
+                        {
+                            "id": "D",
+                            "text": "keeping failed results private until better equipment is available"
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "B"
+                            ],
+                            "prompt": "What does the writer suggest is the best response to the worry that failures may be caused by poor technique?",
+                            "numbers": [
+                                40
+                            ],
+                            "evidence": "The answer is to describe methods in enough detail that others can judge whether a failure is informative.",
+                            "explanation": {
+                                "en": "In Paragraph E the writer accepts the concern but says the solution is to describe methods in detail so that others can judge the failure. Better equipment is mentioned only in Lamarque's example, and the writer says the concern does not justify keeping failures private.",
+                                "ru": "В абзаце E автор признаёт это опасение, но считает, что решение — подробно описывать методы, чтобы другие могли сами оценить неудачу. Более совершенное оборудование упоминается только в примере Lamarque, а автор пишет, что это опасение не оправдывает того, чтобы скрывать неудачи.",
+                                "uk": "В абзаці E автор визнає це побоювання, але вважає, що розв'язання — докладно описувати методи, щоб інші могли самі оцінити невдачу. Краще обладнання згадано лише в прикладі Lamarque, а автор пише, що це побоювання не виправдовує приховування невдач."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose the correct letter, A, B, C or D."
+                }
+            ],
+            "meta": {
+                "plan": "academic-6|s3",
+                "topic": "In praise of failure in science"
+            }
+        }
+    ]
+}

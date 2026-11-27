@@ -1,0 +1,1118 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-7|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.250748,
+            "provider": "anthropic",
+            "outputTokens": 11556
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012966,
+            "provider": "anthropic",
+            "outputTokens": 677
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018575,
+            "provider": "openai",
+            "outputTokens": 927
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.020864,
+            "provider": "anthropic",
+            "outputTokens": 323
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.004872,
+            "provider": "anthropic",
+            "outputTokens": 58
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.004593,
+            "provider": "openai",
+            "outputTokens": 98
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.013746,
+            "provider": "xai",
+            "outputTokens": 1233
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.092576,
+            "provider": "anthropic",
+            "outputTokens": 4286
+        }
+    ],
+    "draft": {
+        "title": "Keeping Fit in Brackenford: Five Options Compared",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a facility that members can enter at any hour of the day or night",
+                        "options": [],
+                        "evidence": "Members receive an electronic key that lets them in around the clock",
+                        "explanation": "Paragraph B says the Ironworks key lets members in \"around the clock\", which means at any hour. The Harbour Road gym in E has limited hours, so it does not fit."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a time of year when a facility is not open at all",
+                        "options": [],
+                        "evidence": "it closes completely for the first two weeks of August while volunteers carry out repairs",
+                        "explanation": "Paragraph E says the Harbour Road gym shuts completely for two weeks in August. January is mentioned in C, but only as the month when the joining fee is not charged."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a discount for people who can show that they live in the area",
+                        "options": [],
+                        "evidence": "Residents who bring a council tax bill or another proof of address receive a third off the standard price",
+                        "explanation": "Paragraph A says residents with proof of address get a third off. The reduced rate in E depends on income, not on where people live."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a membership that can also be used in other parts of the country",
+                        "options": [],
+                        "evidence": "a standard membership gives access to more than eighty branches across the country",
+                        "explanation": "Paragraph C explains that Pulse Fitness is a national chain and its membership works in over eighty branches nationwide."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a cost for people who withdraw from a booking at short notice",
+                        "options": [],
+                        "evidence": "anyone who cancels less than twelve hours before a class is charged in full",
+                        "explanation": "Paragraph D says Willow Studio charges the full price if you cancel less than twelve hours before a class. The expensive early exit in C is about ending a contract, not cancelling a booking."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a suggestion about the best times to visit to avoid crowds",
+                        "options": [],
+                        "evidence": "If your schedule allows it, mid-morning or the hour before closing is far more pleasant.",
+                        "explanation": "Paragraph A warns that Riverside is crowded on weekday evenings and recommends going mid-morning or just before closing instead."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "fees that depend on a member's financial situation",
+                        "options": [],
+                        "evidence": "Fees are based on what members can afford",
+                        "explanation": "Paragraph E says Harbour Road members on a low income or receiving benefits pay less. The discount in A depends on address, not money."
+                    }
+                ],
+                "instruction": "The passage has five paragraphs, A–E. Which paragraph contains the following information? Write the correct letter, A–E. NB You may use any letter more than once."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Anyone who buys a monthly pass at Riverside Leisure Centre must keep it for a minimum period.",
+                        "options": [],
+                        "evidence": "There is no contract: you can either pay for each visit or buy a monthly pass, which can be cancelled at any time.",
+                        "explanation": "Paragraph A says the monthly pass can be cancelled at any time, so there is no minimum period. The three-month minimum belongs to Ironworks in paragraph B."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Riverside's swimming lessons for children are only offered during the school holidays.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph A says the children's lessons are popular and fill up quickly. It says nothing about when during the year they take place."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The owner of Ironworks Strength Club has taken part in weightlifting competitions.",
+                        "options": [],
+                        "evidence": "Its owner, Dorothea Pemberton, competed in weightlifting for over a decade",
+                        "explanation": "Paragraph B says Dorothea Pemberton competed in weightlifting for more than ten years, which matches the statement."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "New Ironworks members can use the club at night as soon as they have paid.",
+                        "options": [],
+                        "evidence": "nobody is given one until they have completed a one-hour induction with a member of staff",
+                        "explanation": "Paragraph B says members only get the key that lets them in at any hour after a one-hour induction. Paying alone is not enough."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Ironworks Strength Club intends to introduce group classes in the future.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says there are no group classes apart from a Saturday technique session. It does not say whether the club plans to add classes later."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Pulse Fitness members can leave their cars near the gym without paying, for a limited time.",
+                        "options": [],
+                        "evidence": "Members can park free for up to two hours in the shopping centre car park.",
+                        "explanation": "Paragraph C says members park free for up to two hours in the shopping centre car park, where the gym is located."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "People who join Pulse Fitness in January pay a lower monthly fee than other members.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C says the joining fee is waived in January. It says nothing about the monthly price being lower for these members, so we cannot tell."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The person who runs Willow Studio used to work in physiotherapy.",
+                        "options": [],
+                        "evidence": "It is run by Anselm Wiradja, a former physiotherapist",
+                        "explanation": "Paragraph D describes Anselm Wiradja, who runs the studio, as a former physiotherapist, so the statement is true."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Nkechi Halvorsen's supervised session is available on every day that the Harbour Road gym opens.",
+                        "options": [],
+                        "evidence": "Every Tuesday and Thursday, Nkechi Halvorsen, a retired nurse, leads a supervised session",
+                        "explanation": "Paragraph E says the gym opens every weekday morning, but the supervised session runs only on Tuesdays and Thursdays."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "people": [
+            {
+                "name": "Dorothea Pemberton",
+                "role": "Owner of Ironworks Strength Club and former competitive weightlifter",
+                "gender": "female"
+            },
+            {
+                "name": "Anselm Wiradja",
+                "role": "Former physiotherapist who runs Willow Studio",
+                "gender": "unknown"
+            },
+            {
+                "name": "Nkechi Halvorsen",
+                "role": "Retired nurse who leads supervised sessions at Harbour Road Community Gym",
+                "gender": "unknown"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Riverside Leisure Centre is run by the town council and is the obvious choice for anyone who wants to swim as well as train. Alongside a 25-metre pool, it has a reasonably equipped gym, a sports hall and changing rooms that were completely rebuilt last year. There is no contract: you can either pay for each visit or buy a monthly pass, which can be cancelled at any time. Residents who bring a council tax bill or another proof of address receive a third off the standard price, so it is worth sorting out your paperwork before you go. The downside is that the centre gets very crowded between five and seven on weekday evenings, when queues form for the most popular machines. If your schedule allows it, mid-morning or the hour before closing is far more pleasant. Swimming lessons for children are popular and tend to fill up within days of being announced.",
+                "label": "A"
+            },
+            {
+                "text": "Ironworks Strength Club, tucked behind the railway station, is a very different place. Its owner, Dorothea Pemberton, competed in weightlifting for over a decade, and the club is aimed squarely at people who want to lift heavy weights rather than run on treadmills; there are only two cardio machines in the whole building. Members receive an electronic key that lets them in around the clock, but nobody is given one until they have completed a one-hour induction with a member of staff. Pemberton insists that beginners are welcome and says many of her current members had never touched a barbell before joining. Membership is charged monthly, with a minimum commitment of three months. Apart from a free technique session on Saturday mornings, there are no group classes. The changing facilities are basic, so some members shower at home.",
+                "label": "B"
+            },
+            {
+                "text": "If you travel a lot for work, Pulse Fitness may suit you best. It belongs to a national chain, and a standard membership gives access to more than eighty branches across the country, not just the one on the top floor of the Brackenford shopping centre. The gym floor is large and modern, and the price includes around forty classes a week, from cycling to boxing-style workouts. Members can park free for up to two hours in the shopping centre car park. However, joining usually means signing a twelve-month contract, and leaving early is expensive. There is normally a joining fee as well, although this is waived for anyone who signs up in January. Some members complain that the most popular classes are fully booked within minutes of opening for reservations.",
+                "label": "C"
+            },
+            {
+                "text": "Willow Studio offers no gym equipment at all; instead, it specialises in yoga and Pilates. Classes are limited to twelve people, so instructors can correct each participant's posture, and the studio is particularly popular with people who sit at a desk all day. It is run by Anselm Wiradja, a former physiotherapist, who designs a gentle beginners' course every term. Places must be booked through the studio's app, and anyone who cancels less than twelve hours before a class is charged in full. Newcomers can try one class without paying, which is a sensible way to find out whether the atmosphere suits you. Rather than a membership, you buy packs of five or ten classes, which remain valid for six months.",
+                "label": "D"
+            },
+            {
+                "text": "Finally, the Harbour Road Community Gym is a charity run largely by volunteers. Its equipment is older and the space is small, but it has a warm, unhurried atmosphere that appeals especially to older adults and people returning to exercise after illness or injury. Every Tuesday and Thursday, Nkechi Halvorsen, a retired nurse, leads a supervised session for anyone who feels nervous about training alone. Fees are based on what members can afford: those on a low income or receiving benefits pay a reduced rate, and nobody is asked to prove their earnings. The gym opens only on weekday mornings and two evenings a week, and it closes completely for the first two weeks of August while volunteers carry out repairs. For those willing to work around these hours, it offers remarkable value.",
+                "label": "E"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Members receive an electronic key that lets them in around the clock",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "it closes completely for the first two weeks of August while volunteers carry out repairs",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Residents who bring a council tax bill or another proof of address receive a third off the standard price",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a standard membership gives access to more than eighty branches across the country",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "anyone who cancels less than twelve hours before a class is charged in full",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "mid-morning or the hour before closing is far more pleasant",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Fees are based on what members can afford",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "you can either pay for each visit or buy a monthly pass, which can be cancelled at any time",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Its owner, Dorothea Pemberton, competed in weightlifting for over a decade",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "nobody is given one until they have completed a one-hour induction with a member of staff",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Members can park free for up to two hours in the shopping centre car park.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    false
+                ],
+                "quote": "There is normally a joining fee as well, although this is waived for anyone who signs up in January.",
+                "answer": [
+                    "F"
+                ],
+                "correct": false
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "It is run by Anselm Wiradja, a former physiotherapist",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "Every Tuesday and Thursday, Nkechi Halvorsen, a retired nurse, leads a supervised session",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Members receive an electronic key that lets them in around the clock",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "it closes completely for the first two weeks of August",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Residents who bring a council tax bill or another proof of address receive a third off the standard price",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a standard membership gives access to more than eighty branches across the country",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "anyone who cancels less than twelve hours before a class is charged in full",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "If your schedule allows it, mid-morning or the hour before closing is far more pleasant",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Fees are based on what members can afford",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "you can either pay for each visit or buy a monthly pass, which can be cancelled at any time",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Its owner, Dorothea Pemberton, competed in weightlifting for over a decade",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "nobody is given one until they have completed a one-hour induction with a member of staff",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Members can park free for up to two hours in the shopping centre car park",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    false
+                ],
+                "quote": "There is normally a joining fee as well, although this is waived for anyone who signs up in January",
+                "answer": [
+                    "F"
+                ],
+                "correct": false
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "It is run by Anselm Wiradja, a former physiotherapist",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "Every Tuesday and Thursday, Nkechi Halvorsen, a retired nurse, leads a supervised session... The gym opens only on weekday mornings and two evenings a week",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": [
+            "b2q7"
+        ]
+    },
+    "revise": {
+        "b2q7": {
+            "action": "keep",
+            "reason": "The key is sound. The passage only says the one-off joining fee is waived for January sign-ups. It says nothing about the monthly price for these members, so the solvers wrongly read the waived joining fee as a statement about monthly fees."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Members receive an electronic key that lets them in around the clock",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "it closes completely for the first two weeks of August",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Residents who bring a council tax bill or another proof of address receive a third off the standard price",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "a standard membership gives access to more than eighty branches across the country",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "anyone who cancels less than twelve hours before a class is charged in full",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "mid-morning or the hour before closing is far more pleasant",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "buy a monthly pass, which can be cancelled at any time",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Its owner, Dorothea Pemberton, competed in weightlifting for over a decade",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "nobody is given one until they have completed a one-hour induction with a member of staff",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Members can park free for up to two hours in the shopping centre car park",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q8": {
+            "marks": [
+                true
+            ],
+            "quote": "It is run by Anselm Wiradja, a former physiotherapist",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q9": {
+            "marks": [
+                true
+            ],
+            "quote": "Every Tuesday and Thursday, Nkechi Halvorsen, a retired nurse, leads a supervised session",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 1,
+        "generated": 16,
+        "agreedFirst": 15,
+        "discardRate": 0.0625,
+        "agreedRevised": 0,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b2q7": {
+                "marks": [
+                    false
+                ],
+                "quote": "There is normally a joining fee as well, although this is waived for anyone who signs up in January.",
+                "answer": [
+                    "F"
+                ],
+                "correct": false
+            }
+        },
+        "b": {
+            "b2q7": {
+                "marks": [
+                    false
+                ],
+                "quote": "There is normally a joining fee as well, although this is waived for anyone who signs up in January.",
+                "answer": [
+                    "F"
+                ],
+                "correct": false
+            }
+        }
+    },
+    "section": {
+        "text": "Keeping Fit in Brackenford: Five Options Compared\n\nA. Riverside Leisure Centre is run by the town council and is the obvious choice for anyone who wants to swim as well as train. Alongside a 25-metre pool, it has a reasonably equipped gym, a sports hall and changing rooms that were completely rebuilt last year. There is no contract: you can either pay for each visit or buy a monthly pass, which can be cancelled at any time. Residents who bring a council tax bill or another proof of address receive a third off the standard price, so it is worth sorting out your paperwork before you go. The downside is that the centre gets very crowded between five and seven on weekday evenings, when queues form for the most popular machines. If your schedule allows it, mid-morning or the hour before closing is far more pleasant. Swimming lessons for children are popular and tend to fill up within days of being announced.\n\nB. Ironworks Strength Club, tucked behind the railway station, is a very different place. Its owner, Dorothea Pemberton, competed in weightlifting for over a decade, and the club is aimed squarely at people who want to lift heavy weights rather than run on treadmills; there are only two cardio machines in the whole building. Members receive an electronic key that lets them in around the clock, but nobody is given one until they have completed a one-hour induction with a member of staff. Pemberton insists that beginners are welcome and says many of her current members had never touched a barbell before joining. Membership is charged monthly, with a minimum commitment of three months. Apart from a free technique session on Saturday mornings, there are no group classes. The changing facilities are basic, so some members shower at home.\n\nC. If you travel a lot for work, Pulse Fitness may suit you best. It belongs to a national chain, and a standard membership gives access to more than eighty branches across the country, not just the one on the top floor of the Brackenford shopping centre. The gym floor is large and modern, and the price includes around forty classes a week, from cycling to boxing-style workouts. Members can park free for up to two hours in the shopping centre car park. However, joining usually means signing a twelve-month contract, and leaving early is expensive. There is normally a joining fee as well, although this is waived for anyone who signs up in January. Some members complain that the most popular classes are fully booked within minutes of opening for reservations.\n\nD. Willow Studio offers no gym equipment at all; instead, it specialises in yoga and Pilates. Classes are limited to twelve people, so instructors can correct each participant's posture, and the studio is particularly popular with people who sit at a desk all day. It is run by Anselm Wiradja, a former physiotherapist, who designs a gentle beginners' course every term. Places must be booked through the studio's app, and anyone who cancels less than twelve hours before a class is charged in full. Newcomers can try one class without paying, which is a sensible way to find out whether the atmosphere suits you. Rather than a membership, you buy packs of five or ten classes, which remain valid for six months.\n\nE. Finally, the Harbour Road Community Gym is a charity run largely by volunteers. Its equipment is older and the space is small, but it has a warm, unhurried atmosphere that appeals especially to older adults and people returning to exercise after illness or injury. Every Tuesday and Thursday, Nkechi Halvorsen, a retired nurse, leads a supervised session for anyone who feels nervous about training alone. Fees are based on what members can afford: those on a low income or receiving benefits pay a reduced rate, and nobody is asked to prove their earnings. The gym opens only on weekday mornings and two evenings a week, and it closes completely for the first two weeks of August while volunteers carry out repairs. For those willing to work around these hours, it offers remarkable value.",
+        "title": "Keeping Fit in Brackenford: Five Options Compared",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a facility that members can enter at any hour of the day or night",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Members receive an electronic key that lets them in around the clock",
+                        "explanation": {
+                            "en": "Paragraph B says the Ironworks key lets members in \"around the clock\", which means at any hour. The Harbour Road gym in E has limited hours, so it does not fit.",
+                            "ru": "В абзаце B сказано, что ключ Ironworks позволяет членам клуба приходить \"around the clock\", то есть в любое время суток. Зал Harbour Road из абзаца E работает только в определённые часы, поэтому не подходит.",
+                            "uk": "В абзаці B сказано, що ключ Ironworks дає змогу членам клубу приходити \"around the clock\", тобто в будь-який час доби. Зал Harbour Road з абзацу E працює лише в певні години, тому не підходить."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a time of year when a facility is not open at all",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "it closes completely for the first two weeks of August while volunteers carry out repairs",
+                        "explanation": {
+                            "en": "Paragraph E says the Harbour Road gym shuts completely for two weeks in August. January is mentioned in C, but only as the month when the joining fee is not charged.",
+                            "ru": "В абзаце E сказано, что зал Harbour Road полностью закрывается на две недели в августе. Январь упоминается в абзаце C, но только как месяц, когда не берут вступительный взнос.",
+                            "uk": "В абзаці E сказано, що зал Harbour Road повністю зачиняється на два тижні в серпні. Січень згадано в абзаці C, але лише як місяць, коли не стягують вступний внесок."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a discount for people who can show that they live in the area",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "Residents who bring a council tax bill or another proof of address receive a third off the standard price",
+                        "explanation": {
+                            "en": "Paragraph A says residents with proof of address get a third off. The reduced rate in E depends on income, not on where people live.",
+                            "ru": "В абзаце A сказано, что местные жители с подтверждением адреса получают скидку в треть стоимости. Сниженная цена в абзаце E зависит от дохода, а не от места проживания.",
+                            "uk": "В абзаці A сказано, що місцеві мешканці з підтвердженням адреси отримують знижку в третину вартості. Знижений тариф в абзаці E залежить від доходу, а не від місця проживання."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a membership that can also be used in other parts of the country",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "a standard membership gives access to more than eighty branches across the country",
+                        "explanation": {
+                            "en": "Paragraph C explains that Pulse Fitness is a national chain and its membership works in over eighty branches nationwide.",
+                            "ru": "В абзаце C объясняется, что Pulse Fitness — общенациональная сеть, и абонемент действует более чем в восьмидесяти её филиалах по всей стране.",
+                            "uk": "В абзаці C пояснюється, що Pulse Fitness — загальнонаціональна мережа, і абонемент діє в понад вісімдесяти її філіях по всій країні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a cost for people who withdraw from a booking at short notice",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "anyone who cancels less than twelve hours before a class is charged in full",
+                        "explanation": {
+                            "en": "Paragraph D says Willow Studio charges the full price if you cancel less than twelve hours before a class. The expensive early exit in C is about ending a contract, not cancelling a booking.",
+                            "ru": "В абзаце D сказано, что Willow Studio берёт полную стоимость, если отменить занятие менее чем за двенадцать часов до начала. Дорогой досрочный выход в абзаце C касается расторжения договора, а не отмены записи.",
+                            "uk": "В абзаці D сказано, що Willow Studio стягує повну вартість, якщо скасувати заняття менш ніж за дванадцять годин до початку. Дороге дострокове припинення в абзаці C стосується розірвання договору, а не скасування запису."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a suggestion about the best times to visit to avoid crowds",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "If your schedule allows it, mid-morning or the hour before closing is far more pleasant.",
+                        "explanation": {
+                            "en": "Paragraph A warns that Riverside is crowded on weekday evenings and recommends going mid-morning or just before closing instead.",
+                            "ru": "В абзаце A предупреждают, что в Riverside многолюдно по вечерам в будни, и советуют приходить в середине утра или прямо перед закрытием.",
+                            "uk": "В абзаці A попереджають, що в Riverside людно в будні вечори, і радять приходити в середині ранку або перед самим закриттям."
+                        }
+                    }
+                ],
+                "instruction": "The passage has five paragraphs, A–E. Which paragraph contains the following information? Write the correct letter, A–E. NB You may use any letter more than once."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Anyone who buys a monthly pass at Riverside Leisure Centre must keep it for a minimum period.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "There is no contract: you can either pay for each visit or buy a monthly pass, which can be cancelled at any time.",
+                        "explanation": {
+                            "en": "Paragraph A says the monthly pass can be cancelled at any time, so there is no minimum period. The three-month minimum belongs to Ironworks in paragraph B.",
+                            "ru": "В абзаце A сказано, что месячный абонемент можно отменить в любой момент, то есть минимального срока нет. Минимальный срок в три месяца относится к Ironworks из абзаца B.",
+                            "uk": "В абзаці A сказано, що місячний абонемент можна скасувати будь-коли, тобто мінімального терміну немає. Мінімальний термін у три місяці стосується Ironworks з абзацу B."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Riverside's swimming lessons for children are only offered during the school holidays.",
+                        "numbers": [
+                            8
+                        ],
+                        "explanation": {
+                            "en": "Paragraph A says the children's lessons are popular and fill up quickly. It says nothing about when during the year they take place.",
+                            "ru": "В абзаце A сказано, что детские занятия популярны и места на них быстро заканчиваются. О том, в какое время года они проходят, ничего не говорится.",
+                            "uk": "В абзаці A сказано, що дитячі заняття популярні й місця на них швидко закінчуються. Про те, в яку пору року вони відбуваються, нічого не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The owner of Ironworks Strength Club has taken part in weightlifting competitions.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "Its owner, Dorothea Pemberton, competed in weightlifting for over a decade",
+                        "explanation": {
+                            "en": "Paragraph B says Dorothea Pemberton competed in weightlifting for more than ten years, which matches the statement.",
+                            "ru": "В абзаце B сказано, что Dorothea Pemberton более десяти лет выступала на соревнованиях по тяжёлой атлетике — это совпадает с утверждением.",
+                            "uk": "В абзаці B сказано, що Dorothea Pemberton понад десять років виступала на змаганнях з важкої атлетики — це збігається з твердженням."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "New Ironworks members can use the club at night as soon as they have paid.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "nobody is given one until they have completed a one-hour induction with a member of staff",
+                        "explanation": {
+                            "en": "Paragraph B says members only get the key that lets them in at any hour after a one-hour induction. Paying alone is not enough.",
+                            "ru": "В абзаце B сказано, что ключ для круглосуточного доступа выдают только после часового вводного инструктажа. Одной оплаты недостаточно.",
+                            "uk": "В абзаці B сказано, що ключ для цілодобового доступу видають лише після годинного вступного інструктажу. Самої оплати недостатньо."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Ironworks Strength Club intends to introduce group classes in the future.",
+                        "numbers": [
+                            11
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says there are no group classes apart from a Saturday technique session. It does not say whether the club plans to add classes later.",
+                            "ru": "В абзаце B сказано, что групповых занятий нет, кроме субботнего занятия по технике. Планирует ли клуб добавить занятия позже, не указано.",
+                            "uk": "В абзаці B сказано, що групових занять немає, крім суботнього заняття з техніки. Чи планує клуб додати заняття згодом, не вказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Pulse Fitness members can leave their cars near the gym without paying, for a limited time.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "Members can park free for up to two hours in the shopping centre car park.",
+                        "explanation": {
+                            "en": "Paragraph C says members park free for up to two hours in the shopping centre car park, where the gym is located.",
+                            "ru": "В абзаце C сказано, что члены клуба могут бесплатно парковаться до двух часов на парковке торгового центра, где находится зал.",
+                            "uk": "В абзаці C сказано, що члени клубу можуть безкоштовно паркуватися до двох годин на парковці торговельного центру, де розташований зал."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The person who runs Willow Studio used to work in physiotherapy.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "It is run by Anselm Wiradja, a former physiotherapist",
+                        "explanation": {
+                            "en": "Paragraph D describes Anselm Wiradja, who runs the studio, as a former physiotherapist, so the statement is true.",
+                            "ru": "В абзаце D сказано, что студией руководит Anselm Wiradja — в прошлом физиотерапевт, поэтому утверждение верно.",
+                            "uk": "В абзаці D сказано, що студією керує Anselm Wiradja — у минулому фізіотерапевт, тому твердження правильне."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Nkechi Halvorsen's supervised session is available on every day that the Harbour Road gym opens.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "Every Tuesday and Thursday, Nkechi Halvorsen, a retired nurse, leads a supervised session",
+                        "explanation": {
+                            "en": "Paragraph E says the gym opens every weekday morning, but the supervised session runs only on Tuesdays and Thursdays.",
+                            "ru": "В абзаце E сказано, что зал открывается каждое утро по будням, но занятия под присмотром проходят только по вторникам и четвергам.",
+                            "uk": "В абзаці E сказано, що зал відчиняється щоранку в будні, але заняття під наглядом проводять лише по вівторках і четвергах."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q8",
+            "b2q9"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q8": "first",
+            "b2q9": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q8",
+        "14": "b2q9"
+    },
+    "translation": {
+        "missing": []
+    }
+}

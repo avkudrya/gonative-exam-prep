@@ -1,0 +1,1068 @@
+{
+    "form": {
+        "first": [
+            "group 1 (true_false_not_given), question 4: out of the text's order"
+        ],
+        "afterRepair": []
+    },
+    "plan": "academic-7|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.307456,
+            "provider": "anthropic",
+            "outputTokens": 14410
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.1234,
+            "provider": "anthropic",
+            "outputTokens": 4225
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.014332,
+            "provider": "anthropic",
+            "outputTokens": 722
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.020073,
+            "provider": "openai",
+            "outputTokens": 983
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.015186,
+            "provider": "xai",
+            "outputTokens": 1393
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.089068,
+            "provider": "anthropic",
+            "outputTokens": 4122
+        }
+    ],
+    "draft": {
+        "title": "From Chains to Satellites",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Surveyors using triangulation had to walk and measure every distance that appeared on their maps.",
+                        "options": [],
+                        "evidence": "the surveyors could calculate distances they had never walked",
+                        "explanation": "Paragraph A says that triangulation let surveyors calculate distances they had never walked. So they did not measure every distance on foot."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Many members of national survey parties died before their work was completed.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says survey parties suffered heat, disease and harsh weather. It does not say whether any of them died, so this cannot be decided."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Looking at two overlapping aerial photographs together made it possible to measure differences in the height of the land.",
+                        "options": [],
+                        "evidence": "allowed the height of hills and valleys to be measured",
+                        "explanation": "Paragraph C explains that pairs of overlapping images viewed through stereoscopes looked three-dimensional and allowed the height of hills and valleys to be measured."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Once aerial photography was introduced, mapping no longer required anyone to visit the area in person.",
+                        "options": [],
+                        "evidence": "did not abolish fieldwork",
+                        "explanation": "Paragraph C says photogrammetry did not abolish fieldwork, because someone still had to visit the ground to name features and check points. Fieldwork was reduced, not removed."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Satellite images have shown that glaciers are shrinking faster than scientists had predicted.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D only says satellites let map-makers track changes such as retreating glaciers. It says nothing about how fast they are shrinking or about scientists' predictions."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "After a restriction was removed in 2000, ordinary satellite receivers could find positions to within a few metres.",
+                        "options": [],
+                        "evidence": "in 2000 this restriction was switched off, and ordinary receivers became accurate to within a few metres",
+                        "explanation": "Paragraph D says the deliberate weakening of civilian signals was switched off in 2000, and receivers then became accurate to within a few metres."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Revising a digital map costs more than revising a printed one.",
+                        "options": [],
+                        "evidence": "This has made maps far cheaper to revise",
+                        "explanation": "Paragraph E says that storing information in digital layers has made maps far cheaper to revise, which is the opposite of the statement."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Anneke Vos"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Efosa Delgado"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Shirin Farouk"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Pavel Kimura"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Unpaid contributors have added features that are missing from official maps.",
+                        "options": [],
+                        "evidence": "volunteers recorded footpaths and small shops that appeared on no government map",
+                        "explanation": "In paragraph E, Shirin Farouk found that volunteers in one coastal region recorded footpaths and shops that were not on any government map."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Careful working habits explain the precision of early surveys better than the equipment used.",
+                        "options": [],
+                        "evidence": "not to the quality of the surveyors' instruments but to their habit of repeating every angle many times",
+                        "explanation": "In paragraph D, Efosa Delgado says the accuracy of old measurements came from repeating angles and averaging, not from good instruments."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Depending on a device for directions may make people less aware of their surroundings.",
+                        "options": [],
+                        "evidence": "when a device takes over the work of orientation, people pay less attention to landmarks",
+                        "explanation": "In paragraph F, Pavel Kimura suggests that people who follow phone directions notice landmarks less."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Maps that seem objective actually reflect many choices made by individuals.",
+                        "options": [],
+                        "evidence": "the finished maps concealed countless small decisions",
+                        "explanation": "In paragraph B, Anneke Vos argues that maps look neutral but hide many decisions, such as which names and paths to include."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "How thoroughly a place is mapped may depend on how wealthy it is.",
+                        "options": [],
+                        "evidence": "wealthy urban districts were mapped in fine detail, while poorer rural areas received far less attention",
+                        "explanation": "In paragraph E, Shirin Farouk found that rich city areas were mapped in detail but poorer rural areas were not."
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–D. You may use any letter more than once."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "baseline"
+                        ],
+                        "prompt": "Traditional surveys started with a carefully measured straight line, known as a ______, from whose ends angles to distant landmarks were taken.",
+                        "options": [],
+                        "evidence": "a single straight line on flat ground, called a baseline",
+                        "explanation": "Paragraph A says the team first measured a straight line called a baseline and then sighted landmarks from each end."
+                    },
+                    {
+                        "answer": [
+                            "stereoscopes"
+                        ],
+                        "prompt": "After the First World War, specialists viewed pairs of aerial photographs through ______, which gave the landscape a three-dimensional appearance.",
+                        "options": [],
+                        "evidence": "examined pairs of these images through stereoscopes",
+                        "explanation": "Paragraph C says specialists examined overlapping images through stereoscopes, which made the ground look three-dimensional."
+                    },
+                    {
+                        "answer": [
+                            "layers"
+                        ],
+                        "prompt": "Today, digital systems store different kinds of information, such as roads and rivers, in separate ______ that can be combined or hidden.",
+                        "options": [],
+                        "evidence": "keep information in separate layers",
+                        "explanation": "Paragraph E says digital mapping systems keep information in separate layers that can be combined, updated or hidden."
+                    },
+                    {
+                        "answer": [
+                            "managing"
+                        ],
+                        "prompt": "As a result, the chief difficulty is no longer collecting information but ______ it.",
+                        "options": [],
+                        "evidence": "shifted the main problem from gathering information to managing it",
+                        "explanation": "Paragraph E says the main problem has moved from gathering information to managing it."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Anneke Vos",
+                "role": "historian of cartography who studied survey field notebooks",
+                "gender": "female"
+            },
+            {
+                "name": "Efosa Delgado",
+                "role": "geographer who compared old triangulation points with satellite positions",
+                "gender": "male"
+            },
+            {
+                "name": "Shirin Farouk",
+                "role": "researcher who studies volunteer mapping projects",
+                "gender": "female"
+            },
+            {
+                "name": "Pavel Kimura",
+                "role": "researcher of human navigation",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Until well into the twentieth century, a detailed map of a country began with people walking across it. Surveyors carried measuring chains, heavy brass instruments and notebooks, and they depended on triangulation, a technique borrowed from geometry. A team would first measure a single straight line on flat ground, called a baseline, with great care, sometimes over several weeks. From each end of this line they sighted a distant landmark, such as a church tower or a hilltop, and recorded the angles. Because one side and two angles are enough to fix the rest of a triangle, the surveyors could calculate distances they had never walked, then use each new side as the starting point for another triangle. In this way a chain of triangles gradually spread across the landscape.",
+                "label": "A"
+            },
+            {
+                "text": "The method was accurate but painfully slow. Large national surveys in the eighteenth and nineteenth centuries took decades to complete, and survey parties endured heat, disease and harsh weather while hauling equipment up hills. Yet according to Anneke Vos, a historian of cartography, the physical hardship is only part of the story. After studying the field notebooks of several surveys, she argues that the finished maps concealed countless small decisions: which villages to record, whose spelling of a place name to adopt, and which paths were important enough to draw. Some of these choices, she adds, were made by surveyors who did not speak the local language. 'A map looks like a neutral picture,' she writes, 'but every line on it was chosen by someone standing in a particular place.'",
+                "label": "B"
+            },
+            {
+                "text": "The first great acceleration came from the air. After the First World War, cameras mounted in aircraft were used to photograph large areas in overlapping strips. Specialists then examined pairs of these images through stereoscopes, instruments that made the ground appear three-dimensional and allowed the height of hills and valleys to be measured. This technique, known as photogrammetry, did not abolish fieldwork – someone still had to visit the ground to name features and check fixed points – but it reduced the walking dramatically. Aerial photographs also captured details, such as the precise outline of a coastline or the edge of a forest, that a surveyor on foot could easily misjudge. A district that might once have occupied a survey party for several seasons could now be photographed in a few days.",
+                "label": "C"
+            },
+            {
+                "text": "Satellites changed the scale once again. From 1972, satellites designed to study the Earth's surface began sending back regular images of almost every part of the planet, allowing map-makers to track changes such as spreading cities, retreating glaciers and new roads. Later, satellite navigation systems let anyone with a receiver work out their position by timing signals from several satellites at once. For years civilian users received a deliberately degraded signal, but in 2000 this restriction was switched off, and ordinary receivers became accurate to within a few metres. Efosa Delgado, a geographer who compared old triangulation points with their modern satellite positions, found that many nineteenth-century measurements were out by less than a metre. He attributes this not to the quality of the surveyors' instruments but to their habit of repeating every angle many times and averaging the results.",
+                "label": "D"
+            },
+            {
+                "text": "Perhaps the deepest change, however, lies not in how information is collected but in how it is stored. A printed map is a finished object; once the ink is dry, correcting it means printing a new edition. Digital mapping systems instead keep information in separate layers – roads, rivers, buildings, land use – that can be combined, updated or hidden at will. This has made maps far cheaper to revise, but it has also shifted the main problem from gathering information to managing it. Shirin Farouk, who studies volunteer mapping projects, notes that thousands of unpaid contributors now add streets and buildings to online maps. In her research on one coastal region, volunteers recorded footpaths and small shops that appeared on no government map. She also found, however, that coverage was uneven: wealthy urban districts were mapped in fine detail, while poorer rural areas received far less attention.",
+                "label": "E"
+            },
+            {
+                "text": "The way people use maps has changed as well. Pavel Kimura, who researches human navigation, asked two groups of walkers to cross an unfamiliar town, one following turn-by-turn directions on a phone and the other using a paper map. Those guided by the phone arrived slightly sooner and made fewer wrong turns, but when asked afterwards to sketch their route, they produced far less accurate drawings. Kimura suggests that when a device takes over the work of orientation, people pay less attention to landmarks, although he cautions that his study involved only short journeys.",
+                "label": "F"
+            },
+            {
+                "text": "For all these changes, some things remain remarkably constant. Satellite positions are still checked against fixed markers on the ground, and map-makers continue to face the questions that troubled their predecessors: what to include, what to leave out and what to call it. The tools have moved from the hillside into orbit, but the judgement behind every map is still a human one.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the surveyors could calculate distances they had never walked",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Specialists then examined pairs of these images through stereoscopes, instruments that made the ground appear three-dimensional and allowed the height of hills and valleys to be measured.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "did not abolish fieldwork – someone still had to visit the ground to name features and check fixed points",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "in 2000 this restriction was switched off, and ordinary receivers became accurate to within a few metres",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "This has made maps far cheaper to revise",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "thousands of unpaid contributors now add streets and buildings to online maps",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "not to the quality of the surveyors' instruments but to their habit of repeating every angle many times and averaging the results",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "when a device takes over the work of orientation, people pay less attention to landmarks",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "A map looks like a neutral picture, but every line on it was chosen by someone standing in a particular place.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "wealthy urban districts were mapped in fine detail, while poorer rural areas received far less attention",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a single straight line on flat ground, called a baseline",
+                "answer": [
+                    "baseline"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "through stereoscopes, instruments that made the ground appear three-dimensional",
+                "answer": [
+                    "stereoscopes"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "keep information in separate layers – roads, rivers, buildings, land use",
+                "answer": [
+                    "layers"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "shifted the main problem from gathering information to managing it",
+                "answer": [
+                    "managing"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the surveyors could calculate distances they had never walked",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "examined pairs of these images through stereoscopes, instruments that made the ground appear three-dimensional and allowed the height of hills and valleys to be measured",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "This technique, known as photogrammetry, did not abolish fieldwork – someone still had to visit the ground",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "in 2000 this restriction was switched off, and ordinary receivers became accurate to within a few metres",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "This has made maps far cheaper to revise",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "volunteers recorded footpaths and small shops that appeared on no government map",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "He attributes this not to the quality of the surveyors' instruments but to their habit of repeating every angle many times and averaging the results",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "when a device takes over the work of orientation, people pay less attention to landmarks",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the finished maps concealed countless small decisions ... 'A map looks like a neutral picture,' she writes, 'but every line on it was chosen by someone'",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "wealthy urban districts were mapped in fine detail, while poorer rural areas received far less attention",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "called a baseline",
+                "answer": [
+                    "baseline"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "through stereoscopes",
+                "answer": [
+                    "stereoscopes"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "separate layers",
+                "answer": [
+                    "layers"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "shifted the main problem from gathering information to managing it",
+                "answer": [
+                    "managing"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the surveyors could calculate distances they had never walked",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "examined pairs of these images through stereoscopes, instruments that made the ground appear three-dimensional and allowed the height of hills and valleys to be measured",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "did not abolish fieldwork – someone still had to visit the ground to name features and check fixed points",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "in 2000 this restriction was switched off, and ordinary receivers became accurate to within a few metres",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "volunteers recorded footpaths and small shops that appeared on no government map",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "He attributes this not to the quality of the surveyors' instruments but to their habit of repeating every angle many times and averaging the results",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "when a device takes over the work of orientation, people pay less attention to landmarks",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "A map looks like a neutral picture, but every line on it was chosen by someone standing in a particular place",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "a single straight line on flat ground, called a baseline",
+            "answer": [
+                "baseline"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "examined pairs of these images through stereoscopes",
+            "answer": [
+                "stereoscopes"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "keep information in separate layers – roads, rivers, buildings, land use – that can be combined, updated or hidden at will",
+            "answer": [
+                "layers"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "From Chains to Satellites\n\nA. Until well into the twentieth century, a detailed map of a country began with people walking across it. Surveyors carried measuring chains, heavy brass instruments and notebooks, and they depended on triangulation, a technique borrowed from geometry. A team would first measure a single straight line on flat ground, called a baseline, with great care, sometimes over several weeks. From each end of this line they sighted a distant landmark, such as a church tower or a hilltop, and recorded the angles. Because one side and two angles are enough to fix the rest of a triangle, the surveyors could calculate distances they had never walked, then use each new side as the starting point for another triangle. In this way a chain of triangles gradually spread across the landscape.\n\nB. The method was accurate but painfully slow. Large national surveys in the eighteenth and nineteenth centuries took decades to complete, and survey parties endured heat, disease and harsh weather while hauling equipment up hills. Yet according to Anneke Vos, a historian of cartography, the physical hardship is only part of the story. After studying the field notebooks of several surveys, she argues that the finished maps concealed countless small decisions: which villages to record, whose spelling of a place name to adopt, and which paths were important enough to draw. Some of these choices, she adds, were made by surveyors who did not speak the local language. 'A map looks like a neutral picture,' she writes, 'but every line on it was chosen by someone standing in a particular place.'\n\nC. The first great acceleration came from the air. After the First World War, cameras mounted in aircraft were used to photograph large areas in overlapping strips. Specialists then examined pairs of these images through stereoscopes, instruments that made the ground appear three-dimensional and allowed the height of hills and valleys to be measured. This technique, known as photogrammetry, did not abolish fieldwork – someone still had to visit the ground to name features and check fixed points – but it reduced the walking dramatically. Aerial photographs also captured details, such as the precise outline of a coastline or the edge of a forest, that a surveyor on foot could easily misjudge. A district that might once have occupied a survey party for several seasons could now be photographed in a few days.\n\nD. Satellites changed the scale once again. From 1972, satellites designed to study the Earth's surface began sending back regular images of almost every part of the planet, allowing map-makers to track changes such as spreading cities, retreating glaciers and new roads. Later, satellite navigation systems let anyone with a receiver work out their position by timing signals from several satellites at once. For years civilian users received a deliberately degraded signal, but in 2000 this restriction was switched off, and ordinary receivers became accurate to within a few metres. Efosa Delgado, a geographer who compared old triangulation points with their modern satellite positions, found that many nineteenth-century measurements were out by less than a metre. He attributes this not to the quality of the surveyors' instruments but to their habit of repeating every angle many times and averaging the results.\n\nE. Perhaps the deepest change, however, lies not in how information is collected but in how it is stored. A printed map is a finished object; once the ink is dry, correcting it means printing a new edition. Digital mapping systems instead keep information in separate layers – roads, rivers, buildings, land use – that can be combined, updated or hidden at will. This has made maps far cheaper to revise, but it has also shifted the main problem from gathering information to managing it. Shirin Farouk, who studies volunteer mapping projects, notes that thousands of unpaid contributors now add streets and buildings to online maps. In her research on one coastal region, volunteers recorded footpaths and small shops that appeared on no government map. She also found, however, that coverage was uneven: wealthy urban districts were mapped in fine detail, while poorer rural areas received far less attention.\n\nF. The way people use maps has changed as well. Pavel Kimura, who researches human navigation, asked two groups of walkers to cross an unfamiliar town, one following turn-by-turn directions on a phone and the other using a paper map. Those guided by the phone arrived slightly sooner and made fewer wrong turns, but when asked afterwards to sketch their route, they produced far less accurate drawings. Kimura suggests that when a device takes over the work of orientation, people pay less attention to landmarks, although he cautions that his study involved only short journeys.\n\nG. For all these changes, some things remain remarkably constant. Satellite positions are still checked against fixed markers on the ground, and map-makers continue to face the questions that troubled their predecessors: what to include, what to leave out and what to call it. The tools have moved from the hillside into orbit, but the judgement behind every map is still a human one.",
+        "title": "From Chains to Satellites",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Surveyors using triangulation had to walk and measure every distance that appeared on their maps.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "the surveyors could calculate distances they had never walked",
+                        "explanation": {
+                            "en": "Paragraph A says that triangulation let surveyors calculate distances they had never walked. So they did not measure every distance on foot.",
+                            "ru": "В абзаце A сказано, что триангуляция позволяла топографам вычислять расстояния, которые они никогда не проходили пешком. Значит, не каждое расстояние они измеряли пешком.",
+                            "uk": "В абзаці A сказано, що тріангуляція дозволяла топографам обчислювати відстані, яких вони ніколи не проходили пішки. Отже, не кожну відстань вони вимірювали пішки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Many members of national survey parties died before their work was completed.",
+                        "numbers": [
+                            2
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says survey parties suffered heat, disease and harsh weather. It does not say whether any of them died, so this cannot be decided.",
+                            "ru": "В абзаце B говорится, что топографические экспедиции страдали от жары, болезней и сурового климата. Но там не сказано, погиб ли кто-нибудь из участников, поэтому определить это нельзя.",
+                            "uk": "В абзаці B йдеться про те, що топографічні експедиції потерпали від спеки, хвороб і суворої погоди. Але там не сказано, чи хтось із учасників загинув, тому визначити це неможливо."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Looking at two overlapping aerial photographs together made it possible to measure differences in the height of the land.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "allowed the height of hills and valleys to be measured",
+                        "explanation": {
+                            "en": "Paragraph C explains that pairs of overlapping images viewed through stereoscopes looked three-dimensional and allowed the height of hills and valleys to be measured.",
+                            "ru": "В абзаце C объясняется, что пары перекрывающихся снимков при просмотре через стереоскоп выглядели объёмными и позволяли измерять высоту холмов и долин.",
+                            "uk": "В абзаці C пояснюється, що пари знімків, які перекривалися, під час перегляду через стереоскоп виглядали об'ємними й дозволяли вимірювати висоту пагорбів і долин."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Once aerial photography was introduced, mapping no longer required anyone to visit the area in person.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "did not abolish fieldwork",
+                        "explanation": {
+                            "en": "Paragraph C says photogrammetry did not abolish fieldwork, because someone still had to visit the ground to name features and check points. Fieldwork was reduced, not removed.",
+                            "ru": "В абзаце C сказано, что фотограмметрия не отменила полевые работы: кому-то всё равно нужно было выезжать на местность, чтобы давать названия объектам и проверять точки. Полевых работ стало меньше, но они не исчезли.",
+                            "uk": "В абзаці C сказано, що фотограмметрія не скасувала польових робіт: комусь однаково треба було виїжджати на місцевість, щоб давати назви об'єктам і перевіряти точки. Польових робіт поменшало, але вони не зникли."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Satellite images have shown that glaciers are shrinking faster than scientists had predicted.",
+                        "numbers": [
+                            5
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D only says satellites let map-makers track changes such as retreating glaciers. It says nothing about how fast they are shrinking or about scientists' predictions.",
+                            "ru": "В абзаце D говорится лишь о том, что спутники позволяют картографам отслеживать изменения, например отступание ледников. О том, как быстро ледники уменьшаются, и о прогнозах учёных там ничего не сказано.",
+                            "uk": "В абзаці D лише сказано, що супутники дозволяють картографам відстежувати зміни, наприклад відступ льодовиків. Про те, як швидко льодовики зменшуються, і про прогнози науковців там нічого не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "After a restriction was removed in 2000, ordinary satellite receivers could find positions to within a few metres.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "in 2000 this restriction was switched off, and ordinary receivers became accurate to within a few metres",
+                        "explanation": {
+                            "en": "Paragraph D says the deliberate weakening of civilian signals was switched off in 2000, and receivers then became accurate to within a few metres.",
+                            "ru": "В абзаце D сказано, что намеренное ухудшение гражданского сигнала отключили в 2000 году, и после этого приёмники стали определять положение с точностью до нескольких метров.",
+                            "uk": "В абзаці D сказано, що навмисне погіршення цивільного сигналу вимкнули у 2000 році, і після цього приймачі стали визначати місцезнаходження з точністю до кількох метрів."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Anneke Vos"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Efosa Delgado"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Shirin Farouk"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Pavel Kimura"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Unpaid contributors have added features that are missing from official maps.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "volunteers recorded footpaths and small shops that appeared on no government map",
+                        "explanation": {
+                            "en": "In paragraph E, Shirin Farouk found that volunteers in one coastal region recorded footpaths and shops that were not on any government map.",
+                            "ru": "В абзаце E Shirin Farouk обнаружила, что волонтёры в одном прибрежном регионе нанесли на карту пешеходные тропы и магазины, которых не было ни на одной государственной карте.",
+                            "uk": "В абзаці E Shirin Farouk виявила, що волонтери в одному прибережному регіоні нанесли на мапу пішохідні стежки й крамниці, яких не було на жодній державній мапі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Careful working habits explain the precision of early surveys better than the equipment used.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "not to the quality of the surveyors' instruments but to their habit of repeating every angle many times",
+                        "explanation": {
+                            "en": "In paragraph D, Efosa Delgado says the accuracy of old measurements came from repeating angles and averaging, not from good instruments.",
+                            "ru": "В абзаце D Efosa Delgado говорит, что точность старых измерений обеспечивалась многократным повторением замеров углов и усреднением результатов, а не хорошими инструментами.",
+                            "uk": "В абзаці D Efosa Delgado каже, що точність старих вимірювань забезпечувалася багаторазовим повторенням вимірів кутів і усередненням результатів, а не якісними інструментами."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Depending on a device for directions may make people less aware of their surroundings.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "when a device takes over the work of orientation, people pay less attention to landmarks",
+                        "explanation": {
+                            "en": "In paragraph F, Pavel Kimura suggests that people who follow phone directions notice landmarks less.",
+                            "ru": "В абзаце F Pavel Kimura предполагает, что люди, которые следуют подсказкам навигатора в телефоне, реже замечают ориентиры.",
+                            "uk": "В абзаці F Pavel Kimura припускає, що люди, які йдуть за підказками навігатора в телефоні, менше помічають орієнтири."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Maps that seem objective actually reflect many choices made by individuals.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "the finished maps concealed countless small decisions",
+                        "explanation": {
+                            "en": "In paragraph B, Anneke Vos argues that maps look neutral but hide many decisions, such as which names and paths to include.",
+                            "ru": "В абзаце B Anneke Vos утверждает, что карты кажутся нейтральными, но за ними скрывается множество решений — например, какие названия и тропы на них показывать.",
+                            "uk": "В абзаці B Anneke Vos стверджує, що мапи здаються нейтральними, але за ними приховано багато рішень — наприклад, які назви та стежки на них показувати."
+                        }
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of people below. Match each statement with the correct person, A–D. You may use any letter more than once."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "baseline"
+                        ],
+                        "prompt": "Traditional surveys started with a carefully measured straight line, known as a ______, from whose ends angles to distant landmarks were taken.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "a single straight line on flat ground, called a baseline",
+                        "explanation": {
+                            "en": "Paragraph A says the team first measured a straight line called a baseline and then sighted landmarks from each end.",
+                            "ru": "В абзаце A сказано, что сначала команда измеряла прямую линию, которая называется \"baseline\" (базис), а затем с каждого её конца засекала ориентиры.",
+                            "uk": "В абзаці A сказано, що спершу команда вимірювала пряму лінію, яка називається \"baseline\" (базис), а потім з кожного її кінця візувала орієнтири."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "stereoscopes"
+                        ],
+                        "prompt": "After the First World War, specialists viewed pairs of aerial photographs through ______, which gave the landscape a three-dimensional appearance.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "examined pairs of these images through stereoscopes",
+                        "explanation": {
+                            "en": "Paragraph C says specialists examined overlapping images through stereoscopes, which made the ground look three-dimensional.",
+                            "ru": "В абзаце C сказано, что специалисты рассматривали перекрывающиеся снимки через стереоскопы (\"stereoscopes\"), и благодаря этому местность выглядела объёмной.",
+                            "uk": "В абзаці C сказано, що фахівці розглядали знімки, які перекривалися, через стереоскопи (\"stereoscopes\"), і завдяки цьому місцевість виглядала об'ємною."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "layers"
+                        ],
+                        "prompt": "Today, digital systems store different kinds of information, such as roads and rivers, in separate ______ that can be combined or hidden.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "keep information in separate layers",
+                        "explanation": {
+                            "en": "Paragraph E says digital mapping systems keep information in separate layers that can be combined, updated or hidden.",
+                            "ru": "В абзаце E сказано, что цифровые картографические системы хранят информацию в отдельных слоях (\"layers\"), которые можно объединять, обновлять или скрывать.",
+                            "uk": "В абзаці E сказано, що цифрові картографічні системи зберігають інформацію в окремих шарах (\"layers\"), які можна поєднувати, оновлювати або приховувати."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

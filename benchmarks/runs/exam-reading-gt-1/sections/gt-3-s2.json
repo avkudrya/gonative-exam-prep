@@ -1,0 +1,972 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-3|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.270508,
+            "provider": "anthropic",
+            "outputTokens": 12709
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.011546,
+            "provider": "anthropic",
+            "outputTokens": 556
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.023685,
+            "provider": "openai",
+            "outputTokens": 1275
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.014578,
+            "provider": "xai",
+            "outputTokens": 1387
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.065496,
+            "provider": "anthropic",
+            "outputTokens": 2953
+        }
+    ],
+    "draft": {
+        "title": "Part-Time Vacancies at the Saltmarsh Hotel",
+        "blocks": [
+            {
+                "type": "flow_chart_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "reception"
+                        ],
+                        "prompt": "Step 1: Obtain an application form from the website or pick up a printed version at ______",
+                        "options": [],
+                        "evidence": "collect a paper copy from reception",
+                        "explanation": "Paragraph E says you can download the form or collect a paper copy from reception. A 'printed version' is the same as a 'paper copy'."
+                    },
+                    {
+                        "answer": [
+                            "envelope"
+                        ],
+                        "prompt": "Step 2: Return the completed form by email or in a sealed ______ left at the front desk",
+                        "options": [],
+                        "evidence": "hand it in at the front desk in a sealed envelope",
+                        "explanation": "Paragraph E gives two ways to return the application: by email or by handing it in at the front desk in a sealed envelope."
+                    },
+                    {
+                        "answer": [
+                            "telephone"
+                        ],
+                        "prompt": "Step 3: If shortlisted, hear from the hotel by ______ within ten days after applications close",
+                        "options": [],
+                        "evidence": "shortlisted applicants will be contacted by telephone",
+                        "explanation": "Paragraph F says shortlisted applicants are contacted by telephone within ten days of the closing date, which is when applications close."
+                    },
+                    {
+                        "answer": [
+                            "department"
+                        ],
+                        "prompt": "Step 4: Have an informal interview with the person in charge of the appropriate ______",
+                        "options": [],
+                        "evidence": "an informal interview with the head of the relevant department",
+                        "explanation": "Paragraph F says the interview is with the head of the relevant department; 'person in charge' restates 'head' and 'appropriate' restates 'relevant'."
+                    },
+                    {
+                        "answer": [
+                            "trial"
+                        ],
+                        "prompt": "Step 5: Work a three-hour ______ shift, paid at the usual rate",
+                        "options": [],
+                        "evidence": "offered a three-hour trial shift, paid at the normal rate",
+                        "explanation": "Paragraph F says candidates who do well at interview are offered a three-hour trial shift, paid at the normal rate."
+                    },
+                    {
+                        "answer": [
+                            "referees"
+                        ],
+                        "prompt": "Step 6: Supply the names of two ______, who must not be family members",
+                        "options": [],
+                        "evidence": "ask for the names of two referees",
+                        "explanation": "Paragraph F says the hotel asks for two referees and that references from relatives cannot be accepted."
+                    },
+                    {
+                        "answer": [
+                            "morning"
+                        ],
+                        "prompt": "Step 7: Before the first shift, attend an induction ______ and have a uniform fitted",
+                        "options": [],
+                        "evidence": "must attend an induction morning before their first shift",
+                        "explanation": "Paragraph G says successful applicants must attend an induction morning before their first shift, and their uniform is fitted on the same day."
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Applicants for most of the jobs need to have previous experience of hotel work.",
+                        "options": [],
+                        "evidence": "For most positions, you do not need to have worked in a hotel before",
+                        "explanation": "Paragraph A says that for most positions you do not need hotel experience, because full training is given. This is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most of the hotel's current part-time employees are students.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph A says students are welcome to apply, along with parents and retired people. It says nothing about who the hotel's present part-time staff are."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Housekeeping assistants must be able to work on Saturdays and Sundays.",
+                        "options": [],
+                        "evidence": "weekend availability is essential for this role",
+                        "explanation": "Paragraph B says that, for housekeeping, being available at weekends is essential, because Saturdays and Sundays are the busiest changeover days."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Front desk applicants are required to speak at least two languages.",
+                        "options": [],
+                        "evidence": "while the ability to speak a second language will be viewed favourably, it is not a requirement",
+                        "explanation": "Paragraph B says a second language is an advantage but not a requirement. So it is wrong to say it is required."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "After three months, staff can get a reduced room price for close relatives.",
+                        "options": [],
+                        "evidence": "Once you have completed three months with us, close family members can stay at the hotel at thirty per cent off the usual room rate",
+                        "explanation": "Paragraph C says that after three months, close family members get thirty per cent off the usual room rate, which is a reduced price."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Leilani Chowdhury became a supervisor during her first year at the hotel.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D says Leilani started with two evening shifts while at college and now supervises the restaurant three years later. It does not say when the promotion happened."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Applicants may send a CV instead of filling in the application form.",
+                        "options": [],
+                        "evidence": "we cannot accept a CV on its own",
+                        "explanation": "Paragraph E says the hotel cannot accept a CV on its own, because the form asks for information most CVs do not include. So a CV cannot replace the form."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "New staff must bring a document showing they are allowed to work to the induction.",
+                        "options": [],
+                        "evidence": "Please bring your passport or another document proving your right to work in the country",
+                        "explanation": "Paragraph G tells successful applicants to bring a passport or another document proving their right to work when they attend the induction morning."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "people": [
+            {
+                "name": "Leilani Chowdhury",
+                "role": "Former part-time student worker who now supervises the hotel restaurant",
+                "gender": "unknown"
+            },
+            {
+                "name": "Teodora Wainwright",
+                "role": "Human Resources Manager at the Saltmarsh Hotel",
+                "gender": "unknown"
+            },
+            {
+                "name": "Dariusz Okafor",
+                "role": "Head Housekeeper who interviews housekeeping candidates",
+                "gender": "unknown"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "The Saltmarsh Hotel, a family-run seafront hotel with ninety rooms in the town of Kestrel Bay, is looking for part-time staff to join us before the busy summer season begins. We currently have openings in housekeeping, in our restaurant and on the front desk. Whether you are a student hoping to earn money around your timetable, a parent who needs hours that fit in with the school day, or a retired person who misses being part of a team, we would be delighted to hear from you. For most positions, you do not need to have worked in a hotel before, because full training will be given.",
+                "label": "A"
+            },
+            {
+                "text": "Housekeeping assistants prepare guest rooms after departures, changing bedding, cleaning bathrooms and restocking supplies. Shifts usually run from 9 a.m. to 1 p.m., and as Saturdays and Sundays are our busiest changeover days, weekend availability is essential for this role. Restaurant assistants serve breakfast and evening meals, set tables and help keep the dining room tidy; evening shifts can finish as late as 11 p.m., and anyone serving alcohol must be at least eighteen. Front desk staff check guests in and out, take bookings by phone and deal with questions about the local area. You should be confident using a computer, and while the ability to speak a second language will be viewed favourably, it is not a requirement.",
+                "label": "B"
+            },
+            {
+                "text": "Pay is above the national minimum wage, and all staff receive a free meal during any shift of five hours or more. Holiday pay is built up in proportion to the hours you work. Once you have completed three months with us, close family members can stay at the hotel at thirty per cent off the usual room rate, subject to availability. Uniforms are supplied free of charge, although you will need to provide your own plain black shoes. We offer between twelve and twenty-five hours a week, and rotas are published two weeks in advance.",
+                "label": "C"
+            },
+            {
+                "text": "In return, we ask for reliability and a friendly attitude. If you are unwell and cannot come in, you must phone the duty manager at least two hours before your shift is due to start; messages sent by text or email are not accepted for absence. Personal mobile phones must be left in the staff lockers while you are working. Leilani Chowdhury, who now supervises our restaurant, says: 'I started with two evening shifts a week while I was at college, and the hotel always worked around my exams. Three years later I'm still here. The best part is that every day is different, because you never know who will walk through the door.'",
+                "label": "D"
+            },
+            {
+                "text": "To apply, download an application form from the 'Careers' page of our website, or collect a paper copy from reception. Please note that we cannot accept a CV on its own, as the form asks for information that most CVs do not include. Complete every section and attach a covering letter of no more than one page saying which department interests you and which days you are free to work. You can return your application by email to jobs@saltmarshhotel.example or hand it in at the front desk in a sealed envelope addressed to Teodora Wainwright, our Human Resources Manager. The closing date is Friday 21 March.",
+                "label": "E"
+            },
+            {
+                "text": "Within ten days of the closing date, shortlisted applicants will be contacted by telephone and invited to an informal interview with the head of the relevant department; housekeeping candidates, for example, will meet Dariusz Okafor, our Head Housekeeper. Those who do well at interview will then be offered a three-hour trial shift, paid at the normal rate. This lets you see whether the work suits you, and lets us see you in action. Finally, we will ask for the names of two referees, one of whom should be a recent employer or teacher. References from relatives cannot be accepted.",
+                "label": "F"
+            },
+            {
+                "text": "Successful applicants must attend an induction morning before their first shift. This covers fire safety, food hygiene and our booking system, and your uniform will be fitted on the same day. Please bring your passport or another document proving your right to work in the country, together with your bank details. Teodora's advice to applicants is simple: 'Be honest about when you can work. We would rather hire someone for two reliable shifts a week than someone who promises five and manages three.'",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "collect a paper copy from reception",
+                "answer": [
+                    "reception"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "hand it in at the front desk in a sealed envelope",
+                "answer": [
+                    "envelope"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "shortlisted applicants will be contacted by telephone",
+                "answer": [
+                    "telephone"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "informal interview with the head of the relevant department",
+                "answer": [
+                    "department"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "offered a three-hour trial shift, paid at the normal rate",
+                "answer": [
+                    "trial"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "we will ask for the names of two referees",
+                "answer": [
+                    "referees"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "must attend an induction morning before their first shift",
+                "answer": [
+                    "morning"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "For most positions, you do not need to have worked in a hotel before",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "weekend availability is essential for this role",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the ability to speak a second language will be viewed favourably, it is not a requirement",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Once you have completed three months with us, close family members can stay at the hotel at thirty per cent off the usual room rate",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "we cannot accept a CV on its own",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Please bring your passport or another document proving your right to work in the country",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "collect a paper copy from reception",
+                "answer": [
+                    "reception"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "hand it in at the front desk in a sealed envelope",
+                "answer": [
+                    "envelope"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "shortlisted applicants will be contacted by telephone",
+                "answer": [
+                    "telephone"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "an informal interview with the head of the relevant department",
+                "answer": [
+                    "department"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "offered a three-hour trial shift, paid at the normal rate",
+                "answer": [
+                    "trial"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "we will ask for the names of two referees",
+                "answer": [
+                    "referees"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "must attend an induction morning",
+                "answer": [
+                    "morning"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "For most positions, you do not need to have worked in a hotel before",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Saturdays and Sundays are our busiest changeover days, weekend availability is essential for this role",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the ability to speak a second language will be viewed favourably, it is not a requirement",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Once you have completed three months with us, close family members can stay at the hotel at thirty per cent off the usual room rate",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "we cannot accept a CV on its own",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Please bring your passport or another document proving your right to work in the country",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "collect a paper copy from reception",
+            "answer": [
+                "reception"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "hand it in at the front desk in a sealed envelope",
+            "answer": [
+                "envelope"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "shortlisted applicants will be contacted by telephone",
+            "answer": [
+                "telephone"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "an informal interview with the head of the relevant department",
+            "answer": [
+                "department"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "offered a three-hour trial shift, paid at the normal rate",
+            "answer": [
+                "trial"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "ask for the names of two referees",
+            "answer": [
+                "referees"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "For most positions, you do not need to have worked in a hotel before",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "weekend availability is essential for this role",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "the ability to speak a second language will be viewed favourably, it is not a requirement",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "close family members can stay at the hotel at thirty per cent off the usual room rate",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "we cannot accept a CV on its own",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Part-Time Vacancies at the Saltmarsh Hotel\n\nA. The Saltmarsh Hotel, a family-run seafront hotel with ninety rooms in the town of Kestrel Bay, is looking for part-time staff to join us before the busy summer season begins. We currently have openings in housekeeping, in our restaurant and on the front desk. Whether you are a student hoping to earn money around your timetable, a parent who needs hours that fit in with the school day, or a retired person who misses being part of a team, we would be delighted to hear from you. For most positions, you do not need to have worked in a hotel before, because full training will be given.\n\nB. Housekeeping assistants prepare guest rooms after departures, changing bedding, cleaning bathrooms and restocking supplies. Shifts usually run from 9 a.m. to 1 p.m., and as Saturdays and Sundays are our busiest changeover days, weekend availability is essential for this role. Restaurant assistants serve breakfast and evening meals, set tables and help keep the dining room tidy; evening shifts can finish as late as 11 p.m., and anyone serving alcohol must be at least eighteen. Front desk staff check guests in and out, take bookings by phone and deal with questions about the local area. You should be confident using a computer, and while the ability to speak a second language will be viewed favourably, it is not a requirement.\n\nC. Pay is above the national minimum wage, and all staff receive a free meal during any shift of five hours or more. Holiday pay is built up in proportion to the hours you work. Once you have completed three months with us, close family members can stay at the hotel at thirty per cent off the usual room rate, subject to availability. Uniforms are supplied free of charge, although you will need to provide your own plain black shoes. We offer between twelve and twenty-five hours a week, and rotas are published two weeks in advance.\n\nD. In return, we ask for reliability and a friendly attitude. If you are unwell and cannot come in, you must phone the duty manager at least two hours before your shift is due to start; messages sent by text or email are not accepted for absence. Personal mobile phones must be left in the staff lockers while you are working. Leilani Chowdhury, who now supervises our restaurant, says: 'I started with two evening shifts a week while I was at college, and the hotel always worked around my exams. Three years later I'm still here. The best part is that every day is different, because you never know who will walk through the door.'\n\nE. To apply, download an application form from the 'Careers' page of our website, or collect a paper copy from reception. Please note that we cannot accept a CV on its own, as the form asks for information that most CVs do not include. Complete every section and attach a covering letter of no more than one page saying which department interests you and which days you are free to work. You can return your application by email to jobs@saltmarshhotel.example or hand it in at the front desk in a sealed envelope addressed to Teodora Wainwright, our Human Resources Manager. The closing date is Friday 21 March.\n\nF. Within ten days of the closing date, shortlisted applicants will be contacted by telephone and invited to an informal interview with the head of the relevant department; housekeeping candidates, for example, will meet Dariusz Okafor, our Head Housekeeper. Those who do well at interview will then be offered a three-hour trial shift, paid at the normal rate. This lets you see whether the work suits you, and lets us see you in action. Finally, we will ask for the names of two referees, one of whom should be a recent employer or teacher. References from relatives cannot be accepted.\n\nG. Successful applicants must attend an induction morning before their first shift. This covers fire safety, food hygiene and our booking system, and your uniform will be fitted on the same day. Please bring your passport or another document proving your right to work in the country, together with your bank details. Teodora's advice to applicants is simple: 'Be honest about when you can work. We would rather hire someone for two reliable shifts a week than someone who promises five and manages three.'",
+        "title": "Part-Time Vacancies at the Saltmarsh Hotel",
+        "groups": [
+            {
+                "type": "flow_chart_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "reception"
+                        ],
+                        "prompt": "Step 1: Obtain an application form from the website or pick up a printed version at ______",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "collect a paper copy from reception",
+                        "explanation": {
+                            "en": "Paragraph E says you can download the form or collect a paper copy from reception. A 'printed version' is the same as a 'paper copy'.",
+                            "ru": "В абзаце E сказано, что форму можно скачать или взять бумажный экземпляр на ресепшене. «Printed version» означает то же самое, что «paper copy».",
+                            "uk": "В абзаці E сказано, що форму можна завантажити або взяти паперовий примірник на рецепції. «Printed version» означає те саме, що «paper copy»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "envelope"
+                        ],
+                        "prompt": "Step 2: Return the completed form by email or in a sealed ______ left at the front desk",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "hand it in at the front desk in a sealed envelope",
+                        "explanation": {
+                            "en": "Paragraph E gives two ways to return the application: by email or by handing it in at the front desk in a sealed envelope.",
+                            "ru": "В абзаце E указаны два способа вернуть заявку: отправить по электронной почте или сдать на стойку регистрации в запечатанном конверте.",
+                            "uk": "В абзаці E вказано два способи повернути заявку: надіслати електронною поштою або здати на стійку реєстрації в запечатаному конверті."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "telephone"
+                        ],
+                        "prompt": "Step 3: If shortlisted, hear from the hotel by ______ within ten days after applications close",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "shortlisted applicants will be contacted by telephone",
+                        "explanation": {
+                            "en": "Paragraph F says shortlisted applicants are contacted by telephone within ten days of the closing date, which is when applications close.",
+                            "ru": "В абзаце F сказано, что кандидатам из короткого списка звонят по телефону в течение десяти дней после крайнего срока, то есть после того, как заканчивается приём заявок.",
+                            "uk": "В абзаці F сказано, що кандидатам із короткого списку телефонують протягом десяти днів після кінцевого терміну, тобто після того, як закінчується прийом заявок."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "department"
+                        ],
+                        "prompt": "Step 4: Have an informal interview with the person in charge of the appropriate ______",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "an informal interview with the head of the relevant department",
+                        "explanation": {
+                            "en": "Paragraph F says the interview is with the head of the relevant department; 'person in charge' restates 'head' and 'appropriate' restates 'relevant'.",
+                            "ru": "В абзаце F сказано, что собеседование проводит руководитель соответствующего отдела: «person in charge» перефразирует «head», а «appropriate» — «relevant».",
+                            "uk": "В абзаці F сказано, що співбесіду проводить керівник відповідного відділу: «person in charge» перефразовує «head», а «appropriate» — «relevant»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "trial"
+                        ],
+                        "prompt": "Step 5: Work a three-hour ______ shift, paid at the usual rate",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "offered a three-hour trial shift, paid at the normal rate",
+                        "explanation": {
+                            "en": "Paragraph F says candidates who do well at interview are offered a three-hour trial shift, paid at the normal rate.",
+                            "ru": "В абзаце F сказано, что кандидатам, которые хорошо проявили себя на собеседовании, предлагают пробную трёхчасовую смену с оплатой по обычной ставке.",
+                            "uk": "В абзаці F сказано, що кандидатам, які добре показали себе на співбесіді, пропонують пробну тригодинну зміну з оплатою за звичайною ставкою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "referees"
+                        ],
+                        "prompt": "Step 6: Supply the names of two ______, who must not be family members",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "ask for the names of two referees",
+                        "explanation": {
+                            "en": "Paragraph F says the hotel asks for two referees and that references from relatives cannot be accepted.",
+                            "ru": "В абзаце F сказано, что отель просит указать двух рекомендателей и что рекомендации от родственников не принимаются.",
+                            "uk": "В абзаці F сказано, що готель просить вказати двох рекомендувачів і що рекомендації від родичів не приймаються."
+                        }
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Applicants for most of the jobs need to have previous experience of hotel work.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "For most positions, you do not need to have worked in a hotel before",
+                        "explanation": {
+                            "en": "Paragraph A says that for most positions you do not need hotel experience, because full training is given. This is the opposite of the statement.",
+                            "ru": "В абзаце A сказано, что для большинства должностей опыт работы в отеле не нужен, потому что проводится полное обучение. Это противоположно утверждению.",
+                            "uk": "В абзаці A сказано, що для більшості посад досвід роботи в готелі не потрібен, бо надається повне навчання. Це протилежне твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most of the hotel's current part-time employees are students.",
+                        "numbers": [
+                            8
+                        ],
+                        "explanation": {
+                            "en": "Paragraph A says students are welcome to apply, along with parents and retired people. It says nothing about who the hotel's present part-time staff are.",
+                            "ru": "В абзаце A сказано, что студентам, как и родителям и пенсионерам, рады при подаче заявок. Но о том, кто сейчас работает в отеле на неполный день, ничего не сказано.",
+                            "uk": "В абзаці A сказано, що студентів, як і батьків та пенсіонерів, охоче чекають серед кандидатів. Але про те, хто зараз працює в готелі на неповний день, нічого не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Housekeeping assistants must be able to work on Saturdays and Sundays.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "weekend availability is essential for this role",
+                        "explanation": {
+                            "en": "Paragraph B says that, for housekeeping, being available at weekends is essential, because Saturdays and Sundays are the busiest changeover days.",
+                            "ru": "В абзаце B сказано, что для работы в службе уборки номеров обязательно иметь возможность работать по выходным, потому что суббота и воскресенье — самые загруженные дни смены гостей.",
+                            "uk": "В абзаці B сказано, що для роботи в службі прибирання номерів обов'язково мати змогу працювати у вихідні, бо субота й неділя — найзавантаженіші дні зміни гостей."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Front desk applicants are required to speak at least two languages.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "while the ability to speak a second language will be viewed favourably, it is not a requirement",
+                        "explanation": {
+                            "en": "Paragraph B says a second language is an advantage but not a requirement. So it is wrong to say it is required.",
+                            "ru": "В абзаце B сказано, что второй язык — это преимущество, но не обязательное требование. Поэтому неверно утверждать, что он обязателен.",
+                            "uk": "В абзаці B сказано, що друга мова — це перевага, але не обов'язкова вимога. Тому неправильно стверджувати, що вона обов'язкова."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "After three months, staff can get a reduced room price for close relatives.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Once you have completed three months with us, close family members can stay at the hotel at thirty per cent off the usual room rate",
+                        "explanation": {
+                            "en": "Paragraph C says that after three months, close family members get thirty per cent off the usual room rate, which is a reduced price.",
+                            "ru": "В абзаце C сказано, что через три месяца близкие родственники получают скидку тридцать процентов от обычной стоимости номера, то есть сниженную цену.",
+                            "uk": "В абзаці C сказано, що через три місяці близькі родичі отримують знижку тридцять відсотків від звичайної вартості номера, тобто знижену ціну."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Leilani Chowdhury became a supervisor during her first year at the hotel.",
+                        "numbers": [
+                            12
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D says Leilani started with two evening shifts while at college and now supervises the restaurant three years later. It does not say when the promotion happened.",
+                            "ru": "В абзаце D сказано, что у Leilani сначала было две вечерние смены во время учёбы в колледже, а теперь, три года спустя, Leilani руководит рестораном. Но когда произошло повышение, не сказано.",
+                            "uk": "В абзаці D сказано, що в Leilani спочатку було дві вечірні зміни під час навчання в коледжі, а тепер, через три роки, Leilani керує рестораном. Але коли відбулося підвищення, не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Applicants may send a CV instead of filling in the application form.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "we cannot accept a CV on its own",
+                        "explanation": {
+                            "en": "Paragraph E says the hotel cannot accept a CV on its own, because the form asks for information most CVs do not include. So a CV cannot replace the form.",
+                            "ru": "В абзаце E сказано, что отель не принимает одно лишь резюме, потому что в форме запрашиваются сведения, которых нет в большинстве резюме. Значит, резюме не может заменить форму.",
+                            "uk": "В абзаці E сказано, що готель не приймає лише резюме, бо у формі запитують відомості, яких немає в більшості резюме. Отже, резюме не може замінити форму."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

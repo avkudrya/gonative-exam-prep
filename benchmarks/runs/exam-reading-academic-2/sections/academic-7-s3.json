@@ -1,0 +1,1230 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-7|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.263748,
+            "provider": "anthropic",
+            "outputTokens": 12192
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.015116,
+            "provider": "anthropic",
+            "outputTokens": 738
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.021203,
+            "provider": "openai",
+            "outputTokens": 1019
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.02346,
+            "provider": "anthropic",
+            "outputTokens": 370
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.005278,
+            "provider": "anthropic",
+            "outputTokens": 31
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.007013,
+            "provider": "openai",
+            "outputTokens": 223
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.017412,
+            "provider": "xai",
+            "outputTokens": 1679
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.107924,
+            "provider": "anthropic",
+            "outputTokens": 5023
+        }
+    ],
+    "draft": {
+        "title": "Fewer Days, Better Work?",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The five-day working week developed naturally rather than as a result of human decisions.",
+                        "options": [],
+                        "evidence": "it is a social invention, not a law of nature",
+                        "explanation": "In paragraph A the writer says the five-day week is a social invention and not a law of nature, which is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Halvorsen's results can be ignored because the teams in her study chose to take part.",
+                        "options": [],
+                        "evidence": "so they may have been unusually motivated, but the pattern is hard to dismiss",
+                        "explanation": "In paragraph B the writer accepts that the volunteers may have been very motivated, but says the pattern is hard to dismiss, so the writer does not think the results should be ignored."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Fitting a full week's hours into four longer days is a mistaken way to shorten the week.",
+                        "options": [],
+                        "evidence": "A shorter week that is achieved by making each day longer misunderstands why fewer hours can help in the first place.",
+                        "explanation": "In paragraph D the writer agrees with Whitcombe and says that making each day longer misunderstands why fewer hours help, so the writer sees this approach as a mistake."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Hospital workers generally experience more stress than people who work in offices.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph E mentions nurses and hospitals only to show that some services must stay open. The writer does not compare stress levels between hospital staff and office workers."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Some people who support the four-day week exaggerate how affordable it will be.",
+                        "options": [],
+                        "evidence": "supporters who claim the policy will pay for itself everywhere are, in my view, overstating their case",
+                        "explanation": "In paragraph E the writer says that supporters who claim the policy will pay for itself everywhere are overstating their case, which means exaggerating its affordability."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Employees value extra annual leave just as much as a full additional day off each week.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph F reports that Ndiaye suggests extra annual leave as an alternative, but she calls its value compared with a full day off an open question. The writer gives no view on this."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_sentence_endings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "lengthening each of the remaining working days."
+                    },
+                    {
+                        "id": "B",
+                        "text": "recruiting extra workers or devising more complex rotas."
+                    },
+                    {
+                        "id": "C",
+                        "text": "kept replying to work messages on their extra day."
+                    },
+                    {
+                        "id": "D",
+                        "text": "introduce the change across the whole organisation at once."
+                    },
+                    {
+                        "id": "E",
+                        "text": "a rise in mistakes during the last part of each shift."
+                    },
+                    {
+                        "id": "F",
+                        "text": "reducing the time they spent in meetings."
+                    },
+                    {
+                        "id": "G",
+                        "text": "only some departments were moved to a four-day schedule."
+                    },
+                    {
+                        "id": "H",
+                        "text": "took no sick leave at all during the trial."
+                    },
+                    {
+                        "id": "I",
+                        "text": "judge performance by what was achieved rather than by hours."
+                    },
+                    {
+                        "id": "J",
+                        "text": "a sharp fall in output on the extra rest day."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Halvorsen's teams responded to working four days by",
+                        "options": [],
+                        "evidence": "most cut their meetings by around a third",
+                        "explanation": "Paragraph B says most of Halvorsen's teams cut their meetings by about a third. The passage does not say they made their days longer."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Arkwright found that the health benefits were small for employees who",
+                        "options": [],
+                        "evidence": "Those who continued to answer emails from home reported little improvement.",
+                        "explanation": "Paragraph C says staff who continued to answer emails from home on their day off saw little improvement. Nothing is said about staff taking no sick leave at all."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Whitcombe's research showed that long shifts led to",
+                        "options": [],
+                        "evidence": "error rates rose sharply in the final two hours of each long shift",
+                        "explanation": "Paragraph D reports that errors rose sharply in the last two hours of each long shift. The passage does not mention output falling on the rest day."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Esterhuizen points out that in services which must stay open, a shorter week for each worker means",
+                        "options": [],
+                        "evidence": "a reduced week for each worker means hiring more people or arranging complicated rotas",
+                        "explanation": "Paragraph E says hospitals, schools and shops would need to hire more people or arrange complicated rotas, which matches recruiting extra workers or devising complex rotas."
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Ndiaye found that staff became resentful in workplaces where",
+                        "options": [],
+                        "evidence": "resentment grew quickly where front-line staff kept five days while head-office colleagues enjoyed three-day weekends",
+                        "explanation": "Paragraph F says resentment grew when some staff kept five days while others had three-day weekends, meaning only some departments got the shorter week."
+                    },
+                    {
+                        "answer": [
+                            "I"
+                        ],
+                        "prompt": "According to the writer, organisations that succeeded with the policy tended to",
+                        "options": [],
+                        "evidence": "they measured results rather than hours",
+                        "explanation": "Paragraph G says successful organisations measured results rather than hours. Changing everything at once is what the organisations that failed did."
+                    }
+                ],
+                "instruction": "Complete each sentence with the correct ending, A–J, from the box below. There are more endings than sentences, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "on schedule"
+                        ],
+                        "prompt": "In Halvorsen's study, output was judged by the number of projects that were finished ______.",
+                        "options": [],
+                        "evidence": "Output, measured by projects completed on schedule, remained broadly stable.",
+                        "explanation": "Paragraph B says output was measured by projects completed on schedule; 'finished' in the sentence restates 'completed'."
+                    },
+                    {
+                        "answer": [
+                            "sickness absence"
+                        ],
+                        "prompt": "Arkwright looked at levels of ______ in companies before and after they cut the number of working days.",
+                        "options": [],
+                        "evidence": "compared sickness absence in firms before and after a reduction in days",
+                        "explanation": "Paragraph C says Arkwright compared sickness absence in firms before and after the number of days was reduced."
+                    },
+                    {
+                        "answer": [
+                            "fatigue"
+                        ],
+                        "prompt": "Whitcombe believes that a compressed week only shifts ______ from one part of the week to another.",
+                        "options": [],
+                        "evidence": "argues that this simply moves fatigue around",
+                        "explanation": "Paragraph D says Whitcombe argues that the compressed week simply moves fatigue around instead of reducing it."
+                    },
+                    {
+                        "answer": [
+                            "hidden bill"
+                        ],
+                        "prompt": "Esterhuizen uses the term ______ for the cost of extra staff, which positive reports often overlook.",
+                        "options": [],
+                        "evidence": "He describes the cost of this extra staffing as the \"hidden bill\"",
+                        "explanation": "Paragraph E says Esterhuizen calls the cost of extra staffing the 'hidden bill' that enthusiastic reports tend to ignore."
+                    },
+                    {
+                        "answer": [
+                            "annual leave"
+                        ],
+                        "prompt": "Ndiaye recommends offering shorter shifts or extra ______ to staff whose jobs cannot be reorganised.",
+                        "options": [],
+                        "evidence": "such as shorter shifts or additional annual leave, to groups whose roles cannot be reorganised",
+                        "explanation": "Paragraph F lists shorter shifts or additional annual leave as benefits for groups whose roles cannot be reorganised; 'extra' restates 'additional'."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Sunniva Halvorsen",
+                "role": "organisational psychologist who studied forty office teams moving to a four-day week",
+                "gender": "female"
+            },
+            {
+                "name": "Mei-Ling Arkwright",
+                "role": "researcher in occupational wellbeing who compared sickness absence before and after shorter weeks",
+                "gender": "female"
+            },
+            {
+                "name": "Adebayo Whitcombe",
+                "role": "labour economist who studied error rates on compressed schedules",
+                "gender": "male"
+            },
+            {
+                "name": "Jonas Esterhuizen",
+                "role": "consultant to service organisations who warns about the cost of extra staffing",
+                "gender": "male"
+            },
+            {
+                "name": "Paulina Ndiaye",
+                "role": "sociologist who interviewed staff about fairness when only some departments had four-day weeks",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For most of the last century, the five-day week has seemed as fixed as the calendar itself. Yet it is a social invention, not a law of nature: the two-day weekend became common only after long campaigns by workers and a recognition by some employers that rested staff were more productive. Today a growing number of organisations are asking whether the next step is a third day off. My own view is that the idea deserves to be taken seriously, but not in the form in which it is often sold. A four-day week is worth having only if it changes how work is done, not merely when it is done.",
+                "label": "A"
+            },
+            {
+                "text": "The case in favour begins with a simple observation: hours at a desk are not the same as useful output. Sunniva Halvorsen, an organisational psychologist, tracked forty office teams over a year and found that a large share of the working day was consumed by meetings that participants themselves rated as unnecessary. When her teams moved to four days while keeping full pay, most cut their meetings by around a third and reported that they protected long blocks of uninterrupted time for demanding tasks. Output, measured by projects completed on schedule, remained broadly stable. Halvorsen is careful to note that her teams volunteered for the trial, so they may have been unusually motivated, but the pattern is hard to dismiss.",
+                "label": "B"
+            },
+            {
+                "text": "Health is the second argument. Mei-Ling Arkwright, who studies occupational wellbeing, compared sickness absence in firms before and after a reduction in days. Absence fell in almost every case, and staff described sleeping better and feeling less exhausted on Monday mornings. Arkwright points out, however, that the benefits were concentrated among employees who genuinely stopped working on their extra day. Those who continued to answer emails from home reported little improvement. In other words, a day off that is not really off brings few gains. Her conclusion is that a reduced week works best when managers make it clear that nobody is expected to be reachable on the free day.",
+                "label": "C"
+            },
+            {
+                "text": "It is here that the most common version of the policy goes wrong. Many employers, attracted by the headline but nervous about lost hours, introduce a \"compressed\" week, in which the same forty hours are squeezed into four ten-hour days. Adebayo Whitcombe, a labour economist, argues that this simply moves fatigue around. In his study of warehouse and call-centre staff on compressed schedules, error rates rose sharply in the final two hours of each long shift, wiping out much of the benefit of the extra rest day. I find his evidence persuasive. A shorter week that is achieved by making each day longer misunderstands why fewer hours can help in the first place.",
+                "label": "D"
+            },
+            {
+                "text": "Critics raise a different objection: that the four-day week suits only certain kinds of job. A software developer can perhaps finish the same work in less time; a nurse cannot care for patients who are not there. Jonas Esterhuizen, a consultant who works with service organisations, has observed that hospitals, schools and shops must keep their doors open regardless of staff schedules, so a reduced week for each worker means hiring more people or arranging complicated rotas. He describes the cost of this extra staffing as the \"hidden bill\" that enthusiastic reports tend to ignore. This is a fair point, and supporters who claim the policy will pay for itself everywhere are, in my view, overstating their case.",
+                "label": "E"
+            },
+            {
+                "text": "A further concern is fairness within the workforce. Paulina Ndiaye, a sociologist, interviewed employees at firms that had adopted four-day schedules for some departments but not others. She found that resentment grew quickly where front-line staff kept five days while head-office colleagues enjoyed three-day weekends. Several interviewees said the arrangement made them feel like second-class employees, even when their pay was unchanged. Ndiaye suggests that employers should offer comparable benefits, such as shorter shifts or additional annual leave, to groups whose roles cannot be reorganised. Whether such alternatives are valued as highly as a full extra day off remains, she admits, an open question.",
+                "label": "F"
+            },
+            {
+                "text": "None of these difficulties seems to me a reason to abandon the idea. They are reasons to introduce it carefully. The organisations that have succeeded tend to share three features: they began with a limited trial, they measured results rather than hours, and they removed tasks instead of compressing them. Those that failed usually tried to change everything at once, or quietly raised targets so that staff ended up working on their supposed day off. Governments could help by funding trials in sectors where the practical obstacles are greatest, since these are precisely the settings about which we know least.",
+                "label": "G"
+            },
+            {
+                "text": "The five-day week was once a radical proposal too. Its defenders did not argue that every job could be organised identically; they argued that people work better when they have time to recover. That principle still holds, perhaps more than ever in an age of constant digital connection. The question is not whether we can afford a four-day week, but whether we are willing to do the harder work of deciding which of our current tasks actually matter.",
+                "label": "H"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Yet it is a social invention, not a law of nature",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Halvorsen is careful to note that her teams volunteered for the trial, so they may have been unusually motivated, but the pattern is hard to dismiss.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "A shorter week that is achieved by making each day longer misunderstands why fewer hours can help in the first place.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "supporters who claim the policy will pay for itself everywhere are, in my view, overstating their case.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Whether such alternatives are valued as highly as a full extra day off remains, she admits, an open question.",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "most cut their meetings by around a third",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Those who continued to answer emails from home reported little improvement.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "error rates rose sharply in the final two hours of each long shift",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a reduced week for each worker means hiring more people or arranging complicated rotas",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "firms that had adopted four-day schedules for some departments but not others. She found that resentment grew quickly",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "they measured results rather than hours",
+                "answer": [
+                    "I"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "measured by projects completed on schedule",
+                "answer": [
+                    "on schedule"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "compared sickness absence in firms before and after a reduction in days",
+                "answer": [
+                    "sickness absence"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "this simply moves fatigue around",
+                "answer": [
+                    "fatigue"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "He describes the cost of this extra staffing as the \"hidden bill\"",
+                "answer": [
+                    "hidden bill"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "such as shorter shifts or additional annual leave",
+                "answer": [
+                    "annual leave"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "it is a social invention, not a law of nature",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "her teams volunteered for the trial, so they may have been unusually motivated, but the pattern is hard to dismiss",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "A shorter week that is achieved by making each day longer misunderstands why fewer hours can help in the first place.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "supporters who claim the policy will pay for itself everywhere are, in my view, overstating their case",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    false
+                ],
+                "quote": "Whether such alternatives are valued as highly as a full extra day off remains, she admits, an open question.",
+                "answer": [
+                    "N"
+                ],
+                "correct": false
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "most cut their meetings by around a third",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Those who continued to answer emails from home reported little improvement.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "error rates rose sharply in the final two hours of each long shift",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a reduced week for each worker means hiring more people or arranging complicated rotas",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "resentment grew quickly where front-line staff kept five days while head-office colleagues enjoyed three-day weekends",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "they measured results rather than hours",
+                "answer": [
+                    "I"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Output, measured by projects completed on schedule",
+                "answer": [
+                    "on schedule"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "compared sickness absence in firms before and after a reduction in days",
+                "answer": [
+                    "sickness absence"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "argues that this simply moves fatigue around",
+                "answer": [
+                    "fatigue"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "He describes the cost of this extra staffing as the \"hidden bill\"",
+                "answer": [
+                    "hidden bill"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "offer comparable benefits, such as shorter shifts or additional annual leave",
+                "answer": [
+                    "annual leave"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": [
+            "b1q6"
+        ]
+    },
+    "revise": {
+        "b1q6": {
+            "action": "keep",
+            "reason": "The passage calls this comparison an open question, and the writer gives no view on it, so NOT GIVEN is the only defensible answer. Answering NO mistakes an unresolved question for a contradiction."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Yet it is a social invention, not a law of nature: the two-day weekend became common only after long campaigns by workers",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Halvorsen is careful to note that her teams volunteered for the trial, so they may have been unusually motivated, but the pattern is hard to dismiss.",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "A shorter week that is achieved by making each day longer misunderstands why fewer hours can help in the first place.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "supporters who claim the policy will pay for itself everywhere are, in my view, overstating their case.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "most cut their meetings by around a third",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Those who continued to answer emails from home reported little improvement.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "error rates rose sharply in the final two hours of each long shift",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "a reduced week for each worker means hiring more people or arranging complicated rotas.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "resentment grew quickly where front-line staff kept five days while head-office colleagues enjoyed three-day weekends.",
+            "answer": [
+                "G"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Output, measured by projects completed on schedule, remained broadly stable.",
+            "answer": [
+                "on schedule"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "compared sickness absence in firms before and after a reduction in days.",
+            "answer": [
+                "sickness absence"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "this simply moves fatigue around.",
+            "answer": [
+                "fatigue"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "the cost of this extra staffing as the \"hidden bill\" that enthusiastic reports tend to ignore.",
+            "answer": [
+                "hidden bill"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 17,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 1,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Whether such alternatives are valued as highly as a full extra day off remains, she admits, an open question.",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        }
+    },
+    "section": {
+        "text": "Fewer Days, Better Work?\n\nA. For most of the last century, the five-day week has seemed as fixed as the calendar itself. Yet it is a social invention, not a law of nature: the two-day weekend became common only after long campaigns by workers and a recognition by some employers that rested staff were more productive. Today a growing number of organisations are asking whether the next step is a third day off. My own view is that the idea deserves to be taken seriously, but not in the form in which it is often sold. A four-day week is worth having only if it changes how work is done, not merely when it is done.\n\nB. The case in favour begins with a simple observation: hours at a desk are not the same as useful output. Sunniva Halvorsen, an organisational psychologist, tracked forty office teams over a year and found that a large share of the working day was consumed by meetings that participants themselves rated as unnecessary. When her teams moved to four days while keeping full pay, most cut their meetings by around a third and reported that they protected long blocks of uninterrupted time for demanding tasks. Output, measured by projects completed on schedule, remained broadly stable. Halvorsen is careful to note that her teams volunteered for the trial, so they may have been unusually motivated, but the pattern is hard to dismiss.\n\nC. Health is the second argument. Mei-Ling Arkwright, who studies occupational wellbeing, compared sickness absence in firms before and after a reduction in days. Absence fell in almost every case, and staff described sleeping better and feeling less exhausted on Monday mornings. Arkwright points out, however, that the benefits were concentrated among employees who genuinely stopped working on their extra day. Those who continued to answer emails from home reported little improvement. In other words, a day off that is not really off brings few gains. Her conclusion is that a reduced week works best when managers make it clear that nobody is expected to be reachable on the free day.\n\nD. It is here that the most common version of the policy goes wrong. Many employers, attracted by the headline but nervous about lost hours, introduce a \"compressed\" week, in which the same forty hours are squeezed into four ten-hour days. Adebayo Whitcombe, a labour economist, argues that this simply moves fatigue around. In his study of warehouse and call-centre staff on compressed schedules, error rates rose sharply in the final two hours of each long shift, wiping out much of the benefit of the extra rest day. I find his evidence persuasive. A shorter week that is achieved by making each day longer misunderstands why fewer hours can help in the first place.\n\nE. Critics raise a different objection: that the four-day week suits only certain kinds of job. A software developer can perhaps finish the same work in less time; a nurse cannot care for patients who are not there. Jonas Esterhuizen, a consultant who works with service organisations, has observed that hospitals, schools and shops must keep their doors open regardless of staff schedules, so a reduced week for each worker means hiring more people or arranging complicated rotas. He describes the cost of this extra staffing as the \"hidden bill\" that enthusiastic reports tend to ignore. This is a fair point, and supporters who claim the policy will pay for itself everywhere are, in my view, overstating their case.\n\nF. A further concern is fairness within the workforce. Paulina Ndiaye, a sociologist, interviewed employees at firms that had adopted four-day schedules for some departments but not others. She found that resentment grew quickly where front-line staff kept five days while head-office colleagues enjoyed three-day weekends. Several interviewees said the arrangement made them feel like second-class employees, even when their pay was unchanged. Ndiaye suggests that employers should offer comparable benefits, such as shorter shifts or additional annual leave, to groups whose roles cannot be reorganised. Whether such alternatives are valued as highly as a full extra day off remains, she admits, an open question.\n\nG. None of these difficulties seems to me a reason to abandon the idea. They are reasons to introduce it carefully. The organisations that have succeeded tend to share three features: they began with a limited trial, they measured results rather than hours, and they removed tasks instead of compressing them. Those that failed usually tried to change everything at once, or quietly raised targets so that staff ended up working on their supposed day off. Governments could help by funding trials in sectors where the practical obstacles are greatest, since these are precisely the settings about which we know least.\n\nH. The five-day week was once a radical proposal too. Its defenders did not argue that every job could be organised identically; they argued that people work better when they have time to recover. That principle still holds, perhaps more than ever in an age of constant digital connection. The question is not whether we can afford a four-day week, but whether we are willing to do the harder work of deciding which of our current tasks actually matter.",
+        "title": "Fewer Days, Better Work?",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The five-day working week developed naturally rather than as a result of human decisions.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "it is a social invention, not a law of nature",
+                        "explanation": {
+                            "en": "In paragraph A the writer says the five-day week is a social invention and not a law of nature, which is the opposite of the statement.",
+                            "ru": "В абзаце A автор говорит, что пятидневная рабочая неделя — это изобретение общества, а не закон природы. Это прямо противоречит утверждению.",
+                            "uk": "В абзаці A автор зазначає, що п'ятиденний робочий тиждень — це суспільний винахід, а не закон природи. Це прямо суперечить твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Halvorsen's results can be ignored because the teams in her study chose to take part.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "so they may have been unusually motivated, but the pattern is hard to dismiss",
+                        "explanation": {
+                            "en": "In paragraph B the writer accepts that the volunteers may have been very motivated, but says the pattern is hard to dismiss, so the writer does not think the results should be ignored.",
+                            "ru": "В абзаце B автор признаёт, что добровольцы, возможно, были очень мотивированы, но говорит, что от этой закономерности трудно отмахнуться. Значит, автор не считает, что результаты можно игнорировать.",
+                            "uk": "В абзаці B автор визнає, що добровольці, можливо, були дуже вмотивовані, але каже, що цю закономірність важко відкинути. Отже, автор не вважає, що результати можна ігнорувати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Fitting a full week's hours into four longer days is a mistaken way to shorten the week.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "A shorter week that is achieved by making each day longer misunderstands why fewer hours can help in the first place.",
+                        "explanation": {
+                            "en": "In paragraph D the writer agrees with Whitcombe and says that making each day longer misunderstands why fewer hours help, so the writer sees this approach as a mistake.",
+                            "ru": "В абзаце D автор соглашается с Whitcombe и говорит, что удлинять каждый рабочий день — значит не понимать, почему меньшее количество часов приносит пользу. Значит, автор считает такой подход ошибкой.",
+                            "uk": "В абзаці D автор погоджується з Whitcombe і каже, що подовжувати кожен робочий день — означає не розуміти, чому менша кількість годин дає користь. Отже, автор вважає такий підхід помилкою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Hospital workers generally experience more stress than people who work in offices.",
+                        "numbers": [
+                            4
+                        ],
+                        "explanation": {
+                            "en": "Paragraph E mentions nurses and hospitals only to show that some services must stay open. The writer does not compare stress levels between hospital staff and office workers.",
+                            "ru": "В абзаце E медсёстры и больницы упоминаются лишь для того, чтобы показать, что некоторые службы должны продолжать работать. Автор не сравнивает уровень стресса у персонала больниц и офисных работников.",
+                            "uk": "В абзаці E медсестри й лікарні згадуються лише для того, щоб показати, що деякі служби мають працювати й далі. Автор не порівнює рівень стресу в персоналу лікарень і офісних працівників."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Some people who support the four-day week exaggerate how affordable it will be.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "supporters who claim the policy will pay for itself everywhere are, in my view, overstating their case",
+                        "explanation": {
+                            "en": "In paragraph E the writer says that supporters who claim the policy will pay for itself everywhere are overstating their case, which means exaggerating its affordability.",
+                            "ru": "В абзаце E автор говорит, что сторонники, которые утверждают, будто такая политика везде окупится, перегибают палку. То есть они преувеличивают, насколько эта мера доступна по затратам.",
+                            "uk": "В абзаці E автор каже, що прихильники, які стверджують, ніби ця політика скрізь окупиться, перебільшують. Тобто вони перебільшують, наскільки цей захід доступний за витратами."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_sentence_endings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "lengthening each of the remaining working days."
+                    },
+                    {
+                        "id": "B",
+                        "text": "recruiting extra workers or devising more complex rotas."
+                    },
+                    {
+                        "id": "C",
+                        "text": "kept replying to work messages on their extra day."
+                    },
+                    {
+                        "id": "D",
+                        "text": "introduce the change across the whole organisation at once."
+                    },
+                    {
+                        "id": "E",
+                        "text": "a rise in mistakes during the last part of each shift."
+                    },
+                    {
+                        "id": "F",
+                        "text": "reducing the time they spent in meetings."
+                    },
+                    {
+                        "id": "G",
+                        "text": "only some departments were moved to a four-day schedule."
+                    },
+                    {
+                        "id": "H",
+                        "text": "took no sick leave at all during the trial."
+                    },
+                    {
+                        "id": "I",
+                        "text": "judge performance by what was achieved rather than by hours."
+                    },
+                    {
+                        "id": "J",
+                        "text": "a sharp fall in output on the extra rest day."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Halvorsen's teams responded to working four days by",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "most cut their meetings by around a third",
+                        "explanation": {
+                            "en": "Paragraph B says most of Halvorsen's teams cut their meetings by about a third. The passage does not say they made their days longer.",
+                            "ru": "В абзаце B сказано, что большинство команд Halvorsen сократили количество совещаний примерно на треть. О том, что они удлинили рабочий день, в тексте не говорится.",
+                            "uk": "В абзаці B сказано, що більшість команд Halvorsen скоротили кількість нарад приблизно на третину. Про те, що вони подовжили робочий день, у тексті не йдеться."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Arkwright found that the health benefits were small for employees who",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "Those who continued to answer emails from home reported little improvement.",
+                        "explanation": {
+                            "en": "Paragraph C says staff who continued to answer emails from home on their day off saw little improvement. Nothing is said about staff taking no sick leave at all.",
+                            "ru": "В абзаце C говорится, что у сотрудников, которые в свой выходной продолжали отвечать на письма из дома, улучшения были незначительными. О сотрудниках, которые вообще не брали больничный, ничего не сказано.",
+                            "uk": "В абзаці C ідеться про те, що в працівників, які у свій вихідний і далі відповідали на листи з дому, покращення були незначними. Про працівників, які взагалі не брали лікарняного, нічого не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Whitcombe's research showed that long shifts led to",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "error rates rose sharply in the final two hours of each long shift",
+                        "explanation": {
+                            "en": "Paragraph D reports that errors rose sharply in the last two hours of each long shift. The passage does not mention output falling on the rest day.",
+                            "ru": "В абзаце D сообщается, что в последние два часа каждой длинной смены количество ошибок резко возрастало. О снижении производительности в день отдыха в тексте не упоминается.",
+                            "uk": "В абзаці D повідомляється, що в останні дві години кожної довгої зміни кількість помилок різко зростала. Про зниження продуктивності в день відпочинку в тексті не згадується."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Esterhuizen points out that in services which must stay open, a shorter week for each worker means",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "a reduced week for each worker means hiring more people or arranging complicated rotas",
+                        "explanation": {
+                            "en": "Paragraph E says hospitals, schools and shops would need to hire more people or arrange complicated rotas, which matches recruiting extra workers or devising complex rotas.",
+                            "ru": "В абзаце E сказано, что больницам, школам и магазинам пришлось бы нанимать больше людей или составлять сложные графики смен. Это соответствует найму дополнительных работников или разработке сложных графиков.",
+                            "uk": "В абзаці E сказано, що лікарням, школам і магазинам довелося б наймати більше людей або складати складні графіки змін. Це відповідає найму додаткових працівників чи розробленню складних графіків."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Ndiaye found that staff became resentful in workplaces where",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "resentment grew quickly where front-line staff kept five days while head-office colleagues enjoyed three-day weekends",
+                        "explanation": {
+                            "en": "Paragraph F says resentment grew when some staff kept five days while others had three-day weekends, meaning only some departments got the shorter week.",
+                            "ru": "В абзаце F сказано, что недовольство росло, когда одни сотрудники по-прежнему работали пять дней, а у других были трёхдневные выходные. Значит, сокращённую неделю получили лишь некоторые отделы.",
+                            "uk": "В абзаці F сказано, що невдоволення зростало, коли одні працівники й далі працювали п'ять днів, а інші мали триденні вихідні. Отже, скорочений тиждень отримали лише деякі відділи."
+                        }
+                    }
+                ],
+                "instruction": "Complete each sentence with the correct ending, A–J, from the box below. There are more endings than sentences, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "on schedule"
+                        ],
+                        "prompt": "In Halvorsen's study, output was judged by the number of projects that were finished ______.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Output, measured by projects completed on schedule, remained broadly stable.",
+                        "explanation": {
+                            "en": "Paragraph B says output was measured by projects completed on schedule; 'finished' in the sentence restates 'completed'.",
+                            "ru": "В абзаце B сказано, что результаты работы измерялись количеством проектов (\"projects\"), завершённых в срок; слово \"finished\" в предложении — это перефразировка слова \"completed\".",
+                            "uk": "В абзаці B сказано, що результати роботи вимірювали кількістю проєктів (\"projects\"), завершених вчасно; слово \"finished\" у реченні — це перефразування слова \"completed\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "sickness absence"
+                        ],
+                        "prompt": "Arkwright looked at levels of ______ in companies before and after they cut the number of working days.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "compared sickness absence in firms before and after a reduction in days",
+                        "explanation": {
+                            "en": "Paragraph C says Arkwright compared sickness absence in firms before and after the number of days was reduced.",
+                            "ru": "В абзаце C сказано, что Arkwright сравнила отсутствие на работе по болезни (\"sickness absence\") в компаниях до и после того, как количество рабочих дней сократили.",
+                            "uk": "В абзаці C сказано, що Arkwright порівняла відсутність на роботі через хворобу (\"sickness absence\") у компаніях до та після того, як кількість робочих днів скоротили."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "fatigue"
+                        ],
+                        "prompt": "Whitcombe believes that a compressed week only shifts ______ from one part of the week to another.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "argues that this simply moves fatigue around",
+                        "explanation": {
+                            "en": "Paragraph D says Whitcombe argues that the compressed week simply moves fatigue around instead of reducing it.",
+                            "ru": "В абзаце D сказано, что Whitcombe утверждает: сжатая рабочая неделя просто перераспределяет усталость (\"fatigue\"), а не уменьшает её.",
+                            "uk": "В абзаці D сказано, що Whitcombe стверджує: стиснутий робочий тиждень просто перерозподіляє втому (\"fatigue\"), а не зменшує її."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "hidden bill"
+                        ],
+                        "prompt": "Esterhuizen uses the term ______ for the cost of extra staff, which positive reports often overlook.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "He describes the cost of this extra staffing as the \"hidden bill\"",
+                        "explanation": {
+                            "en": "Paragraph E says Esterhuizen calls the cost of extra staffing the 'hidden bill' that enthusiastic reports tend to ignore.",
+                            "ru": "В абзаце E сказано, что Esterhuizen называет расходы на дополнительный персонал \"hidden bill\" — скрытым счётом, который восторженные отчёты обычно не учитывают.",
+                            "uk": "В абзаці E сказано, що Esterhuizen називає витрати на додатковий персонал \"hidden bill\" — прихованим рахунком, який захоплені звіти зазвичай не враховують."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "revised",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b2q1",
+        "7": "b2q2",
+        "8": "b2q3",
+        "9": "b2q4",
+        "10": "b2q5",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

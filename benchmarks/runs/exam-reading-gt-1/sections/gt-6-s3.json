@@ -1,0 +1,1201 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-6|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.264732,
+            "provider": "anthropic",
+            "outputTokens": 12256
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.015486,
+            "provider": "anthropic",
+            "outputTokens": 708
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018745,
+            "provider": "openai",
+            "outputTokens": 822
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01675,
+            "provider": "xai",
+            "outputTokens": 1533
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.096608,
+            "provider": "anthropic",
+            "outputTokens": 4496
+        }
+    ],
+    "draft": {
+        "title": "The Quiet Power of Walking",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Traders' fears put to the test"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Why runners suffer more injuries than walkers"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "An old habit being rediscovered"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Small fixes with large effects"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Health gains that cost almost nothing"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Counting steps with modern technology"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "How walking brings neighbours together"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "Places built against the pedestrian"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "The cost of building car-free shopping streets"
+                    },
+                    {
+                        "id": "x",
+                        "text": "A clearer head after a short stroll"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "a growing number of doctors, planners and ordinary citizens are rediscovering what our ancestors took for granted",
+                        "explanation": "Paragraph A explains that walking was once how everyone travelled, then seemed old-fashioned, and is now being rediscovered. The whole paragraph is about this return of an old habit."
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "What makes walking so attractive is how little it demands.",
+                        "explanation": "Paragraph B lists the health benefits of walking and stresses that it needs no fees or special equipment. Injury is mentioned only briefly, and runners are not discussed, so the heading about runners is wrong."
+                    },
+                    {
+                        "answer": [
+                            "x"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "Many people say a walk helps them think more clearly, and there is evidence to support the feeling.",
+                        "explanation": "Paragraph C is about the mental benefits of walking, supported by a study in which lunchtime walks made workers feel less tired."
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "A driver passes through a neighbourhood behind glass; a pedestrian is part of it.",
+                        "explanation": "Paragraph D describes how people on foot chat with and look out for their neighbours, while drivers may never learn their neighbours' names."
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "The transport planner Matthias Okeke decided to test this fear.",
+                        "explanation": "Paragraph E explains that shopkeepers feared losing customers if cars were removed, and describes a study that checked whether this was true. The paragraph does not discuss what such schemes cost to build."
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "In much of the modern world, the environment itself discourages walking.",
+                        "explanation": "Paragraph F argues that people avoid walking because of the way places are designed, such as spread-out suburbs, missing pavements and short crossing times, not because they are lazy."
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph G",
+                        "options": [],
+                        "evidence": "Some of the most effective improvements are surprisingly modest",
+                        "explanation": "Paragraph G says that cheap measures like benches, trees and better lighting can together transform a place, so small changes bring big results."
+                    }
+                ],
+                "instruction": "The passage has seven paragraphs, A–G. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–x. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to the writer, what makes walking especially appealing as a form of exercise?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It produces faster results than joining a sports team."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It asks for very little in the way of cost or preparation."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It allows adults to meet their weekly target in one day."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It suits people who already think of themselves as sporty."
+                            }
+                        ],
+                        "evidence": "What makes walking so attractive is how little it demands.",
+                        "explanation": "Paragraph B says walking needs no membership fee, no special kit and no booking. The weekly target is met by walking on five days, not one, and the writer says walking suits people who do NOT think of themselves as sporty."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What did Wanjiru Delgado's study suggest?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Lunchtime walks helped only the workers who went to the park."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Walks among greenery eased tiredness more than roadside walks."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Workers felt better the longer their lunchtime walks lasted."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Tests confirmed that walkers were calmer than other workers."
+                            }
+                        ],
+                        "evidence": "the improvement was noticeably greater among those who had walked among trees and grass",
+                        "explanation": "In Paragraph C, both groups felt less tired, but the park group improved more. So it is wrong that only the park group benefited, and no tests were used because workers described their own moods."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What did Matthias Okeke find about shoppers who arrived on foot?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Their single visits were worth more than those of drivers."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Their purchases were larger but their visits less frequent."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Their frequent visits outweighed their smaller purchases."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Their numbers rose mainly in the streets near the scheme."
+                            }
+                        ],
+                        "evidence": "they came back far more often, so that over a month they spent more in total",
+                        "explanation": "Paragraph E says walkers spent less on each visit than drivers but came back much more often, so they spent more over a month. Neighbouring streets are mentioned only because shops later asked for the scheme to be extended."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What is the writer's main point in the final paragraph?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Cities should build new roads that include more room for walkers."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Fairly cheap adjustments can greatly change how a place feels."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Grand plans are needed before individuals start walking more."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Older people gain most from improvements to street design."
+                            }
+                        ],
+                        "evidence": "None of these measures costs as much as a new road, yet together they can transform how a place feels.",
+                        "explanation": "Paragraph G says modest, inexpensive changes can transform a place. The writer says cities and individuals need not wait for grand plans, and benches for older people are only one example among several."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "laziness"
+                        ],
+                        "prompt": "The writer believes it is unfair to explain people's reluctance to walk as simply a matter of ______.",
+                        "options": [],
+                        "evidence": "The usual explanation is laziness, but that is unfair.",
+                        "explanation": "Paragraph F says the common explanation for not walking is laziness, but the writer calls this unfair and blames the design of places instead."
+                    },
+                    {
+                        "answer": [
+                            "spread out"
+                        ],
+                        "prompt": "Because many suburbs are ______, a shop can be a considerable distance from people's homes.",
+                        "options": [],
+                        "evidence": "Suburbs are often spread out, so that the nearest shop may be a long way from home.",
+                        "explanation": "Paragraph F explains that suburbs are often spread out, which is why the nearest shop may be far from home."
+                    },
+                    {
+                        "answer": [
+                            "green light"
+                        ],
+                        "prompt": "At some crossings, pedestrians wait a long time for a ______ that disappears after only a few seconds.",
+                        "options": [],
+                        "evidence": "wait two minutes at a crossing for a green light that lasts only a few seconds",
+                        "explanation": "Paragraph F says people may wait two minutes at a crossing for a green light that lasts only a few seconds."
+                    },
+                    {
+                        "answer": [
+                            "street lighting"
+                        ],
+                        "prompt": "Inexpensive measures such as better ______ can make walking after dark feel safe.",
+                        "options": [],
+                        "evidence": "improving street lighting so that evening walks feel safe",
+                        "explanation": "Paragraph G lists improving street lighting as one of the modest changes, so that walks in the evening feel safe."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Wanjiru Delgado",
+                "role": "psychologist who studied the effect of lunchtime walks on office workers",
+                "gender": "female"
+            },
+            {
+                "name": "Matthias Okeke",
+                "role": "transport planner who studied shoppers' spending before and after a high street was closed to cars",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For almost all of human history, getting from one place to another meant putting one foot in front of the other. Walking was not a hobby or a fitness plan; it was simply how life worked. Today, in many wealthy countries, even journeys of less than two kilometres are routinely made by car, and the humble act of walking has come to seem slightly old-fashioned. Yet a growing number of doctors, planners and ordinary citizens are rediscovering what our ancestors took for granted: that travelling on foot may be one of the cheapest and most effective ways to improve both our own lives and the places we live in.",
+                "label": "A"
+            },
+            {
+                "text": "The physical benefits are well established. Researchers have found that regular brisk walking reduces the risk of heart disease, type 2 diabetes and several other serious conditions, and it helps people keep a healthy weight as they age. Health authorities commonly advise adults to do at least 150 minutes of moderate activity each week, and a brisk half-hour walk on five days meets that target. What makes walking so attractive is how little it demands. There is no membership fee, no special kit beyond a decent pair of shoes, and no need to book a court or join a team. It is also gentle on the joints, so people who have never thought of themselves as sporty can start without much fear of injury.",
+                "label": "B"
+            },
+            {
+                "text": "The rewards are not only physical. Many people say a walk helps them think more clearly, and there is evidence to support the feeling. In one study, the psychologist Wanjiru Delgado asked 120 office employees to take a twenty-minute walk during their lunch break for six weeks. Half walked through a nearby park, while the others followed a route along a busy main road. Both groups reported feeling less tired in the afternoons than before, but the improvement was noticeably greater among those who had walked among trees and grass. Delgado is careful not to overstate her results: the group was small, and the workers described their own moods rather than being measured by any test. Still, she believes the findings are worth taking seriously.",
+                "label": "C"
+            },
+            {
+                "text": "Walking also changes how people relate to one another. A driver passes through a neighbourhood behind glass; a pedestrian is part of it. People on foot nod to neighbours, stop to chat outside the bakery and notice when an elderly resident has not been seen for a few days. Urban thinkers have long argued that streets full of walkers feel safer, because so many people are quietly keeping an eye on what is going on. In areas where nearly every trip is made by car, by contrast, residents may live side by side for years without ever learning each other's names.",
+                "label": "D"
+            },
+            {
+                "text": "There is an economic side to the story too. When councils propose removing traffic from shopping streets, local traders often protest, convinced that customers who cannot park outside will simply go elsewhere. The transport planner Matthias Okeke decided to test this fear. He surveyed shoppers on a high street in a medium-sized town before and after it was closed to cars. He found that people arriving on foot tended to spend less on each visit than drivers did, but they came back far more often, so that over a month they spent more in total. Okeke admits that one town cannot speak for every high street, but he considers the pattern hard to ignore. Several shops that had opposed the scheme later asked for it to be extended to neighbouring streets.",
+                "label": "E"
+            },
+            {
+                "text": "If walking brings so many benefits, why do so many people avoid it? The usual explanation is laziness, but that is unfair. In much of the modern world, the environment itself discourages walking. Suburbs are often spread out, so that the nearest shop may be a long way from home. Pavements suddenly come to an end, wide roads are difficult and frightening to cross, and pedestrians may wait two minutes at a crossing for a green light that lasts only a few seconds. Even keen walkers give up when a ten-minute stroll means crossing a car park and a six-lane road. Faced with such conditions, choosing the car is a perfectly rational decision.",
+                "label": "F"
+            },
+            {
+                "text": "The encouraging news is that walking does not require expensive projects to flourish. Some of the most effective improvements are surprisingly modest: shortening the distance across busy junctions, giving pedestrians more time at traffic lights, planting trees that offer shade in summer, adding benches so that older people can rest, and improving street lighting so that evening walks feel safe. None of these measures costs as much as a new road, yet together they can transform how a place feels. Cities need not wait for grand plans, and nor do individuals. The next time a journey is short enough, leave the keys at home and see what you notice along the way.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a growing number of doctors, planners and ordinary citizens are rediscovering what our ancestors took for granted",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "What makes walking so attractive is how little it demands. There is no membership fee",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Many people say a walk helps them think more clearly, and there is evidence to support the feeling.",
+                "answer": [
+                    "x"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Walking also changes how people relate to one another.",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "The transport planner Matthias Okeke decided to test this fear.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "In much of the modern world, the environment itself discourages walking.",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some of the most effective improvements are surprisingly modest",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "What makes walking so attractive is how little it demands. There is no membership fee, no special kit beyond a decent pair of shoes",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the improvement was noticeably greater among those who had walked among trees and grass",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "they came back far more often, so that over a month they spent more in total",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some of the most effective improvements are surprisingly modest... None of these measures costs as much as a new road, yet together they can transform how a place feels.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The usual explanation is laziness, but that is unfair.",
+                "answer": [
+                    "laziness"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Suburbs are often spread out, so that the nearest shop may be a long way from home.",
+                "answer": [
+                    "spread out"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "pedestrians may wait two minutes at a crossing for a green light that lasts only a few seconds",
+                "answer": [
+                    "green light"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "improving street lighting so that evening walks feel safe",
+                "answer": [
+                    "street lighting"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Walking was not a hobby or a fitness plan; it was simply how life worked... a growing number of doctors, planners and ordinary citizens are rediscovering what our ancestors took for granted",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The physical benefits are well established... What makes walking so attractive is how little it demands. There is no membership fee, no special kit beyond a decent pair of shoes",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Many people say a walk helps them think more clearly... Both groups reported feeling less tired in the afternoons than before, but the improvement was noticeably greater among those who had walked among trees and grass",
+                "answer": [
+                    "x"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Walking also changes how people relate to one another... People on foot nod to neighbours, stop to chat outside the bakery",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "When councils propose removing traffic from shopping streets, local traders often protest... The transport planner Matthias Okeke decided to test this fear",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the environment itself discourages walking. Suburbs are often spread out... Pavements suddenly come to an end, wide roads are difficult and frightening to cross",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some of the most effective improvements are surprisingly modest... None of these measures costs as much as a new road, yet together they can transform how a place feels",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "What makes walking so attractive is how little it demands. There is no membership fee, no special kit beyond a decent pair of shoes",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Both groups reported feeling less tired in the afternoons than before, but the improvement was noticeably greater among those who had walked among trees and grass",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "people arriving on foot tended to spend less on each visit than drivers did, but they came back far more often, so that over a month they spent more in total",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some of the most effective improvements are surprisingly modest... None of these measures costs as much as a new road, yet together they can transform how a place feels",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The usual explanation is laziness, but that is unfair",
+                "answer": [
+                    "laziness"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Suburbs are often spread out, so that the nearest shop may be a long way from home",
+                "answer": [
+                    "spread out"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "pedestrians may wait two minutes at a crossing for a green light that lasts only a few seconds",
+                "answer": [
+                    "green light"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "improving street lighting so that evening walks feel safe",
+                "answer": [
+                    "street lighting"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "a growing number of doctors, planners and ordinary citizens are rediscovering what our ancestors took for granted",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "What makes walking so attractive is how little it demands. There is no membership fee, no special kit",
+            "answer": [
+                "v"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Many people say a walk helps them think more clearly",
+            "answer": [
+                "x"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "People on foot nod to neighbours, stop to chat outside the bakery",
+            "answer": [
+                "vii"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "local traders often protest, convinced that customers who cannot park outside will simply go elsewhere. The transport planner Matthias Okeke decided to test this fear.",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "the environment itself discourages walking. Suburbs are often spread out",
+            "answer": [
+                "viii"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "Some of the most effective improvements are surprisingly modest",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "What makes walking so attractive is how little it demands. There is no membership fee, no special kit beyond a decent pair of shoes",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the improvement was noticeably greater among those who had walked among trees and grass",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "people arriving on foot tended to spend less on each visit than drivers did, but they came back far more often, so that over a month they spent more in total",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The usual explanation is laziness, but that is unfair.",
+            "answer": [
+                "laziness"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Suburbs are often spread out, so that the nearest shop may be a long way from home.",
+            "answer": [
+                "spread out"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "pedestrians may wait two minutes at a crossing for a green light that lasts only a few seconds.",
+            "answer": [
+                "green light"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The Quiet Power of Walking\n\nA. For almost all of human history, getting from one place to another meant putting one foot in front of the other. Walking was not a hobby or a fitness plan; it was simply how life worked. Today, in many wealthy countries, even journeys of less than two kilometres are routinely made by car, and the humble act of walking has come to seem slightly old-fashioned. Yet a growing number of doctors, planners and ordinary citizens are rediscovering what our ancestors took for granted: that travelling on foot may be one of the cheapest and most effective ways to improve both our own lives and the places we live in.\n\nB. The physical benefits are well established. Researchers have found that regular brisk walking reduces the risk of heart disease, type 2 diabetes and several other serious conditions, and it helps people keep a healthy weight as they age. Health authorities commonly advise adults to do at least 150 minutes of moderate activity each week, and a brisk half-hour walk on five days meets that target. What makes walking so attractive is how little it demands. There is no membership fee, no special kit beyond a decent pair of shoes, and no need to book a court or join a team. It is also gentle on the joints, so people who have never thought of themselves as sporty can start without much fear of injury.\n\nC. The rewards are not only physical. Many people say a walk helps them think more clearly, and there is evidence to support the feeling. In one study, the psychologist Wanjiru Delgado asked 120 office employees to take a twenty-minute walk during their lunch break for six weeks. Half walked through a nearby park, while the others followed a route along a busy main road. Both groups reported feeling less tired in the afternoons than before, but the improvement was noticeably greater among those who had walked among trees and grass. Delgado is careful not to overstate her results: the group was small, and the workers described their own moods rather than being measured by any test. Still, she believes the findings are worth taking seriously.\n\nD. Walking also changes how people relate to one another. A driver passes through a neighbourhood behind glass; a pedestrian is part of it. People on foot nod to neighbours, stop to chat outside the bakery and notice when an elderly resident has not been seen for a few days. Urban thinkers have long argued that streets full of walkers feel safer, because so many people are quietly keeping an eye on what is going on. In areas where nearly every trip is made by car, by contrast, residents may live side by side for years without ever learning each other's names.\n\nE. There is an economic side to the story too. When councils propose removing traffic from shopping streets, local traders often protest, convinced that customers who cannot park outside will simply go elsewhere. The transport planner Matthias Okeke decided to test this fear. He surveyed shoppers on a high street in a medium-sized town before and after it was closed to cars. He found that people arriving on foot tended to spend less on each visit than drivers did, but they came back far more often, so that over a month they spent more in total. Okeke admits that one town cannot speak for every high street, but he considers the pattern hard to ignore. Several shops that had opposed the scheme later asked for it to be extended to neighbouring streets.\n\nF. If walking brings so many benefits, why do so many people avoid it? The usual explanation is laziness, but that is unfair. In much of the modern world, the environment itself discourages walking. Suburbs are often spread out, so that the nearest shop may be a long way from home. Pavements suddenly come to an end, wide roads are difficult and frightening to cross, and pedestrians may wait two minutes at a crossing for a green light that lasts only a few seconds. Even keen walkers give up when a ten-minute stroll means crossing a car park and a six-lane road. Faced with such conditions, choosing the car is a perfectly rational decision.\n\nG. The encouraging news is that walking does not require expensive projects to flourish. Some of the most effective improvements are surprisingly modest: shortening the distance across busy junctions, giving pedestrians more time at traffic lights, planting trees that offer shade in summer, adding benches so that older people can rest, and improving street lighting so that evening walks feel safe. None of these measures costs as much as a new road, yet together they can transform how a place feels. Cities need not wait for grand plans, and nor do individuals. The next time a journey is short enough, leave the keys at home and see what you notice along the way.",
+        "title": "The Quiet Power of Walking",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Traders' fears put to the test"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Why runners suffer more injuries than walkers"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "An old habit being rediscovered"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Small fixes with large effects"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Health gains that cost almost nothing"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Counting steps with modern technology"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "How walking brings neighbours together"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "Places built against the pedestrian"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "The cost of building car-free shopping streets"
+                    },
+                    {
+                        "id": "x",
+                        "text": "A clearer head after a short stroll"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "a growing number of doctors, planners and ordinary citizens are rediscovering what our ancestors took for granted",
+                        "explanation": {
+                            "en": "Paragraph A explains that walking was once how everyone travelled, then seemed old-fashioned, and is now being rediscovered. The whole paragraph is about this return of an old habit.",
+                            "ru": "Абзац A объясняет, что когда-то все передвигались пешком, потом ходьба стала казаться старомодной, а теперь её открывают заново. Весь абзац посвящён возвращению этой старой привычки.",
+                            "uk": "Абзац A пояснює, що колись усі пересувалися пішки, потім ходьба почала здаватися старомодною, а тепер її відкривають заново. Увесь абзац присвячено поверненню цієї старої звички."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "What makes walking so attractive is how little it demands.",
+                        "explanation": {
+                            "en": "Paragraph B lists the health benefits of walking and stresses that it needs no fees or special equipment. Injury is mentioned only briefly, and runners are not discussed, so the heading about runners is wrong.",
+                            "ru": "В абзаце B перечислена польза ходьбы для здоровья и подчёркивается, что она не требует ни платы, ни специального снаряжения. Травмы упоминаются лишь вскользь, а о бегунах речи нет, поэтому заголовок про бегунов не подходит.",
+                            "uk": "В абзаці B перелічено користь ходьби для здоров'я й наголошено, що вона не потребує ні плати, ні спеціального спорядження. Травми згадано лише мимохідь, а про бігунів не йдеться, тож заголовок про бігунів не підходить."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "x"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "Many people say a walk helps them think more clearly, and there is evidence to support the feeling.",
+                        "explanation": {
+                            "en": "Paragraph C is about the mental benefits of walking, supported by a study in which lunchtime walks made workers feel less tired.",
+                            "ru": "Абзац C посвящён пользе ходьбы для психики. Это подтверждает исследование, в котором прогулки в обеденный перерыв помогли работникам чувствовать себя менее уставшими.",
+                            "uk": "Абзац C присвячено користі ходьби для психіки. Це підтверджує дослідження, у якому прогулянки в обідню перерву допомогли працівникам почуватися менш утомленими."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "A driver passes through a neighbourhood behind glass; a pedestrian is part of it.",
+                        "explanation": {
+                            "en": "Paragraph D describes how people on foot chat with and look out for their neighbours, while drivers may never learn their neighbours' names.",
+                            "ru": "Абзац D описывает, как пешеходы общаются с соседями и заботятся о них, тогда как водители могут так и не узнать, как зовут их соседей.",
+                            "uk": "Абзац D описує, як пішоходи спілкуються із сусідами та дбають про них, тоді як водії можуть так і не дізнатися, як звати їхніх сусідів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "The transport planner Matthias Okeke decided to test this fear.",
+                        "explanation": {
+                            "en": "Paragraph E explains that shopkeepers feared losing customers if cars were removed, and describes a study that checked whether this was true. The paragraph does not discuss what such schemes cost to build.",
+                            "ru": "Абзац E объясняет, что владельцы магазинов боялись потерять покупателей, если убрать машины, и описывает исследование, которое проверило, так ли это. О том, сколько стоит создание таких проектов, в абзаце не говорится.",
+                            "uk": "Абзац E пояснює, що власники крамниць боялися втратити покупців, якщо прибрати автомобілі, і описує дослідження, яке перевірило, чи це справді так. Про те, скільки коштує створення таких проєктів, в абзаці не йдеться."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "In much of the modern world, the environment itself discourages walking.",
+                        "explanation": {
+                            "en": "Paragraph F argues that people avoid walking because of the way places are designed, such as spread-out suburbs, missing pavements and short crossing times, not because they are lazy.",
+                            "ru": "В абзаце F утверждается, что люди избегают ходьбы не из-за лени, а из-за того, как спланированы места, где они живут: разбросанные пригороды, отсутствие тротуаров, слишком мало времени на переход дороги.",
+                            "uk": "В абзаці F стверджується, що люди уникають ходьби не через лінощі, а через те, як сплановано місця, де вони живуть: розкидані передмістя, відсутність тротуарів, надто мало часу на перехід дороги."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph G",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "Some of the most effective improvements are surprisingly modest",
+                        "explanation": {
+                            "en": "Paragraph G says that cheap measures like benches, trees and better lighting can together transform a place, so small changes bring big results.",
+                            "ru": "В абзаце G говорится, что недорогие меры — скамейки, деревья, лучшее освещение — вместе способны преобразить место, то есть небольшие изменения дают большой результат.",
+                            "uk": "В абзаці G сказано, що недорогі заходи — лавки, дерева, краще освітлення — разом здатні змінити місце до невпізнання, тобто невеликі зміни дають великий результат."
+                        }
+                    }
+                ],
+                "instruction": "The passage has seven paragraphs, A–G. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–x. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It produces faster results than joining a sports team."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It suits people who already think of themselves as sporty."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It allows adults to meet their weekly target in one day."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It asks for very little in the way of cost or preparation."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "According to the writer, what makes walking especially appealing as a form of exercise?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "What makes walking so attractive is how little it demands.",
+                        "explanation": {
+                            "en": "Paragraph B says walking needs no membership fee, no special kit and no booking. The weekly target is met by walking on five days, not one, and the writer says walking suits people who do NOT think of themselves as sporty.",
+                            "ru": "В абзаце B сказано, что для ходьбы не нужны ни членский взнос, ни специальная экипировка, ни предварительная запись. Недельную норму набирают, гуляя пять дней, а не один, а по словам автора, ходьба подходит тем, кто НЕ считает себя спортивным человеком.",
+                            "uk": "В абзаці B сказано, що для ходьби не потрібні ні членський внесок, ні спеціальне спорядження, ні попередній запис. Тижневу норму виконують, гуляючи п'ять днів, а не один, а за словами автора, ходьба підходить тим, хто НЕ вважає себе спортивною людиною."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Walks among greenery eased tiredness more than roadside walks."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Workers felt better the longer their lunchtime walks lasted."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Lunchtime walks helped only the workers who went to the park."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Tests confirmed that walkers were calmer than other workers."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What did Wanjiru Delgado's study suggest?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "the improvement was noticeably greater among those who had walked among trees and grass",
+                        "explanation": {
+                            "en": "In Paragraph C, both groups felt less tired, but the park group improved more. So it is wrong that only the park group benefited, and no tests were used because workers described their own moods.",
+                            "ru": "В абзаце C обе группы стали меньше уставать, но у группы, гулявшей в парке, улучшение было заметнее. Поэтому неверно, что пользу получила только группа из парка. Никаких тестов не проводилось: работники сами описывали своё настроение.",
+                            "uk": "В абзаці C обидві групи стали менше втомлюватися, але в групи, що гуляла в парку, покращення було помітнішим. Тож неправильно, що користь отримала лише група з парку. Жодних тестів не проводили: працівники самі описували свій настрій."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Their single visits were worth more than those of drivers."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Their frequent visits outweighed their smaller purchases."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Their numbers rose mainly in the streets near the scheme."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Their purchases were larger but their visits less frequent."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What did Matthias Okeke find about shoppers who arrived on foot?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "they came back far more often, so that over a month they spent more in total",
+                        "explanation": {
+                            "en": "Paragraph E says walkers spent less on each visit than drivers but came back much more often, so they spent more over a month. Neighbouring streets are mentioned only because shops later asked for the scheme to be extended.",
+                            "ru": "В абзаце E сказано, что пешеходы тратили за одно посещение меньше, чем водители, но приходили гораздо чаще, поэтому за месяц тратили больше. Соседние улицы упоминаются лишь потому, что позже магазины попросили распространить проект и на них.",
+                            "uk": "В абзаці E сказано, що пішоходи витрачали за один візит менше, ніж водії, але приходили набагато частіше, тож за місяць витрачали більше. Сусідні вулиці згадано лише тому, що згодом крамниці попросили поширити проєкт і на них."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "laziness"
+                        ],
+                        "prompt": "The writer believes it is unfair to explain people's reluctance to walk as simply a matter of ______.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "The usual explanation is laziness, but that is unfair.",
+                        "explanation": {
+                            "en": "Paragraph F says the common explanation for not walking is laziness, but the writer calls this unfair and blames the design of places instead.",
+                            "ru": "В абзаце F сказано, что нежелание ходить пешком обычно объясняют ленью, но автор считает это несправедливым и винит в этом то, как спланированы места.",
+                            "uk": "В абзаці F сказано, що небажання ходити пішки зазвичай пояснюють лінощами, але автор вважає це несправедливим і вбачає причину в тому, як сплановано місця."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "spread out"
+                        ],
+                        "prompt": "Because many suburbs are ______, a shop can be a considerable distance from people's homes.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "Suburbs are often spread out, so that the nearest shop may be a long way from home.",
+                        "explanation": {
+                            "en": "Paragraph F explains that suburbs are often spread out, which is why the nearest shop may be far from home.",
+                            "ru": "В абзаце F объясняется, что пригороды часто сильно разбросаны, поэтому ближайший магазин может находиться далеко от дома.",
+                            "uk": "В абзаці F пояснюється, що передмістя часто дуже розкидані, тому найближча крамниця може бути далеко від дому."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "green light"
+                        ],
+                        "prompt": "At some crossings, pedestrians wait a long time for a ______ that disappears after only a few seconds.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "wait two minutes at a crossing for a green light that lasts only a few seconds",
+                        "explanation": {
+                            "en": "Paragraph F says people may wait two minutes at a crossing for a green light that lasts only a few seconds.",
+                            "ru": "В абзаце F сказано, что на переходе людям порой приходится две минуты ждать зелёного сигнала, который горит всего несколько секунд.",
+                            "uk": "В абзаці F сказано, що на переході людям часом доводиться дві хвилини чекати зеленого сигналу, який горить лише кілька секунд."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

@@ -1,0 +1,1256 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-4|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.321228,
+            "provider": "anthropic",
+            "outputTokens": 15181
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.016168,
+            "provider": "anthropic",
+            "outputTokens": 768
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018605,
+            "provider": "openai",
+            "outputTokens": 809
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.023548,
+            "provider": "anthropic",
+            "outputTokens": 399
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.005248,
+            "provider": "anthropic",
+            "outputTokens": 73
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.005428,
+            "provider": "openai",
+            "outputTokens": 142
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01753,
+            "provider": "xai",
+            "outputTokens": 1666
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.098764,
+            "provider": "anthropic",
+            "outputTokens": 4587
+        }
+    ],
+    "draft": {
+        "title": "The Changing Shape of Sleep",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "A shift in timing that is often misunderstood"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Broken sleep that slowly finds its pattern"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "The years when sleep is at its deepest"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Lighter nights and the myth of needing less"
+                    },
+                    {
+                        "id": "v",
+                        "text": "When work and family crowd out rest"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Practical lessons from a lifetime of change"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Why children should give up daytime naps early"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "A clock that stops working in old age"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "The financial cost of tired employees"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "By around six months, many infants manage a longer stretch at night",
+                        "explanation": "Paragraph A describes how newborns sleep in short, irregular bursts because the body clock is not ready, and how a longer night-time pattern develops over the first months."
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "What remains is some of the deepest sleep a person will ever have.",
+                        "explanation": "Paragraph B is mainly about how deeply young children sleep. Naps are mentioned, but the paragraph does not argue that children should stop them early, so the heading about naps is only a detail."
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "a change that has given teenagers an unfair reputation for laziness",
+                        "explanation": "Paragraph C explains that teenagers' body clocks move later, which people wrongly see as laziness. This is a change in timing that is misunderstood."
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "Long working hours, commuting, screens and young children all compete for the time once given to sleep.",
+                        "explanation": "Paragraph D says adults often get too little sleep because of work, travel and family life. It mentions office workers, but says nothing about money or financial costs."
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "It is widely assumed that older people need less sleep, but most experts disagree",
+                        "explanation": "Paragraph E describes lighter, more broken sleep in later life and corrects the false belief that older people need less sleep. The body clock moves earlier; it does not stop working."
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "What, then, can be learned from this lifelong journey?",
+                        "explanation": "Paragraph F sums up useful lessons from the whole article, such as getting enough light and keeping regular sleep times at every age."
+                    }
+                ],
+                "instruction": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "body clock"
+                        ],
+                        "prompt": "Newborns sleep at any hour because, at first, their ______ does not function as it will later.",
+                        "options": [],
+                        "evidence": "the internal body clock, which tells adults when to feel alert and when to feel drowsy, is not yet working properly",
+                        "explanation": "Paragraph A says the body clock is not yet working properly at birth, which is why babies sleep regardless of day or night."
+                    },
+                    {
+                        "answer": [
+                            "growth hormone"
+                        ],
+                        "prompt": "Deep sleep in early childhood is also the time when a large amount of ______ is produced by the body.",
+                        "options": [],
+                        "evidence": "This is also when the body releases much of its growth hormone",
+                        "explanation": "Paragraph B says that during the deep sleep of childhood the body releases much of its growth hormone. 'Produced' restates 'releases'."
+                    },
+                    {
+                        "answer": [
+                            "melatonin"
+                        ],
+                        "prompt": "In adolescence, ______, a substance that tells people it is time to sleep, appears later in the evening than before.",
+                        "options": [],
+                        "evidence": "the hormone melatonin, which signals that it is time to sleep, is released later in the evening",
+                        "explanation": "Paragraph C explains that around puberty melatonin, the hormone that signals sleep time, is released later in the evening."
+                    },
+                    {
+                        "answer": [
+                            "office workers"
+                        ],
+                        "prompt": "Valentina Brooksby's study looked at ______ who kept either regular or irregular weekly schedules.",
+                        "options": [],
+                        "evidence": "compared office workers on regular and irregular weekly schedules",
+                        "explanation": "Paragraph D says Brooksby compared office workers with regular and irregular schedules."
+                    },
+                    {
+                        "answer": [
+                            "doctor"
+                        ],
+                        "prompt": "Dr Kinsella found that many retired people had not told a ______ about their poor sleep.",
+                        "options": [],
+                        "evidence": "had never mentioned it to a doctor",
+                        "explanation": "Paragraph E says many of the retired people had accepted poor sleep and never mentioned it to a doctor."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What do researchers believe about the active sleep of babies?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It helps the young brain develop quickly."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It lets babies sleep longer at night."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It makes regular feeding easier to set up."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It keeps the eyes rested beneath the lids."
+                            }
+                        ],
+                        "evidence": "Researchers believe this active sleep plays an important part in the rapid growth of the young brain",
+                        "explanation": "Paragraph A links REM, or active, sleep to the rapid growth of the young brain. The eyes are said to move during this sleep, not to rest, and longer night sleep comes later with age, not from REM sleep."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What did Professor Haraldsen report about the school that started lessons later?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Pupils slept longer and were late less often."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Pupils fell asleep fifty minutes later than before."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Pupils needed fewer than eight hours of sleep."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Pupils became less stubborn about their bedtime."
+                            }
+                        ],
+                        "evidence": "pupils gained, on average, half an hour of extra sleep each night, and that fewer of them arrived late",
+                        "explanation": "Paragraph C says pupils got about half an hour more sleep and fewer arrived late. The fifty minutes refers to the later start of lessons, not to when pupils fell asleep."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What did Valentina Brooksby find?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Workers on changing schedules felt tired more, despite similar sleep."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Workers on changing schedules slept far fewer hours than others."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Workers on fixed schedules complained of tiredness more often."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Workers on fixed schedules slept longer at weekends than others."
+                            }
+                        ],
+                        "evidence": "the irregular group reported feeling tired more often, even when their total hours of sleep were similar",
+                        "explanation": "Paragraph D says the group with irregular schedules felt tired more often even though their total sleep was similar. So the difference was not fewer hours, and it was not the regular group that complained more."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does the writer say about the idea that older people need less sleep?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It mistakes a loss of ability for a loss of need."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It is supported by the return of daytime naps."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It explains why older people wake so early."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It is accepted by most experts on sleep."
+                            }
+                        ],
+                        "evidence": "most experts disagree: the need stays much the same; it is the ability to obtain it that declines",
+                        "explanation": "Paragraph E says the need for sleep stays the same in later life; what gets worse is the ability to get it. Most experts reject the idea, and early waking is explained by the body clock moving earlier."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Ezinne Lindahl",
+                "role": "Paediatric researcher who studied the sleep of 200 primary-school pupils",
+                "gender": "female"
+            },
+            {
+                "name": "Kofi Haraldsen",
+                "role": "Professor who studied a secondary school that started lessons later",
+                "gender": "male"
+            },
+            {
+                "name": "Valentina Brooksby",
+                "role": "Sleep researcher who compared office workers on regular and irregular schedules",
+                "gender": "female"
+            },
+            {
+                "name": "Mateo Kinsella",
+                "role": "Doctor who interviewed retired people about their sleep",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Anyone who has cared for a newborn knows that babies do not sleep like the rest of us. A healthy infant may sleep for fourteen to seventeen hours a day, yet rarely for more than three or four hours at a stretch, and with little regard for whether it is day or night. The reason is that the internal body clock, which tells adults when to feel alert and when to feel drowsy, is not yet working properly at birth. It takes several months to develop, helped along by regular feeding, daylight and the routines of the household. Babies also spend about half of their sleep in a lively, dream-rich stage known as REM sleep, in which the eyes dart about beneath closed lids. Researchers believe this active sleep plays an important part in the rapid growth of the young brain. By around six months, many infants manage a longer stretch at night, much to the relief of exhausted parents.",
+                "label": "A"
+            },
+            {
+                "text": "As children grow, their sleep gradually gathers itself into one long block at night. Naps become shorter and less frequent, and most children give them up altogether somewhere between the ages of three and five. What remains is some of the deepest sleep a person will ever have. Young children can often be carried from a car to their bed without stirring, because so much of their night is spent in slow-wave sleep, the most restful stage. This is also when the body releases much of its growth hormone. Dr Ezinne Lindahl, a paediatric researcher, tracked the sleep of 200 primary-school pupils over a year and found that those who slept least were noticeably more irritable in class, even when their teachers had not been told who was short of sleep. In her view, a regular bedtime is one of the simplest gifts a parent can give.",
+                "label": "B"
+            },
+            {
+                "text": "Then comes adolescence, and with it a change that has given teenagers an unfair reputation for laziness. Around puberty, the body clock shifts later, so that the hormone melatonin, which signals that it is time to sleep, is released later in the evening. A fifteen-year-old who cannot fall asleep before eleven o'clock is not simply being stubborn; their biology is pushing bedtime back. Yet teenagers still need around eight to ten hours of sleep, and early school starts leave many of them running short. Some schools have experimented with later timetables. Professor Kofi Haraldsen studied one secondary school that began lessons fifty minutes later. He reported that pupils gained, on average, half an hour of extra sleep each night, and that fewer of them arrived late for the first class.",
+                "label": "C"
+            },
+            {
+                "text": "Adulthood brings a more settled pattern, but not necessarily more rest. Most adults need between seven and nine hours a night, yet surveys in many countries suggest that a large share regularly get less. Long working hours, commuting, screens and young children all compete for the time once given to sleep. Many people also live with what scientists call 'social jet lag': they go to bed and wake up at very different times on working days and at weekends, which unsettles the body clock in much the same way as flying across time zones. Sleep researcher Valentina Brooksby compared office workers on regular and irregular weekly schedules. She found that the irregular group reported feeling tired more often, even when their total hours of sleep were similar.",
+                "label": "D"
+            },
+            {
+                "text": "In later life, sleep changes again. Older adults typically spend much less time in deep sleep and wake more often during the night, sometimes simply because a noise or a full bladder disturbs a lighter sleep. The body clock also tends to move earlier, the reverse of the teenage shift, so many people find themselves drowsy by nine in the evening and wide awake before dawn. Daytime naps, abandoned in early childhood, often return. It is widely assumed that older people need less sleep, but most experts disagree: the need stays much the same; it is the ability to obtain it that declines. Dr Mateo Kinsella interviewed retired people about their nights. He found that many had come to accept poor sleep as an unavoidable part of ageing and had never mentioned it to a doctor.",
+                "label": "E"
+            },
+            {
+                "text": "What, then, can be learned from this lifelong journey? Firstly, there is no single 'correct' way to sleep: a pattern that is perfectly normal at one age may be a sign of trouble at another. Secondly, light is a powerful ally at every stage. Morning daylight helps babies develop a rhythm and helps teenagers feel sleepy at a more reasonable hour, while light in the late afternoon can help older adults who find themselves nodding off too early. Finally, regularity matters more than many people realise. Going to bed and getting up at roughly the same times, weekends included, supports the body clock whatever one's age. Sleep may change its shape over the decades, but its importance never fades.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "babies do not sleep like the rest of us. A healthy infant may sleep for fourteen to seventeen hours a day, yet rarely for more than three or four hours at a stretch",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "What remains is some of the deepest sleep a person will ever have.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a change that has given teenagers an unfair reputation for laziness. Around puberty, the body clock shifts later",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Long working hours, commuting, screens and young children all compete for the time once given to sleep.",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Older adults typically spend much less time in deep sleep and wake more often during the night... It is widely assumed that older people need less sleep, but most experts disagree",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "What, then, can be learned from this lifelong journey?",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    false
+                ],
+                "quote": "the internal body clock, which tells adults when to feel alert and when to feel drowsy, is not yet working properly at birth",
+                "answer": [
+                    "internal body clock"
+                ],
+                "correct": false
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is also when the body releases much of its growth hormone.",
+                "answer": [
+                    "growth hormone"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the hormone melatonin, which signals that it is time to sleep, is released later in the evening",
+                "answer": [
+                    "melatonin"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "compared office workers on regular and irregular weekly schedules",
+                "answer": [
+                    "office workers"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "had never mentioned it to a doctor",
+                "answer": [
+                    "doctor"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "this active sleep plays an important part in the rapid growth of the young brain",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "pupils gained, on average, half an hour of extra sleep each night, and that fewer of them arrived late for the first class",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the irregular group reported feeling tired more often, even when their total hours of sleep were similar",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the need stays much the same; it is the ability to obtain it that declines",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "rarely for more than three or four hours at a stretch ... the internal body clock ... is not yet working properly at birth. It takes several months to develop",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "What remains is some of the deepest sleep a person will ever have.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Then comes adolescence, and with it a change that has given teenagers an unfair reputation for laziness. Around puberty, the body clock shifts later",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Long working hours, commuting, screens and young children all compete for the time once given to sleep.",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Older adults typically spend much less time in deep sleep ... It is widely assumed that older people need less sleep, but most experts disagree",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "What, then, can be learned from this lifelong journey? ... light is a powerful ally ... regularity matters more than many people realise.",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the internal body clock ... is not yet working properly at birth",
+                "answer": [
+                    "body clock"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is also when the body releases much of its growth hormone.",
+                "answer": [
+                    "growth hormone"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the hormone melatonin, which signals that it is time to sleep, is released later in the evening",
+                "answer": [
+                    "melatonin"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Valentina Brooksby compared office workers on regular and irregular weekly schedules.",
+                "answer": [
+                    "office workers"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "many had come to accept poor sleep as an unavoidable part of ageing and had never mentioned it to a doctor",
+                "answer": [
+                    "doctor"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Researchers believe this active sleep plays an important part in the rapid growth of the young brain.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "He reported that pupils gained, on average, half an hour of extra sleep each night, and that fewer of them arrived late for the first class.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "She found that the irregular group reported feeling tired more often, even when their total hours of sleep were similar.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "It is widely assumed that older people need less sleep, but most experts disagree: the need stays much the same; it is the ability to obtain it that declines.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": [
+            "b2q1"
+        ]
+    },
+    "revise": {
+        "b2q1": {
+            "action": "keep",
+            "reason": "The answer 'internal body clock' has three words, which breaks the limit of NO MORE THAN TWO WORDS. 'body clock' is the only answer that fits both the gap and the limit, so the question is sound and the key is correct."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "A healthy infant may sleep for fourteen to seventeen hours a day, yet rarely for more than three or four hours at a stretch",
+            "answer": [
+                "ii"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "What remains is some of the deepest sleep a person will ever have.",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "a change that has given teenagers an unfair reputation for laziness",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Long working hours, commuting, screens and young children all compete for the time once given to sleep.",
+            "answer": [
+                "v"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "It is widely assumed that older people need less sleep, but most experts disagree",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "What, then, can be learned from this lifelong journey?",
+            "answer": [
+                "vi"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "This is also when the body releases much of its growth hormone.",
+            "answer": [
+                "growth hormone"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the hormone melatonin, which signals that it is time to sleep, is released later in the evening",
+            "answer": [
+                "melatonin"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Valentina Brooksby compared office workers on regular and irregular weekly schedules.",
+            "answer": [
+                "office workers"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "had never mentioned it to a doctor",
+            "answer": [
+                "doctor"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Researchers believe this active sleep plays an important part in the rapid growth of the young brain.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "pupils gained, on average, half an hour of extra sleep each night, and that fewer of them arrived late for the first class",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the irregular group reported feeling tired more often, even when their total hours of sleep were similar",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 1,
+        "generated": 15,
+        "agreedFirst": 14,
+        "discardRate": 0.0667,
+        "agreedRevised": 0,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b2q1": {
+                "marks": [
+                    false
+                ],
+                "quote": "the internal body clock, which tells adults when to feel alert and when to feel drowsy, is not yet working properly at birth",
+                "answer": [
+                    "internal body clock"
+                ],
+                "correct": false
+            }
+        },
+        "b": {
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the internal body clock, which tells adults when to feel alert and when to feel drowsy, is not yet working properly at birth",
+                "answer": [
+                    "body clock"
+                ],
+                "correct": true
+            }
+        }
+    },
+    "section": {
+        "text": "The Changing Shape of Sleep\n\nA. Anyone who has cared for a newborn knows that babies do not sleep like the rest of us. A healthy infant may sleep for fourteen to seventeen hours a day, yet rarely for more than three or four hours at a stretch, and with little regard for whether it is day or night. The reason is that the internal body clock, which tells adults when to feel alert and when to feel drowsy, is not yet working properly at birth. It takes several months to develop, helped along by regular feeding, daylight and the routines of the household. Babies also spend about half of their sleep in a lively, dream-rich stage known as REM sleep, in which the eyes dart about beneath closed lids. Researchers believe this active sleep plays an important part in the rapid growth of the young brain. By around six months, many infants manage a longer stretch at night, much to the relief of exhausted parents.\n\nB. As children grow, their sleep gradually gathers itself into one long block at night. Naps become shorter and less frequent, and most children give them up altogether somewhere between the ages of three and five. What remains is some of the deepest sleep a person will ever have. Young children can often be carried from a car to their bed without stirring, because so much of their night is spent in slow-wave sleep, the most restful stage. This is also when the body releases much of its growth hormone. Dr Ezinne Lindahl, a paediatric researcher, tracked the sleep of 200 primary-school pupils over a year and found that those who slept least were noticeably more irritable in class, even when their teachers had not been told who was short of sleep. In her view, a regular bedtime is one of the simplest gifts a parent can give.\n\nC. Then comes adolescence, and with it a change that has given teenagers an unfair reputation for laziness. Around puberty, the body clock shifts later, so that the hormone melatonin, which signals that it is time to sleep, is released later in the evening. A fifteen-year-old who cannot fall asleep before eleven o'clock is not simply being stubborn; their biology is pushing bedtime back. Yet teenagers still need around eight to ten hours of sleep, and early school starts leave many of them running short. Some schools have experimented with later timetables. Professor Kofi Haraldsen studied one secondary school that began lessons fifty minutes later. He reported that pupils gained, on average, half an hour of extra sleep each night, and that fewer of them arrived late for the first class.\n\nD. Adulthood brings a more settled pattern, but not necessarily more rest. Most adults need between seven and nine hours a night, yet surveys in many countries suggest that a large share regularly get less. Long working hours, commuting, screens and young children all compete for the time once given to sleep. Many people also live with what scientists call 'social jet lag': they go to bed and wake up at very different times on working days and at weekends, which unsettles the body clock in much the same way as flying across time zones. Sleep researcher Valentina Brooksby compared office workers on regular and irregular weekly schedules. She found that the irregular group reported feeling tired more often, even when their total hours of sleep were similar.\n\nE. In later life, sleep changes again. Older adults typically spend much less time in deep sleep and wake more often during the night, sometimes simply because a noise or a full bladder disturbs a lighter sleep. The body clock also tends to move earlier, the reverse of the teenage shift, so many people find themselves drowsy by nine in the evening and wide awake before dawn. Daytime naps, abandoned in early childhood, often return. It is widely assumed that older people need less sleep, but most experts disagree: the need stays much the same; it is the ability to obtain it that declines. Dr Mateo Kinsella interviewed retired people about their nights. He found that many had come to accept poor sleep as an unavoidable part of ageing and had never mentioned it to a doctor.\n\nF. What, then, can be learned from this lifelong journey? Firstly, there is no single 'correct' way to sleep: a pattern that is perfectly normal at one age may be a sign of trouble at another. Secondly, light is a powerful ally at every stage. Morning daylight helps babies develop a rhythm and helps teenagers feel sleepy at a more reasonable hour, while light in the late afternoon can help older adults who find themselves nodding off too early. Finally, regularity matters more than many people realise. Going to bed and getting up at roughly the same times, weekends included, supports the body clock whatever one's age. Sleep may change its shape over the decades, but its importance never fades.",
+        "title": "The Changing Shape of Sleep",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "A shift in timing that is often misunderstood"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Broken sleep that slowly finds its pattern"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "The years when sleep is at its deepest"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Lighter nights and the myth of needing less"
+                    },
+                    {
+                        "id": "v",
+                        "text": "When work and family crowd out rest"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Practical lessons from a lifetime of change"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Why children should give up daytime naps early"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "A clock that stops working in old age"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "The financial cost of tired employees"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "By around six months, many infants manage a longer stretch at night",
+                        "explanation": {
+                            "en": "Paragraph A describes how newborns sleep in short, irregular bursts because the body clock is not ready, and how a longer night-time pattern develops over the first months.",
+                            "ru": "Абзац A описывает, как новорождённые спят короткими нерегулярными отрезками, потому что их внутренние часы ещё не настроены, и как в первые месяцы складывается более длинный ночной сон.",
+                            "uk": "Абзац A описує, як новонароджені сплять короткими нерегулярними проміжками, бо їхній біологічний годинник ще не налаштований, і як протягом перших місяців формується довший нічний сон."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "What remains is some of the deepest sleep a person will ever have.",
+                        "explanation": {
+                            "en": "Paragraph B is mainly about how deeply young children sleep. Naps are mentioned, but the paragraph does not argue that children should stop them early, so the heading about naps is only a detail.",
+                            "ru": "Абзац B в основном о том, насколько глубоко спят маленькие дети. Дневной сон там упоминается, но нигде не утверждается, что детям стоит рано от него отказываться, поэтому заголовок о дневном сне касается лишь детали.",
+                            "uk": "Абзац B переважно про те, наскільки глибоко сплять маленькі діти. Денний сон там згадано, але ніде не стверджується, що дітям варто рано від нього відмовитися, тож заголовок про денний сон стосується лише деталі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "a change that has given teenagers an unfair reputation for laziness",
+                        "explanation": {
+                            "en": "Paragraph C explains that teenagers' body clocks move later, which people wrongly see as laziness. This is a change in timing that is misunderstood.",
+                            "ru": "Абзац C объясняет, что у подростков внутренние часы сдвигаются на более позднее время, а окружающие ошибочно принимают это за лень. То есть это изменение режима, которое неправильно понимают.",
+                            "uk": "Абзац C пояснює, що в підлітків біологічний годинник зсувається на пізніший час, а люди помилково сприймають це як лінощі. Тобто це зміна режиму, яку неправильно розуміють."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "Long working hours, commuting, screens and young children all compete for the time once given to sleep.",
+                        "explanation": {
+                            "en": "Paragraph D says adults often get too little sleep because of work, travel and family life. It mentions office workers, but says nothing about money or financial costs.",
+                            "ru": "В абзаце D говорится, что взрослые часто недосыпают из-за работы, поездок и семейных забот. Офисные работники упоминаются, но о деньгах или финансовых потерях ничего не сказано.",
+                            "uk": "В абзаці D сказано, що дорослі часто недосипають через роботу, поїздки та сімейні справи. Офісних працівників згадано, але про гроші чи фінансові втрати не сказано нічого."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "It is widely assumed that older people need less sleep, but most experts disagree",
+                        "explanation": {
+                            "en": "Paragraph E describes lighter, more broken sleep in later life and corrects the false belief that older people need less sleep. The body clock moves earlier; it does not stop working.",
+                            "ru": "Абзац E описывает более поверхностный и прерывистый сон в пожилом возрасте и опровергает ошибочное мнение, что пожилым людям нужно меньше сна. Внутренние часы сдвигаются на более раннее время, но не перестают работать.",
+                            "uk": "Абзац E описує легший і більш уривчастий сон у літньому віці та спростовує хибне уявлення, що літнім людям потрібно менше сну. Біологічний годинник зсувається на ранніший час, але не перестає працювати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "What, then, can be learned from this lifelong journey?",
+                        "explanation": {
+                            "en": "Paragraph F sums up useful lessons from the whole article, such as getting enough light and keeping regular sleep times at every age.",
+                            "ru": "Абзац F подводит итог полезным выводам из всей статьи: например, получать достаточно света и соблюдать постоянный режим сна в любом возрасте.",
+                            "uk": "Абзац F підсумовує корисні висновки з усієї статті: наприклад, отримувати достатньо світла та дотримуватися сталого режиму сну в будь-якому віці."
+                        }
+                    }
+                ],
+                "instruction": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "growth hormone"
+                        ],
+                        "prompt": "Deep sleep in early childhood is also the time when a large amount of ______ is produced by the body.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "This is also when the body releases much of its growth hormone",
+                        "explanation": {
+                            "en": "Paragraph B says that during the deep sleep of childhood the body releases much of its growth hormone. 'Produced' restates 'releases'.",
+                            "ru": "В абзаце B говорится, что во время глубокого сна в детстве организм выделяет большую часть гормона роста. Слово «produced» перефразирует «releases».",
+                            "uk": "В абзаці B сказано, що під час глибокого сну в дитинстві організм виділяє більшу частину гормону росту. Слово «produced» перефразовує «releases»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "melatonin"
+                        ],
+                        "prompt": "In adolescence, ______, a substance that tells people it is time to sleep, appears later in the evening than before.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "the hormone melatonin, which signals that it is time to sleep, is released later in the evening",
+                        "explanation": {
+                            "en": "Paragraph C explains that around puberty melatonin, the hormone that signals sleep time, is released later in the evening.",
+                            "ru": "Абзац C объясняет, что в период полового созревания мелатонин — гормон, который сигнализирует, что пора спать, — начинает выделяться позже вечером.",
+                            "uk": "Абзац C пояснює, що в період статевого дозрівання мелатонін — гормон, який сигналізує, що час спати, — починає виділятися пізніше ввечері."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "office workers"
+                        ],
+                        "prompt": "Valentina Brooksby's study looked at ______ who kept either regular or irregular weekly schedules.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "compared office workers on regular and irregular weekly schedules",
+                        "explanation": {
+                            "en": "Paragraph D says Brooksby compared office workers with regular and irregular schedules.",
+                            "ru": "В абзаце D говорится, что Brooksby сравнила офисных работников с регулярным и нерегулярным графиком.",
+                            "uk": "В абзаці D сказано, що Brooksby порівняла офісних працівників з регулярним і нерегулярним графіком."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "doctor"
+                        ],
+                        "prompt": "Dr Kinsella found that many retired people had not told a ______ about their poor sleep.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "had never mentioned it to a doctor",
+                        "explanation": {
+                            "en": "Paragraph E says many of the retired people had accepted poor sleep and never mentioned it to a doctor.",
+                            "ru": "В абзаце E говорится, что многие пенсионеры смирились с плохим сном и никогда не рассказывали о нём врачу.",
+                            "uk": "В абзаці E сказано, що багато пенсіонерів змирилися з поганим сном і ніколи не розповідали про нього лікареві."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It lets babies sleep longer at night."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It helps the young brain develop quickly."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It makes regular feeding easier to set up."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It keeps the eyes rested beneath the lids."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What do researchers believe about the active sleep of babies?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Researchers believe this active sleep plays an important part in the rapid growth of the young brain",
+                        "explanation": {
+                            "en": "Paragraph A links REM, or active, sleep to the rapid growth of the young brain. The eyes are said to move during this sleep, not to rest, and longer night sleep comes later with age, not from REM sleep.",
+                            "ru": "Абзац A связывает фазу REM, или активный сон, с быстрым ростом мозга у младенцев. Сказано, что во время этого сна глаза двигаются, а не отдыхают, а более длинный ночной сон появляется позже, с возрастом, а не благодаря фазе REM.",
+                            "uk": "Абзац A пов'язує фазу REM, або активний сон, зі швидким ростом мозку немовлят. Сказано, що під час цього сну очі рухаються, а не відпочивають, а довший нічний сон з'являється пізніше, з віком, а не завдяки фазі REM."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Pupils became less stubborn about their bedtime."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Pupils fell asleep fifty minutes later than before."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Pupils slept longer and were late less often."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Pupils needed fewer than eight hours of sleep."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What did Professor Haraldsen report about the school that started lessons later?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "pupils gained, on average, half an hour of extra sleep each night, and that fewer of them arrived late",
+                        "explanation": {
+                            "en": "Paragraph C says pupils got about half an hour more sleep and fewer arrived late. The fifty minutes refers to the later start of lessons, not to when pupils fell asleep.",
+                            "ru": "В абзаце C говорится, что ученики стали спать примерно на полчаса дольше и реже опаздывали. Пятьдесят минут — это то, на сколько позже стали начинаться уроки, а не время, когда ученики засыпали.",
+                            "uk": "В абзаці C сказано, що учні стали спати приблизно на пів години довше й рідше запізнювалися. П'ятдесят хвилин — це те, на скільки пізніше перенесли початок уроків, а не час, коли учні засинали."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Workers on changing schedules slept far fewer hours than others."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Workers on fixed schedules complained of tiredness more often."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Workers on fixed schedules slept longer at weekends than others."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Workers on changing schedules felt tired more, despite similar sleep."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What did Valentina Brooksby find?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "the irregular group reported feeling tired more often, even when their total hours of sleep were similar",
+                        "explanation": {
+                            "en": "Paragraph D says the group with irregular schedules felt tired more often even though their total sleep was similar. So the difference was not fewer hours, and it was not the regular group that complained more.",
+                            "ru": "В абзаце D говорится, что группа с нерегулярным графиком чаще чувствовала усталость, хотя в сумме спала примерно столько же. Значит, разница была не в количестве часов сна, и жаловалась больше не группа с регулярным графиком.",
+                            "uk": "В абзаці D сказано, що група з нерегулярним графіком частіше відчувала втому, хоча загалом спала приблизно стільки ж. Отже, різниця була не в кількості годин сну, і більше скаржилася не група з регулярним графіком."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q2",
+        "8": "b2q3",
+        "9": "b2q4",
+        "10": "b2q5",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

@@ -79,7 +79,10 @@ test('the Reading libraries: every test passes the form checks of its exam, 40 q
   // A later version replaces a test of an earlier one (v2 academic-2: the same name was used for two people, review
   // 2026-11-27); each test is published once per library.
   const published = (key: string) => libraries.filter(l => l.libraryKey === key).flatMap(l => l.tests.filter(t => t.status === 'published').map(t => t.key)).sort();
-  assert.deepEqual(published('ielts-reading-academic'), ['academic-1', 'academic-2']);
+  const keys = (prefix: string, n: number) => Array.from({length: n}, (_, i) => `${prefix}-${i + 1}`).sort();
+  assert.deepEqual(published('ielts-reading-academic'), keys('academic', 10));
+  assert.deepEqual(published('ielts-reading-general-training'), keys('gt', 10));
+  assert.ok(libraries.every(l => l.examKey === (l.libraryKey === 'ielts-reading-general-training' ? 'ielts-general-training' : 'ielts-academic')), 'library exam');
   for (const key of new Set(libraries.map(l => l.libraryKey))) assert.equal(new Set(published(key)).size, published(key).length, key);
   for (const l of libraries) for (const t of l.tests) {
     assert.deepEqual(checkReadingTest({id: t.key, exam: l.examKey, sections: t.sections}), [], `${l.libraryKey}.${l.version} ${t.key}`);

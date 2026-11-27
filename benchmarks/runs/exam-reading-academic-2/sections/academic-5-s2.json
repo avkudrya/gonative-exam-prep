@@ -1,0 +1,1193 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-5|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.228344,
+            "provider": "anthropic",
+            "outputTokens": 10547
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.015756,
+            "provider": "anthropic",
+            "outputTokens": 727
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.020143,
+            "provider": "openai",
+            "outputTokens": 906
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.017428,
+            "provider": "xai",
+            "outputTokens": 1637
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.095452,
+            "provider": "anthropic",
+            "outputTokens": 4449
+        }
+    ],
+    "draft": {
+        "title": "From Scribe to Press: How Printing Changed Reading",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Print as an amplifier rather than a cause"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Changes to the form and accuracy of the book"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Copying by hand: slow, costly and unreliable"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Governments struggle to control the new presses"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Indirect evidence of books in ordinary homes"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Rapid growth shaped by commercial risk"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Old techniques brought together in a new way"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "Scribes resist the arrival of the machine"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Why paper replaced parchment so quickly"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "Professional scribes, many of them working in monasteries and later in commercial workshops attached to universities, could spend months producing a single volume.",
+                        "explanation": "Paragraph A describes how hand copying took months, used expensive parchment and introduced mistakes. Scribes are mentioned, but nothing is said about them resisting printing."
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "What emerged there was less a single invention than a clever assembly of existing techniques.",
+                        "explanation": "Paragraph B explains that printing combined casting, screw presses, paper and new ink. Cheap paper is only one part of this, so the heading about paper replacing parchment is too narrow."
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "Yet printing was a risky business.",
+                        "explanation": "Paragraph C describes how fast printing spread and how the risk of losing money made printers choose titles that would sell."
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "Printing also altered the appearance and reliability of the book.",
+                        "explanation": "Paragraph D covers new features such as title pages and indexes, and the double effect of printing on accuracy."
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "Literacy in this period left few direct traces, and historians must rely on indirect evidence.",
+                        "explanation": "Paragraph E reports a study of lists of possessions showing books appearing in craftsmen's homes, while warning that owning a book did not prove anyone could read it."
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "the press amplified a demand for reading that already existed rather than creating one from nothing",
+                        "explanation": "Paragraph F presents the view that printing strengthened an existing demand for reading but did not on its own create mass literacy."
+                    }
+                ],
+                "instruction": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "parchment"
+                        ],
+                        "prompt": "The printing system that appeared in Mainz around 1450 depended partly on paper, which by then cost much less than ______.",
+                        "options": [],
+                        "evidence": "had become far cheaper than parchment",
+                        "explanation": "Paragraph B says paper had become far cheaper than parchment. 'Cost much less than' restates 'far cheaper than'."
+                    },
+                    {
+                        "answer": [
+                            "height"
+                        ],
+                        "prompt": "Letters were cast individually in metal and all given the same ______, which allowed them to be set in lines and used again.",
+                        "options": [],
+                        "evidence": "cast individual letters in metal, all of identical height",
+                        "explanation": "Paragraph B says the metal letters were all of identical height, so they could be arranged into lines and reused."
+                    },
+                    {
+                        "answer": [
+                            "oil-based",
+                            "oil based"
+                        ],
+                        "prompt": "The water-based inks of the scribes were replaced by an ______ ink that stuck to the metal type more effectively.",
+                        "options": [],
+                        "evidence": "A new oil-based ink, which clung to metal better than the water-based inks used by scribes",
+                        "explanation": "Paragraph B describes a new oil-based ink that 'clung to metal better', which the summary restates as 'stuck to the metal type more effectively'."
+                    },
+                    {
+                        "answer": [
+                            "two hundred",
+                            "200"
+                        ],
+                        "prompt": "Workers trained in Mainz carried the technique elsewhere, and by 1500 presses were operating in over ______ European towns.",
+                        "options": [],
+                        "evidence": "by 1500 printing presses had been set up in more than two hundred towns across Europe",
+                        "explanation": "Paragraph C gives the figure of more than two hundred towns by 1500."
+                    },
+                    {
+                        "answer": [
+                            "Venice"
+                        ],
+                        "prompt": "______ became one of the leading printing centres, helped by its rich merchants and its place on major trade routes.",
+                        "options": [],
+                        "evidence": "Venice, with its wealthy merchants and its position at the centre of trade routes, became one of the busiest centres",
+                        "explanation": "Paragraph C names Venice as one of the busiest centres because of its wealthy merchants and its position on trade routes. Mainz is where printing began, not the city described here."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to paragraph A, why did two manuscripts of the same work often differ?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Mistakes made by one copyist were inherited by later copies."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Scribes in monasteries changed passages they disagreed with."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Parchment from different animals affected how words were written."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Universities and monasteries each preferred their own versions."
+                            }
+                        ],
+                        "evidence": "Each scribe worked from an earlier copy, so a careless slip could be passed down and multiplied",
+                        "explanation": "Paragraph A says each scribe copied from an earlier copy, so errors were passed down. Monasteries, universities and parchment are mentioned, but not as reasons why texts differed."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the writer say about the effect of printing on accuracy?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It removed mistakes because printers checked every page."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It made errors far more common than in manuscripts."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It could preserve a correct text but also repeat a fault."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It quickly produced a single standard spelling everywhere."
+                            }
+                        ],
+                        "evidence": "A carefully corrected text could be reproduced exactly, so scholars in different cities could at last discuss the same page. But an error that slipped past the printer appeared in every copy of the edition.",
+                        "explanation": "Paragraph D describes a 'double effect': correct texts could be copied exactly, but an error appeared in every copy. The writer says full standardisation of spelling came much later, so the option about a quick single standard is wrong."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What warning does Margit Hallström give about her findings?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Craftsmen bought religious books mainly to show off their wealth."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Having a book at home does not show that anyone there could read."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Most craftsmen could read but had never been taught to write."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Lists of possessions often leave out cheap books owned by families."
+                            }
+                        ],
+                        "evidence": "Hallström cautions that owning a book did not prove that anyone in the household could read it.",
+                        "explanation": "Paragraph E says Hallström warns that owning a book did not prove anyone in the household could read. The passage says 'many people' could read but not write; it does not say this was true of most craftsmen."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What is Rashid Kalnins's main argument about the printing press?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It created an interest in reading among people who had none."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It made literacy rise quickly once presses reached most towns."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It mattered less than German pamphlets in spreading literacy."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It met a wish to read that was already present in society."
+                            }
+                        ],
+                        "evidence": "the press amplified a demand for reading that already existed rather than creating one from nothing",
+                        "explanation": "In paragraph F, Kalnins says the press strengthened a demand for reading that already existed. He says it did not create this demand, and that literacy rose slowly, so the options about creating interest and fast growth are wrong."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Margit Hallström",
+                "role": "Historian who studied lists of possessions in sixteenth-century northern European towns",
+                "gender": "female"
+            },
+            {
+                "name": "Rashid Kalnins",
+                "role": "Economic historian who argues that printing amplified an existing demand for reading",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Before the middle of the fifteenth century, every book in Europe had to be copied by hand. Professional scribes, many of them working in monasteries and later in commercial workshops attached to universities, could spend months producing a single volume. The materials added to the cost: much writing was done on parchment, prepared from animal skins, and a large book might require the skins of well over a hundred animals. As a result, books were valuable possessions, often chained to desks in libraries or listed alongside land and jewellery in wills. Copying also introduced mistakes. Each scribe worked from an earlier copy, so a careless slip could be passed down and multiplied, and two manuscripts of the same work rarely matched word for word. Readers who wanted to compare texts faced a genuine problem: they could not be sure they were reading the same words.",
+                "label": "A"
+            },
+            {
+                "text": "The change began in the German city of Mainz around 1450. What emerged there was less a single invention than a clever assembly of existing techniques. Metalworkers already knew how to cast objects in moulds; presses with a large screw were used to squeeze grapes and olives; and paper, which had reached Europe centuries earlier from the Islamic world, had become far cheaper than parchment. The decisive step was to cast individual letters in metal, all of identical height, so that they could be arranged into lines, locked into a frame, inked, printed and then taken apart and reused. A new oil-based ink, which clung to metal better than the water-based inks used by scribes, completed the system. A small team could now produce hundreds of identical pages in the time a scribe needed for a handful.",
+                "label": "B"
+            },
+            {
+                "text": "The method spread with remarkable speed. Workers trained in Mainz moved on to other cities, taking their skills with them, and by 1500 printing presses had been set up in more than two hundred towns across Europe. Venice, with its wealthy merchants and its position at the centre of trade routes, became one of the busiest centres of all. Yet printing was a risky business. A printer had to pay for metal, paper and labour long before a single copy was sold, and many early firms went bankrupt. To survive, printers chose titles they were confident would find buyers: prayer books, school grammars, calendars and legal handbooks. Far from being driven only by scholarly ideals, the early book trade followed the market.",
+                "label": "C"
+            },
+            {
+                "text": "Printing also altered the appearance and reliability of the book. Because buyers could now choose among competing editions in a shop, printers added features to attract and guide them. Title pages announced the content and often the place where copies could be purchased; page numbers and indexes allowed readers to find a passage quickly and to direct others to it. Smaller formats made books portable and cheaper. At the same time, the process had a double effect on accuracy. A carefully corrected text could be reproduced exactly, so scholars in different cities could at last discuss the same page. But an error that slipped past the printer appeared in every copy of the edition. Over time, the habits of influential printers also encouraged more consistent spelling, although full standardisation came much later.",
+                "label": "D"
+            },
+            {
+                "text": "Whether print made more people literate is harder to establish. Literacy in this period left few direct traces, and historians must rely on indirect evidence. One study by the historian Margit Hallström examined lists of possessions drawn up after deaths in several northern European towns during the sixteenth century. She found that books, rare in the homes of craftsmen at the start of the century, appeared in a growing share of them by its end, usually as one or two cheap religious titles. Hallström cautions that owning a book did not prove that anyone in the household could read it. Reading aloud was common, so a single literate family member might share a text with others, and many people who could read had never learned to write.",
+                "label": "E"
+            },
+            {
+                "text": "The economic historian Rashid Kalnins argues that the press amplified a demand for reading that already existed rather than creating one from nothing. Towns were growing, merchants needed records, and religious movements urged believers to read scripture in their own languages; printing allowed these pressures to be met on a scale that copying by hand never could. In the 1520s, for example, short pamphlets in German on religious questions were printed in huge numbers and passed from hand to hand. Even so, Kalnins notes, the proportion of Europeans who could read rose slowly, and in most regions it was the gradual expansion of schooling over the following centuries that turned reading into an everyday skill. The press, in his view, was a necessary condition for mass literacy but not a sufficient one.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "every book in Europe had to be copied by hand. Professional scribes... could spend months producing a single volume.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "What emerged there was less a single invention than a clever assembly of existing techniques.",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The method spread with remarkable speed... Yet printing was a risky business.",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Printing also altered the appearance and reliability of the book.",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Literacy in this period left few direct traces, and historians must rely on indirect evidence.",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the press amplified a demand for reading that already existed rather than creating one from nothing.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "paper... had become far cheaper than parchment",
+                "answer": [
+                    "parchment"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "cast individual letters in metal, all of identical height",
+                "answer": [
+                    "height"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "A new oil-based ink, which clung to metal better than the water-based inks used by scribes",
+                "answer": [
+                    "oil-based"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "printing presses had been set up in more than two hundred towns across Europe",
+                "answer": [
+                    "two hundred"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Venice, with its wealthy merchants and its position at the centre of trade routes, became one of the busiest centres of all.",
+                "answer": [
+                    "Venice"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a careless slip could be passed down and multiplied, and two manuscripts of the same work rarely matched word for word.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A carefully corrected text could be reproduced exactly... But an error that slipped past the printer appeared in every copy of the edition.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Hallström cautions that owning a book did not prove that anyone in the household could read it.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the press amplified a demand for reading that already existed rather than creating one from nothing.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "every book in Europe had to be copied by hand... could spend months producing a single volume... books were valuable possessions... Copying also introduced mistakes",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "What emerged there was less a single invention than a clever assembly of existing techniques.",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The method spread with remarkable speed... Yet printing was a risky business... the early book trade followed the market.",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Printing also altered the appearance and reliability of the book.",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Literacy in this period left few direct traces, and historians must rely on indirect evidence... books, rare in the homes of craftsmen at the start of the century, appeared in a growing share of them by its end",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "The economic historian Rashid Kalnins argues that the press amplified a demand for reading that already existed rather than creating one from nothing.",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "paper... had become far cheaper than parchment",
+                "answer": [
+                    "parchment"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "cast individual letters in metal, all of identical height",
+                "answer": [
+                    "height"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "A new oil-based ink, which clung to metal better than the water-based inks used by scribes",
+                "answer": [
+                    "oil-based"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "by 1500 printing presses had been set up in more than two hundred towns across Europe",
+                "answer": [
+                    "two hundred"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Venice, with its wealthy merchants and its position at the centre of trade routes, became one of the busiest centres of all.",
+                "answer": [
+                    "Venice"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Each scribe worked from an earlier copy, so a careless slip could be passed down and multiplied, and two manuscripts of the same work rarely matched word for word.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A carefully corrected text could be reproduced exactly... But an error that slipped past the printer appeared in every copy of the edition.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Hallström cautions that owning a book did not prove that anyone in the household could read it.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the press amplified a demand for reading that already existed rather than creating one from nothing",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "every book in Europe had to be copied by hand... spend months producing a single volume... materials added to the cost... Copying also introduced mistakes... two manuscripts of the same work rarely matched word for word.",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "less a single invention than a clever assembly of existing techniques.",
+            "answer": [
+                "vii"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "The method spread with remarkable speed... Yet printing was a risky business... many early firms went bankrupt... the early book trade followed the market.",
+            "answer": [
+                "vi"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Printing also altered the appearance and reliability of the book.",
+            "answer": [
+                "ii"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "historians must rely on indirect evidence... books... appeared in a growing share of them",
+            "answer": [
+                "v"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "the press amplified a demand for reading that already existed rather than creating one from nothing.",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "had become far cheaper than parchment",
+            "answer": [
+                "parchment"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "all of identical height, so that they could be arranged into lines",
+            "answer": [
+                "height"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "A new oil-based ink, which clung to metal better than the water-based inks",
+            "answer": [
+                "oil-based"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "in more than two hundred towns across Europe",
+            "answer": [
+                "two hundred"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Each scribe worked from an earlier copy, so a careless slip could be passed down and multiplied",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "A carefully corrected text could be reproduced exactly... But an error that slipped past the printer appeared in every copy",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "owning a book did not prove that anyone in the household could read it",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "From Scribe to Press: How Printing Changed Reading\n\nA. Before the middle of the fifteenth century, every book in Europe had to be copied by hand. Professional scribes, many of them working in monasteries and later in commercial workshops attached to universities, could spend months producing a single volume. The materials added to the cost: much writing was done on parchment, prepared from animal skins, and a large book might require the skins of well over a hundred animals. As a result, books were valuable possessions, often chained to desks in libraries or listed alongside land and jewellery in wills. Copying also introduced mistakes. Each scribe worked from an earlier copy, so a careless slip could be passed down and multiplied, and two manuscripts of the same work rarely matched word for word. Readers who wanted to compare texts faced a genuine problem: they could not be sure they were reading the same words.\n\nB. The change began in the German city of Mainz around 1450. What emerged there was less a single invention than a clever assembly of existing techniques. Metalworkers already knew how to cast objects in moulds; presses with a large screw were used to squeeze grapes and olives; and paper, which had reached Europe centuries earlier from the Islamic world, had become far cheaper than parchment. The decisive step was to cast individual letters in metal, all of identical height, so that they could be arranged into lines, locked into a frame, inked, printed and then taken apart and reused. A new oil-based ink, which clung to metal better than the water-based inks used by scribes, completed the system. A small team could now produce hundreds of identical pages in the time a scribe needed for a handful.\n\nC. The method spread with remarkable speed. Workers trained in Mainz moved on to other cities, taking their skills with them, and by 1500 printing presses had been set up in more than two hundred towns across Europe. Venice, with its wealthy merchants and its position at the centre of trade routes, became one of the busiest centres of all. Yet printing was a risky business. A printer had to pay for metal, paper and labour long before a single copy was sold, and many early firms went bankrupt. To survive, printers chose titles they were confident would find buyers: prayer books, school grammars, calendars and legal handbooks. Far from being driven only by scholarly ideals, the early book trade followed the market.\n\nD. Printing also altered the appearance and reliability of the book. Because buyers could now choose among competing editions in a shop, printers added features to attract and guide them. Title pages announced the content and often the place where copies could be purchased; page numbers and indexes allowed readers to find a passage quickly and to direct others to it. Smaller formats made books portable and cheaper. At the same time, the process had a double effect on accuracy. A carefully corrected text could be reproduced exactly, so scholars in different cities could at last discuss the same page. But an error that slipped past the printer appeared in every copy of the edition. Over time, the habits of influential printers also encouraged more consistent spelling, although full standardisation came much later.\n\nE. Whether print made more people literate is harder to establish. Literacy in this period left few direct traces, and historians must rely on indirect evidence. One study by the historian Margit Hallström examined lists of possessions drawn up after deaths in several northern European towns during the sixteenth century. She found that books, rare in the homes of craftsmen at the start of the century, appeared in a growing share of them by its end, usually as one or two cheap religious titles. Hallström cautions that owning a book did not prove that anyone in the household could read it. Reading aloud was common, so a single literate family member might share a text with others, and many people who could read had never learned to write.\n\nF. The economic historian Rashid Kalnins argues that the press amplified a demand for reading that already existed rather than creating one from nothing. Towns were growing, merchants needed records, and religious movements urged believers to read scripture in their own languages; printing allowed these pressures to be met on a scale that copying by hand never could. In the 1520s, for example, short pamphlets in German on religious questions were printed in huge numbers and passed from hand to hand. Even so, Kalnins notes, the proportion of Europeans who could read rose slowly, and in most regions it was the gradual expansion of schooling over the following centuries that turned reading into an everyday skill. The press, in his view, was a necessary condition for mass literacy but not a sufficient one.",
+        "title": "From Scribe to Press: How Printing Changed Reading",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Print as an amplifier rather than a cause"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Changes to the form and accuracy of the book"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Copying by hand: slow, costly and unreliable"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Governments struggle to control the new presses"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Indirect evidence of books in ordinary homes"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Rapid growth shaped by commercial risk"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Old techniques brought together in a new way"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "Scribes resist the arrival of the machine"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "Why paper replaced parchment so quickly"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Professional scribes, many of them working in monasteries and later in commercial workshops attached to universities, could spend months producing a single volume.",
+                        "explanation": {
+                            "en": "Paragraph A describes how hand copying took months, used expensive parchment and introduced mistakes. Scribes are mentioned, but nothing is said about them resisting printing.",
+                            "ru": "В абзаце A описано, как переписывание от руки занимало месяцы, требовало дорогого пергамента и порождало ошибки. Переписчики упоминаются, но ничего не сказано о том, что они сопротивлялись книгопечатанию.",
+                            "uk": "В абзаці A описано, як переписування від руки тривало місяцями, потребувало дорогого пергаменту й породжувало помилки. Переписувачів згадано, але нічого не сказано про те, що вони опиралися книгодрукуванню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "What emerged there was less a single invention than a clever assembly of existing techniques.",
+                        "explanation": {
+                            "en": "Paragraph B explains that printing combined casting, screw presses, paper and new ink. Cheap paper is only one part of this, so the heading about paper replacing parchment is too narrow.",
+                            "ru": "В абзаце B объясняется, что книгопечатание объединило литьё литер, винтовой пресс, бумагу и новую краску. Дешёвая бумага — лишь одна из этих составляющих, поэтому заголовок о том, что бумага вытеснила пергамент, слишком узкий.",
+                            "uk": "В абзаці B пояснено, що книгодрукування поєднало лиття літер, гвинтовий прес, папір і нову фарбу. Дешевий папір — лише одна з цих складових, тому заголовок про те, що папір витіснив пергамент, надто вузький."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "Yet printing was a risky business.",
+                        "explanation": {
+                            "en": "Paragraph C describes how fast printing spread and how the risk of losing money made printers choose titles that would sell.",
+                            "ru": "В абзаце C описано, как быстро распространялось книгопечатание и как риск потерять деньги заставлял печатников выбирать книги, которые будут хорошо продаваться.",
+                            "uk": "В абзаці C описано, як швидко поширювалося книгодрукування і як ризик втратити гроші змушував друкарів обирати книжки, що добре продаватимуться."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "Printing also altered the appearance and reliability of the book.",
+                        "explanation": {
+                            "en": "Paragraph D covers new features such as title pages and indexes, and the double effect of printing on accuracy.",
+                            "ru": "Абзац D посвящён новшествам, таким как титульные листы и указатели, а также двоякому влиянию книгопечатания на точность текстов.",
+                            "uk": "Абзац D присвячено новаціям, як-от титульні аркуші та покажчики, а також подвійному впливу книгодрукування на точність текстів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Literacy in this period left few direct traces, and historians must rely on indirect evidence.",
+                        "explanation": {
+                            "en": "Paragraph E reports a study of lists of possessions showing books appearing in craftsmen's homes, while warning that owning a book did not prove anyone could read it.",
+                            "ru": "В абзаце E говорится об исследовании описей имущества, которое показывает, что книги появлялись в домах ремесленников, но с оговоркой: владение книгой ещё не доказывало, что кто-то мог её прочитать.",
+                            "uk": "В абзаці E йдеться про дослідження описів майна, яке показує, що книжки з'являлися в оселях ремісників, але із застереженням: володіння книжкою ще не доводило, що хтось умів її прочитати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "the press amplified a demand for reading that already existed rather than creating one from nothing",
+                        "explanation": {
+                            "en": "Paragraph F presents the view that printing strengthened an existing demand for reading but did not on its own create mass literacy.",
+                            "ru": "В абзаце F изложена точка зрения, что книгопечатание усилило уже существовавший спрос на чтение, но само по себе не привело к массовой грамотности.",
+                            "uk": "В абзаці F викладено думку, що книгодрукування посилило вже наявний попит на читання, але саме по собі не спричинило масової грамотності."
+                        }
+                    }
+                ],
+                "instruction": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "parchment"
+                        ],
+                        "prompt": "The printing system that appeared in Mainz around 1450 depended partly on paper, which by then cost much less than ______.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "had become far cheaper than parchment",
+                        "explanation": {
+                            "en": "Paragraph B says paper had become far cheaper than parchment. 'Cost much less than' restates 'far cheaper than'.",
+                            "ru": "В абзаце B сказано, что бумага стала гораздо дешевле пергамента. «Cost much less than» перефразирует «far cheaper than».",
+                            "uk": "В абзаці B сказано, що папір став набагато дешевшим за пергамент. «Cost much less than» перефразовує «far cheaper than»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "height"
+                        ],
+                        "prompt": "Letters were cast individually in metal and all given the same ______, which allowed them to be set in lines and used again.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "cast individual letters in metal, all of identical height",
+                        "explanation": {
+                            "en": "Paragraph B says the metal letters were all of identical height, so they could be arranged into lines and reused.",
+                            "ru": "В абзаце B сказано, что все металлические литеры были одинаковой высоты, поэтому их можно было набирать в строки и использовать повторно.",
+                            "uk": "В абзаці B сказано, що всі металеві літери мали однакову висоту, тож їх можна було складати в рядки й використовувати повторно."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "oil-based",
+                            "oil based"
+                        ],
+                        "prompt": "The water-based inks of the scribes were replaced by an ______ ink that stuck to the metal type more effectively.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "A new oil-based ink, which clung to metal better than the water-based inks used by scribes",
+                        "explanation": {
+                            "en": "Paragraph B describes a new oil-based ink that 'clung to metal better', which the summary restates as 'stuck to the metal type more effectively'.",
+                            "ru": "В абзаце B описана новая краска на масляной основе, которая «clung to metal better»; в кратком изложении это перефразировано как «stuck to the metal type more effectively».",
+                            "uk": "В абзаці B описано нову фарбу на олійній основі, яка «clung to metal better»; у підсумку це перефразовано як «stuck to the metal type more effectively»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "two hundred",
+                            "200"
+                        ],
+                        "prompt": "Workers trained in Mainz carried the technique elsewhere, and by 1500 presses were operating in over ______ European towns.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "by 1500 printing presses had been set up in more than two hundred towns across Europe",
+                        "explanation": {
+                            "en": "Paragraph C gives the figure of more than two hundred towns by 1500.",
+                            "ru": "В абзаце C приводится цифра: к 1500 году — более двухсот городов.",
+                            "uk": "В абзаці C наведено цифру: до 1500 року — понад двісті міст."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Scribes in monasteries changed passages they disagreed with."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Mistakes made by one copyist were inherited by later copies."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Parchment from different animals affected how words were written."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Universities and monasteries each preferred their own versions."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to paragraph A, why did two manuscripts of the same work often differ?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Each scribe worked from an earlier copy, so a careless slip could be passed down and multiplied",
+                        "explanation": {
+                            "en": "Paragraph A says each scribe copied from an earlier copy, so errors were passed down. Monasteries, universities and parchment are mentioned, but not as reasons why texts differed.",
+                            "ru": "В абзаце A сказано, что каждый переписчик копировал с более ранней копии, поэтому ошибки передавались дальше. Монастыри, университеты и пергамент упоминаются, но не как причины расхождений между текстами.",
+                            "uk": "В абзаці A сказано, що кожен переписувач копіював з попередньої копії, тому помилки передавалися далі. Монастирі, університети й пергамент згадано, але не як причини розбіжностей між текстами."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It quickly produced a single standard spelling everywhere."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It removed mistakes because printers checked every page."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It could preserve a correct text but also repeat a fault."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It made errors far more common than in manuscripts."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the writer say about the effect of printing on accuracy?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "A carefully corrected text could be reproduced exactly, so scholars in different cities could at last discuss the same page. But an error that slipped past the printer appeared in every copy of the edition.",
+                        "explanation": {
+                            "en": "Paragraph D describes a 'double effect': correct texts could be copied exactly, but an error appeared in every copy. The writer says full standardisation of spelling came much later, so the option about a quick single standard is wrong.",
+                            "ru": "В абзаце D описан «double effect»: правильные тексты можно было воспроизводить точно, но ошибка попадала в каждый экземпляр. Автор пишет, что полная стандартизация орфографии наступила гораздо позже, поэтому вариант о быстром появлении единого стандарта неверен.",
+                            "uk": "В абзаці D описано «double effect»: правильні тексти можна було відтворювати точно, але помилка потрапляла в кожен примірник. Автор пише, що повна стандартизація правопису настала значно пізніше, тому варіант про швидку появу єдиного стандарту хибний."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Most craftsmen could read but had never been taught to write."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Craftsmen bought religious books mainly to show off their wealth."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Lists of possessions often leave out cheap books owned by families."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Having a book at home does not show that anyone there could read."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What warning does Margit Hallström give about her findings?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "Hallström cautions that owning a book did not prove that anyone in the household could read it.",
+                        "explanation": {
+                            "en": "Paragraph E says Hallström warns that owning a book did not prove anyone in the household could read. The passage says 'many people' could read but not write; it does not say this was true of most craftsmen.",
+                            "ru": "В абзаце E сказано, что Hallström предупреждает: владение книгой не доказывало, что кто-либо в семье умел читать. В тексте говорится, что «many people» умели читать, но не писать; о том, что это относилось к большинству ремесленников, не сказано.",
+                            "uk": "В абзаці E сказано, що Hallström застерігає: володіння книжкою не доводило, що хтось у родині вмів читати. У тексті йдеться, що «many people» вміли читати, але не писати; про те, що це стосувалося більшості ремісників, не сказано."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

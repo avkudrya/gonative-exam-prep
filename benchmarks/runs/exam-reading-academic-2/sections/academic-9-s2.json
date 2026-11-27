@@ -1,0 +1,1050 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-9|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.433476,
+            "provider": "anthropic",
+            "outputTokens": 20611
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.014966,
+            "provider": "anthropic",
+            "outputTokens": 702
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.02643,
+            "provider": "openai",
+            "outputTokens": 1370
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.126942,
+            "provider": "xai",
+            "outputTokens": 19994
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.066656,
+            "provider": "anthropic",
+            "outputTokens": 3026
+        }
+    ],
+    "draft": {
+        "title": "The True Cost of Cheap Clothes",
+        "blocks": [
+            {
+                "type": "short_answer",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "twice a year"
+                        ],
+                        "prompt": "How often did shops traditionally receive new clothing collections?",
+                        "options": [],
+                        "evidence": "delivered to shops twice a year",
+                        "explanation": "Paragraph A explains the old seasonal calendar: collections were delivered to shops twice a year, once for spring and summer and once for autumn and winter."
+                    },
+                    {
+                        "answer": [
+                            "lorry",
+                            "by lorry"
+                        ],
+                        "prompt": "By what means of transport can goods from factories near Europe reach shops within a week?",
+                        "options": [],
+                        "evidence": "finished goods can arrive by lorry within a week",
+                        "explanation": "Paragraph C says goods from nearby factories arrive by lorry in a week. The slower option, a month at sea, refers to goods coming from far away."
+                    },
+                    {
+                        "answer": [
+                            "two-speed system"
+                        ],
+                        "prompt": "What does Nikhil Barrantes call the approach of making trend-led goods nearby and basic goods far away?",
+                        "options": [],
+                        "evidence": "describes this as a 'two-speed system'",
+                        "explanation": "In paragraph C, Barrantes calls this mix of fast, nearby production and cheap, distant production a 'two-speed system'."
+                    },
+                    {
+                        "answer": [
+                            "last-minute changes",
+                            "last minute changes"
+                        ],
+                        "prompt": "According to Valeria Ostrowski, what was more closely connected with unpaid overtime than low prices per garment?",
+                        "options": [],
+                        "evidence": "last-minute changes to orders were more closely linked to unpaid overtime than the low prices paid per item",
+                        "explanation": "Paragraph D reports that Ostrowski found last-minute changes to orders mattered more than low prices. Low prices are the tempting answer, but the passage says they were less closely linked."
+                    },
+                    {
+                        "answer": [
+                            "polyester"
+                        ],
+                        "prompt": "Which material releases small pieces of plastic each time it goes through the wash?",
+                        "options": [],
+                        "evidence": "Polyester, now the most widely used fibre, is made from oil and sheds tiny plastic fibres whenever it is washed",
+                        "explanation": "Paragraph E says polyester sheds tiny plastic fibres whenever it is washed. Cotton is also mentioned, but in connection with water use."
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            },
+            {
+                "type": "flow_chart_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "adapt"
+                        ],
+                        "prompt": "Design teams ______ popular existing styles into simplified, low-cost versions.",
+                        "options": [],
+                        "evidence": "they adapt existing ones, producing simplified versions that can be made cheaply",
+                        "explanation": "Paragraph B says designers do not invent their own styles. Instead they adapt existing ones into cheaper, simplified versions."
+                    },
+                    {
+                        "answer": [
+                            "batch"
+                        ],
+                        "prompt": "A small first ______ of a few hundred pieces is made and sent to selected shops or sold online.",
+                        "options": [],
+                        "evidence": "A small initial batch, sometimes only a few hundred pieces, is then manufactured",
+                        "explanation": "Paragraph B describes a small initial batch, sometimes only a few hundred pieces, as the first production step."
+                    },
+                    {
+                        "answer": [
+                            "hourly"
+                        ],
+                        "prompt": "Sales figures are checked on an ______ basis.",
+                        "options": [],
+                        "evidence": "sales figures are monitored hourly",
+                        "explanation": "Paragraph B says sales figures are monitored hourly, so they are checked on an hourly basis."
+                    },
+                    {
+                        "answer": [
+                            "reordered",
+                            "re-ordered"
+                        ],
+                        "prompt": "Fast-selling items are ______ within a few days.",
+                        "options": [],
+                        "evidence": "items that sell quickly are reordered within days",
+                        "explanation": "Paragraph B says items that sell quickly are reordered within days."
+                    },
+                    {
+                        "answer": [
+                            "withdrawn"
+                        ],
+                        "prompt": "Items that sell poorly are ______ before losses become large.",
+                        "options": [],
+                        "evidence": "those that fail are withdrawn before much money has been lost",
+                        "explanation": "Paragraph B says items that fail are withdrawn before much money is lost. This is how the company limits its losses."
+                    },
+                    {
+                        "answer": [
+                            "demand"
+                        ],
+                        "prompt": "Large quantities are ordered only after customer ______ has been proven.",
+                        "options": [],
+                        "evidence": "commits to large quantities only once demand has been demonstrated",
+                        "explanation": "Paragraph B says the company commits to large orders only once demand has been demonstrated, which means proven."
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "C"
+                        ],
+                        "prompt": "Which TWO advantages of the fast-fashion production method are mentioned in the passage?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Lines that sell poorly can be dropped before losses grow large."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Garments can be sewn much faster than in older factories."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Retailers seldom need to cut prices sharply to clear stock."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Designers no longer need to follow what is fashionable."
+                            },
+                            {
+                                "id": "E",
+                                "text": "Finished products can be delivered to shops at lower cost."
+                            }
+                        ],
+                        "evidence": "those that fail are withdrawn before much money has been lost. Because the company commits to large quantities only once demand has been demonstrated, it largely escapes the heavy discounting",
+                        "explanation": "Paragraph B says failing items are withdrawn early and that the company largely escapes heavy discounting. The passage says the method is 'less about sewing faster', designers still study fashion, and nearby factories actually cost more."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO claims about the way brands deal with factories are made in the passage?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Brands sometimes alter orders with very little warning."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Suppliers seldom refuse such changes in case they lose work."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Low prices per item were the main cause of unpaid overtime."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Factory owners alone are to blame for workers' low wages."
+                            },
+                            {
+                                "id": "E",
+                                "text": "Brands must by law inspect every factory they buy from."
+                            }
+                        ],
+                        "evidence": "may alter quantities or designs at short notice, and suppliers who fear losing contracts rarely refuse",
+                        "explanation": "Paragraph D says brands may change orders at short notice and suppliers rarely refuse because they fear losing contracts. Ostrowski found that late changes mattered more than low prices, and she blames brands' buying practices as much as factory owners. The safety agreement does not require inspection of every factory."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO points does the writer make about externalities?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Shoppers' prices leave out costs suffered by other people."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Unpriced harm leads markets to produce more than is wanted."
+                            },
+                            {
+                                "id": "C",
+                                "text": "France's scheme has cut the amount of clothing people buy."
+                            },
+                            {
+                                "id": "D",
+                                "text": "The European Union already applies France's rules everywhere."
+                            },
+                            {
+                                "id": "E",
+                                "text": "Producer responsibility makes shoppers pay for recycling."
+                            }
+                        ],
+                        "evidence": "they are not reflected in the price the shopper pays. When harmful effects are left out of prices, markets tend to produce more of a product than society would choose",
+                        "explanation": "Paragraph F says these costs are not included in the shopper's price, so markets produce more than society would choose. The passage gives no effect of France's scheme, says the EU is only moving towards similar rules, and says companies, not shoppers, pay for recycling."
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            }
+        ],
+        "people": [
+            {
+                "name": "Nikhil Barrantes",
+                "role": "supply-chain consultant who describes the 'two-speed system'",
+                "gender": "unknown"
+            },
+            {
+                "name": "Valeria Ostrowski",
+                "role": "labour economist who interviewed garment workers about overtime",
+                "gender": "female"
+            },
+            {
+                "name": "Joana Hatfield",
+                "role": "retail analyst who studied the purchases of resale app users",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For most of the twentieth century, the clothing trade ran to a slow and predictable calendar. Collections were planned as much as a year ahead, manufactured in large volumes and delivered to shops twice a year, once for spring and summer and once for autumn and winter. Retailers had to guess what customers would want long before anyone wore it, and when they guessed wrongly, unsold stock was cleared through end-of-season sales. Fast fashion overturned this arrangement. Its leading companies now introduce new lines every week, and some online sellers list thousands of new designs a day. As a result, clothing has become much cheaper relative to most other goods, while the number of garments the average shopper buys has risen sharply.",
+                "label": "A"
+            },
+            {
+                "text": "The method behind this speed is less about sewing faster than about deciding later. A typical cycle begins with observation: design teams study catwalk shows, street style and social media, looking for colours and shapes that are attracting attention. Rather than inventing styles of their own, they adapt existing ones, producing simplified versions that can be made cheaply. A small initial batch, sometimes only a few hundred pieces, is then manufactured and sent to selected stores or listed online. After that, sales figures are monitored hourly; items that sell quickly are reordered within days, while those that fail are withdrawn before much money has been lost. Because the company commits to large quantities only once demand has been demonstrated, it largely escapes the heavy discounting that once ate into retailers' profits.",
+                "label": "B"
+            },
+            {
+                "text": "Speed of this kind depends on geography as much as on information. Many fast-fashion firms keep part of their production close to their main markets. For European retailers, that often means factories in Turkey, Morocco or Eastern Europe, where wages are higher than in South Asia but finished goods can arrive by lorry within a week instead of spending a month at sea. Basic items such as plain T-shirts, socks and underwear, for which demand changes little from year to year, are still made in large volumes in countries such as Bangladesh and Vietnam. Nikhil Barrantes, a supply-chain consultant, describes this as a 'two-speed system': companies pay extra for flexibility on trend-led products and squeeze costs on everything else.",
+                "label": "C"
+            },
+            {
+                "text": "The pressure to be both cheap and quick does not disappear; it is passed down the chain to factories. Brands typically negotiate a fixed price per garment and may alter quantities or designs at short notice, and suppliers who fear losing contracts rarely refuse. Valeria Ostrowski, a labour economist, interviewed around 300 garment workers in two exporting countries and concluded that last-minute changes to orders were more closely linked to unpaid overtime than the low prices paid per item. In her view, the problem lies as much in the buying practices of brands as in the wages set by factory owners. Safety is a further concern. In 2013, the collapse of a factory building near Dhaka, Bangladesh, killed more than a thousand garment workers and led to a legally binding agreement under which many international brands committed to supporting independent safety inspections.",
+                "label": "D"
+            },
+            {
+                "text": "The environmental bill is just as large. Growing cotton requires vast quantities of water, and dyeing and finishing fabric release chemicals that, where regulation is weak, often end up in rivers. Polyester, now the most widely used fibre, is made from oil and sheds tiny plastic fibres whenever it is washed. Perhaps the most striking change, however, concerns how clothes are used rather than how they are made. Research suggests that the average garment is now worn considerably fewer times before being thrown away than at the start of this century, and only a tiny fraction of discarded clothing is recycled into new garments. Much of the rest is buried or burned, while bales of second-hand clothing are shipped to markets in countries such as Ghana and Kenya, where traders report that a growing share is too worn or poorly made to sell.",
+                "label": "E"
+            },
+            {
+                "text": "Economists have a name for costs of this kind: externalities. These are costs that fall on people outside a transaction, such as communities living downstream of a dye works or workers whose health suffers, and they are not reflected in the price the shopper pays. When harmful effects are left out of prices, markets tend to produce more of a product than society would choose if it saw the full picture. One response is extended producer responsibility, under which companies contribute to the cost of collecting and recycling what they sell. France has applied such a scheme to clothing since 2007, and the European Union is moving towards similar rules.",
+                "label": "F"
+            },
+            {
+                "text": "Whether shoppers will change their habits is less certain. Resale and rental services have grown quickly, and many consumers tell surveys that sustainability matters to them. Yet a study by retail analyst Joana Hatfield, which tracked the purchases of 2,000 online customers, found that those who regularly sold clothes through resale apps bought more new items, not fewer, apparently because the prospect of reselling made each purchase feel less costly. If her findings hold, good intentions alone may not slow the cycle; what may matter more is whether prices begin to reflect the true costs of production.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "delivered to shops twice a year",
+                "answer": [
+                    "twice a year"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "finished goods can arrive by lorry within a week",
+                "answer": [
+                    "lorry"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "describes this as a 'two-speed system'",
+                "answer": [
+                    "two-speed system"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "last-minute changes to orders were more closely linked to unpaid overtime than the low prices paid per item",
+                "answer": [
+                    "last-minute changes"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Polyester, now the most widely used fibre, is made from oil and sheds tiny plastic fibres whenever it is washed.",
+                "answer": [
+                    "Polyester"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they adapt existing ones, producing simplified versions that can be made cheaply",
+                "answer": [
+                    "adapt"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A small initial batch, sometimes only a few hundred pieces",
+                "answer": [
+                    "batch"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "sales figures are monitored hourly",
+                "answer": [
+                    "hourly"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "items that sell quickly are reordered within days",
+                "answer": [
+                    "reordered"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "those that fail are withdrawn before much money has been lost",
+                "answer": [
+                    "withdrawn"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "commits to large quantities only once demand has been demonstrated",
+                "answer": [
+                    "demand"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "those that fail are withdrawn before much money has been lost. Because the company commits to large quantities only once demand has been demonstrated, it largely escapes the heavy discounting",
+                "answer": [
+                    "A",
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "may alter quantities or designs at short notice, and suppliers who fear losing contracts rarely refuse",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "costs that fall on people outside a transaction... not reflected in the price the shopper pays. When harmful effects are left out of prices, markets tend to produce more of a product than society would choose",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "delivered to shops twice a year, once for spring and summer and once for autumn and winter",
+                "answer": [
+                    "twice a year"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "finished goods can arrive by lorry within a week",
+                "answer": [
+                    "lorry"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Nikhil Barrantes, a supply-chain consultant, describes this as a 'two-speed system'",
+                "answer": [
+                    "two-speed system"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "last-minute changes to orders were more closely linked to unpaid overtime than the low prices paid per item",
+                "answer": [
+                    "last-minute changes"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Polyester, now the most widely used fibre, is made from oil and sheds tiny plastic fibres whenever it is washed",
+                "answer": [
+                    "polyester"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they adapt existing ones, producing simplified versions that can be made cheaply",
+                "answer": [
+                    "adapt"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A small initial batch, sometimes only a few hundred pieces",
+                "answer": [
+                    "batch"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "sales figures are monitored hourly",
+                "answer": [
+                    "hourly"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "items that sell quickly are reordered within days",
+                "answer": [
+                    "reordered"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "those that fail are withdrawn before much money has been lost",
+                "answer": [
+                    "withdrawn"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the company commits to large quantities only once demand has been demonstrated",
+                "answer": [
+                    "demand"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "items that sell quickly are reordered within days, while those that fail are withdrawn before much money has been lost. Because the company commits to large quantities only once demand has been demonstrated, it largely escapes the heavy discounting that once ate into retailers' profits.",
+                "answer": [
+                    "A",
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Brands typically negotiate a fixed price per garment and may alter quantities or designs at short notice, and suppliers who fear losing contracts rarely refuse.",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "These are costs that fall on people outside a transaction ... and they are not reflected in the price the shopper pays. When harmful effects are left out of prices, markets tend to produce more of a product than society would choose if it saw the full picture.",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "delivered to shops twice a year, once for spring and summer and once for autumn and winter",
+            "answer": [
+                "twice a year"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "finished goods can arrive by lorry within a week instead of spending a month at sea",
+            "answer": [
+                "lorry"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "describes this as a 'two-speed system'",
+            "answer": [
+                "two-speed system"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "last-minute changes to orders were more closely linked to unpaid overtime than the low prices paid per item",
+            "answer": [
+                "last-minute changes"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "they adapt existing ones, producing simplified versions that can be made cheaply",
+            "answer": [
+                "adapt"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "A small initial batch, sometimes only a few hundred pieces, is then manufactured",
+            "answer": [
+                "batch"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "sales figures are monitored hourly",
+            "answer": [
+                "hourly"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "items that sell quickly are reordered within days",
+            "answer": [
+                "reordered"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "those that fail are withdrawn before much money has been lost",
+            "answer": [
+                "withdrawn"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "while those that fail are withdrawn before much money has been lost. Because the company commits to large quantities only once demand has been demonstrated, it largely escapes the heavy discounting that once ate into retailers' profits",
+            "answer": [
+                "D",
+                "E"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "may alter quantities or designs at short notice, and suppliers who fear losing contracts rarely refuse",
+            "answer": [
+                "A",
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 14,
+        "agreedFirst": 14,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The True Cost of Cheap Clothes\n\nA. For most of the twentieth century, the clothing trade ran to a slow and predictable calendar. Collections were planned as much as a year ahead, manufactured in large volumes and delivered to shops twice a year, once for spring and summer and once for autumn and winter. Retailers had to guess what customers would want long before anyone wore it, and when they guessed wrongly, unsold stock was cleared through end-of-season sales. Fast fashion overturned this arrangement. Its leading companies now introduce new lines every week, and some online sellers list thousands of new designs a day. As a result, clothing has become much cheaper relative to most other goods, while the number of garments the average shopper buys has risen sharply.\n\nB. The method behind this speed is less about sewing faster than about deciding later. A typical cycle begins with observation: design teams study catwalk shows, street style and social media, looking for colours and shapes that are attracting attention. Rather than inventing styles of their own, they adapt existing ones, producing simplified versions that can be made cheaply. A small initial batch, sometimes only a few hundred pieces, is then manufactured and sent to selected stores or listed online. After that, sales figures are monitored hourly; items that sell quickly are reordered within days, while those that fail are withdrawn before much money has been lost. Because the company commits to large quantities only once demand has been demonstrated, it largely escapes the heavy discounting that once ate into retailers' profits.\n\nC. Speed of this kind depends on geography as much as on information. Many fast-fashion firms keep part of their production close to their main markets. For European retailers, that often means factories in Turkey, Morocco or Eastern Europe, where wages are higher than in South Asia but finished goods can arrive by lorry within a week instead of spending a month at sea. Basic items such as plain T-shirts, socks and underwear, for which demand changes little from year to year, are still made in large volumes in countries such as Bangladesh and Vietnam. Nikhil Barrantes, a supply-chain consultant, describes this as a 'two-speed system': companies pay extra for flexibility on trend-led products and squeeze costs on everything else.\n\nD. The pressure to be both cheap and quick does not disappear; it is passed down the chain to factories. Brands typically negotiate a fixed price per garment and may alter quantities or designs at short notice, and suppliers who fear losing contracts rarely refuse. Valeria Ostrowski, a labour economist, interviewed around 300 garment workers in two exporting countries and concluded that last-minute changes to orders were more closely linked to unpaid overtime than the low prices paid per item. In her view, the problem lies as much in the buying practices of brands as in the wages set by factory owners. Safety is a further concern. In 2013, the collapse of a factory building near Dhaka, Bangladesh, killed more than a thousand garment workers and led to a legally binding agreement under which many international brands committed to supporting independent safety inspections.\n\nE. The environmental bill is just as large. Growing cotton requires vast quantities of water, and dyeing and finishing fabric release chemicals that, where regulation is weak, often end up in rivers. Polyester, now the most widely used fibre, is made from oil and sheds tiny plastic fibres whenever it is washed. Perhaps the most striking change, however, concerns how clothes are used rather than how they are made. Research suggests that the average garment is now worn considerably fewer times before being thrown away than at the start of this century, and only a tiny fraction of discarded clothing is recycled into new garments. Much of the rest is buried or burned, while bales of second-hand clothing are shipped to markets in countries such as Ghana and Kenya, where traders report that a growing share is too worn or poorly made to sell.\n\nF. Economists have a name for costs of this kind: externalities. These are costs that fall on people outside a transaction, such as communities living downstream of a dye works or workers whose health suffers, and they are not reflected in the price the shopper pays. When harmful effects are left out of prices, markets tend to produce more of a product than society would choose if it saw the full picture. One response is extended producer responsibility, under which companies contribute to the cost of collecting and recycling what they sell. France has applied such a scheme to clothing since 2007, and the European Union is moving towards similar rules.\n\nG. Whether shoppers will change their habits is less certain. Resale and rental services have grown quickly, and many consumers tell surveys that sustainability matters to them. Yet a study by retail analyst Joana Hatfield, which tracked the purchases of 2,000 online customers, found that those who regularly sold clothes through resale apps bought more new items, not fewer, apparently because the prospect of reselling made each purchase feel less costly. If her findings hold, good intentions alone may not slow the cycle; what may matter more is whether prices begin to reflect the true costs of production.",
+        "title": "The True Cost of Cheap Clothes",
+        "groups": [
+            {
+                "type": "short_answer",
+                "limit": {
+                    "words": 3,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "twice a year"
+                        ],
+                        "prompt": "How often did shops traditionally receive new clothing collections?",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "delivered to shops twice a year",
+                        "explanation": {
+                            "en": "Paragraph A explains the old seasonal calendar: collections were delivered to shops twice a year, once for spring and summer and once for autumn and winter.",
+                            "ru": "Абзац A описывает старый сезонный календарь: коллекции поступали в магазины дважды в год — одна на весну и лето, другая на осень и зиму.",
+                            "uk": "Абзац A описує старий сезонний календар: колекції надходили до магазинів двічі на рік — одна на весну й літо, інша на осінь і зиму."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "lorry",
+                            "by lorry"
+                        ],
+                        "prompt": "By what means of transport can goods from factories near Europe reach shops within a week?",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "finished goods can arrive by lorry within a week",
+                        "explanation": {
+                            "en": "Paragraph C says goods from nearby factories arrive by lorry in a week. The slower option, a month at sea, refers to goods coming from far away.",
+                            "ru": "В абзаце C сказано, что товары с ближайших фабрик доставляют грузовиками за неделю. Более медленный вариант — месяц в море — относится к товарам, которые везут издалека.",
+                            "uk": "В абзаці C сказано, що товари з найближчих фабрик доставляють вантажівками за тиждень. Повільніший варіант — місяць у морі — стосується товарів, які везуть здалеку."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "two-speed system"
+                        ],
+                        "prompt": "What does Nikhil Barrantes call the approach of making trend-led goods nearby and basic goods far away?",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "describes this as a 'two-speed system'",
+                        "explanation": {
+                            "en": "In paragraph C, Barrantes calls this mix of fast, nearby production and cheap, distant production a 'two-speed system'.",
+                            "ru": "В абзаце C Barrantes называет такое сочетание быстрого производства поблизости и дешёвого производства вдалеке «two-speed system».",
+                            "uk": "В абзаці C Barrantes називає таке поєднання швидкого виробництва поблизу й дешевого виробництва далеко «two-speed system»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "last-minute changes",
+                            "last minute changes"
+                        ],
+                        "prompt": "According to Valeria Ostrowski, what was more closely connected with unpaid overtime than low prices per garment?",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "last-minute changes to orders were more closely linked to unpaid overtime than the low prices paid per item",
+                        "explanation": {
+                            "en": "Paragraph D reports that Ostrowski found last-minute changes to orders mattered more than low prices. Low prices are the tempting answer, but the passage says they were less closely linked.",
+                            "ru": "В абзаце D сообщается, что Ostrowski выяснила: изменения заказов в последний момент играли большую роль, чем низкие цены. Низкие цены — заманчивый ответ, но в тексте сказано, что связь с ними слабее.",
+                            "uk": "В абзаці D повідомляється, що Ostrowski з'ясувала: зміни замовлень в останню мить важили більше, ніж низькі ціни. Низькі ціни — спокуслива відповідь, але в тексті сказано, що зв'язок із ними слабший."
+                        }
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            },
+            {
+                "type": "flow_chart_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "adapt"
+                        ],
+                        "prompt": "Design teams ______ popular existing styles into simplified, low-cost versions.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "they adapt existing ones, producing simplified versions that can be made cheaply",
+                        "explanation": {
+                            "en": "Paragraph B says designers do not invent their own styles. Instead they adapt existing ones into cheaper, simplified versions.",
+                            "ru": "В абзаце B сказано, что дизайнеры не придумывают собственные фасоны. Вместо этого они переделывают уже существующие в более дешёвые и упрощённые версии.",
+                            "uk": "В абзаці B сказано, що дизайнери не вигадують власних фасонів. Натомість вони переробляють уже наявні на дешевші й спрощені версії."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "batch"
+                        ],
+                        "prompt": "A small first ______ of a few hundred pieces is made and sent to selected shops or sold online.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "A small initial batch, sometimes only a few hundred pieces, is then manufactured",
+                        "explanation": {
+                            "en": "Paragraph B describes a small initial batch, sometimes only a few hundred pieces, as the first production step.",
+                            "ru": "Абзац B описывает небольшую начальную партию — иногда всего несколько сотен изделий — как первый этап производства.",
+                            "uk": "Абзац B описує невелику початкову партію — іноді лише кілька сотень виробів — як перший етап виробництва."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "hourly"
+                        ],
+                        "prompt": "Sales figures are checked on an ______ basis.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "sales figures are monitored hourly",
+                        "explanation": {
+                            "en": "Paragraph B says sales figures are monitored hourly, so they are checked on an hourly basis.",
+                            "ru": "В абзаце B сказано, что продажи отслеживают ежечасно, то есть данные проверяют каждый час.",
+                            "uk": "В абзаці B сказано, що продажі відстежують щогодини, тобто дані перевіряють кожну годину."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "reordered",
+                            "re-ordered"
+                        ],
+                        "prompt": "Fast-selling items are ______ within a few days.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "items that sell quickly are reordered within days",
+                        "explanation": {
+                            "en": "Paragraph B says items that sell quickly are reordered within days.",
+                            "ru": "В абзаце B сказано, что товары, которые быстро раскупают, дозаказывают в течение нескольких дней.",
+                            "uk": "В абзаці B сказано, що товари, які швидко розкуповують, дозамовляють протягом кількох днів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "withdrawn"
+                        ],
+                        "prompt": "Items that sell poorly are ______ before losses become large.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "those that fail are withdrawn before much money has been lost",
+                        "explanation": {
+                            "en": "Paragraph B says items that fail are withdrawn before much money is lost. This is how the company limits its losses.",
+                            "ru": "В абзаце B сказано, что неудачные товары снимают с продажи раньше, чем компания успевает потерять много денег. Так она ограничивает свои убытки.",
+                            "uk": "В абзаці B сказано, що невдалі товари знімають із продажу раніше, ніж компанія встигає втратити багато грошей. Так вона обмежує свої збитки."
+                        }
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Garments can be sewn much faster than in older factories."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Finished products can be delivered to shops at lower cost."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Designers no longer need to follow what is fashionable."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Retailers seldom need to cut prices sharply to clear stock."
+                    },
+                    {
+                        "id": "E",
+                        "text": "Lines that sell poorly can be dropped before losses grow large."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D",
+                            "E"
+                        ],
+                        "prompt": "Which TWO advantages of the fast-fashion production method are mentioned in the passage?",
+                        "numbers": [
+                            10,
+                            11
+                        ],
+                        "evidence": "those that fail are withdrawn before much money has been lost. Because the company commits to large quantities only once demand has been demonstrated, it largely escapes the heavy discounting",
+                        "explanation": {
+                            "en": "Paragraph B says failing items are withdrawn early and that the company largely escapes heavy discounting. The passage says the method is 'less about sewing faster', designers still study fashion, and nearby factories actually cost more.",
+                            "ru": "В абзаце B сказано, что неудачные товары рано снимают с продажи и компании в основном удаётся избежать больших скидок. В тексте говорится, что метод «less about sewing faster», дизайнеры по-прежнему изучают моду, а ближайшие фабрики на самом деле обходятся дороже.",
+                            "uk": "В абзаці B сказано, що невдалі товари рано знімають із продажу і компанії здебільшого вдається уникнути великих знижок. У тексті йдеться, що метод «less about sewing faster», дизайнери й надалі вивчають моду, а найближчі фабрики насправді коштують дорожче."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Brands sometimes alter orders with very little warning."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Factory owners alone are to blame for workers' low wages."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Suppliers seldom refuse such changes in case they lose work."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Brands must by law inspect every factory they buy from."
+                    },
+                    {
+                        "id": "E",
+                        "text": "Low prices per item were the main cause of unpaid overtime."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "C"
+                        ],
+                        "prompt": "Which TWO claims about the way brands deal with factories are made in the passage?",
+                        "numbers": [
+                            12,
+                            13
+                        ],
+                        "evidence": "may alter quantities or designs at short notice, and suppliers who fear losing contracts rarely refuse",
+                        "explanation": {
+                            "en": "Paragraph D says brands may change orders at short notice and suppliers rarely refuse because they fear losing contracts. Ostrowski found that late changes mattered more than low prices, and she blames brands' buying practices as much as factory owners. The safety agreement does not require inspection of every factory.",
+                            "ru": "В абзаце D сказано, что бренды могут менять заказы в последний момент, а поставщики редко отказываются, потому что боятся потерять контракты. Ostrowski выяснила, что поздние изменения важнее низких цен, и она возлагает вину на закупочную практику брендов не меньше, чем на владельцев фабрик. Соглашение о безопасности не требует проверять каждую фабрику.",
+                            "uk": "В абзаці D сказано, що бренди можуть змінювати замовлення в останню мить, а постачальники рідко відмовляються, бо бояться втратити контракти. Ostrowski з'ясувала, що пізні зміни важливіші за низькі ціни, і вона покладає провину на закупівельну практику брендів не менше, ніж на власників фабрик. Угода про безпеку не вимагає перевіряти кожну фабрику."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b2q1",
+        "6": "b2q2",
+        "7": "b2q3",
+        "8": "b2q4",
+        "9": "b2q5",
+        "10": "b3q1",
+        "12": "b3q2"
+    },
+    "translation": {
+        "missing": []
+    }
+}

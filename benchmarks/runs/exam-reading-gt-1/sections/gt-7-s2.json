@@ -1,0 +1,967 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-7|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.27146,
+            "provider": "anthropic",
+            "outputTokens": 12579
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012074,
+            "provider": "anthropic",
+            "outputTokens": 622
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.015028,
+            "provider": "openai",
+            "outputTokens": 704
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.013578,
+            "provider": "xai",
+            "outputTokens": 1237
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.076944,
+            "provider": "anthropic",
+            "outputTokens": 3551
+        }
+    ],
+    "draft": {
+        "title": "Taking On Your First Employee",
+        "blocks": [
+            {
+                "type": "flow_chart_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "freelancer"
+                        ],
+                        "prompt": "Decide whether a ______ paid per task could handle occasional extra work instead of a permanent employee",
+                        "options": [],
+                        "evidence": "a freelancer paid by the job may be a cheaper and more flexible solution",
+                        "explanation": "Paragraph B says that if extra work comes in short bursts, someone paid by the job (a freelancer) may be cheaper and more flexible."
+                    },
+                    {
+                        "answer": [
+                            "description"
+                        ],
+                        "prompt": "Draw up a job ______ covering duties, hours and pay rate",
+                        "options": [],
+                        "evidence": "put together a job description that sets out the main duties",
+                        "explanation": "Paragraph B advises putting together a job description listing the duties, hours and rate of pay."
+                    },
+                    {
+                        "answer": [
+                            "fifth"
+                        ],
+                        "prompt": "Calculate the real cost: basic wage plus roughly a ______ on top",
+                        "options": [],
+                        "evidence": "add about a fifth to the basic wage",
+                        "explanation": "In paragraph B, Marguerite Oyelowo tells clients to add about a fifth to the basic wage when budgeting."
+                    },
+                    {
+                        "answer": [
+                            "payday"
+                        ],
+                        "prompt": "Register with the tax authority before the first ______",
+                        "options": [],
+                        "evidence": "register as an employer with the tax authority before the first payday",
+                        "explanation": "Paragraph C says that in many countries employers must register with the tax authority before the first payday."
+                    },
+                    {
+                        "answer": [
+                            "insurance"
+                        ],
+                        "prompt": "Check whether the law requires ______ against claims for staff injury or work-related illness",
+                        "options": [],
+                        "evidence": "whether the law requires you to hold insurance that covers claims from staff who are injured",
+                        "explanation": "Paragraph C tells owners to find out if they are legally required to hold insurance covering staff who are hurt or become ill because of work."
+                    },
+                    {
+                        "answer": [
+                            "documents"
+                        ],
+                        "prompt": "Before offering the job, see the candidate's original ______ in person",
+                        "options": [],
+                        "evidence": "This usually means seeing original documents, such as a passport, in the person's presence",
+                        "explanation": "Paragraph D explains that checking the right to work usually means seeing original documents while the person is present."
+                    },
+                    {
+                        "answer": [
+                            "induction"
+                        ],
+                        "prompt": "In the first week, give an ______ including safety, first aid and who to ask",
+                        "options": [],
+                        "evidence": "A proper induction should cover health and safety procedures",
+                        "explanation": "Paragraph F says a proper induction in the first week should cover safety, first-aid equipment, customers and whom to ask for help."
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The Eastbrook office provides individual advice sessions at no cost once a week.",
+                        "options": [],
+                        "evidence": "Our advisers offer free one-to-one sessions every Tuesday morning",
+                        "explanation": "Paragraph A says advisers offer free one-to-one sessions every Tuesday, which means individual sessions at no cost once a week."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "According to the guide, the job description is mainly useful when writing the job advertisement.",
+                        "options": [],
+                        "evidence": "This document will shape your advertisement, guide your interviews and later form the basis of the contract",
+                        "explanation": "Paragraph B says the job description is useful at three stages: the advertisement, the interviews and the contract, so it is not mainly for the advertisement."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Marguerite Oyelowo joined the advice office less than five years ago.",
+                        "options": [],
+                        "evidence": "who has advised local firms at our office for over a decade",
+                        "explanation": "Paragraph B says she has worked at the office for more than ten years, which contradicts the statement."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The guide considers payroll software to be more reliable than using an accountant.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C says many small firms use inexpensive software and others pay an accountant, but it does not compare how reliable the two methods are."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "An emailed photograph of a candidate's passport is an acceptable way to confirm their right to work.",
+                        "options": [],
+                        "evidence": "Photocopies or photographs sent by email are not enough.",
+                        "explanation": "Paragraph D clearly states that photographs sent by email are not enough; the original documents must be seen in person."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most job applicants provide references from more than one previous employer.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D advises contacting at least one previous employer for a reference, but it says nothing about how many references applicants usually provide."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The guide advises against waiting several weeks before giving a new employee written terms.",
+                        "options": [],
+                        "evidence": "on or before their first day, not weeks later once they have settled in",
+                        "explanation": "Paragraph E says written terms should be given on or before the first day, not weeks later, which matches the statement."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Sanjay Whitlock now gives every new member of staff a written checklist.",
+                        "options": [],
+                        "evidence": "Since then he has used a one-page checklist for every new starter",
+                        "explanation": "Paragraph F says that after his first assistant left, he started using a one-page checklist for every new starter."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "people": [
+            {
+                "name": "Marguerite Oyelowo",
+                "role": "Adviser at the Eastbrook Business Advice Office",
+                "gender": "female"
+            },
+            {
+                "name": "Sanjay Whitlock",
+                "role": "Owner of a bakery on Mill Street",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Hiring your first member of staff is one of the biggest steps a small business owner will take. Overnight, you stop being responsible only for yourself and become responsible for someone else's income, safety and working conditions. This guide from the Eastbrook Business Advice Office sets out the main tasks involved and the order in which to tackle them. It is not a substitute for professional legal advice, and because employment rules differ from one country to another, you should always check the details that apply where you trade. Our advisers offer free one-to-one sessions every Tuesday morning for anyone who wants to talk through their plans.",
+                "label": "A"
+            },
+            {
+                "text": "Before you write an advertisement, ask yourself whether you genuinely need an employee. If the extra work comes in short bursts, a freelancer paid by the job may be a cheaper and more flexible solution. If you decide that a permanent role makes sense, put together a job description that sets out the main duties, the expected hours and the rate of pay. This document will shape your advertisement, guide your interviews and later form the basis of the contract, so it is worth taking time over it. Then work out what the post will really cost. Wages are only part of the picture: you may also have to pay employer contributions to the state, fund paid holidays and buy equipment or uniforms. Marguerite Oyelowo, who has advised local firms at our office for over a decade, tells clients to add about a fifth to the basic wage when they draw up their budget. 'Owners who plan around the wage alone are often caught out by the extra costs within the first few months,' she says.",
+                "label": "B"
+            },
+            {
+                "text": "Once the budget is settled, deal with the official side. In many countries you must register as an employer with the tax authority before the first payday, because you will be responsible for deducting income tax from your employee's wages and passing it on. You will also need a way of running payroll; many small firms use inexpensive software, while others pay an accountant to handle it. Also find out whether the law requires you to hold insurance that covers claims from staff who are injured or fall ill because of their work. In some places this cover is compulsory from the day your first employee starts, and the fines for not having it can be heavy.",
+                "label": "C"
+            },
+            {
+                "text": "With the paperwork under way, you can start recruiting. Advertise in places your candidate is likely to look, and ask every applicant the same core questions at interview so that you can compare them fairly. Before making a firm offer, check that your chosen candidate has the legal right to work in the country. This usually means seeing original documents, such as a passport, in the person's presence and keeping a dated copy on file. Photocopies or photographs sent by email are not enough. It is also sensible to contact at least one previous employer for a reference, although a reference should never replace your own judgement.",
+                "label": "D"
+            },
+            {
+                "text": "Your new employee is entitled to clear written terms. In many countries these must be provided on or before their first day, not weeks later once they have settled in. As a minimum, the document should state the job title, pay, working hours, holiday entitlement and how much notice either side must give to end the arrangement. If you include a probation period, say how long it lasts and what will happen at the end of it.",
+                "label": "E"
+            },
+            {
+                "text": "The first week deserves careful planning. A proper induction should cover health and safety procedures, the location of first-aid equipment, how to deal with customers and, above all, whom to ask when something is unclear. Sanjay Whitlock, who runs a bakery on Mill Street, admits he got this wrong. 'My first assistant was simply handed an apron and told to get on with it,' he recalls. 'She left after three weeks.' Since then he has used a one-page checklist for every new starter, and his second recruit has now been with him for four years.",
+                "label": "F"
+            },
+            {
+                "text": "Finally, keep accurate records of the hours your employee works, the pay they receive and any holiday they take, as you may be asked to produce these. Arrange a short review at the end of the probation period, and after that make time for regular conversations rather than waiting for problems to build up. Staff who feel listened to are more likely to stay, and replacing someone usually costs more than keeping them.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a freelancer paid by the job may be a cheaper and more flexible solution",
+                "answer": [
+                    "freelancer"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "put together a job description that sets out the main duties, the expected hours and the rate of pay",
+                "answer": [
+                    "description"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "add about a fifth to the basic wage",
+                "answer": [
+                    "fifth"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "you must register as an employer with the tax authority before the first payday",
+                "answer": [
+                    "payday"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "whether the law requires you to hold insurance that covers claims from staff who are injured or fall ill because of their work",
+                "answer": [
+                    "insurance"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "This usually means seeing original documents, such as a passport, in the person's presence",
+                "answer": [
+                    "documents"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "A proper induction should cover health and safety procedures, the location of first-aid equipment",
+                "answer": [
+                    "induction"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Our advisers offer free one-to-one sessions every Tuesday morning",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "This document will shape your advertisement, guide your interviews and later form the basis of the contract",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "who has advised local firms at our office for over a decade",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Photocopies or photographs sent by email are not enough.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "these must be provided on or before their first day, not weeks later once they have settled in",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Since then he has used a one-page checklist for every new starter",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "If the extra work comes in short bursts, a freelancer paid by the job may be a cheaper and more flexible solution.",
+                "answer": [
+                    "freelancer"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "put together a job description that sets out the main duties, the expected hours and the rate of pay",
+                "answer": [
+                    "description"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "tells clients to add about a fifth to the basic wage",
+                "answer": [
+                    "fifth"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "you must register as an employer with the tax authority before the first payday",
+                "answer": [
+                    "payday"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "find out whether the law requires you to hold insurance that covers claims from staff who are injured or fall ill because of their work",
+                "answer": [
+                    "insurance"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "This usually means seeing original documents, such as a passport, in the person's presence",
+                "answer": [
+                    "documents"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "A proper induction should cover health and safety procedures, the location of first-aid equipment",
+                "answer": [
+                    "induction"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Our advisers offer free one-to-one sessions every Tuesday morning",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "This document will shape your advertisement, guide your interviews and later form the basis of the contract",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Marguerite Oyelowo, who has advised local firms at our office for over a decade",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Photocopies or photographs sent by email are not enough.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "these must be provided on or before their first day, not weeks later once they have settled in",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Since then he has used a one-page checklist for every new starter",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "a freelancer paid by the job may be a cheaper and more flexible solution",
+            "answer": [
+                "freelancer"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "put together a job description that sets out the main duties, the expected hours and the rate of pay",
+            "answer": [
+                "description"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "add about a fifth to the basic wage when they draw up their budget",
+            "answer": [
+                "fifth"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "register as an employer with the tax authority before the first payday",
+            "answer": [
+                "payday"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "whether the law requires you to hold insurance that covers claims from staff who are injured or fall ill because of their work",
+            "answer": [
+                "insurance"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "seeing original documents, such as a passport, in the person's presence",
+            "answer": [
+                "documents"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Our advisers offer free one-to-one sessions every Tuesday morning",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "This document will shape your advertisement, guide your interviews and later form the basis of the contract",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "who has advised local firms at our office for over a decade",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Photocopies or photographs sent by email are not enough.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "these must be provided on or before their first day, not weeks later once they have settled in",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Taking On Your First Employee\n\nA. Hiring your first member of staff is one of the biggest steps a small business owner will take. Overnight, you stop being responsible only for yourself and become responsible for someone else's income, safety and working conditions. This guide from the Eastbrook Business Advice Office sets out the main tasks involved and the order in which to tackle them. It is not a substitute for professional legal advice, and because employment rules differ from one country to another, you should always check the details that apply where you trade. Our advisers offer free one-to-one sessions every Tuesday morning for anyone who wants to talk through their plans.\n\nB. Before you write an advertisement, ask yourself whether you genuinely need an employee. If the extra work comes in short bursts, a freelancer paid by the job may be a cheaper and more flexible solution. If you decide that a permanent role makes sense, put together a job description that sets out the main duties, the expected hours and the rate of pay. This document will shape your advertisement, guide your interviews and later form the basis of the contract, so it is worth taking time over it. Then work out what the post will really cost. Wages are only part of the picture: you may also have to pay employer contributions to the state, fund paid holidays and buy equipment or uniforms. Marguerite Oyelowo, who has advised local firms at our office for over a decade, tells clients to add about a fifth to the basic wage when they draw up their budget. 'Owners who plan around the wage alone are often caught out by the extra costs within the first few months,' she says.\n\nC. Once the budget is settled, deal with the official side. In many countries you must register as an employer with the tax authority before the first payday, because you will be responsible for deducting income tax from your employee's wages and passing it on. You will also need a way of running payroll; many small firms use inexpensive software, while others pay an accountant to handle it. Also find out whether the law requires you to hold insurance that covers claims from staff who are injured or fall ill because of their work. In some places this cover is compulsory from the day your first employee starts, and the fines for not having it can be heavy.\n\nD. With the paperwork under way, you can start recruiting. Advertise in places your candidate is likely to look, and ask every applicant the same core questions at interview so that you can compare them fairly. Before making a firm offer, check that your chosen candidate has the legal right to work in the country. This usually means seeing original documents, such as a passport, in the person's presence and keeping a dated copy on file. Photocopies or photographs sent by email are not enough. It is also sensible to contact at least one previous employer for a reference, although a reference should never replace your own judgement.\n\nE. Your new employee is entitled to clear written terms. In many countries these must be provided on or before their first day, not weeks later once they have settled in. As a minimum, the document should state the job title, pay, working hours, holiday entitlement and how much notice either side must give to end the arrangement. If you include a probation period, say how long it lasts and what will happen at the end of it.\n\nF. The first week deserves careful planning. A proper induction should cover health and safety procedures, the location of first-aid equipment, how to deal with customers and, above all, whom to ask when something is unclear. Sanjay Whitlock, who runs a bakery on Mill Street, admits he got this wrong. 'My first assistant was simply handed an apron and told to get on with it,' he recalls. 'She left after three weeks.' Since then he has used a one-page checklist for every new starter, and his second recruit has now been with him for four years.\n\nG. Finally, keep accurate records of the hours your employee works, the pay they receive and any holiday they take, as you may be asked to produce these. Arrange a short review at the end of the probation period, and after that make time for regular conversations rather than waiting for problems to build up. Staff who feel listened to are more likely to stay, and replacing someone usually costs more than keeping them.",
+        "title": "Taking On Your First Employee",
+        "groups": [
+            {
+                "type": "flow_chart_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "freelancer"
+                        ],
+                        "prompt": "Decide whether a ______ paid per task could handle occasional extra work instead of a permanent employee",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "a freelancer paid by the job may be a cheaper and more flexible solution",
+                        "explanation": {
+                            "en": "Paragraph B says that if extra work comes in short bursts, someone paid by the job (a freelancer) may be cheaper and more flexible.",
+                            "ru": "В абзаце B говорится, что если дополнительная работа появляется короткими периодами, то человек, которому платят за выполненную работу (\"freelancer\"), может обойтись дешевле и быть более гибким вариантом.",
+                            "uk": "В абзаці B сказано, що якщо додаткова робота з'являється короткими періодами, то людина, якій платять за виконану роботу (\"freelancer\"), може коштувати дешевше й бути гнучкішим варіантом."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "description"
+                        ],
+                        "prompt": "Draw up a job ______ covering duties, hours and pay rate",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "put together a job description that sets out the main duties",
+                        "explanation": {
+                            "en": "Paragraph B advises putting together a job description listing the duties, hours and rate of pay.",
+                            "ru": "В абзаце B советуют составить описание должности с перечнем обязанностей, рабочих часов и ставки оплаты.",
+                            "uk": "В абзаці B радять скласти опис посади з переліком обов'язків, робочих годин і ставки оплати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "fifth"
+                        ],
+                        "prompt": "Calculate the real cost: basic wage plus roughly a ______ on top",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "add about a fifth to the basic wage",
+                        "explanation": {
+                            "en": "In paragraph B, Marguerite Oyelowo tells clients to add about a fifth to the basic wage when budgeting.",
+                            "ru": "В абзаце B Marguerite Oyelowo советует клиентам при планировании бюджета добавлять к базовой зарплате примерно пятую часть.",
+                            "uk": "В абзаці B Marguerite Oyelowo радить клієнтам під час планування бюджету додавати до базової зарплати приблизно п'яту частину."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "payday"
+                        ],
+                        "prompt": "Register with the tax authority before the first ______",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "register as an employer with the tax authority before the first payday",
+                        "explanation": {
+                            "en": "Paragraph C says that in many countries employers must register with the tax authority before the first payday.",
+                            "ru": "В абзаце C говорится, что во многих странах работодатели должны зарегистрироваться в налоговом органе до первой выплаты зарплаты.",
+                            "uk": "В абзаці C сказано, що в багатьох країнах роботодавці мають зареєструватися в податковому органі до першої виплати зарплати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "insurance"
+                        ],
+                        "prompt": "Check whether the law requires ______ against claims for staff injury or work-related illness",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "whether the law requires you to hold insurance that covers claims from staff who are injured",
+                        "explanation": {
+                            "en": "Paragraph C tells owners to find out if they are legally required to hold insurance covering staff who are hurt or become ill because of work.",
+                            "ru": "В абзаце C владельцам советуют выяснить, обязаны ли они по закону иметь страховку на случай, если сотрудники получат травму или заболеют из-за работы.",
+                            "uk": "В абзаці C власникам радять з'ясувати, чи зобов'язані вони за законом мати страхування на випадок, якщо працівники травмуються або захворіють через роботу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "documents"
+                        ],
+                        "prompt": "Before offering the job, see the candidate's original ______ in person",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "This usually means seeing original documents, such as a passport, in the person's presence",
+                        "explanation": {
+                            "en": "Paragraph D explains that checking the right to work usually means seeing original documents while the person is present.",
+                            "ru": "В абзаце D объясняется, что проверка права на работу обычно означает просмотр оригиналов документов в присутствии самого человека.",
+                            "uk": "В абзаці D пояснюється, що перевірка права на роботу зазвичай означає перегляд оригіналів документів у присутності самої людини."
+                        }
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The Eastbrook office provides individual advice sessions at no cost once a week.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "Our advisers offer free one-to-one sessions every Tuesday morning",
+                        "explanation": {
+                            "en": "Paragraph A says advisers offer free one-to-one sessions every Tuesday, which means individual sessions at no cost once a week.",
+                            "ru": "В абзаце A сказано, что консультанты проводят бесплатные индивидуальные встречи каждый вторник, то есть индивидуальные консультации без оплаты раз в неделю.",
+                            "uk": "В абзаці A сказано, що консультанти проводять безкоштовні індивідуальні зустрічі щовівторка, тобто індивідуальні консультації без оплати раз на тиждень."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "According to the guide, the job description is mainly useful when writing the job advertisement.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "This document will shape your advertisement, guide your interviews and later form the basis of the contract",
+                        "explanation": {
+                            "en": "Paragraph B says the job description is useful at three stages: the advertisement, the interviews and the contract, so it is not mainly for the advertisement.",
+                            "ru": "В абзаце B сказано, что описание должности полезно на трёх этапах: объявление, собеседования и договор, — поэтому оно нужно не в основном для объявления.",
+                            "uk": "В абзаці B сказано, що опис посади корисний на трьох етапах: оголошення, співбесіди й договір, — тож він потрібен не переважно для оголошення."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Marguerite Oyelowo joined the advice office less than five years ago.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "who has advised local firms at our office for over a decade",
+                        "explanation": {
+                            "en": "Paragraph B says she has worked at the office for more than ten years, which contradicts the statement.",
+                            "ru": "В абзаце B сказано, что она работает в этом офисе больше десяти лет, а это противоречит утверждению.",
+                            "uk": "В абзаці B сказано, що вона працює в цьому офісі понад десять років, а це суперечить твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The guide considers payroll software to be more reliable than using an accountant.",
+                        "numbers": [
+                            10
+                        ],
+                        "explanation": {
+                            "en": "Paragraph C says many small firms use inexpensive software and others pay an accountant, but it does not compare how reliable the two methods are.",
+                            "ru": "В абзаце C говорится, что многие небольшие фирмы пользуются недорогими программами, а другие платят бухгалтеру, но надёжность этих двух способов не сравнивается.",
+                            "uk": "В абзаці C сказано, що багато невеликих фірм користуються недорогими програмами, а інші платять бухгалтерові, але надійність цих двох способів не порівнюється."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "An emailed photograph of a candidate's passport is an acceptable way to confirm their right to work.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Photocopies or photographs sent by email are not enough.",
+                        "explanation": {
+                            "en": "Paragraph D clearly states that photographs sent by email are not enough; the original documents must be seen in person.",
+                            "ru": "В абзаце D прямо сказано, что фотографий, присланных по электронной почте, недостаточно: оригиналы документов нужно увидеть лично.",
+                            "uk": "В абзаці D прямо сказано, що фотографій, надісланих електронною поштою, недостатньо: оригінали документів треба побачити особисто."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most job applicants provide references from more than one previous employer.",
+                        "numbers": [
+                            12
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D advises contacting at least one previous employer for a reference, but it says nothing about how many references applicants usually provide.",
+                            "ru": "В абзаце D советуют обратиться за рекомендацией хотя бы к одному из прежних работодателей, но ничего не сказано о том, сколько рекомендаций обычно предоставляют кандидаты.",
+                            "uk": "В абзаці D радять звернутися по рекомендацію принаймні до одного з попередніх роботодавців, але нічого не сказано про те, скільки рекомендацій зазвичай надають кандидати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The guide advises against waiting several weeks before giving a new employee written terms.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "on or before their first day, not weeks later once they have settled in",
+                        "explanation": {
+                            "en": "Paragraph E says written terms should be given on or before the first day, not weeks later, which matches the statement.",
+                            "ru": "В абзаце E сказано, что письменные условия работы нужно выдать в первый день или раньше, а не через несколько недель, — это совпадает с утверждением.",
+                            "uk": "В абзаці E сказано, що письмові умови роботи треба надати в перший день або раніше, а не через кілька тижнів, — це збігається з твердженням."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

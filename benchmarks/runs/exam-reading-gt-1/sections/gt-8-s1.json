@@ -1,0 +1,1095 @@
+{
+    "form": {
+        "first": [
+            "the passage has 722 words, the plan asks for 660-720",
+            "group 2 (short_answer), question 11: \"the book drop\" is over the word limit"
+        ],
+        "afterRepair": []
+    },
+    "plan": "gt-8|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.253708,
+            "provider": "anthropic",
+            "outputTokens": 11645
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.11232,
+            "provider": "anthropic",
+            "outputTokens": 3750
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012256,
+            "provider": "anthropic",
+            "outputTokens": 637
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.021668,
+            "provider": "openai",
+            "outputTokens": 1142
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.020804,
+            "provider": "anthropic",
+            "outputTokens": 323
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.004636,
+            "provider": "anthropic",
+            "outputTokens": 31
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.004803,
+            "provider": "openai",
+            "outputTokens": 103
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.02152,
+            "provider": "xai",
+            "outputTokens": 2540
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.083856,
+            "provider": "anthropic",
+            "outputTokens": 3884
+        }
+    ],
+    "draft": {
+        "title": "Welcome to Ashgrove Community Library",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "A person who studies in the district but lives somewhere else is allowed to join the library.",
+                        "options": [],
+                        "evidence": "Anyone who lives, works or studies in the district can join",
+                        "explanation": "Paragraph A says that anyone who lives, works or studies in the district can join, so studying there is enough even if you live elsewhere."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "New members have to wait several days before they receive their library card.",
+                        "options": [],
+                        "evidence": "your card will be printed while you wait",
+                        "explanation": "Paragraph A says the card is printed while you wait, so new members get it immediately, not days later."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "DVDs have a shorter loan period than most other items.",
+                        "options": [],
+                        "evidence": "Most items are lent for three weeks, but new releases and DVDs must be returned after seven days",
+                        "explanation": "Paragraph A says most items are lent for three weeks, but DVDs must come back after seven days, which is shorter."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The LibraryLink app can be installed on a desktop computer.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B only mentions downloading the app on a phone or tablet. It does not say whether it can or cannot be used on a desktop computer."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Members who have forgotten their PIN can get it reset by telephoning the library.",
+                        "options": [],
+                        "evidence": "for security reasons this cannot be done over the phone",
+                        "explanation": "Paragraph B says staff at the front desk can reset a PIN, but this cannot be done over the phone, which is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "All of the digital helpers used to be employed as library staff.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says the digital helpers are volunteers available on Tuesday and Thursday mornings, but it says nothing about their past jobs."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "People who are not library members cannot use the group study rooms.",
+                        "options": [],
+                        "evidence": "non-members may use a room for a fee of £5 an hour",
+                        "explanation": "Paragraph C says non-members may use a room if they pay £5 an hour. Bookings are only free for members, but non-members are not excluded."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Tevita Faleolo usually leads the Rhyme Time sessions himself.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D says Tevita Faleolo coordinates the children's events and gives his opinion of the reading challenge. It does not say who actually runs Rhyme Time."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the leaflet? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "short_answer",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "utility bill"
+                        ],
+                        "prompt": "What document does the leaflet give as an example of proof of address?",
+                        "options": [],
+                        "evidence": "such as a recent utility bill",
+                        "explanation": "Paragraph A asks new members to bring something showing their current address and gives a utility bill as an example."
+                    },
+                    {
+                        "answer": [
+                            "twelve",
+                            "12"
+                        ],
+                        "prompt": "What is the largest number of items an adult member can have on loan at one time?",
+                        "options": [],
+                        "evidence": "Adult members may borrow up to twelve items at a time",
+                        "explanation": "Paragraph A says adults may borrow up to twelve items at a time. 'Up to' means this is the maximum."
+                    },
+                    {
+                        "answer": [
+                            "book drop"
+                        ],
+                        "prompt": "What can members use to return items when the library is not open?",
+                        "options": [],
+                        "evidence": "using the book drop beside the main entrance, even when the building is closed",
+                        "explanation": "Paragraph A says returns can be made at any time through the book drop, even when the building is closed."
+                    },
+                    {
+                        "answer": [
+                            "two days",
+                            "2 days"
+                        ],
+                        "prompt": "After receiving an email that a popular e-book is available, how long does a member have to accept the loan?",
+                        "options": [],
+                        "evidence": "you then have two days to accept the loan",
+                        "explanation": "Paragraph B explains that after the email arrives, you have two days to accept the loan before it goes to the next person."
+                    },
+                    {
+                        "answer": [
+                            "digital helpers"
+                        ],
+                        "prompt": "Who can people book a free session with if they find the app difficult to use?",
+                        "options": [],
+                        "evidence": "book a free half-hour session with one of our volunteer 'digital helpers'",
+                        "explanation": "Paragraph B says anyone unsure about the app can book a free half-hour session with a volunteer digital helper."
+                    },
+                    {
+                        "answer": [
+                            "three hours",
+                            "3 hours"
+                        ],
+                        "prompt": "What is the longest time per day that a member can book a study room for?",
+                        "options": [],
+                        "evidence": "book a room for a maximum of three hours per day",
+                        "explanation": "Paragraph C says members may book a room for a maximum of three hours per day. A fortnight is how far ahead you can book, not how long you can use the room."
+                    },
+                    {
+                        "answer": [
+                            "twenty",
+                            "20"
+                        ],
+                        "prompt": "How many children can take part in the Saturday Story Club?",
+                        "options": [],
+                        "evidence": "places are limited to twenty",
+                        "explanation": "Paragraph D says places at the Saturday Story Club are limited to twenty, which is why families should book in advance."
+                    },
+                    {
+                        "answer": [
+                            "the lift",
+                            "lift"
+                        ],
+                        "prompt": "What is the suggestion box placed beside?",
+                        "options": [],
+                        "evidence": "a suggestion box is located next to the lift",
+                        "explanation": "Paragraph E says the suggestion box is located next to the lift. Comments can also be left on the website."
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the leaflet for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Tevita Faleolo",
+                "role": "coordinator of the library's children's events",
+                "gender": "male"
+            },
+            {
+                "name": "Ottavia Kerimova",
+                "role": "branch manager of the library",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Borrowing: Anyone who lives, works or studies in the district can join Ashgrove Community Library free of charge. Bring one form of photo identification and something showing your current address, such as a recent utility bill, to the front desk, and your card will be printed while you wait. Adult members may borrow up to twelve items at a time, including books, audiobooks and DVDs. Most items are lent for three weeks, but new releases and DVDs must be returned after seven days because demand for them is high. You can renew an item twice, online or by phone, provided nobody else has reserved it. We no longer charge fines on children's books, although adults who return items late pay a small daily charge. Returns can be made at any time using the book drop beside the main entrance, even when the building is closed.",
+                "label": "A"
+            },
+            {
+                "text": "E-books and digital services: Your library card also gives you access to our digital collection, which includes thousands of e-books, e-audiobooks and current magazines. First, download the free LibraryLink app on your phone or tablet and sign in with your card number and four-digit PIN. If you have forgotten your PIN, staff at the front desk can reset it, but for security reasons this cannot be done over the phone. Up to six digital titles can be borrowed at once, and they disappear from your device automatically when the loan period ends, so there is never anything to bring back. Popular titles often have a waiting list; you will receive an email as soon as your turn comes, and you then have two days to accept the loan before it passes to the next person. Anyone who feels unsure about using the app can book a free half-hour session with one of our volunteer 'digital helpers', who are available on Tuesday and Thursday mornings.",
+                "label": "B"
+            },
+            {
+                "text": "Study rooms: On the first floor there are four quiet study rooms, each seating up to six people, as well as a single silent room with individual desks. The group rooms are ideal for revision sessions, small meetings or job interviews held by video call, and each is equipped with a large wall screen and a whiteboard. Members may book a room for a maximum of three hours per day, either online or at the front desk, up to a fortnight in advance. Bookings are free for members; non-members may use a room for a fee of £5 an hour. Please arrive on time: if nobody has checked in within fifteen minutes of the start of a booking, the room may be given to someone else. Food is not permitted in any study area, though drinks in bottles with a lid are welcome. The silent room cannot be reserved and is available on a first-come, first-served basis.",
+                "label": "C"
+            },
+            {
+                "text": "Children's events: Our children's area is busy all week. Rhyme Time, for babies and toddlers with their parents or carers, runs every Monday and Wednesday at 10.30 a.m. and lasts about half an hour; no booking is needed. Older children aged five to eleven can join the Saturday Story Club, where they listen to stories, play word games and make simple crafts. Because places are limited to twenty, families should reserve a spot in advance. During the summer holidays, children are invited to take part in our reading challenge: participants who finish six books receive a certificate and a medal at a celebration event in September. Tevita Faleolo, who coordinates our children's events, believes the challenge helps young readers keep up their skills during the long break from school, and he hopes more families will join this year. Please note that children under eight must be supervised by an adult at all times while in the library.",
+                "label": "D"
+            },
+            {
+                "text": "Opening hours and other information: The library is open from 9 a.m. to 7 p.m. on weekdays and from 10 a.m. to 4 p.m. on Saturdays; it is closed on Sundays and public holidays. Free Wi-Fi is available throughout the building, and printing and photocopying cost 10p per black-and-white page. Branch manager Ottavia Kerimova encourages members to share their ideas: a suggestion box is located next to the lift, and comments can also be left on our website. 'Many of our recent improvements, including longer Saturday hours, came directly from users,' she explains.",
+                "label": "E"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Anyone who lives, works or studies in the district can join Ashgrove Community Library free of charge.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "your card will be printed while you wait",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Most items are lent for three weeks, but new releases and DVDs must be returned after seven days",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "staff at the front desk can reset it, but for security reasons this cannot be done over the phone",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    false
+                ],
+                "quote": "volunteer 'digital helpers'",
+                "answer": [
+                    "F"
+                ],
+                "correct": false
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "non-members may use a room for a fee of £5 an hour",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "something showing your current address, such as a recent utility bill",
+                "answer": [
+                    "utility bill"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Adult members may borrow up to twelve items at a time",
+                "answer": [
+                    "twelve"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Returns can be made at any time using the book drop beside the main entrance, even when the building is closed.",
+                "answer": [
+                    "book drop"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "you then have two days to accept the loan before it passes to the next person",
+                "answer": [
+                    "two days"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "book a free half-hour session with one of our volunteer 'digital helpers'",
+                "answer": [
+                    "digital helpers"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Members may book a room for a maximum of three hours per day",
+                "answer": [
+                    "three hours"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Because places are limited to twenty",
+                "answer": [
+                    "twenty"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "a suggestion box is located next to the lift",
+                "answer": [
+                    "the lift"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Anyone who lives, works or studies in the district can join Ashgrove Community Library free of charge.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "your card will be printed while you wait",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Most items are lent for three weeks, but new releases and DVDs must be returned after seven days",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "for security reasons this cannot be done over the phone",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "non-members may use a room for a fee of £5 an hour",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "such as a recent utility bill",
+                "answer": [
+                    "utility bill"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Adult members may borrow up to twelve items at a time",
+                "answer": [
+                    "twelve"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Returns can be made at any time using the book drop beside the main entrance",
+                "answer": [
+                    "book drop"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "you then have two days to accept the loan",
+                "answer": [
+                    "two days"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "book a free half-hour session with one of our volunteer 'digital helpers'",
+                "answer": [
+                    "digital helpers"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Members may book a room for a maximum of three hours per day",
+                "answer": [
+                    "three hours"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "places are limited to twenty",
+                "answer": [
+                    "twenty"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "a suggestion box is located next to the lift",
+                "answer": [
+                    "the lift"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": [
+            "b1q6"
+        ]
+    },
+    "revise": {
+        "b1q6": {
+            "action": "keep",
+            "reason": "The passage only says the helpers are volunteers now. Being a volunteer today does not rule out having been library staff in the past, so nothing decides the statement. The solver who chose FALSE confused their current role with their past jobs."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Anyone who lives, works or studies in the district can join Ashgrove Community Library free of charge.",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "your card will be printed while you wait.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Most items are lent for three weeks, but new releases and DVDs must be returned after seven days",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "staff at the front desk can reset it, but for security reasons this cannot be done over the phone.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "non-members may use a room for a fee of £5 an hour.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "such as a recent utility bill",
+            "answer": [
+                "utility bill"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Adult members may borrow up to twelve items at a time",
+            "answer": [
+                "twelve"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "using the book drop beside the main entrance, even when the building is closed.",
+            "answer": [
+                "book drop"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "you then have two days to accept the loan before it passes to the next person.",
+            "answer": [
+                "two days"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "book a free half-hour session with one of our volunteer 'digital helpers'",
+            "answer": [
+                "digital helpers"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Members may book a room for a maximum of three hours per day",
+            "answer": [
+                "three hours"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "places are limited to twenty",
+            "answer": [
+                "twenty"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 1,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        }
+    },
+    "section": {
+        "text": "Welcome to Ashgrove Community Library\n\nA. Borrowing: Anyone who lives, works or studies in the district can join Ashgrove Community Library free of charge. Bring one form of photo identification and something showing your current address, such as a recent utility bill, to the front desk, and your card will be printed while you wait. Adult members may borrow up to twelve items at a time, including books, audiobooks and DVDs. Most items are lent for three weeks, but new releases and DVDs must be returned after seven days because demand for them is high. You can renew an item twice, online or by phone, provided nobody else has reserved it. We no longer charge fines on children's books, although adults who return items late pay a small daily charge. Returns can be made at any time using the book drop beside the main entrance, even when the building is closed.\n\nB. E-books and digital services: Your library card also gives you access to our digital collection, which includes thousands of e-books, e-audiobooks and current magazines. First, download the free LibraryLink app on your phone or tablet and sign in with your card number and four-digit PIN. If you have forgotten your PIN, staff at the front desk can reset it, but for security reasons this cannot be done over the phone. Up to six digital titles can be borrowed at once, and they disappear from your device automatically when the loan period ends, so there is never anything to bring back. Popular titles often have a waiting list; you will receive an email as soon as your turn comes, and you then have two days to accept the loan before it passes to the next person. Anyone who feels unsure about using the app can book a free half-hour session with one of our volunteer 'digital helpers', who are available on Tuesday and Thursday mornings.\n\nC. Study rooms: On the first floor there are four quiet study rooms, each seating up to six people, as well as a single silent room with individual desks. The group rooms are ideal for revision sessions, small meetings or job interviews held by video call, and each is equipped with a large wall screen and a whiteboard. Members may book a room for a maximum of three hours per day, either online or at the front desk, up to a fortnight in advance. Bookings are free for members; non-members may use a room for a fee of £5 an hour. Please arrive on time: if nobody has checked in within fifteen minutes of the start of a booking, the room may be given to someone else. Food is not permitted in any study area, though drinks in bottles with a lid are welcome. The silent room cannot be reserved and is available on a first-come, first-served basis.\n\nD. Children's events: Our children's area is busy all week. Rhyme Time, for babies and toddlers with their parents or carers, runs every Monday and Wednesday at 10.30 a.m. and lasts about half an hour; no booking is needed. Older children aged five to eleven can join the Saturday Story Club, where they listen to stories, play word games and make simple crafts. Because places are limited to twenty, families should reserve a spot in advance. During the summer holidays, children are invited to take part in our reading challenge: participants who finish six books receive a certificate and a medal at a celebration event in September. Tevita Faleolo, who coordinates our children's events, believes the challenge helps young readers keep up their skills during the long break from school, and he hopes more families will join this year. Please note that children under eight must be supervised by an adult at all times while in the library.\n\nE. Opening hours and other information: The library is open from 9 a.m. to 7 p.m. on weekdays and from 10 a.m. to 4 p.m. on Saturdays; it is closed on Sundays and public holidays. Free Wi-Fi is available throughout the building, and printing and photocopying cost 10p per black-and-white page. Branch manager Ottavia Kerimova encourages members to share their ideas: a suggestion box is located next to the lift, and comments can also be left on our website. 'Many of our recent improvements, including longer Saturday hours, came directly from users,' she explains.",
+        "title": "Welcome to Ashgrove Community Library",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "A person who studies in the district but lives somewhere else is allowed to join the library.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Anyone who lives, works or studies in the district can join",
+                        "explanation": {
+                            "en": "Paragraph A says that anyone who lives, works or studies in the district can join, so studying there is enough even if you live elsewhere.",
+                            "ru": "В абзаце A сказано, что записаться может любой, кто живёт, работает или учится в этом районе. Поэтому достаточно там учиться, даже если вы живёте в другом месте.",
+                            "uk": "В абзаці A сказано, що записатися може будь-хто, хто живе, працює або навчається в цьому районі. Тож достатньо там навчатися, навіть якщо ви живете деінде."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "New members have to wait several days before they receive their library card.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "your card will be printed while you wait",
+                        "explanation": {
+                            "en": "Paragraph A says the card is printed while you wait, so new members get it immediately, not days later.",
+                            "ru": "В абзаце A сказано, что карточку печатают прямо при вас. Значит, новые читатели получают её сразу, а не через несколько дней.",
+                            "uk": "В абзаці A сказано, що картку друкують просто при вас. Отже, нові читачі отримують її одразу, а не через кілька днів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "DVDs have a shorter loan period than most other items.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "Most items are lent for three weeks, but new releases and DVDs must be returned after seven days",
+                        "explanation": {
+                            "en": "Paragraph A says most items are lent for three weeks, but DVDs must come back after seven days, which is shorter.",
+                            "ru": "В абзаце A сказано, что большинство материалов выдают на три недели, а DVD нужно вернуть через семь дней, то есть раньше.",
+                            "uk": "В абзаці A сказано, що більшість матеріалів видають на три тижні, а DVD треба повернути через сім днів, тобто раніше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The LibraryLink app can be installed on a desktop computer.",
+                        "numbers": [
+                            4
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B only mentions downloading the app on a phone or tablet. It does not say whether it can or cannot be used on a desktop computer.",
+                            "ru": "В абзаце B говорится только о том, что приложение можно скачать на телефон или планшет. Можно ли пользоваться им на стационарном компьютере, не сказано ни в ту, ни в другую сторону.",
+                            "uk": "В абзаці B ідеться лише про те, що застосунок можна завантажити на телефон або планшет. Чи можна користуватися ним на стаціонарному комп'ютері, не сказано ні так, ні інакше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Members who have forgotten their PIN can get it reset by telephoning the library.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "for security reasons this cannot be done over the phone",
+                        "explanation": {
+                            "en": "Paragraph B says staff at the front desk can reset a PIN, but this cannot be done over the phone, which is the opposite of the statement.",
+                            "ru": "В абзаце B сказано, что сотрудники на стойке обслуживания могут сбросить PIN-код, но по телефону этого сделать нельзя. Это противоположно утверждению.",
+                            "uk": "В абзаці B сказано, що працівники на стійці обслуговування можуть скинути PIN-код, але телефоном цього зробити не можна. Це протилежне твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "All of the digital helpers used to be employed as library staff.",
+                        "numbers": [
+                            6
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says the digital helpers are volunteers available on Tuesday and Thursday mornings, but it says nothing about their past jobs.",
+                            "ru": "В абзаце B сказано, что цифровые помощники — это волонтёры, которые доступны по вторникам и четвергам утром. О том, где они работали раньше, ничего не говорится.",
+                            "uk": "В абзаці B сказано, що цифрові помічники — це волонтери, доступні у вівторок і четвер зранку. Про те, де вони працювали раніше, нічого не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "People who are not library members cannot use the group study rooms.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "non-members may use a room for a fee of £5 an hour",
+                        "explanation": {
+                            "en": "Paragraph C says non-members may use a room if they pay £5 an hour. Bookings are only free for members, but non-members are not excluded.",
+                            "ru": "В абзаце C сказано, что те, кто не записан в библиотеку, могут пользоваться комнатой за £5 в час. Бесплатное бронирование есть только у читателей библиотеки, но остальных не исключают.",
+                            "uk": "В абзаці C сказано, що ті, хто не записаний до бібліотеки, можуть користуватися кімнатою за £5 на годину. Безкоштовне бронювання є лише в читачів бібліотеки, але інших не виключають."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the leaflet? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "short_answer",
+                "limit": {
+                    "words": 2,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "utility bill"
+                        ],
+                        "prompt": "What document does the leaflet give as an example of proof of address?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "such as a recent utility bill",
+                        "explanation": {
+                            "en": "Paragraph A asks new members to bring something showing their current address and gives a utility bill as an example.",
+                            "ru": "В абзаце A новых читателей просят принести документ, подтверждающий их нынешний адрес, и в качестве примера приводят счёт за коммунальные услуги.",
+                            "uk": "В абзаці A нових читачів просять принести документ, що підтверджує їхню теперішню адресу, і як приклад наводять рахунок за комунальні послуги."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "twelve",
+                            "12"
+                        ],
+                        "prompt": "What is the largest number of items an adult member can have on loan at one time?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "Adult members may borrow up to twelve items at a time",
+                        "explanation": {
+                            "en": "Paragraph A says adults may borrow up to twelve items at a time. 'Up to' means this is the maximum.",
+                            "ru": "В абзаце A сказано, что взрослые могут брать до двенадцати единиц одновременно. \"Up to\" означает, что это максимум.",
+                            "uk": "В абзаці A сказано, що дорослі можуть брати до дванадцяти одиниць одночасно. \"Up to\" означає, що це максимум."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "book drop"
+                        ],
+                        "prompt": "What can members use to return items when the library is not open?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "using the book drop beside the main entrance, even when the building is closed",
+                        "explanation": {
+                            "en": "Paragraph A says returns can be made at any time through the book drop, even when the building is closed.",
+                            "ru": "В абзаце A сказано, что вернуть материалы можно в любое время через ящик для возврата книг, даже когда здание закрыто.",
+                            "uk": "В абзаці A сказано, що повернути матеріали можна будь-коли через скриньку для повернення книжок, навіть коли будівля зачинена."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "two days",
+                            "2 days"
+                        ],
+                        "prompt": "After receiving an email that a popular e-book is available, how long does a member have to accept the loan?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "you then have two days to accept the loan",
+                        "explanation": {
+                            "en": "Paragraph B explains that after the email arrives, you have two days to accept the loan before it goes to the next person.",
+                            "ru": "В абзаце B объясняется, что после получения письма у вас есть два дня, чтобы подтвердить выдачу, иначе она перейдёт к следующему человеку.",
+                            "uk": "В абзаці B пояснюється, що після отримання листа у вас є два дні, щоб підтвердити видачу, інакше вона перейде до наступної людини."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "digital helpers"
+                        ],
+                        "prompt": "Who can people book a free session with if they find the app difficult to use?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "book a free half-hour session with one of our volunteer 'digital helpers'",
+                        "explanation": {
+                            "en": "Paragraph B says anyone unsure about the app can book a free half-hour session with a volunteer digital helper.",
+                            "ru": "В абзаце B сказано, что любой, кто не уверен, как пользоваться приложением, может записаться на бесплатное получасовое занятие с волонтёром — цифровым помощником.",
+                            "uk": "В абзаці B сказано, що будь-хто, хто не впевнений, як користуватися застосунком, може записатися на безкоштовне півгодинне заняття з волонтером — цифровим помічником."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "three hours",
+                            "3 hours"
+                        ],
+                        "prompt": "What is the longest time per day that a member can book a study room for?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "book a room for a maximum of three hours per day",
+                        "explanation": {
+                            "en": "Paragraph C says members may book a room for a maximum of three hours per day. A fortnight is how far ahead you can book, not how long you can use the room.",
+                            "ru": "В абзаце C сказано, что читатели могут бронировать комнату максимум на три часа в день. Две недели — это срок, за который можно забронировать заранее, а не время, на которое дают комнату.",
+                            "uk": "В абзаці C сказано, що читачі можуть бронювати кімнату щонайбільше на три години на день. Два тижні — це строк, за який можна забронювати заздалегідь, а не час, на який дають кімнату."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "twenty",
+                            "20"
+                        ],
+                        "prompt": "How many children can take part in the Saturday Story Club?",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "places are limited to twenty",
+                        "explanation": {
+                            "en": "Paragraph D says places at the Saturday Story Club are limited to twenty, which is why families should book in advance.",
+                            "ru": "В абзаце D сказано, что в Saturday Story Club всего двадцать мест, поэтому семьям нужно бронировать заранее.",
+                            "uk": "В абзаці D сказано, що в Saturday Story Club лише двадцять місць, тому сім'ям треба бронювати заздалегідь."
+                        }
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the leaflet for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "revised",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6",
+        "14": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

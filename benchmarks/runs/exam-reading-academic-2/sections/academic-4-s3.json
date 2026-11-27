@@ -1,0 +1,1157 @@
+{
+    "form": {
+        "first": [
+            "group 3 (sentence_completion), question 13: \"joined up letters\" is over the word limit"
+        ],
+        "afterRepair": []
+    },
+    "plan": "academic-4|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.316088,
+            "provider": "anthropic",
+            "outputTokens": 14960
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.128076,
+            "provider": "anthropic",
+            "outputTokens": 4483
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.0145,
+            "provider": "anthropic",
+            "outputTokens": 701
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.024758,
+            "provider": "openai",
+            "outputTokens": 1270
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.0235,
+            "provider": "xai",
+            "outputTokens": 2725
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.108252,
+            "provider": "anthropic",
+            "outputTokens": 5056
+        }
+    ],
+    "draft": {
+        "title": "Why the Pencil Still Matters",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The question of whether children still need to learn handwriting does not deserve serious consideration.",
+                        "options": [],
+                        "evidence": "It is a fair question, and it deserves a better answer than nostalgia.",
+                        "explanation": "In paragraph A the writer says the question once seemed absurd but now calls it 'a fair question' that deserves a proper answer. This is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Schools that do not teach typing and online research skills are letting their pupils down.",
+                        "options": [],
+                        "evidence": "These are genuine skills, and any curriculum that ignores them is failing its students.",
+                        "explanation": "In paragraph B the writer agrees with Calloway that these are genuine skills and says a curriculum that ignores them is 'failing its students', which means letting them down."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most children find touch-typing harder to learn than handwriting.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B mentions teaching pupils to touch-type, and paragraph H says children should learn to type later. The writer never compares how difficult the two skills are to learn."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Petrossian was right to admit that something else might explain the improvement in spelling.",
+                        "options": [],
+                        "evidence": "His frankness is welcome.",
+                        "explanation": "In paragraph E Petrossian admits that hiring a reading specialist may also have helped. The writer calls this frankness 'welcome', so the writer approves of his honesty."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Children should be expected to produce neat, uniform handwriting.",
+                        "options": [],
+                        "evidence": "That approach confused handwriting with penmanship, treating appearance as the goal rather than fluency.",
+                        "explanation": "In paragraph F the writer criticises old classrooms where every pupil had to produce the same elegant script, saying they wrongly made appearance the goal. The writer cares about speed and legibility, not uniform neatness."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "All examinations should be taken on paper rather than on computers.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph G notes that many exams still require written answers, and paragraph A says pupils increasingly sit exams on computers. The writer never says whether exams ought to be on paper or on screen."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_sentence_endings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "become more willing to express themselves when allowed to type."
+                    },
+                    {
+                        "id": "B",
+                        "text": "helps them to recognise those letters more easily afterwards."
+                    },
+                    {
+                        "id": "C",
+                        "text": "remembered a similar number of facts to the other group."
+                    },
+                    {
+                        "id": "D",
+                        "text": "are forced to condense what they hear into a summary."
+                    },
+                    {
+                        "id": "E",
+                        "text": "stopped children from noticing their own spelling errors."
+                    },
+                    {
+                        "id": "F",
+                        "text": "treated how writing looks as more important than how fluently it flows."
+                    },
+                    {
+                        "id": "G",
+                        "text": "gave better explanations of the ideas in their own words."
+                    },
+                    {
+                        "id": "H",
+                        "text": "was the main cause of the rise in spelling scores."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Ruth Calloway has found that some pupils who struggle to write legibly",
+                        "options": [],
+                        "evidence": "some pupils who struggle to write legibly become far more willing to express themselves once they are allowed a keyboard",
+                        "explanation": "Paragraph B says that, in Calloway's experience, these pupils express themselves more readily once they can use a keyboard, which means typing."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Research suggests that, for young children, practising letter shapes by hand",
+                        "options": [],
+                        "evidence": "they tend to recognise those letters more readily afterwards than children who learn them by pressing keys",
+                        "explanation": "Paragraph C reports that children who form letters by hand recognise them more readily later than children who learn them by pressing keys."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "In Annelise Moreau's study, the pupils who used laptops",
+                        "options": [],
+                        "evidence": "the two groups remembered roughly the same number of facts",
+                        "explanation": "Paragraph D says both groups remembered roughly the same number of facts. It was the handwriting group, not the laptop group, that explained ideas better, so the ending about better explanations is wrong."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Moreau believes that people taking notes by hand",
+                        "options": [],
+                        "evidence": "cannot keep pace with a speaker, they are obliged to summarise",
+                        "explanation": "In paragraph D Moreau suggests that hand writers cannot keep up with the speaker, so they have to summarise what they hear."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Daniyar Petrossian thinks that automatic correction software",
+                        "options": [],
+                        "evidence": "automatic correction software fixed their errors before the children were even aware of them",
+                        "explanation": "Paragraph E says the software corrected mistakes before children knew they had made them. The ending about the main cause of rising scores is wrong because Petrossian says he cannot be sure what caused the improvement."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The writer criticises traditional cursive teaching because it",
+                        "options": [],
+                        "evidence": "treating appearance as the goal rather than fluency",
+                        "explanation": "Paragraph F says the old approach made appearance the goal instead of fluency, which means it valued how writing looks over how smoothly it is produced."
+                    }
+                ],
+                "instruction": "Complete each sentence with the correct ending, A–H, from the box below. There are more endings than sentences, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "joined-up letters"
+                        ],
+                        "prompt": "Calloway believes the hours used for practising ______ would be better spent on skills such as typing.",
+                        "options": [],
+                        "evidence": "the time spent drilling joined-up letters could be better used teaching pupils to touch-type",
+                        "explanation": "Paragraph B says Calloway thinks time spent 'drilling joined-up letters' could be better used for typing and other digital skills."
+                    },
+                    {
+                        "answer": [
+                            "finished symbol"
+                        ],
+                        "prompt": "Whatever movement the hand makes, pressing a key results in the same ______.",
+                        "options": [],
+                        "evidence": "a key produces an identical, finished symbol whatever the hand does",
+                        "explanation": "Paragraph C explains that a key always produces an identical, finished symbol, unlike drawing a letter stroke by stroke."
+                    },
+                    {
+                        "answer": [
+                            "preliminary"
+                        ],
+                        "prompt": "Moreau acknowledges that her sample was small and calls her results ______.",
+                        "options": [],
+                        "evidence": "She is careful to describe her results as preliminary, and her sample was small.",
+                        "explanation": "Paragraph D says Moreau carefully describes her results as preliminary, meaning early and not yet certain."
+                    },
+                    {
+                        "answer": [
+                            "tablets"
+                        ],
+                        "prompt": "Before reintroducing daily handwriting practice, Petrossian's school had depended largely on ______.",
+                        "options": [],
+                        "evidence": "after several years of relying mainly on tablets",
+                        "explanation": "Paragraph E says the school had relied mainly on tablets for several years before bringing back handwriting practice."
+                    },
+                    {
+                        "answer": [
+                            "attention"
+                        ],
+                        "prompt": "The writer's aim is for children to write so fluently that the physical effort no longer takes up their ______.",
+                        "options": [],
+                        "evidence": "the physical act no longer absorbs their attention",
+                        "explanation": "Paragraph F says what matters is writing well enough that the physical act no longer absorbs the child's attention, so the mind can focus on ideas."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Ruth Calloway",
+                "role": "Adviser to schools on digital learning who argues that typing skills deserve more classroom time",
+                "gender": "female"
+            },
+            {
+                "name": "Annelise Moreau",
+                "role": "Psychologist who compared handwritten and laptop note-taking among fourteen-year-olds",
+                "gender": "female"
+            },
+            {
+                "name": "Daniyar Petrossian",
+                "role": "Head of a primary school that reintroduced daily handwriting practice",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Walk into almost any secondary classroom today and you are likely to see more screens than exercise books. Pupils draft essays on laptops, submit homework through online platforms and, increasingly, sit examinations on computers. Against this background, a question that would once have seemed absurd is now asked seriously by parents and policymakers alike: why should children spend hundreds of hours learning to form letters with a pen when they will spend most of their adult lives typing? It is a fair question, and it deserves a better answer than nostalgia. My own view is that handwriting should remain a core part of early education, but for reasons that have little to do with tradition.",
+                "label": "A"
+            },
+            {
+                "text": "The case against handwriting is not foolish. Ruth Calloway, who advises schools on digital learning, points out that typing is faster for most fluent users, produces text that is easy to edit and share, and removes a barrier for children whose control of a pencil develops slowly. In her experience, some pupils who struggle to write legibly become far more willing to express themselves once they are allowed a keyboard. She argues that the time spent drilling joined-up letters could be better used teaching pupils to touch-type, search for information and judge the reliability of what they find online. These are genuine skills, and any curriculum that ignores them is failing its students. Calloway is no enemy of the pen; she simply believes its place in the timetable has become too large.",
+                "label": "B"
+            },
+            {
+                "text": "Yet her argument rests on an assumption that handwriting is simply a slower way of recording words. There is growing evidence that it is also a way of learning them. Researchers have found that when young children practise forming letters by hand, they tend to recognise those letters more readily afterwards than children who learn them by pressing keys. The likely explanation is that drawing a letter forces the learner to attend to its shape, stroke by stroke, whereas a key produces an identical, finished symbol whatever the hand does. In other words, the effort that makes handwriting slow may be precisely what makes it valuable.",
+                "label": "C"
+            },
+            {
+                "text": "A study by the psychologist Annelise Moreau points in a similar direction for older pupils. She asked two groups of fourteen-year-olds to take notes during a short lecture, one group writing by hand and the other using laptops. When tested a week later, the two groups remembered roughly the same number of facts, but the handwriting group performed noticeably better on questions that required them to explain ideas in their own words. Moreau suggests that because people writing by hand cannot keep pace with a speaker, they are obliged to summarise, and summarising requires them to process meaning rather than merely transcribe sound. She is careful to describe her results as preliminary, and her sample was small. Nonetheless, the study fits a pattern that many teachers have long observed informally.",
+                "label": "D"
+            },
+            {
+                "text": "One such teacher is Daniyar Petrossian, head of a primary school that reintroduced daily handwriting practice after several years of relying mainly on tablets. He had noticed, he says, that pupils' spelling was growing weaker, partly because automatic correction software fixed their errors before the children were even aware of them. After the change, spelling scores rose steadily over two years, although Petrossian admits that the school also hired an extra reading specialist during the same period, so he cannot be sure which change mattered more. His frankness is welcome. Debates about education are too often settled by anecdote presented as proof, and claims for handwriting deserve the same scrutiny as claims for any new technology.",
+                "label": "E"
+            },
+            {
+                "text": "None of this means schools should return to the classrooms of a century ago, where children were punished for untidy loops and every pupil was expected to produce the same elegant script. That approach confused handwriting with penmanship, treating appearance as the goal rather than fluency. What matters is that a child can write quickly and legibly enough that the physical act no longer absorbs their attention, leaving the mind free to concentrate on ideas. Once that point is reached, the decorative extras of traditional cursive add little, and the time saved can reasonably be given to typing.",
+                "label": "F"
+            },
+            {
+                "text": "There is also a practical argument that is rarely heard. Technology fails: batteries run flat, networks go down, and examinations in many subjects still require written answers. Teachers who have supervised a room of pupils whose laptops have suddenly lost power will know how quickly a lesson can collapse. A pupil who has never developed a comfortable, reasonably fast hand is at a disadvantage in all of these situations, through no fault of their own.",
+                "label": "G"
+            },
+            {
+                "text": "The real choice, then, is not between pen and keyboard but about sequence and balance. Children should learn to write by hand first, because it appears to support the early recognition of letters and words, and they should learn to type well later, because the adult world demands it. Treating the two as rivals has produced a debate that generates more heat than light. Treating them as partners would give children the best of both, and that, rather than a nostalgic defence of the fountain pen, is the case worth making.",
+                "label": "H"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "It is a fair question, and it deserves a better answer than nostalgia.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "These are genuine skills, and any curriculum that ignores them is failing its students.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "His frankness is welcome.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "That approach confused handwriting with penmanship, treating appearance as the goal rather than fluency.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "some pupils who struggle to write legibly become far more willing to express themselves once they are allowed a keyboard.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "they tend to recognise those letters more readily afterwards than children who learn them by pressing keys.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the two groups remembered roughly the same number of facts",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "they are obliged to summarise, and summarising requires them to process meaning",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "automatic correction software fixed their errors before the children were even aware of them.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "treating appearance as the goal rather than fluency.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the time spent drilling joined-up letters could be better used teaching pupils to touch-type",
+                "answer": [
+                    "joined-up letters"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a key produces an identical, finished symbol whatever the hand does.",
+                "answer": [
+                    "finished symbol"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "She is careful to describe her results as preliminary, and her sample was small.",
+                "answer": [
+                    "preliminary"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "after several years of relying mainly on tablets.",
+                "answer": [
+                    "tablets"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the physical act no longer absorbs their attention",
+                "answer": [
+                    "attention"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "It is a fair question, and it deserves a better answer than nostalgia.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "These are genuine skills, and any curriculum that ignores them is failing its students.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "he cannot be sure which change mattered more. His frankness is welcome.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "every pupil was expected to produce the same elegant script. That approach confused handwriting with penmanship, treating appearance as the goal rather than fluency.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "some pupils who struggle to write legibly become far more willing to express themselves once they are allowed a keyboard",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "when young children practise forming letters by hand, they tend to recognise those letters more readily afterwards",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the two groups remembered roughly the same number of facts",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "because people writing by hand cannot keep pace with a speaker, they are obliged to summarise",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "automatic correction software fixed their errors before the children were even aware of them",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "That approach confused handwriting with penmanship, treating appearance as the goal rather than fluency.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the time spent drilling joined-up letters could be better used",
+                "answer": [
+                    "joined-up letters"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a key produces an identical, finished symbol whatever the hand does",
+                "answer": [
+                    "finished symbol"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "She is careful to describe her results as preliminary",
+                "answer": [
+                    "preliminary"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "after several years of relying mainly on tablets",
+                "answer": [
+                    "tablets"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the physical act no longer absorbs their attention",
+                "answer": [
+                    "attention"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "It is a fair question, and it deserves a better answer than nostalgia.",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "These are genuine skills, and any curriculum that ignores them is failing its students.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "His frankness is welcome.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "every pupil was expected to produce the same elegant script. That approach confused handwriting with penmanship, treating appearance as the goal rather than fluency.",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "some pupils who struggle to write legibly become far more willing to express themselves once they are allowed a keyboard.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "when young children practise forming letters by hand, they tend to recognise those letters more readily afterwards",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the two groups remembered roughly the same number of facts",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "they are obliged to summarise",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "automatic correction software fixed their errors before the children were even aware of them.",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the time spent drilling joined-up letters could be better used",
+            "answer": [
+                "joined-up letters"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "a key produces an identical, finished symbol whatever the hand does.",
+            "answer": [
+                "finished symbol"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "She is careful to describe her results as preliminary, and her sample was small.",
+            "answer": [
+                "preliminary"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "after several years of relying mainly on tablets.",
+            "answer": [
+                "tablets"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 17,
+        "agreedFirst": 17,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Why the Pencil Still Matters\n\nA. Walk into almost any secondary classroom today and you are likely to see more screens than exercise books. Pupils draft essays on laptops, submit homework through online platforms and, increasingly, sit examinations on computers. Against this background, a question that would once have seemed absurd is now asked seriously by parents and policymakers alike: why should children spend hundreds of hours learning to form letters with a pen when they will spend most of their adult lives typing? It is a fair question, and it deserves a better answer than nostalgia. My own view is that handwriting should remain a core part of early education, but for reasons that have little to do with tradition.\n\nB. The case against handwriting is not foolish. Ruth Calloway, who advises schools on digital learning, points out that typing is faster for most fluent users, produces text that is easy to edit and share, and removes a barrier for children whose control of a pencil develops slowly. In her experience, some pupils who struggle to write legibly become far more willing to express themselves once they are allowed a keyboard. She argues that the time spent drilling joined-up letters could be better used teaching pupils to touch-type, search for information and judge the reliability of what they find online. These are genuine skills, and any curriculum that ignores them is failing its students. Calloway is no enemy of the pen; she simply believes its place in the timetable has become too large.\n\nC. Yet her argument rests on an assumption that handwriting is simply a slower way of recording words. There is growing evidence that it is also a way of learning them. Researchers have found that when young children practise forming letters by hand, they tend to recognise those letters more readily afterwards than children who learn them by pressing keys. The likely explanation is that drawing a letter forces the learner to attend to its shape, stroke by stroke, whereas a key produces an identical, finished symbol whatever the hand does. In other words, the effort that makes handwriting slow may be precisely what makes it valuable.\n\nD. A study by the psychologist Annelise Moreau points in a similar direction for older pupils. She asked two groups of fourteen-year-olds to take notes during a short lecture, one group writing by hand and the other using laptops. When tested a week later, the two groups remembered roughly the same number of facts, but the handwriting group performed noticeably better on questions that required them to explain ideas in their own words. Moreau suggests that because people writing by hand cannot keep pace with a speaker, they are obliged to summarise, and summarising requires them to process meaning rather than merely transcribe sound. She is careful to describe her results as preliminary, and her sample was small. Nonetheless, the study fits a pattern that many teachers have long observed informally.\n\nE. One such teacher is Daniyar Petrossian, head of a primary school that reintroduced daily handwriting practice after several years of relying mainly on tablets. He had noticed, he says, that pupils' spelling was growing weaker, partly because automatic correction software fixed their errors before the children were even aware of them. After the change, spelling scores rose steadily over two years, although Petrossian admits that the school also hired an extra reading specialist during the same period, so he cannot be sure which change mattered more. His frankness is welcome. Debates about education are too often settled by anecdote presented as proof, and claims for handwriting deserve the same scrutiny as claims for any new technology.\n\nF. None of this means schools should return to the classrooms of a century ago, where children were punished for untidy loops and every pupil was expected to produce the same elegant script. That approach confused handwriting with penmanship, treating appearance as the goal rather than fluency. What matters is that a child can write quickly and legibly enough that the physical act no longer absorbs their attention, leaving the mind free to concentrate on ideas. Once that point is reached, the decorative extras of traditional cursive add little, and the time saved can reasonably be given to typing.\n\nG. There is also a practical argument that is rarely heard. Technology fails: batteries run flat, networks go down, and examinations in many subjects still require written answers. Teachers who have supervised a room of pupils whose laptops have suddenly lost power will know how quickly a lesson can collapse. A pupil who has never developed a comfortable, reasonably fast hand is at a disadvantage in all of these situations, through no fault of their own.\n\nH. The real choice, then, is not between pen and keyboard but about sequence and balance. Children should learn to write by hand first, because it appears to support the early recognition of letters and words, and they should learn to type well later, because the adult world demands it. Treating the two as rivals has produced a debate that generates more heat than light. Treating them as partners would give children the best of both, and that, rather than a nostalgic defence of the fountain pen, is the case worth making.",
+        "title": "Why the Pencil Still Matters",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "The question of whether children still need to learn handwriting does not deserve serious consideration.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "It is a fair question, and it deserves a better answer than nostalgia.",
+                        "explanation": {
+                            "en": "In paragraph A the writer says the question once seemed absurd but now calls it 'a fair question' that deserves a proper answer. This is the opposite of the statement.",
+                            "ru": "В абзаце A автор говорит, что когда-то этот вопрос казался абсурдным, но теперь называет его «a fair question», который заслуживает серьёзного ответа. Это противоположно утверждению.",
+                            "uk": "В абзаці A автор каже, що колись це питання здавалося абсурдним, але тепер називає його «a fair question», яке заслуговує на належну відповідь. Це протилежне твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Schools that do not teach typing and online research skills are letting their pupils down.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "These are genuine skills, and any curriculum that ignores them is failing its students.",
+                        "explanation": {
+                            "en": "In paragraph B the writer agrees with Calloway that these are genuine skills and says a curriculum that ignores them is 'failing its students', which means letting them down.",
+                            "ru": "В абзаце B автор соглашается с Calloway, что это настоящие навыки, и говорит, что учебная программа, которая их игнорирует, «failing its students», то есть подводит учеников.",
+                            "uk": "В абзаці B автор погоджується з Calloway, що це справжні навички, і каже, що навчальна програма, яка їх ігнорує, «failing its students», тобто підводить учнів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most children find touch-typing harder to learn than handwriting.",
+                        "numbers": [
+                            3
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B mentions teaching pupils to touch-type, and paragraph H says children should learn to type later. The writer never compares how difficult the two skills are to learn.",
+                            "ru": "В абзаце B упоминается обучение учеников слепой печати, а в абзаце H говорится, что детям стоит учиться печатать позже. Но автор нигде не сравнивает, насколько трудно освоить эти два навыка.",
+                            "uk": "В абзаці B згадується навчання учнів сліпого друку, а в абзаці H сказано, що дітям варто вчитися друкувати пізніше. Але автор ніде не порівнює, наскільки важко опанувати ці дві навички."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Petrossian was right to admit that something else might explain the improvement in spelling.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "His frankness is welcome.",
+                        "explanation": {
+                            "en": "In paragraph E Petrossian admits that hiring a reading specialist may also have helped. The writer calls this frankness 'welcome', so the writer approves of his honesty.",
+                            "ru": "В абзаце E Petrossian признаёт, что помочь мог и нанятый специалист по чтению. Автор называет такую откровенность «welcome», значит, он одобряет честность Petrossian.",
+                            "uk": "В абзаці E Petrossian визнає, що допомогти міг і найнятий фахівець із читання. Автор називає таку відвертість «welcome», отже, він схвалює чесність Petrossian."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Children should be expected to produce neat, uniform handwriting.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "That approach confused handwriting with penmanship, treating appearance as the goal rather than fluency.",
+                        "explanation": {
+                            "en": "In paragraph F the writer criticises old classrooms where every pupil had to produce the same elegant script, saying they wrongly made appearance the goal. The writer cares about speed and legibility, not uniform neatness.",
+                            "ru": "В абзаце F автор критикует старые классы, где каждый ученик должен был выводить одинаковый красивый почерк, и говорит, что там ошибочно делали целью внешний вид. Для автора важны скорость и разборчивость, а не единообразная аккуратность.",
+                            "uk": "В абзаці F автор критикує старі класи, де кожен учень мусив виводити однаковий гарний почерк, і каже, що там помилково робили метою зовнішній вигляд. Для автора важливі швидкість і розбірливість, а не однакова охайність."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "matching_sentence_endings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "become more willing to express themselves when allowed to type."
+                    },
+                    {
+                        "id": "B",
+                        "text": "helps them to recognise those letters more easily afterwards."
+                    },
+                    {
+                        "id": "C",
+                        "text": "remembered a similar number of facts to the other group."
+                    },
+                    {
+                        "id": "D",
+                        "text": "are forced to condense what they hear into a summary."
+                    },
+                    {
+                        "id": "E",
+                        "text": "stopped children from noticing their own spelling errors."
+                    },
+                    {
+                        "id": "F",
+                        "text": "treated how writing looks as more important than how fluently it flows."
+                    },
+                    {
+                        "id": "G",
+                        "text": "gave better explanations of the ideas in their own words."
+                    },
+                    {
+                        "id": "H",
+                        "text": "was the main cause of the rise in spelling scores."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Ruth Calloway has found that some pupils who struggle to write legibly",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "some pupils who struggle to write legibly become far more willing to express themselves once they are allowed a keyboard",
+                        "explanation": {
+                            "en": "Paragraph B says that, in Calloway's experience, these pupils express themselves more readily once they can use a keyboard, which means typing.",
+                            "ru": "В абзаце B говорится, что, по опыту Calloway, эти ученики охотнее выражают свои мысли, когда могут пользоваться клавиатурой («keyboard»), то есть печатать.",
+                            "uk": "В абзаці B сказано, що, з досвіду Calloway, ці учні охочіше висловлюють свої думки, коли можуть користуватися клавіатурою («keyboard»), тобто друкувати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Research suggests that, for young children, practising letter shapes by hand",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "they tend to recognise those letters more readily afterwards than children who learn them by pressing keys",
+                        "explanation": {
+                            "en": "Paragraph C reports that children who form letters by hand recognise them more readily later than children who learn them by pressing keys.",
+                            "ru": "В абзаце C сообщается, что дети, которые выводят буквы от руки, потом узнают их легче, чем дети, которые учат буквы, нажимая на клавиши.",
+                            "uk": "В абзаці C повідомляється, що діти, які виводять літери від руки, згодом упізнають їх легше, ніж діти, які вчать літери, натискаючи на клавіші."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "In Annelise Moreau's study, the pupils who used laptops",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "the two groups remembered roughly the same number of facts",
+                        "explanation": {
+                            "en": "Paragraph D says both groups remembered roughly the same number of facts. It was the handwriting group, not the laptop group, that explained ideas better, so the ending about better explanations is wrong.",
+                            "ru": "В абзаце D говорится, что обе группы запомнили примерно одинаковое количество фактов. Лучше объясняли идеи те, кто писал от руки, а не те, кто работал на ноутбуках, поэтому окончание про более удачные объяснения неверно.",
+                            "uk": "В абзаці D сказано, що обидві групи запам'ятали приблизно однакову кількість фактів. Краще пояснювали ідеї ті, хто писав від руки, а не ті, хто працював на ноутбуках, тому закінчення про кращі пояснення неправильне."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Moreau believes that people taking notes by hand",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "cannot keep pace with a speaker, they are obliged to summarise",
+                        "explanation": {
+                            "en": "In paragraph D Moreau suggests that hand writers cannot keep up with the speaker, so they have to summarise what they hear.",
+                            "ru": "В абзаце D Moreau предполагает, что пишущие от руки не успевают за говорящим, поэтому им приходится кратко излагать услышанное своими словами.",
+                            "uk": "В абзаці D Moreau припускає, що ті, хто пише від руки, не встигають за мовцем, тому їм доводиться стисло переказувати почуте своїми словами."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Daniyar Petrossian thinks that automatic correction software",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "automatic correction software fixed their errors before the children were even aware of them",
+                        "explanation": {
+                            "en": "Paragraph E says the software corrected mistakes before children knew they had made them. The ending about the main cause of rising scores is wrong because Petrossian says he cannot be sure what caused the improvement.",
+                            "ru": "В абзаце E говорится, что программа исправляла ошибки ещё до того, как дети понимали, что их допустили. Окончание про главную причину роста результатов неверно, потому что Petrossian говорит, что не может точно знать, чем вызвано улучшение.",
+                            "uk": "В абзаці E сказано, що програма виправляла помилки ще до того, як діти усвідомлювали, що їх зробили. Закінчення про головну причину зростання результатів неправильне, бо Petrossian каже, що не може напевно знати, що спричинило покращення."
+                        }
+                    }
+                ],
+                "instruction": "Complete each sentence with the correct ending, A–H, from the box below. There are more endings than sentences, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "joined-up letters"
+                        ],
+                        "prompt": "Calloway believes the hours used for practising ______ would be better spent on skills such as typing.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "the time spent drilling joined-up letters could be better used teaching pupils to touch-type",
+                        "explanation": {
+                            "en": "Paragraph B says Calloway thinks time spent 'drilling joined-up letters' could be better used for typing and other digital skills.",
+                            "ru": "В абзаце B говорится, что, по мнению Calloway, время, которое уходит на «drilling joined-up letters», лучше было бы потратить на обучение печати («typing») и другим цифровым навыкам («digital skills»).",
+                            "uk": "В абзаці B сказано, що, на думку Calloway, час, який іде на «drilling joined-up letters», краще було б витратити на навчання друку («typing») та інших цифрових навичок («digital skills»)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "finished symbol"
+                        ],
+                        "prompt": "Whatever movement the hand makes, pressing a key results in the same ______.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "a key produces an identical, finished symbol whatever the hand does",
+                        "explanation": {
+                            "en": "Paragraph C explains that a key always produces an identical, finished symbol, unlike drawing a letter stroke by stroke.",
+                            "ru": "В абзаце C объясняется, что клавиша всегда даёт одинаковый («identical») готовый символ, в отличие от буквы, которую рисуют штрих за штрихом.",
+                            "uk": "В абзаці C пояснюється, що клавіша завжди дає однаковий («identical») готовий символ, на відміну від літери, яку малюють штрих за штрихом."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "preliminary"
+                        ],
+                        "prompt": "Moreau acknowledges that her sample was small and calls her results ______.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "She is careful to describe her results as preliminary, and her sample was small.",
+                        "explanation": {
+                            "en": "Paragraph D says Moreau carefully describes her results as preliminary, meaning early and not yet certain.",
+                            "ru": "В абзаце D говорится, что Moreau осторожно называет свои результаты предварительными («preliminary»), то есть ранними и пока не окончательными.",
+                            "uk": "В абзаці D сказано, що Moreau обережно називає свої результати попередніми («preliminary»), тобто ранніми й ще не остаточними."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "tablets"
+                        ],
+                        "prompt": "Before reintroducing daily handwriting practice, Petrossian's school had depended largely on ______.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "after several years of relying mainly on tablets",
+                        "explanation": {
+                            "en": "Paragraph E says the school had relied mainly on tablets for several years before bringing back handwriting practice.",
+                            "ru": "В абзаце E говорится, что несколько лет школа в основном полагалась на планшеты («tablets»), прежде чем вернуть занятия письмом от руки.",
+                            "uk": "В абзаці E сказано, що кілька років школа здебільшого покладалася на планшети («tablets»), перш ніж повернути заняття з письма від руки."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b2q1",
+        "7": "b2q2",
+        "8": "b2q3",
+        "9": "b2q4",
+        "10": "b2q5",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

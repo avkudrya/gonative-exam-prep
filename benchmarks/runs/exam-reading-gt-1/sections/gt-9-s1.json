@@ -1,0 +1,1082 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-9|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.292732,
+            "provider": "anthropic",
+            "outputTokens": 13564
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.013248,
+            "provider": "anthropic",
+            "outputTokens": 722
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01614,
+            "provider": "openai",
+            "outputTokens": 771
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01512,
+            "provider": "xai",
+            "outputTokens": 1471
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.08204,
+            "provider": "anthropic",
+            "outputTokens": 3755
+        }
+    ],
+    "draft": {
+        "title": "Summer Camps for Local Children",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a skill that children must prove they have before their place is confirmed",
+                        "options": [],
+                        "evidence": "every child must show that they can swim 25 metres unaided",
+                        "explanation": "Paragraph C says children must show they can swim 25 metres before a place is confirmed. No other camp asks children to prove an ability in advance."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a price reduction for families who send more than one child",
+                        "options": [],
+                        "evidence": "when two or more children from the same family attend, each additional child receives 15% off",
+                        "explanation": "Paragraph B gives 15% off for each extra child from the same family. The bursaries in paragraph E are for families on low incomes, not for families with several children."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "an event at which relatives can see what children have made",
+                        "options": [],
+                        "evidence": "parents, grandparents and friends are invited to a showcase where every participant presents and demonstrates their finished game",
+                        "explanation": "Paragraph D describes a showcase on the final Friday where family members watch participants present their games. Little Makers in paragraph B makes sculptures, but no event for families is mentioned."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a rule about phones that children must follow",
+                        "options": [],
+                        "evidence": "mobile phones are handed in on arrival and given back on the final morning",
+                        "explanation": "Paragraph A says children hand in their mobile phones when they arrive. Paragraph D mentions laptops, but only to say that they are provided."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "food that children take home at the end of the camp",
+                        "options": [],
+                        "evidence": "each child goes home with a basket of the salad leaves and herbs they have helped to grow",
+                        "explanation": "Paragraph E says each child leaves with salad leaves and herbs they grew. In paragraph A children cook meals, but they eat them at the camp."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "financial support for families who cannot easily afford the fee",
+                        "options": [],
+                        "evidence": "a limited number of bursaries covering the full fee are available for families on low incomes",
+                        "explanation": "Paragraph E offers bursaries to families on low incomes. The discount in paragraph B depends on how many children attend, not on income."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "transport provided at no charge",
+                        "options": [],
+                        "evidence": "a coach collects campers from the railway station at 8 am and brings them back at 5 pm, at no extra cost to families",
+                        "explanation": "Paragraph C describes a free coach between the railway station and the harbour. Paragraph B only tells parents to plan their own journey."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "the earlier career of the person who runs the camp",
+                        "options": [],
+                        "evidence": "Camp leader Lorenzo Kask spent fourteen years as a park ranger before opening the camp",
+                        "explanation": "Paragraph A says the camp leader used to be a park ranger. The people named in paragraphs C, D and E are described only in their present roles."
+                    }
+                ],
+                "instruction": "The reading passage has five paragraphs, A–E. Which paragraph contains the following information? Write the correct letter, A–E. NB You may use any letter more than once."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "canvas tents",
+                            "tents"
+                        ],
+                        "prompt": "At Hollybrook, campers spend their nights sleeping in ______.",
+                        "options": [],
+                        "evidence": "Campers sleep in canvas tents",
+                        "explanation": "Paragraph A says campers sleep in canvas tents. 'Spend their nights sleeping' restates 'sleep'."
+                    },
+                    {
+                        "answer": [
+                            "camp office"
+                        ],
+                        "prompt": "Parents can get news of their child by telephoning the ______ in the evening.",
+                        "options": [],
+                        "evidence": "Parents who want news of their child can ring the camp office between 7 and 8 pm",
+                        "explanation": "Paragraph A says parents can ring the camp office between 7 and 8 pm. Children's own phones are handed in, so parents cannot call them directly."
+                    },
+                    {
+                        "answer": [
+                            "packed lunch"
+                        ],
+                        "prompt": "Each day, children at Little Makers must bring a ______ as well as a water bottle.",
+                        "options": [],
+                        "evidence": "children need a packed lunch and a refillable water bottle every day",
+                        "explanation": "Paragraph B says lunch is not provided, so children need a packed lunch and a water bottle every day."
+                    },
+                    {
+                        "answer": [
+                            "25 metres",
+                            "twenty-five metres",
+                            "25 meters",
+                            "twenty-five meters"
+                        ],
+                        "prompt": "To get a place at Coastline, a child must be able to swim ______ without help.",
+                        "options": [],
+                        "evidence": "every child must show that they can swim 25 metres unaided",
+                        "explanation": "Paragraph C says children must swim 25 metres 'unaided', which means without help."
+                    },
+                    {
+                        "answer": [
+                            "railway station"
+                        ],
+                        "prompt": "Coastline campers can catch a free coach at the ______ each morning.",
+                        "options": [],
+                        "evidence": "a coach collects campers from the railway station at 8 am",
+                        "explanation": "Paragraph C says the coach collects campers from the railway station at 8 am, at no extra cost. The harbour is where the camp is held, not where the coach starts."
+                    },
+                    {
+                        "answer": [
+                            "video game"
+                        ],
+                        "prompt": "In the second week of Code and Create, each participant makes their own simple ______.",
+                        "options": [],
+                        "evidence": "they plan, design and test a simple video game of their own",
+                        "explanation": "Paragraph D says that in the second week participants design and test a simple video game of their own. The first week is for learning a programming language."
+                    },
+                    {
+                        "answer": [
+                            "wellington boots"
+                        ],
+                        "prompt": "Because of the mud at Green Thumbs, children should come in old clothes and ______.",
+                        "options": [],
+                        "evidence": "campers should wear old clothes and bring wellington boots",
+                        "explanation": "Paragraph E says mud is unavoidable, so campers need old clothes and wellington boots."
+                    },
+                    {
+                        "answer": [
+                            "30 April",
+                            "April 30",
+                            "30th April"
+                        ],
+                        "prompt": "Families hoping for a bursary must make sure their application arrives by ______.",
+                        "options": [],
+                        "evidence": "Applications for these must reach the farm office by 30 April",
+                        "explanation": "Paragraph E says bursary applications must reach the farm office by 30 April. Mid-May is when families hear the result, not the deadline."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Lorenzo Kask",
+                "role": "Leader of Hollybrook woodland camp and former park ranger",
+                "gender": "male"
+            },
+            {
+                "name": "Bernadette Okwu",
+                "role": "Instructor at Coastline Sailing Camp",
+                "gender": "unknown"
+            },
+            {
+                "name": "Ayesha Thornbury",
+                "role": "Coordinator of the Code and Create technology camp",
+                "gender": "unknown"
+            },
+            {
+                "name": "Fenella Draycott",
+                "role": "Farmer who runs Green Thumbs Farm Camp",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Set in a privately owned forest twenty minutes from town, Hollybrook offers week-long residential stays for children aged 11 to 15. Camp leader Lorenzo Kask spent fourteen years as a park ranger before opening the camp, and his knowledge of local wildlife shapes much of the programme. Campers sleep in canvas tents, learn to build shelters and light fires safely, and cook their own evening meal over an open flame. Families should pack a warm sleeping bag, a waterproof jacket and sturdy shoes; a full kit list is sent out after booking. To encourage children to focus on their surroundings, mobile phones are handed in on arrival and given back on the final morning. Parents who want news of their child can ring the camp office between 7 and 8 pm on any evening. A week costs £395, including all meals.",
+                "label": "A"
+            },
+            {
+                "text": "Little Makers is a day camp for younger children, aged 5 to 8, held in the main hall of the Elm Street Community Centre. Each week has a different theme, such as 'under the sea' or 'space travel', and children paint, model with clay and build large cardboard sculptures linked to that theme. Doors open at 8.30 am and the day finishes at 4 pm. Staff stay until 4.15, but after that a charge is added for every quarter of an hour, so please plan your journey accordingly. Lunch is not provided: children need a packed lunch and a refillable water bottle every day. Because several regular attendees have serious allergies, the centre is completely nut-free, and staff check lunchboxes each morning. A week costs £140, and when two or more children from the same family attend, each additional child receives 15% off.",
+                "label": "B"
+            },
+            {
+                "text": "Run by qualified instructors at Saltmere Harbour, Coastline Sailing Camp introduces children aged 9 to 13 to small-boat sailing over five consecutive days. Mornings are spent on the water in single-handed dinghies, while afternoons cover knots, weather and basic navigation in the clubhouse. Safety comes first: before a place is confirmed, every child must show that they can swim 25 metres unaided, either at the harbour pool or at a local leisure centre, which then signs a form. Life jackets and wetsuits are provided, so children only need a swimming costume, a towel and a hat. Since the harbour is some distance from town, a coach collects campers from the railway station at 8 am and brings them back at 5 pm, at no extra cost to families. Instructor Bernadette Okwu points out that sessions may move indoors if winds become too strong. The camp costs £260 per week.",
+                "label": "C"
+            },
+            {
+                "text": "Code and Create is a two-week technology camp for teenagers aged 12 to 16, based in the computer suite of Northgate Library. No previous experience is required. In the first week, participants learn the basics of a beginner-friendly programming language; in the second, they plan, design and test a simple video game of their own, working in pairs to give each other feedback. Laptops are provided, so there is no need to bring one from home. Coordinator Ayesha Thornbury explains that the aim is to show young people that technology is something they can create, not just consume. On the final Friday afternoon, parents, grandparents and friends are invited to a showcase where every participant presents and demonstrates their finished game. Places are limited to twenty, and the fee for the full fortnight is £310. Sessions run from 10 am to 3 pm.",
+                "label": "D"
+            },
+            {
+                "text": "Green Thumbs Farm Camp takes place at Mill Lane Farm, a working family farm on the edge of town, and is designed for children aged 7 to 11. Farmer Fenella Draycott and her team show campers how to feed the goats and chickens, collect eggs and look after the vegetable beds. Children plant seeds on their first day, and at the end of the week each child goes home with a basket of the salad leaves and herbs they have helped to grow. Mud is unavoidable, so campers should wear old clothes and bring wellington boots. The camp costs £175 a week, but a limited number of bursaries covering the full fee are available for families on low incomes. Applications for these must reach the farm office by 30 April, and successful families are informed in mid-May.",
+                "label": "E"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "every child must show that they can swim 25 metres unaided",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "when two or more children from the same family attend, each additional child receives 15% off",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "parents, grandparents and friends are invited to a showcase where every participant presents and demonstrates their finished game",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "mobile phones are handed in on arrival and given back on the final morning",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "each child goes home with a basket of the salad leaves and herbs they have helped to grow",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "a limited number of bursaries covering the full fee are available for families on low incomes",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "a coach collects campers from the railway station at 8 am and brings them back at 5 pm, at no extra cost to families",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Camp leader Lorenzo Kask spent fourteen years as a park ranger before opening the camp",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Campers sleep in canvas tents",
+                "answer": [
+                    "canvas tents"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Parents who want news of their child can ring the camp office between 7 and 8 pm",
+                "answer": [
+                    "camp office"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "children need a packed lunch and a refillable water bottle every day",
+                "answer": [
+                    "packed lunch"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "they can swim 25 metres unaided",
+                "answer": [
+                    "25 metres"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "a coach collects campers from the railway station at 8 am",
+                "answer": [
+                    "railway station"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "in the second, they plan, design and test a simple video game of their own",
+                "answer": [
+                    "video game"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "campers should wear old clothes and bring wellington boots",
+                "answer": [
+                    "wellington boots"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Applications for these must reach the farm office by 30 April",
+                "answer": [
+                    "30 April"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "before a place is confirmed, every child must show that they can swim 25 metres unaided",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "when two or more children from the same family attend, each additional child receives 15% off",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "On the final Friday afternoon, parents, grandparents and friends are invited to a showcase where every participant presents and demonstrates their finished game.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "mobile phones are handed in on arrival and given back on the final morning",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "at the end of the week each child goes home with a basket of the salad leaves and herbs they have helped to grow",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "a limited number of bursaries covering the full fee are available for families on low incomes",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "a coach collects campers from the railway station at 8 am and brings them back at 5 pm, at no extra cost to families",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Camp leader Lorenzo Kask spent fourteen years as a park ranger before opening the camp",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Campers sleep in canvas tents",
+                "answer": [
+                    "canvas tents"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Parents who want news of their child can ring the camp office between 7 and 8 pm",
+                "answer": [
+                    "camp office"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "children need a packed lunch and a refillable water bottle every day",
+                "answer": [
+                    "packed lunch"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "they can swim 25 metres unaided",
+                "answer": [
+                    "25 metres"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "a coach collects campers from the railway station at 8 am",
+                "answer": [
+                    "railway station"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "in the second, they plan, design and test a simple video game of their own",
+                "answer": [
+                    "video game"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "campers should wear old clothes and bring wellington boots",
+                "answer": [
+                    "wellington boots"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Applications for these must reach the farm office by 30 April",
+                "answer": [
+                    "30 April"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "before a place is confirmed, every child must show that they can swim 25 metres unaided",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "when two or more children from the same family attend, each additional child receives 15% off",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "parents, grandparents and friends are invited to a showcase where every participant presents and demonstrates their finished game",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "mobile phones are handed in on arrival and given back on the final morning",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "each child goes home with a basket of the salad leaves and herbs they have helped to grow",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "a limited number of bursaries covering the full fee are available for families on low incomes",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "a coach collects campers from the railway station at 8 am and brings them back at 5 pm, at no extra cost to families",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Campers sleep in canvas tents",
+            "answer": [
+                "canvas tents"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Parents who want news of their child can ring the camp office between 7 and 8 pm",
+            "answer": [
+                "camp office"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "children need a packed lunch and a refillable water bottle every day",
+            "answer": [
+                "packed lunch"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "every child must show that they can swim 25 metres unaided",
+            "answer": [
+                "25 metres"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "a coach collects campers from the railway station at 8 am",
+            "answer": [
+                "railway station"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "they plan, design and test a simple video game of their own",
+            "answer": [
+                "video game"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "campers should wear old clothes and bring wellington boots",
+            "answer": [
+                "wellington boots"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Summer Camps for Local Children\n\nA. Set in a privately owned forest twenty minutes from town, Hollybrook offers week-long residential stays for children aged 11 to 15. Camp leader Lorenzo Kask spent fourteen years as a park ranger before opening the camp, and his knowledge of local wildlife shapes much of the programme. Campers sleep in canvas tents, learn to build shelters and light fires safely, and cook their own evening meal over an open flame. Families should pack a warm sleeping bag, a waterproof jacket and sturdy shoes; a full kit list is sent out after booking. To encourage children to focus on their surroundings, mobile phones are handed in on arrival and given back on the final morning. Parents who want news of their child can ring the camp office between 7 and 8 pm on any evening. A week costs £395, including all meals.\n\nB. Little Makers is a day camp for younger children, aged 5 to 8, held in the main hall of the Elm Street Community Centre. Each week has a different theme, such as 'under the sea' or 'space travel', and children paint, model with clay and build large cardboard sculptures linked to that theme. Doors open at 8.30 am and the day finishes at 4 pm. Staff stay until 4.15, but after that a charge is added for every quarter of an hour, so please plan your journey accordingly. Lunch is not provided: children need a packed lunch and a refillable water bottle every day. Because several regular attendees have serious allergies, the centre is completely nut-free, and staff check lunchboxes each morning. A week costs £140, and when two or more children from the same family attend, each additional child receives 15% off.\n\nC. Run by qualified instructors at Saltmere Harbour, Coastline Sailing Camp introduces children aged 9 to 13 to small-boat sailing over five consecutive days. Mornings are spent on the water in single-handed dinghies, while afternoons cover knots, weather and basic navigation in the clubhouse. Safety comes first: before a place is confirmed, every child must show that they can swim 25 metres unaided, either at the harbour pool or at a local leisure centre, which then signs a form. Life jackets and wetsuits are provided, so children only need a swimming costume, a towel and a hat. Since the harbour is some distance from town, a coach collects campers from the railway station at 8 am and brings them back at 5 pm, at no extra cost to families. Instructor Bernadette Okwu points out that sessions may move indoors if winds become too strong. The camp costs £260 per week.\n\nD. Code and Create is a two-week technology camp for teenagers aged 12 to 16, based in the computer suite of Northgate Library. No previous experience is required. In the first week, participants learn the basics of a beginner-friendly programming language; in the second, they plan, design and test a simple video game of their own, working in pairs to give each other feedback. Laptops are provided, so there is no need to bring one from home. Coordinator Ayesha Thornbury explains that the aim is to show young people that technology is something they can create, not just consume. On the final Friday afternoon, parents, grandparents and friends are invited to a showcase where every participant presents and demonstrates their finished game. Places are limited to twenty, and the fee for the full fortnight is £310. Sessions run from 10 am to 3 pm.\n\nE. Green Thumbs Farm Camp takes place at Mill Lane Farm, a working family farm on the edge of town, and is designed for children aged 7 to 11. Farmer Fenella Draycott and her team show campers how to feed the goats and chickens, collect eggs and look after the vegetable beds. Children plant seeds on their first day, and at the end of the week each child goes home with a basket of the salad leaves and herbs they have helped to grow. Mud is unavoidable, so campers should wear old clothes and bring wellington boots. The camp costs £175 a week, but a limited number of bursaries covering the full fee are available for families on low incomes. Applications for these must reach the farm office by 30 April, and successful families are informed in mid-May.",
+        "title": "Summer Camps for Local Children",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a skill that children must prove they have before their place is confirmed",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "every child must show that they can swim 25 metres unaided",
+                        "explanation": {
+                            "en": "Paragraph C says children must show they can swim 25 metres before a place is confirmed. No other camp asks children to prove an ability in advance.",
+                            "ru": "В абзаце C сказано, что дети должны показать, что умеют проплыть 25 метров, и только после этого место подтверждается. Ни один другой лагерь не требует от детей заранее подтвердить какое-либо умение.",
+                            "uk": "В абзаці C сказано, що діти мають показати, що вміють пропливти 25 метрів, і лише після цього місце підтверджують. Жоден інший табір не вимагає від дітей заздалегідь підтвердити якесь уміння."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a price reduction for families who send more than one child",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "when two or more children from the same family attend, each additional child receives 15% off",
+                        "explanation": {
+                            "en": "Paragraph B gives 15% off for each extra child from the same family. The bursaries in paragraph E are for families on low incomes, not for families with several children.",
+                            "ru": "В абзаце B дают скидку 15% на каждого следующего ребёнка из той же семьи. Стипендии из абзаца E предназначены для семей с низким доходом, а не для многодетных семей.",
+                            "uk": "В абзаці B дають знижку 15% на кожну наступну дитину з тієї ж родини. Стипендії з абзацу E призначені для родин із низьким доходом, а не для багатодітних родин."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "an event at which relatives can see what children have made",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "parents, grandparents and friends are invited to a showcase where every participant presents and demonstrates their finished game",
+                        "explanation": {
+                            "en": "Paragraph D describes a showcase on the final Friday where family members watch participants present their games. Little Makers in paragraph B makes sculptures, but no event for families is mentioned.",
+                            "ru": "В абзаце D описан показ в последнюю пятницу, на котором родственники смотрят, как участники представляют свои игры. В лагере «Little Makers» из абзаца B дети делают скульптуры, но никакого мероприятия для семей там не упоминается.",
+                            "uk": "В абзаці D описано показ в останню п'ятницю, на якому родичі дивляться, як учасники представляють свої ігри. У таборі «Little Makers» з абзацу B діти роблять скульптури, але жодного заходу для родин там не згадано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a rule about phones that children must follow",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "mobile phones are handed in on arrival and given back on the final morning",
+                        "explanation": {
+                            "en": "Paragraph A says children hand in their mobile phones when they arrive. Paragraph D mentions laptops, but only to say that they are provided.",
+                            "ru": "В абзаце A сказано, что дети по приезде сдают мобильные телефоны. В абзаце D ноутбуки упоминаются, но только в том смысле, что их выдают.",
+                            "uk": "В абзаці A сказано, що діти після приїзду здають мобільні телефони. В абзаці D ноутбуки згадано, але лише в тому сенсі, що їх видають."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "food that children take home at the end of the camp",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "each child goes home with a basket of the salad leaves and herbs they have helped to grow",
+                        "explanation": {
+                            "en": "Paragraph E says each child leaves with salad leaves and herbs they grew. In paragraph A children cook meals, but they eat them at the camp.",
+                            "ru": "В абзаце E сказано, что каждый ребёнок уезжает с листьями салата и травами, которые вырастил сам. В абзаце A дети готовят еду, но съедают её в лагере.",
+                            "uk": "В абзаці E сказано, що кожна дитина їде додому з листям салату й травами, які виростила сама. В абзаці A діти готують їжу, але з'їдають її в таборі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "financial support for families who cannot easily afford the fee",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "a limited number of bursaries covering the full fee are available for families on low incomes",
+                        "explanation": {
+                            "en": "Paragraph E offers bursaries to families on low incomes. The discount in paragraph B depends on how many children attend, not on income.",
+                            "ru": "В абзаце E семьям с низким доходом предлагают стипендии. Скидка из абзаца B зависит от количества детей, а не от дохода.",
+                            "uk": "В абзаці E родинам із низьким доходом пропонують стипендії. Знижка з абзацу B залежить від кількості дітей, а не від доходу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "transport provided at no charge",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "a coach collects campers from the railway station at 8 am and brings them back at 5 pm, at no extra cost to families",
+                        "explanation": {
+                            "en": "Paragraph C describes a free coach between the railway station and the harbour. Paragraph B only tells parents to plan their own journey.",
+                            "ru": "В абзаце C описан бесплатный автобус между железнодорожным вокзалом и гаванью. В абзаце B родителям лишь советуют самим спланировать дорогу.",
+                            "uk": "В абзаці C описано безкоштовний автобус між залізничним вокзалом і гаванню. В абзаці B батькам лише радять самим спланувати дорогу."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has five paragraphs, A–E. Which paragraph contains the following information? Write the correct letter, A–E. NB You may use any letter more than once."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "canvas tents",
+                            "tents"
+                        ],
+                        "prompt": "At Hollybrook, campers spend their nights sleeping in ______.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Campers sleep in canvas tents",
+                        "explanation": {
+                            "en": "Paragraph A says campers sleep in canvas tents. 'Spend their nights sleeping' restates 'sleep'.",
+                            "ru": "В абзаце A сказано, что участники спят в «canvas tents». «Spend their nights sleeping» — это перефразировка слова «sleep».",
+                            "uk": "В абзаці A сказано, що учасники сплять у «canvas tents». «Spend their nights sleeping» — це перефразування слова «sleep»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "camp office"
+                        ],
+                        "prompt": "Parents can get news of their child by telephoning the ______ in the evening.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "Parents who want news of their child can ring the camp office between 7 and 8 pm",
+                        "explanation": {
+                            "en": "Paragraph A says parents can ring the camp office between 7 and 8 pm. Children's own phones are handed in, so parents cannot call them directly.",
+                            "ru": "В абзаце A сказано, что родители могут звонить в «camp office» с 7 до 8 вечера. Свои телефоны дети сдают, поэтому позвонить им напрямую родители не могут.",
+                            "uk": "В абзаці A сказано, що батьки можуть телефонувати до «camp office» з 7 до 8 вечора. Свої телефони діти здають, тому зателефонувати їм напряму батьки не можуть."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "packed lunch"
+                        ],
+                        "prompt": "Each day, children at Little Makers must bring a ______ as well as a water bottle.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "children need a packed lunch and a refillable water bottle every day",
+                        "explanation": {
+                            "en": "Paragraph B says lunch is not provided, so children need a packed lunch and a water bottle every day.",
+                            "ru": "В абзаце B сказано, что обед не предоставляется, поэтому каждый день детям нужны «packed lunch» и «water bottle».",
+                            "uk": "В абзаці B сказано, що обід не надають, тому щодня дітям потрібні «packed lunch» і «water bottle»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "25 metres",
+                            "twenty-five metres",
+                            "25 meters",
+                            "twenty-five meters"
+                        ],
+                        "prompt": "To get a place at Coastline, a child must be able to swim ______ without help.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "every child must show that they can swim 25 metres unaided",
+                        "explanation": {
+                            "en": "Paragraph C says children must swim 25 metres 'unaided', which means without help.",
+                            "ru": "В абзаце C сказано, что дети должны проплыть 25 метров «unaided», то есть без посторонней помощи.",
+                            "uk": "В абзаці C сказано, що діти мають пропливти 25 метрів «unaided», тобто без сторонньої допомоги."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "railway station"
+                        ],
+                        "prompt": "Coastline campers can catch a free coach at the ______ each morning.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "a coach collects campers from the railway station at 8 am",
+                        "explanation": {
+                            "en": "Paragraph C says the coach collects campers from the railway station at 8 am, at no extra cost. The harbour is where the camp is held, not where the coach starts.",
+                            "ru": "В абзаце C сказано, что автобус забирает участников с «railway station» в 8 утра без дополнительной платы. В «harbour» проходит сам лагерь, а не начинается маршрут автобуса.",
+                            "uk": "В абзаці C сказано, що автобус забирає учасників з «railway station» о 8 ранку без додаткової плати. У «harbour» відбувається сам табір, а не починається маршрут автобуса."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "video game"
+                        ],
+                        "prompt": "In the second week of Code and Create, each participant makes their own simple ______.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "they plan, design and test a simple video game of their own",
+                        "explanation": {
+                            "en": "Paragraph D says that in the second week participants design and test a simple video game of their own. The first week is for learning a programming language.",
+                            "ru": "В абзаце D сказано, что на второй неделе участники придумывают и тестируют собственную простую «video game». Первая неделя отводится на изучение языка программирования.",
+                            "uk": "В абзаці D сказано, що на другому тижні учасники розробляють і тестують власну просту «video game». Перший тиждень відведено на вивчення мови програмування."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "wellington boots"
+                        ],
+                        "prompt": "Because of the mud at Green Thumbs, children should come in old clothes and ______.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "campers should wear old clothes and bring wellington boots",
+                        "explanation": {
+                            "en": "Paragraph E says mud is unavoidable, so campers need old clothes and wellington boots.",
+                            "ru": "В абзаце E сказано, что без грязи не обойтись, поэтому участникам нужны «old clothes» и «wellington boots».",
+                            "uk": "В абзаці E сказано, що без бруду не обійтися, тому учасникам потрібні «old clothes» і «wellington boots»."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6",
+        "14": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

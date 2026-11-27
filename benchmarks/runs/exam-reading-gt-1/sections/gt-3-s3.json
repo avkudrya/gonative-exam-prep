@@ -1,0 +1,1206 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-3|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.285132,
+            "provider": "anthropic",
+            "outputTokens": 13423
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.015092,
+            "provider": "anthropic",
+            "outputTokens": 668
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018763,
+            "provider": "openai",
+            "outputTokens": 818
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.0214,
+            "provider": "xai",
+            "outputTokens": 2297
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.111752,
+            "provider": "anthropic",
+            "outputTokens": 5233
+        }
+    ],
+    "draft": {
+        "title": "Back on the Street",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Why new traders soon move into permanent shops"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Research suggesting that neighbouring businesses gain too"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "How changing habits emptied the markets"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Shopping as an outing rather than a chore"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Rules introduced to reduce noise and litter"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "An unexpected return for a fading tradition"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Fears that markets are leaving local people behind"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "A cheap way to try out a business idea"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "The online threat to face-to-face selling"
+                    },
+                    {
+                        "id": "x",
+                        "text": "One organiser's formula for keeping a market fair"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "street markets are enjoying a remarkable second life",
+                        "explanation": "Paragraph A describes a busy market and explains that markets, once expected to disappear, are now coming back. The whole paragraph is about this surprising return."
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "The decline had several causes.",
+                        "explanation": "Paragraph B lists the reasons markets lost customers: cars, supermarkets, fridges and out-of-town shopping centres. These were all changes in the way people lived and shopped."
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "buying in person has become less of a necessity and more of an outing",
+                        "explanation": "Paragraph C explains that people now visit markets for the atmosphere and conversation, not just to buy food. The internet is not described as a threat here; it has made in-person shopping more of a leisure activity."
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "Markets have also become attractive to people starting a business.",
+                        "explanation": "Paragraph D shows that a market pitch is cheaper than a shop, and Ayumi Kerrigan used hers to test her dumplings. Although she later opened a café, she still keeps her stall, so the heading about moving into shops does not fit."
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "The benefits may extend beyond the stalls themselves.",
+                        "explanation": "Paragraph E describes Viktor Szabo's study, which found that shops and cafés near the market had more visitors on market days."
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "Not everyone welcomes the revival, however.",
+                        "explanation": "Paragraph F explains that some markets now aim at visitors, so older traders and low-income local customers are pushed out. Noise and litter are mentioned only as one detail, and no rules are described."
+                    },
+                    {
+                        "answer": [
+                            "x"
+                        ],
+                        "prompt": "Paragraph G",
+                        "options": [],
+                        "evidence": "thinks the answer lies in careful planning",
+                        "explanation": "Paragraph G describes how Graciela Moutinho runs her market: cheaper pitches for essential goods and monthly meetings with residents, so the market stays fair to local people."
+                    }
+                ],
+                "instruction": "The passage has seven paragraphs, A–G. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to paragraph B, how did home refrigerators affect street markets?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They took away the need to buy fresh food so often."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They made it harder for traders to keep food fresh."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They encouraged families to shop at out-of-town centres."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They made supermarket food cheaper than market food."
+                            }
+                        ],
+                        "evidence": "fresh food no longer had to be bought every day or two",
+                        "explanation": "Paragraph B says that with fridges and freezers people did not need to buy fresh food every day or two, so markets lost an advantage. Out-of-town centres are mentioned in the next sentence, but not as a result of fridges."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What point does the writer make about the internet?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It has given market traders a new way to reach customers."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It has turned shopping in person into more of a leisure activity."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It has made shoppers less interested in where food comes from."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It has reduced the number of people who visit markets each week."
+                            }
+                        ],
+                        "evidence": "buying in person has become less of a necessity and more of an outing",
+                        "explanation": "Paragraph C says that because almost anything can be ordered online, going to shop in person has become an outing. The paragraph actually says interest in where food comes from is growing, not falling."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Why does Ayumi Kerrigan still run her market stall?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It is cheaper to run than her café."
+                            },
+                            {
+                                "id": "B",
+                                "text": "She is still unsure which dishes will sell."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It is how many people first find her food."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Her café is open only during the week."
+                            }
+                        ],
+                        "evidence": "partly because it is where new customers first discover her food",
+                        "explanation": "Paragraph D says she keeps the stall partly because new customers discover her food there. Testing which dishes sell was why she started the stall, not why she keeps it now."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What does Viktor Szabo say about his own study?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Its results might not apply to a new market in a weaker area."
+                            },
+                            {
+                                "id": "B",
+                                "text": "It proves that markets always help the shops in a high street."
+                            },
+                            {
+                                "id": "C",
+                                "text": "It shows that cafés gain more from markets than other shops."
+                            },
+                            {
+                                "id": "D",
+                                "text": "It was too short to show real changes in visitor numbers."
+                            }
+                        ],
+                        "evidence": "A new market in a struggling area might not have the same effect",
+                        "explanation": "In paragraph E, Szabo warns that he studied only one town with an established market, and a new market in a struggling area might be different. He is careful not to claim that markets always help shops."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "railway yard"
+                        ],
+                        "prompt": "Graciela Moutinho runs her weekly market on land that was once a ______.",
+                        "options": [],
+                        "evidence": "manages a weekly market in a former railway yard",
+                        "explanation": "Paragraph G says her market is in a 'former railway yard', which means the land was once a railway yard."
+                    },
+                    {
+                        "answer": [
+                            "essentials"
+                        ],
+                        "prompt": "Roughly a third of the pitches go to stalls that sell everyday ______, and these traders pay less.",
+                        "options": [],
+                        "evidence": "reserves around a third of its pitches for stalls selling everyday essentials",
+                        "explanation": "Paragraph G says about a third of the pitches are kept for stalls selling everyday essentials, and these traders pay a reduced fee."
+                    },
+                    {
+                        "answer": [
+                            "food stands"
+                        ],
+                        "prompt": "The lower fees are funded in part by charging more to the trendier ______.",
+                        "options": [],
+                        "evidence": "higher charges for the more fashionable food stands",
+                        "explanation": "Paragraph G explains that the reduced fees are partly covered by higher charges for the 'more fashionable food stands'; 'trendier' means the same as 'more fashionable'."
+                    },
+                    {
+                        "answer": [
+                            "monthly meeting"
+                        ],
+                        "prompt": "Residents have the chance to raise problems directly with stallholders at a ______.",
+                        "options": [],
+                        "evidence": "holds a monthly meeting at which residents can raise problems directly with stallholders",
+                        "explanation": "Paragraph G says Moutinho holds a monthly meeting where local residents can talk to stallholders about problems."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Ayumi Kerrigan",
+                "role": "market trader who sells home-made dumplings and later opened a café",
+                "gender": "female"
+            },
+            {
+                "name": "Viktor Szabo",
+                "role": "urban economist who studied the effect of a market on nearby shops",
+                "gender": "male"
+            },
+            {
+                "name": "Graciela Moutinho",
+                "role": "manager of a weekly market in a former railway yard",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "On a Saturday morning in a mid-sized town, a car park that sits empty for most of the week is transformed. By eight o'clock, rows of striped awnings have gone up, the smell of fresh bread and frying onions drifts between the stalls, and a steady crowd is moving slowly from one table to the next. Scenes like this were becoming rare a generation ago, when many people assumed that the outdoor market was a relic that would quietly disappear. Instead, in towns and cities across many countries, street markets are enjoying a remarkable second life, and they are attracting customers who would once never have thought of shopping outdoors.",
+                "label": "A"
+            },
+            {
+                "text": "The decline had several causes. As car ownership spread in the second half of the twentieth century, families began doing one large weekly shop at supermarkets, where everything they needed could be found under one roof and parking was free. Home refrigerators and freezers meant that fresh food no longer had to be bought every day or two, which removed one of the market's great advantages. Out-of-town shopping centres drew trade away from high streets more generally, and as customer numbers fell, many traders retired without anyone to replace them. In some places the market shrank to a handful of stalls selling cheap household goods, which only reinforced the impression that it belonged to the past.",
+                "label": "B"
+            },
+            {
+                "text": "So what has changed? Part of the answer lies, perhaps surprisingly, with the internet. When almost anything can be ordered online and delivered the next day, buying in person has become less of a necessity and more of an outing. People increasingly go to a market not simply to collect groceries but to enjoy the atmosphere, try something unfamiliar and talk to the person who grew the vegetables or baked the cake. Growing interest in where food comes from has helped too: many shoppers like being able to ask how a cheese was made or why the tomatoes look different from those in a supermarket. For them, the conversation is part of what they are paying for.",
+                "label": "C"
+            },
+            {
+                "text": "Markets have also become attractive to people starting a business. Renting a shop means signing a lease, fitting out the premises and paying bills long before the first customer walks in, whereas a market pitch can often be hired for a single day. Ayumi Kerrigan began selling home-made dumplings from a folding table four years ago. 'I had no idea whether anyone would want them,' she says. 'The stall let me experiment cheaply. If a filling didn't sell, I simply stopped making it the following week.' Within two years she had a loyal following and enough savings to open a small café. She still keeps her stall, though, partly because it is where new customers first discover her food.",
+                "label": "D"
+            },
+            {
+                "text": "The benefits may extend beyond the stalls themselves. Viktor Szabo, an urban economist, spent a year counting pedestrians in one town centre and interviewing nearby shopkeepers. He found that on market days, cafés and shops within a few streets of the market reported noticeably more visitors than on other days of the week, and several owners said they now timed special offers to coincide with the market. Szabo is careful not to overstate his findings. 'This was one town with a well-established market,' he points out. 'A new market in a struggling area might not have the same effect, and it could even compete with existing shops.' Still, he believes his results challenge the idea that markets simply take trade away from the high street.",
+                "label": "E"
+            },
+            {
+                "text": "Not everyone welcomes the revival, however. In some cities, markets that once sold inexpensive fruit, vegetables and clothing have been redeveloped as 'food halls' or weekend attractions aimed at visitors, with pitch fees to match. Long-standing traders who relied on small profit margins have found themselves unable to afford a place, and some of their regular customers, often older or on low incomes, complain that there is now little they can buy. Residents living close to busy markets have raised other concerns, such as noise, litter and early-morning deliveries. Critics argue that a market which no longer serves its own neighbourhood has lost something important, however popular it may be.",
+                "label": "F"
+            },
+            {
+                "text": "Graciela Moutinho, who manages a weekly market in a former railway yard, thinks the answer lies in careful planning. Her market reserves around a third of its pitches for stalls selling everyday essentials, and these traders pay a reduced fee, which is partly covered by higher charges for the more fashionable food stands. She also holds a monthly meeting at which residents can raise problems directly with stallholders. 'A good market should feel like it belongs to the people who live nearby,' she says. 'Visitors are welcome, but if we only cater for them, we will end up as just another tourist attraction.' It is a balance that many organisers are still trying to find, but the crowds filling car parks every weekend suggest it is worth the effort.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "street markets are enjoying a remarkable second life, and they are attracting customers who would once never have thought of shopping outdoors",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "families began doing one large weekly shop at supermarkets",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "buying in person has become less of a necessity and more of an outing",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The stall let me experiment cheaply.",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "cafés and shops within a few streets of the market reported noticeably more visitors than on other days of the week",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Critics argue that a market which no longer serves its own neighbourhood has lost something important",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Her market reserves around a third of its pitches for stalls selling everyday essentials, and these traders pay a reduced fee",
+                "answer": [
+                    "x"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Home refrigerators and freezers meant that fresh food no longer had to be bought every day or two",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "buying in person has become less of a necessity and more of an outing",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "partly because it is where new customers first discover her food",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "A new market in a struggling area might not have the same effect",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a weekly market in a former railway yard",
+                "answer": [
+                    "railway yard"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "stalls selling everyday essentials",
+                "answer": [
+                    "essentials"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "higher charges for the more fashionable food stands",
+                "answer": [
+                    "food stands"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "She also holds a monthly meeting at which residents can raise problems directly with stallholders",
+                "answer": [
+                    "monthly meeting"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "street markets are enjoying a remarkable second life",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The decline had several causes. As car ownership spread... Home refrigerators and freezers meant that fresh food no longer had to be bought every day or two",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "buying in person has become less of a necessity and more of an outing",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a market pitch can often be hired for a single day... 'The stall let me experiment cheaply.'",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "on market days, cafés and shops within a few streets of the market reported noticeably more visitors",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "some of their regular customers, often older or on low incomes, complain that there is now little they can buy",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Her market reserves around a third of its pitches for stalls selling everyday essentials... residents can raise problems directly with stallholders",
+                "answer": [
+                    "x"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Home refrigerators and freezers meant that fresh food no longer had to be bought every day or two",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "When almost anything can be ordered online... buying in person has become less of a necessity and more of an outing",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "She still keeps her stall, though, partly because it is where new customers first discover her food.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "A new market in a struggling area might not have the same effect",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a weekly market in a former railway yard",
+                "answer": [
+                    "railway yard"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "stalls selling everyday essentials",
+                "answer": [
+                    "essentials"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "higher charges for the more fashionable food stands",
+                "answer": [
+                    "food stands"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "She also holds a monthly meeting at which residents can raise problems directly with stallholders",
+                "answer": [
+                    "monthly meeting"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "many people assumed that the outdoor market was a relic that would quietly disappear. Instead... street markets are enjoying a remarkable second life",
+            "answer": [
+                "vi"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "The decline had several causes. As car ownership spread... families began doing one large weekly shop at supermarkets",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "buying in person has become less of a necessity and more of an outing",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "a market pitch can often be hired for a single day... The stall let me experiment cheaply",
+            "answer": [
+                "viii"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "on market days, cafés and shops within a few streets of the market reported noticeably more visitors",
+            "answer": [
+                "ii"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "a market which no longer serves its own neighbourhood has lost something important",
+            "answer": [
+                "vii"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "Graciela Moutinho... thinks the answer lies in careful planning. Her market reserves around a third of its pitches",
+            "answer": [
+                "x"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Home refrigerators and freezers meant that fresh food no longer had to be bought every day or two",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "buying in person has become less of a necessity and more of an outing",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "it is where new customers first discover her food",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "a weekly market in a former railway yard",
+            "answer": [
+                "railway yard"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "stalls selling everyday essentials",
+            "answer": [
+                "essentials"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "higher charges for the more fashionable food stands",
+            "answer": [
+                "food stands"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Back on the Street\n\nA. On a Saturday morning in a mid-sized town, a car park that sits empty for most of the week is transformed. By eight o'clock, rows of striped awnings have gone up, the smell of fresh bread and frying onions drifts between the stalls, and a steady crowd is moving slowly from one table to the next. Scenes like this were becoming rare a generation ago, when many people assumed that the outdoor market was a relic that would quietly disappear. Instead, in towns and cities across many countries, street markets are enjoying a remarkable second life, and they are attracting customers who would once never have thought of shopping outdoors.\n\nB. The decline had several causes. As car ownership spread in the second half of the twentieth century, families began doing one large weekly shop at supermarkets, where everything they needed could be found under one roof and parking was free. Home refrigerators and freezers meant that fresh food no longer had to be bought every day or two, which removed one of the market's great advantages. Out-of-town shopping centres drew trade away from high streets more generally, and as customer numbers fell, many traders retired without anyone to replace them. In some places the market shrank to a handful of stalls selling cheap household goods, which only reinforced the impression that it belonged to the past.\n\nC. So what has changed? Part of the answer lies, perhaps surprisingly, with the internet. When almost anything can be ordered online and delivered the next day, buying in person has become less of a necessity and more of an outing. People increasingly go to a market not simply to collect groceries but to enjoy the atmosphere, try something unfamiliar and talk to the person who grew the vegetables or baked the cake. Growing interest in where food comes from has helped too: many shoppers like being able to ask how a cheese was made or why the tomatoes look different from those in a supermarket. For them, the conversation is part of what they are paying for.\n\nD. Markets have also become attractive to people starting a business. Renting a shop means signing a lease, fitting out the premises and paying bills long before the first customer walks in, whereas a market pitch can often be hired for a single day. Ayumi Kerrigan began selling home-made dumplings from a folding table four years ago. 'I had no idea whether anyone would want them,' she says. 'The stall let me experiment cheaply. If a filling didn't sell, I simply stopped making it the following week.' Within two years she had a loyal following and enough savings to open a small café. She still keeps her stall, though, partly because it is where new customers first discover her food.\n\nE. The benefits may extend beyond the stalls themselves. Viktor Szabo, an urban economist, spent a year counting pedestrians in one town centre and interviewing nearby shopkeepers. He found that on market days, cafés and shops within a few streets of the market reported noticeably more visitors than on other days of the week, and several owners said they now timed special offers to coincide with the market. Szabo is careful not to overstate his findings. 'This was one town with a well-established market,' he points out. 'A new market in a struggling area might not have the same effect, and it could even compete with existing shops.' Still, he believes his results challenge the idea that markets simply take trade away from the high street.\n\nF. Not everyone welcomes the revival, however. In some cities, markets that once sold inexpensive fruit, vegetables and clothing have been redeveloped as 'food halls' or weekend attractions aimed at visitors, with pitch fees to match. Long-standing traders who relied on small profit margins have found themselves unable to afford a place, and some of their regular customers, often older or on low incomes, complain that there is now little they can buy. Residents living close to busy markets have raised other concerns, such as noise, litter and early-morning deliveries. Critics argue that a market which no longer serves its own neighbourhood has lost something important, however popular it may be.\n\nG. Graciela Moutinho, who manages a weekly market in a former railway yard, thinks the answer lies in careful planning. Her market reserves around a third of its pitches for stalls selling everyday essentials, and these traders pay a reduced fee, which is partly covered by higher charges for the more fashionable food stands. She also holds a monthly meeting at which residents can raise problems directly with stallholders. 'A good market should feel like it belongs to the people who live nearby,' she says. 'Visitors are welcome, but if we only cater for them, we will end up as just another tourist attraction.' It is a balance that many organisers are still trying to find, but the crowds filling car parks every weekend suggest it is worth the effort.",
+        "title": "Back on the Street",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Why new traders soon move into permanent shops"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Research suggesting that neighbouring businesses gain too"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "How changing habits emptied the markets"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "Shopping as an outing rather than a chore"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Rules introduced to reduce noise and litter"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "An unexpected return for a fading tradition"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Fears that markets are leaving local people behind"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "A cheap way to try out a business idea"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "The online threat to face-to-face selling"
+                    },
+                    {
+                        "id": "x",
+                        "text": "One organiser's formula for keeping a market fair"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "street markets are enjoying a remarkable second life",
+                        "explanation": {
+                            "en": "Paragraph A describes a busy market and explains that markets, once expected to disappear, are now coming back. The whole paragraph is about this surprising return.",
+                            "ru": "В абзаце A описан оживлённый рынок и объясняется, что рынки, которым когда-то предрекали исчезновение, теперь возвращаются. Весь абзац посвящён этому неожиданному возрождению.",
+                            "uk": "В абзаці A описано жвавий ринок і пояснено, що ринки, яким колись пророкували зникнення, тепер повертаються. Увесь абзац присвячено цьому несподіваному відродженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "The decline had several causes.",
+                        "explanation": {
+                            "en": "Paragraph B lists the reasons markets lost customers: cars, supermarkets, fridges and out-of-town shopping centres. These were all changes in the way people lived and shopped.",
+                            "ru": "В абзаце B перечислены причины, по которым рынки потеряли покупателей: автомобили, супермаркеты, холодильники и загородные торговые центры. Всё это изменило то, как люди жили и делали покупки.",
+                            "uk": "В абзаці B перелічено причини, через які ринки втратили покупців: автомобілі, супермаркети, холодильники та заміські торгові центри. Усе це змінило те, як люди жили й робили покупки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "buying in person has become less of a necessity and more of an outing",
+                        "explanation": {
+                            "en": "Paragraph C explains that people now visit markets for the atmosphere and conversation, not just to buy food. The internet is not described as a threat here; it has made in-person shopping more of a leisure activity.",
+                            "ru": "В абзаце C объясняется, что теперь люди ходят на рынки ради атмосферы и общения, а не только чтобы купить еду. Интернет здесь не описан как угроза: благодаря ему покупки вживую стали скорее формой досуга.",
+                            "uk": "В абзаці C пояснено, що тепер люди ходять на ринки заради атмосфери й спілкування, а не лише щоб купити їжу. Інтернет тут не подано як загрозу: завдяки йому покупки наживо стали радше способом дозвілля."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "Markets have also become attractive to people starting a business.",
+                        "explanation": {
+                            "en": "Paragraph D shows that a market pitch is cheaper than a shop, and Ayumi Kerrigan used hers to test her dumplings. Although she later opened a café, she still keeps her stall, so the heading about moving into shops does not fit.",
+                            "ru": "В абзаце D показано, что место на рынке обходится дешевле магазина, и Ayumi Kerrigan воспользовалась своим, чтобы проверить спрос на свои пельмени. Хотя позже она открыла кафе, прилавок на рынке она по-прежнему сохраняет, поэтому заголовок о переходе в магазины не подходит.",
+                            "uk": "В абзаці D показано, що місце на ринку коштує дешевше за магазин, і Ayumi Kerrigan скористалася своїм, щоб перевірити попит на свої пельмені. Хоча згодом вона відкрила кафе, прилавок на ринку вона досі тримає, тож заголовок про перехід у магазини не підходить."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "The benefits may extend beyond the stalls themselves.",
+                        "explanation": {
+                            "en": "Paragraph E describes Viktor Szabo's study, which found that shops and cafés near the market had more visitors on market days.",
+                            "ru": "В абзаце E описано исследование, которое провёл Viktor Szabo: оно показало, что в рыночные дни у магазинов и кафе рядом с рынком было больше посетителей.",
+                            "uk": "В абзаці E описано дослідження, яке провів Viktor Szabo: воно показало, що в ринкові дні магазини й кафе поблизу ринку мали більше відвідувачів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "Not everyone welcomes the revival, however.",
+                        "explanation": {
+                            "en": "Paragraph F explains that some markets now aim at visitors, so older traders and low-income local customers are pushed out. Noise and litter are mentioned only as one detail, and no rules are described.",
+                            "ru": "В абзаце F объясняется, что некоторые рынки теперь ориентируются на приезжих, из-за чего давних торговцев и местных покупателей с низким доходом вытесняют. Шум и мусор упомянуты лишь как одна деталь, а никакие правила не описаны.",
+                            "uk": "В абзаці F пояснено, що деякі ринки тепер орієнтуються на приїжджих, через що давніх торговців і місцевих покупців із низькими доходами витісняють. Шум і сміття згадано лише як одну деталь, а жодних правил не описано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "x"
+                        ],
+                        "prompt": "Paragraph G",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "thinks the answer lies in careful planning",
+                        "explanation": {
+                            "en": "Paragraph G describes how Graciela Moutinho runs her market: cheaper pitches for essential goods and monthly meetings with residents, so the market stays fair to local people.",
+                            "ru": "В абзаце G описано, как Graciela Moutinho управляет своим рынком: более дешёвые места для продавцов товаров первой необходимости и ежемесячные встречи с жителями, чтобы рынок оставался справедливым по отношению к местным.",
+                            "uk": "В абзаці G описано, як Graciela Moutinho керує своїм ринком: дешевші місця для продавців товарів першої необхідності та щомісячні зустрічі з мешканцями, щоб ринок залишався справедливим до місцевих людей."
+                        }
+                    }
+                ],
+                "instruction": "The passage has seven paragraphs, A–G. Choose the correct heading for each paragraph from the list of headings below. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They encouraged families to shop at out-of-town centres."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They took away the need to buy fresh food so often."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They made it harder for traders to keep food fresh."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They made supermarket food cheaper than market food."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "According to paragraph B, how did home refrigerators affect street markets?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "fresh food no longer had to be bought every day or two",
+                        "explanation": {
+                            "en": "Paragraph B says that with fridges and freezers people did not need to buy fresh food every day or two, so markets lost an advantage. Out-of-town centres are mentioned in the next sentence, but not as a result of fridges.",
+                            "ru": "В абзаце B сказано, что с появлением холодильников и морозильников людям больше не нужно было покупать свежие продукты каждый день или через день, и рынки потеряли своё преимущество. Загородные торговые центры упоминаются в следующем предложении, но не как следствие появления холодильников.",
+                            "uk": "В абзаці B сказано, що з появою холодильників і морозильників людям більше не треба було купувати свіжі продукти щодня чи через день, тож ринки втратили свою перевагу. Заміські торгові центри згадано в наступному реченні, але не як наслідок появи холодильників."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It has given market traders a new way to reach customers."
+                    },
+                    {
+                        "id": "B",
+                        "text": "It has reduced the number of people who visit markets each week."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It has turned shopping in person into more of a leisure activity."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It has made shoppers less interested in where food comes from."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What point does the writer make about the internet?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "buying in person has become less of a necessity and more of an outing",
+                        "explanation": {
+                            "en": "Paragraph C says that because almost anything can be ordered online, going to shop in person has become an outing. The paragraph actually says interest in where food comes from is growing, not falling.",
+                            "ru": "В абзаце C сказано, что раз почти всё можно заказать онлайн, поход за покупками вживую превратился в своего рода выход в люди. На самом деле в абзаце говорится, что интерес к происхождению еды растёт, а не падает.",
+                            "uk": "В абзаці C сказано, що оскільки майже все можна замовити онлайн, похід по покупки наживо перетворився на своєрідний вихід у світ. Насправді в абзаці йдеться про те, що інтерес до походження їжі зростає, а не падає."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "She is still unsure which dishes will sell."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Her café is open only during the week."
+                    },
+                    {
+                        "id": "C",
+                        "text": "It is cheaper to run than her café."
+                    },
+                    {
+                        "id": "D",
+                        "text": "It is how many people first find her food."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Why does Ayumi Kerrigan still run her market stall?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "partly because it is where new customers first discover her food",
+                        "explanation": {
+                            "en": "Paragraph D says she keeps the stall partly because new customers discover her food there. Testing which dishes sell was why she started the stall, not why she keeps it now.",
+                            "ru": "В абзаце D сказано, что она сохраняет прилавок отчасти потому, что там её еду открывают для себя новые покупатели. Проверка того, какие блюда хорошо продаются, была причиной, по которой она открыла прилавок, а не тем, почему она держит его сейчас.",
+                            "uk": "В абзаці D сказано, що вона тримає прилавок частково тому, що там її їжу відкривають для себе нові покупці. Перевірка того, які страви добре продаються, була причиною, з якої вона відкрила прилавок, а не тим, чому вона тримає його зараз."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "railway yard"
+                        ],
+                        "prompt": "Graciela Moutinho runs her weekly market on land that was once a ______.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "manages a weekly market in a former railway yard",
+                        "explanation": {
+                            "en": "Paragraph G says her market is in a 'former railway yard', which means the land was once a railway yard.",
+                            "ru": "В абзаце G сказано, что её рынок находится на «former railway yard», то есть раньше на этом месте была железнодорожная сортировочная площадка.",
+                            "uk": "В абзаці G сказано, що її ринок розташований на «former railway yard», тобто раніше на цьому місці був залізничний сортувальний майданчик."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "essentials"
+                        ],
+                        "prompt": "Roughly a third of the pitches go to stalls that sell everyday ______, and these traders pay less.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "reserves around a third of its pitches for stalls selling everyday essentials",
+                        "explanation": {
+                            "en": "Paragraph G says about a third of the pitches are kept for stalls selling everyday essentials, and these traders pay a reduced fee.",
+                            "ru": "В абзаце G сказано, что примерно треть мест отведена под прилавки с товарами повседневного спроса, и эти продавцы платят по сниженной ставке.",
+                            "uk": "В абзаці G сказано, що приблизно третину місць відведено під прилавки з товарами повсякденного вжитку, і ці продавці платять за зниженою ставкою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "food stands"
+                        ],
+                        "prompt": "The lower fees are funded in part by charging more to the trendier ______.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "higher charges for the more fashionable food stands",
+                        "explanation": {
+                            "en": "Paragraph G explains that the reduced fees are partly covered by higher charges for the 'more fashionable food stands'; 'trendier' means the same as 'more fashionable'.",
+                            "ru": "В абзаце G объясняется, что сниженная плата частично покрывается за счёт более высоких сборов с «more fashionable food stands»; «trendier» означает то же самое, что «more fashionable».",
+                            "uk": "В абзаці G пояснено, що знижену плату частково покривають вищі збори з «more fashionable food stands»; «trendier» означає те саме, що й «more fashionable»."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

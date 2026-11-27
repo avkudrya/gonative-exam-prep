@@ -1,0 +1,831 @@
+{
+    "id": "academic-3",
+    "exam": "ielts-academic",
+    "source": "Created by AI for GoNative Exam Prep, checked by two blind solvers and a controller (exam-reading-academic-2)",
+    "sections": [
+        {
+            "text": "Seeing with Sound\n\nA. On a warm summer evening, the small dark shapes that dart and swerve above a garden pond are doing something remarkable. Many of them are catching insects no bigger than a grain of rice, in light so poor that a human would struggle to see a hand in front of their face. For centuries, nobody could explain how they managed it. The answer, as we now know, is that most bats find their way by listening to the echoes of their own voices, a skill known as echolocation. They are not alone in this: dolphins and other toothed whales use the same principle underwater, and a handful of cave-dwelling birds rely on a simpler version.\n\nB. The first serious attempt to solve the mystery took place in the 1790s, when an Italian naturalist released bats whose eyes had been covered into a darkened room crossed by fine threads. Remarkably, the animals flew between the threads without touching them. Soon afterwards, a Swiss surgeon showed that bats whose ears had been plugged with wax collided with obstacles and flew reluctantly. Hearing was clearly involved, yet the bats appeared to be silent, and many scholars found it impossible to accept that an animal could navigate by sounds that no one could detect. A rival theory, that bats possessed an extraordinarily sensitive sense of touch in their wings, became widely accepted, and the question remained essentially unanswered for well over a century. Only in the late 1930s did researchers, using a newly built microphone capable of picking up very high frequencies, demonstrate that flying bats produce a steady stream of calls pitched far above the limit of human hearing.\n\nC. How does the system actually work? A hunting bat emits short pulses of sound, usually at frequencies between about 20 and 120 kilohertz; most adults cannot hear anything above roughly 20 kilohertz. Some species call through an open mouth, while others send sound out through their nostrils, which are often surrounded by folds of skin called nose-leaves that help to direct the beam. The calls are surprisingly powerful, in some species as intense at close range as a smoke alarm. To avoid deafening itself, a bat tightens tiny muscles in its middle ear at the moment it calls and relaxes them a fraction of a second later, just in time to catch the faint returning echo. The delay between call and echo tells the animal how far away an object is, while slight differences in the timing and loudness of the echo at each ear reveal its direction.\n\nD. Bats also change the way they call as a hunt unfolds. While searching, a bat may produce around ten calls a second. Once it detects an insect, the calls become shorter and more frequent, until, in the final moments before capture, they can reach about two hundred a second, a rapid sequence that researchers call the 'feeding buzz'. The choice of pitch involves a trade-off. High-frequency sound has a short wavelength and so bounces back well even from tiny prey, but it fades quickly in air. For this reason, species that hunt in open sky tend to use lower calls, which travel further, whereas those that pick small prey from leaves in cluttered forest rely on higher ones.\n\nE. Not every bat echolocates. Most of the fruit bats of Africa, Asia and Australia find their food using large eyes and a keen sense of smell, and only a few of them produce simple clicks, made with the tongue rather than the voice box. Meanwhile, the insects that bats eat have not stood still. Some moths have evolved ears that are sensitive to bat calls, and when they detect an approaching hunter they fold their wings and drop, or fly in erratic loops. Certain tiger moths go further, answering with ultrasonic clicks of their own that may warn the bat of their bad taste or confuse its sonar.\n\nF. Human technology has followed a similar path, though largely by independent invention: naval sonar was developed in the early twentieth century with little reference to bats. The ultrasonic sensors that warn drivers when they are reversing towards a wall work on the same basic principle. More recently, however, engineers have begun to copy specific features of bat behaviour. Gareth Mwangi, an engineer working on small indoor drones, programmed one of his aircraft to pulse slowly in open space and to increase its rate sharply as it approached an obstacle, much as a hunting bat does. In his trials, the drone used noticeably less battery power than an identical model pulsing rapidly all the time, without hitting more obstacles. In another project, Keiko Arashiro shaped the sound emitter of a handheld guide for blind pedestrians to resemble a bat's nose-leaf; in a small trial, she reported, users detected thin poles more reliably than with a conventional device.\n\nG. Even so, the machines remain crude by comparison. A bat leaving a crowded cave can pick out its own echoes from the calls of thousands of neighbours, a feat that engineers cannot yet reproduce and that biologists do not fully understand. After tens of millions of years of refinement, the bat's sonar still has a great deal to teach its imitators.",
+            "title": "Seeing with Sound",
+            "groups": [
+                {
+                    "type": "true_false_not_given",
+                    "questions": [
+                        {
+                            "answer": [
+                                "T"
+                            ],
+                            "prompt": "Echolocation is used by some animals that live in water.",
+                            "numbers": [
+                                1
+                            ],
+                            "evidence": "dolphins and other toothed whales use the same principle underwater",
+                            "explanation": {
+                                "en": "Paragraph A says dolphins and other toothed whales use the same principle underwater. These are animals that live in water, so the statement is true.",
+                                "ru": "В абзаце A говорится, что дельфины и другие зубатые киты используют тот же принцип под водой. Это животные, которые живут в воде, поэтому утверждение верно (TRUE).",
+                                "uk": "В абзаці A сказано, що дельфіни та інші зубаті кити використовують той самий принцип під водою. Це тварини, які живуть у воді, тож твердження правильне (TRUE)."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "F"
+                            ],
+                            "prompt": "In the 1790s experiment, bats whose eyes were covered were unable to avoid the threads.",
+                            "numbers": [
+                                2
+                            ],
+                            "evidence": "the animals flew between the threads without touching them",
+                            "explanation": {
+                                "en": "Paragraph B says the bats flew between the threads without touching them. This is the opposite of being unable to avoid them.",
+                                "ru": "В абзаце B говорится, что летучие мыши пролетали между нитями, не задевая их. Это прямо противоположно тому, что они не могли их избежать.",
+                                "uk": "В абзаці B сказано, що кажани пролітали між нитками, не зачіпаючи їх. Це прямо протилежне тому, що вони не могли їх уникнути."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "F"
+                            ],
+                            "prompt": "The Swiss surgeon's findings quickly convinced most scholars that bats navigate by sound.",
+                            "numbers": [
+                                3
+                            ],
+                            "evidence": "many scholars found it impossible to accept that an animal could navigate by sounds that no one could detect",
+                            "explanation": {
+                                "en": "Paragraph B says many scholars could not accept the idea, and a rival theory about touch became widely accepted. So the findings did not quickly convince most scholars.",
+                                "ru": "В абзаце B сказано, что многие учёные не могли принять эту идею, а широкое признание получила конкурирующая теория об осязании. Значит, результаты не смогли быстро убедить большинство учёных.",
+                                "uk": "В абзаці B сказано, що багато науковців не могли прийняти цю ідею, а широкого визнання набула конкурентна теорія про дотик. Отже, результати не змогли швидко переконати більшість науковців."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "NG"
+                            ],
+                            "prompt": "The microphone used by researchers in the late 1930s had first been designed for military purposes.",
+                            "numbers": [
+                                4
+                            ],
+                            "explanation": {
+                                "en": "Paragraph B says only that the microphone was newly built and could pick up very high frequencies. It says nothing about why or for whom it was first designed.",
+                                "ru": "В абзаце B сказано лишь, что микрофон был недавно создан и мог улавливать очень высокие частоты. О том, зачем и для кого его изначально разработали, ничего не говорится.",
+                                "uk": "В абзаці B сказано лише, що мікрофон був нещодавно створений і міг уловлювати дуже високі частоти. Про те, навіщо і для кого його спочатку розробили, нічого не сказано."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "NG"
+                            ],
+                            "prompt": "Bats that call through their nostrils produce quieter calls than bats that call through their mouths.",
+                            "numbers": [
+                                5
+                            ],
+                            "explanation": {
+                                "en": "Paragraph C says some bats call through the mouth and others through the nostrils, and that calls can be very powerful in some species. It never compares how loud the two groups are.",
+                                "ru": "В абзаце C говорится, что одни летучие мыши издают сигналы ртом, а другие — через ноздри, и что у некоторых видов сигналы бывают очень мощными. Но громкость этих двух групп нигде не сравнивается.",
+                                "uk": "В абзаці C сказано, що одні кажани подають сигнали ротом, а інші — через ніздрі, і що в деяких видів сигнали бувають дуже потужними. Але гучність цих двох груп ніде не порівнюється."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "T"
+                            ],
+                            "prompt": "Bats make their own hearing less sensitive at the moment they produce a call.",
+                            "numbers": [
+                                6
+                            ],
+                            "evidence": "To avoid deafening itself, a bat tightens tiny muscles in its middle ear at the moment it calls",
+                            "explanation": {
+                                "en": "Paragraph C explains that a bat tightens its middle-ear muscles when it calls so that it does not deafen itself. This means it reduces its hearing sensitivity while calling.",
+                                "ru": "В абзаце C объясняется, что, издавая сигнал, летучая мышь напрягает мышцы среднего уха, чтобы не оглушить себя. Значит, во время сигнала она снижает чувствительность своего слуха.",
+                                "uk": "В абзаці C пояснюється, що, подаючи сигнал, кажан напружує м'язи середнього вуха, щоб не оглушити себе. Отже, під час сигналу він знижує чутливість свого слуху."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "T"
+                            ],
+                            "prompt": "Bats that hunt among trees generally use higher-pitched calls than bats that hunt in open sky.",
+                            "numbers": [
+                                7
+                            ],
+                            "evidence": "whereas those that pick small prey from leaves in cluttered forest rely on higher ones",
+                            "explanation": {
+                                "en": "Paragraph D says open-sky hunters use lower calls, while bats taking prey from leaves in cluttered forest use higher ones. The statement says the same thing in different words.",
+                                "ru": "В абзаце D говорится, что летучие мыши, охотящиеся в открытом небе, используют более низкие сигналы, а те, что снимают добычу с листьев в густом лесу, — более высокие. Утверждение говорит то же самое другими словами.",
+                                "uk": "В абзаці D сказано, що кажани, які полюють у відкритому небі, використовують нижчі сигнали, а ті, що знімають здобич із листя в густому лісі, — вищі. Твердження каже те саме іншими словами."
+                            }
+                        }
+                    ],
+                    "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+                },
+                {
+                    "type": "note_completion",
+                    "limit": {
+                        "words": 1,
+                        "number": false
+                    },
+                    "questions": [
+                        {
+                            "answer": [
+                                "touch"
+                            ],
+                            "prompt": "Early rival theory: bats have an unusually sensitive sense of ______ in their wings",
+                            "numbers": [
+                                8
+                            ],
+                            "evidence": "bats possessed an extraordinarily sensitive sense of touch in their wings",
+                            "explanation": {
+                                "en": "Paragraph B describes the rival theory that became widely accepted: bats were thought to have an extremely sensitive sense of touch in their wings.",
+                                "ru": "В абзаце B описана конкурирующая теория, получившая широкое признание: считалось, что у летучих мышей в крыльях чрезвычайно чувствительное осязание.",
+                                "uk": "В абзаці B описано конкурентну теорію, яка набула широкого визнання: вважалося, що кажани мають у крилах надзвичайно чутливий дотик."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "nostrils"
+                            ],
+                            "prompt": "Calls leave the bat either through the mouth or through the ______",
+                            "numbers": [
+                                9
+                            ],
+                            "evidence": "others send sound out through their nostrils",
+                            "explanation": {
+                                "en": "Paragraph C says some species call through an open mouth, while others send sound out through their nostrils.",
+                                "ru": "В абзаце C говорится, что одни виды издают сигналы через открытый рот, а другие испускают звук через ноздри.",
+                                "uk": "В абзаці C сказано, що одні види подають сигнали через відкритий рот, а інші випромінюють звук через ніздрі."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "delay"
+                            ],
+                            "prompt": "Distance to an object is judged from the ______ between call and echo",
+                            "numbers": [
+                                10
+                            ],
+                            "evidence": "The delay between call and echo tells the animal how far away an object is",
+                            "explanation": {
+                                "en": "Paragraph C says the delay between a call and its echo tells the bat how far away an object is. Direction comes from differences between the ears, not from the delay.",
+                                "ru": "В абзаце C сказано, что задержка между сигналом и его эхом сообщает летучей мыши, насколько далеко находится объект. Направление же определяется по разнице между ушами, а не по задержке.",
+                                "uk": "В абзаці C сказано, що затримка між сигналом і його луною повідомляє кажанові, наскільки далеко розташований об'єкт. Напрямок же визначається за різницею між вухами, а не за затримкою."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "buzz"
+                            ],
+                            "prompt": "Just before capture: very fast calls known as the feeding ______",
+                            "numbers": [
+                                11
+                            ],
+                            "evidence": "a rapid sequence that researchers call the 'feeding buzz'",
+                            "explanation": {
+                                "en": "Paragraph D says that in the final moments before capture, the very fast calls are called the 'feeding buzz'.",
+                                "ru": "В абзаце D говорится, что в последние мгновения перед поимкой добычи очень частые сигналы называются \"feeding buzz\".",
+                                "uk": "В абзаці D сказано, що в останні миті перед упійманням здобичі дуже часті сигнали називаються \"feeding buzz\"."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "smell"
+                            ],
+                            "prompt": "Most Old World fruit bats locate food with large eyes and a good sense of ______",
+                            "numbers": [
+                                12
+                            ],
+                            "evidence": "find their food using large eyes and a keen sense of smell",
+                            "explanation": {
+                                "en": "Paragraph E says most fruit bats of Africa, Asia and Australia find food using large eyes and a keen sense of smell instead of echolocation.",
+                                "ru": "В абзаце E сказано, что большинство крыланов Африки, Азии и Австралии находят пищу с помощью больших глаз и острого обоняния, а не эхолокации.",
+                                "uk": "В абзаці E сказано, що більшість криланів Африки, Азії та Австралії знаходять їжу завдяки великим очам і гострому нюху, а не ехолокації."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "power"
+                            ],
+                            "prompt": "Mwangi's drone: used less battery ______ than a model that pulsed rapidly all the time",
+                            "numbers": [
+                                13
+                            ],
+                            "evidence": "the drone used noticeably less battery power than an identical model pulsing rapidly all the time",
+                            "explanation": {
+                                "en": "Paragraph F says Gareth Mwangi's bat-like drone used noticeably less battery power than an identical drone that pulsed rapidly all the time.",
+                                "ru": "В абзаце F сказано, что созданный Gareth Mwangi дрон, работающий по принципу летучей мыши, расходовал заметно меньше заряда батареи, чем такой же дрон, который всё время посылал частые импульсы.",
+                                "uk": "В абзаці F сказано, що створений Gareth Mwangi дрон, який працює за принципом кажана, витрачав помітно менше заряду батареї, ніж такий самий дрон, що весь час посилав часті імпульси."
+                            }
+                        }
+                    ],
+                    "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+                }
+            ],
+            "meta": {
+                "plan": "academic-3|s1",
+                "topic": "How bats find their way in the dark"
+            }
+        },
+        {
+            "text": "Paying to Drive into Town\n\nA. On a weekday morning in almost any large city, the main roads into the centre fill up long before the shops open. Each additional car slows every other vehicle a little, yet the driver who joins the queue pays nothing for the time that everyone else loses. Economists have long described this as a hidden cost: because road space is free at the point of use, it is consumed far more heavily than it would be if drivers had to account for the delay they impose. If a charge is attached to entering the most crowded areas at the busiest times, the argument runs, some trips will be moved to another hour, switched to buses or trains, or abandoned altogether, and the remaining traffic should flow more freely.\n\nB. For decades the idea remained largely theoretical, partly because collecting money from thousands of moving vehicles seemed impractical. Singapore was the first city to put it into practice, in 1975. Motorists wishing to enter the central business district during the morning peak had to buy a paper licence in advance and display it on the windscreen, while officers stationed at entry points checked each car as it passed. The crude system worked: traffic in the zone dropped sharply. In 1998 the paper licences gave way to an electronic system that deducts the fee automatically from a card inside the vehicle, allowing prices to vary by location and time of day.\n\nC. Most later schemes rely instead on cameras. The city first draws a boundary, often following a ring road, around the area it wishes to protect. Cameras are then installed at every point where a vehicle can cross that line, and each one photographs the number plates of passing traffic. Software converts the images into registration numbers, which are compared with a database of drivers who have paid for that day. Anyone whose plate does not appear by the deadline is traced through the national vehicle register, and a penalty notice is sent to the owner by post. Ambulances and buses are normally exempt, and residents who live inside the zone may receive a large discount.\n\nD. London adopted a camera-based charge in 2003. In the early years, the number of vehicles entering the zone fell noticeably and buses ran more reliably. The gain in journey speeds, however, did not last. Over the following decade, space on many central streets was handed over to wider pavements, bus lanes and cycle routes, and a growing volume of roadworks and delivery vans took up much of the remainder. Critics pointed to the slower traffic as proof of failure; supporters replied that without the charge the roads would have been far more crowded still. That claim is difficult to test, because no one can observe the city as it would otherwise have been.\n\nE. Stockholm offers a different lesson, about public opinion. Before the Swedish capital ran a seven-month trial in 2006, polls showed most residents opposed to the idea. Once the charge was in place and queues on the bridges into the centre shrank, attitudes softened, and in a referendum held after the trial a majority of city voters backed keeping it. The charge became permanent in 2007. Farida Kassab, a transport economist, studied this shift by interviewing the same group of commuters before and after the trial. She found that many former opponents had not changed their daily routes at all; what had changed was that the charge now felt like an ordinary part of city life. In her view, people tend to resist almost any change to how roads are used, and that resistance fades once the new arrangement becomes familiar.\n\nF. Not everyone is persuaded. The most frequent objection concerns fairness. A flat daily fee is a trivial sum for a well-paid executive but a real burden for a care worker on a low wage whose shift begins before the first trains run. Shopkeepers raise a second concern. Callum Brodie, who represents independent retailers in a mid-sized city considering a charge, argues that many customers will simply drive to out-of-town shopping centres, where parking is free, rather than pay to reach the high street, and he expects smaller shops to suffer first. A third worry is that traffic does not disappear but moves to the streets just outside the boundary, whose residents suffer the extra noise and fumes without sharing any of the benefits. Finally, some people object in principle to cameras recording every journey into the centre.\n\nG. Supporters accept that these objections deserve serious answers, and much depends on what happens to the money raised. Spending the revenue on cheaper and more frequent buses, and offering discounts to essential workers, can meet the fairness complaint directly; lower-income travellers, after all, are more likely to use public transport in the first place. Careful monitoring of the streets near the boundary can show whether traffic is really being pushed elsewhere. The broader lesson from the cities that have tried charging is that it works best as one part of a wider transport plan, not as a stand-alone cure for congestion.",
+            "title": "Paying to Drive into Town",
+            "groups": [
+                {
+                    "type": "short_answer",
+                    "limit": {
+                        "words": 3,
+                        "number": false
+                    },
+                    "questions": [
+                        {
+                            "answer": [
+                                "hidden cost",
+                                "a hidden cost"
+                            ],
+                            "prompt": "What term have economists used for the delay that each extra driver causes other road users without paying for it?",
+                            "numbers": [
+                                14
+                            ],
+                            "evidence": "Economists have long described this as a hidden cost",
+                            "explanation": {
+                                "en": "Paragraph A says drivers pay nothing for the time other people lose, and economists call this a hidden cost.",
+                                "ru": "В абзаце A говорится, что водители ничего не платят за время, которое теряют другие люди, и экономисты называют это скрытыми издержками.",
+                                "uk": "В абзаці A сказано, що водії нічого не платять за час, який втрачають інші люди, і економісти називають це прихованими витратами."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "paper licence",
+                                "a paper licence",
+                                "paper license",
+                                "a paper license"
+                            ],
+                            "prompt": "What did drivers in Singapore's first scheme have to buy and show on their windscreen?",
+                            "numbers": [
+                                15
+                            ],
+                            "evidence": "had to buy a paper licence in advance and display it on the windscreen",
+                            "explanation": {
+                                "en": "Paragraph B explains that in 1975 motorists bought a paper licence and displayed it. The card belongs to the later electronic system, not the original one.",
+                                "ru": "В абзаце B объясняется, что в 1975 году автомобилисты покупали бумажное разрешение и выставляли его на видном месте. Карта относится к более поздней электронной системе, а не к первоначальной.",
+                                "uk": "В абзаці B пояснюється, що в 1975 році автомобілісти купували паперовий дозвіл і виставляли його на видноті. Картка належить до пізнішої електронної системи, а не до початкової."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "delivery vans"
+                            ],
+                            "prompt": "Apart from roadworks, what took up much of the remaining space on central London streets?",
+                            "numbers": [
+                                16
+                            ],
+                            "evidence": "a growing volume of roadworks and delivery vans took up much of the remainder",
+                            "explanation": {
+                                "en": "Paragraph D says that, after space was given to pavements, bus lanes and cycle routes, roadworks and delivery vans used up much of what was left.",
+                                "ru": "В абзаце D говорится, что после того как место отдали под тротуары, автобусные полосы и велодорожки, бо́льшую часть оставшегося пространства заняли дорожные работы и фургоны доставки.",
+                                "uk": "В абзаці D сказано, що після того як місце віддали під тротуари, автобусні смуги й велодоріжки, більшу частину решти простору зайняли дорожні роботи та фургони доставки."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "bridges",
+                                "the bridges"
+                            ],
+                            "prompt": "On which structures leading into central Stockholm did queues get shorter once the charge began?",
+                            "numbers": [
+                                17
+                            ],
+                            "evidence": "queues on the bridges into the centre shrank",
+                            "explanation": {
+                                "en": "Paragraph E says that when the charge was in place, the queues on the bridges into the centre became smaller.",
+                                "ru": "В абзаце E говорится, что, пока плата действовала, очереди на мостах, ведущих в центр, сократились.",
+                                "uk": "В абзаці E сказано, що коли плата діяла, черги на мостах, які ведуть до центру, зменшилися."
+                            }
+                        }
+                    ],
+                    "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+                },
+                {
+                    "type": "flow_chart_completion",
+                    "limit": {
+                        "words": 1,
+                        "number": false
+                    },
+                    "questions": [
+                        {
+                            "answer": [
+                                "boundary"
+                            ],
+                            "prompt": "Step 1: The city marks out a ______ around the area it wants to protect.",
+                            "numbers": [
+                                18
+                            ],
+                            "evidence": "The city first draws a boundary, often following a ring road, around the area it wishes to protect",
+                            "explanation": {
+                                "en": "Paragraph C says the first step is drawing a boundary, often along a ring road, around the protected area.",
+                                "ru": "В абзаце C говорится, что первый шаг — провести границу вокруг охраняемой зоны, часто вдоль кольцевой дороги.",
+                                "uk": "В абзаці C сказано, що перший крок — провести межу навколо захищеної зони, часто вздовж кільцевої дороги."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "cameras"
+                            ],
+                            "prompt": "Step 2: Every place where vehicles can enter the zone is fitted with ______.",
+                            "numbers": [
+                                19
+                            ],
+                            "evidence": "Cameras are then installed at every point where a vehicle can cross that line",
+                            "explanation": {
+                                "en": "Paragraph C says cameras are installed at every point where a vehicle can cross the boundary.",
+                                "ru": "В абзаце C говорится, что камеры устанавливают в каждой точке, где машина может пересечь границу.",
+                                "uk": "В абзаці C сказано, що камери встановлюють у кожній точці, де транспортний засіб може перетнути межу."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "software"
+                            ],
+                            "prompt": "Step 3: The photographs are turned into registration numbers by ______.",
+                            "numbers": [
+                                20
+                            ],
+                            "evidence": "Software converts the images into registration numbers",
+                            "explanation": {
+                                "en": "Paragraph C says software changes the camera images into registration numbers.",
+                                "ru": "В абзаце C говорится, что программа преобразует изображения с камер в регистрационные номера.",
+                                "uk": "В абзаці C сказано, що програма перетворює зображення з камер на реєстраційні номери."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "database"
+                            ],
+                            "prompt": "Step 4: The numbers are checked against a ______ of drivers who have paid that day.",
+                            "numbers": [
+                                21
+                            ],
+                            "evidence": "compared with a database of drivers who have paid for that day",
+                            "explanation": {
+                                "en": "Paragraph C says the registration numbers are compared with a database of people who have paid.",
+                                "ru": "В абзаце C говорится, что регистрационные номера сверяют с базой данных тех, кто заплатил.",
+                                "uk": "В абзаці C сказано, що реєстраційні номери звіряють із базою даних тих, хто заплатив."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "register"
+                            ],
+                            "prompt": "Step 5: Owners who have not paid are found using the national vehicle ______.",
+                            "numbers": [
+                                22
+                            ],
+                            "evidence": "traced through the national vehicle register",
+                            "explanation": {
+                                "en": "Paragraph C says anyone whose plate is missing after the deadline is traced through the national vehicle register.",
+                                "ru": "В абзаце C говорится, что любого, чьего номера нет в базе после истечения срока, находят через национальный реестр транспортных средств.",
+                                "uk": "В абзаці C сказано, що будь-кого, чийого номера немає в базі після завершення терміну, розшукують через національний реєстр транспортних засобів."
+                            }
+                        }
+                    ],
+                    "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+                },
+                {
+                    "type": "multiple_choice_multi",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "a fall in the number of vehicles coming into the zone"
+                        },
+                        {
+                            "id": "B",
+                            "text": "lower bus fares paid for by the money the charge collected"
+                        },
+                        {
+                            "id": "C",
+                            "text": "a reduction in the amount of roadworks on central streets"
+                        },
+                        {
+                            "id": "D",
+                            "text": "journey speeds that stayed higher over the following decade"
+                        },
+                        {
+                            "id": "E",
+                            "text": "bus services that kept more closely to their timetables"
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "A",
+                                "E"
+                            ],
+                            "prompt": "Which TWO effects of London's charge in its early years are mentioned in the passage?",
+                            "numbers": [
+                                23,
+                                24
+                            ],
+                            "evidence": "the number of vehicles entering the zone fell noticeably and buses ran more reliably",
+                            "explanation": {
+                                "en": "Paragraph D says fewer vehicles entered the zone and buses became more reliable. The faster journeys did not last, roadworks actually grew, and bus fares are not mentioned for London.",
+                                "ru": "В абзаце D говорится, что в зону стало въезжать меньше машин, а автобусы начали ходить надёжнее. Ускорение поездок оказалось временным, дорожных работ на самом деле стало больше, а о стоимости проезда в автобусах в Лондоне ничего не сказано.",
+                                "uk": "В абзаці D сказано, що до зони стало заїжджати менше машин, а автобуси почали курсувати надійніше. Пришвидшення поїздок виявилося тимчасовим, дорожніх робіт насправді побільшало, а про вартість проїзду в автобусах у Лондоні не згадано."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose TWO letters, A–E, for each question."
+                },
+                {
+                    "type": "multiple_choice_multi",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "She found most commuters had moved to public transport."
+                        },
+                        {
+                            "id": "B",
+                            "text": "She questioned the same commuters on two separate occasions."
+                        },
+                        {
+                            "id": "C",
+                            "text": "She found many former opponents still travelled as before."
+                        },
+                        {
+                            "id": "D",
+                            "text": "She found opposition had grown stronger during the trial."
+                        },
+                        {
+                            "id": "E",
+                            "text": "She compared attitudes in Stockholm with those in London."
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "B",
+                                "C"
+                            ],
+                            "prompt": "Which TWO statements about Farida Kassab's research are correct?",
+                            "numbers": [
+                                25,
+                                26
+                            ],
+                            "evidence": "interviewing the same group of commuters before and after the trial. She found that many former opponents had not changed their daily routes at all",
+                            "explanation": {
+                                "en": "Paragraph E says she interviewed the same commuters before and after the trial, and that many former opponents kept the same routes. She found that feelings changed, not travel habits, and opposition weakened rather than grew.",
+                                "ru": "В абзаце E говорится, что она опросила одних и тех же людей, ежедневно ездящих на работу, до и после эксперимента, и многие бывшие противники продолжали ездить теми же маршрутами. Она выяснила, что изменилось отношение, а не транспортные привычки, и противодействие ослабло, а не усилилось.",
+                                "uk": "В абзаці E сказано, що вона опитала тих самих людей, які щодня їздять на роботу, до й після експерименту, і багато колишніх противників продовжували їздити тими самими маршрутами. Вона з'ясувала, що змінилося ставлення, а не транспортні звички, і опір послабшав, а не посилився."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose TWO letters, A–E, for each question."
+                }
+            ],
+            "meta": {
+                "plan": "academic-3|s2",
+                "topic": "Charging drivers to enter city centres"
+            }
+        },
+        {
+            "text": "Two Things at Once?\n\nA. Ask almost anyone to describe a typical working day and you will hear about juggling: answering messages during meetings, listening to podcasts while drafting reports, switching between a dozen open windows. Job advertisements ask for candidates who can multitask, as though it were an ordinary skill like typing. My argument in this article is that, where both activities genuinely require thought, this ability does not exist in the form most people imagine. What looks like doing two things at once is almost always doing one thing and then the other in quick succession, and each switch costs more than we notice. Several researchers disagree with me, some strongly, and their objections deserve a fair hearing.\n\nB. The basic evidence is not new. Researchers have long found that when people must respond to two signals presented very close together in time, their response to the second is delayed, as if it has to wait for the first to pass through some kind of mental bottleneck. Studies of task switching show a similar pattern: moving back and forth between two activities takes longer, and produces more errors, than finishing one before starting the other. Each change requires the mind to set aside one set of rules and retrieve another, and that adjustment is not free. A single cost may amount to only a fraction of a second, but across a day of constant interruptions the losses accumulate. Crucially, people tend to underestimate them, because the feeling of being busy is easily confused with the feeling of being productive.\n\nC. None of this means that humans can do only one thing at a time in every sense. We walk while chatting, and an experienced driver can hold a conversation on an empty motorway. The difference is that one of these activities has become so well practised that it demands little conscious attention. Yet the arrangement is fragile. When the road ahead suddenly becomes complicated, the conversation tends to stop, often without the driver noticing that it has. That pause is the bottleneck reasserting itself. Talking while driving is therefore not evidence against my position but an illustration of its limits.\n\nD. The most serious challenge comes from Elif Strandberg, a cognitive scientist who has spent a decade studying conference interpreters. Simultaneous interpreters listen to a speaker in one language while producing a translation in another, often only a few words behind. Strandberg argues that this is plainly two demanding tasks performed together, and she regards the 'myth' label as an insult to a profession built on exactly this ability. I admire interpreters enormously, but I do not think their case refutes mine. They train for years, and much of that training appears to turn parts of the work, such as common phrases and familiar sentence patterns, into routines that no longer require deliberate effort. Interpreters also typically work in pairs, handing over to a colleague every half hour or so, because the strain soon becomes unsustainable. An ability that must be rationed so carefully looks less like everyday multitasking than like an exceptional, hard-won skill.\n\nE. Rohan Valdivia raises a different objection. In a laboratory study, he asked volunteers to alternate between two sorting tasks every day for six weeks. By the end, the delay caused by each switch had shrunk to roughly a third of its original size. Valdivia concludes that switching costs reflect inexperience rather than a fixed feature of the mind, and that calling multitasking a myth discourages people from developing it. His results are interesting, but his volunteers repeated the same two tasks thousands of times. Office life rarely offers such predictability: the message that interrupts a report is different every time. Moreover, even after six weeks of practice, the cost had shrunk rather than vanished.\n\nF. Other findings support my position more directly. Mireille Kowalczyk asked more than two hundred office workers to rate their own ability to handle several tasks at once, and then measured their performance on a series of switching exercises. She found no connection between how skilled people believed they were and how well they actually did. Kowalczyk is careful to point out that all her participants came from a single company, but the result fits a wider pattern: confidence in multitasking seems to rest on the sensation of activity rather than on measured results.\n\nG. Finally, the neuroscientist Kwame Iturbe objects to the whole debate. The brain, he points out, is always running many processes in parallel: maintaining balance, regulating breathing, making sense of what the eyes see. To declare multitasking a myth is, in his view, scientifically careless. He is right about the brain, and I accept that my claim concerns deliberate, effortful tasks rather than everything the nervous system does. But I do not accept that the disagreement is merely a matter of words. When managers expect staff to write a proposal while monitoring a constant stream of messages, they are not thinking about breathing. They are assuming a capacity that the evidence suggests most of us lack.\n\nH. What follows in practice? Not, I think, that individuals should feel guilty every time they glance at a phone. The more useful lesson concerns design: offices, schedules and software could be arranged so that demanding work is protected from interruption for sensible stretches of time. That would require employers to stop treating constant availability as a virtue, which is a harder change to make than any personal habit, but a far more valuable one.",
+            "title": "Two Things at Once?",
+            "groups": [
+                {
+                    "type": "yes_no_not_given",
+                    "questions": [
+                        {
+                            "answer": [
+                                "Y"
+                            ],
+                            "prompt": "People generally fail to realise how much is lost when they move from one task to another.",
+                            "numbers": [
+                                27
+                            ],
+                            "evidence": "people tend to underestimate them, because the feeling of being busy is easily confused with the feeling of being productive",
+                            "explanation": {
+                                "en": "In paragraph B the writer says people underestimate the costs of switching tasks. 'Fail to realise how much is lost' restates 'underestimate them'.",
+                                "ru": "В абзаце B автор пишет, что люди недооценивают издержки переключения между задачами. «Fail to realise how much is lost» — это перефразировка «underestimate them».",
+                                "uk": "В абзаці B автор пише, що люди недооцінюють витрати на перемикання між завданнями. «Fail to realise how much is lost» — це перефразування «underestimate them»."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "N"
+                            ],
+                            "prompt": "The fact that people can talk while driving proves that two demanding tasks can be done at the same time.",
+                            "numbers": [
+                                28
+                            ],
+                            "evidence": "Talking while driving is therefore not evidence against my position but an illustration of its limits.",
+                            "explanation": {
+                                "en": "In paragraph C the writer says talking while driving does not count against the argument, because experienced driving needs little conscious attention. The statement says the opposite.",
+                                "ru": "В абзаце C автор говорит, что разговор за рулём не опровергает этот довод, поскольку опытный водитель почти не тратит на вождение сознательного внимания. В утверждении сказано обратное.",
+                                "uk": "В абзаці C автор каже, що розмова за кермом не спростовує цей аргумент, бо досвідчений водій майже не витрачає на керування свідомої уваги. У твердженні сказано протилежне."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "NG"
+                            ],
+                            "prompt": "Conference interpreters ought to have longer breaks than they normally take at present.",
+                            "numbers": [
+                                29
+                            ],
+                            "explanation": {
+                                "en": "Paragraph D says interpreters work in pairs and hand over about every half hour because the work is so tiring. The writer never says whether these breaks should be longer.",
+                                "ru": "В абзаце D говорится, что переводчики работают парами и сменяют друг друга примерно каждые полчаса, потому что работа очень утомительна. Автор нигде не говорит, должны ли эти перерывы быть длиннее.",
+                                "uk": "В абзаці D сказано, що перекладачі працюють парами й змінюють одне одного приблизно кожні пів години, бо робота дуже виснажлива. Автор ніде не каже, чи мають ці перерви бути довшими."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "N"
+                            ],
+                            "prompt": "Valdivia's research shows that enough practice can remove the cost of switching tasks completely.",
+                            "numbers": [
+                                30
+                            ],
+                            "evidence": "even after six weeks of practice, the cost had shrunk rather than vanished",
+                            "explanation": {
+                                "en": "In paragraph E the writer points out that the switching cost became smaller but did not disappear. So the writer rejects the idea that practice removes it completely.",
+                                "ru": "В абзаце E автор указывает, что издержки переключения уменьшились, но не исчезли. Значит, автор отвергает идею, что практика полностью их устраняет.",
+                                "uk": "В абзаці E автор зазначає, що витрати на перемикання зменшилися, але не зникли. Отже, автор відкидає думку, що практика повністю їх усуває."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "NG"
+                            ],
+                            "prompt": "Office workers who multitask often perform worse on switching exercises than those who rarely do.",
+                            "numbers": [
+                                31
+                            ],
+                            "explanation": {
+                                "en": "Paragraph F compares how skilled workers believed they were with how well they did, but it says nothing about how often they multitask. The writer gives no view on this comparison.",
+                                "ru": "В абзаце F сравнивается, насколько умелыми работники себя считали и насколько хорошо они справились на деле, но ничего не говорится о том, как часто они выполняют несколько задач одновременно. Автор не высказывает мнения об этом сравнении.",
+                                "uk": "В абзаці F порівнюється, наскільки вправними працівники себе вважали і наскільки добре вони впоралися насправді, але нічого не сказано про те, як часто вони виконують кілька завдань одночасно. Автор не висловлює думки щодо цього порівняння."
+                            }
+                        }
+                    ],
+                    "instruction": "Do the following statements agree with the views of the writer in the reading passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+                },
+                {
+                    "type": "matching_features",
+                    "reuse": true,
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "Elif Strandberg"
+                        },
+                        {
+                            "id": "B",
+                            "text": "Rohan Valdivia"
+                        },
+                        {
+                            "id": "C",
+                            "text": "Mireille Kowalczyk"
+                        },
+                        {
+                            "id": "D",
+                            "text": "Kwame Iturbe"
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "C"
+                            ],
+                            "prompt": "People's opinions of their own multitasking ability do not match how they actually perform.",
+                            "numbers": [
+                                32
+                            ],
+                            "evidence": "She found no connection between how skilled people believed they were and how well they actually did.",
+                            "explanation": {
+                                "en": "Paragraph F reports that Kowalczyk found no link between workers' beliefs about their skill and their real results.",
+                                "ru": "В абзаце F сообщается, что Kowalczyk не обнаружила связи между тем, как работники оценивали свои навыки, и их реальными результатами.",
+                                "uk": "В абзаці F повідомляється, що Kowalczyk не виявила зв'язку між тим, як працівники оцінювали свої навички, та їхніми реальними результатами."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "B"
+                            ],
+                            "prompt": "Describing multitasking as impossible may stop people from trying to improve at it.",
+                            "numbers": [
+                                33
+                            ],
+                            "evidence": "calling multitasking a myth discourages people from developing it",
+                            "explanation": {
+                                "en": "In paragraph E Valdivia argues that the 'myth' label discourages people from developing the ability. Strandberg also dislikes the label, but because she finds it insulting, not because it stops improvement.",
+                                "ru": "В абзаце E Valdivia утверждает, что ярлык «myth» отбивает у людей желание развивать эту способность. Strandberg тоже недовольна этим ярлыком, но потому, что считает его оскорбительным, а не потому, что он мешает совершенствоваться.",
+                                "uk": "В абзаці E Valdivia стверджує, що ярлик «myth» відбиває в людей бажання розвивати цю здатність. Strandberg теж незадоволена цим ярликом, але тому, що вважає його образливим, а не тому, що він заважає вдосконалюватися."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "A"
+                            ],
+                            "prompt": "One particular occupation shows that two demanding activities can be carried out together.",
+                            "numbers": [
+                                34
+                            ],
+                            "evidence": "Strandberg argues that this is plainly two demanding tasks performed together",
+                            "explanation": {
+                                "en": "Paragraph D explains that Strandberg studies conference interpreters and argues that their work is two demanding tasks done at once.",
+                                "ru": "В абзаце D объясняется, что Strandberg изучает конференц-переводчиков и утверждает, что их работа — это две сложные задачи, выполняемые одновременно.",
+                                "uk": "В абзаці D пояснюється, що Strandberg досліджує конференц-перекладачів і стверджує, що їхня робота — це два складні завдання, які виконуються одночасно."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "D"
+                            ],
+                            "prompt": "Calling multitasking a myth ignores the many processes the brain carries out at the same time.",
+                            "numbers": [
+                                35
+                            ],
+                            "evidence": "The brain, he points out, is always running many processes in parallel",
+                            "explanation": {
+                                "en": "In paragraph G Iturbe says the brain always runs processes such as balance and breathing in parallel, so he thinks the 'myth' claim is careless.",
+                                "ru": "В абзаце G Iturbe говорит, что мозг всегда параллельно выполняет такие процессы, как поддержание равновесия и дыхание, поэтому он считает утверждение про «myth» непродуманным.",
+                                "uk": "В абзаці G Iturbe каже, що мозок завжди паралельно виконує такі процеси, як підтримання рівноваги та дихання, тому він вважає твердження про «myth» непродуманим."
+                            }
+                        },
+                        {
+                            "answer": [
+                                "C"
+                            ],
+                            "prompt": "This researcher admitted that the people studied all came from the same workplace.",
+                            "numbers": [
+                                36
+                            ],
+                            "evidence": "Kowalczyk is careful to point out that all her participants came from a single company",
+                            "explanation": {
+                                "en": "Paragraph F says Kowalczyk herself noted that her participants came from a single company, which is a limitation of her study.",
+                                "ru": "В абзаце F сказано, что Kowalczyk сама отметила: все её участники работали в одной компании, и это ограничение её исследования.",
+                                "uk": "В абзаці F сказано, що Kowalczyk сама зазначила: усі її учасники працювали в одній компанії, і це обмеження її дослідження."
+                            }
+                        }
+                    ],
+                    "instruction": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A–D. You may use any letter more than once."
+                },
+                {
+                    "type": "multiple_choice",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "that most job candidates exaggerate their ability to multitask"
+                        },
+                        {
+                            "id": "B",
+                            "text": "how commonly multitasking is viewed as a routine workplace ability"
+                        },
+                        {
+                            "id": "C",
+                            "text": "that employers have started to question the value of multitasking"
+                        },
+                        {
+                            "id": "D",
+                            "text": "that typing has become less valued than the ability to multitask"
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "B"
+                            ],
+                            "prompt": "In paragraph A, the writer refers to job advertisements in order to show",
+                            "numbers": [
+                                37
+                            ],
+                            "evidence": "Job advertisements ask for candidates who can multitask, as though it were an ordinary skill like typing.",
+                            "explanation": {
+                                "en": "Paragraph A says advertisements treat multitasking as an ordinary skill, like typing. The passage does not say employers doubt it, that typing matters less, or that candidates exaggerate.",
+                                "ru": "В абзаце A говорится, что в объявлениях многозадачность подаётся как обычный навык, вроде печати на клавиатуре. В тексте не сказано, что работодатели в этом сомневаются, что печать менее важна или что кандидаты преувеличивают.",
+                                "uk": "В абзаці A сказано, що в оголошеннях багатозадачність подають як звичайну навичку, на кшталт друку на клавіатурі. У тексті не сказано, що роботодавці в цьому сумніваються, що друк менш важливий чи що кандидати перебільшують."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose the correct letter, A, B, C or D."
+                },
+                {
+                    "type": "multiple_choice",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "The mind changes between sets of rules without any effort."
+                        },
+                        {
+                            "id": "B",
+                            "text": "Each individual delay is too brief to be measured reliably."
+                        },
+                        {
+                            "id": "C",
+                            "text": "Being occupied is easily mistaken for achieving a lot."
+                        },
+                        {
+                            "id": "D",
+                            "text": "Interruptions at work happen less often than people think."
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "C"
+                            ],
+                            "prompt": "According to the writer, why do people underestimate the cost of switching tasks?",
+                            "numbers": [
+                                38
+                            ],
+                            "evidence": "because the feeling of being busy is easily confused with the feeling of being productive",
+                            "explanation": {
+                                "en": "Paragraph B says people confuse feeling busy with feeling productive. The delays are small but can still be measured, and the writer says changing rules is 'not free', so the effortless option is wrong.",
+                                "ru": "В абзаце B говорится, что люди путают ощущение занятости с ощущением продуктивности. Задержки небольшие, но их всё же можно измерить, а автор говорит, что смена правил «not free», поэтому вариант о том, что это не требует усилий, неверен.",
+                                "uk": "В абзаці B сказано, що люди плутають відчуття зайнятості з відчуттям продуктивності. Затримки невеликі, але їх усе ж можна виміряти, а автор каже, що зміна правил «not free», тому варіант про те, що це не потребує зусиль, неправильний."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose the correct letter, A, B, C or D."
+                },
+                {
+                    "type": "multiple_choice",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "The driver makes more mistakes in what he or she says."
+                        },
+                        {
+                            "id": "B",
+                            "text": "The driver becomes conscious of the mental bottleneck."
+                        },
+                        {
+                            "id": "C",
+                            "text": "The driver deliberately ends the conversation to concentrate."
+                        },
+                        {
+                            "id": "D",
+                            "text": "Talk often halts without the driver being aware of it."
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "D"
+                            ],
+                            "prompt": "What does the writer say tends to happen when driving suddenly becomes difficult?",
+                            "numbers": [
+                                39
+                            ],
+                            "evidence": "the conversation tends to stop, often without the driver noticing that it has",
+                            "explanation": {
+                                "en": "Paragraph C says the conversation stops, often without the driver noticing. The option about ending the talk deliberately is wrong because the driver may not even realise it has stopped.",
+                                "ru": "В абзаце C говорится, что разговор прерывается, причём водитель часто этого не замечает. Вариант о том, что водитель намеренно прекращает разговор, неверен: он может даже не осознавать, что разговор прервался.",
+                                "uk": "В абзаці C сказано, що розмова уривається, причому водій часто цього не помічає. Варіант про те, що водій навмисно припиняє розмову, неправильний: він може навіть не усвідомлювати, що розмова урвалася."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose the correct letter, A, B, C or D."
+                },
+                {
+                    "type": "multiple_choice",
+                    "options": [
+                        {
+                            "id": "A",
+                            "text": "to show that the work is too tiring to sustain for long"
+                        },
+                        {
+                            "id": "B",
+                            "text": "to argue that interpreting is less demanding than it appears"
+                        },
+                        {
+                            "id": "C",
+                            "text": "to suggest that the two partners share listening and speaking"
+                        },
+                        {
+                            "id": "D",
+                            "text": "to explain how interpreters learn familiar phrases and patterns"
+                        }
+                    ],
+                    "questions": [
+                        {
+                            "answer": [
+                                "A"
+                            ],
+                            "prompt": "Why does the writer mention that interpreters usually work in pairs?",
+                            "numbers": [
+                                40
+                            ],
+                            "evidence": "handing over to a colleague every half hour or so, because the strain soon becomes unsustainable",
+                            "explanation": {
+                                "en": "In paragraph D the writer says interpreters hand over to a partner because the strain becomes too great. The partners take turns; they do not divide listening and speaking between them.",
+                                "ru": "В абзаце D автор пишет, что переводчики передают работу напарнику, потому что нагрузка становится слишком большой. Напарники работают по очереди, а не делят между собой слушание и говорение.",
+                                "uk": "В абзаці D автор пише, що перекладачі передають роботу напарникові, бо навантаження стає надто великим. Напарники працюють по черзі, а не розподіляють між собою слухання й говоріння."
+                            }
+                        }
+                    ],
+                    "instruction": "Choose the correct letter, A, B, C or D."
+                }
+            ],
+            "meta": {
+                "plan": "academic-3|s3",
+                "topic": "Is multitasking a myth?"
+            }
+        }
+    ]
+}

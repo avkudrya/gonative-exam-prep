@@ -1,0 +1,1073 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-4|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.251636,
+            "provider": "anthropic",
+            "outputTokens": 11736
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012998,
+            "provider": "anthropic",
+            "outputTokens": 662
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.019635,
+            "provider": "openai",
+            "outputTokens": 991
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.014064,
+            "provider": "xai",
+            "outputTokens": 1265
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.088396,
+            "provider": "anthropic",
+            "outputTokens": 4083
+        }
+    ],
+    "draft": {
+        "title": "Countryside Cottages to Rent This Season",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a restriction on the age of guests",
+                        "options": [],
+                        "evidence": "Children under twelve cannot be accommodated because of the steep drop close to the door",
+                        "explanation": "Paragraph D says children under twelve cannot stay at the bothy. Paragraph F mentions that steps are unsuitable for pushchairs, but that is advice, not a rule about guests' ages."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "the reason why guests may not bring animals",
+                        "options": [],
+                        "evidence": "Pets are not allowed, as the owners' hens roam the garden freely",
+                        "explanation": "Paragraph E explains that pets are not allowed because the owners' hens walk around the garden. Paragraph A actually welcomes dogs."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a warning that a local shop is not open all day on one day of the week",
+                        "options": [],
+                        "evidence": "it closes at lunchtime on Sundays, so plan your weekend shopping accordingly",
+                        "explanation": "Paragraph A says the village shop closes at lunchtime on Sundays. The café in paragraph F is not a shop, and only its opening time is given."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "an arrangement made for guests when the usual way to the property may be under water",
+                        "options": [],
+                        "evidence": "contacts guests the day before arrival to suggest a route on foot from the church car park",
+                        "explanation": "Paragraph C says the track can flood in winter, so the owner tells guests about a walking route from the church car park."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "an offer of food from the owner if guests give notice",
+                        "options": [],
+                        "evidence": "is happy to drop off a welcome basket of local bread, cheese and eggs if you let her know your arrival time in advance",
+                        "explanation": "Paragraph B says Ffion Gallagher will bring a basket of local food if guests tell her in advance when they will arrive."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "booking rules that change depending on the time of year",
+                        "options": [],
+                        "evidence": "Outside the school summer holidays, short breaks of two nights are accepted; in July and August, it is let by the week only",
+                        "explanation": "Paragraph F allows two-night stays except in July and August, when only whole weeks can be booked. Paragraph D has a minimum stay, but it is the same all year."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a limit on how many pets can stay at the same time",
+                        "options": [],
+                        "evidence": "no more than two stay at any one time",
+                        "explanation": "Paragraph A welcomes dogs but asks that no more than two stay at once."
+                    }
+                ],
+                "instruction": "The text has six descriptions of holiday cottages, labelled A–F. Which description contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Dogs staying at Willow Barn may sit on the furniture.",
+                        "options": [],
+                        "evidence": "they are kept off the furniture",
+                        "explanation": "Paragraph A welcomes dogs but asks that they are kept off the furniture, so the statement is the opposite of the passage."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The Old Schoolhouse was still being used as a school when Ffion Gallagher bought it.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says Ffion spent two years restoring the Victorian schoolhouse, but it does not say when the building stopped being a school or when she bought it."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Guests at The Old Schoolhouse can light a fire in the living room.",
+                        "options": [],
+                        "evidence": "Because the building is listed, open fires are not permitted",
+                        "explanation": "Paragraph B says open fires are not allowed because the building is listed; the house is heated by underfloor heating instead."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Guests at Heron's Rest are able to go online in one part of the cottage.",
+                        "options": [],
+                        "evidence": "the broadband connection works reliably in the kitchen",
+                        "explanation": "Paragraph C says there is no mobile signal, but the broadband works reliably in the kitchen, so guests can use the internet there."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Hamid Pereira lives close to Heron's Rest.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C says Hamid Pereira contacts guests before they arrive, but it never says where he lives. Only Ffion Gallagher in paragraph B is described as living nearby."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Guests cannot drive all the way to Hilltop Bothy.",
+                        "options": [],
+                        "evidence": "it is reached by a fifteen-minute uphill walk from the nearest parking area",
+                        "explanation": "Paragraph D says the bothy has no road access and guests must walk uphill for fifteen minutes from where they park."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The solar power at Hilltop Bothy provides enough electricity to use an electric kettle.",
+                        "options": [],
+                        "evidence": "which provide enough power for lighting and charging phones but not for hairdryers or electric kettles",
+                        "explanation": "Paragraph D says the solar panels are enough for lights and phones but not for electric kettles, so the statement is false."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Families at Orchard Cottage do not have to pay extra to use baby equipment.",
+                        "options": [],
+                        "evidence": "A travel cot and a high chair can be supplied on request at no extra cost",
+                        "explanation": "Paragraph E says a travel cot and high chair are available on request at no extra cost, which means there is no additional charge."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The café near The Lookout is open in the evenings.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph F only says the café serves breakfast from eight o'clock. It does not say when the café closes."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the text? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "people": [
+            {
+                "name": "Ffion Gallagher",
+                "role": "owner who restored The Old Schoolhouse",
+                "gender": "female"
+            },
+            {
+                "name": "Hamid Pereira",
+                "role": "owner of Heron's Rest",
+                "gender": "male"
+            },
+            {
+                "name": "Ruth Calloway",
+                "role": "current owner who modernised The Lookout",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Converted from an eighteenth-century hay barn, Willow Barn sleeps six in three bedrooms, one of which is on the ground floor with its own shower room, making it a sensible choice for guests who find stairs difficult. The open-plan kitchen has a range cooker and a dishwasher, and the enclosed garden backs onto a small stream. Well-behaved dogs are welcome, although we ask that no more than two stay at any one time and that they are kept off the furniture. The nearest village shop is a ten-minute walk along a footpath, but it closes at lunchtime on Sundays, so plan your weekend shopping accordingly. Changeover day is Saturday.",
+                "label": "A"
+            },
+            {
+                "text": "Owner Ffion Gallagher spent two years restoring The Old Schoolhouse, a Victorian building in Brindle Green, and the original classroom, with its high ceilings and tall arched windows, now serves as a generous living room. There are two double bedrooms upstairs, plus a sofa bed suitable for a child. Because the building is listed, open fires are not permitted, but underfloor heating keeps the house warm even in midwinter. Ffion lives in the next village and is happy to drop off a welcome basket of local bread, cheese and eggs if you let her know your arrival time in advance. Please note that the lane outside is narrow, and larger vehicles may find parking awkward.",
+                "label": "B"
+            },
+            {
+                "text": "Set right on the edge of the marshes at Lower Fenwick, Heron's Rest is a single-storey cottage ideal for birdwatchers and walkers. A pair of binoculars and a shelf of field guides are provided, and the living room window looks directly across the reed beds. The cottage sleeps four. There is no mobile signal at all in the area, although a landline is available for emergencies and the broadband connection works reliably in the kitchen. The track to the cottage can flood after heavy rain between November and February, so at that time of year the owner, Hamid Pereira, contacts guests the day before arrival to suggest a route on foot from the church car park. Wellington boots in several sizes are kept in the porch.",
+                "label": "C"
+            },
+            {
+                "text": "This is not a cottage for everyone. Hilltop Bothy, on Carran Moor, has no road access: it is reached by a fifteen-minute uphill walk from the nearest parking area, and all supplies must be carried in. Electricity comes from solar panels, which provide enough power for lighting and charging phones but not for hairdryers or electric kettles; cooking is on a gas stove, and a wood-burner heats the single room. In return, guests enjoy what may be the finest views in the county and some of the darkest night skies. The bothy sleeps two, and bookings are for a minimum of three nights. Children under twelve cannot be accommodated because of the steep drop close to the door.",
+                "label": "D"
+            },
+            {
+                "text": "Families return to Orchard Cottage, in Stoke Abley, year after year. The large garden includes a climbing frame, a trampoline surrounded by safety netting, and an orchard where guests are free to pick apples and plums in season. Inside, there are four bedrooms, a games room with a table-tennis table, and a cupboard stocked with board games. A travel cot and a high chair can be supplied on request at no extra cost. The cottage is two miles from the nearest town, which has a supermarket, a swimming pool and a weekly farmers' market. Pets are not allowed, as the owners' hens roam the garden freely.",
+                "label": "E"
+            },
+            {
+                "text": "Perched on the cliffs above a sandy cove at Penmarrow Head, The Lookout was originally built for a coastguard and has been modernised by its current owner, Ruth Calloway, who added a glass-walled sitting room on the upper floor. Steps lead down from the garden gate to the beach, although they are steep and unsuitable for pushchairs. The cottage sleeps five and has a washing machine and an outdoor shower for rinsing off sand. Outside the school summer holidays, short breaks of two nights are accepted; in July and August, it is let by the week only. The coastal path passes the front door, and a café at the top of the cove serves breakfast from eight o'clock.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Children under twelve cannot be accommodated because of the steep drop close to the door.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Pets are not allowed, as the owners' hens roam the garden freely.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it closes at lunchtime on Sundays, so plan your weekend shopping accordingly",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the owner, Hamid Pereira, contacts guests the day before arrival to suggest a route on foot from the church car park",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "is happy to drop off a welcome basket of local bread, cheese and eggs if you let her know your arrival time in advance",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Outside the school summer holidays, short breaks of two nights are accepted; in July and August, it is let by the week only.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "we ask that no more than two stay at any one time",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they are kept off the furniture",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "open fires are not permitted",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the broadband connection works reliably in the kitchen",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "has no road access: it is reached by a fifteen-minute uphill walk from the nearest parking area",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "enough power for lighting and charging phones but not for hairdryers or electric kettles",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "A travel cot and a high chair can be supplied on request at no extra cost.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Children under twelve cannot be accommodated because of the steep drop close to the door.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Pets are not allowed, as the owners' hens roam the garden freely.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "The nearest village shop is a ten-minute walk along a footpath, but it closes at lunchtime on Sundays",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The track to the cottage can flood after heavy rain between November and February, so at that time of year the owner, Hamid Pereira, contacts guests the day before arrival to suggest a route on foot from the church car park.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Ffion lives in the next village and is happy to drop off a welcome basket of local bread, cheese and eggs if you let her know your arrival time in advance.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Outside the school summer holidays, short breaks of two nights are accepted; in July and August, it is let by the week only.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Well-behaved dogs are welcome, although we ask that no more than two stay at any one time",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they are kept off the furniture",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "open fires are not permitted",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the broadband connection works reliably in the kitchen",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Hilltop Bothy, on Carran Moor, has no road access: it is reached by a fifteen-minute uphill walk from the nearest parking area",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "which provide enough power for lighting and charging phones but not for hairdryers or electric kettles",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "A travel cot and a high chair can be supplied on request at no extra cost.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Children under twelve cannot be accommodated because of the steep drop close to the door.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Pets are not allowed, as the owners' hens roam the garden freely.",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "it closes at lunchtime on Sundays, so plan your weekend shopping accordingly.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "The track to the cottage can flood after heavy rain between November and February, so at that time of year the owner, Hamid Pereira, contacts guests the day before arrival to suggest a route on foot from the church car park.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Ffion lives in the next village and is happy to drop off a welcome basket of local bread, cheese and eggs if you let her know your arrival time in advance.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Outside the school summer holidays, short breaks of two nights are accepted; in July and August, it is let by the week only.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "they are kept off the furniture.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "open fires are not permitted",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "the broadband connection works reliably in the kitchen.",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "has no road access: it is reached by a fifteen-minute uphill walk from the nearest parking area",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "not for hairdryers or electric kettles",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q8": {
+            "marks": [
+                true
+            ],
+            "quote": "A travel cot and a high chair can be supplied on request at no extra cost.",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Countryside Cottages to Rent This Season\n\nA. Converted from an eighteenth-century hay barn, Willow Barn sleeps six in three bedrooms, one of which is on the ground floor with its own shower room, making it a sensible choice for guests who find stairs difficult. The open-plan kitchen has a range cooker and a dishwasher, and the enclosed garden backs onto a small stream. Well-behaved dogs are welcome, although we ask that no more than two stay at any one time and that they are kept off the furniture. The nearest village shop is a ten-minute walk along a footpath, but it closes at lunchtime on Sundays, so plan your weekend shopping accordingly. Changeover day is Saturday.\n\nB. Owner Ffion Gallagher spent two years restoring The Old Schoolhouse, a Victorian building in Brindle Green, and the original classroom, with its high ceilings and tall arched windows, now serves as a generous living room. There are two double bedrooms upstairs, plus a sofa bed suitable for a child. Because the building is listed, open fires are not permitted, but underfloor heating keeps the house warm even in midwinter. Ffion lives in the next village and is happy to drop off a welcome basket of local bread, cheese and eggs if you let her know your arrival time in advance. Please note that the lane outside is narrow, and larger vehicles may find parking awkward.\n\nC. Set right on the edge of the marshes at Lower Fenwick, Heron's Rest is a single-storey cottage ideal for birdwatchers and walkers. A pair of binoculars and a shelf of field guides are provided, and the living room window looks directly across the reed beds. The cottage sleeps four. There is no mobile signal at all in the area, although a landline is available for emergencies and the broadband connection works reliably in the kitchen. The track to the cottage can flood after heavy rain between November and February, so at that time of year the owner, Hamid Pereira, contacts guests the day before arrival to suggest a route on foot from the church car park. Wellington boots in several sizes are kept in the porch.\n\nD. This is not a cottage for everyone. Hilltop Bothy, on Carran Moor, has no road access: it is reached by a fifteen-minute uphill walk from the nearest parking area, and all supplies must be carried in. Electricity comes from solar panels, which provide enough power for lighting and charging phones but not for hairdryers or electric kettles; cooking is on a gas stove, and a wood-burner heats the single room. In return, guests enjoy what may be the finest views in the county and some of the darkest night skies. The bothy sleeps two, and bookings are for a minimum of three nights. Children under twelve cannot be accommodated because of the steep drop close to the door.\n\nE. Families return to Orchard Cottage, in Stoke Abley, year after year. The large garden includes a climbing frame, a trampoline surrounded by safety netting, and an orchard where guests are free to pick apples and plums in season. Inside, there are four bedrooms, a games room with a table-tennis table, and a cupboard stocked with board games. A travel cot and a high chair can be supplied on request at no extra cost. The cottage is two miles from the nearest town, which has a supermarket, a swimming pool and a weekly farmers' market. Pets are not allowed, as the owners' hens roam the garden freely.\n\nF. Perched on the cliffs above a sandy cove at Penmarrow Head, The Lookout was originally built for a coastguard and has been modernised by its current owner, Ruth Calloway, who added a glass-walled sitting room on the upper floor. Steps lead down from the garden gate to the beach, although they are steep and unsuitable for pushchairs. The cottage sleeps five and has a washing machine and an outdoor shower for rinsing off sand. Outside the school summer holidays, short breaks of two nights are accepted; in July and August, it is let by the week only. The coastal path passes the front door, and a café at the top of the cove serves breakfast from eight o'clock.",
+        "title": "Countryside Cottages to Rent This Season",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a restriction on the age of guests",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Children under twelve cannot be accommodated because of the steep drop close to the door",
+                        "explanation": {
+                            "en": "Paragraph D says children under twelve cannot stay at the bothy. Paragraph F mentions that steps are unsuitable for pushchairs, but that is advice, not a rule about guests' ages.",
+                            "ru": "В абзаце D сказано, что дети до двенадцати лет не могут останавливаться в \"bothy\". В абзаце F упоминается, что ступеньки неудобны для детских колясок, но это лишь совет, а не правило о возрасте гостей.",
+                            "uk": "В абзаці D сказано, що діти до дванадцяти років не можуть зупинятися в \"bothy\". В абзаці F згадано, що сходинки незручні для дитячих візочків, але це лише порада, а не правило щодо віку гостей."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "the reason why guests may not bring animals",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Pets are not allowed, as the owners' hens roam the garden freely",
+                        "explanation": {
+                            "en": "Paragraph E explains that pets are not allowed because the owners' hens walk around the garden. Paragraph A actually welcomes dogs.",
+                            "ru": "В абзаце E объясняется, что с домашними животными нельзя, потому что по саду гуляют куры хозяев. А в абзаце A собакам, наоборот, рады.",
+                            "uk": "В абзаці E пояснюється, що з домашніми тваринами не можна, бо садом гуляють кури господарів. А в абзаці A собакам, навпаки, раді."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a warning that a local shop is not open all day on one day of the week",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "it closes at lunchtime on Sundays, so plan your weekend shopping accordingly",
+                        "explanation": {
+                            "en": "Paragraph A says the village shop closes at lunchtime on Sundays. The café in paragraph F is not a shop, and only its opening time is given.",
+                            "ru": "В абзаце A сказано, что деревенский магазин по воскресеньям закрывается в обед. Кафе из абзаца F — не магазин, и для него указано только время открытия.",
+                            "uk": "В абзаці A сказано, що сільська крамниця в неділю зачиняється в обід. Кафе з абзацу F — не крамниця, і для нього вказано лише час відкриття."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "an arrangement made for guests when the usual way to the property may be under water",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "contacts guests the day before arrival to suggest a route on foot from the church car park",
+                        "explanation": {
+                            "en": "Paragraph C says the track can flood in winter, so the owner tells guests about a walking route from the church car park.",
+                            "ru": "В абзаце C сказано, что зимой дорогу может затопить, поэтому владелец рассказывает гостям о пешем маршруте от парковки у церкви.",
+                            "uk": "В абзаці C сказано, що взимку дорогу може затопити, тому власник розповідає гостям про пішохідний маршрут від парковки біля церкви."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "an offer of food from the owner if guests give notice",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "is happy to drop off a welcome basket of local bread, cheese and eggs if you let her know your arrival time in advance",
+                        "explanation": {
+                            "en": "Paragraph B says Ffion Gallagher will bring a basket of local food if guests tell her in advance when they will arrive.",
+                            "ru": "В абзаце B сказано, что Ffion Gallagher принесёт корзину местных продуктов, если гости заранее сообщат ей, когда приедут.",
+                            "uk": "В абзаці B сказано, що Ffion Gallagher принесе кошик місцевих продуктів, якщо гості заздалегідь повідомлять їй, коли приїдуть."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "booking rules that change depending on the time of year",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "Outside the school summer holidays, short breaks of two nights are accepted; in July and August, it is let by the week only",
+                        "explanation": {
+                            "en": "Paragraph F allows two-night stays except in July and August, when only whole weeks can be booked. Paragraph D has a minimum stay, but it is the same all year.",
+                            "ru": "Согласно абзацу F, можно остановиться на две ночи, кроме июля и августа, когда бронируются только полные недели. В абзаце D есть минимальный срок проживания, но он одинаков круглый год.",
+                            "uk": "Згідно з абзацом F, можна зупинитися на дві ночі, крім липня й серпня, коли бронюють лише повні тижні. В абзаці D є мінімальний термін проживання, але він однаковий цілий рік."
+                        }
+                    }
+                ],
+                "instruction": "The text has six descriptions of holiday cottages, labelled A–F. Which description contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Dogs staying at Willow Barn may sit on the furniture.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "they are kept off the furniture",
+                        "explanation": {
+                            "en": "Paragraph A welcomes dogs but asks that they are kept off the furniture, so the statement is the opposite of the passage.",
+                            "ru": "В абзаце A собакам рады, но просят не пускать их на мебель, так что утверждение противоречит тексту.",
+                            "uk": "В абзаці A собакам раді, але просять не пускати їх на меблі, тож твердження суперечить тексту."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The Old Schoolhouse was still being used as a school when Ffion Gallagher bought it.",
+                        "numbers": [
+                            8
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says Ffion spent two years restoring the Victorian schoolhouse, but it does not say when the building stopped being a school or when she bought it.",
+                            "ru": "В абзаце B сказано, что Ffion два года реставрировала викторианское здание школы, но не сказано, когда оно перестало быть школой и когда она его купила.",
+                            "uk": "В абзаці B сказано, що Ffion два роки реставрувала вікторіанську будівлю школи, але не сказано, коли там перестала працювати школа і коли Ffion купила будівлю."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Guests at The Old Schoolhouse can light a fire in the living room.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "Because the building is listed, open fires are not permitted",
+                        "explanation": {
+                            "en": "Paragraph B says open fires are not allowed because the building is listed; the house is heated by underfloor heating instead.",
+                            "ru": "В абзаце B сказано, что открытый огонь запрещён, так как здание является охраняемым памятником; вместо этого дом отапливается тёплым полом.",
+                            "uk": "В абзаці B сказано, що відкритий вогонь заборонений, оскільки будівля є пам'яткою під охороною; натомість будинок опалюється теплою підлогою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Guests at Heron's Rest are able to go online in one part of the cottage.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "the broadband connection works reliably in the kitchen",
+                        "explanation": {
+                            "en": "Paragraph C says there is no mobile signal, but the broadband works reliably in the kitchen, so guests can use the internet there.",
+                            "ru": "В абзаце C сказано, что мобильной связи нет, но на кухне стабильно работает широкополосный интернет, так что там гости могут им пользоваться.",
+                            "uk": "В абзаці C сказано, що мобільного зв'язку немає, але на кухні стабільно працює широкосмуговий інтернет, тож там гості можуть ним користуватися."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Hamid Pereira lives close to Heron's Rest.",
+                        "numbers": [
+                            11
+                        ],
+                        "explanation": {
+                            "en": "Paragraph C says Hamid Pereira contacts guests before they arrive, but it never says where he lives. Only Ffion Gallagher in paragraph B is described as living nearby.",
+                            "ru": "В абзаце C сказано, что Hamid Pereira связывается с гостями до их приезда, но нигде не говорится, где он живёт. Только о Ffion Gallagher в абзаце B сказано, что она живёт поблизости.",
+                            "uk": "В абзаці C сказано, що Hamid Pereira зв'язується з гостями до їхнього приїзду, але ніде не йдеться про те, де він живе. Лише про Ffion Gallagher в абзаці B сказано, що вона живе поблизу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Guests cannot drive all the way to Hilltop Bothy.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "it is reached by a fifteen-minute uphill walk from the nearest parking area",
+                        "explanation": {
+                            "en": "Paragraph D says the bothy has no road access and guests must walk uphill for fifteen minutes from where they park.",
+                            "ru": "В абзаце D сказано, что к \"bothy\" нет подъезда и от места парковки гостям нужно пятнадцать минут идти в гору.",
+                            "uk": "В абзаці D сказано, що до \"bothy\" немає під'їзду і від місця парковки гостям треба п'ятнадцять хвилин іти вгору."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The solar power at Hilltop Bothy provides enough electricity to use an electric kettle.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "which provide enough power for lighting and charging phones but not for hairdryers or electric kettles",
+                        "explanation": {
+                            "en": "Paragraph D says the solar panels are enough for lights and phones but not for electric kettles, so the statement is false.",
+                            "ru": "В абзаце D сказано, что солнечных панелей хватает для освещения и зарядки телефонов, но не для электрических чайников, так что утверждение неверно.",
+                            "uk": "В абзаці D сказано, що сонячних панелей вистачає для освітлення й заряджання телефонів, але не для електричних чайників, тож твердження хибне."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Families at Orchard Cottage do not have to pay extra to use baby equipment.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "A travel cot and a high chair can be supplied on request at no extra cost",
+                        "explanation": {
+                            "en": "Paragraph E says a travel cot and high chair are available on request at no extra cost, which means there is no additional charge.",
+                            "ru": "В абзаце E сказано, что детская кроватка и стульчик для кормления предоставляются по запросу бесплатно, то есть доплачивать за них не нужно.",
+                            "uk": "В абзаці E сказано, що дитяче ліжечко та стільчик для годування надають на запит безкоштовно, тобто доплачувати за них не потрібно."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the text? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7",
+            "b2q8"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first",
+            "b2q9": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q7",
+        "14": "b2q8"
+    },
+    "translation": {
+        "missing": []
+    }
+}

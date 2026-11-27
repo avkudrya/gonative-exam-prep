@@ -1,7 +1,7 @@
 {
     "id": "exam-reading-gt-1",
     "exam": "ielts-general-training",
-    "prompts": "rd-2",
+    "prompts": "rd-3",
     "routes": {
         "exam.reading.generate": [
             {
@@ -41,7 +41,7 @@
         ]
     },
     "budgetUsd": 21,
-    "spentUsd": 1.403605,
+    "spentUsd": 13.513086,
     "sections": [
         {
             "key": "gt-1|s1",
@@ -99,208 +99,560 @@
         },
         {
             "key": "gt-2|s1",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.439743,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 0,
+                "generated": 16,
+                "agreedFirst": 16,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-2-s1.json"
         },
         {
             "key": "gt-2|s2",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.370334,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-2-s2.json"
         },
         {
             "key": "gt-2|s3",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.421191,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 14,
+                "agreedFirst": 14,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-2-s3.json"
         },
         {
             "key": "gt-3|s1",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.389068,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 0,
+                "generated": 16,
+                "agreedFirst": 16,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-3-s1.json"
         },
         {
             "key": "gt-3|s2",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.385813,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-3-s2.json"
         },
         {
             "key": "gt-3|s3",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.452139,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-3-s3.json"
         },
         {
             "key": "gt-4|s1",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.386729,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 0,
+                "generated": 16,
+                "agreedFirst": 16,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-4-s1.json"
         },
         {
             "key": "gt-4|s2",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.390926,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-4-s2.json"
         },
         {
             "key": "gt-4|s3",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.506519,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 1,
+                "generated": 15,
+                "agreedFirst": 14,
+                "discardRate": 0.0667,
+                "agreedRevised": 0,
+                "disputedFirst": 1
+            },
+            "file": "sections/gt-4-s3.json"
         },
         {
             "key": "gt-5|s1",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.48409,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 0,
+                "generated": 16,
+                "agreedFirst": 16,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-5-s1.json"
         },
         {
             "key": "gt-5|s2",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.360929,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-5-s2.json"
         },
         {
             "key": "gt-5|s3",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.402194,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 14,
+                "agreedFirst": 14,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-5-s3.json"
         },
         {
             "key": "gt-6|s1",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.606503,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 0,
+                "generated": 16,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 1,
+                "disputedFirst": 1
+            },
+            "file": "sections/gt-6-s1.json"
         },
         {
             "key": "gt-6|s2",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.45285,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 14,
+                "discardRate": 0,
+                "agreedRevised": 1,
+                "disputedFirst": 1
+            },
+            "file": "sections/gt-6-s2.json"
         },
         {
             "key": "gt-6|s3",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.412321,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-6-s3.json"
         },
         {
             "key": "gt-7|s1",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.41894,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 1,
+                "generated": 16,
+                "agreedFirst": 15,
+                "discardRate": 0.0625,
+                "agreedRevised": 0,
+                "disputedFirst": 1
+            },
+            "file": "sections/gt-7-s1.json"
         },
         {
             "key": "gt-7|s2",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.389084,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-7-s2.json"
         },
         {
             "key": "gt-7|s3",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.509283,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-7-s3.json"
         },
         {
             "key": "gt-8|s1",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.535571,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 0,
+                "generated": 16,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 1,
+                "disputedFirst": 1
+            },
+            "file": "sections/gt-8-s1.json"
         },
         {
             "key": "gt-8|s2",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.499172,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-8-s2.json"
         },
         {
             "key": "gt-8|s3",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.48912,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 14,
+                "agreedFirst": 14,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-8-s3.json"
         },
         {
             "key": "gt-9|s1",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.41928,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 0,
+                "generated": 16,
+                "agreedFirst": 16,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-9-s1.json"
         },
         {
             "key": "gt-9|s2",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.45475,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-9-s2.json"
         },
         {
             "key": "gt-9|s3",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.617476,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-9-s3.json"
         },
         {
             "key": "gt-10|s1",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.365391,
+            "metrics": {
+                "control": {
+                    "marks": 14,
+                    "correct": 14
+                },
+                "discarded": 0,
+                "generated": 16,
+                "agreedFirst": 16,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-10-s1.json"
         },
         {
             "key": "gt-10|s2",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.49027,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-10-s2.json"
         },
         {
             "key": "gt-10|s3",
-            "status": "not_run",
-            "costUsd": 0,
-            "metrics": null,
-            "file": null
+            "status": "succeeded",
+            "costUsd": 0.459795,
+            "metrics": {
+                "control": {
+                    "marks": 13,
+                    "correct": 13
+                },
+                "discarded": 0,
+                "generated": 15,
+                "agreedFirst": 15,
+                "discardRate": 0,
+                "agreedRevised": 0,
+                "disputedFirst": 0
+            },
+            "file": "sections/gt-10-s3.json"
         }
     ],
     "tests": [
         {
             "id": "gt-1",
             "file": "tests/gt-1.json",
-            "questions": 40
+            "questions": 40,
+            "prompts": "rd-2"
+        },
+        {
+            "id": "gt-2",
+            "file": "tests/gt-2.json",
+            "questions": 40,
+            "prompts": "rd-3"
+        },
+        {
+            "id": "gt-3",
+            "file": "tests/gt-3.json",
+            "questions": 40,
+            "prompts": "rd-3"
+        },
+        {
+            "id": "gt-4",
+            "file": "tests/gt-4.json",
+            "questions": 40,
+            "prompts": "rd-3"
+        },
+        {
+            "id": "gt-5",
+            "file": "tests/gt-5.json",
+            "questions": 40,
+            "prompts": "rd-3"
+        },
+        {
+            "id": "gt-6",
+            "file": "tests/gt-6.json",
+            "questions": 40,
+            "prompts": "rd-3"
+        },
+        {
+            "id": "gt-7",
+            "file": "tests/gt-7.json",
+            "questions": 40,
+            "prompts": "rd-3"
+        },
+        {
+            "id": "gt-8",
+            "file": "tests/gt-8.json",
+            "questions": 40,
+            "prompts": "rd-3"
+        },
+        {
+            "id": "gt-9",
+            "file": "tests/gt-9.json",
+            "questions": 40,
+            "prompts": "rd-3"
+        },
+        {
+            "id": "gt-10",
+            "file": "tests/gt-10.json",
+            "questions": 40,
+            "prompts": "rd-3"
         }
     ],
     "totals": {
-        "generated": 46,
-        "disputedFirst": 1,
-        "discarded": 0,
-        "controlCorrect": 40,
-        "controlMarks": 40,
-        "discardRate": 0,
+        "generated": 457,
+        "disputedFirst": 6,
+        "discarded": 2,
+        "controlCorrect": 400,
+        "controlMarks": 400,
+        "discardRate": 0.0044,
         "controlAgreement": 1
     }
 }

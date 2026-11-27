@@ -1,0 +1,1133 @@
+{
+    "form": {
+        "first": [
+            "group 2 (sentence_completion), question 13: \"one pound coin\" is over the word limit"
+        ],
+        "afterRepair": []
+    },
+    "plan": "gt-6|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.29984,
+            "provider": "anthropic",
+            "outputTokens": 14056
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.114712,
+            "provider": "anthropic",
+            "outputTokens": 3906
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.013066,
+            "provider": "anthropic",
+            "outputTokens": 703
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018333,
+            "provider": "openai",
+            "outputTokens": 919
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.021344,
+            "provider": "anthropic",
+            "outputTokens": 334
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.00484,
+            "provider": "anthropic",
+            "outputTokens": 67
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.00515,
+            "provider": "openai",
+            "outputTokens": 143
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.04015,
+            "provider": "xai",
+            "outputTokens": 5644
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.089068,
+            "provider": "anthropic",
+            "outputTokens": 4120
+        }
+    ],
+    "draft": {
+        "title": "Your Visit to the National Museum",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "the reason why taking pictures is not permitted in some parts of the museum",
+                        "options": [],
+                        "evidence": "cameras are not allowed in special exhibitions because many objects are on loan from other collections",
+                        "explanation": "Section E explains that cameras are banned in special exhibitions because many objects are borrowed from other collections. Section A also mentions special exhibitions, but only in connection with tickets."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a place where visitors may eat food they have brought with them",
+                        "options": [],
+                        "evidence": "Visitors who have brought their own lunch are welcome to use the picnic room",
+                        "explanation": "Section C mentions a picnic room for people with their own lunch. The café and rooftop restaurant in the same section sell food, so they are not the answer to this idea, but the paragraph is still C."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a way for people who visit regularly to spend less",
+                        "options": [],
+                        "evidence": "If you expect to come more than twice in a year, an annual pass usually works out cheaper",
+                        "explanation": "Section A says an annual pass is usually cheaper for people who come more than twice a year. The reduced prices in the same section are for particular groups, not frequent visitors."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a guide's comment on how a tour can change the rest of a visit",
+                        "options": [],
+                        "evidence": "'People often tell us the tour changed the way they saw the rest of the building,' says Bongani Ashworth",
+                        "explanation": "In Section B, the guide Bongani Ashworth says the tour changes how people see the rest of the building. The quotation in Section D is about family trails, not a tour."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a document that visitors must hand over while they borrow something",
+                        "options": [],
+                        "evidence": "we ask for a form of photo identification, which we keep until the backpack is returned",
+                        "explanation": "Section D says photo identification is kept until the explorer backpack is returned. The audio guide in Section B needs a money deposit, not a document."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "advice on how to travel to the museum",
+                        "options": [],
+                        "evidence": "we encourage everyone else to come by public transport or bicycle",
+                        "explanation": "Section E recommends public transport or a bicycle because parking is limited. No other section discusses how to get to the museum."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "the dates on which the museum is closed",
+                        "options": [],
+                        "evidence": "every day except 24–26 December",
+                        "explanation": "Section A gives the opening hours and says the museum opens every day apart from 24–26 December, which means it is closed on those dates."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a rule that adults must accompany children at an overnight event",
+                        "options": [],
+                        "evidence": "At least one adult must stay with every group of up to five children",
+                        "explanation": "Section D describes the monthly sleepovers and says at least one adult must stay with each group of up to five children."
+                    }
+                ],
+                "instruction": "The visitor guide has five sections, A–E. Which section contains the following information? Write the correct letter, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "front desk"
+                        ],
+                        "prompt": "Some special exhibition tickets are not sold online but are kept for buyers at the ______ every morning.",
+                        "options": [],
+                        "evidence": "A limited number of tickets are kept back for sale at the front desk each morning",
+                        "explanation": "Section A says a small number of tickets are held back and sold at the front desk each morning. The information desk is mentioned elsewhere for audio guides and wheelchairs, not tickets."
+                    },
+                    {
+                        "answer": [
+                            "annual pass"
+                        ],
+                        "prompt": "People who come to the museum more than twice a year may save money by buying an ______.",
+                        "options": [],
+                        "evidence": "an annual pass usually works out cheaper and lets you skip the queue",
+                        "explanation": "Section A says an annual pass 'works out cheaper' for people who visit more than twice in a year."
+                    },
+                    {
+                        "answer": [
+                            "whale skeleton"
+                        ],
+                        "prompt": "The free highlights tour sets off from beside a ______ in the entrance hall.",
+                        "options": [],
+                        "evidence": "starting from the large whale skeleton in the entrance hall",
+                        "explanation": "Section B says the tour starts from the large whale skeleton in the entrance hall. 'Large whale skeleton' would be three words, so only 'whale skeleton' fits the limit."
+                    },
+                    {
+                        "answer": [
+                            "three weeks",
+                            "3 weeks"
+                        ],
+                        "prompt": "Groups of ten or more wanting a private tour should get in touch at least ______ before they come.",
+                        "options": [],
+                        "evidence": "should contact us at least three weeks before their visit",
+                        "explanation": "Section B says large groups must contact the museum at least three weeks before their visit. The figure 45 refers to the length of the tour in minutes, not booking time."
+                    },
+                    {
+                        "answer": [
+                            "one-pound coin"
+                        ],
+                        "prompt": "To use a locker in the cloakroom, visitors need a ______, which they get back later.",
+                        "options": [],
+                        "evidence": "lockers take a one-pound coin that is returned when you collect your belongings",
+                        "explanation": "Section C says the lockers take a one-pound coin, which is returned when visitors collect their things."
+                    },
+                    {
+                        "answer": [
+                            "reserved"
+                        ],
+                        "prompt": "Wheelchairs are lent without charge, but visitors cannot have one ______ before they arrive.",
+                        "options": [],
+                        "evidence": "though they cannot be reserved in advance",
+                        "explanation": "Section C says wheelchairs are free to borrow but 'cannot be reserved in advance', so visitors cannot book one before arriving."
+                    },
+                    {
+                        "answer": [
+                            "sketching materials"
+                        ],
+                        "prompt": "As well as a magnifying glass and a trail, each explorer backpack contains ______.",
+                        "options": [],
+                        "evidence": "a magnifying glass, sketching materials and a trail",
+                        "explanation": "Section D lists the contents of the backpack: a magnifying glass, sketching materials and a trail to ten hidden animals."
+                    },
+                    {
+                        "answer": [
+                            "east gate"
+                        ],
+                        "prompt": "Visitors arriving by bicycle will find racks next to the ______.",
+                        "options": [],
+                        "evidence": "racks can be found by the east gate",
+                        "explanation": "Section E says bicycle racks are by the east gate. The main exit is where the shop is, not the bicycle racks."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Bongani Ashworth",
+                "role": "volunteer guide who has led tours at the museum for eleven years",
+                "gender": "unknown"
+            },
+            {
+                "name": "Imogen Szczepanski",
+                "role": "head of learning at the museum",
+                "gender": "unknown"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Entry to the museum's permanent galleries is free for everyone, although we welcome donations at the boxes beside the main entrance. Our special exhibitions, which change three times a year, do require a ticket. These can be bought online up to a month in advance, and booking ahead is strongly recommended: each ticket is for a timed entry slot, and weekend slots frequently sell out by Friday afternoon. A limited number of tickets are kept back for sale at the front desk each morning. Reduced prices apply to students, people over 65 and those receiving unemployment benefits, while under-fives go free. If you expect to come more than twice in a year, an annual pass usually works out cheaper and lets you skip the queue. The museum is open from 10 a.m. to 5.30 p.m. every day except 24–26 December, with a late opening until 9 p.m. on Fridays.",
+                "label": "A"
+            },
+            {
+                "text": "Our volunteer guides lead a free highlights tour twice a day, at 11 a.m. and 2 p.m., starting from the large whale skeleton in the entrance hall. The tour lasts about 45 minutes and covers six of the museum's best-known objects, making it ideal for first-time visitors. There is no need to book, but places are limited to twenty people per tour and are given out on a first-come, first-served basis. Groups of ten or more who would like their own private tour should contact us at least three weeks before their visit. 'People often tell us the tour changed the way they saw the rest of the building,' says Bongani Ashworth, who has guided visitors here for eleven years. If you prefer to explore at your own pace, audio guides in nine languages can be hired from the information desk; a small deposit is charged and returned when the device is handed back. A tour in British Sign Language runs on the first Saturday of every month.",
+                "label": "B"
+            },
+            {
+                "text": "Large bags, suitcases and umbrellas are not permitted in the galleries and must be left in the cloakroom on the lower ground floor, where lockers take a one-pound coin that is returned when you collect your belongings. All floors can be reached by lift, and wheelchairs can be borrowed free of charge from the information desk, though they cannot be reserved in advance. Baby-changing facilities are available on every floor. The ground-floor café serves hot and cold food throughout the day, while the rooftop restaurant takes bookings only. Visitors who have brought their own lunch are welcome to use the picnic room next to the cloakroom. For anyone who finds the galleries overwhelming, a quiet room with soft lighting is located on the second floor and is open to all visitors.",
+                "label": "C"
+            },
+            {
+                "text": "Children are at the heart of what we do. Families can collect an explorer backpack, containing a magnifying glass, sketching materials and a trail leading to ten hidden animals around the building, from the Family Desk. Backpacks are free, but we ask for a form of photo identification, which we keep until the backpack is returned. 'We designed the trails so that adults learn as much as the children,' explains Imogen Szczepanski, head of learning. 'Parents tell us they notice things they'd walked past for years.' Every Saturday and Sunday, drop-in craft workshops run in the Discovery Studio between 11 a.m. and 3 p.m.; no booking is needed. Our monthly sleepovers allow children aged seven to eleven to spend the night among the dinosaurs. At least one adult must stay with every group of up to five children, and these events usually fill up within days of being announced.",
+                "label": "D"
+            },
+            {
+                "text": "The museum is a five-minute walk from Riverside underground station. On-site parking is very limited and reserved for visitors with disabilities, so we encourage everyone else to come by public transport or bicycle; racks can be found by the east gate. Photography for personal use is allowed in the permanent galleries, provided you switch off your flash, but cameras are not allowed in special exhibitions because many objects are on loan from other collections. The museum shop, beside the main exit, stocks books, toys and gifts, and every purchase helps fund our work. Comments can be left at the information desk or on our website.",
+                "label": "E"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "cameras are not allowed in special exhibitions because many objects are on loan from other collections",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Visitors who have brought their own lunch are welcome to use the picnic room next to the cloakroom.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you expect to come more than twice in a year, an annual pass usually works out cheaper",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "'People often tell us the tour changed the way they saw the rest of the building,'",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "we ask for a form of photo identification, which we keep until the backpack is returned",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "we encourage everyone else to come by public transport or bicycle",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "open from 10 a.m. to 5.30 p.m. every day except 24–26 December",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "At least one adult must stay with every group of up to five children",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "A limited number of tickets are kept back for sale at the front desk each morning.",
+                "answer": [
+                    "front desk"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "an annual pass usually works out cheaper",
+                "answer": [
+                    "annual pass"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "starting from the large whale skeleton in the entrance hall",
+                "answer": [
+                    "whale skeleton"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "should contact us at least three weeks before their visit",
+                "answer": [
+                    "three weeks"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "lockers take a one-pound coin that is returned when you collect your belongings",
+                "answer": [
+                    "one-pound coin"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    false
+                ],
+                "quote": "they cannot be reserved in advance",
+                "answer": [
+                    "reserved in advance"
+                ],
+                "correct": false
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "containing a magnifying glass, sketching materials and a trail",
+                "answer": [
+                    "sketching materials"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "racks can be found by the east gate",
+                "answer": [
+                    "east gate"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "cameras are not allowed in special exhibitions because many objects are on loan from other collections",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Visitors who have brought their own lunch are welcome to use the picnic room next to the cloakroom",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you expect to come more than twice in a year, an annual pass usually works out cheaper",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "'People often tell us the tour changed the way they saw the rest of the building,' says Bongani Ashworth",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Backpacks are free, but we ask for a form of photo identification, which we keep until the backpack is returned",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "we encourage everyone else to come by public transport or bicycle",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "The museum is open from 10 a.m. to 5.30 p.m. every day except 24–26 December",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "At least one adult must stay with every group of up to five children",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "A limited number of tickets are kept back for sale at the front desk each morning",
+                "answer": [
+                    "front desk"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "an annual pass usually works out cheaper",
+                "answer": [
+                    "annual pass"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "starting from the large whale skeleton in the entrance hall",
+                "answer": [
+                    "whale skeleton"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "should contact us at least three weeks before their visit",
+                "answer": [
+                    "three weeks"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "lockers take a one-pound coin that is returned when you collect your belongings",
+                "answer": [
+                    "one-pound coin"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "they cannot be reserved in advance",
+                "answer": [
+                    "reserved"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "containing a magnifying glass, sketching materials and a trail",
+                "answer": [
+                    "sketching materials"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "racks can be found by the east gate",
+                "answer": [
+                    "east gate"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": [
+            "b2q6"
+        ]
+    },
+    "revise": {
+        "b2q6": {
+            "action": "keep",
+            "reason": "The key is correct. 'reserved in advance' is three words, which breaks the two-word limit, and 'in advance' repeats 'before they arrive' in the prompt."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "cameras are not allowed in special exhibitions because many objects are on loan from other collections",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Visitors who have brought their own lunch are welcome to use the picnic room next to the cloakroom",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "If you expect to come more than twice in a year, an annual pass usually works out cheaper",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "People often tell us the tour changed the way they saw the rest of the building",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "we ask for a form of photo identification, which we keep until the backpack is returned",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "we encourage everyone else to come by public transport or bicycle",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "every day except 24–26 December",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "kept back for sale at the front desk each morning",
+            "answer": [
+                "front desk"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "an annual pass usually works out cheaper",
+            "answer": [
+                "annual pass"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "starting from the large whale skeleton in the entrance hall",
+            "answer": [
+                "whale skeleton"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "at least three weeks before their visit",
+            "answer": [
+                "three weeks"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "lockers take a one-pound coin that is returned",
+            "answer": [
+                "one-pound coin"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "they cannot be reserved in advance",
+            "answer": [
+                "reserved"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "containing a magnifying glass, sketching materials and a trail",
+            "answer": [
+                "sketching materials"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 1,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "wheelchairs can be borrowed free of charge from the information desk, though they cannot be reserved in advance",
+                "answer": [
+                    "reserved"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "wheelchairs can be borrowed free of charge from the information desk, though they cannot be reserved in advance",
+                "answer": [
+                    "reserved"
+                ],
+                "correct": true
+            }
+        }
+    },
+    "section": {
+        "text": "Your Visit to the National Museum\n\nA. Entry to the museum's permanent galleries is free for everyone, although we welcome donations at the boxes beside the main entrance. Our special exhibitions, which change three times a year, do require a ticket. These can be bought online up to a month in advance, and booking ahead is strongly recommended: each ticket is for a timed entry slot, and weekend slots frequently sell out by Friday afternoon. A limited number of tickets are kept back for sale at the front desk each morning. Reduced prices apply to students, people over 65 and those receiving unemployment benefits, while under-fives go free. If you expect to come more than twice in a year, an annual pass usually works out cheaper and lets you skip the queue. The museum is open from 10 a.m. to 5.30 p.m. every day except 24–26 December, with a late opening until 9 p.m. on Fridays.\n\nB. Our volunteer guides lead a free highlights tour twice a day, at 11 a.m. and 2 p.m., starting from the large whale skeleton in the entrance hall. The tour lasts about 45 minutes and covers six of the museum's best-known objects, making it ideal for first-time visitors. There is no need to book, but places are limited to twenty people per tour and are given out on a first-come, first-served basis. Groups of ten or more who would like their own private tour should contact us at least three weeks before their visit. 'People often tell us the tour changed the way they saw the rest of the building,' says Bongani Ashworth, who has guided visitors here for eleven years. If you prefer to explore at your own pace, audio guides in nine languages can be hired from the information desk; a small deposit is charged and returned when the device is handed back. A tour in British Sign Language runs on the first Saturday of every month.\n\nC. Large bags, suitcases and umbrellas are not permitted in the galleries and must be left in the cloakroom on the lower ground floor, where lockers take a one-pound coin that is returned when you collect your belongings. All floors can be reached by lift, and wheelchairs can be borrowed free of charge from the information desk, though they cannot be reserved in advance. Baby-changing facilities are available on every floor. The ground-floor café serves hot and cold food throughout the day, while the rooftop restaurant takes bookings only. Visitors who have brought their own lunch are welcome to use the picnic room next to the cloakroom. For anyone who finds the galleries overwhelming, a quiet room with soft lighting is located on the second floor and is open to all visitors.\n\nD. Children are at the heart of what we do. Families can collect an explorer backpack, containing a magnifying glass, sketching materials and a trail leading to ten hidden animals around the building, from the Family Desk. Backpacks are free, but we ask for a form of photo identification, which we keep until the backpack is returned. 'We designed the trails so that adults learn as much as the children,' explains Imogen Szczepanski, head of learning. 'Parents tell us they notice things they'd walked past for years.' Every Saturday and Sunday, drop-in craft workshops run in the Discovery Studio between 11 a.m. and 3 p.m.; no booking is needed. Our monthly sleepovers allow children aged seven to eleven to spend the night among the dinosaurs. At least one adult must stay with every group of up to five children, and these events usually fill up within days of being announced.\n\nE. The museum is a five-minute walk from Riverside underground station. On-site parking is very limited and reserved for visitors with disabilities, so we encourage everyone else to come by public transport or bicycle; racks can be found by the east gate. Photography for personal use is allowed in the permanent galleries, provided you switch off your flash, but cameras are not allowed in special exhibitions because many objects are on loan from other collections. The museum shop, beside the main exit, stocks books, toys and gifts, and every purchase helps fund our work. Comments can be left at the information desk or on our website.",
+        "title": "Your Visit to the National Museum",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "the reason why taking pictures is not permitted in some parts of the museum",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "cameras are not allowed in special exhibitions because many objects are on loan from other collections",
+                        "explanation": {
+                            "en": "Section E explains that cameras are banned in special exhibitions because many objects are borrowed from other collections. Section A also mentions special exhibitions, but only in connection with tickets.",
+                            "ru": "В разделе E объясняется, что на специальных выставках нельзя снимать на камеру, потому что многие экспонаты взяты на время из других коллекций. Раздел A тоже упоминает специальные выставки, но только в связи с билетами.",
+                            "uk": "У розділі E пояснюється, що на спеціальних виставках заборонено знімати на камеру, бо багато експонатів позичено з інших колекцій. Розділ A теж згадує спеціальні виставки, але лише у зв'язку з квитками."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a place where visitors may eat food they have brought with them",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Visitors who have brought their own lunch are welcome to use the picnic room",
+                        "explanation": {
+                            "en": "Section C mentions a picnic room for people with their own lunch. The café and rooftop restaurant in the same section sell food, so they are not the answer to this idea, but the paragraph is still C.",
+                            "ru": "В разделе C упоминается комната для пикника для тех, кто приносит обед с собой. Кафе и ресторан на крыше из того же раздела продают еду, поэтому к этой мысли они не относятся, но ответ всё равно C.",
+                            "uk": "У розділі C згадується кімната для пікніка для тих, хто приносить обід із собою. Кафе й ресторан на даху з того самого розділу продають їжу, тож до цієї думки вони не стосуються, але відповідь однаково C."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a way for people who visit regularly to spend less",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "If you expect to come more than twice in a year, an annual pass usually works out cheaper",
+                        "explanation": {
+                            "en": "Section A says an annual pass is usually cheaper for people who come more than twice a year. The reduced prices in the same section are for particular groups, not frequent visitors.",
+                            "ru": "В разделе A сказано, что годовой абонемент обычно выгоднее для тех, кто приходит больше двух раз в год. Льготные цены в том же разделе предназначены для отдельных категорий посетителей, а не для тех, кто приходит часто.",
+                            "uk": "У розділі A сказано, що річний абонемент зазвичай вигідніший для тих, хто приходить більше двох разів на рік. Пільгові ціни в тому самому розділі призначені для окремих категорій відвідувачів, а не для тих, хто приходить часто."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a guide's comment on how a tour can change the rest of a visit",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "'People often tell us the tour changed the way they saw the rest of the building,' says Bongani Ashworth",
+                        "explanation": {
+                            "en": "In Section B, the guide Bongani Ashworth says the tour changes how people see the rest of the building. The quotation in Section D is about family trails, not a tour.",
+                            "ru": "В разделе B гид Bongani Ashworth говорит, что экскурсия меняет то, как люди воспринимают остальную часть здания. Цитата в разделе D касается семейных маршрутов, а не экскурсии.",
+                            "uk": "У розділі B гід Bongani Ashworth каже, що екскурсія змінює те, як люди сприймають решту будівлі. Цитата в розділі D стосується сімейних маршрутів, а не екскурсії."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a document that visitors must hand over while they borrow something",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "we ask for a form of photo identification, which we keep until the backpack is returned",
+                        "explanation": {
+                            "en": "Section D says photo identification is kept until the explorer backpack is returned. The audio guide in Section B needs a money deposit, not a document.",
+                            "ru": "В разделе D сказано, что документ с фотографией остаётся в музее, пока рюкзак исследователя не вернут. За аудиогид в разделе B берут денежный залог, а не документ.",
+                            "uk": "У розділі D сказано, що документ із фотографією залишається в музеї, доки рюкзак дослідника не повернуть. За аудіогід у розділі B беруть грошову заставу, а не документ."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "advice on how to travel to the museum",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "we encourage everyone else to come by public transport or bicycle",
+                        "explanation": {
+                            "en": "Section E recommends public transport or a bicycle because parking is limited. No other section discusses how to get to the museum.",
+                            "ru": "Раздел E советует добираться общественным транспортом или на велосипеде, так как мест для парковки мало. Ни в одном другом разделе не говорится о том, как добраться до музея.",
+                            "uk": "Розділ E радить добиратися громадським транспортом або велосипедом, бо місць для паркування мало. У жодному іншому розділі не йдеться про те, як дістатися до музею."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "the dates on which the museum is closed",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "every day except 24–26 December",
+                        "explanation": {
+                            "en": "Section A gives the opening hours and says the museum opens every day apart from 24–26 December, which means it is closed on those dates.",
+                            "ru": "В разделе A указаны часы работы и сказано, что музей открыт каждый день, кроме 24–26 декабря, то есть в эти дни он закрыт.",
+                            "uk": "У розділі A наведено години роботи й сказано, що музей відчинений щодня, крім 24–26 грудня, тобто в ці дні він зачинений."
+                        }
+                    }
+                ],
+                "instruction": "The visitor guide has five sections, A–E. Which section contains the following information? Write the correct letter, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "front desk"
+                        ],
+                        "prompt": "Some special exhibition tickets are not sold online but are kept for buyers at the ______ every morning.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "A limited number of tickets are kept back for sale at the front desk each morning",
+                        "explanation": {
+                            "en": "Section A says a small number of tickets are held back and sold at the front desk each morning. The information desk is mentioned elsewhere for audio guides and wheelchairs, not tickets.",
+                            "ru": "В разделе A сказано, что небольшое количество билетов придерживают и продают каждое утро на стойке у входа (\"front desk\"). Информационная стойка (\"information desk\") упоминается в другом месте, но в связи с аудиогидами и креслами-колясками, а не с билетами.",
+                            "uk": "У розділі A сказано, що невелику кількість квитків притримують і щоранку продають на стійці біля входу (\"front desk\"). Інформаційна стійка (\"information desk\") згадується в іншому місці, але у зв'язку з аудіогідами та кріслами колісними, а не з квитками."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "annual pass"
+                        ],
+                        "prompt": "People who come to the museum more than twice a year may save money by buying an ______.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "an annual pass usually works out cheaper and lets you skip the queue",
+                        "explanation": {
+                            "en": "Section A says an annual pass 'works out cheaper' for people who visit more than twice in a year.",
+                            "ru": "В разделе A сказано, что годовой абонемент \"works out cheaper\" (обходится дешевле) для тех, кто приходит больше двух раз в год.",
+                            "uk": "У розділі A сказано, що річний абонемент \"works out cheaper\" (виходить дешевшим) для тих, хто приходить більше двох разів на рік."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "whale skeleton"
+                        ],
+                        "prompt": "The free highlights tour sets off from beside a ______ in the entrance hall.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "starting from the large whale skeleton in the entrance hall",
+                        "explanation": {
+                            "en": "Section B says the tour starts from the large whale skeleton in the entrance hall. 'Large whale skeleton' would be three words, so only 'whale skeleton' fits the limit.",
+                            "ru": "В разделе B сказано, что экскурсия начинается у большого скелета кита в вестибюле. \"Large whale skeleton\" — это три слова, поэтому в ограничение укладывается только \"whale skeleton\".",
+                            "uk": "У розділі B сказано, що екскурсія починається біля великого скелета кита у вестибюлі. \"Large whale skeleton\" — це три слова, тож в обмеження вкладається лише \"whale skeleton\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "three weeks",
+                            "3 weeks"
+                        ],
+                        "prompt": "Groups of ten or more wanting a private tour should get in touch at least ______ before they come.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "should contact us at least three weeks before their visit",
+                        "explanation": {
+                            "en": "Section B says large groups must contact the museum at least three weeks before their visit. The figure 45 refers to the length of the tour in minutes, not booking time.",
+                            "ru": "В разделе B сказано, что большие группы должны связаться с музеем не позднее чем за три недели (\"three weeks\") до визита. Число 45 — это продолжительность экскурсии в минутах, а не срок бронирования.",
+                            "uk": "У розділі B сказано, що великі групи мають зв'язатися з музеєм щонайменше за три тижні (\"three weeks\") до візиту. Число 45 — це тривалість екскурсії у хвилинах, а не термін бронювання."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "one-pound coin"
+                        ],
+                        "prompt": "To use a locker in the cloakroom, visitors need a ______, which they get back later.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "lockers take a one-pound coin that is returned when you collect your belongings",
+                        "explanation": {
+                            "en": "Section C says the lockers take a one-pound coin, which is returned when visitors collect their things.",
+                            "ru": "В разделе C сказано, что шкафчики камеры хранения работают с монетой в один фунт (\"one-pound coin\"), которая возвращается, когда посетители забирают вещи.",
+                            "uk": "У розділі C сказано, що шафки камери схову працюють із монетою в один фунт (\"one-pound coin\"), яку повертають, коли відвідувачі забирають речі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "reserved"
+                        ],
+                        "prompt": "Wheelchairs are lent without charge, but visitors cannot have one ______ before they arrive.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "though they cannot be reserved in advance",
+                        "explanation": {
+                            "en": "Section C says wheelchairs are free to borrow but 'cannot be reserved in advance', so visitors cannot book one before arriving.",
+                            "ru": "В разделе C сказано, что кресла-коляски выдаются бесплатно, но их \"cannot be reserved in advance\", поэтому забронировать коляску до приезда нельзя.",
+                            "uk": "У розділі C сказано, що крісла колісні видають безкоштовно, але їх \"cannot be reserved in advance\", тож забронювати крісло до приїзду не можна."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "sketching materials"
+                        ],
+                        "prompt": "As well as a magnifying glass and a trail, each explorer backpack contains ______.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "a magnifying glass, sketching materials and a trail",
+                        "explanation": {
+                            "en": "Section D lists the contents of the backpack: a magnifying glass, sketching materials and a trail to ten hidden animals.",
+                            "ru": "В разделе D перечислено, что лежит в рюкзаке: лупа (\"magnifying glass\"), принадлежности для рисования (\"sketching materials\") и маршрут поиска десяти спрятанных животных (\"trail\").",
+                            "uk": "У розділі D перелічено, що є в рюкзаку: лупа (\"magnifying glass\"), приладдя для малювання (\"sketching materials\") і маршрут пошуку десяти схованих тварин (\"trail\")."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "revised",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6",
+        "14": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

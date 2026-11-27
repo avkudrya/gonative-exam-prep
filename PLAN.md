@@ -1025,3 +1025,8 @@ lint и сборка проходят. Существующие приложен
   - Сессия worksheet-generator сообщила: в production банк грамматики N8 — 1239 заданий, id 43154–44392, `grammar-n8:`,
     `ai_cross_reviewed`, только вставки, новых тем нет (их `docs/phase-2/grammar-n8/exam-prep-handoff.md`, `537e668`). Это
     информация, не решение. Кандидат на сопоставление с практикой Exam вместе с N5 и N7.
+- **2026-11-27. P7.5: набор Reading готов** ([P7.5](docs/phase-7/P7.5-reading-set.md) §6–7). Прогоны GT и Academic: 18 тестов,
+  **$24.88 из $40** (GT $13.51 из $21, Academic $11.37 из $19). Вычитка Claude: 680 вопросов, ошибок ключа нет; три спорных
+  варианта и одно повторное имя исправлены в библиотеке. Библиотеки Academic `v3` (academic-3…10) и General Training `v1`
+  (gt-1…10), все `published`; MultiAdmin `4040bdf2` без миграции. Дальше владелец: деплой сайта (выбор экзамена), деплой
+  MultiAdmin, `exam:import-reading --apply` (18 insert).

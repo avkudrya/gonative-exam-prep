@@ -1,0 +1,1065 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-10|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.320824,
+            "provider": "anthropic",
+            "outputTokens": 14935
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.01444,
+            "provider": "anthropic",
+            "outputTokens": 726
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018823,
+            "provider": "openai",
+            "outputTokens": 902
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.018688,
+            "provider": "xai",
+            "outputTokens": 1985
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.085944,
+            "provider": "anthropic",
+            "outputTokens": 3960
+        }
+    ],
+    "draft": {
+        "title": "The Return of the Wolf",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a reference to rewards once offered for killing wolves",
+                        "options": [],
+                        "evidence": "bounties paid to anyone who produced a dead animal",
+                        "explanation": "Paragraph A says that hunting was encouraged by bounties, which are payments or rewards for each dead wolf. Paragraph B calls killing wolves a 'public service' but does not mention any payment."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "an example of a country that continued to permit some wolf hunting",
+                        "options": [],
+                        "evidence": "Spain among them, kept exceptions that allowed limited hunting in particular regions",
+                        "explanation": "Paragraph B names Spain as a country that kept exceptions allowing limited hunting, even after the wolf became protected."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a claim that wolves were excluded by human hostility rather than by unsuitable surroundings",
+                        "options": [],
+                        "evidence": "kept out of our landscapes by guns, not by any lack of suitable habitat",
+                        "explanation": "In Paragraph D, Ilka Brunner says wolves were kept out by guns (people killing them), not because the habitat was unsuitable."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a contrast between farming traditions in areas with and without a continuous wolf presence",
+                        "options": [],
+                        "evidence": "In places like the French Alps or the plains of northern Germany, by contrast, such practices had largely been forgotten",
+                        "explanation": "Paragraph E compares shepherds in central Italy, where wolves never disappeared, with farmers in the French Alps and northern Germany, where guarding practices had been forgotten."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "an example of a traditional dog breed used to protect flocks",
+                        "options": [],
+                        "evidence": "often from traditional breeds such as Italy's Maremma sheepdog",
+                        "explanation": "Paragraph F names the Maremma sheepdog as a traditional guardian breed. Paragraph E mentions guarding flocks with dogs but does not name any breed."
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "table_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "1979"
+                        ],
+                        "prompt": "Legal protection | the Bern Convention of ______ listed the wolf as strictly protected",
+                        "options": [],
+                        "evidence": "In 1979 the Bern Convention, a European agreement on the conservation of wildlife and natural habitats, listed the wolf as strictly protected",
+                        "explanation": "Paragraph B gives the year of the Bern Convention as 1979, when the wolf was listed as strictly protected."
+                    },
+                    {
+                        "answer": [
+                            "woodland"
+                        ],
+                        "prompt": "Rural change | abandoned hillside fields gradually turned into scrub and ______",
+                        "options": [],
+                        "evidence": "were abandoned and slowly returned to scrub and woodland",
+                        "explanation": "Paragraph C says that fields left behind by people who moved to cities slowly returned to scrub and woodland."
+                    },
+                    {
+                        "answer": [
+                            "boar"
+                        ],
+                        "prompt": "More prey | numbers of red deer, roe deer and wild ______ grew sharply",
+                        "options": [],
+                        "evidence": "Populations of red deer, roe deer and wild boar expanded dramatically",
+                        "explanation": "Paragraph C lists the prey animals that increased: red deer, roe deer and wild boar. 'Grew sharply' restates 'expanded dramatically'."
+                    },
+                    {
+                        "answer": [
+                            "night"
+                        ],
+                        "prompt": "Brunner's study | most collared wolves crossed roads and farmland at ______",
+                        "options": [],
+                        "evidence": "most crossed roads and farmland mainly at night, when people were indoors",
+                        "explanation": "Paragraph D reports that most of the wolves Ilka Brunner tracked crossed roads and farmland mainly at night."
+                    },
+                    {
+                        "answer": [
+                            "late"
+                        ],
+                        "prompt": "Compensation | farmers complain that payments are often ______",
+                        "options": [],
+                        "evidence": "farmers frequently complain that payments arrive late",
+                        "explanation": "Paragraph E says farmers complain that compensation payments arrive late and do not cover all their costs."
+                    },
+                    {
+                        "answer": [
+                            "training"
+                        ],
+                        "prompt": "Abara's study | farmers given ______ in addition to equipment had fewer losses",
+                        "options": [],
+                        "evidence": "farmers who received training as well as equipment reported far fewer losses",
+                        "explanation": "Paragraph F says Ngozi Abara found that farmers who got training as well as equipment lost far fewer animals than those who were only given fences."
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Wolves have recovered in a part of the world that is both crowded and heavily farmed.",
+                        "options": [],
+                        "evidence": "one of the most densely populated and intensively farmed regions on Earth",
+                        "explanation": "Paragraph A says the comeback happened in one of the most densely populated and intensively farmed regions on Earth. 'Crowded and heavily farmed' means the same thing."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Italy was the first European country to make the wolf a protected species.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says Italy protected the wolf in 1971 and that attitudes began to change in the 1970s. It never says whether any other country had protected wolves earlier, so we cannot know if Italy was first."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "One reason deer and boar became more numerous was a decline in hunting.",
+                        "options": [],
+                        "evidence": "partly because there were fewer people to hunt them",
+                        "explanation": "Paragraph C explains that deer and boar increased partly because there were fewer people to hunt them, which is a decline in hunting."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Most of the wolves tracked by Ilka Brunner travelled over 800 kilometres before settling.",
+                        "options": [],
+                        "evidence": "some covered more than 800 kilometres before settling",
+                        "explanation": "Paragraph D says only 'some' of the wolves covered more than 800 kilometres. The word 'most' in the passage refers to crossing roads at night, not to the distance travelled."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Aurelio Mancuso loses fewer sheep to wolves than farmers in the French Alps do.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph E says Mancuso keeps about 400 sheep and believes old guarding skills matter. However, the passage gives no figures for his losses or for losses in the French Alps, so no comparison can be made."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "people": [
+            {
+                "name": "Ilka Brunner",
+                "role": "ecologist who tracked young wolves fitted with satellite collars",
+                "gender": "female"
+            },
+            {
+                "name": "Aurelio Mancuso",
+                "role": "sheep farmer in the Abruzzo mountains of Italy",
+                "gender": "male"
+            },
+            {
+                "name": "Ngozi Abara",
+                "role": "social scientist who interviewed livestock owners about wolves",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For much of the twentieth century, the grey wolf was little more than a memory across most of western and central Europe. Centuries of hunting, often encouraged by bounties paid to anyone who produced a dead animal, combined with poisoning and the clearing of forests to push the species out of one country after another. By the 1960s, wolves survived mainly in scattered refuges: the mountains of the Iberian Peninsula, the Apennines of Italy, the Balkans and the great forests of eastern Europe. Today, by contrast, wolves breed in most mainland European countries, and recent estimates put the continent's population at well over ten thousand animals. Few large carnivores anywhere have staged such a comeback, and remarkably, it has happened not in wilderness but in one of the most densely populated and intensively farmed regions on Earth.",
+                "label": "A"
+            },
+            {
+                "text": "The first reason for this recovery is legal. For most of history, killing a wolf was not merely permitted but regarded as a public service. That attitude began to change in the 1970s. Italy gave the wolf legal protection in 1971, at a time when perhaps only 100 animals remained in the Apennines. In 1979 the Bern Convention, a European agreement on the conservation of wildlife and natural habitats, listed the wolf as strictly protected, and later European Union law reinforced this status. Some countries, Spain among them, kept exceptions that allowed limited hunting in particular regions, but across much of the continent the threat of being shot was sharply reduced for the first time in centuries.",
+                "label": "B"
+            },
+            {
+                "text": "Changes in the countryside mattered just as much. During the second half of the twentieth century, millions of rural Europeans left the land for jobs in towns and cities. Hillside fields that had been grazed or ploughed for generations were abandoned and slowly returned to scrub and woodland. This process gave wolves both cover and, more importantly, food. Populations of red deer, roe deer and wild boar expanded dramatically, partly because there were fewer people to hunt them and partly because the new forests provided ideal shelter. A predator returning to these landscapes found a far richer supply of wild prey than its ancestors had known a century earlier.",
+                "label": "C"
+            },
+            {
+                "text": "The third factor is the wolf itself. Young wolves usually leave the pack into which they were born at between one and two years old, setting off in search of a mate and a territory of their own. Some travel astonishing distances. Wolves from Italy crossed into the French Alps in the early 1990s, and in 2000 a pair that had wandered west from Poland raised cubs in eastern Germany, the first known breeding there for well over a century. Ilka Brunner, an ecologist who followed forty young wolves fitted with satellite collars, found that some covered more than 800 kilometres before settling and that most crossed roads and farmland mainly at night, when people were indoors. 'They are not creatures of the wilderness,' she says. 'They are adaptable animals that were kept out of our landscapes by guns, not by any lack of suitable habitat.'",
+                "label": "D"
+            },
+            {
+                "text": "Not everyone welcomes their return. For sheep and goat farmers, particularly in areas where wolves had been absent for generations, the arrival of a pack can be devastating. In regions where wolves never disappeared, such as central Italy, shepherds kept up traditions of guarding flocks with dogs and bringing animals into enclosures at night. In places like the French Alps or the plains of northern Germany, by contrast, such practices had largely been forgotten, and flocks often grazed unattended for weeks. Aurelio Mancuso, who keeps around 400 sheep in the Abruzzo mountains, believes the real problem is less the wolf than the loss of old skills. 'My grandfather never left his sheep alone,' he says. 'Farmers elsewhere are now having to relearn what we never forgot.' Many governments pay compensation for animals that are killed, but farmers frequently complain that payments arrive late and fail to cover the stress, the extra work or the loss of valuable breeding stock.",
+                "label": "E"
+            },
+            {
+                "text": "Increasingly, therefore, governments are investing in prevention rather than payment. Electric fencing and specially bred guardian dogs, often from traditional breeds such as Italy's Maremma sheepdog, are now subsidised in several countries. Their effectiveness, however, depends heavily on how they are used. Ngozi Abara, a social scientist who interviewed more than 200 livestock owners, found that farmers who received training as well as equipment reported far fewer losses than those who were simply handed fences. She also discovered that attitudes towards wolves were shaped less by the number of animals a farmer had lost than by a sense that decisions were being taken by distant officials. Pressure from rural communities has already led to moves to lower the wolf's protected status and permit more culling. Whether Europe can share its crowded landscapes with a large predator may ultimately depend less on biology than on whether the people who bear the costs feel they are being heard.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "often encouraged by bounties paid to anyone who produced a dead animal",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some countries, Spain among them, kept exceptions that allowed limited hunting in particular regions",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "They are adaptable animals that were kept out of our landscapes by guns, not by any lack of suitable habitat.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "In regions where wolves never disappeared, such as central Italy, shepherds kept up traditions of guarding flocks with dogs and bringing animals into enclosures at night. In places like the French Alps or the plains of northern Germany, by contrast, such practices had largely been forgotten",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "specially bred guardian dogs, often from traditional breeds such as Italy's Maremma sheepdog",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "In 1979 the Bern Convention",
+                "answer": [
+                    "1979"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "slowly returned to scrub and woodland",
+                "answer": [
+                    "woodland"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Populations of red deer, roe deer and wild boar expanded dramatically",
+                "answer": [
+                    "boar"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "most crossed roads and farmland mainly at night",
+                "answer": [
+                    "night"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "farmers frequently complain that payments arrive late",
+                "answer": [
+                    "late"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "farmers who received training as well as equipment reported far fewer losses",
+                "answer": [
+                    "training"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "it has happened not in wilderness but in one of the most densely populated and intensively farmed regions on Earth",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "partly because there were fewer people to hunt them",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "found that some covered more than 800 kilometres before settling",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "often encouraged by bounties paid to anyone who produced a dead animal",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some countries, Spain among them, kept exceptions that allowed limited hunting in particular regions",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "They are adaptable animals that were kept out of our landscapes by guns, not by any lack of suitable habitat.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "In regions where wolves never disappeared, such as central Italy, shepherds kept up traditions of guarding flocks with dogs and bringing animals into enclosures at night. In places like the French Alps or the plains of northern Germany, by contrast, such practices had largely been forgotten",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "traditional breeds such as Italy's Maremma sheepdog",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "In 1979 the Bern Convention",
+                "answer": [
+                    "1979"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "returned to scrub and woodland",
+                "answer": [
+                    "woodland"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "red deer, roe deer and wild boar",
+                "answer": [
+                    "boar"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "most crossed roads and farmland mainly at night",
+                "answer": [
+                    "night"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "farmers frequently complain that payments arrive late",
+                "answer": [
+                    "late"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "farmers who received training as well as equipment reported far fewer losses",
+                "answer": [
+                    "training"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "it has happened not in wilderness but in one of the most densely populated and intensively farmed regions on Earth",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Populations of red deer, roe deer and wild boar expanded dramatically, partly because there were fewer people to hunt them",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "found that some covered more than 800 kilometres before settling",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "often encouraged by bounties paid to anyone who produced a dead animal",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Some countries, Spain among them, kept exceptions that allowed limited hunting in particular regions",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "They are adaptable animals that were kept out of our landscapes by guns, not by any lack of suitable habitat.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "In regions where wolves never disappeared, such as central Italy, shepherds kept up traditions of guarding flocks with dogs and bringing animals into enclosures at night. In places like the French Alps or the plains of northern Germany, by contrast, such practices had largely been forgotten",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "In 1979 the Bern Convention, a European agreement on the conservation of wildlife and natural habitats, listed the wolf as strictly protected",
+            "answer": [
+                "1979"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "were abandoned and slowly returned to scrub and woodland",
+            "answer": [
+                "woodland"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Populations of red deer, roe deer and wild boar expanded dramatically",
+            "answer": [
+                "boar"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "most crossed roads and farmland mainly at night",
+            "answer": [
+                "night"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "farmers frequently complain that payments arrive late",
+            "answer": [
+                "late"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "it has happened not in wilderness but in one of the most densely populated and intensively farmed regions on Earth",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "partly because there were fewer people to hunt them",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "found that some covered more than 800 kilometres before settling",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The Return of the Wolf\n\nA. For much of the twentieth century, the grey wolf was little more than a memory across most of western and central Europe. Centuries of hunting, often encouraged by bounties paid to anyone who produced a dead animal, combined with poisoning and the clearing of forests to push the species out of one country after another. By the 1960s, wolves survived mainly in scattered refuges: the mountains of the Iberian Peninsula, the Apennines of Italy, the Balkans and the great forests of eastern Europe. Today, by contrast, wolves breed in most mainland European countries, and recent estimates put the continent's population at well over ten thousand animals. Few large carnivores anywhere have staged such a comeback, and remarkably, it has happened not in wilderness but in one of the most densely populated and intensively farmed regions on Earth.\n\nB. The first reason for this recovery is legal. For most of history, killing a wolf was not merely permitted but regarded as a public service. That attitude began to change in the 1970s. Italy gave the wolf legal protection in 1971, at a time when perhaps only 100 animals remained in the Apennines. In 1979 the Bern Convention, a European agreement on the conservation of wildlife and natural habitats, listed the wolf as strictly protected, and later European Union law reinforced this status. Some countries, Spain among them, kept exceptions that allowed limited hunting in particular regions, but across much of the continent the threat of being shot was sharply reduced for the first time in centuries.\n\nC. Changes in the countryside mattered just as much. During the second half of the twentieth century, millions of rural Europeans left the land for jobs in towns and cities. Hillside fields that had been grazed or ploughed for generations were abandoned and slowly returned to scrub and woodland. This process gave wolves both cover and, more importantly, food. Populations of red deer, roe deer and wild boar expanded dramatically, partly because there were fewer people to hunt them and partly because the new forests provided ideal shelter. A predator returning to these landscapes found a far richer supply of wild prey than its ancestors had known a century earlier.\n\nD. The third factor is the wolf itself. Young wolves usually leave the pack into which they were born at between one and two years old, setting off in search of a mate and a territory of their own. Some travel astonishing distances. Wolves from Italy crossed into the French Alps in the early 1990s, and in 2000 a pair that had wandered west from Poland raised cubs in eastern Germany, the first known breeding there for well over a century. Ilka Brunner, an ecologist who followed forty young wolves fitted with satellite collars, found that some covered more than 800 kilometres before settling and that most crossed roads and farmland mainly at night, when people were indoors. 'They are not creatures of the wilderness,' she says. 'They are adaptable animals that were kept out of our landscapes by guns, not by any lack of suitable habitat.'\n\nE. Not everyone welcomes their return. For sheep and goat farmers, particularly in areas where wolves had been absent for generations, the arrival of a pack can be devastating. In regions where wolves never disappeared, such as central Italy, shepherds kept up traditions of guarding flocks with dogs and bringing animals into enclosures at night. In places like the French Alps or the plains of northern Germany, by contrast, such practices had largely been forgotten, and flocks often grazed unattended for weeks. Aurelio Mancuso, who keeps around 400 sheep in the Abruzzo mountains, believes the real problem is less the wolf than the loss of old skills. 'My grandfather never left his sheep alone,' he says. 'Farmers elsewhere are now having to relearn what we never forgot.' Many governments pay compensation for animals that are killed, but farmers frequently complain that payments arrive late and fail to cover the stress, the extra work or the loss of valuable breeding stock.\n\nF. Increasingly, therefore, governments are investing in prevention rather than payment. Electric fencing and specially bred guardian dogs, often from traditional breeds such as Italy's Maremma sheepdog, are now subsidised in several countries. Their effectiveness, however, depends heavily on how they are used. Ngozi Abara, a social scientist who interviewed more than 200 livestock owners, found that farmers who received training as well as equipment reported far fewer losses than those who were simply handed fences. She also discovered that attitudes towards wolves were shaped less by the number of animals a farmer had lost than by a sense that decisions were being taken by distant officials. Pressure from rural communities has already led to moves to lower the wolf's protected status and permit more culling. Whether Europe can share its crowded landscapes with a large predator may ultimately depend less on biology than on whether the people who bear the costs feel they are being heard.",
+        "title": "The Return of the Wolf",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a reference to rewards once offered for killing wolves",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "bounties paid to anyone who produced a dead animal",
+                        "explanation": {
+                            "en": "Paragraph A says that hunting was encouraged by bounties, which are payments or rewards for each dead wolf. Paragraph B calls killing wolves a 'public service' but does not mention any payment.",
+                            "ru": "В абзаце A сказано, что охоту поощряли с помощью \"bounties\" — выплат или вознаграждений за каждого убитого волка. В абзаце B убийство волков названо \"public service\", но ни о какой оплате там не говорится.",
+                            "uk": "В абзаці A сказано, що полювання заохочували за допомогою \"bounties\" — виплат або винагород за кожного вбитого вовка. В абзаці B вбивство вовків названо \"public service\", але про жодну оплату там не йдеться."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "an example of a country that continued to permit some wolf hunting",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Spain among them, kept exceptions that allowed limited hunting in particular regions",
+                        "explanation": {
+                            "en": "Paragraph B names Spain as a country that kept exceptions allowing limited hunting, even after the wolf became protected.",
+                            "ru": "В абзаце B Испания названа страной, которая сохранила исключения, разрешающие ограниченную охоту, даже после того как волк получил охранный статус.",
+                            "uk": "В абзаці B Іспанію названо країною, яка зберегла винятки, що дозволяють обмежене полювання, навіть після того як вовк отримав охоронний статус."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a claim that wolves were excluded by human hostility rather than by unsuitable surroundings",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "kept out of our landscapes by guns, not by any lack of suitable habitat",
+                        "explanation": {
+                            "en": "In Paragraph D, Ilka Brunner says wolves were kept out by guns (people killing them), not because the habitat was unsuitable.",
+                            "ru": "В абзаце D Ilka Brunner говорит, что волков не пускали ружья (\"guns\"), то есть их истребляли люди, а вовсе не то, что среда обитания была непригодной.",
+                            "uk": "В абзаці D Ilka Brunner каже, що вовків не допускали рушниці (\"guns\"), тобто їх знищували люди, а зовсім не те, що середовище існування було непридатним."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a contrast between farming traditions in areas with and without a continuous wolf presence",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "In places like the French Alps or the plains of northern Germany, by contrast, such practices had largely been forgotten",
+                        "explanation": {
+                            "en": "Paragraph E compares shepherds in central Italy, where wolves never disappeared, with farmers in the French Alps and northern Germany, where guarding practices had been forgotten.",
+                            "ru": "В абзаце E пастухи центральной Италии, где волки никогда не исчезали, сравниваются с фермерами во Французских Альпах и на севере Германии, где навыки охраны стада были забыты.",
+                            "uk": "В абзаці E пастухів центральної Італії, де вовки ніколи не зникали, порівнюють із фермерами у Французьких Альпах і на півночі Німеччини, де навички охорони стада були забуті."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "table_completion",
+                "limit": {
+                    "words": 1,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "1979"
+                        ],
+                        "prompt": "Legal protection | the Bern Convention of ______ listed the wolf as strictly protected",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "In 1979 the Bern Convention, a European agreement on the conservation of wildlife and natural habitats, listed the wolf as strictly protected",
+                        "explanation": {
+                            "en": "Paragraph B gives the year of the Bern Convention as 1979, when the wolf was listed as strictly protected.",
+                            "ru": "В абзаце B указан год Бернской конвенции — 1979, когда волк был внесён в список строго охраняемых видов.",
+                            "uk": "В абзаці B зазначено рік Бернської конвенції — 1979, коли вовка внесли до списку видів, що суворо охороняються."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "woodland"
+                        ],
+                        "prompt": "Rural change | abandoned hillside fields gradually turned into scrub and ______",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "were abandoned and slowly returned to scrub and woodland",
+                        "explanation": {
+                            "en": "Paragraph C says that fields left behind by people who moved to cities slowly returned to scrub and woodland.",
+                            "ru": "В абзаце C сказано, что поля, брошенные людьми, которые переехали в города, постепенно снова заросли кустарником и лесом (\"scrub and woodland\").",
+                            "uk": "В абзаці C сказано, що поля, покинуті людьми, які переїхали до міст, поступово знову заросли чагарником і лісом (\"scrub and woodland\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "boar"
+                        ],
+                        "prompt": "More prey | numbers of red deer, roe deer and wild ______ grew sharply",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "Populations of red deer, roe deer and wild boar expanded dramatically",
+                        "explanation": {
+                            "en": "Paragraph C lists the prey animals that increased: red deer, roe deer and wild boar. 'Grew sharply' restates 'expanded dramatically'.",
+                            "ru": "В абзаце C перечислены животные-жертвы, численность которых выросла: благородный олень (\"red deer\"), косуля (\"roe deer\") и кабан (\"wild boar\"). \"Grew sharply\" — это перефразирование \"expanded dramatically\".",
+                            "uk": "В абзаці C перелічено тварин-жертв, чисельність яких зросла: благородний олень (\"red deer\"), козуля (\"roe deer\") і дикий кабан (\"wild boar\"). \"Grew sharply\" — це перефразування \"expanded dramatically\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "night"
+                        ],
+                        "prompt": "Brunner's study | most collared wolves crossed roads and farmland at ______",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "most crossed roads and farmland mainly at night, when people were indoors",
+                        "explanation": {
+                            "en": "Paragraph D reports that most of the wolves Ilka Brunner tracked crossed roads and farmland mainly at night.",
+                            "ru": "В абзаце D сообщается, что большинство волков, которых отслеживала Ilka Brunner, пересекали дороги и сельхозугодья в основном ночью.",
+                            "uk": "В абзаці D повідомляється, що більшість вовків, яких відстежувала Ilka Brunner, перетинали дороги та сільгоспугіддя переважно вночі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "late"
+                        ],
+                        "prompt": "Compensation | farmers complain that payments are often ______",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "farmers frequently complain that payments arrive late",
+                        "explanation": {
+                            "en": "Paragraph E says farmers complain that compensation payments arrive late and do not cover all their costs.",
+                            "ru": "В абзаце E говорится, что фермеры жалуются: компенсационные выплаты приходят с опозданием и покрывают не все их расходы.",
+                            "uk": "В абзаці E йдеться про те, що фермери скаржаться: компенсаційні виплати надходять із запізненням і покривають не всі їхні витрати."
+                        }
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Wolves have recovered in a part of the world that is both crowded and heavily farmed.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "one of the most densely populated and intensively farmed regions on Earth",
+                        "explanation": {
+                            "en": "Paragraph A says the comeback happened in one of the most densely populated and intensively farmed regions on Earth. 'Crowded and heavily farmed' means the same thing.",
+                            "ru": "В абзаце A сказано, что возвращение волков произошло в одном из самых густонаселённых регионов Земли с самым интенсивным сельским хозяйством. \"Crowded and heavily farmed\" означает то же самое.",
+                            "uk": "В абзаці A сказано, що повернення вовків відбулося в одному з найгустіше заселених регіонів Землі з найінтенсивнішим сільським господарством. \"Crowded and heavily farmed\" означає те саме."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Italy was the first European country to make the wolf a protected species.",
+                        "numbers": [
+                            11
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says Italy protected the wolf in 1971 and that attitudes began to change in the 1970s. It never says whether any other country had protected wolves earlier, so we cannot know if Italy was first.",
+                            "ru": "В абзаце B сказано, что Италия взяла волка под охрану в 1971 году и что отношение к волкам начало меняться в 1970-х. Но нигде не говорится, защищали ли волков раньше в других странах, поэтому мы не можем знать, была ли Италия первой.",
+                            "uk": "В абзаці B сказано, що Італія взяла вовка під охорону в 1971 році і що ставлення до вовків почало змінюватися в 1970-х. Але ніде не сказано, чи захищали вовків раніше в інших країнах, тому ми не можемо знати, чи була Італія першою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "One reason deer and boar became more numerous was a decline in hunting.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "partly because there were fewer people to hunt them",
+                        "explanation": {
+                            "en": "Paragraph C explains that deer and boar increased partly because there were fewer people to hunt them, which is a decline in hunting.",
+                            "ru": "В абзаце C объясняется, что оленей и кабанов стало больше отчасти потому, что охотиться на них стало меньше людей, — то есть охота сократилась.",
+                            "uk": "В абзаці C пояснюється, що оленів і кабанів побільшало почасти тому, що полювати на них стало менше людей, — тобто полювання скоротилося."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Most of the wolves tracked by Ilka Brunner travelled over 800 kilometres before settling.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "some covered more than 800 kilometres before settling",
+                        "explanation": {
+                            "en": "Paragraph D says only 'some' of the wolves covered more than 800 kilometres. The word 'most' in the passage refers to crossing roads at night, not to the distance travelled.",
+                            "ru": "В абзаце D сказано, что более 800 километров преодолели лишь \"some\" волки. Слово \"most\" в тексте относится к пересечению дорог ночью, а не к пройденному расстоянию.",
+                            "uk": "В абзаці D сказано, що понад 800 кілометрів подолали лише \"some\" вовки. Слово \"most\" у тексті стосується перетину доріг уночі, а не пройденої відстані."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b2q1",
+        "6": "b2q2",
+        "7": "b2q3",
+        "8": "b2q4",
+        "9": "b2q5",
+        "10": "b3q1",
+        "11": "b3q2",
+        "12": "b3q3",
+        "13": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

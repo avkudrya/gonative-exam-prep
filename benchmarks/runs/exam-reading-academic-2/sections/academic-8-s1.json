@@ -1,0 +1,1194 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-8|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.306016,
+            "provider": "anthropic",
+            "outputTokens": 14284
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.0155,
+            "provider": "anthropic",
+            "outputTokens": 655
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.020523,
+            "provider": "openai",
+            "outputTokens": 924
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01715,
+            "provider": "xai",
+            "outputTokens": 1579
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.093376,
+            "provider": "anthropic",
+            "outputTokens": 4317
+        }
+    ],
+    "draft": {
+        "title": "Whispers in the Soil and Air",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Doubts about what the underground evidence shows"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Farmers adopt plant signals to protect crops"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "The trouble with a familiar metaphor"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "A trading partnership that links roots together"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Plants that recognise their own relatives"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Airborne alarms that have won acceptance"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Better experiments and a call for restraint"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "Whose benefit does a warning serve?"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "How fungi harm the trees they colonise"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "Their objection is to the word 'talk' itself",
+                        "explanation": "Paragraph A explains that many botanists dislike the popular word 'talk' because it suggests intention. The whole paragraph is about the problem with this familiar way of speaking."
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "few specialists now doubt that the phenomenon is real",
+                        "explanation": "Paragraph B describes chemical warnings that travel through the air and says that, after early doubts, scientists now accept them. Nothing says farmers already use these signals."
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "it is hard to see why a damaged plant would help potential competitors growing beside it",
+                        "explanation": "Paragraph C asks whether the damaged plant gains anything from the signal and suggests the compounds may really serve the plant itself, with neighbours only eavesdropping."
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "neighbouring trees may be joined by what scientists call a common mycorrhizal network",
+                        "explanation": "Paragraph D describes the exchange of minerals for sugars between fungi and plants, and how one fungus can connect the roots of several plants. The fungi help plants here; they do not harm them."
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "they concluded that the evidence was far weaker than its reputation suggested",
+                        "explanation": "Paragraph E reports criticism of the field studies on underground networks: other routes were not ruled out, the amounts were tiny, and fungi may act for themselves."
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "Resolving the dispute will require experiments that separate the possible routes.",
+                        "explanation": "Paragraph F proposes mesh experiments to test the routes and warns that forestry policy should not depend on the debate too early, so it combines better experiments with caution."
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "priming"
+                        ],
+                        "prompt": "The heightened readiness of plants that have detected a damaged neighbour's airborne compounds is referred to as ______.",
+                        "options": [],
+                        "evidence": "This state of readiness is known as priming.",
+                        "explanation": "Paragraph B says that this condition of being prepared to defend quickly is called priming."
+                    },
+                    {
+                        "answer": [
+                            "eavesdropping"
+                        ],
+                        "prompt": "According to one explanation, neighbouring plants that react to airborne compounds are not the intended receivers but are merely ______.",
+                        "options": [],
+                        "evidence": "Neighbours, on this view, are not being addressed at all; they are simply eavesdropping.",
+                        "explanation": "Paragraph C says that, if the compounds evolved for the plant's own use, neighbours are not being spoken to; they are only eavesdropping."
+                    },
+                    {
+                        "answer": [
+                            "wild mustard"
+                        ],
+                        "prompt": "Corinne Abeyta carried out her field study using ______.",
+                        "options": [],
+                        "evidence": "Working with wild mustard, she found",
+                        "explanation": "Paragraph C says Abeyta worked with wild mustard. Wild tobacco and maize are mentioned in paragraph B, but not as part of her study."
+                    },
+                    {
+                        "answer": [
+                            "sugars"
+                        ],
+                        "prompt": "Mycorrhizal fungi provide plants with water and minerals and receive ______ in return.",
+                        "options": [],
+                        "evidence": "which it passes to the plant in exchange for sugars produced by photosynthesis",
+                        "explanation": "Paragraph D describes a trade: the fungus gives water and minerals and gets sugars made by photosynthesis in exchange."
+                    },
+                    {
+                        "answer": [
+                            "soil water"
+                        ],
+                        "prompt": "Rangihau's team noted that substances might have moved between trees dissolved in ______ rather than through fungi.",
+                        "options": [],
+                        "evidence": "dissolved in soil water, for instance, or through roots that had grown into direct contact",
+                        "explanation": "Paragraph E gives two routes that do not involve fungi. One of them is substances dissolved in soil water."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What is the main objection of many botanists, according to paragraph A?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They doubt that plants exchange any chemical substances at all."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They think the language suggests an intention that plants lack."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They believe documentaries exaggerate how much food forests share."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They feel that laboratory findings reach the public too slowly."
+                            }
+                        ],
+                        "evidence": "Their objection is to the word 'talk' itself, which implies a speaker who intends to be understood",
+                        "explanation": "Paragraph A says botanists object to the word 'talk' because it suggests a speaker who intends a message, which does not suit organisms without brains. The paragraph says botanists do not deny that plants exchange chemicals."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why, according to paragraph C, is it difficult to treat airborne compounds as a real message?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "The damaged plant gains nothing obvious from helping rivals nearby."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The compounds move too slowly to reach any neighbouring plants."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Neighbouring plants rarely change their defences after exposure."
+                            },
+                            {
+                                "id": "D",
+                                "text": "The compounds break down before they can cross a whole meadow."
+                            }
+                        ],
+                        "evidence": "A warning is only a message if sending it brings some advantage to the sender, and it is hard to see why a damaged plant would help potential competitors growing beside it.",
+                        "explanation": "Paragraph C says a message must bring some benefit to the sender, and it is unclear why a damaged plant would help its competitors. It is chemicals inside the plant's veins, not airborne compounds, that the passage calls slow."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What did the laboratory and greenhouse experiments in paragraph D demonstrate?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Large mother trees deliberately feed young trees growing in shade."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Fungal threads carry chemical warnings of danger between trees."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Traceable carbon can pass between seedlings through fungal links."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Most land plants rely entirely on fungi for their supply of water."
+                            }
+                        ],
+                        "evidence": "carbon labelled so that it could be traced has been seen moving from one seedling to another through such connections",
+                        "explanation": "Paragraph D says that labelled carbon was seen moving between seedlings through fungal connections. The ideas about mother trees feeding young trees and sending warnings come from popular accounts, not from these experiments."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What is Halvard Ishikawa's view on forestry policy?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Old trees deserve protection mainly because they feed seedlings."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Keeping large old trees may be justified for other reasons."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Forestry rules should be changed to protect fungal networks."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Cutting old trees would help younger ones to grow faster."
+                            }
+                        ],
+                        "evidence": "Protecting large old trees may well be sensible, he notes, but for reasons such as habitat and carbon storage",
+                        "explanation": "In paragraph F, Ishikawa says protecting old trees may be sensible because of habitat and carbon storage, not because of unproven claims about underground networks. So the idea that old trees should be protected because they feed seedlings is the opposite of his view."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Corinne Abeyta",
+                "role": "ecologist who studied airborne signals in wild mustard",
+                "gender": "female"
+            },
+            {
+                "name": "Matiu Rangihau",
+                "role": "soil scientist who re-examined field studies of fungal networks",
+                "gender": "male"
+            },
+            {
+                "name": "Halvard Ishikawa",
+                "role": "plant physiologist who proposed mesh-barrier experiments",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Few scientific ideas have travelled as quickly from the laboratory to the bookshop as the claim that plants talk to one another. Documentaries describe forests as communities whose members share food and trade warnings, and the language of conversation has become almost routine in popular writing about nature. Many botanists, however, are uneasy. They do not deny that plants exchange chemical substances, often in ways that affect their neighbours. Their objection is to the word 'talk' itself, which implies a speaker who intends to be understood and a listener who interprets a message. Applied to organisms without brains, such vocabulary can make modest findings sound revolutionary, and it can hide the real question, which is not whether information passes between plants but who, if anyone, gains from its passage.",
+                "label": "A"
+            },
+            {
+                "text": "The strongest evidence concerns signals carried through the air. When insects chew a leaf, many plants release a blend of volatile organic compounds, light molecules that evaporate easily and drift on the breeze. Researchers have found that undamaged plants exposed to this blend often respond by preparing their own defences: they may not produce protective chemicals straight away, but when insects later attack, they manufacture toxins or bitter compounds faster and in greater quantities than plants that received no warning. This state of readiness is known as priming. The first reports of the effect, published in the early 1980s, were greeted with considerable suspicion, partly because the experiments were small. Since then, however, similar responses have been recorded in dozens of species, from wild tobacco to maize, and few specialists now doubt that the phenomenon is real.",
+                "label": "B"
+            },
+            {
+                "text": "Whether this amounts to communication is another matter. A warning is only a message if sending it brings some advantage to the sender, and it is hard to see why a damaged plant would help potential competitors growing beside it. One explanation, which many ecologists find persuasive, is that the airborne compounds evolved for internal use. Chemicals travelling through a plant's veins move slowly, so a branch under attack may alert other branches of the same plant more quickly through the air. Neighbours, on this view, are not being addressed at all; they are simply eavesdropping. A field study by the ecologist Corinne Abeyta lends some support to the idea. Working with wild mustard, she found that neighbouring plants responded to the compounds only when they grew within about sixty centimetres of the damaged one, a distance suited to signalling within a single bushy plant rather than across a meadow.",
+                "label": "C"
+            },
+            {
+                "text": "Below ground, the story involves a third party. The great majority of land plants form partnerships with mycorrhizal fungi, whose fine threads, called hyphae, wrap around or penetrate roots. The arrangement is essentially a trade: the fungus gathers water and minerals such as phosphorus from the soil, which it passes to the plant in exchange for sugars produced by photosynthesis. Because a single fungus can colonise the roots of several plants at once, neighbouring trees may be joined by what scientists call a common mycorrhizal network. In laboratory and greenhouse experiments, carbon labelled so that it could be traced has been seen moving from one seedling to another through such connections. These results inspired the phrase 'wood wide web' and, in popular accounts, a striking picture of large 'mother trees' that feed shaded young trees and send them chemical warnings of danger.",
+                "label": "D"
+            },
+            {
+                "text": "It is this picture that has attracted the sharpest criticism. When the soil scientist Matiu Rangihau and his colleagues re-examined the field studies most often cited in its support, they concluded that the evidence was far weaker than its reputation suggested. In many experiments, substances could have travelled between trees by routes that had nothing to do with fungi: dissolved in soil water, for instance, or through roots that had grown into direct contact. Few studies had been designed to rule these possibilities out. Even where carbon clearly did pass through fungal threads, the quantities were usually tiny, and it was often unclear whether the carbon reached the leaves and stems of the receiving tree or simply remained inside the fungus. Rangihau also pointed out that fungi have interests of their own. If resources move through a network, he argued, the fungus may be directing them for its own benefit rather than acting as a loyal messenger between trees.",
+                "label": "E"
+            },
+            {
+                "text": "Resolving the dispute will require experiments that separate the possible routes. The plant physiologist Halvard Ishikawa has proposed surrounding the roots of young trees with mesh with holes of different sizes: one coarse enough to let fungal threads through while keeping roots apart, and one so fine that it blocks the threads as well. If transfer continues behind the finer mesh, fungi cannot be responsible. Ishikawa also warns against letting the debate shape forestry policy too early. Protecting large old trees may well be sensible, he notes, but for reasons such as habitat and carbon storage rather than because of unproven claims about underground networks. Meanwhile, the broader conclusion stands: plants clearly detect and react to their neighbours. Whether that deserves to be called talking remains, for now, an open question.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Their objection is to the word 'talk' itself, which implies a speaker who intends to be understood",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "few specialists now doubt that the phenomenon is real",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "A warning is only a message if sending it brings some advantage to the sender",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The arrangement is essentially a trade: the fungus gathers water and minerals",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "they concluded that the evidence was far weaker than its reputation suggested",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Resolving the dispute will require experiments that separate the possible routes.",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "This state of readiness is known as priming.",
+                "answer": [
+                    "priming"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "they are simply eavesdropping",
+                "answer": [
+                    "eavesdropping"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Working with wild mustard, she found",
+                "answer": [
+                    "wild mustard"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "in exchange for sugars produced by photosynthesis",
+                "answer": [
+                    "sugars"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "dissolved in soil water, for instance",
+                "answer": [
+                    "soil water"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "which implies a speaker who intends to be understood and a listener who interprets a message",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "it is hard to see why a damaged plant would help potential competitors growing beside it",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "carbon labelled so that it could be traced has been seen moving from one seedling to another through such connections",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Protecting large old trees may well be sensible, he notes, but for reasons such as habitat and carbon storage",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Their objection is to the word 'talk' itself, which implies a speaker who intends to be understood and a listener who interprets a message.",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The strongest evidence concerns signals carried through the air... few specialists now doubt that the phenomenon is real.",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "A warning is only a message if sending it brings some advantage to the sender, and it is hard to see why a damaged plant would help potential competitors growing beside it.",
+                "answer": [
+                    "viii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The arrangement is essentially a trade... Because a single fungus can colonise the roots of several plants at once, neighbouring trees may be joined by what scientists call a common mycorrhizal network.",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "they concluded that the evidence was far weaker than its reputation suggested... substances could have travelled between trees by routes that had nothing to do with fungi",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Resolving the dispute will require experiments that separate the possible routes... Ishikawa also warns against letting the debate shape forestry policy too early.",
+                "answer": [
+                    "vii"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "This state of readiness is known as priming.",
+                "answer": [
+                    "priming"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Neighbours, on this view, are not being addressed at all; they are simply eavesdropping.",
+                "answer": [
+                    "eavesdropping"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Working with wild mustard, she found",
+                "answer": [
+                    "wild mustard"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "which it passes to the plant in exchange for sugars produced by photosynthesis",
+                "answer": [
+                    "sugars"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "substances could have travelled between trees by routes that had nothing to do with fungi: dissolved in soil water",
+                "answer": [
+                    "soil water"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Their objection is to the word 'talk' itself, which implies a speaker who intends to be understood and a listener who interprets a message.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "it is hard to see why a damaged plant would help potential competitors growing beside it",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "carbon labelled so that it could be traced has been seen moving from one seedling to another through such connections",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Protecting large old trees may well be sensible, he notes, but for reasons such as habitat and carbon storage rather than because of unproven claims about underground networks.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Their objection is to the word 'talk' itself, which implies a speaker who intends to be understood",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "few specialists now doubt that the phenomenon is real",
+            "answer": [
+                "vi"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "it is hard to see why a damaged plant would help potential competitors growing beside it",
+            "answer": [
+                "viii"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "The arrangement is essentially a trade: the fungus gathers water and minerals",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "they concluded that the evidence was far weaker than its reputation suggested",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Ishikawa also warns against letting the debate shape forestry policy too early",
+            "answer": [
+                "vii"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "This state of readiness is known as priming",
+            "answer": [
+                "priming"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "they are simply eavesdropping",
+            "answer": [
+                "eavesdropping"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Working with wild mustard, she found that neighbouring plants responded",
+            "answer": [
+                "wild mustard"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "in exchange for sugars produced by photosynthesis",
+            "answer": [
+                "sugars"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Their objection is to the word 'talk' itself, which implies a speaker who intends to be understood and a listener who interprets a message",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "it is hard to see why a damaged plant would help potential competitors growing beside it",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "carbon labelled so that it could be traced has been seen moving from one seedling to another through such connections",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Whispers in the Soil and Air\n\nA. Few scientific ideas have travelled as quickly from the laboratory to the bookshop as the claim that plants talk to one another. Documentaries describe forests as communities whose members share food and trade warnings, and the language of conversation has become almost routine in popular writing about nature. Many botanists, however, are uneasy. They do not deny that plants exchange chemical substances, often in ways that affect their neighbours. Their objection is to the word 'talk' itself, which implies a speaker who intends to be understood and a listener who interprets a message. Applied to organisms without brains, such vocabulary can make modest findings sound revolutionary, and it can hide the real question, which is not whether information passes between plants but who, if anyone, gains from its passage.\n\nB. The strongest evidence concerns signals carried through the air. When insects chew a leaf, many plants release a blend of volatile organic compounds, light molecules that evaporate easily and drift on the breeze. Researchers have found that undamaged plants exposed to this blend often respond by preparing their own defences: they may not produce protective chemicals straight away, but when insects later attack, they manufacture toxins or bitter compounds faster and in greater quantities than plants that received no warning. This state of readiness is known as priming. The first reports of the effect, published in the early 1980s, were greeted with considerable suspicion, partly because the experiments were small. Since then, however, similar responses have been recorded in dozens of species, from wild tobacco to maize, and few specialists now doubt that the phenomenon is real.\n\nC. Whether this amounts to communication is another matter. A warning is only a message if sending it brings some advantage to the sender, and it is hard to see why a damaged plant would help potential competitors growing beside it. One explanation, which many ecologists find persuasive, is that the airborne compounds evolved for internal use. Chemicals travelling through a plant's veins move slowly, so a branch under attack may alert other branches of the same plant more quickly through the air. Neighbours, on this view, are not being addressed at all; they are simply eavesdropping. A field study by the ecologist Corinne Abeyta lends some support to the idea. Working with wild mustard, she found that neighbouring plants responded to the compounds only when they grew within about sixty centimetres of the damaged one, a distance suited to signalling within a single bushy plant rather than across a meadow.\n\nD. Below ground, the story involves a third party. The great majority of land plants form partnerships with mycorrhizal fungi, whose fine threads, called hyphae, wrap around or penetrate roots. The arrangement is essentially a trade: the fungus gathers water and minerals such as phosphorus from the soil, which it passes to the plant in exchange for sugars produced by photosynthesis. Because a single fungus can colonise the roots of several plants at once, neighbouring trees may be joined by what scientists call a common mycorrhizal network. In laboratory and greenhouse experiments, carbon labelled so that it could be traced has been seen moving from one seedling to another through such connections. These results inspired the phrase 'wood wide web' and, in popular accounts, a striking picture of large 'mother trees' that feed shaded young trees and send them chemical warnings of danger.\n\nE. It is this picture that has attracted the sharpest criticism. When the soil scientist Matiu Rangihau and his colleagues re-examined the field studies most often cited in its support, they concluded that the evidence was far weaker than its reputation suggested. In many experiments, substances could have travelled between trees by routes that had nothing to do with fungi: dissolved in soil water, for instance, or through roots that had grown into direct contact. Few studies had been designed to rule these possibilities out. Even where carbon clearly did pass through fungal threads, the quantities were usually tiny, and it was often unclear whether the carbon reached the leaves and stems of the receiving tree or simply remained inside the fungus. Rangihau also pointed out that fungi have interests of their own. If resources move through a network, he argued, the fungus may be directing them for its own benefit rather than acting as a loyal messenger between trees.\n\nF. Resolving the dispute will require experiments that separate the possible routes. The plant physiologist Halvard Ishikawa has proposed surrounding the roots of young trees with mesh with holes of different sizes: one coarse enough to let fungal threads through while keeping roots apart, and one so fine that it blocks the threads as well. If transfer continues behind the finer mesh, fungi cannot be responsible. Ishikawa also warns against letting the debate shape forestry policy too early. Protecting large old trees may well be sensible, he notes, but for reasons such as habitat and carbon storage rather than because of unproven claims about underground networks. Meanwhile, the broader conclusion stands: plants clearly detect and react to their neighbours. Whether that deserves to be called talking remains, for now, an open question.",
+        "title": "Whispers in the Soil and Air",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "Doubts about what the underground evidence shows"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "Farmers adopt plant signals to protect crops"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "The trouble with a familiar metaphor"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "A trading partnership that links roots together"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Plants that recognise their own relatives"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "Airborne alarms that have won acceptance"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Better experiments and a call for restraint"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "Whose benefit does a warning serve?"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "How fungi harm the trees they colonise"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Their objection is to the word 'talk' itself",
+                        "explanation": {
+                            "en": "Paragraph A explains that many botanists dislike the popular word 'talk' because it suggests intention. The whole paragraph is about the problem with this familiar way of speaking.",
+                            "ru": "Абзац A объясняет, что многим ботаникам не нравится популярное слово \"talk\", потому что оно подразумевает намерение. Весь абзац посвящён тому, что не так с этим привычным способом выражаться.",
+                            "uk": "Абзац A пояснює, що багатьом ботанікам не подобається популярне слово \"talk\", бо воно натякає на намір. Увесь абзац присвячено тому, що не так із цим звичним способом висловлюватися."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "few specialists now doubt that the phenomenon is real",
+                        "explanation": {
+                            "en": "Paragraph B describes chemical warnings that travel through the air and says that, after early doubts, scientists now accept them. Nothing says farmers already use these signals.",
+                            "ru": "В абзаце B описаны химические предупреждения, которые передаются по воздуху. Там сказано, что после первоначальных сомнений учёные теперь их признают. Нигде не говорится, что фермеры уже используют эти сигналы.",
+                            "uk": "В абзаці B описано хімічні попередження, що передаються повітрям. Там сказано, що після початкових сумнівів науковці тепер їх визнають. Ніде не сказано, що фермери вже використовують ці сигнали."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "viii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "it is hard to see why a damaged plant would help potential competitors growing beside it",
+                        "explanation": {
+                            "en": "Paragraph C asks whether the damaged plant gains anything from the signal and suggests the compounds may really serve the plant itself, with neighbours only eavesdropping.",
+                            "ru": "В абзаце C задаётся вопрос, получает ли повреждённое растение какую-то пользу от сигнала. Автор предполагает, что эти вещества на самом деле могут служить самому растению, а соседи их лишь подслушивают.",
+                            "uk": "В абзаці C ставиться питання, чи отримує пошкоджена рослина якусь користь від сигналу. Автор припускає, що ці сполуки насправді можуть служити самій рослині, а сусіди їх лише підслуховують."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "neighbouring trees may be joined by what scientists call a common mycorrhizal network",
+                        "explanation": {
+                            "en": "Paragraph D describes the exchange of minerals for sugars between fungi and plants, and how one fungus can connect the roots of several plants. The fungi help plants here; they do not harm them.",
+                            "ru": "В абзаце D описан обмен минералов на сахара между грибами и растениями, а также то, как один гриб может соединять корни нескольких растений. Здесь грибы помогают растениям, а не вредят им.",
+                            "uk": "В абзаці D описано обмін мінералів на цукри між грибами й рослинами, а також те, як один гриб може з'єднувати коріння кількох рослин. Тут гриби допомагають рослинам, а не шкодять їм."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "they concluded that the evidence was far weaker than its reputation suggested",
+                        "explanation": {
+                            "en": "Paragraph E reports criticism of the field studies on underground networks: other routes were not ruled out, the amounts were tiny, and fungi may act for themselves.",
+                            "ru": "В абзаце E приводится критика полевых исследований подземных сетей: другие пути передачи не были исключены, количества веществ были крошечными, а грибы, возможно, действуют в собственных интересах.",
+                            "uk": "В абзаці E наведено критику польових досліджень підземних мереж: інші шляхи передачі не були виключені, кількості речовин були мізерними, а гриби, можливо, діють у власних інтересах."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vii"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "Resolving the dispute will require experiments that separate the possible routes.",
+                        "explanation": {
+                            "en": "Paragraph F proposes mesh experiments to test the routes and warns that forestry policy should not depend on the debate too early, so it combines better experiments with caution.",
+                            "ru": "В абзаце F предлагаются эксперименты с сетчатыми барьерами, чтобы проверить пути передачи. Там же звучит предостережение, что лесную политику не стоит слишком рано строить на этом споре. Так что абзац сочетает идею более качественных экспериментов с призывом к осторожности.",
+                            "uk": "В абзаці F запропоновано експерименти із сітчастими бар'єрами, щоб перевірити шляхи передачі. Там само звучить застереження, що лісову політику не варто надто рано будувати на цій суперечці. Тож абзац поєднує ідею якісніших експериментів із закликом до обережності."
+                        }
+                    }
+                ],
+                "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "priming"
+                        ],
+                        "prompt": "The heightened readiness of plants that have detected a damaged neighbour's airborne compounds is referred to as ______.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "This state of readiness is known as priming.",
+                        "explanation": {
+                            "en": "Paragraph B says that this condition of being prepared to defend quickly is called priming.",
+                            "ru": "В абзаце B сказано, что такое состояние готовности быстро защищаться называется \"priming\".",
+                            "uk": "В абзаці B сказано, що такий стан готовності швидко захищатися називається \"priming\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "eavesdropping"
+                        ],
+                        "prompt": "According to one explanation, neighbouring plants that react to airborne compounds are not the intended receivers but are merely ______.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Neighbours, on this view, are not being addressed at all; they are simply eavesdropping.",
+                        "explanation": {
+                            "en": "Paragraph C says that, if the compounds evolved for the plant's own use, neighbours are not being spoken to; they are only eavesdropping.",
+                            "ru": "В абзаце C сказано, что если эти вещества возникли в ходе эволюции для нужд самого растения, то к соседям никто не обращается: они лишь подслушивают (\"eavesdropping\").",
+                            "uk": "В абзаці C сказано, що якщо ці сполуки виникли в ході еволюції для потреб самої рослини, то до сусідів ніхто не звертається: вони лише підслуховують (\"eavesdropping\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "wild mustard"
+                        ],
+                        "prompt": "Corinne Abeyta carried out her field study using ______.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "Working with wild mustard, she found",
+                        "explanation": {
+                            "en": "Paragraph C says Abeyta worked with wild mustard. Wild tobacco and maize are mentioned in paragraph B, but not as part of her study.",
+                            "ru": "В абзаце C сказано, что Abeyta работала с дикой горчицей (\"wild mustard\"). Дикий табак (\"wild tobacco\") и кукуруза (\"maize\") упоминаются в абзаце B, но не как часть её исследования.",
+                            "uk": "В абзаці C сказано, що Abeyta працювала з дикою гірчицею (\"wild mustard\"). Дикий тютюн (\"wild tobacco\") і кукурудза (\"maize\") згадуються в абзаці B, але не як частина її дослідження."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "sugars"
+                        ],
+                        "prompt": "Mycorrhizal fungi provide plants with water and minerals and receive ______ in return.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "which it passes to the plant in exchange for sugars produced by photosynthesis",
+                        "explanation": {
+                            "en": "Paragraph D describes a trade: the fungus gives water and minerals and gets sugars made by photosynthesis in exchange.",
+                            "ru": "В абзаце D описан обмен: гриб отдаёт воду и минералы и получает взамен сахара (\"sugars\"), образованные при фотосинтезе.",
+                            "uk": "В абзаці D описано обмін: гриб віддає воду й мінерали та отримує натомість цукри (\"sugars\"), утворені під час фотосинтезу."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They think the language suggests an intention that plants lack."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They feel that laboratory findings reach the public too slowly."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They doubt that plants exchange any chemical substances at all."
+                    },
+                    {
+                        "id": "D",
+                        "text": "They believe documentaries exaggerate how much food forests share."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What is the main objection of many botanists, according to paragraph A?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "Their objection is to the word 'talk' itself, which implies a speaker who intends to be understood",
+                        "explanation": {
+                            "en": "Paragraph A says botanists object to the word 'talk' because it suggests a speaker who intends a message, which does not suit organisms without brains. The paragraph says botanists do not deny that plants exchange chemicals.",
+                            "ru": "В абзаце A сказано, что ботаники возражают против слова \"talk\", потому что оно подразумевает говорящего, который намеренно передаёт сообщение, а это не подходит организмам без мозга. При этом в абзаце сказано, что ботаники не отрицают, что растения обмениваются химическими веществами.",
+                            "uk": "В абзаці A сказано, що ботаніки заперечують проти слова \"talk\", бо воно передбачає мовця, який навмисно передає повідомлення, а це не пасує організмам без мозку. Водночас в абзаці сказано, що ботаніки не заперечують, що рослини обмінюються хімічними речовинами."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The compounds break down before they can cross a whole meadow."
+                    },
+                    {
+                        "id": "B",
+                        "text": "The damaged plant gains nothing obvious from helping rivals nearby."
+                    },
+                    {
+                        "id": "C",
+                        "text": "The compounds move too slowly to reach any neighbouring plants."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Neighbouring plants rarely change their defences after exposure."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Why, according to paragraph C, is it difficult to treat airborne compounds as a real message?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "A warning is only a message if sending it brings some advantage to the sender, and it is hard to see why a damaged plant would help potential competitors growing beside it.",
+                        "explanation": {
+                            "en": "Paragraph C says a message must bring some benefit to the sender, and it is unclear why a damaged plant would help its competitors. It is chemicals inside the plant's veins, not airborne compounds, that the passage calls slow.",
+                            "ru": "В абзаце C сказано, что сообщение должно приносить отправителю какую-то пользу, и неясно, зачем повреждённому растению помогать своим конкурентам. Медленными в тексте названы химические вещества внутри проводящих сосудов растения (\"veins\"), а не вещества, переносимые по воздуху.",
+                            "uk": "В абзаці C сказано, що повідомлення має приносити відправникові якусь користь, і незрозуміло, навіщо пошкодженій рослині допомагати своїм конкурентам. Повільними в тексті названо хімічні речовини всередині провідних судин рослини (\"veins\"), а не речовини, що переносяться повітрям."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Fungal threads carry chemical warnings of danger between trees."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Most land plants rely entirely on fungi for their supply of water."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Traceable carbon can pass between seedlings through fungal links."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Large mother trees deliberately feed young trees growing in shade."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What did the laboratory and greenhouse experiments in paragraph D demonstrate?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "carbon labelled so that it could be traced has been seen moving from one seedling to another through such connections",
+                        "explanation": {
+                            "en": "Paragraph D says that labelled carbon was seen moving between seedlings through fungal connections. The ideas about mother trees feeding young trees and sending warnings come from popular accounts, not from these experiments.",
+                            "ru": "В абзаце D сказано, что меченый углерод (\"labelled carbon\") перемещался между сеянцами через грибные соединения. Идеи о том, что материнские деревья (\"mother trees\") кормят молодые деревья и посылают предупреждения, взяты из популярных пересказов, а не из этих экспериментов.",
+                            "uk": "В абзаці D сказано, що мічений вуглець (\"labelled carbon\") переміщувався між сіянцями через грибні з'єднання. Ідеї про те, що материнські дерева (\"mother trees\") годують молоді дерева й надсилають попередження, взято з популярних переказів, а не з цих експериментів."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

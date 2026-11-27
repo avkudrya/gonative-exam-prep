@@ -1,0 +1,1057 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-10|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.333244,
+            "provider": "anthropic",
+            "outputTokens": 15547
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.014464,
+            "provider": "anthropic",
+            "outputTokens": 724
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018208,
+            "provider": "openai",
+            "outputTokens": 851
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.016218,
+            "provider": "xai",
+            "outputTokens": 1561
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.079004,
+            "provider": "anthropic",
+            "outputTokens": 3622
+        }
+    ],
+    "draft": {
+        "title": "The Underrated Nose",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Nineteenth-century anatomists based their low opinion of the human sense of smell on how much of the brain the olfactory bulb takes up.",
+                        "options": [],
+                        "evidence": "occupies a far smaller share of the human brain than it does in dogs or rodents",
+                        "explanation": "Paragraph A says the anatomists noticed the bulb takes up a smaller share of the human brain and drew their conclusion from this. 'How much of the brain' restates 'share of the human brain'."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Each type of smell receptor in the human nose reacts to just one kind of molecule.",
+                        "options": [],
+                        "evidence": "each type responds to a range of molecules rather than to a single one",
+                        "explanation": "Paragraph B says the opposite: each receptor type responds to a range of molecules, not to a single one."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The mucus in the nose protects the smell receptors from damage.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B mentions that the receptors are bathed in mucus, but it says nothing about what the mucus does or whether it protects them."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The nerve cells that detect smells stay the same for a person's whole life.",
+                        "options": [],
+                        "evidence": "these sensory cells are not permanent: they are replaced regularly throughout life",
+                        "explanation": "Paragraph B states that these cells are not permanent and are replaced every one to two months, which contradicts the statement."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Smell signals reach emotional areas of the brain without first passing through the thalamus.",
+                        "options": [],
+                        "evidence": "Smell signals, by contrast, travel from the olfactory bulb straight to regions involved in emotion",
+                        "explanation": "Paragraph C explains that other senses go through the thalamus, but smell signals, 'by contrast', go straight to emotional regions, so they skip the thalamus."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most people who lost their sense of smell during the pandemic got it back within a few weeks.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph G says many people lost the sense temporarily, but it gives no information about how long it took most of them to recover."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "A large part of what people experience as the taste of food actually comes from smell.",
+                        "options": [],
+                        "evidence": "much of what we call taste is in fact smell",
+                        "explanation": "Paragraph G says much of what we call taste is really smell, which reaches the nose from the back of the mouth as we chew."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Folasade Wren"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Oskar Lindwall"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Malika Duchesne"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Hyun-woo Baek"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Comparing the bulb's size with the size of the whole brain gave a false impression of human ability.",
+                        "options": [],
+                        "evidence": "judging the bulb against total brain size was misleading",
+                        "explanation": "Paragraph D: Lindwall argues that measuring the bulb against total brain size was misleading, and his team counted neurons instead."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Learning labels for odours can improve people's ability to tell them apart.",
+                        "options": [],
+                        "evidence": "became noticeably better at telling similar smells apart",
+                        "explanation": "Paragraph F: in Baek's experiments, adults who learned invented names for odours became better at distinguishing similar smells than those who learned no labels."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Memories brought back by smells tend to come from further in the past.",
+                        "options": [],
+                        "evidence": "recalled events that were, on average, older and more emotionally charged",
+                        "explanation": "Paragraph C: in Wren's study, smell cues brought back older events than words or photographs did. 'Further in the past' restates 'older'."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "How sensitive humans are to a smell depends heavily on the particular substance.",
+                        "options": [],
+                        "evidence": "human ability varies greatly from one substance to another",
+                        "explanation": "Paragraph E: Duchesne's main point is that human ability changes greatly from one substance to another."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Dogs are still better than humans at following a smell along a surface.",
+                        "options": [],
+                        "evidence": "particularly at following a scent trail across the ground",
+                        "explanation": "Paragraph E: Duchesne warns that dogs remain far better at most tasks, especially following a scent trail across the ground. Lindwall also compares humans with other mammals, but only in terms of neuron numbers."
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A, B, C or D. You may use any letter more than once."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "nasal cavity"
+                        ],
+                        "prompt": "When we inhale, odour molecules reach a small area of tissue located high up in the ______.",
+                        "options": [],
+                        "evidence": "a small patch of tissue high in the nasal cavity",
+                        "explanation": "Paragraph B says the molecules travel to a small patch of tissue high in the nasal cavity."
+                    },
+                    {
+                        "answer": [
+                            "mucus"
+                        ],
+                        "prompt": "The sensory cells there carry receptors on hair-like projections that are covered in ______.",
+                        "options": [],
+                        "evidence": "receptors on hair-like projections bathed in mucus",
+                        "explanation": "Paragraph B says the projections are 'bathed in mucus'; 'covered in' restates 'bathed in'."
+                    },
+                    {
+                        "answer": [
+                            "piano"
+                        ],
+                        "prompt": "Because each smell activates its own mix of receptors, the process has been compared to a chord played on a ______.",
+                        "options": [],
+                        "evidence": "rather like a chord played on a piano",
+                        "explanation": "Paragraph B compares the combination of receptors that an odour activates to a chord played on a piano."
+                    },
+                    {
+                        "answer": [
+                            "thalamus"
+                        ],
+                        "prompt": "Smell signals then travel from the olfactory bulb directly to emotional areas of the brain, bypassing the relay station known as the ______.",
+                        "options": [],
+                        "evidence": "a relay station called the thalamus",
+                        "explanation": "Paragraph C explains that the other senses pass through a relay station called the thalamus, but smell signals go straight to emotional regions."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Folasade Wren",
+                "role": "psychologist who studied smells as memory cues",
+                "gender": "female"
+            },
+            {
+                "name": "Oskar Lindwall",
+                "role": "neuroscientist who counted neurons in the olfactory bulb",
+                "gender": "male"
+            },
+            {
+                "name": "Malika Duchesne",
+                "role": "researcher in sensory perception who tested human smell sensitivity",
+                "gender": "female"
+            },
+            {
+                "name": "Hyun-woo Baek",
+                "role": "linguist who studied naming odours and smell discrimination",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For much of modern history, smell has been treated as the poor relation of the human senses. Philosophers ranked it below sight and hearing, regarding it as crude and animal-like, and nineteenth-century anatomists seemed to supply evidence for that prejudice. Comparing brains, they noticed that the olfactory bulb, the structure that first receives signals from the nose, occupies a far smaller share of the human brain than it does in dogs or rodents. From this they concluded that humans had traded a keen nose for a larger thinking cortex. The idea proved remarkably durable, passing from textbooks into popular belief, and only in recent decades has it been seriously challenged.",
+                "label": "A"
+            },
+            {
+                "text": "To understand why, it helps to know how smelling actually works. When we breathe in, molecules released by objects around us travel to a small patch of tissue high in the nasal cavity, roughly the size of a postage stamp. There, millions of sensory nerve cells carry receptors on hair-like projections bathed in mucus. Humans possess around 400 different types of working receptor, and each type responds to a range of molecules rather than to a single one. A given odour therefore activates a particular combination of receptors, rather like a chord played on a piano, and the brain learns to recognise the pattern. Because the number of possible combinations is enormous, a modest set of receptors can distinguish a vast number of smells. Unusually for nerve cells, these sensory cells are not permanent: they are replaced regularly throughout life, roughly every one to two months.",
+                "label": "B"
+            },
+            {
+                "text": "The route these signals take inside the brain is equally distinctive. Information from the eyes, ears and skin passes through a relay station called the thalamus before reaching the brain's outer layers. Smell signals, by contrast, travel from the olfactory bulb straight to regions involved in emotion, such as the amygdala, and to areas closely tied to memory. This short path may explain why a particular scent — a grandparent's kitchen, the polish on a school corridor — can bring back a vivid scene from childhood before we have even identified what we are smelling. In one study by the psychologist Folasade Wren, volunteers given smells as memory cues recalled events that were, on average, older and more emotionally charged than those prompted by written words or photographs. However, they rated these smell-cued memories as less clear in their details.",
+                "label": "C"
+            },
+            {
+                "text": "If the machinery is so sophisticated, why did the belief in a weak human nose persist for so long? Part of the answer lies in that original anatomical comparison. The neuroscientist Oskar Lindwall argues that judging the bulb against total brain size was misleading. When his team counted nerve cells instead of comparing proportions, they found that the human olfactory bulb contains roughly as many neurons as those of several mammals famed for their sense of smell. 'A small room in a large house is still a room,' Lindwall remarks. 'The human bulb looks modest only because everything around it grew.'",
+                "label": "D"
+            },
+            {
+                "text": "Behavioural evidence points in the same direction. Malika Duchesne, who studies sensory perception, tested how little of certain substances needed to be present in the air before people could notice them. For a handful of compounds, including one that gives bananas their scent, her volunteers responded at concentrations as low as those previously recorded for dogs and mice. Duchesne is careful not to overstate the result: dogs remain far better at most tasks, particularly at following a scent trail across the ground. Her point is rather that human ability varies greatly from one substance to another, so sweeping claims that humans smell badly conceal a more complicated picture.",
+                "label": "E"
+            },
+            {
+                "text": "A further reason for the underestimation is linguistic. Most European languages have few words reserved for smells; speakers tend to describe an odour by naming its source, as in 'it smells like smoke', rather than with abstract terms comparable to 'red' or 'loud'. The linguist Hyun-woo Baek suggests that this poverty of vocabulary has been mistaken for a poverty of perception. In his experiments, adults who spent several weeks learning invented names for twenty unfamiliar odours became noticeably better at telling similar smells apart, while a control group who simply sniffed the same samples without labels improved only slightly. For Baek, the trouble many people have in identifying smells reflects a lack of practice and vocabulary rather than any weakness in the nose itself.",
+                "label": "F"
+            },
+            {
+                "text": "Interest in smell has grown sharply in recent years, partly because so many people temporarily lost the sense during the COVID-19 pandemic. Their experiences revealed how much it contributes to everyday life. Without it, food becomes dull, since much of what we call taste is in fact smell, as odours rise to the nose from the back of the mouth while we chew. Many sufferers also reported feeling isolated or low. Smell training, which involves sniffing a set of strong odours twice a day over several months, is now seen as a promising aid to recovery, although its effectiveness is still being investigated. Far from being a leftover from our animal past, the human nose appears to be a capable and underused instrument.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Comparing brains, they noticed that the olfactory bulb ... occupies a far smaller share of the human brain than it does in dogs or rodents. From this they concluded that humans had traded a keen nose for a larger thinking cortex.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "each type responds to a range of molecules rather than to a single one",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "these sensory cells are not permanent: they are replaced regularly throughout life, roughly every one to two months.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Smell signals, by contrast, travel from the olfactory bulb straight to regions involved in emotion, such as the amygdala",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "much of what we call taste is in fact smell",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "judging the bulb against total brain size was misleading",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "adults who spent several weeks learning invented names for twenty unfamiliar odours became noticeably better at telling similar smells apart",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "recalled events that were, on average, older and more emotionally charged",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "human ability varies greatly from one substance to another",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "dogs remain far better at most tasks, particularly at following a scent trail across the ground",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a small patch of tissue high in the nasal cavity",
+                "answer": [
+                    "nasal cavity"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "receptors on hair-like projections bathed in mucus",
+                "answer": [
+                    "mucus"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "rather like a chord played on a piano",
+                "answer": [
+                    "piano"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Information from the eyes, ears and skin passes through a relay station called the thalamus",
+                "answer": [
+                    "thalamus"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they noticed that the olfactory bulb ... occupies a far smaller share of the human brain than it does in dogs or rodents. From this they concluded that humans had traded a keen nose for a larger thinking cortex.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "each type responds to a range of molecules rather than to a single one",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "these sensory cells are not permanent: they are replaced regularly throughout life",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Smell signals, by contrast, travel from the olfactory bulb straight to regions involved in emotion",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "much of what we call taste is in fact smell",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Oskar Lindwall argues that judging the bulb against total brain size was misleading.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "adults who spent several weeks learning invented names for twenty unfamiliar odours became noticeably better at telling similar smells apart",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "volunteers given smells as memory cues recalled events that were, on average, older",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "human ability varies greatly from one substance to another",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "dogs remain far better at most tasks, particularly at following a scent trail across the ground",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a small patch of tissue high in the nasal cavity",
+                "answer": [
+                    "nasal cavity"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "hair-like projections bathed in mucus",
+                "answer": [
+                    "mucus"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "rather like a chord played on a piano",
+                "answer": [
+                    "piano"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "a relay station called the thalamus",
+                "answer": [
+                    "thalamus"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "nineteenth-century anatomists seemed to supply evidence for that prejudice. Comparing brains, they noticed that the olfactory bulb... occupies a far smaller share of the human brain than it does in dogs or rodents. From this they concluded that humans had traded a keen nose for a larger thinking cortex.",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "each type responds to a range of molecules rather than to a single one.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "these sensory cells are not permanent: they are replaced regularly throughout life, roughly every one to two months.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Smell signals, by contrast, travel from the olfactory bulb straight to regions involved in emotion, such as the amygdala",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Oskar Lindwall argues that judging the bulb against total brain size was misleading.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "adults who spent several weeks learning invented names for twenty unfamiliar odours became noticeably better at telling similar smells apart",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "volunteers given smells as memory cues recalled events that were, on average, older and more emotionally charged",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "human ability varies greatly from one substance to another",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "travel to a small patch of tissue high in the nasal cavity",
+            "answer": [
+                "nasal cavity"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "receptors on hair-like projections bathed in mucus",
+            "answer": [
+                "mucus"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "rather like a chord played on a piano",
+            "answer": [
+                "piano"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The Underrated Nose\n\nA. For much of modern history, smell has been treated as the poor relation of the human senses. Philosophers ranked it below sight and hearing, regarding it as crude and animal-like, and nineteenth-century anatomists seemed to supply evidence for that prejudice. Comparing brains, they noticed that the olfactory bulb, the structure that first receives signals from the nose, occupies a far smaller share of the human brain than it does in dogs or rodents. From this they concluded that humans had traded a keen nose for a larger thinking cortex. The idea proved remarkably durable, passing from textbooks into popular belief, and only in recent decades has it been seriously challenged.\n\nB. To understand why, it helps to know how smelling actually works. When we breathe in, molecules released by objects around us travel to a small patch of tissue high in the nasal cavity, roughly the size of a postage stamp. There, millions of sensory nerve cells carry receptors on hair-like projections bathed in mucus. Humans possess around 400 different types of working receptor, and each type responds to a range of molecules rather than to a single one. A given odour therefore activates a particular combination of receptors, rather like a chord played on a piano, and the brain learns to recognise the pattern. Because the number of possible combinations is enormous, a modest set of receptors can distinguish a vast number of smells. Unusually for nerve cells, these sensory cells are not permanent: they are replaced regularly throughout life, roughly every one to two months.\n\nC. The route these signals take inside the brain is equally distinctive. Information from the eyes, ears and skin passes through a relay station called the thalamus before reaching the brain's outer layers. Smell signals, by contrast, travel from the olfactory bulb straight to regions involved in emotion, such as the amygdala, and to areas closely tied to memory. This short path may explain why a particular scent — a grandparent's kitchen, the polish on a school corridor — can bring back a vivid scene from childhood before we have even identified what we are smelling. In one study by the psychologist Folasade Wren, volunteers given smells as memory cues recalled events that were, on average, older and more emotionally charged than those prompted by written words or photographs. However, they rated these smell-cued memories as less clear in their details.\n\nD. If the machinery is so sophisticated, why did the belief in a weak human nose persist for so long? Part of the answer lies in that original anatomical comparison. The neuroscientist Oskar Lindwall argues that judging the bulb against total brain size was misleading. When his team counted nerve cells instead of comparing proportions, they found that the human olfactory bulb contains roughly as many neurons as those of several mammals famed for their sense of smell. 'A small room in a large house is still a room,' Lindwall remarks. 'The human bulb looks modest only because everything around it grew.'\n\nE. Behavioural evidence points in the same direction. Malika Duchesne, who studies sensory perception, tested how little of certain substances needed to be present in the air before people could notice them. For a handful of compounds, including one that gives bananas their scent, her volunteers responded at concentrations as low as those previously recorded for dogs and mice. Duchesne is careful not to overstate the result: dogs remain far better at most tasks, particularly at following a scent trail across the ground. Her point is rather that human ability varies greatly from one substance to another, so sweeping claims that humans smell badly conceal a more complicated picture.\n\nF. A further reason for the underestimation is linguistic. Most European languages have few words reserved for smells; speakers tend to describe an odour by naming its source, as in 'it smells like smoke', rather than with abstract terms comparable to 'red' or 'loud'. The linguist Hyun-woo Baek suggests that this poverty of vocabulary has been mistaken for a poverty of perception. In his experiments, adults who spent several weeks learning invented names for twenty unfamiliar odours became noticeably better at telling similar smells apart, while a control group who simply sniffed the same samples without labels improved only slightly. For Baek, the trouble many people have in identifying smells reflects a lack of practice and vocabulary rather than any weakness in the nose itself.\n\nG. Interest in smell has grown sharply in recent years, partly because so many people temporarily lost the sense during the COVID-19 pandemic. Their experiences revealed how much it contributes to everyday life. Without it, food becomes dull, since much of what we call taste is in fact smell, as odours rise to the nose from the back of the mouth while we chew. Many sufferers also reported feeling isolated or low. Smell training, which involves sniffing a set of strong odours twice a day over several months, is now seen as a promising aid to recovery, although its effectiveness is still being investigated. Far from being a leftover from our animal past, the human nose appears to be a capable and underused instrument.",
+        "title": "The Underrated Nose",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Nineteenth-century anatomists based their low opinion of the human sense of smell on how much of the brain the olfactory bulb takes up.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "occupies a far smaller share of the human brain than it does in dogs or rodents",
+                        "explanation": {
+                            "en": "Paragraph A says the anatomists noticed the bulb takes up a smaller share of the human brain and drew their conclusion from this. 'How much of the brain' restates 'share of the human brain'.",
+                            "ru": "В абзаце A говорится, что анатомы заметили: обонятельная луковица занимает меньшую долю человеческого мозга, — и именно на этом основании сделали свой вывод. «How much of the brain» перефразирует «share of the human brain».",
+                            "uk": "В абзаці A сказано, що анатоми помітили: нюхова цибулина займає меншу частку людського мозку, — і саме з цього зробили свій висновок. «How much of the brain» перефразовує «share of the human brain»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Each type of smell receptor in the human nose reacts to just one kind of molecule.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "each type responds to a range of molecules rather than to a single one",
+                        "explanation": {
+                            "en": "Paragraph B says the opposite: each receptor type responds to a range of molecules, not to a single one.",
+                            "ru": "В абзаце B сказано обратное: каждый тип рецепторов реагирует на целый ряд молекул, а не на одну.",
+                            "uk": "В абзаці B сказано протилежне: кожен тип рецепторів реагує на цілу низку молекул, а не на одну."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The mucus in the nose protects the smell receptors from damage.",
+                        "numbers": [
+                            3
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B mentions that the receptors are bathed in mucus, but it says nothing about what the mucus does or whether it protects them.",
+                            "ru": "В абзаце B упоминается, что рецепторы омываются слизью, но ничего не сказано о том, какую функцию выполняет слизь и защищает ли она их.",
+                            "uk": "В абзаці B згадано, що рецептори омиваються слизом, але нічого не сказано про те, яку функцію виконує слиз і чи захищає він їх."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The nerve cells that detect smells stay the same for a person's whole life.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "these sensory cells are not permanent: they are replaced regularly throughout life",
+                        "explanation": {
+                            "en": "Paragraph B states that these cells are not permanent and are replaced every one to two months, which contradicts the statement.",
+                            "ru": "В абзаце B говорится, что эти клетки не постоянны и заменяются каждые один-два месяца, а это противоречит утверждению.",
+                            "uk": "В абзаці B зазначено, що ці клітини не постійні й замінюються кожні один-два місяці, а це суперечить твердженню."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Smell signals reach emotional areas of the brain without first passing through the thalamus.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Smell signals, by contrast, travel from the olfactory bulb straight to regions involved in emotion",
+                        "explanation": {
+                            "en": "Paragraph C explains that other senses go through the thalamus, but smell signals, 'by contrast', go straight to emotional regions, so they skip the thalamus.",
+                            "ru": "В абзаце C объясняется, что сигналы других органов чувств проходят через таламус, а сигналы обоняния, «by contrast», идут прямо в эмоциональные зоны мозга, то есть минуют таламус.",
+                            "uk": "В абзаці C пояснюється, що сигнали інших органів чуття проходять через таламус, а сигнали нюху, «by contrast», надходять прямо до емоційних ділянок мозку, тобто оминають таламус."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most people who lost their sense of smell during the pandemic got it back within a few weeks.",
+                        "numbers": [
+                            6
+                        ],
+                        "explanation": {
+                            "en": "Paragraph G says many people lost the sense temporarily, but it gives no information about how long it took most of them to recover.",
+                            "ru": "В абзаце G говорится, что многие люди временно теряли обоняние, но нет никакой информации о том, сколько времени понадобилось большинству из них на восстановление.",
+                            "uk": "В абзаці G сказано, що багато людей тимчасово втрачали нюх, але немає жодної інформації про те, скільки часу знадобилося більшості з них, щоб відновитися."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Folasade Wren"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Oskar Lindwall"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Malika Duchesne"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Hyun-woo Baek"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Comparing the bulb's size with the size of the whole brain gave a false impression of human ability.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "judging the bulb against total brain size was misleading",
+                        "explanation": {
+                            "en": "Paragraph D: Lindwall argues that measuring the bulb against total brain size was misleading, and his team counted neurons instead.",
+                            "ru": "Абзац D: Lindwall утверждает, что сравнение размера луковицы с общим размером мозга вводило в заблуждение, и его команда вместо этого подсчитала нейроны.",
+                            "uk": "Абзац D: Lindwall стверджує, що порівняння розміру цибулини із загальним розміром мозку вводило в оману, і його команда натомість підрахувала нейрони."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Learning labels for odours can improve people's ability to tell them apart.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "became noticeably better at telling similar smells apart",
+                        "explanation": {
+                            "en": "Paragraph F: in Baek's experiments, adults who learned invented names for odours became better at distinguishing similar smells than those who learned no labels.",
+                            "ru": "Абзац F: в экспериментах Baek взрослые, которые выучили придуманные названия запахов, стали лучше различать похожие запахи, чем те, кто никаких названий не учил.",
+                            "uk": "Абзац F: в експериментах Baek дорослі, які вивчили вигадані назви запахів, стали краще розрізняти схожі запахи, ніж ті, хто жодних назв не вчив."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Memories brought back by smells tend to come from further in the past.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "recalled events that were, on average, older and more emotionally charged",
+                        "explanation": {
+                            "en": "Paragraph C: in Wren's study, smell cues brought back older events than words or photographs did. 'Further in the past' restates 'older'.",
+                            "ru": "Абзац C: в исследовании Wren запахи пробуждали воспоминания о более давних событиях, чем слова или фотографии. «Further in the past» перефразирует «older».",
+                            "uk": "Абзац C: у дослідженні Wren запахи пробуджували спогади про давніші події, ніж слова чи фотографії. «Further in the past» перефразовує «older»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "How sensitive humans are to a smell depends heavily on the particular substance.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "human ability varies greatly from one substance to another",
+                        "explanation": {
+                            "en": "Paragraph E: Duchesne's main point is that human ability changes greatly from one substance to another.",
+                            "ru": "Абзац E: главная мысль Duchesne в том, что способности человека сильно различаются в зависимости от вещества.",
+                            "uk": "Абзац E: головна думка Duchesne полягає в тому, що здібності людини сильно відрізняються залежно від речовини."
+                        }
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A, B, C or D. You may use any letter more than once."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "nasal cavity"
+                        ],
+                        "prompt": "When we inhale, odour molecules reach a small area of tissue located high up in the ______.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "a small patch of tissue high in the nasal cavity",
+                        "explanation": {
+                            "en": "Paragraph B says the molecules travel to a small patch of tissue high in the nasal cavity.",
+                            "ru": "В абзаце B говорится, что молекулы попадают на небольшой участок ткани в верхней части носовой полости.",
+                            "uk": "В абзаці B сказано, що молекули потрапляють на невелику ділянку тканини у верхній частині носової порожнини."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "mucus"
+                        ],
+                        "prompt": "The sensory cells there carry receptors on hair-like projections that are covered in ______.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "receptors on hair-like projections bathed in mucus",
+                        "explanation": {
+                            "en": "Paragraph B says the projections are 'bathed in mucus'; 'covered in' restates 'bathed in'.",
+                            "ru": "В абзаце B сказано, что отростки «bathed in mucus»; «covered in» перефразирует «bathed in».",
+                            "uk": "В абзаці B сказано, що відростки «bathed in mucus»; «covered in» перефразовує «bathed in»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "piano"
+                        ],
+                        "prompt": "Because each smell activates its own mix of receptors, the process has been compared to a chord played on a ______.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "rather like a chord played on a piano",
+                        "explanation": {
+                            "en": "Paragraph B compares the combination of receptors that an odour activates to a chord played on a piano.",
+                            "ru": "В абзаце B комбинация рецепторов, которую активирует запах, сравнивается с аккордом, сыгранным на пианино.",
+                            "uk": "В абзаці B комбінацію рецепторів, яку активує запах, порівнюють з акордом, зіграним на фортепіано."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

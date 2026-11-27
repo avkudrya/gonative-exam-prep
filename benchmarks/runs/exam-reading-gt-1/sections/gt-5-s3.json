@@ -1,0 +1,1033 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-5|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.275704,
+            "provider": "anthropic",
+            "outputTokens": 12863
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.014254,
+            "provider": "anthropic",
+            "outputTokens": 639
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.02065,
+            "provider": "openai",
+            "outputTokens": 977
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.024094,
+            "provider": "xai",
+            "outputTokens": 2852
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.067492,
+            "provider": "anthropic",
+            "outputTokens": 3081
+        }
+    ],
+    "draft": {
+        "title": "Life Behind the Lamp",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Employers considered courage to be the most important quality in a lighthouse keeper.",
+                        "options": [],
+                        "evidence": "the qualities their employers valued most were reliability and patience rather than courage",
+                        "explanation": "Paragraph A says employers valued reliability and patience most, 'rather than courage'. This is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Keepers in America were given a nickname connected with one of their regular tasks.",
+                        "options": [],
+                        "evidence": "American keepers were nicknamed 'wickies' for this reason",
+                        "explanation": "Paragraph B explains that keepers had to trim the lamp wicks, and that is why American keepers were called 'wickies'."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The clockwork that turned the lens usually needed winding only once a day.",
+                        "options": [],
+                        "evidence": "had to be wound back up every few hours",
+                        "explanation": "Paragraph B says the weight had to be wound up every few hours, not once a day, so the statement contradicts the passage."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "A keeper who was found asleep on duty was normally dismissed immediately.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says falling asleep on duty was one of the most serious offences. It does not say what punishment a keeper received, so we cannot know whether he lost his job."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "At shore stations, a keeper's wife sometimes formally took over his job after his death.",
+                        "options": [],
+                        "evidence": "wives frequently shared the work, sometimes officially taking over when a husband died",
+                        "explanation": "Paragraph D says wives sometimes 'officially' took over when a husband died, which matches 'formally took over his job'."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Keepers at rock stations earned more money than keepers at shore stations.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D compares living conditions at shore and rock stations, but the passage never mentions how much keepers were paid."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Gwilym Pritchard learned to repair clocks from a fellow keeper.",
+                        "options": [],
+                        "evidence": "Pritchard taught himself to repair clocks",
+                        "explanation": "Paragraph E says Pritchard taught himself, so nobody else taught him. The colleague mentioned nearby built model ships, not clocks."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO daytime tasks of lighthouse keepers does the writer mention?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "removing the soot left behind by the lamps"
+                            },
+                            {
+                                "id": "B",
+                                "text": "repainting walls to guard against salt damage"
+                            },
+                            {
+                                "id": "C",
+                                "text": "showing groups of visitors around the tower"
+                            },
+                            {
+                                "id": "D",
+                                "text": "radioing weather reports to the mainland"
+                            },
+                            {
+                                "id": "E",
+                                "text": "rescuing the crews of passing vessels"
+                            }
+                        ],
+                        "evidence": "Oil lamps left a thin film of soot on the lens and windows, and every surface had to be cleaned each morning, while brass fittings were polished and walls repainted to protect them from salt air",
+                        "explanation": "Paragraph C lists cleaning soot from the lens and windows and repainting walls against salt air. Keepers recorded the weather in logbooks, but radio reports are not mentioned, and visitors only come to stations today."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO statements about rock stations are supported by the passage?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Only men were sent to work at them."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Keepers usually worked there in groups of three."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Families lived in cottages beside the tower."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Keepers stayed there for several months at a time."
+                            },
+                            {
+                                "id": "E",
+                                "text": "Relief boats always arrived on the planned day."
+                            }
+                        ],
+                        "evidence": "Here only men were posted, usually in teams of three",
+                        "explanation": "Paragraph D says only men were posted to rock stations, usually in teams of three. Families in cottages belong to shore stations, keepers worked several weeks rather than months, and bad weather could delay the relief boat."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO of the following reflect Gwilym Pritchard's feelings or views about automation?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "He had mixed emotions when his own station was automated."
+                            },
+                            {
+                                "id": "B",
+                                "text": "He believed machines were more reliable than the keepers."
+                            },
+                            {
+                                "id": "C",
+                                "text": "He thought small boats became safer once machines took over."
+                            },
+                            {
+                                "id": "D",
+                                "text": "He decided to stay on at his station as a part-time attendant."
+                            },
+                            {
+                                "id": "E",
+                                "text": "He was pleased that the keepers' old way of life had ended."
+                            }
+                        ],
+                        "evidence": "he felt a mixture of relief and sadness when his last station was automated. 'The machines were more dependable than we were,'",
+                        "explanation": "Paragraph F says Pritchard felt both relief and sadness and called machines 'more dependable' than keepers. He says a machine never noticed a small boat in trouble, so he did not think boats became safer, and only 'some keepers' became attendants."
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "oil lamps"
+                        ],
+                        "prompt": "Before electricity was available, the light in a lighthouse was produced by ______.",
+                        "options": [],
+                        "evidence": "the light came from oil lamps",
+                        "explanation": "Paragraph B says that before electricity reached the coast, the light came from oil lamps."
+                    },
+                    {
+                        "answer": [
+                            "single region"
+                        ],
+                        "prompt": "Eilidh Macrae warns that her findings may not apply everywhere because her sample was limited to a ______.",
+                        "options": [],
+                        "evidence": "her sample came from a single region",
+                        "explanation": "Paragraph C says her logbooks all came from a single region (Scotland), so her results may not reflect conditions elsewhere."
+                    },
+                    {
+                        "answer": [
+                            "part-time attendants"
+                        ],
+                        "prompt": "After automation, some keepers continued to work as ______, checking the equipment now and then.",
+                        "options": [],
+                        "evidence": "Some keepers stayed on as part-time attendants, visiting a light occasionally to check the equipment",
+                        "explanation": "Paragraph F says some keepers stayed on as part-time attendants who visited the light occasionally. 'Now and then' restates 'occasionally'."
+                    },
+                    {
+                        "answer": [
+                            "coastal climate"
+                        ],
+                        "prompt": "Scientists value old logbooks because they give a long and reliable record of the ______.",
+                        "options": [],
+                        "evidence": "a long and consistent record of the coastal climate",
+                        "explanation": "Paragraph G explains that keepers' regular weather notes give scientists a long and consistent record of the coastal climate."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Eilidh Macrae",
+                "role": "historian who studied logbooks from eleven Scottish lighthouse stations",
+                "gender": "female"
+            },
+            {
+                "name": "Gwilym Pritchard",
+                "role": "retired keeper who spent fourteen years on rock stations off the Welsh coast",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Ask most people to picture a lighthouse keeper and they will probably imagine a solitary figure with a beard and a pipe, gazing out at a stormy sea. It is an attractive picture, but it tells only a small part of the story. For generations, until machines took over their duties, keepers did demanding and often repetitive work on which the lives of sailors depended. Their days were shaped less by dramatic rescues than by routine, and the qualities their employers valued most were reliability and patience rather than courage.",
+                "label": "A"
+            },
+            {
+                "text": "The night was the heart of the job. Before electricity reached the coast, the light came from oil lamps whose wicks had to be trimmed regularly so that they burned brightly without smoking; American keepers were nicknamed 'wickies' for this reason. In many towers the great lens turned on a clockwork mechanism driven by a heavy weight, which slowly sank down the centre of the tower and had to be wound back up every few hours. If the keeper on watch fell asleep, the light could stop rotating, and a ship relying on its particular pattern of flashes might mistake one headland for another. For this reason, falling asleep on duty was treated as one of the most serious offences a keeper could commit.",
+                "label": "B"
+            },
+            {
+                "text": "Daylight brought a different set of tasks. Oil lamps left a thin film of soot on the lens and windows, and every surface had to be cleaned each morning, while brass fittings were polished and walls repainted to protect them from salt air. Keepers also kept detailed logbooks, recording the state of the light, passing vessels and, above all, the weather. The historian Eilidh Macrae, who examined logbooks from eleven Scottish stations, found that the entries suggested keepers spent more of their waking hours on cleaning and maintenance than on watching the light itself. She is careful to point out, however, that her sample came from a single region and may not reflect conditions elsewhere.",
+                "label": "C"
+            },
+            {
+                "text": "Where a keeper lived made an enormous difference to his life. At shore stations, built on headlands, keepers often lived with their wives and children in cottages beside the tower, and wives frequently shared the work, sometimes officially taking over when a husband died. Rock stations, built on isolated reefs or tiny islands, were another matter. Here only men were posted, usually in teams of three, so that if one fell ill or was injured the other two could continue to run the light. They typically worked several weeks at a time before a boat brought their replacements, although a long spell of bad weather could keep the relief boat away for days or even weeks beyond the planned date.",
+                "label": "D"
+            },
+            {
+                "text": "Living in such close quarters demanded tact. Gwilym Pritchard, who spent fourteen years on rock stations off the Welsh coast before retiring, recalls that small habits could become intensely irritating. 'You learned not to whistle the same tune twice,' he says. Cooking was shared on a rota, and a man who could not make a decent meal was not popular for long. To fill the quiet hours, keepers took up an impressive range of pastimes. Pritchard taught himself to repair clocks, while one of his colleagues built detailed model ships inside glass bottles. Some keepers grew vegetables in sheltered corners of the rock, although salt spray destroyed much of what they planted. Reading was almost universal, and books were exchanged so often that, as Pritchard puts it, 'every station had the same library by the end of the year.'",
+                "label": "E"
+            },
+            {
+                "text": "Change came gradually and then very quickly. Electric lamps removed the need to tend flames, and from the middle of the twentieth century automatic equipment could switch lights on at dusk, change failed bulbs and report faults to a distant control room. One by one, stations lost their keepers, and in Britain the last of them left at the end of the 1990s. Some keepers stayed on as part-time attendants, visiting a light occasionally to check the equipment. Pritchard admits that he felt a mixture of relief and sadness when his last station was automated. 'The machines were more dependable than we were,' he says, 'but a machine never noticed a small boat in trouble.'",
+                "label": "F"
+            },
+            {
+                "text": "The keepers' legacy is more than romantic. Many former stations now welcome visitors, and some cottages have been turned into holiday homes. Less obviously, the logbooks themselves have become valuable. Because keepers recorded wind, rain and sea conditions several times a day, often for decades at the same spot, their notes offer scientists a long and consistent record of the coastal climate. Researchers studying how coastal storms have changed over time increasingly turn to these handwritten pages, some of which describe places where no official weather station was ever built. In that sense, the keepers are still keeping watch.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the qualities their employers valued most were reliability and patience rather than courage",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "American keepers were nicknamed 'wickies' for this reason.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "had to be wound back up every few hours",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "wives frequently shared the work, sometimes officially taking over when a husband died",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Pritchard taught himself to repair clocks",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Oil lamps left a thin film of soot on the lens and windows, and every surface had to be cleaned each morning, while brass fittings were polished and walls repainted to protect them from salt air.",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Here only men were posted, usually in teams of three",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Pritchard admits that he felt a mixture of relief and sadness when his last station was automated. 'The machines were more dependable than we were,'",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the light came from oil lamps whose wicks had to be trimmed",
+                "answer": [
+                    "oil lamps"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "her sample came from a single region and may not reflect conditions elsewhere",
+                "answer": [
+                    "single region"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some keepers stayed on as part-time attendants, visiting a light occasionally to check the equipment.",
+                "answer": [
+                    "part-time attendants"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "their notes offer scientists a long and consistent record of the coastal climate",
+                "answer": [
+                    "coastal climate"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the qualities their employers valued most were reliability and patience rather than courage",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the light came from oil lamps whose wicks had to be trimmed regularly ... American keepers were nicknamed 'wickies' for this reason",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "had to be wound back up every few hours",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "wives frequently shared the work, sometimes officially taking over when a husband died",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Pritchard taught himself to repair clocks",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Oil lamps left a thin film of soot on the lens and windows, and every surface had to be cleaned each morning ... walls repainted to protect them from salt air",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Here only men were posted, usually in teams of three",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Pritchard admits that he felt a mixture of relief and sadness when his last station was automated. 'The machines were more dependable than we were,' he says",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the light came from oil lamps",
+                "answer": [
+                    "oil lamps"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "her sample came from a single region",
+                "answer": [
+                    "single region"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some keepers stayed on as part-time attendants",
+                "answer": [
+                    "part-time attendants"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "their notes offer scientists a long and consistent record of the coastal climate",
+                "answer": [
+                    "coastal climate"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the qualities their employers valued most were reliability and patience rather than courage.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "American keepers were nicknamed 'wickies' for this reason.",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "had to be wound back up every few hours.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "sometimes officially taking over when a husband died.",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "Oil lamps left a thin film of soot on the lens and windows, and every surface had to be cleaned each morning, while brass fittings were polished and walls repainted to protect them from salt air.",
+            "answer": [
+                "B",
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "Here only men were posted, usually in teams of three",
+            "answer": [
+                "A",
+                "C"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the light came from oil lamps",
+            "answer": [
+                "oil lamps"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "her sample came from a single region and may not reflect conditions elsewhere.",
+            "answer": [
+                "single region"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Some keepers stayed on as part-time attendants, visiting a light occasionally to check the equipment.",
+            "answer": [
+                "part-time attendants"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 14,
+        "agreedFirst": 14,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Life Behind the Lamp\n\nA. Ask most people to picture a lighthouse keeper and they will probably imagine a solitary figure with a beard and a pipe, gazing out at a stormy sea. It is an attractive picture, but it tells only a small part of the story. For generations, until machines took over their duties, keepers did demanding and often repetitive work on which the lives of sailors depended. Their days were shaped less by dramatic rescues than by routine, and the qualities their employers valued most were reliability and patience rather than courage.\n\nB. The night was the heart of the job. Before electricity reached the coast, the light came from oil lamps whose wicks had to be trimmed regularly so that they burned brightly without smoking; American keepers were nicknamed 'wickies' for this reason. In many towers the great lens turned on a clockwork mechanism driven by a heavy weight, which slowly sank down the centre of the tower and had to be wound back up every few hours. If the keeper on watch fell asleep, the light could stop rotating, and a ship relying on its particular pattern of flashes might mistake one headland for another. For this reason, falling asleep on duty was treated as one of the most serious offences a keeper could commit.\n\nC. Daylight brought a different set of tasks. Oil lamps left a thin film of soot on the lens and windows, and every surface had to be cleaned each morning, while brass fittings were polished and walls repainted to protect them from salt air. Keepers also kept detailed logbooks, recording the state of the light, passing vessels and, above all, the weather. The historian Eilidh Macrae, who examined logbooks from eleven Scottish stations, found that the entries suggested keepers spent more of their waking hours on cleaning and maintenance than on watching the light itself. She is careful to point out, however, that her sample came from a single region and may not reflect conditions elsewhere.\n\nD. Where a keeper lived made an enormous difference to his life. At shore stations, built on headlands, keepers often lived with their wives and children in cottages beside the tower, and wives frequently shared the work, sometimes officially taking over when a husband died. Rock stations, built on isolated reefs or tiny islands, were another matter. Here only men were posted, usually in teams of three, so that if one fell ill or was injured the other two could continue to run the light. They typically worked several weeks at a time before a boat brought their replacements, although a long spell of bad weather could keep the relief boat away for days or even weeks beyond the planned date.\n\nE. Living in such close quarters demanded tact. Gwilym Pritchard, who spent fourteen years on rock stations off the Welsh coast before retiring, recalls that small habits could become intensely irritating. 'You learned not to whistle the same tune twice,' he says. Cooking was shared on a rota, and a man who could not make a decent meal was not popular for long. To fill the quiet hours, keepers took up an impressive range of pastimes. Pritchard taught himself to repair clocks, while one of his colleagues built detailed model ships inside glass bottles. Some keepers grew vegetables in sheltered corners of the rock, although salt spray destroyed much of what they planted. Reading was almost universal, and books were exchanged so often that, as Pritchard puts it, 'every station had the same library by the end of the year.'\n\nF. Change came gradually and then very quickly. Electric lamps removed the need to tend flames, and from the middle of the twentieth century automatic equipment could switch lights on at dusk, change failed bulbs and report faults to a distant control room. One by one, stations lost their keepers, and in Britain the last of them left at the end of the 1990s. Some keepers stayed on as part-time attendants, visiting a light occasionally to check the equipment. Pritchard admits that he felt a mixture of relief and sadness when his last station was automated. 'The machines were more dependable than we were,' he says, 'but a machine never noticed a small boat in trouble.'\n\nG. The keepers' legacy is more than romantic. Many former stations now welcome visitors, and some cottages have been turned into holiday homes. Less obviously, the logbooks themselves have become valuable. Because keepers recorded wind, rain and sea conditions several times a day, often for decades at the same spot, their notes offer scientists a long and consistent record of the coastal climate. Researchers studying how coastal storms have changed over time increasingly turn to these handwritten pages, some of which describe places where no official weather station was ever built. In that sense, the keepers are still keeping watch.",
+        "title": "Life Behind the Lamp",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Employers considered courage to be the most important quality in a lighthouse keeper.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "the qualities their employers valued most were reliability and patience rather than courage",
+                        "explanation": {
+                            "en": "Paragraph A says employers valued reliability and patience most, 'rather than courage'. This is the opposite of the statement.",
+                            "ru": "В абзаце A сказано, что работодатели больше всего ценили надёжность и терпение, \"rather than courage\". Это прямо противоположно утверждению.",
+                            "uk": "В абзаці A сказано, що роботодавці найбільше цінували надійність і терпіння, \"rather than courage\". Це прямо протилежне до твердження."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Keepers in America were given a nickname connected with one of their regular tasks.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "American keepers were nicknamed 'wickies' for this reason",
+                        "explanation": {
+                            "en": "Paragraph B explains that keepers had to trim the lamp wicks, and that is why American keepers were called 'wickies'.",
+                            "ru": "В абзаце B объясняется, что смотрители должны были подрезать фитили ламп. Именно поэтому американских смотрителей называли \"wickies\".",
+                            "uk": "В абзаці B пояснюється, що доглядачі маяків мусили підрізати ґноти ламп. Саме тому американських доглядачів називали \"wickies\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "The clockwork that turned the lens usually needed winding only once a day.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "had to be wound back up every few hours",
+                        "explanation": {
+                            "en": "Paragraph B says the weight had to be wound up every few hours, not once a day, so the statement contradicts the passage.",
+                            "ru": "В абзаце B сказано, что гирю нужно было поднимать каждые несколько часов, а не раз в день. Значит, утверждение противоречит тексту.",
+                            "uk": "В абзаці B сказано, що гирю треба було підіймати кожні кілька годин, а не раз на день. Отже, твердження суперечить тексту."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "A keeper who was found asleep on duty was normally dismissed immediately.",
+                        "numbers": [
+                            4
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says falling asleep on duty was one of the most serious offences. It does not say what punishment a keeper received, so we cannot know whether he lost his job.",
+                            "ru": "В абзаце B сказано, что заснуть на дежурстве было одним из самых серьёзных проступков. Но какое наказание за это получал смотритель, не говорится, поэтому мы не можем знать, терял ли он работу.",
+                            "uk": "В абзаці B сказано, що заснути на чергуванні було одним із найсерйозніших порушень. Але яке покарання за це отримував доглядач, не сказано, тому ми не можемо знати, чи втрачав він роботу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "At shore stations, a keeper's wife sometimes formally took over his job after his death.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "wives frequently shared the work, sometimes officially taking over when a husband died",
+                        "explanation": {
+                            "en": "Paragraph D says wives sometimes 'officially' took over when a husband died, which matches 'formally took over his job'.",
+                            "ru": "В абзаце D сказано, что после смерти мужа жена иногда \"officially\" занимала его место. Это соответствует \"formally took over his job\".",
+                            "uk": "В абзаці D сказано, що після смерті чоловіка дружина іноді \"officially\" обіймала його посаду. Це відповідає \"formally took over his job\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Keepers at rock stations earned more money than keepers at shore stations.",
+                        "numbers": [
+                            6
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D compares living conditions at shore and rock stations, but the passage never mentions how much keepers were paid.",
+                            "ru": "В абзаце D сравниваются условия жизни на береговых и скальных станциях, но о том, сколько платили смотрителям, в тексте нигде не говорится.",
+                            "uk": "В абзаці D порівнюються умови життя на берегових і скельних станціях, але про те, скільки платили доглядачам, у тексті ніде не йдеться."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "radioing weather reports to the mainland"
+                    },
+                    {
+                        "id": "B",
+                        "text": "repainting walls to guard against salt damage"
+                    },
+                    {
+                        "id": "C",
+                        "text": "rescuing the crews of passing vessels"
+                    },
+                    {
+                        "id": "D",
+                        "text": "showing groups of visitors around the tower"
+                    },
+                    {
+                        "id": "E",
+                        "text": "removing the soot left behind by the lamps"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B",
+                            "E"
+                        ],
+                        "prompt": "Which TWO daytime tasks of lighthouse keepers does the writer mention?",
+                        "numbers": [
+                            7,
+                            8
+                        ],
+                        "evidence": "Oil lamps left a thin film of soot on the lens and windows, and every surface had to be cleaned each morning, while brass fittings were polished and walls repainted to protect them from salt air",
+                        "explanation": {
+                            "en": "Paragraph C lists cleaning soot from the lens and windows and repainting walls against salt air. Keepers recorded the weather in logbooks, but radio reports are not mentioned, and visitors only come to stations today.",
+                            "ru": "В абзаце C перечислены очистка линзы и окон от копоти и перекраска стен, которые портил солёный воздух. Смотрители записывали погоду в журналы, но о сводках по радио ничего не сказано, а посетители приходят на станции только в наши дни.",
+                            "uk": "В абзаці C перелічено очищення лінзи та вікон від кіптяви і перефарбовування стін, які псувало солоне повітря. Доглядачі записували погоду в журнали, але про зведення по радіо нічого не сказано, а відвідувачі приходять на станції лише сьогодні."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only men were sent to work at them."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Families lived in cottages beside the tower."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Keepers usually worked there in groups of three."
+                    },
+                    {
+                        "id": "D",
+                        "text": "Keepers stayed there for several months at a time."
+                    },
+                    {
+                        "id": "E",
+                        "text": "Relief boats always arrived on the planned day."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "C"
+                        ],
+                        "prompt": "Which TWO statements about rock stations are supported by the passage?",
+                        "numbers": [
+                            9,
+                            10
+                        ],
+                        "evidence": "Here only men were posted, usually in teams of three",
+                        "explanation": {
+                            "en": "Paragraph D says only men were posted to rock stations, usually in teams of three. Families in cottages belong to shore stations, keepers worked several weeks rather than months, and bad weather could delay the relief boat.",
+                            "ru": "В абзаце D сказано, что на скальные станции направляли только мужчин, обычно по трое. Семьи в коттеджах жили на береговых станциях, смотрители работали по несколько недель, а не месяцев, а плохая погода могла задержать лодку со сменой.",
+                            "uk": "В абзаці D сказано, що на скельні станції направляли лише чоловіків, зазвичай по троє. Родини в котеджах жили на берегових станціях, доглядачі працювали по кілька тижнів, а не місяців, а негода могла затримати човен із заміною."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "oil lamps"
+                        ],
+                        "prompt": "Before electricity was available, the light in a lighthouse was produced by ______.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "the light came from oil lamps",
+                        "explanation": {
+                            "en": "Paragraph B says that before electricity reached the coast, the light came from oil lamps.",
+                            "ru": "В абзаце B сказано, что до того, как на побережье появилось электричество, свет давали масляные лампы (\"oil lamps\").",
+                            "uk": "В абзаці B сказано, що до того, як на узбережжя провели електрику, світло давали олійні лампи (\"oil lamps\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "single region"
+                        ],
+                        "prompt": "Eilidh Macrae warns that her findings may not apply everywhere because her sample was limited to a ______.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "her sample came from a single region",
+                        "explanation": {
+                            "en": "Paragraph C says her logbooks all came from a single region (Scotland), so her results may not reflect conditions elsewhere.",
+                            "ru": "В абзаце C сказано, что все её журналы были из одного региона (Шотландии), поэтому её выводы могут не отражать условия в других местах.",
+                            "uk": "В абзаці C сказано, що всі її журнали походили з одного регіону (Шотландії), тому її висновки можуть не відображати умов в інших місцях."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "part-time attendants"
+                        ],
+                        "prompt": "After automation, some keepers continued to work as ______, checking the equipment now and then.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "Some keepers stayed on as part-time attendants, visiting a light occasionally to check the equipment",
+                        "explanation": {
+                            "en": "Paragraph F says some keepers stayed on as part-time attendants who visited the light occasionally. 'Now and then' restates 'occasionally'.",
+                            "ru": "В абзаце F сказано, что некоторые смотрители остались работать на неполную ставку (\"part-time attendants\") и время от времени приезжали к маяку. \"Now and then\" — пересказ слова \"occasionally\".",
+                            "uk": "В абзаці F сказано, що деякі доглядачі залишилися працювати на неповну ставку (\"part-time attendants\") і час від часу навідувалися до маяка. \"Now and then\" — переказ слова \"occasionally\"."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "9": "b2q2",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

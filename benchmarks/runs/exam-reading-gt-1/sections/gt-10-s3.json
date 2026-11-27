@@ -1,0 +1,1195 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-10|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.3052,
+            "provider": "anthropic",
+            "outputTokens": 14110
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.015348,
+            "provider": "anthropic",
+            "outputTokens": 687
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.018563,
+            "provider": "openai",
+            "outputTokens": 801
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.017528,
+            "provider": "xai",
+            "outputTokens": 1656
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.103156,
+            "provider": "anthropic",
+            "outputTokens": 4804
+        }
+    ],
+    "draft": {
+        "title": "The Long Road to Your Teacup",
+        "blocks": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "One plant, many teas"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "A careful harvest of the newest growth"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Softening and breaking the leaf"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "How exposure to air shapes colour and flavour"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Experts who keep a familiar taste the same"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "The final step happens in the kitchen"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Why machines are replacing human pickers"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "The health benefits of drinking green tea"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "How tea spread from China to the rest of the world"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph A",
+                        "options": [],
+                        "evidence": "Black, green, oolong and white teas are not made from different plants",
+                        "explanation": "Paragraph A explains that all true teas come from one shrub and differ only because of how the leaves are processed. It mentions different countries, but it does not describe how tea spread around the world."
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "options": [],
+                        "evidence": "The traditional rule is 'two leaves and a bud': only the tender tip of each shoot is taken.",
+                        "explanation": "Paragraph B is about picking only the young shoots from the bushes. Machines are mentioned, but Moorcroft says hand-picking is still needed for better teas, so the paragraph is not about machines replacing people."
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "options": [],
+                        "evidence": "Rolling, done by hand on small estates and by machine on large ones, twists the leaves and breaks open their cells",
+                        "explanation": "Paragraph C describes withering, which makes the leaves soft, and rolling, which breaks open their cells. Both steps together match the idea of softening and breaking the leaf."
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph D",
+                        "options": [],
+                        "evidence": "Enzymes in the bruised leaf react with oxygen, and the leaves gradually darken",
+                        "explanation": "Paragraph D explains oxidation, a reaction with oxygen, and shows how stopping it early or late gives green, oolong or black tea with different colours and tastes."
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph E",
+                        "options": [],
+                        "evidence": "customers expect their favourite brand to taste the same every time they buy it",
+                        "explanation": "Paragraph E is about professional tasters like Ebdon, whose main job is blending teas so a brand always tastes the same. Sorting leaves by size is only a small detail."
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph F",
+                        "options": [],
+                        "evidence": "The final stage of the journey takes place in our own kitchens, and it is the one we most often get wrong.",
+                        "explanation": "Paragraph F is about brewing tea at home, especially choosing the right water temperature. It mentions green tea, but it says nothing about health benefits."
+                    }
+                ],
+                "instruction": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "plucking table"
+                        ],
+                        "prompt": "On plantations, tea bushes are cut back so that their tops form a level surface known as the ______.",
+                        "options": [],
+                        "evidence": "creating a flat, dense surface that growers call the plucking table",
+                        "explanation": "Paragraph B says the bushes are pruned to waist height, creating a flat surface that growers call the plucking table. 'Cut back' restates 'pruned'."
+                    },
+                    {
+                        "answer": [
+                            "warm air"
+                        ],
+                        "prompt": "During withering, the leaves lose much of their moisture while ______ is passed through them for hours.",
+                        "options": [],
+                        "evidence": "warm air is blown through them for many hours",
+                        "explanation": "Paragraph C says warm air is blown through the leaves for many hours, and this stage, withering, removes much of their moisture."
+                    },
+                    {
+                        "answer": [
+                            "fermentation"
+                        ],
+                        "prompt": "The process of oxidation is frequently given the incorrect name ______.",
+                        "options": [],
+                        "evidence": "a process often wrongly called fermentation",
+                        "explanation": "Paragraph D says oxidation is 'often wrongly called fermentation'. 'Frequently given the incorrect name' restates this."
+                    },
+                    {
+                        "answer": [
+                            "palate"
+                        ],
+                        "prompt": "Ebdon's noisy slurping spreads each sample of tea across his ______.",
+                        "options": [],
+                        "evidence": "sprays the tea across the palate so that no flavour is missed",
+                        "explanation": "Paragraph E says slurping sprays the tea across the palate, so that the taster does not miss any flavour."
+                    },
+                    {
+                        "answer": [
+                            "twenty-four volunteers",
+                            "24 volunteers"
+                        ],
+                        "prompt": "Adjei accepts that her research was limited because it included just ______.",
+                        "options": [],
+                        "evidence": "involving only twenty-four volunteers",
+                        "explanation": "Paragraph F says Adjei admits her study was small, as it involved only twenty-four volunteers. 'Accepts that her research was limited' restates 'admits her study was small'."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to Sabitha Moorcroft, the main drawback of harvesting tea by machine is that it",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "gathers older leaves as well as new shoots."
+                            },
+                            {
+                                "id": "B",
+                                "text": "costs more than employing trained pickers."
+                            },
+                            {
+                                "id": "C",
+                                "text": "is slower than an experienced plucker."
+                            },
+                            {
+                                "id": "D",
+                                "text": "damages the flat surface of the bushes."
+                            }
+                        ],
+                        "evidence": "they can't tell a fresh shoot from a tough old leaf, so they take both",
+                        "explanation": "In paragraph B, Moorcroft says machines cannot tell fresh shoots from old leaves and take both. She says machines are quicker and cheaper, so the options about cost and speed are wrong, and she never mentions damage to the bushes."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Why are green tea leaves heated soon after they are picked?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "to make them soft enough to be rolled"
+                            },
+                            {
+                                "id": "B",
+                                "text": "to prevent their reaction with oxygen"
+                            },
+                            {
+                                "id": "C",
+                                "text": "to reduce their moisture for long storage"
+                            },
+                            {
+                                "id": "D",
+                                "text": "to give them a coppery colour and flavour"
+                            }
+                        ],
+                        "evidence": "so the enzymes are destroyed before they can do their work and the leaves keep their colour",
+                        "explanation": "Paragraph D says heating destroys the enzymes before oxidation, the reaction with oxygen, can happen. Softening comes from withering, the final drying for storage applies to all teas, and the coppery colour belongs to black tea."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does Haruto Ebdon say is the purpose of blending tea?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "to disguise poorer leaf from some estates"
+                            },
+                            {
+                                "id": "B",
+                                "text": "to produce a new taste for each season"
+                            },
+                            {
+                                "id": "C",
+                                "text": "to keep a product's flavour unchanged over time"
+                            },
+                            {
+                                "id": "D",
+                                "text": "to include teas from as many countries as possible"
+                            }
+                        ],
+                        "evidence": "just so that this year's packet tastes exactly like last year's",
+                        "explanation": "In paragraph E, Ebdon says consistency is the real aim, so that this year's tea tastes like last year's. Hiding cheap leaf is only what some people suspect, and he mentions four countries as an example, not as a goal."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "What is the writer's main point at the end of the passage?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Boiling water is the best choice for every kind of tea."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The results of small studies on taste cannot be trusted."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Green tea is generally more enjoyable to drink than black tea."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Careless brewing at home can spoil carefully produced tea."
+                            }
+                        ],
+                        "evidence": "After so many skilled hands have shaped the leaf, it seems a pity to ruin it in the last thirty seconds.",
+                        "explanation": "Paragraph F ends by saying it is a pity to ruin tea, made with so much skill, in the last moments of brewing. The writer says delicate teas do not suit boiling water, and does not reject Adjei's study or compare green and black tea for enjoyment."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ],
+        "people": [
+            {
+                "name": "Sabitha Moorcroft",
+                "role": "manager of a hillside tea garden",
+                "gender": "female"
+            },
+            {
+                "name": "Haruto Ebdon",
+                "role": "professional tea taster and blender",
+                "gender": "male"
+            },
+            {
+                "name": "Clémence Adjei",
+                "role": "food scientist who studied brewing temperature",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Tea is now drunk in almost every country, yet few drinkers give much thought to how it is made. Whether it arrives as a delicate pale green brew in a Japanese bowl or as a strong, milky mug in a British kitchen, almost every cup of tea in the world begins in the same place: the leaves of a single evergreen shrub, Camellia sinensis. Herbal infusions such as peppermint or chamomile are often called tea, but strictly speaking they are something else. Black, green, oolong and white teas are not made from different plants, as many drinkers assume. What separates them is what happens to the leaves in the hours and days after they are picked, and those changes begin long before any kettle is switched on.",
+                "label": "A"
+            },
+            {
+                "text": "Left alone, a tea plant would grow into a small tree several metres tall. On plantations, however, the bushes are pruned to roughly waist height, creating a flat, dense surface that growers call the plucking table. In the growing season, new shoots appear on this surface every week or two, and these are what the pickers are after. The traditional rule is 'two leaves and a bud': only the tender tip of each shoot is taken. Sabitha Moorcroft, who manages a hillside tea garden, says that experienced pluckers can gather many kilograms a day without slowing down. 'Machines are quicker and cheaper,' she admits, 'but they can't tell a fresh shoot from a tough old leaf, so they take both. For our better teas, nothing replaces a trained pair of hands.'",
+                "label": "B"
+            },
+            {
+                "text": "For most teas, once the baskets reach the factory, the leaves are spread out in long troughs, and warm air is blown through them for many hours. This stage, known as withering, removes a good deal of their moisture and turns the leaves soft and floppy, rather like spinach left out of the fridge. Soft leaves can then be rolled without snapping. Rolling, done by hand on small estates and by machine on large ones, twists the leaves and breaks open their cells, so that the juices inside come into contact with the air. It looks like a simple mechanical step, but it sets off the chemistry that gives each tea its character.",
+                "label": "C"
+            },
+            {
+                "text": "That chemistry is oxidation, a process often wrongly called fermentation. Enzymes in the bruised leaf react with oxygen, and the leaves gradually darken, much as a cut apple turns brown on a kitchen counter. Allowed to continue for an hour or more, the reaction produces the coppery colour and full, malty flavour of black tea. Oolong makers stop the process partway, which is why oolongs range from almost green to nearly black. Green tea is heated soon after picking, by steaming or pan-firing, so the enzymes are destroyed before they can do their work and the leaves keep their colour and fresh, grassy taste. White tea is handled least of all: it is simply withered and dried. Whatever the style, the leaves finish with a final drying, which brings their moisture so low that they will keep for months.",
+                "label": "D"
+            },
+            {
+                "text": "Before tea reaches the shops, it passes through the hands, and mouths, of professional tasters. Haruto Ebdon spends his mornings in a tasting room where dozens of white bowls stand in a row, each holding a sample from a different estate. He slurps every spoonful noisily, a habit that startles visitors but sprays the tea across the palate so that no flavour is missed. His main job is blending. A single garden's tea changes with the weather and the season, yet customers expect their favourite brand to taste the same every time they buy it. Blending is sometimes suspected of being a way to hide cheap leaf, but Ebdon insists that consistency is the real aim: 'I might combine twenty teas from four countries just so that this year's packet tastes exactly like last year's.' Long before this, at the factory, the leaves will have been sorted by size: whole leaves are sold loose, while the smallest broken pieces, which release their flavour quickly, mostly end up in tea bags.",
+                "label": "E"
+            },
+            {
+                "text": "The final stage of the journey takes place in our own kitchens, and it is the one we most often get wrong. Black tea generally suits water straight off the boil, but more delicate teas do not, and green and white teas in particular can turn bitter if the water is too hot. In one study, the food scientist Clémence Adjei asked volunteers to compare cups of the same green tea brewed at different temperatures without telling them which was which. Most preferred the cup made with water at around 80°C, and many described the boiling-water version as harsh and bitter. Adjei admits her study was small, involving only twenty-four volunteers, but her advice is easy to follow: let the kettle stand for a few minutes before pouring. After so many skilled hands have shaped the leaf, it seems a pity to ruin it in the last thirty seconds.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "What separates them is what happens to the leaves in the hours and days after they are picked",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "only the tender tip of each shoot is taken",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "turns the leaves soft and floppy... Rolling... twists the leaves and breaks open their cells",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Enzymes in the bruised leaf react with oxygen, and the leaves gradually darken",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "customers expect their favourite brand to taste the same every time they buy it",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "The final stage of the journey takes place in our own kitchens",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "creating a flat, dense surface that growers call the plucking table",
+                "answer": [
+                    "plucking table"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "warm air is blown through them for many hours",
+                "answer": [
+                    "warm air"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "oxidation, a process often wrongly called fermentation",
+                "answer": [
+                    "fermentation"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "sprays the tea across the palate so that no flavour is missed",
+                "answer": [
+                    "palate"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "involving only twenty-four volunteers",
+                "answer": [
+                    "twenty-four volunteers"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they can't tell a fresh shoot from a tough old leaf, so they take both",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "so the enzymes are destroyed before they can do their work",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "consistency is the real aim: 'I might combine twenty teas from four countries just so that this year's packet tastes exactly like last year's.'",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "After so many skilled hands have shaped the leaf, it seems a pity to ruin it in the last thirty seconds.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Black, green, oolong and white teas are not made from different plants ... What separates them is what happens to the leaves",
+                "answer": [
+                    "i"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The traditional rule is 'two leaves and a bud': only the tender tip of each shoot is taken.",
+                "answer": [
+                    "ii"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "This stage, known as withering, removes a good deal of their moisture ... Soft leaves can then be rolled without snapping. Rolling ... breaks open their cells",
+                "answer": [
+                    "iii"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "That chemistry is oxidation ... Enzymes in the bruised leaf react with oxygen, and the leaves gradually darken",
+                "answer": [
+                    "iv"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "customers expect their favourite brand to taste the same every time they buy it ... Ebdon insists that consistency is the real aim",
+                "answer": [
+                    "v"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "The final stage of the journey takes place in our own kitchens",
+                "answer": [
+                    "vi"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "creating a flat, dense surface that growers call the plucking table",
+                "answer": [
+                    "plucking table"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "warm air is blown through them for many hours",
+                "answer": [
+                    "warm air"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a process often wrongly called fermentation",
+                "answer": [
+                    "fermentation"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "sprays the tea across the palate so that no flavour is missed",
+                "answer": [
+                    "palate"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "her study was small, involving only twenty-four volunteers",
+                "answer": [
+                    "twenty-four volunteers"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they can't tell a fresh shoot from a tough old leaf, so they take both",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Green tea is heated soon after picking ... so the enzymes are destroyed before they can do their work",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "customers expect their favourite brand to taste the same every time ... consistency is the real aim",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "After so many skilled hands have shaped the leaf, it seems a pity to ruin it in the last thirty seconds.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Black, green, oolong and white teas are not made from different plants, as many drinkers assume.",
+            "answer": [
+                "i"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "The traditional rule is 'two leaves and a bud': only the tender tip of each shoot is taken.",
+            "answer": [
+                "ii"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "turns the leaves soft and floppy... Rolling... twists the leaves and breaks open their cells",
+            "answer": [
+                "iii"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Enzymes in the bruised leaf react with oxygen, and the leaves gradually darken",
+            "answer": [
+                "iv"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "consistency is the real aim: 'I might combine twenty teas from four countries just so that this year's packet tastes exactly like last year's.'",
+            "answer": [
+                "v"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "The final stage of the journey takes place in our own kitchens",
+            "answer": [
+                "vi"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "creating a flat, dense surface that growers call the plucking table",
+            "answer": [
+                "plucking table"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "warm air is blown through them for many hours",
+            "answer": [
+                "warm air"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "a process often wrongly called fermentation",
+            "answer": [
+                "fermentation"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "sprays the tea across the palate so that no flavour is missed",
+            "answer": [
+                "palate"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "they can't tell a fresh shoot from a tough old leaf, so they take both",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "so the enzymes are destroyed before they can do their work",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "consistency is the real aim: 'I might combine twenty teas from four countries just so that this year's packet tastes exactly like last year's.'",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 15,
+        "agreedFirst": 15,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The Long Road to Your Teacup\n\nA. Tea is now drunk in almost every country, yet few drinkers give much thought to how it is made. Whether it arrives as a delicate pale green brew in a Japanese bowl or as a strong, milky mug in a British kitchen, almost every cup of tea in the world begins in the same place: the leaves of a single evergreen shrub, Camellia sinensis. Herbal infusions such as peppermint or chamomile are often called tea, but strictly speaking they are something else. Black, green, oolong and white teas are not made from different plants, as many drinkers assume. What separates them is what happens to the leaves in the hours and days after they are picked, and those changes begin long before any kettle is switched on.\n\nB. Left alone, a tea plant would grow into a small tree several metres tall. On plantations, however, the bushes are pruned to roughly waist height, creating a flat, dense surface that growers call the plucking table. In the growing season, new shoots appear on this surface every week or two, and these are what the pickers are after. The traditional rule is 'two leaves and a bud': only the tender tip of each shoot is taken. Sabitha Moorcroft, who manages a hillside tea garden, says that experienced pluckers can gather many kilograms a day without slowing down. 'Machines are quicker and cheaper,' she admits, 'but they can't tell a fresh shoot from a tough old leaf, so they take both. For our better teas, nothing replaces a trained pair of hands.'\n\nC. For most teas, once the baskets reach the factory, the leaves are spread out in long troughs, and warm air is blown through them for many hours. This stage, known as withering, removes a good deal of their moisture and turns the leaves soft and floppy, rather like spinach left out of the fridge. Soft leaves can then be rolled without snapping. Rolling, done by hand on small estates and by machine on large ones, twists the leaves and breaks open their cells, so that the juices inside come into contact with the air. It looks like a simple mechanical step, but it sets off the chemistry that gives each tea its character.\n\nD. That chemistry is oxidation, a process often wrongly called fermentation. Enzymes in the bruised leaf react with oxygen, and the leaves gradually darken, much as a cut apple turns brown on a kitchen counter. Allowed to continue for an hour or more, the reaction produces the coppery colour and full, malty flavour of black tea. Oolong makers stop the process partway, which is why oolongs range from almost green to nearly black. Green tea is heated soon after picking, by steaming or pan-firing, so the enzymes are destroyed before they can do their work and the leaves keep their colour and fresh, grassy taste. White tea is handled least of all: it is simply withered and dried. Whatever the style, the leaves finish with a final drying, which brings their moisture so low that they will keep for months.\n\nE. Before tea reaches the shops, it passes through the hands, and mouths, of professional tasters. Haruto Ebdon spends his mornings in a tasting room where dozens of white bowls stand in a row, each holding a sample from a different estate. He slurps every spoonful noisily, a habit that startles visitors but sprays the tea across the palate so that no flavour is missed. His main job is blending. A single garden's tea changes with the weather and the season, yet customers expect their favourite brand to taste the same every time they buy it. Blending is sometimes suspected of being a way to hide cheap leaf, but Ebdon insists that consistency is the real aim: 'I might combine twenty teas from four countries just so that this year's packet tastes exactly like last year's.' Long before this, at the factory, the leaves will have been sorted by size: whole leaves are sold loose, while the smallest broken pieces, which release their flavour quickly, mostly end up in tea bags.\n\nF. The final stage of the journey takes place in our own kitchens, and it is the one we most often get wrong. Black tea generally suits water straight off the boil, but more delicate teas do not, and green and white teas in particular can turn bitter if the water is too hot. In one study, the food scientist Clémence Adjei asked volunteers to compare cups of the same green tea brewed at different temperatures without telling them which was which. Most preferred the cup made with water at around 80°C, and many described the boiling-water version as harsh and bitter. Adjei admits her study was small, involving only twenty-four volunteers, but her advice is easy to follow: let the kettle stand for a few minutes before pouring. After so many skilled hands have shaped the leaf, it seems a pity to ruin it in the last thirty seconds.",
+        "title": "The Long Road to Your Teacup",
+        "groups": [
+            {
+                "type": "matching_headings",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "i",
+                        "text": "One plant, many teas"
+                    },
+                    {
+                        "id": "ii",
+                        "text": "A careful harvest of the newest growth"
+                    },
+                    {
+                        "id": "iii",
+                        "text": "Softening and breaking the leaf"
+                    },
+                    {
+                        "id": "iv",
+                        "text": "How exposure to air shapes colour and flavour"
+                    },
+                    {
+                        "id": "v",
+                        "text": "Experts who keep a familiar taste the same"
+                    },
+                    {
+                        "id": "vi",
+                        "text": "The final step happens in the kitchen"
+                    },
+                    {
+                        "id": "vii",
+                        "text": "Why machines are replacing human pickers"
+                    },
+                    {
+                        "id": "viii",
+                        "text": "The health benefits of drinking green tea"
+                    },
+                    {
+                        "id": "ix",
+                        "text": "How tea spread from China to the rest of the world"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "i"
+                        ],
+                        "prompt": "Paragraph A",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Black, green, oolong and white teas are not made from different plants",
+                        "explanation": {
+                            "en": "Paragraph A explains that all true teas come from one shrub and differ only because of how the leaves are processed. It mentions different countries, but it does not describe how tea spread around the world.",
+                            "ru": "В абзаце A объясняется, что весь настоящий чай получают с одного кустарника, а различается он только тем, как обрабатывают листья. Там упоминаются разные страны, но не описывается, как чай распространился по миру.",
+                            "uk": "В абзаці A пояснюється, що весь справжній чай походить з одного куща, а відрізняється лише тим, як обробляють листя. Там згадано різні країни, але не описано, як чай поширився світом."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ii"
+                        ],
+                        "prompt": "Paragraph B",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "The traditional rule is 'two leaves and a bud': only the tender tip of each shoot is taken.",
+                        "explanation": {
+                            "en": "Paragraph B is about picking only the young shoots from the bushes. Machines are mentioned, but Moorcroft says hand-picking is still needed for better teas, so the paragraph is not about machines replacing people.",
+                            "ru": "Абзац B посвящён сбору только молодых побегов с кустов. Машины там упоминаются, но Moorcroft говорит, что для более качественного чая по-прежнему нужен ручной сбор, так что абзац не о том, что машины заменяют людей.",
+                            "uk": "Абзац B присвячений збиранню лише молодих пагонів із кущів. Машини там згадано, але Moorcroft каже, що для якіснішого чаю досі потрібне ручне збирання, тож абзац не про те, що машини замінюють людей."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iii"
+                        ],
+                        "prompt": "Paragraph C",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "Rolling, done by hand on small estates and by machine on large ones, twists the leaves and breaks open their cells",
+                        "explanation": {
+                            "en": "Paragraph C describes withering, which makes the leaves soft, and rolling, which breaks open their cells. Both steps together match the idea of softening and breaking the leaf.",
+                            "ru": "В абзаце C описаны завяливание («withering»), которое делает листья мягкими, и скручивание («rolling»), которое разрушает их клетки. Вместе эти два этапа соответствуют идее размягчения и разрушения листа.",
+                            "uk": "В абзаці C описано в'ялення («withering»), яке робить листя м'яким, і скручування («rolling»), яке руйнує його клітини. Разом ці два етапи відповідають ідеї розм'якшення та руйнування листка."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "iv"
+                        ],
+                        "prompt": "Paragraph D",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "Enzymes in the bruised leaf react with oxygen, and the leaves gradually darken",
+                        "explanation": {
+                            "en": "Paragraph D explains oxidation, a reaction with oxygen, and shows how stopping it early or late gives green, oolong or black tea with different colours and tastes.",
+                            "ru": "В абзаце D объясняется окисление («oxidation») — реакция с кислородом — и показано, как ранняя или поздняя его остановка даёт зелёный чай, улун или чёрный чай с разным цветом и вкусом.",
+                            "uk": "В абзаці D пояснюється окиснення («oxidation») — реакція з киснем — і показано, як рання або пізня його зупинка дає зелений чай, улун або чорний чай із різним кольором і смаком."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "v"
+                        ],
+                        "prompt": "Paragraph E",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "customers expect their favourite brand to taste the same every time they buy it",
+                        "explanation": {
+                            "en": "Paragraph E is about professional tasters like Ebdon, whose main job is blending teas so a brand always tastes the same. Sorting leaves by size is only a small detail.",
+                            "ru": "Абзац E посвящён профессиональным дегустаторам, таким как Ebdon, главная задача которых — смешивать чаи так, чтобы у марки всегда был одинаковый вкус. Сортировка листьев по размеру — лишь небольшая деталь.",
+                            "uk": "Абзац E присвячений професійним дегустаторам, як-от Ebdon, головне завдання яких — змішувати чаї так, щоб марка завжди мала однаковий смак. Сортування листя за розміром — лише дрібна деталь."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "vi"
+                        ],
+                        "prompt": "Paragraph F",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "The final stage of the journey takes place in our own kitchens, and it is the one we most often get wrong.",
+                        "explanation": {
+                            "en": "Paragraph F is about brewing tea at home, especially choosing the right water temperature. It mentions green tea, but it says nothing about health benefits.",
+                            "ru": "Абзац F о заваривании чая дома, особенно о выборе правильной температуры воды. Зелёный чай там упоминается, но о пользе для здоровья ничего не сказано.",
+                            "uk": "Абзац F про заварювання чаю вдома, особливо про вибір правильної температури води. Зелений чай там згадано, але про користь для здоров'я нічого не сказано."
+                        }
+                    }
+                ],
+                "instruction": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–ix. There are more headings than paragraphs, so you will not use them all."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "plucking table"
+                        ],
+                        "prompt": "On plantations, tea bushes are cut back so that their tops form a level surface known as the ______.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "creating a flat, dense surface that growers call the plucking table",
+                        "explanation": {
+                            "en": "Paragraph B says the bushes are pruned to waist height, creating a flat surface that growers call the plucking table. 'Cut back' restates 'pruned'.",
+                            "ru": "В абзаце B говорится, что кусты подрезают до уровня пояса, и получается ровная поверхность, которую чаеводы называют «plucking table». «Cut back» — это перефразирование слова «pruned».",
+                            "uk": "В абзаці B ідеться про те, що кущі підрізають до рівня пояса, і утворюється рівна поверхня, яку чаярі називають «plucking table». «Cut back» — це перефразування слова «pruned»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "warm air"
+                        ],
+                        "prompt": "During withering, the leaves lose much of their moisture while ______ is passed through them for hours.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "warm air is blown through them for many hours",
+                        "explanation": {
+                            "en": "Paragraph C says warm air is blown through the leaves for many hours, and this stage, withering, removes much of their moisture.",
+                            "ru": "В абзаце C сказано, что через листья много часов продувают тёплый воздух, и этот этап — «withering» — удаляет бо́льшую часть их влаги.",
+                            "uk": "В абзаці C сказано, що крізь листя багато годин продувають тепле повітря, і цей етап — «withering» — видаляє значну частину їхньої вологи."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "fermentation"
+                        ],
+                        "prompt": "The process of oxidation is frequently given the incorrect name ______.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "a process often wrongly called fermentation",
+                        "explanation": {
+                            "en": "Paragraph D says oxidation is 'often wrongly called fermentation'. 'Frequently given the incorrect name' restates this.",
+                            "ru": "В абзаце D говорится, что окисление «often wrongly called fermentation». Фраза «frequently given the incorrect name» передаёт ту же мысль другими словами.",
+                            "uk": "В абзаці D ідеться про те, що окиснення «often wrongly called fermentation». Фраза «frequently given the incorrect name» передає ту саму думку іншими словами."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "palate"
+                        ],
+                        "prompt": "Ebdon's noisy slurping spreads each sample of tea across his ______.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "sprays the tea across the palate so that no flavour is missed",
+                        "explanation": {
+                            "en": "Paragraph E says slurping sprays the tea across the palate, so that the taster does not miss any flavour.",
+                            "ru": "В абзаце E сказано, что когда чай шумно втягивают («slurping»), он распыляется по всему нёбу («palate»), и дегустатор не упускает ни одного оттенка вкуса («flavour»).",
+                            "uk": "В абзаці E сказано, що коли чай гучно втягують («slurping»), він розпорошується по всьому піднебінню («palate»), і дегустатор не пропускає жодного відтінку смаку («flavour»)."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "gathers older leaves as well as new shoots."
+                    },
+                    {
+                        "id": "B",
+                        "text": "damages the flat surface of the bushes."
+                    },
+                    {
+                        "id": "C",
+                        "text": "is slower than an experienced plucker."
+                    },
+                    {
+                        "id": "D",
+                        "text": "costs more than employing trained pickers."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to Sabitha Moorcroft, the main drawback of harvesting tea by machine is that it",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "they can't tell a fresh shoot from a tough old leaf, so they take both",
+                        "explanation": {
+                            "en": "In paragraph B, Moorcroft says machines cannot tell fresh shoots from old leaves and take both. She says machines are quicker and cheaper, so the options about cost and speed are wrong, and she never mentions damage to the bushes.",
+                            "ru": "В абзаце B Moorcroft говорит, что машины не могут отличить свежие побеги от старых листьев и срывают и то и другое. По её словам, машины быстрее и дешевле, поэтому варианты о стоимости и скорости неверны, а о повреждении кустов она вообще не упоминает.",
+                            "uk": "В абзаці B Moorcroft каже, що машини не можуть відрізнити свіжі пагони від старого листя і зривають і те, і інше. За її словами, машини швидші й дешевші, тому варіанти про вартість і швидкість неправильні, а про пошкодження кущів вона взагалі не згадує."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "to reduce their moisture for long storage"
+                    },
+                    {
+                        "id": "B",
+                        "text": "to prevent their reaction with oxygen"
+                    },
+                    {
+                        "id": "C",
+                        "text": "to make them soft enough to be rolled"
+                    },
+                    {
+                        "id": "D",
+                        "text": "to give them a coppery colour and flavour"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Why are green tea leaves heated soon after they are picked?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "so the enzymes are destroyed before they can do their work and the leaves keep their colour",
+                        "explanation": {
+                            "en": "Paragraph D says heating destroys the enzymes before oxidation, the reaction with oxygen, can happen. Softening comes from withering, the final drying for storage applies to all teas, and the coppery colour belongs to black tea.",
+                            "ru": "В абзаце D сказано, что нагревание разрушает ферменты до того, как может начаться окисление — реакция с кислородом. Размягчение происходит при завяливании, окончательная сушка для хранения применяется ко всем чаям, а медный цвет характерен для чёрного чая.",
+                            "uk": "В абзаці D сказано, що нагрівання руйнує ферменти ще до того, як може початися окиснення — реакція з киснем. Розм'якшення відбувається під час в'ялення, остаточне сушіння для зберігання стосується всіх чаїв, а мідний колір властивий чорному чаю."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "to include teas from as many countries as possible"
+                    },
+                    {
+                        "id": "B",
+                        "text": "to disguise poorer leaf from some estates"
+                    },
+                    {
+                        "id": "C",
+                        "text": "to keep a product's flavour unchanged over time"
+                    },
+                    {
+                        "id": "D",
+                        "text": "to produce a new taste for each season"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does Haruto Ebdon say is the purpose of blending tea?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "just so that this year's packet tastes exactly like last year's",
+                        "explanation": {
+                            "en": "In paragraph E, Ebdon says consistency is the real aim, so that this year's tea tastes like last year's. Hiding cheap leaf is only what some people suspect, and he mentions four countries as an example, not as a goal.",
+                            "ru": "В абзаце E Ebdon говорит, что настоящая цель — постоянство: чтобы чай этого года был на вкус таким же, как прошлогодний. Сокрытие дешёвого листа — лишь то, что подозревают некоторые, а четыре страны он упоминает как пример, а не как цель.",
+                            "uk": "В абзаці E Ebdon каже, що справжня мета — сталість: щоб цьогорічний чай смакував так само, як торішній. Приховування дешевого листя — лише те, що дехто підозрює, а чотири країни він згадує як приклад, а не як мету."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

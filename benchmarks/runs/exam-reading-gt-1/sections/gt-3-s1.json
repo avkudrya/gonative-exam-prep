@@ -1,0 +1,1060 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-3|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.253428,
+            "provider": "anthropic",
+            "outputTokens": 11862
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012894,
+            "provider": "anthropic",
+            "outputTokens": 696
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01868,
+            "provider": "openai",
+            "outputTokens": 940
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.020098,
+            "provider": "xai",
+            "outputTokens": 2301
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.083968,
+            "provider": "anthropic",
+            "outputTokens": 3890
+        }
+    ],
+    "draft": {
+        "title": "Getting Around Harbridge: Your Guide to Fares and Passes",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a way of paying that costs more than the other options",
+                        "options": [],
+                        "evidence": "they cost 50p more per journey",
+                        "explanation": "Section A says paper tickets bought from the bus driver cost 50p more per journey, while card and contactless payments are charged the same fares."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "the length of time allowed for changing to another service without paying again",
+                        "options": [],
+                        "evidence": "you may switch to any other bus or tram within 60 minutes without paying again",
+                        "explanation": "Section B explains the hopper period: you can change to another bus or tram within 60 minutes for no extra fare. Section A only says paper tickets cannot be used to change services; it gives no time limit."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a way of spreading the cost of a pass over a whole year",
+                        "options": [],
+                        "evidence": "spreads the cost across twelve monthly deductions from your pay",
+                        "explanation": "Section C says some employers offer annual passes through a salary scheme, so the cost is taken from your pay in twelve monthly parts."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a reduction that cannot be used on every type of fare",
+                        "options": [],
+                        "evidence": "a 30% reduction on season passes, though not on single fares",
+                        "explanation": "Section D says students get 30% off season passes but not off single fares, so the discount is limited to one type of ticket."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a problem caused by keeping two payment cards together",
+                        "options": [],
+                        "evidence": "holds a purse or wallet containing two contactless cards against the reader, the system may take payment from the wrong one",
+                        "explanation": "Section E describes 'card clash'. If two contactless cards in one wallet touch the reader, the wrong card may be charged."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "what happens if a passenger does not record the end of a tram journey",
+                        "options": [],
+                        "evidence": "if you forget, you will be charged the maximum fare",
+                        "explanation": "At the end of Section B, passengers are told to touch out when leaving a tram. If they forget, they pay the maximum fare."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a condition for getting back the money paid for a card",
+                        "options": [],
+                        "evidence": "which is refunded if you hand it back at a travel centre in good condition",
+                        "explanation": "Section A says the £3 Tidecard price is returned only if the card is handed back in good condition. Section E mentions refunds in general but gives no condition for the card price."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "free travel for a person who helps another passenger",
+                        "options": [],
+                        "evidence": "an additional card allowing a carer to accompany them free of charge",
+                        "explanation": "Section D says Freedom Pass holders who cannot travel alone can get an extra card, so their carer travels for free."
+                    }
+                ],
+                "instruction": "The leaflet has five sections, A–E. Which section contains the following information? Write the correct letter, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "yellow reader"
+                        ],
+                        "prompt": "To pay with a Tidecard, passengers hold it against a ______ as they get on.",
+                        "options": [],
+                        "evidence": "touch on a yellow reader when you board",
+                        "explanation": "Section A says you touch the Tidecard on a yellow reader when you board. 'Get on' restates 'board'."
+                    },
+                    {
+                        "answer": [
+                            "hopper period"
+                        ],
+                        "prompt": "Changing to another bus or tram free of charge within an hour is allowed during what is called the ______.",
+                        "options": [],
+                        "evidence": "this is known as the hopper period",
+                        "explanation": "Section B gives the name 'hopper period' to the 60 minutes in which you can switch services without paying again."
+                    },
+                    {
+                        "answer": [
+                            "maximum fare"
+                        ],
+                        "prompt": "Tram passengers who forget to touch out will have to pay the ______.",
+                        "options": [],
+                        "evidence": "if you forget, you will be charged the maximum fare",
+                        "explanation": "Section B warns that if you do not touch out when leaving a tram, you are charged the maximum fare."
+                    },
+                    {
+                        "answer": [
+                            "first use"
+                        ],
+                        "prompt": "The seven days covered by a weekly pass are counted from its ______ rather than from when it was bought.",
+                        "options": [],
+                        "evidence": "runs for seven days from its first use, not from the date of purchase",
+                        "explanation": "Section C says a weekly pass starts on its first use. 'When it was bought' restates 'the date of purchase', which is the wrong starting point."
+                    },
+                    {
+                        "answer": [
+                            "two weeks",
+                            "2 weeks"
+                        ],
+                        "prompt": "Monthly passes can be put onto a Tidecard online as much as ______ before they begin.",
+                        "options": [],
+                        "evidence": "loaded onto your Tidecard online up to two weeks in advance",
+                        "explanation": "Section C says monthly passes can be loaded online up to two weeks in advance, which means before the pass starts."
+                    },
+                    {
+                        "answer": [
+                            "registered"
+                        ],
+                        "prompt": "A lost or stolen pass can only be replaced if the card had already been ______ in the owner's name.",
+                        "options": [],
+                        "evidence": "provided the card was registered in your name online beforehand",
+                        "explanation": "Section C says replacement is possible only if the card was registered in your name beforehand. Unregistered cards are not protected."
+                    },
+                    {
+                        "answer": [
+                            "passport-style photo"
+                        ],
+                        "prompt": "Young people applying for a Youth Tidecard need to supply a ______.",
+                        "options": [],
+                        "evidence": "a Youth Tidecard, which requires a passport-style photo",
+                        "explanation": "Section D says the Youth Tidecard requires a passport-style photo. The hyphenated word counts as one word, so the answer is within the limit."
+                    },
+                    {
+                        "answer": [
+                            "28 days",
+                            "twenty-eight days"
+                        ],
+                        "prompt": "Passengers who think they have paid too much have ______ after the journey to make a claim online.",
+                        "options": [],
+                        "evidence": "claim the difference online within 28 days of the journey",
+                        "explanation": "Section E says overcharged passengers can claim the difference online within 28 days of the journey. 'Paid too much' restates 'overcharged'."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the leaflet for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Nadia Ferrante",
+                "role": "manager of the customer service team at Harbridge's transport authority",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Travelling on buses, trams and the river ferry in Harbridge is simplest with a Tidecard, a plastic smartcard that you top up with credit and touch on a yellow reader when you board. The card itself costs £3, which is refunded if you hand it back at a travel centre in good condition. You can also pay with a contactless bank card or phone, and you will be charged exactly the same fares. Paper tickets bought from the driver are still available on buses, but they cost 50p more per journey and cannot be used to change between services, so most regular travellers find them poor value. Please note that cash is not accepted on trams or ferries at all; tickets for these must be bought from the machines at stops and piers before you travel.",
+                "label": "A"
+            },
+            {
+                "text": "The city is divided into three fare zones, with Zone 1 covering the central area around the old harbour. A single journey within one zone costs £1.80, while a trip that crosses into a second or third zone costs £2.60. Once you have touched in, you may switch to any other bus or tram within 60 minutes without paying again; this is known as the hopper period. To protect frequent travellers, the system also sets a daily cap: however many trips you make, you will never pay more than £6.50 in a day for Zones 1 and 2, or £8 if your travel includes Zone 3. The cap applies automatically, as long as you use the same card or device for every journey. Remember to touch out when you leave a tram, because if you forget, you will be charged the maximum fare.",
+                "label": "B"
+            },
+            {
+                "text": "If you commute every day, a season pass may save you even more than the daily cap. A weekly pass for all zones costs £29 and runs for seven days from its first use, not from the date of purchase. Monthly passes can start on any date you choose and may be loaded onto your Tidecard online up to two weeks in advance. Annual passes are the cheapest option per journey, and many larger employers in Harbridge offer them through a salary scheme, which spreads the cost across twelve monthly deductions from your pay. Ask your human resources department whether your workplace takes part. Lost or stolen passes can be replaced for a £5 fee, provided the card was registered in your name online beforehand; unregistered cards cannot be protected in this way.",
+                "label": "C"
+            },
+            {
+                "text": "Children under five travel free at all times when accompanied by a fare-paying adult. Those aged 5 to 15 pay half the adult fare, and a Youth Tidecard, which requires a passport-style photo, extends this discount until a young person's eighteenth birthday. Full-time students at local colleges and universities can apply for a 30% reduction on season passes, though not on single fares. Residents aged 66 or over, as well as people with certain disabilities, are entitled to a Freedom Pass, which gives free off-peak travel on every service. Off-peak means after 9.30 a.m. on weekdays and all day at weekends and on public holidays. Freedom Pass holders who are unable to travel alone can ask for an additional card allowing a carer to accompany them free of charge.",
+                "label": "D"
+            },
+            {
+                "text": "Travel centres at Central Station and Quayside Interchange are open from 7 a.m. to 7 p.m., Monday to Saturday, and staff there can deal with refunds, card registration and lost property. If you believe you have been overcharged, you can claim the difference online within 28 days of the journey. According to Nadia Ferrante, who manages the customer service team, the most common cause of overcharging is 'card clash': when a passenger holds a purse or wallet containing two contactless cards against the reader, the system may take payment from the wrong one, and the daily cap will then not work properly. 'We always advise people to keep their travel card separate,' she says. From next spring, real-time arrival information will also be shown on screens at every tram stop, and the transport authority is inviting residents to suggest which bus stops should be next to receive them.",
+                "label": "E"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Paper tickets bought from the driver are still available on buses, but they cost 50p more per journey",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "you may switch to any other bus or tram within 60 minutes without paying again",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "which spreads the cost across twelve monthly deductions from your pay",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "30% reduction on season passes, though not on single fares",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "a passenger holds a purse or wallet containing two contactless cards against the reader, the system may take payment from the wrong one",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Remember to touch out when you leave a tram, because if you forget, you will be charged the maximum fare.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "which is refunded if you hand it back at a travel centre in good condition",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "ask for an additional card allowing a carer to accompany them free of charge",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "touch on a yellow reader when you board",
+                "answer": [
+                    "yellow reader"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "this is known as the hopper period",
+                "answer": [
+                    "hopper period"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "you will be charged the maximum fare",
+                "answer": [
+                    "maximum fare"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "runs for seven days from its first use, not from the date of purchase",
+                "answer": [
+                    "first use"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "loaded onto your Tidecard online up to two weeks in advance",
+                "answer": [
+                    "two weeks"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "provided the card was registered in your name online beforehand",
+                "answer": [
+                    "registered"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "a Youth Tidecard, which requires a passport-style photo",
+                "answer": [
+                    "passport-style photo"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "you can claim the difference online within 28 days of the journey",
+                "answer": [
+                    "28 days"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Paper tickets bought from the driver are still available on buses, but they cost 50p more per journey",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "you may switch to any other bus or tram within 60 minutes without paying again; this is known as the hopper period",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "many larger employers in Harbridge offer them through a salary scheme, which spreads the cost across twelve monthly deductions from your pay",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Full-time students at local colleges and universities can apply for a 30% reduction on season passes, though not on single fares",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the most common cause of overcharging is 'card clash': when a passenger holds a purse or wallet containing two contactless cards against the reader",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Remember to touch out when you leave a tram, because if you forget, you will be charged the maximum fare",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "The card itself costs £3, which is refunded if you hand it back at a travel centre in good condition",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "Freedom Pass holders who are unable to travel alone can ask for an additional card allowing a carer to accompany them free of charge",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "touch on a yellow reader when you board",
+                "answer": [
+                    "yellow reader"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "this is known as the hopper period",
+                "answer": [
+                    "hopper period"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "if you forget, you will be charged the maximum fare",
+                "answer": [
+                    "maximum fare"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "runs for seven days from its first use, not from the date of purchase",
+                "answer": [
+                    "first use"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "may be loaded onto your Tidecard online up to two weeks in advance",
+                "answer": [
+                    "two weeks"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "provided the card was registered in your name online beforehand",
+                "answer": [
+                    "registered"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "a Youth Tidecard, which requires a passport-style photo",
+                "answer": [
+                    "passport-style photo"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "you can claim the difference online within 28 days of the journey",
+                "answer": [
+                    "28 days"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Paper tickets bought from the driver are still available on buses, but they cost 50p more per journey",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "you may switch to any other bus or tram within 60 minutes without paying again",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "a salary scheme, which spreads the cost across twelve monthly deductions from your pay",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "a 30% reduction on season passes, though not on single fares",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "card clash: when a passenger holds a purse or wallet containing two contactless cards against the reader",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "if you forget, you will be charged the maximum fare",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "which is refunded if you hand it back at a travel centre in good condition",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "touch on a yellow reader when you board",
+            "answer": [
+                "yellow reader"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "this is known as the hopper period",
+            "answer": [
+                "hopper period"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "you will be charged the maximum fare",
+            "answer": [
+                "maximum fare"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "runs for seven days from its first use, not from the date of purchase",
+            "answer": [
+                "first use"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "loaded onto your Tidecard online up to two weeks in advance",
+            "answer": [
+                "two weeks"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "provided the card was registered in your name online beforehand",
+            "answer": [
+                "registered"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "which requires a passport-style photo",
+            "answer": [
+                "passport-style photo"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Getting Around Harbridge: Your Guide to Fares and Passes\n\nA. Travelling on buses, trams and the river ferry in Harbridge is simplest with a Tidecard, a plastic smartcard that you top up with credit and touch on a yellow reader when you board. The card itself costs £3, which is refunded if you hand it back at a travel centre in good condition. You can also pay with a contactless bank card or phone, and you will be charged exactly the same fares. Paper tickets bought from the driver are still available on buses, but they cost 50p more per journey and cannot be used to change between services, so most regular travellers find them poor value. Please note that cash is not accepted on trams or ferries at all; tickets for these must be bought from the machines at stops and piers before you travel.\n\nB. The city is divided into three fare zones, with Zone 1 covering the central area around the old harbour. A single journey within one zone costs £1.80, while a trip that crosses into a second or third zone costs £2.60. Once you have touched in, you may switch to any other bus or tram within 60 minutes without paying again; this is known as the hopper period. To protect frequent travellers, the system also sets a daily cap: however many trips you make, you will never pay more than £6.50 in a day for Zones 1 and 2, or £8 if your travel includes Zone 3. The cap applies automatically, as long as you use the same card or device for every journey. Remember to touch out when you leave a tram, because if you forget, you will be charged the maximum fare.\n\nC. If you commute every day, a season pass may save you even more than the daily cap. A weekly pass for all zones costs £29 and runs for seven days from its first use, not from the date of purchase. Monthly passes can start on any date you choose and may be loaded onto your Tidecard online up to two weeks in advance. Annual passes are the cheapest option per journey, and many larger employers in Harbridge offer them through a salary scheme, which spreads the cost across twelve monthly deductions from your pay. Ask your human resources department whether your workplace takes part. Lost or stolen passes can be replaced for a £5 fee, provided the card was registered in your name online beforehand; unregistered cards cannot be protected in this way.\n\nD. Children under five travel free at all times when accompanied by a fare-paying adult. Those aged 5 to 15 pay half the adult fare, and a Youth Tidecard, which requires a passport-style photo, extends this discount until a young person's eighteenth birthday. Full-time students at local colleges and universities can apply for a 30% reduction on season passes, though not on single fares. Residents aged 66 or over, as well as people with certain disabilities, are entitled to a Freedom Pass, which gives free off-peak travel on every service. Off-peak means after 9.30 a.m. on weekdays and all day at weekends and on public holidays. Freedom Pass holders who are unable to travel alone can ask for an additional card allowing a carer to accompany them free of charge.\n\nE. Travel centres at Central Station and Quayside Interchange are open from 7 a.m. to 7 p.m., Monday to Saturday, and staff there can deal with refunds, card registration and lost property. If you believe you have been overcharged, you can claim the difference online within 28 days of the journey. According to Nadia Ferrante, who manages the customer service team, the most common cause of overcharging is 'card clash': when a passenger holds a purse or wallet containing two contactless cards against the reader, the system may take payment from the wrong one, and the daily cap will then not work properly. 'We always advise people to keep their travel card separate,' she says. From next spring, real-time arrival information will also be shown on screens at every tram stop, and the transport authority is inviting residents to suggest which bus stops should be next to receive them.",
+        "title": "Getting Around Harbridge: Your Guide to Fares and Passes",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a way of paying that costs more than the other options",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "they cost 50p more per journey",
+                        "explanation": {
+                            "en": "Section A says paper tickets bought from the bus driver cost 50p more per journey, while card and contactless payments are charged the same fares.",
+                            "ru": "В разделе A сказано, что бумажные билеты, купленные у водителя автобуса, стоят на 50 пенсов дороже за поездку, а при оплате картой и бесконтактным способом тариф одинаковый.",
+                            "uk": "У розділі A сказано, що паперові квитки, придбані у водія автобуса, коштують на 50 пенсів дорожче за поїздку, а при оплаті карткою та безконтактно тариф однаковий."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "the length of time allowed for changing to another service without paying again",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "you may switch to any other bus or tram within 60 minutes without paying again",
+                        "explanation": {
+                            "en": "Section B explains the hopper period: you can change to another bus or tram within 60 minutes for no extra fare. Section A only says paper tickets cannot be used to change services; it gives no time limit.",
+                            "ru": "В разделе B объясняется, что такое \"hopper period\": в течение 60 минут можно пересесть на другой автобус или трамвай без доплаты. В разделе A говорится лишь, что по бумажным билетам нельзя делать пересадки, а ограничение по времени не указано.",
+                            "uk": "У розділі B пояснюється, що таке \"hopper period\": протягом 60 хвилин можна пересісти на інший автобус чи трамвай без доплати. У розділі A сказано лише, що з паперовими квитками не можна робити пересадки, а обмеження за часом не вказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a way of spreading the cost of a pass over a whole year",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "spreads the cost across twelve monthly deductions from your pay",
+                        "explanation": {
+                            "en": "Section C says some employers offer annual passes through a salary scheme, so the cost is taken from your pay in twelve monthly parts.",
+                            "ru": "В разделе C сказано, что некоторые работодатели предлагают годовые проездные через зарплатную программу: их стоимость удерживается из зарплаты двенадцатью ежемесячными частями.",
+                            "uk": "У розділі C сказано, що деякі роботодавці пропонують річні проїзні через зарплатну програму: їхню вартість утримують із зарплати дванадцятьма щомісячними частинами."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "a reduction that cannot be used on every type of fare",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "a 30% reduction on season passes, though not on single fares",
+                        "explanation": {
+                            "en": "Section D says students get 30% off season passes but not off single fares, so the discount is limited to one type of ticket.",
+                            "ru": "В разделе D сказано, что студенты получают скидку 30% на сезонные проездные, но не на разовые билеты, то есть скидка действует только на один вид билетов.",
+                            "uk": "У розділі D сказано, що студенти отримують знижку 30% на сезонні проїзні, але не на разові квитки, тобто знижка діє лише на один вид квитків."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a problem caused by keeping two payment cards together",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "holds a purse or wallet containing two contactless cards against the reader, the system may take payment from the wrong one",
+                        "explanation": {
+                            "en": "Section E describes 'card clash'. If two contactless cards in one wallet touch the reader, the wrong card may be charged.",
+                            "ru": "В разделе E описано явление \"card clash\": если две бесконтактные карты лежат в одном кошельке и обе касаются считывателя, деньги могут списаться не с той карты.",
+                            "uk": "У розділі E описано явище \"card clash\": якщо дві безконтактні картки лежать в одному гаманці й обидві торкаються зчитувача, гроші можуть списатися не з тієї картки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "what happens if a passenger does not record the end of a tram journey",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "if you forget, you will be charged the maximum fare",
+                        "explanation": {
+                            "en": "At the end of Section B, passengers are told to touch out when leaving a tram. If they forget, they pay the maximum fare.",
+                            "ru": "В конце раздела B пассажирам напоминают, что при выходе из трамвая нужно приложить карту к считывателю (touch out). Если забыть это сделать, придётся заплатить максимальный тариф.",
+                            "uk": "Наприкінці розділу B пасажирам нагадують, що, виходячи з трамвая, треба прикласти картку до зчитувача (touch out). Якщо про це забути, доведеться сплатити максимальний тариф."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a condition for getting back the money paid for a card",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "which is refunded if you hand it back at a travel centre in good condition",
+                        "explanation": {
+                            "en": "Section A says the £3 Tidecard price is returned only if the card is handed back in good condition. Section E mentions refunds in general but gives no condition for the card price.",
+                            "ru": "В разделе A сказано, что стоимость Tidecard (£3) возвращается, только если карту сдали в хорошем состоянии. В разделе E возвраты упоминаются в целом, но никаких условий возврата стоимости карты не названо.",
+                            "uk": "У розділі A сказано, що вартість Tidecard (£3) повертають, лише якщо картку здали в доброму стані. У розділі E повернення коштів згадується загалом, але жодних умов повернення вартості картки не названо."
+                        }
+                    }
+                ],
+                "instruction": "The leaflet has five sections, A–E. Which section contains the following information? Write the correct letter, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "yellow reader"
+                        ],
+                        "prompt": "To pay with a Tidecard, passengers hold it against a ______ as they get on.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "touch on a yellow reader when you board",
+                        "explanation": {
+                            "en": "Section A says you touch the Tidecard on a yellow reader when you board. 'Get on' restates 'board'.",
+                            "ru": "В разделе A сказано, что при посадке нужно приложить Tidecard к жёлтому считывателю. \"Get on\" — это перефразировка слова \"board\".",
+                            "uk": "У розділі A сказано, що під час посадки треба прикласти Tidecard до жовтого зчитувача. \"Get on\" — це перефразування слова \"board\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "hopper period"
+                        ],
+                        "prompt": "Changing to another bus or tram free of charge within an hour is allowed during what is called the ______.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "this is known as the hopper period",
+                        "explanation": {
+                            "en": "Section B gives the name 'hopper period' to the 60 minutes in which you can switch services without paying again.",
+                            "ru": "В разделе B 60 минут, в течение которых можно пересесть на другой маршрут без повторной оплаты, называются \"hopper period\".",
+                            "uk": "У розділі B 60 хвилин, протягом яких можна пересісти на інший маршрут без повторної оплати, називаються \"hopper period\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "maximum fare"
+                        ],
+                        "prompt": "Tram passengers who forget to touch out will have to pay the ______.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "if you forget, you will be charged the maximum fare",
+                        "explanation": {
+                            "en": "Section B warns that if you do not touch out when leaving a tram, you are charged the maximum fare.",
+                            "ru": "В разделе B предупреждают: если при выходе из трамвая не приложить карту к считывателю, спишут максимальный тариф.",
+                            "uk": "У розділі B попереджають: якщо, виходячи з трамвая, не прикласти картку до зчитувача, буде списано максимальний тариф."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "first use"
+                        ],
+                        "prompt": "The seven days covered by a weekly pass are counted from its ______ rather than from when it was bought.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "runs for seven days from its first use, not from the date of purchase",
+                        "explanation": {
+                            "en": "Section C says a weekly pass starts on its first use. 'When it was bought' restates 'the date of purchase', which is the wrong starting point.",
+                            "ru": "В разделе C сказано, что недельный проездной начинает действовать с первой поездки. \"When it was bought\" перефразирует \"the date of purchase\", а это неверная точка отсчёта.",
+                            "uk": "У розділі C сказано, що тижневий проїзний починає діяти з першої поїздки. \"When it was bought\" перефразовує \"the date of purchase\", а це неправильна точка відліку."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "two weeks",
+                            "2 weeks"
+                        ],
+                        "prompt": "Monthly passes can be put onto a Tidecard online as much as ______ before they begin.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "loaded onto your Tidecard online up to two weeks in advance",
+                        "explanation": {
+                            "en": "Section C says monthly passes can be loaded online up to two weeks in advance, which means before the pass starts.",
+                            "ru": "В разделе C сказано, что месячный проездной можно загрузить онлайн заранее, максимум за две недели, то есть ещё до начала его действия.",
+                            "uk": "У розділі C сказано, що місячний проїзний можна завантажити онлайн заздалегідь, щонайбільше за два тижні, тобто ще до початку його дії."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "registered"
+                        ],
+                        "prompt": "A lost or stolen pass can only be replaced if the card had already been ______ in the owner's name.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "provided the card was registered in your name online beforehand",
+                        "explanation": {
+                            "en": "Section C says replacement is possible only if the card was registered in your name beforehand. Unregistered cards are not protected.",
+                            "ru": "В разделе C сказано, что заменить карту можно, только если она была заранее зарегистрирована на ваше имя. Незарегистрированные карты не защищены.",
+                            "uk": "У розділі C сказано, що замінити картку можна, лише якщо її заздалегідь зареєстрували на ваше ім'я. Незареєстровані картки не захищені."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "passport-style photo"
+                        ],
+                        "prompt": "Young people applying for a Youth Tidecard need to supply a ______.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "a Youth Tidecard, which requires a passport-style photo",
+                        "explanation": {
+                            "en": "Section D says the Youth Tidecard requires a passport-style photo. The hyphenated word counts as one word, so the answer is within the limit.",
+                            "ru": "В разделе D сказано, что для Youth Tidecard нужна фотография паспортного формата (\"passport-style\"). Слово через дефис считается за одно, поэтому ответ укладывается в ограничение по количеству слов.",
+                            "uk": "У розділі D сказано, що для Youth Tidecard потрібне фото паспортного формату (\"passport-style\"). Слово через дефіс вважається одним, тому відповідь вкладається в обмеження за кількістю слів."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the leaflet for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6",
+        "14": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

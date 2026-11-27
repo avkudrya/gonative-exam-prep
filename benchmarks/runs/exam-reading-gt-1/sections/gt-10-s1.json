@@ -1,0 +1,1056 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-10|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.244396,
+            "provider": "anthropic",
+            "outputTokens": 11113
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.0122,
+            "provider": "anthropic",
+            "outputTokens": 622
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.021205,
+            "provider": "openai",
+            "outputTokens": 1104
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.014334,
+            "provider": "xai",
+            "outputTokens": 1331
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.073256,
+            "provider": "anthropic",
+            "outputTokens": 3360
+        }
+    ],
+    "draft": {
+        "title": "Moving House: A Five-Step Checklist",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a way of avoiding an argument over how much you owe for energy",
+                        "options": [],
+                        "evidence": "a dated image is the simplest way to settle a disagreement about a final bill",
+                        "explanation": "Section B says that photographing your meter readings helps settle a disagreement about the final bill. Section E also mentions photographs, but those are about the deposit, not energy costs."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a warning that some items may not reach you even if you pay to have your mail sent on",
+                        "options": [],
+                        "evidence": "Important documents such as bank cards may not be forwarded at all, for security reasons",
+                        "explanation": "Section C explains that even with a redirection service, things like bank cards may not be forwarded for security reasons."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a reason to arrange help well in advance if you are moving at a particular time of the month",
+                        "options": [],
+                        "evidence": "recommends booking at least four weeks ahead, particularly if you hope to move at the end of a month",
+                        "explanation": "In Section A, Anwar Tasker advises booking a removal firm early, especially for a move at the end of the month, when demand is highest."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a suggestion for collecting proof that could help you get back money held by a landlord",
+                        "options": [],
+                        "evidence": "take photographs to show the condition you left it in, which may help if there is a dispute about your deposit",
+                        "explanation": "Section E recommends photographing the old property so you can show its condition if there is a disagreement about your deposit. Section B's photographs are of meters and relate to bills, not the landlord."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "an example of a problem caused by putting off a task until it becomes urgent",
+                        "options": [],
+                        "evidence": "They wait until a child is ill, and then discover the nearest practice is not taking new patients",
+                        "explanation": "In Section D, Yolanda Prescott describes people who wait until a child is ill before finding a doctor, and then learn the practice is full."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a way of reducing the cost of the move by having fewer possessions",
+                        "options": [],
+                        "evidence": "anything you sell, donate or throw away now is something you will not have to pack, carry or pay to transport",
+                        "explanation": "Section A points out that getting rid of things before the move means you will not have to pay to transport them."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a mention of a legal consequence of not changing details on an official document",
+                        "options": [],
+                        "evidence": "in some countries failing to do so can lead to a fine",
+                        "explanation": "Section E says that not updating the address on your driving licence can lead to a fine in some countries. The early-exit fee in Section B is a charge from a supplier, not a legal penalty."
+                    }
+                ],
+                "instruction": "The checklist has five sections, A–E. Which section contains the following information? Write the correct letter, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Every tenancy agreement requires tenants to give exactly one month's notice.",
+                        "options": [],
+                        "evidence": "in many cases it is a month, but some contracts ask for more",
+                        "explanation": "Section A says a month is common but some contracts require more notice, so not every agreement asks for exactly one month."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Anwar Tasker says that Friday is the day most people would like to move.",
+                        "options": [],
+                        "evidence": "'Most people want to move on a Friday",
+                        "explanation": "In Section A, Anwar Tasker says most people want to move on a Friday, which means it is the most popular day."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Removal firms usually charge higher prices for moves that take place on a Friday.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Section A says Friday slots are booked first and demand is highest at the end of the month, but it says nothing about whether prices are higher on Fridays."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "New residents have to remain with the energy supplier chosen by the people who lived there before them.",
+                        "options": [],
+                        "evidence": "Do not assume you must stay with the supplier the previous occupant used. You can usually switch",
+                        "explanation": "Section B says you do not have to stay with the previous occupant's supplier and can usually switch after moving in."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "It can take more than a fortnight to get a new broadband line working.",
+                        "options": [],
+                        "evidence": "connecting a new line can take two weeks or longer",
+                        "explanation": "Section B says connecting a new line can take two weeks or longer; a fortnight means two weeks."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The redirection service costs the same amount whatever length of time you choose.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Section C says the service is paid and lists the usual periods, but it gives no information about whether the price changes with the length of time."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Mail redirection starts on the same day that you apply for it.",
+                        "options": [],
+                        "evidence": "since the service does not begin immediately",
+                        "explanation": "Section C tells you to apply at least a week before moving because the service does not start straight away."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "In some areas, residents only receive recycling bins if they ask for them.",
+                        "options": [],
+                        "evidence": "some areas issue recycling bins only on request",
+                        "explanation": "Section D says that some areas give out recycling bins only when residents request them."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Yolanda Prescott is employed by a local council.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Section D describes Yolanda Prescott as a housing adviser who has helped many families, but it does not say who she works for. The council is mentioned in the same section, but not as her employer."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the checklist? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "people": [
+            {
+                "name": "Anwar Tasker",
+                "role": "manager of a removal company",
+                "gender": "male"
+            },
+            {
+                "name": "Yolanda Prescott",
+                "role": "housing adviser",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "If you rent, check your tenancy agreement for the notice period you must give your landlord; in many cases it is a month, but some contracts ask for more. Next, decide whether you will hire a removal firm or move your belongings yourself. Anwar Tasker, who manages a removal company, recommends booking at least four weeks ahead, particularly if you hope to move at the end of a month, when demand is highest. 'Most people want to move on a Friday, so the first slots to disappear are those,' he says. Ask each firm for a written quote and find out whether insurance for breakages is included or costs extra. This is also a good time to sort through cupboards: anything you sell, donate or throw away now is something you will not have to pack, carry or pay to transport.",
+                "label": "A"
+            },
+            {
+                "text": "Contact your current energy and water suppliers to tell them the date you are leaving, so that you stop being charged from that day. On the day itself, read every meter at both the old and new property and photograph the figures; a dated image is the simplest way to settle a disagreement about a final bill. Do not assume you must stay with the supplier the previous occupant used. You can usually switch once you have moved in, although it may be worth checking whether any early-exit fee applies to a fixed-term deal at your old address. Broadband deserves special attention, because connecting a new line can take two weeks or longer. Arrange it well in advance if you work from home, and keep your mobile data allowance in mind for the first few days.",
+                "label": "B"
+            },
+            {
+                "text": "However carefully you update your address, some letters will still go to your old home. A paid redirection service, offered by the postal service in many countries, forwards your mail to the new address for a chosen period, often three, six or twelve months. Apply at least a week before moving, since the service does not begin immediately. Redirection should be treated as a safety net rather than a solution, however. Write a list of everyone who sends you post — your bank, employer, pension provider, insurers and any magazine subscriptions — and inform each of them directly. Important documents such as bank cards may not be forwarded at all, for security reasons. It is also sensible to leave your new address with a trusted neighbour, who can pass on anything that slips through.",
+                "label": "C"
+            },
+            {
+                "text": "Soon after you arrive, contact the local council about any local property tax and, where relevant, waste collection; some areas issue recycling bins only on request. Adding yourself to the electoral register at your new address is a separate step in many places, so do not assume the council will do it automatically. Yolanda Prescott, a housing adviser who has helped hundreds of families relocate, says the step people most often postpone is finding a doctor. 'They wait until a child is ill, and then discover the nearest practice is not taking new patients,' she explains. Her advice is to register as soon as you have the keys, and to look for a dentist at the same time, as waiting lists can be long. Parents should contact the education authority early about school places, which are usually allocated by area.",
+                "label": "D"
+            },
+            {
+                "text": "Pack a single box of essentials to travel with you rather than in the van: phone chargers, medicines, a kettle, basic tools, toilet paper and a change of clothes. Before you leave the old property, walk through every room, check cupboards and the loft, and take photographs to show the condition you left it in, which may help if there is a dispute about your deposit. Hand over all keys and get a receipt if possible. In your first week, update the address on your driving licence and vehicle documents; in some countries failing to do so can lead to a fine. Finally, find out where your nearest pharmacy and supermarket are before you need them. Small preparations like these make the first evenings in a new home far less stressful.",
+                "label": "E"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a dated image is the simplest way to settle a disagreement about a final bill",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Important documents such as bank cards may not be forwarded at all, for security reasons.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "recommends booking at least four weeks ahead, particularly if you hope to move at the end of a month, when demand is highest",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "take photographs to show the condition you left it in, which may help if there is a dispute about your deposit",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "They wait until a child is ill, and then discover the nearest practice is not taking new patients",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "anything you sell, donate or throw away now is something you will not have to pack, carry or pay to transport",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "in some countries failing to do so can lead to a fine",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "in many cases it is a month, but some contracts ask for more",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Most people want to move on a Friday",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Do not assume you must stay with the supplier the previous occupant used.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "connecting a new line can take two weeks or longer",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "since the service does not begin immediately",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "some areas issue recycling bins only on request",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "read every meter at both the old and new property and photograph the figures; a dated image is the simplest way to settle a disagreement about a final bill",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Important documents such as bank cards may not be forwarded at all, for security reasons.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "recommends booking at least four weeks ahead, particularly if you hope to move at the end of a month, when demand is highest.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "take photographs to show the condition you left it in, which may help if there is a dispute about your deposit.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "'They wait until a child is ill, and then discover the nearest practice is not taking new patients,' she explains.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "anything you sell, donate or throw away now is something you will not have to pack, carry or pay to transport.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "update the address on your driving licence and vehicle documents; in some countries failing to do so can lead to a fine.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "in many cases it is a month, but some contracts ask for more.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "'Most people want to move on a Friday, so the first slots to disappear are those,' he says.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Do not assume you must stay with the supplier the previous occupant used. You can usually switch once you have moved in",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "connecting a new line can take two weeks or longer.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Apply at least a week before moving, since the service does not begin immediately.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "some areas issue recycling bins only on request.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "a dated image is the simplest way to settle a disagreement about a final bill",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Important documents such as bank cards may not be forwarded at all, for security reasons",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "recommends booking at least four weeks ahead, particularly if you hope to move at the end of a month, when demand is highest",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "take photographs to show the condition you left it in, which may help if there is a dispute about your deposit",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "They wait until a child is ill, and then discover the nearest practice is not taking new patients",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "anything you sell, donate or throw away now is something you will not have to pack, carry or pay to transport",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "in many cases it is a month, but some contracts ask for more",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Most people want to move on a Friday",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Do not assume you must stay with the supplier the previous occupant used. You can usually switch once you have moved in",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "connecting a new line can take two weeks or longer",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "the service does not begin immediately",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q8": {
+            "marks": [
+                true
+            ],
+            "quote": "some areas issue recycling bins only on request",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Moving House: A Five-Step Checklist\n\nA. If you rent, check your tenancy agreement for the notice period you must give your landlord; in many cases it is a month, but some contracts ask for more. Next, decide whether you will hire a removal firm or move your belongings yourself. Anwar Tasker, who manages a removal company, recommends booking at least four weeks ahead, particularly if you hope to move at the end of a month, when demand is highest. 'Most people want to move on a Friday, so the first slots to disappear are those,' he says. Ask each firm for a written quote and find out whether insurance for breakages is included or costs extra. This is also a good time to sort through cupboards: anything you sell, donate or throw away now is something you will not have to pack, carry or pay to transport.\n\nB. Contact your current energy and water suppliers to tell them the date you are leaving, so that you stop being charged from that day. On the day itself, read every meter at both the old and new property and photograph the figures; a dated image is the simplest way to settle a disagreement about a final bill. Do not assume you must stay with the supplier the previous occupant used. You can usually switch once you have moved in, although it may be worth checking whether any early-exit fee applies to a fixed-term deal at your old address. Broadband deserves special attention, because connecting a new line can take two weeks or longer. Arrange it well in advance if you work from home, and keep your mobile data allowance in mind for the first few days.\n\nC. However carefully you update your address, some letters will still go to your old home. A paid redirection service, offered by the postal service in many countries, forwards your mail to the new address for a chosen period, often three, six or twelve months. Apply at least a week before moving, since the service does not begin immediately. Redirection should be treated as a safety net rather than a solution, however. Write a list of everyone who sends you post — your bank, employer, pension provider, insurers and any magazine subscriptions — and inform each of them directly. Important documents such as bank cards may not be forwarded at all, for security reasons. It is also sensible to leave your new address with a trusted neighbour, who can pass on anything that slips through.\n\nD. Soon after you arrive, contact the local council about any local property tax and, where relevant, waste collection; some areas issue recycling bins only on request. Adding yourself to the electoral register at your new address is a separate step in many places, so do not assume the council will do it automatically. Yolanda Prescott, a housing adviser who has helped hundreds of families relocate, says the step people most often postpone is finding a doctor. 'They wait until a child is ill, and then discover the nearest practice is not taking new patients,' she explains. Her advice is to register as soon as you have the keys, and to look for a dentist at the same time, as waiting lists can be long. Parents should contact the education authority early about school places, which are usually allocated by area.\n\nE. Pack a single box of essentials to travel with you rather than in the van: phone chargers, medicines, a kettle, basic tools, toilet paper and a change of clothes. Before you leave the old property, walk through every room, check cupboards and the loft, and take photographs to show the condition you left it in, which may help if there is a dispute about your deposit. Hand over all keys and get a receipt if possible. In your first week, update the address on your driving licence and vehicle documents; in some countries failing to do so can lead to a fine. Finally, find out where your nearest pharmacy and supermarket are before you need them. Small preparations like these make the first evenings in a new home far less stressful.",
+        "title": "Moving House: A Five-Step Checklist",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a way of avoiding an argument over how much you owe for energy",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "a dated image is the simplest way to settle a disagreement about a final bill",
+                        "explanation": {
+                            "en": "Section B says that photographing your meter readings helps settle a disagreement about the final bill. Section E also mentions photographs, but those are about the deposit, not energy costs.",
+                            "ru": "В разделе B говорится, что фотографии показаний счётчиков помогают разрешить спор об итоговом счёте. В разделе E тоже упоминаются фотографии, но они касаются залога, а не расходов на энергию.",
+                            "uk": "У розділі B сказано, що фото показників лічильників допомагають розв'язати суперечку щодо остаточного рахунку. У розділі E теж згадано фотографії, але вони стосуються застави, а не витрат на енергію."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a warning that some items may not reach you even if you pay to have your mail sent on",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "Important documents such as bank cards may not be forwarded at all, for security reasons",
+                        "explanation": {
+                            "en": "Section C explains that even with a redirection service, things like bank cards may not be forwarded for security reasons.",
+                            "ru": "В разделе C объясняется, что даже при подключённой услуге переадресации почты такие вещи, как банковские карты, могут не пересылаться из соображений безопасности.",
+                            "uk": "У розділі C пояснюється, що навіть із підключеною послугою переадресації пошти такі речі, як банківські картки, можуть не пересилати з міркувань безпеки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a reason to arrange help well in advance if you are moving at a particular time of the month",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "recommends booking at least four weeks ahead, particularly if you hope to move at the end of a month",
+                        "explanation": {
+                            "en": "In Section A, Anwar Tasker advises booking a removal firm early, especially for a move at the end of the month, when demand is highest.",
+                            "ru": "В разделе A Anwar Tasker советует заранее бронировать компанию по переездам, особенно если переезд приходится на конец месяца, когда спрос самый высокий.",
+                            "uk": "У розділі A Anwar Tasker радить заздалегідь бронювати компанію з перевезень, особливо якщо переїзд припадає на кінець місяця, коли попит найвищий."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "a suggestion for collecting proof that could help you get back money held by a landlord",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "take photographs to show the condition you left it in, which may help if there is a dispute about your deposit",
+                        "explanation": {
+                            "en": "Section E recommends photographing the old property so you can show its condition if there is a disagreement about your deposit. Section B's photographs are of meters and relate to bills, not the landlord.",
+                            "ru": "Раздел E рекомендует сфотографировать прежнее жильё, чтобы в случае спора о залоге можно было показать, в каком оно было состоянии. Фотографии в разделе B — это снимки счётчиков, и они касаются счетов, а не арендодателя.",
+                            "uk": "Розділ E радить сфотографувати попереднє житло, щоб у разі суперечки щодо застави можна було показати, в якому воно було стані. Фотографії в розділі B — це знімки лічильників, і вони стосуються рахунків, а не орендодавця."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "an example of a problem caused by putting off a task until it becomes urgent",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "They wait until a child is ill, and then discover the nearest practice is not taking new patients",
+                        "explanation": {
+                            "en": "In Section D, Yolanda Prescott describes people who wait until a child is ill before finding a doctor, and then learn the practice is full.",
+                            "ru": "В разделе D Yolanda Prescott описывает людей, которые начинают искать врача только тогда, когда ребёнок уже заболел, и тут узнают, что в практике больше нет мест для новых пациентов.",
+                            "uk": "У розділі D Yolanda Prescott описує людей, які починають шукати лікаря лише тоді, коли дитина вже захворіла, і тоді дізнаються, що в практиці більше немає місць для нових пацієнтів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a way of reducing the cost of the move by having fewer possessions",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "anything you sell, donate or throw away now is something you will not have to pack, carry or pay to transport",
+                        "explanation": {
+                            "en": "Section A points out that getting rid of things before the move means you will not have to pay to transport them.",
+                            "ru": "В разделе A отмечается, что если избавиться от ненужных вещей до переезда, то не придётся платить за их перевозку.",
+                            "uk": "У розділі A зазначено, що якщо позбутися непотрібних речей до переїзду, то не доведеться платити за їх перевезення."
+                        }
+                    }
+                ],
+                "instruction": "The checklist has five sections, A–E. Which section contains the following information? Write the correct letter, A–E. You may use any letter more than once."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Every tenancy agreement requires tenants to give exactly one month's notice.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "in many cases it is a month, but some contracts ask for more",
+                        "explanation": {
+                            "en": "Section A says a month is common but some contracts require more notice, so not every agreement asks for exactly one month.",
+                            "ru": "В разделе A сказано, что обычно срок предупреждения составляет месяц, но некоторые договоры требуют предупреждать раньше, так что не в каждом договоре речь идёт ровно об одном месяце.",
+                            "uk": "У розділі A сказано, що зазвичай строк попередження становить місяць, але деякі договори вимагають попереджати раніше, тож не в кожному договорі йдеться саме про один місяць."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Anwar Tasker says that Friday is the day most people would like to move.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "'Most people want to move on a Friday",
+                        "explanation": {
+                            "en": "In Section A, Anwar Tasker says most people want to move on a Friday, which means it is the most popular day.",
+                            "ru": "В разделе A Anwar Tasker говорит, что большинство людей хотят переезжать в пятницу, а значит, это самый популярный день.",
+                            "uk": "У розділі A Anwar Tasker каже, що більшість людей хочуть переїжджати в п'ятницю, а отже, це найпопулярніший день."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Removal firms usually charge higher prices for moves that take place on a Friday.",
+                        "numbers": [
+                            9
+                        ],
+                        "explanation": {
+                            "en": "Section A says Friday slots are booked first and demand is highest at the end of the month, but it says nothing about whether prices are higher on Fridays.",
+                            "ru": "В разделе A сказано, что пятничные даты бронируют первыми, а спрос выше всего в конце месяца, но о том, дороже ли переезд в пятницу, ничего не говорится.",
+                            "uk": "У розділі A сказано, що п'ятничні дати бронюють першими, а попит найвищий наприкінці місяця, але про те, чи дорожчий переїзд у п'ятницю, нічого не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "New residents have to remain with the energy supplier chosen by the people who lived there before them.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "Do not assume you must stay with the supplier the previous occupant used. You can usually switch",
+                        "explanation": {
+                            "en": "Section B says you do not have to stay with the previous occupant's supplier and can usually switch after moving in.",
+                            "ru": "В разделе B сказано, что вы не обязаны оставаться у поставщика, которым пользовался предыдущий жилец, и обычно можете сменить его после заселения.",
+                            "uk": "У розділі B сказано, що ви не зобов'язані залишатися з постачальником, яким користувався попередній мешканець, і зазвичай можете змінити його після заселення."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "It can take more than a fortnight to get a new broadband line working.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "connecting a new line can take two weeks or longer",
+                        "explanation": {
+                            "en": "Section B says connecting a new line can take two weeks or longer; a fortnight means two weeks.",
+                            "ru": "В разделе B говорится, что подключение новой линии может занять две недели или больше; \"fortnight\" как раз означает две недели.",
+                            "uk": "У розділі B сказано, що підключення нової лінії може тривати два тижні або довше; \"fortnight\" якраз означає два тижні."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The redirection service costs the same amount whatever length of time you choose.",
+                        "numbers": [
+                            12
+                        ],
+                        "explanation": {
+                            "en": "Section C says the service is paid and lists the usual periods, but it gives no information about whether the price changes with the length of time.",
+                            "ru": "В разделе C сказано, что услуга платная, и перечислены обычные сроки её действия, но не говорится, меняется ли цена в зависимости от срока.",
+                            "uk": "У розділі C сказано, що послуга платна, і перелічено звичайні строки її дії, але не сказано, чи змінюється ціна залежно від строку."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Mail redirection starts on the same day that you apply for it.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "since the service does not begin immediately",
+                        "explanation": {
+                            "en": "Section C tells you to apply at least a week before moving because the service does not start straight away.",
+                            "ru": "В разделе C советуют подать заявку не позже чем за неделю до переезда, потому что услуга начинает действовать не сразу.",
+                            "uk": "У розділі C радять подати заявку щонайменше за тиждень до переїзду, бо послуга починає діяти не одразу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "In some areas, residents only receive recycling bins if they ask for them.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "some areas issue recycling bins only on request",
+                        "explanation": {
+                            "en": "Section D says that some areas give out recycling bins only when residents request them.",
+                            "ru": "В разделе D сказано, что в некоторых районах контейнеры для вторсырья выдают только по запросу жителей.",
+                            "uk": "У розділі D сказано, що в деяких районах контейнери для вторсировини видають лише на запит мешканців."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the checklist? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7",
+            "b2q8"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first",
+            "b2q9": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b2q5",
+        "12": "b2q6",
+        "13": "b2q7",
+        "14": "b2q8"
+    },
+    "translation": {
+        "missing": []
+    }
+}

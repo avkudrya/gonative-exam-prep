@@ -1,0 +1,1050 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-3|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.309484,
+            "provider": "anthropic",
+            "outputTokens": 14702
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.014154,
+            "provider": "anthropic",
+            "outputTokens": 651
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01769,
+            "provider": "openai",
+            "outputTokens": 790
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.022522,
+            "provider": "xai",
+            "outputTokens": 2600
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.0688,
+            "provider": "anthropic",
+            "outputTokens": 3162
+        }
+    ],
+    "draft": {
+        "title": "Paying to Drive into Town",
+        "blocks": [
+            {
+                "type": "short_answer",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "hidden cost",
+                            "a hidden cost"
+                        ],
+                        "prompt": "What term have economists used for the delay that each extra driver causes other road users without paying for it?",
+                        "options": [],
+                        "evidence": "Economists have long described this as a hidden cost",
+                        "explanation": "Paragraph A says drivers pay nothing for the time other people lose, and economists call this a hidden cost."
+                    },
+                    {
+                        "answer": [
+                            "paper licence",
+                            "a paper licence",
+                            "paper license",
+                            "a paper license"
+                        ],
+                        "prompt": "What did drivers in Singapore's first scheme have to buy and show on their windscreen?",
+                        "options": [],
+                        "evidence": "had to buy a paper licence in advance and display it on the windscreen",
+                        "explanation": "Paragraph B explains that in 1975 motorists bought a paper licence and displayed it. The card belongs to the later electronic system, not the original one."
+                    },
+                    {
+                        "answer": [
+                            "delivery vans"
+                        ],
+                        "prompt": "Apart from roadworks, what took up much of the remaining space on central London streets?",
+                        "options": [],
+                        "evidence": "a growing volume of roadworks and delivery vans took up much of the remainder",
+                        "explanation": "Paragraph D says that, after space was given to pavements, bus lanes and cycle routes, roadworks and delivery vans used up much of what was left."
+                    },
+                    {
+                        "answer": [
+                            "bridges",
+                            "the bridges"
+                        ],
+                        "prompt": "On which structures leading into central Stockholm did queues get shorter once the charge began?",
+                        "options": [],
+                        "evidence": "queues on the bridges into the centre shrank",
+                        "explanation": "Paragraph E says that when the charge was in place, the queues on the bridges into the centre became smaller."
+                    },
+                    {
+                        "answer": [
+                            "out-of-town shopping centres",
+                            "out-of-town shopping centers"
+                        ],
+                        "prompt": "According to Callum Brodie, where will many customers drive instead of paying to reach the high street?",
+                        "options": [],
+                        "evidence": "many customers will simply drive to out-of-town shopping centres",
+                        "explanation": "Paragraph F reports Brodie's fear that shoppers will go to out-of-town shopping centres, where parking is free."
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            },
+            {
+                "type": "flow_chart_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "boundary"
+                        ],
+                        "prompt": "Step 1: The city marks out a ______ around the area it wants to protect.",
+                        "options": [],
+                        "evidence": "The city first draws a boundary, often following a ring road, around the area it wishes to protect",
+                        "explanation": "Paragraph C says the first step is drawing a boundary, often along a ring road, around the protected area."
+                    },
+                    {
+                        "answer": [
+                            "cameras"
+                        ],
+                        "prompt": "Step 2: Every place where vehicles can enter the zone is fitted with ______.",
+                        "options": [],
+                        "evidence": "Cameras are then installed at every point where a vehicle can cross that line",
+                        "explanation": "Paragraph C says cameras are installed at every point where a vehicle can cross the boundary."
+                    },
+                    {
+                        "answer": [
+                            "software"
+                        ],
+                        "prompt": "Step 3: The photographs are turned into registration numbers by ______.",
+                        "options": [],
+                        "evidence": "Software converts the images into registration numbers",
+                        "explanation": "Paragraph C says software changes the camera images into registration numbers."
+                    },
+                    {
+                        "answer": [
+                            "database"
+                        ],
+                        "prompt": "Step 4: The numbers are checked against a ______ of drivers who have paid that day.",
+                        "options": [],
+                        "evidence": "compared with a database of drivers who have paid for that day",
+                        "explanation": "Paragraph C says the registration numbers are compared with a database of people who have paid."
+                    },
+                    {
+                        "answer": [
+                            "register"
+                        ],
+                        "prompt": "Step 5: Owners who have not paid are found using the national vehicle ______.",
+                        "options": [],
+                        "evidence": "traced through the national vehicle register",
+                        "explanation": "Paragraph C says anyone whose plate is missing after the deadline is traced through the national vehicle register."
+                    },
+                    {
+                        "answer": [
+                            "notice"
+                        ],
+                        "prompt": "Step 6: A penalty ______ is posted to the owner.",
+                        "options": [],
+                        "evidence": "a penalty notice is sent to the owner by post",
+                        "explanation": "Paragraph C says the final step is sending a penalty notice to the owner by post."
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO effects of London's charge in its early years are mentioned in the passage?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "a fall in the number of vehicles coming into the zone"
+                            },
+                            {
+                                "id": "B",
+                                "text": "bus services that kept more closely to their timetables"
+                            },
+                            {
+                                "id": "C",
+                                "text": "journey speeds that stayed higher over the following decade"
+                            },
+                            {
+                                "id": "D",
+                                "text": "a reduction in the amount of roadworks on central streets"
+                            },
+                            {
+                                "id": "E",
+                                "text": "lower bus fares paid for by the money the charge collected"
+                            }
+                        ],
+                        "evidence": "the number of vehicles entering the zone fell noticeably and buses ran more reliably",
+                        "explanation": "Paragraph D says fewer vehicles entered the zone and buses became more reliable. The faster journeys did not last, roadworks actually grew, and bus fares are not mentioned for London."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO statements about Farida Kassab's research are correct?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "She questioned the same commuters on two separate occasions."
+                            },
+                            {
+                                "id": "B",
+                                "text": "She found many former opponents still travelled as before."
+                            },
+                            {
+                                "id": "C",
+                                "text": "She found most commuters had moved to public transport."
+                            },
+                            {
+                                "id": "D",
+                                "text": "She compared attitudes in Stockholm with those in London."
+                            },
+                            {
+                                "id": "E",
+                                "text": "She found opposition had grown stronger during the trial."
+                            }
+                        ],
+                        "evidence": "interviewing the same group of commuters before and after the trial. She found that many former opponents had not changed their daily routes at all",
+                        "explanation": "Paragraph E says she interviewed the same commuters before and after the trial, and that many former opponents kept the same routes. She found that feelings changed, not travel habits, and opposition weakened rather than grew."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO measures does the writer say could answer the complaint that charges are unfair?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "spending the money raised on better bus services"
+                            },
+                            {
+                                "id": "B",
+                                "text": "offering reduced charges to essential workers"
+                            },
+                            {
+                                "id": "C",
+                                "text": "providing free parking just outside the boundary"
+                            },
+                            {
+                                "id": "D",
+                                "text": "charging shoppers less than daily commuters"
+                            },
+                            {
+                                "id": "E",
+                                "text": "deleting camera records soon after payment"
+                            }
+                        ],
+                        "evidence": "Spending the revenue on cheaper and more frequent buses, and offering discounts to essential workers",
+                        "explanation": "Paragraph G says spending the revenue on buses and giving discounts to essential workers can answer the fairness complaint. Free parking is only mentioned at out-of-town shopping centres, and the passage suggests no measures for shoppers or camera records."
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            }
+        ],
+        "people": [
+            {
+                "name": "Farida Kassab",
+                "role": "Transport economist who interviewed Stockholm commuters before and after the 2006 trial",
+                "gender": "female"
+            },
+            {
+                "name": "Callum Brodie",
+                "role": "Representative of independent retailers who fears customers will shop out of town",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "On a weekday morning in almost any large city, the main roads into the centre fill up long before the shops open. Each additional car slows every other vehicle a little, yet the driver who joins the queue pays nothing for the time that everyone else loses. Economists have long described this as a hidden cost: because road space is free at the point of use, it is consumed far more heavily than it would be if drivers had to account for the delay they impose. If a charge is attached to entering the most crowded areas at the busiest times, the argument runs, some trips will be moved to another hour, switched to buses or trains, or abandoned altogether, and the remaining traffic should flow more freely.",
+                "label": "A"
+            },
+            {
+                "text": "For decades the idea remained largely theoretical, partly because collecting money from thousands of moving vehicles seemed impractical. Singapore was the first city to put it into practice, in 1975. Motorists wishing to enter the central business district during the morning peak had to buy a paper licence in advance and display it on the windscreen, while officers stationed at entry points checked each car as it passed. The crude system worked: traffic in the zone dropped sharply. In 1998 the paper licences gave way to an electronic system that deducts the fee automatically from a card inside the vehicle, allowing prices to vary by location and time of day.",
+                "label": "B"
+            },
+            {
+                "text": "Most later schemes rely instead on cameras. The city first draws a boundary, often following a ring road, around the area it wishes to protect. Cameras are then installed at every point where a vehicle can cross that line, and each one photographs the number plates of passing traffic. Software converts the images into registration numbers, which are compared with a database of drivers who have paid for that day. Anyone whose plate does not appear by the deadline is traced through the national vehicle register, and a penalty notice is sent to the owner by post. Ambulances and buses are normally exempt, and residents who live inside the zone may receive a large discount.",
+                "label": "C"
+            },
+            {
+                "text": "London adopted a camera-based charge in 2003. In the early years, the number of vehicles entering the zone fell noticeably and buses ran more reliably. The gain in journey speeds, however, did not last. Over the following decade, space on many central streets was handed over to wider pavements, bus lanes and cycle routes, and a growing volume of roadworks and delivery vans took up much of the remainder. Critics pointed to the slower traffic as proof of failure; supporters replied that without the charge the roads would have been far more crowded still. That claim is difficult to test, because no one can observe the city as it would otherwise have been.",
+                "label": "D"
+            },
+            {
+                "text": "Stockholm offers a different lesson, about public opinion. Before the Swedish capital ran a seven-month trial in 2006, polls showed most residents opposed to the idea. Once the charge was in place and queues on the bridges into the centre shrank, attitudes softened, and in a referendum held after the trial a majority of city voters backed keeping it. The charge became permanent in 2007. Farida Kassab, a transport economist, studied this shift by interviewing the same group of commuters before and after the trial. She found that many former opponents had not changed their daily routes at all; what had changed was that the charge now felt like an ordinary part of city life. In her view, people tend to resist almost any change to how roads are used, and that resistance fades once the new arrangement becomes familiar.",
+                "label": "E"
+            },
+            {
+                "text": "Not everyone is persuaded. The most frequent objection concerns fairness. A flat daily fee is a trivial sum for a well-paid executive but a real burden for a care worker on a low wage whose shift begins before the first trains run. Shopkeepers raise a second concern. Callum Brodie, who represents independent retailers in a mid-sized city considering a charge, argues that many customers will simply drive to out-of-town shopping centres, where parking is free, rather than pay to reach the high street, and he expects smaller shops to suffer first. A third worry is that traffic does not disappear but moves to the streets just outside the boundary, whose residents suffer the extra noise and fumes without sharing any of the benefits. Finally, some people object in principle to cameras recording every journey into the centre.",
+                "label": "F"
+            },
+            {
+                "text": "Supporters accept that these objections deserve serious answers, and much depends on what happens to the money raised. Spending the revenue on cheaper and more frequent buses, and offering discounts to essential workers, can meet the fairness complaint directly; lower-income travellers, after all, are more likely to use public transport in the first place. Careful monitoring of the streets near the boundary can show whether traffic is really being pushed elsewhere. The broader lesson from the cities that have tried charging is that it works best as one part of a wider transport plan, not as a stand-alone cure for congestion.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Economists have long described this as a hidden cost",
+                "answer": [
+                    "hidden cost"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "had to buy a paper licence in advance and display it on the windscreen",
+                "answer": [
+                    "paper licence"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a growing volume of roadworks and delivery vans took up much of the remainder",
+                "answer": [
+                    "delivery vans"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "queues on the bridges into the centre shrank",
+                "answer": [
+                    "bridges"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "many customers will simply drive to out-of-town shopping centres, where parking is free",
+                "answer": [
+                    "out-of-town shopping centres"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The city first draws a boundary, often following a ring road, around the area it wishes to protect.",
+                "answer": [
+                    "boundary"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Cameras are then installed at every point where a vehicle can cross that line",
+                "answer": [
+                    "cameras"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Software converts the images into registration numbers",
+                "answer": [
+                    "software"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "compared with a database of drivers who have paid for that day",
+                "answer": [
+                    "database"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "traced through the national vehicle register",
+                "answer": [
+                    "register"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "a penalty notice is sent to the owner by post",
+                "answer": [
+                    "notice"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "the number of vehicles entering the zone fell noticeably and buses ran more reliably",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "interviewing the same group of commuters before and after the trial. She found that many former opponents had not changed their daily routes at all",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Spending the revenue on cheaper and more frequent buses, and offering discounts to essential workers, can meet the fairness complaint directly",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Economists have long described this as a hidden cost",
+                "answer": [
+                    "hidden cost"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Motorists wishing to enter the central business district during the morning peak had to buy a paper licence in advance and display it on the windscreen",
+                "answer": [
+                    "paper licence"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a growing volume of roadworks and delivery vans took up much of the remainder",
+                "answer": [
+                    "delivery vans"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Once the charge was in place and queues on the bridges into the centre shrank",
+                "answer": [
+                    "bridges"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "many customers will simply drive to out-of-town shopping centres, where parking is free, rather than pay to reach the high street",
+                "answer": [
+                    "out-of-town shopping centres"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The city first draws a boundary",
+                "answer": [
+                    "boundary"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Cameras are then installed at every point where a vehicle can cross that line",
+                "answer": [
+                    "cameras"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Software converts the images into registration numbers",
+                "answer": [
+                    "software"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "which are compared with a database of drivers who have paid for that day",
+                "answer": [
+                    "database"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "traced through the national vehicle register",
+                "answer": [
+                    "register"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "a penalty notice is sent to the owner by post",
+                "answer": [
+                    "notice"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "In the early years, the number of vehicles entering the zone fell noticeably and buses ran more reliably.",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Farida Kassab, a transport economist, studied this shift by interviewing the same group of commuters before and after the trial. She found that many former opponents had not changed their daily routes at all",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Spending the revenue on cheaper and more frequent buses, and offering discounts to essential workers, can meet the fairness complaint directly",
+                "answer": [
+                    "A",
+                    "B"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Economists have long described this as a hidden cost",
+            "answer": [
+                "hidden cost"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "had to buy a paper licence in advance and display it on the windscreen",
+            "answer": [
+                "paper licence"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "roadworks and delivery vans took up much of the remainder",
+            "answer": [
+                "delivery vans"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "queues on the bridges into the centre shrank",
+            "answer": [
+                "bridges"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The city first draws a boundary, often following a ring road, around the area it wishes to protect",
+            "answer": [
+                "boundary"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Cameras are then installed at every point where a vehicle can cross that line",
+            "answer": [
+                "cameras"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Software converts the images into registration numbers",
+            "answer": [
+                "software"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "compared with a database of drivers who have paid for that day",
+            "answer": [
+                "database"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "traced through the national vehicle register",
+            "answer": [
+                "register"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "In the early years, the number of vehicles entering the zone fell noticeably and buses ran more reliably",
+            "answer": [
+                "A",
+                "E"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "interviewing the same group of commuters before and after the trial. She found that many former opponents had not changed their daily routes at all",
+            "answer": [
+                "B",
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 14,
+        "agreedFirst": 14,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Paying to Drive into Town\n\nA. On a weekday morning in almost any large city, the main roads into the centre fill up long before the shops open. Each additional car slows every other vehicle a little, yet the driver who joins the queue pays nothing for the time that everyone else loses. Economists have long described this as a hidden cost: because road space is free at the point of use, it is consumed far more heavily than it would be if drivers had to account for the delay they impose. If a charge is attached to entering the most crowded areas at the busiest times, the argument runs, some trips will be moved to another hour, switched to buses or trains, or abandoned altogether, and the remaining traffic should flow more freely.\n\nB. For decades the idea remained largely theoretical, partly because collecting money from thousands of moving vehicles seemed impractical. Singapore was the first city to put it into practice, in 1975. Motorists wishing to enter the central business district during the morning peak had to buy a paper licence in advance and display it on the windscreen, while officers stationed at entry points checked each car as it passed. The crude system worked: traffic in the zone dropped sharply. In 1998 the paper licences gave way to an electronic system that deducts the fee automatically from a card inside the vehicle, allowing prices to vary by location and time of day.\n\nC. Most later schemes rely instead on cameras. The city first draws a boundary, often following a ring road, around the area it wishes to protect. Cameras are then installed at every point where a vehicle can cross that line, and each one photographs the number plates of passing traffic. Software converts the images into registration numbers, which are compared with a database of drivers who have paid for that day. Anyone whose plate does not appear by the deadline is traced through the national vehicle register, and a penalty notice is sent to the owner by post. Ambulances and buses are normally exempt, and residents who live inside the zone may receive a large discount.\n\nD. London adopted a camera-based charge in 2003. In the early years, the number of vehicles entering the zone fell noticeably and buses ran more reliably. The gain in journey speeds, however, did not last. Over the following decade, space on many central streets was handed over to wider pavements, bus lanes and cycle routes, and a growing volume of roadworks and delivery vans took up much of the remainder. Critics pointed to the slower traffic as proof of failure; supporters replied that without the charge the roads would have been far more crowded still. That claim is difficult to test, because no one can observe the city as it would otherwise have been.\n\nE. Stockholm offers a different lesson, about public opinion. Before the Swedish capital ran a seven-month trial in 2006, polls showed most residents opposed to the idea. Once the charge was in place and queues on the bridges into the centre shrank, attitudes softened, and in a referendum held after the trial a majority of city voters backed keeping it. The charge became permanent in 2007. Farida Kassab, a transport economist, studied this shift by interviewing the same group of commuters before and after the trial. She found that many former opponents had not changed their daily routes at all; what had changed was that the charge now felt like an ordinary part of city life. In her view, people tend to resist almost any change to how roads are used, and that resistance fades once the new arrangement becomes familiar.\n\nF. Not everyone is persuaded. The most frequent objection concerns fairness. A flat daily fee is a trivial sum for a well-paid executive but a real burden for a care worker on a low wage whose shift begins before the first trains run. Shopkeepers raise a second concern. Callum Brodie, who represents independent retailers in a mid-sized city considering a charge, argues that many customers will simply drive to out-of-town shopping centres, where parking is free, rather than pay to reach the high street, and he expects smaller shops to suffer first. A third worry is that traffic does not disappear but moves to the streets just outside the boundary, whose residents suffer the extra noise and fumes without sharing any of the benefits. Finally, some people object in principle to cameras recording every journey into the centre.\n\nG. Supporters accept that these objections deserve serious answers, and much depends on what happens to the money raised. Spending the revenue on cheaper and more frequent buses, and offering discounts to essential workers, can meet the fairness complaint directly; lower-income travellers, after all, are more likely to use public transport in the first place. Careful monitoring of the streets near the boundary can show whether traffic is really being pushed elsewhere. The broader lesson from the cities that have tried charging is that it works best as one part of a wider transport plan, not as a stand-alone cure for congestion.",
+        "title": "Paying to Drive into Town",
+        "groups": [
+            {
+                "type": "short_answer",
+                "limit": {
+                    "words": 3,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "hidden cost",
+                            "a hidden cost"
+                        ],
+                        "prompt": "What term have economists used for the delay that each extra driver causes other road users without paying for it?",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Economists have long described this as a hidden cost",
+                        "explanation": {
+                            "en": "Paragraph A says drivers pay nothing for the time other people lose, and economists call this a hidden cost.",
+                            "ru": "В абзаце A говорится, что водители ничего не платят за время, которое теряют другие люди, и экономисты называют это скрытыми издержками.",
+                            "uk": "В абзаці A сказано, що водії нічого не платять за час, який втрачають інші люди, і економісти називають це прихованими витратами."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "paper licence",
+                            "a paper licence",
+                            "paper license",
+                            "a paper license"
+                        ],
+                        "prompt": "What did drivers in Singapore's first scheme have to buy and show on their windscreen?",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "had to buy a paper licence in advance and display it on the windscreen",
+                        "explanation": {
+                            "en": "Paragraph B explains that in 1975 motorists bought a paper licence and displayed it. The card belongs to the later electronic system, not the original one.",
+                            "ru": "В абзаце B объясняется, что в 1975 году автомобилисты покупали бумажное разрешение и выставляли его на видном месте. Карта относится к более поздней электронной системе, а не к первоначальной.",
+                            "uk": "В абзаці B пояснюється, що в 1975 році автомобілісти купували паперовий дозвіл і виставляли його на видноті. Картка належить до пізнішої електронної системи, а не до початкової."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "delivery vans"
+                        ],
+                        "prompt": "Apart from roadworks, what took up much of the remaining space on central London streets?",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "a growing volume of roadworks and delivery vans took up much of the remainder",
+                        "explanation": {
+                            "en": "Paragraph D says that, after space was given to pavements, bus lanes and cycle routes, roadworks and delivery vans used up much of what was left.",
+                            "ru": "В абзаце D говорится, что после того как место отдали под тротуары, автобусные полосы и велодорожки, бо́льшую часть оставшегося пространства заняли дорожные работы и фургоны доставки.",
+                            "uk": "В абзаці D сказано, що після того як місце віддали під тротуари, автобусні смуги й велодоріжки, більшу частину решти простору зайняли дорожні роботи та фургони доставки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "bridges",
+                            "the bridges"
+                        ],
+                        "prompt": "On which structures leading into central Stockholm did queues get shorter once the charge began?",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "queues on the bridges into the centre shrank",
+                        "explanation": {
+                            "en": "Paragraph E says that when the charge was in place, the queues on the bridges into the centre became smaller.",
+                            "ru": "В абзаце E говорится, что, пока плата действовала, очереди на мостах, ведущих в центр, сократились.",
+                            "uk": "В абзаці E сказано, що коли плата діяла, черги на мостах, які ведуть до центру, зменшилися."
+                        }
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer."
+            },
+            {
+                "type": "flow_chart_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "boundary"
+                        ],
+                        "prompt": "Step 1: The city marks out a ______ around the area it wants to protect.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "The city first draws a boundary, often following a ring road, around the area it wishes to protect",
+                        "explanation": {
+                            "en": "Paragraph C says the first step is drawing a boundary, often along a ring road, around the protected area.",
+                            "ru": "В абзаце C говорится, что первый шаг — провести границу вокруг охраняемой зоны, часто вдоль кольцевой дороги.",
+                            "uk": "В абзаці C сказано, що перший крок — провести межу навколо захищеної зони, часто вздовж кільцевої дороги."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "cameras"
+                        ],
+                        "prompt": "Step 2: Every place where vehicles can enter the zone is fitted with ______.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "Cameras are then installed at every point where a vehicle can cross that line",
+                        "explanation": {
+                            "en": "Paragraph C says cameras are installed at every point where a vehicle can cross the boundary.",
+                            "ru": "В абзаце C говорится, что камеры устанавливают в каждой точке, где машина может пересечь границу.",
+                            "uk": "В абзаці C сказано, що камери встановлюють у кожній точці, де транспортний засіб може перетнути межу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "software"
+                        ],
+                        "prompt": "Step 3: The photographs are turned into registration numbers by ______.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "Software converts the images into registration numbers",
+                        "explanation": {
+                            "en": "Paragraph C says software changes the camera images into registration numbers.",
+                            "ru": "В абзаце C говорится, что программа преобразует изображения с камер в регистрационные номера.",
+                            "uk": "В абзаці C сказано, що програма перетворює зображення з камер на реєстраційні номери."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "database"
+                        ],
+                        "prompt": "Step 4: The numbers are checked against a ______ of drivers who have paid that day.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "compared with a database of drivers who have paid for that day",
+                        "explanation": {
+                            "en": "Paragraph C says the registration numbers are compared with a database of people who have paid.",
+                            "ru": "В абзаце C говорится, что регистрационные номера сверяют с базой данных тех, кто заплатил.",
+                            "uk": "В абзаці C сказано, що реєстраційні номери звіряють із базою даних тих, хто заплатив."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "register"
+                        ],
+                        "prompt": "Step 5: Owners who have not paid are found using the national vehicle ______.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "traced through the national vehicle register",
+                        "explanation": {
+                            "en": "Paragraph C says anyone whose plate is missing after the deadline is traced through the national vehicle register.",
+                            "ru": "В абзаце C говорится, что любого, чьего номера нет в базе после истечения срока, находят через национальный реестр транспортных средств.",
+                            "uk": "В абзаці C сказано, що будь-кого, чийого номера немає в базі після завершення терміну, розшукують через національний реєстр транспортних засобів."
+                        }
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Choose ONE WORD ONLY from the passage for each answer."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "a fall in the number of vehicles coming into the zone"
+                    },
+                    {
+                        "id": "B",
+                        "text": "lower bus fares paid for by the money the charge collected"
+                    },
+                    {
+                        "id": "C",
+                        "text": "a reduction in the amount of roadworks on central streets"
+                    },
+                    {
+                        "id": "D",
+                        "text": "journey speeds that stayed higher over the following decade"
+                    },
+                    {
+                        "id": "E",
+                        "text": "bus services that kept more closely to their timetables"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "E"
+                        ],
+                        "prompt": "Which TWO effects of London's charge in its early years are mentioned in the passage?",
+                        "numbers": [
+                            10,
+                            11
+                        ],
+                        "evidence": "the number of vehicles entering the zone fell noticeably and buses ran more reliably",
+                        "explanation": {
+                            "en": "Paragraph D says fewer vehicles entered the zone and buses became more reliable. The faster journeys did not last, roadworks actually grew, and bus fares are not mentioned for London.",
+                            "ru": "В абзаце D говорится, что в зону стало въезжать меньше машин, а автобусы начали ходить надёжнее. Ускорение поездок оказалось временным, дорожных работ на самом деле стало больше, а о стоимости проезда в автобусах в Лондоне ничего не сказано.",
+                            "uk": "В абзаці D сказано, що до зони стало заїжджати менше машин, а автобуси почали курсувати надійніше. Пришвидшення поїздок виявилося тимчасовим, дорожніх робіт насправді побільшало, а про вартість проїзду в автобусах у Лондоні не згадано."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "She found most commuters had moved to public transport."
+                    },
+                    {
+                        "id": "B",
+                        "text": "She questioned the same commuters on two separate occasions."
+                    },
+                    {
+                        "id": "C",
+                        "text": "She found many former opponents still travelled as before."
+                    },
+                    {
+                        "id": "D",
+                        "text": "She found opposition had grown stronger during the trial."
+                    },
+                    {
+                        "id": "E",
+                        "text": "She compared attitudes in Stockholm with those in London."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B",
+                            "C"
+                        ],
+                        "prompt": "Which TWO statements about Farida Kassab's research are correct?",
+                        "numbers": [
+                            12,
+                            13
+                        ],
+                        "evidence": "interviewing the same group of commuters before and after the trial. She found that many former opponents had not changed their daily routes at all",
+                        "explanation": {
+                            "en": "Paragraph E says she interviewed the same commuters before and after the trial, and that many former opponents kept the same routes. She found that feelings changed, not travel habits, and opposition weakened rather than grew.",
+                            "ru": "В абзаце E говорится, что она опросила одних и тех же людей, ежедневно ездящих на работу, до и после эксперимента, и многие бывшие противники продолжали ездить теми же маршрутами. Она выяснила, что изменилось отношение, а не транспортные привычки, и противодействие ослабло, а не усилилось.",
+                            "uk": "В абзаці E сказано, що вона опитала тих самих людей, які щодня їздять на роботу, до й після експерименту, і багато колишніх противників продовжували їздити тими самими маршрутами. Вона з'ясувала, що змінилося ставлення, а не транспортні звички, і опір послабшав, а не посилився."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b2q1",
+        "6": "b2q2",
+        "7": "b2q3",
+        "8": "b2q4",
+        "9": "b2q5",
+        "10": "b3q1",
+        "12": "b3q2"
+    },
+    "translation": {
+        "missing": []
+    }
+}

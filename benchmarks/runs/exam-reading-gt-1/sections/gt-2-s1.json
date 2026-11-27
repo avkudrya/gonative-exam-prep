@@ -1,0 +1,1038 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "gt-2|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.318504,
+            "provider": "anthropic",
+            "outputTokens": 15163
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.011722,
+            "provider": "anthropic",
+            "outputTokens": 571
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.016473,
+            "provider": "openai",
+            "outputTokens": 797
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.015328,
+            "provider": "xai",
+            "outputTokens": 1516
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.077716,
+            "provider": "anthropic",
+            "outputTokens": 3548
+        }
+    ],
+    "draft": {
+        "title": "Westbrook College: Evening Courses This Autumn",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The person teaching the car course previously had a job repairing vehicles.",
+                        "options": [],
+                        "evidence": "led by former mechanic Mateusz Halloran",
+                        "explanation": "Paragraph A describes the tutor as a 'former mechanic', which means he used to repair vehicles as his job."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Students on the car course are expected to provide a vehicle to work on.",
+                        "options": [],
+                        "evidence": "You do not need to bring a car",
+                        "explanation": "Paragraph A says students do not need to bring a car because the college uses its own training vehicles, so the statement is the opposite of the passage."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Rosalind Kwapong also teaches a more advanced Italian course at the college.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says her course is for complete beginners, but it says nothing about whether she teaches any other courses at the college."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "People joining the Italian course have to pay extra for the course book.",
+                        "options": [],
+                        "evidence": "The course book is included in the fee of £110",
+                        "explanation": "Paragraph B says the book is included in the fee, so there is no extra cost for it."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The bread course is held in a kitchen that has recently been renovated.",
+                        "options": [],
+                        "evidence": "in our newly refurbished teaching kitchen",
+                        "explanation": "Paragraph C says the teaching kitchen is 'newly refurbished', which means it has recently been renovated."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Some of the recipes taught on the bread course include nuts.",
+                        "options": [],
+                        "evidence": "although no nuts are used in our recipes",
+                        "explanation": "Paragraph C clearly says no nuts are used in the recipes. The warning about a nut-free environment is about other classes sharing the kitchen, not the course recipes."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most people who take the phone course are over the age of 60.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D explains what the course covers and why it starts earlier, but it never says how old the learners usually are."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Watercolour students can decide for themselves whether to display a painting at the end of the course.",
+                        "options": [],
+                        "evidence": "students are invited – though not obliged – to show one piece of work",
+                        "explanation": "Paragraph E says students are invited but 'not obliged' to show their work, so taking part in the exhibition is their own choice."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the advertisements? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "short_answer",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "trainers"
+                        ],
+                        "prompt": "Which type of footwear may not be worn in the car workshop?",
+                        "options": [],
+                        "evidence": "trainers are not permitted in the workshop",
+                        "explanation": "Paragraph A asks students to wear sturdy shoes and says trainers are 'not permitted', meaning they are not allowed."
+                    },
+                    {
+                        "answer": [
+                            "Bologna"
+                        ],
+                        "prompt": "In which city did the Italian tutor once live?",
+                        "options": [],
+                        "evidence": "who lived in Bologna for twelve years",
+                        "explanation": "Paragraph B says Rosalind Kwapong lived in Bologna for twelve years."
+                    },
+                    {
+                        "answer": [
+                            "college office",
+                            "office"
+                        ],
+                        "prompt": "Where should people leave their phone number if they would like to talk to the Italian tutor before enrolling?",
+                        "options": [],
+                        "evidence": "just leave your number with the college office",
+                        "explanation": "Paragraph B says anyone unsure about the course can arrange a telephone chat by leaving their number with the college office."
+                    },
+                    {
+                        "answer": [
+                            "audio recordings"
+                        ],
+                        "prompt": "What can Italian learners download free of charge from the college website?",
+                        "options": [],
+                        "evidence": "audio recordings can be downloaded free from the college website",
+                        "explanation": "Paragraph B says audio recordings can be downloaded free. The course book is not downloaded; it is included in the fee."
+                    },
+                    {
+                        "answer": [
+                            "£4",
+                            "4 pounds"
+                        ],
+                        "prompt": "How much should bread students pay at the beginning of every session for ingredients?",
+                        "options": [],
+                        "evidence": "please pay £4 in cash to Noriko at the start of each session",
+                        "explanation": "Paragraph C says the fee of £75 does not cover ingredients, so students pay £4 at the start of each session. £75 is the course fee, not the ingredients payment."
+                    },
+                    {
+                        "answer": [
+                            "college library",
+                            "library"
+                        ],
+                        "prompt": "In which part of the college do the phone course sessions take place?",
+                        "options": [],
+                        "evidence": "Sessions take place in the college library",
+                        "explanation": "Paragraph D states that the sessions are held in the college library."
+                    },
+                    {
+                        "answer": [
+                            "utility bill"
+                        ],
+                        "prompt": "What document is given as an example of proof of address for the phone course?",
+                        "options": [],
+                        "evidence": "such as a recent utility bill",
+                        "explanation": "Paragraph D says local residents can show proof of address, for example a recent utility bill, to study for free."
+                    },
+                    {
+                        "answer": [
+                            "college reception",
+                            "reception"
+                        ],
+                        "prompt": "Where in the college can watercolour students buy a starter kit?",
+                        "options": [],
+                        "evidence": "a starter kit containing everything required can be bought from the college reception",
+                        "explanation": "Paragraph E says the starter kit is sold at the college reception. The entrance hall is where the exhibition takes place, not where the kit is sold."
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the advertisements for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Mateusz Halloran",
+                "role": "former mechanic who teaches the car maintenance course",
+                "gender": "male"
+            },
+            {
+                "name": "Rosalind Kwapong",
+                "role": "tutor of the Italian for the Holidays course",
+                "gender": "female"
+            },
+            {
+                "name": "Noriko Fairweather",
+                "role": "bakery owner who teaches the bread-making course",
+                "gender": "female"
+            },
+            {
+                "name": "Emeka Castellano",
+                "role": "tutor of the smartphone and tablet course",
+                "gender": "male"
+            },
+            {
+                "name": "Saoirse Patil",
+                "role": "artist who teaches the watercolour course",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Look After Your Own Car. Tired of paying a garage for jobs you suspect you could manage yourself? This practical eight-week course, led by former mechanic Mateusz Halloran, covers the routine checks every driver should know: tyre pressures and tread, oil and coolant levels, changing a wiper blade and replacing a bulb. In the final two sessions he will show you how to change a wheel safely at the roadside. Classes run on Tuesdays from 7 to 9 p.m. in the workshop behind the main car park, and numbers are limited to ten so that everyone gets hands-on time. Overalls are lent to all students, but you will need to bring your own pair of work gloves and wear sturdy shoes; trainers are not permitted in the workshop. You do not need to bring a car – we use the college's two training vehicles. Fee: £95 (£60 for those over 65).",
+                "label": "A"
+            },
+            {
+                "text": "Italian for the Holidays. If you are heading to Italy next year and want to do more than point at menus, this relaxed ten-week course is for you. Tutor Rosalind Kwapong, who lived in Bologna for twelve years, focuses on the language you actually need when travelling: ordering food, asking for directions, buying train tickets and making small talk with your hosts. Grammar is kept to a minimum in her classes, and most of each Thursday evening session is spent practising in pairs. The course is aimed at complete beginners. If you studied some Italian at school and are unsure whether the course is right for you, Rosalind is happy to have a short telephone chat with you before you enrol – just leave your number with the college office. The course book is included in the fee of £110, and audio recordings can be downloaded free from the college website.",
+                "label": "B"
+            },
+            {
+                "text": "Real Bread at Home. Learn to bake loaves that put supermarket bread to shame. Over six Wednesday evenings in our newly refurbished teaching kitchen, Noriko Fairweather, who runs her own neighbourhood bakery, will guide you through basic white and wholemeal loaves, flatbreads, bread rolls and, in the final week, a sourdough made from a starter you will take home and keep alive yourself. Everything you bake goes home with you, so bring a large container or cloth bag each week. The course fee of £75 does not cover ingredients; instead, please pay £4 in cash to Noriko at the start of each session. Please note that, although no nuts are used in our recipes, the kitchen is shared with other classes and we cannot guarantee a nut-free environment. Aprons are provided; please tie back long hair.",
+                "label": "C"
+            },
+            {
+                "text": "Get More from Your Phone. Do you own a smartphone or tablet but use it for little more than calls? In this patient, unhurried course, Emeka Castellano and his team of volunteers will show you how to make video calls to family, take and share photographs, shop online safely and spot the warning signs of a scam message. The course runs for five weeks. Sessions take place in the college library on Monday evenings from 6 to 7.30 p.m., slightly earlier than most of our classes, so that learners can travel home before it gets too late. Please bring your own device, fully charged, along with any passwords you already use – written down if necessary. The course is free for anyone who lives in the borough; simply show proof of address, such as a recent utility bill, when you enrol. Others pay £30.",
+                "label": "D"
+            },
+            {
+                "text": "Watercolour for Beginners. Always wanted to paint but never known where to start? Artist Saoirse Patil will share her favourite techniques, from mixing colours and laying a flat wash to painting skies, trees and water. The course lasts eight weeks and meets on Thursday evenings in Studio 3 on the second floor. You will need paper, brushes and a small set of paints. If you would rather not buy these separately, a starter kit containing everything required can be bought from the college reception for £22. At the end of term, students are invited – though not obliged – to show one piece of work in a small exhibition in the college entrance hall. Fee: £85. Places on this popular course fill quickly, so early enrolment is advised.",
+                "label": "E"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "led by former mechanic Mateusz Halloran",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "You do not need to bring a car – we use the college's two training vehicles.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The course book is included in the fee of £110",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "in our newly refurbished teaching kitchen",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "although no nuts are used in our recipes",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "students are invited – though not obliged – to show one piece of work in a small exhibition",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "trainers are not permitted in the workshop",
+                "answer": [
+                    "trainers"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "who lived in Bologna for twelve years",
+                "answer": [
+                    "Bologna"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "just leave your number with the college office",
+                "answer": [
+                    "college office"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "audio recordings can be downloaded free from the college website",
+                "answer": [
+                    "audio recordings"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "please pay £4 in cash to Noriko at the start of each session",
+                "answer": [
+                    "£4"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Sessions take place in the college library on Monday evenings",
+                "answer": [
+                    "library"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "such as a recent utility bill",
+                "answer": [
+                    "utility bill"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "can be bought from the college reception for £22",
+                "answer": [
+                    "reception"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "led by former mechanic Mateusz Halloran",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "You do not need to bring a car – we use the college's two training vehicles.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The course book is included in the fee of £110",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Over six Wednesday evenings in our newly refurbished teaching kitchen",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "although no nuts are used in our recipes",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "students are invited – though not obliged – to show one piece of work",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "trainers are not permitted in the workshop",
+                "answer": [
+                    "trainers"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "who lived in Bologna for twelve years",
+                "answer": [
+                    "Bologna"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "just leave your number with the college office",
+                "answer": [
+                    "college office"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "audio recordings can be downloaded free from the college website",
+                "answer": [
+                    "audio recordings"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "please pay £4 in cash to Noriko at the start of each session",
+                "answer": [
+                    "£4"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Sessions take place in the college library",
+                "answer": [
+                    "college library"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "such as a recent utility bill",
+                "answer": [
+                    "utility bill"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "can be bought from the college reception",
+                "answer": [
+                    "college reception"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "former mechanic Mateusz Halloran",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "You do not need to bring a car – we use the college's two training vehicles.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "The course book is included in the fee of £110",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "newly refurbished teaching kitchen",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "no nuts are used in our recipes",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "trainers are not permitted in the workshop",
+            "answer": [
+                "trainers"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "lived in Bologna for twelve years",
+            "answer": [
+                "Bologna"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "leave your number with the college office",
+            "answer": [
+                "college office"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "audio recordings can be downloaded free from the college website",
+            "answer": [
+                "audio recordings"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "pay £4 in cash to Noriko at the start of each session",
+            "answer": [
+                "£4"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Sessions take place in the college library",
+            "answer": [
+                "college library"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "a recent utility bill",
+            "answer": [
+                "utility bill"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Westbrook College: Evening Courses This Autumn\n\nA. Look After Your Own Car. Tired of paying a garage for jobs you suspect you could manage yourself? This practical eight-week course, led by former mechanic Mateusz Halloran, covers the routine checks every driver should know: tyre pressures and tread, oil and coolant levels, changing a wiper blade and replacing a bulb. In the final two sessions he will show you how to change a wheel safely at the roadside. Classes run on Tuesdays from 7 to 9 p.m. in the workshop behind the main car park, and numbers are limited to ten so that everyone gets hands-on time. Overalls are lent to all students, but you will need to bring your own pair of work gloves and wear sturdy shoes; trainers are not permitted in the workshop. You do not need to bring a car – we use the college's two training vehicles. Fee: £95 (£60 for those over 65).\n\nB. Italian for the Holidays. If you are heading to Italy next year and want to do more than point at menus, this relaxed ten-week course is for you. Tutor Rosalind Kwapong, who lived in Bologna for twelve years, focuses on the language you actually need when travelling: ordering food, asking for directions, buying train tickets and making small talk with your hosts. Grammar is kept to a minimum in her classes, and most of each Thursday evening session is spent practising in pairs. The course is aimed at complete beginners. If you studied some Italian at school and are unsure whether the course is right for you, Rosalind is happy to have a short telephone chat with you before you enrol – just leave your number with the college office. The course book is included in the fee of £110, and audio recordings can be downloaded free from the college website.\n\nC. Real Bread at Home. Learn to bake loaves that put supermarket bread to shame. Over six Wednesday evenings in our newly refurbished teaching kitchen, Noriko Fairweather, who runs her own neighbourhood bakery, will guide you through basic white and wholemeal loaves, flatbreads, bread rolls and, in the final week, a sourdough made from a starter you will take home and keep alive yourself. Everything you bake goes home with you, so bring a large container or cloth bag each week. The course fee of £75 does not cover ingredients; instead, please pay £4 in cash to Noriko at the start of each session. Please note that, although no nuts are used in our recipes, the kitchen is shared with other classes and we cannot guarantee a nut-free environment. Aprons are provided; please tie back long hair.\n\nD. Get More from Your Phone. Do you own a smartphone or tablet but use it for little more than calls? In this patient, unhurried course, Emeka Castellano and his team of volunteers will show you how to make video calls to family, take and share photographs, shop online safely and spot the warning signs of a scam message. The course runs for five weeks. Sessions take place in the college library on Monday evenings from 6 to 7.30 p.m., slightly earlier than most of our classes, so that learners can travel home before it gets too late. Please bring your own device, fully charged, along with any passwords you already use – written down if necessary. The course is free for anyone who lives in the borough; simply show proof of address, such as a recent utility bill, when you enrol. Others pay £30.\n\nE. Watercolour for Beginners. Always wanted to paint but never known where to start? Artist Saoirse Patil will share her favourite techniques, from mixing colours and laying a flat wash to painting skies, trees and water. The course lasts eight weeks and meets on Thursday evenings in Studio 3 on the second floor. You will need paper, brushes and a small set of paints. If you would rather not buy these separately, a starter kit containing everything required can be bought from the college reception for £22. At the end of term, students are invited – though not obliged – to show one piece of work in a small exhibition in the college entrance hall. Fee: £85. Places on this popular course fill quickly, so early enrolment is advised.",
+        "title": "Westbrook College: Evening Courses This Autumn",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The person teaching the car course previously had a job repairing vehicles.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "led by former mechanic Mateusz Halloran",
+                        "explanation": {
+                            "en": "Paragraph A describes the tutor as a 'former mechanic', which means he used to repair vehicles as his job.",
+                            "ru": "В абзаце A преподаватель назван \"former mechanic\": раньше он работал механиком и ремонтировал машины.",
+                            "uk": "В абзаці A викладача названо \"former mechanic\": раніше він працював механіком і ремонтував автомобілі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Students on the car course are expected to provide a vehicle to work on.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "You do not need to bring a car",
+                        "explanation": {
+                            "en": "Paragraph A says students do not need to bring a car because the college uses its own training vehicles, so the statement is the opposite of the passage.",
+                            "ru": "В абзаце A сказано, что студентам не нужно приезжать на своей машине, потому что в колледже есть собственные учебные автомобили. Утверждение говорит обратное тому, что написано в тексте.",
+                            "uk": "В абзаці A сказано, що студентам не потрібно приїжджати на своєму автомобілі, бо в коледжі є власні навчальні машини. Твердження каже протилежне тому, що написано в тексті."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Rosalind Kwapong also teaches a more advanced Italian course at the college.",
+                        "numbers": [
+                            3
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says her course is for complete beginners, but it says nothing about whether she teaches any other courses at the college.",
+                            "ru": "В абзаце B сказано, что её курс рассчитан на полных новичков, но ничего не говорится о том, ведёт ли она в колледже другие курсы.",
+                            "uk": "В абзаці B сказано, що її курс розрахований на повних початківців, але нічого не сказано про те, чи веде вона в коледжі інші курси."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "People joining the Italian course have to pay extra for the course book.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "The course book is included in the fee of £110",
+                        "explanation": {
+                            "en": "Paragraph B says the book is included in the fee, so there is no extra cost for it.",
+                            "ru": "В абзаце B сказано, что учебник входит в стоимость курса, поэтому отдельно платить за него не нужно.",
+                            "uk": "В абзаці B сказано, що підручник входить у вартість курсу, тож окремо платити за нього не треба."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The bread course is held in a kitchen that has recently been renovated.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "in our newly refurbished teaching kitchen",
+                        "explanation": {
+                            "en": "Paragraph C says the teaching kitchen is 'newly refurbished', which means it has recently been renovated.",
+                            "ru": "В абзаце C учебная кухня описана как \"newly refurbished\", то есть её недавно отремонтировали.",
+                            "uk": "В абзаці C навчальну кухню описано як \"newly refurbished\", тобто її нещодавно відремонтували."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Some of the recipes taught on the bread course include nuts.",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "although no nuts are used in our recipes",
+                        "explanation": {
+                            "en": "Paragraph C clearly says no nuts are used in the recipes. The warning about a nut-free environment is about other classes sharing the kitchen, not the course recipes.",
+                            "ru": "В абзаце C прямо сказано, что в рецептах не используются орехи. Предупреждение о том, что на кухне не гарантируется полное отсутствие орехов, касается других занятий, которые проходят на той же кухне, а не рецептов этого курса.",
+                            "uk": "В абзаці C прямо сказано, що в рецептах не використовують горіхи. Попередження про те, що на кухні не гарантується повна відсутність горіхів, стосується інших занять, які проходять на тій самій кухні, а не рецептів цього курсу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most people who take the phone course are over the age of 60.",
+                        "numbers": [
+                            7
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D explains what the course covers and why it starts earlier, but it never says how old the learners usually are.",
+                            "ru": "В абзаце D объясняется, чему посвящён курс и почему он начинается раньше, но нигде не сказано, какого возраста обычно бывают слушатели.",
+                            "uk": "В абзаці D пояснюється, чому присвячений курс і чому він починається раніше, але ніде не сказано, якого віку зазвичай бувають слухачі."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the advertisements? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "short_answer",
+                "limit": {
+                    "words": 2,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "trainers"
+                        ],
+                        "prompt": "Which type of footwear may not be worn in the car workshop?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "trainers are not permitted in the workshop",
+                        "explanation": {
+                            "en": "Paragraph A asks students to wear sturdy shoes and says trainers are 'not permitted', meaning they are not allowed.",
+                            "ru": "В абзаце A студентов просят прийти в прочной обуви и говорится, что кроссовки \"not permitted\", то есть запрещены.",
+                            "uk": "В абзаці A студентів просять прийти в міцному взутті й сказано, що кросівки \"not permitted\", тобто заборонені."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Bologna"
+                        ],
+                        "prompt": "In which city did the Italian tutor once live?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "who lived in Bologna for twelve years",
+                        "explanation": {
+                            "en": "Paragraph B says Rosalind Kwapong lived in Bologna for twelve years.",
+                            "ru": "В абзаце B сказано, что Rosalind Kwapong прожила в Болонье (\"Bologna\") двенадцать лет.",
+                            "uk": "В абзаці B сказано, що Rosalind Kwapong прожила в Болоньї (\"Bologna\") дванадцять років."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "college office",
+                            "office"
+                        ],
+                        "prompt": "Where should people leave their phone number if they would like to talk to the Italian tutor before enrolling?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "just leave your number with the college office",
+                        "explanation": {
+                            "en": "Paragraph B says anyone unsure about the course can arrange a telephone chat by leaving their number with the college office.",
+                            "ru": "В абзаце B сказано, что если вы сомневаетесь насчёт курса, можно договориться о разговоре по телефону: для этого нужно оставить свой номер в офисе колледжа.",
+                            "uk": "В абзаці B сказано, що якщо ви вагаєтеся щодо курсу, можна домовитися про розмову телефоном: для цього треба залишити свій номер в офісі коледжу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "audio recordings"
+                        ],
+                        "prompt": "What can Italian learners download free of charge from the college website?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "audio recordings can be downloaded free from the college website",
+                        "explanation": {
+                            "en": "Paragraph B says audio recordings can be downloaded free. The course book is not downloaded; it is included in the fee.",
+                            "ru": "В абзаце B сказано, что бесплатно можно скачать аудиозаписи. Учебник не скачивают: он входит в стоимость курса.",
+                            "uk": "В абзаці B сказано, що безкоштовно можна завантажити аудіозаписи. Підручник не завантажують: він входить у вартість курсу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "£4",
+                            "4 pounds"
+                        ],
+                        "prompt": "How much should bread students pay at the beginning of every session for ingredients?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "please pay £4 in cash to Noriko at the start of each session",
+                        "explanation": {
+                            "en": "Paragraph C says the fee of £75 does not cover ingredients, so students pay £4 at the start of each session. £75 is the course fee, not the ingredients payment.",
+                            "ru": "В абзаце C сказано, что плата £75 не включает продукты, поэтому в начале каждого занятия студенты платят £4. £75 — это стоимость курса, а не плата за продукты.",
+                            "uk": "В абзаці C сказано, що плата £75 не включає продукти, тому на початку кожного заняття студенти платять £4. £75 — це вартість курсу, а не плата за продукти."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "college library",
+                            "library"
+                        ],
+                        "prompt": "In which part of the college do the phone course sessions take place?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "Sessions take place in the college library",
+                        "explanation": {
+                            "en": "Paragraph D states that the sessions are held in the college library.",
+                            "ru": "В абзаце D сказано, что занятия проходят в библиотеке колледжа.",
+                            "uk": "В абзаці D сказано, що заняття проходять у бібліотеці коледжу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "utility bill"
+                        ],
+                        "prompt": "What document is given as an example of proof of address for the phone course?",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "such as a recent utility bill",
+                        "explanation": {
+                            "en": "Paragraph D says local residents can show proof of address, for example a recent utility bill, to study for free.",
+                            "ru": "В абзаце D сказано, что местные жители могут учиться бесплатно, если подтвердят свой адрес, например покажут недавний счёт за коммунальные услуги.",
+                            "uk": "В абзаці D сказано, що місцеві мешканці можуть навчатися безкоштовно, якщо підтвердять свою адресу, наприклад покажуть нещодавній рахунок за комунальні послуги."
+                        }
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the advertisements for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6",
+        "14": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

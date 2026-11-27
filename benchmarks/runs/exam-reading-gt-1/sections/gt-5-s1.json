@@ -1,0 +1,1046 @@
+{
+    "form": {
+        "first": [
+            "group 2 (short_answer), question 11: \"a reference number\" is over the word limit",
+            "group 2 (short_answer), question 15: \"the service lift\" is over the word limit"
+        ],
+        "afterRepair": []
+    },
+    "plan": "gt-5|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.251444,
+            "provider": "anthropic",
+            "outputTokens": 11676
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.104932,
+            "provider": "anthropic",
+            "outputTokens": 3510
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.01199,
+            "provider": "anthropic",
+            "outputTokens": 612
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01825,
+            "provider": "openai",
+            "outputTokens": 919
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.013934,
+            "provider": "xai",
+            "outputTokens": 1290
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.08354,
+            "provider": "anthropic",
+            "outputTokens": 3856
+        }
+    ],
+    "draft": {
+        "title": "Larchfield Court: Notices for Residents",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Recycling will be collected more frequently than it was before 1 March.",
+                        "options": [],
+                        "evidence": "every Tuesday instead of every other Friday",
+                        "explanation": "Notice A says collections change from every other Friday to every Tuesday. Once a week is more often than once every two weeks, so the statement is true."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Residents must separate paper from plastic bottles before putting them in the blue bins.",
+                        "options": [],
+                        "evidence": "so there is no longer any need to sort these items",
+                        "explanation": "Notice A says the blue bins take paper, cardboard, cans and plastic bottles together, with no need to sort them. Only glass still has to go somewhere separate."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The green glass bank is emptied on the same day as the blue bins.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Notice A says where the glass bank is and that blue-bin recycling is collected on Tuesdays. It never says when the glass bank is emptied."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Residents who cannot go online are still able to report a repair in writing.",
+                        "options": [],
+                        "evidence": "a paper form can be picked up from the caretaker's office",
+                        "explanation": "Notice B says people without internet access can get a paper form from the caretaker's office. So they can still report repairs on paper."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Each flat will have to pay for its first parking permit.",
+                        "options": [],
+                        "evidence": "Each flat is entitled to one permit, which will be issued free of charge",
+                        "explanation": "Notice C says each flat's one permit is free of charge, which is the opposite of the statement."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most households have already applied for a second parking permit.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Notice C says a second permit can be requested if spaces remain. It does not say how many households have asked for one."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Parcels left in the parcel room for more than five days are sent back to the sender.",
+                        "options": [],
+                        "evidence": "after that, they will be moved to the caretaker's office",
+                        "explanation": "Notice D says uncollected parcels are moved to the caretaker's office after five days. They are not returned to the sender."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most of the noise complaints come from residents in the older part of the building.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Notice E mentions thin floors in the older part and a growing number of complaints. It never says where in the building the complaints come from."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the notices? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "short_answer",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "bicycle shed"
+                        ],
+                        "prompt": "Next to what is the container for glass located?",
+                        "options": [],
+                        "evidence": "Glass, however, must still go in the separate green bank next to the bicycle shed",
+                        "explanation": "Notice A says glass goes in the green bank, which is next to the bicycle shed."
+                    },
+                    {
+                        "answer": [
+                            "three",
+                            "3"
+                        ],
+                        "prompt": "What is the largest number of bulky items the council will take away in one booked collection?",
+                        "options": [],
+                        "evidence": "The council will remove up to three bulky items for a small fee",
+                        "explanation": "Notice A says the council removes 'up to three' bulky items, so three is the maximum."
+                    },
+                    {
+                        "answer": [
+                            "reference number"
+                        ],
+                        "prompt": "What does every repair request made through the portal receive, so that it can be followed?",
+                        "options": [],
+                        "evidence": "so that each request receives a reference number and can be tracked",
+                        "explanation": "Notice B says reporting online means each request gets a reference number and can be tracked."
+                    },
+                    {
+                        "answer": [
+                            "ten",
+                            "10"
+                        ],
+                        "prompt": "Within how many working days are routine repairs usually completed?",
+                        "options": [],
+                        "evidence": "will normally be dealt with within ten working days",
+                        "explanation": "Notice B says routine jobs are normally dealt with within ten working days. Four hours is the target for emergencies, not routine jobs."
+                    },
+                    {
+                        "answer": [
+                            "windscreen",
+                            "the windscreen"
+                        ],
+                        "prompt": "Where on a vehicle must the parking permit be displayed?",
+                        "options": [],
+                        "evidence": "must display a valid permit on the windscreen",
+                        "explanation": "Notice C says every vehicle in the car park must show a valid permit on the windscreen."
+                    },
+                    {
+                        "answer": [
+                            "three hours",
+                            "3 hours"
+                        ],
+                        "prompt": "For how long at most may visitors park in the marked bays?",
+                        "options": [],
+                        "evidence": "Visitors may use the four marked bays near the entrance for a maximum of three hours",
+                        "explanation": "Notice C gives visitors a maximum of three hours. 'Four' is the number of bays, not the time limit."
+                    },
+                    {
+                        "answer": [
+                            "service lift"
+                        ],
+                        "prompt": "What can be reserved on weekday mornings for large deliveries?",
+                        "options": [],
+                        "evidence": "delivered on a weekday morning, when the service lift can be reserved",
+                        "explanation": "Notice D says bulky items should arrive on a weekday morning, when the service lift can be reserved."
+                    },
+                    {
+                        "answer": [
+                            "rugs"
+                        ],
+                        "prompt": "What are residents in the older part of the building asked to put on wooden floors?",
+                        "options": [],
+                        "evidence": "residents there are asked to place rugs over at least part of any wooden floor",
+                        "explanation": "Notice E says the floors in the older part are thin, so residents there should put rugs over at least part of any wooden floor."
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the notices for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Declan Abiodun",
+                "role": "caretaker of Larchfield Court",
+                "gender": "male"
+            },
+            {
+                "name": "Hiroshi Quarshie",
+                "role": "secretary of the residents' committee",
+                "gender": "unknown"
+            },
+            {
+                "name": "Agnieszka Ruffo",
+                "role": "concierge who takes service lift bookings",
+                "gender": "female"
+            },
+            {
+                "name": "Marisol Tennant",
+                "role": "building manager who handles noise complaints",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "From 1 March, the council will collect recycling from Larchfield Court every Tuesday instead of every other Friday. The bins in the rear courtyard have also been replaced. Blue bins now take paper, cardboard, cans and plastic bottles together, so there is no longer any need to sort these items. Glass, however, must still go in the separate green bank next to the bicycle shed. Please flatten all boxes before putting them in a bin; a single unflattened box can fill half the space, and last month two bins were left uncollected because they were overflowing. Food waste caddies are available free of charge from the caretaker, Declan Abiodun, whose office is beside the lift on the ground floor. Larger items such as furniture or old appliances must never be left in the courtyard. The council will remove up to three bulky items for a small fee if you book a collection online.",
+                "label": "A"
+            },
+            {
+                "text": "All repairs inside your flat should now be reported through the residents' portal rather than by phone, so that each request receives a reference number and can be tracked. If you do not have internet access, a paper form can be picked up from the caretaker's office. Routine jobs, such as a dripping tap or a sticking window, will normally be dealt with within ten working days. Emergencies are a different matter: a burst pipe, a total loss of heating in winter or a door that cannot be locked should be reported immediately on the 24-hour emergency line, and an engineer will aim to attend within four hours. Please do not attempt to repair gas appliances yourself under any circumstances. Problems in shared areas, including broken lights on the stairs, can be reported to Declan directly, as he handles minor repairs himself.",
+                "label": "B"
+            },
+            {
+                "text": "Following complaints from residents who regularly found their spaces occupied, the residents' committee has agreed to introduce a permit scheme for the underground car park. From 15 April, every vehicle parked there must display a valid permit on the windscreen. Each flat is entitled to one permit, which will be issued free of charge; a second permit can be requested, but these will only be granted if spaces remain once all first permits have been allocated. Visitors may use the four marked bays near the entrance for a maximum of three hours. Vehicles without a permit will receive a warning notice the first time and may be towed away if the offence is repeated. Applications should be sent to the committee secretary, Hiroshi Quarshie, by the end of March.",
+                "label": "C"
+            },
+            {
+                "text": "Since the building's new parcel room opened in January, couriers have been leaving packages there when nobody answers the door. You will receive a text message with a four-digit code, which opens the room's electronic lock. Parcels should be collected within five days; after that, they will be moved to the caretaker's office, where they can be picked up during office hours only. Please remember that staff cannot sign for deliveries on your behalf. The room is too small for large deliveries, so if you are expecting something bulky, such as a mattress or a washing machine, please arrange for it to be delivered on a weekday morning, when the service lift can be reserved. To book the lift, contact our concierge, Agnieszka Ruffo, at least 48 hours in advance, as she needs to confirm times with the courier.",
+                "label": "D"
+            },
+            {
+                "text": "Most residents are considerate neighbours, but the building manager, Marisol Tennant, has received a growing number of complaints about noise late at night. As a reminder, quiet hours run from 11 p.m. to 7 a.m. on weekdays and from midnight to 9 a.m. at weekends. Building work, including drilling, is only permitted between 9 a.m. and 5 p.m., Monday to Saturday. If you are planning a party, it is good practice to let your neighbours know beforehand. Because the floors in the older part of the building are thin, residents there are asked to place rugs over at least part of any wooden floor. If a noise problem continues, please talk to your neighbour politely first; if this does not help, write to Marisol, and she may arrange a meeting between both households.",
+                "label": "E"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the council will collect recycling from Larchfield Court every Tuesday instead of every other Friday",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Blue bins now take paper, cardboard, cans and plastic bottles together, so there is no longer any need to sort these items.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you do not have internet access, a paper form can be picked up from the caretaker's office.",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Each flat is entitled to one permit, which will be issued free of charge",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "after that, they will be moved to the caretaker's office",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the separate green bank next to the bicycle shed",
+                "answer": [
+                    "bicycle shed"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The council will remove up to three bulky items",
+                "answer": [
+                    "three"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "each request receives a reference number and can be tracked",
+                "answer": [
+                    "reference number"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "will normally be dealt with within ten working days",
+                "answer": [
+                    "ten"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "every vehicle parked there must display a valid permit on the windscreen",
+                "answer": [
+                    "windscreen"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "for a maximum of three hours",
+                "answer": [
+                    "three hours"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "when the service lift can be reserved",
+                "answer": [
+                    "service lift"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "residents there are asked to place rugs over at least part of any wooden floor",
+                "answer": [
+                    "rugs"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "from 1 March, the council will collect recycling from Larchfield Court every Tuesday instead of every other Friday",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Blue bins now take paper, cardboard, cans and plastic bottles together, so there is no longer any need to sort these items",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you do not have internet access, a paper form can be picked up from the caretaker's office",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Each flat is entitled to one permit, which will be issued free of charge",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Parcels should be collected within five days; after that, they will be moved to the caretaker's office",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the separate green bank next to the bicycle shed",
+                "answer": [
+                    "bicycle shed"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The council will remove up to three bulky items",
+                "answer": [
+                    "three"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "each request receives a reference number and can be tracked",
+                "answer": [
+                    "reference number"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "will normally be dealt with within ten working days",
+                "answer": [
+                    "ten"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "must display a valid permit on the windscreen",
+                "answer": [
+                    "windscreen"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Visitors may use the four marked bays near the entrance for a maximum of three hours",
+                "answer": [
+                    "three hours"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "please arrange for it to be delivered on a weekday morning, when the service lift can be reserved",
+                "answer": [
+                    "service lift"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "residents there are asked to place rugs over at least part of any wooden floor",
+                "answer": [
+                    "rugs"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "every Tuesday instead of every other Friday",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "there is no longer any need to sort these items",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "a paper form can be picked up from the caretaker's office",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "which will be issued free of charge",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "they will be moved to the caretaker's office",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "next to the bicycle shed",
+            "answer": [
+                "bicycle shed"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "remove up to three bulky items",
+            "answer": [
+                "three"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "each request receives a reference number and can be tracked",
+            "answer": [
+                "reference number"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "dealt with within ten working days",
+            "answer": [
+                "ten"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "display a valid permit on the windscreen",
+            "answer": [
+                "windscreen"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "for a maximum of three hours",
+            "answer": [
+                "three hours"
+            ],
+            "correct": true
+        },
+        "b2q7": {
+            "marks": [
+                true
+            ],
+            "quote": "the service lift can be reserved",
+            "answer": [
+                "service lift"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Larchfield Court: Notices for Residents\n\nA. From 1 March, the council will collect recycling from Larchfield Court every Tuesday instead of every other Friday. The bins in the rear courtyard have also been replaced. Blue bins now take paper, cardboard, cans and plastic bottles together, so there is no longer any need to sort these items. Glass, however, must still go in the separate green bank next to the bicycle shed. Please flatten all boxes before putting them in a bin; a single unflattened box can fill half the space, and last month two bins were left uncollected because they were overflowing. Food waste caddies are available free of charge from the caretaker, Declan Abiodun, whose office is beside the lift on the ground floor. Larger items such as furniture or old appliances must never be left in the courtyard. The council will remove up to three bulky items for a small fee if you book a collection online.\n\nB. All repairs inside your flat should now be reported through the residents' portal rather than by phone, so that each request receives a reference number and can be tracked. If you do not have internet access, a paper form can be picked up from the caretaker's office. Routine jobs, such as a dripping tap or a sticking window, will normally be dealt with within ten working days. Emergencies are a different matter: a burst pipe, a total loss of heating in winter or a door that cannot be locked should be reported immediately on the 24-hour emergency line, and an engineer will aim to attend within four hours. Please do not attempt to repair gas appliances yourself under any circumstances. Problems in shared areas, including broken lights on the stairs, can be reported to Declan directly, as he handles minor repairs himself.\n\nC. Following complaints from residents who regularly found their spaces occupied, the residents' committee has agreed to introduce a permit scheme for the underground car park. From 15 April, every vehicle parked there must display a valid permit on the windscreen. Each flat is entitled to one permit, which will be issued free of charge; a second permit can be requested, but these will only be granted if spaces remain once all first permits have been allocated. Visitors may use the four marked bays near the entrance for a maximum of three hours. Vehicles without a permit will receive a warning notice the first time and may be towed away if the offence is repeated. Applications should be sent to the committee secretary, Hiroshi Quarshie, by the end of March.\n\nD. Since the building's new parcel room opened in January, couriers have been leaving packages there when nobody answers the door. You will receive a text message with a four-digit code, which opens the room's electronic lock. Parcels should be collected within five days; after that, they will be moved to the caretaker's office, where they can be picked up during office hours only. Please remember that staff cannot sign for deliveries on your behalf. The room is too small for large deliveries, so if you are expecting something bulky, such as a mattress or a washing machine, please arrange for it to be delivered on a weekday morning, when the service lift can be reserved. To book the lift, contact our concierge, Agnieszka Ruffo, at least 48 hours in advance, as she needs to confirm times with the courier.\n\nE. Most residents are considerate neighbours, but the building manager, Marisol Tennant, has received a growing number of complaints about noise late at night. As a reminder, quiet hours run from 11 p.m. to 7 a.m. on weekdays and from midnight to 9 a.m. at weekends. Building work, including drilling, is only permitted between 9 a.m. and 5 p.m., Monday to Saturday. If you are planning a party, it is good practice to let your neighbours know beforehand. Because the floors in the older part of the building are thin, residents there are asked to place rugs over at least part of any wooden floor. If a noise problem continues, please talk to your neighbour politely first; if this does not help, write to Marisol, and she may arrange a meeting between both households.",
+        "title": "Larchfield Court: Notices for Residents",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Recycling will be collected more frequently than it was before 1 March.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "every Tuesday instead of every other Friday",
+                        "explanation": {
+                            "en": "Notice A says collections change from every other Friday to every Tuesday. Once a week is more often than once every two weeks, so the statement is true.",
+                            "ru": "В объявлении A сказано, что мусор будут вывозить не по пятницам раз в две недели, а каждый вторник. Раз в неделю — это чаще, чем раз в две недели, поэтому утверждение верно (TRUE).",
+                            "uk": "В оголошенні A сказано, що сміття вивозитимуть не по п'ятницях раз на два тижні, а щовівторка. Раз на тиждень — це частіше, ніж раз на два тижні, тож твердження правильне (TRUE)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Residents must separate paper from plastic bottles before putting them in the blue bins.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "so there is no longer any need to sort these items",
+                        "explanation": {
+                            "en": "Notice A says the blue bins take paper, cardboard, cans and plastic bottles together, with no need to sort them. Only glass still has to go somewhere separate.",
+                            "ru": "В объявлении A сказано, что бумагу, картон, банки и пластиковые бутылки можно складывать в синие баки вместе, сортировать их не нужно. Отдельно надо сдавать только стекло.",
+                            "uk": "В оголошенні A сказано, що папір, картон, бляшанки й пластикові пляшки можна класти в сині баки разом, сортувати їх не треба. Окремо потрібно здавати лише скло."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "The green glass bank is emptied on the same day as the blue bins.",
+                        "numbers": [
+                            3
+                        ],
+                        "explanation": {
+                            "en": "Notice A says where the glass bank is and that blue-bin recycling is collected on Tuesdays. It never says when the glass bank is emptied.",
+                            "ru": "В объявлении A указано, где стоит контейнер для стекла и что вторсырьё из синих баков забирают по вторникам. Но когда опорожняют контейнер для стекла, там не сказано.",
+                            "uk": "В оголошенні A вказано, де стоїть контейнер для скла і що вторсировину із синіх баків забирають щовівторка. Але коли спорожнюють контейнер для скла, там не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Residents who cannot go online are still able to report a repair in writing.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "a paper form can be picked up from the caretaker's office",
+                        "explanation": {
+                            "en": "Notice B says people without internet access can get a paper form from the caretaker's office. So they can still report repairs on paper.",
+                            "ru": "В объявлении B сказано, что те, у кого нет доступа к интернету, могут взять бумажный бланк в офисе смотрителя. Значит, они всё равно могут подать заявку на ремонт на бумаге.",
+                            "uk": "В оголошенні B сказано, що ті, хто не має доступу до інтернету, можуть узяти паперовий бланк в офісі доглядача. Отже, вони все одно можуть подати заявку на ремонт на папері."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Each flat will have to pay for its first parking permit.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "Each flat is entitled to one permit, which will be issued free of charge",
+                        "explanation": {
+                            "en": "Notice C says each flat's one permit is free of charge, which is the opposite of the statement.",
+                            "ru": "В объявлении C сказано, что одно разрешение на каждую квартиру выдаётся бесплатно, — это прямо противоположно утверждению.",
+                            "uk": "В оголошенні C сказано, що один дозвіл на кожну квартиру надається безкоштовно, — це прямо протилежне до твердження."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most households have already applied for a second parking permit.",
+                        "numbers": [
+                            6
+                        ],
+                        "explanation": {
+                            "en": "Notice C says a second permit can be requested if spaces remain. It does not say how many households have asked for one.",
+                            "ru": "В объявлении C сказано, что можно запросить второе разрешение, если останутся свободные места. Но сколько семей его уже запросили, не сказано.",
+                            "uk": "В оголошенні C сказано, що можна попросити другий дозвіл, якщо залишаться вільні місця. Але скільки домогосподарств уже його попросили, не сказано."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Parcels left in the parcel room for more than five days are sent back to the sender.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "after that, they will be moved to the caretaker's office",
+                        "explanation": {
+                            "en": "Notice D says uncollected parcels are moved to the caretaker's office after five days. They are not returned to the sender.",
+                            "ru": "В объявлении D сказано, что невостребованные посылки через пять дней переносят в офис смотрителя. Отправителю их не возвращают.",
+                            "uk": "В оголошенні D сказано, що неотримані посилки через п'ять днів переносять до офісу доглядача. Відправникові їх не повертають."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the notices? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "short_answer",
+                "limit": {
+                    "words": 2,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "bicycle shed"
+                        ],
+                        "prompt": "Next to what is the container for glass located?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "Glass, however, must still go in the separate green bank next to the bicycle shed",
+                        "explanation": {
+                            "en": "Notice A says glass goes in the green bank, which is next to the bicycle shed.",
+                            "ru": "В объявлении A сказано, что стекло нужно бросать в зелёный контейнер, который стоит рядом с навесом для велосипедов.",
+                            "uk": "В оголошенні A сказано, що скло треба кидати в зелений контейнер, який стоїть поруч із велосипедним навісом."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "three",
+                            "3"
+                        ],
+                        "prompt": "What is the largest number of bulky items the council will take away in one booked collection?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "The council will remove up to three bulky items for a small fee",
+                        "explanation": {
+                            "en": "Notice A says the council removes 'up to three' bulky items, so three is the maximum.",
+                            "ru": "В объявлении A сказано, что совет вывозит «up to three» крупногабаритных предметов, то есть три — это максимум.",
+                            "uk": "В оголошенні A сказано, що рада вивозить «up to three» великогабаритних речей, тобто три — це максимум."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "reference number"
+                        ],
+                        "prompt": "What does every repair request made through the portal receive, so that it can be followed?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "so that each request receives a reference number and can be tracked",
+                        "explanation": {
+                            "en": "Notice B says reporting online means each request gets a reference number and can be tracked.",
+                            "ru": "В объявлении B сказано, что при подаче заявки онлайн каждой заявке присваивается номер и её можно отслеживать.",
+                            "uk": "В оголошенні B сказано, що коли подаєш заявку онлайн, кожна заявка отримує номер і її можна відстежувати."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ten",
+                            "10"
+                        ],
+                        "prompt": "Within how many working days are routine repairs usually completed?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "will normally be dealt with within ten working days",
+                        "explanation": {
+                            "en": "Notice B says routine jobs are normally dealt with within ten working days. Four hours is the target for emergencies, not routine jobs.",
+                            "ru": "В объявлении B сказано, что обычные работы, как правило, выполняются в течение десяти рабочих дней. Четыре часа — это целевой срок для аварийных случаев, а не для обычных работ.",
+                            "uk": "В оголошенні B сказано, що звичайні роботи зазвичай виконуються протягом десяти робочих днів. Чотири години — це цільовий строк для аварійних випадків, а не для звичайних робіт."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "windscreen",
+                            "the windscreen"
+                        ],
+                        "prompt": "Where on a vehicle must the parking permit be displayed?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "must display a valid permit on the windscreen",
+                        "explanation": {
+                            "en": "Notice C says every vehicle in the car park must show a valid permit on the windscreen.",
+                            "ru": "В объявлении C сказано, что у каждой машины на парковке на лобовом стекле должно быть действующее разрешение.",
+                            "uk": "В оголошенні C сказано, що кожен автомобіль на парковці повинен мати на лобовому склі чинний дозвіл."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "three hours",
+                            "3 hours"
+                        ],
+                        "prompt": "For how long at most may visitors park in the marked bays?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "Visitors may use the four marked bays near the entrance for a maximum of three hours",
+                        "explanation": {
+                            "en": "Notice C gives visitors a maximum of three hours. 'Four' is the number of bays, not the time limit.",
+                            "ru": "В объявлении C гостям разрешено парковаться максимум на три часа. «Four» — это количество мест, а не ограничение по времени.",
+                            "uk": "В оголошенні C гостям дозволено паркуватися щонайбільше на три години. «Four» — це кількість місць, а не обмеження в часі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "service lift"
+                        ],
+                        "prompt": "What can be reserved on weekday mornings for large deliveries?",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "delivered on a weekday morning, when the service lift can be reserved",
+                        "explanation": {
+                            "en": "Notice D says bulky items should arrive on a weekday morning, when the service lift can be reserved.",
+                            "ru": "В объявлении D сказано, что крупные вещи нужно привозить утром в будний день, когда можно забронировать грузовой лифт.",
+                            "uk": "В оголошенні D сказано, що великі речі треба привозити зранку в будній день, коли можна забронювати вантажний ліфт."
+                        }
+                    }
+                ],
+                "instruction": "Answer the questions below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the notices for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6",
+            "b2q7"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b1q7",
+        "8": "b2q1",
+        "9": "b2q2",
+        "10": "b2q3",
+        "11": "b2q4",
+        "12": "b2q5",
+        "13": "b2q6",
+        "14": "b2q7"
+    },
+    "translation": {
+        "missing": []
+    }
+}

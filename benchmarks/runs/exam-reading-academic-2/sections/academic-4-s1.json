@@ -1,0 +1,1126 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-4|s1",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.3379,
+            "provider": "anthropic",
+            "outputTokens": 16079
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.014464,
+            "provider": "anthropic",
+            "outputTokens": 747
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.019943,
+            "provider": "openai",
+            "outputTokens": 975
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.035832,
+            "provider": "anthropic",
+            "outputTokens": 1009
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.0052,
+            "provider": "anthropic",
+            "outputTokens": 31
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.007745,
+            "provider": "openai",
+            "outputTokens": 275
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01931,
+            "provider": "xai",
+            "outputTokens": 2082
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.07422,
+            "provider": "anthropic",
+            "outputTokens": 3410
+        }
+    ],
+    "draft": {
+        "title": "The Box That Changed Trade",
+        "blocks": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "an explanation of why some older city harbours lost their business",
+                        "options": [],
+                        "evidence": "Old harbours in the hearts of cities, squeezed between narrow streets and ageing warehouses, had no room to expand, and trade moved to new sites",
+                        "explanation": "Paragraph D says old harbours in city centres had no space to grow, so trade moved elsewhere. This is the reason they declined."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a description of the part of a container that allows it to be piled up and secured",
+                        "options": [],
+                        "evidence": "These corner fittings, locked together with a simple twisting device, allow containers to be stacked many layers high",
+                        "explanation": "Paragraph C describes the steel corner fittings that let containers be stacked and fastened to ships, wagons and trailers."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a reference to cargo being stolen",
+                        "options": [],
+                        "evidence": "a share of it routinely disappeared into workers' pockets or onto passing lorries",
+                        "explanation": "Paragraph A says part of the cargo regularly 'disappeared' into workers' pockets or onto lorries, which means it was stolen. Paragraph F mentions smugglers, but that is about hiding illegal goods, not stealing cargo."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "an argument that reliability brought greater benefits than lower costs",
+                        "options": [],
+                        "evidence": "the most important gain was not cheapness but predictability",
+                        "explanation": "In paragraph E, Kenji Varela argues that predictability (reliable arrival times) mattered more than cheapness."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "mention of early attempts at using boxes that remained limited in scale",
+                        "options": [],
+                        "evidence": "but these schemes stayed local and never spread widely",
+                        "explanation": "Paragraph B says railways and some shipping lines had tried boxes earlier, but these schemes stayed local and did not spread."
+                    }
+                ],
+                "instruction": "The passage has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "table_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "gangs"
+                        ],
+                        "prompt": "Before the 1950s | Each item put on board by hand by ______ of dockworkers",
+                        "options": [],
+                        "evidence": "gangs of dockworkers carried, rolled or hoisted each item aboard",
+                        "explanation": "Paragraph A says gangs of dockworkers loaded each item aboard by hand."
+                    },
+                    {
+                        "answer": [
+                            "tanker"
+                        ],
+                        "prompt": "1956 | A former ______ adapted to transport 58 trailer bodies",
+                        "options": [],
+                        "evidence": "had an old tanker converted to carry 58 detachable trailer bodies",
+                        "explanation": "Paragraph B says an old tanker was converted (adapted) to carry 58 trailer bodies."
+                    },
+                    {
+                        "answer": [
+                            "40"
+                        ],
+                        "prompt": "1960s | International container lengths of 20 and ______ feet agreed",
+                        "options": [],
+                        "evidence": "the International Organization for Standardization eventually settled on lengths of 20 and 40 feet",
+                        "explanation": "Paragraph C says the standard lengths chosen were 20 and 40 feet."
+                    },
+                    {
+                        "answer": [
+                            "destination"
+                        ],
+                        "prompt": "1960s | Goods sealed at the factory, untouched until arriving at their final ______",
+                        "options": [],
+                        "evidence": "not handled again until they reached their final destination",
+                        "explanation": "Paragraph C says sealed goods were not handled again until they reached their final destination."
+                    },
+                    {
+                        "answer": [
+                            "land"
+                        ],
+                        "prompt": "Port changes | Terminals require huge areas of flat ______",
+                        "options": [],
+                        "evidence": "vast areas of flat land on which thousands of boxes can be stacked and sorted",
+                        "explanation": "Paragraph D says a container terminal needs vast areas of flat land for stacking boxes."
+                    },
+                    {
+                        "answer": [
+                            "hours"
+                        ],
+                        "prompt": "Ship changes | Time spent in port cut to a matter of ______",
+                        "options": [],
+                        "evidence": "may now be turned around in a matter of hours",
+                        "explanation": "Paragraph E says a ship that once spent a week in port can now be turned around in a matter of hours."
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Before the 1950s, nobody had tried moving freight in large removable boxes.",
+                        "options": [],
+                        "evidence": "Railways in several countries had experimented with removable freight boxes in the early twentieth century",
+                        "explanation": "Paragraph B says railways had already experimented with removable freight boxes in the early twentieth century, so the statement is false."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The person behind the 1956 voyage had previously made money in road transport.",
+                        "options": [],
+                        "evidence": "an American entrepreneur who had built his fortune running a trucking business",
+                        "explanation": "Paragraph B says the entrepreneur made his fortune from a trucking business, which is road transport."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most shipping firms at first resisted adopting the international container standard.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C says firms used different designs and that a common standard was negotiated through the 1960s. It does not say whether most shipping firms opposed or welcomed the standard."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "According to Oduya's research, most dock jobs at the ports she studied disappeared within fifteen years of containerisation.",
+                        "options": [],
+                        "evidence": "found that dock employment fell by roughly two-thirds within fifteen years of each port opening its first container terminal",
+                        "explanation": "Paragraph D says employment fell by about two-thirds, which is most of the jobs, within fifteen years of the first container terminal opening."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Varela believes that companies will need to hold larger reserves of stock in the future.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph E says Varela thinks reliable delivery allowed manufacturers to reduce their reserve stocks in the past. He makes no prediction about how much stock companies will hold in the future."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ],
+        "people": [
+            {
+                "name": "Wilhelmina Oduya",
+                "role": "economic historian who studied employment at three European ports",
+                "gender": "female"
+            },
+            {
+                "name": "Kenji Varela",
+                "role": "port economist who argues predictability was the container's greatest benefit",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "For most of recorded history, loading a ship looked much the same. Goods arrived at the quayside in sacks, barrels, bales and crates of every shape, and gangs of dockworkers carried, rolled or hoisted each item aboard, fitting it into the hold by hand. A single cargo ship in the early 1950s might hold tens of thousands of separate items, and loading or unloading it could take a week or more. Vessels often spent as many days tied up in port as they did at sea. The process was also costly in other ways: cargo was damaged by careless handling, and a share of it routinely disappeared into workers' pockets or onto passing lorries. For many goods, the expense of moving them across a few hundred metres of dock was a large fraction of the cost of the entire journey.",
+                "label": "A"
+            },
+            {
+                "text": "The notion of packing cargo into large, reusable boxes was not new. Railways in several countries had experimented with removable freight boxes in the early twentieth century, and some shipping lines used small steel crates, but these schemes stayed local and never spread widely. The decisive step came in 1956, when an American entrepreneur who had built his fortune running a trucking business bought a shipping company and had an old tanker converted to carry 58 detachable trailer bodies. It sailed from Newark to Houston, and the cost of loading it was a small fraction of the usual rate. What made the experiment important was not the box itself but the thinking behind it: the entrepreneur saw that the real business was not operating ships but moving goods, and that the ship was simply one link in a chain that also included lorries, trains and warehouses.",
+                "label": "B"
+            },
+            {
+                "text": "For the idea to work on a global scale, however, the boxes had to be identical. In the early years each company built containers to its own design, in lengths that varied from firm to firm, and a box belonging to one firm could not be lifted by another firm's cranes or fitted into its ships. Through the 1960s, engineers, manufacturers and government officials negotiated a common standard, and the International Organization for Standardization eventually settled on lengths of 20 and 40 feet, together with a uniform width and a strong steel fitting at each corner. These corner fittings, locked together with a simple twisting device, allow containers to be stacked many layers high and fastened securely to ships, rail wagons and lorry trailers. Standardisation also produced a new unit of measurement, the twenty-foot equivalent unit, or TEU. Above all, it meant that goods could be sealed inside a box at a factory and not handled again until they reached their final destination.",
+                "label": "C"
+            },
+            {
+                "text": "The new system transformed the geography of ports. A container terminal needs deep water for large ships, giant cranes and, above all, vast areas of flat land on which thousands of boxes can be stacked and sorted. Old harbours in the hearts of cities, squeezed between narrow streets and ageing warehouses, had no room to expand, and trade moved to new sites. In New York, activity drained away from the piers of Manhattan and Brooklyn towards spacious terminals across the harbour in New Jersey; in Britain, London's historic docks closed one after another while the small port of Felixstowe grew into the country's busiest container port. The human cost was severe. The economic historian Wilhelmina Oduya, in her study of three European ports, found that dock employment fell by roughly two-thirds within fifteen years of each port opening its first container terminal.",
+                "label": "D"
+            },
+            {
+                "text": "Ships changed just as dramatically. The first purpose-built container ships carried a few hundred boxes; the largest vessels today carry more than 20,000 TEU. Because cranes can move a container every minute or two, a ship that once spent a week in port may now be turned around in a matter of hours. Lower costs per box encouraged shipping lines to build ever bigger vessels and to merge into a handful of giant companies. Yet the port economist Kenji Varela argues that the most important gain was not cheapness but predictability. When manufacturers could be confident that a consignment would arrive on a given day, he says, they could reduce the stocks they held in reserve and spread production across several countries, assembling products from parts made thousands of kilometres apart.",
+                "label": "E"
+            },
+            {
+                "text": "Economists still debate how much of the growth in world trade since the 1960s can be credited to the container, but some have argued that its effect was greater than that of many trade agreements. Its success has also created new weaknesses. Because global supply chains depend on boxes arriving exactly when expected, a single blocked canal or a shortage of empty containers can delay deliveries around the world for months. And because a sealed steel box looks the same whatever it holds, customs authorities can physically inspect only a small proportion of those passing through their ports, which makes the system attractive to smugglers. The plain metal container remains one of the least noticed inventions of the twentieth century, but few objects have done more to shape the world economy.",
+                "label": "F"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Old harbours in the hearts of cities, squeezed between narrow streets and ageing warehouses, had no room to expand, and trade moved to new sites.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "These corner fittings, locked together with a simple twisting device, allow containers to be stacked many layers high and fastened securely",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a share of it routinely disappeared into workers' pockets or onto passing lorries",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the most important gain was not cheapness but predictability",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Railways in several countries had experimented with removable freight boxes in the early twentieth century, and some shipping lines used small steel crates, but these schemes stayed local and never spread widely.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "gangs of dockworkers carried, rolled or hoisted each item aboard",
+                "answer": [
+                    "gangs"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "had an old tanker converted to carry 58 detachable trailer bodies",
+                "answer": [
+                    "tanker"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "settled on lengths of 20 and 40 feet",
+                "answer": [
+                    "40"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "not handled again until they reached their final destination",
+                "answer": [
+                    "destination"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "vast areas of flat land on which thousands of boxes can be stacked and sorted",
+                "answer": [
+                    "land"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "may now be turned around in a matter of hours",
+                "answer": [
+                    "hours"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Railways in several countries had experimented with removable freight boxes in the early twentieth century",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "an American entrepreneur who had built his fortune running a trucking business",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "dock employment fell by roughly two-thirds within fifteen years of each port opening its first container terminal",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    false
+                ],
+                "quote": "they could reduce the stocks they held in reserve",
+                "answer": [
+                    "F"
+                ],
+                "correct": false
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Old harbours in the hearts of cities, squeezed between narrow streets and ageing warehouses, had no room to expand, and trade moved to new sites.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "a strong steel fitting at each corner. These corner fittings, locked together with a simple twisting device, allow containers to be stacked many layers high and fastened securely",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a share of it routinely disappeared into workers' pockets or onto passing lorries",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the port economist Kenji Varela argues that the most important gain was not cheapness but predictability",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Railways in several countries had experimented with removable freight boxes in the early twentieth century, and some shipping lines used small steel crates, but these schemes stayed local and never spread widely.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "gangs of dockworkers carried, rolled or hoisted each item aboard",
+                "answer": [
+                    "gangs"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "had an old tanker converted to carry 58 detachable trailer bodies",
+                "answer": [
+                    "tanker"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "settled on lengths of 20 and 40 feet",
+                "answer": [
+                    "40"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "until they reached their final destination",
+                "answer": [
+                    "destination"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "vast areas of flat land",
+                "answer": [
+                    "land"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "a matter of hours",
+                "answer": [
+                    "hours"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The notion of packing cargo into large, reusable boxes was not new. Railways in several countries had experimented with removable freight boxes",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "an American entrepreneur who had built his fortune running a trucking business",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "dock employment fell by roughly two-thirds within fifteen years of each port opening its first container terminal",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    false
+                ],
+                "quote": "they could reduce the stocks they held in reserve",
+                "answer": [
+                    "F"
+                ],
+                "correct": false
+            }
+        },
+        "disputed": [
+            "b3q5"
+        ]
+    },
+    "revise": {
+        "b3q5": {
+            "action": "rewrite",
+            "before": {
+                "answer": [
+                    "NG"
+                ],
+                "prompt": "Varela believes that companies will need to hold larger reserves of stock in the future.",
+                "options": [],
+                "evidence": "",
+                "explanation": "Paragraph E says Varela thinks reliable delivery allowed manufacturers to reduce their reserve stocks in the past. He makes no prediction about how much stock companies will hold in the future."
+            },
+            "reason": "Both solvers read the original statement about larger future reserves as contradicting Varela's point that manufacturers could reduce reserve stocks. The past-versus-future distinction was too fine to make NOT GIVEN clearly defensible. The rewritten statement concerns a topic Varela does not address, so only NOT GIVEN can be defended."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Old harbours in the hearts of cities, squeezed between narrow streets and ageing warehouses, had no room to expand, and trade moved to new sites.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "These corner fittings, locked together with a simple twisting device, allow containers to be stacked many layers high and fastened securely to ships, rail wagons and lorry trailers.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "a share of it routinely disappeared into workers' pockets or onto passing lorries.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "the most important gain was not cheapness but predictability.",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "gangs of dockworkers carried, rolled or hoisted each item aboard",
+            "answer": [
+                "gangs"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "had an old tanker converted to carry 58 detachable trailer bodies.",
+            "answer": [
+                "tanker"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "settled on lengths of 20 and 40 feet",
+            "answer": [
+                "40"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "not handled again until they reached their final destination.",
+            "answer": [
+                "destination"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "vast areas of flat land on which thousands of boxes can be stacked and sorted.",
+            "answer": [
+                "land"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Railways in several countries had experimented with removable freight boxes in the early twentieth century",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "an American entrepreneur who had built his fortune running a trucking business",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "dock employment fell by roughly two-thirds within fifteen years of each port opening its first container terminal.",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 1,
+        "generated": 16,
+        "agreedFirst": 15,
+        "discardRate": 0.0625,
+        "agreedRevised": 0,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b3q5": {
+                "marks": [
+                    false
+                ],
+                "quote": "Lower costs per box encouraged shipping lines to build ever bigger vessels and to merge into a handful of giant companies. Yet the port economist Kenji Varela argues that the most important gain was not cheapness but predictability. When manufacturers could be confident that a consignment would arrive on a given day",
+                "answer": [
+                    "F"
+                ],
+                "correct": false
+            }
+        }
+    },
+    "section": {
+        "text": "The Box That Changed Trade\n\nA. For most of recorded history, loading a ship looked much the same. Goods arrived at the quayside in sacks, barrels, bales and crates of every shape, and gangs of dockworkers carried, rolled or hoisted each item aboard, fitting it into the hold by hand. A single cargo ship in the early 1950s might hold tens of thousands of separate items, and loading or unloading it could take a week or more. Vessels often spent as many days tied up in port as they did at sea. The process was also costly in other ways: cargo was damaged by careless handling, and a share of it routinely disappeared into workers' pockets or onto passing lorries. For many goods, the expense of moving them across a few hundred metres of dock was a large fraction of the cost of the entire journey.\n\nB. The notion of packing cargo into large, reusable boxes was not new. Railways in several countries had experimented with removable freight boxes in the early twentieth century, and some shipping lines used small steel crates, but these schemes stayed local and never spread widely. The decisive step came in 1956, when an American entrepreneur who had built his fortune running a trucking business bought a shipping company and had an old tanker converted to carry 58 detachable trailer bodies. It sailed from Newark to Houston, and the cost of loading it was a small fraction of the usual rate. What made the experiment important was not the box itself but the thinking behind it: the entrepreneur saw that the real business was not operating ships but moving goods, and that the ship was simply one link in a chain that also included lorries, trains and warehouses.\n\nC. For the idea to work on a global scale, however, the boxes had to be identical. In the early years each company built containers to its own design, in lengths that varied from firm to firm, and a box belonging to one firm could not be lifted by another firm's cranes or fitted into its ships. Through the 1960s, engineers, manufacturers and government officials negotiated a common standard, and the International Organization for Standardization eventually settled on lengths of 20 and 40 feet, together with a uniform width and a strong steel fitting at each corner. These corner fittings, locked together with a simple twisting device, allow containers to be stacked many layers high and fastened securely to ships, rail wagons and lorry trailers. Standardisation also produced a new unit of measurement, the twenty-foot equivalent unit, or TEU. Above all, it meant that goods could be sealed inside a box at a factory and not handled again until they reached their final destination.\n\nD. The new system transformed the geography of ports. A container terminal needs deep water for large ships, giant cranes and, above all, vast areas of flat land on which thousands of boxes can be stacked and sorted. Old harbours in the hearts of cities, squeezed between narrow streets and ageing warehouses, had no room to expand, and trade moved to new sites. In New York, activity drained away from the piers of Manhattan and Brooklyn towards spacious terminals across the harbour in New Jersey; in Britain, London's historic docks closed one after another while the small port of Felixstowe grew into the country's busiest container port. The human cost was severe. The economic historian Wilhelmina Oduya, in her study of three European ports, found that dock employment fell by roughly two-thirds within fifteen years of each port opening its first container terminal.\n\nE. Ships changed just as dramatically. The first purpose-built container ships carried a few hundred boxes; the largest vessels today carry more than 20,000 TEU. Because cranes can move a container every minute or two, a ship that once spent a week in port may now be turned around in a matter of hours. Lower costs per box encouraged shipping lines to build ever bigger vessels and to merge into a handful of giant companies. Yet the port economist Kenji Varela argues that the most important gain was not cheapness but predictability. When manufacturers could be confident that a consignment would arrive on a given day, he says, they could reduce the stocks they held in reserve and spread production across several countries, assembling products from parts made thousands of kilometres apart.\n\nF. Economists still debate how much of the growth in world trade since the 1960s can be credited to the container, but some have argued that its effect was greater than that of many trade agreements. Its success has also created new weaknesses. Because global supply chains depend on boxes arriving exactly when expected, a single blocked canal or a shortage of empty containers can delay deliveries around the world for months. And because a sealed steel box looks the same whatever it holds, customs authorities can physically inspect only a small proportion of those passing through their ports, which makes the system attractive to smugglers. The plain metal container remains one of the least noticed inventions of the twentieth century, but few objects have done more to shape the world economy.",
+        "title": "The Box That Changed Trade",
+        "groups": [
+            {
+                "type": "matching_information",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A"
+                    },
+                    {
+                        "id": "B",
+                        "text": "B"
+                    },
+                    {
+                        "id": "C",
+                        "text": "C"
+                    },
+                    {
+                        "id": "D",
+                        "text": "D"
+                    },
+                    {
+                        "id": "E",
+                        "text": "E"
+                    },
+                    {
+                        "id": "F",
+                        "text": "F"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "an explanation of why some older city harbours lost their business",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "Old harbours in the hearts of cities, squeezed between narrow streets and ageing warehouses, had no room to expand, and trade moved to new sites",
+                        "explanation": {
+                            "en": "Paragraph D says old harbours in city centres had no space to grow, so trade moved elsewhere. This is the reason they declined.",
+                            "ru": "В абзаце D сказано, что у старых гаваней в центре городов не было места для расширения, поэтому торговля переместилась в другие места. Именно поэтому они пришли в упадок.",
+                            "uk": "В абзаці D сказано, що старі гавані в центрах міст не мали місця для розширення, тому торгівля перемістилася деінде. Саме через це вони занепали."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a description of the part of a container that allows it to be piled up and secured",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "These corner fittings, locked together with a simple twisting device, allow containers to be stacked many layers high",
+                        "explanation": {
+                            "en": "Paragraph C describes the steel corner fittings that let containers be stacked and fastened to ships, wagons and trailers.",
+                            "ru": "В абзаце C описаны стальные угловые фитинги, благодаря которым контейнеры можно ставить друг на друга и крепить к судам, вагонам и прицепам.",
+                            "uk": "В абзаці C описано сталеві кутові фітинги, завдяки яким контейнери можна ставити один на одний і кріпити до суден, вагонів і причепів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "a reference to cargo being stolen",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "a share of it routinely disappeared into workers' pockets or onto passing lorries",
+                        "explanation": {
+                            "en": "Paragraph A says part of the cargo regularly 'disappeared' into workers' pockets or onto lorries, which means it was stolen. Paragraph F mentions smugglers, but that is about hiding illegal goods, not stealing cargo.",
+                            "ru": "В абзаце A сказано, что часть груза регулярно \"disappeared\" в карманах рабочих или в грузовиках, то есть его воровали. В абзаце F упоминаются контрабандисты, но там речь идёт о сокрытии незаконных товаров, а не о краже груза.",
+                            "uk": "В абзаці A сказано, що частина вантажу регулярно \"disappeared\" у кишенях робітників або у вантажівках, тобто його крали. В абзаці F згадано контрабандистів, але там ідеться про приховування незаконних товарів, а не про крадіжку вантажу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "an argument that reliability brought greater benefits than lower costs",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "the most important gain was not cheapness but predictability",
+                        "explanation": {
+                            "en": "In paragraph E, Kenji Varela argues that predictability (reliable arrival times) mattered more than cheapness.",
+                            "ru": "В абзаце E Kenji Varela утверждает, что предсказуемость (надёжные сроки прибытия) была важнее дешевизны.",
+                            "uk": "В абзаці E Kenji Varela стверджує, що передбачуваність (надійні терміни прибуття) важила більше, ніж дешевизна."
+                        }
+                    }
+                ],
+                "instruction": "The passage has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F. You may use any letter more than once."
+            },
+            {
+                "type": "table_completion",
+                "limit": {
+                    "words": 1,
+                    "number": true
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "gangs"
+                        ],
+                        "prompt": "Before the 1950s | Each item put on board by hand by ______ of dockworkers",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "gangs of dockworkers carried, rolled or hoisted each item aboard",
+                        "explanation": {
+                            "en": "Paragraph A says gangs of dockworkers loaded each item aboard by hand.",
+                            "ru": "В абзаце A сказано, что бригады портовых грузчиков грузили каждый предмет на борт вручную (\"by hand\").",
+                            "uk": "В абзаці A сказано, що бригади портових вантажників завантажували кожен предмет на борт вручну (\"by hand\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "tanker"
+                        ],
+                        "prompt": "1956 | A former ______ adapted to transport 58 trailer bodies",
+                        "numbers": [
+                            6
+                        ],
+                        "evidence": "had an old tanker converted to carry 58 detachable trailer bodies",
+                        "explanation": {
+                            "en": "Paragraph B says an old tanker was converted (adapted) to carry 58 trailer bodies.",
+                            "ru": "В абзаце B сказано, что старый танкер переоборудовали (\"converted\"), чтобы он мог перевозить 58 кузовов прицепов.",
+                            "uk": "В абзаці B сказано, що старий танкер переобладнали (\"converted\"), щоб він міг перевозити 58 кузовів причепів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "40"
+                        ],
+                        "prompt": "1960s | International container lengths of 20 and ______ feet agreed",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "the International Organization for Standardization eventually settled on lengths of 20 and 40 feet",
+                        "explanation": {
+                            "en": "Paragraph C says the standard lengths chosen were 20 and 40 feet.",
+                            "ru": "В абзаце C сказано, что в качестве стандартных длин выбрали \"20\" и \"40\" футов.",
+                            "uk": "В абзаці C сказано, що стандартними довжинами обрали \"20\" і \"40\" футів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "destination"
+                        ],
+                        "prompt": "1960s | Goods sealed at the factory, untouched until arriving at their final ______",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "not handled again until they reached their final destination",
+                        "explanation": {
+                            "en": "Paragraph C says sealed goods were not handled again until they reached their final destination.",
+                            "ru": "В абзаце C сказано, что опечатанные грузы больше не трогали, пока они не прибывали в конечный пункт назначения (\"final destination\").",
+                            "uk": "В абзаці C сказано, що запломбовані вантажі більше не чіпали, доки вони не прибували до кінцевого пункту призначення (\"final destination\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "land"
+                        ],
+                        "prompt": "Port changes | Terminals require huge areas of flat ______",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "vast areas of flat land on which thousands of boxes can be stacked and sorted",
+                        "explanation": {
+                            "en": "Paragraph D says a container terminal needs vast areas of flat land for stacking boxes.",
+                            "ru": "В абзаце D сказано, что контейнерному терминалу нужны огромные площади ровной земли (\"flat land\") для штабелирования контейнеров.",
+                            "uk": "В абзаці D сказано, що контейнерному терміналу потрібні величезні площі рівної землі (\"flat land\") для складання контейнерів у штабелі."
+                        }
+                    }
+                ],
+                "instruction": "Complete the table below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer."
+            },
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Before the 1950s, nobody had tried moving freight in large removable boxes.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "Railways in several countries had experimented with removable freight boxes in the early twentieth century",
+                        "explanation": {
+                            "en": "Paragraph B says railways had already experimented with removable freight boxes in the early twentieth century, so the statement is false.",
+                            "ru": "В абзаце B сказано, что железные дороги экспериментировали со съёмными грузовыми контейнерами ещё в начале XX века, поэтому утверждение неверно — \"FALSE\".",
+                            "uk": "В абзаці B сказано, що залізниці експериментували зі знімними вантажними контейнерами ще на початку XX століття, тому твердження хибне — \"FALSE\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "The person behind the 1956 voyage had previously made money in road transport.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "an American entrepreneur who had built his fortune running a trucking business",
+                        "explanation": {
+                            "en": "Paragraph B says the entrepreneur made his fortune from a trucking business, which is road transport.",
+                            "ru": "В абзаце B сказано, что предприниматель разбогател на грузоперевозках (\"trucking business\"), то есть на автомобильном транспорте.",
+                            "uk": "В абзаці B сказано, що підприємець розбагатів на вантажних перевезеннях (\"trucking business\"), тобто на автомобільному транспорті."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Most shipping firms at first resisted adopting the international container standard.",
+                        "numbers": [
+                            12
+                        ],
+                        "explanation": {
+                            "en": "Paragraph C says firms used different designs and that a common standard was negotiated through the 1960s. It does not say whether most shipping firms opposed or welcomed the standard.",
+                            "ru": "В абзаце C сказано, что компании использовали разные конструкции, а общий стандарт согласовывали на протяжении 1960-х. Но там не говорится, выступало ли большинство судоходных компаний против стандарта или поддерживало его.",
+                            "uk": "В абзаці C сказано, що компанії використовували різні конструкції, а спільний стандарт узгоджували впродовж 1960-х. Але там не сказано, чи більшість судноплавних компаній виступала проти стандарту, чи підтримувала його."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "According to Oduya's research, most dock jobs at the ports she studied disappeared within fifteen years of containerisation.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "found that dock employment fell by roughly two-thirds within fifteen years of each port opening its first container terminal",
+                        "explanation": {
+                            "en": "Paragraph D says employment fell by about two-thirds, which is most of the jobs, within fifteen years of the first container terminal opening.",
+                            "ru": "В абзаце D сказано, что занятость сократилась примерно на две трети, то есть исчезла большая часть рабочих мест, в течение пятнадцати лет после открытия первого контейнерного терминала.",
+                            "uk": "В абзаці D сказано, що зайнятість скоротилася приблизно на дві третини, тобто зникла більшість робочих місць, протягом п'ятнадцяти років після відкриття першого контейнерного термінала."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b2q1",
+        "6": "b2q2",
+        "7": "b2q3",
+        "8": "b2q4",
+        "9": "b2q5",
+        "10": "b3q1",
+        "11": "b3q2",
+        "12": "b3q3",
+        "13": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

@@ -1,0 +1,1250 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-8|s3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.287672,
+            "provider": "anthropic",
+            "outputTokens": 13342
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.017754,
+            "provider": "anthropic",
+            "outputTokens": 858
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.025695,
+            "provider": "openai",
+            "outputTokens": 1234
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.031786,
+            "provider": "xai",
+            "outputTokens": 3950
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.070868,
+            "provider": "anthropic",
+            "outputTokens": 3175
+        }
+    ],
+    "draft": {
+        "title": "The Surprising Greenness of the City",
+        "blocks": [
+            {
+                "type": "yes_no_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "The common belief that rural living is kinder to the environment is mostly mistaken.",
+                        "options": [],
+                        "evidence": "It is an appealing picture, and I believe it is largely the wrong way round.",
+                        "explanation": "In Paragraph A the writer describes the popular image of a green rural life and says it is 'largely the wrong way round', meaning the belief is mostly mistaken."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Rural bus services should receive more government funding.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph B says rural buses may run only a few times a day, but the writer never says whether they should get more money. Paragraph G mentions governments only in connection with making dense living attractive."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Living in a flat can reduce heating needs partly because neighbouring homes help to keep it warm.",
+                        "options": [],
+                        "evidence": "the rest are shared with neighbours whose own heating helps keep it warm",
+                        "explanation": "Paragraph C explains that a flat shares most of its walls with neighbours, whose heating helps to warm it, so less heat is needed."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Fenstermacher's research shows that living in a city is worse for the environment than living in the countryside.",
+                        "options": [],
+                        "evidence": "Yet it does not show that cities are the problem.",
+                        "explanation": "In Paragraph D the writer accepts that Fenstermacher's point is serious but states clearly that it does not show cities are the problem; the writer says it reflects the effect of money instead."
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Low-density suburbs offer a good compromise between city and rural living.",
+                        "options": [],
+                        "evidence": "in many ways the worst of both worlds",
+                        "explanation": "Paragraph E says suburbs combine car dependence with the loss of open land, calling them 'the worst of both worlds', which is the opposite of a good compromise."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Planting street trees cools a city more effectively than building green roofs.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph F lists street trees and green roofs among Corrigan's measures, but the writer never compares how well each one cools a city."
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Governments should concentrate on making high-density living more appealing.",
+                        "options": [],
+                        "evidence": "The more useful task for governments is to make dense living attractive",
+                        "explanation": "In Paragraph G the writer says the more useful task for governments is to make dense living attractive, which matches the statement."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views or claims of the writer? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to the passage, what did Seren Okubo's study show?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Villagers drove about three times as far, regardless of income and household size."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Villagers drove further mainly because their households were larger and earned more."
+                            },
+                            {
+                                "id": "C",
+                                "text": "City households made more trips per week, though mostly by train or on foot."
+                            },
+                            {
+                                "id": "D",
+                                "text": "The personal habits of villagers explained most of the difference in driving."
+                            }
+                        ],
+                        "evidence": "the gap remained after she had adjusted for differences in income and household size",
+                        "explanation": "Paragraph B says village households drove roughly three times as far and the gap stayed after income and household size were adjusted for. It was the layout of places, not the character of the people, that mattered, so the options about income or personal habits are wrong."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What point does the writer make about networks of pipes, cables and roads?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "In crowded districts, each length of them serves far more homes."
+                            },
+                            {
+                                "id": "B",
+                                "text": "In rural areas, they are more visible and therefore better maintained."
+                            },
+                            {
+                                "id": "C",
+                                "text": "In cities, they need replacing more often because of heavy use."
+                            },
+                            {
+                                "id": "D",
+                                "text": "In both areas, they matter less than the size of individual homes."
+                            }
+                        ],
+                        "evidence": "in a crowded district serves hundreds of households; in a rural area the same kilometre might serve a handful",
+                        "explanation": "Paragraph C says a kilometre of pipe, cable or road serves hundreds of households in a crowded district but only a handful in the countryside. The writer calls the network 'just as important', so the idea that it matters less is wrong."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "How does the writer respond to Raúl Fenstermacher's findings?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "The writer accepts the point but links the result to wealth, not location."
+                            },
+                            {
+                                "id": "B",
+                                "text": "The writer rejects the result because it is based on household spending."
+                            },
+                            {
+                                "id": "C",
+                                "text": "The writer argues that air travel should not be counted in such estimates."
+                            },
+                            {
+                                "id": "D",
+                                "text": "The writer claims that rural families fly more often than urban ones."
+                            }
+                        ],
+                        "evidence": "What Fenstermacher measured is the effect of money: high earners fly more wherever they live",
+                        "explanation": "In Paragraph D the writer calls the objection 'a serious point' but says it shows the effect of money, since high earners fly more wherever they live. The writer does not reject the spending method or say rural families fly more."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Why does the writer mention that cities cover only a small fraction of the earth's land?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "to show that spreading people out would destroy more natural habitat"
+                            },
+                            {
+                                "id": "B",
+                                "text": "to argue that cities should expand onto nearby forest and grassland"
+                            },
+                            {
+                                "id": "C",
+                                "text": "to suggest that nature lovers should move closer to the countryside"
+                            },
+                            {
+                                "id": "D",
+                                "text": "to explain why suburbs have wider roads than city centres do"
+                            }
+                        ],
+                        "evidence": "far more forest, wetland and grassland would be lost to houses and roads",
+                        "explanation": "Paragraph E uses the land figure to argue that if city people spread across the countryside, much more forest, wetland and grassland would be lost. The writer actually suggests nature lovers should live at a distance from nature, not closer to it."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What is the writer's view of heat and air pollution in cities?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They are real drawbacks that better urban design can help to reduce."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They are exaggerated problems that mainly affect mid-sized cities."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They are unavoidable results of density that people must accept."
+                            },
+                            {
+                                "id": "D",
+                                "text": "They are strong reasons for some residents to leave the city."
+                            }
+                        ],
+                        "evidence": "a badly designed city is an argument for better cities, not for leaving them",
+                        "explanation": "Paragraph F admits these problems are real, and the writer agrees with Corrigan that they are failures of design that can be improved. The writer says they are not a reason for leaving cities, and mid-sized cities are only where Corrigan worked."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "travel diaries"
+                        ],
+                        "prompt": "The writer believes that a well-planned city is greener per person than the countryside. Evidence from ______ kept by households in a city and nearby villages showed that villagers drove far more.",
+                        "options": [],
+                        "evidence": "compared week-long travel diaries kept by households in a large city and in the villages surrounding it",
+                        "explanation": "Paragraph B says Seren Okubo compared week-long travel diaries kept by households in the city and the surrounding villages."
+                    },
+                    {
+                        "answer": [
+                            "detached house"
+                        ],
+                        "prompt": "In terms of housing, a ______ in a rural area loses heat through every outer wall and its roof, while flats share most walls with neighbours.",
+                        "options": [],
+                        "evidence": "A detached house in the country is exposed to the weather on every side",
+                        "explanation": "Paragraph C says a detached house in the country is exposed on every side, so heat escapes through four outer walls and a roof."
+                    },
+                    {
+                        "answer": [
+                            "air travel"
+                        ],
+                        "prompt": "Fenstermacher found that the richest urban districts had larger footprints than the rural average, mainly owing to frequent ______, but the writer links this to wealth.",
+                        "options": [],
+                        "evidence": "came out worse than the rural average, mainly because of frequent air travel",
+                        "explanation": "Paragraph D says the wealthiest city districts came out worse mainly because of frequent air travel. 'Frequent' is already in the summary, so the answer is two words."
+                    },
+                    {
+                        "answer": [
+                            "Low-density suburbs",
+                            "suburbs"
+                        ],
+                        "prompt": "The writer regards ______ as combining the environmental drawbacks of both city and country.",
+                        "options": [],
+                        "evidence": "Low-density suburbs, with their wide roads and long distances to the nearest shop, combine the car dependence of the countryside",
+                        "explanation": "Paragraph E says low-density suburbs combine rural car dependence with the loss of open land, calling them 'the worst of both worlds'."
+                    },
+                    {
+                        "answer": [
+                            "street trees"
+                        ],
+                        "prompt": "Thandiwe Corrigan has worked on measures such as ______ and green roofs to make crowded neighbourhoods cooler and quieter.",
+                        "options": [],
+                        "evidence": "has focused on street trees, green roofs and the removal of through traffic",
+                        "explanation": "Paragraph F lists street trees, green roofs and removing through traffic as the measures Corrigan has focused on."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Seren Okubo",
+                "role": "transport geographer who compared travel diaries of city and village households",
+                "gender": "female"
+            },
+            {
+                "name": "Raúl Fenstermacher",
+                "role": "economist who estimated footprints from household spending",
+                "gender": "male"
+            },
+            {
+                "name": "Thandiwe Corrigan",
+                "role": "urban planner working on design measures to cool dense neighbourhoods",
+                "gender": "female"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Ask most people to picture an environmentally friendly life and they will describe something rural: a cottage with a vegetable patch, a wood-burning stove, a view of fields rather than traffic. The city, by contrast, is imagined as a machine for consuming resources, its skyline smudged with exhaust fumes. It is an appealing picture, and I believe it is largely the wrong way round. Measured per person rather than per square kilometre, a well-planned city is one of the least damaging places a human being can live. The countryside has many virtues, but a small carbon footprint is rarely among them.",
+                "label": "A"
+            },
+            {
+                "text": "The clearest evidence comes from transport. Outside towns, shops, schools and workplaces are scattered, and buses, where they exist at all, may run only a few times a day. The result is that almost every errand requires a car, and often a long drive. For many rural families, a second car is not a luxury but a necessity. In a dense city the same errands can be done on foot, by bicycle or by train. When the transport geographer Seren Okubo compared week-long travel diaries kept by households in a large city and in the villages surrounding it, she found that village households drove roughly three times as far. Crucially, the gap remained after she had adjusted for differences in income and household size, which suggests that it was the layout of the places, not the character of the people, that made the difference.",
+                "label": "B"
+            },
+            {
+                "text": "Housing tells a similar story. A detached house in the country is exposed to the weather on every side, so heat escapes through four outer walls and a roof. A flat in an apartment block may have only one or two walls facing the outside air; the rest are shared with neighbours whose own heating helps keep it warm. City homes also tend to be smaller, and smaller spaces need less energy to heat, light and fill with furniture. Less visible, but just as important, is the network that supports every home. A kilometre of water pipe, electricity cable or paved road in a crowded district serves hundreds of households; in a rural area the same kilometre might serve a handful. That means less material, less maintenance and less energy spent pumping water over long distances.",
+                "label": "C"
+            },
+            {
+                "text": "The strongest objection to this argument concerns consumption. The economist Raúl Fenstermacher has pointed out that most comparisons count only the emissions produced within a place, such as the fuel burned in its cars and boilers. They ignore the emissions created elsewhere to make the clothes, electronics and holidays that residents buy. When he estimated footprints from household spending instead, the wealthiest city districts in his sample came out worse than the rural average, mainly because of frequent air travel. This is a serious point, and it should humble anyone who assumes that city dwellers are automatically virtuous. Yet it does not show that cities are the problem. What Fenstermacher measured is the effect of money: high earners fly more wherever they live, and a prosperous family in a converted farmhouse is no exception. Compare households with similar incomes, and the city's advantage in heating and travel reappears.",
+                "label": "D"
+            },
+            {
+                "text": "There is also the question of land. Cities cover only a small fraction of the earth's land surface, yet they house more than half of its people. If those people were spread thinly across the countryside, each with a garden and a driveway, far more forest, wetland and grassland would be lost to houses and roads. Ironically, then, the people who love nature most might serve it best by living at a distance from it. The real danger lies in between. Low-density suburbs, with their wide roads and long distances to the nearest shop, combine the car dependence of the countryside with the loss of open land that comes with building — in many ways the worst of both worlds.",
+                "label": "E"
+            },
+            {
+                "text": "None of this means that cities are pleasant or healthy by default. Dense streets trap heat, so that on summer nights a city centre can remain several degrees warmer than nearby farmland, and traffic still fills the air with harmful pollutants. The urban planner Thandiwe Corrigan argues that such problems are routinely blamed on density itself when they are really failures of design. Her work in several mid-sized cities has focused on street trees, green roofs and the removal of through traffic from residential areas, measures that she says can make crowded neighbourhoods markedly cooler and quieter. I find her argument persuasive: a badly designed city is an argument for better cities, not for leaving them.",
+                "label": "F"
+            },
+            {
+                "text": "The countryside is not the villain of this story. Food has to be grown somewhere, and farmers, foresters and those who look after rural land cannot do their work from an apartment. But those who move to a village believing they are lightening their impact on the planet are, in most cases, mistaken. The more useful task for governments is to make dense living attractive — with good schools, safe streets, affordable flats and parks within walking distance — so that choosing the greener option no longer feels like a sacrifice.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "It is an appealing picture, and I believe it is largely the wrong way round.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the rest are shared with neighbours whose own heating helps keep it warm",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Yet it does not show that cities are the problem. What Fenstermacher measured is the effect of money",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "combine the car dependence of the countryside with the loss of open land that comes with building — in many ways the worst of both worlds",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "The more useful task for governments is to make dense living attractive",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "village households drove roughly three times as far. Crucially, the gap remained after she had adjusted for differences in income and household size",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A kilometre of water pipe, electricity cable or paved road in a crowded district serves hundreds of households; in a rural area the same kilometre might serve a handful.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is a serious point... What Fenstermacher measured is the effect of money: high earners fly more wherever they live",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "If those people were spread thinly across the countryside, each with a garden and a driveway, far more forest, wetland and grassland would be lost to houses and roads.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "such problems are routinely blamed on density itself when they are really failures of design... a badly designed city is an argument for better cities",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "week-long travel diaries kept by households in a large city and in the villages surrounding it",
+                "answer": [
+                    "travel diaries"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A detached house in the country is exposed to the weather on every side, so heat escapes through four outer walls and a roof.",
+                "answer": [
+                    "detached house"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "mainly because of frequent air travel",
+                "answer": [
+                    "air travel"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Low-density suburbs, with their wide roads and long distances to the nearest shop, combine the car dependence of the countryside",
+                "answer": [
+                    "low-density suburbs"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "has focused on street trees, green roofs and the removal of through traffic",
+                "answer": [
+                    "street trees"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "It is an appealing picture, and I believe it is largely the wrong way round.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "A flat in an apartment block may have only one or two walls facing the outside air; the rest are shared with neighbours whose own heating helps keep it warm.",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Yet it does not show that cities are the problem. What Fenstermacher measured is the effect of money",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Low-density suburbs... combine the car dependence of the countryside with the loss of open land that comes with building — in many ways the worst of both worlds.",
+                "answer": [
+                    "N"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "The more useful task for governments is to make dense living attractive",
+                "answer": [
+                    "Y"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "she found that village households drove roughly three times as far. Crucially, the gap remained after she had adjusted for differences in income and household size",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A kilometre of water pipe, electricity cable or paved road in a crowded district serves hundreds of households; in a rural area the same kilometre might serve a handful.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is a serious point... What Fenstermacher measured is the effect of money: high earners fly more wherever they live",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Cities cover only a small fraction of the earth's land surface... If those people were spread thinly across the countryside... far more forest, wetland and grassland would be lost to houses and roads.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "such problems are routinely blamed on density itself when they are really failures of design... measures that she says can make crowded neighbourhoods markedly cooler and quieter",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "week-long travel diaries kept by households",
+                "answer": [
+                    "travel diaries"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "A detached house in the country is exposed to the weather on every side",
+                "answer": [
+                    "detached house"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "mainly because of frequent air travel",
+                "answer": [
+                    "air travel"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Low-density suburbs... combine the car dependence of the countryside with the loss of open land",
+                "answer": [
+                    "low-density suburbs"
+                ],
+                "correct": true
+            },
+            "b3q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Her work in several mid-sized cities has focused on street trees, green roofs",
+                "answer": [
+                    "street trees"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "It is an appealing picture, and I believe it is largely the wrong way round.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the rest are shared with neighbours whose own heating helps keep it warm.",
+            "answer": [
+                "Y"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Yet it does not show that cities are the problem.",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "in many ways the worst of both worlds.",
+            "answer": [
+                "N"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "village households drove roughly three times as far. Crucially, the gap remained after she had adjusted for differences in income and household size",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "A kilometre of water pipe, electricity cable or paved road in a crowded district serves hundreds of households; in a rural area the same kilometre might serve a handful.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "This is a serious point, and it should humble anyone who assumes that city dwellers are automatically virtuous. Yet it does not show that cities are the problem. What Fenstermacher measured is the effect of money",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "If those people were spread thinly across the countryside, each with a garden and a driveway, far more forest, wetland and grassland would be lost to houses and roads.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "week-long travel diaries kept by households in a large city and in the villages surrounding it",
+            "answer": [
+                "travel diaries"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "A detached house in the country is exposed to the weather on every side, so heat escapes through four outer walls and a roof.",
+            "answer": [
+                "detached house"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "mainly because of frequent air travel",
+            "answer": [
+                "air travel"
+            ],
+            "correct": true
+        },
+        "b3q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Low-density suburbs, with their wide roads and long distances to the nearest shop, combine the car dependence of the countryside with the loss of open land that comes with building",
+            "answer": [
+                "low-density suburbs"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 14,
+            "correct": 14
+        },
+        "discarded": 0,
+        "generated": 17,
+        "agreedFirst": 17,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "The Surprising Greenness of the City\n\nA. Ask most people to picture an environmentally friendly life and they will describe something rural: a cottage with a vegetable patch, a wood-burning stove, a view of fields rather than traffic. The city, by contrast, is imagined as a machine for consuming resources, its skyline smudged with exhaust fumes. It is an appealing picture, and I believe it is largely the wrong way round. Measured per person rather than per square kilometre, a well-planned city is one of the least damaging places a human being can live. The countryside has many virtues, but a small carbon footprint is rarely among them.\n\nB. The clearest evidence comes from transport. Outside towns, shops, schools and workplaces are scattered, and buses, where they exist at all, may run only a few times a day. The result is that almost every errand requires a car, and often a long drive. For many rural families, a second car is not a luxury but a necessity. In a dense city the same errands can be done on foot, by bicycle or by train. When the transport geographer Seren Okubo compared week-long travel diaries kept by households in a large city and in the villages surrounding it, she found that village households drove roughly three times as far. Crucially, the gap remained after she had adjusted for differences in income and household size, which suggests that it was the layout of the places, not the character of the people, that made the difference.\n\nC. Housing tells a similar story. A detached house in the country is exposed to the weather on every side, so heat escapes through four outer walls and a roof. A flat in an apartment block may have only one or two walls facing the outside air; the rest are shared with neighbours whose own heating helps keep it warm. City homes also tend to be smaller, and smaller spaces need less energy to heat, light and fill with furniture. Less visible, but just as important, is the network that supports every home. A kilometre of water pipe, electricity cable or paved road in a crowded district serves hundreds of households; in a rural area the same kilometre might serve a handful. That means less material, less maintenance and less energy spent pumping water over long distances.\n\nD. The strongest objection to this argument concerns consumption. The economist Raúl Fenstermacher has pointed out that most comparisons count only the emissions produced within a place, such as the fuel burned in its cars and boilers. They ignore the emissions created elsewhere to make the clothes, electronics and holidays that residents buy. When he estimated footprints from household spending instead, the wealthiest city districts in his sample came out worse than the rural average, mainly because of frequent air travel. This is a serious point, and it should humble anyone who assumes that city dwellers are automatically virtuous. Yet it does not show that cities are the problem. What Fenstermacher measured is the effect of money: high earners fly more wherever they live, and a prosperous family in a converted farmhouse is no exception. Compare households with similar incomes, and the city's advantage in heating and travel reappears.\n\nE. There is also the question of land. Cities cover only a small fraction of the earth's land surface, yet they house more than half of its people. If those people were spread thinly across the countryside, each with a garden and a driveway, far more forest, wetland and grassland would be lost to houses and roads. Ironically, then, the people who love nature most might serve it best by living at a distance from it. The real danger lies in between. Low-density suburbs, with their wide roads and long distances to the nearest shop, combine the car dependence of the countryside with the loss of open land that comes with building — in many ways the worst of both worlds.\n\nF. None of this means that cities are pleasant or healthy by default. Dense streets trap heat, so that on summer nights a city centre can remain several degrees warmer than nearby farmland, and traffic still fills the air with harmful pollutants. The urban planner Thandiwe Corrigan argues that such problems are routinely blamed on density itself when they are really failures of design. Her work in several mid-sized cities has focused on street trees, green roofs and the removal of through traffic from residential areas, measures that she says can make crowded neighbourhoods markedly cooler and quieter. I find her argument persuasive: a badly designed city is an argument for better cities, not for leaving them.\n\nG. The countryside is not the villain of this story. Food has to be grown somewhere, and farmers, foresters and those who look after rural land cannot do their work from an apartment. But those who move to a village believing they are lightening their impact on the planet are, in most cases, mistaken. The more useful task for governments is to make dense living attractive — with good schools, safe streets, affordable flats and parks within walking distance — so that choosing the greener option no longer feels like a sacrifice.",
+        "title": "The Surprising Greenness of the City",
+        "groups": [
+            {
+                "type": "yes_no_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "The common belief that rural living is kinder to the environment is mostly mistaken.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "It is an appealing picture, and I believe it is largely the wrong way round.",
+                        "explanation": {
+                            "en": "In Paragraph A the writer describes the popular image of a green rural life and says it is 'largely the wrong way round', meaning the belief is mostly mistaken.",
+                            "ru": "В абзаце A автор описывает распространённое представление о «зелёной» сельской жизни и называет его \"largely the wrong way round\", то есть считает это убеждение в основном ошибочным.",
+                            "uk": "В абзаці A автор описує поширене уявлення про «зелене» сільське життя і називає його \"largely the wrong way round\", тобто вважає це переконання здебільшого хибним."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Rural bus services should receive more government funding.",
+                        "numbers": [
+                            2
+                        ],
+                        "explanation": {
+                            "en": "Paragraph B says rural buses may run only a few times a day, but the writer never says whether they should get more money. Paragraph G mentions governments only in connection with making dense living attractive.",
+                            "ru": "В абзаце B сказано, что сельские автобусы могут ходить всего несколько раз в день, но автор нигде не говорит, нужно ли выделять на них больше денег. В абзаце G правительства упоминаются только в связи с тем, чтобы сделать жизнь в плотной застройке привлекательной.",
+                            "uk": "В абзаці B сказано, що сільські автобуси можуть курсувати лише кілька разів на день, але автор ніде не каже, чи треба виділяти на них більше грошей. В абзаці G уряди згадуються лише у зв'язку з тим, щоб зробити життя в щільній забудові привабливим."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Y"
+                        ],
+                        "prompt": "Living in a flat can reduce heating needs partly because neighbouring homes help to keep it warm.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "the rest are shared with neighbours whose own heating helps keep it warm",
+                        "explanation": {
+                            "en": "Paragraph C explains that a flat shares most of its walls with neighbours, whose heating helps to warm it, so less heat is needed.",
+                            "ru": "В абзаце C объясняется, что у квартиры большинство стен общие с соседями, чьё отопление помогает её согреть, поэтому тепла требуется меньше.",
+                            "uk": "В абзаці C пояснюється, що більшість стін квартири спільні з сусідами, чиє опалення допомагає її зігріти, тому тепла потрібно менше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Fenstermacher's research shows that living in a city is worse for the environment than living in the countryside.",
+                        "numbers": [
+                            4
+                        ],
+                        "evidence": "Yet it does not show that cities are the problem.",
+                        "explanation": {
+                            "en": "In Paragraph D the writer accepts that Fenstermacher's point is serious but states clearly that it does not show cities are the problem; the writer says it reflects the effect of money instead.",
+                            "ru": "В абзаце D автор признаёт, что довод Fenstermacher серьёзен, но ясно заявляет, что он не доказывает, будто проблема в городах; по мнению автора, он скорее отражает влияние денег.",
+                            "uk": "В абзаці D автор визнає, що аргумент Fenstermacher серйозний, але чітко заявляє, що він не доводить, ніби проблема в містах; на думку автора, він радше відображає вплив грошей."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "N"
+                        ],
+                        "prompt": "Low-density suburbs offer a good compromise between city and rural living.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "in many ways the worst of both worlds",
+                        "explanation": {
+                            "en": "Paragraph E says suburbs combine car dependence with the loss of open land, calling them 'the worst of both worlds', which is the opposite of a good compromise.",
+                            "ru": "В абзаце E сказано, что пригороды сочетают зависимость от автомобиля с потерей открытых пространств, и их называют \"the worst of both worlds\" — это противоположность удачного компромисса.",
+                            "uk": "В абзаці E сказано, що передмістя поєднують залежність від автомобіля з втратою відкритих просторів, і їх називають \"the worst of both worlds\" — це протилежність вдалого компромісу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Planting street trees cools a city more effectively than building green roofs.",
+                        "numbers": [
+                            6
+                        ],
+                        "explanation": {
+                            "en": "Paragraph F lists street trees and green roofs among Corrigan's measures, but the writer never compares how well each one cools a city.",
+                            "ru": "В абзаце F деревья вдоль улиц и зелёные крыши перечислены среди мер, которые предлагает Corrigan, но автор нигде не сравнивает, насколько хорошо каждая из них охлаждает город.",
+                            "uk": "В абзаці F дерева вздовж вулиць і зелені дахи перелічено серед заходів, які пропонує Corrigan, але автор ніде не порівнює, наскільки добре кожен із них охолоджує місто."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the views or claims of the writer? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Villagers drove about three times as far, regardless of income and household size."
+                    },
+                    {
+                        "id": "B",
+                        "text": "The personal habits of villagers explained most of the difference in driving."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Villagers drove further mainly because their households were larger and earned more."
+                    },
+                    {
+                        "id": "D",
+                        "text": "City households made more trips per week, though mostly by train or on foot."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "According to the passage, what did Seren Okubo's study show?",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "the gap remained after she had adjusted for differences in income and household size",
+                        "explanation": {
+                            "en": "Paragraph B says village households drove roughly three times as far and the gap stayed after income and household size were adjusted for. It was the layout of places, not the character of the people, that mattered, so the options about income or personal habits are wrong.",
+                            "ru": "В абзаце B сказано, что сельские домохозяйства проезжали примерно в три раза больше и разница сохранялась даже с поправкой на доход и размер семьи. Значение имела планировка населённых пунктов, а не характер людей, поэтому варианты про доход или личные привычки неверны.",
+                            "uk": "В абзаці B сказано, що сільські домогосподарства проїжджали приблизно втричі більше, і різниця зберігалася навіть з поправкою на дохід і розмір родини. Значення мало планування населених пунктів, а не характер людей, тому варіанти про дохід чи особисті звички неправильні."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "In cities, they need replacing more often because of heavy use."
+                    },
+                    {
+                        "id": "B",
+                        "text": "In crowded districts, each length of them serves far more homes."
+                    },
+                    {
+                        "id": "C",
+                        "text": "In rural areas, they are more visible and therefore better maintained."
+                    },
+                    {
+                        "id": "D",
+                        "text": "In both areas, they matter less than the size of individual homes."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What point does the writer make about networks of pipes, cables and roads?",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "in a crowded district serves hundreds of households; in a rural area the same kilometre might serve a handful",
+                        "explanation": {
+                            "en": "Paragraph C says a kilometre of pipe, cable or road serves hundreds of households in a crowded district but only a handful in the countryside. The writer calls the network 'just as important', so the idea that it matters less is wrong.",
+                            "ru": "В абзаце C сказано, что километр труб, кабеля или дороги обслуживает сотни домохозяйств в густонаселённом районе, но лишь несколько — в сельской местности. Автор называет эту сеть \"just as important\", поэтому идея, что она менее важна, неверна.",
+                            "uk": "В абзаці C сказано, що кілометр труб, кабелю чи дороги обслуговує сотні домогосподарств у густонаселеному районі, але лише кілька — у сільській місцевості. Автор називає цю мережу \"just as important\", тому думка, що вона менш важлива, хибна."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The writer claims that rural families fly more often than urban ones."
+                    },
+                    {
+                        "id": "B",
+                        "text": "The writer argues that air travel should not be counted in such estimates."
+                    },
+                    {
+                        "id": "C",
+                        "text": "The writer accepts the point but links the result to wealth, not location."
+                    },
+                    {
+                        "id": "D",
+                        "text": "The writer rejects the result because it is based on household spending."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "How does the writer respond to Raúl Fenstermacher's findings?",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "What Fenstermacher measured is the effect of money: high earners fly more wherever they live",
+                        "explanation": {
+                            "en": "In Paragraph D the writer calls the objection 'a serious point' but says it shows the effect of money, since high earners fly more wherever they live. The writer does not reject the spending method or say rural families fly more.",
+                            "ru": "В абзаце D автор называет возражение \"a serious point\", но говорит, что оно показывает влияние денег: люди с высокими доходами летают больше, где бы они ни жили. Автор не отвергает метод подсчёта по расходам и не утверждает, что сельские семьи летают больше.",
+                            "uk": "В абзаці D автор називає заперечення \"a serious point\", але каже, що воно показує вплив грошей: люди з високими доходами літають більше, де б вони не жили. Автор не відкидає метод підрахунку за витратами і не стверджує, що сільські родини літають більше."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "to explain why suburbs have wider roads than city centres do"
+                    },
+                    {
+                        "id": "B",
+                        "text": "to argue that cities should expand onto nearby forest and grassland"
+                    },
+                    {
+                        "id": "C",
+                        "text": "to suggest that nature lovers should move closer to the countryside"
+                    },
+                    {
+                        "id": "D",
+                        "text": "to show that spreading people out would destroy more natural habitat"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Why does the writer mention that cities cover only a small fraction of the earth's land?",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "far more forest, wetland and grassland would be lost to houses and roads",
+                        "explanation": {
+                            "en": "Paragraph E uses the land figure to argue that if city people spread across the countryside, much more forest, wetland and grassland would be lost. The writer actually suggests nature lovers should live at a distance from nature, not closer to it.",
+                            "ru": "В абзаце E цифры о площади земли используются, чтобы показать: если горожане расселятся по сельской местности, будет потеряно гораздо больше лесов, водно-болотных угодий и лугов. Автор, наоборот, предлагает любителям природы жить подальше от неё, а не ближе.",
+                            "uk": "В абзаці E дані про площу землі використано, щоб показати: якщо містяни розселяться сільською місцевістю, буде втрачено набагато більше лісів, водно-болотних угідь і луків. Автор, навпаки, пропонує любителям природи жити далі від неї, а не ближче."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B, C or D."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "travel diaries"
+                        ],
+                        "prompt": "The writer believes that a well-planned city is greener per person than the countryside. Evidence from ______ kept by households in a city and nearby villages showed that villagers drove far more.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "compared week-long travel diaries kept by households in a large city and in the villages surrounding it",
+                        "explanation": {
+                            "en": "Paragraph B says Seren Okubo compared week-long travel diaries kept by households in the city and the surrounding villages.",
+                            "ru": "В абзаце B сказано, что Seren Okubo сравнила недельные дневники поездок (\"travel diaries\"), которые вели домохозяйства в городе и в окрестных деревнях.",
+                            "uk": "В абзаці B сказано, що Seren Okubo порівняла тижневі щоденники поїздок (\"travel diaries\"), які вели домогосподарства в місті та в навколишніх селах."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "detached house"
+                        ],
+                        "prompt": "In terms of housing, a ______ in a rural area loses heat through every outer wall and its roof, while flats share most walls with neighbours.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "A detached house in the country is exposed to the weather on every side",
+                        "explanation": {
+                            "en": "Paragraph C says a detached house in the country is exposed on every side, so heat escapes through four outer walls and a roof.",
+                            "ru": "В абзаце C сказано, что отдельно стоящий дом за городом открыт со всех сторон, поэтому тепло уходит через четыре наружные стены и крышу (\"four outer walls and a roof\").",
+                            "uk": "В абзаці C сказано, що окремий будинок за містом відкритий з усіх боків, тому тепло виходить крізь чотири зовнішні стіни та дах (\"four outer walls and a roof\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "air travel"
+                        ],
+                        "prompt": "Fenstermacher found that the richest urban districts had larger footprints than the rural average, mainly owing to frequent ______, but the writer links this to wealth.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "came out worse than the rural average, mainly because of frequent air travel",
+                        "explanation": {
+                            "en": "Paragraph D says the wealthiest city districts came out worse mainly because of frequent air travel. 'Frequent' is already in the summary, so the answer is two words.",
+                            "ru": "В абзаце D сказано, что самые богатые городские районы показали худший результат в основном из-за частых авиаперелётов (\"air travel\"). Слово \"Frequent\" уже есть в пересказе, поэтому ответ состоит из двух слов.",
+                            "uk": "В абзаці D сказано, що найбагатші міські райони показали гірший результат переважно через часті авіаперельоти (\"air travel\"). Слово \"Frequent\" уже є в переказі, тому відповідь складається з двох слів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Low-density suburbs",
+                            "suburbs"
+                        ],
+                        "prompt": "The writer regards ______ as combining the environmental drawbacks of both city and country.",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "Low-density suburbs, with their wide roads and long distances to the nearest shop, combine the car dependence of the countryside",
+                        "explanation": {
+                            "en": "Paragraph E says low-density suburbs combine rural car dependence with the loss of open land, calling them 'the worst of both worlds'.",
+                            "ru": "В абзаце E сказано, что малоэтажные пригороды (\"low-density suburbs\") сочетают сельскую зависимость от автомобиля с потерей открытых пространств, и их называют \"the worst of both worlds\".",
+                            "uk": "В абзаці E сказано, що малоповерхові передмістя (\"low-density suburbs\") поєднують сільську залежність від автомобіля з втратою відкритих просторів, і їх називають \"the worst of both worlds\"."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3",
+            "b3q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first",
+            "b3q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3",
+        "14": "b3q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

@@ -1,0 +1,1058 @@
+{
+    "form": {
+        "first": []
+    },
+    "plan": "academic-4|s2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.281084,
+            "provider": "anthropic",
+            "outputTokens": 13231
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.013958,
+            "provider": "anthropic",
+            "outputTokens": 671
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01991,
+            "provider": "openai",
+            "outputTokens": 969
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.018004,
+            "provider": "xai",
+            "outputTokens": 1869
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.079148,
+            "provider": "anthropic",
+            "outputTokens": 3607
+        }
+    ],
+    "draft": {
+        "title": "Can We Rebuild the Reef?",
+        "blocks": [
+            {
+                "type": "true_false_not_given",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Coral reefs cover around a quarter of the ocean floor.",
+                        "options": [],
+                        "evidence": "occupy less than one percent of the sea floor",
+                        "explanation": "Paragraph A says reefs cover less than one percent of the sea floor. The 'quarter' in the passage refers to the share of marine species reefs shelter, not the area they cover."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Corals obtain most of their nutrition from the algae living inside them.",
+                        "options": [],
+                        "evidence": "supply the coral with most of its food",
+                        "explanation": "Paragraph B says the algae inside the coral's tissues supply it with most of its food, which is the same idea as 'most of their nutrition'."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Bleached corals always die within a few weeks.",
+                        "options": [],
+                        "evidence": "Such bleached corals are not yet dead, and they can recover if conditions return to normal quickly",
+                        "explanation": "Paragraph B says bleached corals are not yet dead and can recover if conditions improve quickly. They die only if the heat continues, so 'always die' contradicts the passage."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Fertiliser washed off farmland is now a greater threat to reefs than ocean acidification.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph C describes both acidification and farm run-off as problems, but it never compares how serious they are. The passage does not say which threat is greater."
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Coral pieces growing in nurseries are kept safe from animals that would eat them.",
+                        "options": [],
+                        "evidence": "where they grow, protected from predators",
+                        "explanation": "Paragraph D says the pieces grow on frames or ropes 'protected from predators', meaning they are kept safe from animals that would eat them."
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Releasing coral larvae over damaged areas has proved more successful than coral gardening.",
+                        "options": [],
+                        "evidence": "",
+                        "explanation": "Paragraph D says the larvae method can 'in principle' cover larger areas, but it says nothing about whether it has actually worked better than gardening. Its success is left open."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Gunawardena's survey found that the restoration technique used was the most important factor in whether transplants survived.",
+                        "options": [],
+                        "evidence": "the method used mattered less than the place chosen",
+                        "explanation": "Paragraph E says the method mattered less than the location chosen. So the technique was not the most important factor; the site was."
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Talia Gunawardena"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Sione Lautaha"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Beatriz Quintanilla"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Lars Edvardsen"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Taking part in restoration work can make local people more supportive of protecting fish stocks.",
+                        "options": [],
+                        "evidence": "the villagers who tended the nurseries became more willing to respect fishing restrictions nearby",
+                        "explanation": "In paragraph E, Lautaha noticed that villagers who looked after the nurseries became more willing to respect fishing rules, which shows a change in their attitude."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Corals that are better able to survive heat may pay for it by growing more slowly.",
+                        "options": [],
+                        "evidence": "these heat-tolerant corals grew noticeably more slowly",
+                        "explanation": "Paragraph F reports Quintanilla's warning that her heat-tolerant corals grew noticeably more slowly, a cost of their heat resistance."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "In some places, funds could be better used on tackling sources of damage than on replanting coral.",
+                        "options": [],
+                        "evidence": "the same money would achieve more if spent on reducing farm run-off or enforcing fishing limits",
+                        "explanation": "Paragraph G says Edvardsen argues the same money would achieve more if spent on cutting run-off or enforcing fishing limits. Gunawardena also stresses local causes, but she does not talk about money."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Transplanted corals are unlikely to last unless the local reasons for reef decline are addressed first.",
+                        "options": [],
+                        "evidence": "restoration cannot succeed unless the local causes of decline are dealt with first",
+                        "explanation": "Paragraph E gives Gunawardena's view that restoration cannot succeed unless local causes of decline are dealt with first. Edvardsen talks about spending money differently, not about restoration failing."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "An understanding of local water movement can help in selecting good places to put coral.",
+                        "options": [],
+                        "evidence": "they knew which spots were sheltered from strong currents",
+                        "explanation": "Paragraph E says Lautaha found survival improved when fishers helped choose sites, because they knew which spots were sheltered from strong currents."
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A, B, C or D. NB You may use any letter more than once."
+            },
+            {
+                "type": "summary_completion",
+                "reuse": false,
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "polyps"
+                        ],
+                        "prompt": "A coral is in fact a colony of tiny animals, which are known as ______, and these rely on algae inside them for food.",
+                        "options": [],
+                        "evidence": "a colony of small animals called polyps",
+                        "explanation": "Paragraph B explains that a coral is a colony of small animals called polyps."
+                    },
+                    {
+                        "answer": [
+                            "limestone skeletons"
+                        ],
+                        "prompt": "As the ocean takes in carbon dioxide and becomes more acidic, corals find it more difficult to form their ______.",
+                        "options": [],
+                        "evidence": "makes it harder for corals to build their limestone skeletons",
+                        "explanation": "Paragraph C says acidic water makes it harder for corals to build their limestone skeletons; 'form' restates 'build'."
+                    },
+                    {
+                        "answer": [
+                            "seaweed"
+                        ],
+                        "prompt": "Near the coast, overfishing removes the fish that normally control the growth of ______.",
+                        "options": [],
+                        "evidence": "the grazing fish that would normally keep that seaweed in check",
+                        "explanation": "Paragraph C says overfishing removes grazing fish that keep seaweed in check, which means they control its growth."
+                    },
+                    {
+                        "answer": [
+                            "coral gardening",
+                            "gardening"
+                        ],
+                        "prompt": "In the most widely used restoration method, called ______, small pieces of coral are grown on frames or ropes before being attached to damaged reefs.",
+                        "options": [],
+                        "evidence": "The most common restoration approach is sometimes called coral gardening",
+                        "explanation": "Paragraph D names the most common approach 'coral gardening' and describes pieces being grown on frames or ropes and then fixed onto damaged reefs."
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ],
+        "people": [
+            {
+                "name": "Talia Gunawardena",
+                "role": "marine ecologist who led a five-year survey of transplanted corals",
+                "gender": "female"
+            },
+            {
+                "name": "Sione Lautaha",
+                "role": "fisheries researcher who studied a village-run restoration project in the Pacific",
+                "gender": "male"
+            },
+            {
+                "name": "Beatriz Quintanilla",
+                "role": "geneticist breeding heat-tolerant corals",
+                "gender": "female"
+            },
+            {
+                "name": "Lars Edvardsen",
+                "role": "economist who estimated the cost of coral restoration",
+                "gender": "male"
+            }
+        ],
+        "paragraphs": [
+            {
+                "text": "Coral reefs occupy less than one percent of the sea floor, yet they shelter roughly a quarter of all known marine species, protect coastlines from waves and support fisheries and tourism on which hundreds of millions of people depend. Over recent decades, however, many reefs have lost a large share of their living coral, and in some regions the reef that divers see today is a grey, weed-covered skeleton of what existed a generation ago. Against this background, a growing number of projects aim not merely to protect what remains but to put coral back.",
+                "label": "A"
+            },
+            {
+                "text": "To understand why reefs are struggling, it helps to know that a coral is not a plant or a rock but a colony of small animals called polyps. Inside their tissues live microscopic algae which, through photosynthesis, supply the coral with most of its food and give it its colour. This partnership is sensitive to temperature. When the water stays even one or two degrees above its usual summer maximum for several weeks, the relationship breaks down and the coral expels its algae, turning white. Such bleached corals are not yet dead, and they can recover if conditions return to normal quickly; if the heat persists, however, they starve. Some species cope better than others, but few escape entirely. As oceans have warmed, mass bleaching events that were once rare have become far more frequent, leaving less time for recovery between them.",
+                "label": "B"
+            },
+            {
+                "text": "Heat is not the only problem. As seawater absorbs carbon dioxide from the atmosphere, it becomes more acidic, which makes it harder for corals to build their limestone skeletons. Closer to shore, soil and fertiliser washed off farmland cloud the water and encourage the growth of seaweed, while overfishing removes the grazing fish that would normally keep that seaweed in check. Outbreaks of disease, which appear to spread more easily among stressed colonies, add a further threat. A reef weakened by these local pressures is often less able to survive a heatwave.",
+                "label": "C"
+            },
+            {
+                "text": "The most common restoration approach is sometimes called coral gardening. Small pieces are snipped from healthy colonies and hung on underwater frames or ropes, where they grow, protected from predators, until they are large enough to be fixed onto a damaged reef. A refinement of this technique involves cutting certain slow-growing corals into tiny fragments; because the wounded edges heal rapidly, these pieces can spread far faster than an intact colony. Other teams collect the eggs and sperm that corals release during annual spawning events, raise the larvae in tanks and then release them over degraded areas, an approach that can, in principle, cover much larger areas. Most nurseries are run by small organisations that rely heavily on volunteer divers.",
+                "label": "D"
+            },
+            {
+                "text": "How well does any of this work? A long-term survey led by marine ecologist Talia Gunawardena followed transplanted corals at forty sites for five years. Her team found that the method used mattered less than the place chosen: where the water was clear and herbivorous fish were plentiful, most transplants survived, whereas at sites polluted by run-off, the majority had died by the third year. In Gunawardena's view, restoration cannot succeed unless the local causes of decline are dealt with first. Fisheries researcher Sione Lautaha reached a related conclusion in a village-run project in the Pacific. Survival improved markedly, he reported, once local fishers helped choose sites, because they knew which spots were sheltered from strong currents. He also noted that the villagers who tended the nurseries became more willing to respect fishing restrictions nearby.",
+                "label": "E"
+            },
+            {
+                "text": "A more ambitious idea is to give corals a better chance against warming itself. Geneticist Beatriz Quintanilla has crossed corals from naturally hot lagoons with those from cooler waters, and in her laboratory trials some offspring withstood temperatures that bleached their cooler-water parents. She warns, though, that these heat-tolerant corals grew noticeably more slowly, and that nobody yet knows whether such traits will remain useful if seas continue to warm. Her next step is to test the crossbred corals on an open reef, where conditions are far less predictable than in a tank.",
+                "label": "F"
+            },
+            {
+                "text": "Cost and scale remain the hardest obstacles. Economist Lars Edvardsen estimated that gardening projects typically spend tens of thousands of dollars to restore a single hectare, while the reefs being damaged each year are measured in thousands of square kilometres. He argues that, in many places, the same money would achieve more if spent on reducing farm run-off or enforcing fishing limits. Few restoration practitioners would disagree that their work cannot replace cuts in greenhouse gas emissions. What restoration can do is buy time: maintaining breeding populations, keeping key sites alive for tourism and coastal protection, and preserving genetic diversity that may prove valuable later. Restoration, in other words, is best seen not as a cure but as one part of a much broader effort, and its success will ultimately depend on decisions taken far from any reef.",
+                "label": "G"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Coral reefs occupy less than one percent of the sea floor, yet they shelter roughly a quarter of all known marine species",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "supply the coral with most of its food and give it its colour",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Such bleached corals are not yet dead, and they can recover if conditions return to normal quickly",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "where they grow, protected from predators, until they are large enough",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Her team found that the method used mattered less than the place chosen",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the villagers who tended the nurseries became more willing to respect fishing restrictions nearby",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "these heat-tolerant corals grew noticeably more slowly",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the same money would achieve more if spent on reducing farm run-off or enforcing fishing limits",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "restoration cannot succeed unless the local causes of decline are dealt with first",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "they knew which spots were sheltered from strong currents",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a colony of small animals called polyps",
+                "answer": [
+                    "polyps"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "harder for corals to build their limestone skeletons",
+                "answer": [
+                    "limestone skeletons"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "overfishing removes the grazing fish that would normally keep that seaweed in check",
+                "answer": [
+                    "seaweed"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The most common restoration approach is sometimes called coral gardening.",
+                "answer": [
+                    "coral gardening"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "Coral reefs occupy less than one percent of the sea floor, yet they shelter roughly a quarter of all known marine species",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Inside their tissues live microscopic algae which, through photosynthesis, supply the coral with most of its food",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Such bleached corals are not yet dead, and they can recover if conditions return to normal quickly; if the heat persists, however, they starve",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "where they grow, protected from predators",
+                "answer": [
+                    "T"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "",
+                "answer": [
+                    "NG"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "Her team found that the method used mattered less than the place chosen",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "He also noted that the villagers who tended the nurseries became more willing to respect fishing restrictions nearby",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "She warns, though, that these heat-tolerant corals grew noticeably more slowly",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "He argues that, in many places, the same money would achieve more if spent on reducing farm run-off or enforcing fishing limits",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "In Gunawardena's view, restoration cannot succeed unless the local causes of decline are dealt with first",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "because they knew which spots were sheltered from strong currents",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b3q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a colony of small animals called polyps",
+                "answer": [
+                    "polyps"
+                ],
+                "correct": true
+            },
+            "b3q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "it becomes more acidic, which makes it harder for corals to build their limestone skeletons",
+                "answer": [
+                    "limestone skeletons"
+                ],
+                "correct": true
+            },
+            "b3q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "overfishing removes the grazing fish that would normally keep that seaweed in check",
+                "answer": [
+                    "seaweed"
+                ],
+                "correct": true
+            },
+            "b3q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The most common restoration approach is sometimes called coral gardening",
+                "answer": [
+                    "coral gardening"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "Coral reefs occupy less than one percent of the sea floor, yet they shelter roughly a quarter of all known marine species",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "supply the coral with most of its food and give it its colour",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Such bleached corals are not yet dead, and they can recover if conditions return to normal quickly",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "where they grow, protected from predators, until they are large enough to be fixed onto a damaged reef",
+            "answer": [
+                "T"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "",
+            "answer": [
+                "NG"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the villagers who tended the nurseries became more willing to respect fishing restrictions nearby",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "these heat-tolerant corals grew noticeably more slowly",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the same money would achieve more if spent on reducing farm run-off or enforcing fishing limits",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "restoration cannot succeed unless the local causes of decline are dealt with first",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b3q1": {
+            "marks": [
+                true
+            ],
+            "quote": "a colony of small animals called polyps",
+            "answer": [
+                "polyps"
+            ],
+            "correct": true
+        },
+        "b3q2": {
+            "marks": [
+                true
+            ],
+            "quote": "makes it harder for corals to build their limestone skeletons",
+            "answer": [
+                "limestone skeletons"
+            ],
+            "correct": true
+        },
+        "b3q3": {
+            "marks": [
+                true
+            ],
+            "quote": "keep that seaweed in check",
+            "answer": [
+                "seaweed"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 13,
+            "correct": 13
+        },
+        "discarded": 0,
+        "generated": 16,
+        "agreedFirst": 16,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "section": {
+        "text": "Can We Rebuild the Reef?\n\nA. Coral reefs occupy less than one percent of the sea floor, yet they shelter roughly a quarter of all known marine species, protect coastlines from waves and support fisheries and tourism on which hundreds of millions of people depend. Over recent decades, however, many reefs have lost a large share of their living coral, and in some regions the reef that divers see today is a grey, weed-covered skeleton of what existed a generation ago. Against this background, a growing number of projects aim not merely to protect what remains but to put coral back.\n\nB. To understand why reefs are struggling, it helps to know that a coral is not a plant or a rock but a colony of small animals called polyps. Inside their tissues live microscopic algae which, through photosynthesis, supply the coral with most of its food and give it its colour. This partnership is sensitive to temperature. When the water stays even one or two degrees above its usual summer maximum for several weeks, the relationship breaks down and the coral expels its algae, turning white. Such bleached corals are not yet dead, and they can recover if conditions return to normal quickly; if the heat persists, however, they starve. Some species cope better than others, but few escape entirely. As oceans have warmed, mass bleaching events that were once rare have become far more frequent, leaving less time for recovery between them.\n\nC. Heat is not the only problem. As seawater absorbs carbon dioxide from the atmosphere, it becomes more acidic, which makes it harder for corals to build their limestone skeletons. Closer to shore, soil and fertiliser washed off farmland cloud the water and encourage the growth of seaweed, while overfishing removes the grazing fish that would normally keep that seaweed in check. Outbreaks of disease, which appear to spread more easily among stressed colonies, add a further threat. A reef weakened by these local pressures is often less able to survive a heatwave.\n\nD. The most common restoration approach is sometimes called coral gardening. Small pieces are snipped from healthy colonies and hung on underwater frames or ropes, where they grow, protected from predators, until they are large enough to be fixed onto a damaged reef. A refinement of this technique involves cutting certain slow-growing corals into tiny fragments; because the wounded edges heal rapidly, these pieces can spread far faster than an intact colony. Other teams collect the eggs and sperm that corals release during annual spawning events, raise the larvae in tanks and then release them over degraded areas, an approach that can, in principle, cover much larger areas. Most nurseries are run by small organisations that rely heavily on volunteer divers.\n\nE. How well does any of this work? A long-term survey led by marine ecologist Talia Gunawardena followed transplanted corals at forty sites for five years. Her team found that the method used mattered less than the place chosen: where the water was clear and herbivorous fish were plentiful, most transplants survived, whereas at sites polluted by run-off, the majority had died by the third year. In Gunawardena's view, restoration cannot succeed unless the local causes of decline are dealt with first. Fisheries researcher Sione Lautaha reached a related conclusion in a village-run project in the Pacific. Survival improved markedly, he reported, once local fishers helped choose sites, because they knew which spots were sheltered from strong currents. He also noted that the villagers who tended the nurseries became more willing to respect fishing restrictions nearby.\n\nF. A more ambitious idea is to give corals a better chance against warming itself. Geneticist Beatriz Quintanilla has crossed corals from naturally hot lagoons with those from cooler waters, and in her laboratory trials some offspring withstood temperatures that bleached their cooler-water parents. She warns, though, that these heat-tolerant corals grew noticeably more slowly, and that nobody yet knows whether such traits will remain useful if seas continue to warm. Her next step is to test the crossbred corals on an open reef, where conditions are far less predictable than in a tank.\n\nG. Cost and scale remain the hardest obstacles. Economist Lars Edvardsen estimated that gardening projects typically spend tens of thousands of dollars to restore a single hectare, while the reefs being damaged each year are measured in thousands of square kilometres. He argues that, in many places, the same money would achieve more if spent on reducing farm run-off or enforcing fishing limits. Few restoration practitioners would disagree that their work cannot replace cuts in greenhouse gas emissions. What restoration can do is buy time: maintaining breeding populations, keeping key sites alive for tourism and coastal protection, and preserving genetic diversity that may prove valuable later. Restoration, in other words, is best seen not as a cure but as one part of a much broader effort, and its success will ultimately depend on decisions taken far from any reef.",
+        "title": "Can We Rebuild the Reef?",
+        "groups": [
+            {
+                "type": "true_false_not_given",
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Coral reefs cover around a quarter of the ocean floor.",
+                        "numbers": [
+                            1
+                        ],
+                        "evidence": "occupy less than one percent of the sea floor",
+                        "explanation": {
+                            "en": "Paragraph A says reefs cover less than one percent of the sea floor. The 'quarter' in the passage refers to the share of marine species reefs shelter, not the area they cover.",
+                            "ru": "В абзаце A сказано, что рифы занимают меньше одного процента морского дна. Слово \"quarter\" в тексте относится к доле морских видов, которым рифы дают убежище, а не к их площади.",
+                            "uk": "В абзаці A сказано, що рифи займають менше ніж один відсоток морського дна. Слово \"quarter\" у тексті стосується частки морських видів, яким рифи дають притулок, а не їхньої площі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Corals obtain most of their nutrition from the algae living inside them.",
+                        "numbers": [
+                            2
+                        ],
+                        "evidence": "supply the coral with most of its food",
+                        "explanation": {
+                            "en": "Paragraph B says the algae inside the coral's tissues supply it with most of its food, which is the same idea as 'most of their nutrition'.",
+                            "ru": "В абзаце B говорится, что водоросли в тканях коралла дают ему большую часть пищи. Это та же мысль, что и \"most of their nutrition\".",
+                            "uk": "В абзаці B ідеться про те, що водорості в тканинах корала дають йому більшу частину їжі. Це та сама думка, що й \"most of their nutrition\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Bleached corals always die within a few weeks.",
+                        "numbers": [
+                            3
+                        ],
+                        "evidence": "Such bleached corals are not yet dead, and they can recover if conditions return to normal quickly",
+                        "explanation": {
+                            "en": "Paragraph B says bleached corals are not yet dead and can recover if conditions improve quickly. They die only if the heat continues, so 'always die' contradicts the passage.",
+                            "ru": "В абзаце B сказано, что обесцвеченные кораллы ещё не мертвы и могут восстановиться, если условия быстро улучшатся. Они погибают, только если жара продолжается, поэтому \"always die\" противоречит тексту.",
+                            "uk": "В абзаці B сказано, що знебарвлені корали ще не мертві й можуть відновитися, якщо умови швидко покращаться. Вони гинуть, лише якщо спека триває, тому \"always die\" суперечить тексту."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Fertiliser washed off farmland is now a greater threat to reefs than ocean acidification.",
+                        "numbers": [
+                            4
+                        ],
+                        "explanation": {
+                            "en": "Paragraph C describes both acidification and farm run-off as problems, but it never compares how serious they are. The passage does not say which threat is greater.",
+                            "ru": "Абзац C описывает как проблемы и закисление океана, и сток с ферм, но нигде не сравнивает, насколько они серьёзны. В тексте не сказано, какая угроза больше.",
+                            "uk": "Абзац C описує як проблеми і закиснення океану, і стік із ферм, але ніде не порівнює, наскільки вони серйозні. У тексті не сказано, яка загроза більша."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "T"
+                        ],
+                        "prompt": "Coral pieces growing in nurseries are kept safe from animals that would eat them.",
+                        "numbers": [
+                            5
+                        ],
+                        "evidence": "where they grow, protected from predators",
+                        "explanation": {
+                            "en": "Paragraph D says the pieces grow on frames or ropes 'protected from predators', meaning they are kept safe from animals that would eat them.",
+                            "ru": "В абзаце D сказано, что фрагменты растут на рамах или верёвках \"protected from predators\", то есть защищены от животных, которые могли бы их съесть.",
+                            "uk": "В абзаці D сказано, що фрагменти ростуть на рамах або мотузках \"protected from predators\", тобто захищені від тварин, які могли б їх з'їсти."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "NG"
+                        ],
+                        "prompt": "Releasing coral larvae over damaged areas has proved more successful than coral gardening.",
+                        "numbers": [
+                            6
+                        ],
+                        "explanation": {
+                            "en": "Paragraph D says the larvae method can 'in principle' cover larger areas, but it says nothing about whether it has actually worked better than gardening. Its success is left open.",
+                            "ru": "В абзаце D говорится, что метод с личинками \"in principle\" может охватывать большие площади, но ничего не сказано о том, действительно ли он оказался эффективнее выращивания фрагментов («садоводства»). Вопрос о его успехе остаётся открытым.",
+                            "uk": "В абзаці D ідеться про те, що метод із личинками \"in principle\" може охоплювати більші площі, але нічого не сказано про те, чи справді він виявився ефективнішим за вирощування фрагментів («садівництво»). Питання про його успіх залишається відкритим."
+                        }
+                    }
+                ],
+                "instruction": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this."
+            },
+            {
+                "type": "matching_features",
+                "reuse": true,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Talia Gunawardena"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Sione Lautaha"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Beatriz Quintanilla"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Lars Edvardsen"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Taking part in restoration work can make local people more supportive of protecting fish stocks.",
+                        "numbers": [
+                            7
+                        ],
+                        "evidence": "the villagers who tended the nurseries became more willing to respect fishing restrictions nearby",
+                        "explanation": {
+                            "en": "In paragraph E, Lautaha noticed that villagers who looked after the nurseries became more willing to respect fishing rules, which shows a change in their attitude.",
+                            "ru": "В абзаце E Lautaha заметил, что жители деревни, ухаживавшие за питомниками, стали охотнее соблюдать правила рыболовства. Это показывает, что их отношение изменилось.",
+                            "uk": "В абзаці E Lautaha помітив, що мешканці села, які доглядали за розсадниками, стали охочіше дотримуватися правил рибальства. Це свідчить про зміну їхнього ставлення."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Corals that are better able to survive heat may pay for it by growing more slowly.",
+                        "numbers": [
+                            8
+                        ],
+                        "evidence": "these heat-tolerant corals grew noticeably more slowly",
+                        "explanation": {
+                            "en": "Paragraph F reports Quintanilla's warning that her heat-tolerant corals grew noticeably more slowly, a cost of their heat resistance.",
+                            "ru": "В абзаце F приводится предупреждение Quintanilla: её теплоустойчивые кораллы росли заметно медленнее. Это плата за их устойчивость к жаре.",
+                            "uk": "В абзаці F наведено застереження Quintanilla: її теплостійкі корали росли помітно повільніше. Це ціна їхньої стійкості до спеки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "In some places, funds could be better used on tackling sources of damage than on replanting coral.",
+                        "numbers": [
+                            9
+                        ],
+                        "evidence": "the same money would achieve more if spent on reducing farm run-off or enforcing fishing limits",
+                        "explanation": {
+                            "en": "Paragraph G says Edvardsen argues the same money would achieve more if spent on cutting run-off or enforcing fishing limits. Gunawardena also stresses local causes, but she does not talk about money.",
+                            "ru": "В абзаце G сказано, что, по мнению Edvardsen, те же деньги принесли бы больше пользы, если бы их потратили на сокращение стока или на контроль за соблюдением ограничений на вылов. Gunawardena тоже подчёркивает роль местных причин, но о деньгах она не говорит.",
+                            "uk": "В абзаці G сказано, що, на думку Edvardsen, ті самі гроші дали б більше користі, якби їх витратили на скорочення стоку або на контроль за дотриманням обмежень на вилов. Gunawardena теж наголошує на місцевих причинах, але про гроші вона не говорить."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Transplanted corals are unlikely to last unless the local reasons for reef decline are addressed first.",
+                        "numbers": [
+                            10
+                        ],
+                        "evidence": "restoration cannot succeed unless the local causes of decline are dealt with first",
+                        "explanation": {
+                            "en": "Paragraph E gives Gunawardena's view that restoration cannot succeed unless local causes of decline are dealt with first. Edvardsen talks about spending money differently, not about restoration failing.",
+                            "ru": "В абзаце E приводится мнение Gunawardena: восстановление не может быть успешным, пока не устранены местные причины деградации рифов. Edvardsen говорит о том, что деньги лучше тратить иначе, а не о провале восстановления.",
+                            "uk": "В абзаці E наведено думку Gunawardena: відновлення не може бути успішним, доки не усунуто місцеві причини деградації рифів. Edvardsen говорить про те, що гроші краще витрачати інакше, а не про провал відновлення."
+                        }
+                    }
+                ],
+                "instruction": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A, B, C or D. NB You may use any letter more than once."
+            },
+            {
+                "type": "summary_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "polyps"
+                        ],
+                        "prompt": "A coral is in fact a colony of tiny animals, which are known as ______, and these rely on algae inside them for food.",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "a colony of small animals called polyps",
+                        "explanation": {
+                            "en": "Paragraph B explains that a coral is a colony of small animals called polyps.",
+                            "ru": "В абзаце B объясняется, что коралл — это колония мелких животных, которых называют \"polyps\" (полипы).",
+                            "uk": "В абзаці B пояснюється, що корал — це колонія дрібних тварин, яких називають \"polyps\" (поліпи)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "limestone skeletons"
+                        ],
+                        "prompt": "As the ocean takes in carbon dioxide and becomes more acidic, corals find it more difficult to form their ______.",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "makes it harder for corals to build their limestone skeletons",
+                        "explanation": {
+                            "en": "Paragraph C says acidic water makes it harder for corals to build their limestone skeletons; 'form' restates 'build'.",
+                            "ru": "В абзаце C сказано, что в закисленной воде кораллам труднее строить свои известковые скелеты (\"limestone skeletons\"); \"form\" здесь перефразирует \"build\".",
+                            "uk": "В абзаці C сказано, що в закисленій воді коралам важче будувати свої вапнякові скелети (\"limestone skeletons\"); \"form\" тут перефразовує \"build\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "seaweed"
+                        ],
+                        "prompt": "Near the coast, overfishing removes the fish that normally control the growth of ______.",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "the grazing fish that would normally keep that seaweed in check",
+                        "explanation": {
+                            "en": "Paragraph C says overfishing removes grazing fish that keep seaweed in check, which means they control its growth.",
+                            "ru": "В абзаце C говорится, что перелов уничтожает растительноядных рыб (\"grazing fish\"), которые \"keep seaweed in check\", то есть сдерживают рост водорослей.",
+                            "uk": "В абзаці C ідеться про те, що надмірний вилов знищує рослиноїдних риб (\"grazing fish\"), які \"keep seaweed in check\", тобто стримують ріст водоростей."
+                        }
+                    }
+                ],
+                "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+            }
+        ]
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b3q1",
+            "b3q2",
+            "b3q3"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b3q1": "first",
+            "b3q2": "first",
+            "b3q3": "first",
+            "b3q4": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "1": "b1q1",
+        "2": "b1q2",
+        "3": "b1q3",
+        "4": "b1q4",
+        "5": "b1q5",
+        "6": "b1q6",
+        "7": "b2q1",
+        "8": "b2q2",
+        "9": "b2q3",
+        "10": "b2q4",
+        "11": "b3q1",
+        "12": "b3q2",
+        "13": "b3q3"
+    },
+    "translation": {
+        "missing": []
+    }
+}

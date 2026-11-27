@@ -1,13 +1,14 @@
 /**
- * P7.4: the Reading libraries (packages/exam-domain/library/ielts-reading-academic.v*.json) from the tests of a content round.
+ * P7.4–P7.5: the Reading libraries (packages/exam-domain/library/ielts-reading-{academic,general-training}.v*.json) from the
+ * tests of the content rounds.
  *
  *   npm run bench:reading-library            rebuild the library files
  *   npm run bench:reading-library -- --check fail if a file differs from a fresh build
  *
- * Source: benchmarks/runs/exam-reading-pilot-1/tests/*.json (exam:reading:pilot, P7.3). A test is served to learners only when
+ * Source: benchmarks/runs/<round>/tests/*.json (exam:reading:pilot): the P7.3 pilot, the P7.5 Academic and GT rounds. A test is served to learners only when
  * its status is "published"; "review" tests are visible only with EXAM_READING_DRAFTS; "retired" ones are no longer started.
  * The status is set here and is not part of a test's content hash in MultiAdmin, so a status change keeps the version.
- * A content change is a new version with the corrections listed below (docs/phase-7/P7.4-reading-product.md §5).
+ * A content change is a new version with the corrections listed below (docs/phase-7/P7.4-reading-product.md §5, P7.5 §5).
  */
 import {readFileSync, writeFileSync} from 'node:fs';
 import {join, resolve, dirname} from 'node:path';
@@ -17,11 +18,18 @@ import {checkReadingTest, type ReadingSection, type ReadingTest} from '../../pac
 type Status = 'review' | 'published' | 'retired';
 /** A literal replacement in one section (text, prompts, options, evidence, explanations); `count` guards against a silent miss. */
 type Correction = {section: number; from: string; to: string; count: number};
-type Version = {version: string; note?: string; tests: {key: string; status: Status; corrections?: Correction[]}[]};
+type Version = {library: keyof typeof LIBRARIES; version: string; run: string; note?: string; tests: {key: string; status: Status; corrections?: Correction[]}[]};
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
-const RUN = 'benchmarks/runs/exam-reading-pilot-1';
-const TITLES: Record<string, string> = {'academic-1': 'Academic Reading practice test 1', 'academic-2': 'Academic Reading practice test 2'};
+const LIBRARIES = {
+  'ielts-reading-academic': {examKey: 'ielts-academic', name: 'Academic'},
+  'ielts-reading-general-training': {examKey: 'ielts-general-training', name: 'General Training'},
+} as const;
+const PILOT = 'benchmarks/runs/exam-reading-pilot-1';
+const title = (key: string) => {
+  const [, kind, n] = /^(academic|gt)-(\d+)$/.exec(key) ?? [];
+  return kind ? `${kind === 'gt' ? 'General Training' : 'Academic'} Reading practice test ${n}` : key;
+};
 // 2026-11-27, review by Claude (the owner delegated it): no key errors in 80 questions; in academic-2 two different people were
 // both called Marta Lindqvist (sections 1 and 3), and the ru/uk explanations of section 3 made her a man.
 const LINDQVIST: Correction[] = [
@@ -31,14 +39,29 @@ const LINDQVIST: Correction[] = [
   {section: 3, from: 'Линдквиста', to: 'Окоро', count: 1},
   {section: 3, from: 'Ліндквіста', to: 'Окоро', count: 1},
 ];
+// 2026-11-27, review of the GT pilot (P7.5 §5): the correct option of question 26 was far longer than the others and copied
+// the passage; it is cut to their length (the question stays answerable: only the end of shifts is in the passage).
+const GT1_Q26: Correction[] = [
+  {section: 2, from: 'Most back strains happened near the end of shifts, when staff were tired and in a hurry.', to: 'Most back strains happened near the end of shifts.', count: 1},
+];
 const VERSIONS: Version[] = [
-  {version: 'v1', tests: [{key: 'academic-1', status: 'published'}, {key: 'academic-2', status: 'retired'}]},
-  {version: 'v2', note: 'academic-2 of v1 with the attention researcher of passage 3 renamed (the same name was used for another person in passage 1).',
+  {library: 'ielts-reading-academic', version: 'v1', run: PILOT, tests: [{key: 'academic-1', status: 'published'}, {key: 'academic-2', status: 'retired'}]},
+  {library: 'ielts-reading-academic', version: 'v2', run: PILOT,
+    note: 'academic-2 of v1 with the attention researcher of passage 3 renamed (the same name was used for another person in passage 1).',
     tests: [{key: 'academic-2', status: 'published', corrections: LINDQVIST}]},
 ];
 
-const report = JSON.parse(readFileSync(join(root, RUN, 'report.json'), 'utf8')) as {id: string; prompts: string; tests: {id: string; file: string}[]};
-const source = new Map(report.tests.map(entry => [entry.id, JSON.parse(readFileSync(join(root, RUN, entry.file), 'utf8')) as ReadingTest]));
+type Report = {id: string; prompts: string; tests: {id: string; file: string; prompts?: string}[]};
+const rounds = new Map<string, {report: Report; tests: Map<string, ReadingTest>}>();
+function round(run: string) {
+  let r = rounds.get(run);
+  if (!r) {
+    const report = JSON.parse(readFileSync(join(root, run, 'report.json'), 'utf8')) as Report;
+    r = {report, tests: new Map(report.tests.map(entry => [entry.id, JSON.parse(readFileSync(join(root, run, entry.file), 'utf8')) as ReadingTest]))};
+    rounds.set(run, r);
+  }
+  return r;
+}
 
 function correct(section: ReadingSection, corrections: Correction[]): ReadingSection {
   let json = JSON.stringify(section);
@@ -53,29 +76,33 @@ function correct(section: ReadingSection, corrections: Correction[]): ReadingSec
 const check = process.argv.includes('--check');
 let stale = false;
 for (const v of VERSIONS) {
+  const lib = LIBRARIES[v.library];
+  const {report, tests: source} = round(v.run);
   const tests = v.tests.map(entry => {
     const test = source.get(entry.key);
-    if (!test) throw new Error(`${entry.key}: not in ${RUN}`);
+    if (!test) throw new Error(`${entry.key}: not in ${v.run}`);
+    if (test.exam !== lib.examKey) throw new Error(`${entry.key}: exam ${test.exam}, the library is ${lib.examKey}`);
     const sections = (test.sections as (ReadingSection & {meta?: {topic: string}})[]).map(({meta, ...section}, i) => {
       const own = (entry.corrections ?? []).filter(c => c.section === i + 1);
       return {topic: meta?.topic ?? section.title, ...(own.length ? correct(section, own) : section)};
     });
     const problems = checkReadingTest({...test, sections});
     if (problems.length) throw new Error(`${entry.key}: ${problems.join('; ')}`);
-    return {key: entry.key, status: entry.status, title: TITLES[entry.key] ?? entry.key, sections};
+    return {key: entry.key, status: entry.status, title: title(entry.key), sections};
   });
+  const prompts = [...new Set(v.tests.map(entry => report.tests.find(t => t.id === entry.key)?.prompts ?? report.prompts))].join(', ');
   const library = {
-    libraryKey: 'ielts-reading-academic',
+    libraryKey: v.library,
     version: v.version,
-    about: 'Original IELTS-style Academic Reading practice tests written for GoNative Exam Prep by AI (not official IELTS material), each question checked by code, by two blind solvers and by a third controller model.',
+    about: `Original IELTS-style ${lib.name} Reading practice tests written for GoNative Exam Prep by AI (not official IELTS material), each question checked by code, by two blind solvers and by a third controller model.`,
     ...(v.note ? {note: v.note} : {}),
-    examKey: 'ielts-academic',
+    examKey: lib.examKey,
     sectionKey: 'reading',
     origin: 'generated',
-    pipeline: {round: report.id, prompts: report.prompts, report: `${RUN}/report.json`},
+    pipeline: {round: report.id, prompts, report: `${v.run}/report.json`},
     tests,
   };
-  const out = `packages/exam-domain/library/ielts-reading-academic.${v.version}.json`;
+  const out = `packages/exam-domain/library/${v.library}.${v.version}.json`;
   const text = `${JSON.stringify(library, null, 2)}\n`;
   if (check) {
     let current = '';

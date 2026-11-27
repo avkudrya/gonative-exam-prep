@@ -1,4 +1,4 @@
-import {readFileSync} from 'node:fs';
+import {readdirSync, readFileSync} from 'node:fs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {answerWords, checkReadingSection, checkReadingTest, presentEstimate, readingEstimate, type ReadingSection, type ReadingTest} from '../src/index.js';
@@ -71,14 +71,18 @@ test('raw score to an approximate band: official thresholds, half bands between 
   assert.deepEqual(shown, {precision: 'approximate', low: 5.5, high: 6.5});
 });
 
-test('the Reading libraries: every test passes the form checks, 40 questions, a known status, explanations in en, ru and uk', () => {
-  type Library = {version: string; examKey: 'ielts-academic'; tests: {key: string; status: string; sections: ReadingSection[]}[]};
-  const libraries = ['v1', 'v2'].map(v => JSON.parse(readFileSync(new URL(`../library/ielts-reading-academic.${v}.json`, import.meta.url), 'utf8')) as Library);
-  // v2 replaces academic-2 of v1 (the same name was used for two people, review 2026-11-27); one published copy of each test.
-  const published = libraries.flatMap(l => l.tests.filter(t => t.status === 'published').map(t => t.key));
-  assert.deepEqual(published.sort(), ['academic-1', 'academic-2']);
-  for (const t of libraries.flatMap(l => l.tests)) {
-    assert.deepEqual(checkReadingTest({id: t.key, exam: "ielts-academic", sections: t.sections}), [], t.key);
+test('the Reading libraries: every test passes the form checks of its exam, 40 questions, a known status, explanations in en, ru and uk', () => {
+  type Library = {libraryKey: string; version: string; examKey: 'ielts-academic' | 'ielts-general-training'; tests: {key: string; status: string; sections: ReadingSection[]}[]};
+  const dir = new URL('../library/', import.meta.url);
+  const libraries = readdirSync(dir).filter(f => /^ielts-reading-.+\.v\d+\.json$/.test(f)).sort()
+    .map(f => JSON.parse(readFileSync(new URL(f, dir), 'utf8')) as Library);
+  // A later version replaces a test of an earlier one (v2 academic-2: the same name was used for two people, review
+  // 2026-11-27); each test is published once per library.
+  const published = (key: string) => libraries.filter(l => l.libraryKey === key).flatMap(l => l.tests.filter(t => t.status === 'published').map(t => t.key)).sort();
+  assert.deepEqual(published('ielts-reading-academic'), ['academic-1', 'academic-2']);
+  for (const key of new Set(libraries.map(l => l.libraryKey))) assert.equal(new Set(published(key)).size, published(key).length, key);
+  for (const l of libraries) for (const t of l.tests) {
+    assert.deepEqual(checkReadingTest({id: t.key, exam: l.examKey, sections: t.sections}), [], `${l.libraryKey}.${l.version} ${t.key}`);
     assert.ok(['review', 'published', 'retired'].includes(t.status), t.key);
     for (const s of t.sections) for (const g of s.groups) for (const q of g.questions) {
       for (const lang of ['en', 'ru', 'uk'] as const) assert.ok(q.explanation[lang]?.trim(), `${t.key} ${q.numbers.join('-')} ${lang}`);

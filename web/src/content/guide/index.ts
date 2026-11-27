@@ -1,6 +1,10 @@
 import type {InterfaceLocale} from '../../i18n/locales';
 import academicTask1En from './academic-task-1.en';
 import commonWritingMistakesEn from './common-writing-mistakes.en';
+import listeningEn from './listening.en';
+import readingEn from './reading.en';
+import speakingEn from './speaking.en';
+import vocabularyEn from './vocabulary.en';
 import generalTrainingLetterEn from './general-training-letter.en';
 import ieltsFormatEn from './ielts-format.en';
 import studyPlanEn from './study-plan.en';
@@ -17,6 +21,10 @@ export const guide: GuideEntry[] = [
   {slug: 'general-training-letter', practice: 'letter', related: ['writing-task-2', 'writing-criteria', 'common-writing-mistakes'], locales: {en: generalTrainingLetterEn}},
   {slug: 'writing-criteria', practice: 'task2', related: ['writing-task-2', 'academic-task-1', 'common-writing-mistakes'], locales: {en: writingCriteriaEn}},
   {slug: 'common-writing-mistakes', practice: 'rewrite', related: ['writing-criteria', 'writing-task-2', 'study-plan'], locales: {en: commonWritingMistakesEn}},
+  {slug: 'vocabulary', practice: 'vocabulary', related: ['common-writing-mistakes', 'writing-task-2', 'speaking'], locales: {en: vocabularyEn}},
+  {slug: 'reading', practice: null, related: ['listening', 'vocabulary', 'study-plan'], locales: {en: readingEn}},
+  {slug: 'listening', practice: null, related: ['reading', 'speaking', 'study-plan'], locales: {en: listeningEn}},
+  {slug: 'speaking', practice: null, related: ['vocabulary', 'listening', 'study-plan'], locales: {en: speakingEn}},
 ];
 
 export function guideChapter(slug: string, locale: string): {entry: GuideEntry; chapter: Chapter} | null {

@@ -1,0 +1,1207 @@
+{
+    "form": {
+        "first": [
+            "group 1 (note_completion), question 37: \"seven hundred and fifty\" is over the word limit",
+            "group 1 (note_completion), question 37: \"seven hundred fifty\" is over the word limit",
+            "group 1 (note_completion), question 37: fewer than 15 words after the previous answer"
+        ],
+        "afterRepair": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l3-p4.mp3",
+            "bytes": 4132844,
+            "sha256": "15d4f6b88f3ddbc9ab9e92fe548cf2332f9f6d0aa9e8eca4f6da45835036e4e1",
+            "voices": {
+                "lecturer": {
+                    "voice": "sal",
+                    "provider": "xai"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 4. You will hear a university lecturer giving a talk about how honeybees communicate where food can be found. First, you have some time to look at questions 31 to 40.",
+                    "endMs": 12600,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 42600,
+                    "purpose": "read",
+                    "startMs": 12600,
+                    "questions": [
+                        31,
+                        40
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 62759,
+                    "startMs": 42600
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 80671,
+                    "startMs": 62759
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 93464,
+                    "startMs": 80671
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 107850,
+                    "startMs": 93464
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 125763,
+                    "startMs": 107850
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 138869,
+                    "startMs": 125763
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 152942,
+                    "startMs": 138869
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 168921,
+                    "startMs": 152942
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 183960,
+                    "startMs": 168921
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 200907,
+                    "startMs": 183960
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 224906,
+                    "startMs": 200907
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 239945,
+                    "startMs": 224906
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 260104,
+                    "startMs": 239945
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 277364,
+                    "startMs": 260104
+                },
+                {
+                    "kind": "turn",
+                    "turn": 14,
+                    "endMs": 296556,
+                    "startMs": 277364
+                },
+                {
+                    "kind": "turn",
+                    "turn": 15,
+                    "endMs": 308523,
+                    "startMs": 296556
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 4. You now have thirty seconds to check your answers.",
+                    "endMs": 314323,
+                    "startMs": 308523
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 344323,
+                    "purpose": "check",
+                    "startMs": 314323
+                }
+            ],
+            "durationMs": 344323
+        },
+        "title": "How honeybees share the location of food",
+        "turns": [
+            {
+                "text": "Good morning, everyone. Today I want to look at a question that puzzled people for a very long time: how does a honeybee that's found food tell the rest of the colony where it is? The answer, or most of it anyway, is a behavior called the waggle dance. And at the end we'll look at the limits of that idea, because it's not quite as neat as the textbooks suggest.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Let's start with Karl von Frisch, the Austrian biologist who did the classic work on this. He wanted to control exactly where the bees found food, and real flowers are very hard to control. So instead he trained bees to visit a small dish of sugar water, which he could move around the countryside wherever he liked.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Of course, he needed to know which bee was which. He considered clipping a tiny piece off their wings, but that would've changed the way they flew. So he marked each visitor with a little dot of paint, using different colors in a kind of code.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Then he watched what those bees did back home. A normal hive is dark and closed, so he used what's called an observation hive. That's basically a frame of comb with glass sides, so you can see what's going on inside without disturbing anyone.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What he saw were two different dances. If the food was close to the hive, within about fifty meters, the returning bee ran around in small circles, first one way, then the other. He called this the round dance. It basically says, there's food nearby, go and look, without giving much detail.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "For food farther away, the bee performs the waggle dance. She runs in a straight line, shaking her body from side to side, then loops back around and repeats it. Now, the direction of that straight run is the clever part.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "On the vertical comb, straight up stands for the direction of the sun. So if the bee waggles at, say, forty degrees to the right of vertical, the food is forty degrees to the right of the sun. Not magnetic north, not the hive entrance. The sun.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What about distance? A lot of students assume it's shown by how fast the bee shakes. Actually, the speed of the waggling hardly changes. It's the duration of the waggle run, how long it lasts, that tells the others how far to fly. So a longer run simply means a longer flight.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "As a rough guide, one second of waggling means the food's about 750 meters away. You'll see some books say a kilometer, but it varies between colonies, so treat it as approximate. Food two kilometers off might get a waggle run of nearly three seconds.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, remember it's pitch black inside a hive, so the other bees can't actually see any of this. Instead, they follow close behind the dancer, pick up the vibrations, and keep touching her body with their antennae. They also pick up the scent of the flowers she's been visiting, which helps them later on.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. So how do we know the dance really works like this? Von Frisch's evidence came from watching which feeding sites new bees turned up at. A stronger test came in the late 1980s, sorry, the early 1990s, when a team in Denmark built a robot bee. It was about the size of a real one, made of brass and driven by a computer. When it danced in the hive, real bees flew off to the spot its dance pointed to.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Another test used radar. Researchers fixed tiny transponders to bees that had just followed a dance, then tracked their flights across open fields. Most flew off in roughly the direction the dance had shown, although many still had to search around once they got there.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "There's also the question of how a bee measures distance in the first place. Researchers in Australia trained bees to fly down a narrow tunnel with patterned walls to reach food. Afterwards, the bees danced as if they'd flown many times farther than they really had. So they judge distance from how fast the world moves past their eyes, not from how tired they get.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Okay, finally, the limits. The dance is impressive, but it's not the whole story. When researchers watched hives closely, they found that a lot of experienced foragers ignore dances most of the time. They'd rather go back to places they know, relying on their memory of sites that worked before, along with smell.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Other experiments deliberately scrambled the dance, by laying the comb flat and keeping the hive dark, so the direction information was lost. In many temperate habitats, those colonies collected about as much food as normal ones. The dance only made a clear difference where food comes in rare, rich patches, as in tropical forest.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So the waggle dance is real, and it's remarkable. But it's one tool among several, and how much it matters depends on where the bees live. Next week, we'll see how ants solve the same problem using chemical trails.",
+                "speaker": "lecturer"
+            }
+        ],
+        "groups": [
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "title": "The honeybee waggle dance",
+                "questions": [
+                    {
+                        "answer": [
+                            "dish"
+                        ],
+                        "prompt": "Von Frisch's method: bees trained to feed from a ______ of sugar water instead of real flowers",
+                        "numbers": [
+                            31
+                        ],
+                        "evidence": "he trained bees to visit a small dish of sugar water",
+                        "explanation": {
+                            "en": "The lecturer says real flowers were hard to control, so von Frisch used a small dish of sugar water that he could move around.",
+                            "ru": "Лектор говорит, что с настоящими цветами было трудно работать, поэтому von Frisch использовал небольшую тарелочку с \"sugar water\" (сахарной водой), которую можно было переставлять с места на место.",
+                            "uk": "Лектор каже, що зі справжніми квітами було важко працювати, тож von Frisch використовував невелику мисочку з \"sugar water\" (цукровою водою), яку міг переставляти з місця на місце."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "paint"
+                        ],
+                        "prompt": "Each bee identified by a mark of ______ in a color code",
+                        "numbers": [
+                            32
+                        ],
+                        "evidence": "he marked each visitor with a little dot of paint",
+                        "explanation": {
+                            "en": "He thought about clipping the wings but rejected the idea because it would change how the bees flew. He used dots of paint instead.",
+                            "ru": "Он думал о том, чтобы подрезать пчёлам крылья, но отказался от этой идеи: это изменило бы то, как они летают. Вместо этого он ставил на них точки краской (\"paint\").",
+                            "uk": "Він думав про те, щоб підрізати бджолам крила, але відмовився від цієї ідеї: це змінило б те, як вони літають. Натомість він ставив на них цятки фарбою (\"paint\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "glass"
+                        ],
+                        "prompt": "Dances watched in an observation hive with ______ sides",
+                        "numbers": [
+                            33
+                        ],
+                        "evidence": "a frame of comb with glass sides",
+                        "explanation": {
+                            "en": "An observation hive is a frame of comb with glass sides, so people can see inside without disturbing the bees.",
+                            "ru": "\"Observation hive\" — это рамка с сотами и стеклянными стенками (\"glass\"), поэтому можно заглянуть внутрь, не беспокоя пчёл.",
+                            "uk": "\"Observation hive\" — це рамка із сотами та скляними стінками (\"glass\"), тож можна зазирнути всередину, не турбуючи бджіл."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "close"
+                        ],
+                        "prompt": "Round dance: means the food is ______ to the hive",
+                        "numbers": [
+                            34
+                        ],
+                        "evidence": "If the food was close to the hive, within about fifty meters",
+                        "explanation": {
+                            "en": "The round dance is used when food is close to the hive, within about fifty meters. The waggle dance is used for food farther away.",
+                            "ru": "\"Round dance\" используется, когда корм находится близко к улью — примерно в пределах \"fifty meters\". \"Waggle dance\" — когда корм дальше.",
+                            "uk": "\"Round dance\" використовується, коли корм розташований близько до вулика — приблизно в межах \"fifty meters\". \"Waggle dance\" — коли корм далі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "sun"
+                        ],
+                        "prompt": "Waggle dance: angle of the straight run from vertical shows direction in relation to the ______",
+                        "numbers": [
+                            35
+                        ],
+                        "evidence": "straight up stands for the direction of the sun",
+                        "explanation": {
+                            "en": "Straight up on the comb stands for the sun's direction. The lecturer says it is not magnetic north or the hive entrance.",
+                            "ru": "Направление строго вверх по сотам обозначает направление на солнце (\"sun\"). Лектор уточняет, что это не магнитный север и не вход в улей.",
+                            "uk": "Напрямок точно вгору по сотах позначає напрямок на сонце (\"sun\"). Лектор уточнює, що це не магнітна північ і не вхід до вулика."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "duration"
+                        ],
+                        "prompt": "Distance is shown by the ______ of the waggle run",
+                        "numbers": [
+                            36
+                        ],
+                        "evidence": "It's the duration of the waggle run, how long it lasts",
+                        "explanation": {
+                            "en": "Many students think the speed of shaking shows distance, but the lecturer says speed hardly changes. It is the duration, or how long the run lasts.",
+                            "ru": "Многие студенты думают, что расстояние показывает скорость покачиваний, но лектор говорит, что скорость почти не меняется. Важна \"duration\" — то есть сколько длится этот пробег.",
+                            "uk": "Багато студентів думають, що відстань показує швидкість похитувань, але лектор каже, що швидкість майже не змінюється. Важить \"duration\" — тобто скільки триває цей пробіг."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "750"
+                        ],
+                        "prompt": "One second of waggling ≈ food about ______ meters away",
+                        "numbers": [
+                            37
+                        ],
+                        "evidence": "one second of waggling means the food's about 750 meters away",
+                        "explanation": {
+                            "en": "One second means about 750 meters. A kilometer is what some books say, and two kilometers is a separate example.",
+                            "ru": "Одна секунда соответствует примерно \"750\" метрам. Километр — это то, что пишут в некоторых книгах, а два километра — отдельный пример.",
+                            "uk": "Одна секунда відповідає приблизно \"750\" метрам. Кілометр — це те, що пишуть у деяких книжках, а два кілометри — окремий приклад."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "antennae"
+                        ],
+                        "prompt": "Hive is dark, so followers stay in contact with the dancer using their ______",
+                        "numbers": [
+                            38
+                        ],
+                        "evidence": "keep touching her body with their antennae",
+                        "explanation": {
+                            "en": "The other bees can't see the dance in the dark, so they feel vibrations and keep touching the dancer with their antennae.",
+                            "ru": "В темноте другие пчёлы не видят танца, поэтому они ощущают вибрации (\"vibrations\") и постоянно касаются танцующей пчелы усиками (\"antennae\").",
+                            "uk": "У темряві інші бджоли не бачать танцю, тому вони відчувають вібрації (\"vibrations\") і постійно торкаються бджоли, що танцює, вусиками (\"antennae\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "robot"
+                        ],
+                        "prompt": "Danish team: a computer-driven ______ bee sent real bees to a chosen spot",
+                        "numbers": [
+                            39
+                        ],
+                        "evidence": "a team in Denmark built a robot bee",
+                        "explanation": {
+                            "en": "In the early 1990s, a team in Denmark built a robot bee made of brass and driven by a computer. Real bees flew where its dance pointed.",
+                            "ru": "В начале 1990-х команда в Дании (\"Denmark\") построила пчелу-робота из латуни (\"brass\"), которой управлял компьютер. Настоящие пчёлы летели туда, куда указывал её танец.",
+                            "uk": "На початку 1990-х команда в Данії (\"Denmark\") створила бджолу-робота з латуні (\"brass\"), якою керував комп'ютер. Справжні бджоли летіли туди, куди вказував її танець."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "radar"
+                        ],
+                        "prompt": "Flights of bees that had followed a dance were tracked using ______",
+                        "numbers": [
+                            40
+                        ],
+                        "evidence": "Another test used radar.",
+                        "explanation": {
+                            "en": "Researchers put tiny transponders on bees and tracked them by radar. Most flew in roughly the direction the dance showed.",
+                            "ru": "Исследователи прикрепляли к пчёлам крошечные транспондеры (\"transponders\") и отслеживали их с помощью радара (\"radar\"). Большинство пчёл летели примерно в том направлении, которое показывал танец.",
+                            "uk": "Дослідники прикріплювали до бджіл крихітні транспондери (\"transponders\") і відстежували їх за допомогою радара (\"radar\"). Більшість бджіл летіли приблизно в тому напрямку, який показував танець."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a university lecturer giving a talk about how honeybees communicate where food can be found.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Nathan Kowalski",
+                "role": "university lecturer in animal behaviour",
+                "accent": "north_american",
+                "gender": "male"
+            }
+        ]
+    },
+    "plan": "l3|p4",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.254824,
+            "provider": "anthropic",
+            "outputTokens": 11764
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.109056,
+            "provider": "anthropic",
+            "outputTokens": 3675
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.011054,
+            "provider": "anthropic",
+            "outputTokens": 467
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.013735,
+            "provider": "openai",
+            "outputTokens": 583
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.022896,
+            "provider": "anthropic",
+            "outputTokens": 391
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.006054,
+            "provider": "anthropic",
+            "outputTokens": 77
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.005788,
+            "provider": "openai",
+            "outputTokens": 110
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.018084,
+            "provider": "xai",
+            "outputTokens": 1921
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.063684,
+            "provider": "anthropic",
+            "outputTokens": 2952
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "How honeybees share the location of food",
+        "turns": [
+            {
+                "text": "Good morning, everyone. Today I want to look at a question that puzzled people for a very long time: how does a honeybee that's found food tell the rest of the colony where it is? The answer, or most of it anyway, is a behavior called the waggle dance. And at the end we'll look at the limits of that idea, because it's not quite as neat as the textbooks suggest.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Let's start with Karl von Frisch, the Austrian biologist who did the classic work on this. He wanted to control exactly where the bees found food, and real flowers are very hard to control. So instead he trained bees to visit a small dish of sugar water, which he could move around the countryside wherever he liked.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Of course, he needed to know which bee was which. He considered clipping a tiny piece off their wings, but that would've changed the way they flew. So he marked each visitor with a little dot of paint, using different colors in a kind of code.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Then he watched what those bees did back home. A normal hive is dark and closed, so he used what's called an observation hive. That's basically a frame of comb with glass sides, so you can see what's going on inside without disturbing anyone.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What he saw were two different dances. If the food was close to the hive, within about fifty meters, the returning bee ran around in small circles, first one way, then the other. He called this the round dance. It basically says, there's food nearby, go and look, without giving much detail.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "For food farther away, the bee performs the waggle dance. She runs in a straight line, shaking her body from side to side, then loops back around and repeats it. Now, the direction of that straight run is the clever part.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "On the vertical comb, straight up stands for the direction of the sun. So if the bee waggles at, say, forty degrees to the right of vertical, the food is forty degrees to the right of the sun. Not magnetic north, not the hive entrance. The sun.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What about distance? A lot of students assume it's shown by how fast the bee shakes. Actually, the speed of the waggling hardly changes. It's the duration of the waggle run, how long it lasts, that tells the others how far to fly. So a longer run simply means a longer flight.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "As a rough guide, one second of waggling means the food's about 750 meters away. You'll see some books say a kilometer, but it varies between colonies, so treat it as approximate. Food two kilometers off might get a waggle run of nearly three seconds.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, remember it's pitch black inside a hive, so the other bees can't actually see any of this. Instead, they follow close behind the dancer, pick up the vibrations, and keep touching her body with their antennae. They also pick up the scent of the flowers she's been visiting, which helps them later on.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. So how do we know the dance really works like this? Von Frisch's evidence came from watching which feeding sites new bees turned up at. A stronger test came in the late 1980s, sorry, the early 1990s, when a team in Denmark built a robot bee. It was about the size of a real one, made of brass and driven by a computer. When it danced in the hive, real bees flew off to the spot its dance pointed to.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Another test used radar. Researchers fixed tiny transponders to bees that had just followed a dance, then tracked their flights across open fields. Most flew off in roughly the direction the dance had shown, although many still had to search around once they got there.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "There's also the question of how a bee measures distance in the first place. Researchers in Australia trained bees to fly down a narrow tunnel with patterned walls to reach food. Afterwards, the bees danced as if they'd flown many times farther than they really had. So they judge distance from how fast the world moves past their eyes, not from how tired they get.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Okay, finally, the limits. The dance is impressive, but it's not the whole story. When researchers watched hives closely, they found that a lot of experienced foragers ignore dances most of the time. They'd rather go back to places they know, relying on their memory of sites that worked before, along with smell.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Other experiments deliberately scrambled the dance, by laying the comb flat and keeping the hive dark, so the direction information was lost. In many temperate habitats, those colonies collected about as much food as normal ones. The dance only made a clear difference where food comes in rare, rich patches, as in tropical forest.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So the waggle dance is real, and it's remarkable. But it's one tool among several, and how much it matters depends on where the bees live. Next week, we'll see how ants solve the same problem using chemical trails.",
+                "speaker": "lecturer"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "title": "The honeybee waggle dance",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "dish"
+                        ],
+                        "prompt": "Von Frisch's method: bees trained to feed from a ______ of sugar water instead of real flowers",
+                        "options": [],
+                        "evidence": "he trained bees to visit a small dish of sugar water",
+                        "explanation": "The lecturer says real flowers were hard to control, so von Frisch used a small dish of sugar water that he could move around."
+                    },
+                    {
+                        "answer": [
+                            "paint"
+                        ],
+                        "prompt": "Each bee identified by a mark of ______ in a color code",
+                        "options": [],
+                        "evidence": "he marked each visitor with a little dot of paint",
+                        "explanation": "He thought about clipping the wings but rejected the idea because it would change how the bees flew. He used dots of paint instead."
+                    },
+                    {
+                        "answer": [
+                            "glass"
+                        ],
+                        "prompt": "Dances watched in an observation hive with ______ sides",
+                        "options": [],
+                        "evidence": "a frame of comb with glass sides",
+                        "explanation": "An observation hive is a frame of comb with glass sides, so people can see inside without disturbing the bees."
+                    },
+                    {
+                        "answer": [
+                            "close"
+                        ],
+                        "prompt": "Round dance: means the food is ______ to the hive",
+                        "options": [],
+                        "evidence": "If the food was close to the hive, within about fifty meters",
+                        "explanation": "The round dance is used when food is close to the hive, within about fifty meters. The waggle dance is used for food farther away."
+                    },
+                    {
+                        "answer": [
+                            "sun"
+                        ],
+                        "prompt": "Waggle dance: angle of the straight run from vertical shows direction in relation to the ______",
+                        "options": [],
+                        "evidence": "straight up stands for the direction of the sun",
+                        "explanation": "Straight up on the comb stands for the sun's direction. The lecturer says it is not magnetic north or the hive entrance."
+                    },
+                    {
+                        "answer": [
+                            "duration"
+                        ],
+                        "prompt": "Distance is shown by the ______ of the waggle run",
+                        "options": [],
+                        "evidence": "It's the duration of the waggle run, how long it lasts",
+                        "explanation": "Many students think the speed of shaking shows distance, but the lecturer says speed hardly changes. It is the duration, or how long the run lasts."
+                    },
+                    {
+                        "answer": [
+                            "750"
+                        ],
+                        "prompt": "One second of waggling ≈ food about ______ meters away",
+                        "options": [],
+                        "evidence": "one second of waggling means the food's about 750 meters away",
+                        "explanation": "One second means about 750 meters. A kilometer is what some books say, and two kilometers is a separate example."
+                    },
+                    {
+                        "answer": [
+                            "antennae"
+                        ],
+                        "prompt": "Hive is dark, so followers stay in contact with the dancer using their ______",
+                        "options": [],
+                        "evidence": "keep touching her body with their antennae",
+                        "explanation": "The other bees can't see the dance in the dark, so they feel vibrations and keep touching the dancer with their antennae."
+                    },
+                    {
+                        "answer": [
+                            "robot"
+                        ],
+                        "prompt": "Danish team: a computer-driven ______ bee sent real bees to a chosen spot",
+                        "options": [],
+                        "evidence": "a team in Denmark built a robot bee",
+                        "explanation": "In the early 1990s, a team in Denmark built a robot bee made of brass and driven by a computer. Real bees flew where its dance pointed."
+                    },
+                    {
+                        "answer": [
+                            "radar"
+                        ],
+                        "prompt": "Flights of bees that had followed a dance were tracked using ______",
+                        "options": [],
+                        "evidence": "Another test used radar.",
+                        "explanation": "Researchers put tiny transponders on bees and tracked them by radar. Most flew in roughly the direction the dance showed."
+                    },
+                    {
+                        "answer": [
+                            "tunnel"
+                        ],
+                        "prompt": "Bees flying through a patterned ______ overestimated the distance",
+                        "options": [],
+                        "evidence": "fly down a narrow tunnel with patterned walls",
+                        "explanation": "Bees flew down a narrow tunnel with patterned walls. Afterwards they danced as if they had flown much farther."
+                    },
+                    {
+                        "answer": [
+                            "memory"
+                        ],
+                        "prompt": "Limits: many experienced foragers ignore dances and rely on ______ of familiar sites",
+                        "options": [],
+                        "evidence": "relying on their memory of sites that worked before",
+                        "explanation": "Experienced foragers often ignore dances and go back to places they know, using their memory. Smell is mentioned only as an extra help."
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a university lecturer giving a talk about how honeybees communicate where food can be found.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Nathan Kowalski"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "he trained bees to visit a small dish of sugar water",
+                "answer": [
+                    "dish"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "he marked each visitor with a little dot of paint, using different colors in a kind of code",
+                "answer": [
+                    "paint"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a frame of comb with glass sides",
+                "answer": [
+                    "glass"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    false
+                ],
+                "quote": "there's food nearby, go and look",
+                "answer": [
+                    "nearby"
+                ],
+                "correct": false
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the food is forty degrees to the right of the sun",
+                "answer": [
+                    "sun"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "It's the duration of the waggle run, how long it lasts, that tells the others how far to fly",
+                "answer": [
+                    "duration"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "one second of waggling means the food's about 750 meters away",
+                "answer": [
+                    "750"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "keep touching her body with their antennae",
+                "answer": [
+                    "antennae"
+                ],
+                "correct": true
+            },
+            "b1q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "a team in Denmark built a robot bee",
+                "answer": [
+                    "robot"
+                ],
+                "correct": true
+            },
+            "b1q10": {
+                "marks": [
+                    true
+                ],
+                "quote": "Another test used radar.",
+                "answer": [
+                    "radar"
+                ],
+                "correct": true
+            },
+            "b1q11": {
+                "marks": [
+                    true
+                ],
+                "quote": "trained bees to fly down a narrow tunnel with patterned walls",
+                "answer": [
+                    "tunnel"
+                ],
+                "correct": true
+            },
+            "b1q12": {
+                "marks": [
+                    true
+                ],
+                "quote": "relying on their memory of sites that worked before",
+                "answer": [
+                    "memory"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "he trained bees to visit a small dish of sugar water",
+                "answer": [
+                    "dish"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "he marked each visitor with a little dot of paint",
+                "answer": [
+                    "paint"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "a frame of comb with glass sides",
+                "answer": [
+                    "glass"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "If the food was close to the hive",
+                "answer": [
+                    "close"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "straight up stands for the direction of the sun",
+                "answer": [
+                    "sun"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "It's the duration of the waggle run",
+                "answer": [
+                    "duration"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "one second of waggling means the food's about 750 meters away",
+                "answer": [
+                    "750"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "keep touching her body with their antennae",
+                "answer": [
+                    "antennae"
+                ],
+                "correct": true
+            },
+            "b1q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "a team in Denmark built a robot bee",
+                "answer": [
+                    "robot"
+                ],
+                "correct": true
+            },
+            "b1q10": {
+                "marks": [
+                    true
+                ],
+                "quote": "Another test used radar",
+                "answer": [
+                    "radar"
+                ],
+                "correct": true
+            },
+            "b1q11": {
+                "marks": [
+                    true
+                ],
+                "quote": "trained bees to fly down a narrow tunnel with patterned walls",
+                "answer": [
+                    "tunnel"
+                ],
+                "correct": true
+            },
+            "b1q12": {
+                "marks": [
+                    true
+                ],
+                "quote": "relying on their memory of sites that worked before",
+                "answer": [
+                    "memory"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": [
+            "b1q4"
+        ]
+    },
+    "revise": {
+        "b1q4": {
+            "action": "keep",
+            "reason": "Only \"close\" fits the gap grammatically and matches the words before \"to the hive\" in the recording. \"Nearby to the hive\" is not grammatical, so \"nearby\" cannot be accepted."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "he trained bees to visit a small dish of sugar water",
+            "answer": [
+                "dish"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "he marked each visitor with a little dot of paint, using different colors in a kind of code",
+            "answer": [
+                "paint"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "a frame of comb with glass sides",
+            "answer": [
+                "glass"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "If the food was close to the hive",
+            "answer": [
+                "close"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "the food is forty degrees to the right of the sun",
+            "answer": [
+                "sun"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "It's the duration of the waggle run, how long it lasts",
+            "answer": [
+                "duration"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "one second of waggling means the food's about 750 meters away",
+            "answer": [
+                "750"
+            ],
+            "correct": true
+        },
+        "b1q8": {
+            "marks": [
+                true
+            ],
+            "quote": "keep touching her body with their antennae",
+            "answer": [
+                "antennae"
+            ],
+            "correct": true
+        },
+        "b1q9": {
+            "marks": [
+                true
+            ],
+            "quote": "a team in Denmark built a robot bee",
+            "answer": [
+                "robot"
+            ],
+            "correct": true
+        },
+        "b1q10": {
+            "marks": [
+                true
+            ],
+            "quote": "Another test used radar",
+            "answer": [
+                "radar"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 12,
+        "agreedFirst": 11,
+        "discardRate": 0,
+        "agreedRevised": 1,
+        "disputedFirst": 1
+    },
+    "resolve": {
+        "a": {
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "If the food was close to the hive, within about fifty meters, the returning bee ran around in small circles, first one way, then the other. He called this the round dance.",
+                "answer": [
+                    "close"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "If the food was close to the hive, within about fifty meters ... He called this the round dance.",
+                "answer": [
+                    "close"
+                ],
+                "correct": true
+            }
+        }
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 19879,
+                "wer": 0,
+                "heard": "Good morning everyone, today I want to look at a question that puzzled people for a very long time: how does a honeybee that's found food tell the rest of the colony where it is? The answer, or most of it anyway, is a behavior called the waggle dance, and at the end we'll look at the limits of that idea, because it's not quite as neat as the textbooks suggest."
+            },
+            {
+                "ms": 17633,
+                "wer": 0,
+                "heard": "Let's start with Karl von Frisch, the Austrian biologist who did the classic work on this. He wanted to control exactly where the bees found food, and real flowers are very hard to control, so instead he trained bees to visit a small dish of sugar water, which he could move around the countryside wherever he liked."
+            },
+            {
+                "ms": 12513,
+                "wer": 0.065,
+                "heard": "Of course, he needed to know which bee was which. He considered clipping a tiny piece off their wings, but that would have changed the way they flew, so he marked each visitor with a little dot of paint, using different colors and a kind of code."
+            },
+            {
+                "ms": 14106,
+                "wer": 0,
+                "heard": "Then he watched what those bees did back home. A normal hive is dark and closed, so he used what's called an observation hive—that's basically a frame of comb with glass sides so you can see what's going on inside without disturbing anyone."
+            },
+            {
+                "ms": 17633,
+                "wer": 0,
+                "heard": "What he saw were two different dances. If the food was close to the hive, within about 50 meters, the returning bee ran around in small circles, first one way, then the other; he called this the round dance. It basically says, \"There's food nearby, go and look,\" without giving much detail."
+            },
+            {
+                "ms": 12826,
+                "wer": 0,
+                "heard": "For food farther away, the bee performs the waggle dance. She runs in a straight line, shaking her body from side to side, then loops back around and repeats it. Now the direction of that straight run is the clever part."
+            },
+            {
+                "ms": 13793,
+                "wer": 0,
+                "heard": "On the vertical comb, straight up stands for the direction of the sun, so if the bee waggles at, say, 40 degrees to the right of vertical, the food is 40 degrees to the right of the sun, not magnetic north, not the hive entrance, the sun."
+            },
+            {
+                "ms": 15700,
+                "wer": 0,
+                "heard": "What about distance? A lot of students assume it's shown by how fast the bee shakes. Actually, the speed of the waggling hardly changes; it's the duration of the waggle run, how long it lasts, that tells the others how far to fly. So a longer run simply means a longer flight."
+            },
+            {
+                "ms": 14759,
+                "wer": 0,
+                "heard": "As a rough guide, one second of waggling means the food's about 750 meters away. You'll see some books say a kilometer, but it varies between colonies, so treat it as approximate. Food two kilometers off might get a waggle run of nearly three seconds."
+            },
+            {
+                "ms": 16666,
+                "wer": 0.019,
+                "heard": "Now, remember it's pitch black inside a hive, so the other bees can't actually see any of this. Instead, they follow close behind the dancer, pick up the vibrations, and keep touching her body with their antennae. They also pick up the scent of the flower she's been visiting, which helps them later on."
+            },
+            {
+                "ms": 23719,
+                "wer": 0,
+                "heard": "Right, so how do we know the dance really works like this? Von Frisch's evidence came from watching which feeding sites new bees turned up at. A stronger test came in the late 1980s, sorry, the early 1990s, when a team in Denmark built a robot bee. It was about the size of a real one, made of brass and driven by a computer. When it danced in the hive, real bees flew off to the spot its dance pointed to."
+            },
+            {
+                "ms": 14759,
+                "wer": 0,
+                "heard": "Another test used radar: researchers fixed tiny transponders to bees that had just followed a dance, then tracked their flights across open fields; most flew off in roughly the direction the dance had shown, although many still had to search around once they got there."
+            },
+            {
+                "ms": 19879,
+                "wer": 0,
+                "heard": "There's also the question of how a bee measures distance in the first place. Researchers in Australia trained bees to fly down a narrow tunnel with patterned walls to reach food; afterwards, the bees danced as if they'd flown many times farther than they really had, so they judge distance from how fast the world moves past their eyes, not from how tired they get."
+            },
+            {
+                "ms": 16980,
+                "wer": 0.019,
+                "heard": "Okay, finally, the limits. The dance is impressive, but it's not the whole story. When researchers watched hives closely, they found that a lot of experienced foragers ignored dances most of the time. They'd rather go back to places they know, relying on their memory of sites that worked before, along with smell."
+            },
+            {
+                "ms": 18913,
+                "wer": 0,
+                "heard": "Other experiments deliberately scrambled the dance by laying the comb flat and keeping the hive dark, so the direction information was lost. In many temperate habitats, those colonies collected about as much food as normal ones. The dance only made a clear difference where food comes in rare, rich patches, as in tropical forest."
+            },
+            {
+                "ms": 11546,
+                "wer": 0,
+                "heard": "So the waggle dance is real, and it's remarkable, but it's one tool among several, and how much it matters depends on where the bees live. Next week, we'll see how ants solve the same problem using chemical trails."
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16.5,
+            "truePeakDb": -1.2
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b1q8",
+            "b1q9",
+            "b1q10"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "revised",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b1q9": "first",
+            "b1q10": "first",
+            "b1q11": "first",
+            "b1q12": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "31": "b1q1",
+        "32": "b1q2",
+        "33": "b1q3",
+        "34": "b1q4",
+        "35": "b1q5",
+        "36": "b1q6",
+        "37": "b1q7",
+        "38": "b1q8",
+        "39": "b1q9",
+        "40": "b1q10"
+    },
+    "translation": {
+        "missing": []
+    }
+}

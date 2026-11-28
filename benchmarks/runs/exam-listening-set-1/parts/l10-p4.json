@@ -1,0 +1,1240 @@
+{
+    "form": {
+        "first": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l10-p4.mp3",
+            "bytes": 4733036,
+            "sha256": "e267c377b0703a5fe55703fac873693642266c56ab6a0c1a1b0393d56de1d62d",
+            "voices": {
+                "lecturer": {
+                    "voice": "FF59babHL8N8gfTgtBMT",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 4. You will hear a marine biology lecturer giving a talk about deep-ocean animals that produce their own light. First, you have some time to look at questions 31 to 36.",
+                    "endMs": 13000,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 43000,
+                    "purpose": "read",
+                    "startMs": 13000,
+                    "questions": [
+                        31,
+                        36
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 64880,
+                    "startMs": 43000
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 81800,
+                    "startMs": 64880
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 94160,
+                    "startMs": 81800
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 110760,
+                    "startMs": 94160
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 128240,
+                    "startMs": 110760
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 147000,
+                    "startMs": 128240
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 163520,
+                    "startMs": 147000
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 181000,
+                    "startMs": 163520
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 195600,
+                    "startMs": 181000
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 204200,
+                    "startMs": 195600
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 37 to 40.",
+                    "endMs": 207680,
+                    "startMs": 204200
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 237680,
+                    "purpose": "read",
+                    "startMs": 207680,
+                    "questions": [
+                        37,
+                        40
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 253400,
+                    "startMs": 237680
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 265440,
+                    "startMs": 253400
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 278600,
+                    "startMs": 265440
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 293760,
+                    "startMs": 278600
+                },
+                {
+                    "kind": "turn",
+                    "turn": 14,
+                    "endMs": 311400,
+                    "startMs": 293760
+                },
+                {
+                    "kind": "turn",
+                    "turn": 15,
+                    "endMs": 332560,
+                    "startMs": 311400
+                },
+                {
+                    "kind": "turn",
+                    "turn": 16,
+                    "endMs": 350840,
+                    "startMs": 332560
+                },
+                {
+                    "kind": "turn",
+                    "turn": 17,
+                    "endMs": 358540,
+                    "startMs": 350840
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 4. You now have thirty seconds to check your answers.",
+                    "endMs": 364340,
+                    "startMs": 358540
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 394340,
+                    "purpose": "check",
+                    "startMs": 364340
+                }
+            ],
+            "durationMs": 394340
+        },
+        "title": "Bioluminescence in the deep sea",
+        "turns": [
+            {
+                "text": "Good morning, everyone. I'm Dr Imogen Fairclough, and today we're continuing our series on life in the deep ocean. The topic is bioluminescence, that's the production of light by living things. I'll look first at how animals actually make light, then at why they do it, and finally at how scientists go about studying it.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. Below about two hundred metres, sunlight fades almost completely, and yet something like three quarters of the animals living down there can produce their own light. So how do they do it? The process depends on a chemical called luciferin.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, a few species manufacture luciferin themselves, but a surprising number can't. Instead, they simply take it in through their diet, by eating smaller creatures that already contain it.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Once the animal has the luciferin, it's stored in special light organs. You might expect these to be on the head or on the back, where they'd be easy to see. In fact, in most deep-sea fish they're arranged in rows along the belly, and we'll come back to why that is in a few minutes.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "When the animal wants to glow, a signal from its nerves triggers a reaction. The luciferin combines with an enzyme called luciferase. For a long time people assumed water was the third ingredient, but it's actually oxygen that's needed, and without it, no light is produced at all.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What comes out of this reaction is energy, released as light. And here's the remarkable part: almost none of it is lost as heat. Compare that with an old-fashioned light bulb, which wastes most of its energy warming up the room. That's why biologists often call this cold light.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The light organ itself is quite sophisticated. Behind the light there's usually a reflective layer that works rather like a mirror, sending the light outwards. And in front, many species have a lens, which focuses the light into a beam, a bit like the headlamp on a car.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What about colour? Coastal species, jellyfish near the shore for example, often glow green. But in the deep sea the light is nearly always blue, because blue light travels furthest through seawater. Red light, on the other hand, disappears very quickly.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Finally, timing. Some animals glow steadily for hours, but most produce flashes, and a typical flash lasts less than a second. Short flashes save energy and make the animal much harder to locate.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "OK, so that's how. Now, why? The most common use is defence. Remember those lights along the belly?",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Predators in the deep often swim below their prey and look upwards, watching for anything against the faint light from above. By glowing at just the right brightness, a fish can make its shadow disappear. We call this counter-illumination.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Light is also used for hunting. The anglerfish is the famous example, with its glowing lure that draws in curious prey. But personally, I find the dragonfish more interesting.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Unlike almost everything else down there, it produces red light, which most deep-sea animals can't see. So it works like a hidden torch, letting the dragonfish spot its victims without them noticing.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The third use is communication. Some small shrimps and fish flash in particular patterns, rather like a code. Researchers think the main purpose is to find a partner, although some patterns may also be warnings to rivals.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, the last section: how do we study all this? For most of the twentieth century, scientists relied on animals brought up in nets. The problem was that these delicate creatures were usually badly damaged on the way up, and many stopped producing light completely.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Nowadays, we use remotely operated vehicles, which are robots controlled from a ship. You might think they'd need powerful lights, but bright lights actually scare animals away, so researchers often switch them off. Instead, the vehicles are fitted with cameras so sensitive that they can pick up even the faintest glow.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And this research has benefits beyond marine biology. A glowing protein first found in a jellyfish is now used in hospitals and laboratories all over the world. Attaching it to cells allows doctors to watch how cancer spreads through the body, which has helped in developing new treatments.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So, for next week, please read chapter six of the textbook, which covers vision in deep-sea animals. Thank you.",
+                "speaker": "lecturer"
+            }
+        ],
+        "groups": [
+            {
+                "type": "flow_chart_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "title": "How deep-sea animals produce light",
+                "questions": [
+                    {
+                        "answer": [
+                            "diet"
+                        ],
+                        "prompt": "Many animals obtain luciferin through their ______ rather than making it.",
+                        "numbers": [
+                            31
+                        ],
+                        "evidence": "they simply take it in through their diet",
+                        "explanation": {
+                            "en": "The lecturer says only a few species make luciferin themselves; many get it from their diet by eating creatures that contain it.",
+                            "ru": "Лектор говорит, что лишь немногие виды вырабатывают люциферин сами. Многие получают его с пищей, поедая существ, в организме которых он есть.",
+                            "uk": "Лекторка каже, що лише небагато видів виробляють люциферин самі. Багато хто отримує його з їжею, поїдаючи істот, в організмі яких він є."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "belly"
+                        ],
+                        "prompt": "Luciferin is stored in light organs, usually in rows along the fish's ______.",
+                        "numbers": [
+                            32
+                        ],
+                        "evidence": "in most deep-sea fish they're arranged in rows along the belly",
+                        "explanation": {
+                            "en": "She says you might expect the organs on the head or back, but in most deep-sea fish they are along the belly.",
+                            "ru": "Она говорит, что эти органы можно было бы ожидать на голове или на спине, но у большинства глубоководных рыб они расположены вдоль брюха.",
+                            "uk": "Вона каже, що ці органи можна було б очікувати на голові чи на спині, але в більшості глибоководних риб вони розташовані вздовж черева."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "oxygen"
+                        ],
+                        "prompt": "A nerve signal makes luciferin react with luciferase and ______.",
+                        "numbers": [
+                            33
+                        ],
+                        "evidence": "it's actually oxygen that's needed",
+                        "explanation": {
+                            "en": "People used to think water was the third ingredient, but the lecturer says it is really oxygen.",
+                            "ru": "Раньше считалось, что третий компонент — вода, но лектор говорит, что на самом деле это кислород (\"oxygen\").",
+                            "uk": "Раніше вважали, що третій компонент — вода, але лекторка каже, що насправді це кисень (\"oxygen\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "heat"
+                        ],
+                        "prompt": "Energy is released as light, with almost none lost as ______.",
+                        "numbers": [
+                            34
+                        ],
+                        "evidence": "almost none of it is lost as heat",
+                        "explanation": {
+                            "en": "Unlike an old light bulb, the reaction wastes almost no energy as heat, which is why it is called cold light.",
+                            "ru": "В отличие от старой лампочки накаливания, эта реакция почти не тратит энергию на тепло. Поэтому такой свет и называют холодным (\"cold light\").",
+                            "uk": "На відміну від старої лампи розжарювання, ця реакція майже не витрачає енергії на тепло. Тому таке світло й називають холодним (\"cold light\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "lens"
+                        ],
+                        "prompt": "A ______ at the front of the organ concentrates the light into a beam.",
+                        "numbers": [
+                            35
+                        ],
+                        "evidence": "in front, many species have a lens, which focuses the light into a beam",
+                        "explanation": {
+                            "en": "The mirror-like layer is behind the light; the part in front that focuses the light is a lens.",
+                            "ru": "Зеркальный слой находится позади источника света, а часть спереди, которая фокусирует свет, — это линза (\"lens\").",
+                            "uk": "Дзеркальний шар розташований позаду джерела світла, а частина спереду, що фокусує світло, — це лінза (\"lens\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "blue"
+                        ],
+                        "prompt": "The light is usually ______, as this colour travels furthest in seawater.",
+                        "numbers": [
+                            36
+                        ],
+                        "evidence": "in the deep sea the light is nearly always blue",
+                        "explanation": {
+                            "en": "Green light is common in coastal species, and red disappears quickly; deep-sea light is nearly always blue.",
+                            "ru": "Зелёный свет часто встречается у прибрежных видов, а красный быстро исчезает. На глубине же свет почти всегда синий (\"blue\").",
+                            "uk": "Зелене світло часто трапляється в прибережних видів, а червоне швидко зникає. На глибині ж світло майже завжди синє (\"blue\")."
+                        }
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Write ONE WORD ONLY for each answer."
+            },
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "title": "Why animals produce light and how it is studied",
+                "questions": [
+                    {
+                        "answer": [
+                            "shadow"
+                        ],
+                        "prompt": "Defence: lights on the underside stop predators below from seeing the animal's ______",
+                        "numbers": [
+                            37
+                        ],
+                        "evidence": "a fish can make its shadow disappear",
+                        "explanation": {
+                            "en": "Predators look up from below, so by glowing at the right brightness a fish makes its shadow disappear.",
+                            "ru": "Хищники смотрят снизу вверх, поэтому рыба, светясь с нужной яркостью, делает свою тень невидимой.",
+                            "uk": "Хижаки дивляться знизу вгору, тому риба, світячись із потрібною яскравістю, робить свою тінь невидимою."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "torch"
+                        ],
+                        "prompt": "Hunting: the dragonfish's red light acts as a hidden ______",
+                        "numbers": [
+                            38
+                        ],
+                        "evidence": "So it works like a hidden torch",
+                        "explanation": {
+                            "en": "The anglerfish uses a lure, but the dragonfish's red light, which other animals can't see, works like a hidden torch.",
+                            "ru": "Удильщик использует приманку, а красный свет рыбы-дракона, которого другие животные не видят, работает как скрытый фонарик.",
+                            "uk": "Вудильник використовує приманку, а червоне світло риби-дракона, якого інші тварини не бачать, діє як прихований ліхтарик."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "partner"
+                        ],
+                        "prompt": "Communication: flashing patterns are mainly used to find a ______",
+                        "numbers": [
+                            39
+                        ],
+                        "evidence": "the main purpose is to find a partner",
+                        "explanation": {
+                            "en": "Some patterns may warn rivals, but researchers think the main purpose is finding a partner.",
+                            "ru": "Некоторые узоры, возможно, служат предупреждением для соперников, но исследователи считают, что их главная цель — поиск партнёра.",
+                            "uk": "Деякі візерунки, можливо, слугують попередженням для суперників, але дослідники вважають, що їхня головна мета — пошук партнера."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "nets"
+                        ],
+                        "prompt": "Early research: animals brought up in ______ were often badly damaged",
+                        "numbers": [
+                            40
+                        ],
+                        "evidence": "scientists relied on animals brought up in nets",
+                        "explanation": {
+                            "en": "In the twentieth century animals were collected in nets and were usually damaged on the way up.",
+                            "ru": "В двадцатом веке животных ловили сетями, и при подъёме на поверхность они обычно получали повреждения.",
+                            "uk": "У двадцятому столітті тварин збирали сітками, і під час підйому на поверхню вони зазвичай зазнавали пошкоджень."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a marine biology lecturer giving a talk about deep-ocean animals that produce their own light.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Imogen Fairclough",
+                "role": "university lecturer in marine biology",
+                "accent": "british",
+                "gender": "female"
+            }
+        ]
+    },
+    "plan": "l10|p4",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.192576,
+            "provider": "anthropic",
+            "outputTokens": 8540
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012468,
+            "provider": "anthropic",
+            "outputTokens": 596
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.012983,
+            "provider": "openai",
+            "outputTokens": 531
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01129,
+            "provider": "xai",
+            "outputTokens": 787
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.058424,
+            "provider": "anthropic",
+            "outputTokens": 2702
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "Bioluminescence in the deep sea",
+        "turns": [
+            {
+                "text": "Good morning, everyone. I'm Dr Imogen Fairclough, and today we're continuing our series on life in the deep ocean. The topic is bioluminescence, that's the production of light by living things. I'll look first at how animals actually make light, then at why they do it, and finally at how scientists go about studying it.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. Below about two hundred metres, sunlight fades almost completely, and yet something like three quarters of the animals living down there can produce their own light. So how do they do it? The process depends on a chemical called luciferin.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, a few species manufacture luciferin themselves, but a surprising number can't. Instead, they simply take it in through their diet, by eating smaller creatures that already contain it.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Once the animal has the luciferin, it's stored in special light organs. You might expect these to be on the head or on the back, where they'd be easy to see. In fact, in most deep-sea fish they're arranged in rows along the belly, and we'll come back to why that is in a few minutes.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "When the animal wants to glow, a signal from its nerves triggers a reaction. The luciferin combines with an enzyme called luciferase. For a long time people assumed water was the third ingredient, but it's actually oxygen that's needed, and without it, no light is produced at all.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What comes out of this reaction is energy, released as light. And here's the remarkable part: almost none of it is lost as heat. Compare that with an old-fashioned light bulb, which wastes most of its energy warming up the room. That's why biologists often call this cold light.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The light organ itself is quite sophisticated. Behind the light there's usually a reflective layer that works rather like a mirror, sending the light outwards. And in front, many species have a lens, which focuses the light into a beam, a bit like the headlamp on a car.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What about colour? Coastal species, jellyfish near the shore for example, often glow green. But in the deep sea the light is nearly always blue, because blue light travels furthest through seawater. Red light, on the other hand, disappears very quickly.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Finally, timing. Some animals glow steadily for hours, but most produce flashes, and a typical flash lasts less than a second. Short flashes save energy and make the animal much harder to locate.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "OK, so that's how. Now, why? The most common use is defence. Remember those lights along the belly?",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Predators in the deep often swim below their prey and look upwards, watching for anything against the faint light from above. By glowing at just the right brightness, a fish can make its shadow disappear. We call this counter-illumination.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Light is also used for hunting. The anglerfish is the famous example, with its glowing lure that draws in curious prey. But personally, I find the dragonfish more interesting.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Unlike almost everything else down there, it produces red light, which most deep-sea animals can't see. So it works like a hidden torch, letting the dragonfish spot its victims without them noticing.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The third use is communication. Some small shrimps and fish flash in particular patterns, rather like a code. Researchers think the main purpose is to find a partner, although some patterns may also be warnings to rivals.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, the last section: how do we study all this? For most of the twentieth century, scientists relied on animals brought up in nets. The problem was that these delicate creatures were usually badly damaged on the way up, and many stopped producing light completely.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Nowadays, we use remotely operated vehicles, which are robots controlled from a ship. You might think they'd need powerful lights, but bright lights actually scare animals away, so researchers often switch them off. Instead, the vehicles are fitted with cameras so sensitive that they can pick up even the faintest glow.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And this research has benefits beyond marine biology. A glowing protein first found in a jellyfish is now used in hospitals and laboratories all over the world. Attaching it to cells allows doctors to watch how cancer spreads through the body, which has helped in developing new treatments.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So, for next week, please read chapter six of the textbook, which covers vision in deep-sea animals. Thank you.",
+                "speaker": "lecturer"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "flow_chart_completion",
+                "reuse": false,
+                "title": "How deep-sea animals produce light",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "diet"
+                        ],
+                        "prompt": "Many animals obtain luciferin through their ______ rather than making it.",
+                        "options": [],
+                        "evidence": "they simply take it in through their diet",
+                        "explanation": "The lecturer says only a few species make luciferin themselves; many get it from their diet by eating creatures that contain it."
+                    },
+                    {
+                        "answer": [
+                            "belly"
+                        ],
+                        "prompt": "Luciferin is stored in light organs, usually in rows along the fish's ______.",
+                        "options": [],
+                        "evidence": "in most deep-sea fish they're arranged in rows along the belly",
+                        "explanation": "She says you might expect the organs on the head or back, but in most deep-sea fish they are along the belly."
+                    },
+                    {
+                        "answer": [
+                            "oxygen"
+                        ],
+                        "prompt": "A nerve signal makes luciferin react with luciferase and ______.",
+                        "options": [],
+                        "evidence": "it's actually oxygen that's needed",
+                        "explanation": "People used to think water was the third ingredient, but the lecturer says it is really oxygen."
+                    },
+                    {
+                        "answer": [
+                            "heat"
+                        ],
+                        "prompt": "Energy is released as light, with almost none lost as ______.",
+                        "options": [],
+                        "evidence": "almost none of it is lost as heat",
+                        "explanation": "Unlike an old light bulb, the reaction wastes almost no energy as heat, which is why it is called cold light."
+                    },
+                    {
+                        "answer": [
+                            "lens"
+                        ],
+                        "prompt": "A ______ at the front of the organ concentrates the light into a beam.",
+                        "options": [],
+                        "evidence": "in front, many species have a lens, which focuses the light into a beam",
+                        "explanation": "The mirror-like layer is behind the light; the part in front that focuses the light is a lens."
+                    },
+                    {
+                        "answer": [
+                            "blue"
+                        ],
+                        "prompt": "The light is usually ______, as this colour travels furthest in seawater.",
+                        "options": [],
+                        "evidence": "in the deep sea the light is nearly always blue",
+                        "explanation": "Green light is common in coastal species, and red disappears quickly; deep-sea light is nearly always blue."
+                    },
+                    {
+                        "answer": [
+                            "second"
+                        ],
+                        "prompt": "A typical flash lasts less than a ______.",
+                        "options": [],
+                        "evidence": "a typical flash lasts less than a second",
+                        "explanation": "Some animals glow for hours, but most produce flashes lasting less than a second."
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Write ONE WORD ONLY for each answer."
+            },
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "title": "Why animals produce light and how it is studied",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "shadow"
+                        ],
+                        "prompt": "Defence: lights on the underside stop predators below from seeing the animal's ______",
+                        "options": [],
+                        "evidence": "a fish can make its shadow disappear",
+                        "explanation": "Predators look up from below, so by glowing at the right brightness a fish makes its shadow disappear."
+                    },
+                    {
+                        "answer": [
+                            "torch"
+                        ],
+                        "prompt": "Hunting: the dragonfish's red light acts as a hidden ______",
+                        "options": [],
+                        "evidence": "So it works like a hidden torch",
+                        "explanation": "The anglerfish uses a lure, but the dragonfish's red light, which other animals can't see, works like a hidden torch."
+                    },
+                    {
+                        "answer": [
+                            "partner"
+                        ],
+                        "prompt": "Communication: flashing patterns are mainly used to find a ______",
+                        "options": [],
+                        "evidence": "the main purpose is to find a partner",
+                        "explanation": "Some patterns may warn rivals, but researchers think the main purpose is finding a partner."
+                    },
+                    {
+                        "answer": [
+                            "nets"
+                        ],
+                        "prompt": "Early research: animals brought up in ______ were often badly damaged",
+                        "options": [],
+                        "evidence": "scientists relied on animals brought up in nets",
+                        "explanation": "In the twentieth century animals were collected in nets and were usually damaged on the way up."
+                    },
+                    {
+                        "answer": [
+                            "cameras"
+                        ],
+                        "prompt": "Today: remotely operated vehicles use highly sensitive ______ instead of bright lights",
+                        "options": [],
+                        "evidence": "the vehicles are fitted with cameras so sensitive that they can pick up even the faintest glow",
+                        "explanation": "Bright lights scare animals away and are often switched off; the robots use very sensitive cameras instead."
+                    },
+                    {
+                        "answer": [
+                            "cancer"
+                        ],
+                        "prompt": "Medicine: a jellyfish protein helps doctors watch the spread of ______",
+                        "options": [],
+                        "evidence": "allows doctors to watch how cancer spreads through the body",
+                        "explanation": "The glowing protein is attached to cells so doctors can see how cancer spreads."
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a marine biology lecturer giving a talk about deep-ocean animals that produce their own light.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Imogen Fairclough"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they simply take it in through their diet, by eating smaller creatures that already contain it",
+                "answer": [
+                    "diet"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "in most deep-sea fish they're arranged in rows along the belly",
+                "answer": [
+                    "belly"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it's actually oxygen that's needed, and without it, no light is produced at all",
+                "answer": [
+                    "oxygen"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "almost none of it is lost as heat",
+                "answer": [
+                    "heat"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "in front, many species have a lens, which focuses the light into a beam",
+                "answer": [
+                    "lens"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "in the deep sea the light is nearly always blue, because blue light travels furthest through seawater",
+                "answer": [
+                    "blue"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "a typical flash lasts less than a second",
+                "answer": [
+                    "second"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a fish can make its shadow disappear. We call this counter-illumination.",
+                "answer": [
+                    "shadow"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "So it works like a hidden torch, letting the dragonfish spot its victims",
+                "answer": [
+                    "torch"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Researchers think the main purpose is to find a partner",
+                "answer": [
+                    "partner"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "scientists relied on animals brought up in nets. The problem was that these delicate creatures were usually badly damaged",
+                "answer": [
+                    "nets"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the vehicles are fitted with cameras so sensitive that they can pick up even the faintest glow",
+                "answer": [
+                    "cameras"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Attaching it to cells allows doctors to watch how cancer spreads through the body",
+                "answer": [
+                    "cancer"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they simply take it in through their diet",
+                "answer": [
+                    "diet"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "they're arranged in rows along the belly",
+                "answer": [
+                    "belly"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it's actually oxygen that's needed",
+                "answer": [
+                    "oxygen"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "almost none of it is lost as heat",
+                "answer": [
+                    "heat"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "in front, many species have a lens, which focuses the light into a beam",
+                "answer": [
+                    "lens"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "in the deep sea the light is nearly always blue, because blue light travels furthest through seawater",
+                "answer": [
+                    "blue"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "a typical flash lasts less than a second",
+                "answer": [
+                    "second"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "a fish can make its shadow disappear",
+                "answer": [
+                    "shadow"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "it works like a hidden torch",
+                "answer": [
+                    "torch"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the main purpose is to find a partner",
+                "answer": [
+                    "partner"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "scientists relied on animals brought up in nets",
+                "answer": [
+                    "nets"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the vehicles are fitted with cameras so sensitive that they can pick up even the faintest glow",
+                "answer": [
+                    "cameras"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "watch how cancer spreads through the body",
+                "answer": [
+                    "cancer"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "they simply take it in through their diet, by eating smaller creatures that already contain it",
+            "answer": [
+                "diet"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "in most deep-sea fish they're arranged in rows along the belly",
+            "answer": [
+                "belly"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "it's actually oxygen that's needed, and without it, no light is produced at all",
+            "answer": [
+                "oxygen"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "almost none of it is lost as heat",
+            "answer": [
+                "heat"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "in front, many species have a lens, which focuses the light into a beam",
+            "answer": [
+                "lens"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "in the deep sea the light is nearly always blue, because blue light travels furthest through seawater",
+            "answer": [
+                "blue"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "a fish can make its shadow disappear",
+            "answer": [
+                "shadow"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "it works like a hidden torch, letting the dragonfish spot its victims",
+            "answer": [
+                "torch"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the main purpose is to find a partner",
+            "answer": [
+                "partner"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "scientists relied on animals brought up in nets. The problem was that these delicate creatures were usually badly damaged",
+            "answer": [
+                "nets"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 13,
+        "agreedFirst": 13,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 21600,
+                "wer": 0,
+                "heard": "Good morning everyone. I'm Dr Imogen Fairclough and today we're continuing our series on life in the deep ocean. The topic is bioluminescence – that's the production of light by living things. I'll look first at how animals actually make light, then at why they do it, and finally at how scientists go about studying it."
+            },
+            {
+                "ms": 16640,
+                "wer": 0,
+                "heard": "Right, below about 200 metres, sunlight fades almost completely, and yet something like three-quarters of the animals living down there can produce their own light. So how do they do it? The process depends on a chemical called luciferin."
+            },
+            {
+                "ms": 12080,
+                "wer": 0,
+                "heard": "Now, a few species manufacture luciferin themselves, but a surprising number can't. Instead, they simply take it in through their diet, by eating smaller creatures that already contain it."
+            },
+            {
+                "ms": 16320,
+                "wer": 0,
+                "heard": "Once the animal has the luciferin, it's stored in special light organs. You might expect these to be on the head or on the back where they'd be easy to see. In fact, in most deep sea fish they're arranged in rows along the belly, and we'll come back to why that is in a few minutes."
+            },
+            {
+                "ms": 17200,
+                "wer": 0,
+                "heard": "When the animal wants to glow, a signal from its nerves triggers a reaction. The luciferin combines with an enzyme called luciferase. For a long time, people assumed water was the third ingredient, but it's actually oxygen that's needed, and without it, no light is produced at all."
+            },
+            {
+                "ms": 18480,
+                "wer": 0,
+                "heard": "What comes out of this reaction is energy, released as light. And here's the remarkable part: almost none of it is lost as heat. Compare that with an old-fashioned light bulb, which wastes most of its energy warming up the room. That's why biologists often call this \"cold light.\""
+            },
+            {
+                "ms": 16240,
+                "wer": 0,
+                "heard": "The light organ itself is quite sophisticated. Behind the light there's usually a reflective layer that works rather like a mirror, sending the light outwards. And in front many species have a lens which focuses the light into a beam, a bit like the headlamp on a car."
+            },
+            {
+                "ms": 17200,
+                "wer": 0.049,
+                "heard": "What about color? Coastal species—jellyfish near the shore, for example—often glow green. But in the deep sea, the light is nearly always blue, because blue light travels farthest through seawater. Red light, on the other hand, disappears very quickly."
+            },
+            {
+                "ms": 14320,
+                "wer": 0,
+                "heard": "Finally, timing. Some animals glow steadily for hours, but most produce flashes, and a typical flash lasts less than a second. Short flashes save energy and make the animal much harder to locate."
+            },
+            {
+                "ms": 8320,
+                "wer": 0,
+                "heard": "OK, so that's how. Now why? The most common use is defence. Remember those lights along the belly?"
+            },
+            {
+                "ms": 15440,
+                "wer": 0,
+                "heard": "Predators in the deep often swim below their prey and look upwards, watching for anything against the faint light from above. By glowing at just the right brightness, a fish can make its shadow disappear; we call this counter-illumination."
+            },
+            {
+                "ms": 11760,
+                "wer": 0,
+                "heard": "Light is also used for hunting. The anglerfish is the famous example, with its glowing lure that draws in curious prey, but personally, I find the dragonfish more interesting."
+            },
+            {
+                "ms": 12880,
+                "wer": 0,
+                "heard": "Unlike almost everything else down there, it produces red light, which most deep-sea animals can't see, so it works like a hidden torch, letting the dragonfish spot its victims without them noticing."
+            },
+            {
+                "ms": 14880,
+                "wer": 0,
+                "heard": "The third use is communication. Some small shrimps and fish flash in particular patterns, rather like a code. Researchers think the main purpose is to find a partner, although some patterns may also be warnings to rivals."
+            },
+            {
+                "ms": 17360,
+                "wer": 0,
+                "heard": "Right, the last section. How do we study all this? For most of the 20th century, scientists relied on animals brought up in nets. The problem was that these delicate creatures were usually badly damaged on the way up, and many stopped producing light completely."
+            },
+            {
+                "ms": 20880,
+                "wer": 0,
+                "heard": "Nowadays, we use remotely operated vehicles, which are robots controlled from a ship. You might think they'd need powerful lights, but bright lights actually scare animals away, so researchers often switch them off. Instead, the vehicles are fitted with cameras so sensitive that they can pick up even the faintest glow."
+            },
+            {
+                "ms": 18000,
+                "wer": 0,
+                "heard": "And this research has benefits beyond marine biology: a glowing protein first found in a jellyfish is now used in hospitals and laboratories all over the world. Attaching it to cells allows doctors to watch how cancer spreads through the body, which has helped in developing new treatments."
+            },
+            {
+                "ms": 7280,
+                "wer": 0,
+                "heard": "So, for next week, please read chapter six of the textbook, which covers vision in deep-sea animals. Thank you."
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -1
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "31": "b1q1",
+        "32": "b1q2",
+        "33": "b1q3",
+        "34": "b1q4",
+        "35": "b1q5",
+        "36": "b1q6",
+        "37": "b2q1",
+        "38": "b2q2",
+        "39": "b2q3",
+        "40": "b2q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

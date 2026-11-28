@@ -1,0 +1,1345 @@
+{
+    "form": {
+        "first": [
+            "block 1 (multiple_choice), question 1: the correct option is much longer than the wrong ones; make the options alike in length"
+        ],
+        "afterRepair": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l5-p2.mp3",
+            "bytes": 4190444,
+            "sha256": "9a067405a7c8515cbb47c18cfe2675790a3d0bd70deb39ebd3ae29480060e600",
+            "voices": {
+                "officer": {
+                    "voice": "ara",
+                    "provider": "xai"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 2. You will hear a city transport officer speaking on a local radio program about a new bike-share scheme. First, you have some time to look at questions 11 to 16.",
+                    "endMs": 12520,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 42520,
+                    "purpose": "read",
+                    "startMs": 12520,
+                    "questions": [
+                        11,
+                        16
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 58186,
+                    "startMs": 42520
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 77378,
+                    "startMs": 58186
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 96884,
+                    "startMs": 77378
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 117671,
+                    "startMs": 96884
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 136550,
+                    "startMs": 117671
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 155429,
+                    "startMs": 136550
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 172062,
+                    "startMs": 155429
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 194781,
+                    "startMs": 172062
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 208200,
+                    "startMs": 194781
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 17 to 20.",
+                    "endMs": 211520,
+                    "startMs": 208200
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 241520,
+                    "purpose": "read",
+                    "startMs": 211520,
+                    "questions": [
+                        17,
+                        20
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 259120,
+                    "startMs": 241520
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 285679,
+                    "startMs": 259120
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 307432,
+                    "startMs": 285679
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 313311,
+                    "startMs": 307432
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 2. You now have thirty seconds to check your answers.",
+                    "endMs": 319111,
+                    "startMs": 313311
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 349111,
+                    "purpose": "check",
+                    "startMs": 319111
+                }
+            ],
+            "durationMs": 349111
+        },
+        "title": "A new bike-share program",
+        "turns": [
+            {
+                "text": "Good morning, and thanks for having me on the show. I'm Erin Castellano from the City of Riverton's transportation office. You've probably noticed the bright green bikes all over downtown lately. That's Ride Riverton, our new bike-share program, and it's been running for just over six weeks.",
+                "speaker": "officer"
+            },
+            {
+                "text": "So, why did we set it up? A lot of people assume it's mainly for tourists, and sure, visitors do use it. It might also take a few cars off the road downtown, which would be great. But the main reason was commuters: too many people were getting off the train at Union Station with no easy way to cover the last mile to their offices.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Now, how do you get started? Originally, the idea was that you'd pick up a membership card at the public library, but we dropped that because it added an extra step. There's also a Ride Riverton app, which plenty of people like, but you don't have to download it. All you do is walk up to the screen at any station, tap your bank card, and sign up right there.",
+                "speaker": "officer"
+            },
+            {
+                "say": "Right, let's talk money, because that's what everyone asks me about. When the program was first announced, we said a single ride would cost three dollars fifty. But the city council voted to bring that down to two dollars seventy-five for the first year, to encourage people to try it. That covers thirty minutes, and if you go over, it's an extra one dollar fifty for each additional half hour.",
+                "text": "Right, let's talk money, because that's what everyone asks me about. When the program was first announced, we said a single ride would cost $3.50. But the city council voted to bring that down to $2.75 for the first year, to encourage people to try it. That covers thirty minutes, and if you go over, it's an extra $1.50 for each additional half hour.",
+                "speaker": "officer"
+            },
+            {
+                "say": "If you ride regularly, an annual pass is better value at ninety dollars a year. We did look at a discount for students, but the colleges here already pay for their students' transit passes. A reduced rate for seniors is something we're still discussing. What we have done is cut the annual pass in half for anyone who holds the city's low-income transit card.",
+                "text": "If you ride regularly, an annual pass is better value at $90 a year. We did look at a discount for students, but the colleges here already pay for their students' transit passes. A reduced rate for seniors is something we're still discussing. What we have done is cut the annual pass in half for anyone who holds the city's low-income transit card.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Okay, where are the bikes? Right now there are twenty-two stations. You'd probably expect the biggest one to be at Union Station, and it's busy, with thirty docks. But the largest is actually down at Harbor Park on the waterfront, which has forty-five, because weekend demand there is huge. There's also a smaller one outside the central library.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Now, what if you arrive at a station and every dock is full? Please don't just lock the bike to a fence or a lamppost, because you'll be charged a fee. And you don't need to call us, either. Just tap the screen at the full station, and it'll give you fifteen extra minutes free to ride to the nearest one with space.",
+                "speaker": "officer"
+            },
+            {
+                "text": "So, how has it gone so far? Really well overall, with over forty thousand rides. We expected complaints about the seats, but they adjust easily and hardly anyone's mentioned them. The app did crash briefly on the first day, sorry, the first morning, but that was fixed within hours. What people actually complained about most was that early in the morning, stations in residential neighborhoods were often empty.",
+                "speaker": "officer"
+            },
+            {
+                "text": "That happens because everyone rides downtown in the morning and the bikes stay there. Some people suggested charging more during the morning rush, but we don't want to punish commuters. And adding extra docks wouldn't help much if the stations are empty anyway.",
+                "speaker": "officer"
+            },
+            {
+                "text": "So we've got two fixes. Starting next week, vans will collect bikes from downtown overnight and bring them back out to the neighborhoods. And then, to encourage riders to help us out, there's a new reward system: if you finish a ride at one of the stations marked in blue on the app, you'll get ride credit added to your account.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Looking ahead, we've got some bigger changes coming this summer. At the moment, the bikes are locked between midnight and 5 a.m., but from June first they'll be available around the clock. Lots of parents have asked us for child seats, but for safety reasons we've decided not to offer them. We're also adding a hundred electric bikes in June, which should really help with the hills on the north side. Stations east of the river are definitely coming too, but not until next spring, I'm afraid.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Finally, we'd love your ideas on where new stations should go. Please don't email suggestions, because honestly, they're hard for us to keep track of. Instead, go to our website and drop a pin on the interactive map. Our online survey closed back in March, but if you'd rather talk to us in person, there's an open public meeting at the Eastside Community Center on May 14th at 7 p.m.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Bring your questions and your ideas. Thanks so much for listening, and I'll see you out on the bikes!",
+                "speaker": "officer"
+            }
+        ],
+        "groups": [
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "to attract more visitors to the city"
+                    },
+                    {
+                        "id": "B",
+                        "text": "to help train commuters get to work"
+                    },
+                    {
+                        "id": "C",
+                        "text": "to reduce the number of cars downtown"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What was the main reason for setting up the bike-share program?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "too many people were getting off the train at Union Station with no easy way to cover the last mile to their offices",
+                        "explanation": {
+                            "en": "Erin says tourists use the bikes and traffic may fall, but the main reason was commuters who had no easy way to get from the train station to their offices.",
+                            "ru": "Erin говорит, что велосипедами пользуются туристы и что машин на дорогах может стать меньше. Но главной причиной были люди, которые ездят на работу (\"commuters\"): им было непросто добраться от вокзала до своих офисов.",
+                            "uk": "Erin каже, що велосипедами користуються туристи і що машин на дорогах може поменшати. Але головною причиною були люди, які щодня їздять на роботу (\"commuters\"): їм було нелегко дістатися від залізничного вокзалу до своїх офісів."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "download the program's app to their phone"
+                    },
+                    {
+                        "id": "B",
+                        "text": "collect a membership card from the library"
+                    },
+                    {
+                        "id": "C",
+                        "text": "sign up at a station using a bank card"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What do new users need to do to start using the bikes?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "walk up to the screen at any station, tap your bank card, and sign up right there",
+                        "explanation": {
+                            "en": "The library card idea was dropped, and the app is optional. You simply tap your bank card at a station screen and register there.",
+                            "ru": "От идеи с читательским билетом отказались, а приложение устанавливать не обязательно. Достаточно приложить банковскую карту к экрану на станции и зарегистрироваться прямо там.",
+                            "uk": "Від ідеї з читацьким квитком відмовилися, а застосунок встановлювати не обов'язково. Достатньо прикласти банківську картку до екрана на станції й зареєструватися прямо там."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "$2.75"
+                    },
+                    {
+                        "id": "B",
+                        "text": "$1.50"
+                    },
+                    {
+                        "id": "C",
+                        "text": "$3.50"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "How much does a single ride cost at present?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "the city council voted to bring that down to $2.75 for the first year",
+                        "explanation": {
+                            "en": "$3.50 was the price first announced, but the council reduced it to $2.75. $1.50 is the charge for each extra half hour.",
+                            "ru": "Сначала объявили цену \"$3.50\", но городской совет снизил её до \"$2.75\". А \"$1.50\" — это плата за каждые дополнительные полчаса.",
+                            "uk": "Спочатку оголосили ціну \"$3.50\", але міська рада знизила її до \"$2.75\". А \"$1.50\" — це плата за кожні додаткові пів години."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "senior citizens in the city"
+                    },
+                    {
+                        "id": "B",
+                        "text": "residents with low incomes"
+                    },
+                    {
+                        "id": "C",
+                        "text": "students at local colleges"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Who can currently get a cheaper annual pass?",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "cut the annual pass in half for anyone who holds the city's low-income transit card",
+                        "explanation": {
+                            "en": "A student discount was considered but not needed, and a senior rate is still being discussed. Only people with the low-income transit card pay half price.",
+                            "ru": "Скидку для студентов рассматривали, но решили, что она не нужна, а тариф для пенсионеров ещё обсуждается. Половину цены платят только владельцы транспортной карты для малоимущих (\"low-income transit card\").",
+                            "uk": "Знижку для студентів розглядали, але вирішили, що вона не потрібна, а тариф для пенсіонерів ще обговорюється. Половину ціни платять лише власники транспортної картки для людей з низьким доходом (\"low-income transit card\")."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "outside the central library"
+                    },
+                    {
+                        "id": "B",
+                        "text": "next to Union Station"
+                    },
+                    {
+                        "id": "C",
+                        "text": "in a park by the water"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Where is the largest bike station?",
+                        "numbers": [
+                            15
+                        ],
+                        "evidence": "the largest is actually down at Harbor Park on the waterfront, which has forty-five",
+                        "explanation": {
+                            "en": "Union Station is busy with thirty docks, and the library station is small. The biggest, with forty-five docks, is at Harbor Park on the waterfront.",
+                            "ru": "На \"Union Station\" оживлённо, там \"thirty\" мест для велосипедов, а станция у библиотеки маленькая. Самая большая, на \"forty-five\" мест, находится в \"Harbor Park\" на набережной.",
+                            "uk": "На \"Union Station\" людно, там \"thirty\" місць для велосипедів, а станція біля бібліотеки маленька. Найбільша, на \"forty-five\" місць, розташована в \"Harbor Park\" на набережній."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "get free extra time from the station"
+                    },
+                    {
+                        "id": "B",
+                        "text": "phone the program's customer service"
+                    },
+                    {
+                        "id": "C",
+                        "text": "lock the bike to something nearby"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What should riders do if every dock at a station is full?",
+                        "numbers": [
+                            16
+                        ],
+                        "evidence": "tap the screen at the full station, and it'll give you fifteen extra minutes free",
+                        "explanation": {
+                            "en": "Locking the bike to a fence or lamppost means a fee, and there is no need to call. The station screen gives fifteen free minutes to reach another station.",
+                            "ru": "Если пристегнуть велосипед к забору или фонарному столбу, придётся платить штраф, а звонить никуда не нужно. Экран на станции даёт \"fifteen\" бесплатных минут, чтобы доехать до другой станции.",
+                            "uk": "Якщо пристебнути велосипед до паркану чи ліхтарного стовпа, доведеться сплатити штраф, а телефонувати нікуди не потрібно. Екран на станції дає \"fifteen\" безкоштовних хвилин, щоб доїхати до іншої станції."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "limiting the length of early rides"
+                    },
+                    {
+                        "id": "B",
+                        "text": "rewarding riders who use certain stations"
+                    },
+                    {
+                        "id": "C",
+                        "text": "adding docks at busy stations"
+                    },
+                    {
+                        "id": "D",
+                        "text": "moving bikes by van overnight"
+                    },
+                    {
+                        "id": "E",
+                        "text": "raising prices during rush hour"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B",
+                            "D"
+                        ],
+                        "prompt": "Which TWO actions will the city take to deal with the shortage of bikes in the morning?",
+                        "numbers": [
+                            17,
+                            18
+                        ],
+                        "evidence": "vans will collect bikes from downtown overnight and bring them back out to the neighborhoods. And then, to encourage riders to help us out, there's a new reward system: if you finish a ride at one of the stations marked in blue on the app, you'll get ride credit",
+                        "explanation": {
+                            "en": "Vans will move bikes back to the neighborhoods at night, and riders get credit for ending rides at blue stations. Higher rush-hour prices and extra docks were suggested but rejected.",
+                            "ru": "Ночью фургоны будут развозить велосипеды обратно по районам, а пользователи получат бонус, если завершат поездку на синей станции. Повышенные цены в час пик и дополнительные места на станциях предлагали, но эти идеи отклонили.",
+                            "uk": "Уночі фургони розвозитимуть велосипеди назад по районах, а користувачі отримуватимуть бонус, якщо завершать поїздку на синій станції. Підвищені ціни в години пік і додаткові місця на станціях пропонували, але ці ідеї відхилили."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "fitting child seats to some bikes"
+                    },
+                    {
+                        "id": "B",
+                        "text": "bringing in electric bikes"
+                    },
+                    {
+                        "id": "C",
+                        "text": "opening stations east of the river"
+                    },
+                    {
+                        "id": "D",
+                        "text": "launching an updated app"
+                    },
+                    {
+                        "id": "E",
+                        "text": "letting people ride at any hour"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B",
+                            "E"
+                        ],
+                        "prompt": "Which TWO changes will happen this summer?",
+                        "numbers": [
+                            19,
+                            20
+                        ],
+                        "evidence": "from June first they'll be available around the clock. Lots of parents have asked us for child seats, but for safety reasons we've decided not to offer them. We're also adding a hundred electric bikes in June",
+                        "explanation": {
+                            "en": "From June the bikes can be used 24 hours a day, and a hundred electric bikes will be added. Child seats will not be offered, and the new stations east of the river will not come until next spring.",
+                            "ru": "С июня велосипедами можно будет пользоваться \"24\" часа в сутки, а ещё добавят сто электровелосипедов. Детских сидений не будет, а новые станции к востоку от реки появятся только следующей весной.",
+                            "uk": "З червня велосипедами можна буде користуватися \"24\" години на добу, а ще додадуть сто електровелосипедів. Дитячих сидінь не буде, а нові станції на схід від річки з'являться лише наступної весни."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E."
+            }
+        ],
+        "context": "You will hear a city transport officer speaking on a local radio program about a new bike-share scheme.",
+        "speakers": [
+            {
+                "id": "officer",
+                "name": "Erin Castellano",
+                "role": "city transport officer",
+                "accent": "north_american",
+                "gender": "female"
+            }
+        ]
+    },
+    "plan": "l5|p2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.277988,
+            "provider": "anthropic",
+            "outputTokens": 12898
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.1235,
+            "provider": "anthropic",
+            "outputTokens": 4174
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.014948,
+            "provider": "anthropic",
+            "outputTokens": 579
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.019013,
+            "provider": "openai",
+            "outputTokens": 776
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.02321,
+            "provider": "xai",
+            "outputTokens": 2515
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.067612,
+            "provider": "anthropic",
+            "outputTokens": 3160
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "A new bike-share program",
+        "turns": [
+            {
+                "text": "Good morning, and thanks for having me on the show. I'm Erin Castellano from the City of Riverton's transportation office. You've probably noticed the bright green bikes all over downtown lately. That's Ride Riverton, our new bike-share program, and it's been running for just over six weeks.",
+                "speaker": "officer"
+            },
+            {
+                "text": "So, why did we set it up? A lot of people assume it's mainly for tourists, and sure, visitors do use it. It might also take a few cars off the road downtown, which would be great. But the main reason was commuters: too many people were getting off the train at Union Station with no easy way to cover the last mile to their offices.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Now, how do you get started? Originally, the idea was that you'd pick up a membership card at the public library, but we dropped that because it added an extra step. There's also a Ride Riverton app, which plenty of people like, but you don't have to download it. All you do is walk up to the screen at any station, tap your bank card, and sign up right there.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Right, let's talk money, because that's what everyone asks me about. When the program was first announced, we said a single ride would cost $3.50. But the city council voted to bring that down to $2.75 for the first year, to encourage people to try it. That covers thirty minutes, and if you go over, it's an extra $1.50 for each additional half hour.",
+                "speaker": "officer"
+            },
+            {
+                "text": "If you ride regularly, an annual pass is better value at $90 a year. We did look at a discount for students, but the colleges here already pay for their students' transit passes. A reduced rate for seniors is something we're still discussing. What we have done is cut the annual pass in half for anyone who holds the city's low-income transit card.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Okay, where are the bikes? Right now there are twenty-two stations. You'd probably expect the biggest one to be at Union Station, and it's busy, with thirty docks. But the largest is actually down at Harbor Park on the waterfront, which has forty-five, because weekend demand there is huge. There's also a smaller one outside the central library.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Now, what if you arrive at a station and every dock is full? Please don't just lock the bike to a fence or a lamppost, because you'll be charged a fee. And you don't need to call us, either. Just tap the screen at the full station, and it'll give you fifteen extra minutes free to ride to the nearest one with space.",
+                "speaker": "officer"
+            },
+            {
+                "text": "So, how has it gone so far? Really well overall, with over forty thousand rides. We expected complaints about the seats, but they adjust easily and hardly anyone's mentioned them. The app did crash briefly on the first day, sorry, the first morning, but that was fixed within hours. What people actually complained about most was that early in the morning, stations in residential neighborhoods were often empty.",
+                "speaker": "officer"
+            },
+            {
+                "text": "That happens because everyone rides downtown in the morning and the bikes stay there. Some people suggested charging more during the morning rush, but we don't want to punish commuters. And adding extra docks wouldn't help much if the stations are empty anyway.",
+                "speaker": "officer"
+            },
+            {
+                "text": "So we've got two fixes. Starting next week, vans will collect bikes from downtown overnight and bring them back out to the neighborhoods. And then, to encourage riders to help us out, there's a new reward system: if you finish a ride at one of the stations marked in blue on the app, you'll get ride credit added to your account.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Looking ahead, we've got some bigger changes coming this summer. At the moment, the bikes are locked between midnight and 5 a.m., but from June first they'll be available around the clock. Lots of parents have asked us for child seats, but for safety reasons we've decided not to offer them. We're also adding a hundred electric bikes in June, which should really help with the hills on the north side. Stations east of the river are definitely coming too, but not until next spring, I'm afraid.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Finally, we'd love your ideas on where new stations should go. Please don't email suggestions, because honestly, they're hard for us to keep track of. Instead, go to our website and drop a pin on the interactive map. Our online survey closed back in March, but if you'd rather talk to us in person, there's an open public meeting at the Eastside Community Center on May 14th at 7 p.m.",
+                "speaker": "officer"
+            },
+            {
+                "text": "Bring your questions and your ideas. Thanks so much for listening, and I'll see you out on the bikes!",
+                "speaker": "officer"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What was the main reason for setting up the bike-share program?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "to attract more visitors to the city"
+                            },
+                            {
+                                "id": "B",
+                                "text": "to reduce the number of cars downtown"
+                            },
+                            {
+                                "id": "C",
+                                "text": "to help train commuters get to work"
+                            }
+                        ],
+                        "evidence": "too many people were getting off the train at Union Station with no easy way to cover the last mile to their offices",
+                        "explanation": "Erin says tourists use the bikes and traffic may fall, but the main reason was commuters who had no easy way to get from the train station to their offices."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What do new users need to do to start using the bikes?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "collect a membership card from the library"
+                            },
+                            {
+                                "id": "B",
+                                "text": "download the program's app to their phone"
+                            },
+                            {
+                                "id": "C",
+                                "text": "sign up at a station using a bank card"
+                            }
+                        ],
+                        "evidence": "walk up to the screen at any station, tap your bank card, and sign up right there",
+                        "explanation": "The library card idea was dropped, and the app is optional. You simply tap your bank card at a station screen and register there."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "How much does a single ride cost at present?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "$1.50"
+                            },
+                            {
+                                "id": "B",
+                                "text": "$2.75"
+                            },
+                            {
+                                "id": "C",
+                                "text": "$3.50"
+                            }
+                        ],
+                        "evidence": "the city council voted to bring that down to $2.75 for the first year",
+                        "explanation": "$3.50 was the price first announced, but the council reduced it to $2.75. $1.50 is the charge for each extra half hour."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Who can currently get a cheaper annual pass?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "students at local colleges"
+                            },
+                            {
+                                "id": "B",
+                                "text": "senior citizens in the city"
+                            },
+                            {
+                                "id": "C",
+                                "text": "residents with low incomes"
+                            }
+                        ],
+                        "evidence": "cut the annual pass in half for anyone who holds the city's low-income transit card",
+                        "explanation": "A student discount was considered but not needed, and a senior rate is still being discussed. Only people with the low-income transit card pay half price."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Where is the largest bike station?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "outside the central library"
+                            },
+                            {
+                                "id": "B",
+                                "text": "next to Union Station"
+                            },
+                            {
+                                "id": "C",
+                                "text": "in a park by the water"
+                            }
+                        ],
+                        "evidence": "the largest is actually down at Harbor Park on the waterfront, which has forty-five",
+                        "explanation": "Union Station is busy with thirty docks, and the library station is small. The biggest, with forty-five docks, is at Harbor Park on the waterfront."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What should riders do if every dock at a station is full?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "lock the bike to something nearby"
+                            },
+                            {
+                                "id": "B",
+                                "text": "get free extra time from the station"
+                            },
+                            {
+                                "id": "C",
+                                "text": "phone the program's customer service"
+                            }
+                        ],
+                        "evidence": "tap the screen at the full station, and it'll give you fifteen extra minutes free",
+                        "explanation": "Locking the bike to a fence or lamppost means a fee, and there is no need to call. The station screen gives fifteen free minutes to reach another station."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What have users complained about most?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "the comfort of the bike seats"
+                            },
+                            {
+                                "id": "B",
+                                "text": "problems with the program's app"
+                            },
+                            {
+                                "id": "C",
+                                "text": "a lack of bikes in the morning"
+                            }
+                        ],
+                        "evidence": "early in the morning, stations in residential neighborhoods were often empty",
+                        "explanation": "Hardly anyone mentioned the seats, and the app problem was fixed within hours. The biggest complaint was empty stations in residential areas early in the morning."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "D"
+                        ],
+                        "prompt": "Which TWO actions will the city take to deal with the shortage of bikes in the morning?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "moving bikes by van overnight"
+                            },
+                            {
+                                "id": "B",
+                                "text": "raising prices during rush hour"
+                            },
+                            {
+                                "id": "C",
+                                "text": "adding docks at busy stations"
+                            },
+                            {
+                                "id": "D",
+                                "text": "rewarding riders who use certain stations"
+                            },
+                            {
+                                "id": "E",
+                                "text": "limiting the length of early rides"
+                            }
+                        ],
+                        "evidence": "vans will collect bikes from downtown overnight and bring them back out to the neighborhoods. And then, to encourage riders to help us out, there's a new reward system: if you finish a ride at one of the stations marked in blue on the app, you'll get ride credit",
+                        "explanation": "Vans will move bikes back to the neighborhoods at night, and riders get credit for ending rides at blue stations. Higher rush-hour prices and extra docks were suggested but rejected."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "D"
+                        ],
+                        "prompt": "Which TWO changes will happen this summer?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "letting people ride at any hour"
+                            },
+                            {
+                                "id": "B",
+                                "text": "fitting child seats to some bikes"
+                            },
+                            {
+                                "id": "C",
+                                "text": "opening stations east of the river"
+                            },
+                            {
+                                "id": "D",
+                                "text": "bringing in electric bikes"
+                            },
+                            {
+                                "id": "E",
+                                "text": "launching an updated app"
+                            }
+                        ],
+                        "evidence": "from June first they'll be available around the clock. Lots of parents have asked us for child seats, but for safety reasons we've decided not to offer them. We're also adding a hundred electric bikes in June",
+                        "explanation": "From June the bikes can be used 24 hours a day, and a hundred electric bikes will be added. Child seats will not be offered, and the new stations east of the river will not come until next spring."
+                    },
+                    {
+                        "answer": [
+                            "B",
+                            "D"
+                        ],
+                        "prompt": "Which TWO ways can listeners suggest locations for new stations?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "emailing the transportation office"
+                            },
+                            {
+                                "id": "B",
+                                "text": "marking a place on a website map"
+                            },
+                            {
+                                "id": "C",
+                                "text": "completing an online survey"
+                            },
+                            {
+                                "id": "D",
+                                "text": "attending a public meeting"
+                            },
+                            {
+                                "id": "E",
+                                "text": "phoning the city's helpline"
+                            }
+                        ],
+                        "evidence": "go to our website and drop a pin on the interactive map. Our online survey closed back in March, but if you'd rather talk to us in person, there's an open public meeting",
+                        "explanation": "Listeners can put a pin on the website's map or go to the public meeting on May 14th. Erin asks people not to email, and the online survey has already closed."
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E."
+            }
+        ],
+        "context": "You will hear a city transport officer speaking on a local radio program about a new bike-share scheme.",
+        "speakers": [
+            {
+                "id": "officer",
+                "name": "Erin Castellano"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the main reason was commuters: too many people were getting off the train at Union Station with no easy way to cover the last mile to their offices.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "All you do is walk up to the screen at any station, tap your bank card, and sign up right there.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the city council voted to bring that down to $2.75 for the first year",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "cut the annual pass in half for anyone who holds the city's low-income transit card.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the largest is actually down at Harbor Park on the waterfront, which has forty-five",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Just tap the screen at the full station, and it'll give you fifteen extra minutes free to ride to the nearest one with space.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "What people actually complained about most was that early in the morning, stations in residential neighborhoods were often empty.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "vans will collect bikes from downtown overnight and bring them back out to the neighborhoods. And then... a new reward system: if you finish a ride at one of the stations marked in blue on the app, you'll get ride credit",
+                "answer": [
+                    "A",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "from June first they'll be available around the clock... We're also adding a hundred electric bikes in June",
+                "answer": [
+                    "A",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "go to our website and drop a pin on the interactive map... there's an open public meeting at the Eastside Community Center on May 14th",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "But the main reason was commuters: too many people were getting off the train at Union Station with no easy way to cover the last mile to their offices.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "All you do is walk up to the screen at any station, tap your bank card, and sign up right there.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "But the city council voted to bring that down to $2.75 for the first year, to encourage people to try it.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "What we have done is cut the annual pass in half for anyone who holds the city's low-income transit card.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "But the largest is actually down at Harbor Park on the waterfront, which has forty-five, because weekend demand there is huge.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Just tap the screen at the full station, and it'll give you fifteen extra minutes free to ride to the nearest one with space.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "What people actually complained about most was that early in the morning, stations in residential neighborhoods were often empty.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Starting next week, vans will collect bikes from downtown overnight and bring them back out to the neighborhoods. And then, to encourage riders to help us out, there's a new reward system: if you finish a ride at one of the stations marked in blue on the app, you'll get ride credit added to your account.",
+                "answer": [
+                    "A",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "At the moment, the bikes are locked between midnight and 5 a.m., but from June first they'll be available around the clock... We're also adding a hundred electric bikes in June",
+                "answer": [
+                    "A",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Instead, go to our website and drop a pin on the interactive map... if you'd rather talk to us in person, there's an open public meeting at the Eastside Community Center on May 14th at 7 p.m.",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "But the main reason was commuters: too many people were getting off the train at Union Station with no easy way to cover the last mile to their offices.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "All you do is walk up to the screen at any station, tap your bank card, and sign up right there.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the city council voted to bring that down to $2.75 for the first year",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "What we have done is cut the annual pass in half for anyone who holds the city's low-income transit card.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "the largest is actually down at Harbor Park on the waterfront, which has forty-five",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Just tap the screen at the full station, and it'll give you fifteen extra minutes free to ride to the nearest one with space.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "Starting next week, vans will collect bikes from downtown overnight and bring them back out to the neighborhoods. And then, to encourage riders to help us out, there's a new reward system: if you finish a ride at one of the stations marked in blue on the app, you'll get ride credit added to your account.",
+            "answer": [
+                "B",
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "from June first they'll be available around the clock. ... We're also adding a hundred electric bikes in June",
+            "answer": [
+                "B",
+                "E"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 10,
+        "agreedFirst": 10,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 15386,
+                "wer": 0,
+                "heard": "Good morning, and thanks for having me on the show. I'm Erin Castellano from the City of Riverton's Transportation Office. You've probably noticed the bright green bikes all over downtown lately. That's Ride Riverton, our new bike share program, and it's been running for just over six weeks."
+            },
+            {
+                "ms": 18913,
+                "wer": 0,
+                "heard": "So why did we set it up? A lot of people assume it's mainly for tourists, and sure, visitors do use it. It might also take a few cars off the road downtown, which would be great. But the main reason was commuters. Too many people were getting off the train at Union Station with no easy way to cover the last mile to their offices."
+            },
+            {
+                "ms": 19226,
+                "wer": 0,
+                "heard": "Now, how do you get started? Originally the idea was that you'd pick up a membership card at the public library, but we dropped that because it added an extra step. There's also a Ride Riverton app, which plenty of people like, but you don't have to download it. All you do is walk up to the screen at any station, tap your bank card, and sign up right there."
+            },
+            {
+                "ms": 20506,
+                "wer": 0,
+                "heard": "Right, let's talk money, because that's what everyone asks me about. When the program was first announced, we said a single ride would cost $3.50, but the City Council voted to bring that down to $2.75 for the first year to encourage people to try it. That covers 30 minutes, and if you go over, it's an extra $1.50 for each additional half-hour."
+            },
+            {
+                "ms": 18599,
+                "wer": 0,
+                "heard": "If you ride regularly, an annual pass is better value at $90 a year. We did look at a discount for students, but the colleges here already pay for their students’ transit passes. A reduced rate for seniors is something we're still discussing. What we have done is cut the annual pass in half for anyone who holds the city's low income transit card."
+            },
+            {
+                "ms": 18599,
+                "wer": 0.034,
+                "heard": "OK, where are the bikes? Right now there are 22 stations. You'd probably expect the biggest one to be at Union Station (and it's busy, with 30 docks), but the largest is actually down at Harbour Park on the waterfront, which has 45, because weekend demand there is huge. There's also a smaller one outside the Central Library."
+            },
+            {
+                "ms": 16353,
+                "wer": 0.032,
+                "heard": "Now, what if you arrive at a station and every dock is full? Please don't just lock the bike to a fence or a lamp post, because you'll be charged a fee. And you don't need to call us either. Just tap the screen at the full station and it'll give you 15 extra minutes free to ride to the nearest one with space."
+            },
+            {
+                "ms": 22439,
+                "wer": 0,
+                "heard": "So, how has it gone so far? Really well overall, with over 40,000 rides. We expected complaints about the seats, but they adjust easily and hardly anyone's mentioned them. The app did crash briefly on the first day. Sorry, the first morning, but that was fixed within hours. What people actually complained about most was that early in the morning, stations in residential neighborhoods were often empty."
+            },
+            {
+                "ms": 13140,
+                "wer": 0,
+                "heard": "That happens because everyone rides downtown in the morning, and the bikes stay there. Some people suggested charging more during the morning rush, but we don't want to punish commuters, and adding extra docks wouldn't help much if the stations are empty anyway."
+            },
+            {
+                "ms": 17319,
+                "wer": 0,
+                "heard": "So we've got two fixes. Starting next week, vans will collect bikes from downtown overnight and bring them back out to the neighborhoods. And then, to encourage riders to help us out, there's a new reward system: if you finish a ride at one of the stations marked in blue on the app, you'll get ride credit added to your account."
+            },
+            {
+                "ms": 26279,
+                "wer": 0.023,
+                "heard": "Looking ahead, we've got some bigger changes coming this summer. At the moment, the bikes are locked between midnight and 5 a.m., but from June 1st, they'll be available around the clock. Lots of parents have asked us for child seats, but for safety reasons, we've decided not to offer them. We're also adding 100 electric bikes in June, which should really help with the hills on the north side. Stations east of the river are definitely coming too, but not until next spring, I'm afraid."
+            },
+            {
+                "ms": 21473,
+                "wer": 0.085,
+                "heard": "Finally, we'd love your ideas on where a new station should go. Please don't email suggestions, because honestly, they're hard for us to keep track of. Instead, go to our website and drop a pin on the interactive map. Our online survey closed back in March, but if you'd rather talk to us in person, there's an open public meeting at the Eastside Community Center on May 14 at 7 PM."
+            },
+            {
+                "ms": 5460,
+                "wer": 0,
+                "heard": "Bring your questions and your ideas. Thanks so much for listening, and I'll see you out on the bikes."
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16.2,
+            "truePeakDb": -1.3
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "11": "b1q1",
+        "12": "b1q2",
+        "13": "b1q3",
+        "14": "b1q4",
+        "15": "b1q5",
+        "16": "b1q6",
+        "17": "b2q1",
+        "19": "b2q2"
+    },
+    "translation": {
+        "missing": []
+    }
+}

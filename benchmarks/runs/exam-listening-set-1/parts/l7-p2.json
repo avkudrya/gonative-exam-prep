@@ -1,0 +1,1463 @@
+{
+    "form": {
+        "first": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l7-p2.mp3",
+            "bytes": 4328972,
+            "sha256": "f61483ee097157424ca36a1f308fd687c58a6dd273ffa318386c572b3ebe8f46",
+            "voices": {
+                "leader": {
+                    "voice": "1HGaTm3UFxAyxae5H0GU",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 2. You will hear the leader of a tramping club talking to a group of new members about staying safe in the hills. First, you have some time to look at questions 11 to 16.",
+                    "endMs": 12520,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 42520,
+                    "purpose": "read",
+                    "startMs": 12520,
+                    "questions": [
+                        11,
+                        16
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 55760,
+                    "startMs": 42520
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 75480,
+                    "startMs": 55760
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 94720,
+                    "startMs": 75480
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 115480,
+                    "startMs": 94720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 135840,
+                    "startMs": 115480
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 154600,
+                    "startMs": 135840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 178640,
+                    "startMs": 154600
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 201560,
+                    "startMs": 178640
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 212240,
+                    "startMs": 201560
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 17 to 20.",
+                    "endMs": 215560,
+                    "startMs": 212240
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 245560,
+                    "purpose": "read",
+                    "startMs": 215560,
+                    "questions": [
+                        17,
+                        20
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 261600,
+                    "startMs": 245560
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 285080,
+                    "startMs": 261600
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 293920,
+                    "startMs": 285080
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 313480,
+                    "startMs": 293920
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 324860,
+                    "startMs": 313480
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 2. You now have thirty seconds to check your answers.",
+                    "endMs": 330660,
+                    "startMs": 324860
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 360660,
+                    "purpose": "check",
+                    "startMs": 330660
+                }
+            ],
+            "durationMs": 360660
+        },
+        "title": "Safety talk for new trampers",
+        "turns": [
+            {
+                "text": "Kia ora everyone, and welcome along. I'm Dougal Fraser, and I've been leading trips for the Canterbury Ridge Tramping Club for about twelve years now. Tonight's all about staying safe out in the hills, so grab a cuppa and get comfy.",
+                "speaker": "leader"
+            },
+            {
+                "text": "First, a quick word about your first trip with us. Normally we'd take new members up to Arthur's Pass, but there are roadworks on the highway all month, so that's off. We do evening walks on the Port Hills, but those are for people who've already been out with us. So your first one will be over on Banks Peninsula, on Saturday the twenty-third.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Right, planning. When people plan a tramp, they tend to spend ages on how hard the track's graded, or on sorting out who's driving. Both matter, sure. But the one thing I insist on, above everything else, is that you leave details of your route and the time you expect to be out by. No exceptions.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Now, who do you leave those details with? Years ago we used to drop a form in at the Department of Conservation visitor centre, but they stopped accepting them a while back. And please don't send it to our club secretary, because she can't be by the phone around the clock. Give it to a friend or someone in your family, someone you trust to raise the alarm if you're not back.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Okay, equipment, starting with your feet. The club has a few rain jackets members can borrow, but we haven't got any boots, sorry. And I'm not going to inspect everyone's footwear at the car park either. What I will ask is that you don't turn up in boots straight out of the box. Wear them around town for a couple of weeks first, so they're properly broken in.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Next, the weather, which in this part of the country can change in minutes. Lots of you will just check the weather app on your phone. The club website does post a forecast link too, but it's often a day out of date. The one we rely on is the mountain forecast on MetService, because it's specific to the high country.",
+                "speaker": "leader"
+            },
+            {
+                "text": "So what happens if the weather turns on us halfway through a trip? Most people assume we'd just turn round and go back the way we came. Actually, that's often not the safest choice, because you'd be heading back over exposed ridges. Sitting it out and waiting isn't great either, as you get cold really fast. What we normally do is drop down to a lower track, an escape route we'll have worked out in advance.",
+                "speaker": "leader"
+            },
+            {
+                "text": "And rivers. Crossings are one of the biggest risks for trampers in this country. Our rule used to be that you didn't cross if the water was above waist height, but that's far too deep when it's flowing fast. So now it's simple: if it's higher than your knees, nobody goes in. People ask whether linking arms makes it okay, and it helps, but it doesn't change the rule.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Right, let's talk about what goes in your pack. The club carries a personal locator beacon and the main first-aid kit, and the trip leader looks after both, so you don't need your own.",
+                "speaker": "leader"
+            },
+            {
+                "text": "But every single person must bring a head torch, even on a day walk, because delays happen. You'll also need a spare warm layer, like a fleece, however sunny it looks when you set off. A paper map's handy, but I'll always have one, so that's up to you.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Now, emergencies. If someone gets hurt, don't move them unless they're in danger where they are. And don't give them anything to eat or drink yet, until we know how bad it is. What you should do is get something underneath them and keep them warm, because the cold's the real danger out there. Then, if it's serious, we set off the beacon, which sends our exact position to the rescue services.",
+                "speaker": "leader"
+            },
+            {
+                "text": "In the old days, you'd send one person running out to get help. We don't do that any more. We keep the group together, and nobody heads off on their own.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Last thing: next Thursday's session. We'd hoped to have a volunteer from LandSAR, the search and rescue people, but they can't come till next month. So instead we'll head out onto the field behind the hall for some map and compass practice. And I'll give you a proper demonstration of how the beacon works, since any of you might need to set it off one day.",
+                "speaker": "leader"
+            },
+            {
+                "say": "The first-aid course is separate, by the way. That's a weekend in March, and it costs eighty-five dollars. And no, sorry, there's no gear sale this year. Right, any questions?",
+                "text": "The first-aid course is separate, by the way. That's a weekend in March, and it costs $85. And no, sorry, there's no gear sale this year. Right, any questions?",
+                "speaker": "leader"
+            }
+        ],
+        "groups": [
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Arthur's Pass"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Banks Peninsula"
+                    },
+                    {
+                        "id": "C",
+                        "text": "the Port Hills"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Where will new members go on their first club walk?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "So your first one will be over on Banks Peninsula",
+                        "explanation": {
+                            "en": "Arthur's Pass is the usual place, but roadworks mean it is not possible this month. The Port Hills walks are only for people who have already been out with the club, so the first walk is on Banks Peninsula.",
+                            "ru": "Обычно ходят на «Arthur's Pass», но в этом месяце туда не попасть из-за дорожных работ. Походы в «Port Hills» только для тех, кто уже ходил с клубом, поэтому первый поход будет на «Banks Peninsula».",
+                            "uk": "Зазвичай ходять на «Arthur's Pass», але цього місяця туди не дістатися через дорожні роботи. Походи в «Port Hills» лише для тих, хто вже ходив із клубом, тож перший похід буде на «Banks Peninsula»."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "organising transport to the track"
+                    },
+                    {
+                        "id": "B",
+                        "text": "checking the track's difficulty rating"
+                    },
+                    {
+                        "id": "C",
+                        "text": "sharing the route and expected return time"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the speaker consider the most important part of planning a walk?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "the one thing I insist on, above everything else, is that you leave details of your route and the time you expect to be out by",
+                        "explanation": {
+                            "en": "He says the track grading and who is driving both matter. But the thing he insists on most is leaving details of your route and when you expect to be back.",
+                            "ru": "Он говорит, что важны и категория сложности тропы, и то, кто за рулём. Но больше всего он настаивает на том, чтобы оставлять сведения о маршруте и о том, когда вы планируете вернуться.",
+                            "uk": "Він каже, що важать і категорія складності стежки, і те, хто за кермом. Але найбільше він наполягає на тому, щоб залишати відомості про маршрут і про те, коли ви плануєте повернутися."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "a trusted friend or relative"
+                    },
+                    {
+                        "id": "B",
+                        "text": "the club's secretary"
+                    },
+                    {
+                        "id": "C",
+                        "text": "a Department of Conservation office"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Who should members give their trip details to?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "Give it to a friend or someone in your family, someone you trust to raise the alarm",
+                        "explanation": {
+                            "en": "The Department of Conservation centre no longer accepts the forms, and the secretary cannot always answer the phone. The details should go to a friend or family member you trust.",
+                            "ru": "Центр «Department of Conservation» больше не принимает эти формы, а секретарь не всегда может ответить на звонок. Сведения нужно оставить другу или родственнику, которому вы доверяете.",
+                            "uk": "Центр «Department of Conservation» більше не приймає ці форми, а секретар не завжди може відповісти на дзвінок. Відомості слід залишити другові або родичеві, якому ви довіряєте."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The leader will check them before each walk."
+                    },
+                    {
+                        "id": "B",
+                        "text": "New ones should be worn for a while beforehand."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Members can borrow a pair from the club."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the speaker say about boots?",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "Wear them around town for a couple of weeks first, so they're properly broken in.",
+                        "explanation": {
+                            "en": "The club only lends rain jackets, not boots, and he says he won't inspect anyone's footwear. He asks people to wear new boots around town for a couple of weeks before a walk.",
+                            "ru": "Клуб даёт на время только дождевики, а не ботинки, и он говорит, что не будет проверять ничью обувь. Он просит перед походом пару недель разнашивать новые ботинки в городе.",
+                            "uk": "Клуб позичає лише дощовики, а не черевики, і він каже, що не перевірятиме нічийого взуття. Він просить перед походом пару тижнів розношувати нові черевики в місті."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "a link on the club's website"
+                    },
+                    {
+                        "id": "B",
+                        "text": "a weather app on a phone"
+                    },
+                    {
+                        "id": "C",
+                        "text": "a forecast made for mountain areas"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Where does the speaker recommend checking the weather forecast?",
+                        "numbers": [
+                            15
+                        ],
+                        "evidence": "The one we rely on is the mountain forecast on MetService, because it's specific to the high country.",
+                        "explanation": {
+                            "en": "He mentions phone apps and the club website, but says the website link is often out of date. The club relies on the MetService mountain forecast for the high country.",
+                            "ru": "Он упоминает приложения для телефона и сайт клуба, но говорит, что ссылка на сайте часто устаревшая. В высокогорье клуб полагается на горный прогноз «MetService».",
+                            "uk": "Він згадує застосунки для телефона й сайт клубу, але каже, що посилання на сайті часто застаріле. У високогір'ї клуб покладається на гірський прогноз «MetService»."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "take a lower route planned earlier."
+                    },
+                    {
+                        "id": "B",
+                        "text": "return along the same track."
+                    },
+                    {
+                        "id": "C",
+                        "text": "stop and wait for it to clear."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "If the weather gets worse during a walk, the group will usually",
+                        "numbers": [
+                            16
+                        ],
+                        "evidence": "What we normally do is drop down to a lower track, an escape route we'll have worked out in advance.",
+                        "explanation": {
+                            "en": "Going back the same way can mean crossing exposed ridges, and waiting makes people cold. The group normally goes down to a lower escape route that was planned in advance.",
+                            "ru": "Возвращение тем же путём может означать переход по открытым хребтам, а от ожидания люди мёрзнут. Обычно группа спускается к заранее запланированному запасному маршруту, который проходит ниже.",
+                            "uk": "Повернення тим самим шляхом може означати перехід відкритими хребтами, а під час очікування люди мерзнуть. Зазвичай група спускається до заздалегідь спланованого запасного маршруту, що пролягає нижче."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "a head torch"
+                    },
+                    {
+                        "id": "B",
+                        "text": "a personal locator beacon"
+                    },
+                    {
+                        "id": "C",
+                        "text": "a paper map"
+                    },
+                    {
+                        "id": "D",
+                        "text": "an extra warm layer"
+                    },
+                    {
+                        "id": "E",
+                        "text": "a basic first-aid kit"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "D"
+                        ],
+                        "prompt": "Which TWO items must every member bring on club walks?",
+                        "numbers": [
+                            17,
+                            18
+                        ],
+                        "evidence": "every single person must bring a head torch, even on a day walk, because delays happen. You'll also need a spare warm layer",
+                        "explanation": {
+                            "en": "Everyone must bring a head torch and a spare warm layer such as a fleece. The trip leader carries the beacon and the first-aid kit, and a paper map is optional.",
+                            "ru": "Каждый должен взять налобный фонарь и запасной тёплый слой, например флиску. Руководитель похода несёт маяк и аптечку, а бумажная карта — по желанию.",
+                            "uk": "Кожен має взяти налобний ліхтарик і запасний теплий шар, наприклад фліску. Керівник походу несе маяк і аптечку, а паперова карта — за бажанням."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "setting off the locator beacon"
+                    },
+                    {
+                        "id": "B",
+                        "text": "keeping the person warm"
+                    },
+                    {
+                        "id": "C",
+                        "text": "sending someone to get help"
+                    },
+                    {
+                        "id": "D",
+                        "text": "moving the person to shelter"
+                    },
+                    {
+                        "id": "E",
+                        "text": "giving the person a drink"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "B"
+                        ],
+                        "prompt": "Which TWO actions does the speaker recommend if someone in the group is injured?",
+                        "numbers": [
+                            19,
+                            20
+                        ],
+                        "evidence": "keep them warm, because the cold's the real danger out there. Then, if it's serious, we set off the beacon",
+                        "explanation": {
+                            "en": "He says to keep the injured person warm and, if it is serious, to activate the beacon. You should not move them or give them food or drink, and the club no longer sends one person off for help.",
+                            "ru": "Он говорит, что пострадавшего нужно держать в тепле, а если всё серьёзно — включить маяк. Нельзя его перемещать или давать ему еду и питьё, и клуб больше не отправляет одного человека за помощью.",
+                            "uk": "Він каже, що потерпілого треба тримати в теплі, а якщо все серйозно — увімкнути маяк. Не можна його переміщати чи давати йому їжу й пиття, і клуб більше не відправляє одну людину по допомогу."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E."
+            }
+        ],
+        "context": "You will hear the leader of a tramping club talking to a group of new members about staying safe in the hills.",
+        "speakers": [
+            {
+                "id": "leader",
+                "name": "Dougal Fraser",
+                "role": "hiking club leader",
+                "accent": "new_zealand",
+                "gender": "male"
+            }
+        ]
+    },
+    "plan": "l7|p2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.325548,
+            "provider": "anthropic",
+            "outputTokens": 15189
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.014638,
+            "provider": "anthropic",
+            "outputTokens": 537
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.017838,
+            "provider": "openai",
+            "outputTokens": 697
+        },
+        {
+            "step": "revise",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.043728,
+            "provider": "anthropic",
+            "outputTokens": 1218
+        },
+        {
+            "step": "resolve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.008334,
+            "provider": "anthropic",
+            "outputTokens": 199
+        },
+        {
+            "step": "resolve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.010975,
+            "provider": "openai",
+            "outputTokens": 400
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.020896,
+            "provider": "xai",
+            "outputTokens": 2123
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.066548,
+            "provider": "anthropic",
+            "outputTokens": 3099
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "Safety talk for new trampers",
+        "turns": [
+            {
+                "text": "Kia ora everyone, and welcome along. I'm Dougal Fraser, and I've been leading trips for the Canterbury Ridge Tramping Club for about twelve years now. Tonight's all about staying safe out in the hills, so grab a cuppa and get comfy.",
+                "speaker": "leader"
+            },
+            {
+                "text": "First, a quick word about your first trip with us. Normally we'd take new members up to Arthur's Pass, but there are roadworks on the highway all month, so that's off. We do evening walks on the Port Hills, but those are for people who've already been out with us. So your first one will be over on Banks Peninsula, on Saturday the twenty-third.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Right, planning. When people plan a tramp, they tend to spend ages on how hard the track's graded, or on sorting out who's driving. Both matter, sure. But the one thing I insist on, above everything else, is that you leave details of your route and the time you expect to be out by. No exceptions.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Now, who do you leave those details with? Years ago we used to drop a form in at the Department of Conservation visitor centre, but they stopped accepting them a while back. And please don't send it to our club secretary, because she can't be by the phone around the clock. Give it to a friend or someone in your family, someone you trust to raise the alarm if you're not back.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Okay, equipment, starting with your feet. The club has a few rain jackets members can borrow, but we haven't got any boots, sorry. And I'm not going to inspect everyone's footwear at the car park either. What I will ask is that you don't turn up in boots straight out of the box. Wear them around town for a couple of weeks first, so they're properly broken in.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Next, the weather, which in this part of the country can change in minutes. Lots of you will just check the weather app on your phone. The club website does post a forecast link too, but it's often a day out of date. The one we rely on is the mountain forecast on MetService, because it's specific to the high country.",
+                "speaker": "leader"
+            },
+            {
+                "text": "So what happens if the weather turns on us halfway through a trip? Most people assume we'd just turn round and go back the way we came. Actually, that's often not the safest choice, because you'd be heading back over exposed ridges. Sitting it out and waiting isn't great either, as you get cold really fast. What we normally do is drop down to a lower track, an escape route we'll have worked out in advance.",
+                "speaker": "leader"
+            },
+            {
+                "text": "And rivers. Crossings are one of the biggest risks for trampers in this country. Our rule used to be that you didn't cross if the water was above waist height, but that's far too deep when it's flowing fast. So now it's simple: if it's higher than your knees, nobody goes in. People ask whether linking arms makes it okay, and it helps, but it doesn't change the rule.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Right, let's talk about what goes in your pack. The club carries a personal locator beacon and the main first-aid kit, and the trip leader looks after both, so you don't need your own.",
+                "speaker": "leader"
+            },
+            {
+                "text": "But every single person must bring a head torch, even on a day walk, because delays happen. You'll also need a spare warm layer, like a fleece, however sunny it looks when you set off. A paper map's handy, but I'll always have one, so that's up to you.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Now, emergencies. If someone gets hurt, don't move them unless they're in danger where they are. And don't give them anything to eat or drink yet, until we know how bad it is. What you should do is get something underneath them and keep them warm, because the cold's the real danger out there. Then, if it's serious, we set off the beacon, which sends our exact position to the rescue services.",
+                "speaker": "leader"
+            },
+            {
+                "text": "In the old days, you'd send one person running out to get help. We don't do that any more. We keep the group together, and nobody heads off on their own.",
+                "speaker": "leader"
+            },
+            {
+                "text": "Last thing: next Thursday's session. We'd hoped to have a volunteer from LandSAR, the search and rescue people, but they can't come till next month. So instead we'll head out onto the field behind the hall for some map and compass practice. And I'll give you a proper demonstration of how the beacon works, since any of you might need to set it off one day.",
+                "speaker": "leader"
+            },
+            {
+                "text": "The first-aid course is separate, by the way. That's a weekend in March, and it costs $85. And no, sorry, there's no gear sale this year. Right, any questions?",
+                "speaker": "leader"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Where will new members go on their first club walk?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Arthur's Pass"
+                            },
+                            {
+                                "id": "B",
+                                "text": "the Port Hills"
+                            },
+                            {
+                                "id": "C",
+                                "text": "Banks Peninsula"
+                            }
+                        ],
+                        "evidence": "So your first one will be over on Banks Peninsula",
+                        "explanation": "Arthur's Pass is the usual place, but roadworks mean it is not possible this month. The Port Hills walks are only for people who have already been out with the club, so the first walk is on Banks Peninsula."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the speaker consider the most important part of planning a walk?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "checking the track's difficulty rating"
+                            },
+                            {
+                                "id": "B",
+                                "text": "organising transport to the track"
+                            },
+                            {
+                                "id": "C",
+                                "text": "sharing the route and expected return time"
+                            }
+                        ],
+                        "evidence": "the one thing I insist on, above everything else, is that you leave details of your route and the time you expect to be out by",
+                        "explanation": "He says the track grading and who is driving both matter. But the thing he insists on most is leaving details of your route and when you expect to be back."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Who should members give their trip details to?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "a Department of Conservation office"
+                            },
+                            {
+                                "id": "B",
+                                "text": "the club's secretary"
+                            },
+                            {
+                                "id": "C",
+                                "text": "a trusted friend or relative"
+                            }
+                        ],
+                        "evidence": "Give it to a friend or someone in your family, someone you trust to raise the alarm",
+                        "explanation": "The Department of Conservation centre no longer accepts the forms, and the secretary cannot always answer the phone. The details should go to a friend or family member you trust."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the speaker say about boots?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Members can borrow a pair from the club."
+                            },
+                            {
+                                "id": "B",
+                                "text": "New ones should be worn for a while beforehand."
+                            },
+                            {
+                                "id": "C",
+                                "text": "The leader will check them before each walk."
+                            }
+                        ],
+                        "evidence": "Wear them around town for a couple of weeks first, so they're properly broken in.",
+                        "explanation": "The club only lends rain jackets, not boots, and he says he won't inspect anyone's footwear. He asks people to wear new boots around town for a couple of weeks before a walk."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Where does the speaker recommend checking the weather forecast?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "a weather app on a phone"
+                            },
+                            {
+                                "id": "B",
+                                "text": "a link on the club's website"
+                            },
+                            {
+                                "id": "C",
+                                "text": "a forecast made for mountain areas"
+                            }
+                        ],
+                        "evidence": "The one we rely on is the mountain forecast on MetService, because it's specific to the high country.",
+                        "explanation": "He mentions phone apps and the club website, but says the website link is often out of date. The club relies on the MetService mountain forecast for the high country."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "If the weather gets worse during a walk, the group will usually",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "return along the same track."
+                            },
+                            {
+                                "id": "B",
+                                "text": "stop and wait for it to clear."
+                            },
+                            {
+                                "id": "C",
+                                "text": "take a lower route planned earlier."
+                            }
+                        ],
+                        "evidence": "What we normally do is drop down to a lower track, an escape route we'll have worked out in advance.",
+                        "explanation": "Going back the same way can mean crossing exposed ridges, and waiting makes people cold. The group normally goes down to a lower escape route that was planned in advance."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What is the club's current rule about crossing rivers?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Members may cross if they link arms."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Nobody crosses water above knee height."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Members may cross water below the waist."
+                            }
+                        ],
+                        "evidence": "if it's higher than your knees, nobody goes in.",
+                        "explanation": "Waist height was the old rule, but it was too deep in fast water. Linking arms helps but does not change the rule: no one crosses if the water is above the knees."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "C",
+                            "D"
+                        ],
+                        "prompt": "Which TWO items must every member bring on club walks?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "a personal locator beacon"
+                            },
+                            {
+                                "id": "B",
+                                "text": "a basic first-aid kit"
+                            },
+                            {
+                                "id": "C",
+                                "text": "a head torch"
+                            },
+                            {
+                                "id": "D",
+                                "text": "an extra warm layer"
+                            },
+                            {
+                                "id": "E",
+                                "text": "a paper map"
+                            }
+                        ],
+                        "evidence": "every single person must bring a head torch, even on a day walk, because delays happen. You'll also need a spare warm layer",
+                        "explanation": "Everyone must bring a head torch and a spare warm layer such as a fleece. The trip leader carries the beacon and the first-aid kit, and a paper map is optional."
+                    },
+                    {
+                        "answer": [
+                            "B",
+                            "D"
+                        ],
+                        "prompt": "Which TWO actions does the speaker recommend if someone in the group is injured?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "moving the person to shelter"
+                            },
+                            {
+                                "id": "B",
+                                "text": "keeping the person warm"
+                            },
+                            {
+                                "id": "C",
+                                "text": "sending someone to get help"
+                            },
+                            {
+                                "id": "D",
+                                "text": "setting off the locator beacon"
+                            },
+                            {
+                                "id": "E",
+                                "text": "giving the person a drink"
+                            }
+                        ],
+                        "evidence": "keep them warm, because the cold's the real danger out there. Then, if it's serious, we set off the beacon",
+                        "explanation": "He says to keep the injured person warm and, if it is serious, to activate the beacon. You should not move them or give them food or drink, and the club no longer sends one person off for help."
+                    },
+                    {
+                        "answer": [
+                            "B",
+                            "D"
+                        ],
+                        "prompt": "Which TWO activities will take place at next Thursday's session?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "a talk by a rescue volunteer"
+                            },
+                            {
+                                "id": "B",
+                                "text": "outdoor navigation practice"
+                            },
+                            {
+                                "id": "C",
+                                "text": "a first-aid training course"
+                            },
+                            {
+                                "id": "D",
+                                "text": "a demonstration of the beacon"
+                            },
+                            {
+                                "id": "E",
+                                "text": "a sale of used equipment"
+                            }
+                        ],
+                        "evidence": "we'll head out onto the field behind the hall for some map and compass practice. And I'll give you a proper demonstration of how the beacon works",
+                        "explanation": "There will be map and compass practice on the field and a demonstration of the beacon. The search and rescue volunteer can't come until next month, the first-aid course is a separate weekend, and there is no gear sale."
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E."
+            }
+        ],
+        "context": "You will hear the leader of a tramping club talking to a group of new members about staying safe in the hills.",
+        "speakers": [
+            {
+                "id": "leader",
+                "name": "Dougal Fraser"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "So your first one will be over on Banks Peninsula, on Saturday the twenty-third.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the one thing I insist on, above everything else, is that you leave details of your route and the time you expect to be out by.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Give it to a friend or someone in your family, someone you trust to raise the alarm if you're not back.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "What I will ask is that you don't turn up in boots straight out of the box. Wear them around town for a couple of weeks first",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "The one we rely on is the mountain forecast on MetService, because it's specific to the high country.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "What we normally do is drop down to a lower track, an escape route we'll have worked out in advance.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "if it's higher than your knees, nobody goes in.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    false,
+                    false
+                ],
+                "quote": "",
+                "answer": [],
+                "correct": false
+            },
+            "b2q2": {
+                "marks": [
+                    false,
+                    false
+                ],
+                "quote": "",
+                "answer": [],
+                "correct": false
+            },
+            "b2q3": {
+                "marks": [
+                    false,
+                    false
+                ],
+                "quote": "",
+                "answer": [],
+                "correct": false
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "So your first one will be over on Banks Peninsula, on Saturday the twenty-third.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the one thing I insist on, above everything else, is that you leave details of your route and the time you expect to be out by.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Give it to a friend or someone in your family, someone you trust to raise the alarm if you're not back.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "What I will ask is that you don't turn up in boots straight out of the box. Wear them around town for a couple of weeks first, so they're properly broken in.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "The one we rely on is the mountain forecast on MetService, because it's specific to the high country.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "What we normally do is drop down to a lower track, an escape route we'll have worked out in advance.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "So now it's simple: if it's higher than your knees, nobody goes in.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "But every single person must bring a head torch, even on a day walk, because delays happen. You'll also need a spare warm layer, like a fleece",
+                "answer": [
+                    "C",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "What you should do is get something underneath them and keep them warm, because the cold's the real danger out there. Then, if it's serious, we set off the beacon",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "So instead we'll head out onto the field behind the hall for some map and compass practice. And I'll give you a proper demonstration of how the beacon works",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": [
+            "b2q1",
+            "b2q2",
+            "b2q3"
+        ]
+    },
+    "revise": {
+        "b2q1": {
+            "action": "keep",
+            "reason": "The question is sound. Only the head torch and the spare warm layer are required of every member. The leader carries the beacon and the first-aid kit, and the map is optional. One solver gave no answer and the other matched the key."
+        },
+        "b2q2": {
+            "action": "keep",
+            "reason": "The question is sound. Keeping the person warm and setting off the beacon are recommended. Moving the person, giving them a drink and sending someone for help are all ruled out. One solver gave no answer and the other matched the key."
+        },
+        "b2q3": {
+            "action": "keep",
+            "reason": "The question is sound. Map and compass practice and the beacon demonstration are confirmed for Thursday. The volunteer's talk, the first-aid course and a gear sale are all excluded. One solver gave no answer and the other matched the key."
+        }
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "So your first one will be over on Banks Peninsula, on Saturday the twenty-third.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the one thing I insist on, above everything else, is that you leave details of your route and the time you expect to be out by.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Give it to a friend or someone in your family, someone you trust to raise the alarm if you're not back.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "you don't turn up in boots straight out of the box. Wear them around town for a couple of weeks first, so they're properly broken in.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "The one we rely on is the mountain forecast on MetService, because it's specific to the high country.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "What we normally do is drop down to a lower track, an escape route we'll have worked out in advance.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "every single person must bring a head torch, even on a day walk... You'll also need a spare warm layer, like a fleece",
+            "answer": [
+                "A",
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "What you should do is get something underneath them and keep them warm... if it's serious, we set off the beacon",
+            "answer": [
+                "A",
+                "B"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 10,
+        "agreedFirst": 7,
+        "discardRate": 0,
+        "agreedRevised": 3,
+        "disputedFirst": 3
+    },
+    "resolve": {
+        "a": {
+            "b2q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "every single person must bring a head torch, even on a day walk, because delays happen. You'll also need a spare warm layer, like a fleece",
+                "answer": [
+                    "C",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "get something underneath them and keep them warm... Then, if it's serious, we set off the beacon",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "we'll head out onto the field behind the hall for some map and compass practice. And I'll give you a proper demonstration of how the beacon works",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b2q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "But every single person must bring a head torch, even on a day walk... You'll also need a spare warm layer, like a fleece",
+                "answer": [
+                    "C",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "What you should do is get something underneath them and keep them warm... Then, if it's serious, we set off the beacon",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "So instead we'll head out onto the field behind the hall for some map and compass practice. And I'll give you a proper demonstration of how the beacon works",
+                "answer": [
+                    "B",
+                    "D"
+                ],
+                "correct": true
+            }
+        }
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 12960,
+                "wer": 0,
+                "heard": "Kia ora everyone, and welcome along. I'm Dougal Fraser and I've been leading trips for the Canterbury Ridge Tramping Club for about 12 years now. Tonight's all about staying safe out in the hills, so grab a cuppa and get comfy."
+            },
+            {
+                "ms": 19440,
+                "wer": 0,
+                "heard": "First, a quick word about your first trip with us. Normally we'd take new members up to Arthur's Pass, but there are roadworks on the highway all month, so that's off. We do evening walks on the Port Hills, but those are for people who've already been out with us, so your first one will be over on Banks Peninsula on Saturday the 23rd."
+            },
+            {
+                "ms": 18960,
+                "wer": 0.054,
+                "heard": "Right, planning. When people plan a trip, they tend to spend ages on how hard the tracks are rated, or on sorting out who's driving. Both matter, sure, but the one thing I insist on above everything else is that you leave details of your route and the time you expect to be out by. No exceptions."
+            },
+            {
+                "ms": 20480,
+                "wer": 0.014,
+                "heard": "Now, who do you leave those details with? Years ago we used to drop a form in at the Department of Conservation visitor center, but they stopped accepting them a while back. And please don't send it to our club secretary, because she can't be by the phone around the clock. Give it to a friend or someone in your family, someone you trust to raise the alarm if you're not back."
+            },
+            {
+                "ms": 20080,
+                "wer": 0,
+                "heard": "Okay, equipment. Starting with your feet. The club has a few rain jackets members can borrow but we haven't got any boots, sorry. And I'm not going to inspect everyone's footwear at the car park either. What I will ask is that you don't turn up in boots straight out of the box. Wear them around town for a couple of weeks first, so they're properly broken in."
+            },
+            {
+                "ms": 18480,
+                "wer": 0,
+                "heard": "Next, the weather, which in this part of the country can change in minutes. Lots of you will just check the weather app on your phone. The club website does post a forecast link too, but it's often a day out of date. The one we rely on is the mountain forecast on Metservice, because it's specific to the high country."
+            },
+            {
+                "ms": 23760,
+                "wer": 0,
+                "heard": "So, what happens if the weather turns on us halfway through a trip? Most people assume we'd just turn round and go back the way we came. Actually, that's often not the safest choice, because you'd be heading back over exposed ridges. Sitting it out and waiting isn't great either, as you get cold really fast. What we normally do is drop down to a lower track - an escape route we'll have worked out in advance."
+            },
+            {
+                "ms": 22640,
+                "wer": 0,
+                "heard": "And rivers. Crossings are one of the biggest risks for trampers in this country. Our rule used to be that you didn't cross if the water was above waist height, but that's far too deep when it's flowing fast. So now it's simple: if it's higher than your knees, nobody goes in. People ask whether linking arms makes it okay, and it helps, but it doesn't change the rule."
+            },
+            {
+                "ms": 10400,
+                "wer": 0,
+                "heard": "Right, let's talk about what goes in your pack. The club carries a personal locator beacon and the main first aid kit, and the trip leader looks after both, so you don't need your own."
+            },
+            {
+                "ms": 15760,
+                "wer": 0,
+                "heard": "But every single person must bring a head torch, even on a day walk, because delays happen. You'll also need a spare warm layer, like a fleece, however sunny it looks when you set off. A paper map's handy, but I'll always have one, so that's up to you."
+            },
+            {
+                "ms": 23200,
+                "wer": 0,
+                "heard": "Now, emergencies: if someone gets hurt, don't move them unless they're in danger where they are, and don't give them anything to eat or drink yet until we know how bad it is. What you should do is get something underneath them and keep them warm, because the cold's the real danger out there. Then, if it's serious, we set off the beacon, which sends our exact position to the rescue services."
+            },
+            {
+                "ms": 8560,
+                "wer": 0.065,
+                "heard": "In the old days, you'd send one person running out to get help. We don't do that anymore. We keep the group together and nobody heads off on their own."
+            },
+            {
+                "ms": 19280,
+                "wer": 0.015,
+                "heard": "Last thing, next Thursday's session. We'd hoped to have a volunteer from LANSAR, the search and rescue people, but they can't come till next month. So, instead, we'll head out onto the field behind the hall for some map and compass practice, and I'll give you a proper demonstration of how the beacon works, since any of you might need to set it off one day."
+            },
+            {
+                "ms": 10960,
+                "wer": 0,
+                "heard": "The first aid course is separate, by the way. That's a weekend in March and it costs eighty-five dollars. And no, sorry, there's no gear sale this year. Right, any questions?"
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -2.6
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "revised",
+            "b2q2": "revised",
+            "b2q3": "revised"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "11": "b1q1",
+        "12": "b1q2",
+        "13": "b1q3",
+        "14": "b1q4",
+        "15": "b1q5",
+        "16": "b1q6",
+        "17": "b2q1",
+        "19": "b2q2"
+    },
+    "translation": {
+        "missing": []
+    }
+}

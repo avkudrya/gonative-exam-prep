@@ -1,0 +1,1364 @@
+{
+    "form": {
+        "first": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l9-p2.mp3",
+            "bytes": 4146380,
+            "sha256": "449c59334c0d39aee1e37192c3d50011e40b841185f266597e06d11d2c1c9df5",
+            "voices": {
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                },
+                "librarian": {
+                    "voice": "ara",
+                    "provider": "xai"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 2. You will hear a librarian talking to a group of new students about the services offered by their university library. First, you have some time to look at questions 11 to 15.",
+                    "endMs": 12840,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 42840,
+                    "purpose": "read",
+                    "startMs": 12840,
+                    "questions": [
+                        11,
+                        15
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 57879,
+                    "startMs": 42840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 75138,
+                    "startMs": 57879
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 93678,
+                    "startMs": 75138
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 113837,
+                    "startMs": 93678
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 133657,
+                    "startMs": 113837
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 152196,
+                    "startMs": 133657
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 173296,
+                    "startMs": 152196
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 16 to 20.",
+                    "endMs": 176536,
+                    "startMs": 173296
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 206536,
+                    "purpose": "read",
+                    "startMs": 176536,
+                    "questions": [
+                        16,
+                        20
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 225729,
+                    "startMs": 206536
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 243328,
+                    "startMs": 225729
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 257400,
+                    "startMs": 243328
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 271160,
+                    "startMs": 257400
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 285859,
+                    "startMs": 271160
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 304399,
+                    "startMs": 285859
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 309651,
+                    "startMs": 304399
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 2. You now have thirty seconds to check your answers.",
+                    "endMs": 315451,
+                    "startMs": 309651
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 345451,
+                    "purpose": "check",
+                    "startMs": 315451
+                }
+            ],
+            "durationMs": 345451
+        },
+        "title": "Welcome to the university library",
+        "turns": [
+            {
+                "text": "Hi everyone, and welcome to Hartwell Library. My name's Dana Whitmore, and I'm one of the librarians here. Over the next twenty minutes or so, I'll tell you how borrowing works, where you can study, and what kind of help you can get. So, let's start with borrowing.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Your student card is also your library card, so there's nothing extra to sign up for. Now, a lot of you will have heard that undergraduates can take out ten items at a time. That was true until last year, but the limit's now fifteen. Graduate students can have twenty, but for you, it's fifteen.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Okay, what if you keep something too long? We actually got rid of daily fines a couple of years ago, so you won't be paying a few cents a day. What happens instead is that your account gets frozen, so you can't check out anything else until the late item comes back. We'll only send you a bill for the replacement cost if something's more than six weeks overdue.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Right, course reserves. These are books your professors have put aside because the whole class needs them, and they're kept behind the main service desk. Some of you might think you can only read them inside the building. That used to be the rule, but these days you can take them out for up to four hours at a time. And you don't need to request them online or anything; just ask at the desk.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Let's move on to online resources. We subscribe to thousands of journals and e-books, and you can get to all of them from home. A few years ago, you had to install special software on your laptop to do that. Now you just sign in through the library website with the same email and password you use for everything else on campus. There's no need to register with us separately.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "And if we don't have something, we can borrow it from another library for you. That's called an interlibrary loan, and it's free. Journal articles are quickest; they usually arrive by email in two or three days. Books take a bit longer, normally about a week, although something rare or very old can take up to a month.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "We also run workshops all semester, on things like citing sources and searching databases. Some new students also rush to book one-on-one appointments with a librarian in their first week. But honestly, the first thing I'd ask you to do is the online orientation tutorial on our website. It only takes about twenty minutes, and it'll answer most of your questions before you even have them.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Okay, now let me tell you about some of the spaces and services you'll see as we walk around. First, the group study rooms on the third floor. You can reserve them on our website up to seven days in advance, and I'd recommend that, because they fill up fast. And there's a myth that they're only for final-year students. That's not true at all; anyone can book them.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Next, the silent reading room on the fourth floor. It's completely quiet, and to keep it that way, you're not allowed to bring bags inside. There are lockers just outside the door for that. Some people ask if it stays open all night during exams. It doesn't, I'm afraid; that's the twenty-four-hour lounge on the ground floor.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "If your own laptop breaks down, don't panic. You can borrow one of ours from the service desk, using your student card. They're very popular, so the rule is they have to come back to the desk before we close that same evening. You can't keep them overnight.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Then there's the writing center, where tutors help you plan and improve your essays. If you've seen old maps of the building, they show it on the second floor. But over the summer it moved down to the basement, next to the computer lab, so that's where you'll find it now.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Printing. Printers are on every floor, and you pay with your student card. Each semester, the first hundred pages are free, so you don't pay anything until you've used those up. After that it's ten cents a page, sorry, eight cents, for black and white.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "And finally, the subject librarians. Every department has one, and they're the people to talk to about research for your assignments. During the day you can drop by their offices on the first floor, but a lot of students have classes then, so they also offer video calls in the evenings, until about nine. You'll find the links on the library website.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Okay, that's the overview. Let's head upstairs, and I'll show you the third floor first.",
+                "speaker": "librarian"
+            }
+        ],
+        "groups": [
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "10 items"
+                    },
+                    {
+                        "id": "B",
+                        "text": "20 items"
+                    },
+                    {
+                        "id": "C",
+                        "text": "15 items"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "How many items can undergraduate students borrow at one time?",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "That was true until last year, but the limit's now fifteen.",
+                        "explanation": {
+                            "en": "The limit for undergraduates used to be ten, but the librarian says it is now fifteen. Twenty is the limit for graduate students, not for new undergraduates.",
+                            "ru": "Раньше лимит для студентов бакалавриата составлял \"ten\", но библиотекарь говорит, что теперь он \"fifteen\". \"Twenty\" — это лимит для магистрантов и аспирантов, а не для новых студентов бакалавриата.",
+                            "uk": "Раніше ліміт для студентів бакалаврату становив \"ten\", але бібліотекарка каже, що тепер він \"fifteen\". \"Twenty\" — це ліміт для магістрантів і аспірантів, а не для нових студентів бакалаврату."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They cannot borrow other items until it is back."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They are charged the cost of replacing it."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They pay a small charge for each day."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "What happens if a student returns a book a few days late?",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "your account gets frozen, so you can't check out anything else until the late item comes back",
+                        "explanation": {
+                            "en": "Daily fines were stopped, and students only pay for a replacement after six weeks. For a short delay, the account is frozen and they cannot borrow anything else.",
+                            "ru": "Ежедневные штрафы отменили, а платить за замену книги студентам приходится только через \"six weeks\". При небольшой задержке аккаунт замораживают, и брать что-либо ещё нельзя.",
+                            "uk": "Щоденні штрафи скасували, а платити за заміну книжки студентам доводиться лише через \"six weeks\". Якщо затримка невелика, акаунт заморожують, і брати щось іще не можна."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They can only be read inside the library."
+                    },
+                    {
+                        "id": "B",
+                        "text": "They can be taken out for a short time."
+                    },
+                    {
+                        "id": "C",
+                        "text": "They must be requested online in advance."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the librarian say about course reserve books?",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "these days you can take them out for up to four hours at a time",
+                        "explanation": {
+                            "en": "Reading them only inside the building was the old rule. Now students can take them out for up to four hours, and they do not need to request them online.",
+                            "ru": "Читать их только в здании — это старое правило. Теперь студенты могут брать их с собой на срок до \"four hours\", и заказывать их онлайн не нужно.",
+                            "uk": "Читати їх лише в будівлі — це старе правило. Тепер студенти можуть брати їх із собою на строк до \"four hours\", і замовляти їх онлайн не потрібно."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "install a special program on their computer."
+                    },
+                    {
+                        "id": "B",
+                        "text": "register with the library staff in person."
+                    },
+                    {
+                        "id": "C",
+                        "text": "sign in with their usual university details."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "To read online journals from home, students need to",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "sign in through the library website with the same email and password you use for everything else on campus",
+                        "explanation": {
+                            "en": "Students use the same email and password they use for everything else at the university. Installing software was necessary only a few years ago, and there is no need to register separately.",
+                            "ru": "Студенты используют тот же email и пароль, что и для всего остального в университете. Устанавливать программы нужно было лишь несколько лет назад, а отдельно регистрироваться не требуется.",
+                            "uk": "Студенти використовують ту саму електронну пошту й пароль, що й для всього іншого в університеті. Встановлювати програми треба було лише кілька років тому, а окремо реєструватися не потрібно."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "around seven days"
+                    },
+                    {
+                        "id": "B",
+                        "text": "two or three days"
+                    },
+                    {
+                        "id": "C",
+                        "text": "as long as a month"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "How long does an interlibrary loan of a book normally take?",
+                        "numbers": [
+                            15
+                        ],
+                        "evidence": "Books take a bit longer, normally about a week",
+                        "explanation": {
+                            "en": "Two or three days is the time for journal articles, and a month is only for rare or very old items. A book normally takes about a week.",
+                            "ru": "\"Two or three days\" — это срок для журнальных статей, а \"a month\" — только для редких или очень старых изданий. Книга обычно приходит примерно за \"a week\".",
+                            "uk": "\"Two or three days\" — це строк для журнальних статей, а \"a month\" — лише для рідкісних або дуже старих видань. Книжка зазвичай надходить приблизно за \"a week\"."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "matching_features",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "can be booked up to a week ahead"
+                    },
+                    {
+                        "id": "B",
+                        "text": "has recently moved to a different area"
+                    },
+                    {
+                        "id": "C",
+                        "text": "requires students to leave bags outside"
+                    },
+                    {
+                        "id": "D",
+                        "text": "must be returned on the same day"
+                    },
+                    {
+                        "id": "E",
+                        "text": "includes some free use each semester"
+                    },
+                    {
+                        "id": "F",
+                        "text": "offers help by video in the evenings"
+                    },
+                    {
+                        "id": "G",
+                        "text": "is only for final-year students"
+                    },
+                    {
+                        "id": "H",
+                        "text": "stays open all night during exams"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Group study rooms",
+                        "numbers": [
+                            16
+                        ],
+                        "evidence": "You can reserve them on our website up to seven days in advance",
+                        "explanation": {
+                            "en": "Students can reserve the rooms up to seven days, or one week, before. The librarian says it is a myth that they are only for final-year students.",
+                            "ru": "Студенты могут бронировать комнаты не раньше чем за \"seven days\", то есть за \"one week\". Библиотекарь говорит, что это миф, будто они только для студентов последнего курса.",
+                            "uk": "Студенти можуть бронювати кімнати не раніше ніж за \"seven days\", тобто за \"one week\". Бібліотекарка каже, що це міф, ніби вони лише для студентів останнього курсу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Silent reading room",
+                        "numbers": [
+                            17
+                        ],
+                        "evidence": "you're not allowed to bring bags inside",
+                        "explanation": {
+                            "en": "Bags are not allowed inside, and there are lockers outside the door. The room does not stay open all night; that is the twenty-four-hour lounge.",
+                            "ru": "Проносить сумки внутрь нельзя, а снаружи у двери есть шкафчики. Комната не работает всю ночь — круглосуточно открыт только \"twenty-four-hour lounge\".",
+                            "uk": "Заносити сумки всередину не можна, а зовні біля дверей є шафки. Кімната не працює всю ніч — цілодобово відкритий лише \"twenty-four-hour lounge\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Laptop lending",
+                        "numbers": [
+                            18
+                        ],
+                        "evidence": "they have to come back to the desk before we close that same evening",
+                        "explanation": {
+                            "en": "Borrowed laptops must be returned before the desk closes the same evening, and they cannot be kept overnight.",
+                            "ru": "Взятые ноутбуки нужно вернуть до закрытия стойки выдачи в тот же вечер, оставлять их у себя на ночь нельзя.",
+                            "uk": "Узяті ноутбуки треба повернути до закриття стійки видачі того ж вечора, залишати їх у себе на ніч не можна."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Writing center",
+                        "numbers": [
+                            19
+                        ],
+                        "evidence": "But over the summer it moved down to the basement",
+                        "explanation": {
+                            "en": "Old maps show it on the second floor, but it moved to the basement over the summer, so its location has recently changed.",
+                            "ru": "На старых картах это место указано на \"second floor\", но за лето его перенесли в \"basement\", так что его расположение недавно изменилось.",
+                            "uk": "На старих картах це місце позначене на \"second floor\", але за літо його перенесли до \"basement\", тож його розташування нещодавно змінилося."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Printing service",
+                        "numbers": [
+                            20
+                        ],
+                        "evidence": "Each semester, the first hundred pages are free",
+                        "explanation": {
+                            "en": "Students get one hundred free pages every semester before they start paying per page.",
+                            "ru": "Каждый семестр студенты получают \"one hundred\" бесплатных страниц, а уже потом начинают платить за каждую страницу.",
+                            "uk": "Щосеместру студенти отримують \"one hundred\" безкоштовних сторінок, а вже потім починають платити за кожну сторінку."
+                        }
+                    }
+                ],
+                "instruction": "What does the librarian say about each of the following library services? Choose FIVE answers from the box and write the correct letter, A–H, next to Questions 16–20."
+            }
+        ],
+        "context": "You will hear a librarian talking to a group of new students about the services offered by their university library.",
+        "speakers": [
+            {
+                "id": "librarian",
+                "name": "Dana Whitmore",
+                "role": "university librarian",
+                "accent": "north_american",
+                "gender": "female"
+            }
+        ]
+    },
+    "plan": "l9|p2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.224328,
+            "provider": "anthropic",
+            "outputTokens": 10155
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.013348,
+            "provider": "anthropic",
+            "outputTokens": 520
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01563,
+            "provider": "openai",
+            "outputTokens": 601
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01919,
+            "provider": "xai",
+            "outputTokens": 1890
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.06348,
+            "provider": "anthropic",
+            "outputTokens": 2940
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "Welcome to the university library",
+        "turns": [
+            {
+                "text": "Hi everyone, and welcome to Hartwell Library. My name's Dana Whitmore, and I'm one of the librarians here. Over the next twenty minutes or so, I'll tell you how borrowing works, where you can study, and what kind of help you can get. So, let's start with borrowing.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Your student card is also your library card, so there's nothing extra to sign up for. Now, a lot of you will have heard that undergraduates can take out ten items at a time. That was true until last year, but the limit's now fifteen. Graduate students can have twenty, but for you, it's fifteen.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Okay, what if you keep something too long? We actually got rid of daily fines a couple of years ago, so you won't be paying a few cents a day. What happens instead is that your account gets frozen, so you can't check out anything else until the late item comes back. We'll only send you a bill for the replacement cost if something's more than six weeks overdue.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Right, course reserves. These are books your professors have put aside because the whole class needs them, and they're kept behind the main service desk. Some of you might think you can only read them inside the building. That used to be the rule, but these days you can take them out for up to four hours at a time. And you don't need to request them online or anything; just ask at the desk.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Let's move on to online resources. We subscribe to thousands of journals and e-books, and you can get to all of them from home. A few years ago, you had to install special software on your laptop to do that. Now you just sign in through the library website with the same email and password you use for everything else on campus. There's no need to register with us separately.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "And if we don't have something, we can borrow it from another library for you. That's called an interlibrary loan, and it's free. Journal articles are quickest; they usually arrive by email in two or three days. Books take a bit longer, normally about a week, although something rare or very old can take up to a month.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "We also run workshops all semester, on things like citing sources and searching databases. Some new students also rush to book one-on-one appointments with a librarian in their first week. But honestly, the first thing I'd ask you to do is the online orientation tutorial on our website. It only takes about twenty minutes, and it'll answer most of your questions before you even have them.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Okay, now let me tell you about some of the spaces and services you'll see as we walk around. First, the group study rooms on the third floor. You can reserve them on our website up to seven days in advance, and I'd recommend that, because they fill up fast. And there's a myth that they're only for final-year students. That's not true at all; anyone can book them.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Next, the silent reading room on the fourth floor. It's completely quiet, and to keep it that way, you're not allowed to bring bags inside. There are lockers just outside the door for that. Some people ask if it stays open all night during exams. It doesn't, I'm afraid; that's the twenty-four-hour lounge on the ground floor.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "If your own laptop breaks down, don't panic. You can borrow one of ours from the service desk, using your student card. They're very popular, so the rule is they have to come back to the desk before we close that same evening. You can't keep them overnight.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Then there's the writing center, where tutors help you plan and improve your essays. If you've seen old maps of the building, they show it on the second floor. But over the summer it moved down to the basement, next to the computer lab, so that's where you'll find it now.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Printing. Printers are on every floor, and you pay with your student card. Each semester, the first hundred pages are free, so you don't pay anything until you've used those up. After that it's ten cents a page, sorry, eight cents, for black and white.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "And finally, the subject librarians. Every department has one, and they're the people to talk to about research for your assignments. During the day you can drop by their offices on the first floor, but a lot of students have classes then, so they also offer video calls in the evenings, until about nine. You'll find the links on the library website.",
+                "speaker": "librarian"
+            },
+            {
+                "text": "Okay, that's the overview. Let's head upstairs, and I'll show you the third floor first.",
+                "speaker": "librarian"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "How many items can undergraduate students borrow at one time?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "10 items"
+                            },
+                            {
+                                "id": "B",
+                                "text": "15 items"
+                            },
+                            {
+                                "id": "C",
+                                "text": "20 items"
+                            }
+                        ],
+                        "evidence": "That was true until last year, but the limit's now fifteen.",
+                        "explanation": "The limit for undergraduates used to be ten, but the librarian says it is now fifteen. Twenty is the limit for graduate students, not for new undergraduates."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What happens if a student returns a book a few days late?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They pay a small charge for each day."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They cannot borrow other items until it is back."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They are charged the cost of replacing it."
+                            }
+                        ],
+                        "evidence": "your account gets frozen, so you can't check out anything else until the late item comes back",
+                        "explanation": "Daily fines were stopped, and students only pay for a replacement after six weeks. For a short delay, the account is frozen and they cannot borrow anything else."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the librarian say about course reserve books?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "They can only be read inside the library."
+                            },
+                            {
+                                "id": "B",
+                                "text": "They can be taken out for a short time."
+                            },
+                            {
+                                "id": "C",
+                                "text": "They must be requested online in advance."
+                            }
+                        ],
+                        "evidence": "these days you can take them out for up to four hours at a time",
+                        "explanation": "Reading them only inside the building was the old rule. Now students can take them out for up to four hours, and they do not need to request them online."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "To read online journals from home, students need to",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "install a special program on their computer."
+                            },
+                            {
+                                "id": "B",
+                                "text": "sign in with their usual university details."
+                            },
+                            {
+                                "id": "C",
+                                "text": "register with the library staff in person."
+                            }
+                        ],
+                        "evidence": "sign in through the library website with the same email and password you use for everything else on campus",
+                        "explanation": "Students use the same email and password they use for everything else at the university. Installing software was necessary only a few years ago, and there is no need to register separately."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "How long does an interlibrary loan of a book normally take?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "two or three days"
+                            },
+                            {
+                                "id": "B",
+                                "text": "around seven days"
+                            },
+                            {
+                                "id": "C",
+                                "text": "as long as a month"
+                            }
+                        ],
+                        "evidence": "Books take a bit longer, normally about a week",
+                        "explanation": "Two or three days is the time for journal articles, and a month is only for rare or very old items. A book normally takes about a week."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the librarian advise new students to do first?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "attend a workshop on citing sources"
+                            },
+                            {
+                                "id": "B",
+                                "text": "complete a short tutorial on the website"
+                            },
+                            {
+                                "id": "C",
+                                "text": "book a private meeting with a librarian"
+                            }
+                        ],
+                        "evidence": "the first thing I'd ask you to do is the online orientation tutorial on our website",
+                        "explanation": "She mentions workshops and one-on-one appointments, but says the first thing to do is the twenty-minute online orientation tutorial."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "matching_features",
+                "reuse": false,
+                "title": "",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "can be booked up to a week ahead"
+                    },
+                    {
+                        "id": "B",
+                        "text": "has recently moved to a different area"
+                    },
+                    {
+                        "id": "C",
+                        "text": "requires students to leave bags outside"
+                    },
+                    {
+                        "id": "D",
+                        "text": "must be returned on the same day"
+                    },
+                    {
+                        "id": "E",
+                        "text": "includes some free use each semester"
+                    },
+                    {
+                        "id": "F",
+                        "text": "offers help by video in the evenings"
+                    },
+                    {
+                        "id": "G",
+                        "text": "is only for final-year students"
+                    },
+                    {
+                        "id": "H",
+                        "text": "stays open all night during exams"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Group study rooms",
+                        "options": [],
+                        "evidence": "You can reserve them on our website up to seven days in advance",
+                        "explanation": "Students can reserve the rooms up to seven days, or one week, before. The librarian says it is a myth that they are only for final-year students."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Silent reading room",
+                        "options": [],
+                        "evidence": "you're not allowed to bring bags inside",
+                        "explanation": "Bags are not allowed inside, and there are lockers outside the door. The room does not stay open all night; that is the twenty-four-hour lounge."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Laptop lending",
+                        "options": [],
+                        "evidence": "they have to come back to the desk before we close that same evening",
+                        "explanation": "Borrowed laptops must be returned before the desk closes the same evening, and they cannot be kept overnight."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Writing center",
+                        "options": [],
+                        "evidence": "But over the summer it moved down to the basement",
+                        "explanation": "Old maps show it on the second floor, but it moved to the basement over the summer, so its location has recently changed."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Printing service",
+                        "options": [],
+                        "evidence": "Each semester, the first hundred pages are free",
+                        "explanation": "Students get one hundred free pages every semester before they start paying per page."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Subject librarians",
+                        "options": [],
+                        "evidence": "they also offer video calls in the evenings, until about nine",
+                        "explanation": "As well as meeting students in their offices during the day, subject librarians offer video calls in the evenings for students who have classes."
+                    }
+                ],
+                "instruction": "What does the librarian say about each of the following library services? Choose SIX answers from the box and write the correct letter, A–H, next to Questions 7–12."
+            }
+        ],
+        "context": "You will hear a librarian talking to a group of new students about the services offered by their university library.",
+        "speakers": [
+            {
+                "id": "librarian",
+                "name": "Dana Whitmore"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the limit's now fifteen. Graduate students can have twenty, but for you, it's fifteen.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "your account gets frozen, so you can't check out anything else until the late item comes back.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "these days you can take them out for up to four hours at a time.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Now you just sign in through the library website with the same email and password you use for everything else on campus.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Books take a bit longer, normally about a week",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the first thing I'd ask you to do is the online orientation tutorial on our website. It only takes about twenty minutes",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "You can reserve them on our website up to seven days in advance",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "you're not allowed to bring bags inside. There are lockers just outside the door for that.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "they have to come back to the desk before we close that same evening.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "over the summer it moved down to the basement, next to the computer lab",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Each semester, the first hundred pages are free",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "they also offer video calls in the evenings, until about nine.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "undergraduates can take out ten items at a time. That was true until last year, but the limit's now fifteen",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "your account gets frozen, so you can't check out anything else until the late item comes back",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "these days you can take them out for up to four hours at a time",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Now you just sign in through the library website with the same email and password you use for everything else on campus",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Books take a bit longer, normally about a week",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the first thing I'd ask you to do is the online orientation tutorial on our website",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "You can reserve them on our website up to seven days in advance",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "you're not allowed to bring bags inside. There are lockers just outside the door for that",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "they have to come back to the desk before we close that same evening. You can't keep them overnight",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "over the summer it moved down to the basement, next to the computer lab",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Each semester, the first hundred pages are free",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "they also offer video calls in the evenings, until about nine",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the limit's now fifteen. Graduate students can have twenty, but for you, it's fifteen.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "your account gets frozen, so you can't check out anything else until the late item comes back.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "these days you can take them out for up to four hours at a time.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Now you just sign in through the library website with the same email and password you use for everything else on campus.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Books take a bit longer, normally about a week",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "You can reserve them on our website up to seven days in advance",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "you're not allowed to bring bags inside. There are lockers just outside the door",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "they have to come back to the desk before we close that same evening. You can't keep them overnight.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "over the summer it moved down to the basement, next to the computer lab",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Each semester, the first hundred pages are free",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 12,
+        "agreedFirst": 12,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 14759,
+                "wer": 0,
+                "heard": "Hi everyone, and welcome to Hartwell Library. My name's Dana Whitmore, and I'm one of the librarians here. Over the next twenty minutes or so, I'll tell you how borrowing works, where you can study, and what kind of help you can get. So let's start with borrowing."
+            },
+            {
+                "ms": 16980,
+                "wer": 0,
+                "heard": "Your student card is also your library card, so there's nothing extra to sign up for. Now, a lot of you will have heard that undergraduates can take out ten items at a time. That was true until last year, but the limit's now fifteen. Graduate students can have twenty, but for you, it's fifteen."
+            },
+            {
+                "ms": 18260,
+                "wer": 0,
+                "heard": "Okay, what if you keep something too long? We actually got rid of daily fines a couple of years ago, so you won't be paying a few cents a day. What happens instead is that your account gets frozen, so you can't check out anything else until the late item comes back. We'll only send you a bill for the replacement cost if something's more than six weeks overdue."
+            },
+            {
+                "ms": 19879,
+                "wer": 0,
+                "heard": "Right, course reserves. These are books your professors have put aside because the whole class needs them, and they're kept behind the main service desk. Some of you might think you can only read them inside the building. That used to be the rule, but these days you can take them out for up to four hours at a time, and you don't need to request them online or anything. Just ask at the desk."
+            },
+            {
+                "ms": 19540,
+                "wer": 0.028,
+                "heard": "Let's move on to online resources. We subscribe to thousands of journals and ebooks, and you can get to all of them from home. A few years ago, you had to install special software on your laptop to do that. Now you just sign in through the library website with the same email and password you use for everything else on campus. There's no need to register with us separately."
+            },
+            {
+                "ms": 18260,
+                "wer": 0,
+                "heard": "And if we don't have something, we can borrow it from another library for you. That's called an interlibrary loan, and it's free. Journal articles are quickest; they usually arrive by email in two or three days. Books take a bit longer, normally about a week, although something rare or very old can take up to a month."
+            },
+            {
+                "ms": 20820,
+                "wer": 0,
+                "heard": "We also run workshops all semester, on things like citing sources and searching databases. Some new students also rush to book one-on-one appointments with a librarian in their first week. But honestly, the first thing I'd ask you to do is the online orientation tutorial on our website. It only takes about twenty minutes, and it'll answer most of your questions before you even have them."
+            },
+            {
+                "ms": 18913,
+                "wer": 0,
+                "heard": "Okay, now let me tell you about some of the spaces and services you'll see as we walk around. First, the group study rooms on the third floor. You can reserve them on our website up to seven days in advance, and I'd recommend that, because they fill up fast. And there's a myth that they're only for final year students. That's not true at all. Anyone can book them."
+            },
+            {
+                "ms": 17319,
+                "wer": 0,
+                "heard": "Next, the silent reading room on the fourth floor. It's completely quiet, and to keep it that way, you're not allowed to bring bags inside. There are lockers just outside the door for that. Some people ask if it stays open all night during exams. It doesn't, I'm afraid. That's the 24-hour lounge on the ground floor."
+            },
+            {
+                "ms": 13793,
+                "wer": 0,
+                "heard": "If your own laptop breaks down, don't panic. You can borrow one of ours from the Service Desk, using your student card. They're very popular, so the rule is they have to come back to the desk before we close that same evening. You can't keep them overnight."
+            },
+            {
+                "ms": 13479,
+                "wer": 0,
+                "heard": "Then there's the writing center, where tutors help you plan and improve your essays. If you've seen old maps of the building, they show it on the second floor, but over the summer it moved down to the basement, next to the computer lab, so that's where you'll find it now."
+            },
+            {
+                "ms": 14420,
+                "wer": 0,
+                "heard": "Printing. Printers are on every floor, and you pay with your student card. Each semester, the first hundred pages are free, so you don't pay anything until you've used those up. After that it's ten cents a page, sorry, eight cents, for black and white."
+            },
+            {
+                "ms": 18260,
+                "wer": 0,
+                "heard": "And finally, the subject librarians. Every department has one, and they're the people to talk to about research for your assignments. During the day you can drop by their offices on the first floor, but a lot of students have classes then, so they also offer video calls in the evenings, until about nine. You'll find the links on the library website."
+            },
+            {
+                "ms": 4833,
+                "wer": 0,
+                "heard": "Okay, that's the overview. Let's head upstairs and I'll show you the third floor first."
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -1.1
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "11": "b1q1",
+        "12": "b1q2",
+        "13": "b1q3",
+        "14": "b1q4",
+        "15": "b1q5",
+        "16": "b2q1",
+        "17": "b2q2",
+        "18": "b2q3",
+        "19": "b2q4",
+        "20": "b2q5"
+    },
+    "translation": {
+        "missing": []
+    }
+}

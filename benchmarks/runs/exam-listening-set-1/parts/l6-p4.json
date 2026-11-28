@@ -1,0 +1,1176 @@
+{
+    "form": {
+        "first": [
+            "group 1 (flow_chart_completion), question 32: fewer than 15 words after the previous answer"
+        ],
+        "afterRepair": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l6-p4.mp3",
+            "bytes": 4958828,
+            "sha256": "031968e9e072a5b97b00127202143091133e0a188de1ad4bd6ad9c21b3b4804d",
+            "voices": {
+                "lecturer": {
+                    "voice": "HF0hjxElqeS2vwmlzj6g",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 4. You will hear a university lecturer giving a talk about how paper has been made over the centuries. First, you have some time to look at questions 31 to 34.",
+                    "endMs": 12360,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 42360,
+                    "purpose": "read",
+                    "startMs": 12360,
+                    "questions": [
+                        31,
+                        34
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 60800,
+                    "startMs": 42360
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 79720,
+                    "startMs": 60800
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 98480,
+                    "startMs": 79720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 117080,
+                    "startMs": 98480
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 146480,
+                    "startMs": 117080
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 172120,
+                    "startMs": 146480
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 35 to 40.",
+                    "endMs": 175520,
+                    "startMs": 172120
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 205520,
+                    "purpose": "read",
+                    "startMs": 175520,
+                    "questions": [
+                        35,
+                        40
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 230600,
+                    "startMs": 205520
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 252240,
+                    "startMs": 230600
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 276840,
+                    "startMs": 252240
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 294800,
+                    "startMs": 276840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 314200,
+                    "startMs": 294800
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 339840,
+                    "startMs": 314200
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 358600,
+                    "startMs": 339840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 377340,
+                    "startMs": 358600
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 4. You now have thirty seconds to check your answers.",
+                    "endMs": 383140,
+                    "startMs": 377340
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 413140,
+                    "purpose": "check",
+                    "startMs": 383140
+                }
+            ],
+            "durationMs": 413140
+        },
+        "title": "The history of papermaking",
+        "turns": [
+            {
+                "text": "Good morning, everyone. I'm Dr Edward Lockwood, and today we're continuing our series on everyday technologies with something you probably take for granted: paper. I'll begin with how it was first made, then look at how the craft spread westwards, and I'll finish with the machines of the nineteenth century and recycling today.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. Before paper, people wrote on all sorts of surfaces. The Egyptians used papyrus, which is where our word 'paper' comes from, and in China people wrote on strips of bamboo or on silk. The trouble was that bamboo was heavy and silk was very expensive, so there was a real need for something better.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The traditional date for the invention of paper is the year 105, when a court official called Cai Lun presented the process to the emperor. Archaeologists have since found older fragments, so he probably improved the method rather than inventing it. Let's go through the process step by step, as it was carried out in his time.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "First, the raw materials were collected: the inner bark of the mulberry tree, hemp, old rags and even worn-out fishing nets. These were chopped into small pieces and left to soak in water. Now, you might expect salt to be added at this point, but in fact what they added was lime, which helped to break the material down.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Next, the softened material was beaten with wooden hammers. This was hard, tiring work, and it could go on for hours, until the fibres separated and formed a thick pulp. That was mixed with plenty of water in a large vat. Then came the clever part. The papermaker dipped a screen into the vat and lifted it out, covered in a thin layer of fibres. The earliest screens were made of cloth, but cloth tended to sag, so they soon switched to bamboo, which kept the sheet perfectly flat.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The water drained away through the screen, and the wet sheet was pressed to squeeze out the rest. Some workshops hung their sheets on lines, rather like washing, but the usual method was to brush each one onto a heated wall, where it dried in just a few minutes. And the last stage? Once it was completely dry, the sheet was polished with a smooth stone, so that ink wouldn't spread across it. Some makers tried shells for this, but stone gave a better finish.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "OK, so how did this knowledge leave China? For several centuries it was kept fairly secret. The usual story is that it reached Samarkand, in Central Asia, in 751, after a battle in which Chinese papermakers were taken prisoner. Samarkand had clean rivers, but plenty of towns had those. What really made it successful was the flax grown all around the city, which gave a steady supply of fibre.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "From there, the craft moved to Baghdad, where a paper mill was working by the 790s. Government offices were quick to adopt it. Until then, official records had been kept on parchment, made from animal skin, and paper replaced it partly because it was cheaper, but mainly because anything scraped off paper left a visible mark, so documents were much harder to forge.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Papermaking then crossed North Africa and reached Spain in the twelfth century, and Italy shortly afterwards. The Italian mills, especially in a town called Fabriano, made several improvements. They used animal glue to give the paper a harder surface, which is interesting, but the innovation I'd like you to note down is the watermark. These were faint designs pressed into each sheet, so that buyers could tell which mill had produced it.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, let's jump to the nineteenth century. By around 1800, demand was growing fast because of newspapers and the spread of schooling, but European paper was still made from rags, and there simply weren't enough of them to go round. Some mills even put up notices asking households to save their old clothes.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Hand production was also slow. A skilled team might manage a few thousand sheets a day. The answer was the machine developed in England by the Fourdrinier brothers and patented in 1806. Instead of producing separate sheets, it made paper as one continuous roll, which could then be cut to whatever size the customer wanted.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "That still left the problem of raw materials. From the 1840s, the solution was wood pulp, which was cheap and almost unlimited. But this new paper had a serious flaw. It contained acid from the production process, and over time that acid makes paper turn yellow and brittle. British libraries now spend millions of pounds trying to rescue books from this period, while much older rag paper is often in far better condition.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Finally, recycling. A lot of people believe paper can be recycled forever, but it can't. Each time it goes through the process, the fibres get shorter and weaker. You'll see figures of five times quoted, but most experts put the limit at around seven, after which the fibres are too short to bond together.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "People also worry about ink, but that's actually removed quite easily, using soap and air bubbles that carry it to the surface. The real headache for recycling plants is grease from things like takeaway pizza boxes, because it can't be separated from the fibres, and it ruins a whole batch. Next week, we'll look at printing.",
+                "speaker": "lecturer"
+            }
+        ],
+        "groups": [
+            {
+                "type": "flow_chart_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "title": "Papermaking in China around the year 105",
+                "questions": [
+                    {
+                        "answer": [
+                            "lime"
+                        ],
+                        "prompt": "Bark, hemp, rags and nets chopped and soaked in water with ______ added",
+                        "numbers": [
+                            31
+                        ],
+                        "evidence": "what they added was lime, which helped to break the material down",
+                        "explanation": {
+                            "en": "The lecturer says you might expect salt, but in fact lime was added to help break the material down.",
+                            "ru": "Лектор говорит, что можно было бы ожидать \"salt\", но на самом деле добавляли \"lime\", чтобы материал легче распадался.",
+                            "uk": "Лектор каже, що можна було б очікувати \"salt\", але насправді додавали \"lime\", щоб матеріал легше розкладався."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "pulp"
+                        ],
+                        "prompt": "Material beaten with wooden hammers to make a thick ______",
+                        "numbers": [
+                            32
+                        ],
+                        "evidence": "until the fibres separated and formed a thick pulp",
+                        "explanation": {
+                            "en": "The material was beaten for hours until the fibres separated and became a thick pulp.",
+                            "ru": "Материал часами отбивали, пока волокна не разделялись и не превращались в густую массу — \"pulp\".",
+                            "uk": "Матеріал годинами відбивали, доки волокна не розділялися й не перетворювалися на густу масу — \"pulp\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "bamboo"
+                        ],
+                        "prompt": "Fibres lifted from the vat on a screen made of ______",
+                        "numbers": [
+                            33
+                        ],
+                        "evidence": "so they soon switched to bamboo, which kept the sheet perfectly flat",
+                        "explanation": {
+                            "en": "The first screens were cloth, but cloth sagged, so papermakers changed to bamboo screens.",
+                            "ru": "Первые сита делали из ткани (\"cloth\"), но ткань провисала, поэтому мастера перешли на сита из \"bamboo\".",
+                            "uk": "Перші сита робили з тканини (\"cloth\"), але тканина провисала, тому майстри перейшли на сита з \"bamboo\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "wall"
+                        ],
+                        "prompt": "Wet sheet pressed, then brushed onto a heated ______ to dry",
+                        "numbers": [
+                            34
+                        ],
+                        "evidence": "the usual method was to brush each one onto a heated wall",
+                        "explanation": {
+                            "en": "Some workshops hung sheets on lines, but the usual way was to brush them onto a heated wall.",
+                            "ru": "В некоторых мастерских листы развешивали на верёвках, но обычно их кистью наносили на нагретую стену — \"heated wall\".",
+                            "uk": "У деяких майстернях аркуші розвішували на мотузках, але зазвичай їх пензлем наносили на нагріту стіну — \"heated wall\"."
+                        }
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Write ONE WORD ONLY for each answer."
+            },
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "title": "The spread and development of papermaking",
+                "questions": [
+                    {
+                        "answer": [
+                            "flax"
+                        ],
+                        "prompt": "Samarkand succeeded mainly because of the ______ grown around the city",
+                        "numbers": [
+                            35
+                        ],
+                        "evidence": "What really made it successful was the flax grown all around the city",
+                        "explanation": {
+                            "en": "Samarkand had clean rivers, but many towns had those; the key was the flax grown around the city.",
+                            "ru": "В Самарканде были чистые реки, но они были и во многих других городах; главное — \"flax\", который выращивали вокруг города.",
+                            "uk": "У Самарканді були чисті річки, але вони були й у багатьох інших містах; головне — \"flax\", який вирощували навколо міста."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "parchment"
+                        ],
+                        "prompt": "Baghdad: paper replaced ______ for official records, as it was harder to forge",
+                        "numbers": [
+                            36
+                        ],
+                        "evidence": "official records had been kept on parchment, made from animal skin",
+                        "explanation": {
+                            "en": "Government records had been kept on parchment, and paper replaced it. Papyrus was mentioned earlier, but for Egypt, not Baghdad.",
+                            "ru": "Государственные записи раньше вели на \"parchment\", и бумага его заменила. \"Papyrus\" упоминался раньше, но в связи с Египтом, а не с Багдадом.",
+                            "uk": "Державні записи раніше вели на \"parchment\", і папір його замінив. \"Papyrus\" згадували раніше, але щодо Єгипту, а не Багдада."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "watermark"
+                        ],
+                        "prompt": "Italian mills introduced the ______, which showed buyers which mill made a sheet",
+                        "numbers": [
+                            37
+                        ],
+                        "evidence": "the innovation I'd like you to note down is the watermark",
+                        "explanation": {
+                            "en": "Animal glue was also used, but the lecturer asks students to note the watermark, which identified the mill.",
+                            "ru": "Использовали и животный клей, но лектор просит студентов обратить внимание на \"watermark\" — водяной знак, по которому можно было определить бумажную фабрику.",
+                            "uk": "Використовували й тваринний клей, але лектор просить студентів звернути увагу на \"watermark\" — водяний знак, за яким можна було визначити паперову фабрику."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "rags"
+                        ],
+                        "prompt": "Around 1800: demand rose, but there was a shortage of ______",
+                        "numbers": [
+                            38
+                        ],
+                        "evidence": "European paper was still made from rags, and there simply weren't enough of them to go round",
+                        "explanation": {
+                            "en": "Paper was still made from rags, and there were not enough of them for the growing demand.",
+                            "ru": "Бумагу всё ещё делали из \"rags\", а их не хватало, чтобы удовлетворить растущий спрос.",
+                            "uk": "Папір досі робили з \"rags\", а їх не вистачало, щоб задовольнити зростаючий попит."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "roll"
+                        ],
+                        "prompt": "Fourdrinier machine (1806): produced paper as one continuous ______",
+                        "numbers": [
+                            39
+                        ],
+                        "evidence": "it made paper as one continuous roll",
+                        "explanation": {
+                            "en": "Instead of separate sheets, the machine made one continuous roll that could be cut to any size.",
+                            "ru": "Вместо отдельных листов машина делала один непрерывный рулон (\"roll\"), который можно было разрезать на листы любого размера.",
+                            "uk": "Замість окремих аркушів машина робила один безперервний рулон (\"roll\"), який можна було розрізати на аркуші будь-якого розміру."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "acid"
+                        ],
+                        "prompt": "Wood-pulp paper contained ______, which made it yellow and brittle",
+                        "numbers": [
+                            40
+                        ],
+                        "evidence": "It contained acid from the production process",
+                        "explanation": {
+                            "en": "The new paper contained acid, which over time makes paper turn yellow and brittle.",
+                            "ru": "Новая бумага содержала кислоту (\"acid\"), из-за которой со временем бумага желтеет (\"yellow\") и становится ломкой (\"brittle\").",
+                            "uk": "Новий папір містив кислоту (\"acid\"), через яку з часом папір жовтіє (\"yellow\") і стає крихким (\"brittle\")."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a university lecturer giving a talk about how paper has been made over the centuries.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Edward Lockwood",
+                "role": "university lecturer in the history of technology",
+                "accent": "british",
+                "gender": "male"
+            }
+        ]
+    },
+    "plan": "l6|p4",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.252092,
+            "provider": "anthropic",
+            "outputTokens": 11576
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.1171,
+            "provider": "anthropic",
+            "outputTokens": 3990
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012314,
+            "provider": "anthropic",
+            "outputTokens": 546
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01287,
+            "provider": "openai",
+            "outputTokens": 511
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01727,
+            "provider": "xai",
+            "outputTokens": 1758
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.057972,
+            "provider": "anthropic",
+            "outputTokens": 2683
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "The history of papermaking",
+        "turns": [
+            {
+                "text": "Good morning, everyone. I'm Dr Edward Lockwood, and today we're continuing our series on everyday technologies with something you probably take for granted: paper. I'll begin with how it was first made, then look at how the craft spread westwards, and I'll finish with the machines of the nineteenth century and recycling today.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. Before paper, people wrote on all sorts of surfaces. The Egyptians used papyrus, which is where our word 'paper' comes from, and in China people wrote on strips of bamboo or on silk. The trouble was that bamboo was heavy and silk was very expensive, so there was a real need for something better.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The traditional date for the invention of paper is the year 105, when a court official called Cai Lun presented the process to the emperor. Archaeologists have since found older fragments, so he probably improved the method rather than inventing it. Let's go through the process step by step, as it was carried out in his time.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "First, the raw materials were collected: the inner bark of the mulberry tree, hemp, old rags and even worn-out fishing nets. These were chopped into small pieces and left to soak in water. Now, you might expect salt to be added at this point, but in fact what they added was lime, which helped to break the material down.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Next, the softened material was beaten with wooden hammers. This was hard, tiring work, and it could go on for hours, until the fibres separated and formed a thick pulp. That was mixed with plenty of water in a large vat. Then came the clever part. The papermaker dipped a screen into the vat and lifted it out, covered in a thin layer of fibres. The earliest screens were made of cloth, but cloth tended to sag, so they soon switched to bamboo, which kept the sheet perfectly flat.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The water drained away through the screen, and the wet sheet was pressed to squeeze out the rest. Some workshops hung their sheets on lines, rather like washing, but the usual method was to brush each one onto a heated wall, where it dried in just a few minutes. And the last stage? Once it was completely dry, the sheet was polished with a smooth stone, so that ink wouldn't spread across it. Some makers tried shells for this, but stone gave a better finish.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "OK, so how did this knowledge leave China? For several centuries it was kept fairly secret. The usual story is that it reached Samarkand, in Central Asia, in 751, after a battle in which Chinese papermakers were taken prisoner. Samarkand had clean rivers, but plenty of towns had those. What really made it successful was the flax grown all around the city, which gave a steady supply of fibre.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "From there, the craft moved to Baghdad, where a paper mill was working by the 790s. Government offices were quick to adopt it. Until then, official records had been kept on parchment, made from animal skin, and paper replaced it partly because it was cheaper, but mainly because anything scraped off paper left a visible mark, so documents were much harder to forge.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Papermaking then crossed North Africa and reached Spain in the twelfth century, and Italy shortly afterwards. The Italian mills, especially in a town called Fabriano, made several improvements. They used animal glue to give the paper a harder surface, which is interesting, but the innovation I'd like you to note down is the watermark. These were faint designs pressed into each sheet, so that buyers could tell which mill had produced it.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, let's jump to the nineteenth century. By around 1800, demand was growing fast because of newspapers and the spread of schooling, but European paper was still made from rags, and there simply weren't enough of them to go round. Some mills even put up notices asking households to save their old clothes.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Hand production was also slow. A skilled team might manage a few thousand sheets a day. The answer was the machine developed in England by the Fourdrinier brothers and patented in 1806. Instead of producing separate sheets, it made paper as one continuous roll, which could then be cut to whatever size the customer wanted.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "That still left the problem of raw materials. From the 1840s, the solution was wood pulp, which was cheap and almost unlimited. But this new paper had a serious flaw. It contained acid from the production process, and over time that acid makes paper turn yellow and brittle. British libraries now spend millions of pounds trying to rescue books from this period, while much older rag paper is often in far better condition.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Finally, recycling. A lot of people believe paper can be recycled forever, but it can't. Each time it goes through the process, the fibres get shorter and weaker. You'll see figures of five times quoted, but most experts put the limit at around seven, after which the fibres are too short to bond together.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "People also worry about ink, but that's actually removed quite easily, using soap and air bubbles that carry it to the surface. The real headache for recycling plants is grease from things like takeaway pizza boxes, because it can't be separated from the fibres, and it ruins a whole batch. Next week, we'll look at printing.",
+                "speaker": "lecturer"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "flow_chart_completion",
+                "reuse": false,
+                "title": "Papermaking in China around the year 105",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "lime"
+                        ],
+                        "prompt": "Bark, hemp, rags and nets chopped and soaked in water with ______ added",
+                        "options": [],
+                        "evidence": "what they added was lime, which helped to break the material down",
+                        "explanation": "The lecturer says you might expect salt, but in fact lime was added to help break the material down."
+                    },
+                    {
+                        "answer": [
+                            "pulp"
+                        ],
+                        "prompt": "Material beaten with wooden hammers to make a thick ______",
+                        "options": [],
+                        "evidence": "until the fibres separated and formed a thick pulp",
+                        "explanation": "The material was beaten for hours until the fibres separated and became a thick pulp."
+                    },
+                    {
+                        "answer": [
+                            "bamboo"
+                        ],
+                        "prompt": "Fibres lifted from the vat on a screen made of ______",
+                        "options": [],
+                        "evidence": "so they soon switched to bamboo, which kept the sheet perfectly flat",
+                        "explanation": "The first screens were cloth, but cloth sagged, so papermakers changed to bamboo screens."
+                    },
+                    {
+                        "answer": [
+                            "wall"
+                        ],
+                        "prompt": "Wet sheet pressed, then brushed onto a heated ______ to dry",
+                        "options": [],
+                        "evidence": "the usual method was to brush each one onto a heated wall",
+                        "explanation": "Some workshops hung sheets on lines, but the usual way was to brush them onto a heated wall."
+                    },
+                    {
+                        "answer": [
+                            "stone"
+                        ],
+                        "prompt": "Dry sheet polished with a smooth ______",
+                        "options": [],
+                        "evidence": "the sheet was polished with a smooth stone",
+                        "explanation": "The sheet was polished with a smooth stone; shells were tried, but stone gave a better finish."
+                    }
+                ],
+                "instruction": "Complete the flow chart below. Write ONE WORD ONLY for each answer."
+            },
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "title": "The spread and development of papermaking",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "flax"
+                        ],
+                        "prompt": "Samarkand succeeded mainly because of the ______ grown around the city",
+                        "options": [],
+                        "evidence": "What really made it successful was the flax grown all around the city",
+                        "explanation": "Samarkand had clean rivers, but many towns had those; the key was the flax grown around the city."
+                    },
+                    {
+                        "answer": [
+                            "parchment"
+                        ],
+                        "prompt": "Baghdad: paper replaced ______ for official records, as it was harder to forge",
+                        "options": [],
+                        "evidence": "official records had been kept on parchment, made from animal skin",
+                        "explanation": "Government records had been kept on parchment, and paper replaced it. Papyrus was mentioned earlier, but for Egypt, not Baghdad."
+                    },
+                    {
+                        "answer": [
+                            "watermark"
+                        ],
+                        "prompt": "Italian mills introduced the ______, which showed buyers which mill made a sheet",
+                        "options": [],
+                        "evidence": "the innovation I'd like you to note down is the watermark",
+                        "explanation": "Animal glue was also used, but the lecturer asks students to note the watermark, which identified the mill."
+                    },
+                    {
+                        "answer": [
+                            "rags"
+                        ],
+                        "prompt": "Around 1800: demand rose, but there was a shortage of ______",
+                        "options": [],
+                        "evidence": "European paper was still made from rags, and there simply weren't enough of them to go round",
+                        "explanation": "Paper was still made from rags, and there were not enough of them for the growing demand."
+                    },
+                    {
+                        "answer": [
+                            "roll"
+                        ],
+                        "prompt": "Fourdrinier machine (1806): produced paper as one continuous ______",
+                        "options": [],
+                        "evidence": "it made paper as one continuous roll",
+                        "explanation": "Instead of separate sheets, the machine made one continuous roll that could be cut to any size."
+                    },
+                    {
+                        "answer": [
+                            "acid"
+                        ],
+                        "prompt": "Wood-pulp paper contained ______, which made it yellow and brittle",
+                        "options": [],
+                        "evidence": "It contained acid from the production process",
+                        "explanation": "The new paper contained acid, which over time makes paper turn yellow and brittle."
+                    },
+                    {
+                        "answer": [
+                            "seven",
+                            "7"
+                        ],
+                        "prompt": "Recycling: fibres get shorter, so paper can be recycled about ______ times",
+                        "options": [],
+                        "evidence": "most experts put the limit at around seven",
+                        "explanation": "Some sources say five times, but most experts say the limit is about seven."
+                    },
+                    {
+                        "answer": [
+                            "grease"
+                        ],
+                        "prompt": "Biggest difficulty for recycling plants: ______ from food packaging",
+                        "options": [],
+                        "evidence": "The real headache for recycling plants is grease",
+                        "explanation": "Ink is removed easily, so it is not the main problem; grease from things like pizza boxes is."
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a university lecturer giving a talk about how paper has been made over the centuries.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Edward Lockwood"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "what they added was lime, which helped to break the material down",
+                "answer": [
+                    "lime"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "until the fibres separated and formed a thick pulp",
+                "answer": [
+                    "pulp"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "they soon switched to bamboo, which kept the sheet perfectly flat",
+                "answer": [
+                    "bamboo"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the usual method was to brush each one onto a heated wall",
+                "answer": [
+                    "wall"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the sheet was polished with a smooth stone",
+                "answer": [
+                    "stone"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "What really made it successful was the flax grown all around the city",
+                "answer": [
+                    "flax"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "official records had been kept on parchment, made from animal skin, and paper replaced it",
+                "answer": [
+                    "parchment"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the innovation I'd like you to note down is the watermark",
+                "answer": [
+                    "watermark"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "European paper was still made from rags, and there simply weren't enough of them to go round",
+                "answer": [
+                    "rags"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "it made paper as one continuous roll",
+                "answer": [
+                    "roll"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "It contained acid from the production process, and over time that acid makes paper turn yellow and brittle",
+                "answer": [
+                    "acid"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "most experts put the limit at around seven",
+                "answer": [
+                    "seven"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "The real headache for recycling plants is grease from things like takeaway pizza boxes",
+                "answer": [
+                    "grease"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "what they added was lime, which helped to break the material down",
+                "answer": [
+                    "lime"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the fibres separated and formed a thick pulp",
+                "answer": [
+                    "pulp"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "they soon switched to bamboo, which kept the sheet perfectly flat",
+                "answer": [
+                    "bamboo"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the usual method was to brush each one onto a heated wall, where it dried",
+                "answer": [
+                    "wall"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the sheet was polished with a smooth stone",
+                "answer": [
+                    "stone"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "What really made it successful was the flax grown all around the city",
+                "answer": [
+                    "flax"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "official records had been kept on parchment, made from animal skin, and paper replaced it",
+                "answer": [
+                    "parchment"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the innovation I'd like you to note down is the watermark. These were faint designs pressed into each sheet",
+                "answer": [
+                    "watermark"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "European paper was still made from rags, and there simply weren't enough of them to go round",
+                "answer": [
+                    "rags"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "it made paper as one continuous roll",
+                "answer": [
+                    "roll"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "It contained acid from the production process, and over time that acid makes paper turn yellow and brittle",
+                "answer": [
+                    "acid"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "most experts put the limit at around seven",
+                "answer": [
+                    "seven"
+                ],
+                "correct": true
+            },
+            "b2q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "The real headache for recycling plants is grease from things like takeaway pizza boxes",
+                "answer": [
+                    "grease"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "what they added was lime, which helped to break the material down",
+            "answer": [
+                "lime"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "until the fibres separated and formed a thick pulp",
+            "answer": [
+                "pulp"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "they soon switched to bamboo, which kept the sheet perfectly flat",
+            "answer": [
+                "bamboo"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "brush each one onto a heated wall, where it dried in just a few minutes",
+            "answer": [
+                "wall"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the flax grown all around the city, which gave a steady supply of fibre",
+            "answer": [
+                "flax"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "official records had been kept on parchment, made from animal skin, and paper replaced it",
+            "answer": [
+                "parchment"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the innovation I'd like you to note down is the watermark",
+            "answer": [
+                "watermark"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "European paper was still made from rags, and there simply weren't enough of them to go round",
+            "answer": [
+                "rags"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "it made paper as one continuous roll, which could then be cut",
+            "answer": [
+                "roll"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "It contained acid from the production process, and over time that acid makes paper turn yellow and brittle",
+            "answer": [
+                "acid"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 13,
+        "agreedFirst": 13,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 18160,
+                "wer": 0,
+                "heard": "Good morning everyone, I'm Dr Edward Lockwood, and today we're continuing our series on everyday technologies with something you probably take for granted: paper. I'll begin with how it was first made, then look at how the craft spread westwards, and I'll finish with the machines of the nineteenth century and recycling today."
+            },
+            {
+                "ms": 18640,
+                "wer": 0,
+                "heard": "Right, before paper, people wrote on all sorts of surfaces. The Egyptians used papyrus, which is where our word 'paper' comes from, and in China people wrote on strips of bamboo or on silk. The trouble was that bamboo was heavy and silk was very expensive, so there was a real need for something better."
+            },
+            {
+                "ms": 18480,
+                "wer": 0,
+                "heard": "The traditional date for the invention of paper is the year 105, when a court official called Cai Lun presented the process to the emperor. Archaeologists have since found older fragments, so he probably improved the method rather than inventing it. Let's go through the process step by step as it was carried out in his time."
+            },
+            {
+                "ms": 18320,
+                "wer": 0,
+                "heard": "First, the raw materials were collected: the inner bark of the mulberry tree, hemp, old rags and even worn-out fishing nets. These were chopped into small pieces and left to soak in water. Now, you might expect salt to be added at this point, but in fact what they added was lime, which helped to break the material down"
+            },
+            {
+                "ms": 29120,
+                "wer": 0,
+                "heard": "Next, the softened material was beaten with wooden hammers. This was hard, tiring work, and it could go on for hours until the fibres separated and formed a thick pulp. That was mixed with plenty of water in a large vat. Then came the clever part. The papermaker dipped a screen into the vat and lifted it out, covered in a thin layer of fibres. The earliest screens were made of cloth, but cloth tended to sag, so they soon switched to bamboo, which kept the sheet perfectly flat."
+            },
+            {
+                "ms": 25360,
+                "wer": 0,
+                "heard": "The water drained away through the screen and the wet sheet was pressed to squeeze out the rest. Some workshops hung their sheets on lines, rather like washing, but the usual method was to brush each one onto a heated wall, where it dried in just a few minutes. And the last stage? Once it was completely dry, the sheet was polished with a smooth stone so that ink wouldn't spread across it. Some makers tried shells for this, but stone gave a better finish."
+            },
+            {
+                "ms": 24800,
+                "wer": 0,
+                "heard": "OK, so how did this knowledge leave China? For several centuries it was kept fairly secret. The usual story is that it reached Samarkand in Central Asia in 751 after a battle in which Chinese papermakers were taken prisoner. Samarkand had clean rivers, but plenty of towns had those. What really made it successful was the flax grown all around the city which gave a steady supply of fibre."
+            },
+            {
+                "ms": 21360,
+                "wer": 0,
+                "heard": "From there, the craft moved to Baghdad, where a paper mill was working by the 790s. Government offices were quick to adopt it. Until then, official records had been kept on parchment, made from animal skin, and paper replaced it partly because it was cheaper, but mainly because anything scraped off paper left a visible mark, so documents were much harder to forge."
+            },
+            {
+                "ms": 24320,
+                "wer": 0,
+                "heard": "Papermaking then crossed North Africa and reached Spain in the 12th century, and Italy shortly afterwards. The Italian mills, especially in a town called Fabriano, made several improvements. They used animal glue to give the paper a harder surface, which is interesting, but the innovation I'd like you to note down is the watermark. These were faint designs pressed into each sheet so that buyers could tell which mill had produced it."
+            },
+            {
+                "ms": 17680,
+                "wer": 0,
+                "heard": "Right, let's jump to the 19th century. By around 1800, demand was growing fast because of newspapers and the spread of schooling. But European paper was still made from rags, and there simply weren't enough of them to go round. Some mills even put up notices asking households to save their old clothes."
+            },
+            {
+                "ms": 19120,
+                "wer": 0,
+                "heard": "Hand production was also slow: a skilled team might manage a few thousand sheets a day. The answer was the machine developed in England by the Fourdrinier brothers and patented in 1806. Instead of producing separate sheets, it made paper as one continuous roll, which could then be cut to whatever size the customer wanted."
+            },
+            {
+                "ms": 25360,
+                "wer": 0,
+                "heard": "That still left the problem of raw materials. From the 1840s, the solution was wood pulp, which was cheap and almost unlimited. But this new paper had a serious flaw. It contained acid from the production process, and over time that acid makes paper turn yellow and brittle. British libraries now spend millions of pounds trying to rescue books from this period, while much older rag paper is often in far better condition."
+            },
+            {
+                "ms": 18480,
+                "wer": 0,
+                "heard": "Finally, recycling. A lot of people believe paper can be recycled forever but it can't. Each time it goes through the process the fibres get shorter and weaker. You'll see figures of five times quoted but most experts put the limit at around seven, after which the fibres are too short to bond together."
+            },
+            {
+                "ms": 18320,
+                "wer": 0,
+                "heard": "People also worry about ink, but that's actually removed quite easily using soap and air bubbles that carry it to the surface. The real headache for recycling plants is grease from things like takeaway pizza boxes because it can't be separated from the fibres and it ruins a whole batch. Next week, we'll look at printing."
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -1.5
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first",
+            "b2q8": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "31": "b1q1",
+        "32": "b1q2",
+        "33": "b1q3",
+        "34": "b1q4",
+        "35": "b2q1",
+        "36": "b2q2",
+        "37": "b2q3",
+        "38": "b2q4",
+        "39": "b2q5",
+        "40": "b2q6"
+    },
+    "translation": {
+        "missing": []
+    }
+}

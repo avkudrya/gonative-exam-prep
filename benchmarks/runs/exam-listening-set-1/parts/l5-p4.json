@@ -1,0 +1,1111 @@
+{
+    "form": {
+        "first": [
+            "group 1 (note_completion), question 41: fewer than 15 words after the previous answer"
+        ],
+        "afterRepair": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l5-p4.mp3",
+            "bytes": 4469516,
+            "sha256": "0459c14bc3abf0ae27ea23194b0c610da9d8bab50657b4e2bfb4b5d324d169bb",
+            "voices": {
+                "lecturer": {
+                    "voice": "w9rPM8AIZle60Nbpw7nl",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 4. You will hear a marine science lecturer giving a talk about how scientists try to restore damaged coral reefs. First, you have some time to look at questions 31 to 40.",
+                    "endMs": 13000,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 43000,
+                    "purpose": "read",
+                    "startMs": 13000,
+                    "questions": [
+                        31,
+                        40
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 64640,
+                    "startMs": 43000
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 91240,
+                    "startMs": 64640
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 114080,
+                    "startMs": 91240
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 134600,
+                    "startMs": 114080
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 160160,
+                    "startMs": 134600
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 181720,
+                    "startMs": 160160
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 202720,
+                    "startMs": 181720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 222120,
+                    "startMs": 202720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 241440,
+                    "startMs": 222120
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 259320,
+                    "startMs": 241440
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 283120,
+                    "startMs": 259320
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 308040,
+                    "startMs": 283120
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 326320,
+                    "startMs": 308040
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 336580,
+                    "startMs": 326320
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 4. You now have thirty seconds to check your answers.",
+                    "endMs": 342380,
+                    "startMs": 336580
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 372380,
+                    "purpose": "check",
+                    "startMs": 342380
+                }
+            ],
+            "durationMs": 372380
+        },
+        "title": "Restoring damaged coral reefs",
+        "turns": [
+            {
+                "text": "Good morning, everyone. Last week we looked at how coral reefs form, so today I'd like to turn to something a bit more hopeful: how scientists are trying to repair reefs that have already been damaged. I'll start with why reefs decline, then talk about coral gardening, then some newer methods, and I'll finish with how we actually measure success.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. The biggest threat by far is bleaching. Corals have tiny algae living inside their tissue, and most people think of these algae as the thing that gives coral its colour. That's true, but more importantly, they produce the bulk of the coral's food, something like ninety per cent of it. So when the water gets too warm and the coral pushes the algae out, it turns white and basically starts to starve.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The second threat is the crown-of-thorns starfish. Despite the dramatic name, it's simply a starfish that feeds on coral, and normally there aren't many of them around. But fertiliser washing off farms and down the rivers here in Queensland seems to help their young survive. So every few years we get huge outbreaks, and they can strip a section of reef in a matter of months.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Then there are cyclones. A severe cyclone doesn't just damage individual corals; it can smash the whole structure into loose rubble. And that's a real headache, because rubble rolls around with every wave, so any baby coral that settles on it gets crushed or buried. Some sites can stay bare for decades because of that.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "OK, so what can we do about it? The best-known approach is coral gardening. Divers collect small fragments from healthy corals and grow them in an underwater nursery. The first nurseries were basically flat tables sitting on the seabed, but these days most teams use frames that look rather like trees, with branches made of plastic pipe, and the fragments hang from those branches in the open water.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "How long do they stay in the nursery? Students often guess a few weeks, but it's a good deal longer than that. Fast-growing species might be ready in six months, but on average it's around nine months before the fragments are big enough to go back onto the reef. Then divers attach them to the reef one by one, usually with a kind of underwater cement.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, coral gardening is sometimes criticised for being expensive. Actually, the costs have come down a lot in the last ten years. The real weakness is that it's slow. A good team might plant a few thousand corals in a season, but when you remember that the Great Barrier Reef covers an area bigger than Italy, you can see the problem.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And that brings me to some newer methods. One is sometimes called coral IVF. Many corals reproduce in a mass spawning event, which happens just once a year, usually a few nights after a full moon in late spring. Researchers head out after dark and collect the eggs and sperm floating on the surface.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "They raise the larvae in floating pools for about a week, sorry, five days, and then release them over a damaged patch of reef. The tricky part is that larvae drift away very easily. So the team covers the area with what they call a mesh tent, which keeps the larvae in place for several days while they settle.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Another line of research is breeding tougher corals. A few years ago some labs were looking at corals that could resist pollution, but the main focus now is heat. The idea is to cross corals that came through a bad bleaching year, in the hope that their offspring will cope better with warmer water.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And here's one I really like. A reef isn't only coral; it needs fish, which graze on the seaweed and keep the coral clear. Healthy reefs are surprisingly noisy, with shrimps crackling and fish grunting. Researchers found that if you put underwater speakers on a damaged reef and play recordings of a healthy one, young fish are drawn to it, and a lot of them stay.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Finally, how do we know if any of this actually works? That's a question people in the field have argued about for years. For a long time, projects simply reported the number of corals they'd planted. It makes a nice headline, but it tells you very little, because many of those corals might be dead a year later. So now we look at survival rates and at how much of the seabed is covered by living coral.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "But for me, the real test comes later. Growing bigger is good, and getting through a hot summer is even better. A restored reef is only truly successful when the corals we've put out there begin to reproduce on their own, because then the reef can start rebuilding itself without our help.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, that's all for today. For next week, please read the chapter on reef monitoring, and have a look at the photos from our own nursery off Heron Island, which I've put online.",
+                "speaker": "lecturer"
+            }
+        ],
+        "groups": [
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "title": "Restoring damaged coral reefs",
+                "questions": [
+                    {
+                        "answer": [
+                            "food"
+                        ],
+                        "prompt": "Why reefs decline: algae living inside corals produce around 90% of their ______",
+                        "numbers": [
+                            31
+                        ],
+                        "evidence": "they produce the bulk of the coral's food, something like ninety per cent of it",
+                        "explanation": {
+                            "en": "The lecturer says the algae give coral its colour, but more importantly they make about ninety per cent of its food. Colour does not fit '90%'.",
+                            "ru": "Лектор говорит, что водоросли придают кораллу цвет, но, что важнее, они дают около девяноста процентов его пищи («food»). Цвет («colour») не подходит к «90%».",
+                            "uk": "Лекторка каже, що водорості надають коралу кольору, але, що важливіше, вони дають близько дев'яноста відсотків його їжі («food»). Колір («colour») не підходить до «90%»."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "starfish"
+                        ],
+                        "prompt": "Fertiliser from farms is linked to outbreaks of coral-eating ______",
+                        "numbers": [
+                            32
+                        ],
+                        "evidence": "it's simply a starfish that feeds on coral",
+                        "explanation": {
+                            "en": "The crown-of-thorns starfish eats coral, and fertiliser in rivers helps its young survive, causing outbreaks.",
+                            "ru": "Морская звезда «crown-of-thorns starfish» питается кораллами, а удобрения («fertiliser»), попадающие в реки, помогают выживать её молоди. Из-за этого происходят вспышки её численности.",
+                            "uk": "Морська зірка «crown-of-thorns starfish» живиться коралами, а добрива («fertiliser»), що потрапляють у річки, допомагають виживати її молоді. Через це стаються спалахи її чисельності."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "rubble"
+                        ],
+                        "prompt": "Cyclones can break reefs into loose ______, where young corals get crushed",
+                        "numbers": [
+                            33
+                        ],
+                        "evidence": "it can smash the whole structure into loose rubble",
+                        "explanation": {
+                            "en": "Severe cyclones smash the reef into rubble, which moves with the waves and crushes or buries baby corals.",
+                            "ru": "Сильные циклоны («cyclones») разбивают риф на обломки («rubble»). Волны носят эти обломки, и они давят или засыпают молодые кораллы.",
+                            "uk": "Потужні циклони («cyclones») розбивають риф на уламки («rubble»). Хвилі носять ці уламки, і вони розчавлюють або засипають молоді корали."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "trees"
+                        ],
+                        "prompt": "Coral gardening: most nurseries now use frames that resemble ______",
+                        "numbers": [
+                            34
+                        ],
+                        "evidence": "most teams use frames that look rather like trees",
+                        "explanation": {
+                            "en": "The first nurseries used flat tables, but today most use frames that look like trees, so 'tables' is wrong.",
+                            "ru": "В первых питомниках использовали плоские столы, но сегодня в большинстве из них стоят каркасы, похожие на деревья («trees»), поэтому «tables» — неверный ответ.",
+                            "uk": "У перших розсадниках використовували пласкі столи, але сьогодні в більшості з них стоять каркаси, схожі на дерева («trees»), тому «tables» — неправильна відповідь."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "nine",
+                            "9"
+                        ],
+                        "prompt": "Fragments usually grow for about ______ months before planting",
+                        "numbers": [
+                            35
+                        ],
+                        "evidence": "on average it's around nine months",
+                        "explanation": {
+                            "en": "Six months is only for fast-growing species; the average time is about nine months.",
+                            "ru": "Шесть месяцев («six months») — это срок только для быстрорастущих видов, а в среднем на это уходит около девяти месяцев («nine»).",
+                            "uk": "Шість місяців («six months») — це термін лише для видів, що швидко ростуть, а в середньому на це йде близько дев'яти місяців («nine»)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "slow"
+                        ],
+                        "prompt": "Main weakness: the method is too ______ for very large reefs",
+                        "numbers": [
+                            36
+                        ],
+                        "evidence": "The real weakness is that it's slow.",
+                        "explanation": {
+                            "en": "People criticise the cost, but the lecturer says costs have fallen; the real problem is that it is slow.",
+                            "ru": "Метод часто критикуют за стоимость («cost»), но лектор говорит, что затраты снизились. Настоящая проблема в том, что он медленный («slow»).",
+                            "uk": "Метод часто критикують за вартість («cost»), але лекторка каже, що витрати знизилися. Справжня проблема в тому, що він повільний («slow»)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "moon"
+                        ],
+                        "prompt": "New methods: mass spawning occurs a few nights after a full ______",
+                        "numbers": [
+                            37
+                        ],
+                        "evidence": "usually a few nights after a full moon in late spring",
+                        "explanation": {
+                            "en": "Mass spawning happens once a year, a few nights after a full moon.",
+                            "ru": "Массовый нерест происходит раз в год, через несколько ночей после полнолуния («full moon»).",
+                            "uk": "Масовий нерест відбувається раз на рік, через кілька ночей після повного місяця («full moon»)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "tent"
+                        ],
+                        "prompt": "Larvae are held on the damaged reef under a mesh ______",
+                        "numbers": [
+                            38
+                        ],
+                        "evidence": "covers the area with what they call a mesh tent",
+                        "explanation": {
+                            "en": "The larvae are first raised in floating pools, but on the reef they are kept in place by a mesh tent.",
+                            "ru": "Сначала личинок выращивают в плавучих бассейнах («pools»), но на рифе их удерживает на месте сетчатый тент («mesh tent»).",
+                            "uk": "Спочатку личинок вирощують у плавучих басейнах («pools»), але на рифі їх утримує на місці сітчастий намет («mesh tent»)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "heat"
+                        ],
+                        "prompt": "Breeding programmes mainly aim to produce corals that can tolerate ______",
+                        "numbers": [
+                            39
+                        ],
+                        "evidence": "but the main focus now is heat",
+                        "explanation": {
+                            "en": "Some labs once studied resistance to pollution, but the main focus today is coping with heat.",
+                            "ru": "Некоторые лаборатории раньше изучали устойчивость к загрязнению («pollution»), но сегодня главное направление — то, как кораллы справляются с жарой («heat»).",
+                            "uk": "Деякі лабораторії раніше вивчали стійкість до забруднення («pollution»), але сьогодні головний напрям — те, як корали витримують спеку («heat»)."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "fish"
+                        ],
+                        "prompt": "Recordings of a healthy reef played through speakers attract young ______",
+                        "numbers": [
+                            40
+                        ],
+                        "evidence": "young fish are drawn to it, and a lot of them stay",
+                        "explanation": {
+                            "en": "Shrimps are part of the noise on the recordings, but it is young fish that are attracted to the reef.",
+                            "ru": "Креветки («shrimps») тоже создают часть шума на записях, но к рифу привлекают именно молодых рыб («fish»).",
+                            "uk": "Креветки («shrimps») теж створюють частину шуму на записах, але до рифу приваблюють саме молодих риб («fish»)."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a marine science lecturer giving a talk about how scientists try to restore damaged coral reefs.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Leanne Thorburn",
+                "role": "university lecturer in marine science",
+                "accent": "australian",
+                "gender": "female"
+            }
+        ]
+    },
+    "plan": "l5|p4",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.227,
+            "provider": "anthropic",
+            "outputTokens": 10345
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.109268,
+            "provider": "anthropic",
+            "outputTokens": 3702
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.011286,
+            "provider": "anthropic",
+            "outputTokens": 502
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.014438,
+            "provider": "openai",
+            "outputTokens": 641
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.013234,
+            "provider": "xai",
+            "outputTokens": 1127
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.053764,
+            "provider": "anthropic",
+            "outputTokens": 2468
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "Restoring damaged coral reefs",
+        "turns": [
+            {
+                "text": "Good morning, everyone. Last week we looked at how coral reefs form, so today I'd like to turn to something a bit more hopeful: how scientists are trying to repair reefs that have already been damaged. I'll start with why reefs decline, then talk about coral gardening, then some newer methods, and I'll finish with how we actually measure success.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. The biggest threat by far is bleaching. Corals have tiny algae living inside their tissue, and most people think of these algae as the thing that gives coral its colour. That's true, but more importantly, they produce the bulk of the coral's food, something like ninety per cent of it. So when the water gets too warm and the coral pushes the algae out, it turns white and basically starts to starve.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The second threat is the crown-of-thorns starfish. Despite the dramatic name, it's simply a starfish that feeds on coral, and normally there aren't many of them around. But fertiliser washing off farms and down the rivers here in Queensland seems to help their young survive. So every few years we get huge outbreaks, and they can strip a section of reef in a matter of months.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Then there are cyclones. A severe cyclone doesn't just damage individual corals; it can smash the whole structure into loose rubble. And that's a real headache, because rubble rolls around with every wave, so any baby coral that settles on it gets crushed or buried. Some sites can stay bare for decades because of that.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "OK, so what can we do about it? The best-known approach is coral gardening. Divers collect small fragments from healthy corals and grow them in an underwater nursery. The first nurseries were basically flat tables sitting on the seabed, but these days most teams use frames that look rather like trees, with branches made of plastic pipe, and the fragments hang from those branches in the open water.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "How long do they stay in the nursery? Students often guess a few weeks, but it's a good deal longer than that. Fast-growing species might be ready in six months, but on average it's around nine months before the fragments are big enough to go back onto the reef. Then divers attach them to the reef one by one, usually with a kind of underwater cement.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, coral gardening is sometimes criticised for being expensive. Actually, the costs have come down a lot in the last ten years. The real weakness is that it's slow. A good team might plant a few thousand corals in a season, but when you remember that the Great Barrier Reef covers an area bigger than Italy, you can see the problem.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And that brings me to some newer methods. One is sometimes called coral IVF. Many corals reproduce in a mass spawning event, which happens just once a year, usually a few nights after a full moon in late spring. Researchers head out after dark and collect the eggs and sperm floating on the surface.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "They raise the larvae in floating pools for about a week, sorry, five days, and then release them over a damaged patch of reef. The tricky part is that larvae drift away very easily. So the team covers the area with what they call a mesh tent, which keeps the larvae in place for several days while they settle.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Another line of research is breeding tougher corals. A few years ago some labs were looking at corals that could resist pollution, but the main focus now is heat. The idea is to cross corals that came through a bad bleaching year, in the hope that their offspring will cope better with warmer water.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And here's one I really like. A reef isn't only coral; it needs fish, which graze on the seaweed and keep the coral clear. Healthy reefs are surprisingly noisy, with shrimps crackling and fish grunting. Researchers found that if you put underwater speakers on a damaged reef and play recordings of a healthy one, young fish are drawn to it, and a lot of them stay.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Finally, how do we know if any of this actually works? That's a question people in the field have argued about for years. For a long time, projects simply reported the number of corals they'd planted. It makes a nice headline, but it tells you very little, because many of those corals might be dead a year later. So now we look at survival rates and at how much of the seabed is covered by living coral.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "But for me, the real test comes later. Growing bigger is good, and getting through a hot summer is even better. A restored reef is only truly successful when the corals we've put out there begin to reproduce on their own, because then the reef can start rebuilding itself without our help.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, that's all for today. For next week, please read the chapter on reef monitoring, and have a look at the photos from our own nursery off Heron Island, which I've put online.",
+                "speaker": "lecturer"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "title": "Restoring damaged coral reefs",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "food"
+                        ],
+                        "prompt": "Why reefs decline: algae living inside corals produce around 90% of their ______",
+                        "options": [],
+                        "evidence": "they produce the bulk of the coral's food, something like ninety per cent of it",
+                        "explanation": "The lecturer says the algae give coral its colour, but more importantly they make about ninety per cent of its food. Colour does not fit '90%'."
+                    },
+                    {
+                        "answer": [
+                            "starfish"
+                        ],
+                        "prompt": "Fertiliser from farms is linked to outbreaks of coral-eating ______",
+                        "options": [],
+                        "evidence": "it's simply a starfish that feeds on coral",
+                        "explanation": "The crown-of-thorns starfish eats coral, and fertiliser in rivers helps its young survive, causing outbreaks."
+                    },
+                    {
+                        "answer": [
+                            "rubble"
+                        ],
+                        "prompt": "Cyclones can break reefs into loose ______, where young corals get crushed",
+                        "options": [],
+                        "evidence": "it can smash the whole structure into loose rubble",
+                        "explanation": "Severe cyclones smash the reef into rubble, which moves with the waves and crushes or buries baby corals."
+                    },
+                    {
+                        "answer": [
+                            "trees"
+                        ],
+                        "prompt": "Coral gardening: most nurseries now use frames that resemble ______",
+                        "options": [],
+                        "evidence": "most teams use frames that look rather like trees",
+                        "explanation": "The first nurseries used flat tables, but today most use frames that look like trees, so 'tables' is wrong."
+                    },
+                    {
+                        "answer": [
+                            "nine",
+                            "9"
+                        ],
+                        "prompt": "Fragments usually grow for about ______ months before planting",
+                        "options": [],
+                        "evidence": "on average it's around nine months",
+                        "explanation": "Six months is only for fast-growing species; the average time is about nine months."
+                    },
+                    {
+                        "answer": [
+                            "slow"
+                        ],
+                        "prompt": "Main weakness: the method is too ______ for very large reefs",
+                        "options": [],
+                        "evidence": "The real weakness is that it's slow.",
+                        "explanation": "People criticise the cost, but the lecturer says costs have fallen; the real problem is that it is slow."
+                    },
+                    {
+                        "answer": [
+                            "moon"
+                        ],
+                        "prompt": "New methods: mass spawning occurs a few nights after a full ______",
+                        "options": [],
+                        "evidence": "usually a few nights after a full moon in late spring",
+                        "explanation": "Mass spawning happens once a year, a few nights after a full moon."
+                    },
+                    {
+                        "answer": [
+                            "tent"
+                        ],
+                        "prompt": "Larvae are held on the damaged reef under a mesh ______",
+                        "options": [],
+                        "evidence": "covers the area with what they call a mesh tent",
+                        "explanation": "The larvae are first raised in floating pools, but on the reef they are kept in place by a mesh tent."
+                    },
+                    {
+                        "answer": [
+                            "heat"
+                        ],
+                        "prompt": "Breeding programmes mainly aim to produce corals that can tolerate ______",
+                        "options": [],
+                        "evidence": "but the main focus now is heat",
+                        "explanation": "Some labs once studied resistance to pollution, but the main focus today is coping with heat."
+                    },
+                    {
+                        "answer": [
+                            "fish"
+                        ],
+                        "prompt": "Recordings of a healthy reef played through speakers attract young ______",
+                        "options": [],
+                        "evidence": "young fish are drawn to it, and a lot of them stay",
+                        "explanation": "Shrimps are part of the noise on the recordings, but it is young fish that are attracted to the reef."
+                    },
+                    {
+                        "answer": [
+                            "planted"
+                        ],
+                        "prompt": "Measuring success: many past projects only reported how many corals had been ______",
+                        "options": [],
+                        "evidence": "projects simply reported the number of corals they'd planted",
+                        "explanation": "Projects used to report only the number of corals planted, which says little because many may die."
+                    },
+                    {
+                        "answer": [
+                            "reproduce"
+                        ],
+                        "prompt": "A reef is truly successful once its corals begin to ______ without help",
+                        "options": [],
+                        "evidence": "begin to reproduce on their own",
+                        "explanation": "Growing and surviving a hot summer are good signs, but the real test is when the corals reproduce by themselves."
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a marine science lecturer giving a talk about how scientists try to restore damaged coral reefs.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Leanne Thorburn"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they produce the bulk of the coral's food, something like ninety per cent of it",
+                "answer": [
+                    "food"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "fertiliser washing off farms and down the rivers here in Queensland seems to help their young survive",
+                "answer": [
+                    "starfish"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it can smash the whole structure into loose rubble",
+                "answer": [
+                    "rubble"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "frames that look rather like trees, with branches made of plastic pipe",
+                "answer": [
+                    "trees"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "on average it's around nine months before the fragments are big enough to go back onto the reef",
+                "answer": [
+                    "nine"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "The real weakness is that it's slow.",
+                "answer": [
+                    "slow"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "usually a few nights after a full moon in late spring",
+                "answer": [
+                    "moon"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "the team covers the area with what they call a mesh tent",
+                "answer": [
+                    "tent"
+                ],
+                "correct": true
+            },
+            "b1q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "the main focus now is heat",
+                "answer": [
+                    "heat"
+                ],
+                "correct": true
+            },
+            "b1q10": {
+                "marks": [
+                    true
+                ],
+                "quote": "play recordings of a healthy one, young fish are drawn to it",
+                "answer": [
+                    "fish"
+                ],
+                "correct": true
+            },
+            "b1q11": {
+                "marks": [
+                    true
+                ],
+                "quote": "projects simply reported the number of corals they'd planted",
+                "answer": [
+                    "planted"
+                ],
+                "correct": true
+            },
+            "b1q12": {
+                "marks": [
+                    true
+                ],
+                "quote": "only truly successful when the corals we've put out there begin to reproduce on their own",
+                "answer": [
+                    "reproduce"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they produce the bulk of the coral's food, something like ninety per cent of it",
+                "answer": [
+                    "food"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The second threat is the crown-of-thorns starfish ... it's simply a starfish that feeds on coral ... So every few years we get huge outbreaks",
+                "answer": [
+                    "starfish"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it can smash the whole structure into loose rubble",
+                "answer": [
+                    "rubble"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "most teams use frames that look rather like trees",
+                "answer": [
+                    "trees"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "on average it's around nine months before the fragments are big enough to go back onto the reef",
+                "answer": [
+                    "nine"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "The real weakness is that it's slow",
+                "answer": [
+                    "slow"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "which happens just once a year, usually a few nights after a full moon",
+                "answer": [
+                    "moon"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "the team covers the area with what they call a mesh tent",
+                "answer": [
+                    "tent"
+                ],
+                "correct": true
+            },
+            "b1q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "the main focus now is heat",
+                "answer": [
+                    "heat"
+                ],
+                "correct": true
+            },
+            "b1q10": {
+                "marks": [
+                    true
+                ],
+                "quote": "if you put underwater speakers on a damaged reef and play recordings of a healthy one, young fish are drawn to it",
+                "answer": [
+                    "fish"
+                ],
+                "correct": true
+            },
+            "b1q11": {
+                "marks": [
+                    true
+                ],
+                "quote": "projects simply reported the number of corals they'd planted",
+                "answer": [
+                    "planted"
+                ],
+                "correct": true
+            },
+            "b1q12": {
+                "marks": [
+                    true
+                ],
+                "quote": "A restored reef is only truly successful when the corals we've put out there begin to reproduce on their own",
+                "answer": [
+                    "reproduce"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "they produce the bulk of the coral's food, something like ninety per cent of it",
+            "answer": [
+                "food"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "The second threat is the crown-of-thorns starfish. ... fertiliser washing off farms ... we get huge outbreaks",
+            "answer": [
+                "starfish"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "it can smash the whole structure into loose rubble",
+            "answer": [
+                "rubble"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "most teams use frames that look rather like trees",
+            "answer": [
+                "trees"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "on average it's around nine months before the fragments are big enough",
+            "answer": [
+                "nine"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "The real weakness is that it's slow",
+            "answer": [
+                "slow"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "a few nights after a full moon in late spring",
+            "answer": [
+                "moon"
+            ],
+            "correct": true
+        },
+        "b1q8": {
+            "marks": [
+                true
+            ],
+            "quote": "covers the area with what they call a mesh tent",
+            "answer": [
+                "tent"
+            ],
+            "correct": true
+        },
+        "b1q9": {
+            "marks": [
+                true
+            ],
+            "quote": "the main focus now is heat",
+            "answer": [
+                "heat"
+            ],
+            "correct": true
+        },
+        "b1q10": {
+            "marks": [
+                true
+            ],
+            "quote": "young fish are drawn to it",
+            "answer": [
+                "fish"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 12,
+        "agreedFirst": 12,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 21360,
+                "wer": 0,
+                "heard": "Good morning everyone. Last week we looked at how coral reefs form. So today I'd like to turn to something a bit more hopeful – how scientists are trying to repair reefs that have already been damaged. I'll start with why reefs decline, then talk about coral gardening, then some newer methods, and I'll finish with how we actually measure success."
+            },
+            {
+                "ms": 26320,
+                "wer": 0.041,
+                "heard": "Right. The biggest threat by far is bleaching. Corals have tiny algae living inside their tissue, and most people think of these algae as the thing that gives coral its color. That's true, but more importantly, they produce the bulk of the coral's food, something like 90 percent of it. So when the water gets too warm and the coral pushes the algae out, it turns white and basically starts to starve."
+            },
+            {
+                "ms": 22560,
+                "wer": 0,
+                "heard": "The second threat is the crown-of-thorns starfish. Despite the dramatic name, it's simply a starfish that feeds on coral, and normally there aren't many of them around. But fertiliser washing off farms and down the rivers here in Queensland seems to help their young survive. So every few years we get huge outbreaks, and they can strip a section of reef in a matter of months."
+            },
+            {
+                "ms": 20240,
+                "wer": 0,
+                "heard": "Then there are cyclones. A severe cyclone doesn't just damage individual corals; it can smash the whole structure into loose rubble. And that's a real headache because rubble rolls around with every wave, so any baby coral that settles on it gets crushed or buried. Some sites can stay bare for decades because of that."
+            },
+            {
+                "ms": 25280,
+                "wer": 0.014,
+                "heard": "Okay, so what can we do about it? The best-known approach is coral gardening. Divers collect small fragments from healthy corals and grow them in an underwater nursery. The first nurseries were basically flat tables sitting on the seabed, but these days most teams use frames that look rather like trees, with branches made of plastic pipe, and the fragments hang from those branches in the open water."
+            },
+            {
+                "ms": 21280,
+                "wer": 0,
+                "heard": "How long do they stay in the nursery? Students often guess a few weeks, but it's a good deal longer than that. Fast-growing species might be ready in six months, but on average, it's around nine months before the fragments are big enough to go back onto the reef. Then, divers attach them to the reef one by one, usually with a kind of underwater cement."
+            },
+            {
+                "ms": 20720,
+                "wer": 0.016,
+                "heard": "Now, coral gardening is sometimes criticized for being expensive. Actually, the costs have come down a lot in the last 10 years. The real weakness is that it's slow. A good team might plant a few thousand corals in a season, but when you remember that the Great Barrier Reef covers an area bigger than Italy, you can see the problem."
+            },
+            {
+                "ms": 19120,
+                "wer": 0,
+                "heard": "And that brings me to some newer methods. One is sometimes called coral IVF. Many corals reproduce in a mass spawning event, which happens just once a year, usually a few nights after a full moon in late spring. Researchers head out after dark and collect the eggs and sperm floating on the surface."
+            },
+            {
+                "ms": 19040,
+                "wer": 0,
+                "heard": "They raise the larvae in floating pools for about a week (sorry, five days) and then release them over a damaged patch of reef. The tricky part is that larvae drift away very easily, so the team covers the area with what they call a mesh tent, which keeps the larvae in place for several days while they settle."
+            },
+            {
+                "ms": 17600,
+                "wer": 0,
+                "heard": "Another line of research is breeding tougher corals. A few years ago, some labs were looking at corals that could resist pollution, but the main focus now is heat. The idea is to cross corals that came through a bad bleaching year in the hope that their offspring will cope better with warmer water."
+            },
+            {
+                "ms": 23520,
+                "wer": 0,
+                "heard": "And here's one I really like: a reef isn't only coral. It needs fish, which graze on the seaweed and keep the coral clear. Healthy reefs are surprisingly noisy, with shrimps crackling and fish grunting. Researchers found that if you put underwater speakers on a damaged reef and play recordings of a healthy one, young fish are drawn to it and a lot of them stay."
+            },
+            {
+                "ms": 24640,
+                "wer": 0,
+                "heard": "Finally, how do we know if any of this actually works? That's a question people in the field have argued about for years. For a long time, projects simply reported the number of corals they'd planted. It makes a nice headline, but it tells you very little, because many of those corals might be dead a year later. So now we look at survival rates and at how much of the seabed is covered by living coral."
+            },
+            {
+                "ms": 18000,
+                "wer": 0,
+                "heard": "But for me, the real test comes later. Growing bigger is good, and getting through a hot summer is even better. A restored reef is only truly successful when the corals we've put out there begin to reproduce on their own, because then the reef can start rebuilding itself without our help."
+            },
+            {
+                "ms": 9840,
+                "wer": 0,
+                "heard": "Right, that's all for today. For next week, please read the chapter on reef monitoring and have a look at the photos from our own nursery off Heron Island, which I've put online."
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -1.2
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b1q8",
+            "b1q9",
+            "b1q10"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b1q9": "first",
+            "b1q10": "first",
+            "b1q11": "first",
+            "b1q12": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "31": "b1q1",
+        "32": "b1q2",
+        "33": "b1q3",
+        "34": "b1q4",
+        "35": "b1q5",
+        "36": "b1q6",
+        "37": "b1q7",
+        "38": "b1q8",
+        "39": "b1q9",
+        "40": "b1q10"
+    },
+    "translation": {
+        "missing": []
+    }
+}

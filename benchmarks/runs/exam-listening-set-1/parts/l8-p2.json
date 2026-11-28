@@ -1,0 +1,1528 @@
+{
+    "form": {
+        "first": [
+            "group 1 (map_labelling), question 14: fewer than 15 words after the previous answer",
+            "group 2 (matching_features), question 20: fewer than 15 words after the previous answer"
+        ],
+        "afterRepair": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l8-p2.mp3",
+            "bytes": 4154732,
+            "sha256": "fe3097f2ef04d6fd314c5c31c529a9599edb927c67a3f381196c48d9a1a6282f",
+            "voices": {
+                "guide": {
+                    "voice": "HF0hjxElqeS2vwmlzj6g",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 2. You will hear a guide welcoming visitors to a science museum that has just reopened after building work. First, you have some time to look at questions 11 to 15.",
+                    "endMs": 11880,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 41880,
+                    "purpose": "read",
+                    "startMs": 11880,
+                    "questions": [
+                        11,
+                        15
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 62960,
+                    "startMs": 41880
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 73960,
+                    "startMs": 62960
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 88480,
+                    "startMs": 73960
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 111320,
+                    "startMs": 88480
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 127760,
+                    "startMs": 111320
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 141720,
+                    "startMs": 127760
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 157840,
+                    "startMs": 141720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 173720,
+                    "startMs": 157840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 185680,
+                    "startMs": 173720
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 16 to 20.",
+                    "endMs": 188920,
+                    "startMs": 185680
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 218920,
+                    "purpose": "read",
+                    "startMs": 188920,
+                    "questions": [
+                        16,
+                        20
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 236000,
+                    "startMs": 218920
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 248760,
+                    "startMs": 236000
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 266720,
+                    "startMs": 248760
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 280200,
+                    "startMs": 266720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 295520,
+                    "startMs": 280200
+                },
+                {
+                    "kind": "turn",
+                    "turn": 14,
+                    "endMs": 310340,
+                    "startMs": 295520
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 2. You now have thirty seconds to check your answers.",
+                    "endMs": 316140,
+                    "startMs": 310340
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 346140,
+                    "purpose": "check",
+                    "startMs": 316140
+                }
+            ],
+            "durationMs": 346140
+        },
+        "title": "A reopened science museum",
+        "turns": [
+            {
+                "text": "Good morning, everyone, and welcome to the Ashbury Science Museum. My name's Owen Ratcliffe, and I'm one of the guides here. As you probably know, we've been closed for nearly two years, well, twenty-two months to be exact, while the building was renovated, so it's lovely to see visitors again. I'll start with the ground floor, and then I'll tell you about the new galleries upstairs.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right, you've all got a copy of the ground-floor plan, I hope. We're standing just inside the main entrance, facing north. On your left is the ticket desk, and on your right is the shop.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, most of you will want somewhere to leave coats and bags. The room beside the ticket desk, to the west, looks as if it might be the cloakroom, but it's actually staff offices. The cloakroom's on the other side, right next to the shop, just beyond it to the east.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Then, if you walk straight up the main corridor, you'll come to a crossroads where it meets the long corridor running east to west. Just before that crossroads, there are two large rooms facing each other. The one on your left is the Energy Zone, which, I'm sorry to say, won't open until the summer. The one on your right is the Flight Gallery, with the old biplane hanging from the ceiling, and that's open now.",
+                "speaker": "guide"
+            },
+            {
+                "text": "OK. At the crossroads, turn left and walk west, right to the end of the corridor. The room on your left, at the very end, is where we'll hold our temporary exhibitions. The first one's about volcanoes, and it's well worth a look. It runs until the end of September, and there's no extra charge for it.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Directly opposite it, on the right-hand side, is the picnic room. If you've brought your own sandwiches, that's the place to eat them. Please don't eat them in the café, which is just north of the picnic room. The café staff get rather upset about that!",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, for families with small children. The play area used to be in the basement, but we've moved it up here. It's the long, narrow room between the café and the lifts. The lifts are at the far end of the main corridor, by the way, so if you're pushing a buggy, that's the easiest way to reach it.",
+                "speaker": "guide"
+            },
+            {
+                "text": "And finally, the toilets. Go back to the crossroads, and this time follow the long corridor east instead of west. Right at the end, the door on your right is the toilets. Opposite them, on your left, is the lecture theatre, where there are free talks every afternoon.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right, that's the ground floor. Now for the exciting part: the six brand-new galleries on the first floor. Every one of them has something hands-on, so let me quickly tell you what you can actually do in each.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Let's start with the Space Gallery. People always ask me if there's a telescope they can look through. I'm afraid there isn't; there simply wasn't room. But you can climb into a full-size copy of a space capsule, and with the screens and controls inside, it feels as if you're really docking with the space station.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Next door is the Medicine Gallery. Most of it's glass cases, as you'd expect, but there's a table in the middle where you can put on gloves and pick up genuine surgical tools from the 1800s. They're surprisingly heavy.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Then there's the Engineering Hall. You'll see a big robot arm in there, and children always want a go with it, but it's behind glass, so nobody can operate it, I'm afraid. What you can do is put together a little bridge out of card and straws, and then add weights to find out how much it'll hold before it falls down.",
+                "speaker": "guide"
+            },
+            {
+                "text": "The Sound Studio is great fun, and it's especially popular with teenagers. There's a booth where you talk into a microphone, and it keeps a copy of what you've said so you can listen to yourself afterwards. Most people are shocked by what they sound like!",
+                "speaker": "guide"
+            },
+            {
+                "text": "On the Chemistry Stage, you can't touch anything, for obvious safety reasons. But at 11 am, 1 pm and 3 pm each day, one of our scientists mixes chemicals in front of the audience, and you can watch the colours change and the smoke appear.",
+                "speaker": "guide"
+            },
+            {
+                "text": "And last of all, the Climate Gallery. Along one wall there are touch screens with ten questions about the weather and the planet, and at the end, it tells you how many you got right. See if you can beat your children's score! Right, any questions before we head upstairs?",
+                "speaker": "guide"
+            }
+        ],
+        "groups": [
+            {
+                "type": "map_labelling",
+                "figure": {
+                    "data": "illustrative",
+                    "grid": {
+                        "cols": 12,
+                        "rows": 8
+                    },
+                    "paths": [
+                        {
+                            "kind": "path",
+                            "label": "Main corridor",
+                            "points": [
+                                [
+                                    6,
+                                    8
+                                ],
+                                [
+                                    6,
+                                    2
+                                ]
+                            ]
+                        },
+                        {
+                            "kind": "path",
+                            "label": "Long corridor",
+                            "points": [
+                                [
+                                    0,
+                                    4
+                                ],
+                                [
+                                    12,
+                                    4
+                                ]
+                            ]
+                        }
+                    ],
+                    "title": "Ashbury Science Museum – ground floor",
+                    "format": "map-spec/1",
+                    "features": [
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 4,
+                            "y": 6,
+                            "kind": "room",
+                            "label": "Ticket desk"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 6,
+                            "y": 6,
+                            "kind": "room",
+                            "label": "Shop"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 0,
+                            "y": 0,
+                            "kind": "room",
+                            "label": "Café"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 5,
+                            "y": 0,
+                            "kind": "room",
+                            "label": "Lifts"
+                        },
+                        {
+                            "h": 4,
+                            "w": 5,
+                            "x": 7,
+                            "y": 0,
+                            "kind": "room",
+                            "label": "Lecture theatre"
+                        },
+                        {
+                            "h": 2,
+                            "w": 4,
+                            "x": 0,
+                            "y": 6,
+                            "kind": "room",
+                            "letter": "A"
+                        },
+                        {
+                            "h": 2,
+                            "w": 4,
+                            "x": 8,
+                            "y": 6,
+                            "kind": "room",
+                            "letter": "B"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 0,
+                            "y": 4,
+                            "kind": "room",
+                            "letter": "C"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 3,
+                            "y": 4,
+                            "kind": "room",
+                            "letter": "D"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 6,
+                            "y": 4,
+                            "kind": "room",
+                            "letter": "E"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 9,
+                            "y": 4,
+                            "kind": "room",
+                            "letter": "F"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 0,
+                            "y": 2,
+                            "kind": "room",
+                            "letter": "G"
+                        },
+                        {
+                            "h": 4,
+                            "w": 2,
+                            "x": 3,
+                            "y": 0,
+                            "kind": "room",
+                            "letter": "H"
+                        }
+                    ],
+                    "entrances": [
+                        {
+                            "x": 6,
+                            "y": 8,
+                            "label": "Main entrance"
+                        }
+                    ]
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Cloakroom",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "The cloakroom's on the other side, right next to the shop, just beyond it to the east.",
+                        "explanation": {
+                            "en": "The cloakroom is just east of the shop. The room beside the ticket desk looks like it, but the guide says it is staff offices.",
+                            "ru": "\"Cloakroom\" находится сразу к востоку от магазина. Комната рядом с кассой похожа на него, но гид говорит, что там \"staff offices\", то есть служебные помещения.",
+                            "uk": "\"Cloakroom\" розташований одразу на схід від магазину. Кімната біля каси схожа на нього, але гід каже, що там \"staff offices\", тобто службові приміщення."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Flight Gallery",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "The one on your right is the Flight Gallery, with the old biplane hanging from the ceiling",
+                        "explanation": {
+                            "en": "Walking north up the main corridor, the Flight Gallery is on the right just before the crossroads. The room opposite it on the left is the Energy Zone.",
+                            "ru": "Если идти на север по главному коридору, \"Flight Gallery\" будет справа, прямо перед перекрёстком. Комната напротив, слева, это \"Energy Zone\".",
+                            "uk": "Якщо йти на північ головним коридором, \"Flight Gallery\" буде праворуч, перед самим перехрестям. Кімната навпроти, ліворуч, це \"Energy Zone\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Temporary exhibitions",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "The room on your left, at the very end, is where we'll hold our temporary exhibitions.",
+                        "explanation": {
+                            "en": "Walking west along the long corridor, the temporary exhibitions room is on the left at the very end, not the first room on the left (the Energy Zone).",
+                            "ru": "Если идти на запад по длинному коридору, зал \"temporary exhibitions\" будет слева в самом конце. Это не первая комната слева: там \"Energy Zone\".",
+                            "uk": "Якщо йти на захід довгим коридором, зала \"temporary exhibitions\" буде ліворуч у самому кінці. Це не перша кімната ліворуч: там \"Energy Zone\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Picnic room",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "Directly opposite it, on the right-hand side, is the picnic room.",
+                        "explanation": {
+                            "en": "The picnic room is opposite the temporary exhibitions room, on the right as you walk west, and just south of the café.",
+                            "ru": "\"Picnic room\" находится напротив зала \"temporary exhibitions\", справа, если идти на запад, и сразу к югу от кафе.",
+                            "uk": "\"Picnic room\" розташована навпроти зали \"temporary exhibitions\", праворуч, якщо йти на захід, і одразу на південь від кафе."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "H"
+                        ],
+                        "prompt": "Children's play area",
+                        "numbers": [
+                            15
+                        ],
+                        "evidence": "It's the long, narrow room between the café and the lifts.",
+                        "explanation": {
+                            "en": "The play area is the long, narrow room between the café and the lifts. It used to be in the basement, but it is now on the ground floor.",
+                            "ru": "\"Play area\" — это длинная узкая комната между кафе и лифтами. Раньше она была в подвале, но теперь находится на первом этаже.",
+                            "uk": "\"Play area\" — це довга вузька кімната між кафе та ліфтами. Раніше вона була в підвалі, але тепер розташована на першому поверсі."
+                        }
+                    }
+                ],
+                "instruction": "Label the plan of the ground floor below. Write the correct letter, A–H, next to questions 11–15."
+            },
+            {
+                "type": "matching_features",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "build and test a model"
+                    },
+                    {
+                        "id": "B",
+                        "text": "handle historical objects"
+                    },
+                    {
+                        "id": "C",
+                        "text": "watch a live experiment"
+                    },
+                    {
+                        "id": "D",
+                        "text": "control a robot"
+                    },
+                    {
+                        "id": "E",
+                        "text": "do a quiz"
+                    },
+                    {
+                        "id": "F",
+                        "text": "try out a simulator"
+                    },
+                    {
+                        "id": "G",
+                        "text": "record their voice"
+                    },
+                    {
+                        "id": "H",
+                        "text": "look through a telescope"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Space Gallery",
+                        "numbers": [
+                            16
+                        ],
+                        "evidence": "with the screens and controls inside, it feels as if you're really docking with the space station",
+                        "explanation": {
+                            "en": "Visitors sit in a copy of a capsule whose screens and controls make docking feel real, so it is a simulator. There is no telescope because there wasn't room.",
+                            "ru": "Посетители садятся в копию капсулы, экраны и пульты которой делают стыковку реалистичной, поэтому это \"simulator\". Телескопа (\"telescope\") там нет: для него не хватило места.",
+                            "uk": "Відвідувачі сідають у копію капсули, екрани й пульти якої роблять стикування реалістичним, тож це \"simulator\". Телескопа (\"telescope\") там немає: для нього не вистачило місця."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Medicine Gallery",
+                        "numbers": [
+                            17
+                        ],
+                        "evidence": "pick up genuine surgical tools from the 1800s",
+                        "explanation": {
+                            "en": "Visitors can put on gloves and pick up real surgical tools from the 1800s, so they handle historical objects.",
+                            "ru": "Посетители могут надеть перчатки и взять в руки настоящие хирургические инструменты XIX века, то есть они держат в руках исторические предметы (\"handle historical objects\").",
+                            "uk": "Відвідувачі можуть одягнути рукавички й узяти до рук справжні хірургічні інструменти XIX століття, тобто вони тримають у руках історичні предмети (\"handle historical objects\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Engineering Hall",
+                        "numbers": [
+                            18
+                        ],
+                        "evidence": "put together a little bridge out of card and straws, and then add weights to find out how much it'll hold",
+                        "explanation": {
+                            "en": "Visitors make a small bridge and test how much weight it holds. The robot arm is behind glass, so nobody can control it.",
+                            "ru": "Посетители собирают небольшой мост и проверяют, какой вес он выдержит. \"Robot arm\" находится за стеклом, поэтому управлять ею никто не может.",
+                            "uk": "Відвідувачі збирають невеликий міст і перевіряють, яку вагу він витримає. \"Robot arm\" розташована за склом, тому керувати нею ніхто не може."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Sound Studio",
+                        "numbers": [
+                            19
+                        ],
+                        "evidence": "you talk into a microphone, and it keeps a copy of what you've said",
+                        "explanation": {
+                            "en": "The booth keeps a copy of what visitors say into the microphone, so they record their voice and listen to it afterwards.",
+                            "ru": "Кабина сохраняет запись того, что посетители говорят в микрофон, то есть они записывают свой голос и потом его прослушивают (\"record their voice\").",
+                            "uk": "Кабіна зберігає запис того, що відвідувачі кажуть у мікрофон, тобто вони записують свій голос і потім його прослуховують (\"record their voice\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Chemistry Stage",
+                        "numbers": [
+                            20
+                        ],
+                        "evidence": "one of our scientists mixes chemicals in front of the audience",
+                        "explanation": {
+                            "en": "Visitors can't touch anything, but they watch a scientist mixing chemicals in front of them, which is a live experiment.",
+                            "ru": "Посетителям ничего нельзя трогать, но они смотрят, как учёный смешивает химические вещества прямо перед ними, а это и есть \"live experiment\".",
+                            "uk": "Відвідувачам нічого не можна торкатися, але вони спостерігають, як науковець змішує хімічні речовини просто перед ними, а це і є \"live experiment\"."
+                        }
+                    }
+                ],
+                "instruction": "What can visitors do in each first-floor gallery? Choose FIVE answers from the box and write the correct letter, A–H, next to questions 16–20."
+            }
+        ],
+        "context": "You will hear a guide welcoming visitors to a science museum that has just reopened after building work.",
+        "speakers": [
+            {
+                "id": "guide",
+                "name": "Owen Ratcliffe",
+                "role": "museum guide",
+                "accent": "british",
+                "gender": "male"
+            }
+        ]
+    },
+    "plan": "l8|p2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.398636,
+            "provider": "anthropic",
+            "outputTokens": 18888
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.1894,
+            "provider": "anthropic",
+            "outputTokens": 7388
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": true,
+            "costUsd": 0.021054,
+            "provider": "anthropic",
+            "outputTokens": 1255
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": true,
+            "costUsd": 0.02752,
+            "provider": "openai",
+            "outputTokens": 1381
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": true,
+            "costUsd": 0.031738,
+            "provider": "xai",
+            "outputTokens": 3931
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.044828,
+            "provider": "anthropic",
+            "outputTokens": 2004
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 12,
+            "rows": 8,
+            "paths": [
+                {
+                    "kind": "path",
+                    "label": "Main corridor",
+                    "points": [
+                        [
+                            6,
+                            8
+                        ],
+                        [
+                            6,
+                            2
+                        ]
+                    ]
+                },
+                {
+                    "kind": "path",
+                    "label": "Long corridor",
+                    "points": [
+                        [
+                            0,
+                            4
+                        ],
+                        [
+                            12,
+                            4
+                        ]
+                    ]
+                }
+            ],
+            "title": "Ashbury Science Museum – ground floor",
+            "features": [
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 4,
+                    "y": 6,
+                    "kind": "room",
+                    "label": "Ticket desk",
+                    "letter": ""
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 6,
+                    "y": 6,
+                    "kind": "room",
+                    "label": "Shop",
+                    "letter": ""
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 0,
+                    "y": 0,
+                    "kind": "room",
+                    "label": "Café",
+                    "letter": ""
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 5,
+                    "y": 0,
+                    "kind": "room",
+                    "label": "Lifts",
+                    "letter": ""
+                },
+                {
+                    "h": 4,
+                    "w": 5,
+                    "x": 7,
+                    "y": 0,
+                    "kind": "room",
+                    "label": "Lecture theatre",
+                    "letter": ""
+                },
+                {
+                    "h": 2,
+                    "w": 4,
+                    "x": 0,
+                    "y": 6,
+                    "kind": "room",
+                    "label": "",
+                    "letter": "A"
+                },
+                {
+                    "h": 2,
+                    "w": 4,
+                    "x": 8,
+                    "y": 6,
+                    "kind": "room",
+                    "label": "",
+                    "letter": "B"
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 0,
+                    "y": 4,
+                    "kind": "room",
+                    "label": "",
+                    "letter": "C"
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 3,
+                    "y": 4,
+                    "kind": "room",
+                    "label": "",
+                    "letter": "D"
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 6,
+                    "y": 4,
+                    "kind": "room",
+                    "label": "",
+                    "letter": "E"
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 9,
+                    "y": 4,
+                    "kind": "room",
+                    "label": "",
+                    "letter": "F"
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 0,
+                    "y": 2,
+                    "kind": "room",
+                    "label": "",
+                    "letter": "G"
+                },
+                {
+                    "h": 4,
+                    "w": 2,
+                    "x": 3,
+                    "y": 0,
+                    "kind": "room",
+                    "label": "",
+                    "letter": "H"
+                }
+            ],
+            "entrances": [
+                {
+                    "x": 6,
+                    "y": 8,
+                    "label": "Main entrance"
+                }
+            ]
+        },
+        "title": "A reopened science museum",
+        "turns": [
+            {
+                "text": "Good morning, everyone, and welcome to the Ashbury Science Museum. My name's Owen Ratcliffe, and I'm one of the guides here. As you probably know, we've been closed for nearly two years, well, twenty-two months to be exact, while the building was renovated, so it's lovely to see visitors again. I'll start with the ground floor, and then I'll tell you about the new galleries upstairs.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right, you've all got a copy of the ground-floor plan, I hope. We're standing just inside the main entrance, facing north. On your left is the ticket desk, and on your right is the shop.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, most of you will want somewhere to leave coats and bags. The room beside the ticket desk, to the west, looks as if it might be the cloakroom, but it's actually staff offices. The cloakroom's on the other side, right next to the shop, just beyond it to the east.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Then, if you walk straight up the main corridor, you'll come to a crossroads where it meets the long corridor running east to west. Just before that crossroads, there are two large rooms facing each other. The one on your left is the Energy Zone, which, I'm sorry to say, won't open until the summer. The one on your right is the Flight Gallery, with the old biplane hanging from the ceiling, and that's open now.",
+                "speaker": "guide"
+            },
+            {
+                "text": "OK. At the crossroads, turn left and walk west, right to the end of the corridor. The room on your left, at the very end, is where we'll hold our temporary exhibitions. The first one's about volcanoes, and it's well worth a look. It runs until the end of September, and there's no extra charge for it.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Directly opposite it, on the right-hand side, is the picnic room. If you've brought your own sandwiches, that's the place to eat them. Please don't eat them in the café, which is just north of the picnic room. The café staff get rather upset about that!",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, for families with small children. The play area used to be in the basement, but we've moved it up here. It's the long, narrow room between the café and the lifts. The lifts are at the far end of the main corridor, by the way, so if you're pushing a buggy, that's the easiest way to reach it.",
+                "speaker": "guide"
+            },
+            {
+                "text": "And finally, the toilets. Go back to the crossroads, and this time follow the long corridor east instead of west. Right at the end, the door on your right is the toilets. Opposite them, on your left, is the lecture theatre, where there are free talks every afternoon.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right, that's the ground floor. Now for the exciting part: the six brand-new galleries on the first floor. Every one of them has something hands-on, so let me quickly tell you what you can actually do in each.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Let's start with the Space Gallery. People always ask me if there's a telescope they can look through. I'm afraid there isn't; there simply wasn't room. But you can climb into a full-size copy of a space capsule, and with the screens and controls inside, it feels as if you're really docking with the space station.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Next door is the Medicine Gallery. Most of it's glass cases, as you'd expect, but there's a table in the middle where you can put on gloves and pick up genuine surgical tools from the 1800s. They're surprisingly heavy.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Then there's the Engineering Hall. You'll see a big robot arm in there, and children always want a go with it, but it's behind glass, so nobody can operate it, I'm afraid. What you can do is put together a little bridge out of card and straws, and then add weights to find out how much it'll hold before it falls down.",
+                "speaker": "guide"
+            },
+            {
+                "text": "The Sound Studio is great fun, and it's especially popular with teenagers. There's a booth where you talk into a microphone, and it keeps a copy of what you've said so you can listen to yourself afterwards. Most people are shocked by what they sound like!",
+                "speaker": "guide"
+            },
+            {
+                "text": "On the Chemistry Stage, you can't touch anything, for obvious safety reasons. But at 11 am, 1 pm and 3 pm each day, one of our scientists mixes chemicals in front of the audience, and you can watch the colours change and the smoke appear.",
+                "speaker": "guide"
+            },
+            {
+                "text": "And last of all, the Climate Gallery. Along one wall there are touch screens with ten questions about the weather and the planet, and at the end, it tells you how many you got right. See if you can beat your children's score! Right, any questions before we head upstairs?",
+                "speaker": "guide"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "map_labelling",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Cloakroom",
+                        "options": [],
+                        "evidence": "The cloakroom's on the other side, right next to the shop, just beyond it to the east.",
+                        "explanation": "The cloakroom is just east of the shop. The room beside the ticket desk looks like it, but the guide says it is staff offices."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Flight Gallery",
+                        "options": [],
+                        "evidence": "The one on your right is the Flight Gallery, with the old biplane hanging from the ceiling",
+                        "explanation": "Walking north up the main corridor, the Flight Gallery is on the right just before the crossroads. The room opposite it on the left is the Energy Zone."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Temporary exhibitions",
+                        "options": [],
+                        "evidence": "The room on your left, at the very end, is where we'll hold our temporary exhibitions.",
+                        "explanation": "Walking west along the long corridor, the temporary exhibitions room is on the left at the very end, not the first room on the left (the Energy Zone)."
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Picnic room",
+                        "options": [],
+                        "evidence": "Directly opposite it, on the right-hand side, is the picnic room.",
+                        "explanation": "The picnic room is opposite the temporary exhibitions room, on the right as you walk west, and just south of the café."
+                    },
+                    {
+                        "answer": [
+                            "H"
+                        ],
+                        "prompt": "Children's play area",
+                        "options": [],
+                        "evidence": "It's the long, narrow room between the café and the lifts.",
+                        "explanation": "The play area is the long, narrow room between the café and the lifts. It used to be in the basement, but it is now on the ground floor."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Toilets",
+                        "options": [],
+                        "evidence": "Right at the end, the door on your right is the toilets.",
+                        "explanation": "Walking east along the long corridor, the toilets are on the right at the very end. The lecture theatre is opposite them on the left."
+                    }
+                ],
+                "instruction": "Label the plan of the ground floor below. Write the correct letter, A–H, next to questions 1–6."
+            },
+            {
+                "type": "matching_features",
+                "reuse": false,
+                "title": "",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "build and test a model"
+                    },
+                    {
+                        "id": "B",
+                        "text": "handle historical objects"
+                    },
+                    {
+                        "id": "C",
+                        "text": "watch a live experiment"
+                    },
+                    {
+                        "id": "D",
+                        "text": "control a robot"
+                    },
+                    {
+                        "id": "E",
+                        "text": "do a quiz"
+                    },
+                    {
+                        "id": "F",
+                        "text": "try out a simulator"
+                    },
+                    {
+                        "id": "G",
+                        "text": "record their voice"
+                    },
+                    {
+                        "id": "H",
+                        "text": "look through a telescope"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Space Gallery",
+                        "options": [],
+                        "evidence": "with the screens and controls inside, it feels as if you're really docking with the space station",
+                        "explanation": "Visitors sit in a copy of a capsule whose screens and controls make docking feel real, so it is a simulator. There is no telescope because there wasn't room."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Medicine Gallery",
+                        "options": [],
+                        "evidence": "pick up genuine surgical tools from the 1800s",
+                        "explanation": "Visitors can put on gloves and pick up real surgical tools from the 1800s, so they handle historical objects."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Engineering Hall",
+                        "options": [],
+                        "evidence": "put together a little bridge out of card and straws, and then add weights to find out how much it'll hold",
+                        "explanation": "Visitors make a small bridge and test how much weight it holds. The robot arm is behind glass, so nobody can control it."
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Sound Studio",
+                        "options": [],
+                        "evidence": "you talk into a microphone, and it keeps a copy of what you've said",
+                        "explanation": "The booth keeps a copy of what visitors say into the microphone, so they record their voice and listen to it afterwards."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Chemistry Stage",
+                        "options": [],
+                        "evidence": "one of our scientists mixes chemicals in front of the audience",
+                        "explanation": "Visitors can't touch anything, but they watch a scientist mixing chemicals in front of them, which is a live experiment."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Climate Gallery",
+                        "options": [],
+                        "evidence": "ten questions about the weather and the planet, and at the end, it tells you how many you got right",
+                        "explanation": "Visitors answer ten questions on touch screens and get a score at the end, so they do a quiz."
+                    }
+                ],
+                "instruction": "What can visitors do in each first-floor gallery? Choose SIX answers from the box and write the correct letter, A–H, next to questions 7–12."
+            }
+        ],
+        "context": "You will hear a guide welcoming visitors to a science museum that has just reopened after building work.",
+        "speakers": [
+            {
+                "id": "guide",
+                "name": "Owen Ratcliffe"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The cloakroom's on the other side, right next to the shop, just beyond it to the east.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "The one on your right is the Flight Gallery, with the old biplane hanging from the ceiling",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "turn left and walk west, right to the end of the corridor. The room on your left, at the very end, is where we'll hold our temporary exhibitions.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Directly opposite it, on the right-hand side, is the picnic room.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "It's the long, narrow room between the café and the lifts.",
+                "answer": [
+                    "H"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Right at the end, the door on your right is the toilets.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "you can climb into a full-size copy of a space capsule, and with the screens and controls inside, it feels as if you're really docking with the space station.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "you can put on gloves and pick up genuine surgical tools from the 1800s.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "What you can do is put together a little bridge out of card and straws, and then add weights to find out how much it'll hold",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "you talk into a microphone, and it keeps a copy of what you've said so you can listen to yourself afterwards.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "one of our scientists mixes chemicals in front of the audience, and you can watch the colours change and the smoke appear.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "touch screens with ten questions about the weather and the planet, and at the end, it tells you how many you got right.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The cloakroom's on the other side, right next to the shop, just beyond it to the east.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Just before that crossroads, there are two large rooms facing each other... The one on your right is the Flight Gallery",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "At the crossroads, turn left and walk west, right to the end of the corridor. The room on your left, at the very end, is where we'll hold our temporary exhibitions.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Directly opposite it, on the right-hand side, is the picnic room.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "The play area... It's the long, narrow room between the café and the lifts.",
+                "answer": [
+                    "H"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "follow the long corridor east instead of west. Right at the end, the door on your right is the toilets. Opposite them, on your left, is the lecture theatre",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "you can climb into a full-size copy of a space capsule, and with the screens and controls inside, it feels as if you're really docking with the space station",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "there's a table in the middle where you can put on gloves and pick up genuine surgical tools from the 1800s",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "What you can do is put together a little bridge out of card and straws, and then add weights to find out how much it'll hold before it falls down.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "There's a booth where you talk into a microphone, and it keeps a copy of what you've said so you can listen to yourself afterwards.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "at 11 am, 1 pm and 3 pm each day, one of our scientists mixes chemicals in front of the audience, and you can watch the colours change and the smoke appear.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "there are touch screens with ten questions about the weather and the planet, and at the end, it tells you how many you got right",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The cloakroom's on the other side, right next to the shop, just beyond it to the east.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "The one on your right is the Flight Gallery, with the old biplane hanging from the ceiling, and that's open now.",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "The room on your left, at the very end, is where we'll hold our temporary exhibitions.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Directly opposite it, on the right-hand side, is the picnic room.",
+            "answer": [
+                "G"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "It's the long, narrow room between the café and the lifts.",
+            "answer": [
+                "H"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "you can climb into a full-size copy of a space capsule, and with the screens and controls inside, it feels as if you're really docking with the space station.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "you can put on gloves and pick up genuine surgical tools from the 1800s.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "put together a little bridge out of card and straws, and then add weights to find out how much it'll hold before it falls down.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "There's a booth where you talk into a microphone, and it keeps a copy of what you've said",
+            "answer": [
+                "G"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "one of our scientists mixes chemicals in front of the audience, and you can watch the colours change and the smoke appear.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 12,
+        "agreedFirst": 12,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 20800,
+                "wer": 0,
+                "heard": "Good morning everyone, and welcome to the Ashbury Science Museum. My name's Owen Ratcliffe, and I'm one of the guides here. As you probably know, we've been closed for nearly two years - well, 22 months to be exact - while the building was renovated, so it's lovely to see visitors again. I'll start with the ground floor, and then I'll tell you about the new galleries upstairs."
+            },
+            {
+                "ms": 10720,
+                "wer": 0,
+                "heard": "Right, you've all got a copy of the ground floor plan, I hope? We're standing just inside the main entrance, facing north. On your left is the ticket desk and on your right is the shop."
+            },
+            {
+                "ms": 14240,
+                "wer": 0,
+                "heard": "Now, most of you will want somewhere to leave coats and bags. The room beside the ticket desk, to the west, looks as if it might be the cloakroom, but it's actually staff offices. The cloakroom's on the other side, right next to the shop, just beyond it to the east."
+            },
+            {
+                "ms": 22560,
+                "wer": 0.026,
+                "heard": "Then, if you walk straight up the main corridor, you'll come to a crossroads where it meets the long corridor running east to west. Just before that crossroads there are two large rooms facing each other. The one on your left is the Energy Zone, which I'm sorry to say won't open until the summer. The one on your right is the Flight Gallery, with the old bi-plane hanging from the ceiling, and that's open now."
+            },
+            {
+                "ms": 16160,
+                "wer": 0,
+                "heard": "OK, at the crossroads, turn left and walk west, right to the end of the corridor. The room on your left, at the very end, is where we'll hold our temporary exhibitions. The first one's about volcanoes, and it's well worth a look. It runs until the end of September and there's no extra charge for it."
+            },
+            {
+                "ms": 13680,
+                "wer": 0,
+                "heard": "Directly opposite it, on the right-hand side, is the picnic room. If you've brought your own sandwiches, that's the place to eat them. Please don't eat them in the café, which is just north of the picnic room. The café staff get rather upset about that."
+            },
+            {
+                "ms": 15840,
+                "wer": 0.017,
+                "heard": "Now for families with small children: the play area used to be in the basement, but we've moved it up here. It's the long narrow room between the cafe and the lifts. The lifts are at the far end of the main corridor by the way, so if you're pushing a buggy that's the easiest way to reach it."
+            },
+            {
+                "ms": 15600,
+                "wer": 0,
+                "heard": "And finally, the toilets. Go back to the crossroads, and this time follow the long corridor east instead of west. Right at the end, the door on your right is the toilets. Opposite them, on your left, is the lecture theatre where there are free talks every afternoon."
+            },
+            {
+                "ms": 11680,
+                "wer": 0,
+                "heard": "Right, that's the ground floor. Now for the exciting part: the six brand-new galleries on the first floor. Every one of them has something hands-on, so let me quickly tell you what you can actually do in each."
+            },
+            {
+                "ms": 16800,
+                "wer": 0,
+                "heard": "Let's start with the Space Gallery. People always ask me if there's a telescope they can look through. I'm afraid there isn't, there simply wasn't room. But you can climb into a full-size copy of a space capsule and, with the screens and controls inside, it feels as if you're really docking with the space station."
+            },
+            {
+                "ms": 12480,
+                "wer": 0,
+                "heard": "Next door is the medicine gallery. Most of it's glass cases, as you'd expect, but there's a table in the middle where you can put on gloves and pick up genuine surgical tools from the 1800s. They're surprisingly heavy."
+            },
+            {
+                "ms": 17680,
+                "wer": 0.016,
+                "heard": "Then there's the engineering hall. You'll see a big robot arm in there, and children always want to go with it, but it's behind glass so nobody can operate it I'm afraid. What you can do is put together a little bridge out of card and straws and then add weights to find out how much it'll hold before it falls down."
+            },
+            {
+                "ms": 13200,
+                "wer": 0,
+                "heard": "The sound studio is great fun, and it's especially popular with teenagers. There's a booth where you talk into a microphone and it keeps a copy of what you've said so you can listen to yourself afterwards. Most people are shocked by what they sound like!"
+            },
+            {
+                "ms": 15040,
+                "wer": 0,
+                "heard": "On the chemistry stage, you can't touch anything, for obvious safety reasons, but at 11am, 1pm and 3pm each day, one of our scientists mixes chemicals in front of the audience, and you can watch the colours change and the smoke appear."
+            },
+            {
+                "ms": 14400,
+                "wer": 0,
+                "heard": "And last of all, the climate gallery. Along one wall there are touch screens with ten questions about the weather and the planet, and at the end it tells you how many you got right. See if you can beat your children's score! Right, any questions before we head upstairs?"
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -1.5
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "11": "b1q1",
+        "12": "b1q2",
+        "13": "b1q3",
+        "14": "b1q4",
+        "15": "b1q5",
+        "16": "b2q1",
+        "17": "b2q2",
+        "18": "b2q3",
+        "19": "b2q4",
+        "20": "b2q5"
+    },
+    "translation": {
+        "missing": []
+    }
+}

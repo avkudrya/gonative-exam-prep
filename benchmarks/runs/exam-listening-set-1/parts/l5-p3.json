@@ -1,0 +1,1537 @@
+{
+    "form": {
+        "first": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l5-p3.mp3",
+            "bytes": 4643756,
+            "sha256": "84535309981439da7fa110972828d69cdc24710fb380609c031b458f2e6380da",
+            "voices": {
+                "tutor": {
+                    "voice": "FF59babHL8N8gfTgtBMT",
+                    "provider": "elevenlabs"
+                },
+                "student": {
+                    "voice": "HF0hjxElqeS2vwmlzj6g",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 3. You will hear a history student discussing the first draft of his essay with his tutor. First, you have some time to look at questions 21 to 25.",
+                    "endMs": 11240,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 41240,
+                    "purpose": "read",
+                    "startMs": 11240,
+                    "questions": [
+                        21,
+                        25
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 51580,
+                    "startMs": 41240
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 56320,
+                    "startMs": 51580
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 70180,
+                    "startMs": 56320
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 71720,
+                    "startMs": 70180
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 79020,
+                    "startMs": 71720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 83280,
+                    "startMs": 79020
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 94500,
+                    "startMs": 83280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 100120,
+                    "startMs": 94500
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 115900,
+                    "startMs": 100120
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 121440,
+                    "startMs": 115900
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 136820,
+                    "startMs": 121440
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 142760,
+                    "startMs": 136820
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 157260,
+                    "startMs": 142760
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 161280,
+                    "startMs": 157260
+                },
+                {
+                    "kind": "turn",
+                    "turn": 14,
+                    "endMs": 178900,
+                    "startMs": 161280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 15,
+                    "endMs": 184280,
+                    "startMs": 178900
+                },
+                {
+                    "kind": "turn",
+                    "turn": 16,
+                    "endMs": 194540,
+                    "startMs": 184280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 17,
+                    "endMs": 200000,
+                    "startMs": 194540
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 26 to 30.",
+                    "endMs": 203320,
+                    "startMs": 200000
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 233320,
+                    "purpose": "read",
+                    "startMs": 203320,
+                    "questions": [
+                        26,
+                        30
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 18,
+                    "endMs": 251820,
+                    "startMs": 233320
+                },
+                {
+                    "kind": "turn",
+                    "turn": 19,
+                    "endMs": 255280,
+                    "startMs": 251820
+                },
+                {
+                    "kind": "turn",
+                    "turn": 20,
+                    "endMs": 270660,
+                    "startMs": 255280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 21,
+                    "endMs": 277240,
+                    "startMs": 270660
+                },
+                {
+                    "kind": "turn",
+                    "turn": 22,
+                    "endMs": 291420,
+                    "startMs": 277240
+                },
+                {
+                    "kind": "turn",
+                    "turn": 23,
+                    "endMs": 298640,
+                    "startMs": 291420
+                },
+                {
+                    "kind": "turn",
+                    "turn": 24,
+                    "endMs": 307460,
+                    "startMs": 298640
+                },
+                {
+                    "kind": "turn",
+                    "turn": 25,
+                    "endMs": 313080,
+                    "startMs": 307460
+                },
+                {
+                    "kind": "turn",
+                    "turn": 26,
+                    "endMs": 329500,
+                    "startMs": 313080
+                },
+                {
+                    "kind": "turn",
+                    "turn": 27,
+                    "endMs": 333280,
+                    "startMs": 329500
+                },
+                {
+                    "kind": "turn",
+                    "turn": 28,
+                    "endMs": 344900,
+                    "startMs": 333280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 29,
+                    "endMs": 348520,
+                    "startMs": 344900
+                },
+                {
+                    "kind": "turn",
+                    "turn": 30,
+                    "endMs": 351180,
+                    "startMs": 348520
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 3. You now have thirty seconds to check your answers.",
+                    "endMs": 356900,
+                    "startMs": 351180
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 386900,
+                    "purpose": "check",
+                    "startMs": 356900
+                }
+            ],
+            "durationMs": 386900
+        },
+        "title": "Railways and the growth of towns: essay feedback",
+        "turns": [
+            {
+                "text": "Come in, Tom, have a seat. So, I've read the draft of your essay on early railways and the growth of towns, and overall it's a promising piece of work.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Oh, that's a relief. I wasn't sure the argument really came across.",
+                "speaker": "student"
+            },
+            {
+                "text": "It mostly does. You're claiming that the railways didn't just speed up growth, they actually decided which towns grew at all. That's a bold claim, so your sources really matter. Shall we go through them one by one?",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Yes, please.",
+                "speaker": "student"
+            },
+            {
+                "text": "Let's start with the railway company timetables. You've used them to show how often trains stopped at each town.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "I was a bit worried about those, to be honest. They're rather dry.",
+                "speaker": "student"
+            },
+            {
+                "text": "Dry, perhaps, but they're actually the most convincing material you've got. They're hard facts about which towns were connected and when, so I'd keep them right at the centre of the essay.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Great. And the census returns? I put loads of figures from those in the middle sections.",
+                "speaker": "student"
+            },
+            {
+                "text": "The figures themselves are fine, they're accurate. The trouble is that whole pages of numbers interrupt your argument. Take the full tables out of the main text and put them at the back, after the conclusion. Then just mention the key figures in your paragraphs.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "OK. What about the newspaper reports? I quoted the Midland Courier quite a lot.",
+                "speaker": "student"
+            },
+            {
+                "text": "Yes, and you need to remember who owned that paper. Several of its directors had shares in the railway company, so naturally it praised every new line. You don't have to drop it, but you should point out that it may not give a balanced picture.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "I hadn't thought of that. Then there's the travel diary, the one written by the engineer's wife.",
+                "speaker": "student"
+            },
+            {
+                "text": "That's a lovely find. I'm not worried about bias there, actually, because she's quite critical of the railway in places. But you've copied out long passages, sometimes half a page at a time. A sentence or two would make the point.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Right, I'll trim those. And the town council minutes?",
+                "speaker": "student"
+            },
+            {
+                "text": "Those are useful, but you've only said they're from the 1840s, without saying which meeting. The reader needs to know exactly when each decision was taken, because timing is central to your argument. Did the council plan the new streets before or after the station opened?",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Ah, yes, I see. And finally, there's the textbook by Harris.",
+                "speaker": "student"
+            },
+            {
+                "text": "You refer to it several times, and it's a reliable book, but I couldn't find it anywhere in your list of references at the end. Make sure it's added, with page numbers.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Will do. So, what about the overall structure? I wasn't really happy with it.",
+                "speaker": "student"
+            },
+            {
+                "text": "At the moment you go town by town, Swindon, then Crewe, then Wolverton, which means you repeat the same points three times. I'd rather you grouped the paragraphs by theme instead, so housing, employment, trade and so on, with examples from each town under each heading.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "That makes sense. It'd probably be shorter, too.",
+                "speaker": "student"
+            },
+            {
+                "text": "Which brings me to length. You're about four hundred words over the limit. The section on station architecture is fine as it is, but the background section on canal companies is interesting rather than relevant. Cut that down to a single paragraph.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Fair enough. I did wonder whether I'd said enough about people. It's mostly about buildings and lines.",
+                "speaker": "student"
+            },
+            {
+                "text": "Exactly. I'd like to hear more about the people who actually moved to these towns. Not the managers or the engineers, you've covered them well, but the ordinary factory workers. Where did they come from, and how did they live?",
+                "speaker": "tutor"
+            },
+            {
+                "text": "There's some material on that in the county archive, I think. Oh, and I was planning to put in a table of population figures.",
+                "speaker": "student"
+            },
+            {
+                "text": "A table would be all right, but I think a line graph would show the trend much more clearly. You'd see the jump right after each station opened.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "OK, a graph it is. And the conclusion? I thought that was the strongest part.",
+                "speaker": "student"
+            },
+            {
+                "text": "It's well written, but it's rather one-sided. Some historians argue that a few of these towns were already expanding before any trains came, thanks to the turnpike roads. You should admit that, and then explain why you still think the railways were the deciding factor.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "That's fair. So when do you need the final version?",
+                "speaker": "student"
+            },
+            {
+                "text": "The original deadline was the 21st of March, but the department has given everyone an extra week, so the new deadline is 28th March. Don't leave it until the last minute, though.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "I won't. Thanks, this has been really helpful.",
+                "speaker": "student"
+            },
+            {
+                "text": "You're welcome, Tom. Good luck with it.",
+                "speaker": "tutor"
+            }
+        ],
+        "groups": [
+            {
+                "type": "matching_features",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "is too general to be useful"
+                    },
+                    {
+                        "id": "B",
+                        "text": "should be moved to an appendix"
+                    },
+                    {
+                        "id": "C",
+                        "text": "provides the strongest evidence"
+                    },
+                    {
+                        "id": "D",
+                        "text": "needs to be dated more precisely"
+                    },
+                    {
+                        "id": "E",
+                        "text": "may present a one-sided view"
+                    },
+                    {
+                        "id": "F",
+                        "text": "should be quoted at less length"
+                    },
+                    {
+                        "id": "G",
+                        "text": "is missing from the list of references"
+                    },
+                    {
+                        "id": "H",
+                        "text": "should be compared with another town's records"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Railway company timetables",
+                        "numbers": [
+                            21
+                        ],
+                        "evidence": "they're actually the most convincing material you've got",
+                        "explanation": {
+                            "en": "Tom thinks the timetables are dry, but the tutor says they are the most convincing material in the essay and should stay at the centre.",
+                            "ru": "Tom считает расписания (\"timetables\") скучными, но преподавательница говорит, что это самый убедительный материал в эссе и он должен оставаться в центре.",
+                            "uk": "Tom вважає розклади (\"timetables\") нудними, але викладачка каже, що це найпереконливіший матеріал в есе і він має залишатися в центрі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Census returns",
+                        "numbers": [
+                            22
+                        ],
+                        "evidence": "Take the full tables out of the main text and put them at the back, after the conclusion.",
+                        "explanation": {
+                            "en": "The tutor says the figures are accurate, but the full tables should go at the back of the essay, which means an appendix.",
+                            "ru": "Преподавательница говорит, что цифры точные, но полные таблицы нужно перенести в конец эссе, то есть в приложение (\"appendix\").",
+                            "uk": "Викладачка каже, що цифри точні, але повні таблиці слід перенести в кінець есе, тобто в додаток (\"appendix\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Newspaper reports",
+                        "numbers": [
+                            23
+                        ],
+                        "evidence": "you should point out that it may not give a balanced picture",
+                        "explanation": {
+                            "en": "The paper's directors owned railway shares, so it praised every new line; the tutor warns it may not be balanced.",
+                            "ru": "Директора газеты владели акциями железных дорог, поэтому она хвалила каждую новую линию; преподавательница предупреждает, что газета может быть необъективной.",
+                            "uk": "Директори газети володіли акціями залізниць, тож вона хвалила кожну нову лінію; викладачка попереджає, що газета може бути необ'єктивною."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Travel diary",
+                        "numbers": [
+                            24
+                        ],
+                        "evidence": "you've copied out long passages, sometimes half a page at a time. A sentence or two would make the point.",
+                        "explanation": {
+                            "en": "The tutor says she is not worried about bias in the diary. The problem is that Tom quotes too much of it.",
+                            "ru": "Преподавательница говорит, что её не беспокоит предвзятость дневника. Проблема в том, что Tom цитирует его слишком много.",
+                            "uk": "Викладачка каже, що її не турбує упередженість щоденника. Проблема в тому, що Tom цитує його забагато."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Town council minutes",
+                        "numbers": [
+                            25
+                        ],
+                        "evidence": "The reader needs to know exactly when each decision was taken",
+                        "explanation": {
+                            "en": "Tom only says the minutes are from the 1840s. The tutor wants the exact meeting dates because timing matters to the argument.",
+                            "ru": "Tom лишь указывает, что протоколы (\"minutes\") относятся к 1840-м годам. Преподавательнице нужны точные даты заседаний, потому что для аргументации важна хронология.",
+                            "uk": "Tom лише зазначає, що протоколи (\"minutes\") належать до 1840-х років. Викладачка хоче точні дати засідань, бо для аргументації важливо, коли саме вони відбулися."
+                        }
+                    }
+                ],
+                "instruction": "What does the tutor say about each source Tom used? Choose FIVE answers from the box and write the correct letter, A–H, next to Questions 21–25."
+            },
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "theme"
+                        ],
+                        "prompt": "Tom should organise the main part of the essay by ______ rather than by town.",
+                        "numbers": [
+                            26
+                        ],
+                        "evidence": "I'd rather you grouped the paragraphs by theme instead",
+                        "explanation": {
+                            "en": "Tom's draft goes town by town, which repeats points. The tutor wants paragraphs grouped by theme, such as housing and employment.",
+                            "ru": "В черновике Tom идёт от города к городу, из-за чего мысли повторяются. Преподавательница хочет, чтобы абзацы были сгруппированы по темам, например жильё и занятость.",
+                            "uk": "У чернетці Tom розповідає місто за містом, через що думки повторюються. Викладачка хоче, щоб абзаци були згруповані за темами, наприклад житло та зайнятість."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "canal companies"
+                        ],
+                        "prompt": "Tom should shorten the part of the essay about ______ to one paragraph.",
+                        "numbers": [
+                            27
+                        ],
+                        "evidence": "the background section on canal companies is interesting rather than relevant. Cut that down to a single paragraph.",
+                        "explanation": {
+                            "en": "The section on station architecture can stay as it is. It is the background on canal companies that must be cut.",
+                            "ru": "Раздел об архитектуре вокзалов можно оставить без изменений. Убрать нужно именно справочную часть о канальных компаниях.",
+                            "uk": "Розділ про архітектуру вокзалів можна залишити без змін. Прибрати треба саме довідкову частину про канальні компанії."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "factory workers"
+                        ],
+                        "prompt": "Tom needs to write more about the lives of the ______ who moved to the new towns.",
+                        "numbers": [
+                            28
+                        ],
+                        "evidence": "but the ordinary factory workers",
+                        "explanation": {
+                            "en": "The tutor says Tom has already covered managers and engineers well. She wants more about ordinary factory workers.",
+                            "ru": "Преподавательница говорит, что Tom уже хорошо написал о менеджерах и инженерах. Она хочет, чтобы он больше рассказал о простых фабричных рабочих.",
+                            "uk": "Викладачка каже, що Tom уже добре написав про менеджерів та інженерів. Вона хоче, щоб він більше розповів про звичайних фабричних робітників."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "line graph"
+                        ],
+                        "prompt": "To show changes in population, Tom should include a ______.",
+                        "numbers": [
+                            29
+                        ],
+                        "evidence": "I think a line graph would show the trend much more clearly",
+                        "explanation": {
+                            "en": "Tom planned a table, but the tutor says a line graph would show the trend more clearly.",
+                            "ru": "Tom планировал сделать таблицу, но преподавательница говорит, что линейный график (\"line graph\") покажет тенденцию нагляднее.",
+                            "uk": "Tom планував зробити таблицю, але викладачка каже, що лінійний графік (\"line graph\") покаже тенденцію наочніше."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "turnpike roads"
+                        ],
+                        "prompt": "In the conclusion, Tom should accept that ______ helped some towns to grow before the railways arrived.",
+                        "numbers": [
+                            30
+                        ],
+                        "evidence": "already expanding before any trains came, thanks to the turnpike roads",
+                        "explanation": {
+                            "en": "Some historians say certain towns were growing before the railways because of the turnpike roads. Tom should deal with this view.",
+                            "ru": "Некоторые историки считают, что отдельные города росли ещё до появления железных дорог благодаря платным дорогам (\"turnpike roads\"). Tom следует рассмотреть эту точку зрения.",
+                            "uk": "Деякі історики вважають, що окремі міста зростали ще до появи залізниць завдяки платним дорогам (\"turnpike roads\"). Tom варто розглянути цю точку зору."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
+            }
+        ],
+        "context": "You will hear a history student discussing the first draft of his essay with his tutor.",
+        "speakers": [
+            {
+                "id": "student",
+                "name": "Tom Hargreaves",
+                "role": "history student",
+                "accent": "british",
+                "gender": "male"
+            },
+            {
+                "id": "tutor",
+                "name": "Ruth Calder",
+                "role": "history tutor",
+                "accent": "british",
+                "gender": "female"
+            }
+        ]
+    },
+    "plan": "l5|p3",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.206764,
+            "provider": "anthropic",
+            "outputTokens": 9316
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.013118,
+            "provider": "anthropic",
+            "outputTokens": 561
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.019313,
+            "provider": "openai",
+            "outputTokens": 890
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.01982,
+            "provider": "xai",
+            "outputTokens": 2055
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.066308,
+            "provider": "anthropic",
+            "outputTokens": 3084
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "Railways and the growth of towns: essay feedback",
+        "turns": [
+            {
+                "text": "Come in, Tom, have a seat. So, I've read the draft of your essay on early railways and the growth of towns, and overall it's a promising piece of work.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Oh, that's a relief. I wasn't sure the argument really came across.",
+                "speaker": "student"
+            },
+            {
+                "text": "It mostly does. You're claiming that the railways didn't just speed up growth, they actually decided which towns grew at all. That's a bold claim, so your sources really matter. Shall we go through them one by one?",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Yes, please.",
+                "speaker": "student"
+            },
+            {
+                "text": "Let's start with the railway company timetables. You've used them to show how often trains stopped at each town.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "I was a bit worried about those, to be honest. They're rather dry.",
+                "speaker": "student"
+            },
+            {
+                "text": "Dry, perhaps, but they're actually the most convincing material you've got. They're hard facts about which towns were connected and when, so I'd keep them right at the centre of the essay.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Great. And the census returns? I put loads of figures from those in the middle sections.",
+                "speaker": "student"
+            },
+            {
+                "text": "The figures themselves are fine, they're accurate. The trouble is that whole pages of numbers interrupt your argument. Take the full tables out of the main text and put them at the back, after the conclusion. Then just mention the key figures in your paragraphs.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "OK. What about the newspaper reports? I quoted the Midland Courier quite a lot.",
+                "speaker": "student"
+            },
+            {
+                "text": "Yes, and you need to remember who owned that paper. Several of its directors had shares in the railway company, so naturally it praised every new line. You don't have to drop it, but you should point out that it may not give a balanced picture.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "I hadn't thought of that. Then there's the travel diary, the one written by the engineer's wife.",
+                "speaker": "student"
+            },
+            {
+                "text": "That's a lovely find. I'm not worried about bias there, actually, because she's quite critical of the railway in places. But you've copied out long passages, sometimes half a page at a time. A sentence or two would make the point.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Right, I'll trim those. And the town council minutes?",
+                "speaker": "student"
+            },
+            {
+                "text": "Those are useful, but you've only said they're from the 1840s, without saying which meeting. The reader needs to know exactly when each decision was taken, because timing is central to your argument. Did the council plan the new streets before or after the station opened?",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Ah, yes, I see. And finally, there's the textbook by Harris.",
+                "speaker": "student"
+            },
+            {
+                "text": "You refer to it several times, and it's a reliable book, but I couldn't find it anywhere in your list of references at the end. Make sure it's added, with page numbers.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Will do. So, what about the overall structure? I wasn't really happy with it.",
+                "speaker": "student"
+            },
+            {
+                "text": "At the moment you go town by town, Swindon, then Crewe, then Wolverton, which means you repeat the same points three times. I'd rather you grouped the paragraphs by theme instead, so housing, employment, trade and so on, with examples from each town under each heading.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "That makes sense. It'd probably be shorter, too.",
+                "speaker": "student"
+            },
+            {
+                "text": "Which brings me to length. You're about four hundred words over the limit. The section on station architecture is fine as it is, but the background section on canal companies is interesting rather than relevant. Cut that down to a single paragraph.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "Fair enough. I did wonder whether I'd said enough about people. It's mostly about buildings and lines.",
+                "speaker": "student"
+            },
+            {
+                "text": "Exactly. I'd like to hear more about the people who actually moved to these towns. Not the managers or the engineers, you've covered them well, but the ordinary factory workers. Where did they come from, and how did they live?",
+                "speaker": "tutor"
+            },
+            {
+                "text": "There's some material on that in the county archive, I think. Oh, and I was planning to put in a table of population figures.",
+                "speaker": "student"
+            },
+            {
+                "text": "A table would be all right, but I think a line graph would show the trend much more clearly. You'd see the jump right after each station opened.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "OK, a graph it is. And the conclusion? I thought that was the strongest part.",
+                "speaker": "student"
+            },
+            {
+                "text": "It's well written, but it's rather one-sided. Some historians argue that a few of these towns were already expanding before any trains came, thanks to the turnpike roads. You should admit that, and then explain why you still think the railways were the deciding factor.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "That's fair. So when do you need the final version?",
+                "speaker": "student"
+            },
+            {
+                "text": "The original deadline was the 21st of March, but the department has given everyone an extra week, so the new deadline is 28th March. Don't leave it until the last minute, though.",
+                "speaker": "tutor"
+            },
+            {
+                "text": "I won't. Thanks, this has been really helpful.",
+                "speaker": "student"
+            },
+            {
+                "text": "You're welcome, Tom. Good luck with it.",
+                "speaker": "tutor"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "matching_features",
+                "reuse": false,
+                "title": "",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "is too general to be useful"
+                    },
+                    {
+                        "id": "B",
+                        "text": "should be moved to an appendix"
+                    },
+                    {
+                        "id": "C",
+                        "text": "provides the strongest evidence"
+                    },
+                    {
+                        "id": "D",
+                        "text": "needs to be dated more precisely"
+                    },
+                    {
+                        "id": "E",
+                        "text": "may present a one-sided view"
+                    },
+                    {
+                        "id": "F",
+                        "text": "should be quoted at less length"
+                    },
+                    {
+                        "id": "G",
+                        "text": "is missing from the list of references"
+                    },
+                    {
+                        "id": "H",
+                        "text": "should be compared with another town's records"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Railway company timetables",
+                        "options": [],
+                        "evidence": "they're actually the most convincing material you've got",
+                        "explanation": "Tom thinks the timetables are dry, but the tutor says they are the most convincing material in the essay and should stay at the centre."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Census returns",
+                        "options": [],
+                        "evidence": "Take the full tables out of the main text and put them at the back, after the conclusion.",
+                        "explanation": "The tutor says the figures are accurate, but the full tables should go at the back of the essay, which means an appendix."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Newspaper reports",
+                        "options": [],
+                        "evidence": "you should point out that it may not give a balanced picture",
+                        "explanation": "The paper's directors owned railway shares, so it praised every new line; the tutor warns it may not be balanced."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Travel diary",
+                        "options": [],
+                        "evidence": "you've copied out long passages, sometimes half a page at a time. A sentence or two would make the point.",
+                        "explanation": "The tutor says she is not worried about bias in the diary. The problem is that Tom quotes too much of it."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Town council minutes",
+                        "options": [],
+                        "evidence": "The reader needs to know exactly when each decision was taken",
+                        "explanation": "Tom only says the minutes are from the 1840s. The tutor wants the exact meeting dates because timing matters to the argument."
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Textbook by Harris",
+                        "options": [],
+                        "evidence": "I couldn't find it anywhere in your list of references at the end",
+                        "explanation": "The tutor says the book is reliable, but it has not been included in Tom's list of references."
+                    }
+                ],
+                "instruction": "What does the tutor say about each source Tom used? Choose SIX answers from the box and write the correct letter, A–H, next to Questions 1–6."
+            },
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "theme"
+                        ],
+                        "prompt": "Tom should organise the main part of the essay by ______ rather than by town.",
+                        "options": [],
+                        "evidence": "I'd rather you grouped the paragraphs by theme instead",
+                        "explanation": "Tom's draft goes town by town, which repeats points. The tutor wants paragraphs grouped by theme, such as housing and employment."
+                    },
+                    {
+                        "answer": [
+                            "canal companies"
+                        ],
+                        "prompt": "Tom should shorten the part of the essay about ______ to one paragraph.",
+                        "options": [],
+                        "evidence": "the background section on canal companies is interesting rather than relevant. Cut that down to a single paragraph.",
+                        "explanation": "The section on station architecture can stay as it is. It is the background on canal companies that must be cut."
+                    },
+                    {
+                        "answer": [
+                            "factory workers"
+                        ],
+                        "prompt": "Tom needs to write more about the lives of the ______ who moved to the new towns.",
+                        "options": [],
+                        "evidence": "but the ordinary factory workers",
+                        "explanation": "The tutor says Tom has already covered managers and engineers well. She wants more about ordinary factory workers."
+                    },
+                    {
+                        "answer": [
+                            "line graph"
+                        ],
+                        "prompt": "To show changes in population, Tom should include a ______.",
+                        "options": [],
+                        "evidence": "I think a line graph would show the trend much more clearly",
+                        "explanation": "Tom planned a table, but the tutor says a line graph would show the trend more clearly."
+                    },
+                    {
+                        "answer": [
+                            "turnpike roads"
+                        ],
+                        "prompt": "In the conclusion, Tom should accept that ______ helped some towns to grow before the railways arrived.",
+                        "options": [],
+                        "evidence": "already expanding before any trains came, thanks to the turnpike roads",
+                        "explanation": "Some historians say certain towns were growing before the railways because of the turnpike roads. Tom should deal with this view."
+                    },
+                    {
+                        "answer": [
+                            "28th March",
+                            "28 March",
+                            "March 28th",
+                            "March 28"
+                        ],
+                        "prompt": "The final version of the essay must be handed in by ______.",
+                        "options": [],
+                        "evidence": "so the new deadline is 28th March",
+                        "explanation": "The deadline was the 21st of March, but everyone has an extra week, so it is now 28th March."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
+            }
+        ],
+        "context": "You will hear a history student discussing the first draft of his essay with his tutor.",
+        "speakers": [
+            {
+                "id": "student",
+                "name": "Tom Hargreaves"
+            },
+            {
+                "id": "tutor",
+                "name": "Ruth Calder"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they're actually the most convincing material you've got. They're hard facts about which towns were connected and when",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Take the full tables out of the main text and put them at the back, after the conclusion.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "you should point out that it may not give a balanced picture.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "you've copied out long passages, sometimes half a page at a time. A sentence or two would make the point.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "you've only said they're from the 1840s, without saying which meeting. The reader needs to know exactly when each decision was taken",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "I couldn't find it anywhere in your list of references at the end.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "I'd rather you grouped the paragraphs by theme instead",
+                "answer": [
+                    "theme"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the background section on canal companies is interesting rather than relevant. Cut that down to a single paragraph.",
+                "answer": [
+                    "canal companies"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the ordinary factory workers. Where did they come from, and how did they live?",
+                "answer": [
+                    "factory workers"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "I think a line graph would show the trend much more clearly.",
+                "answer": [
+                    "line graph"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "a few of these towns were already expanding before any trains came, thanks to the turnpike roads",
+                "answer": [
+                    "turnpike roads"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the new deadline is 28th March",
+                "answer": [
+                    "28th March"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "they're actually the most convincing material you've got",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Take the full tables out of the main text and put them at the back, after the conclusion.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "you should point out that it may not give a balanced picture.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "you've copied out long passages, sometimes half a page at a time. A sentence or two would make the point.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "you've only said they're from the 1840s, without saying which meeting. The reader needs to know exactly when each decision was taken",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "I couldn't find it anywhere in your list of references at the end. Make sure it's added",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "I'd rather you grouped the paragraphs by theme instead",
+                "answer": [
+                    "theme"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the background section on canal companies is interesting rather than relevant. Cut that down to a single paragraph.",
+                "answer": [
+                    "canal companies"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "but the ordinary factory workers. Where did they come from, and how did they live?",
+                "answer": [
+                    "factory workers"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "I think a line graph would show the trend much more clearly.",
+                "answer": [
+                    "line graph"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Some historians argue that a few of these towns were already expanding before any trains came, thanks to the turnpike roads.",
+                "answer": [
+                    "turnpike roads"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the new deadline is 28th March",
+                "answer": [
+                    "28th March"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "they're actually the most convincing material you've got",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Take the full tables out of the main text and put them at the back, after the conclusion",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "you should point out that it may not give a balanced picture",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "you've copied out long passages, sometimes half a page at a time. A sentence or two would make the point",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "The reader needs to know exactly when each decision was taken",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "I'd rather you grouped the paragraphs by theme instead",
+            "answer": [
+                "theme"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the background section on canal companies is interesting rather than relevant. Cut that down to a single paragraph",
+            "answer": [
+                "canal companies"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "but the ordinary factory workers. Where did they come from, and how did they live?",
+            "answer": [
+                "factory workers"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "I think a line graph would show the trend much more clearly",
+            "answer": [
+                "line graph"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "already expanding before any trains came, thanks to the turnpike roads",
+            "answer": [
+                "turnpike roads"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 12,
+        "agreedFirst": 12,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 9920,
+                "wer": 0,
+                "heard": "Come in, Tom, have a seat. So, I've read the draft of your essay on early railways and the growth of towns, and overall, it's a promising piece of work."
+            },
+            {
+                "ms": 4320,
+                "wer": 0.083,
+                "heard": "That's a relief. I wasn't sure the argument really came across."
+            },
+            {
+                "ms": 13440,
+                "wer": 0,
+                "heard": "It mostly does. You're claiming that the railways didn't just speed up growth, they actually decided which towns grew at all. That's a bold claim, so your sources really matter. Shall we go through them one by one?"
+            },
+            {
+                "ms": 1120,
+                "wer": 0,
+                "heard": "Yes, please."
+            },
+            {
+                "ms": 6880,
+                "wer": 0,
+                "heard": "Let's start with the railway company timetables. You've used them to show how often trains stopped at each town."
+            },
+            {
+                "ms": 3840,
+                "wer": 0,
+                "heard": "I was a bit worried about those to be honest, they're rather dry."
+            },
+            {
+                "ms": 10800,
+                "wer": 0,
+                "heard": "Dry, perhaps, but they're actually the most convincing material you've got. They're hard facts about which towns were connected and when, so I'd keep them right at the centre of the essay."
+            },
+            {
+                "ms": 5200,
+                "wer": 0,
+                "heard": "Great. And the census returns? I put loads of figures from those in the middle sections."
+            },
+            {
+                "ms": 15360,
+                "wer": 0,
+                "heard": "The figures themselves are fine, they're accurate. The trouble is that whole pages of numbers interrupt your argument. Take the full tables out of the main text and put them at the back, after the conclusion. Then just mention the key figures in your paragraphs."
+            },
+            {
+                "ms": 5120,
+                "wer": 0,
+                "heard": "OK, what about the newspaper reports? I quoted the Midland Courier quite a lot."
+            },
+            {
+                "ms": 14960,
+                "wer": 0,
+                "heard": "Yes, and you need to remember who owned that paper. Several of its directors had shares in the railway company, so naturally it praised every new line. You don't have to drop it, but you should point out that it may not give a balanced picture."
+            },
+            {
+                "ms": 5520,
+                "wer": 0,
+                "heard": "I hadn't thought of that. Then there's the travel diary, the one written by the engineer's wife."
+            },
+            {
+                "ms": 14080,
+                "wer": 0,
+                "heard": "That's a lovely find. I'm not worried about bias there, actually, because she's quite critical of the railway in places. But you've copied out long passages, sometimes half a page at a time. A sentence or two would make the point."
+            },
+            {
+                "ms": 3600,
+                "wer": 0,
+                "heard": "Right, I'll trim those. And the town council minutes?"
+            },
+            {
+                "ms": 17200,
+                "wer": 0,
+                "heard": "Those are useful, but you've only said they're from the 1840s, without saying which meeting. The reader needs to know exactly when each decision was taken, because timing is central to your argument. Did the Council plan the new streets before or after the station opened?"
+            },
+            {
+                "ms": 4960,
+                "wer": 0,
+                "heard": "Ah, yes, I see. And finally, there's the textbook by Harris."
+            },
+            {
+                "ms": 9840,
+                "wer": 0,
+                "heard": "You refer to it several times, and it's a reliable book, but I couldn't find it anywhere in your list of references at the end. Make sure it's added, with page numbers."
+            },
+            {
+                "ms": 5040,
+                "wer": 0,
+                "heard": "Will do. So, what about the overall structure? I wasn't really happy with it."
+            },
+            {
+                "ms": 18080,
+                "wer": 0.022,
+                "heard": "At the moment you go town by town – Swindon, then Crewe, then Wolverton, which means you repeat the same points three times. I'd rather you group the paragraphs by theme instead – so housing, employment, trade and so on – with examples from each town under each heading."
+            },
+            {
+                "ms": 3040,
+                "wer": 0,
+                "heard": "That makes sense. It'd probably be shorter too."
+            },
+            {
+                "ms": 14960,
+                "wer": 0,
+                "heard": "Which brings me to length. You're about four hundred words over the limit. The section on station architecture is fine as it is, but the background section on canal companies is interesting rather than relevant. Cut that down to a single paragraph."
+            },
+            {
+                "ms": 6160,
+                "wer": 0,
+                "heard": "Fair enough. I did wonder whether I'd said enough about people. It's mostly about buildings and lines."
+            },
+            {
+                "ms": 13760,
+                "wer": 0,
+                "heard": "Exactly. I'd like to hear more about the people who actually moved to these towns. Not the managers or the engineers - you've covered them well - but the ordinary factory workers. Where did they come from and how did they live?"
+            },
+            {
+                "ms": 6800,
+                "wer": 0,
+                "heard": "There's some material on that in the County Archive, I think. Oh, and I was planning to put in a table of population figures."
+            },
+            {
+                "ms": 8400,
+                "wer": 0,
+                "heard": "A table would be all right, but I think a line graph would show the trend much more clearly. You'd see the jump right after each station opened."
+            },
+            {
+                "ms": 5200,
+                "wer": 0.067,
+                "heard": "Okay, a graph it is. And the conclusion? I thought that was the strongest part."
+            },
+            {
+                "ms": 16000,
+                "wer": 0,
+                "heard": "It's well written, but it's rather one-sided. Some historians argue that a few of these towns were already expanding before any trains came, thanks to the turnpike roads. You should admit that, and then explain why you still think the railways were the deciding factor."
+            },
+            {
+                "ms": 3360,
+                "wer": 0,
+                "heard": "That's fair. So when do you need the final version?"
+            },
+            {
+                "ms": 11200,
+                "wer": 0,
+                "heard": "The original deadline was the 21st of March, but the department has given everyone an extra week, so the new deadline is 28th March. Don't leave it until the last minute, though!"
+            },
+            {
+                "ms": 3200,
+                "wer": 0,
+                "heard": "I won't. Thanks, this has been really helpful."
+            },
+            {
+                "ms": 2240,
+                "wer": 0,
+                "heard": "You're welcome, Tom. Good luck with it!"
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -1.6
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "21": "b1q1",
+        "22": "b1q2",
+        "23": "b1q3",
+        "24": "b1q4",
+        "25": "b1q5",
+        "26": "b2q1",
+        "27": "b2q2",
+        "28": "b2q3",
+        "29": "b2q4",
+        "30": "b2q5"
+    },
+    "translation": {
+        "missing": []
+    }
+}

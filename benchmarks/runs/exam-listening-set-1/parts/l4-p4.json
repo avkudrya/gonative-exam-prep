@@ -1,0 +1,1102 @@
+{
+    "form": {
+        "first": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l4-p4.mp3",
+            "bytes": 4453388,
+            "sha256": "cc80bdcb3387e87925fdd39688022dcbf1942e9b53496d1e43c7fbb65478cce3",
+            "voices": {
+                "lecturer": {
+                    "voice": "1HGaTm3UFxAyxae5H0GU",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 4. You will hear a university lecturer in earth sciences giving a talk about glaciers and the fresh water they hold. First, you have some time to look at questions 31 to 40.",
+                    "endMs": 13320,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 43320,
+                    "purpose": "read",
+                    "startMs": 13320,
+                    "questions": [
+                        31,
+                        40
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 62720,
+                    "startMs": 43320
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 83240,
+                    "startMs": 62720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 105840,
+                    "startMs": 83240
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 123800,
+                    "startMs": 105840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 149440,
+                    "startMs": 123800
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 167080,
+                    "startMs": 149440
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 183920,
+                    "startMs": 167080
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 205320,
+                    "startMs": 183920
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 228320,
+                    "startMs": 205320
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 249960,
+                    "startMs": 228320
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 277040,
+                    "startMs": 249960
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 298200,
+                    "startMs": 277040
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 316000,
+                    "startMs": 298200
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 335220,
+                    "startMs": 316000
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 4. You now have thirty seconds to check your answers.",
+                    "endMs": 341020,
+                    "startMs": 335220
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 371020,
+                    "purpose": "check",
+                    "startMs": 341020
+                }
+            ],
+            "durationMs": 371020
+        },
+        "title": "Glaciers as stores of fresh water",
+        "turns": [
+            {
+                "text": "Good morning, everyone. I'm Hamish Calloway, and today we're continuing our unit on the water cycle by looking at glaciers, which, as you'll see, are enormous stores of fresh water. I'll start with how they form, then look at how they release water to rivers and farms, and I'll finish with what happens when they shrink.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, so how does a glacier form? Lots of places get heavy snow in winter, but that alone isn't enough. For a glacier to develop, the snow has to survive the summer, so that some of it's still lying there when the next winter's snow arrives. Then it builds up, layer on layer, year after year.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "As those layers get thicker, something interesting happens underneath. The weight of the new snow presses down on the older snow, and the grains get packed closer and closer together. Over time the air between the grains is squeezed out, and what you end up with is dense, solid ice. In very cold places, that can take well over a century.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "If you've been up to Franz Josef or Fox Glacier on the West Coast, you'll have noticed that the ice often looks blue. A lot of people assume it's reflecting the sky, but that's not it. Because the ice is so dense, it absorbs the red part of sunlight, and the blue light is what's left for us to see.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Okay, so how much water are we actually talking about? You'll sometimes see three-quarters quoted, but the more accurate figure is that glaciers and ice sheets hold about 70 per cent of the world's fresh water. Now, most of that isn't in places like New Zealand, or even Iceland. It's locked up in two huge ice sheets: the one covering Antarctica, which is by far the largest, and the one on Greenland.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "But it's the smaller mountain glaciers that matter most for people, because that's the water that ends up in rivers. Some researchers call them batteries, but the term you'll see most often in the literature is water towers. The idea is that they store water high up in the mountains and let it out gradually.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And the timing of that release is the key point. Snow and ice melt fastest in the hottest months, which tends to be exactly when there's the least rain. So glacier meltwater keeps rivers flowing during droughts, when they might otherwise drop very low or even dry up completely.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "You may also have noticed that glacial rivers are a strange milky, turquoise colour. That's caused by tiny particles of rock which the glacier grinds up as it moves over the ground. It's sometimes loosely described as silt, but geologists call this glacial flour, and it's so fine that it stays in the water for a long way downstream.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, let's think about who uses this water. Here in Canterbury, rivers fed partly by snow and ice from the Southern Alps, the Rakaia, for example, supply irrigation schemes right across the plains. Traditionally that land was mostly used for sheep, but these days a large share of the irrigation water goes to dairy farms, which need pasture to keep growing right through summer.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And it's the same story, on a much bigger scale, in other parts of the world. In Central Asia, for example, rivers that start in the Pamir and Tian Shan mountains water huge areas of farmland. Some wheat is grown there, and some rice, but the crop that depends most heavily on meltwater is cotton, which needs a great deal of water in the dry growing season.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, so finally, what happens as glaciers shrink? Almost all mountain glaciers are getting smaller, and New Zealand's have lost a large share of their ice since the late 1960s, sorry, the late 1970s, when regular surveys began. Now, you might expect river flow to drop straight away. But a glacier that's losing ice faster than it gains it actually releases extra water, so at first, flows increase.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Eventually, though, the glacier gets so small that the amount of melt starts to fall. The point where meltwater reaches its maximum is called peak water, and after that, rivers get less every year. For many rivers in Asia and South America, scientists think that point has already passed, or will within the next twenty years or so.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "There's a second danger as well. As glaciers retreat, they often leave behind lakes held back only by piles of loose rock that the ice pushed up. If one of those natural dams gives way, the water can empty out in minutes and cause sudden, destructive floods in the valleys below.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So, to sum up, glaciers aren't just beautiful scenery. They're a kind of savings account of water that many communities have been drawing on, and once it's spent, it isn't easily replaced. Next week we'll look at groundwater, which raises some similar questions. Okay, any questions before we finish?",
+                "speaker": "lecturer"
+            }
+        ],
+        "groups": [
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "title": "Glaciers as stores of fresh water",
+                "questions": [
+                    {
+                        "answer": [
+                            "summer"
+                        ],
+                        "prompt": "Formation: snow must last through the ______ so that layers can build up each year",
+                        "numbers": [
+                            31
+                        ],
+                        "evidence": "the snow has to survive the summer",
+                        "explanation": {
+                            "en": "The lecturer says heavy winter snow is not enough; the snow has to survive the summer so it is still there when the next winter's snow comes.",
+                            "ru": "Лектор говорит, что одного обильного снегопада зимой недостаточно: снег должен «пережить лето» (\"survive the summer\"), чтобы ещё лежать, когда выпадет снег следующей зимы.",
+                            "uk": "Лектор каже, що самого лише рясного снігопаду взимку замало: сніг має «пережити літо» (\"survive the summer\"), щоб іще лежати, коли випаде сніг наступної зими."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "air"
+                        ],
+                        "prompt": "The weight of new snow pushes the ______ out from between the grains, forming dense ice",
+                        "numbers": [
+                            32
+                        ],
+                        "evidence": "Over time the air between the grains is squeezed out",
+                        "explanation": {
+                            "en": "The pressure of new layers squeezes the air out from between the snow grains. The grains themselves are packed together, not removed.",
+                            "ru": "Давление новых слоёв выдавливает воздух (\"air\") из промежутков между зёрнами снега. Сами зёрна при этом уплотняются, а не исчезают.",
+                            "uk": "Тиск нових шарів витискає повітря (\"air\") з проміжків між зернами снігу. Самі зерна при цьому ущільнюються, а не зникають."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "blue"
+                        ],
+                        "prompt": "Glacier ice appears ______ because it absorbs red light",
+                        "numbers": [
+                            33
+                        ],
+                        "evidence": "you'll have noticed that the ice often looks blue",
+                        "explanation": {
+                            "en": "The ice looks blue because dense ice absorbs the red part of sunlight. The lecturer says it is not because it reflects the sky.",
+                            "ru": "Лёд выглядит голубым (\"blue\"), потому что плотный лёд поглощает красную (\"red\") часть солнечного света. Лектор подчёркивает, что дело не в отражении неба.",
+                            "uk": "Лід здається блакитним (\"blue\"), бо щільний лід поглинає червону (\"red\") частину сонячного світла. Лектор наголошує, що річ не в тому, що він відбиває небо."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "70",
+                            "seventy"
+                        ],
+                        "prompt": "Glaciers and ice sheets contain about ______ per cent of the world's fresh water",
+                        "numbers": [
+                            34
+                        ],
+                        "evidence": "glaciers and ice sheets hold about 70 per cent of the world's fresh water",
+                        "explanation": {
+                            "en": "He gives the accurate figure as about 70 per cent. Three-quarters is a figure people sometimes quote, but he says it is less accurate.",
+                            "ru": "Он называет точную цифру — около \"70 per cent\". Цифру \"three-quarters\" иногда приводят, но, по его словам, она менее точна.",
+                            "uk": "Він називає точну цифру — близько \"70 per cent\". Цифру \"three-quarters\" іноді наводять, але, за його словами, вона менш точна."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "Greenland"
+                        ],
+                        "prompt": "Most of this ice is in two ice sheets: Antarctica and ______",
+                        "numbers": [
+                            35
+                        ],
+                        "evidence": "the one covering Antarctica, which is by far the largest, and the one on Greenland",
+                        "explanation": {
+                            "en": "The two huge ice sheets are on Antarctica and Greenland. Iceland and New Zealand are mentioned as places where most of the ice is not found.",
+                            "ru": "Два огромных ледниковых щита находятся в \"Antarctica\" и \"Greenland\". \"Iceland\" и \"New Zealand\" упоминаются как места, где основной массы льда нет.",
+                            "uk": "Два величезні льодовикові щити розташовані в \"Antarctica\" та \"Greenland\". \"Iceland\" і \"New Zealand\" згадуються як місця, де основної маси льоду немає."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "towers"
+                        ],
+                        "prompt": "Mountain glaciers are often described as water ______",
+                        "numbers": [
+                            36
+                        ],
+                        "evidence": "the term you'll see most often in the literature is water towers",
+                        "explanation": {
+                            "en": "The most common term is 'water towers', because glaciers store water high up and release it slowly. 'Batteries' is a term only some researchers use.",
+                            "ru": "Самый распространённый термин — \"water towers\", потому что ледники хранят воду высоко в горах и медленно её отдают. Термин \"batteries\" используют лишь некоторые исследователи.",
+                            "uk": "Найпоширеніший термін — \"water towers\", бо льодовики зберігають воду високо в горах і повільно її віддають. Термін \"batteries\" вживають лише деякі дослідники."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "droughts",
+                            "drought"
+                        ],
+                        "prompt": "Meltwater helps to keep rivers running at times of ______",
+                        "numbers": [
+                            37
+                        ],
+                        "evidence": "glacier meltwater keeps rivers flowing during droughts",
+                        "explanation": {
+                            "en": "Ice melts fastest in the hottest months, when there is little rain, so meltwater keeps rivers flowing during droughts.",
+                            "ru": "Лёд тает быстрее всего в самые жаркие месяцы, когда дождей мало, поэтому талая вода поддерживает течение рек во время засух (\"droughts\").",
+                            "uk": "Лід тане найшвидше в найспекотніші місяці, коли дощів мало, тож тала вода підтримує течію річок під час посух (\"droughts\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "flour"
+                        ],
+                        "prompt": "Fine rock particles that make rivers milky are called glacial ______",
+                        "numbers": [
+                            38
+                        ],
+                        "evidence": "geologists call this glacial flour",
+                        "explanation": {
+                            "en": "The tiny rock particles are called glacial flour. 'Silt' is only a loose description, not the geologists' term.",
+                            "ru": "Мельчайшие частицы породы называются \"glacial flour\". \"Silt\" — лишь приблизительное описание, а не термин геологов.",
+                            "uk": "Найдрібніші частинки породи називаються \"glacial flour\". \"Silt\" — лише приблизний опис, а не термін геологів."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "dairy"
+                        ],
+                        "prompt": "Canterbury: much irrigation water now goes to ______ farms",
+                        "numbers": [
+                            39
+                        ],
+                        "evidence": "a large share of the irrigation water goes to dairy farms",
+                        "explanation": {
+                            "en": "The land was traditionally used for sheep, but today a large share of the water goes to dairy farms.",
+                            "ru": "Традиционно эту землю использовали для разведения овец (\"sheep\"), но сегодня значительная часть воды идёт на молочные фермы (\"dairy farms\").",
+                            "uk": "Традиційно цю землю використовували для розведення овець (\"sheep\"), але сьогодні значна частина води йде на молочні ферми (\"dairy farms\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "cotton"
+                        ],
+                        "prompt": "Central Asia: the crop most reliant on meltwater is ______",
+                        "numbers": [
+                            40
+                        ],
+                        "evidence": "the crop that depends most heavily on meltwater is cotton",
+                        "explanation": {
+                            "en": "Wheat and rice are also grown, but the lecturer says cotton depends most heavily on meltwater.",
+                            "ru": "Пшеницу (\"wheat\") и рис (\"rice\") там тоже выращивают, но, по словам лектора, сильнее всего от талой воды зависит хлопок (\"cotton\").",
+                            "uk": "Пшеницю (\"wheat\") і рис (\"rice\") там теж вирощують, але, за словами лектора, найбільше від талої води залежить бавовна (\"cotton\")."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a university lecturer in earth sciences giving a talk about glaciers and the fresh water they hold.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Hamish Calloway",
+                "role": "university lecturer in earth sciences",
+                "accent": "new_zealand",
+                "gender": "male"
+            }
+        ]
+    },
+    "plan": "l4|p4",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.174736,
+            "provider": "anthropic",
+            "outputTokens": 7743
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.011528,
+            "provider": "anthropic",
+            "outputTokens": 518
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.012695,
+            "provider": "openai",
+            "outputTokens": 523
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.013878,
+            "provider": "xai",
+            "outputTokens": 1241
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.056744,
+            "provider": "anthropic",
+            "outputTokens": 2602
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "Glaciers as stores of fresh water",
+        "turns": [
+            {
+                "text": "Good morning, everyone. I'm Hamish Calloway, and today we're continuing our unit on the water cycle by looking at glaciers, which, as you'll see, are enormous stores of fresh water. I'll start with how they form, then look at how they release water to rivers and farms, and I'll finish with what happens when they shrink.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, so how does a glacier form? Lots of places get heavy snow in winter, but that alone isn't enough. For a glacier to develop, the snow has to survive the summer, so that some of it's still lying there when the next winter's snow arrives. Then it builds up, layer on layer, year after year.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "As those layers get thicker, something interesting happens underneath. The weight of the new snow presses down on the older snow, and the grains get packed closer and closer together. Over time the air between the grains is squeezed out, and what you end up with is dense, solid ice. In very cold places, that can take well over a century.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "If you've been up to Franz Josef or Fox Glacier on the West Coast, you'll have noticed that the ice often looks blue. A lot of people assume it's reflecting the sky, but that's not it. Because the ice is so dense, it absorbs the red part of sunlight, and the blue light is what's left for us to see.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Okay, so how much water are we actually talking about? You'll sometimes see three-quarters quoted, but the more accurate figure is that glaciers and ice sheets hold about 70 per cent of the world's fresh water. Now, most of that isn't in places like New Zealand, or even Iceland. It's locked up in two huge ice sheets: the one covering Antarctica, which is by far the largest, and the one on Greenland.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "But it's the smaller mountain glaciers that matter most for people, because that's the water that ends up in rivers. Some researchers call them batteries, but the term you'll see most often in the literature is water towers. The idea is that they store water high up in the mountains and let it out gradually.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And the timing of that release is the key point. Snow and ice melt fastest in the hottest months, which tends to be exactly when there's the least rain. So glacier meltwater keeps rivers flowing during droughts, when they might otherwise drop very low or even dry up completely.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "You may also have noticed that glacial rivers are a strange milky, turquoise colour. That's caused by tiny particles of rock which the glacier grinds up as it moves over the ground. It's sometimes loosely described as silt, but geologists call this glacial flour, and it's so fine that it stays in the water for a long way downstream.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, let's think about who uses this water. Here in Canterbury, rivers fed partly by snow and ice from the Southern Alps, the Rakaia, for example, supply irrigation schemes right across the plains. Traditionally that land was mostly used for sheep, but these days a large share of the irrigation water goes to dairy farms, which need pasture to keep growing right through summer.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And it's the same story, on a much bigger scale, in other parts of the world. In Central Asia, for example, rivers that start in the Pamir and Tian Shan mountains water huge areas of farmland. Some wheat is grown there, and some rice, but the crop that depends most heavily on meltwater is cotton, which needs a great deal of water in the dry growing season.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, so finally, what happens as glaciers shrink? Almost all mountain glaciers are getting smaller, and New Zealand's have lost a large share of their ice since the late 1960s, sorry, the late 1970s, when regular surveys began. Now, you might expect river flow to drop straight away. But a glacier that's losing ice faster than it gains it actually releases extra water, so at first, flows increase.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Eventually, though, the glacier gets so small that the amount of melt starts to fall. The point where meltwater reaches its maximum is called peak water, and after that, rivers get less every year. For many rivers in Asia and South America, scientists think that point has already passed, or will within the next twenty years or so.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "There's a second danger as well. As glaciers retreat, they often leave behind lakes held back only by piles of loose rock that the ice pushed up. If one of those natural dams gives way, the water can empty out in minutes and cause sudden, destructive floods in the valleys below.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So, to sum up, glaciers aren't just beautiful scenery. They're a kind of savings account of water that many communities have been drawing on, and once it's spent, it isn't easily replaced. Next week we'll look at groundwater, which raises some similar questions. Okay, any questions before we finish?",
+                "speaker": "lecturer"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "title": "Glaciers as stores of fresh water",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "summer"
+                        ],
+                        "prompt": "Formation: snow must last through the ______ so that layers can build up each year",
+                        "options": [],
+                        "evidence": "the snow has to survive the summer",
+                        "explanation": "The lecturer says heavy winter snow is not enough; the snow has to survive the summer so it is still there when the next winter's snow comes."
+                    },
+                    {
+                        "answer": [
+                            "air"
+                        ],
+                        "prompt": "The weight of new snow pushes the ______ out from between the grains, forming dense ice",
+                        "options": [],
+                        "evidence": "Over time the air between the grains is squeezed out",
+                        "explanation": "The pressure of new layers squeezes the air out from between the snow grains. The grains themselves are packed together, not removed."
+                    },
+                    {
+                        "answer": [
+                            "blue"
+                        ],
+                        "prompt": "Glacier ice appears ______ because it absorbs red light",
+                        "options": [],
+                        "evidence": "you'll have noticed that the ice often looks blue",
+                        "explanation": "The ice looks blue because dense ice absorbs the red part of sunlight. The lecturer says it is not because it reflects the sky."
+                    },
+                    {
+                        "answer": [
+                            "70",
+                            "seventy"
+                        ],
+                        "prompt": "Glaciers and ice sheets contain about ______ per cent of the world's fresh water",
+                        "options": [],
+                        "evidence": "glaciers and ice sheets hold about 70 per cent of the world's fresh water",
+                        "explanation": "He gives the accurate figure as about 70 per cent. Three-quarters is a figure people sometimes quote, but he says it is less accurate."
+                    },
+                    {
+                        "answer": [
+                            "Greenland"
+                        ],
+                        "prompt": "Most of this ice is in two ice sheets: Antarctica and ______",
+                        "options": [],
+                        "evidence": "the one covering Antarctica, which is by far the largest, and the one on Greenland",
+                        "explanation": "The two huge ice sheets are on Antarctica and Greenland. Iceland and New Zealand are mentioned as places where most of the ice is not found."
+                    },
+                    {
+                        "answer": [
+                            "towers"
+                        ],
+                        "prompt": "Mountain glaciers are often described as water ______",
+                        "options": [],
+                        "evidence": "the term you'll see most often in the literature is water towers",
+                        "explanation": "The most common term is 'water towers', because glaciers store water high up and release it slowly. 'Batteries' is a term only some researchers use."
+                    },
+                    {
+                        "answer": [
+                            "droughts",
+                            "drought"
+                        ],
+                        "prompt": "Meltwater helps to keep rivers running at times of ______",
+                        "options": [],
+                        "evidence": "glacier meltwater keeps rivers flowing during droughts",
+                        "explanation": "Ice melts fastest in the hottest months, when there is little rain, so meltwater keeps rivers flowing during droughts."
+                    },
+                    {
+                        "answer": [
+                            "flour"
+                        ],
+                        "prompt": "Fine rock particles that make rivers milky are called glacial ______",
+                        "options": [],
+                        "evidence": "geologists call this glacial flour",
+                        "explanation": "The tiny rock particles are called glacial flour. 'Silt' is only a loose description, not the geologists' term."
+                    },
+                    {
+                        "answer": [
+                            "dairy"
+                        ],
+                        "prompt": "Canterbury: much irrigation water now goes to ______ farms",
+                        "options": [],
+                        "evidence": "a large share of the irrigation water goes to dairy farms",
+                        "explanation": "The land was traditionally used for sheep, but today a large share of the water goes to dairy farms."
+                    },
+                    {
+                        "answer": [
+                            "cotton"
+                        ],
+                        "prompt": "Central Asia: the crop most reliant on meltwater is ______",
+                        "options": [],
+                        "evidence": "the crop that depends most heavily on meltwater is cotton",
+                        "explanation": "Wheat and rice are also grown, but the lecturer says cotton depends most heavily on meltwater."
+                    },
+                    {
+                        "answer": [
+                            "water"
+                        ],
+                        "prompt": "The time when meltwater reaches its maximum is called peak ______",
+                        "options": [],
+                        "evidence": "The point where meltwater reaches its maximum is called peak water",
+                        "explanation": "Shrinking glaciers first release more water, but flow then reaches a maximum called 'peak water' and falls after that."
+                    },
+                    {
+                        "answer": [
+                            "lakes"
+                        ],
+                        "prompt": "Retreating glaciers may leave ______ held back by loose rock, which can cause sudden floods",
+                        "options": [],
+                        "evidence": "they often leave behind lakes held back only by piles of loose rock",
+                        "explanation": "Retreating glaciers leave lakes held back by loose rock. If these natural dams break, the water floods the valleys below."
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a university lecturer in earth sciences giving a talk about glaciers and the fresh water they hold.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Hamish Calloway"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the snow has to survive the summer, so that some of it's still lying there when the next winter's snow arrives",
+                "answer": [
+                    "summer"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the air between the grains is squeezed out, and what you end up with is dense, solid ice",
+                "answer": [
+                    "air"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the ice often looks blue",
+                "answer": [
+                    "blue"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "glaciers and ice sheets hold about 70 per cent of the world's fresh water",
+                "answer": [
+                    "70"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the one covering Antarctica, which is by far the largest, and the one on Greenland",
+                "answer": [
+                    "Greenland"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the term you'll see most often in the literature is water towers",
+                "answer": [
+                    "towers"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "glacier meltwater keeps rivers flowing during droughts",
+                "answer": [
+                    "drought"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "geologists call this glacial flour",
+                "answer": [
+                    "flour"
+                ],
+                "correct": true
+            },
+            "b1q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "a large share of the irrigation water goes to dairy farms",
+                "answer": [
+                    "dairy"
+                ],
+                "correct": true
+            },
+            "b1q10": {
+                "marks": [
+                    true
+                ],
+                "quote": "the crop that depends most heavily on meltwater is cotton",
+                "answer": [
+                    "cotton"
+                ],
+                "correct": true
+            },
+            "b1q11": {
+                "marks": [
+                    true
+                ],
+                "quote": "The point where meltwater reaches its maximum is called peak water",
+                "answer": [
+                    "water"
+                ],
+                "correct": true
+            },
+            "b1q12": {
+                "marks": [
+                    true
+                ],
+                "quote": "they often leave behind lakes held back only by piles of loose rock",
+                "answer": [
+                    "lakes"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the snow has to survive the summer",
+                "answer": [
+                    "summer"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the air between the grains is squeezed out",
+                "answer": [
+                    "air"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "the ice often looks blue ... it absorbs the red part of sunlight",
+                "answer": [
+                    "blue"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "glaciers and ice sheets hold about 70 per cent of the world's fresh water",
+                "answer": [
+                    "70"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the one covering Antarctica ... and the one on Greenland",
+                "answer": [
+                    "Greenland"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "the term you'll see most often in the literature is water towers",
+                "answer": [
+                    "towers"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "glacier meltwater keeps rivers flowing during droughts",
+                "answer": [
+                    "droughts"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "geologists call this glacial flour",
+                "answer": [
+                    "flour"
+                ],
+                "correct": true
+            },
+            "b1q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "a large share of the irrigation water goes to dairy farms",
+                "answer": [
+                    "dairy"
+                ],
+                "correct": true
+            },
+            "b1q10": {
+                "marks": [
+                    true
+                ],
+                "quote": "the crop that depends most heavily on meltwater is cotton",
+                "answer": [
+                    "cotton"
+                ],
+                "correct": true
+            },
+            "b1q11": {
+                "marks": [
+                    true
+                ],
+                "quote": "The point where meltwater reaches its maximum is called peak water",
+                "answer": [
+                    "water"
+                ],
+                "correct": true
+            },
+            "b1q12": {
+                "marks": [
+                    true
+                ],
+                "quote": "As glaciers retreat, they often leave behind lakes held back only by piles of loose rock",
+                "answer": [
+                    "lakes"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the snow has to survive the summer, so that some of it's still lying there when the next winter's snow arrives",
+            "answer": [
+                "summer"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the air between the grains is squeezed out, and what you end up with is dense, solid ice",
+            "answer": [
+                "air"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "the ice often looks blue... it absorbs the red part of sunlight, and the blue light is what's left",
+            "answer": [
+                "blue"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "glaciers and ice sheets hold about 70 per cent of the world's fresh water",
+            "answer": [
+                "70"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "the one covering Antarctica, which is by far the largest, and the one on Greenland",
+            "answer": [
+                "Greenland"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "the term you'll see most often in the literature is water towers",
+            "answer": [
+                "towers"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "glacier meltwater keeps rivers flowing during droughts",
+            "answer": [
+                "droughts"
+            ],
+            "correct": true
+        },
+        "b1q8": {
+            "marks": [
+                true
+            ],
+            "quote": "geologists call this glacial flour",
+            "answer": [
+                "flour"
+            ],
+            "correct": true
+        },
+        "b1q9": {
+            "marks": [
+                true
+            ],
+            "quote": "a large share of the irrigation water goes to dairy farms",
+            "answer": [
+                "dairy"
+            ],
+            "correct": true
+        },
+        "b1q10": {
+            "marks": [
+                true
+            ],
+            "quote": "the crop that depends most heavily on meltwater is cotton",
+            "answer": [
+                "cotton"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 12,
+        "agreedFirst": 12,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 19120,
+                "wer": 0.018,
+                "heard": "Good morning, everyone. I'm Hamish Callaway, and today we're continuing our unit on the water cycle by looking at glaciers, which, as you'll see, are enormous stores of fresh water. I'll start with how they form, then look at how they release water to rivers and farms, and I'll finish with what happens when they shrink."
+            },
+            {
+                "ms": 20240,
+                "wer": 0.036,
+                "heard": "Right, so how does a glacier form? Lots of places get heavy snow in winter, but that alone isn’t enough. For a glacier to develop, the snow has to survive the summer, so that some of it is still lying there when the next winter’s snow arrives. Then it builds up, layer on layer, year after year."
+            },
+            {
+                "ms": 22320,
+                "wer": 0,
+                "heard": "As those layers get thicker, something interesting happens underneath. The weight of the new snow presses down on the older snow, and the grains get packed closer and closer together. Over time, the air between the grains is squeezed out, and what you end up with is dense, solid ice. In very cold places, that can take well over a century!"
+            },
+            {
+                "ms": 17680,
+                "wer": 0,
+                "heard": "If you've been up to Franz Josef or Fox Glacier on the West Coast, you'll have noticed that the ice often looks blue. A lot of people assume it's reflecting the sky, but that's not it. Because the ice is so dense, it absorbs the red part of sunlight, and the blue light is what's left for us to see."
+            },
+            {
+                "ms": 25360,
+                "wer": 0.027,
+                "heard": "Okay, so how much water are we actually talking about? You'll sometimes see three-quarters quoted, but the more accurate figure is that glaciers and ice sheets hold about 70% of the world's fresh water. Now, most of that isn't in places like New Zealand or even Iceland. It's locked up in two huge ice sheets, the one covering Antarctica, which is by far the largest, and the one on Greenland."
+            },
+            {
+                "ms": 17360,
+                "wer": 0,
+                "heard": "But it's the smaller mountain glaciers that matter most for people, because that's the water that ends up in rivers. Some researchers call them batteries, but the term you'll see most often in the literature is \"water towers.\" The idea is that they store water high up in the mountains and let it out gradually."
+            },
+            {
+                "ms": 16560,
+                "wer": 0,
+                "heard": "And the timing of that release is the key point: snow and ice melt fastest in the hottest months, which tends to be exactly when there's the least rain. So glacier meltwater keeps rivers flowing during droughts, when they might otherwise drop very low or even dry up completely."
+            },
+            {
+                "ms": 21120,
+                "wer": 0,
+                "heard": "You may also have noticed that glacial rivers are a strange milky turquoise colour. That's caused by tiny particles of rock which the glacier grinds up as it moves over the ground. It's sometimes loosely described as silt, but geologists call this glacial flour, and it's so fine that it stays in the water for a long way downstream."
+            },
+            {
+                "ms": 22720,
+                "wer": 0,
+                "heard": "Now, let's think about who uses this water. Here in Canterbury, rivers fed partly by snow and ice from the Southern Alps - the Rakaia, for example - supply irrigation schemes right across the plains. Traditionally, that land was mostly used for sheep, but these days a large share of the irrigation water goes to dairy farms, which need pasture to keep growing right through summer."
+            },
+            {
+                "ms": 21360,
+                "wer": 0.015,
+                "heard": "And it's the same story, on a much bigger scale, in other parts of the world. In Central Asia, for example, rivers that start in the Pamir and Tien Shan mountains water huge areas of farmland. Some wheat is grown there, and some rice, but the crop that depends most heavily on meltwater is cotton, which needs a great deal of water in the dry growing season."
+            },
+            {
+                "ms": 26800,
+                "wer": 0.059,
+                "heard": "Right, so finally, what happens as glaciers shrink? Almost all mountain glaciers are getting smaller, and New Zealand's have lost a large share of their ice since the late 1970s, when regular surveys began. Now, you might expect river flow to drop straight away, but a glacier that's losing ice faster than it gains it actually releases extra water. So at first, flows increase."
+            },
+            {
+                "ms": 20880,
+                "wer": 0,
+                "heard": "Eventually though, the glacier gets so small that the amount of melt starts to fall. The point where meltwater reaches its maximum is called peak water, and after that, rivers get less every year. For many rivers in Asia and South America, scientists think that point has already passed, or will within the next 20 years or so."
+            },
+            {
+                "ms": 17520,
+                "wer": 0,
+                "heard": "There's a second danger as well. As glaciers retreat, they often leave behind lakes held back only by piles of loose rock that the ice pushed up. If one of those natural dams gives way, the water can empty out in minutes and cause sudden, destructive floods in the valleys below."
+            },
+            {
+                "ms": 18800,
+                "wer": 0,
+                "heard": "So, to sum up, glaciers aren't just beautiful scenery; they're a kind of savings account of water that many communities have been drawing on, and once it's spent, it isn't easily replaced. Next week, we'll look at groundwater, which raises some similar questions. Okay, any questions before we finish?"
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -3.3
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b1q8",
+            "b1q9",
+            "b1q10"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b1q9": "first",
+            "b1q10": "first",
+            "b1q11": "first",
+            "b1q12": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "31": "b1q1",
+        "32": "b1q2",
+        "33": "b1q3",
+        "34": "b1q4",
+        "35": "b1q5",
+        "36": "b1q6",
+        "37": "b1q7",
+        "38": "b1q8",
+        "39": "b1q9",
+        "40": "b1q10"
+    },
+    "translation": {
+        "missing": []
+    }
+}

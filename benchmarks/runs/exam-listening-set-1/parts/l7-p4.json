@@ -1,0 +1,1155 @@
+{
+    "form": {
+        "first": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l7-p4.mp3",
+            "bytes": 4127084,
+            "sha256": "994fe4ab5a1309b750f247c611f42b3586e6c2790e4e205cd5d3c38f85c8bb2a",
+            "voices": {
+                "lecturer": {
+                    "voice": "ara",
+                    "provider": "xai"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 4. You will hear a lecturer in urban planning giving a talk about why cities become hotter than the surrounding countryside and what can be done about it. First, you have some time to look at questions 31 to 40.",
+                    "endMs": 15080,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 45080,
+                    "purpose": "read",
+                    "startMs": 15080,
+                    "questions": [
+                        31,
+                        40
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 60119,
+                    "startMs": 45080
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 82185,
+                    "startMs": 60119
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 97538,
+                    "startMs": 82185
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 114797,
+                    "startMs": 97538
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 128217,
+                    "startMs": 114797
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 139729,
+                    "startMs": 128217
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 150275,
+                    "startMs": 139729
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 163382,
+                    "startMs": 150275
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 177768,
+                    "startMs": 163382
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 199520,
+                    "startMs": 177768
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 209440,
+                    "startMs": 199520
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 225106,
+                    "startMs": 209440
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 243018,
+                    "startMs": 225106
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 261558,
+                    "startMs": 243018
+                },
+                {
+                    "kind": "turn",
+                    "turn": 14,
+                    "endMs": 278504,
+                    "startMs": 261558
+                },
+                {
+                    "kind": "turn",
+                    "turn": 15,
+                    "endMs": 295764,
+                    "startMs": 278504
+                },
+                {
+                    "kind": "turn",
+                    "turn": 16,
+                    "endMs": 308043,
+                    "startMs": 295764
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 4. You now have thirty seconds to check your answers.",
+                    "endMs": 313843,
+                    "startMs": 308043
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 343843,
+                    "purpose": "check",
+                    "startMs": 313843
+                }
+            ],
+            "durationMs": 343843
+        },
+        "title": "Urban heat islands",
+        "turns": [
+            {
+                "text": "Good morning, everyone. Today we're moving on from transportation to something that affects almost every city on this continent, and that's what's known as the urban heat island. Put simply, it's the way built-up areas end up noticeably warmer than the countryside around them.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "On a summer day, a downtown core can be several degrees hotter than nearby farmland. Now, most people assume the difference is biggest in the middle of the afternoon, when the sun's at its strongest. In fact, that's not really the case. The gap between city and countryside is usually widest at night, because the city keeps releasing the heat it stored up during the day, while rural areas cool down fast.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So why does this happen? Well, the first reason is the materials we build with. Brick and concrete both soak up heat, but the real culprit is asphalt, the dark material on our roads and parking lots. On a sunny afternoon, it can get hot enough to burn your hand.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The second reason is the lack of vegetation. Plants draw water up from the soil and release it through their leaves, and as that water turns to vapor, it takes heat out of the air. This process, evaporation, is basically nature's air conditioning. Replace a meadow with a shopping mall, and you lose it.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Third, there's the shape of the city itself. When tall buildings line narrow streets, you get what planners call canyons. Sunlight bounces from wall to wall instead of escaping, and the wind can't get through to carry the warm air away.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And finally, there's waste heat from cars, from factories, and, rather ironically, from air conditioners pumping hot air out onto the street. So that's four causes, all working together.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Okay, so what are the effects? Let's start with health. Heat waves are one of the deadliest kinds of extreme weather in North America, and the people most at risk aren't always the ones you'd expect.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Young children are vulnerable, yes, but the biggest danger is to older people who live alone, often in top-floor apartments, with nobody checking on them. Many of them don't realize how dangerous the heat is until it's too late.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Heat also makes air quality worse. Higher temperatures speed up the chemical reactions that produce ground-level ozone, which irritates the lungs and is especially bad for people with asthma. So on the hottest days, the air is also at its most harmful to breathe.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Then there's energy. When it's hot, everybody turns up the air conditioning at the same time, usually between about four and, well, seven in the evening. Electricity bills go up, of course, but the bigger worry is the power grid. If demand gets too high, the utilities simply can't keep up, and that's when you see blackouts, which switch off the very air conditioning that vulnerable people depend on.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. So what can cities do about all this? The most obvious answer is trees. A mature tree shades the ground and cools the air through its leaves, as we discussed.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "But where you plant it really matters. A lot of homeowners think the south side of a building is best. Actually, research shows the biggest savings come from trees on the west side, because they block the low, intense sun of late afternoon. That's exactly when buildings are at their hottest.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The challenge is that city streets aren't a great place for a tree to grow. Under the sidewalk, the soil is packed hard and full of pipes and cables, so there's very little room for roots to spread. That's why so many street trees die young, and why some cities now build special underground frames that hold loose soil beneath the pavement.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The second solution is what we call cool roofs. A normal dark roof can reach over 150 degrees Fahrenheit in summer. A cool roof is covered with a reflective coating, usually white, that sends most of the sunlight straight back into the sky. New York, for example, has had volunteers treating thousands of rooftops this way.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Cool roofs can go on almost any building, but they're cheapest and simplest on flat roofs, the kind you see on warehouses, schools and apartment blocks. On a steep roof, the work's harder and more dangerous. And frankly, a lot of homeowners just don't like the look of a bright white roof on their house.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "There is one drawback, though. In places with cold winters, like Chicago or Toronto, a cool roof reflects away sunlight you'd actually like to have in January. So your heating costs can go up slightly in the colder months. In most cases, though, the summer savings are far bigger than that winter penalty.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Okay, I'll stop there for today. For next week, I'd like you to look at a map of your own neighborhood and think about where the hottest spots might be, and which of these solutions would suit them. We'll compare notes in the seminar.",
+                "speaker": "lecturer"
+            }
+        ],
+        "groups": [
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "title": "Urban Heat Islands",
+                "questions": [
+                    {
+                        "answer": [
+                            "night"
+                        ],
+                        "prompt": "Temperature difference between city and countryside is greatest at ______",
+                        "numbers": [
+                            31
+                        ],
+                        "evidence": "The gap between city and countryside is usually widest at night",
+                        "explanation": {
+                            "en": "The lecturer says many people think the difference is biggest in the afternoon, but it is actually widest at night, when the city releases stored heat.",
+                            "ru": "Лектор говорит, что многие считают, будто разница больше всего днём (\"afternoon\"), но на самом деле она максимальна ночью (\"night\"), когда город отдаёт накопленное тепло.",
+                            "uk": "Лекторка каже, що багато хто вважає, ніби різниця найбільша вдень (\"afternoon\"), але насправді вона найбільша вночі (\"night\"), коли місто віддає накопичене тепло."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "asphalt"
+                        ],
+                        "prompt": "Dark surfaces, especially ______, absorb and store heat",
+                        "numbers": [
+                            32
+                        ],
+                        "evidence": "the real culprit is asphalt, the dark material on our roads and parking lots",
+                        "explanation": {
+                            "en": "Brick and concrete are mentioned too, but the lecturer calls asphalt, the dark material on roads, the real culprit.",
+                            "ru": "Кирпич и бетон (\"brick\", \"concrete\") тоже упоминаются, но настоящим виновником лектор называет асфальт (\"asphalt\"), тёмное покрытие дорог.",
+                            "uk": "Цеглу й бетон (\"brick\", \"concrete\") теж згадано, але справжнім винуватцем лекторка називає асфальт (\"asphalt\"), темне покриття доріг."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "evaporation"
+                        ],
+                        "prompt": "Fewer plants means less cooling through ______",
+                        "numbers": [
+                            33
+                        ],
+                        "evidence": "This process, evaporation, is basically nature's air conditioning.",
+                        "explanation": {
+                            "en": "Plants release water through their leaves, and evaporation of this water cools the air. Cities with few plants lose this cooling.",
+                            "ru": "Растения выделяют воду через листья, и её испарение (\"evaporation\") охлаждает воздух. В городах, где мало растений, такого охлаждения нет.",
+                            "uk": "Рослини виділяють воду через листя, і її випаровування (\"evaporation\") охолоджує повітря. У містах, де мало рослин, такого охолодження немає."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "canyons"
+                        ],
+                        "prompt": "Tall buildings and narrow streets form ______ that trap heat",
+                        "numbers": [
+                            34
+                        ],
+                        "evidence": "you get what planners call canyons",
+                        "explanation": {
+                            "en": "Tall buildings along narrow streets create 'canyons', where sunlight bounces between walls and wind cannot remove the warm air.",
+                            "ru": "Высокие здания вдоль узких улиц образуют «каньоны» (\"canyons\"): солнечный свет отражается от стены к стене, а ветер не может унести тёплый воздух.",
+                            "uk": "Високі будівлі вздовж вузьких вулиць утворюють «каньйони» (\"canyons\"): сонячне світло відбивається від стіни до стіни, а вітер не може винести тепле повітря."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "alone"
+                        ],
+                        "prompt": "Greatest health risk: elderly people who live ______",
+                        "numbers": [
+                            35
+                        ],
+                        "evidence": "the biggest danger is to older people who live alone",
+                        "explanation": {
+                            "en": "Young children are mentioned as vulnerable, but the biggest danger is to older people living alone with nobody checking on them.",
+                            "ru": "Маленькие дети (\"young children\") тоже упоминаются как уязвимая группа, но больше всего опасность грозит пожилым людям (\"older people\"), которые живут одни и которых никто не проведывает.",
+                            "uk": "Малих дітей (\"young children\") теж згадано як вразливу групу, але найбільша небезпека загрожує літнім людям (\"older people\"), які живуть самі й яких ніхто не навідує."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "ozone"
+                        ],
+                        "prompt": "Heat increases levels of ground-level ______, which harms the lungs",
+                        "numbers": [
+                            36
+                        ],
+                        "evidence": "the chemical reactions that produce ground-level ozone",
+                        "explanation": {
+                            "en": "Higher temperatures speed up the reactions that create ground-level ozone, which irritates the lungs.",
+                            "ru": "Высокая температура ускоряет реакции, в результате которых образуется приземный озон (\"ozone\"), раздражающий лёгкие.",
+                            "uk": "Висока температура прискорює реакції, унаслідок яких утворюється приземний озон (\"ozone\"), що подразнює легені."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "blackouts"
+                        ],
+                        "prompt": "Very high demand for electricity may cause ______",
+                        "numbers": [
+                            37
+                        ],
+                        "evidence": "that's when you see blackouts",
+                        "explanation": {
+                            "en": "Higher electricity bills are mentioned, but the bigger worry is that the grid cannot keep up, which leads to blackouts.",
+                            "ru": "Рост счетов за электричество тоже упоминается, но главная проблема в том, что энергосеть не справляется с нагрузкой, а это приводит к отключениям (\"blackouts\").",
+                            "uk": "Зростання рахунків за електрику теж згадано, але головна проблема в тому, що енергомережа не витримує навантаження, а це призводить до відключень (\"blackouts\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "west"
+                        ],
+                        "prompt": "Trees give the greatest benefit on the ______ side of a building",
+                        "numbers": [
+                            38
+                        ],
+                        "evidence": "the biggest savings come from trees on the west side",
+                        "explanation": {
+                            "en": "Many homeowners think the south side is best, but research shows trees on the west side save the most because they block the late-afternoon sun.",
+                            "ru": "Многие владельцы домов считают, что лучше всего южная сторона (\"south\"), но исследования показывают, что больше всего экономят деревья с западной стороны (\"west\"), потому что они закрывают дом от солнца в конце дня.",
+                            "uk": "Багато власників будинків вважають, що найкраще південна сторона (\"south\"), але дослідження показують, що найбільше заощаджують дерева із західного боку (\"west\"), бо вони затуляють будинок від сонця наприкінці дня."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "roots"
+                        ],
+                        "prompt": "Street trees often have too little space for their ______",
+                        "numbers": [
+                            39
+                        ],
+                        "evidence": "there's very little room for roots to spread",
+                        "explanation": {
+                            "en": "Under sidewalks the soil is hard and full of pipes and cables, so roots have little room to spread.",
+                            "ru": "Под тротуарами (\"sidewalks\") почва твёрдая, в ней полно труб и кабелей, поэтому корням почти негде разрастаться.",
+                            "uk": "Під тротуарами (\"sidewalks\") ґрунт твердий, у ньому повно труб і кабелів, тому корінню майже ніде розростатися."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "coating"
+                        ],
+                        "prompt": "Cool roofs: a reflective ______ is applied to the roof",
+                        "numbers": [
+                            40
+                        ],
+                        "evidence": "A cool roof is covered with a reflective coating",
+                        "explanation": {
+                            "en": "A cool roof is covered with a reflective coating, usually white, which sends sunlight back into the sky.",
+                            "ru": "На «холодную крышу» (\"cool roof\") наносят отражающее покрытие (\"reflective coating\"), обычно белое, которое отправляет солнечный свет обратно в небо.",
+                            "uk": "На «холодний дах» (\"cool roof\") наносять відбивне покриття (\"reflective coating\"), зазвичай біле, яке відправляє сонячне світло назад у небо."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a lecturer in urban planning giving a talk about why cities become hotter than the surrounding countryside and what can be done about it.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Carolyn Mercer",
+                "role": "university lecturer in urban planning",
+                "accent": "north_american",
+                "gender": "female"
+            }
+        ]
+    },
+    "plan": "l7|p4",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.215472,
+            "provider": "anthropic",
+            "outputTokens": 9737
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.011442,
+            "provider": "anthropic",
+            "outputTokens": 503
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.011605,
+            "provider": "openai",
+            "outputTokens": 455
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.010326,
+            "provider": "xai",
+            "outputTokens": 643
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.062696,
+            "provider": "anthropic",
+            "outputTokens": 2904
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "Urban heat islands",
+        "turns": [
+            {
+                "text": "Good morning, everyone. Today we're moving on from transportation to something that affects almost every city on this continent, and that's what's known as the urban heat island. Put simply, it's the way built-up areas end up noticeably warmer than the countryside around them.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "On a summer day, a downtown core can be several degrees hotter than nearby farmland. Now, most people assume the difference is biggest in the middle of the afternoon, when the sun's at its strongest. In fact, that's not really the case. The gap between city and countryside is usually widest at night, because the city keeps releasing the heat it stored up during the day, while rural areas cool down fast.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So why does this happen? Well, the first reason is the materials we build with. Brick and concrete both soak up heat, but the real culprit is asphalt, the dark material on our roads and parking lots. On a sunny afternoon, it can get hot enough to burn your hand.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The second reason is the lack of vegetation. Plants draw water up from the soil and release it through their leaves, and as that water turns to vapor, it takes heat out of the air. This process, evaporation, is basically nature's air conditioning. Replace a meadow with a shopping mall, and you lose it.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Third, there's the shape of the city itself. When tall buildings line narrow streets, you get what planners call canyons. Sunlight bounces from wall to wall instead of escaping, and the wind can't get through to carry the warm air away.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "And finally, there's waste heat from cars, from factories, and, rather ironically, from air conditioners pumping hot air out onto the street. So that's four causes, all working together.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Okay, so what are the effects? Let's start with health. Heat waves are one of the deadliest kinds of extreme weather in North America, and the people most at risk aren't always the ones you'd expect.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Young children are vulnerable, yes, but the biggest danger is to older people who live alone, often in top-floor apartments, with nobody checking on them. Many of them don't realize how dangerous the heat is until it's too late.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Heat also makes air quality worse. Higher temperatures speed up the chemical reactions that produce ground-level ozone, which irritates the lungs and is especially bad for people with asthma. So on the hottest days, the air is also at its most harmful to breathe.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Then there's energy. When it's hot, everybody turns up the air conditioning at the same time, usually between about four and, well, seven in the evening. Electricity bills go up, of course, but the bigger worry is the power grid. If demand gets too high, the utilities simply can't keep up, and that's when you see blackouts, which switch off the very air conditioning that vulnerable people depend on.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right. So what can cities do about all this? The most obvious answer is trees. A mature tree shades the ground and cools the air through its leaves, as we discussed.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "But where you plant it really matters. A lot of homeowners think the south side of a building is best. Actually, research shows the biggest savings come from trees on the west side, because they block the low, intense sun of late afternoon. That's exactly when buildings are at their hottest.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The challenge is that city streets aren't a great place for a tree to grow. Under the sidewalk, the soil is packed hard and full of pipes and cables, so there's very little room for roots to spread. That's why so many street trees die young, and why some cities now build special underground frames that hold loose soil beneath the pavement.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "The second solution is what we call cool roofs. A normal dark roof can reach over 150 degrees Fahrenheit in summer. A cool roof is covered with a reflective coating, usually white, that sends most of the sunlight straight back into the sky. New York, for example, has had volunteers treating thousands of rooftops this way.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Cool roofs can go on almost any building, but they're cheapest and simplest on flat roofs, the kind you see on warehouses, schools and apartment blocks. On a steep roof, the work's harder and more dangerous. And frankly, a lot of homeowners just don't like the look of a bright white roof on their house.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "There is one drawback, though. In places with cold winters, like Chicago or Toronto, a cool roof reflects away sunlight you'd actually like to have in January. So your heating costs can go up slightly in the colder months. In most cases, though, the summer savings are far bigger than that winter penalty.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Okay, I'll stop there for today. For next week, I'd like you to look at a map of your own neighborhood and think about where the hottest spots might be, and which of these solutions would suit them. We'll compare notes in the seminar.",
+                "speaker": "lecturer"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "title": "Urban Heat Islands",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "night"
+                        ],
+                        "prompt": "Temperature difference between city and countryside is greatest at ______",
+                        "options": [],
+                        "evidence": "The gap between city and countryside is usually widest at night",
+                        "explanation": "The lecturer says many people think the difference is biggest in the afternoon, but it is actually widest at night, when the city releases stored heat."
+                    },
+                    {
+                        "answer": [
+                            "asphalt"
+                        ],
+                        "prompt": "Dark surfaces, especially ______, absorb and store heat",
+                        "options": [],
+                        "evidence": "the real culprit is asphalt, the dark material on our roads and parking lots",
+                        "explanation": "Brick and concrete are mentioned too, but the lecturer calls asphalt, the dark material on roads, the real culprit."
+                    },
+                    {
+                        "answer": [
+                            "evaporation"
+                        ],
+                        "prompt": "Fewer plants means less cooling through ______",
+                        "options": [],
+                        "evidence": "This process, evaporation, is basically nature's air conditioning.",
+                        "explanation": "Plants release water through their leaves, and evaporation of this water cools the air. Cities with few plants lose this cooling."
+                    },
+                    {
+                        "answer": [
+                            "canyons"
+                        ],
+                        "prompt": "Tall buildings and narrow streets form ______ that trap heat",
+                        "options": [],
+                        "evidence": "you get what planners call canyons",
+                        "explanation": "Tall buildings along narrow streets create 'canyons', where sunlight bounces between walls and wind cannot remove the warm air."
+                    },
+                    {
+                        "answer": [
+                            "alone"
+                        ],
+                        "prompt": "Greatest health risk: elderly people who live ______",
+                        "options": [],
+                        "evidence": "the biggest danger is to older people who live alone",
+                        "explanation": "Young children are mentioned as vulnerable, but the biggest danger is to older people living alone with nobody checking on them."
+                    },
+                    {
+                        "answer": [
+                            "ozone"
+                        ],
+                        "prompt": "Heat increases levels of ground-level ______, which harms the lungs",
+                        "options": [],
+                        "evidence": "the chemical reactions that produce ground-level ozone",
+                        "explanation": "Higher temperatures speed up the reactions that create ground-level ozone, which irritates the lungs."
+                    },
+                    {
+                        "answer": [
+                            "blackouts"
+                        ],
+                        "prompt": "Very high demand for electricity may cause ______",
+                        "options": [],
+                        "evidence": "that's when you see blackouts",
+                        "explanation": "Higher electricity bills are mentioned, but the bigger worry is that the grid cannot keep up, which leads to blackouts."
+                    },
+                    {
+                        "answer": [
+                            "west"
+                        ],
+                        "prompt": "Trees give the greatest benefit on the ______ side of a building",
+                        "options": [],
+                        "evidence": "the biggest savings come from trees on the west side",
+                        "explanation": "Many homeowners think the south side is best, but research shows trees on the west side save the most because they block the late-afternoon sun."
+                    },
+                    {
+                        "answer": [
+                            "roots"
+                        ],
+                        "prompt": "Street trees often have too little space for their ______",
+                        "options": [],
+                        "evidence": "there's very little room for roots to spread",
+                        "explanation": "Under sidewalks the soil is hard and full of pipes and cables, so roots have little room to spread."
+                    },
+                    {
+                        "answer": [
+                            "coating"
+                        ],
+                        "prompt": "Cool roofs: a reflective ______ is applied to the roof",
+                        "options": [],
+                        "evidence": "A cool roof is covered with a reflective coating",
+                        "explanation": "A cool roof is covered with a reflective coating, usually white, which sends sunlight back into the sky."
+                    },
+                    {
+                        "answer": [
+                            "flat"
+                        ],
+                        "prompt": "Most practical on ______ roofs",
+                        "options": [],
+                        "evidence": "they're cheapest and simplest on flat roofs",
+                        "explanation": "Cool roofs are cheapest and simplest on flat roofs; on steep roofs the work is harder and more dangerous."
+                    },
+                    {
+                        "answer": [
+                            "heating"
+                        ],
+                        "prompt": "Possible drawback: slightly higher ______ costs in cold climates",
+                        "options": [],
+                        "evidence": "your heating costs can go up slightly in the colder months",
+                        "explanation": "In cities with cold winters, a cool roof reflects away useful winter sunlight, so heating costs can rise a little."
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a lecturer in urban planning giving a talk about why cities become hotter than the surrounding countryside and what can be done about it.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Carolyn Mercer"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The gap between city and countryside is usually widest at night",
+                "answer": [
+                    "night"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the real culprit is asphalt, the dark material on our roads and parking lots",
+                "answer": [
+                    "asphalt"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "This process, evaporation, is basically nature's air conditioning.",
+                "answer": [
+                    "evaporation"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "When tall buildings line narrow streets, you get what planners call canyons.",
+                "answer": [
+                    "canyons"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the biggest danger is to older people who live alone",
+                "answer": [
+                    "alone"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "produce ground-level ozone, which irritates the lungs",
+                "answer": [
+                    "ozone"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "If demand gets too high, the utilities simply can't keep up, and that's when you see blackouts",
+                "answer": [
+                    "blackouts"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "research shows the biggest savings come from trees on the west side",
+                "answer": [
+                    "west"
+                ],
+                "correct": true
+            },
+            "b1q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "there's very little room for roots to spread",
+                "answer": [
+                    "roots"
+                ],
+                "correct": true
+            },
+            "b1q10": {
+                "marks": [
+                    true
+                ],
+                "quote": "A cool roof is covered with a reflective coating, usually white",
+                "answer": [
+                    "coating"
+                ],
+                "correct": true
+            },
+            "b1q11": {
+                "marks": [
+                    true
+                ],
+                "quote": "they're cheapest and simplest on flat roofs",
+                "answer": [
+                    "flat"
+                ],
+                "correct": true
+            },
+            "b1q12": {
+                "marks": [
+                    true
+                ],
+                "quote": "So your heating costs can go up slightly in the colder months.",
+                "answer": [
+                    "heating"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The gap between city and countryside is usually widest at night",
+                "answer": [
+                    "night"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "the real culprit is asphalt, the dark material on our roads and parking lots",
+                "answer": [
+                    "asphalt"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "This process, evaporation, is basically nature's air conditioning",
+                "answer": [
+                    "evaporation"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "When tall buildings line narrow streets, you get what planners call canyons",
+                "answer": [
+                    "canyons"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the biggest danger is to older people who live alone",
+                "answer": [
+                    "alone"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Higher temperatures speed up the chemical reactions that produce ground-level ozone, which irritates the lungs",
+                "answer": [
+                    "ozone"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "If demand gets too high, the utilities simply can't keep up, and that's when you see blackouts",
+                "answer": [
+                    "blackouts"
+                ],
+                "correct": true
+            },
+            "b1q8": {
+                "marks": [
+                    true
+                ],
+                "quote": "research shows the biggest savings come from trees on the west side",
+                "answer": [
+                    "west"
+                ],
+                "correct": true
+            },
+            "b1q9": {
+                "marks": [
+                    true
+                ],
+                "quote": "there's very little room for roots to spread",
+                "answer": [
+                    "roots"
+                ],
+                "correct": true
+            },
+            "b1q10": {
+                "marks": [
+                    true
+                ],
+                "quote": "A cool roof is covered with a reflective coating",
+                "answer": [
+                    "coating"
+                ],
+                "correct": true
+            },
+            "b1q11": {
+                "marks": [
+                    true
+                ],
+                "quote": "they're cheapest and simplest on flat roofs",
+                "answer": [
+                    "flat"
+                ],
+                "correct": true
+            },
+            "b1q12": {
+                "marks": [
+                    true
+                ],
+                "quote": "So your heating costs can go up slightly in the colder months",
+                "answer": [
+                    "heating"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "The gap between city and countryside is usually widest at night",
+            "answer": [
+                "night"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "the real culprit is asphalt, the dark material on our roads and parking lots",
+            "answer": [
+                "asphalt"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "This process, evaporation, is basically nature's air conditioning",
+            "answer": [
+                "evaporation"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "When tall buildings line narrow streets, you get what planners call canyons",
+            "answer": [
+                "canyons"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "the biggest danger is to older people who live alone",
+            "answer": [
+                "alone"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "produce ground-level ozone, which irritates the lungs",
+            "answer": [
+                "ozone"
+            ],
+            "correct": true
+        },
+        "b1q7": {
+            "marks": [
+                true
+            ],
+            "quote": "that's when you see blackouts",
+            "answer": [
+                "blackouts"
+            ],
+            "correct": true
+        },
+        "b1q8": {
+            "marks": [
+                true
+            ],
+            "quote": "the biggest savings come from trees on the west side",
+            "answer": [
+                "west"
+            ],
+            "correct": true
+        },
+        "b1q9": {
+            "marks": [
+                true
+            ],
+            "quote": "there's very little room for roots to spread",
+            "answer": [
+                "roots"
+            ],
+            "correct": true
+        },
+        "b1q10": {
+            "marks": [
+                true
+            ],
+            "quote": "A cool roof is covered with a reflective coating",
+            "answer": [
+                "coating"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 12,
+        "agreedFirst": 12,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 14759,
+                "wer": 0,
+                "heard": "Good morning everyone. Today we're moving on from transportation to something that affects almost every city on this continent, and that's what's known as the urban heat island. Put simply, it's the way built-up areas end up noticeably warmer than the countryside around them."
+            },
+            {
+                "ms": 21786,
+                "wer": 0,
+                "heard": "On a summer day, a downtown core can be several degrees hotter than nearby farmland. Now most people assume the difference is biggest in the middle of the afternoon, when the sun's at its strongest. In fact, that's not really the case. The gap between city and countryside is usually widest at night, because the city keeps releasing the heat it stored up during the day, while rural areas cool down fast."
+            },
+            {
+                "ms": 15073,
+                "wer": 0,
+                "heard": "So why does this happen? Well, the first reason is the materials we build with. Brick and concrete both soak up heat, but the real culprit is asphalt, the dark material on our roads and parking lots. On a sunny afternoon, it can get hot enough to burn your hand."
+            },
+            {
+                "ms": 16980,
+                "wer": 0,
+                "heard": "The second reason is the lack of vegetation. Plants draw water up from the soil and release it through their leaves, and as that water turns to vapor, it takes heat out of the air. This process, evaporation, is basically nature's air conditioning. Replace a meadow with a shopping mall and you lose it."
+            },
+            {
+                "ms": 13140,
+                "wer": 0,
+                "heard": "Third, there's the shape of the city itself. When tall buildings line narrow streets, you get what planners call canyons: sunlight bounces from wall to wall instead of escaping, and the wind can't get through to carry the warm air away."
+            },
+            {
+                "ms": 11233,
+                "wer": 0,
+                "heard": "And finally, there's waste heat from cars, from factories and, rather ironically, from air conditioners pumping hot air out onto the street. So that's four causes, all working together."
+            },
+            {
+                "ms": 10266,
+                "wer": 0,
+                "heard": "Okay, so what are the effects? Let's start with health. Heat waves are one of the deadliest kinds of extreme weather in North America, and the people most at risk aren't always the ones you'd expect."
+            },
+            {
+                "ms": 12826,
+                "wer": 0,
+                "heard": "Young children are vulnerable, yes, but the biggest danger is to older people who live alone, often in top-floor apartments, with nobody checking on them. Many of them don't realize how dangerous the heat is until it's too late."
+            },
+            {
+                "ms": 14106,
+                "wer": 0,
+                "heard": "Heat also makes air quality worse. Higher temperatures speed up the chemical reactions that produce ground-level ozone, which irritates the lungs and is especially bad for people with asthma. So on the hottest days, the air is also at its most harmful to breathe."
+            },
+            {
+                "ms": 21473,
+                "wer": 0,
+                "heard": "Then there's energy. When it's hot, everybody turns up the air conditioning at the same time, usually between about 4 and, well, 7 in the evening. Electricity bills go up, of course, but the bigger worry is the power grid. If demand gets too high, the utilities simply can't keep up, and that's when you see blackouts, which switch off the very air conditioning that vulnerable people depend on."
+            },
+            {
+                "ms": 9639,
+                "wer": 0,
+                "heard": "Right, so what can cities do about all this? The most obvious answer is trees. A mature tree shades the ground and cools the air through its leaves, as we discussed."
+            },
+            {
+                "ms": 15386,
+                "wer": 0,
+                "heard": "But where you plant it really matters. A lot of homeowners think the south side of a building is best. Actually, research shows the biggest savings come from trees on the west side because they block the low, intense sun of late afternoon. That's exactly when buildings are at their hottest."
+            },
+            {
+                "ms": 17633,
+                "wer": 0,
+                "heard": "The challenge is that city streets aren't a great place for a tree to grow. Under the sidewalk, the soil is packed hard and full of pipes and cables, so there's very little room for roots to spread. That's why so many street trees die young, and why some cities now build special underground frames that hold loose soil beneath the pavement."
+            },
+            {
+                "ms": 18260,
+                "wer": 0,
+                "heard": "The second solution is what we call cool roofs. A normal dark roof can reach over 150 degrees Fahrenheit in summer. A cool roof is covered with a reflective coating, usually white, that sends most of the sunlight straight back into the sky. New York, for example, has had volunteers treating thousands of rooftops this way."
+            },
+            {
+                "ms": 16666,
+                "wer": 0,
+                "heard": "Cool roofs can go on almost any building, but they're cheapest and simplest on flat roofs, the kind you see on warehouses, schools and apartment blocks. On a steep roof, the work's harder and more dangerous, and frankly, a lot of homeowners just don't like the look of a bright white roof on their house."
+            },
+            {
+                "ms": 16980,
+                "wer": 0,
+                "heard": "There is one drawback, though. In places with cold winters, like Chicago or Toronto, a cool roof reflects away sunlight you'd actually like to have in January, so your heating costs can go up slightly in the colder months. In most cases, though, the summer savings are far bigger than that winter penalty."
+            },
+            {
+                "ms": 11860,
+                "wer": 0,
+                "heard": "Okay, I'll stop there for today. For next week, I'd like you to look at a map of your own neighborhood and think about where the hottest spots might be, and which of these solutions would suit them. We'll compare notes in the seminar."
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16.3,
+            "truePeakDb": -1.2
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b1q7",
+            "b1q8",
+            "b1q9",
+            "b1q10"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b1q8": "first",
+            "b1q9": "first",
+            "b1q10": "first",
+            "b1q11": "first",
+            "b1q12": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "31": "b1q1",
+        "32": "b1q2",
+        "33": "b1q3",
+        "34": "b1q4",
+        "35": "b1q5",
+        "36": "b1q6",
+        "37": "b1q7",
+        "38": "b1q8",
+        "39": "b1q9",
+        "40": "b1q10"
+    },
+    "translation": {
+        "missing": []
+    }
+}

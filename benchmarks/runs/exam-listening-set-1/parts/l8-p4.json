@@ -1,0 +1,1186 @@
+{
+    "form": {
+        "first": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l8-p4.mp3",
+            "bytes": 5249132,
+            "sha256": "4908ffa2e9648dba15769e4be74bf7622d4e4c43aa979a23a12255ec2fee2402",
+            "voices": {
+                "lecturer": {
+                    "voice": "7ceZgj78jCCeAW93ItNk",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 4. You will hear a zoology lecturer giving a talk about how birds find their way when they migrate. First, you have some time to look at questions 31 to 35.",
+                    "endMs": 12200,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 42200,
+                    "purpose": "read",
+                    "startMs": 12200,
+                    "questions": [
+                        31,
+                        35
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 68960,
+                    "startMs": 42200
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 96760,
+                    "startMs": 68960
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 118400,
+                    "startMs": 96760
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 143400,
+                    "startMs": 118400
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 165840,
+                    "startMs": 143400
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 189480,
+                    "startMs": 165840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 218000,
+                    "startMs": 189480
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 36 to 40.",
+                    "endMs": 221400,
+                    "startMs": 218000
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 251400,
+                    "purpose": "read",
+                    "startMs": 221400,
+                    "questions": [
+                        36,
+                        40
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 269680,
+                    "startMs": 251400
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 291720,
+                    "startMs": 269680
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 309200,
+                    "startMs": 291720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 329800,
+                    "startMs": 309200
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 349760,
+                    "startMs": 329800
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 372840,
+                    "startMs": 349760
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 385120,
+                    "startMs": 372840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 14,
+                    "endMs": 401540,
+                    "startMs": 385120
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 4. You now have thirty seconds to check your answers.",
+                    "endMs": 407340,
+                    "startMs": 401540
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 437340,
+                    "purpose": "check",
+                    "startMs": 407340
+                }
+            ],
+            "durationMs": 437340
+        },
+        "title": "How migrating birds navigate",
+        "turns": [
+            {
+                "text": "Good morning, everyone. Today we're carrying on with animal behaviour, and I want to look at one of the big puzzles in zoology: how migrating birds find their way. Think of the bar-tailed godwit. Every September it leaves Alaska and flies non-stop to places like the Firth of Thames, here in New Zealand, a journey of over eleven thousand kilometres. So how on earth does it know where it's going?",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Let's start with the sun. In the 1950s a German scientist, Gustav Kramer, noticed something odd about caged starlings. When the season for migrating came round, they didn't sit still. They fluttered and hopped about, and they kept facing the direction they'd normally fly in. This is what we now call migratory restlessness, and it gave researchers a really handy way to measure which way a bird wants to go.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Kramer then asked whether the birds were actually using the sun. He thought about moving the cage, or putting lamps around it, but in the end he went for something simpler. He used mirrors to make the sun appear to be in a different position. And sure enough, the starlings turned to face a new direction, by just about the same amount he'd shifted the sun.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, there's a complication here. The sun moves across the sky during the day, so a bird can't just fly towards it. It has to adjust for the time, and to do that it needs an internal clock. Researchers showed this by keeping birds under artificial lights that were switched on six hours late. Their clocks were thrown out, and they headed off in the wrong direction, just as you'd predict.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "But lots of birds migrate at night. So what about the stars? In the 1960s an American researcher, Stephen Emlen, studied a small songbird called the indigo bunting. People often assume he took them to an observatory, but no, he tested them inside a planetarium, where he could control exactly which stars they saw.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What he found was fascinating. Young buntings don't come with a star map built in. Instead, as they grow, they learn which part of the sky the stars turn around, the centre of rotation, which in the northern hemisphere is close to the Pole Star. And when Emlen made the planetarium sky rotate around a different star, the birds treated that star as north.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, the third cue is the earth's magnetic field. In the 1960s Wolfgang Wiltschko put European robins in cages surrounded by electric coils, which let him change the magnetic field. The robins changed direction too. But here's the surprising part. Robins don't sense whether the field points north or south, the way a compass needle does. What they detect is the angle of the field lines in relation to the ground.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So where's the sensor? For a long time people thought it was tiny bits of iron in the beak. That idea hasn't really held up, I'm afraid. The current theory is that it involves light-sensitive proteins in the eye, which may mean that birds can actually see the magnetic field in some way.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "There's a nice example of how sensitive this system is. A team in Oldenburg, in Germany, found their robins couldn't orient at all in wooden huts on the university campus. The cause turned out to be weak electrical noise from equipment around the city. Once the huts were lined with aluminium and grounded, the birds oriented perfectly again.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "OK. Those three compasses get a bird into the right general area. But near the end of a journey, many birds switch to what they can see. They pick up familiar landmarks, things like coastlines, rivers and mountain ranges, much as you would on a road trip down the South Island.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Homing pigeons give us good evidence for this. Researchers at Oxford fitted pigeons with GPS trackers and found they flew along the same routes again and again. I'd expected them to follow railway lines, which are straight and easy to see, but in fact the birds mostly followed major roads, even turning at junctions.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Finally, smell, which was the most controversial idea. In Italy in the 1970s, Floriano Papi worked with pigeons that had lost their sense of smell. Near their loft they were fine. But when they were released at unfamiliar sites, a long way off, most of them never made it home.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Plenty of scientists doubted this, partly because birds were thought to have a weak sense of smell. Then, in 2015, a study looked at Scopoli's shearwaters, which are seabirds. Some had their sense of smell blocked for a short time. Over open ocean they got lost, but they could still navigate when they were flying along the coast, where they could use what they saw.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So what's the overall picture? Birds don't rely on a single system. They combine several, and switch between them depending on the weather and where they are. That's why they're so reliable.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "For next week, I'd like you to read about a newer problem. We used to worry mainly about noise from cities, but the bigger threat to night-flying birds seems to be light pollution, which can draw them off course. We'll look at what can be done about it. Thanks, everyone.",
+                "speaker": "lecturer"
+            }
+        ],
+        "groups": [
+            {
+                "type": "sentence_completion",
+                "limit": {
+                    "words": 2,
+                    "number": false
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "restlessness"
+                        ],
+                        "prompt": "Birds kept in cages show what is called migratory ______ when it is time to migrate.",
+                        "numbers": [
+                            31
+                        ],
+                        "evidence": "This is what we now call migratory restlessness",
+                        "explanation": {
+                            "en": "The lecturer describes caged starlings fluttering and hopping in the migration season and says this is now called migratory restlessness.",
+                            "ru": "Преподавательница описывает, как скворцы в клетке в сезон миграции бьют крыльями и прыгают, и говорит, что сейчас это называют \"migratory restlessness\".",
+                            "uk": "Лекторка описує, як шпаки в клітці в сезон міграції тріпочуть крилами й підстрибують, і каже, що тепер це називають \"migratory restlessness\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "mirrors"
+                        ],
+                        "prompt": "Kramer used ______ to change where the sun seemed to be.",
+                        "numbers": [
+                            32
+                        ],
+                        "evidence": "He used mirrors to make the sun appear to be in a different position.",
+                        "explanation": {
+                            "en": "Kramer thought about moving the cage or using lamps, but he actually used mirrors.",
+                            "ru": "Kramer думал о том, чтобы передвигать клетку или использовать лампы (\"lamps\"), но на самом деле он использовал \"mirrors\".",
+                            "uk": "Kramer думав про те, щоб пересувати клітку або використати лампи (\"lamps\"), але насправді він використав \"mirrors\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "internal clock"
+                        ],
+                        "prompt": "Because the sun moves, a bird must adjust for the time of day using an ______.",
+                        "numbers": [
+                            33
+                        ],
+                        "evidence": "to do that it needs an internal clock",
+                        "explanation": {
+                            "en": "The lecturer says a bird has to adjust for the time, and to do that it needs an internal clock.",
+                            "ru": "Преподавательница говорит, что птице приходится делать поправку на время, а для этого ей нужны внутренние часы — \"internal clock\".",
+                            "uk": "Лекторка каже, що птах має робити поправку на час, а для цього йому потрібен внутрішній годинник — \"internal clock\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "planetarium"
+                        ],
+                        "prompt": "Emlen tested indigo buntings inside a ______.",
+                        "numbers": [
+                            34
+                        ],
+                        "evidence": "he tested them inside a planetarium",
+                        "explanation": {
+                            "en": "People often think he used an observatory, but the lecturer says he tested the birds inside a planetarium.",
+                            "ru": "Часто думают, что он работал в обсерватории (\"observatory\"), но преподавательница говорит, что он проверял птиц в \"planetarium\".",
+                            "uk": "Часто думають, що він працював в обсерваторії (\"observatory\"), але лекторка каже, що він перевіряв птахів у \"planetarium\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "rotation"
+                        ],
+                        "prompt": "Young buntings learn to find north from the night sky's centre of ______.",
+                        "numbers": [
+                            35
+                        ],
+                        "evidence": "the centre of rotation",
+                        "explanation": {
+                            "en": "Young birds learn which part of the sky the stars turn around, which the lecturer calls the centre of rotation.",
+                            "ru": "Молодые птицы запоминают, вокруг какой части неба вращаются звёзды, — преподавательница называет это \"centre of rotation\".",
+                            "uk": "Молоді птахи запам'ятовують, навколо якої частини неба обертаються зірки, — лекторка називає це \"centre of rotation\"."
+                        }
+                    }
+                ],
+                "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
+            },
+            {
+                "type": "note_completion",
+                "limit": {
+                    "words": 1,
+                    "number": false
+                },
+                "title": "Magnetism, landmarks and smell",
+                "questions": [
+                    {
+                        "answer": [
+                            "eye",
+                            "eyes"
+                        ],
+                        "prompt": "Magnetic sense: probably based on light-sensitive proteins in the ______",
+                        "numbers": [
+                            36
+                        ],
+                        "evidence": "light-sensitive proteins in the eye",
+                        "explanation": {
+                            "en": "The old idea of iron in the beak has not held up; the current theory involves proteins in the eye.",
+                            "ru": "Старая идея о железе в клюве не подтвердилась; современная теория связана с \"proteins\" в глазу (\"eye\").",
+                            "uk": "Стара ідея про залізо в дзьобі не підтвердилася; сучасна теорія пов'язана з \"proteins\" в оці (\"eye\")."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "aluminium",
+                            "aluminum"
+                        ],
+                        "prompt": "Robins in Oldenburg only oriented properly when their huts were lined with ______",
+                        "numbers": [
+                            37
+                        ],
+                        "evidence": "Once the huts were lined with aluminium",
+                        "explanation": {
+                            "en": "Electrical noise from the city confused the robins until the huts were lined with aluminium.",
+                            "ru": "Электрические помехи от города сбивали малиновок с толку, пока домики не обшили изнутри \"aluminium\".",
+                            "uk": "Електричні перешкоди від міста збивали вільшанок з пантелику, доки будиночки не оббили зсередини \"aluminium\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "mountain"
+                        ],
+                        "prompt": "Near the destination: landmarks such as coastlines, rivers and ______ ranges",
+                        "numbers": [
+                            38
+                        ],
+                        "evidence": "coastlines, rivers and mountain ranges",
+                        "explanation": {
+                            "en": "The lecturer lists coastlines, rivers and mountain ranges as familiar landmarks used near the end of a journey.",
+                            "ru": "Преподавательница перечисляет береговые линии, реки и горные хребты как знакомые ориентиры — \"landmarks\", которыми птицы пользуются в конце пути.",
+                            "uk": "Лекторка перелічує узбережжя, річки та гірські хребти як знайомі орієнтири — \"landmarks\", якими птахи користуються наприкінці подорожі."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "roads"
+                        ],
+                        "prompt": "GPS trackers showed pigeons mostly following major ______",
+                        "numbers": [
+                            39
+                        ],
+                        "evidence": "the birds mostly followed major roads",
+                        "explanation": {
+                            "en": "The lecturer expected railway lines, but the pigeons mostly followed major roads.",
+                            "ru": "Преподавательница ожидала, что это будут железные дороги (\"railway lines\"), но голуби в основном летели вдоль \"major roads\".",
+                            "uk": "Лекторка очікувала, що це будуть залізниці (\"railway lines\"), але голуби здебільшого летіли вздовж \"major roads\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "unfamiliar"
+                        ],
+                        "prompt": "Pigeons unable to smell got lost when released at ______ sites",
+                        "numbers": [
+                            40
+                        ],
+                        "evidence": "when they were released at unfamiliar sites",
+                        "explanation": {
+                            "en": "The pigeons were fine near their loft but most did not get home from unfamiliar sites far away.",
+                            "ru": "Рядом с голубятней голуби ориентировались хорошо, но большинство из них не вернулись домой из незнакомых мест, расположенных далеко.",
+                            "uk": "Поблизу голубника голуби орієнтувалися добре, але більшість із них не повернулися додому з незнайомих віддалених місць."
+                        }
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a zoology lecturer giving a talk about how birds find their way when they migrate.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Rebecca Sutherland",
+                "role": "university lecturer in zoology",
+                "accent": "new_zealand",
+                "gender": "female"
+            }
+        ]
+    },
+    "plan": "l8|p4",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.193304,
+            "provider": "anthropic",
+            "outputTokens": 8603
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012476,
+            "provider": "anthropic",
+            "outputTokens": 561
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.011843,
+            "provider": "openai",
+            "outputTokens": 439
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.012618,
+            "provider": "xai",
+            "outputTokens": 985
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.061236,
+            "provider": "anthropic",
+            "outputTokens": 2844
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "How migrating birds navigate",
+        "turns": [
+            {
+                "text": "Good morning, everyone. Today we're carrying on with animal behaviour, and I want to look at one of the big puzzles in zoology: how migrating birds find their way. Think of the bar-tailed godwit. Every September it leaves Alaska and flies non-stop to places like the Firth of Thames, here in New Zealand, a journey of over eleven thousand kilometres. So how on earth does it know where it's going?",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Let's start with the sun. In the 1950s a German scientist, Gustav Kramer, noticed something odd about caged starlings. When the season for migrating came round, they didn't sit still. They fluttered and hopped about, and they kept facing the direction they'd normally fly in. This is what we now call migratory restlessness, and it gave researchers a really handy way to measure which way a bird wants to go.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Kramer then asked whether the birds were actually using the sun. He thought about moving the cage, or putting lamps around it, but in the end he went for something simpler. He used mirrors to make the sun appear to be in a different position. And sure enough, the starlings turned to face a new direction, by just about the same amount he'd shifted the sun.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Now, there's a complication here. The sun moves across the sky during the day, so a bird can't just fly towards it. It has to adjust for the time, and to do that it needs an internal clock. Researchers showed this by keeping birds under artificial lights that were switched on six hours late. Their clocks were thrown out, and they headed off in the wrong direction, just as you'd predict.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "But lots of birds migrate at night. So what about the stars? In the 1960s an American researcher, Stephen Emlen, studied a small songbird called the indigo bunting. People often assume he took them to an observatory, but no, he tested them inside a planetarium, where he could control exactly which stars they saw.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "What he found was fascinating. Young buntings don't come with a star map built in. Instead, as they grow, they learn which part of the sky the stars turn around, the centre of rotation, which in the northern hemisphere is close to the Pole Star. And when Emlen made the planetarium sky rotate around a different star, the birds treated that star as north.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Right, the third cue is the earth's magnetic field. In the 1960s Wolfgang Wiltschko put European robins in cages surrounded by electric coils, which let him change the magnetic field. The robins changed direction too. But here's the surprising part. Robins don't sense whether the field points north or south, the way a compass needle does. What they detect is the angle of the field lines in relation to the ground.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So where's the sensor? For a long time people thought it was tiny bits of iron in the beak. That idea hasn't really held up, I'm afraid. The current theory is that it involves light-sensitive proteins in the eye, which may mean that birds can actually see the magnetic field in some way.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "There's a nice example of how sensitive this system is. A team in Oldenburg, in Germany, found their robins couldn't orient at all in wooden huts on the university campus. The cause turned out to be weak electrical noise from equipment around the city. Once the huts were lined with aluminium and grounded, the birds oriented perfectly again.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "OK. Those three compasses get a bird into the right general area. But near the end of a journey, many birds switch to what they can see. They pick up familiar landmarks, things like coastlines, rivers and mountain ranges, much as you would on a road trip down the South Island.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Homing pigeons give us good evidence for this. Researchers at Oxford fitted pigeons with GPS trackers and found they flew along the same routes again and again. I'd expected them to follow railway lines, which are straight and easy to see, but in fact the birds mostly followed major roads, even turning at junctions.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Finally, smell, which was the most controversial idea. In Italy in the 1970s, Floriano Papi worked with pigeons that had lost their sense of smell. Near their loft they were fine. But when they were released at unfamiliar sites, a long way off, most of them never made it home.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "Plenty of scientists doubted this, partly because birds were thought to have a weak sense of smell. Then, in 2015, a study looked at Scopoli's shearwaters, which are seabirds. Some had their sense of smell blocked for a short time. Over open ocean they got lost, but they could still navigate when they were flying along the coast, where they could use what they saw.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "So what's the overall picture? Birds don't rely on a single system. They combine several, and switch between them depending on the weather and where they are. That's why they're so reliable.",
+                "speaker": "lecturer"
+            },
+            {
+                "text": "For next week, I'd like you to read about a newer problem. We used to worry mainly about noise from cities, but the bigger threat to night-flying birds seems to be light pollution, which can draw them off course. We'll look at what can be done about it. Thanks, everyone.",
+                "speaker": "lecturer"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "sentence_completion",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "restlessness"
+                        ],
+                        "prompt": "Birds kept in cages show what is called migratory ______ when it is time to migrate.",
+                        "options": [],
+                        "evidence": "This is what we now call migratory restlessness",
+                        "explanation": "The lecturer describes caged starlings fluttering and hopping in the migration season and says this is now called migratory restlessness."
+                    },
+                    {
+                        "answer": [
+                            "mirrors"
+                        ],
+                        "prompt": "Kramer used ______ to change where the sun seemed to be.",
+                        "options": [],
+                        "evidence": "He used mirrors to make the sun appear to be in a different position.",
+                        "explanation": "Kramer thought about moving the cage or using lamps, but he actually used mirrors."
+                    },
+                    {
+                        "answer": [
+                            "internal clock"
+                        ],
+                        "prompt": "Because the sun moves, a bird must adjust for the time of day using an ______.",
+                        "options": [],
+                        "evidence": "to do that it needs an internal clock",
+                        "explanation": "The lecturer says a bird has to adjust for the time, and to do that it needs an internal clock."
+                    },
+                    {
+                        "answer": [
+                            "planetarium"
+                        ],
+                        "prompt": "Emlen tested indigo buntings inside a ______.",
+                        "options": [],
+                        "evidence": "he tested them inside a planetarium",
+                        "explanation": "People often think he used an observatory, but the lecturer says he tested the birds inside a planetarium."
+                    },
+                    {
+                        "answer": [
+                            "rotation"
+                        ],
+                        "prompt": "Young buntings learn to find north from the night sky's centre of ______.",
+                        "options": [],
+                        "evidence": "the centre of rotation",
+                        "explanation": "Young birds learn which part of the sky the stars turn around, which the lecturer calls the centre of rotation."
+                    },
+                    {
+                        "answer": [
+                            "angle"
+                        ],
+                        "prompt": "Robins sense the ______ of the earth's magnetic field lines, not which way they point.",
+                        "options": [],
+                        "evidence": "What they detect is the angle of the field lines",
+                        "explanation": "Robins do not sense north or south like a compass needle; they detect the angle of the field lines in relation to the ground."
+                    }
+                ],
+                "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
+            },
+            {
+                "type": "note_completion",
+                "reuse": false,
+                "title": "Magnetism, landmarks and smell",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "eye",
+                            "eyes"
+                        ],
+                        "prompt": "Magnetic sense: probably based on light-sensitive proteins in the ______",
+                        "options": [],
+                        "evidence": "light-sensitive proteins in the eye",
+                        "explanation": "The old idea of iron in the beak has not held up; the current theory involves proteins in the eye."
+                    },
+                    {
+                        "answer": [
+                            "aluminium",
+                            "aluminum"
+                        ],
+                        "prompt": "Robins in Oldenburg only oriented properly when their huts were lined with ______",
+                        "options": [],
+                        "evidence": "Once the huts were lined with aluminium",
+                        "explanation": "Electrical noise from the city confused the robins until the huts were lined with aluminium."
+                    },
+                    {
+                        "answer": [
+                            "mountain"
+                        ],
+                        "prompt": "Near the destination: landmarks such as coastlines, rivers and ______ ranges",
+                        "options": [],
+                        "evidence": "coastlines, rivers and mountain ranges",
+                        "explanation": "The lecturer lists coastlines, rivers and mountain ranges as familiar landmarks used near the end of a journey."
+                    },
+                    {
+                        "answer": [
+                            "roads"
+                        ],
+                        "prompt": "GPS trackers showed pigeons mostly following major ______",
+                        "options": [],
+                        "evidence": "the birds mostly followed major roads",
+                        "explanation": "The lecturer expected railway lines, but the pigeons mostly followed major roads."
+                    },
+                    {
+                        "answer": [
+                            "unfamiliar"
+                        ],
+                        "prompt": "Pigeons unable to smell got lost when released at ______ sites",
+                        "options": [],
+                        "evidence": "when they were released at unfamiliar sites",
+                        "explanation": "The pigeons were fine near their loft but most did not get home from unfamiliar sites far away."
+                    },
+                    {
+                        "answer": [
+                            "coast"
+                        ],
+                        "prompt": "Shearwaters unable to smell could still navigate along the ______",
+                        "options": [],
+                        "evidence": "they could still navigate when they were flying along the coast",
+                        "explanation": "They got lost over open ocean, but could still find their way along the coast, where they could see landmarks."
+                    },
+                    {
+                        "answer": [
+                            "pollution"
+                        ],
+                        "prompt": "Next week: the effect of light ______ on night-flying birds",
+                        "options": [],
+                        "evidence": "the bigger threat to night-flying birds seems to be light pollution",
+                        "explanation": "Noise from cities was the old worry, but the lecturer says the bigger threat is light pollution."
+                    }
+                ],
+                "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer."
+            }
+        ],
+        "context": "You will hear a zoology lecturer giving a talk about how birds find their way when they migrate.",
+        "speakers": [
+            {
+                "id": "lecturer",
+                "name": "Rebecca Sutherland"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is what we now call migratory restlessness",
+                "answer": [
+                    "restlessness"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "He used mirrors to make the sun appear to be in a different position.",
+                "answer": [
+                    "mirrors"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "It has to adjust for the time, and to do that it needs an internal clock.",
+                "answer": [
+                    "internal clock"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "he tested them inside a planetarium",
+                "answer": [
+                    "planetarium"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "they learn which part of the sky the stars turn around, the centre of rotation",
+                "answer": [
+                    "rotation"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "What they detect is the angle of the field lines in relation to the ground.",
+                "answer": [
+                    "angle"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "light-sensitive proteins in the eye",
+                "answer": [
+                    "eye"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Once the huts were lined with aluminium and grounded, the birds oriented perfectly again.",
+                "answer": [
+                    "aluminium"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "things like coastlines, rivers and mountain ranges",
+                "answer": [
+                    "mountain"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "the birds mostly followed major roads, even turning at junctions",
+                "answer": [
+                    "roads"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "when they were released at unfamiliar sites, a long way off, most of them never made it home",
+                "answer": [
+                    "unfamiliar"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "they could still navigate when they were flying along the coast",
+                "answer": [
+                    "coast"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "the bigger threat to night-flying birds seems to be light pollution",
+                "answer": [
+                    "pollution"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "This is what we now call migratory restlessness",
+                "answer": [
+                    "restlessness"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "He used mirrors to make the sun appear to be in a different position.",
+                "answer": [
+                    "mirrors"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "it has to adjust for the time, and to do that it needs an internal clock",
+                "answer": [
+                    "internal clock"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "he tested them inside a planetarium",
+                "answer": [
+                    "planetarium"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "they learn which part of the sky the stars turn around, the centre of rotation",
+                "answer": [
+                    "rotation"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "What they detect is the angle of the field lines in relation to the ground.",
+                "answer": [
+                    "angle"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "The current theory is that it involves light-sensitive proteins in the eye",
+                "answer": [
+                    "eye"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Once the huts were lined with aluminium and grounded",
+                "answer": [
+                    "aluminium"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "things like coastlines, rivers and mountain ranges",
+                "answer": [
+                    "mountain"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "but in fact the birds mostly followed major roads",
+                "answer": [
+                    "roads"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "when they were released at unfamiliar sites",
+                "answer": [
+                    "unfamiliar"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "they could still navigate when they were flying along the coast",
+                "answer": [
+                    "coast"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "the bigger threat to night-flying birds seems to be light pollution",
+                "answer": [
+                    "pollution"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "This is what we now call migratory restlessness",
+            "answer": [
+                "restlessness"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "He used mirrors to make the sun appear to be in a different position.",
+            "answer": [
+                "mirrors"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "to do that it needs an internal clock",
+            "answer": [
+                "internal clock"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "he tested them inside a planetarium",
+            "answer": [
+                "planetarium"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "the centre of rotation, which in the northern hemisphere is close to the Pole Star",
+            "answer": [
+                "rotation"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "light-sensitive proteins in the eye",
+            "answer": [
+                "eye"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Once the huts were lined with aluminium and grounded, the birds oriented perfectly again.",
+            "answer": [
+                "aluminium"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "things like coastlines, rivers and mountain ranges",
+            "answer": [
+                "mountain"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "the birds mostly followed major roads, even turning at junctions",
+            "answer": [
+                "roads"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "when they were released at unfamiliar sites, a long way off, most of them never made it home",
+            "answer": [
+                "unfamiliar"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 13,
+        "agreedFirst": 13,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 26480,
+                "wer": 0.056,
+                "heard": "Good morning everyone. Today we're carrying on with animal behavior, and I want to look at one of the big puzzles in zoology: how migrating birds find their way. Think of the bar-tailed godwit. Every September, it leaves Alaska and flies nonstop to places like the Firth of Thames here in New Zealand, a journey of over 11,000 kilometers. So how on earth does it know where it's going?"
+            },
+            {
+                "ms": 27520,
+                "wer": 0,
+                "heard": "Let's start with the sun. In the 1950s, a German scientist, Gustav Kramer, noticed something odd about caged starlings. When the season for migrating came round, they didn't sit still. They fluttered and hopped about, and they kept facing the direction they'd normally fly in. This is what we now call migratory restlessness, and it gave researchers a really handy way to measure which way a bird wants to go."
+            },
+            {
+                "ms": 21360,
+                "wer": 0.015,
+                "heard": "Kreimer then asked whether the birds were actually using the sun. He thought about moving the cage, or putting lamps around it, but in the end he went for something simpler: he used mirrors to make the sun appear to be in a different position. And sure enough, the starlings turned to face a new direction, by just about the same amount he'd shifted the sun."
+            },
+            {
+                "ms": 24720,
+                "wer": 0,
+                "heard": "Now, there's a complication here. The Sun moves across the sky during the day, so a bird can't just fly towards it; it has to adjust for the time. And to do that, it needs an internal clock. Researchers showed this by keeping birds under artificial lights that were switched on six hours late. Their clocks were thrown out, and they headed off in the wrong direction, just as you'd predict."
+            },
+            {
+                "ms": 22160,
+                "wer": 0,
+                "heard": "But lots of birds migrate at night, so what about the stars? In the 1960s, an American researcher, Stephen Emlen, studied a small songbird called the indigo bunting. People often assume he took them to an observatory, but no, he tested them inside a planetarium, where he could control exactly which stars they saw."
+            },
+            {
+                "ms": 23360,
+                "wer": 0,
+                "heard": "What he found was fascinating. Young buntings don't come with a star map built in. Instead, as they grow, they learn which part of the sky the stars turn around, the centre of rotation, which in the northern hemisphere is close to the Pole Star. And when Emlen made the planetarium sky rotate around a different star, the birds treated that star as north."
+            },
+            {
+                "ms": 28240,
+                "wer": 0,
+                "heard": "Right, the third cue is the Earth's magnetic field. In the 1960s, Wolfgang Wiltschko put European robins in cages surrounded by electric coils, which let him change the magnetic field. The robins changed direction too. But here's the surprising part. Robins don't sense whether the field points north or south, the way a compass needle does. What they detect is the angle of the field lines in relation to the ground."
+            },
+            {
+                "ms": 18000,
+                "wer": 0,
+                "heard": "So where's the sensor? For a long time people thought it was tiny bits of iron in the beak. That idea hasn't really held up, I'm afraid. The current theory is that it involves light-sensitive proteins in the eye, which may mean that birds can actually see the magnetic field in some way."
+            },
+            {
+                "ms": 21760,
+                "wer": 0,
+                "heard": "There's a nice example of how sensitive this system is. A team in Oldenburg, in Germany, found their robins couldn't orient at all in wooden huts on the university campus. The cause turned out to be weak electrical noise from equipment around the city. Once the huts were lined with aluminium and grounded, the birds oriented perfectly again."
+            },
+            {
+                "ms": 17200,
+                "wer": 0,
+                "heard": "OK, those three compasses get a bird into the right general area. But near the end of a journey, many birds switch to what they can see. They pick up familiar landmarks - things like coastlines, rivers, and mountain ranges - much as you would on a road trip down the South Island."
+            },
+            {
+                "ms": 20320,
+                "wer": 0,
+                "heard": "Homing pigeons give us good evidence for this. Researchers at Oxford fitted pigeons with GPS trackers and found they flew along the same routes again and again. I'd expected them to follow railway lines, which are straight and easy to see, but in fact the birds mostly followed major roads, even turning at junctions."
+            },
+            {
+                "ms": 19680,
+                "wer": 0,
+                "heard": "Finally, smell, which was the most controversial idea. In Italy in the 1970s Floriano Papi worked with pigeons that had lost their sense of smell. Near their loft they were fine, but when they were released at unfamiliar sites a long way off, most of them never made it home."
+            },
+            {
+                "ms": 22800,
+                "wer": 0,
+                "heard": "Plenty of scientists doubted this, partly because birds were thought to have a weak sense of smell. Then, in 2015, a study looked at Scopoli's shearwaters, which are seabirds. Some had their sense of smell blocked for a short time. Over open ocean they got lost, but they could still navigate when they were flying along the coast, where they could use what they saw."
+            },
+            {
+                "ms": 12000,
+                "wer": 0,
+                "heard": "So what's the overall picture? Birds don't rely on a single system: they combine several, and switch between them depending on the weather and where they are. That's why they're so reliable."
+            },
+            {
+                "ms": 16000,
+                "wer": 0,
+                "heard": "For next week I'd like you to read about a newer problem. We used to worry mainly about noise from cities, but the bigger threat to night-flying birds seems to be light pollution, which can draw them off course. We'll look at what can be done about it. Thanks, everyone."
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16.5,
+            "truePeakDb": -1.1
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "31": "b1q1",
+        "32": "b1q2",
+        "33": "b1q3",
+        "34": "b1q4",
+        "35": "b1q5",
+        "36": "b2q1",
+        "37": "b2q2",
+        "38": "b2q3",
+        "39": "b2q4",
+        "40": "b2q5"
+    },
+    "translation": {
+        "missing": []
+    }
+}

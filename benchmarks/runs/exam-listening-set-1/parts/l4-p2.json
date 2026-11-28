@@ -1,0 +1,1205 @@
+{
+    "form": {
+        "first": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l4-p2.mp3",
+            "bytes": 4284332,
+            "sha256": "9053df9a592e0105ad14605848eed92c40510aee4d13a06bb8a79955b7f528a7",
+            "voices": {
+                "manager": {
+                    "voice": "FF59babHL8N8gfTgtBMT",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 2. You will hear a manager talking to a group of new staff on the day before a summer music festival opens. First, you have some time to look at questions 11 to 14.",
+                    "endMs": 12200,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 42200,
+                    "purpose": "read",
+                    "startMs": 12200,
+                    "questions": [
+                        11,
+                        14
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 65280,
+                    "startMs": 42200
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 81640,
+                    "startMs": 65280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 107040,
+                    "startMs": 81640
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 125320,
+                    "startMs": 107040
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 141200,
+                    "startMs": 125320
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 157800,
+                    "startMs": 141200
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 179760,
+                    "startMs": 157800
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 15 to 20.",
+                    "endMs": 183000,
+                    "startMs": 179760
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 213000,
+                    "purpose": "read",
+                    "startMs": 183000,
+                    "questions": [
+                        15,
+                        20
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 236080,
+                    "startMs": 213000
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 247720,
+                    "startMs": 236080
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 259840,
+                    "startMs": 247720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 276600,
+                    "startMs": 259840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 299760,
+                    "startMs": 276600
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 321140,
+                    "startMs": 299760
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 2. You now have thirty seconds to check your answers.",
+                    "endMs": 326940,
+                    "startMs": 321140
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 356940,
+                    "purpose": "check",
+                    "startMs": 326940
+                }
+            ],
+            "durationMs": 356940
+        },
+        "title": "Briefing for festival staff",
+        "turns": [
+            {
+                "text": "Good morning, everyone, and welcome to the Larkmoor Music Festival. My name's Claire Hollis, and I'm the staff manager, so for the next four days I'm the person you'll see running around with a clipboard. Before we hand out uniforms, I want to go through a few things: the jobs, your shifts, the rules, and who to contact when something goes wrong. It shouldn't take more than a quarter of an hour.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Right, jobs first. Most of you applied for a particular role, and we've tried to give everyone what they asked for. Bar work, for example, is completely full now, and so is ticket scanning at the entrance gates, so we won't be moving anyone into those teams.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Where we're really short is in the car parks, directing the traffic, and in the recycling team, picking up litter. Most visitors arrive on Thursday afternoon, sorry, Friday afternoon, so that's when the car parks are busiest. Litter picking isn't glamorous, I know, but it's often the job people enjoy most by Sunday. The information tents, on the other hand, have more than enough volunteers already.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Okay, shifts. Each one is six hours, not eight, as it said in some of the old adverts. You need to sign in at the crew check-in tent at least fifteen minutes before you start. Every shift includes a thirty-minute break, and before anyone asks, yes, you're paid for it.",
+                "speaker": "manager"
+            },
+            {
+                "text": "A few of you have asked about night shifts. There's no extra pay for those, I'm afraid, but you do get the following day off. And the rota is drawn up by my team, so you can't pick your own shifts online, although you can ask to change them, which I'll come back to.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Now, rules. Some of them might surprise you. Phones, for instance: we'd actually like you to keep them switched on, because we send updates to a staff group chat. And photos are fine anywhere, even backstage, as long as you don't post the backstage ones online.",
+                "speaker": "manager"
+            },
+            {
+                "text": "But there are two rules we're very strict about. You mustn't drink alcohol while you're wearing your staff T-shirt, even after your shift if you haven't changed. And your wristband is for you alone, so no bringing friends or family onto the site, not even for half an hour. Oh, and footwear: trainers are fine, you don't need safety boots, just nothing open-toed.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Right, the last thing, and probably the most important, is who to contact. You'll get a card with all the numbers on, but let me go through it. If you need to change a shift, say you've swapped with a friend, you might think your area supervisor can sort it out, but they can't. That has to go through the staff office, which is the green cabin behind the main stage.",
+                "speaker": "manager"
+            },
+            {
+                "say": "If your wristband gets damaged, or you lose it, go to the accreditation desk at the staff entrance. They'll print you a new one, but it costs fifteen pounds, so do look after it.",
+                "text": "If your wristband gets damaged, or you lose it, go to the accreditation desk at the staff entrance. They'll print you a new one, but it costs £15, so do look after it.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Next, unattended bags. Please don't pick them up and carry them over to lost property, and don't open them. Just radio security control and stay nearby until someone arrives.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Something that happens every year is a child who's lost their parents. Your first thought might be to call security, or to take them to the medical centre, but neither is right unless the child's hurt. Walk them to the information point by the main gate, because that's where our welfare team is based.",
+                "speaker": "manager"
+            },
+            {
+                "say": "If there's a problem with your meal vouchers, so you haven't been given any, or a food stall won't accept them, speak to the catering manager. Each voucher's worth eight pounds, by the way, and you get two per shift. And if you're running late, don't ring the staff office, because they won't pass the message on in time. Call your area supervisor directly, since they're the one who'll need to find cover.",
+                "text": "If there's a problem with your meal vouchers, so you haven't been given any, or a food stall won't accept them, speak to the catering manager. Each voucher's worth £8, by the way, and you get two per shift. And if you're running late, don't ring the staff office, because they won't pass the message on in time. Call your area supervisor directly, since they're the one who'll need to find cover.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Finally, if you hurt yourself while you're working, even if it's only a small cut, you must go to the medical centre so it's recorded. Don't just ask a colleague for a plaster. Oh, and if you miss the last staff shuttle bus back to town, the transport desk closes at midnight, so plan ahead. Right, any questions before we hand out the T-shirts?",
+                "speaker": "manager"
+            }
+        ],
+        "groups": [
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "collecting rubbish around the site"
+                    },
+                    {
+                        "id": "B",
+                        "text": "checking tickets as visitors arrive"
+                    },
+                    {
+                        "id": "C",
+                        "text": "serving drinks at the festival bars"
+                    },
+                    {
+                        "id": "D",
+                        "text": "helping drivers to park their cars"
+                    },
+                    {
+                        "id": "E",
+                        "text": "answering questions at information tents"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "D"
+                        ],
+                        "prompt": "Which TWO jobs does the manager say still need more staff?",
+                        "numbers": [
+                            11,
+                            12
+                        ],
+                        "evidence": "Where we're really short is in the car parks, directing the traffic, and in the recycling team, picking up litter.",
+                        "explanation": {
+                            "en": "The manager needs more people in the car parks and for picking up litter. Bar work and ticket scanning are already full, and the information tents have more than enough volunteers.",
+                            "ru": "Менеджеру нужно больше людей на \"car parks\" и для уборки мусора (\"picking up litter\"). На \"bar work\" и \"ticket scanning\" людей уже хватает, а в \"information tents\" волонтёров более чем достаточно.",
+                            "uk": "Менеджеру потрібно більше людей на \"car parks\" і для збирання сміття (\"picking up litter\"). На \"bar work\" і \"ticket scanning\" людей уже вистачає, а в \"information tents\" волонтерів більш ніж достатньо."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "multiple_choice_multi",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Each shift lasts for eight hours."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Staff can choose their own shifts online."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Night shifts are paid at a higher rate."
+                    },
+                    {
+                        "id": "D",
+                        "text": "The break during each shift is paid."
+                    },
+                    {
+                        "id": "E",
+                        "text": "Staff sign in a quarter of an hour early."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "D",
+                            "E"
+                        ],
+                        "prompt": "Which TWO statements about shifts are correct?",
+                        "numbers": [
+                            13,
+                            14
+                        ],
+                        "evidence": "sign in at the crew check-in tent at least fifteen minutes before you start. Every shift includes a thirty-minute break, and before anyone asks, yes, you're paid for it.",
+                        "explanation": {
+                            "en": "Staff must sign in fifteen minutes, a quarter of an hour, before they start, and they are paid for their break. Shifts are six hours, not eight, there is no extra pay for nights, and staff cannot pick their shifts online.",
+                            "ru": "Сотрудники должны отмечаться за \"fifteen minutes\", то есть \"a quarter of an hour\", до начала работы, а перерыв (\"break\") им оплачивается. Смены длятся шесть часов, а не восемь, доплаты за ночные смены нет, и выбирать смены онлайн нельзя.",
+                            "uk": "Працівники мають відмічатися за \"fifteen minutes\", тобто \"a quarter of an hour\", до початку роботи, а перерву (\"break\") їм оплачують. Зміни тривають шість годин, а не вісім, доплати за нічні зміни немає, і обирати зміни онлайн не можна."
+                        }
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "matching_features",
+                "reuse": false,
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Area supervisor"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Security control"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Medical centre"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Lost property"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Staff office"
+                    },
+                    {
+                        "id": "F",
+                        "text": "Accreditation desk"
+                    },
+                    {
+                        "id": "G",
+                        "text": "Catering manager"
+                    },
+                    {
+                        "id": "H",
+                        "text": "Information point"
+                    },
+                    {
+                        "id": "I",
+                        "text": "Transport desk"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "changing a shift",
+                        "numbers": [
+                            15
+                        ],
+                        "evidence": "That has to go through the staff office",
+                        "explanation": {
+                            "en": "The manager says the area supervisor cannot change a shift; this must go through the staff office.",
+                            "ru": "Менеджер говорит, что \"area supervisor\" не может поменять смену — это делается через \"staff office\".",
+                            "uk": "Менеджер каже, що \"area supervisor\" не може змінити зміну — це робиться через \"staff office\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "a lost or damaged wristband",
+                        "numbers": [
+                            16
+                        ],
+                        "evidence": "go to the accreditation desk at the staff entrance",
+                        "explanation": {
+                            "en": "If a wristband is damaged or lost, staff go to the accreditation desk, which prints a new one for £15.",
+                            "ru": "Если браслет (\"wristband\") повреждён или потерян, нужно идти на \"accreditation desk\", где напечатают новый за \"£15\".",
+                            "uk": "Якщо браслет (\"wristband\") пошкоджений або загублений, треба йти до \"accreditation desk\", де надрукують новий за \"£15\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a bag left unattended",
+                        "numbers": [
+                            17
+                        ],
+                        "evidence": "Just radio security control and stay nearby until someone arrives.",
+                        "explanation": {
+                            "en": "Staff should not take the bag to lost property; they should contact security control and wait nearby.",
+                            "ru": "Сумку не нужно относить в \"lost property\": следует связаться с \"security control\" и ждать поблизости.",
+                            "uk": "Сумку не треба відносити до \"lost property\": слід зв'язатися з \"security control\" і чекати поруч."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "H"
+                        ],
+                        "prompt": "a child who cannot find their parents",
+                        "numbers": [
+                            18
+                        ],
+                        "evidence": "Walk them to the information point by the main gate",
+                        "explanation": {
+                            "en": "Security and the medical centre are mentioned but rejected; the child should be taken to the information point, where the welfare team is.",
+                            "ru": "\"Security\" и \"medical centre\" упоминаются, но не подходят: ребёнка нужно отвести в \"information point\", где находится \"welfare team\".",
+                            "uk": "\"Security\" і \"medical centre\" згадуються, але не підходять: дитину треба відвести до \"information point\", де працює \"welfare team\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "problems with meal vouchers",
+                        "numbers": [
+                            19
+                        ],
+                        "evidence": "speak to the catering manager",
+                        "explanation": {
+                            "en": "If staff have no vouchers or a food stall won't accept them, they should speak to the catering manager.",
+                            "ru": "Если у сотрудника нет талонов (\"vouchers\") или точка с едой их не принимает, нужно обратиться к \"catering manager\".",
+                            "uk": "Якщо в працівника немає талонів (\"vouchers\") або точка з їжею їх не приймає, треба звернутися до \"catering manager\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "arriving late for a shift",
+                        "numbers": [
+                            20
+                        ],
+                        "evidence": "Call your area supervisor directly",
+                        "explanation": {
+                            "en": "The staff office is mentioned, but the manager says not to ring it; late staff should call their area supervisor, who finds cover.",
+                            "ru": "\"Staff office\" упоминается, но менеджер говорит туда не звонить: опаздывающие сотрудники должны позвонить своему \"area supervisor\", который найдёт замену.",
+                            "uk": "\"Staff office\" згадується, але менеджер каже туди не телефонувати: працівники, які запізнюються, мають зателефонувати своєму \"area supervisor\", який знайде заміну."
+                        }
+                    }
+                ],
+                "instruction": "Who should staff contact in each situation? Choose SIX answers from the box and write the correct letter, A–I, next to questions 15–20."
+            }
+        ],
+        "context": "You will hear a manager talking to a group of new staff on the day before a summer music festival opens.",
+        "speakers": [
+            {
+                "id": "manager",
+                "name": "Claire Hollis",
+                "role": "festival staff manager",
+                "accent": "british",
+                "gender": "female"
+            }
+        ]
+    },
+    "plan": "l4|p2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.25582,
+            "provider": "anthropic",
+            "outputTokens": 11803
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.012602,
+            "provider": "anthropic",
+            "outputTokens": 513
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.01525,
+            "provider": "openai",
+            "outputTokens": 628
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.013186,
+            "provider": "xai",
+            "outputTokens": 1019
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.052216,
+            "provider": "anthropic",
+            "outputTokens": 2402
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 0,
+            "rows": 0,
+            "paths": [],
+            "title": "",
+            "features": [],
+            "entrances": []
+        },
+        "title": "Briefing for festival staff",
+        "turns": [
+            {
+                "text": "Good morning, everyone, and welcome to the Larkmoor Music Festival. My name's Claire Hollis, and I'm the staff manager, so for the next four days I'm the person you'll see running around with a clipboard. Before we hand out uniforms, I want to go through a few things: the jobs, your shifts, the rules, and who to contact when something goes wrong. It shouldn't take more than a quarter of an hour.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Right, jobs first. Most of you applied for a particular role, and we've tried to give everyone what they asked for. Bar work, for example, is completely full now, and so is ticket scanning at the entrance gates, so we won't be moving anyone into those teams.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Where we're really short is in the car parks, directing the traffic, and in the recycling team, picking up litter. Most visitors arrive on Thursday afternoon, sorry, Friday afternoon, so that's when the car parks are busiest. Litter picking isn't glamorous, I know, but it's often the job people enjoy most by Sunday. The information tents, on the other hand, have more than enough volunteers already.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Okay, shifts. Each one is six hours, not eight, as it said in some of the old adverts. You need to sign in at the crew check-in tent at least fifteen minutes before you start. Every shift includes a thirty-minute break, and before anyone asks, yes, you're paid for it.",
+                "speaker": "manager"
+            },
+            {
+                "text": "A few of you have asked about night shifts. There's no extra pay for those, I'm afraid, but you do get the following day off. And the rota is drawn up by my team, so you can't pick your own shifts online, although you can ask to change them, which I'll come back to.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Now, rules. Some of them might surprise you. Phones, for instance: we'd actually like you to keep them switched on, because we send updates to a staff group chat. And photos are fine anywhere, even backstage, as long as you don't post the backstage ones online.",
+                "speaker": "manager"
+            },
+            {
+                "text": "But there are two rules we're very strict about. You mustn't drink alcohol while you're wearing your staff T-shirt, even after your shift if you haven't changed. And your wristband is for you alone, so no bringing friends or family onto the site, not even for half an hour. Oh, and footwear: trainers are fine, you don't need safety boots, just nothing open-toed.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Right, the last thing, and probably the most important, is who to contact. You'll get a card with all the numbers on, but let me go through it. If you need to change a shift, say you've swapped with a friend, you might think your area supervisor can sort it out, but they can't. That has to go through the staff office, which is the green cabin behind the main stage.",
+                "speaker": "manager"
+            },
+            {
+                "text": "If your wristband gets damaged, or you lose it, go to the accreditation desk at the staff entrance. They'll print you a new one, but it costs £15, so do look after it.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Next, unattended bags. Please don't pick them up and carry them over to lost property, and don't open them. Just radio security control and stay nearby until someone arrives.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Something that happens every year is a child who's lost their parents. Your first thought might be to call security, or to take them to the medical centre, but neither is right unless the child's hurt. Walk them to the information point by the main gate, because that's where our welfare team is based.",
+                "speaker": "manager"
+            },
+            {
+                "text": "If there's a problem with your meal vouchers, so you haven't been given any, or a food stall won't accept them, speak to the catering manager. Each voucher's worth £8, by the way, and you get two per shift. And if you're running late, don't ring the staff office, because they won't pass the message on in time. Call your area supervisor directly, since they're the one who'll need to find cover.",
+                "speaker": "manager"
+            },
+            {
+                "text": "Finally, if you hurt yourself while you're working, even if it's only a small cut, you must go to the medical centre so it's recorded. Don't just ask a colleague for a plaster. Oh, and if you miss the last staff shuttle bus back to town, the transport desk closes at midnight, so plan ahead. Right, any questions before we hand out the T-shirts?",
+                "speaker": "manager"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "multiple_choice_multi",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A",
+                            "D"
+                        ],
+                        "prompt": "Which TWO jobs does the manager say still need more staff?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "helping drivers to park their cars"
+                            },
+                            {
+                                "id": "B",
+                                "text": "serving drinks at the festival bars"
+                            },
+                            {
+                                "id": "C",
+                                "text": "checking tickets as visitors arrive"
+                            },
+                            {
+                                "id": "D",
+                                "text": "collecting rubbish around the site"
+                            },
+                            {
+                                "id": "E",
+                                "text": "answering questions at information tents"
+                            }
+                        ],
+                        "evidence": "Where we're really short is in the car parks, directing the traffic, and in the recycling team, picking up litter.",
+                        "explanation": "The manager needs more people in the car parks and for picking up litter. Bar work and ticket scanning are already full, and the information tents have more than enough volunteers."
+                    },
+                    {
+                        "answer": [
+                            "B",
+                            "E"
+                        ],
+                        "prompt": "Which TWO statements about shifts are correct?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "Each shift lasts for eight hours."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Staff sign in a quarter of an hour early."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Night shifts are paid at a higher rate."
+                            },
+                            {
+                                "id": "D",
+                                "text": "Staff can choose their own shifts online."
+                            },
+                            {
+                                "id": "E",
+                                "text": "The break during each shift is paid."
+                            }
+                        ],
+                        "evidence": "sign in at the crew check-in tent at least fifteen minutes before you start. Every shift includes a thirty-minute break, and before anyone asks, yes, you're paid for it.",
+                        "explanation": "Staff must sign in fifteen minutes, a quarter of an hour, before they start, and they are paid for their break. Shifts are six hours, not eight, there is no extra pay for nights, and staff cannot pick their shifts online."
+                    },
+                    {
+                        "answer": [
+                            "A",
+                            "E"
+                        ],
+                        "prompt": "Which TWO things are staff NOT allowed to do?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "drinking alcohol while in uniform"
+                            },
+                            {
+                                "id": "B",
+                                "text": "taking photos in backstage areas"
+                            },
+                            {
+                                "id": "C",
+                                "text": "keeping mobile phones switched on"
+                            },
+                            {
+                                "id": "D",
+                                "text": "wearing trainers while on duty"
+                            },
+                            {
+                                "id": "E",
+                                "text": "bringing guests in on their wristband"
+                            }
+                        ],
+                        "evidence": "You mustn't drink alcohol while you're wearing your staff T-shirt, even after your shift if you haven't changed. And your wristband is for you alone, so no bringing friends or family onto the site",
+                        "explanation": "Staff cannot drink while wearing the staff T-shirt and cannot bring friends or family in with their wristband. Photos backstage are allowed (only posting them is not), phones should stay on, and trainers are fine."
+                    }
+                ],
+                "instruction": "Choose TWO letters, A–E, for each question."
+            },
+            {
+                "type": "matching_features",
+                "reuse": false,
+                "title": "",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Area supervisor"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Security control"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Medical centre"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Lost property"
+                    },
+                    {
+                        "id": "E",
+                        "text": "Staff office"
+                    },
+                    {
+                        "id": "F",
+                        "text": "Accreditation desk"
+                    },
+                    {
+                        "id": "G",
+                        "text": "Catering manager"
+                    },
+                    {
+                        "id": "H",
+                        "text": "Information point"
+                    },
+                    {
+                        "id": "I",
+                        "text": "Transport desk"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "changing a shift",
+                        "options": [],
+                        "evidence": "That has to go through the staff office",
+                        "explanation": "The manager says the area supervisor cannot change a shift; this must go through the staff office."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "a lost or damaged wristband",
+                        "options": [],
+                        "evidence": "go to the accreditation desk at the staff entrance",
+                        "explanation": "If a wristband is damaged or lost, staff go to the accreditation desk, which prints a new one for £15."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "a bag left unattended",
+                        "options": [],
+                        "evidence": "Just radio security control and stay nearby until someone arrives.",
+                        "explanation": "Staff should not take the bag to lost property; they should contact security control and wait nearby."
+                    },
+                    {
+                        "answer": [
+                            "H"
+                        ],
+                        "prompt": "a child who cannot find their parents",
+                        "options": [],
+                        "evidence": "Walk them to the information point by the main gate",
+                        "explanation": "Security and the medical centre are mentioned but rejected; the child should be taken to the information point, where the welfare team is."
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "problems with meal vouchers",
+                        "options": [],
+                        "evidence": "speak to the catering manager",
+                        "explanation": "If staff have no vouchers or a food stall won't accept them, they should speak to the catering manager."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "arriving late for a shift",
+                        "options": [],
+                        "evidence": "Call your area supervisor directly",
+                        "explanation": "The staff office is mentioned, but the manager says not to ring it; late staff should call their area supervisor, who finds cover."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "a minor injury at work",
+                        "options": [],
+                        "evidence": "you must go to the medical centre so it's recorded",
+                        "explanation": "Even a small cut must be taken to the medical centre so that it is recorded, not just treated by a colleague."
+                    }
+                ],
+                "instruction": "Who should staff contact in each situation? Choose SEVEN answers from the box and write the correct letter, A–I, next to questions 4–10."
+            }
+        ],
+        "context": "You will hear a manager talking to a group of new staff on the day before a summer music festival opens.",
+        "speakers": [
+            {
+                "id": "manager",
+                "name": "Claire Hollis"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Where we're really short is in the car parks, directing the traffic, and in the recycling team, picking up litter.",
+                "answer": [
+                    "A",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "You need to sign in at the crew check-in tent at least fifteen minutes before you start. Every shift includes a thirty-minute break, and before anyone asks, yes, you're paid for it.",
+                "answer": [
+                    "B",
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "You mustn't drink alcohol while you're wearing your staff T-shirt... And your wristband is for you alone, so no bringing friends or family onto the site",
+                "answer": [
+                    "A",
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "That has to go through the staff office, which is the green cabin behind the main stage.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "go to the accreditation desk at the staff entrance. They'll print you a new one",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Just radio security control and stay nearby until someone arrives.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Walk them to the information point by the main gate, because that's where our welfare team is based.",
+                "answer": [
+                    "H"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "speak to the catering manager.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Call your area supervisor directly, since they're the one who'll need to find cover.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "you must go to the medical centre so it's recorded.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "Where we're really short is in the car parks, directing the traffic, and in the recycling team, picking up litter.",
+                "answer": [
+                    "A",
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "You need to sign in at the crew check-in tent at least fifteen minutes before you start. Every shift includes a thirty-minute break, and before anyone asks, yes, you're paid for it.",
+                "answer": [
+                    "B",
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true,
+                    true
+                ],
+                "quote": "You mustn't drink alcohol while you're wearing your staff T-shirt... And your wristband is for you alone, so no bringing friends or family onto the site.",
+                "answer": [
+                    "A",
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you need to change a shift... That has to go through the staff office",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "If your wristband gets damaged, or you lose it, go to the accreditation desk at the staff entrance.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Next, unattended bags... Just radio security control and stay nearby until someone arrives.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "Walk them to the information point by the main gate, because that's where our welfare team is based.",
+                "answer": [
+                    "H"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "If there's a problem with your meal vouchers... speak to the catering manager.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "And if you're running late... Call your area supervisor directly",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b2q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "if you hurt yourself while you're working, even if it's only a small cut, you must go to the medical centre so it's recorded.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "Where we're really short is in the car parks, directing the traffic, and in the recycling team, picking up litter.",
+            "answer": [
+                "A",
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true,
+                true
+            ],
+            "quote": "You need to sign in at the crew check-in tent at least fifteen minutes before you start. Every shift includes a thirty-minute break, and before anyone asks, yes, you're paid for it.",
+            "answer": [
+                "D",
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "That has to go through the staff office, which is the green cabin behind the main stage.",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "If your wristband gets damaged, or you lose it, go to the accreditation desk at the staff entrance.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Just radio security control and stay nearby until someone arrives.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "Walk them to the information point by the main gate, because that's where our welfare team is based.",
+            "answer": [
+                "H"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "If there's a problem with your meal vouchers, so you haven't been given any, or a food stall won't accept them, speak to the catering manager.",
+            "answer": [
+                "G"
+            ],
+            "correct": true
+        },
+        "b2q6": {
+            "marks": [
+                true
+            ],
+            "quote": "Call your area supervisor directly, since they're the one who'll need to find cover.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 10,
+        "agreedFirst": 10,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 22800,
+                "wer": 0,
+                "heard": "Good morning everyone and welcome to the Larkmoor Music Festival. My name's Claire Hollis and I'm the staff manager, so for the next four days I'm the person you'll see running around with a clipboard. Before we hand out uniforms, I want to go through a few things. The jobs, your shifts, the rules, and who to contact when something goes wrong. It shouldn't take more than a quarter of an hour."
+            },
+            {
+                "ms": 16080,
+                "wer": 0,
+                "heard": "Right, jobs first. Most of you applied for a particular role and we've tried to give everyone what they asked for. Bar work, for example, is completely full now and so is ticket scanning at the entrance gates so we won't be moving anyone into those teams."
+            },
+            {
+                "ms": 25120,
+                "wer": 0.045,
+                "heard": "Where we're really short is in the car parks, directing the traffic, and in the recycling team, picking up litter. Most visitors arrive on Friday afternoon, so that's when the car parks are busiest. Litter picking isn't glamorous, I know, but it's often the job people enjoy most by Sunday. The information tents, on the other hand, have more than enough volunteers already."
+            },
+            {
+                "ms": 18000,
+                "wer": 0,
+                "heard": "Okay, shifts. Each one is six hours, not eight as it said in some of the old adverts. You need to sign in at the crew check-in tent at least 15 minutes before you start. Every shift includes a 30 minute break, and before anyone asks, yes, you're paid for it."
+            },
+            {
+                "ms": 15600,
+                "wer": 0,
+                "heard": "A few of you have asked about night shifts. There's no extra pay for those, I'm afraid, but you do get the following day off. And the rota is drawn up by my team, so you can't pick your own shifts online, although you can ask to change them, which I'll come back to."
+            },
+            {
+                "ms": 16320,
+                "wer": 0,
+                "heard": "Now, rules. Some of them might surprise you. Phones, for instance, we'd actually like you to keep them switched on because we send updates to a staff group chat. And photos are fine anywhere, even backstage, as long as you don't post the backstage ones online."
+            },
+            {
+                "ms": 21680,
+                "wer": 0,
+                "heard": "But there are two rules we're very strict about. You mustn't drink alcohol while you're wearing your staff T-shirt, even after your shift if you haven't changed. And your wristband is for you alone, so no bringing friends or family onto the site, not even for half an hour. Oh, and footwear. Trainers are fine – you don't need safety boots, just nothing open-toed."
+            },
+            {
+                "ms": 22800,
+                "wer": 0,
+                "heard": "Right, the last thing, and probably the most important, is who to contact. You'll get a card with all the numbers on, but let me go through it. If you need to change a shift – say you've swapped with a friend – you might think your area supervisor can sort it out, but they can't. That has to go through the staff office, which is the green cabin behind the main stage."
+            },
+            {
+                "ms": 11360,
+                "wer": 0,
+                "heard": "If your wristband gets damaged or you lose it, go to the accreditation desk at the staff entrance. They'll print you a new one, but it costs £15, so do look after it."
+            },
+            {
+                "ms": 11840,
+                "wer": 0,
+                "heard": "Next, unattended bags: please don't pick them up and carry them over to lost property, and don't open them. Just radio security control and stay nearby until someone arrives."
+            },
+            {
+                "ms": 16480,
+                "wer": 0,
+                "heard": "Something that happens every year is a child who's lost their parents. Your first thought might be to call security, or to take them to the medical centre, but neither is right unless the child's hurt. Walk them to the information point by the main gate, because that's where our welfare team is based."
+            },
+            {
+                "ms": 22880,
+                "wer": 0,
+                "heard": "If there's a problem with your meal vouchers – so you haven't been given any, or a food stall won't accept them – speak to the catering manager. Each voucher's worth eight pounds, by the way, and you get two per shift. And if you're running late, don't ring the staff office because they won't pass the message on in time. Call your area supervisor directly, since they're the one who'll need to find cover."
+            },
+            {
+                "ms": 20960,
+                "wer": 0,
+                "heard": "Finally, if you hurt yourself while you're working, even if it's only a small cut, you must go to the medical centre so it's recorded. Don't just ask a colleague for a plaster. Oh, and if you miss the last staff shuttle bus back to town, the transport desk closes at midnight, so plan ahead. Right, any questions before we hand out the t-shirts?"
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -1.4
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5",
+            "b2q6"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first",
+            "b2q7": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "11": "b1q1",
+        "13": "b1q2",
+        "15": "b2q1",
+        "16": "b2q2",
+        "17": "b2q3",
+        "18": "b2q4",
+        "19": "b2q5",
+        "20": "b2q6"
+    },
+    "translation": {
+        "missing": []
+    }
+}

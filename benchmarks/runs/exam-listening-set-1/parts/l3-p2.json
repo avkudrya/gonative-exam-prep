@@ -1,0 +1,1599 @@
+{
+    "form": {
+        "first": [
+            "block 2 (multiple_choice), question 2: the correct option is much longer than the wrong ones; make the options alike in length",
+            "block 2 (multiple_choice), question 4: the correct option is much longer than the wrong ones; make the options alike in length",
+            "the correct option is the longest in 4 of 6 multiple-choice questions (block 2 (multiple_choice), question 2; block 2 (multiple_choice), question 4; block 2 (multiple_choice), question 5; block 2 (multiple_choice), question 6); make the options alike in length so that length gives no hint"
+        ],
+        "afterRepair": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l3-p2.mp3",
+            "bytes": 4183532,
+            "sha256": "fc4137288a5c9f865691c5ac917f26cb45b293a567dd1fea932099951de8d434",
+            "voices": {
+                "guide": {
+                    "voice": "7ceZgj78jCCeAW93ItNk",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 2. You will hear a volunteer guide welcoming a group of visitors to a botanic garden. First, you have some time to look at questions 11 to 15.",
+                    "endMs": 10920,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 40920,
+                    "purpose": "read",
+                    "startMs": 10920,
+                    "questions": [
+                        11,
+                        15
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 59120,
+                    "startMs": 40920
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 75480,
+                    "startMs": 59120
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 89280,
+                    "startMs": 75480
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 108520,
+                    "startMs": 89280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 119840,
+                    "startMs": 108520
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 138520,
+                    "startMs": 119840
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 155120,
+                    "startMs": 138520
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 172280,
+                    "startMs": 155120
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 16 to 20.",
+                    "endMs": 175520,
+                    "startMs": 172280
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 205520,
+                    "purpose": "read",
+                    "startMs": 175520,
+                    "questions": [
+                        16,
+                        20
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 224280,
+                    "startMs": 205520
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 242160,
+                    "startMs": 224280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 254120,
+                    "startMs": 242160
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 271040,
+                    "startMs": 254120
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 286920,
+                    "startMs": 271040
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 305200,
+                    "startMs": 286920
+                },
+                {
+                    "kind": "turn",
+                    "turn": 14,
+                    "endMs": 312740,
+                    "startMs": 305200
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 2. You now have thirty seconds to check your answers.",
+                    "endMs": 318540,
+                    "startMs": 312740
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 348540,
+                    "purpose": "check",
+                    "startMs": 318540
+                }
+            ],
+            "durationMs": 348540
+        },
+        "title": "Welcome to Riverbend Botanic Gardens",
+        "turns": [
+            {
+                "text": "Good morning, everyone, and welcome to the Riverbend Botanic Gardens. My name's Aroha Tremain, and I'm one of the volunteer guides here. Before you head off on your own, I'll quickly explain where everything is, and then I'll tell you what's on this month. You've each got a map, so have a look at that as I go.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right. We're standing at the main gate, at the bottom of your map. The main path runs straight north from here, right up through the middle of the gardens. As you walk up it, the first building on your right is the Visitor Centre. That's where you'll find information and our gift shop.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, a lot of people assume the café's in the Visitor Centre too, but it isn't. It's directly across the path from it, on your left as you walk north, right next to the Rose Garden. They do a lovely flat white, if you need one.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Keep going and you'll reach a crossroads, where a second path runs from east to west. Now, the toilets. If you turn right at the crossroads and walk all the way to the end of that path, they're on your right-hand side. They're the only toilets in the gardens, by the way, so it's worth remembering where they are.",
+                "speaker": "guide"
+            },
+            {
+                "text": "On the other side of the path, facing the toilets, is the herb garden. It's a favourite with keen cooks, and you're welcome to touch and smell the plants. Just please don't pick them!",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, back to the crossroads. If you carry straight on north, the building immediately on your left is the Fernery. It's cool and shady in there, so it's a nice escape on a warm day. The building opposite it, on the right, is the staff office, and I'm afraid that's not open to visitors.",
+                "speaker": "guide"
+            },
+            {
+                "text": "If you've got children with you, they'll want the children's garden. For that, go to the crossroads and turn left, so you're heading west. Walk to the very end of the path, and it's on your right, just south of the Duck Pond. There's a sandpit and a little hedge maze in there.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Last one. The plant shop sells seedlings grown in our own nursery, and it's well worth a visit. Go right to the top of the main path, where you'll see the big Glasshouse. The shop's in the small building just to the east of it, so that's on your right as you face the Glasshouse.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right, so that's where everything is. Now, what's on this month. We run free guided walks every day. They used to leave at 10:30 am, but this month they start at 11 am, from just outside the Visitor Centre. Do try to get there ten minutes early, though, because they fill up fast.",
+                "speaker": "guide"
+            },
+            {
+                "text": "In the Glasshouse, we'd planned to have our orchid display this month, but the orchids are flowering late this year, so that's been moved to January. Instead, there's a special exhibition of carnivorous plants, the ones that trap insects. The cactus collection's in there all year round, of course.",
+                "speaker": "guide"
+            },
+            {
+                "text": "A few people have asked about the Rose Garden. It's open as usual, but don't expect too much just yet. Most of the roses are still in bud, and they won't be at their best until about mid-December.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, this Saturday there's a gardening workshop. Lots of people ask us about pruning, but we do that one in winter. This one's all about growing vegetables from seed, and everyone takes home a tray of seedlings. Next month's workshop is on composting, if that's more your thing.",
+                "speaker": "guide"
+            },
+            {
+                "say": "It's fifteen dollars per person, and there are only twenty places. Please don't try to book on our website, because the booking form isn't working this week. We can't take bookings over the phone, either. Just pop into the Visitor Centre and put your name down at the desk.",
+                "text": "It's $15 per person, and there are only twenty places. Please don't try to book on our website, because the booking form isn't working this week. We can't take bookings over the phone, either. Just pop into the Visitor Centre and put your name down at the desk.",
+                "speaker": "guide"
+            },
+            {
+                "text": "And finally, on Sunday, sorry, Friday evening, there's a twilight concert on the lawn by the Duck Pond. You don't need to bring chairs, we've got plenty, and the paths will be lit, so leave your torch at home. But it does get chilly once the sun goes down, so bring an extra layer.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, that's all from me. Enjoy your visit, and if you've got any questions, come and find me. I'll be by the café.",
+                "speaker": "guide"
+            }
+        ],
+        "groups": [
+            {
+                "type": "map_labelling",
+                "figure": {
+                    "data": "illustrative",
+                    "grid": {
+                        "cols": 12,
+                        "rows": 9
+                    },
+                    "paths": [
+                        {
+                            "kind": "path",
+                            "label": "Main path",
+                            "points": [
+                                [
+                                    6,
+                                    9
+                                ],
+                                [
+                                    6,
+                                    1
+                                ]
+                            ]
+                        },
+                        {
+                            "kind": "path",
+                            "points": [
+                                [
+                                    1,
+                                    5
+                                ],
+                                [
+                                    11,
+                                    5
+                                ]
+                            ]
+                        }
+                    ],
+                    "title": "Riverbend Botanic Gardens",
+                    "format": "map-spec/1",
+                    "features": [
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 7,
+                            "y": 6,
+                            "kind": "building",
+                            "label": "Visitor Centre"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 2,
+                            "y": 6,
+                            "kind": "area",
+                            "label": "Rose Garden"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 1,
+                            "y": 1,
+                            "kind": "water",
+                            "label": "Duck Pond"
+                        },
+                        {
+                            "h": 1,
+                            "w": 2,
+                            "x": 5,
+                            "y": 0,
+                            "kind": "building",
+                            "label": "Glasshouse"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 4,
+                            "y": 6,
+                            "kind": "building",
+                            "letter": "A"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 10,
+                            "y": 6,
+                            "kind": "building",
+                            "letter": "B"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 4,
+                            "y": 3,
+                            "kind": "building",
+                            "letter": "C"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 1,
+                            "y": 3,
+                            "kind": "area",
+                            "letter": "D"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 7,
+                            "y": 3,
+                            "kind": "building",
+                            "letter": "E"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 10,
+                            "y": 3,
+                            "kind": "area",
+                            "letter": "F"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 7,
+                            "y": 0,
+                            "kind": "building",
+                            "letter": "G"
+                        }
+                    ],
+                    "entrances": [
+                        {
+                            "x": 6,
+                            "y": 9,
+                            "label": "Main gate"
+                        }
+                    ]
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Café",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "It's directly across the path from it, on your left as you walk north, right next to the Rose Garden.",
+                        "explanation": {
+                            "en": "The café is not inside the Visitor Centre. It is opposite it, on the left as you walk north from the gate, next to the Rose Garden.",
+                            "ru": "Кафе находится не внутри \"Visitor Centre\", а напротив него: слева, если идти от ворот на север, рядом с \"Rose Garden\".",
+                            "uk": "Кафе розташоване не всередині \"Visitor Centre\", а навпроти нього: ліворуч, якщо йти від воріт на північ, поруч із \"Rose Garden\"."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Toilets",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "turn right at the crossroads and walk all the way to the end of that path, they're on your right-hand side",
+                        "explanation": {
+                            "en": "Turning right at the crossroads means walking east. At the end of the path, the right-hand side is the south side, so the toilets are B, not the building on the north side.",
+                            "ru": "Повернуть направо на перекрёстке значит идти на восток. В конце дорожки правая сторона — южная, поэтому туалеты — это B, а не здание на северной стороне.",
+                            "uk": "Повернути праворуч на перехресті означає йти на схід. Наприкінці доріжки права сторона — південна, тож туалети — це B, а не будівля на північному боці."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Herb garden",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "On the other side of the path, facing the toilets, is the herb garden.",
+                        "explanation": {
+                            "en": "The herb garden is opposite the toilets, on the north side of the east end of the cross path.",
+                            "ru": "Сад пряных трав находится напротив туалетов, на северной стороне восточного конца поперечной дорожки.",
+                            "uk": "Сад пряних трав розташований навпроти туалетів, на північному боці східного кінця поперечної доріжки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Fernery",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "If you carry straight on north, the building immediately on your left is the Fernery.",
+                        "explanation": {
+                            "en": "Going straight on north from the crossroads, the left side is west, so the Fernery is C. The building on the right is the staff office.",
+                            "ru": "Если от перекрёстка идти прямо на север, слева будет запад, поэтому \"Fernery\" — это C. Здание справа — служебный офис персонала.",
+                            "uk": "Якщо від перехрестя йти прямо на північ, ліворуч буде захід, тому \"Fernery\" — це C. Будівля праворуч — службовий офіс персоналу."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Children's garden",
+                        "numbers": [
+                            15
+                        ],
+                        "evidence": "Walk to the very end of the path, and it's on your right, just south of the Duck Pond.",
+                        "explanation": {
+                            "en": "Turning left at the crossroads means walking west. At the very end, on the right (north) side and just below the Duck Pond, is the children's garden. You pass the Fernery on the way, but that is not at the end.",
+                            "ru": "Повернуть налево на перекрёстке значит идти на запад. В самом конце, справа (с северной стороны), прямо под \"Duck Pond\", находится детский сад-парк для детей. По пути вы проходите мимо \"Fernery\", но это ещё не конец дорожки.",
+                            "uk": "Повернути ліворуч на перехресті означає йти на захід. У самому кінці, праворуч (з північного боку), одразу під \"Duck Pond\", розташований сад для дітей. Дорогою ви проходите повз \"Fernery\", але це ще не кінець доріжки."
+                        }
+                    }
+                ],
+                "instruction": "Label the map below. Write the correct letter, A–G, next to Questions 11–15."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "11 am"
+                    },
+                    {
+                        "id": "B",
+                        "text": "10:50 am"
+                    },
+                    {
+                        "id": "C",
+                        "text": "10:30 am"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "This month, the free guided walks start at",
+                        "numbers": [
+                            16
+                        ],
+                        "evidence": "this month they start at 11 am",
+                        "explanation": {
+                            "en": "The walks used to leave at 10:30 am, but this month they start at 11 am. The guide only suggests arriving ten minutes early; that is not the start time.",
+                            "ru": "Раньше прогулки начинались в \"10:30 am\", но в этом месяце они стартуют в \"11 am\". Гид лишь советует приходить на десять минут раньше — это не время начала.",
+                            "uk": "Раніше прогулянки починалися о \"10:30 am\", але цього місяця вони стартують об \"11 am\". Гід лише радить приходити на десять хвилин раніше — це не час початку."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "desert cactus plants"
+                    },
+                    {
+                        "id": "B",
+                        "text": "insect-eating plants"
+                    },
+                    {
+                        "id": "C",
+                        "text": "flowering orchid plants"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What is the special exhibition in the Glasshouse this month?",
+                        "numbers": [
+                            17
+                        ],
+                        "evidence": "Instead, there's a special exhibition of carnivorous plants, the ones that trap insects.",
+                        "explanation": {
+                            "en": "The orchid display has been moved to January, and the cacti are there all year. This month's special exhibition is carnivorous plants, which catch insects.",
+                            "ru": "Выставку орхидей перенесли на январь, а кактусы можно увидеть круглый год. Специальная выставка этого месяца — \"carnivorous plants\", то есть хищные растения, которые ловят насекомых.",
+                            "uk": "Виставку орхідей перенесли на січень, а кактуси можна побачити цілий рік. Спеціальна виставка цього місяця — \"carnivorous plants\", тобто хижі рослини, що ловлять комах."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It is closed while it is replanted."
+                    },
+                    {
+                        "id": "B",
+                        "text": "Its roses are at their best at the moment."
+                    },
+                    {
+                        "id": "C",
+                        "text": "Most of its flowers have not opened yet."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the guide say about the Rose Garden?",
+                        "numbers": [
+                            18
+                        ],
+                        "evidence": "Most of the roses are still in bud",
+                        "explanation": {
+                            "en": "The roses are still in bud, which means they have not opened. The garden is open as usual, and the roses will not be at their best until mid-December.",
+                            "ru": "Розы ещё \"in bud\", то есть в бутонах и пока не распустились. Сад работает как обычно, а в лучшем виде розы будут только к середине декабря.",
+                            "uk": "Троянди ще \"in bud\", тобто в бутонах і поки не розпустилися. Сад працює як звичайно, а в найкращому вигляді троянди будуть лише в середині грудня."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "sowing vegetable seeds"
+                    },
+                    {
+                        "id": "B",
+                        "text": "pruning trees and shrubs"
+                    },
+                    {
+                        "id": "C",
+                        "text": "making garden compost"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "This Saturday's workshop is about",
+                        "numbers": [
+                            19
+                        ],
+                        "evidence": "This one's all about growing vegetables from seed",
+                        "explanation": {
+                            "en": "Pruning is taught in winter and composting is next month's topic. Saturday's workshop is on growing vegetables from seed.",
+                            "ru": "Обрезке учат зимой, а компостирование — тема следующего месяца. Субботний мастер-класс посвящён выращиванию овощей из семян (\"growing vegetables from seed\").",
+                            "uk": "Обрізки навчають узимку, а компостування — тема наступного місяця. Суботній майстер-клас присвячений вирощуванню овочів із насіння (\"growing vegetables from seed\")."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "by phoning the Visitor Centre"
+                    },
+                    {
+                        "id": "B",
+                        "text": "in person at the front desk"
+                    },
+                    {
+                        "id": "C",
+                        "text": "online using the booking form"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Visitors who want to attend the workshop should book",
+                        "numbers": [
+                            20
+                        ],
+                        "evidence": "Just pop into the Visitor Centre and put your name down at the desk.",
+                        "explanation": {
+                            "en": "The website booking form is not working and phone bookings are not possible, so people must sign up at the desk in the Visitor Centre.",
+                            "ru": "Форма бронирования на сайте не работает, а по телефону записаться нельзя, поэтому записываться нужно у стойки в \"Visitor Centre\".",
+                            "uk": "Форма бронювання на сайті не працює, а телефоном записатися неможливо, тож записуватися треба біля стійки у \"Visitor Centre\"."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            }
+        ],
+        "context": "You will hear a volunteer guide welcoming a group of visitors to a botanic garden.",
+        "speakers": [
+            {
+                "id": "guide",
+                "name": "Aroha Tremain",
+                "role": "volunteer guide at a botanic garden",
+                "accent": "new_zealand",
+                "gender": "female"
+            }
+        ]
+    },
+    "plan": "l3|p2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.32734,
+            "provider": "anthropic",
+            "outputTokens": 15394
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.135488,
+            "provider": "anthropic",
+            "outputTokens": 4700
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": true,
+            "costUsd": 0.020852,
+            "provider": "anthropic",
+            "outputTokens": 1166
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": true,
+            "costUsd": 0.025385,
+            "provider": "openai",
+            "outputTokens": 1192
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": true,
+            "costUsd": 0.064542,
+            "provider": "xai",
+            "outputTokens": 9331
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": true,
+            "costUsd": 0.071828,
+            "provider": "anthropic",
+            "outputTokens": 3349
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 12,
+            "rows": 9,
+            "paths": [
+                {
+                    "kind": "path",
+                    "label": "Main path",
+                    "points": [
+                        [
+                            6,
+                            9
+                        ],
+                        [
+                            6,
+                            1
+                        ]
+                    ]
+                },
+                {
+                    "kind": "path",
+                    "label": "",
+                    "points": [
+                        [
+                            1,
+                            5
+                        ],
+                        [
+                            11,
+                            5
+                        ]
+                    ]
+                }
+            ],
+            "title": "Riverbend Botanic Gardens",
+            "features": [
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 7,
+                    "y": 6,
+                    "kind": "building",
+                    "label": "Visitor Centre",
+                    "letter": ""
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 2,
+                    "y": 6,
+                    "kind": "area",
+                    "label": "Rose Garden",
+                    "letter": ""
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 1,
+                    "y": 1,
+                    "kind": "water",
+                    "label": "Duck Pond",
+                    "letter": ""
+                },
+                {
+                    "h": 1,
+                    "w": 2,
+                    "x": 5,
+                    "y": 0,
+                    "kind": "building",
+                    "label": "Glasshouse",
+                    "letter": ""
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 4,
+                    "y": 6,
+                    "kind": "building",
+                    "label": "",
+                    "letter": "A"
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 10,
+                    "y": 6,
+                    "kind": "building",
+                    "label": "",
+                    "letter": "B"
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 4,
+                    "y": 3,
+                    "kind": "building",
+                    "label": "",
+                    "letter": "C"
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 1,
+                    "y": 3,
+                    "kind": "area",
+                    "label": "",
+                    "letter": "D"
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 7,
+                    "y": 3,
+                    "kind": "building",
+                    "label": "",
+                    "letter": "E"
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 10,
+                    "y": 3,
+                    "kind": "area",
+                    "label": "",
+                    "letter": "F"
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 7,
+                    "y": 0,
+                    "kind": "building",
+                    "label": "",
+                    "letter": "G"
+                }
+            ],
+            "entrances": [
+                {
+                    "x": 6,
+                    "y": 9,
+                    "label": "Main gate"
+                }
+            ]
+        },
+        "title": "Welcome to Riverbend Botanic Gardens",
+        "turns": [
+            {
+                "text": "Good morning, everyone, and welcome to the Riverbend Botanic Gardens. My name's Aroha Tremain, and I'm one of the volunteer guides here. Before you head off on your own, I'll quickly explain where everything is, and then I'll tell you what's on this month. You've each got a map, so have a look at that as I go.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right. We're standing at the main gate, at the bottom of your map. The main path runs straight north from here, right up through the middle of the gardens. As you walk up it, the first building on your right is the Visitor Centre. That's where you'll find information and our gift shop.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, a lot of people assume the café's in the Visitor Centre too, but it isn't. It's directly across the path from it, on your left as you walk north, right next to the Rose Garden. They do a lovely flat white, if you need one.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Keep going and you'll reach a crossroads, where a second path runs from east to west. Now, the toilets. If you turn right at the crossroads and walk all the way to the end of that path, they're on your right-hand side. They're the only toilets in the gardens, by the way, so it's worth remembering where they are.",
+                "speaker": "guide"
+            },
+            {
+                "text": "On the other side of the path, facing the toilets, is the herb garden. It's a favourite with keen cooks, and you're welcome to touch and smell the plants. Just please don't pick them!",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, back to the crossroads. If you carry straight on north, the building immediately on your left is the Fernery. It's cool and shady in there, so it's a nice escape on a warm day. The building opposite it, on the right, is the staff office, and I'm afraid that's not open to visitors.",
+                "speaker": "guide"
+            },
+            {
+                "text": "If you've got children with you, they'll want the children's garden. For that, go to the crossroads and turn left, so you're heading west. Walk to the very end of the path, and it's on your right, just south of the Duck Pond. There's a sandpit and a little hedge maze in there.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Last one. The plant shop sells seedlings grown in our own nursery, and it's well worth a visit. Go right to the top of the main path, where you'll see the big Glasshouse. The shop's in the small building just to the east of it, so that's on your right as you face the Glasshouse.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right, so that's where everything is. Now, what's on this month. We run free guided walks every day. They used to leave at 10:30 am, but this month they start at 11 am, from just outside the Visitor Centre. Do try to get there ten minutes early, though, because they fill up fast.",
+                "speaker": "guide"
+            },
+            {
+                "text": "In the Glasshouse, we'd planned to have our orchid display this month, but the orchids are flowering late this year, so that's been moved to January. Instead, there's a special exhibition of carnivorous plants, the ones that trap insects. The cactus collection's in there all year round, of course.",
+                "speaker": "guide"
+            },
+            {
+                "text": "A few people have asked about the Rose Garden. It's open as usual, but don't expect too much just yet. Most of the roses are still in bud, and they won't be at their best until about mid-December.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, this Saturday there's a gardening workshop. Lots of people ask us about pruning, but we do that one in winter. This one's all about growing vegetables from seed, and everyone takes home a tray of seedlings. Next month's workshop is on composting, if that's more your thing.",
+                "speaker": "guide"
+            },
+            {
+                "text": "It's $15 per person, and there are only twenty places. Please don't try to book on our website, because the booking form isn't working this week. We can't take bookings over the phone, either. Just pop into the Visitor Centre and put your name down at the desk.",
+                "speaker": "guide"
+            },
+            {
+                "text": "And finally, on Sunday, sorry, Friday evening, there's a twilight concert on the lawn by the Duck Pond. You don't need to bring chairs, we've got plenty, and the paths will be lit, so leave your torch at home. But it does get chilly once the sun goes down, so bring an extra layer.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, that's all from me. Enjoy your visit, and if you've got any questions, come and find me. I'll be by the café.",
+                "speaker": "guide"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "map_labelling",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Café",
+                        "options": [],
+                        "evidence": "It's directly across the path from it, on your left as you walk north, right next to the Rose Garden.",
+                        "explanation": "The café is not inside the Visitor Centre. It is opposite it, on the left as you walk north from the gate, next to the Rose Garden."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Toilets",
+                        "options": [],
+                        "evidence": "turn right at the crossroads and walk all the way to the end of that path, they're on your right-hand side",
+                        "explanation": "Turning right at the crossroads means walking east. At the end of the path, the right-hand side is the south side, so the toilets are B, not the building on the north side."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Herb garden",
+                        "options": [],
+                        "evidence": "On the other side of the path, facing the toilets, is the herb garden.",
+                        "explanation": "The herb garden is opposite the toilets, on the north side of the east end of the cross path."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Fernery",
+                        "options": [],
+                        "evidence": "If you carry straight on north, the building immediately on your left is the Fernery.",
+                        "explanation": "Going straight on north from the crossroads, the left side is west, so the Fernery is C. The building on the right is the staff office."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Children's garden",
+                        "options": [],
+                        "evidence": "Walk to the very end of the path, and it's on your right, just south of the Duck Pond.",
+                        "explanation": "Turning left at the crossroads means walking west. At the very end, on the right (north) side and just below the Duck Pond, is the children's garden. You pass the Fernery on the way, but that is not at the end."
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Plant shop",
+                        "options": [],
+                        "evidence": "The shop's in the small building just to the east of it, so that's on your right as you face the Glasshouse.",
+                        "explanation": "The plant shop is at the top of the main path, in the small building to the east of the Glasshouse."
+                    }
+                ],
+                "instruction": "Label the map below. Write the correct letter, A–G, next to Questions 1–6."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "This month, the free guided walks start at",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "10:30 am"
+                            },
+                            {
+                                "id": "B",
+                                "text": "10:50 am"
+                            },
+                            {
+                                "id": "C",
+                                "text": "11 am"
+                            }
+                        ],
+                        "evidence": "this month they start at 11 am",
+                        "explanation": "The walks used to leave at 10:30 am, but this month they start at 11 am. The guide only suggests arriving ten minutes early; that is not the start time."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What is the special exhibition in the Glasshouse this month?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "flowering orchid plants"
+                            },
+                            {
+                                "id": "B",
+                                "text": "insect-eating plants"
+                            },
+                            {
+                                "id": "C",
+                                "text": "desert cactus plants"
+                            }
+                        ],
+                        "evidence": "Instead, there's a special exhibition of carnivorous plants, the ones that trap insects.",
+                        "explanation": "The orchid display has been moved to January, and the cacti are there all year. This month's special exhibition is carnivorous plants, which catch insects."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What does the guide say about the Rose Garden?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "It is closed while it is replanted."
+                            },
+                            {
+                                "id": "B",
+                                "text": "Most of its flowers have not opened yet."
+                            },
+                            {
+                                "id": "C",
+                                "text": "Its roses are at their best at the moment."
+                            }
+                        ],
+                        "evidence": "Most of the roses are still in bud",
+                        "explanation": "The roses are still in bud, which means they have not opened. The garden is open as usual, and the roses will not be at their best until mid-December."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "This Saturday's workshop is about",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "pruning trees and shrubs"
+                            },
+                            {
+                                "id": "B",
+                                "text": "sowing vegetable seeds"
+                            },
+                            {
+                                "id": "C",
+                                "text": "making garden compost"
+                            }
+                        ],
+                        "evidence": "This one's all about growing vegetables from seed",
+                        "explanation": "Pruning is taught in winter and composting is next month's topic. Saturday's workshop is on growing vegetables from seed."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Visitors who want to attend the workshop should book",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "online using the booking form"
+                            },
+                            {
+                                "id": "B",
+                                "text": "by phoning the Visitor Centre"
+                            },
+                            {
+                                "id": "C",
+                                "text": "in person at the front desk"
+                            }
+                        ],
+                        "evidence": "Just pop into the Visitor Centre and put your name down at the desk.",
+                        "explanation": "The website booking form is not working and phone bookings are not possible, so people must sign up at the desk in the Visitor Centre."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What does the guide advise people to bring to the concert?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "a folding chair to sit on"
+                            },
+                            {
+                                "id": "B",
+                                "text": "a torch for the dark paths"
+                            },
+                            {
+                                "id": "C",
+                                "text": "some warm clothing"
+                            }
+                        ],
+                        "evidence": "it does get chilly once the sun goes down, so bring an extra layer",
+                        "explanation": "Chairs are provided and the paths will be lit, so a chair or a torch is not needed. She says to bring an extra layer because it gets cold."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            }
+        ],
+        "context": "You will hear a volunteer guide welcoming a group of visitors to a botanic garden.",
+        "speakers": [
+            {
+                "id": "guide",
+                "name": "Aroha Tremain"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "It's directly across the path from it, on your left as you walk north, right next to the Rose Garden.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you turn right at the crossroads and walk all the way to the end of that path, they're on your right-hand side.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "On the other side of the path, facing the toilets, is the herb garden.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you carry straight on north, the building immediately on your left is the Fernery.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Walk to the very end of the path, and it's on your right, just south of the Duck Pond.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "The shop's in the small building just to the east of it, so that's on your right as you face the Glasshouse.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "this month they start at 11 am, from just outside the Visitor Centre",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "there's a special exhibition of carnivorous plants, the ones that trap insects",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Most of the roses are still in bud, and they won't be at their best until about mid-December.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "This one's all about growing vegetables from seed",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Just pop into the Visitor Centre and put your name down at the desk.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "it does get chilly once the sun goes down, so bring an extra layer",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "It's directly across the path from [the Visitor Centre], on your left as you walk north, right next to the Rose Garden.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you turn right at the crossroads and walk all the way to the end of that path, they're on your right-hand side.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "On the other side of the path, facing the toilets, is the herb garden.",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "If you carry straight on north, the building immediately on your left is the Fernery.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "go to the crossroads and turn left, so you're heading west. Walk to the very end of the path, and it's on your right, just south of the Duck Pond.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Go right to the top of the main path, where you'll see the big Glasshouse. The shop's in the small building just to the east of it.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "this month they start at 11 am",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Instead, there's a special exhibition of carnivorous plants, the ones that trap insects.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Most of the roses are still in bud, and they won't be at their best until about mid-December.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "This one's all about growing vegetables from seed",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "Just pop into the Visitor Centre and put your name down at the desk.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "it does get chilly once the sun goes down, so bring an extra layer.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "It's directly across the path from it, on your left as you walk north, right next to the Rose Garden.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "If you turn right at the crossroads and walk all the way to the end of that path, they're on your right-hand side.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "On the other side of the path, facing the toilets, is the herb garden.",
+            "answer": [
+                "F"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "If you carry straight on north, the building immediately on your left is the Fernery.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "turn left, so you're heading west. Walk to the very end of the path, and it's on your right, just south of the Duck Pond.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "They used to leave at 10:30 am, but this month they start at 11 am",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "there's a special exhibition of carnivorous plants, the ones that trap insects.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Most of the roses are still in bud, and they won't be at their best until about mid-December.",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "This one's all about growing vegetables from seed",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q5": {
+            "marks": [
+                true
+            ],
+            "quote": "Just pop into the Visitor Centre and put your name down at the desk.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 12,
+        "agreedFirst": 12,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 17920,
+                "wer": 0,
+                "heard": "Good morning everyone and welcome to the Riverbend Botanic Gardens. My name's Aroha Tremain and I'm one of the volunteer guides here. Before you head off on your own I'll quickly explain where everything is and then I'll tell you what's on this month. You've each got a map so have a look at that as I go."
+            },
+            {
+                "ms": 16080,
+                "wer": 0,
+                "heard": "Right, we're standing at the main gate, at the bottom of your map. The main path runs straight north from here, right up through the middle of the gardens. As you walk up it, the first building on your right is the visitor centre. That's where you'll find information and our gift shop."
+            },
+            {
+                "ms": 13520,
+                "wer": 0.022,
+                "heard": "Now, a lot of people assume the cafe's in the visitor centre too, but it isn't. It's directly across the path from it, on your left as you walk north, right next to the rose garden. They do a lovely flat white if you need one."
+            },
+            {
+                "ms": 18960,
+                "wer": 0,
+                "heard": "Keep going and you'll reach a crossroads, where a second path runs from east to west. Now, the toilets. If you turn right at the crossroads and walk all the way to the end of that path, they're on your right-hand side. They're the only toilets in the gardens, by the way, so it's worth remembering where they are."
+            },
+            {
+                "ms": 11040,
+                "wer": 0,
+                "heard": "On the other side of the path, facing the toilets, is the herb garden. It's a favourite with keen cooks, and you're welcome to touch and smell the plants - just please don't pick them."
+            },
+            {
+                "ms": 18400,
+                "wer": 0.019,
+                "heard": "OK, back to the crossroads. If you carry straight on north, the building immediately on your left is the fernery. It's cool and shady in there, so it's a nice escape on a warm day. The building opposite it, on the right, is the staff office, and I'm afraid that's not open to visitors."
+            },
+            {
+                "ms": 16320,
+                "wer": 0,
+                "heard": "If you've got children with you, they'll want the children's garden. For that, go to the crossroads and turn left so you're heading west. Walk to the very end of the path and it's on your right, just south of the duck pond. There's a sandpit and a little hedge maze in there."
+            },
+            {
+                "ms": 16880,
+                "wer": 0,
+                "heard": "Last one - the plant shop sells seedlings grown in our own nursery and it's well worth a visit. Go right to the top of the main path where you'll see the big glasshouse. The shop's in the small building just to the east of it, so that's on your right as you face the glasshouse."
+            },
+            {
+                "ms": 18480,
+                "wer": 0,
+                "heard": "Right, so that's where everything is. Now, what's on this month? We run free guided walks every day. They used to leave at 10:30am, but this month they start at 11am from just outside the visitor centre. Do try to get there ten minutes early though, because they fill up fast."
+            },
+            {
+                "ms": 17600,
+                "wer": 0,
+                "heard": "In the glasshouse, we'd planned to have our orchid display this month, but the orchids are flowering late this year, so that's been moved to January. Instead, there's a special exhibition of carnivorous plants - the ones that trap insects. The cactus collection's in there all year round, of course."
+            },
+            {
+                "ms": 11680,
+                "wer": 0,
+                "heard": "A few people have asked about the rose garden. It's open as usual, but don't expect too much just yet. Most of the roses are still in bud and they won't be at their best until about mid-December."
+            },
+            {
+                "ms": 16640,
+                "wer": 0,
+                "heard": "Now this Saturday there's a gardening workshop. Lots of people ask us about pruning, but we do that one in winter. This one's all about growing vegetables from seed, and everyone takes home a tray of seedlings. Next month's workshop is on composting, if that's more your thing."
+            },
+            {
+                "ms": 15600,
+                "wer": 0,
+                "heard": "It's fifteen dollars per person, and there are only twenty places. Please don't try to book on our website, because the booking form isn't working this week. We can't take bookings over the phone, either. Just pop into the visitor centre and put your name down at the desk."
+            },
+            {
+                "ms": 18000,
+                "wer": 0,
+                "heard": "And finally, on Sunday - sorry, Friday evening, there's a twilight concert on the lawn by the duck pond. You don't need to bring chairs, we've got plenty, and the paths will be lit so leave your torch at home. But it does get chilly once the sun goes down, so bring an extra layer."
+            },
+            {
+                "ms": 7120,
+                "wer": 0,
+                "heard": "Okay, that's all from me. Enjoy your visit and if you've got any questions, come and find me. I'll be by the café."
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16.8,
+            "truePeakDb": -1
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4",
+            "b2q5"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first",
+            "b2q6": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "11": "b1q1",
+        "12": "b1q2",
+        "13": "b1q3",
+        "14": "b1q4",
+        "15": "b1q5",
+        "16": "b2q1",
+        "17": "b2q2",
+        "18": "b2q3",
+        "19": "b2q4",
+        "20": "b2q5"
+    },
+    "translation": {
+        "missing": []
+    }
+}

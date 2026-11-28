@@ -1,0 +1,1547 @@
+{
+    "form": {
+        "first": [
+            "block 2 (multiple_choice), question 3: the correct option is much longer than the wrong ones; make the options alike in length",
+            "the correct option is the longest in 3 of 5 multiple-choice questions (block 2 (multiple_choice), question 2; block 2 (multiple_choice), question 3; block 2 (multiple_choice), question 4); make the options alike in length so that length gives no hint"
+        ],
+        "afterRepair": []
+    },
+    "part": {
+        "audio": {
+            "file": "audio/l6-p2.mp3",
+            "bytes": 4282892,
+            "sha256": "87828ac5c877e4947837da68f920be508ca7b4a7f5d446224f1ab43df9e1f269",
+            "voices": {
+                "guide": {
+                    "voice": "WLKp2jV6nrS8aMkPPDRO",
+                    "provider": "elevenlabs"
+                },
+                "narrator": {
+                    "voice": "UEKYgullGqaF0keqT8Bu",
+                    "provider": "elevenlabs"
+                }
+            },
+            "segments": [
+                {
+                    "kind": "narrator",
+                    "text": "Part 2. You will hear a guide welcoming a group of visitors to a wildlife sanctuary. First, you have some time to look at questions 11 to 16.",
+                    "endMs": 10440,
+                    "startMs": 0
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 40440,
+                    "purpose": "read",
+                    "startMs": 10440,
+                    "questions": [
+                        11,
+                        16
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 0,
+                    "endMs": 56880,
+                    "startMs": 40440
+                },
+                {
+                    "kind": "turn",
+                    "turn": 1,
+                    "endMs": 83640,
+                    "startMs": 56880
+                },
+                {
+                    "kind": "turn",
+                    "turn": 2,
+                    "endMs": 99280,
+                    "startMs": 83640
+                },
+                {
+                    "kind": "turn",
+                    "turn": 3,
+                    "endMs": 118360,
+                    "startMs": 99280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 4,
+                    "endMs": 139360,
+                    "startMs": 118360
+                },
+                {
+                    "kind": "turn",
+                    "turn": 5,
+                    "endMs": 158280,
+                    "startMs": 139360
+                },
+                {
+                    "kind": "turn",
+                    "turn": 6,
+                    "endMs": 174480,
+                    "startMs": 158280
+                },
+                {
+                    "kind": "turn",
+                    "turn": 7,
+                    "endMs": 187320,
+                    "startMs": 174480
+                },
+                {
+                    "kind": "narrator",
+                    "text": "Now look at questions 17 to 20.",
+                    "endMs": 190640,
+                    "startMs": 187320
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 220640,
+                    "purpose": "read",
+                    "startMs": 190640,
+                    "questions": [
+                        17,
+                        20
+                    ]
+                },
+                {
+                    "kind": "turn",
+                    "turn": 8,
+                    "endMs": 239720,
+                    "startMs": 220640
+                },
+                {
+                    "kind": "turn",
+                    "turn": 9,
+                    "endMs": 259440,
+                    "startMs": 239720
+                },
+                {
+                    "kind": "turn",
+                    "turn": 10,
+                    "endMs": 278680,
+                    "startMs": 259440
+                },
+                {
+                    "kind": "turn",
+                    "turn": 11,
+                    "endMs": 296240,
+                    "startMs": 278680
+                },
+                {
+                    "kind": "turn",
+                    "turn": 12,
+                    "endMs": 313160,
+                    "startMs": 296240
+                },
+                {
+                    "kind": "turn",
+                    "turn": 13,
+                    "endMs": 321020,
+                    "startMs": 313160
+                },
+                {
+                    "kind": "narrator",
+                    "text": "That is the end of Part 2. You now have thirty seconds to check your answers.",
+                    "endMs": 326820,
+                    "startMs": 321020
+                },
+                {
+                    "kind": "pause",
+                    "endMs": 356820,
+                    "purpose": "check",
+                    "startMs": 326820
+                }
+            ],
+            "durationMs": 356820
+        },
+        "title": "Welcome to Wattle Creek Wildlife Sanctuary",
+        "turns": [
+            {
+                "text": "G'day, everyone, and welcome to Wattle Creek Wildlife Sanctuary. My name's Brett Kinsella, and I'm one of the guides here. Before you head off, I'll give you a quick idea of where everything is, and then I'll run through today's talks and feeding times. So grab one of our maps and have it handy.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right. So you've just come in through the main gate, and you're at the bottom of the main path, which runs north through the middle of the sanctuary. On your left is the Visitor Centre, where you bought your tickets, and that's also where you'll find the toilets and the gift shop. A lot of people go looking for food in there, but the café's actually directly across from it, on the right-hand side of the path as you come in. It does good coffee, and the sausage rolls are excellent.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, now walk north up the main path. Just past the Visitor Centre, there's another building on your left, right on the corner where our two paths cross. That's the reptile house. It's air-conditioned, so it's a good place to cool down if it gets hot this arvo.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Keep going straight over the crossroads and right to the end of the main path, and that's where you'll find the koalas. You'll notice the eucalyptus grove up in the north-west corner, and some visitors expect to see koalas in there. But that's just where we grow the leaves we feed them, so don't waste your time looking up in those trees.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, come back down to the crossroads and turn right, so you're heading east along the cross path. The first building on your left is the aviary, with our parrots and cockatoos. Behind it, further north, there's a smaller building, and that's the nocturnal house, where you can see bilbies and possums. It's kept dark inside, so give your eyes a minute to adjust.",
+                "speaker": "guide"
+            },
+            {
+                "text": "On the opposite side of the cross path, the south side, there's a grassy area right on the corner of the main path, with the lake just to the east of it. That's the picnic area. There are tables and barbecues, and you're welcome to bring your own lunch. Just keep an eye on your sandwiches, because the ducks from the lake are very bold.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, last bit of the map. Go back to the crossroads and this time head west, past the reptile house. Right at the far end of the path, on your left, you'll find the wombat burrows. They dig all day, so you might only see the tops of their heads.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, on the other side of the path, opposite the wombats, there's a big open field, just south of the eucalyptus grove. That's the kangaroo paddock, and you're allowed to walk right in among them. They're very relaxed.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right, now for today's programme. The koala talk is usually at 11 o'clock, but today it's been pushed back half an hour, to 11:30, because the keeper's had to take one of the joeys to the vet. Nothing serious, I'm told. It runs for about thirty minutes, so you'll be finished by 12, in time for lunch.",
+                "speaker": "guide"
+            },
+            {
+                "text": "At one o'clock there's the reptile talk, in the reptile house. Visitors used to be able to hold one of our pythons, but we stopped that last year, sorry. What you can do is give one of our blue-tongue lizards a gentle stroke. People sometimes ask about feeding the turtles too, but only the keepers are allowed to do that.",
+                "speaker": "guide"
+            },
+            {
+                "say": "Then at two o'clock, sorry, quarter past two, the keepers feed the kangaroos, and you can join in. Please don't give them bread or anything you've brought from home, because it makes them sick. You'll need one of our special feed bags, which are three dollars each from the Visitor Centre. Not the café, by the way. They don't sell them there.",
+                "text": "Then at two o'clock, sorry, quarter past two, the keepers feed the kangaroos, and you can join in. Please don't give them bread or anything you've brought from home, because it makes them sick. You'll need one of our special feed bags, which are $3 each from the Visitor Centre. Not the café, by the way. They don't sell them there.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Normally at three o'clock we'd have the free-flight bird show near the aviary, but I'm afraid it's off today. It's a bit windy, but that's not the reason, the birds are fine with a breeze, and they're all perfectly healthy. It's because workers are fixing the aviary roof this afternoon, and the noise would upset them.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Finally, the wombat feeding is at quarter to four, at the burrows. There's no seating there, so it's standing room only, and please, no flash photography, as it frightens them. My advice is to get there about ten minutes before it starts, because the viewing area fills up quickly.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, that's it from me. If you've got any questions, just look for me or any of the staff in green shirts. Enjoy your day!",
+                "speaker": "guide"
+            }
+        ],
+        "groups": [
+            {
+                "type": "map_labelling",
+                "figure": {
+                    "data": "illustrative",
+                    "grid": {
+                        "cols": 12,
+                        "rows": 8
+                    },
+                    "paths": [
+                        {
+                            "kind": "path",
+                            "label": "Main path",
+                            "points": [
+                                [
+                                    6,
+                                    8
+                                ],
+                                [
+                                    6,
+                                    1
+                                ]
+                            ]
+                        },
+                        {
+                            "kind": "path",
+                            "label": "Cross path",
+                            "points": [
+                                [
+                                    1,
+                                    4
+                                ],
+                                [
+                                    11,
+                                    4
+                                ]
+                            ]
+                        }
+                    ],
+                    "title": "Wattle Creek Wildlife Sanctuary",
+                    "format": "map-spec/1",
+                    "features": [
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 3,
+                            "y": 6,
+                            "kind": "building",
+                            "label": "Visitor Centre"
+                        },
+                        {
+                            "h": 3,
+                            "w": 4,
+                            "x": 8,
+                            "y": 5,
+                            "kind": "water",
+                            "label": "Lake"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 0,
+                            "y": 0,
+                            "kind": "trees",
+                            "label": "Eucalyptus grove"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 3,
+                            "y": 4,
+                            "kind": "building",
+                            "letter": "A"
+                        },
+                        {
+                            "h": 4,
+                            "w": 2,
+                            "x": 0,
+                            "y": 4,
+                            "kind": "area",
+                            "letter": "B"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 6,
+                            "y": 6,
+                            "kind": "building",
+                            "letter": "C"
+                        },
+                        {
+                            "h": 2,
+                            "w": 2,
+                            "x": 6,
+                            "y": 4,
+                            "kind": "area",
+                            "letter": "D"
+                        },
+                        {
+                            "h": 1,
+                            "w": 2,
+                            "x": 5,
+                            "y": 0,
+                            "kind": "area",
+                            "letter": "E"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 1,
+                            "y": 2,
+                            "kind": "field",
+                            "letter": "F"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 8,
+                            "y": 2,
+                            "kind": "building",
+                            "letter": "G"
+                        },
+                        {
+                            "h": 2,
+                            "w": 3,
+                            "x": 8,
+                            "y": 0,
+                            "kind": "building",
+                            "letter": "H"
+                        }
+                    ],
+                    "entrances": [
+                        {
+                            "x": 6,
+                            "y": 8,
+                            "label": "Main gate"
+                        }
+                    ]
+                },
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Café",
+                        "numbers": [
+                            11
+                        ],
+                        "evidence": "the café's actually directly across from it, on the right-hand side of the path as you come in",
+                        "explanation": {
+                            "en": "The café is opposite the Visitor Centre, on the right as you walk in from the main gate. Many people look for food in the Visitor Centre, but it is not there.",
+                            "ru": "Кафе находится напротив \"Visitor Centre\", справа, если входить через главные ворота. Многие ищут еду в \"Visitor Centre\", но её там нет.",
+                            "uk": "Кафе розташоване навпроти \"Visitor Centre\", праворуч, якщо заходити через головну браму. Багато хто шукає їжу у \"Visitor Centre\", але там її немає."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Reptile house",
+                        "numbers": [
+                            12
+                        ],
+                        "evidence": "Just past the Visitor Centre, there's another building on your left, right on the corner where our two paths cross. That's the reptile house.",
+                        "explanation": {
+                            "en": "Walking north, the reptile house is the next building on the left after the Visitor Centre, at the corner where the paths cross.",
+                            "ru": "Если идти на север, террариум — следующее здание слева после \"Visitor Centre\", на углу, где пересекаются дорожки.",
+                            "uk": "Якщо йти на північ, тераріум — наступна будівля ліворуч після \"Visitor Centre\", на розі, де перетинаються доріжки."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Koala enclosure",
+                        "numbers": [
+                            13
+                        ],
+                        "evidence": "right to the end of the main path, and that's where you'll find the koalas",
+                        "explanation": {
+                            "en": "The koalas are at the very end of the main path. They are not in the eucalyptus grove, which is only where their food is grown.",
+                            "ru": "Коалы — в самом конце главной дорожки. Они не в эвкалиптовой роще: там только выращивают для них корм.",
+                            "uk": "Коали — у самому кінці головної доріжки. Вони не в евкаліптовому гаю: там лише вирощують для них корм."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Aviary",
+                        "numbers": [
+                            14
+                        ],
+                        "evidence": "turn right, so you're heading east along the cross path. The first building on your left is the aviary",
+                        "explanation": {
+                            "en": "Turning right at the crossroads means walking east, and the aviary is the first building on the left (north side). The building behind it is the nocturnal house.",
+                            "ru": "Повернуть направо на перекрёстке — значит идти на восток, и вольер для птиц — первое здание слева (с северной стороны). Здание за ним — павильон ночных животных.",
+                            "uk": "Повернути праворуч на перехресті — означає йти на схід, і пташиний вольєр — перша будівля ліворуч (з північного боку). Будівля за ним — павільйон нічних тварин."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Picnic area",
+                        "numbers": [
+                            15
+                        ],
+                        "evidence": "there's a grassy area right on the corner of the main path, with the lake just to the east of it. That's the picnic area.",
+                        "explanation": {
+                            "en": "The picnic area is on the south side of the cross path, at the corner with the main path, with the lake to its east.",
+                            "ru": "Зона для пикника находится к югу от поперечной дорожки, на углу с главной дорожкой; к востоку от неё — озеро.",
+                            "uk": "Зона для пікніка розташована з південного боку поперечної доріжки, на розі з головною доріжкою; на схід від неї — озеро."
+                        }
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Wombat burrows",
+                        "numbers": [
+                            16
+                        ],
+                        "evidence": "head west, past the reptile house. Right at the far end of the path, on your left, you'll find the wombat burrows",
+                        "explanation": {
+                            "en": "Walking west past the reptile house, the wombat burrows are at the far end of the path on the left (south side).",
+                            "ru": "Если идти на запад мимо террариума, норы вомбатов — в дальнем конце дорожки слева (с южной стороны).",
+                            "uk": "Якщо йти на захід повз тераріум, нори вомбатів — у дальньому кінці доріжки ліворуч (з південного боку)."
+                        }
+                    }
+                ],
+                "instruction": "Label the map below. Write the correct letter, A–H, next to Questions 11–16."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "12:00"
+                    },
+                    {
+                        "id": "B",
+                        "text": "11:00"
+                    },
+                    {
+                        "id": "C",
+                        "text": "11:30"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "What time will the koala talk start today?",
+                        "numbers": [
+                            17
+                        ],
+                        "evidence": "today it's been pushed back half an hour, to 11:30",
+                        "explanation": {
+                            "en": "The talk is usually at 11 o'clock, but today it starts half an hour later. It finishes at about 12, so that is not the start time.",
+                            "ru": "Обычно лекция начинается в 11 часов, но сегодня — на полчаса позже. Заканчивается она около 12, так что это не время начала.",
+                            "uk": "Зазвичай лекція починається об 11-й, але сьогодні — на пів години пізніше. Закінчується вона близько 12-ї, тож це не час початку."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "pat a lizard."
+                    },
+                    {
+                        "id": "B",
+                        "text": "hold a python."
+                    },
+                    {
+                        "id": "C",
+                        "text": "feed a turtle."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "At the reptile talk, visitors will be able to",
+                        "numbers": [
+                            18
+                        ],
+                        "evidence": "What you can do is give one of our blue-tongue lizards a gentle stroke.",
+                        "explanation": {
+                            "en": "Visitors can stroke a blue-tongue lizard. Holding pythons stopped last year, and only keepers may feed the turtles.",
+                            "ru": "Посетители могут погладить синеязыкого сцинка (\"blue-tongue lizard\"). Брать питонов в руки перестали разрешать в прошлом году, а кормить черепах могут только смотрители.",
+                            "uk": "Відвідувачі можуть погладити синьоязикого сцинка (\"blue-tongue lizard\"). Брати пітонів у руки перестали дозволяти минулого року, а годувати черепах можуть лише доглядачі."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "pay for food at the café."
+                    },
+                    {
+                        "id": "B",
+                        "text": "buy food at the Visitor Centre."
+                    },
+                    {
+                        "id": "C",
+                        "text": "bring their own food from home."
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "For the kangaroo feeding, visitors should",
+                        "numbers": [
+                            19
+                        ],
+                        "evidence": "You'll need one of our special feed bags, which are $3 each from the Visitor Centre.",
+                        "explanation": {
+                            "en": "Feed bags are sold at the Visitor Centre. The guide says the café does not sell them, and food from home can make the kangaroos sick.",
+                            "ru": "Пакеты с кормом продаются в \"Visitor Centre\". Гид говорит, что в кафе их не продают, а еда из дома может навредить кенгуру.",
+                            "uk": "Пакети з кормом продають у \"Visitor Centre\". Гід каже, що в кафе їх не продають, а їжа з дому може зашкодити кенгуру."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            },
+            {
+                "type": "multiple_choice",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "because of the windy weather"
+                    },
+                    {
+                        "id": "B",
+                        "text": "because some of the birds are sick"
+                    },
+                    {
+                        "id": "C",
+                        "text": "because of building repairs"
+                    }
+                ],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Why is the bird show cancelled today?",
+                        "numbers": [
+                            20
+                        ],
+                        "evidence": "It's because workers are fixing the aviary roof this afternoon",
+                        "explanation": {
+                            "en": "The show is off because the aviary roof is being repaired. The guide says the wind is not the reason and all the birds are healthy.",
+                            "ru": "Шоу отменено, потому что ремонтируют крышу вольера для птиц. Гид говорит, что дело не в ветре и все птицы здоровы.",
+                            "uk": "Шоу скасовано, бо ремонтують дах пташиного вольєра. Гід каже, що причина не у вітрі й усі птахи здорові."
+                        }
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            }
+        ],
+        "context": "You will hear a guide welcoming a group of visitors to a wildlife sanctuary.",
+        "speakers": [
+            {
+                "id": "guide",
+                "name": "Brett Kinsella",
+                "role": "guide at a wildlife sanctuary",
+                "accent": "australian",
+                "gender": "male"
+            }
+        ]
+    },
+    "plan": "l6|p2",
+    "calls": [
+        {
+            "step": "generate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.376348,
+            "provider": "anthropic",
+            "outputTokens": 17798
+        },
+        {
+            "step": "repair",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.137516,
+            "provider": "anthropic",
+            "outputTokens": 4763
+        },
+        {
+            "step": "solve.a",
+            "model": "claude-sonnet-5-5",
+            "reused": false,
+            "costUsd": 0.019488,
+            "provider": "anthropic",
+            "outputTokens": 1026
+        },
+        {
+            "step": "solve.b",
+            "model": "gpt-5.4-2026-03-05",
+            "reused": false,
+            "costUsd": 0.026293,
+            "provider": "openai",
+            "outputTokens": 1249
+        },
+        {
+            "step": "control",
+            "model": "grok-4.7",
+            "reused": false,
+            "costUsd": 0.028948,
+            "provider": "xai",
+            "outputTokens": 3397
+        },
+        {
+            "step": "translate",
+            "model": "claude-opus-5-5",
+            "reused": false,
+            "costUsd": 0.06388,
+            "provider": "anthropic",
+            "outputTokens": 2958
+        }
+    ],
+    "draft": {
+        "map": {
+            "cols": 12,
+            "rows": 8,
+            "paths": [
+                {
+                    "kind": "path",
+                    "label": "Main path",
+                    "points": [
+                        [
+                            6,
+                            8
+                        ],
+                        [
+                            6,
+                            1
+                        ]
+                    ]
+                },
+                {
+                    "kind": "path",
+                    "label": "Cross path",
+                    "points": [
+                        [
+                            1,
+                            4
+                        ],
+                        [
+                            11,
+                            4
+                        ]
+                    ]
+                }
+            ],
+            "title": "Wattle Creek Wildlife Sanctuary",
+            "features": [
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 3,
+                    "y": 6,
+                    "kind": "building",
+                    "label": "Visitor Centre",
+                    "letter": ""
+                },
+                {
+                    "h": 3,
+                    "w": 4,
+                    "x": 8,
+                    "y": 5,
+                    "kind": "water",
+                    "label": "Lake",
+                    "letter": ""
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 0,
+                    "y": 0,
+                    "kind": "trees",
+                    "label": "Eucalyptus grove",
+                    "letter": ""
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 3,
+                    "y": 4,
+                    "kind": "building",
+                    "label": "",
+                    "letter": "A"
+                },
+                {
+                    "h": 4,
+                    "w": 2,
+                    "x": 0,
+                    "y": 4,
+                    "kind": "area",
+                    "label": "",
+                    "letter": "B"
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 6,
+                    "y": 6,
+                    "kind": "building",
+                    "label": "",
+                    "letter": "C"
+                },
+                {
+                    "h": 2,
+                    "w": 2,
+                    "x": 6,
+                    "y": 4,
+                    "kind": "area",
+                    "label": "",
+                    "letter": "D"
+                },
+                {
+                    "h": 1,
+                    "w": 2,
+                    "x": 5,
+                    "y": 0,
+                    "kind": "area",
+                    "label": "",
+                    "letter": "E"
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 1,
+                    "y": 2,
+                    "kind": "field",
+                    "label": "",
+                    "letter": "F"
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 8,
+                    "y": 2,
+                    "kind": "building",
+                    "label": "",
+                    "letter": "G"
+                },
+                {
+                    "h": 2,
+                    "w": 3,
+                    "x": 8,
+                    "y": 0,
+                    "kind": "building",
+                    "label": "",
+                    "letter": "H"
+                }
+            ],
+            "entrances": [
+                {
+                    "x": 6,
+                    "y": 8,
+                    "label": "Main gate"
+                }
+            ]
+        },
+        "title": "Welcome to Wattle Creek Wildlife Sanctuary",
+        "turns": [
+            {
+                "text": "G'day, everyone, and welcome to Wattle Creek Wildlife Sanctuary. My name's Brett Kinsella, and I'm one of the guides here. Before you head off, I'll give you a quick idea of where everything is, and then I'll run through today's talks and feeding times. So grab one of our maps and have it handy.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right. So you've just come in through the main gate, and you're at the bottom of the main path, which runs north through the middle of the sanctuary. On your left is the Visitor Centre, where you bought your tickets, and that's also where you'll find the toilets and the gift shop. A lot of people go looking for food in there, but the café's actually directly across from it, on the right-hand side of the path as you come in. It does good coffee, and the sausage rolls are excellent.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, now walk north up the main path. Just past the Visitor Centre, there's another building on your left, right on the corner where our two paths cross. That's the reptile house. It's air-conditioned, so it's a good place to cool down if it gets hot this arvo.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Keep going straight over the crossroads and right to the end of the main path, and that's where you'll find the koalas. You'll notice the eucalyptus grove up in the north-west corner, and some visitors expect to see koalas in there. But that's just where we grow the leaves we feed them, so don't waste your time looking up in those trees.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, come back down to the crossroads and turn right, so you're heading east along the cross path. The first building on your left is the aviary, with our parrots and cockatoos. Behind it, further north, there's a smaller building, and that's the nocturnal house, where you can see bilbies and possums. It's kept dark inside, so give your eyes a minute to adjust.",
+                "speaker": "guide"
+            },
+            {
+                "text": "On the opposite side of the cross path, the south side, there's a grassy area right on the corner of the main path, with the lake just to the east of it. That's the picnic area. There are tables and barbecues, and you're welcome to bring your own lunch. Just keep an eye on your sandwiches, because the ducks from the lake are very bold.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, last bit of the map. Go back to the crossroads and this time head west, past the reptile house. Right at the far end of the path, on your left, you'll find the wombat burrows. They dig all day, so you might only see the tops of their heads.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Now, on the other side of the path, opposite the wombats, there's a big open field, just south of the eucalyptus grove. That's the kangaroo paddock, and you're allowed to walk right in among them. They're very relaxed.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Right, now for today's programme. The koala talk is usually at 11 o'clock, but today it's been pushed back half an hour, to 11:30, because the keeper's had to take one of the joeys to the vet. Nothing serious, I'm told. It runs for about thirty minutes, so you'll be finished by 12, in time for lunch.",
+                "speaker": "guide"
+            },
+            {
+                "text": "At one o'clock there's the reptile talk, in the reptile house. Visitors used to be able to hold one of our pythons, but we stopped that last year, sorry. What you can do is give one of our blue-tongue lizards a gentle stroke. People sometimes ask about feeding the turtles too, but only the keepers are allowed to do that.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Then at two o'clock, sorry, quarter past two, the keepers feed the kangaroos, and you can join in. Please don't give them bread or anything you've brought from home, because it makes them sick. You'll need one of our special feed bags, which are $3 each from the Visitor Centre. Not the café, by the way. They don't sell them there.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Normally at three o'clock we'd have the free-flight bird show near the aviary, but I'm afraid it's off today. It's a bit windy, but that's not the reason, the birds are fine with a breeze, and they're all perfectly healthy. It's because workers are fixing the aviary roof this afternoon, and the noise would upset them.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Finally, the wombat feeding is at quarter to four, at the burrows. There's no seating there, so it's standing room only, and please, no flash photography, as it frightens them. My advice is to get there about ten minutes before it starts, because the viewing area fills up quickly.",
+                "speaker": "guide"
+            },
+            {
+                "text": "Okay, that's it from me. If you've got any questions, just look for me or any of the staff in green shirts. Enjoy your day!",
+                "speaker": "guide"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "map_labelling",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Café",
+                        "options": [],
+                        "evidence": "the café's actually directly across from it, on the right-hand side of the path as you come in",
+                        "explanation": "The café is opposite the Visitor Centre, on the right as you walk in from the main gate. Many people look for food in the Visitor Centre, but it is not there."
+                    },
+                    {
+                        "answer": [
+                            "A"
+                        ],
+                        "prompt": "Reptile house",
+                        "options": [],
+                        "evidence": "Just past the Visitor Centre, there's another building on your left, right on the corner where our two paths cross. That's the reptile house.",
+                        "explanation": "Walking north, the reptile house is the next building on the left after the Visitor Centre, at the corner where the paths cross."
+                    },
+                    {
+                        "answer": [
+                            "E"
+                        ],
+                        "prompt": "Koala enclosure",
+                        "options": [],
+                        "evidence": "right to the end of the main path, and that's where you'll find the koalas",
+                        "explanation": "The koalas are at the very end of the main path. They are not in the eucalyptus grove, which is only where their food is grown."
+                    },
+                    {
+                        "answer": [
+                            "G"
+                        ],
+                        "prompt": "Aviary",
+                        "options": [],
+                        "evidence": "turn right, so you're heading east along the cross path. The first building on your left is the aviary",
+                        "explanation": "Turning right at the crossroads means walking east, and the aviary is the first building on the left (north side). The building behind it is the nocturnal house."
+                    },
+                    {
+                        "answer": [
+                            "D"
+                        ],
+                        "prompt": "Picnic area",
+                        "options": [],
+                        "evidence": "there's a grassy area right on the corner of the main path, with the lake just to the east of it. That's the picnic area.",
+                        "explanation": "The picnic area is on the south side of the cross path, at the corner with the main path, with the lake to its east."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "Wombat burrows",
+                        "options": [],
+                        "evidence": "head west, past the reptile house. Right at the far end of the path, on your left, you'll find the wombat burrows",
+                        "explanation": "Walking west past the reptile house, the wombat burrows are at the far end of the path on the left (south side)."
+                    },
+                    {
+                        "answer": [
+                            "F"
+                        ],
+                        "prompt": "Kangaroo paddock",
+                        "options": [],
+                        "evidence": "opposite the wombats, there's a big open field, just south of the eucalyptus grove. That's the kangaroo paddock",
+                        "explanation": "The kangaroo paddock is the large field across the path from the wombats, directly south of the eucalyptus grove."
+                    }
+                ],
+                "instruction": "Label the map below. Write the correct letter, A–H, next to Questions 1–7."
+            },
+            {
+                "type": "multiple_choice",
+                "reuse": false,
+                "title": "",
+                "options": [],
+                "questions": [
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "What time will the koala talk start today?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "11:00"
+                            },
+                            {
+                                "id": "B",
+                                "text": "11:30"
+                            },
+                            {
+                                "id": "C",
+                                "text": "12:00"
+                            }
+                        ],
+                        "evidence": "today it's been pushed back half an hour, to 11:30",
+                        "explanation": "The talk is usually at 11 o'clock, but today it starts half an hour later. It finishes at about 12, so that is not the start time."
+                    },
+                    {
+                        "answer": [
+                            "B"
+                        ],
+                        "prompt": "At the reptile talk, visitors will be able to",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "hold a python."
+                            },
+                            {
+                                "id": "B",
+                                "text": "pat a lizard."
+                            },
+                            {
+                                "id": "C",
+                                "text": "feed a turtle."
+                            }
+                        ],
+                        "evidence": "What you can do is give one of our blue-tongue lizards a gentle stroke.",
+                        "explanation": "Visitors can stroke a blue-tongue lizard. Holding pythons stopped last year, and only keepers may feed the turtles."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "For the kangaroo feeding, visitors should",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "pay for food at the café."
+                            },
+                            {
+                                "id": "B",
+                                "text": "bring their own food from home."
+                            },
+                            {
+                                "id": "C",
+                                "text": "buy food at the Visitor Centre."
+                            }
+                        ],
+                        "evidence": "You'll need one of our special feed bags, which are $3 each from the Visitor Centre.",
+                        "explanation": "Feed bags are sold at the Visitor Centre. The guide says the café does not sell them, and food from home can make the kangaroos sick."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "Why is the bird show cancelled today?",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "because of the windy weather"
+                            },
+                            {
+                                "id": "B",
+                                "text": "because some of the birds are sick"
+                            },
+                            {
+                                "id": "C",
+                                "text": "because of building repairs"
+                            }
+                        ],
+                        "evidence": "It's because workers are fixing the aviary roof this afternoon",
+                        "explanation": "The show is off because the aviary roof is being repaired. The guide says the wind is not the reason and all the birds are healthy."
+                    },
+                    {
+                        "answer": [
+                            "C"
+                        ],
+                        "prompt": "At the wombat feeding, the guide advises visitors to",
+                        "options": [
+                            {
+                                "id": "A",
+                                "text": "sit on the seats provided."
+                            },
+                            {
+                                "id": "B",
+                                "text": "use flash photography."
+                            },
+                            {
+                                "id": "C",
+                                "text": "arrive a little early."
+                            }
+                        ],
+                        "evidence": "My advice is to get there about ten minutes before it starts",
+                        "explanation": "He suggests arriving about ten minutes early because the viewing area fills up. There is no seating, and flash photography is not allowed."
+                    }
+                ],
+                "instruction": "Choose the correct letter, A, B or C."
+            }
+        ],
+        "context": "You will hear a guide welcoming a group of visitors to a wildlife sanctuary.",
+        "speakers": [
+            {
+                "id": "guide",
+                "name": "Brett Kinsella"
+            }
+        ]
+    },
+    "solve": {
+        "a": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the café's actually directly across from it, on the right-hand side of the path as you come in",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "another building on your left, right on the corner where our two paths cross. That's the reptile house.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "right to the end of the main path, and that's where you'll find the koalas",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "The first building on your left is the aviary, with our parrots and cockatoos.",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "the south side, there's a grassy area right on the corner of the main path, with the lake just to the east of it. That's the picnic area.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "Right at the far end of the path, on your left, you'll find the wombat burrows.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "opposite the wombats, there's a big open field, just south of the eucalyptus grove. That's the kangaroo paddock",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "today it's been pushed back half an hour, to 11:30",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "What you can do is give one of our blue-tongue lizards a gentle stroke.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "You'll need one of our special feed bags, which are $3 each from the Visitor Centre.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "It's because workers are fixing the aviary roof this afternoon, and the noise would upset them.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "My advice is to get there about ten minutes before it starts",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            }
+        },
+        "b": {
+            "b1q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "the café's actually directly across from it, on the right-hand side of the path as you come in",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b1q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "Just past the Visitor Centre, there's another building on your left, right on the corner where our two paths cross. That's the reptile house.",
+                "answer": [
+                    "A"
+                ],
+                "correct": true
+            },
+            "b1q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "Keep going straight over the crossroads and right to the end of the main path, and that's where you'll find the koalas.",
+                "answer": [
+                    "E"
+                ],
+                "correct": true
+            },
+            "b1q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "turn right, so you're heading east along the cross path. The first building on your left is the aviary",
+                "answer": [
+                    "G"
+                ],
+                "correct": true
+            },
+            "b1q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "On the opposite side of the cross path, the south side, there's a grassy area right on the corner of the main path, with the lake just to the east of it. That's the picnic area.",
+                "answer": [
+                    "D"
+                ],
+                "correct": true
+            },
+            "b1q6": {
+                "marks": [
+                    true
+                ],
+                "quote": "head west, past the reptile house. Right at the far end of the path, on your left, you'll find the wombat burrows.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b1q7": {
+                "marks": [
+                    true
+                ],
+                "quote": "on the other side of the path, opposite the wombats, there's a big open field, just south of the eucalyptus grove. That's the kangaroo paddock",
+                "answer": [
+                    "F"
+                ],
+                "correct": true
+            },
+            "b2q1": {
+                "marks": [
+                    true
+                ],
+                "quote": "today it's been pushed back half an hour, to 11:30",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q2": {
+                "marks": [
+                    true
+                ],
+                "quote": "What you can do is give one of our blue-tongue lizards a gentle stroke.",
+                "answer": [
+                    "B"
+                ],
+                "correct": true
+            },
+            "b2q3": {
+                "marks": [
+                    true
+                ],
+                "quote": "You'll need one of our special feed bags, which are $3 each from the Visitor Centre. Not the café, by the way. They don't sell them there.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q4": {
+                "marks": [
+                    true
+                ],
+                "quote": "It's because workers are fixing the aviary roof this afternoon",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            },
+            "b2q5": {
+                "marks": [
+                    true
+                ],
+                "quote": "My advice is to get there about ten minutes before it starts, because the viewing area fills up quickly.",
+                "answer": [
+                    "C"
+                ],
+                "correct": true
+            }
+        },
+        "disputed": []
+    },
+    "status": "succeeded",
+    "control": {
+        "b1q1": {
+            "marks": [
+                true
+            ],
+            "quote": "the café's actually directly across from it, on the right-hand side of the path as you come in",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b1q2": {
+            "marks": [
+                true
+            ],
+            "quote": "Just past the Visitor Centre, there's another building on your left, right on the corner where our two paths cross. That's the reptile house.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b1q3": {
+            "marks": [
+                true
+            ],
+            "quote": "Keep going straight over the crossroads and right to the end of the main path, and that's where you'll find the koalas.",
+            "answer": [
+                "E"
+            ],
+            "correct": true
+        },
+        "b1q4": {
+            "marks": [
+                true
+            ],
+            "quote": "heading east along the cross path. The first building on your left is the aviary",
+            "answer": [
+                "G"
+            ],
+            "correct": true
+        },
+        "b1q5": {
+            "marks": [
+                true
+            ],
+            "quote": "On the opposite side of the cross path, the south side, there's a grassy area right on the corner of the main path, with the lake just to the east of it. That's the picnic area.",
+            "answer": [
+                "D"
+            ],
+            "correct": true
+        },
+        "b1q6": {
+            "marks": [
+                true
+            ],
+            "quote": "head west, past the reptile house. Right at the far end of the path, on your left, you'll find the wombat burrows.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q1": {
+            "marks": [
+                true
+            ],
+            "quote": "today it's been pushed back half an hour, to 11:30",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        },
+        "b2q2": {
+            "marks": [
+                true
+            ],
+            "quote": "What you can do is give one of our blue-tongue lizards a gentle stroke.",
+            "answer": [
+                "A"
+            ],
+            "correct": true
+        },
+        "b2q3": {
+            "marks": [
+                true
+            ],
+            "quote": "You'll need one of our special feed bags, which are $3 each from the Visitor Centre.",
+            "answer": [
+                "B"
+            ],
+            "correct": true
+        },
+        "b2q4": {
+            "marks": [
+                true
+            ],
+            "quote": "It's because workers are fixing the aviary roof this afternoon",
+            "answer": [
+                "C"
+            ],
+            "correct": true
+        }
+    },
+    "metrics": {
+        "control": {
+            "marks": 10,
+            "correct": 10
+        },
+        "discarded": 0,
+        "generated": 12,
+        "agreedFirst": 12,
+        "discardRate": 0,
+        "agreedRevised": 0,
+        "disputedFirst": 0
+    },
+    "audioLog": {
+        "turns": [
+            {
+                "ms": 16160,
+                "wer": 0,
+                "heard": "G'day everyone and welcome to Wattle Creek Wildlife Sanctuary. My name's Brett Kinsella and I'm one of the guides here. Before you head off, I'll give you a quick idea of where everything is, and then I'll run through today's talks and feeding times. So grab one of our maps and have it handy."
+            },
+            {
+                "ms": 26480,
+                "wer": 0.033,
+                "heard": "Right, so you've just come in through the main gate and you're at the bottom of the main path which runs north through the middle of the sanctuary. On your left is the visitor center where you bought your tickets, and that's also where you'll find the toilets and the gift shop. A lot of people go looking for food in there, but the cafe is actually directly across from it on the right-hand side of the path as you come in. It does good coffee and the sausage rolls are excellent."
+            },
+            {
+                "ms": 15360,
+                "wer": 0.02,
+                "heard": "Okay, now walk north up the main path. Just past the visitor center, there's another building on your left, right on the corner where our two paths cross. That's the reptile house. It's air-conditioned, so it's a good place to cool down if it gets hot this arvo."
+            },
+            {
+                "ms": 18800,
+                "wer": 0.032,
+                "heard": "Keep going straight over the crossroads and right to the end of the main path, and that's where you'll find the koalas. You'll notice the eucalyptus grove up in the northwest corner, and some visitors expect to see koalas in there, but that's just where we grow the leaves we feed them, so don't waste your time looking up in those trees."
+            },
+            {
+                "ms": 20720,
+                "wer": 0,
+                "heard": "Now come back down to the crossroads and turn right so you're heading east along the cross path. The first building on your left is the aviary with our parrots and cockatoos. Behind it, further north, there's a smaller building and that's the nocturnal house where you can see bilbies and possums. It's kept dark inside, so give your eyes a minute to adjust."
+            },
+            {
+                "ms": 18640,
+                "wer": 0,
+                "heard": "On the opposite side of the cross path, the south side, there's a grassy area right on the corner of the main path, with the lake just to the east of it. That's the picnic area. There are tables and barbecues, and you're welcome to bring your own lunch. Just keep an eye on your sandwiches, because the ducks from the lake are very bold."
+            },
+            {
+                "ms": 15920,
+                "wer": 0.02,
+                "heard": "OK, last bit of the map. Go back to the crossroads and this time head west, past the reptile house. Right at the far end of the path, on your left, you'll find the wombat burrows. They dig all day, so you might only see the tops of their heads!"
+            },
+            {
+                "ms": 12560,
+                "wer": 0,
+                "heard": "Now, on the other side of the path, opposite the wombats, there's a big open field just south of the eucalyptus grove. That's the kangaroo paddock, and you're allowed to walk right in among them. They're very relaxed."
+            },
+            {
+                "ms": 18800,
+                "wer": 0.035,
+                "heard": "Right, now for today's program. The koala talk is usually at eleven o'clock, but today it's been pushed back half an hour to eleven thirty because the keepers had to take one of the joeys to the vet. Nothing serious, I'm told. It runs for about thirty minutes, so you'll be finished by twelve, in time for lunch."
+            },
+            {
+                "ms": 19440,
+                "wer": 0,
+                "heard": "At one o'clock there's the Reptile Talk in the Reptile House. Visitors used to be able to hold one of our pythons, but we stopped that last year, sorry. What you can do is give one of our blue-tongue lizards a gentle stroke. People sometimes ask about feeding the turtles too, but only the keepers are allowed to do that."
+            },
+            {
+                "ms": 18960,
+                "wer": 0,
+                "heard": "Then at two o'clock—sorry, quarter past two—the keepers feed the kangaroos, and you can join in! Please don't give them bread or anything you've brought from home, because it makes them sick. You'll need one of our special feed bags, which are three dollars each from the visitor centre. Not the café, by the way, they don't sell them there."
+            },
+            {
+                "ms": 17280,
+                "wer": 0,
+                "heard": "Normally at three o'clock we'd have the free-flight bird show near the aviary. But I'm afraid it's off today. It's a bit windy, but that's not the reason. The birds are fine with a breeze, and they're all perfectly healthy. It's because workers are fixing the aviary roof this afternoon, and the noise would upset them."
+            },
+            {
+                "ms": 16640,
+                "wer": 0,
+                "heard": "Finally, the wombat feeding is at quarter to four, at the burrows. There's no seating there, so it's standing room only, and please, no flash photography as it frightens them. My advice is to get there about ten minutes before it starts because the viewing area fills up quickly."
+            },
+            {
+                "ms": 7440,
+                "wer": 0,
+                "heard": "Okay, that's it from me. If you've got any questions, just look for me or any of the staff in green shirts. Enjoy your day!"
+            }
+        ],
+        "padded": [],
+        "flagged": [],
+        "retried": [],
+        "loudness": {
+            "lufs": -16,
+            "truePeakDb": -1.3
+        },
+        "dictation": [],
+        "recording": [],
+        "firstCheck": []
+    },
+    "selection": {
+        "kept": [
+            "b1q1",
+            "b1q2",
+            "b1q3",
+            "b1q4",
+            "b1q5",
+            "b1q6",
+            "b2q1",
+            "b2q2",
+            "b2q3",
+            "b2q4"
+        ],
+        "short": [],
+        "agreed": {
+            "b1q1": "first",
+            "b1q2": "first",
+            "b1q3": "first",
+            "b1q4": "first",
+            "b1q5": "first",
+            "b1q6": "first",
+            "b1q7": "first",
+            "b2q1": "first",
+            "b2q2": "first",
+            "b2q3": "first",
+            "b2q4": "first",
+            "b2q5": "first"
+        },
+        "dropped": []
+    },
+    "questionIds": {
+        "11": "b1q1",
+        "12": "b1q2",
+        "13": "b1q3",
+        "14": "b1q4",
+        "15": "b1q5",
+        "16": "b1q6",
+        "17": "b2q1",
+        "18": "b2q2",
+        "19": "b2q3",
+        "20": "b2q4"
+    },
+    "translation": {
+        "missing": []
+    }
+}

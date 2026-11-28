@@ -9,7 +9,7 @@ import {catalogFixture, json, problem, profileFixture, startApp, startMock} from
 // P7.10: IELTS Listening — the sound check, one part in exam mode on the server's schedule (autosave, the automatic submit at
 // the end), the review with the transcript and "Listen to this place"; a full test in practice mode with the map of part 2.
 const TOKEN = '41|listening-session-fixture';
-const library = JSON.parse(readFileSync(new URL('../../packages/exam-domain/library/ielts-listening.v1.json', import.meta.url), 'utf8'));
+const library = JSON.parse(readFileSync(new URL('../../packages/exam-domain/library/ielts-listening.v2.json', import.meta.url), 'utf8'));
 const source = library.tests[0];
 const TEST = {uuid: randomUUID(), title: source.title};
 const PART_MS = 8000; // the mock's schedule: short parts, so the test sees a part start, play and close

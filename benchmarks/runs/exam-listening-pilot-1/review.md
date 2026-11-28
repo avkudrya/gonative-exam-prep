@@ -15,39 +15,40 @@ Speakers: Joanne Pickering (female, british, booking agent at a holiday cottage 
 2. [0:53] **Joanne Pickering:** Lovely. I'll just fill in a booking form as we go. Could I start with your surname?
 3. [0:58] **Martin Brereton:** Yes, it's Brereton. That's B-R-E-R-E-T-O-N. First name Martin.
    - voice got: Yes, it's Brereton. That's B, R, E, R, E, T, O, N. First name Martin.
-4. [1:05] **Joanne Pickering:** Thank you, Mr Brereton. And when were you hoping to come?
-5. [1:09] **Martin Brereton:** Well, we'd planned to arrive on Saturday the 12th of July, but my son's got a football tournament that weekend. So it'll have to be the Saturday after, the 19th.
-6. [1:17] **Joanne Pickering:** Right, arriving Saturday the 19th of July and leaving the following Saturday. Did you have a particular cottage in mind?
-7. [1:24] **Martin Brereton:** My wife spotted one on your website called Bramble Cottage. She thought it looked lovely.
-8. [1:28] **Joanne Pickering:** Ah, I'm sorry, Bramble's already booked for that week. But there's another one on the same farm that's very similar. It's called Heron Cottage, like the bird.
-9. [1:36] **Martin Brereton:** Heron Cottage. OK. And how many bedrooms has it got? We need at least two.
-10. [1:44] **Joanne Pickering:** Well, the website still says two, but the owners have just converted the loft, so there are actually three now. Two doubles and a small single.
-11. [1:51] **Martin Brereton:** Oh, that's even better. My son and daughter can have a room each, then. That'll save a few arguments!
-12. [1:58] **Joanne Pickering:** I'm sure! Now, will you be bringing any pets? Heron Cottage is one of our pet-friendly ones.
-13. [2:04] **Martin Brereton:** Yes, we'll bring our dog. The kids wanted to bring their rabbit too, but my mother's offered to look after it while we're away.
-14. [2:10] **Joanne Pickering:** Very sensible. So that's just the one animal. Now, the price for that week. Most of the summer it's £595, but the 19th falls in the school holidays, so it goes up to £640, I'm afraid.
+4. [1:08] **Joanne Pickering:** Thank you, Mr Brereton. And when were you hoping to come?
+5. [1:11] **Martin Brereton:** Well, we'd planned to arrive on Saturday the 12th of July, but my son's got a football tournament that weekend. So it'll have to be the Saturday after, the 19th.
+6. [1:20] **Joanne Pickering:** Right, arriving Saturday the 19th of July and leaving the following Saturday. Did you have a particular cottage in mind?
+7. [1:27] **Martin Brereton:** My wife spotted one on your website called Bramble Cottage. She thought it looked lovely.
+8. [1:31] **Joanne Pickering:** Ah, I'm sorry, Bramble's already booked for that week. But there's another one on the same farm that's very similar. It's called Heron Cottage, like the bird. That's H-E-R-O-N.
+   - voice got: Ah, I'm sorry, Bramble's already booked for that week. But there's another one on the same farm that's very similar. It's called Heron Cottage, like the bird. That's H, E, R, O, N.
+9. [1:42] **Martin Brereton:** Heron Cottage. OK. And how many bedrooms has it got? We need at least two.
+10. [1:49] **Joanne Pickering:** Well, the website still says two, but the owners have just converted the loft, so there are actually three now. Two doubles and a small single.
+11. [1:57] **Martin Brereton:** Oh, that's even better. My son and daughter can have a room each, then. That'll save a few arguments!
+12. [2:04] **Joanne Pickering:** I'm sure! Now, will you be bringing any pets? Heron Cottage is one of our pet-friendly ones.
+13. [2:09] **Martin Brereton:** Yes, we'll bring our dog. The kids wanted to bring their rabbit too, but my mother's offered to look after it while we're away.
+14. [2:16] **Joanne Pickering:** Very sensible. So that's just the one animal. Now, the price for that week. Most of the summer it's £595, but the 19th falls in the school holidays, so it goes up to £640, I'm afraid.
    - voice got: Very sensible. So that's just the one animal. Now, the price for that week. Most of the summer it's five hundred and ninety-five pounds, but the 19th falls in the school holidays, so it goes up to six hundred and forty pounds, I'm afraid.
-15. [2:23] **Martin Brereton:** £640. Hmm, a bit more than we'd budgeted for, but it sounds worth it. Let's go ahead.
+15. [2:29] **Martin Brereton:** £640. Hmm, a bit more than we'd budgeted for, but it sounds worth it. Let's go ahead.
    - voice got: six hundred and forty pounds. Hmm, a bit more than we'd budgeted for, but it sounds worth it. Let's go ahead.
-16. [2:31] **Joanne Pickering:** Great. Is there anything extra you'll need in the cottage?
-17. [2:34] **Martin Brereton:** Yes, actually. We'll bring our own high chair, because we've got a travel one, but could you provide a cot? Our daughter's only eighteen months.
+16. [2:37] **Joanne Pickering:** Great. Is there anything extra you'll need in the cottage?
+17. [2:40] **Martin Brereton:** Yes, actually. We'll bring our own high chair, because we've got a travel one, but could you provide a cot? Our daughter's only eighteen months.
    - heard (WER 0.08): Yes actually, we'll bring our own highchair because we've got a travel one, but could you provide a cot? Our daughter’s only eighteen months.
-18. [2:44] **Joanne Pickering:** No problem at all. I'll put that on the form, and there's no charge for it.
-19. [2:48] **Martin Brereton:** Brilliant. And what's included in the price? I don't want to pack things we don't need.
-20. [3:25] **Joanne Pickering:** Well, electricity and heating are covered. Bed linen's provided, of course, and so are towels, so you can leave those at home. The one thing that isn't included is firewood for the stove, but you can buy a basket from the farm shop.
-21. [3:39] **Martin Brereton:** That's fine, I doubt we'll need a fire in July anyway. How does payment work?
-22. [3:44] **Joanne Pickering:** We take a deposit of £150 today, by card. Then the rest is due six weeks before you arrive. Some agencies give you until four weeks before, but we're a bit earlier than that, so do make a note of it.
+18. [2:49] **Joanne Pickering:** No problem at all. I'll put that on the form, and there's no charge for it.
+19. [2:54] **Martin Brereton:** Brilliant. And what's included in the price? I don't want to pack things we don't need.
+20. [3:31] **Joanne Pickering:** Well, electricity and heating are covered. Bed linen's provided, of course, and so are towels, so you can leave those at home. The one thing that isn't included is firewood for the stove, but you can buy a basket from the farm shop.
+21. [3:45] **Martin Brereton:** That's fine, I doubt we'll need a fire in July anyway. How does payment work?
+22. [3:50] **Joanne Pickering:** We take a deposit of £150 today, by card. Then the rest is due six weeks before you arrive. Some agencies give you until four weeks before, but we're a bit earlier than that, so do make a note of it.
    - voice got: We take a deposit of one hundred and fifty pounds today, by card. Then the rest is due six weeks before you arrive. Some agencies give you until four weeks before, but we're a bit earlier than that, so do make a note of it.
-23. [3:56] **Martin Brereton:** Six weeks. OK, I'll put a reminder in my phone. And could you tell me how to find the place? It's quite remote, isn't it?
+23. [4:02] **Martin Brereton:** Six weeks. OK, I'll put a reminder in my phone. And could you tell me how to find the place? It's quite remote, isn't it?
    - heard (WER 0.04): Six weeks. Okay, I'll put a reminder in my phone. And could you tell me how to find the place? It's quite remote, isn't it?
-24. [4:03] **Joanne Pickering:** It is a bit. You'll come into the village of Ashby Wold on the main road. Drive straight through, past the pub on your right, and then take the first left just after the church.
+24. [4:08] **Joanne Pickering:** It is a bit. You'll come into the village of Ashby Wold on the main road. Drive straight through, past the pub on your right, and then take the first left just after the church.
    - heard (WER 0.029): It is a bit. You'll come into the village of Ashby Wald on the main road. Drive straight through, past the pub on your right, and then take the first left just after the church.
-25. [4:12] **Martin Brereton:** Past the pub, then left after the church. Got it.
-26. [4:16] **Joanne Pickering:** Then follow that lane for about a mile and you'll see the farm. Please don't park in the farmyard, because the tractors need to get through. There's plenty of space next to the barn, so leave your car there.
-27. [4:28] **Martin Brereton:** Next to the barn. Right. And how do we get the key? We probably won't arrive until about seven in the evening.
-28. [4:35] **Joanne Pickering:** That's fine. There's a key safe on the wall by the front door. Your code is 4718. The old code was printed in some of our leaflets, but it's been changed, so only use the one I've just given you.
-29. [4:48] **Martin Brereton:** 4718. Brilliant. Thanks so much for your help.
-30. [4:54] **Joanne Pickering:** You're welcome, Mr Brereton. Now, if I could just take your card details for the deposit.
+25. [4:18] **Martin Brereton:** Past the pub, then left after the church. Got it.
+26. [4:22] **Joanne Pickering:** Then follow that lane for about a mile and you'll see the farm. Please don't park in the farmyard, because the tractors need to get through. There's plenty of space next to the barn, so leave your car there.
+27. [4:34] **Martin Brereton:** Next to the barn. Right. And how do we get the key? We probably won't arrive until about seven in the evening.
+28. [4:41] **Joanne Pickering:** That's fine. There's a key safe on the wall by the front door. Your code is 4718. The old code was printed in some of our leaflets, but it's been changed, so only use the one I've just given you.
+29. [4:53] **Martin Brereton:** 4718. Brilliant. Thanks so much for your help.
+30. [5:00] **Joanne Pickering:** You're welcome, Mr Brereton. Now, if I could just take your card details for the deposit.
 
 ### Questions
 
@@ -68,7 +69,7 @@ Speakers: Joanne Pickering (female, british, booking agent at a holiday cottage 
   - en: Bramble Cottage is already booked, so the agent offers Heron Cottage instead.
   - ru: "Bramble Cottage" уже забронирован, поэтому сотрудница агентства предлагает вместо него "Heron Cottage".
   - uk: "Bramble Cottage" вже заброньовано, тому працівниця агенції пропонує натомість "Heron Cottage".
-- **4** Number of bedrooms: ______ → **three | 3** (solvers 3 / three; controller three)
+- **4** Number of bedrooms: ______ → **three | 3** (solvers 3 / three; controller 3)
   - evidence: "the owners have just converted the loft, so there are actually three now."
   - en: The website says two bedrooms, but this is out of date: after the loft conversion there are three.
   - ru: На сайте указано "two bedrooms", но эта информация устарела: после переоборудования чердака спален стало "three".
@@ -91,7 +92,7 @@ Speakers: Joanne Pickering (female, british, booking agent at a holiday cottage 
   - en: Towels are provided as well as bed linen. Firewood is not included; it must be bought from the farm shop.
   - ru: Кроме "bed linen", предоставляются и "towels". "Firewood" в стоимость не входит: дрова нужно покупать в "farm shop".
   - uk: Окрім "bed linen", надаються й "towels". "Firewood" до вартості не входить: дрова треба купувати в "farm shop".
-- **8** The rest of the money must be paid ______ weeks before arrival → **six | 6** (solvers 6 / six; controller six)
+- **8** The rest of the money must be paid ______ weeks before arrival → **six | 6** (solvers 6 / six; controller 6)
   - evidence: "Then the rest is due six weeks before you arrive."
   - en: The balance is due six weeks before arrival. Four weeks is what some other agencies allow, not this one.
   - ru: Оставшуюся сумму нужно внести за "six weeks" до приезда. Срок "four weeks" дают некоторые другие агентства, но не это.
@@ -488,49 +489,50 @@ Speakers: Greg Navarro (male, north_american, receptionist at a sports centre, x
 4. [1:03] **Greg Navarro:** Great. What's your name, please?
 5. [1:05] **Lauren Whitaker:** It's Lauren Whitaker. That's W-H-I-T-A-K-E-R.
    - voice got: It's Lauren Whitaker. That's W, H, I, T, A, K, E, R.
-6. [1:10] **Greg Navarro:** Got it, thanks, Lauren. And could I have your home address? We mail out a printed schedule every season.
-7. [1:16] **Lauren Whitaker:** Sure. It's 42 Linden Avenue.
-8. [1:19] **Greg Navarro:** Linden Avenue. Is that L-I-N-D-E-N?
+   - heard (WER 0.2): It's Lauren Whittaker, that's W-H-I-T-A-K-E-R.
+6. [1:13] **Greg Navarro:** Got it, thanks, Lauren. And could I have your home address? We mail out a printed schedule every season.
+7. [1:19] **Lauren Whitaker:** Sure. It's 42 Linden Avenue.
+8. [1:22] **Greg Navarro:** Linden Avenue. Is that L-I-N-D-E-N?
    - voice got: Linden Avenue. Is that L, I, N, D, E, N?
-9. [1:23] **Lauren Whitaker:** That's right. It's the street that runs along the river.
-10. [1:27] **Greg Navarro:** OK. We also ask for people's occupation, just for our records, because some employers have a discount arrangement with us.
+9. [1:29] **Lauren Whitaker:** That's right. It's the street that runs along the river.
+10. [1:33] **Greg Navarro:** OK. We also ask for people's occupation, just for our records, because some employers have a discount arrangement with us.
    - heard (WER 0.05): Okay. We also ask for people's occupation, just for our records, because some employers have a discount arrangement with us.
-11. [1:35] **Lauren Whitaker:** Oh, right. Well, I worked as a teacher for years, but then I retrained, so now I'm a nurse at Mercy Hospital.
-12. [1:42] **Greg Navarro:** A nurse. Unfortunately, the hospital isn't one of our partners, but it might be worth asking your manager. Now, so I can recommend the right course, how far can you swim at the moment?
-13. [1:52] **Lauren Whitaker:** Hmm. I'd love to say four lengths of the pool, but honestly, without stopping, it's more like two.
-14. [1:59] **Greg Navarro:** That's fine, plenty of people are at that level. And is there anything in particular you'd like to work on?
-15. [2:05] **Lauren Whitaker:** Well, my arms and legs are OK, I think. It's my breathing that's the real problem. I get out of breath really quickly, and then I panic a bit.
+11. [1:40] **Lauren Whitaker:** Oh, right. Well, I worked as a teacher for years, but then I retrained, so now I'm a nurse at Mercy Hospital.
+12. [1:47] **Greg Navarro:** A nurse. Unfortunately, the hospital isn't one of our partners, but it might be worth asking your manager. Now, so I can recommend the right course, how far can you swim at the moment?
+13. [1:58] **Lauren Whitaker:** Hmm. I'd love to say four lengths of the pool, but honestly, without stopping, it's more like two.
+14. [2:05] **Greg Navarro:** That's fine, plenty of people are at that level. And is there anything in particular you'd like to work on?
+15. [2:10] **Lauren Whitaker:** Well, my arms and legs are OK, I think. It's my breathing that's the real problem. I get out of breath really quickly, and then I panic a bit.
    - heard (WER 0.034): Well, my arms and legs are okay, I think. It's my breathing that's the real problem. I get out of breath really quickly, and then I panic a bit.
-16. [2:14] **Greg Navarro:** That's really common, and our instructors are great with it. Oh, one last question for the form. How did you hear about us? Was it our website?
-17. [2:22] **Lauren Whitaker:** No, actually, I saw a poster at the library. A friend had mentioned you too, but the poster had your phone number on it.
-18. [3:02] **Greg Navarro:** Great. So, let me tell you about the courses. Our Beginners class is on Mondays at 6 p.m. It isn't in the main pool, it's in the teaching pool, which is smaller and not so deep. That one costs $85.
+16. [2:19] **Greg Navarro:** That's really common, and our instructors are great with it. Oh, one last question for the form. How did you hear about us? Was it our website?
+17. [2:28] **Lauren Whitaker:** No, actually, I saw a poster at the library. A friend had mentioned you too, but the poster had your phone number on it.
+18. [3:08] **Greg Navarro:** Great. So, let me tell you about the courses. Our Beginners class is on Mondays at 6 p.m. It isn't in the main pool, it's in the teaching pool, which is smaller and not so deep. That one costs $85.
    - voice got: Great. So, let me tell you about the courses. Our Beginners class is on Mondays at 6 p.m. It isn't in the main pool, it's in the teaching pool, which is smaller and not so deep. That one costs eighty-five dollars.
    - heard (WER 0.049): Great, so let me tell you about the courses. Our beginners class is on Mondays at 6 pm. It isn't in the main pool, it's in the teaching pool, which is smaller and not so deep. That one costs $85.
-19. [3:15] **Lauren Whitaker:** I think I'm a bit past that level, though.
-20. [3:18] **Greg Navarro:** I'd agree. The Improvers course would suit you better. That's on Wednesday evenings for ten weeks. It used to start at 7, but this season it's been moved to 7:30 because the swim team needs the pool earlier.
+19. [3:21] **Lauren Whitaker:** I think I'm a bit past that level, though.
+20. [3:23] **Greg Navarro:** I'd agree. The Improvers course would suit you better. That's on Wednesday evenings for ten weeks. It used to start at 7, but this season it's been moved to 7:30 because the swim team needs the pool earlier.
    - heard (WER 0.026): I'd agree, the Improvers course would suit you better, that's on Wednesday evenings for ten weeks, it used to start at seven but this season it's been moved to 7.30 because the swim team needs the pool earlier.
-21. [3:30] **Lauren Whitaker:** Actually, 7:30 is better for me anyway, since I don't finish work until 6:30. How much is that one?
-22. [3:37] **Greg Navarro:** It's $110 for the ten weeks.
+21. [3:35] **Lauren Whitaker:** Actually, 7:30 is better for me anyway, since I don't finish work until 6:30. How much is that one?
+22. [3:42] **Greg Navarro:** It's $110 for the ten weeks.
    - voice got: It's one hundred ten dollars for the ten weeks.
-23. [3:40] **Lauren Whitaker:** OK. And is there anything after that? If I do well, I mean.
+23. [3:45] **Lauren Whitaker:** OK. And is there anything after that? If I do well, I mean.
    - heard (WER 0.077): Okay. And is there anything after that? If I do well, I mean.
-24. [3:44] **Greg Navarro:** Yes, there's Stroke Development. That's on Saturday mornings at 9, and you need to be able to swim 200 meters to join. Last year it was $150, but we've brought the price down to $135.
+24. [3:50] **Greg Navarro:** Yes, there's Stroke Development. That's on Saturday mornings at 9, and you need to be able to swim 200 meters to join. Last year it was $150, but we've brought the price down to $135.
    - voice got: Yes, there's Stroke Development. That's on Saturday mornings at 9, and you need to be able to swim 200 meters to join. Last year it was one hundred fifty dollars, but we've brought the price down to one hundred thirty-five dollars.
    - heard (WER 0.029): Yes, there's stroke development, that's on Saturday mornings at nine, and you need to be able to swim 200 metres to join. Last year it was $150, but we've brought the price down to $135.
-25. [3:57] **Lauren Whitaker:** That's not bad. What about private lessons? I've been thinking about having one or two just for my breathing.
-26. [4:04] **Greg Navarro:** We do those too. They're $45 for half an hour. The only thing is, our instructors are pretty busy, so you have to book them a week in advance. You can't just call the day before.
+25. [4:03] **Lauren Whitaker:** That's not bad. What about private lessons? I've been thinking about having one or two just for my breathing.
+26. [4:09] **Greg Navarro:** We do those too. They're $45 for half an hour. The only thing is, our instructors are pretty busy, so you have to book them a week in advance. You can't just call the day before.
    - voice got: We do those too. They're forty-five dollars for half an hour. The only thing is, our instructors are pretty busy, so you have to book them a week in advance. You can't just call the day before.
-27. [4:15] **Lauren Whitaker:** Good to know. And what do I need to bring to the classes?
-28. [4:19] **Greg Navarro:** Well, a swimsuit, obviously, and we ask everyone to wear a swim cap. Goggles are a good idea too. You don't need to bring a towel, because you can rent one here for $2. But please bring a padlock for the lockers. We don't sell them at the front desk.
+27. [4:20] **Lauren Whitaker:** Good to know. And what do I need to bring to the classes?
+28. [4:24] **Greg Navarro:** Well, a swimsuit, obviously, and we ask everyone to wear a swim cap. Goggles are a good idea too. You don't need to bring a towel, because you can rent one here for $2. But please bring a padlock for the lockers. We don't sell them at the front desk.
    - voice got: Well, a swimsuit, obviously, and we ask everyone to wear a swim cap. Goggles are a good idea too. You don't need to bring a towel, because you can rent one here for two dollars. But please bring a padlock for the lockers. We don't sell them at the front desk.
-29. [4:33] **Lauren Whitaker:** A padlock, OK. And how do I actually sign up?
+29. [4:39] **Lauren Whitaker:** A padlock, OK. And how do I actually sign up?
    - heard (WER 0.1): A padlock, okay. And how do I actually sign up?
-30. [4:37] **Greg Navarro:** You can register online or in person. There's a one-time registration fee of $20, which covers any course you take with us. Then, when you come to your first class, please bring some photo ID, like a driver's license, so we can make your membership card.
+30. [4:42] **Greg Navarro:** You can register online or in person. There's a one-time registration fee of $20, which covers any course you take with us. Then, when you come to your first class, please bring some photo ID, like a driver's license, so we can make your membership card.
    - voice got: You can register online or in person. There's a one-time registration fee of twenty dollars, which covers any course you take with us. Then, when you come to your first class, please bring some photo ID, like a driver's license, so we can make your membership card.
-31. [4:52] **Lauren Whitaker:** No problem. I think I'll go with the Improvers course, then.
-32. [4:56] **Greg Navarro:** Great choice. I'll put you down for Wednesdays, and the schedule will be in the mail this week.
-33. [5:01] **Lauren Whitaker:** Perfect. Thanks so much for your help, Greg.
-34. [5:04] **Greg Navarro:** You're welcome, Lauren. See you in the pool!
+31. [4:57] **Lauren Whitaker:** No problem. I think I'll go with the Improvers course, then.
+32. [5:01] **Greg Navarro:** Great choice. I'll put you down for Wednesdays, and the schedule will be in the mail this week.
+33. [5:06] **Lauren Whitaker:** Perfect. Thanks so much for your help, Greg.
+34. [5:10] **Greg Navarro:** You're welcome, Lauren. See you in the pool!
 
 ### Questions
 

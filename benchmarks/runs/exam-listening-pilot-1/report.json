@@ -43,12 +43,12 @@
         "voice": "en-GB-Chirp3-HD-Charon"
     },
     "budgetUsd": 10,
-    "spentUsd": 4.438122,
+    "spentUsd": 4.463234,
     "parts": [
         {
             "key": "l1|p1",
             "status": "succeeded",
-            "costUsd": 0.569109,
+            "costUsd": 0.591551,
             "metrics": {
                 "control": {
                     "marks": 10,
@@ -64,14 +64,14 @@
             "file": "parts/l1-p1.json",
             "audio": {
                 "file": "audio/l1-p1.mp3",
-                "durationMs": 335403,
+                "durationMs": 341062,
                 "retried": [
                     27
                 ],
                 "padded": [],
                 "loudness": {
-                    "lufs": -16,
-                    "truePeakDb": -1.7
+                    "lufs": -16.6,
+                    "truePeakDb": -1.1
                 },
                 "flagged": [],
                 "recording": []
@@ -177,7 +177,7 @@
         {
             "key": "l2|p1",
             "status": "succeeded",
-            "costUsd": 0.452835,
+            "costUsd": 0.455505,
             "metrics": {
                 "control": {
                     "marks": 10,
@@ -193,11 +193,11 @@
             "file": "parts/l2-p1.json",
             "audio": {
                 "file": "audio/l2-p1.mp3",
-                "durationMs": 342699,
+                "durationMs": 348203,
                 "retried": [],
                 "padded": [],
                 "loudness": {
-                    "lufs": -16.6,
+                    "lufs": -16.8,
                     "truePeakDb": -1.2
                 },
                 "flagged": [],

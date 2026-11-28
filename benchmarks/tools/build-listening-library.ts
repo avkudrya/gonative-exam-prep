@@ -16,15 +16,21 @@ import {fileURLToPath} from 'node:url';
 import {checkListeningTest, type ListeningPart, type ListeningTest} from '../../packages/exam-domain/src/index.js';
 
 type Status = 'review' | 'published' | 'retired';
-type Version = {version: string; run: string; note?: string; tests: {key: string; status: Status}[]};
+// frozen: the content is already published under this version and the round's files have moved on (a --redo): only the
+// statuses change, the rest of the file stays as it is.
+type Version = {version: string; run: string; note?: string; frozen?: boolean; tests: {key: string; status: Status}[]};
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const PREFIX = 'exam/listening/';
 const PILOT = 'benchmarks/runs/exam-listening-pilot-1';
 const title = (key: string) => `Listening practice test ${key.replace(/^l/, '')}`;
 // 2026-11-27: the owner listened to the whole pilot («послушал, всё ок»); Claude reviewed the 80 questions (P7.9 §3–4).
+// 2026-11-28: the owner found the spelled names too fast and "Heron" heard as "herring"; Part 1 of both tests was voiced again
+// with a pause after each letter and Heron spelled (P7.10 §6), so v1 is retired and v2 carries the same tests.
 const VERSIONS: Version[] = [
-  {version: 'v1', run: PILOT, note: 'The two pilot tests (P7.9), reviewed in full and listened to by the owner.',
+  {version: 'v1', run: PILOT, frozen: true, note: 'The two pilot tests (P7.9), reviewed in full and listened to by the owner.',
+    tests: [{key: 'l1', status: 'retired'}, {key: 'l2', status: 'retired'}]},
+  {version: 'v2', run: PILOT, note: 'The pilot tests (P7.9) with Part 1 voiced again: names spelled one letter at a time, Heron spelled (owner, 2026-11-28).',
     tests: [{key: 'l1', status: 'published'}, {key: 'l2', status: 'published'}]},
 ];
 
@@ -46,7 +52,32 @@ function part(p: ListeningPart & {meta?: {topic: string}}): ListeningPart & {top
 
 const check = process.argv.includes('--check');
 let stale = false;
+function write(out: string, text: string, summary: string) {
+  if (check) {
+    let current = '';
+    try { current = readFileSync(join(root, out), 'utf8'); } catch { /* missing */ }
+    if (current !== text) {
+      console.error(`${out} is stale: run npm run bench:listening-library`);
+      stale = true;
+    }
+  } else {
+    writeFileSync(join(root, out), text);
+    console.log(`${out}: ${summary}`);
+  }
+}
+
 for (const v of VERSIONS) {
+  const out = `packages/exam-domain/library/ielts-listening.${v.version}.json`;
+  if (v.frozen) {
+    const library = JSON.parse(readFileSync(join(root, out), 'utf8')) as {tests: {key: string; status: Status}[]};
+    for (const entry of v.tests) {
+      const test = library.tests.find(t => t.key === entry.key);
+      if (!test) throw new Error(`${entry.key}: not in ${out}`);
+      test.status = entry.status;
+    }
+    write(out, `${JSON.stringify(library, null, 2)}\n`, `frozen; ${library.tests.map(t => `${t.key} ${t.status}`).join(', ')}`);
+    continue;
+  }
   const report = JSON.parse(readFileSync(join(root, v.run, 'report.json'), 'utf8')) as Report;
   if (!report.soundCheck) throw new Error(`${v.run}: no sound check`);
   const tests = v.tests.map(entry => {
@@ -71,19 +102,7 @@ for (const v of VERSIONS) {
     soundCheck: {text: sound.text, file: s3(sound.sha256), sha256: sound.sha256, bytes: sound.bytes, durationMs: sound.durationMs},
     tests,
   };
-  const out = `packages/exam-domain/library/ielts-listening.${v.version}.json`;
-  const text = `${JSON.stringify(library, null, 2)}\n`;
-  if (check) {
-    let current = '';
-    try { current = readFileSync(join(root, out), 'utf8'); } catch { /* missing */ }
-    if (current !== text) {
-      console.error(`${out} is stale: run npm run bench:listening-library`);
-      stale = true;
-    }
-  } else {
-    writeFileSync(join(root, out), text);
-    console.log(`${out}: ${tests.map(t => `${t.key} ${t.status}`).join(', ')}; audio ${tests.flatMap(t => t.parts).length + 1} files`);
-  }
+  write(out, `${JSON.stringify(library, null, 2)}\n`, `${tests.map(t => `${t.key} ${t.status}`).join(', ')}; audio ${tests.flatMap(t => t.parts).length + 1} files`);
 }
 if (check) {
   if (stale) process.exit(1);

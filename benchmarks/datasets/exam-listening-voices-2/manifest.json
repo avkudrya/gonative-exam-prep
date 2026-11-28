@@ -1,7 +1,7 @@
 {
  "id": "exam-listening-voices-2",
- "purpose": "Round A2 (owner 2026-11-28: the Google voices have a machine echo; «давай попробуем ElevenLabs», Creator plan): the round A script voiced by ElevenLabs in three accents, and again by the voices the pilot uses, all with dictation pauses, for the owner to compare. Our own script; no official material.",
- "budgetUsd": 2.5,
+ "purpose": "Round A2 (owner 2026-11-28: the Google voices have a machine echo; ElevenLabs on the Creator plan; American stays with xAI): the round A script and a narrator's lines voiced by the owner's ElevenLabs voices (collection GN) in British, Australian and New Zealand English, and by the pilot's Google voices for comparison, all with dictation pauses. Our own script; no official material.",
+ "budgetUsd": 3.0,
  "transcription": {
   "provider": "openai",
   "model": "gpt-4o-transcribe"
@@ -88,6 +88,23 @@
     "lamplighters",
     "nineteenth century"
    ]
+  },
+  "narrator": {
+   "about": "the narrator's lines of a part (ListeningAssembly::narration)",
+   "speakers": {
+    "narrator": null
+   },
+   "keys": [],
+   "turns": [
+    {
+     "speaker": "narrator",
+     "text": "Part 1. You will hear a man phoning a bike tour company to book a guided ride. First, you have some time to look at questions 1 to 5."
+    },
+    {
+     "speaker": "narrator",
+     "text": "That is the end of Part 1. You now have thirty seconds to check your answers."
+    }
+   ]
   }
  },
  "combos": [
@@ -95,44 +112,60 @@
    "key": "elevenlabs-v4-british",
    "provider": "elevenlabs",
    "accent": "british",
-   "note": "eleven_v4; premade voices Alice, George, Daniel",
+   "note": "eleven_v4; Clarice, Daniel, lecture Shelley; narrator Chris Brift",
    "voices": {
-    "staff": "Xb7hH8MSUJpSbSDYk0k2",
-    "caller": "JBFqnCBsd6RMkjVDRZzb",
-    "lecturer": "onwK4e9ZLuTAKqWW03F9"
+    "staff": "MWUpoNpAY0rOQGP294mF",
+    "caller": "ynTHHllfDmGsZ3G8QJt9",
+    "lecturer": "4CrZuIW9am7gYAxgo2Af",
+    "narrator": "UEKYgullGqaF0keqT8Bu"
+   }
+  },
+  {
+   "key": "elevenlabs-v4-british-2",
+   "provider": "elevenlabs",
+   "accent": "british",
+   "note": "eleven_v4; Shelley, Daniel, lecture Clarice; narrator Chris Brift",
+   "voices": {
+    "staff": "4CrZuIW9am7gYAxgo2Af",
+    "caller": "ynTHHllfDmGsZ3G8QJt9",
+    "lecturer": "MWUpoNpAY0rOQGP294mF",
+    "narrator": "UEKYgullGqaF0keqT8Bu"
    }
   },
   {
    "key": "elevenlabs-v4-australian",
    "provider": "elevenlabs",
    "accent": "australian",
-   "note": "eleven_v4; library voices Kate and Paul, premade Charlie",
+   "note": "eleven_v4; Kate, Paul, lecture Paul; narrator Chris Brift",
    "voices": {
     "staff": "w9rPM8AIZle60Nbpw7nl",
-    "caller": "IKne3meq5aSn9XLyUdCD",
-    "lecturer": "WLKp2jV6nrS8aMkPPDRO"
+    "caller": "WLKp2jV6nrS8aMkPPDRO",
+    "lecturer": "WLKp2jV6nrS8aMkPPDRO",
+    "narrator": "UEKYgullGqaF0keqT8Bu"
    }
   },
   {
-   "key": "elevenlabs-v4-north-american",
+   "key": "elevenlabs-v4-new-zealand",
    "provider": "elevenlabs",
-   "accent": "north_american",
-   "note": "eleven_v4; premade voices Sarah, Chris, Matilda",
+   "accent": "new_zealand",
+   "note": "eleven_v4; Jessie, Mark, lecture Jessie; narrator Chris Brift",
    "voices": {
-    "staff": "EXAVITQu4vr4xnSDxMaL",
-    "caller": "iP95p4xoKVk53GoZ742B",
-    "lecturer": "XrExE9yKIg1WjnnlVkGX"
+    "staff": "7ceZgj78jCCeAW93ItNk",
+    "caller": "82kwqgRqvxoiNwemeENJ",
+    "lecturer": "7ceZgj78jCCeAW93ItNk",
+    "narrator": "UEKYgullGqaF0keqT8Bu"
    }
   },
   {
    "key": "elevenlabs-v2-british",
    "provider": "elevenlabs",
    "accent": "british",
-   "note": "eleven_multilingual_v2 (the most stable on long text), the same British voices",
+   "note": "eleven_multilingual_v2 (the most stable on long text), the voices of elevenlabs-v4-british",
    "voices": {
-    "staff": "Xb7hH8MSUJpSbSDYk0k2@eleven_multilingual_v2",
-    "caller": "JBFqnCBsd6RMkjVDRZzb@eleven_multilingual_v2",
-    "lecturer": "onwK4e9ZLuTAKqWW03F9@eleven_multilingual_v2"
+    "staff": "MWUpoNpAY0rOQGP294mF@eleven_multilingual_v2",
+    "caller": "ynTHHllfDmGsZ3G8QJt9@eleven_multilingual_v2",
+    "lecturer": "4CrZuIW9am7gYAxgo2Af@eleven_multilingual_v2",
+    "narrator": "UEKYgullGqaF0keqT8Bu@eleven_multilingual_v2"
    }
   },
   {
@@ -143,7 +176,8 @@
    "voices": {
     "staff": "en-GB-Chirp3-HD-Kore",
     "caller": "en-GB-Chirp3-HD-Puck",
-    "lecturer": "en-GB-Chirp3-HD-Aoede"
+    "lecturer": "en-GB-Chirp3-HD-Aoede",
+    "narrator": "en-GB-Chirp3-HD-Charon"
    }
   },
   {
@@ -154,18 +188,8 @@
    "voices": {
     "staff": "en-AU-Chirp3-HD-Kore",
     "caller": "en-AU-Chirp3-HD-Puck",
-    "lecturer": "en-AU-Chirp3-HD-Aoede"
-   }
-  },
-  {
-   "key": "pilot-xai-north-american",
-   "provider": "xai",
-   "accent": "north_american",
-   "note": "the pilot voices, for comparison",
-   "voices": {
-    "staff": "ara",
-    "caller": "sal",
-    "lecturer": "sal"
+    "lecturer": "en-AU-Chirp3-HD-Aoede",
+    "narrator": "en-GB-Chirp3-HD-Charon"
    }
   }
  ]

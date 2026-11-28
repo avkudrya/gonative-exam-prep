@@ -1,0 +1,388 @@
+{
+ "id": "exam-listening-revoice-1",
+ "budgetUsd": 6.0,
+ "prompts": "ls-1",
+ "routes": {
+  "exam.listening.generate": [
+   {
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "high",
+    "max_output_tokens": 32000,
+    "timeout": 900
+   }
+  ],
+  "exam.listening.solve_a": [
+   {
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "timeout": 600
+   }
+  ],
+  "exam.listening.solve_b": [
+   {
+    "provider": "openai",
+    "model": "gpt-5.4",
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "timeout": 600
+   }
+  ],
+  "exam.listening.control": [
+   {
+    "provider": "xai",
+    "model": "grok-4.7",
+    "temperature": 0,
+    "max_output_tokens": 8000,
+    "timeout": 600
+   }
+  ]
+ },
+ "narrator": {
+  "provider": "elevenlabs",
+  "voice": "UEKYgullGqaF0keqT8Bu"
+ },
+ "avoidNames": [
+  "Daniel Fairbrook",
+  "Tessa Marlow"
+ ],
+ "tests": [
+  {
+   "id": "l1",
+   "parts": [
+    {
+     "topic": "A man phones an agency to book a holiday cottage in the countryside for his family",
+     "angle": "dates, the cottage, what is included, payment and directions",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "agent",
+       "role": "booking agent at a holiday cottage agency",
+       "gender": "female",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "FF59babHL8N8gfTgtBMT"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "a father booking a week away",
+       "gender": "male",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "HF0hjxElqeS2vwmlzj6g"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "form_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "note_completion",
+       "count": 4,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A ranger welcomes visitors to a coastal nature reserve",
+     "angle": "where things are on the reserve and what visitors can do on the day",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "ranger",
+       "role": "park ranger",
+       "gender": "female",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "w9rPM8AIZle60Nbpw7nl"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "map_labelling",
+       "count": 5,
+       "spare": 1
+      },
+      {
+       "type": "multiple_choice",
+       "count": 5,
+       "spare": 1
+      }
+     ]
+    },
+    {
+     "topic": "Two university students plan a presentation on noise in cities for an environmental studies course",
+     "angle": "choosing sources, dividing the work, what their tutor advised",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student_a",
+       "role": "environmental studies student",
+       "gender": "female",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "ara"
+       }
+      },
+      {
+       "id": "student_b",
+       "role": "environmental studies student",
+       "gender": "male",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "sal"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice",
+       "count": 5,
+       "spare": 1
+      },
+      {
+       "type": "matching_features",
+       "count": 5,
+       "spare": 1,
+       "reuse": false
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on the history of food preservation",
+     "angle": "drying, salting, canning and refrigeration, and how each changed what people ate",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in food history",
+       "gender": "female",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "FF59babHL8N8gfTgtBMT"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "note_completion",
+       "count": 10,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l2",
+   "parts": [
+    {
+     "topic": "A woman phones a community sports centre to join a swimming course for adults",
+     "angle": "course levels and times, prices, what to bring, joining details",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "receptionist",
+       "role": "receptionist at a sports centre",
+       "gender": "male",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "sal"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "an adult who wants to learn to swim better",
+       "gender": "female",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "ara"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "form_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "table_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": true,
+        "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A local radio talk about changes to a town's recycling and rubbish collections",
+     "angle": "what changes, when, and what residents should do",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "officer",
+       "role": "waste services officer of the town council, speaking on local radio",
+       "gender": "male",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "HF0hjxElqeS2vwmlzj6g"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice_multi",
+       "count": 2,
+       "spare": 1
+      },
+      {
+       "type": "matching_features",
+       "count": 6,
+       "spare": 1,
+       "reuse": false
+      }
+     ]
+    },
+    {
+     "topic": "Two students discuss their tutor's feedback on a marine biology field report",
+     "angle": "what went well, what to change, and the plan for the final version",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student_a",
+       "role": "marine biology student",
+       "gender": "female",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "w9rPM8AIZle60Nbpw7nl"
+       }
+      },
+      {
+       "id": "student_b",
+       "role": "marine biology student",
+       "gender": "male",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "WLKp2jV6nrS8aMkPPDRO"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice",
+       "count": 4,
+       "spare": 1
+      },
+      {
+       "type": "sentence_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": false,
+        "phrase": "NO MORE THAN TWO WORDS"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on how desert plants survive heat and drought",
+     "angle": "roots, leaves, water storage and timing of growth, with examples of well-known plants",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in plant biology",
+       "gender": "male",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "sal"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "note_completion",
+       "count": 10,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "revoiceOf": "exam-listening-pilot-1",
+ "purpose": "The pilot's two tests voiced again with the voices the owner chose after round A2 (2026-11-28: «да, переозвучь пилотные тесты»; ElevenLabs eleven_v4 for British and Australian English, narrator Chris Brift; American parts keep xAI Ara and Sal). Text, questions, controller and translations are the pilot's (with its edits); only speech, transcription and assembly are paid."
+}

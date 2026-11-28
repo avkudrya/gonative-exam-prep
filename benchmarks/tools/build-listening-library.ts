@@ -30,7 +30,11 @@ const title = (key: string) => `Listening practice test ${key.replace(/^l/, '')}
 const VERSIONS: Version[] = [
   {version: 'v1', run: PILOT, frozen: true, note: 'The two pilot tests (P7.9), reviewed in full and listened to by the owner.',
     tests: [{key: 'l1', status: 'retired'}, {key: 'l2', status: 'retired'}]},
-  {version: 'v2', run: PILOT, note: 'The pilot tests (P7.9) with Part 1 voiced again: names spelled one letter at a time, Heron spelled (owner, 2026-11-28).',
+  {version: 'v2', run: PILOT, frozen: true, note: 'The pilot tests (P7.9) with Part 1 voiced again: names spelled one letter at a time, Heron spelled (owner, 2026-11-28).',
+    tests: [{key: 'l1', status: 'retired'}, {key: 'l2', status: 'retired'}]},
+  // 2026-11-28, after round A2: British and Australian parts and the narrator voiced by ElevenLabs, American parts by xAI as before.
+  {version: 'v3', run: 'benchmarks/runs/exam-listening-revoice-1',
+    note: 'The pilot tests (P7.9, with the v2 edits) voiced with the voices the owner chose: ElevenLabs for British and Australian English and the narrator, xAI for American English.',
     tests: [{key: 'l1', status: 'published'}, {key: 'l2', status: 'published'}]},
 ];
 

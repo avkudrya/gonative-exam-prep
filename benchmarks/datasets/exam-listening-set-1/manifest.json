@@ -1,0 +1,1453 @@
+{
+ "id": "exam-listening-set-1",
+ "about": "P7.11 round C (docs/phase-7/P7.11-listening-set.md): 8 new tests (l3–l10), prompts ls-2. Owner 2026-11-28: accents in rotation (each test has all four), spot-listening before publishing, ElevenLabs pay-as-you-go if credits run out, cap $50 («Да, до $50»). Voices: owner's choice after round A2 (ElevenLabs eleven_v4 British, Australian, New Zealand; narrator Chris Brift; xAI North American). Frozen: a change needs a new id.",
+ "budgetUsd": 50,
+ "prompts": "ls-2",
+ "routes": {
+  "exam.listening.generate": [
+   {
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "reasoning_effort": "high",
+    "max_output_tokens": 32000,
+    "timeout": 900
+   }
+  ],
+  "exam.listening.solve_a": [
+   {
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "timeout": 600
+   }
+  ],
+  "exam.listening.solve_b": [
+   {
+    "provider": "openai",
+    "model": "gpt-5.4",
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "timeout": 600
+   }
+  ],
+  "exam.listening.control": [
+   {
+    "provider": "xai",
+    "model": "grok-4.7",
+    "temperature": 0,
+    "max_output_tokens": 8000,
+    "timeout": 600
+   }
+  ]
+ },
+ "narrator": {
+  "provider": "elevenlabs",
+  "voice": "UEKYgullGqaF0keqT8Bu"
+ },
+ "avoidNames": [
+  "Bronwyn Cassidy",
+  "Daniel Fairbrook",
+  "Graham Pennington",
+  "Greg Navarro",
+  "Helen Ashworth",
+  "Joanne Pickering",
+  "Kevin Sorensen",
+  "Kirsten Hayward",
+  "Lauren Whitaker",
+  "Liam Brennan",
+  "Marcus Delgado",
+  "Martin Brereton",
+  "Rachel Lindqvist",
+  "Tessa Marlow"
+ ],
+ "tests": [
+  {
+   "id": "l3",
+   "parts": [
+    {
+     "topic": "A woman phones a van hire company to book a van for moving house",
+     "angle": "van size, dates and times, prices and extras, what to bring when collecting",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "staff",
+       "role": "booking assistant at a van hire company",
+       "gender": "male",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "HF0hjxElqeS2vwmlzj6g"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "a woman moving to a new flat",
+       "gender": "female",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "FF59babHL8N8gfTgtBMT"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "form_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "note_completion",
+       "count": 4,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A volunteer guide introduces visitors to a botanic garden",
+     "angle": "where the gardens and facilities are, and what is on this month",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "guide",
+       "role": "volunteer guide at a botanic garden",
+       "gender": "female",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "7ceZgj78jCCeAW93ItNk"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "map_labelling",
+       "count": 5,
+       "spare": 1
+      },
+      {
+       "type": "multiple_choice",
+       "count": 5,
+       "spare": 1
+      }
+     ]
+    },
+    {
+     "topic": "Two students and their tutor discuss a survey of how students travel to the university",
+     "angle": "choosing questions, finding participants, what the tutor suggests changing",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student_a",
+       "role": "geography student",
+       "gender": "female",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "w9rPM8AIZle60Nbpw7nl"
+       }
+      },
+      {
+       "id": "student_b",
+       "role": "geography student",
+       "gender": "male",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "WLKp2jV6nrS8aMkPPDRO"
+       }
+      },
+      {
+       "id": "tutor",
+       "role": "geography tutor",
+       "gender": "male",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "HF0hjxElqeS2vwmlzj6g"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice",
+       "count": 5,
+       "spare": 1
+      },
+      {
+       "type": "matching_features",
+       "count": 5,
+       "spare": 1,
+       "reuse": false
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on how honeybees tell each other where food is",
+     "angle": "the waggle dance, distance and direction, how scientists tested it, and limits of the idea",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in animal behaviour",
+       "gender": "male",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "sal"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "note_completion",
+       "count": 10,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l4",
+   "parts": [
+    {
+     "topic": "A woman phones to join a choir at a community centre",
+     "angle": "rehearsal times, voice parts, fees, concerts and joining details",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "organiser",
+       "role": "choir organiser",
+       "gender": "male",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "WLKp2jV6nrS8aMkPPDRO"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "a woman who wants to join a choir",
+       "gender": "female",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "w9rPM8AIZle60Nbpw7nl"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "form_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "table_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": true,
+        "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A manager briefs new staff before a summer music festival",
+     "angle": "jobs on the site, shifts, rules for staff and who to contact",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "manager",
+       "role": "festival staff manager",
+       "gender": "female",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "FF59babHL8N8gfTgtBMT"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice_multi",
+       "count": 2,
+       "spare": 1
+      },
+      {
+       "type": "matching_features",
+       "count": 6,
+       "spare": 1,
+       "reuse": false
+      }
+     ]
+    },
+    {
+     "topic": "Two students plan a group project on food waste in campus cafes",
+     "angle": "how to collect data, the steps of the project, and dividing the work",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student_a",
+       "role": "business student",
+       "gender": "female",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "ara"
+       }
+      },
+      {
+       "id": "student_b",
+       "role": "business student",
+       "gender": "male",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "sal"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice",
+       "count": 4,
+       "spare": 1
+      },
+      {
+       "type": "flow_chart_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": false,
+        "phrase": "NO MORE THAN TWO WORDS"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on glaciers as stores of fresh water",
+     "angle": "how glaciers form and store water, meltwater for rivers and farms, and what shrinking glaciers mean",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in earth sciences",
+       "gender": "male",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "1HGaTm3UFxAyxae5H0GU"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "note_completion",
+       "count": 10,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l5",
+   "parts": [
+    {
+     "topic": "A man phones to book a guided kayak tour",
+     "angle": "tour options, dates, prices, equipment and health questions",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "staff",
+       "role": "booking assistant at a kayak tour company",
+       "gender": "female",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "A3TiUH9xcSptIzvOUBnB"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "a man booking a tour for himself and a friend",
+       "gender": "male",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "1HGaTm3UFxAyxae5H0GU"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "form_completion",
+       "count": 4,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "table_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": true,
+        "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A local radio item about a new city bike-share scheme",
+     "angle": "how the scheme works, prices, where the bikes are, and changes planned",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "officer",
+       "role": "city transport officer",
+       "gender": "female",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "ara"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice",
+       "count": 6,
+       "spare": 1
+      },
+      {
+       "type": "multiple_choice_multi",
+       "count": 2,
+       "spare": 1
+      }
+     ]
+    },
+    {
+     "topic": "A student and her tutor discuss her history essay on early railways and the growth of towns",
+     "angle": "the argument, sources, structure and what to improve",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student",
+       "role": "history student",
+       "gender": "male",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "HF0hjxElqeS2vwmlzj6g"
+       }
+      },
+      {
+       "id": "tutor",
+       "role": "history tutor",
+       "gender": "female",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "FF59babHL8N8gfTgtBMT"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "matching_features",
+       "count": 5,
+       "spare": 1,
+       "reuse": false
+      },
+      {
+       "type": "sentence_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": false,
+        "phrase": "NO MORE THAN TWO WORDS"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on how scientists restore damaged coral reefs",
+     "angle": "why reefs decline, coral gardening, new methods and how success is measured",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in marine science",
+       "gender": "female",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "w9rPM8AIZle60Nbpw7nl"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "note_completion",
+       "count": 10,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l6",
+   "parts": [
+    {
+     "topic": "A woman phones a bus company about a bag she left on a bus",
+     "angle": "the journey, a description of the bag and its contents, contact details and what happens next",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "clerk",
+       "role": "lost property clerk at a bus company",
+       "gender": "male",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "sal"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "a woman who lost her bag",
+       "gender": "female",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "ara"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "form_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "note_completion",
+       "count": 4,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A guide welcomes visitors to a wildlife sanctuary",
+     "angle": "where the animals and facilities are, and the day's talks and feeding times",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "guide",
+       "role": "guide at a wildlife sanctuary",
+       "gender": "male",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "WLKp2jV6nrS8aMkPPDRO"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "map_labelling",
+       "count": 6,
+       "spare": 1
+      },
+      {
+       "type": "multiple_choice",
+       "count": 4,
+       "spare": 1
+      }
+     ]
+    },
+    {
+     "topic": "Two students prepare a presentation on sleep and exam performance",
+     "angle": "what the studies found, which findings to use, and how to present them",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student_a",
+       "role": "psychology student",
+       "gender": "female",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "A3TiUH9xcSptIzvOUBnB"
+       }
+      },
+      {
+       "id": "student_b",
+       "role": "psychology student",
+       "gender": "male",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "1HGaTm3UFxAyxae5H0GU"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice_multi",
+       "count": 2,
+       "spare": 1
+      },
+      {
+       "type": "matching_features",
+       "count": 6,
+       "spare": 1,
+       "reuse": false
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on the history of papermaking",
+     "angle": "early materials, how papermaking spread, machines in the nineteenth century and recycling today",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in the history of technology",
+       "gender": "male",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "HF0hjxElqeS2vwmlzj6g"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "flow_chart_completion",
+       "count": 4,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      },
+      {
+       "type": "note_completion",
+       "count": 6,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l7",
+   "parts": [
+    {
+     "topic": "A father phones to book his daughter into a holiday sports camp",
+     "angle": "the child's details, activities, dates, costs and what to bring",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "coordinator",
+       "role": "sports camp coordinator",
+       "gender": "female",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "FF59babHL8N8gfTgtBMT"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "a father booking a camp for his daughter",
+       "gender": "male",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "HF0hjxElqeS2vwmlzj6g"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "note_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "form_completion",
+       "count": 4,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "The leader of a hiking club talks to new members about safety",
+     "angle": "planning a walk, equipment, weather and what to do in an emergency",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "leader",
+       "role": "hiking club leader",
+       "gender": "male",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "1HGaTm3UFxAyxae5H0GU"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice",
+       "count": 6,
+       "spare": 1
+      },
+      {
+       "type": "multiple_choice_multi",
+       "count": 2,
+       "spare": 1
+      }
+     ]
+    },
+    {
+     "topic": "Two students and their lecturer discuss a report on a field trip to a wetland",
+     "angle": "what they observed, problems with their data, and how to write the report",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student_a",
+       "role": "environmental science student",
+       "gender": "female",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "w9rPM8AIZle60Nbpw7nl"
+       }
+      },
+      {
+       "id": "student_b",
+       "role": "environmental science student",
+       "gender": "male",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "WLKp2jV6nrS8aMkPPDRO"
+       }
+      },
+      {
+       "id": "lecturer",
+       "role": "environmental science lecturer",
+       "gender": "male",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "sal"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "matching_features",
+       "count": 5,
+       "spare": 1,
+       "reuse": false
+      },
+      {
+       "type": "sentence_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": false,
+        "phrase": "NO MORE THAN TWO WORDS"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on urban heat islands and how cities can stay cooler",
+     "angle": "why cities are hotter, effects on health and energy, and solutions such as trees and cool roofs",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in urban planning",
+       "gender": "female",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "ara"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "note_completion",
+       "count": 10,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l8",
+   "parts": [
+    {
+     "topic": "A man phones a letting agent about renting a flat",
+     "angle": "the flat, rent and bills, the area, viewing times",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "agent",
+       "role": "letting agent",
+       "gender": "female",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "w9rPM8AIZle60Nbpw7nl"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "a man looking for a flat",
+       "gender": "male",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "WLKp2jV6nrS8aMkPPDRO"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "form_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "table_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": true,
+        "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A guide introduces a science museum that has just reopened",
+     "angle": "where the new galleries are and what visitors can do",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "guide",
+       "role": "museum guide",
+       "gender": "male",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "HF0hjxElqeS2vwmlzj6g"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "map_labelling",
+       "count": 5,
+       "spare": 1
+      },
+      {
+       "type": "matching_features",
+       "count": 5,
+       "spare": 1,
+       "reuse": false
+      }
+     ]
+    },
+    {
+     "topic": "Two students compare interviews and questionnaires for a psychology project",
+     "angle": "advantages of each method, their choice, and the steps of their study",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student_a",
+       "role": "psychology student",
+       "gender": "female",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "ara"
+       }
+      },
+      {
+       "id": "student_b",
+       "role": "psychology student",
+       "gender": "male",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "sal"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice",
+       "count": 4,
+       "spare": 1
+      },
+      {
+       "type": "flow_chart_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": false,
+        "phrase": "NO MORE THAN TWO WORDS"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on how migrating birds find their way",
+     "angle": "the sun, stars and the earth's magnetic field, landmarks and smell, and experiments that tested them",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in zoology",
+       "gender": "female",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "7ceZgj78jCCeAW93ItNk"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "sentence_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": false,
+        "phrase": "NO MORE THAN TWO WORDS"
+       }
+      },
+      {
+       "type": "note_completion",
+       "count": 5,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l9",
+   "parts": [
+    {
+     "topic": "A woman phones to book a hall for a family reunion",
+     "angle": "the date, number of guests, rooms, catering and costs",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "manager",
+       "role": "venue manager",
+       "gender": "male",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "1HGaTm3UFxAyxae5H0GU"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "a woman organising a family reunion",
+       "gender": "female",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "A3TiUH9xcSptIzvOUBnB"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "form_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "note_completion",
+       "count": 4,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A librarian gives new students a tour of the university library services",
+     "angle": "borrowing rules, study spaces, online resources and help available",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "librarian",
+       "role": "university librarian",
+       "gender": "female",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "ara"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice",
+       "count": 5,
+       "spare": 1
+      },
+      {
+       "type": "matching_features",
+       "count": 5,
+       "spare": 1,
+       "reuse": false
+      }
+     ]
+    },
+    {
+     "topic": "Two business students discuss a case study of a small bakery",
+     "angle": "what the bakery did well, its problems, and their recommendations",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student_a",
+       "role": "business student",
+       "gender": "female",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "FF59babHL8N8gfTgtBMT"
+       }
+      },
+      {
+       "id": "student_b",
+       "role": "business student",
+       "gender": "male",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "HF0hjxElqeS2vwmlzj6g"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice_multi",
+       "count": 2,
+       "spare": 1
+      },
+      {
+       "type": "matching_features",
+       "count": 6,
+       "spare": 1,
+       "reuse": true
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on the history of the bicycle and how it changed society",
+     "angle": "early designs, the safety bicycle, effects on work, women's freedom and cities",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in social history",
+       "gender": "male",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "WLKp2jV6nrS8aMkPPDRO"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "note_completion",
+       "count": 10,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "parts": [
+    {
+     "topic": "A man phones to rent a plot in a community garden",
+     "angle": "plot sizes, rules, costs, tools and the waiting list",
+     "words": {
+      "min": 550,
+      "max": 800
+     },
+     "speakers": [
+      {
+       "id": "coordinator",
+       "role": "community garden coordinator",
+       "gender": "female",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "ara"
+       }
+      },
+      {
+       "id": "caller",
+       "role": "a man who wants a garden plot",
+       "gender": "male",
+       "accent": "north_american",
+       "voice": {
+        "provider": "xai",
+        "voice": "sal"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "form_completion",
+       "count": 7,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": true,
+        "phrase": "ONE WORD AND/OR A NUMBER"
+       }
+      },
+      {
+       "type": "table_completion",
+       "count": 3,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": true,
+        "phrase": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A council officer explains changes to a coastal walking path",
+     "angle": "new sections of the path, closures, facilities and safety",
+     "words": {
+      "min": 600,
+      "max": 850
+     },
+     "speakers": [
+      {
+       "id": "officer",
+       "role": "council officer",
+       "gender": "female",
+       "accent": "australian",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "w9rPM8AIZle60Nbpw7nl"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "map_labelling",
+       "count": 5,
+       "spare": 1
+      },
+      {
+       "type": "multiple_choice",
+       "count": 5,
+       "spare": 1
+      }
+     ]
+    },
+    {
+     "topic": "A student and his tutor discuss his study of a language-learning app",
+     "angle": "his research question, results, and what to add before submitting",
+     "words": {
+      "min": 650,
+      "max": 900
+     },
+     "speakers": [
+      {
+       "id": "student",
+       "role": "linguistics student",
+       "gender": "male",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "1HGaTm3UFxAyxae5H0GU"
+       }
+      },
+      {
+       "id": "tutor",
+       "role": "linguistics tutor",
+       "gender": "female",
+       "accent": "new_zealand",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "A3TiUH9xcSptIzvOUBnB"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "multiple_choice",
+       "count": 5,
+       "spare": 1
+      },
+      {
+       "type": "sentence_completion",
+       "count": 5,
+       "spare": 1,
+       "limit": {
+        "words": 2,
+        "number": false,
+        "phrase": "NO MORE THAN TWO WORDS"
+       }
+      }
+     ]
+    },
+    {
+     "topic": "A lecture on bioluminescence in deep-sea animals",
+     "angle": "how animals make light, why they use it, and how scientists study it",
+     "words": {
+      "min": 700,
+      "max": 950
+     },
+     "speakers": [
+      {
+       "id": "lecturer",
+       "role": "university lecturer in marine biology",
+       "gender": "female",
+       "accent": "british",
+       "voice": {
+        "provider": "elevenlabs",
+        "voice": "FF59babHL8N8gfTgtBMT"
+       }
+      }
+     ],
+     "blocks": [
+      {
+       "type": "flow_chart_completion",
+       "count": 6,
+       "spare": 1,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      },
+      {
+       "type": "note_completion",
+       "count": 4,
+       "spare": 2,
+       "limit": {
+        "words": 1,
+        "number": false,
+        "phrase": "ONE WORD ONLY"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

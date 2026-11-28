@@ -1,0 +1,172 @@
+{
+ "id": "exam-listening-voices-2",
+ "purpose": "Round A2 (owner 2026-11-28: the Google voices have a machine echo; «давай попробуем ElevenLabs», Creator plan): the round A script voiced by ElevenLabs in three accents, and again by the voices the pilot uses, all with dictation pauses, for the owner to compare. Our own script; no official material.",
+ "budgetUsd": 2.5,
+ "transcription": {
+  "provider": "openai",
+  "model": "gpt-4o-transcribe"
+ },
+ "samples": {
+  "dialogue": {
+   "about": "like part 1: a booking call with a spelled name, a phone number and a price",
+   "speakers": {
+    "staff": "female",
+    "caller": "male"
+   },
+   "turns": [
+    {
+     "speaker": "staff",
+     "text": "Good morning, Harbour Bike Tours. How can I help you?"
+    },
+    {
+     "speaker": "caller",
+     "text": "Oh, hello. I'm calling about the guided rides you run at the weekends. A friend of mine did one last month and said it was the best way to see the coast."
+    },
+    {
+     "speaker": "staff",
+     "text": "That's lovely to hear. We have two rides on Saturdays: a short one along the river, which takes about two hours, and the longer coastal ride, which is closer to five hours with a stop for lunch."
+    },
+    {
+     "speaker": "caller",
+     "text": "I think the coastal one. Is lunch included in the price?"
+    },
+    {
+     "speaker": "staff",
+     "text": "It is, yes. The coastal ride is £45.50 per person, and that covers the bike, a helmet and lunch at a café in the old fishing village. Can I take your name?"
+    },
+    {
+     "speaker": "caller",
+     "text": "Sure. It's Daniel Fairbrook. That's F-A-I-R-B-R-O-O-K."
+    },
+    {
+     "speaker": "staff",
+     "text": "Thank you, Mr Fairbrook. And a contact number?"
+    },
+    {
+     "speaker": "caller",
+     "text": "My mobile is 07700 900 418."
+    },
+    {
+     "speaker": "staff",
+     "text": "Lovely. Now, we meet outside the station at half past eight, so please don't be late, because the group leaves on time. Oh, and if it's raining heavily, we'll text you by seven to let you know whether the ride is going ahead."
+    },
+    {
+     "speaker": "caller",
+     "text": "Great. Should I bring anything?"
+    },
+    {
+     "speaker": "staff",
+     "text": "Just a water bottle and a light jacket. The wind on the cliffs can be surprisingly cold, even in July."
+    }
+   ],
+   "keys": [
+    "Fairbrook",
+    "45.50",
+    "07700 900 418"
+   ]
+  },
+  "lecture": {
+   "about": "like part 4: one speaker on an academic subject",
+   "speakers": {
+    "lecturer": null
+   },
+   "turns": [
+    {
+     "speaker": "lecturer",
+     "text": "Today I want to look at something most of us never notice: the street light. Before the nineteenth century, city streets after dark were lit, if at all, by candles or oil lamps hung outside houses, and in many towns householders were actually required by law to provide them."
+    },
+    {
+     "speaker": "lecturer",
+     "text": "The arrival of gas lighting changed that completely. From the eighteen-twenties onwards, gas companies laid pipes under the main streets of large cities, and lamplighters walked their routes every evening with long poles, lighting each lamp by hand. Electric lighting followed at the end of the century, but it's worth remembering that gas lamps survived in some districts for decades, partly because the existing network was cheap to run."
+    },
+    {
+     "speaker": "lecturer",
+     "text": "What interests historians is not only the technology, but the effect on daily life. Shops could stay open later, evening classes became possible for working people, and the sense of the street as a public space at night began to change. In the second half of this lecture, I'll look at the newest stage of the story: the switch to LED lights, and the debate about whether our cities are now too bright."
+    }
+   ],
+   "keys": [
+    "lamplighters",
+    "nineteenth century"
+   ]
+  }
+ },
+ "combos": [
+  {
+   "key": "elevenlabs-v4-british",
+   "provider": "elevenlabs",
+   "accent": "british",
+   "note": "eleven_v4; premade voices Alice, George, Daniel",
+   "voices": {
+    "staff": "Xb7hH8MSUJpSbSDYk0k2",
+    "caller": "JBFqnCBsd6RMkjVDRZzb",
+    "lecturer": "onwK4e9ZLuTAKqWW03F9"
+   }
+  },
+  {
+   "key": "elevenlabs-v4-australian",
+   "provider": "elevenlabs",
+   "accent": "australian",
+   "note": "eleven_v4; library voices Kate and Paul, premade Charlie",
+   "voices": {
+    "staff": "w9rPM8AIZle60Nbpw7nl",
+    "caller": "IKne3meq5aSn9XLyUdCD",
+    "lecturer": "WLKp2jV6nrS8aMkPPDRO"
+   }
+  },
+  {
+   "key": "elevenlabs-v4-north-american",
+   "provider": "elevenlabs",
+   "accent": "north_american",
+   "note": "eleven_v4; premade voices Sarah, Chris, Matilda",
+   "voices": {
+    "staff": "EXAVITQu4vr4xnSDxMaL",
+    "caller": "iP95p4xoKVk53GoZ742B",
+    "lecturer": "XrExE9yKIg1WjnnlVkGX"
+   }
+  },
+  {
+   "key": "elevenlabs-v2-british",
+   "provider": "elevenlabs",
+   "accent": "british",
+   "note": "eleven_multilingual_v2 (the most stable on long text), the same British voices",
+   "voices": {
+    "staff": "Xb7hH8MSUJpSbSDYk0k2@eleven_multilingual_v2",
+    "caller": "JBFqnCBsd6RMkjVDRZzb@eleven_multilingual_v2",
+    "lecturer": "onwK4e9ZLuTAKqWW03F9@eleven_multilingual_v2"
+   }
+  },
+  {
+   "key": "pilot-google-british",
+   "provider": "google",
+   "accent": "british",
+   "note": "the pilot voices, for comparison",
+   "voices": {
+    "staff": "en-GB-Chirp3-HD-Kore",
+    "caller": "en-GB-Chirp3-HD-Puck",
+    "lecturer": "en-GB-Chirp3-HD-Aoede"
+   }
+  },
+  {
+   "key": "pilot-google-australian",
+   "provider": "google",
+   "accent": "australian",
+   "note": "the pilot voices, for comparison",
+   "voices": {
+    "staff": "en-AU-Chirp3-HD-Kore",
+    "caller": "en-AU-Chirp3-HD-Puck",
+    "lecturer": "en-AU-Chirp3-HD-Aoede"
+   }
+  },
+  {
+   "key": "pilot-xai-north-american",
+   "provider": "xai",
+   "accent": "north_american",
+   "note": "the pilot voices, for comparison",
+   "voices": {
+    "staff": "ara",
+    "caller": "sal",
+    "lecturer": "sal"
+   }
+  }
+ ]
+}

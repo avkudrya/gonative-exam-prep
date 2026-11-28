@@ -1,7 +1,7 @@
 {
  "id": "exam-listening-voices-2",
  "purpose": "Round A2 (owner 2026-11-28: the Google voices have a machine echo; ElevenLabs on the Creator plan; American stays with xAI): the round A script and a narrator's lines voiced by the owner's ElevenLabs voices (collection GN) in British, Australian and New Zealand English, and by the pilot's Google voices for comparison, all with dictation pauses. Our own script; no official material.",
- "budgetUsd": 3.0,
+ "budgetUsd": 4.0,
  "transcription": {
   "provider": "openai",
   "model": "gpt-4o-transcribe"
@@ -109,7 +109,7 @@
  },
  "combos": [
   {
-   "key": "elevenlabs-v4-british",
+   "key": "elevenlabs-v4-british-1",
    "provider": "elevenlabs",
    "accent": "british",
    "note": "eleven_v4; Clarice, Daniel, lecture Shelley; narrator Chris Brift",
@@ -124,16 +124,16 @@
    "key": "elevenlabs-v4-british-2",
    "provider": "elevenlabs",
    "accent": "british",
-   "note": "eleven_v4; Shelley, Daniel, lecture Clarice; narrator Chris Brift",
+   "note": "eleven_v4; Jodi, Jamie, lecture Jodi; narrator Chris Brift",
    "voices": {
-    "staff": "4CrZuIW9am7gYAxgo2Af",
-    "caller": "ynTHHllfDmGsZ3G8QJt9",
-    "lecturer": "MWUpoNpAY0rOQGP294mF",
+    "staff": "FF59babHL8N8gfTgtBMT",
+    "caller": "HF0hjxElqeS2vwmlzj6g",
+    "lecturer": "FF59babHL8N8gfTgtBMT",
     "narrator": "UEKYgullGqaF0keqT8Bu"
    }
   },
   {
-   "key": "elevenlabs-v4-australian",
+   "key": "elevenlabs-v4-australian-1",
    "provider": "elevenlabs",
    "accent": "australian",
    "note": "eleven_v4; Kate, Paul, lecture Paul; narrator Chris Brift",
@@ -145,7 +145,19 @@
    }
   },
   {
-   "key": "elevenlabs-v4-new-zealand",
+   "key": "elevenlabs-v4-australian-2",
+   "provider": "elevenlabs",
+   "accent": "australian",
+   "note": "eleven_v4; Charlotte, Jack, lecture Charlotte; narrator Chris Brift",
+   "voices": {
+    "staff": "aRlmTYIQo6Tlg5SlulGC",
+    "caller": "OLOI4oonuvD0YxxCCZy0",
+    "lecturer": "aRlmTYIQo6Tlg5SlulGC",
+    "narrator": "UEKYgullGqaF0keqT8Bu"
+   }
+  },
+  {
+   "key": "elevenlabs-v4-new-zealand-1",
    "provider": "elevenlabs",
    "accent": "new_zealand",
    "note": "eleven_v4; Jessie, Mark, lecture Jessie; narrator Chris Brift",
@@ -157,10 +169,22 @@
    }
   },
   {
-   "key": "elevenlabs-v2-british",
+   "key": "elevenlabs-v4-new-zealand-2",
+   "provider": "elevenlabs",
+   "accent": "new_zealand",
+   "note": "eleven_v4; Cassandra (not trained for v4 in high quality), Max, lecture Cassandra; narrator Chris Brift",
+   "voices": {
+    "staff": "A3TiUH9xcSptIzvOUBnB",
+    "caller": "1HGaTm3UFxAyxae5H0GU",
+    "lecturer": "A3TiUH9xcSptIzvOUBnB",
+    "narrator": "UEKYgullGqaF0keqT8Bu"
+   }
+  },
+  {
+   "key": "elevenlabs-v2-british-1",
    "provider": "elevenlabs",
    "accent": "british",
-   "note": "eleven_multilingual_v2 (the most stable on long text), the voices of elevenlabs-v4-british",
+   "note": "eleven_multilingual_v2 (the most stable on long text), the voices of elevenlabs-v4-british-1",
    "voices": {
     "staff": "MWUpoNpAY0rOQGP294mF@eleven_multilingual_v2",
     "caller": "ynTHHllfDmGsZ3G8QJt9@eleven_multilingual_v2",

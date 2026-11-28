@@ -18,7 +18,8 @@ import {checkListeningTest, type ListeningPart, type ListeningTest} from '../../
 type Status = 'review' | 'published' | 'retired';
 // frozen: the content is already published under this version and the round's files have moved on (a --redo): only the
 // statuses change, the rest of the file stays as it is.
-type Version = {version: string; run: string; note?: string; frozen?: boolean; tests: {key: string; status: Status}[]};
+// soundCheckRun: the round whose sound check the version plays, when its own round made none (the same narrator voice).
+type Version = {version: string; run: string; note?: string; frozen?: boolean; soundCheckRun?: string; tests: {key: string; status: Status}[]};
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const PREFIX = 'exam/listening/';
@@ -36,6 +37,11 @@ const VERSIONS: Version[] = [
   {version: 'v3', run: 'benchmarks/runs/exam-listening-revoice-1',
     note: 'The pilot tests (P7.9, with the v2 edits) voiced with the voices the owner chose: ElevenLabs for British and Australian English and the narrator, xAI for American English.',
     tests: [{key: 'l1', status: 'published'}, {key: 'l2', status: 'published'}]},
+  // 2026-11-28, round C (P7.11): 8 new tests with prompts ls-2 and the voices of v3; Claude reviewed the 320 questions, the owner
+  // answered the review («можешь собирать v4 и готовить загрузку записей»). The narrator is v3's, so is its sound check.
+  {version: 'v4', run: 'benchmarks/runs/exam-listening-set-1', soundCheckRun: 'benchmarks/runs/exam-listening-revoice-1',
+    note: 'Eight new tests (P7.11), written with the Part 1 spelling rule and voiced with the voices of v3: ElevenLabs for British, Australian and New Zealand English and the narrator, xAI for American English.',
+    tests: ['l3', 'l4', 'l5', 'l6', 'l7', 'l8', 'l9', 'l10'].map(key => ({key, status: 'published' as Status}))},
 ];
 
 type Audio = {file: string; sha256: string; bytes: number; durationMs: number};
@@ -83,7 +89,8 @@ for (const v of VERSIONS) {
     continue;
   }
   const report = JSON.parse(readFileSync(join(root, v.run, 'report.json'), 'utf8')) as Report;
-  if (!report.soundCheck) throw new Error(`${v.run}: no sound check`);
+  const soundReport = v.soundCheckRun ? JSON.parse(readFileSync(join(root, v.soundCheckRun, 'report.json'), 'utf8')) as Report : report;
+  if (!soundReport.soundCheck) throw new Error(`${v.soundCheckRun ?? v.run}: no sound check`);
   const tests = v.tests.map(entry => {
     const source = report.tests.find(t => t.id === entry.key);
     if (!source) throw new Error(`${entry.key}: not in ${v.run}`);
@@ -93,7 +100,7 @@ for (const v of VERSIONS) {
     if (problems.length) throw new Error(`${entry.key}: ${problems.join('; ')}`);
     return {key: entry.key, status: entry.status, title: title(entry.key), parts};
   });
-  const sound = report.soundCheck;
+  const sound = soundReport.soundCheck;
   const library = {
     libraryKey: 'ielts-listening',
     version: v.version,

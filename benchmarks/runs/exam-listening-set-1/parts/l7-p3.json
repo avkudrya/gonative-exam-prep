@@ -579,7 +579,7 @@
                         }
                     }
                 ],
-                "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+                "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
             }
         ],
         "context": "You will hear two environmental science students talking to their lecturer about a report on a field trip to a wetland.",
@@ -636,10 +636,10 @@
         {
             "step": "control",
             "model": "grok-4.7",
-            "reused": true,
-            "costUsd": 0.016308,
+            "reused": false,
+            "costUsd": 0.018182,
             "provider": "xai",
-            "outputTokens": 1503
+            "outputTokens": 1817
         },
         {
             "step": "translate",
@@ -963,6 +963,15 @@
             }
         ]
     },
+    "edits": [
+        {
+            "to": "NO MORE THAN TWO WORDS",
+            "why": "The answers of questions 26–30 are words only (limit: two words, no number); owner: «да» (2026-11-28).",
+            "from": "NO MORE THAN TWO WORDS AND/OR A NUMBER",
+            "field": "instruction",
+            "group": 26
+        }
+    ],
     "solve": {
         "a": {
             "b1q1": {
@@ -1226,7 +1235,7 @@
             "marks": [
                 true
             ],
-            "quote": "a pair of swamp harriers, no, sorry, purple swamphens, sitting on a nest in the rushes just in front of the hide.",
+            "quote": "purple swamphens, sitting on a nest in the rushes just in front of the hide.",
             "answer": [
                 "F"
             ],
@@ -1246,7 +1255,7 @@
             "marks": [
                 true
             ],
-            "quote": "the croaking was unbelievable. We counted well over forty of them in a ten-metre stretch.",
+            "quote": "As soon as we got close, the croaking was unbelievable. We counted well over forty of them in a ten-metre stretch.",
             "answer": [
                 "A"
             ],

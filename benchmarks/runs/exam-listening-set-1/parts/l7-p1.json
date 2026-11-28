@@ -8,8 +8,8 @@
     "part": {
         "audio": {
             "file": "audio/l7-p1.mp3",
-            "bytes": 4539788,
-            "sha256": "19268c93002fcf3ba1356f0359dd16771c91d52c2e8dcbb6845eb0ad66dce615",
+            "bytes": 4499468,
+            "sha256": "a600516bc107077df5ab266eea82545ab60601c67e4cb0e50b70098bd68a5998",
             "voices": {
                 "caller": {
                     "voice": "HF0hjxElqeS2vwmlzj6g",
@@ -252,59 +252,59 @@
                 {
                     "kind": "turn",
                     "turn": 32,
-                    "endMs": 310799,
+                    "endMs": 311199,
                     "startMs": 305899
                 },
                 {
                     "kind": "turn",
                     "turn": 33,
-                    "endMs": 314099,
-                    "startMs": 310799
+                    "endMs": 312499,
+                    "startMs": 311199
                 },
                 {
                     "kind": "turn",
                     "turn": 34,
-                    "endMs": 322599,
-                    "startMs": 314099
+                    "endMs": 319239,
+                    "startMs": 312499
                 },
                 {
                     "kind": "turn",
                     "turn": 35,
-                    "endMs": 331099,
-                    "startMs": 322599
+                    "endMs": 327739,
+                    "startMs": 319239
                 },
                 {
                     "kind": "turn",
                     "turn": 36,
-                    "endMs": 337359,
-                    "startMs": 331099
+                    "endMs": 333999,
+                    "startMs": 327739
                 },
                 {
                     "kind": "turn",
                     "turn": 37,
-                    "endMs": 340339,
-                    "startMs": 337359
+                    "endMs": 336979,
+                    "startMs": 333999
                 },
                 {
                     "kind": "turn",
                     "turn": 38,
-                    "endMs": 342599,
-                    "startMs": 340339
+                    "endMs": 339239,
+                    "startMs": 336979
                 },
                 {
                     "kind": "narrator",
                     "text": "That is the end of Part 1. You now have thirty seconds to check your answers.",
-                    "endMs": 348239,
-                    "startMs": 342599
+                    "endMs": 344879,
+                    "startMs": 339239
                 },
                 {
                     "kind": "pause",
-                    "endMs": 378239,
+                    "endMs": 374879,
                     "purpose": "check",
-                    "startMs": 348239
+                    "startMs": 344879
                 }
             ],
-            "durationMs": 378239
+            "durationMs": 374879
         },
         "title": "Booking a holiday sports camp",
         "turns": [
@@ -437,21 +437,21 @@
                 "speaker": "coordinator"
             },
             {
-                "say": "Could you put my wife's mobile? I'm a builder, so I don't always hear my phone on site. Hers is oh seven seven oh oh, nine oh oh, three six two.",
-                "text": "Could you put my wife's mobile? I'm a builder, so I don't always hear my phone on site. Hers is 07700 900 362.",
+                "say": "Could you put my wife's mobile? I'm a builder, so I don't always hear my phone on site. Hers is oh seven seven oh oh, nine oh oh, five one eight.",
+                "text": "Could you put my wife's mobile? I'm a builder, so I don't always hear my phone on site. Hers is 07700 900 518.",
                 "speaker": "caller"
             },
             {
-                "say": "oh seven seven oh oh, nine oh oh, three two six?",
-                "text": "07700 900 326?",
+                "say": "oh seven seven oh oh, nine oh oh, five one eight.",
+                "text": "07700 900 518.",
                 "speaker": "coordinator"
             },
             {
-                "text": "No, 362 at the end.",
+                "text": "That's right.",
                 "speaker": "caller"
             },
             {
-                "text": "Sorry, 362. Last thing. How did you hear about the camp? We like to know which advertising works.",
+                "text": "Lovely. Last thing. How did you hear about the camp? We like to know which advertising works.",
                 "speaker": "coordinator"
             },
             {
@@ -492,8 +492,8 @@
                         "evidence": "now it's 8 to 12",
                         "explanation": {
                             "en": "The poster said 8 to 14, but the coordinator says it is out of date and the camp now takes children from 8 to 12.",
-                            "ru": "На афише было написано «8 to 14», но координатор говорит, что эта информация устарела и теперь в лагерь принимают детей от 8 до \"12\" лет.",
-                            "uk": "На афіші було написано «8 to 14», але координаторка каже, що ця інформація застаріла і тепер до табору приймають дітей від 8 до \"12\" років."
+                            "ru": "На плакате было написано \"8 to 14\", но координатор говорит, что эта информация устарела и теперь в лагерь принимают детей от \"8\" до \"12\".",
+                            "uk": "На плакаті було написано \"8 to 14\", але координаторка каже, що ця інформація застаріла і тепер до табору приймають дітей від \"8\" до \"12\"."
                         }
                     },
                     {
@@ -507,8 +507,8 @@
                         "evidence": "so instead they'll be playing hockey",
                         "explanation": {
                             "en": "Swimming was the second sport last year, but the pool is being repaired, so this summer it is hockey.",
-                            "ru": "В прошлом году вторым видом спорта было плавание, но бассейн сейчас ремонтируют, поэтому этим летом вместо него \"hockey\".",
-                            "uk": "Торік другим видом спорту було плавання, але басейн зараз ремонтують, тому цього літа замість нього \"hockey\"."
+                            "ru": "В прошлом году вторым видом спорта было плавание (\"swimming\"), но бассейн сейчас ремонтируют, поэтому этим летом будет \"hockey\".",
+                            "uk": "Торік другим видом спорту було плавання (\"swimming\"), але басейн зараз ремонтують, тому цього літа буде \"hockey\"."
                         }
                     },
                     {
@@ -522,8 +522,8 @@
                         "evidence": "on the last afternoon we finish with a picnic, and families are welcome to come along",
                         "explanation": {
                             "en": "The camp used to have a sports show, but now the last afternoon is a picnic that families can join.",
-                            "ru": "Раньше в лагере устраивали спортивное шоу (\"sports show\"), а теперь в последний день после обеда проходит \"picnic\", к которому могут присоединиться семьи.",
-                            "uk": "Раніше в таборі влаштовували спортивне шоу (\"sports show\"), а тепер в останній день після обіду відбувається \"picnic\", до якого можуть долучитися родини."
+                            "ru": "Раньше в лагере проводили спортивное шоу (\"sports show\"), а теперь в последний день после обеда устраивают \"picnic\", к которому могут присоединиться семьи.",
+                            "uk": "Раніше в таборі проводили спортивне шоу (\"sports show\"), а тепер в останній день після обіду влаштовують \"picnic\", до якого можуть долучитися родини."
                         }
                     },
                     {
@@ -538,8 +538,8 @@
                         "evidence": "it'd have to be the one starting on the 11th",
                         "explanation": {
                             "en": "The week starting on the 4th is full and the family is away from the 16th, so he chooses the week starting on the 11th.",
-                            "ru": "На неделю, которая начинается 4-го, мест уже нет, а с 16-го семья будет в отъезде, поэтому он выбирает неделю, которая начинается 11-го (\"11th\").",
-                            "uk": "На тиждень, що починається 4-го, місць уже немає, а з 16-го родина буде у від'їзді, тому він обирає тиждень, що починається 11-го (\"11th\")."
+                            "ru": "На неделю, которая начинается \"4th\", мест уже нет, а с \"16th\" семья уезжает, поэтому он выбирает неделю, которая начинается \"11th\".",
+                            "uk": "На тиждень, що починається \"4th\", місць уже немає, а з \"16th\" родина від'їжджає, тому він обирає тиждень, що починається \"11th\"."
                         }
                     },
                     {
@@ -553,8 +553,8 @@
                         "evidence": "Then it's £135.",
                         "explanation": {
                             "en": "The full price is £150, but the family are leisure centre members, so they pay £135. The £120 early booking rate has finished.",
-                            "ru": "Полная стоимость — £150, но семья состоит в досуговом центре (\"leisure centre\"), поэтому они платят \"£135\". Льготная цена £120 за раннее бронирование уже не действует.",
-                            "uk": "Повна вартість — £150, але родина має членство в центрі дозвілля (\"leisure centre\"), тому вони платять \"£135\". Пільгова ціна £120 за раннє бронювання вже не діє."
+                            "ru": "Полная цена — \"£150\", но семья состоит в \"leisure centre\", поэтому они платят \"£135\". Цена \"£120\" за раннее бронирование уже не действует.",
+                            "uk": "Повна ціна — \"£150\", але родина є членами \"leisure centre\", тому вони платять \"£135\". Ціна \"£120\" за раннє бронювання вже не діє."
                         }
                     },
                     {
@@ -569,8 +569,8 @@
                         "evidence": "you can drop your child off from 8.15",
                         "explanation": {
                             "en": "Activities start at nine, but children can be dropped off earlier, from 8.15.",
-                            "ru": "Занятия начинаются в девять, но детей можно привозить раньше — с \"8.15\".",
-                            "uk": "Заняття починаються о дев'ятій, але дітей можна привозити раніше — з \"8.15\"."
+                            "ru": "Занятия начинаются в \"nine\", но детей можно привести раньше — с \"8.15\".",
+                            "uk": "Заняття починаються о \"nine\", але дітей можна привести раніше — з \"8.15\"."
                         }
                     }
                 ],
@@ -625,23 +625,23 @@
                         "evidence": "The only thing is nuts. She's allergic to them",
                         "explanation": {
                             "en": "Isla is allergic to nuts. She had asthma in the past, but she no longer has it, and it is not an allergy.",
-                            "ru": "У Isla аллергия на орехи (\"nuts\"). Раньше у неё была астма (\"asthma\"), но сейчас её нет, к тому же это не аллергия.",
-                            "uk": "У Isla алергія на горіхи (\"nuts\"). Раніше в неї була астма (\"asthma\"), але тепер її немає, до того ж це не алергія."
+                            "ru": "У Isla аллергия на \"nuts\". Раньше у неё была астма (\"asthma\"), но сейчас её больше нет, и к тому же это не аллергия.",
+                            "uk": "У Isla алергія на \"nuts\". Раніше в неї була астма (\"asthma\"), але тепер її вже немає, і до того ж це не алергія."
                         }
                     },
                     {
                         "answer": [
-                            "362"
+                            "518"
                         ],
                         "prompt": "Emergency contact number: 07700 900 ______",
                         "numbers": [
                             10
                         ],
-                        "evidence": "Hers is 07700 900 362.",
+                        "evidence": "Hers is 07700 900 518.",
                         "explanation": {
-                            "en": "The father gives his wife's mobile number, ending in 362. The coordinator repeats it wrongly as 326, and he corrects her.",
-                            "ru": "Отец называет номер мобильного телефона жены, который заканчивается на \"362\". Координатор повторяет его с ошибкой — \"326\", и он её поправляет.",
-                            "uk": "Батько називає номер мобільного телефону дружини, який закінчується на \"362\". Координаторка повторює його з помилкою — \"326\", і він її виправляє."
+                            "en": "The father gives his wife's mobile number, ending in 518, because he does not always hear his own phone at work.",
+                            "ru": "Отец даёт номер мобильного телефона жены, который заканчивается на \"518\", потому что на работе он не всегда слышит свой телефон.",
+                            "uk": "Батько дає номер мобільного телефону дружини, який закінчується на \"518\", бо на роботі він не завжди чує свій телефон."
                         }
                     }
                 ],
@@ -703,18 +703,18 @@
         {
             "step": "control",
             "model": "grok-4.7",
-            "reused": true,
-            "costUsd": 0.013558,
+            "reused": false,
+            "costUsd": 0.01294,
             "provider": "xai",
-            "outputTokens": 1034
+            "outputTokens": 933
         },
         {
             "step": "translate",
             "model": "claude-opus-5-5",
-            "reused": true,
-            "costUsd": 0.051524,
+            "reused": false,
+            "costUsd": 0.047864,
             "provider": "anthropic",
-            "outputTokens": 2349
+            "outputTokens": 2168
         }
     ],
     "draft": {
@@ -1028,6 +1028,57 @@
             }
         ]
     },
+    "edits": [
+        {
+            "to": "Hers is 07700 900 518.",
+            "why": "Owner (2026-11-28): l3|p1 has the same number 07700 900 362 and the same 326/362 mix-up; l7 gets another number without the mix-up.",
+            "from": "Hers is 07700 900 362.",
+            "turn": 31
+        },
+        {
+            "to": "07700 900 518.",
+            "why": "As above.",
+            "from": "07700 900 326?",
+            "turn": 32
+        },
+        {
+            "to": "That's right.",
+            "why": "As above.",
+            "from": "No, 362 at the end.",
+            "turn": 33
+        },
+        {
+            "to": "Lovely. Last thing.",
+            "why": "As above.",
+            "from": "Sorry, 362. Last thing.",
+            "turn": 34
+        },
+        {
+            "to": [
+                "518"
+            ],
+            "why": "As above.",
+            "from": [
+                "362"
+            ],
+            "field": "answer",
+            "question": 10
+        },
+        {
+            "to": "Hers is 07700 900 518.",
+            "why": "As above.",
+            "from": "Hers is 07700 900 362.",
+            "field": "evidence",
+            "question": 10
+        },
+        {
+            "to": "ending in 518, because he does not always hear his own phone at work.",
+            "why": "As above.",
+            "from": "ending in 362. The coordinator repeats it wrongly as 326, and he corrects her.",
+            "field": "explanation",
+            "question": 10
+        }
+    ],
     "solve": {
         "a": {
             "b1q1": {
@@ -1281,7 +1332,7 @@
             "marks": [
                 true
             ],
-            "quote": "now it's 8 to 12, so she'd be absolutely fine",
+            "quote": "We used to take older children, but now it's 8 to 12, so she'd be absolutely fine.",
             "answer": [
                 "12"
             ],
@@ -1291,7 +1342,7 @@
             "marks": [
                 true
             ],
-            "quote": "the pool's being repaired this summer, so instead they'll be playing hockey",
+            "quote": "the pool's being repaired this summer, so instead they'll be playing hockey.",
             "answer": [
                 "hockey"
             ],
@@ -1301,7 +1352,7 @@
             "marks": [
                 true
             ],
-            "quote": "on the last afternoon we finish with a picnic, and families are welcome to come along",
+            "quote": "on the last afternoon we finish with a picnic, and families are welcome to come along.",
             "answer": [
                 "picnic"
             ],
@@ -1311,7 +1362,7 @@
             "marks": [
                 true
             ],
-            "quote": "that runs from Monday the 11th to Friday the 15th",
+            "quote": "So that runs from Monday the 11th to Friday the 15th.",
             "answer": [
                 "11th"
             ],
@@ -1321,7 +1372,7 @@
             "marks": [
                 true
             ],
-            "quote": "if you're a member of the leisure centre, it comes down to £135",
+            "quote": "Then it's £135.",
             "answer": [
                 "135"
             ],
@@ -1341,7 +1392,7 @@
             "marks": [
                 true
             ],
-            "quote": "the surname is T-H-A-C-K-R-A-Y",
+            "quote": "the surname is T-H-A-C-K-R-A-Y.",
             "answer": [
                 "Thackray"
             ],
@@ -1351,7 +1402,7 @@
             "marks": [
                 true
             ],
-            "quote": "It's 27 Melbury Road. That's M-E-L-B-U-R-Y",
+            "quote": "It's 27 Melbury Road. That's M-E-L-B-U-R-Y.",
             "answer": [
                 "Melbury"
             ],
@@ -1361,7 +1412,7 @@
             "marks": [
                 true
             ],
-            "quote": "The only thing is nuts. She's allergic to them",
+            "quote": "The only thing is nuts. She's allergic to them, so she has to be careful.",
             "answer": [
                 "nuts"
             ],
@@ -1371,9 +1422,9 @@
             "marks": [
                 true
             ],
-            "quote": "Hers is 07700 900 362",
+            "quote": "Hers is 07700 900 518.",
             "answer": [
-                "362"
+                "518"
             ],
             "correct": true
         }
@@ -1550,22 +1601,22 @@
             {
                 "ms": 9680,
                 "wer": 0,
-                "heard": "Could you put my wife's mobile? I'm a builder, so I don't always hear my phone on site. Hers is 07700 900362."
+                "heard": "Could you put my wife's mobile? I'm a builder so I don't always hear my phone on site. Hers is 07700 900 518."
             },
             {
-                "ms": 4480,
+                "ms": 4880,
                 "wer": 0,
-                "heard": "07700 900 326"
+                "heard": "07700 900518"
             },
             {
-                "ms": 2880,
+                "ms": 880,
                 "wer": 0,
-                "heard": "No, three hundred and sixty-two at the end."
+                "heard": "That's right."
             },
             {
-                "ms": 8080,
+                "ms": 6320,
                 "wer": 0,
-                "heard": "Sorry, 362. Last thing - how did you hear about the camp? We like to know which advertising works."
+                "heard": "Lovely. Last thing, how did you hear about the camp? We like to know which advertising works."
             },
             {
                 "ms": 8080,
@@ -1593,7 +1644,7 @@
         "retried": [],
         "loudness": {
             "lufs": -16,
-            "truePeakDb": -1.6
+            "truePeakDb": -1.5
         },
         "dictation": [
             {

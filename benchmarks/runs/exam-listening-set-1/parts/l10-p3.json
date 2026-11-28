@@ -633,7 +633,8 @@
                     },
                     {
                         "answer": [
-                            "points system"
+                            "points system",
+                            "point system"
                         ],
                         "prompt": "In the introduction, he should give more detail about the app's ______.",
                         "numbers": [
@@ -1115,6 +1116,20 @@
             }
         ]
     },
+    "edits": [
+        {
+            "to": [
+                "points system",
+                "point system"
+            ],
+            "why": "Said fast, the two s sounds of \"points system\" run together: the transcriber heard \"point system\", and so may a learner; owner: «да» (2026-11-28).",
+            "from": [
+                "points system"
+            ],
+            "field": "answer",
+            "question": 29
+        }
+    ],
     "solve": {
         "a": {
             "b1q1": {
@@ -1370,7 +1385,7 @@
             "reason": "The key is correct. 'Friday 17 October' gives the right date but uses three words, which breaks the two-word limit, so it cannot be accepted."
         }
     },
-    "status": "listen",
+    "status": "succeeded",
     "control": {
         "b1q1": {
             "marks": [
@@ -1680,41 +1695,15 @@
             }
         ],
         "padded": [],
-        "flagged": [
-            {
-                "turn": 24,
-                "problem": "question 29: \"points system\" is not heard"
-            }
-        ],
-        "retried": {
-            "24": {
-                "after": [
-                    {
-                        "turn": 24,
-                        "problem": "question 29: \"points system\" is not heard"
-                    }
-                ],
-                "heard": "Good! And in the introduction, you describe the app quite briefly. Since your study is really about motivation, you should say more about its point system—how users earn points and lose them if they miss a day.",
-                "before": [
-                    {
-                        "turn": 24,
-                        "problem": "question 29: \"points system\" is not heard"
-                    }
-                ]
-            }
-        },
+        "flagged": [],
+        "retried": [],
         "loudness": {
             "lufs": -16,
             "truePeakDb": -2.4
         },
         "dictation": [],
         "recording": [],
-        "firstCheck": [
-            {
-                "turn": 24,
-                "problem": "question 29: \"points system\" is not heard"
-            }
-        ]
+        "firstCheck": []
     },
     "selection": {
         "kept": [

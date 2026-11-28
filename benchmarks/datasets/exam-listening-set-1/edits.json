@@ -1,0 +1,24 @@
+{
+ "about": "Editorial corrections after the review of round C (P7.11 §6), applied by code to the generated part before the controller and the voices; turns numbered from 0 as in review.md, questions by their number in the test. The manifest stays frozen.",
+ "parts": {
+  "l7|p1": [
+   {"turn": 31, "from": "Hers is 07700 900 362.", "to": "Hers is 07700 900 518.",
+    "why": "Owner (2026-11-28): l3|p1 has the same number 07700 900 362 and the same 326/362 mix-up; l7 gets another number without the mix-up."},
+   {"turn": 32, "from": "07700 900 326?", "to": "07700 900 518.", "why": "As above."},
+   {"turn": 33, "from": "No, 362 at the end.", "to": "That's right.", "why": "As above."},
+   {"turn": 34, "from": "Sorry, 362. Last thing.", "to": "Lovely. Last thing.", "why": "As above."},
+   {"question": 10, "field": "answer", "from": ["362"], "to": ["518"], "why": "As above."},
+   {"question": 10, "field": "evidence", "from": "Hers is 07700 900 362.", "to": "Hers is 07700 900 518.", "why": "As above."},
+   {"question": 10, "field": "explanation", "from": "ending in 362. The coordinator repeats it wrongly as 326, and he corrects her.",
+    "to": "ending in 518, because he does not always hear his own phone at work.", "why": "As above."}
+  ],
+  "l7|p3": [
+   {"group": 26, "field": "instruction", "from": "NO MORE THAN TWO WORDS AND/OR A NUMBER", "to": "NO MORE THAN TWO WORDS",
+    "why": "The answers of questions 26–30 are words only (limit: two words, no number); owner: «да» (2026-11-28)."}
+  ],
+  "l10|p3": [
+   {"question": 29, "field": "answer", "from": ["points system"], "to": ["points system", "point system"],
+    "why": "Said fast, the two s sounds of \"points system\" run together: the transcriber heard \"point system\", and so may a learner; owner: «да» (2026-11-28)."}
+  ]
+ }
+}

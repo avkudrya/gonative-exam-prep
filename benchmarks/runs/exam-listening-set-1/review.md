@@ -1833,16 +1833,16 @@ Speakers: Alison Pritchard (female, british, sports camp coordinator, elevenlabs
 28. [4:33] **Alison Pritchard:** Got it. Does Isla have any medical conditions or allergies we should know about?
 29. [4:39] **Neil Thackray:** She had asthma when she was younger, but she's grown out of that now. The only thing is nuts. She's allergic to them, so she has to be careful.
 30. [4:48] **Alison Pritchard:** Don't worry, we're a nut-free camp anyway, but I'll make a note of it. And a phone number for emergencies?
-31. [4:55] **Neil Thackray:** Could you put my wife's mobile? I'm a builder, so I don't always hear my phone on site. Hers is 07700 900 362.
-   - voice got: Could you put my wife's mobile? I'm a builder, so I don't always hear my phone on site. Hers is oh seven seven oh oh, nine oh oh, three six two.
-32. [5:05] **Alison Pritchard:** 07700 900 326?
-   - voice got: oh seven seven oh oh, nine oh oh, three two six?
-33. [5:10] **Neil Thackray:** No, 362 at the end.
-34. [5:14] **Alison Pritchard:** Sorry, 362. Last thing. How did you hear about the camp? We like to know which advertising works.
-35. [5:22] **Neil Thackray:** Well, I saw that old poster at the leisure centre, but it was actually the school newsletter that made me ring. There was a piece about you in it last week.
-36. [5:31] **Alison Pritchard:** Lovely, I'll put that down. I'll text your wife the booking confirmation and payment details this afternoon.
-37. [5:37] **Neil Thackray:** Perfect. Thanks very much for your help.
-38. [5:40] **Alison Pritchard:** You're welcome. Bye.
+31. [4:55] **Neil Thackray:** Could you put my wife's mobile? I'm a builder, so I don't always hear my phone on site. Hers is 07700 900 518.
+   - voice got: Could you put my wife's mobile? I'm a builder, so I don't always hear my phone on site. Hers is oh seven seven oh oh, nine oh oh, five one eight.
+32. [5:05] **Alison Pritchard:** 07700 900 518.
+   - voice got: oh seven seven oh oh, nine oh oh, five one eight.
+33. [5:11] **Neil Thackray:** That's right.
+34. [5:12] **Alison Pritchard:** Lovely. Last thing. How did you hear about the camp? We like to know which advertising works.
+35. [5:19] **Neil Thackray:** Well, I saw that old poster at the leisure centre, but it was actually the school newsletter that made me ring. There was a piece about you in it last week.
+36. [5:27] **Alison Pritchard:** Lovely, I'll put that down. I'll text your wife the booking confirmation and payment details this afternoon.
+37. [5:33] **Neil Thackray:** Perfect. Thanks very much for your help.
+38. [5:36] **Alison Pritchard:** You're welcome. Bye.
 
 ### Questions
 
@@ -1851,33 +1851,33 @@ Speakers: Alison Pritchard (female, british, sports camp coordinator, elevenlabs
 - **1** Ages: 8 to ______ → **12 | twelve** (solvers 12 / 12; controller 12)
   - evidence: "now it's 8 to 12"
   - en: The poster said 8 to 14, but the coordinator says it is out of date and the camp now takes children from 8 to 12.
-  - ru: На афише было написано «8 to 14», но координатор говорит, что эта информация устарела и теперь в лагерь принимают детей от 8 до "12" лет.
-  - uk: На афіші було написано «8 to 14», але координаторка каже, що ця інформація застаріла і тепер до табору приймають дітей від 8 до "12" років.
+  - ru: На плакате было написано "8 to 14", но координатор говорит, что эта информация устарела и теперь в лагерь принимают детей от "8" до "12".
+  - uk: На плакаті було написано "8 to 14", але координаторка каже, що ця інформація застаріла і тепер до табору приймають дітей від "8" до "12".
 - **2** Mornings: tennis and ______ → **hockey** (solvers hockey / hockey; controller hockey)
   - evidence: "so instead they'll be playing hockey"
   - en: Swimming was the second sport last year, but the pool is being repaired, so this summer it is hockey.
-  - ru: В прошлом году вторым видом спорта было плавание, но бассейн сейчас ремонтируют, поэтому этим летом вместо него "hockey".
-  - uk: Торік другим видом спорту було плавання, але басейн зараз ремонтують, тому цього літа замість нього "hockey".
+  - ru: В прошлом году вторым видом спорта было плавание ("swimming"), но бассейн сейчас ремонтируют, поэтому этим летом будет "hockey".
+  - uk: Торік другим видом спорту було плавання ("swimming"), але басейн зараз ремонтують, тому цього літа буде "hockey".
 - **3** Last afternoon: a ______ for children and families → **picnic** (solvers picnic / picnic; controller picnic)
   - evidence: "on the last afternoon we finish with a picnic, and families are welcome to come along"
   - en: The camp used to have a sports show, but now the last afternoon is a picnic that families can join.
-  - ru: Раньше в лагере устраивали спортивное шоу ("sports show"), а теперь в последний день после обеда проходит "picnic", к которому могут присоединиться семьи.
-  - uk: Раніше в таборі влаштовували спортивне шоу ("sports show"), а тепер в останній день після обіду відбувається "picnic", до якого можуть долучитися родини.
+  - ru: Раньше в лагере проводили спортивное шоу ("sports show"), а теперь в последний день после обеда устраивают "picnic", к которому могут присоединиться семьи.
+  - uk: Раніше в таборі проводили спортивне шоу ("sports show"), а тепер в останній день після обіду влаштовують "picnic", до якого можуть долучитися родини.
 - **4** Week chosen: Monday ______ to Friday 15th August → **11th | 11** (solvers 11th / 11th; controller 11th)
   - evidence: "it'd have to be the one starting on the 11th"
   - en: The week starting on the 4th is full and the family is away from the 16th, so he chooses the week starting on the 11th.
-  - ru: На неделю, которая начинается 4-го, мест уже нет, а с 16-го семья будет в отъезде, поэтому он выбирает неделю, которая начинается 11-го ("11th").
-  - uk: На тиждень, що починається 4-го, місць уже немає, а з 16-го родина буде у від'їзді, тому він обирає тиждень, що починається 11-го ("11th").
+  - ru: На неделю, которая начинается "4th", мест уже нет, а с "16th" семья уезжает, поэтому он выбирает неделю, которая начинается "11th".
+  - uk: На тиждень, що починається "4th", місць уже немає, а з "16th" родина від'їжджає, тому він обирає тиждень, що починається "11th".
 - **5** Cost for the week: £______ → **135** (solvers 135 / 135; controller 135)
   - evidence: "Then it's £135."
   - en: The full price is £150, but the family are leisure centre members, so they pay £135. The £120 early booking rate has finished.
-  - ru: Полная стоимость — £150, но семья состоит в досуговом центре ("leisure centre"), поэтому они платят "£135". Льготная цена £120 за раннее бронирование уже не действует.
-  - uk: Повна вартість — £150, але родина має членство в центрі дозвілля ("leisure centre"), тому вони платять "£135". Пільгова ціна £120 за раннє бронювання вже не діє.
+  - ru: Полная цена — "£150", но семья состоит в "leisure centre", поэтому они платят "£135". Цена "£120" за раннее бронирование уже не действует.
+  - uk: Повна ціна — "£150", але родина є членами "leisure centre", тому вони платять "£135". Ціна "£120" за раннє бронювання вже не діє.
 - **6** Children can arrive from ______ am → **8.15 | 8:15** (solvers 8.15 / 8.15; controller 8.15)
   - evidence: "you can drop your child off from 8.15"
   - en: Activities start at nine, but children can be dropped off earlier, from 8.15.
-  - ru: Занятия начинаются в девять, но детей можно привозить раньше — с "8.15".
-  - uk: Заняття починаються о дев'ятій, але дітей можна привозити раніше — з "8.15".
+  - ru: Занятия начинаются в "nine", но детей можно привести раньше — с "8.15".
+  - uk: Заняття починаються о "nine", але дітей можна привести раніше — з "8.15".
 
 **form_completion** — Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer. (Camp Booking Form)
 
@@ -1894,13 +1894,13 @@ Speakers: Alison Pritchard (female, british, sports camp coordinator, elevenlabs
 - **9** Allergy: ______ → **nuts** (solvers nuts / nuts; controller nuts)
   - evidence: "The only thing is nuts. She's allergic to them"
   - en: Isla is allergic to nuts. She had asthma in the past, but she no longer has it, and it is not an allergy.
-  - ru: У Isla аллергия на орехи ("nuts"). Раньше у неё была астма ("asthma"), но сейчас её нет, к тому же это не аллергия.
-  - uk: У Isla алергія на горіхи ("nuts"). Раніше в неї була астма ("asthma"), але тепер її немає, до того ж це не алергія.
-- **10** Emergency contact number: 07700 900 ______ → **362** (solvers 362 / 362; controller 362)
-  - evidence: "Hers is 07700 900 362."
-  - en: The father gives his wife's mobile number, ending in 362. The coordinator repeats it wrongly as 326, and he corrects her.
-  - ru: Отец называет номер мобильного телефона жены, который заканчивается на "362". Координатор повторяет его с ошибкой — "326", и он её поправляет.
-  - uk: Батько називає номер мобільного телефону дружини, який закінчується на "362". Координаторка повторює його з помилкою — "326", і він її виправляє.
+  - ru: У Isla аллергия на "nuts". Раньше у неё была астма ("asthma"), но сейчас её больше нет, и к тому же это не аллергия.
+  - uk: У Isla алергія на "nuts". Раніше в неї була астма ("asthma"), але тепер її вже немає, і до того ж це не алергія.
+- **10** Emergency contact number: 07700 900 ______ → **518** (solvers 362 / 362; controller 518)
+  - evidence: "Hers is 07700 900 518."
+  - en: The father gives his wife's mobile number, ending in 518, because he does not always hear his own phone at work.
+  - ru: Отец даёт номер мобильного телефона жены, который заканчивается на "518", потому что на работе он не всегда слышит свой телефон.
+  - uk: Батько дає номер мобільного телефону дружини, який закінчується на "518", бо на роботі він не завжди чує свій телефон.
 
 ## l7|p2: succeeded
 
@@ -2106,7 +2106,7 @@ Speakers: Chloe Maddigan (female, australian, environmental science student, ele
   - ru: Lachlan говорит, что несколько рыб неподвижно лежали на иле, то есть были мёртвыми («dead»). Там искали завезённый сорняк, но не нашли ни одного.
   - uk: Lachlan каже, що кілька рибин нерухомо лежали на мулі, тобто були мертві («dead»). Там шукали завезений бур'ян, але не знайшли жодного.
 
-**sentence_completion** — Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.
+**sentence_completion** — Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.
 
 - **26** The water readings from the first day were wrong because the ______ had not been calibrated. → **pH meter | PH meter** (solvers pH meter / pH meter; controller pH meter)
   - evidence: "nobody had calibrated the pH meter before we used it"
@@ -3336,7 +3336,7 @@ Letters:
   - ru: Большинство проблем связано с жарой, поэтому её главный совет — выходить пораньше. Шляпы и обувь она упоминает лишь как дополнение ("as well") и говорит, что падения — не главная проблема.
   - uk: Більшість проблем пов'язана зі спекою, тому її головна порада — вирушати якомога раніше. Капелюхи та взуття вона згадує лише як доповнення ("as well") і каже, що падіння — не головна проблема.
 
-## l10|p3: listen
+## l10|p3: succeeded
 
 **Discussing a language-app study.** You will hear a linguistics student talking to his tutor about his study of a language-learning app.
 
@@ -3374,7 +3374,6 @@ Speakers: Ben Hemara (male, new_zealand, linguistics student, elevenlabs 1HGaTm3
 23. [4:48] **Ben Hemara:** That was because the night class finished earlier than I'd been told. I'll explain that.
 24. [4:53] **Dr Annabel Rutherford:** Good. And in the introduction, you describe the app quite briefly. Since your study is really about motivation, you should say more about its points system, how users earn points and lose them if they miss a day.
    - heard (WER 0.026): Good. And in the introduction, you describe the app quite briefly. Since your study is really about motivation, you should say more about its point system, how users earn points and lose them if they miss a day.
-   - **LISTEN:** question 29: "points system" is not heard
 25. [5:07] **Ben Hemara:** Fair enough. I sort of assumed everyone knew how it worked.
 26. [5:11] **Dr Annabel Rutherford:** Not everyone's used it. Then there's the limitations section. You should be upfront about where your usage figures came from. The company wouldn't give you their data, would it?
 27. [5:22] **Ben Hemara:** No, I asked twice. So everyone kept learning diaries, where they wrote down each time they used the app.
@@ -3459,7 +3458,7 @@ Speakers: Ben Hemara (male, new_zealand, linguistics student, elevenlabs 1HGaTm3
   - en: The study was planned for eight weeks but ran for six weeks, so he needs to explain why.
   - ru: Исследование планировали на восемь недель, но оно продлилось «six weeks», поэтому ему нужно объяснить причину.
   - uk: Дослідження планували на вісім тижнів, але воно тривало «six weeks», тож йому треба пояснити причину.
-- **29** In the introduction, he should give more detail about the app's ______. → **points system** (solvers points system / points system; controller points system)
+- **29** In the introduction, he should give more detail about the app's ______. → **points system | point system** (solvers points system / points system; controller points system)
   - evidence: "you should say more about its points system"
   - en: The tutor wants him to describe the points system, because his study is about motivation.
   - ru: Преподавательница хочет, чтобы он описал систему баллов — «points system», потому что его исследование посвящено мотивации.

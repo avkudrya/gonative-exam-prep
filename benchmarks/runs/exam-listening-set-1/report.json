@@ -43,7 +43,7 @@
         "voice": "UEKYgullGqaF0keqT8Bu"
     },
     "budgetUsd": 50,
-    "spentUsd": 34.181368,
+    "spentUsd": 34.313654,
     "parts": [
         {
             "key": "l3|p1",
@@ -539,7 +539,7 @@
         {
             "key": "l7|p1",
             "status": "succeeded",
-            "costUsd": 1.169269,
+            "costUsd": 1.283373,
             "metrics": {
                 "control": {
                     "marks": 10,
@@ -555,12 +555,12 @@
             "file": "parts/l7-p1.json",
             "audio": {
                 "file": "audio/l7-p1.mp3",
-                "durationMs": 378239,
+                "durationMs": 374879,
                 "retried": [],
                 "padded": [],
                 "loudness": {
                     "lufs": -16,
-                    "truePeakDb": -1.6
+                    "truePeakDb": -1.5
                 },
                 "flagged": [],
                 "recording": []
@@ -599,7 +599,7 @@
         {
             "key": "l7|p3",
             "status": "listen",
-            "costUsd": 0.838071,
+            "costUsd": 0.856253,
             "metrics": {
                 "control": {
                     "marks": 10,
@@ -975,7 +975,7 @@
         },
         {
             "key": "l10|p3",
-            "status": "listen",
+            "status": "succeeded",
             "costUsd": 1.172876,
             "metrics": {
                 "control": {
@@ -993,20 +993,13 @@
             "audio": {
                 "file": "audio/l10-p3.mp3",
                 "durationMs": 391740,
-                "retried": [
-                    24
-                ],
+                "retried": [],
                 "padded": [],
                 "loudness": {
                     "lufs": -16,
                     "truePeakDb": -2.4
                 },
-                "flagged": [
-                    {
-                        "turn": 24,
-                        "problem": "question 29: \"points system\" is not heard"
-                    }
-                ],
+                "flagged": [],
                 "recording": []
             }
         },
@@ -1090,8 +1083,8 @@
         "controlCorrect": 320,
         "controlMarks": 320,
         "turns": 772,
-        "turnsRetried": 9,
-        "turnsFlagged": 4,
+        "turnsRetried": 8,
+        "turnsFlagged": 3,
         "discardRate": 0.0027,
         "controlAgreement": 1
     }
